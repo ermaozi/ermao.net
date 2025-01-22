@@ -49,20 +49,4 @@ jobs:
           fqdn: www.ermao.net
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-      
-      # 推送到 ermaozi/ermao.org
-      - name: Push to ermaozi/ermao.org
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-        run: |
-          cd ~
-          git config --global user.email 'admin@ermao.net'
-          git config --global user.name 'ermaozi'
-          git clone https://github.com/ermaozi/ermao.org.git
-          cd ermao.org
-          cp -r /home/runner/work/ermao.net/ermao.net/docs/.vuepress/dist/* .
-          echo "www.ermao.org" > CNAME
-          find . -type f -exec sed -i 's/www.ermao.net/www.ermao.org/g' {} +
-          git add .
-          git commit -m "Update docs"
-          git push https://ermaozi:${{ secrets.GH_PAT }}@github.com/ermaozi/ermao.org.git
+
