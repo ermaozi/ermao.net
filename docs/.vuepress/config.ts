@@ -44,6 +44,9 @@ export default defineUserConfig({
         repoId: 'R_kgDOL4rZSQ',
         category: 'Announcements',
         categoryId: 'DIC_kwDOL4rZSc4CiGyu',
+      },
+      shiki: {
+        languages: ["python", "shell", "bash", "nginx", "javascript"]
       }
     }
   }),
