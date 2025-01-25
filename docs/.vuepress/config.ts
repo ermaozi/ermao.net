@@ -7,7 +7,8 @@ export default defineUserConfig({
   head: [
     ['link', { rel: 'icon', href: '/images/favicon.ico' }],
     ["meta", {"name": "keywords", "content": "机场,便宜机场,梯子,vpn,科学上网,翻墙,clash,trojan,python,服务器"}],
-    ["meta", {"name": "description", "content": "开发、运维、科学上网相关内容，打破技术壁垒"}]
+    ["meta", {"name": "description", "content": "开发、运维、科学上网相关内容，打破技术壁垒"}],
+    ["meta", {"name": "yandex-verification", "content": "e1e26631cf282ae3"}]
   ],
   theme: plumeTheme({
     logo: '/images/logo.svg',
