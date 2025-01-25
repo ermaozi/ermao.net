@@ -5,6 +5,11 @@ description: 互换友链的朋友请把信息发送到我的邮箱(名称、链
 permalink: /friends/
 list:
   -
+    name: 便宜高性价比机场推荐
+    link: https://ermao.org/
+    avatar: https://ermao.org/favicon.ico
+    desc: 便宜高性价比机场推荐，科学上网、VPN、机场、推荐、评测、便宜机场、SSONE、性价比机场、性价比VPN。
+  -
     name: pengzhanbo
     link: https://github.com/pengzhanbo
     avatar: https://github.com/pengzhanbo.png
