@@ -19,4 +19,9 @@ list:
     link: https://cuanmu.com
     avatar: https://cuanmu.com/favicon.ico
     desc: 好好熬夜，少睡觉。
+  -
+    name: Plumage 图床
+    link: https://plumage.cc/
+    avatar: https://plumage.cc/favicon.ico
+    desc: Plumage - 公益免费的多节点直链图床。
 ---
