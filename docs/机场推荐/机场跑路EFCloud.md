@@ -15,6 +15,8 @@ tags:
 
 2025年1月25日，EFCloud 机场跑路，官网可以法访问，订阅无法使用。机场已证实跑路，不再推荐使用。
 
+目前 [XSUS](https://xs-us.xyz/register?code=xJFcT1Dw) 正在接手EF用户，可转移部分订阅。详情可加TG群[@xsusvpn](https://t.me/xsusvpn)咨询
+
 <!-- more -->
 
 ## 官方公告
