@@ -39,7 +39,7 @@ permalink: /posts/vpn/
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |10元 100G/月|✔支持|[点击加入](https://t.me/flybitvip)|
 |[加速啦](#加速啦)|[https://jiasu.la/?r=39116](https://jiasu.la/?r=39116)| 1G 不限时 |10元 60G/月|✔支持|[点击加入](https://t.me/jiasu_la)|
 |[龙猫云](#龙猫云)|[lmspeed.co](https://ermaozi01.lmvipaff.com/register?aff=aOkm2wPW)| 无 |15元 100G/月|❌不支持|[点击加入](https://t.me/totoro_clouds)|
-|[XSUS](#XSUS)|[https://xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔支持|[点击加入](https://t.me/xsusvpn)|
+|[XSUS](#xsus)|[https://xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔支持|[点击加入](https://t.me/xsusvpn)|
 |[Aladdin](#aladdin)|[https://www.avatargpt.xyz/](https://www.avatargpt.xyz/register?aff=RtNzblsTdt)|无|30元 390G/半年|❌不支持|暂无|
 |[xxai](#xxai)|[xxai.uk](https://xx-ai.co?invite_code=K2TpsDcg)| 无 |16.9元 100G/月|✔支持|[点击加入](https://t.me/xxai_official)|
 |[青云梯](#青云梯)|[ermaozi01.qytvipaff.cc](https://ermaozi01.qytvipaff.cc/register?aff=W5ICDu2y)| 无 |25元 150G/月|❌不支持|[点击加入](https://t.me/qingyunticc)|
