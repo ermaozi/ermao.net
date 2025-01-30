@@ -20,6 +20,11 @@ list:
     avatar: https://cuanmu.com/favicon.ico
     desc: 好好熬夜，少睡觉。
   -
+    name: 便宜机场
+    link: https://www.pyjichang.com/
+    avatar: https://www.pyjichang.com/favicon.ico
+    desc: 便宜机场，科学上网。
+  -
     name: Plumage 图床
     link: https://plumage.cc/
     avatar: https://plumage.cc/favicon.ico
