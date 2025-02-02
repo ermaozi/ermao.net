@@ -29,4 +29,9 @@ list:
     link: https://plumage.cc/
     avatar: https://plumage.cc/favicon.ico
     desc: Plumage - 公益免费的多节点直链图床。
+  -
+    name: NX 的个人主页
+    link: https://www.nxcoding.com/ 
+    avatar: https://www.nxcoding.com/upload/logo.svg 
+    desc: We are all in the gutter, but some of us are looking at the stars
 ---
