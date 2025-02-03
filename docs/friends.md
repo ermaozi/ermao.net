@@ -25,10 +25,10 @@ list:
     avatar: https://www.pyjichang.com/favicon.ico
     desc: 便宜机场，科学上网。
   -
-    name: Plumage 图床
+    name: Plumage‘s blog
     link: https://plumage.cc/
-    avatar: https://plumage.cc/favicon.ico
-    desc: Plumage - 公益免费的多节点直链图床。
+    avatar: https://cn-nb1.rains3.com/plumage-zj/2025/02/iZjhd0ND-LetsIconsLightningRingDuotoneLine.png
+    descr: 心灵的栖息地
   -
     name: NX 的个人主页
     link: https://www.nxcoding.com/ 
