@@ -37,13 +37,14 @@ permalink: /posts/vpn/
 |---|---|---|--|---|---|
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 100G/月|❌不支持|[点击加入](https://t.me/+rYzRmCbJfIw3ZTM1)|
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |10元 100G/月|✔支持|[点击加入](https://t.me/flybitvip)|
+|[闪狐云](#闪狐云)|[flashfox.cc](https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv)| 无 |20元 120G/月|❌不支持|[点击加入](https://t.me/flashfoxcloud)|
 |[龙猫云](#龙猫云)|[lmspeed.co](https://ermaozi01.lmvipaff.com/register?aff=aOkm2wPW)| 无 |15元 100G/月|❌不支持|[点击加入](https://t.me/totoro_clouds)|
 |[XSUS](#xsus)|[https://xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔支持|[点击加入](https://t.me/xsusvpn)|
 |[大哥云](#大哥云)|[ermao.dgywzc.com](https://ermao.dgywzc.com/#/register?code=peAVAa8D)| 无 |19.9元 100G/月|❌不支持|[点击加入](https://t.me/dageyun)|
-|[加速啦](#加速啦)|[https://jiasu.la/?r=39116](https://jiasu.la/?r=39116)| 1G 不限时 |10元 60G/月|✔支持|[点击加入](https://t.me/jiasu_la)|
 |[Aladdin](#aladdin)|[https://www.avatargpt.xyz/](https://www.avatargpt.xyz/register?aff=RtNzblsTdt)|无|30元 390G/半年|❌不支持|暂无|
 |[xxai](#xxai)|[xxai.uk](https://xx-ai.co?invite_code=K2TpsDcg)| 无 |16.9元 100G/月|✔支持|[点击加入](https://t.me/xxai_official)|
 |[青云梯](#青云梯)|[ermaozi01.qytvipaff.cc](https://ermaozi01.qytvipaff.cc/register?aff=W5ICDu2y)| 无 |8 元60g/月(年付)|❌不支持|[点击加入](https://t.me/qingyunticc)|
+|[加速啦](#加速啦)|[https://jiasu.la/?r=39116](https://jiasu.la/?r=39116)| 1G 不限时 |10元 60G/月|✔支持|[点击加入](https://t.me/jiasu_la)|
 |[冲上云霄](#冲上云霄)|[https://cpdd.one](https://cpdd.one/?r=32083)| 1天 1G |10元 150G/30天|✔支持|[点击加入](https://t.me/vpnpn123)|
 |[EF](#ef)|~~www.efcloud1.com~~|无|已跑路|❌不支持|已跑路|
 
@@ -77,19 +78,28 @@ permalink: /posts/vpn/
 
 ---
 
-### 加速啦
+### 闪狐云
 
-注册链接：[jiasu.la](https://jiasu.la/?r=39116)
+注册链接：[flashfox.cc](https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv)
 
-邀请码：39116
+邀请码：NCO1w4Iv
 
-试用：1G 不限时
+试用：无
 
-最便宜的订阅有10元 60G/月。
+最便宜的订阅有20元 120G/月。
 
-全自研开发面板，海外团队运营，专线节点1倍率，安全好用省心无日志纪录，节点质量高，客服实时在线，晚高峰不限速，不限制设备。
+闪狐云是目前我用过的节点质量最高的机场，价格虽然不是最便宜的，但是性价比非常高。支持支付宝。
 
----
+**特性如下**
+
+- BGP隧道中转，IPLC高速内网纯专线出口，延迟低
+- 5大运营商动态优化。
+- trojan协议，安全、高速、加密。
+- 解锁全球流媒体、AI工具。
+- 无设备和ip限制。
+- 1000Mbps速率，晚高峰不限速
+- 专业人工客服，快速响应
+- 接受企业或者个人定制业务
 
 ### 龙猫云
 
@@ -172,6 +182,20 @@ permalink: /posts/vpn/
 最便宜的订阅有25元 150G/月。
 
 机场比较稳定，解锁Chatgpt，Tiktok及各大流媒体，四年老牌专线，最便宜套餐 98 一年每月 60g，折合每个月 8 元。
+
+---
+
+### 加速啦
+
+注册链接：[jiasu.la](https://jiasu.la/?r=39116)
+
+邀请码：39116
+
+试用：1G 不限时
+
+最便宜的订阅有10元 60G/月。
+
+全自研开发面板，海外团队运营，专线节点1倍率，安全好用省心无日志纪录，节点质量高，客服实时在线，晚高峰不限速，不限制设备。
 
 ---
 
