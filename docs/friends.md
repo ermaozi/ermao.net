@@ -26,7 +26,7 @@ list:
     desc: 便宜机场，科学上网。
   -
     name: NX 的个人主页
-    link: https://www.nxcoding.com/ 
-    avatar: https://www.nxcoding.com/upload/logo.svg 
+    link: https://www.nxcoding.com/
+    avatar: https://www.nxcoding.com/upload/logo.svg
     desc: We are all in the gutter, but some of us are looking at the stars
 ---
