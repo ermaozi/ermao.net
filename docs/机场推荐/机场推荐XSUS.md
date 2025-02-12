@@ -12,13 +12,19 @@ tags:
   - XSUS
 ---
 
+xsus机场，最低 8元 168G/月。老牌机场、稳定可靠、高性价比。
+
+注册地址：[https://xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)
+
+<!-- more -->
+
 ## XSUS 注册地址
 
 [https://xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)
 
 ## XSUS 机场简介
 
-最便宜的订阅有10元 100G/月。
+最便宜的订阅有8元 168G/月。
 
 XSUS 机场是一家老牌机场，价格实惠，节点较多，节点质量也非常高，速度快，支持 Netflix、ChatGPT。
 
