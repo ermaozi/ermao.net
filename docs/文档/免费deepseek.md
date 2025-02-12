@@ -1,6 +1,6 @@
 ---
 title: 搜索引擎查找 Ollama 本地部署的 DeepSeek，实现免费 AI 运行
-createTime: 2025/02/12 14:25:01
+createTime: 2025/02/12 7:25:01
 permalink: /article/tj38tso3/
 tags:
   - Ollama
