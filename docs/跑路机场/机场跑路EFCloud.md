@@ -55,6 +55,14 @@ tags:
 此致，敬礼！
 一位怀着感恩与歉意的朋友
 
+## 机场跑路（预警）投稿
+
+[点击投稿](https://pyjichang.com/scamvpn/)
+
 ## 其他推荐机场
+
+::: warning
+任何机场都有跑路的风险，建议备份几个按流量付费机场防止失联，同时主力机场使用月付费，尽可能减少损失。
+:::
 
 [https://www.ermao.net/posts/vpn](https://www.ermao.net/posts/vpn)
