@@ -13,7 +13,7 @@
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.15",
     "vuepress": "^2.0.0-rc.15",
-    "vuepress-theme-plume": "1.0.0-rc.129"
+    "vuepress-theme-plume": "1.0.0-rc.131"
   },
   "dependencies": {
     "@vuepress/client": "^2.0.0-rc.19",
