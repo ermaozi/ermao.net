@@ -1,5 +1,5 @@
 ---
-title: ⚠️【机场跑路】2025年2月11日SFCloud和FCCloud疑似跑路
+title: ⚠️【机场跑路】2025年2月11日SFCloud与FCCloud机场跑路
 createTime: 2025/02/11 07:48:36
 permalink: /article/7asq3quy/
 tags:
@@ -11,9 +11,13 @@ tags:
   - SFCloud
   - FCCloud
 ---
-2025年2月11日，SFCloud 和 FCCloud 疑似跑路，官网可以法访问，节点全部无法使用，工单不回。
+2025年2月11日，SFCloud与FCCloud官方确认已跑路。官网无法访问，节点全挂，工单不回复。
 
-高度预警！立即停止续费，避免损失。
+**立即停止续费，避免更大损失！**
+
+目前，[XSUS](https://xs-us.xyz/register?code=xJFcT1Dw) 表示可以接手SFCloud和FCCloud用户（按原订阅30%接收），详情请在[XSUS 官网](https://xs-us.xyz/register?code=xJFcT1Dw)注册后提交工单咨询。
+
+在选择机场时，推荐选择一些老牌机场（如[大哥云](https://ermao.dgywzc.com/#/register?code=peAVAa8D)），这样可以有效减少跑路的风险。
 
 <!-- more -->
 
