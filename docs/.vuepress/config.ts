@@ -52,5 +52,20 @@ export default defineUserConfig({
       }
     }
   }),
-  bundler: viteBundler(),
+  bundler: viteBundler({
+    viteOptions: {
+      optimizeDeps: {
+        exclude: [
+          'mark.js/src/vanilla.js',
+          '@vueuse/integrations/useFocusTrap',
+          'minisearch',
+          '@vueuse/core',
+          'bcrypt-ts/browser',
+          '@vuepress/helper/client',
+          '@iconify/vue',
+          '@iconify/vue/offline'
+        ]
+      }
+    }
+  }),
 })
