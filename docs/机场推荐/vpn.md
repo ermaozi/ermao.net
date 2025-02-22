@@ -37,7 +37,7 @@ permalink: /posts/vpn/
 |---|---|---|--|---|---|
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 100G/月|❌不支持|[telegram](https://t.me/+rYzRmCbJfIw3ZTM1)|
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |10元 100G/月|✔支持|[telegram](https://t.me/flybitvip)|
-|[xxyun](#xxyun)|[https://www.xxvip.shop](https://www.xxvip.shop/#/register?code=XQiZqbSr)| 1天10G |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
+|[xxyun](#xxyun)|[https://www.xxyun.xyz](https://www.xxyun.xyz/XQiZqbSr.php)| 1天10G |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
 |[XSUS](#xsus)|[https://xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔支持|[telegram](https://t.me/xsusvpn)|
 |[闪狐云](#闪狐云)|[flashfox.cc](https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv)| 无 |20元 120G/月|❌不支持|[telegram](https://t.me/flashfoxcloud)|
 |[龙猫云](#龙猫云)|[lmspeed.co](https://ermaozi01.lmvipaff.com/register?aff=aOkm2wPW)| 无 |15元 100G/月|❌不支持|[telegram](https://t.me/totoro_clouds)|
@@ -83,17 +83,25 @@ permalink: /posts/vpn/
 
 ### xxyun
 
-注册链接：[https://www.xxvip.shop](https://www.xxvip.shop/#/register?code=XQiZqbSr)
+注册链接：[https://www.xxyun.xyz](https://www.xxyun.xyz/XQiZqbSr.php)
 
 邀请码：XQiZqbSr
 
 试用：1天 10G
 
+xx云加速95折优惠码，只能使用一次：`xxyun.xyz`
+
 最便宜的订阅有8.89元 100G/月。
 
-xx云加速是一个适合轻度用户的轻量级机场，虽然是中转线路，但是速度还是不错的，而且价格便宜、全流媒体解锁、无在线设备数量限制。
+超高性价比，节点质量高，客服实时在线，晚高峰不限速，不限制设备，对 Netflix、Disney+ 流媒体解锁服务也还不错，8k视频秒开。
 
-比较适合偶尔在外网看视频、查资料的用户。
+xxyun加速特性如下：
+
+- SS协议中转机场，多隧道入口机场
+- 解锁全球流媒体、AI工具。
+- 无设备和ip限制。
+- 500Mbps速率，晚高峰不限速
+- 专业人工客服，快速响应
 
 ---
 

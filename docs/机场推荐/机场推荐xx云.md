@@ -13,9 +13,11 @@ tags:
   - xx云加速
 ---
 
-xx云加速是一个适合轻度用户的轻量级机场，虽然是中转线路，但是速度还是不错的，而且价格便宜、全流媒体解锁、无在线设备数量限制。
+xx云加速超高性价比，节点质量高，客服实时在线，晚高峰不限速，不限制设备，对 Netflix、Disney+ 流媒体解锁服务也还不错，8k视频秒开。
 
-注册地址：[https://www.xxvip.shop](https://www.xxvip.shop/#/register?code=XQiZqbSr)
+xxyun加速95折优惠码，只能使用一次：`xxyun.xyz`
+
+注册地址：[https://www.xxyun.xyz](https://www.xxyun.xyz/XQiZqbSr.php)
 
 <!-- more -->
 
@@ -23,11 +25,19 @@ xx云加速是一个适合轻度用户的轻量级机场，虽然是中转线路
 
 最便宜的订阅有8.89元 100G/月。
 
-[xx云加速](https://www.xxvip.shop/#/register?code=XQiZqbSr)是一个适合轻度用户的轻量级机场，虽然是中转线路，但是速度还是不错的，而且价格便宜、全流媒体解锁、无在线设备数量限制。
+[xx云加速](https://www.xxyun.xyz/XQiZqbSr.php)95折优惠码，只能使用一次：`xxyun.xyz`
 
-比较适合偶尔在外网看视频、查资料的用户。
+最便宜的订阅有8.89元 100G/月。
 
-目前用户比较少，可以试用一段时间。当然， **强烈建议按月购买** ，以免出现问题。
+超高性价比，节点质量高，客服实时在线，晚高峰不限速，不限制设备，对 Netflix、Disney+ 流媒体解锁服务也还不错，8k视频秒开。
+
+[xxyun加速](https://www.xxyun.xyz/XQiZqbSr.php)特性如下：
+
+- SS协议中转机场，多隧道入口机场
+- 解锁全球流媒体、AI工具。
+- 无设备和ip限制。
+- 500Mbps速率，晚高峰不限速
+- 专业人工客服，快速响应
 
 ![xx云加速 机场简介](images/机场推荐xx云/image.png)
 
