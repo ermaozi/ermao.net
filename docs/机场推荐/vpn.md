@@ -47,7 +47,7 @@ permalink: /posts/vpn/
 |[青云梯](#青云梯)|[ermaozi01.qytvipaff.cc](https://ermaozi01.qytvipaff.cc/register?aff=W5ICDu2y)| 无 |8 元60g/月(年付)|❌不支持|[telegram](https://t.me/qingyunticc)|
 |[加速啦](#加速啦)|[https://jiasu.la/?r=39116](https://jiasu.la/?r=39116)| 1G 不限时 |10元 60G/月|✔支持|[telegram](https://t.me/jiasu_la)|
 |[冲上云霄](#冲上云霄)|[https://cpdd.one](https://cpdd.one/?r=32083)| 1天 1G |10元 150G/30天|✔支持|[telegram](https://t.me/vpnpn123)|
-|[九霄云](#九霄云)|[https://九九九.吉祥结.中国](https://xn--sjqaa.xn--9pr628ffxd.xn--fiqs8s/#/register?code=ZXzjv7oD)| 无限 3G |6.8元 10G/月|✔支持|[QQ群](https://qm.qq.com/q/EzY3dgKhIA)|
+|[九霄云](#九霄云)|[https://九九九.吉祥结.中国](https://xn--sjqaa.xn--9pr628ffxd.xn--fiqs8s/#/register?code=ZXzjv7oD)| 2天 6G |16.8元 80G/月|✔支持|[QQ群](https://qm.qq.com/q/EzY3dgKhIA)|
 |[Aladdin](#aladdin)|[https://www.avatargpt.xyz/](https://www.avatargpt.xyz/register?aff=RtNzblsTdt)|无|30元 390G/半年|❌不支持|暂无|
 |[EF](#ef)|~~www.efcloud1.com~~|无|已跑路|❌不支持|已跑路|
 
@@ -264,11 +264,13 @@ xxyun加速特性如下：
 
 优惠码：`9xiaoyyds` 9折优惠
 
-试用：3G 无限制
+试用：8G 2天
 
-最便宜的订阅有6.8元 10G/月。
+最便宜的订阅有16.8元 80G/月。
 
-价格实惠，适合轻度用户，支持支付宝、微信支付。
+服务好，回购率高，基本上是5分钟以内客服就回复了.
+
+同时性价比高，支持支付宝、微信支付。
 
 ---
 
