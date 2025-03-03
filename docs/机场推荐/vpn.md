@@ -49,6 +49,7 @@ permalink: /posts/vpn/
 |[冲上云霄](#冲上云霄)|[https://cpdd.one](https://cpdd.one/?r=32083)| 1天 1G |5元 80G/30天|✔支持|[telegram](https://t.me/vpnpn123)|
 |[九霄云](#九霄云)|[https://九九九.吉祥结.中国](https://xn--sjqaa.xn--9pr628ffxd.xn--fiqs8s/#/register?code=ZXzjv7oD)| 2天 6G |16.8元 80G/月|✔支持|[QQ群](https://qm.qq.com/q/EzY3dgKhIA)|
 |[Aladdin](#aladdin)|[https://www.avatargpt.xyz/](https://www.avatargpt.xyz/register?aff=RtNzblsTdt)|无|30元 390G/半年|❌不支持|暂无|
+|[TNT](#tnt)|[https://ermaozi01.tntvipaff.cc](https://ermaozi01.tntvipaff.cc/#/register?code=f1EyPwf3)|无|20元 110G/月|❌不支持|[telegram](https://t.me/TNTCloud2)|
 |[EF](#ef)|~~www.efcloud1.com~~|无|已跑路|❌不支持|已跑路|
 
 ## 简介
@@ -199,6 +200,24 @@ xxyun加速特性如下：
 最便宜的订阅有30元 390G/半年。
 
 这家机场是我自己用的，节点质量非常高，解锁大部分主流媒体，可以访问openai，有 emby 和 奈飞 劫持。支持支付宝、微信、USDT支付。
+
+---
+
+### TNT
+
+注册链接：[https://ermaozi01.tntvipaff.cc](https://ermaozi01.tntvipaff.cc/#/register?code=f1EyPwf3)
+
+邀请码：f1EyPwf3
+
+试用：无
+
+最低 20元 110G/月
+
+- 全IPLC专线，不限速
+- 原生IP解锁流媒体
+- 解锁 Chatgpt，Tiktok
+- 高效客服响应
+- 不限制客户端
 
 ---
 
