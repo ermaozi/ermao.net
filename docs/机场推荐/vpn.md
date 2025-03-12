@@ -40,6 +40,7 @@ permalink: /posts/vpn/
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |10元 100G/月|✔支持|[telegram](https://t.me/flybitvip)|
 |[xxyun](#xxyun)|[https://www.xxyun.xyz](https://www.xxyun.xyz/XQiZqbSr.php)| 1天10G |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
 |[XSUS](#xsus)|[https://xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔支持|[telegram](https://t.me/xsusvpn)|
+|[百变小樱](#百变小樱)|[https://bbxy88.com](https://bbxy.xn--cesw6hd3s99f.com/auth/register?code=WuuD)| 无 | 15元 100G/30天|❌不支持|[telegram](https://t.me/+IugiUXlyYqgyNjE0)|
 |[闪狐云](#闪狐云)|[flashfox.cc](https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv)| 无 |20元 120G/月|❌不支持|[telegram](https://t.me/flashfoxcloud)|
 |[大哥云](#大哥云)|[ermao.dgywzc.com](https://ermao.dgywzc.com/#/register?code=peAVAa8D)| 无 |19.9元 100G/月|❌不支持|[telegram](https://t.me/dageyun)|
 |[好鸭云](#好鸭云)|[my.niceduck.io](https://my.niceduck.io/register?code=QS0hzI2y)| 无 |12元 100G/月|❌不支持|[telegram](https://t.me/niceduck_group)|
@@ -103,6 +104,28 @@ xxyun加速特性如下：
 - 无设备和ip限制。
 - 500Mbps速率，晚高峰不限速
 - 专业人工客服，快速响应
+
+---
+
+### 百变小樱
+
+注册链接：[https://bbxy88.com](https://bbxy.xn--cesw6hd3s99f.com/auth/register?code=WuuD)
+
+试用：无
+
+最便宜的订阅有15元 100G/30天。
+
+百变小樱优惠码：
+
+- 半年付95折优惠码：`happy10-1-6month`
+- 年付88折优惠码：`happy10-1-1year`
+- 三年付78折优惠码：`happy10-1-3years`
+
+百变小樱是一家自2020年起运营的低调小众机场，线路稳定可靠，采用隧道与专线结合的架构。其套餐支持两种不同的使用方式，并配有定制化精简面板，有效避免节点列表冗长。团队已迁至海外运营，确保无按流量风险，主打产品特点为稳定性、全流媒体解锁、超低价格以及附赠流媒体账号。
+
+另外，此机场支持SSR系列代理软件，例如小火箭和Clash。
+
+支付方式涵盖支付宝、微信支付以及USDT。
 
 ---
 
