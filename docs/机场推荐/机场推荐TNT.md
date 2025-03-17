@@ -12,7 +12,7 @@ tags:
   - TNT
 ---
 
-TNT机场，最低 20元 110G/月。新机场、IPLC专线。
+TNT机场，近期新上季付轻量包，专门为用量小的用户设计，10元/月。新机场、IPLC专线。
 
 注册地址：[https://ermaozi01.tntvipaff.cc](https://ermaozi01.tntvipaff.cc/#/register?code=f1EyPwf3)
 
@@ -24,7 +24,7 @@ TNT机场，最低 20元 110G/月。新机场、IPLC专线。
 
 ## TNT 机场简介
 
-最便宜的订阅有20元 110G/月。
+最便宜的订阅有20元 110G/月。近期新上季付轻量包，专门为用量小的用户设计，10元/月
 
 - 全IPLC专线，不限速
 - 原生IP解锁流媒体

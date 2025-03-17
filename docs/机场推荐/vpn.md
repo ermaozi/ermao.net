@@ -38,6 +38,7 @@ permalink: /posts/vpn/
 |[龙猫云](#龙猫云)|[lmspeed.co](https://ermaozi01.lmvipaff03.cc/register?aff=aOkm2wPW)| 无 |15元 100G/月|❌不支持|[telegram](https://t.me/totoro_clouds)|
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 100G/月|❌不支持|[telegram](https://t.me/+rYzRmCbJfIw3ZTM1)|
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |10元 100G/月|✔支持|[telegram](https://t.me/flybitvip)|
+|[纵云梯](#纵云梯)|[https://zongyunti.com/](https://zongyunti.com/?r=60147)| 1G 不限时| 10元 60G/30天|❌不支持|暂无|
 |[xxyun](#xxyun)|[https://www.xxyun.xyz](https://www.xxyun.xyz/XQiZqbSr.php)| 1天10G |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
 |[XSUS](#xsus)|[https://xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔支持|[telegram](https://t.me/xsusvpn)|
 |[百变小樱](#百变小樱)|[https://bbxy88.com](https://bbxy.xn--cesw6hd3s99f.com/auth/register?code=WuuD)| 无 | 15元 100G/30天|❌不支持|[telegram](https://t.me/+IugiUXlyYqgyNjE0)|
@@ -106,6 +107,20 @@ xxyun加速特性如下：
 - 无设备和ip限制。
 - 500Mbps速率，晚高峰不限速
 - 专业人工客服，快速响应
+
+---
+
+### 纵云梯
+
+注册链接：[https://zongyunti.com/](https://zongyunti.com/?r=60147)
+
+邀请码：60147
+
+试用：1G 不限时
+
+最便宜的订阅有10元 60G/30天。
+
+纵云梯是一家新机场，个人体验了一下速度还不错，客服响应也比较快。
 
 ---
 
