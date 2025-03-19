@@ -39,7 +39,7 @@ permalink: /posts/vpn/
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 100G/月|❌不支持|[telegram](https://t.me/+rYzRmCbJfIw3ZTM1)|
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |10元 100G/月|✔支持|[telegram](https://t.me/flybitvip)|
 |[纵云梯](#纵云梯)|[https://zongyunti.com/](https://zongyunti.com/?r=60147)| 1G 不限时| 10元 60G/30天|❌不支持|暂无|
-|[xxyun](#xxyun)|[https://www.xxyun.xyz](https://www.xxyun.xyz/XQiZqbSr.php)| 1天10G |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
+|[xxyun](#xxyun)|[https://www.xxyun.xyz](https://www.xxyun.xyz/123.html)| 1天10G |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
 |[XSUS](#xsus)|[https://xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔支持|[telegram](https://t.me/xsusvpn)|
 |[百变小樱](#百变小樱)|[https://bbxy88.com](https://bbxy.xn--cesw6hd3s99f.com/auth/register?code=WuuD)| 无 | 15元 100G/30天|❌不支持|[telegram](https://t.me/+IugiUXlyYqgyNjE0)|
 |[闪狐云](#闪狐云)|[flashfox.cc](https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv)| 无 |20元 120G/月|❌不支持|[telegram](https://t.me/flashfoxcloud)|
@@ -88,7 +88,7 @@ permalink: /posts/vpn/
 
 ### xxyun
 
-注册链接：[https://www.xxyun.xyz](https://www.xxyun.xyz/XQiZqbSr.php)
+注册链接：[https://www.xxyun.xyz](https://www.xxyun.xyz/123.html)
 
 邀请码：XQiZqbSr
 
