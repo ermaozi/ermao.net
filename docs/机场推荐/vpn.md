@@ -35,6 +35,7 @@ permalink: /posts/vpn/
 
 |机场名称|地址|试用|最便宜订阅|按流量购买|群|
 |---|---|---|--|---|---|
+|[老头vpn](#老头vpn)|[https://letusgolang.com](https://letusgolang.com/register?code=3OWtZ9Bi)| 1月1G | 15.5元 150G/月|❌不支持|[telegram](https://t.me/OldManVPN)|
 |[龙猫云](#龙猫云)|[lmspeed.co](https://ermaozi01.lmvipaff03.cc/register?aff=aOkm2wPW)| 无 |15元 100G/月|❌不支持|[telegram](https://t.me/totoro_clouds)|
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 100G/月|❌不支持|[telegram](https://t.me/+rYzRmCbJfIw3ZTM1)|
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |10元 100G/月|✔支持|[telegram](https://t.me/flybitvip)|
@@ -47,20 +48,20 @@ permalink: /posts/vpn/
 |[好鸭云](#好鸭云)|[my.niceduck.io](https://my.niceduck.io/register?code=QS0hzI2y)| 无 |12元 100G/月|❌不支持|[telegram](https://t.me/niceduck_group)|
 |[xxai](#xxai)|[xxai.uk](https://xx-ai.co?invite_code=K2TpsDcg)| 无 |16.9元 100G/月|✔支持|[telegram](https://t.me/xxai_official)|
 |[青云梯](#青云梯)|[ermaozi01.qytvipaff.cc](https://ermaozi01.qytvipaff.cc/register?aff=W5ICDu2y)| 无 |8 元60g/月(年付)|❌不支持|[telegram](https://t.me/qingyunticc)|
+|[TNT](#tnt)|[https://ermaozi01.tntvipaff.cc](https://ermaozi01.tntvipaff.cc/#/register?code=f1EyPwf3)|无|20元 110G/月|❌不支持|[telegram](https://t.me/TNTCloud2)|
 |[加速啦](#加速啦)|[https://jiasu.la/?r=39116](https://jiasu.la/?r=39116)| 1G 不限时 |10元 60G/月|✔支持|[telegram](https://t.me/jiasu_la)|
 |[冲上云霄](#冲上云霄)|[https://cpdd.one](https://cpdd.one/?r=32083)| 1天 1G |5元 80G/30天|✔支持|[telegram](https://t.me/vpnpn123)|
 |[九霄云](#九霄云)|[https://九九九.吉祥结.中国](https://xn--sjqaa.xn--9pr628ffxd.xn--fiqs8s/#/register?code=ZXzjv7oD)| 2天 6G |16.8元 80G/月|✔支持|[QQ群](https://qm.qq.com/q/EzY3dgKhIA)|
 |[掌中世界](#掌中世界)|[https://www.zzsjjsq.com](https://www.zzsjjsq.com/user/register?code=S74QiRGN)| 无 | 18元 100G/月|❌不支持|暂无|
 |[白羊星](#白羊星)|[https://baiyangxing.com](https://baiyangxing.com/#/register?code=gelkjfjz)| 7天 10G | 12元 100G/月|✔支持|暂无|
 |[Aladdin](#aladdin)|[https://www.avatargpt.xyz/](https://www.avatargpt.xyz/register?aff=RtNzblsTdt)|无|30元 390G/半年|❌不支持|暂无|
-|[TNT](#tnt)|[https://ermaozi01.tntvipaff.cc](https://ermaozi01.tntvipaff.cc/#/register?code=f1EyPwf3)|无|20元 110G/月|❌不支持|[telegram](https://t.me/TNTCloud2)|
 |[EF](#ef)|~~www.efcloud1.com~~|无|已跑路|❌不支持|已跑路|
 
 ## 简介
 
 ### ssone
 
-注册链接：[m.ssone.io](https://hello-ssone.com/register?aff=aBHsE1pF)
+官网地址：[m.ssone.io](https://hello-ssone.com/register?aff=aBHsE1pF)
 
 邀请码：aBHsE1pF
 
@@ -72,9 +73,25 @@ permalink: /posts/vpn/
 
 ---
 
+### 老头vpn
+
+老头vpn官网地址：[letusgolang.com](https://letusgolang.com/register?code=3OWtZ9Bi)
+
+邀请码：3OWtZ9Bi
+
+试用：1月 1G
+
+最便宜的订阅有15.5元 150G/月。
+
+老头VPN 从2016年开始运营，资历非常老，期间一直保持高质量服务。全球华人公认的老牌国际加速服务厂商 高达2Gbps的单线接入能力。
+
+支持微信支付宝。
+
+---
+
 ### flybit
 
-注册链接：[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)
+flybit官网地址：[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)
 
 邀请码：7h1NCdM7
 
@@ -88,7 +105,7 @@ permalink: /posts/vpn/
 
 ### xxyun
 
-注册链接：[https://www.xxyun.xyz](https://www.xxyun.xyz/123.html)
+xxyun官网地址：[https://www.xxyun.xyz](https://www.xxyun.xyz/123.html)
 
 邀请码：XQiZqbSr
 
@@ -112,7 +129,7 @@ xxyun加速特性如下：
 
 ### 纵云梯
 
-注册链接：[https://zongyunti.com/](https://zongyunti.com/?r=60147)
+纵云梯官网地址：[https://zongyunti.com/](https://zongyunti.com/?r=60147)
 
 邀请码：60147
 
@@ -126,7 +143,7 @@ xxyun加速特性如下：
 
 ### 百变小樱
 
-注册链接：[https://bbxy88.com](https://bbxy.xn--cesw6hd3s99f.com/auth/register?code=WuuD)
+百变小樱官网地址：[https://bbxy88.com](https://bbxy.xn--cesw6hd3s99f.com/auth/register?code=WuuD)
 
 试用：无
 
@@ -148,7 +165,7 @@ xxyun加速特性如下：
 
 ### 闪狐云
 
-注册链接：[flashfox.cc](https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv)
+闪狐云官网地址：[flashfox.cc](https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv)
 
 邀请码：NCO1w4Iv
 
@@ -173,7 +190,7 @@ xxyun加速特性如下：
 
 ### 龙猫云
 
-注册链接：[lmspeed.co](https://ermaozi01.lmvipaff03.cc/register?aff=aOkm2wPW)
+龙猫云官网地址：[lmspeed.co](https://ermaozi01.lmvipaff03.cc/register?aff=aOkm2wPW)
 
 邀请码：aOkm2wPW
 
@@ -193,7 +210,7 @@ xxyun加速特性如下：
 
 ### XSUS
 
-注册链接：[xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)
+XSUS官网地址：[xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)
 
 邀请码：xJFcT1Dw
 
@@ -205,7 +222,7 @@ xxyun加速特性如下：
 
 ### 大哥云
 
-注册链接：[ermao.dgywzc.com](https://ermao.dgywzc.com/#/register?code=peAVAa8D)
+大哥云官网地址：[ermao.dgywzc.com](https://ermao.dgywzc.com/#/register?code=peAVAa8D)
 
 邀请码：peAVAa8D
 
@@ -217,7 +234,7 @@ xxyun加速特性如下：
 
 ### 好鸭云
 
-注册链接：[my.niceduck.io](https://my.niceduck.io/register?code=QS0hzI2y)
+好鸭云官网地址：[my.niceduck.io](https://my.niceduck.io/register?code=QS0hzI2y)
 
 邀请码：QS0hzI2y
 
@@ -231,7 +248,7 @@ xxyun加速特性如下：
 
 ### Aladdin
 
-注册链接：[https://www.avatargpt.xyz/](https://www.avatargpt.xyz/register?aff=RtNzblsTdt)
+Aladdin官网地址：[https://www.avatargpt.xyz/](https://www.avatargpt.xyz/register?aff=RtNzblsTdt)
 
 邀请码：RtNzblsTdt
 
@@ -245,7 +262,7 @@ xxyun加速特性如下：
 
 ### TNT
 
-注册链接：[https://ermaozi01.tntvipaff.cc](https://ermaozi01.tntvipaff.cc/#/register?code=f1EyPwf3)
+TNT官网地址：[https://ermaozi01.tntvipaff.cc](https://ermaozi01.tntvipaff.cc/#/register?code=f1EyPwf3)
 
 邀请码：f1EyPwf3
 
@@ -263,7 +280,7 @@ xxyun加速特性如下：
 
 ### xxai
 
-注册链接：[xxai.uk](https://xx-ai.co?invite_code=K2TpsDcg)
+xxai官网地址：[xxai.uk](https://xx-ai.co?invite_code=K2TpsDcg)
 
 邀请码：K2TpsDcg
 
@@ -275,7 +292,7 @@ xxyun加速特性如下：
 
 ### 青云梯
 
-注册链接：[ermaozi01.qytvipaff.cc](https://ermaozi01.qytvipaff.cc/register?aff=W5ICDu2y)
+青云梯官网地址：[ermaozi01.qytvipaff.cc](https://ermaozi01.qytvipaff.cc/register?aff=W5ICDu2y)
 
 邀请码：W5ICDu2y
 
@@ -289,7 +306,7 @@ xxyun加速特性如下：
 
 ### 加速啦
 
-注册链接：[jiasu.la](https://jiasu.la/?r=39116)
+加速啦官网地址：[jiasu.la](https://jiasu.la/?r=39116)
 
 邀请码：39116
 
@@ -303,7 +320,7 @@ xxyun加速特性如下：
 
 ### 掌中世界
 
-注册链接：[zzsjjsq.com](https://www.zzsjjsq.com/user/register?code=S74QiRGN)
+掌中世界官网地址：[zzsjjsq.com](https://www.zzsjjsq.com/user/register?code=S74QiRGN)
 
 邀请码：S74QiRGN
 
@@ -317,7 +334,7 @@ xxyun加速特性如下：
 
 ### 白羊星
 
-注册链接：[baiyangxing.com](https://baiyangxing.com/#/register?code=gelkjfjz)
+白羊星官网地址：[baiyangxing.com](https://baiyangxing.com/#/register?code=gelkjfjz)
 
 邀请码：gelkjfjz
 
@@ -331,7 +348,7 @@ xxyun加速特性如下：
 
 ### 冲上云霄
 
-注册链接：[cpdd.one](https://cpdd.one/?r=32083)
+冲上云霄官网地址：[cpdd.one](https://cpdd.one/?r=32083)
 
 邀请码：32083
 
@@ -345,7 +362,7 @@ xxyun加速特性如下：
 
 ### 九霄云
 
-注册链接：[九九九.吉祥结.中国](https://xn--sjqaa.xn--9pr628ffxd.xn--fiqs8s/#/register?code=ZXzjv7oD)
+九霄云官网地址：[九九九.吉祥结.中国](https://xn--sjqaa.xn--9pr628ffxd.xn--fiqs8s/#/register?code=ZXzjv7oD)
 
 邀请码：ZXzjv7oD
 
@@ -363,7 +380,7 @@ xxyun加速特性如下：
 
 ### EF
 
-注册链接：~~https://www.efcloud1.com~~
+EF官网地址：~~https://www.efcloud1.com~~
 
 邀请码：kbbSUTvm
 

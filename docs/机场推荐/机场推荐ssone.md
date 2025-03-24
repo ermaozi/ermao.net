@@ -16,11 +16,11 @@ tags:
 
 ssone机场，10元 100G/月，高性价比、稳定可靠、便宜机场。
 
-注册地址：[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)
+ssone官网地址：[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)
 
 <!-- more -->
 
-## ssone 注册地址
+## ssone 官网地址
 
 [hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)
 

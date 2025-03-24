@@ -14,11 +14,11 @@ tags:
 
 xsus机场，最低 8元 168G/月。老牌机场、稳定可靠、高性价比。
 
-注册地址：[https://xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)
+xsus官网地址：[https://xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)
 
 <!-- more -->
 
-## XSUS 注册地址
+## XSUS 官网地址
 
 [https://xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)
 

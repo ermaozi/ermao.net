@@ -30,7 +30,7 @@ tags:
 
 你必须得有个微软账号，如果没有的话，你可以去注册一个。
 
-[注册地址](https://signup.live.com/)
+[官网地址](https://signup.live.com/)
 
 同时推荐在淘宝找人拼车买个 Microsoft 365，这会使你的 OneDrive 空间变成 1T。
 
