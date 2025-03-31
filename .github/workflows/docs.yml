@@ -33,6 +33,9 @@ jobs:
           # 缓存 pnpm 依赖
           cache: pnpm
 
+      - name: Ensure TypeScript is installed
+        run: pnpm add typescript -D
+
       # 运行构建脚本
       - name: Build VuePress site
         run: pnpm build
