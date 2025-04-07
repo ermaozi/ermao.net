@@ -37,8 +37,9 @@ permalink: /posts/vpn/
 |---|---|---|--|---|---|
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |10元 100G/月|✔支持|[telegram](https://t.me/flybitvip)|
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 100G/月|❌不支持|[telegram](https://t.me/+rYzRmCbJfIw3ZTM1)|
+|[老头vpn](#老头vpn)|[https://letusgolang.com](https://letusgolang.com/register?code=3OWtZ9Bi)| 1月1G | 10元 100G/月|❌不支持|[telegram](https://t.me/OldManVPN)|
+|[灯塔cloud](#灯塔cloud)|[https://dengta.com](https://dengta.xn--xhq8sm16c5ls.com/#/register?code=n4jB4z5R)| 无 |10元 100G/月|❌不支持|[telegram](https://t.me/+xBRgJGSBcNdlNWJl)|
 |[XSUS](#xsus)|[https://xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔支持|[telegram](https://t.me/xsusvpn)|
-|[老头vpn](#老头vpn)|[https://letusgolang.com](https://letusgolang.com/register?code=3OWtZ9Bi)| 1月1G | 15.5元 150G/月|❌不支持|[telegram](https://t.me/OldManVPN)|
 |[xxyun](#xxyun)|[https://www.xxyun.xyz](https://www.xxyun.xyz/123.html)| 1天10G |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
 |[青云梯](#青云梯)|[ermaozi01.qytvipaff.cc](https://ermaozi01.qytvipaff.cc/register?aff=W5ICDu2y)| 无 |8 元60g/月(年付)|❌不支持|[telegram](https://t.me/qingyunticc)|
 |[龙猫云](#龙猫云)|[lmspeed.co](https://ermaozi01.lmvipaff03.cc/register?aff=aOkm2wPW)| 无 |15元 100G/月|❌不支持|[telegram](https://t.me/totoro_clouds)|
@@ -124,6 +125,16 @@ xxyun加速特性如下：
 - 无设备和ip限制。
 - 500Mbps速率，晚高峰不限速
 - 专业人工客服，快速响应
+
+---
+
+### 灯塔cloud
+
+灯塔cloud官网地址：[https://dengta.com](https://dengta.xn--xhq8sm16c5ls.com/#/register?code=n4jB4z5R)
+
+最便宜的订阅有10元 100G/月(半年付)。
+
+灯塔cloud机场客服响应速度很快，态度非常好，节点质量也很棒。灯塔Cloud团队会定期更新节点列表，确保节点的稳定性和可用性。同时，节点会根据网络状况动态调整，提供最优的连接体验。
 
 ---
 
