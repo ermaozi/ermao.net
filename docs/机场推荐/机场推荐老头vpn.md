@@ -16,17 +16,17 @@ tags:
 
 老头VPN，15.5元 150G/月，公认老牌机场、稳定实惠。
 
-老头VPN官网地址：[https://letusgolang.com](https://letusgolang.com/register?code=3OWtZ9Bi)
+老头VPN官网地址：[https://www.chattous.net](https://www.chattous.net/register?code=3OWtZ9Bi)
 
 <!-- more -->
 
 ## 老头VPN官网地址
 
-[https://letusgolang.com](https://letusgolang.com/register?code=3OWtZ9Bi)
+[https://www.chattous.net](https://www.chattous.net/register?code=3OWtZ9Bi)
 
 ## 老头VPN机场简介
 
-[老头VPN](https://letusgolang.com/register?code=3OWtZ9Bi)最便宜的机场订阅有15.5元 150G/月。从2016年开始运营至今，扎实可靠。各大流媒体均已解锁。
+[老头VPN](https://www.chattous.net/register?code=3OWtZ9Bi)最便宜的机场订阅有15.5元 150G/月。从2016年开始运营至今，扎实可靠。各大流媒体均已解锁。
 
 客服响应很快也足够专业。
 
