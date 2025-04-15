@@ -17,7 +17,7 @@ tags:
 
 灯塔cloud官网地址：[https://dengta.com](https://dengta.xn--xhq8sm16c5ls.com/#/register?code=n4jB4z5R)
 
-灯塔cloud优惠码：`off95`，可享受95折优惠。
+灯塔cloud优惠码：`XF777`，可享受95折优惠。
 
 <!-- more -->
 
