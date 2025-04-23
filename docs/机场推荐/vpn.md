@@ -37,6 +37,7 @@ permalink: /posts/vpn/
 |---|---|---|--|---|---|
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |10元 100G/月|✔支持|[telegram](https://t.me/flybitvip)|
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 100G/月|❌不支持|[telegram](https://t.me/+rYzRmCbJfIw3ZTM1)|
+|[阿达西](#阿达西)|[https://adaxi.net](https://adaxi.net/?r=68917)| 无 |3元 20G/月|✔支持|暂无|
 |[老头vpn](#老头vpn)|[https://www.chattous.net](https://www.chattous.net/register?code=3OWtZ9Bi)| 1月1G | 10元 100G/月|❌不支持|[telegram](https://t.me/OldManVPN)|
 |[灯塔cloud](#灯塔cloud)|[https://dengta.com](https://dengta.xn--xhq8sm16c5ls.com/#/register?code=n4jB4z5R)| 无 |10元 100G/月|❌不支持|[telegram](https://t.me/+xBRgJGSBcNdlNWJl)|
 |[XSUS](#xsus)|[https://xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔支持|[telegram](https://t.me/xsusvpn)|
@@ -101,6 +102,22 @@ flybit官网地址：[goflybit.pages.dev](https://goflybit.pages.dev/#/register?
 最便宜的订阅有10元 100G/月。
 
 解锁主流流媒体和ChatGPT，IEPL接口线路和普通线路一样的价格，机场稳定，几乎全部节点全天候可用。购买之前记得领一下首页的优惠券再下单。
+
+---
+
+### 阿达西
+
+阿达西官网地址：[https://adaxi.net](https://adaxi.net/?r=68917)
+
+邀请码：68917
+
+试用：无
+
+最便宜的订阅有3元 20G/月。
+
+新出的轻量级机场，这是目前最便宜的机场！节点虽少但背靠大树好乘凉，速度和稳定性都不错。
+
+非常适合偶尔翻墙或是长时间浏览推特、Facebook等社交网站的同学。
 
 ---
 
