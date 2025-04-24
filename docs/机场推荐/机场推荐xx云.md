@@ -17,7 +17,7 @@ xx云加速超高性价比，节点质量高，客服实时在线，晚高峰不
 
 xxyun加速95折优惠码，只能使用一次：`xxyun.xyz`
 
-xx云加速官网地址：[https://www.xxyun.xyz](https://www.xxyun.xyz/123.html)
+xx云加速官网地址：[https://https://xxyun.de/XQiZqbSr.html](https://xxyun.de/XQiZqbSr.html)
 
 <!-- more -->
 
@@ -25,13 +25,13 @@ xx云加速官网地址：[https://www.xxyun.xyz](https://www.xxyun.xyz/123.html
 
 最便宜的订阅有8.89元 100G/月。
 
-[xx云加速](https://www.xxyun.xyz/123.html)95折优惠码，只能使用一次：`xxyun.xyz`
+[xx云加速](https://xxyun.de/XQiZqbSr.html)95折优惠码，只能使用一次：`xxyun.xyz`
 
 最便宜的订阅有8.89元 100G/月。
 
 超高性价比，节点质量高，客服实时在线，晚高峰不限速，不限制设备，对 Netflix、Disney+ 流媒体解锁服务也还不错，8k视频秒开。
 
-[xxyun加速](https://www.xxyun.xyz/123.html)特性如下：
+[xxyun加速](https://xxyun.de/XQiZqbSr.html)特性如下：
 
 - SS协议中转机场，多隧道入口机场
 - 解锁全球流媒体、AI工具。
