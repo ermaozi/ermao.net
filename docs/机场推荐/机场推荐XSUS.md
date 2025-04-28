@@ -1,5 +1,5 @@
 ---
-title: ✈️机场推荐【XSUS】 - 高性价比、老牌机场
+title: ✈️机场推荐【XSUS】 - 跑路预警
 createTime: 2025/04/01 07:11:45
 permalink: /article/bc6o8acd/
 tags:
@@ -12,23 +12,27 @@ tags:
   - XSUS
 ---
 
-xsus机场，最低 8元 168G/月。老牌机场、稳定可靠、高性价比。
+xsus官网地址：~~https://xs-us.xyz~~
 
-xsus官网地址：[https://xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)
+::: warning
+2025年4月28日 XSUS 已触发跑路预警，不建议使用XSUS机场。
+:::
 
 <!-- more -->
 
 ## XSUS 官网地址
 
-[https://xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)
+~~https://xs-us.xyz~~
+
+2025年4月28日 XSUS 已触发[跑路预警](https://www.ermao.net/article/mwk3l9oq/)，不建议使用XSUS机场。
 
 ## XSUS 机场简介
 
-最便宜的订阅有8元 168G/月。
+~~最便宜的订阅有8元 168G/月。~~
 
-XSUS 机场是一家老牌机场，价格实惠，节点较多，节点质量也非常高，速度快，支持 Netflix、ChatGPT。
+~~XSUS 机场是一家老牌机场，价格实惠，节点较多，节点质量也非常高，速度快，支持 Netflix、ChatGPT。~~
 
-客服响应及时，强烈推荐这个机场。
+~~客服响应及时，强烈推荐这个机场。~~
 
 ![XSUS 机场价格](images/机场推荐XSUS/image.png)
 
