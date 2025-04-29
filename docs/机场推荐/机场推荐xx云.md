@@ -17,7 +17,7 @@ xx云加速超高性价比，节点质量高，客服实时在线，晚高峰不
 
 xxyun加速95折优惠码，只能使用一次：`xxyun.xyz`
 
-xx云加速官网地址：[https://https://xxyun.de/XQiZqbSr.html](https://xxyun.de/XQiZqbSr.html)
+xx云加速官网地址：[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)
 
 <!-- more -->
 

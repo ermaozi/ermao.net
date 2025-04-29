@@ -40,7 +40,7 @@ permalink: /posts/vpn/
 |[阿达西](#阿达西)|[https://adaxi.net](https://adaxi.net/?r=68917)| 无 |3元 20G/月|✔支持|暂无|
 |[老头vpn](#老头vpn)|[https://www.chattous.net](https://www.chattous.net/register?code=3OWtZ9Bi)| 1月1G | 10元 100G/月|❌不支持|[telegram](https://t.me/OldManVPN)|
 |[灯塔cloud](#灯塔cloud)|[https://dengta.com](https://dengta.xn--xhq8sm16c5ls.com/#/register?code=n4jB4z5R)| 无 |10元 100G/月|❌不支持|[telegram](https://t.me/+xBRgJGSBcNdlNWJl)|
-|[xxyun](#xxyun)|[https://https://xxyun.de/XQiZqbSr.html](https://xxyun.de/XQiZqbSr.html)| 1天10G |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
+|[xxyun](#xxyun)|[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)| 1天10G |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
 |[青云梯](#青云梯)|[ermaozi01.qytvipaff.cc](https://ermaozi01.qytvipaff.cc/register?aff=W5ICDu2y)| 无 |8 元60g/月(年付)|❌不支持|[telegram](https://t.me/qingyunticc)|
 |[龙猫云](#龙猫云)|[lmspeed.co](https://ermaozi01.lmvipaff03.cc/register?aff=aOkm2wPW)| 无 |15元 100G/月|❌不支持|[telegram](https://t.me/totoro_clouds)|
 |[纵云梯](#纵云梯)|[https://zongyunti.com/](https://zongyunti.com/?r=60147)| 1G 不限时| 10元 60G/30天|❌不支持|暂无|
@@ -123,7 +123,7 @@ flybit官网地址：[goflybit.pages.dev](https://goflybit.pages.dev/#/register?
 
 ### xxyun
 
-xxyun官网地址：[https://https://xxyun.de/XQiZqbSr.html](https://xxyun.de/XQiZqbSr.html)
+xxyun官网地址：[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)
 
 邀请码：XQiZqbSr
 
