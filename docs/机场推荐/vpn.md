@@ -55,9 +55,10 @@ permalink: /posts/vpn/
 |[九霄云](#九霄云)|[https://九九九.吉祥结.中国](https://shop.starpro.one/#/register?code=ZXzjv7oD)| 2天 6G |16.8元 80G/月|✔支持|[QQ群](https://qm.qq.com/q/EzY3dgKhIA)|
 |[掌中世界](#掌中世界)|[https://www.zzsjjsq.com](https://www.zzsjjsq.com/user/register?code=S74QiRGN)| 无 | 18元 100G/月|❌不支持|暂无|
 |[白羊星](#白羊星)|[https://baiyangxing.com](https://baiyangxing.com/#/register?code=gelkjfjz)| 7天 10G | 12元 100G/月|✔支持|暂无|
+|[XSUS](#xsus)|[https://xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔支持|[telegram](https://t.me/xsusvpn)|
 |[Aladdin](#aladdin)|[https://www.avatargpt.xyz/](https://www.avatargpt.xyz/register?aff=RtNzblsTdt)|无|30元 390G/半年|❌不支持|暂无|
 |[EF](#ef)|~~www.efcloud1.com~~|无|已跑路|❌不支持|已跑路|
-|[XSUS](#xsus)|~~https://xs-us.xyz~~| 无 |[跑路预警](https://www.ermao.net/article/mwk3l9oq/)|✔支持|[跑路预警](https://www.ermao.net/article/mwk3l9oq/)|
+
 
 ## 简介
 
@@ -392,6 +393,19 @@ xxai官网地址：[xxai.uk](https://xx-ai.co?invite_code=K2TpsDcg)
 
 同时性价比高，支持支付宝、微信支付。
 
+
+---
+
+### XSUS
+
+XSUS官网地址：[xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)
+
+邀请码：xJFcT1Dw
+
+试用：无
+
+最便宜的订阅有8元 168G/30天。稳定运行2年+，节点质量高，支持按流量购买，支持支付宝、微信、USDT支付。
+
 ---
 
 ### EF
@@ -403,13 +417,3 @@ EF官网地址：~~https://www.efcloud1.com~~
 试用：无
 
 2025年1月份，EF 机场确认跑路，官网可以访问，订阅无法使用。
-
----
-
-### XSUS
-
-XSUS机场[跑路预警](https://www.ermao.net/article/mwk3l9oq/)！
-
-XSUS官网经常无法访问，客服长时间不回复消息，telegram公告频道长时间无消息。
-
-已是高危表现！**请立即停止续费！**
