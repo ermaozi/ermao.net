@@ -39,11 +39,11 @@ permalink: /posts/vpn/
 |[纵云梯](#纵云梯)|[https://zongyunti.com/](https://zongyunti.com/?r=60147)| 1G 不限时| 10元 60G/30天|❌不支持|暂无|
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔支持|[telegram](https://t.me/flybitvip)|
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 60G/月|❌不支持|[telegram](https://t.me/+rYzRmCbJfIw3ZTM1)|
-|[阿达西](#阿达西)|[https://adaxi.net](https://adaxi.net/?r=68917)| 无 |3元 20G/月|✔支持|暂无|
+|[xxyun](#xxyun)|[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)| 1天10G |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
 |[闪狐云](#闪狐云)|[flashfox.cc](https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv)| 无 |20元 120G/月|❌不支持|[telegram](https://t.me/flashfoxcloud)|
 |[老头vpn](#老头vpn)|[https://www.chattous.net](https://www.chattous.net/register?code=3OWtZ9Bi)| 1月1G | 10元 100G/月|❌不支持|[telegram](https://t.me/OldManVPN)|
 |[灯塔cloud](#灯塔cloud)|[https://dengta.com](https://dengta.xn--xhq8sm16c5ls.com/#/register?code=n4jB4z5R)| 无 |10元 100G/月|❌不支持|[telegram](https://t.me/+xBRgJGSBcNdlNWJl)|
-|[xxyun](#xxyun)|[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)| 1天10G |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
+|[阿达西](#阿达西)|[https://adaxi.net](https://adaxi.net/?r=68917)| 无 |3元 20G/月|✔支持|暂无|
 |[奈云](#奈云)|[www.v2ny.me](https://www.v2ny.me?path=register&code=FNAu1FWB)|无|10.6元 168G/月(年付)|✔支持|[telegram](https://t.me/v2naiun)|
 |[青云梯](#青云梯)|[ermaozi01.qytvipaff.cc](https://ermaozi01.qytvipaff.cc/register?aff=W5ICDu2y)| 无 |8 元60g/月(年付)|❌不支持|[telegram](https://t.me/qingyunticc)|
 |[龙猫云](#龙猫云)|[lmspeed.co](https://ermaozi01.lmvipaff03.cc/register?aff=aOkm2wPW)| 无 |15元 100G/月|❌不支持|[telegram](https://t.me/totoro_clouds)|
