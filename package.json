@@ -19,6 +19,6 @@
   "dependencies": {
     "@vuepress/client": "^2.0.0-rc.20",
     "ermao.net": "file:",
-    "vue": "^3.4.38"
+    "vue": "^3.5.16"
   }
 }
