@@ -13,7 +13,7 @@ tags:
 
 目前 telegram 开放了部分 +86 手机号注册，一些没有境外手机号的同学可以尝试注册了。但是 telegram 资源十分丰富，我们该如何在 telegram 中进行搜索呢？
 
-这边文章教大家如何使用[极搜](https://t.me/jisou?start=a_1481769275)在 telegram 中进行搜索。
+这边文章教大家如何使用[极搜](https://t.me/jisou?start=a_1453425105)在 telegram 中进行搜索。
 
 <!-- more -->
 
@@ -39,7 +39,7 @@ tags:
 
 ## 使用极搜搜索 telegram 资源
 
-注册完成后，直接点击这个连接：[telegram极搜搜索](https://t.me/jisou?start=a_1481769275)
+注册完成后，直接点击这个连接：[telegram极搜搜索](https://t.me/jisou?start=a_1453425105)
 
 ![alt text](images/telegram如何搜索/image.png)
 
