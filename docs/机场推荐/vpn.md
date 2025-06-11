@@ -54,7 +54,7 @@ permalink: /posts/vpn/
 |[TNT](#tnt)|[https://ermaozi01.tntvipaff.cc](https://ermaozi01.tntvipaff.cc/#/register?code=f1EyPwf3)|无|10元60g/月(季付)|❌不支持|[telegram](https://t.me/TNTCloud2)|
 |[加速啦](#加速啦)|[https://jiasu.la/?r=39116](https://jiasu.la/?r=39116)| 1G 不限时 |10元 80G/月|✔支持|[telegram](https://t.me/jiasu_la)|
 |[冲上云霄](#冲上云霄)|[https://cpdd.one](https://cpdd.one/?r=32083)| 1天 1G |5元 80G/30天|✔支持|[telegram](https://t.me/vpnpn123)|
-|[九霄云](#九霄云)|[https://九九九.吉祥结.中国](https://shop.starpro.one/#/register?code=ZXzjv7oD)| 2天 6G |16.8元 80G/月|✔支持|[QQ群](https://qm.qq.com/q/EzY3dgKhIA)|
+|[九霄云](#九霄云)|[https://shop.starpro.one](https://shop.starpro.one/#/register?code=ZXzjv7oD)| 2天 6G |15元 200G/月|✔支持|[QQ群](https://qm.qq.com/q/EzY3dgKhIA)|
 |[掌中世界](#掌中世界)|[https://www.zzsjjsq.com](https://www.zzsjjsq.com/user/register?code=S74QiRGN)| 无 | 18元 100G/月|❌不支持|暂无|
 |[白羊星](#白羊星)|[https://baiyangxing.com](https://baiyangxing.com/#/register?code=gelkjfjz)| 7天 10G | 12元 100G/月|✔支持|暂无|
 |[XSUS](#xsus)|[https://xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔支持|[telegram](https://t.me/xsusvpn)|
@@ -170,6 +170,15 @@ xxyun加速特性如下：
 
 奈云机场是绝对的老牌机场，已稳定运营6年以上未出现过负面评价，节点数量非常多，足以满足大部分用户的需求。支持支付宝、微信支付。
 
+| 套餐 | 价格 | 流量 | 购买地址 |
+| --- | --- | --- | --- |
+| Basic-基础套餐(特惠) | ¥128.00/每年 | 168G/月 | [点击购买](https://www.v2ny.me?path=register&code=FNAu1FWB) |
+| Pro-进阶套餐 | ¥28.00 /每月 | 388GB/月 | [点击购买](https://www.v2ny.me?path=register&code=FNAu1FWB) |
+| Max-专业套餐 | ¥49.00 /每月 | 788GB/月 | [点击购买](https://www.v2ny.me?path=register&code=FNAu1FWB) |
+| 280G [按量计费] | ¥98.00 /一次性 | 280GB/不限时 | [点击购买](https://www.v2ny.me?path=register&code=FNAu1FWB) |
+| 680G [按量计费] | ¥218.00 /一次性 | 680GGB/不限时 | [点击购买](https://www.v2ny.me?path=register&code=FNAu1FWB) |
+| 2048G [按量计费] | ¥498.00 /一次性 | 2048GGB/不限时 | [点击购买](https://www.v2ny.me?path=register&code=FNAu1FWB) |
+
 ---
 
 ### okanc
@@ -183,6 +192,12 @@ okanc官网地址：[okanc.com](https://www.okanc.com/index.php#/register?code=3
 最便宜的订阅有46元 328G/月。
 
 okanc机场是一个新机场，但是与奈云同宗同源，有奈云的技术积累以及信誉保障，可以放心购买。节点主打高质量，速度快，延迟低。只是价格偏贵，适合电商、游戏等高需求用户。
+
+|套餐|价格|流量|购买地址|
+|---|---|---|---|
+|Pro版|46元/月|328GB/月|[点击购买](https://www.okanc.com/index.php#/register?code=3YK7Np6R)|
+|Max版|50元/月|600GB/月|[点击购买](https://www.okanc.com/index.php#/register?code=3YK7Np6R)|
+|MAX+极致版|88元/月|1024GB/月|[点击购买](https://www.okanc.com/index.php#/register?code=3YK7Np6R)|
 
 ---
 
@@ -409,7 +424,7 @@ xxai官网地址：[xxai.uk](https://xx-ai.co?invite_code=K2TpsDcg)
 
 ### 九霄云
 
-九霄云官网地址：[九九九.吉祥结.中国](https://shop.starpro.one/#/register?code=ZXzjv7oD)
+九霄云官网地址：[https://shop.starpro.one](https://shop.starpro.one/#/register?code=ZXzjv7oD)
 
 邀请码：ZXzjv7oD
 
@@ -417,12 +432,19 @@ xxai官网地址：[xxai.uk](https://xx-ai.co?invite_code=K2TpsDcg)
 
 试用：8G 2天
 
-最便宜的订阅有16.8元 80G/月。
+最便宜的订阅有15元 200G/月。
 
 服务好，回购率高，基本上是5分钟以内客服就回复了.
 
 同时性价比高，支持支付宝、微信支付。
 
+| 套餐 | 价格 | 流量 | 购买地址 |
+| --- | --- | --- | --- |
+|基础版|¥15.00 /每月|200GB| [点击购买](https://shop.starpro.one/#/register?code=ZXzjv7oD) |
+|流量放心用|¥99.00 /一次性|1000GB| [点击购买](https://shop.starpro.one/#/register?code=ZXzjv7oD) |
+|标准版|¥35.00 /每月|600GB| [点击购买](https://shop.starpro.one/#/register?code=ZXzjv7oD) |
+|顶配版|¥60.00 /每月|1500GB| [点击购买](https://shop.starpro.one/#/register?code=ZXzjv7oD) |
+|海外项目线路|¥680.00 /每月|10TB| [点击购买](https://shop.starpro.one/#/register?code=ZXzjv7oD) |
 
 ---
 
