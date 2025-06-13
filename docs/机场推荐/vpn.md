@@ -1,5 +1,5 @@
 ---
-createTime: 2025/06/01 01:00:00
+createTime: 2025/06/13 01:00:00
 sticky: 100
 tags:
   - 科学上网
@@ -42,7 +42,7 @@ permalink: /posts/vpn/
 |[xxyun](#xxyun)|[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)| 1天10G |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
 |[闪狐云](#闪狐云)|[flashfox.cc](https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv)| 无 |20元 120G/月|❌不支持|[telegram](https://t.me/flashfoxcloud)|
 |[老头vpn](#老头vpn)|[https://www.chattous.net](https://www.chattous.net/register?code=3OWtZ9Bi)| 1月1G | 10元 100G/月|❌不支持|[telegram](https://t.me/OldManVPN)|
-|[灯塔cloud](#灯塔cloud)|[https://dengta.com](https://dengta.xn--xhq8sm16c5ls.com/#/register?code=n4jB4z5R)| 无 |10元 100G/月|❌不支持|[telegram](https://t.me/+xBRgJGSBcNdlNWJl)|
+|[灯塔cloud](#灯塔cloud)|[https://dengtacloud.com](https://dengta.xn--xhq8sm16c5ls.com/#/register?code=n4jB4z5R)| 无 |10元 100G/月|❌不支持|[telegram](https://t.me/+xBRgJGSBcNdlNWJl)|
 |[阿达西](#阿达西)|[https://adaxi.net](https://adaxi.net/?r=68917)| 无 |3元 20G/月|✔支持|暂无|
 |[奈云](#奈云)|[www.v2ny.me](https://www.v2ny.me?path=register&code=FNAu1FWB)|无|10.6元 168G/月(年付)|✔支持|[telegram](https://t.me/v2naiun)|
 |[青云梯](#青云梯)|[ermaozi01.qytvipaff.cc](https://ermaozi01.qytvipaff.cc/register?aff=W5ICDu2y)| 无 |8 元60g/月(年付)|❌不支持|[telegram](https://t.me/qingyunticc)|
@@ -150,9 +150,16 @@ xxyun加速特性如下：
 
 ### 灯塔cloud
 
-灯塔cloud官网地址：[https://dengta.com](https://dengta.xn--xhq8sm16c5ls.com/#/register?code=n4jB4z5R)
+灯塔cloud官网地址：[https://dengtacloud.com](https://dengta.xn--xhq8sm16c5ls.com/#/register?code=n4jB4z5R)
 
-最便宜的订阅有10元 100G/月(半年付)。
+最便宜的订阅有11.6元 100G/月(半年付)。
+
+| 套餐 | 价格 | 流量 | 购买地址 |
+| --- | --- | --- | --- |
+| 标准版 | ¥70.00/6个月 | 100GB/月 | [点击购买](https://dengta.xn--xhq8sm16c5ls.com/#/register?code=n4jB4z5R) |
+| 个人套餐(三个月) | ¥89.00/三个月 | 600GB/月 | [点击购买](https://dengta.xn--xhq8sm16c5ls.com/#/register?code=n4jB4z5R) |
+| 个人套餐(六个月) | ¥155.00/六个月 | 600GB/月 | [点击购买](https://dengta.xn--xhq8sm16c5ls.com/#/register?code=n4jB4z5R) |
+| 个人套餐(一年) | ¥279.00/一年 | 600GB/月 | [点击购买](https://dengta.xn--xhq8sm16c5ls.com/#/register?code=n4jB4z5R) |
 
 灯塔cloud机场客服响应速度很快，态度非常好，节点质量也很棒。灯塔Cloud团队会定期更新节点列表，确保节点的稳定性和可用性。同时，节点会根据网络状况动态调整，提供最优的连接体验。
 
