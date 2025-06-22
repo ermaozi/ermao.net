@@ -39,6 +39,7 @@ permalink: /posts/vpn/
 |[纵云梯](#纵云梯)|[https://zongyunti.com/](https://zongyunti.com/?r=60147)| 1G 不限时| 10元 60G/30天|❌不支持|暂无|
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔支持|[telegram](https://t.me/flybitvip)|
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 60G/月|❌不支持|[telegram](https://t.me/+rYzRmCbJfIw3ZTM1)|
+|[CyberGuard](#cyberguard)|[cyberguard.best](https://www.cyberguard.best/#/register?code=yoyUW3R9)| 无 |18元 100G/月|✔支持|[telegram](https://t.me/CyberGuardChat)|
 |[xxyun](#xxyun)|[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)| 1天10G |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
 |[闪狐云](#闪狐云)|[flashfox.cc](https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv)| 无 |20元 120G/月|❌不支持|[telegram](https://t.me/flashfoxcloud)|
 |[老头vpn](#老头vpn)|[https://www.chattous.net](https://www.chattous.net/register?code=3OWtZ9Bi)| 1月1G | 10元 100G/月|❌不支持|[telegram](https://t.me/OldManVPN)|
@@ -55,7 +56,7 @@ permalink: /posts/vpn/
 |[加速啦](#加速啦)|[https://jiasu.la/?r=39116](https://jiasu.la/?r=39116)| 1G 不限时 |10元 80G/月|✔支持|[telegram](https://t.me/jiasu_la)|
 |[冲上云霄](#冲上云霄)|[https://cpdd.one](https://cpdd.one/?r=32083)| 1天 1G |5元 80G/30天|✔支持|[telegram](https://t.me/vpnpn123)|
 |[九霄云](#九霄云)|[https://shop.starpro.one](https://shop.starpro.one/#/register?code=ZXzjv7oD)| 2天 6G |15元 200G/月|✔支持|[QQ群](https://qm.qq.com/q/EzY3dgKhIA)|
-|[掌中世界](#掌中世界)|[https://www.zzsjjsq.com](https://www.zzsjjsq.com/user/register?code=S74QiRGN)| 无 | 18元 100G/月|❌不支持|暂无|
+|[掌中世界](#掌中世界)|[https://www.zzsj3.com](https://www.zzsj3.com/user/register?code=S74QiRGN)| 无 | 18元 100G/月|❌不支持|暂无|
 |[白羊星](#白羊星)|[https://baiyangxing.com](https://baiyangxing.com/#/register?code=gelkjfjz)| 7天 10G | 12元 100G/月|✔支持|暂无|
 |[XSUS](#xsus)|[https://xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔支持|[telegram](https://t.me/xsusvpn)|
 |[Aladdin](#aladdin)|[https://www.avatargpt.xyz/](https://www.avatargpt.xyz/register?aff=RtNzblsTdt)|无|30元 390G/半年|❌不支持|暂无|
@@ -75,6 +76,29 @@ permalink: /posts/vpn/
 最便宜的订阅有10元 60G/月。
 
 这家机场是我自己用的，一分钱一分货，节点较多，速度非常快，节点支持 Netflix。适合有一定需求的同学。
+
+---
+
+### cyberguard
+
+CyberGuard官网地址：[cyberguard.best](https://www.cyberguard.best/#/register?code=yoyUW3R9)
+
+最便宜订阅：18元 100G/月。
+
+| 套餐 | 价格 | 流量 | 备注 | 购买地址 |
+| --- | --- | --- | --- | --- |
+| 轻量套餐 | ¥18.00 /每月 | 100GB/月 | 月付、半年、一年、三年 | [点击购买](https://www.cyberguard.best/#/register?code=yoyUW3R9) |
+| 标准套餐 | ¥28.00 /每月 | 300GB/月 | 月付、季度、一年、三年 | [点击购买](https://www.cyberguard.best/#/register?code=yoyUW3R9) |
+| 高速套餐 | ¥50.00 /每月 | 600GB/月 | 月付、季度、半年、一年、两年 | [点击购买](https://www.cyberguard.best/#/register?code=yoyUW3R9) |
+| 200G不限时 | ¥79.00 /一次性 | 200GB/不限时 | 一次性 | [点击购买](https://www.cyberguard.best/#/register?code=yoyUW3R9) |
+| 700G不限时 | ¥188.00 /一次性 | 700GB/不限时 | 一次性 | [点击购买](https://www.cyberguard.best/#/register?code=yoyUW3R9) |
+| 企业套餐 | ¥200.00 /每月 | 2TB/月 | 月付、季度、半年 | [点击购买](https://www.cyberguard.best/#/register?code=yoyUW3R9) |
+
+CyberGuard主要提供安全网络访问解决方案。由网络安全专家团队创立，总部位于北美，专为亚太地区用户优化设计。
+
+经过5年技术打磨，该服务致力于保障用户数据安全并提供顺畅网络体验。其创新技术架构帮助用户保护隐私的同时，确保稳定访问各类网络资源。
+
+适合需要数据安全保障和流畅网络体验的各类用户使用
 
 ---
 
@@ -389,7 +413,7 @@ xxai官网地址：[xxai.uk](https://xx-ai.co?invite_code=K2TpsDcg)
 
 ### 掌中世界
 
-掌中世界官网地址：[zzsjjsq.com](https://www.zzsjjsq.com/user/register?code=S74QiRGN)
+掌中世界官网地址：[zzsjjsq.com](https://www.zzsj3.com/user/register?code=S74QiRGN)
 
 邀请码：S74QiRGN
 
