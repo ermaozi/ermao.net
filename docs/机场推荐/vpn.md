@@ -1,5 +1,5 @@
 ---
-createTime: 2025/06/13 01:00:00
+createTime: 2025/07/04 01:00:00
 sticky: 100
 tags:
   - 科学上网
@@ -35,28 +35,29 @@ permalink: /posts/vpn/
 
 |机场名称|地址|试用|最便宜订阅|按流量购买|群|
 |---|---|---|--|---|---|
-|[okanc](#okanc)|[okanc.com](https://www.okanc.com/index.php#/register?code=3YK7Np6R)| 无 |46元 328G/月|❌不支持|[telegram](https://t.me/okancup)|
-|[纵云梯](#纵云梯)|[https://zongyunti.com/](https://zongyunti.com/?r=60147)| 1G 不限时| 10元 60G/30天|❌不支持|暂无|
-|[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔支持|[telegram](https://t.me/flybitvip)|
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 60G/月|❌不支持|[telegram](https://t.me/+rYzRmCbJfIw3ZTM1)|
+|[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔支持|[telegram](https://t.me/flybitvip)|
 |[CyberGuard](#cyberguard)|[cyberguard.best](https://www.cyberguard.best/#/register?code=yoyUW3R9)| 无 |18元 100G/月|✔支持|[telegram](https://t.me/CyberGuardChat)|
 |[xxyun](#xxyun)|[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)| 1天10G |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
-|[闪狐云](#闪狐云)|[flashfox.cc](https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv)| 无 |20元 120G/月|❌不支持|[telegram](https://t.me/flashfoxcloud)|
+|[99吧](#_99bar)|[99vpn.bar](https://99vpn.bar/#/register?code=qzpkbzHF)| 1天 1G |9.9元 99G/月|✔支持|[telegram](https://t.me/jiujiuchat)|
+|[TNT](#tnt)|[https://ermaozi01.tntvipaff.cc](https://ermaozi01.tntvipaff.cc/#/register?code=f1EyPwf3)|无|10元60g/月(季付)|❌不支持|[telegram](https://t.me/TNTCloud2)|
+|[纵云梯](#纵云梯)|[https://zongyunti.com/](https://zongyunti.com/?r=60147)| 1G 不限时| 10元 60G/30天|❌不支持|暂无|
 |[老头vpn](#老头vpn)|[https://www.chattous.net](https://www.chattous.net/register?code=3OWtZ9Bi)| 1月1G | 10元 100G/月|❌不支持|[telegram](https://t.me/OldManVPN)|
-|[灯塔cloud](#灯塔cloud)|[https://dengtacloud.com](https://dengta.xn--xhq8sm16c5ls.com/#/register?code=n4jB4z5R)| 无 |10元 100G/月|❌不支持|[telegram](https://t.me/+xBRgJGSBcNdlNWJl)|
+|[青云梯](#青云梯)|[ermaozi01.qytvipaff.cc](https://ermaozi01.qytvipaff.cc/register?aff=W5ICDu2y)| 无 |8 元60g/月(年付)|❌不支持|[telegram](https://t.me/qingyunticc)|
 |[阿达西](#阿达西)|[https://adaxi.net](https://adaxi.net/?r=68917)| 无 |3元 20G/月|✔支持|暂无|
 |[奈云](#奈云)|[www.v2ny.me](https://www.v2ny.me?path=register&code=FNAu1FWB)|无|10.6元 168G/月(年付)|✔支持|[telegram](https://t.me/v2naiun)|
-|[青云梯](#青云梯)|[ermaozi01.qytvipaff.cc](https://ermaozi01.qytvipaff.cc/register?aff=W5ICDu2y)| 无 |8 元60g/月(年付)|❌不支持|[telegram](https://t.me/qingyunticc)|
+|[okanc](#okanc)|[okanc.com](https://www.okanc.com/index.php#/register?code=3YK7Np6R)| 无 |46元 328G/月|❌不支持|[telegram](https://t.me/okancup)|
 |[龙猫云](#龙猫云)|[lmspeed.co](https://ermaozi01.lmvipaff03.cc/register?aff=aOkm2wPW)| 无 |15元 100G/月|❌不支持|[telegram](https://t.me/totoro_clouds)|
+|[闪狐云](#闪狐云)|[flashfox.cc](https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv)| 无 |20元 120G/月|❌不支持|[telegram](https://t.me/flashfoxcloud)|
+|[灯塔cloud](#灯塔cloud)|[https://dengtacloud.com](https://dengta.xn--xhq8sm16c5ls.com/#/register?code=n4jB4z5R)| 无 |10元 100G/月|❌不支持|[telegram](https://t.me/+xBRgJGSBcNdlNWJl)|
 |[百变小樱](#百变小樱)|[https://bbxy88.com](https://bbxy.xn--cesw6hd3s99f.com/auth/register?code=WuuD)| 无 | 15元 100G/30天|❌不支持|[telegram](https://t.me/+IugiUXlyYqgyNjE0)|
 |[大哥云](#大哥云)|[ermao.dgywzc.com](https://ermao.dgywzc.com/#/register?code=peAVAa8D)| 无 |19.9元 100G/月|❌不支持|[telegram](https://t.me/dageyun)|
 |[好鸭云](#好鸭云)|[my.niceduck.io](https://my.niceduck.io/register?code=QS0hzI2y)| 无 |12元 100G/月|❌不支持|[telegram](https://t.me/niceduck_group)|
 |[xxai](#xxai)|[xxai.uk](https://xx-ai.co?invite_code=K2TpsDcg)| 无 |16.9元 100G/月|✔支持|[telegram](https://t.me/xxai_official)|
-|[TNT](#tnt)|[https://ermaozi01.tntvipaff.cc](https://ermaozi01.tntvipaff.cc/#/register?code=f1EyPwf3)|无|10元60g/月(季付)|❌不支持|[telegram](https://t.me/TNTCloud2)|
 |[加速啦](#加速啦)|[https://jiasu.la/?r=39116](https://jiasu.la/?r=39116)| 1G 不限时 |10元 80G/月|✔支持|[telegram](https://t.me/jiasu_la)|
 |[冲上云霄](#冲上云霄)|[https://cpdd.one](https://cpdd.one/?r=32083)| 1天 1G |5元 80G/30天|✔支持|[telegram](https://t.me/vpnpn123)|
 |[九霄云](#九霄云)|[https://shop.starpro.one](https://shop.starpro.one/#/register?code=ZXzjv7oD)| 2天 6G |15元 200G/月|✔支持|[QQ群](https://qm.qq.com/q/EzY3dgKhIA)|
-|[掌中世界](#掌中世界)|[https://www.zzsj3.com](https://www.zzsj3.com/user/register?code=S74QiRGN)| 无 | 18元 100G/月|❌不支持|暂无|
+|[掌中世界](#掌中世界)|[https://www.zjs2025.com](https://www.zjs2025.com/user/register?code=S74QiRGN)| 无 | 18元 100G/月|❌不支持|暂无|
 |[白羊星](#白羊星)|[https://baiyangxing.com](https://baiyangxing.com/#/register?code=gelkjfjz)| 7天 10G | 12元 100G/月|✔支持|暂无|
 |[XSUS](#xsus)|[https://xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔支持|[telegram](https://t.me/xsusvpn)|
 |[Aladdin](#aladdin)|[https://www.avatargpt.xyz/](https://www.avatargpt.xyz/register?aff=RtNzblsTdt)|无|30元 390G/半年|❌不支持|暂无|
@@ -169,6 +170,33 @@ xxyun加速特性如下：
 - 无设备和ip限制。
 - 500Mbps速率，晚高峰不限速
 - 专业人工客服，快速响应
+
+---
+
+### 99bar
+
+99吧官网地址：[99vpn.bar](https://99vpn.bar/#/register?code=qzpkbzHF)
+
+试用：1天 1G
+
+最便宜的订阅有9.9元 99G/月。
+
+成立时间：2024.8.23
+翻墙协议：Shadowsocks
+入口：深港IEPL专线 + 广东移动中转
+过境：IEPL ；公网中转
+落地：快车道、BageVM、Lain、Akari、Misaka、等
+解锁支持： Netflix、Disney+、TikTok、ChatGPT
+
+备注：无设备数量限制，多端配置同步，全网所有节点​​1倍率扣流。
+
+| 套餐 | 价格 | 流量 | 购买地址 |
+| --- | --- | --- | --- |
+| 星耀VIP | ¥9.9/一个月 | 99GB/月 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 铂金VIP | ¥19.9/一个月 | 199GB/月 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 钻石VIP | ¥29.9/一个月 | 299GB/月 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 皇冠SVIP | ¥99.99/一次性 | 666GB/不限时 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 尊耀SVIP | ¥199.99/一次性 | 1399GB/不限时 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
 
 ---
 
@@ -413,7 +441,7 @@ xxai官网地址：[xxai.uk](https://xx-ai.co?invite_code=K2TpsDcg)
 
 ### 掌中世界
 
-掌中世界官网地址：[zzsjjsq.com](https://www.zzsj3.com/user/register?code=S74QiRGN)
+掌中世界官网地址：[zzsjjsq.com](https://www.zjs2025.com/user/register?code=S74QiRGN)
 
 邀请码：S74QiRGN
 
