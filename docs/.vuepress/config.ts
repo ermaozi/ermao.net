@@ -47,9 +47,9 @@ export default defineUserConfig({
         category: 'Announcements',
         categoryId: 'DIC_kwDOL4rZSc4CiGyu',
       },
-      shiki: {
-        languages: ["python", "shell", "bash", "nginx", "javascript"]
-      }
+    },
+    markdown: {
+      collapse: true,
     }
   }),
   bundler: viteBundler({
