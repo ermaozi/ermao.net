@@ -23,6 +23,7 @@
 |[xxyun](#xxyun)|[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)| 1天10G |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
 |[99吧](#_99bar)|[99vpn.bar](https://99vpn.bar/#/register?code=qzpkbzHF)| 1天 1G |9.9元 99G/月|✔支持|[telegram](https://t.me/jiujiuchat)|
 |[TNT](#tnt)|[https://ermaozi01.tntvipaff.cc](https://ermaozi01.tntvipaff.cc/#/register?code=f1EyPwf3)|无|10元60g/月(季付)|❌不支持|[telegram](https://t.me/TNTCloud2)|
+|[CAC](#cac)|[www.cac.mom](https://www.cac.mom/#/register?code=kYL5chvN)| 无 |7.9元 168G/月|❌不支持|[telegram](https://t.me/CAC_Apex)|
 |[纵云梯](#纵云梯)|[https://zongyunti.com/](https://zongyunti.com/?r=60147)| 1G 不限时| 10元 60G/30天|❌不支持|暂无|
 |[老头vpn](#老头vpn)|[https://www.chattous.net](https://www.chattous.net/register?code=3OWtZ9Bi)| 1月1G | 10元 100G/月|❌不支持|[telegram](https://t.me/OldManVPN)|
 |[青云梯](#青云梯)|[ermaozi01.qytvipaff.cc](https://ermaozi01.qytvipaff.cc/register?aff=W5ICDu2y)| 无 |8 元60g/月(年付)|❌不支持|[telegram](https://t.me/qingyunticc)|
@@ -128,6 +129,19 @@ flybit官网地址：[goflybit.pages.dev](https://goflybit.pages.dev/#/register?
 新出的轻量级机场，这是目前最便宜的机场！节点虽少但背靠大树好乘凉，速度和稳定性都不错。
 
 非常适合偶尔翻墙或是长时间浏览推特、Facebook等社交网站的同学。
+
+---
+
+### cac
+
+CAC官网地址：[www.cac.mom](https://www.cac.mom/#/register?code=kYL5chvN)
+
+轻量机场，价格非常便宜，适合应急用。
+
+| 套餐 | 价格 | 流量 | 备注 | 购买地址 |
+| --- | --- | --- | --- | --- |
+| LITE套餐 | ¥7.90 /每月 | 168GB/月 | 可支持5台设备同时接入 | [点击购买](https://www.cac.mom/#/register?code=kYL5chvN) |
+| PRO套餐 | ¥15.00 /每月 | 398GB/月 | 可支持5台设备同时接入 | [点击购买](https://www.cac.mom/#/register?code=kYL5chvN) |
 
 ---
 
