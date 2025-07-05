@@ -18,7 +18,7 @@
     "vuepress-theme-plume": "1.0.0-rc.155"
   },
   "dependencies": {
-    "@vuepress/client": "^2.0.0-rc.20",
+    "@vuepress/client": "^2.0.0-rc.24",
     "ermao.net": "file:",
     "vue": "^3.5.16"
   }
