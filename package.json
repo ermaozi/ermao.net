@@ -20,6 +20,6 @@
     "@vuepress/bundler-vite": "2.0.0-rc.23",
     "@vuepress/client": "^2.0.0-rc.24",
     "ermao.net": "file:",
-    "vue": "^3.5.16"
+    "vue": "^3.5.18"
   }
 }
