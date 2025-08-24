@@ -19,8 +19,8 @@
 |---|---|---|--|---|---|
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 60G/月|❌不支持|[telegram](https://t.me/+rYzRmCbJfIw3ZTM1)|
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔支持|[telegram](https://t.me/flybitvip)|
-|[CyberGuard](#cyberguard)|[cyberguard.best](https://www.cyberguard.best/#/register?code=yoyUW3R9)| 无 |18元 100G/月|✔支持|[telegram](https://t.me/CyberGuardChat)|
 |[xxyun](#xxyun)|[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)| 1天10G |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
+|[koodog](#koodog)|[koodog.com](https://www.kdcloud.uk/#/register?code=BSkBAzZz)| 无 |5元 35G/月|❌不支持|[telegram](https://t.me/KooDogGroup)|
 |[99吧](#_99bar)|[99vpn.bar](https://99vpn.bar/#/register?code=qzpkbzHF)| 1天 1G |9.9元 99G/月|✔支持|[telegram](https://t.me/jiujiuchat)|
 |[TNT](#tnt)|[https://ermaozi01.tntvipaff.cc](https://ermaozi01.tntvipaff.cc/#/register?code=f1EyPwf3)|无|10元60g/月(季付)|❌不支持|[telegram](https://t.me/TNTCloud2)|
 |[CAC](#cac)|[www.cac.mom](https://www.cac.mom/#/register?code=kYL5chvN)| 无 |7.9元 168G/月|❌不支持|[telegram](https://t.me/CAC_Apex)|
@@ -42,6 +42,7 @@
 |[九霄云](#九霄云)|[https://shop.starpro.one](https://shop.starpro.one/#/register?code=ZXzjv7oD)| 2天 6G |15元 200G/月|✔支持|[QQ群](https://qm.qq.com/q/EzY3dgKhIA)|
 |[掌中世界](#掌中世界)|[https://www.zjs2025.com](https://www.zjs2025.com/user/register?code=S74QiRGN)| 无 | 18元 100G/月|❌不支持|暂无|
 |[白羊星](#白羊星)|[https://baiyangxing.com](https://baiyangxing.com/#/register?code=gelkjfjz)| 7天 10G | 12元 100G/月|✔支持|暂无|
+|[CyberGuard](#cyberguard)|[cyberguard.best](https://www.cyberguard.best/#/register?code=yoyUW3R9)| 无 |18元 100G/月|✔支持|[telegram](https://t.me/CyberGuardChat)|
 |[XSUS](#xsus)|[https://xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔支持|[telegram](https://t.me/xsusvpn)|
 |[Aladdin](#aladdin)|[https://www.avatargpt.xyz/](https://www.avatargpt.xyz/register?aff=RtNzblsTdt)|无|30元 390G/半年|❌不支持|暂无|
 |[EF](#ef)|~~www.efcloud1.com~~|无|已跑路|❌不支持|已跑路|
@@ -115,6 +116,23 @@ flybit官网地址：[goflybit.pages.dev](https://goflybit.pages.dev/#/register?
 解锁主流流媒体和ChatGPT，IEPL接口线路和普通线路一样的价格，机场稳定，几乎全部节点全天候可用。购买之前记得领一下首页的优惠券再下单。
 
 ---
+
+### koodog
+
+koodog官网地址：[koodog.com](https://www.kdcloud.uk/#/register?code=BSkBAzZz)
+
+最便宜订阅：5元 35G/月。
+
+KooDog 使用 Trojan 协议，相对安全稳定。网络入口提供了三网专线支持，实测 单线程峰值可跑到 2Gbps，无论是刷流媒体还是下载大文件，表现都非常流畅。
+
+| 套餐 | 价格 | 流量 | 备注 | 购买地址 |
+| --- | --- | --- | --- | --- |
+| Edge Lightsail | ¥5.00 /每月 | 35G/月 | 无 | [点击购买](https://www.kdcloud.uk/#/register?code=BSkBAzZz) |
+| Edge | ¥15.00 /每月 | 150GB/月 | 无 | [点击购买](https://www.kdcloud.uk/#/register?code=BSkBAzZz) |
+| Lightsail | ¥15.00 /每月 | 100GB/月 | Emby、奈飞 Porn Prime免登入观影 | [点击购买](https://www.kdcloud.uk/#/register?code=BSkBAzZz) |
+| Basic | ¥30.00 /每月 | 200GB/月 | Emby、奈飞 Porn Prime免登入观影 | [点击购买](https://www.kdcloud.uk/#/register?code=BSkBAzZz) |
+| Premium | ¥50.00 /每月 | 350GB/月 | Emby、奈飞 Porn Prime免登入观影 | [点击购买](https://www.kdcloud.uk/#/register?code=BSkBAzZz) |
+| Pro | ¥100.00 /每月 | 700GB/月 | Emby、奈飞 Porn Prime免登入观影 | [点击购买](https://www.kdcloud.uk/#/register?code=BSkBAzZz) |
 
 ### 阿达西
 
