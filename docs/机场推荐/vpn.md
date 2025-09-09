@@ -38,6 +38,7 @@ permalink: /posts/vpn/
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 60G/月|❌不支持|[telegram](https://t.me/+rYzRmCbJfIw3ZTM1)|
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔支持|[telegram](https://t.me/flybitvip)|
 |[xxyun](#xxyun)|[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)| 1天10G |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
+|[小牛云](#小牛云)|[xiaoniuyun.cc](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)| 无 |2.99元 5G/天|✔支持|[telegram](https://t.me/aoxcloud)|
 |[koodog](#koodog)|[koodog.com](https://www.kdcloud.uk/#/register?code=BSkBAzZz)| 无 |5元 35G/月|❌不支持|[telegram](https://t.me/KooDogGroup)|
 |[99吧](#_99bar)|[99vpn.bar](https://99vpn.bar/#/register?code=qzpkbzHF)| 1天 1G |9.9元 99G/月|✔支持|[telegram](https://t.me/jiujiuchat)|
 |[TNT](#tnt)|[https://ermaozi01.tntvipaff.cc](https://ermaozi01.tntvipaff.cc/#/register?code=f1EyPwf3)|无|10元60g/月(季付)|❌不支持|[telegram](https://t.me/TNTCloud2)|
@@ -118,6 +119,49 @@ CyberGuard主要提供安全网络访问解决方案。由网络安全专家团�
 老头VPN 从2016年开始运营，资历非常老，期间一直保持高质量服务。全球华人公认的老牌国际加速服务厂商 高达2Gbps的单线接入能力。
 
 支持微信支付宝。
+
+---
+
+### 小牛云
+
+小牛云官网地址：[xiaoniuyun.cc](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)
+
+邀请码：n31onhiT
+
+试用：无
+
+最便宜的订阅有2.99元 5G/天。
+
+| 套餐 | 价格 | 总流量 | 高速带宽 | 限制设备数 | 购买地址 |
+| --- | --- | --- | --- | --- | --- |
+|体验套餐 (1天)|¥2.99|5G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|轻量套餐 (10天)|¥16.80|50G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|基础套餐 (1个月)|¥46.80|200G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|标准套餐 (3个月)|¥118.80|800G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|高级套餐 (半年)|¥202.80|2000G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|高级套餐 (1年)|¥298.80|2000G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|VIP 商务套餐 (半年)|¥358.80|5000G|1000 Mbps|10|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|VIP 商务套餐 (1年)|¥478.80|5000G|1000 Mbps|10|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|VIP 商务套餐 (2年)|¥718.80|5000G|1000 Mbps|10|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|VIP 企业套餐 (半年)|¥778.80|15000G|1000 Mbps|10|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|VIP 企业套餐 (1年)|¥1066.80|15000G|1000 Mbps|10|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|VIP 企业套餐 (2年)|¥1066.80|15000G|1000 Mbps|10|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|不限时 (50GB)|¥47.60|50G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|不限时 (200GB)|¥96.60|50G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|不限时 (500GB)|¥187.60|50G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|不限时 (1000GB)|¥257.60|50G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|不限时 (3000GB)|¥537.60|50G|1000 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+
+小牛云于2024年正式上线，依托母公司小牛VPN近5年的行业经验，拥有深厚的技术积淀和良好的品牌信誉，用户无需担心跑路风险。
+
+**核心优势：**
+- 采用国内知名科技企业专线接入，确保网络品质
+- 拥有庞大的节点资源池，提供超过100个高质量节点
+- 采用独享落地服务器架构，避免节点资源过度共享
+- 支持多种代理协议选择，满足不同用户需求
+- 提供充足的带宽保障，日常维持2Gbps容量，高峰期可达5Gbps
+
+凭借母品牌多年运营积累的技术实力和用户口碑，小牛云为用户提供稳定可靠的网络加速服务。
 
 ---
 
