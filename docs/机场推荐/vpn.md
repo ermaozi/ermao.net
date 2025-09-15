@@ -79,6 +79,17 @@ permalink: /posts/vpn/
 
 最便宜的订阅有10元 60G/月。
 
+| 套餐名称 | 月费 | 流量 | 节点数量 | 适用人群 |购买链接|
+|----------|------|------|----------|----------|-------|
+| [Lite]微型够用 | ¥10/月 | 60GB/月 | 30+IEPL专线 | 轻度用户 |[购买链接](https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF)|
+| [Pro]实用主义 | ¥39/月 | 500GB/月 | 100+IEPL专线 | 日常使用 |[购买链接](https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF)|
+| [Pro]充盈之选 | ¥60/月 | 1200GB/月 | 100+IEPL专线 | 重度用户 |[购买链接](https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF)|
+| [Pro]团队计划 | ¥150/月 | 3600GB/月 | 100+IEPL专线 | 企业/团队 |[购买链接](https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF)|
+| [Pro]超值无忧 | ¥200/年 | 5000GB/年 | 100+IEPL专线 | 个人/企业 |[购买链接](https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF)|
+| [Pro]优惠计划 | ¥80/季 | 300GB/月 | 100+IEPL专线 | 日常使用 |[购买链接](https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF)|
+
+以上所有套餐均有月付、季付、半年、一年、两年、三年等多种付费周期可选。
+
 这家机场是我自己用的，一分钱一分货，节点较多，速度非常快，节点支持 Netflix。适合有一定需求的同学。
 
 ---
