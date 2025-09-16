@@ -1,5 +1,5 @@
 ---
-createTime: 2025/08/24 01:00:00
+createTime: 2025/09/16 01:00:00
 sticky: 100
 tags:
   - 科学上网
@@ -38,6 +38,7 @@ permalink: /posts/vpn/
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 60G/月|❌不支持|[telegram](https://t.me/+rYzRmCbJfIw3ZTM1)|
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔支持|[telegram](https://t.me/flybitvip)|
 |[xxyun](#xxyun)|[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)| 1天10G |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
+|[cocoduck](#cocoduck)|[cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌不支持|[telegram](https://t.me/cocoduck_pub)|
 |[小牛云](#小牛云)|[xiaoniuyun.cc](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)| 无 |2.99元 5G/天|✔支持|[telegram](https://t.me/aoxcloud)|
 |[koodog](#koodog)|[koodog.com](https://www.kdcloud.uk/#/register?code=BSkBAzZz)| 无 |5元 35G/月|❌不支持|[telegram](https://t.me/KooDogGroup)|
 |[99吧](#_99bar)|[99vpn.bar](https://99vpn.bar/#/register?code=qzpkbzHF)| 1天 1G |9.9元 99G/月|✔支持|[telegram](https://t.me/jiujiuchat)|
@@ -130,6 +131,26 @@ CyberGuard主要提供安全网络访问解决方案。由网络安全专家团�
 老头VPN 从2016年开始运营，资历非常老，期间一直保持高质量服务。全球华人公认的老牌国际加速服务厂商 高达2Gbps的单线接入能力。
 
 支持微信支付宝。
+
+---
+
+### cocoduck
+
+CocoDuck机场官网地址：[https://cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)
+
+试用：1天2G流量
+
+最便宜的订阅有15元 150G/月。
+
+[CocoDuck机场](https://cocoduck.live/auth/register?code=25c8b515df)详细评测：由海外团队运营的高品质翻墙机场，拥有两年稳定运营历史、自有四个机房、40+全球节点，支持OpenAI和流媒体解锁，是2025年最值得信赖的稳定机场之一。
+
+| 套餐名称 | 月费 | 流量 | 节点数量 | 特色服务 | 适用人群 | 购买链接 |
+|----------|------|------|----------|----------|----------|-------|
+| 鸭宝宝 | ¥15/月 | 150GB/月 | 40+全球节点 | 基础解锁 | 超轻度用户 | [购买链接](https://cocoduck.live/cart/checkout?plan=1&code=25c8b515df) |
+| 可达鸭 | ¥28/月 | 400GB/月 | 40+全球节点 | 全面解锁 | 日常使用 | [购买链接](https://cocoduck.live/cart/checkout?plan=1&code=25c8b515df) |
+| 哥达鸭 | ¥41/月 | 700GB/月 | 40+全球节点 | 优先路由 | 中度用户 | [购买链接](https://cocoduck.live/cart/checkout?plan=1&code=25c8b515df) |
+| 唐老鸭 | ¥53/月 | 1000GB/月 | 40+全球节点 | 专线服务 | 企业/团队 | [购买链接](https://cocoduck.live/cart/checkout?plan=1&code=25c8b515df) |
+| 迷你鸭 | ¥77/年 | 77GB/月 | 40+全球节点 | 超值优惠 | 长期用户 | [购买链接](https://cocoduck.live/cart/checkout?plan=1&code=25c8b515df) |
 
 ---
 
