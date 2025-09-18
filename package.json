@@ -17,7 +17,7 @@
     "vuepress-theme-plume": "1.0.0-rc.156"
   },
   "dependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.23",
+    "@vuepress/bundler-vite": "2.0.0-rc.25",
     "@vuepress/client": "^2.0.0-rc.25",
     "ermao.net": "file:",
     "vue": "^3.5.21"
