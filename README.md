@@ -20,7 +20,7 @@
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 60G/月|❌不支持|[telegram](https://t.me/+rYzRmCbJfIw3ZTM1)|
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔支持|[telegram](https://t.me/flybitvip)|
 |[xxyun](#xxyun)|[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)| 1天10G |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
-|[koodog](#koodog)|[koodog.com](https://www.kdcloud.uk/#/register?code=BSkBAzZz)| 无 |5元 35G/月|❌不支持|[telegram](https://t.me/KooDogGroup)|
+|[koodog](#koodog)|[koodog.com](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)| 无 |5元 35G/月|❌不支持|[telegram](https://t.me/KooDogGroup)|
 |[99吧](#_99bar)|[99vpn.bar](https://99vpn.bar/#/register?code=qzpkbzHF)| 1天 1G |9.9元 99G/月|✔支持|[telegram](https://t.me/jiujiuchat)|
 |[TNT](#tnt)|[https://ermaozi01.tntvipaff.cc](https://ermaozi01.tntvipaff.cc/#/register?code=f1EyPwf3)|无|10元60g/月(季付)|❌不支持|[telegram](https://t.me/TNTCloud2)|
 |[CAC](#cac)|[www.cac.mom](https://www.cac.mom/#/register?code=kYL5chvN)| 无 |7.9元 168G/月|❌不支持|[telegram](https://t.me/CAC_Apex)|
@@ -119,7 +119,7 @@ flybit官网地址：[goflybit.pages.dev](https://goflybit.pages.dev/#/register?
 
 ### koodog
 
-koodog官网地址：[koodog.com](https://www.kdcloud.uk/#/register?code=BSkBAzZz)
+koodog官网地址：[koodog.com](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)
 
 最便宜订阅：5元 35G/月。
 
@@ -127,12 +127,12 @@ KooDog 使用 Trojan 协议，相对安全稳定。网络入口提供了三网�
 
 | 套餐 | 价格 | 流量 | 备注 | 购买地址 |
 | --- | --- | --- | --- | --- |
-| Edge Lightsail | ¥5.00 /每月 | 35G/月 | 无 | [点击购买](https://www.kdcloud.uk/#/register?code=BSkBAzZz) |
-| Edge | ¥15.00 /每月 | 150GB/月 | 无 | [点击购买](https://www.kdcloud.uk/#/register?code=BSkBAzZz) |
-| Lightsail | ¥15.00 /每月 | 100GB/月 | Emby、奈飞 Porn Prime免登入观影 | [点击购买](https://www.kdcloud.uk/#/register?code=BSkBAzZz) |
-| Basic | ¥30.00 /每月 | 200GB/月 | Emby、奈飞 Porn Prime免登入观影 | [点击购买](https://www.kdcloud.uk/#/register?code=BSkBAzZz) |
-| Premium | ¥50.00 /每月 | 350GB/月 | Emby、奈飞 Porn Prime免登入观影 | [点击购买](https://www.kdcloud.uk/#/register?code=BSkBAzZz) |
-| Pro | ¥100.00 /每月 | 700GB/月 | Emby、奈飞 Porn Prime免登入观影 | [点击购买](https://www.kdcloud.uk/#/register?code=BSkBAzZz) |
+| Edge Lightsail | ¥5.00 /每月 | 35G/月 | 无 | [点击购买](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz) |
+| Edge | ¥15.00 /每月 | 150GB/月 | 无 | [点击购买](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz) |
+| Lightsail | ¥15.00 /每月 | 100GB/月 | Emby、奈飞 Porn Prime免登入观影 | [点击购买](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz) |
+| Basic | ¥30.00 /每月 | 200GB/月 | Emby、奈飞 Porn Prime免登入观影 | [点击购买](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz) |
+| Premium | ¥50.00 /每月 | 350GB/月 | Emby、奈飞 Porn Prime免登入观影 | [点击购买](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz) |
+| Pro | ¥100.00 /每月 | 700GB/月 | Emby、奈飞 Porn Prime免登入观影 | [点击购买](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz) |
 
 ### 阿达西
 
