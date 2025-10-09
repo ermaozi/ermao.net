@@ -12,6 +12,12 @@ export default defineUserConfig({
     ["meta", {"name": "baidu-site-verification", "content": "codeva-XDTarR9mnY"}]
   ],
   theme: plumeTheme({
+    collections: [
+      {
+        type: 'post', // 替代原博客功能
+        dir: 'blog', // 指向 docs/blog 目录
+        title: '博客' // 集合显示名称
+      },],
     logo: '/images/logo.svg',
     home: '/',
     hostname: 'https://www.ermao.net',

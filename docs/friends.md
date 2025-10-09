@@ -1,7 +1,7 @@
 ---
 friends: true
 title: 友链
-description: 互换友链的朋友请把信息发送到我的邮箱(名称、链接、头像、描述)，我会尽快添加。
+description: 互换友链的朋友请把信息发送到我的邮箱，我会尽快添加。
 permalink: /friends/
 list:
   -
@@ -30,3 +30,14 @@ list:
     avatar: https://www.nxcoding.com/upload/logo.svg
     desc: We are all in the gutter, but some of us are looking at the stars
 ---
+
+友联格式：
+
+```
+name: 二猫子
+link: https://www.ermao.net/
+avatar: https://www.ermao.net/images/logo.svg
+desc: 老老实实的二猫子，从不胡说八道。
+```
+
+邮箱地址：[admin@ermao.net](mailto:admin@ermao.net?subject=%E5%8F%8B%E9%93%BE%E7%94%B3%E8%AF%B7&body=name%3A%20%0Alink%3A%20%0Aavatar%3A%20%0Adesc%3A%20)
