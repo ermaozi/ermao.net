@@ -37,7 +37,7 @@ permalink: /posts/vpn/
 |---|---|---|--|---|---|
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 60G/月|❌不支持|[telegram](https://t.me/+rYzRmCbJfIw3ZTM1)|
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔支持|[telegram](https://t.me/flybitvip)|
-|[xxyun](#xxyun)|[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)| 1天10G |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
+|[xxyun](#xxyun)|[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)| 无 |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
 |[cocoduck](#cocoduck)|[cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌不支持|[telegram](https://t.me/cocoduck_pub)|
 |[小牛云](#小牛云)|[xiaoniuyun.cc](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)| 无 |2.99元 5G/天|✔支持|[telegram](https://t.me/aoxcloud)|
 |[koodog](#koodog)|[koodog.com](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)| 无 |5元 35G/月|❌不支持|[telegram](https://t.me/KooDogGroup)|
@@ -261,23 +261,25 @@ CAC官网地址：[www.cac.mom](https://www.cac.mom/#/register?code=kYL5chvN)
 
 xxyun官网地址：[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)
 
-邀请码：XQiZqbSr
+最便宜订阅：8.88元 100G/月。
 
-试用：1天 10G
-
-xx云加速95折优惠码，只能使用一次：`xxyun.xyz`
-
-最便宜的订阅有8.89元 100G/月。
-
-超高性价比，节点质量高，客服实时在线，晚高峰不限速，不限制设备，对 Netflix、Disney+ 流媒体解锁服务也还不错，8k视频秒开。
+85折优惠码（只能使用一次）：`xxyun85`
 
 xxyun加速特性如下：
 
-- SS协议中转机场，多隧道入口机场
-- 解锁全球流媒体、AI工具。
-- 无设备和ip限制。
-- 500Mbps速率，晚高峰不限速
-- 专业人工客服，快速响应
+- 老牌机场稳定运行两年
+- 超高性价比，节点质量高，晚高峰不限速，不限制设备。
+- 全BGP中转，国内三网优化
+- 流媒体完美解锁（包括Netflix , Disney+, HBO等）
+- 全天候在线，高效客服响应
+
+| 套餐 | 价格 | 流量 | 购买地址 |
+| --- | --- | --- | --- |
+| 初级套餐 | 8.88元/每月 | 100G/月 | [点击购买](https://xxyun.de/XQiZqbSr.html) |
+| 中级套餐 | 19.9元/每月 | 300G/月 | [点击购买](https://xxyun.de/XQiZqbSr.html) |
+| 高级套餐 | 39.9元/每月 | 1000G/月 | [点击购买](https://xxyun.de/XQiZqbSr.html) |
+| 500G[不限时] | 59.9元/一次性 | 500G/不限时 | [点击购买](https://xxyun.de/XQiZqbSr.html) |
+| 2888G[不限时] | 199元/一次性 | 2888G/不限时 | [点击购买](https://xxyun.de/XQiZqbSr.html) |
 
 ---
 
