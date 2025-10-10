@@ -455,11 +455,19 @@ okanc机场是一个新机场，但是与奈云同宗同源，有奈云的技术
 
 大哥云官网地址：[ermao.dgywzc.com](https://ermao.dgywzc.com/#/register?code=peAVAa8D)
 
-邀请码：peAVAa8D
-
 最便宜的订阅有19.9元 100G/月。
 
 大哥云机场5年老品牌，可以免费试用，支持奈飞等多家流媒体解锁，支持YOUTUBE 8K流畅观看支持IPLC线路。
+
+| 套餐名称 | 价格 | 流量 | 时长 | 峰值带宽 | 协议 | 购买 |
+|----------|------:|------:|:----:|--------:|------|------|
+| 单月套餐 A | ¥19.90 | 100G/月 | 按自然月 | 500 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+| 单月套餐 B | ¥29.90 | 150G/月 | 按自然月 | 500 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+| 季付套餐 A | ¥69.00 | 200G/月 | 90 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+| VIP1 小流量（年付） | ¥88.00 | 15G/月 | 365 天 | 500 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+| 年付套餐 A | ¥199.00 | 300G/月 | 365 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+| 年付套餐 B | ¥299.00 | 500G/月 | 365 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+| 年付套餐（1000GB） | ¥699.00 | 1000G/月 | 365 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
 
 ---
 
