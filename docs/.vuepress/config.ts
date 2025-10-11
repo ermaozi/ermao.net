@@ -64,7 +64,6 @@ export default defineUserConfig({
         exclude: [
           'mark.js/src/vanilla.js',
           '@vueuse/integrations/useFocusTrap',
-          'minisearch',
           '@vueuse/core',
           'bcrypt-ts/browser',
           '@vuepress/helper/client',
