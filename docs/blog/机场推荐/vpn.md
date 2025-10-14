@@ -1,5 +1,5 @@
 ---
-createTime: 2025/09/16 01:00:00
+createTime: 2025/10/14 01:00:00
 sticky: 100
 tags:
   - 科学上网
@@ -38,6 +38,8 @@ permalink: /posts/vpn/
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 60G/月|❌不支持|[telegram](https://t.me/+rYzRmCbJfIw3ZTM1)|
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔支持|[telegram](https://t.me/flybitvip)|
 |[xxyun](#xxyun)|[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)| 无 |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
+|[ccyz](#ccyz)|[ccyz.org](https://ccyz.org/QkQotDCu.html)| 无 |15元 100G/月|❌不支持|[telegram](https://t.me/+jiosLuqA9Mk0Yjkx)|
+|[superbiu](#superbiu)|[superbiu.com](https://superbiu.com/#/register?code=BasmsULb)| 无 |11元 50G/月|✔支持|[telegram](https://t.me/superbiu888)|
 |[cocoduck](#cocoduck)|[cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌不支持|[telegram](https://t.me/cocoduck_pub)|
 |[小牛云](#小牛云)|[xiaoniuyun.cc](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)| 无 |2.99元 5G/天|✔支持|[telegram](https://t.me/aoxcloud)|
 |[koodog](#koodog)|[koodog.com](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)| 无 |5元 35G/月|❌不支持|[telegram](https://t.me/KooDogGroup)|
@@ -194,6 +196,54 @@ CocoDuck机场官网地址：[https://cocoduck.live](https://cocoduck.live/auth/
 - 提供充足的带宽保障，日常维持2Gbps容量，高峰期可达5Gbps
 
 凭借母品牌多年运营积累的技术实力和用户口碑，小牛云为用户提供稳定可靠的网络加速服务。
+
+---
+
+### ccyz
+
+ccyz官网地址：[ccyz.org](https://ccyz.org/QkQotDCu.html)
+
+最便宜的订阅有15元 100G/月。
+
+主打高性价比与专线稳定，采用 BGP+IEPL 双重优化，晚高峰依旧保持高速。支持 Netflix、Disney+、HBO 等主流流媒体解锁，并提供全天候客服响应，适合长期使用或需要稳定带宽的用户。
+
+| 套餐名称 | 价格 | 流量 | 峰值带宽 | 线路 | 适用人群 | 购买链接 |
+|----------|-----:|-----:|---------:|------|----------|----------|
+| Lite 套餐 · 100G | ¥15 / 月 | 100G/月 | 取决于节点 | IEPL 专线 | 轻度使用、影音追剧 | [立即购买](https://ccyz.org/QkQotDCu.html) |
+| Pro 套餐 · 200G | ¥25 / 月 | 200G/月 | 取决于节点 | IEPL 专线 | 日常/多设备用户 | [立即购买](https://ccyz.org/QkQotDCu.html) |
+
+
+---
+
+### superbiu
+
+superbiu官网地址：[superbiu.com](https://superbiu.com/#/register?code=BasmsULb)
+
+最便宜的订阅有11元 50G/月。
+
+**SuperBiu 机场** 依托三网（电信/联通/移动）入口的 IPLC 专线，实现跨境高速互联。凭借自研流媒体解锁与多区域部署，晚高峰依旧能秒开 8K 视频，并在隐私、安全方面保持高标准。
+
+#### 定期订阅套餐
+
+| 套餐名称 | 月付 | 季付 | 半年 | 年付 | 流量/月 | 购买地址 |
+|----------|-----:|-----:|-----:|-----:|--------:|-----|
+| Small Biu 50G | ¥11 | ¥30 | ¥60 | ¥120 | 50GB | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+| Mini Biu 100G | ¥16 | ¥45 | ¥90 | ¥180 | 100GB | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+| Mini Biu 200G | ¥24 | ¥70 | ¥135 | ¥260 | 200GB | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+| Medium Biu 300G | ¥33 | ¥95 | ¥185 | ¥360 | 300GB | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+| Medium Biu 500G | ¥45 | ¥132 | ¥260 | ¥495 | 500GB | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+
+
+#### 按量一次性流量包（有效期内不限时）
+
+| 套餐 | 流量 | 一次性价格 | 购买地址 |
+|------|------:|-----------:|-----|
+| Biu-as-you-go 120G | 120GB | ¥40 | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+| Biu-as-you-go 240G | 240GB | ¥79 | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+| Biu-as-you-go 380G | 380GB | ¥128 | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+| Biu-as-you-go 880G | 880GB | ¥238 | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+
+> 一次性套餐适合临时出差、备用机场或多设备共享，流量用完前不会过期。
 
 ---
 

@@ -19,7 +19,11 @@
 |---|---|---|--|---|---|
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 60G/月|❌不支持|[telegram](https://t.me/+rYzRmCbJfIw3ZTM1)|
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔支持|[telegram](https://t.me/flybitvip)|
-|[xxyun](#xxyun)|[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)| 1天10G |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
+|[xxyun](#xxyun)|[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)| 无 |8.89元 100G/月|✔支持|[telegram](https://t.me/+eYsE6P_xvjk2NGY5)|
+|[ccyz](#ccyz)|[ccyz.org](https://ccyz.org/QkQotDCu.html)| 无 |15元 100G/月|❌不支持|[telegram](https://t.me/+jiosLuqA9Mk0Yjkx)|
+|[superbiu](#superbiu)|[superbiu.com](https://superbiu.com/#/register?code=BasmsULb)| 无 |11元 50G/月|✔支持|[telegram](https://t.me/superbiu888)|
+|[cocoduck](#cocoduck)|[cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌不支持|[telegram](https://t.me/cocoduck_pub)|
+|[小牛云](#小牛云)|[xiaoniuyun.cc](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)| 无 |2.99元 5G/天|✔支持|[telegram](https://t.me/aoxcloud)|
 |[koodog](#koodog)|[koodog.com](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)| 无 |5元 35G/月|❌不支持|[telegram](https://t.me/KooDogGroup)|
 |[99吧](#_99bar)|[99vpn.bar](https://99vpn.bar/#/register?code=qzpkbzHF)| 1天 1G |9.9元 99G/月|✔支持|[telegram](https://t.me/jiujiuchat)|
 |[TNT](#tnt)|[https://ermaozi01.tntvipaff.cc](https://ermaozi01.tntvipaff.cc/#/register?code=f1EyPwf3)|无|10元60g/月(季付)|❌不支持|[telegram](https://t.me/TNTCloud2)|
@@ -59,6 +63,17 @@
 试用：1天 1G
 
 最便宜的订阅有10元 60G/月。
+
+| 套餐名称 | 月费 | 流量 | 节点数量 | 适用人群 |购买链接|
+|----------|------|------|----------|----------|-------|
+| [Lite]微型够用 | ¥10/月 | 60GB/月 | 30+IEPL专线 | 轻度用户 |[购买链接](https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF)|
+| [Pro]实用主义 | ¥39/月 | 500GB/月 | 100+IEPL专线 | 日常使用 |[购买链接](https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF)|
+| [Pro]充盈之选 | ¥60/月 | 1200GB/月 | 100+IEPL专线 | 重度用户 |[购买链接](https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF)|
+| [Pro]团队计划 | ¥150/月 | 3600GB/月 | 100+IEPL专线 | 企业/团队 |[购买链接](https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF)|
+| [Pro]超值无忧 | ¥200/年 | 5000GB/年 | 100+IEPL专线 | 个人/企业 |[购买链接](https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF)|
+| [Pro]优惠计划 | ¥80/季 | 300GB/月 | 100+IEPL专线 | 日常使用 |[购买链接](https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF)|
+
+以上所有套餐均有月付、季付、半年、一年、两年、三年等多种付费周期可选。
 
 这家机场是我自己用的，一分钱一分货，节点较多，速度非常快，节点支持 Netflix。适合有一定需求的同学。
 
@@ -100,6 +115,117 @@ CyberGuard主要提供安全网络访问解决方案。由网络安全专家团�
 老头VPN 从2016年开始运营，资历非常老，期间一直保持高质量服务。全球华人公认的老牌国际加速服务厂商 高达2Gbps的单线接入能力。
 
 支持微信支付宝。
+
+---
+
+### cocoduck
+
+CocoDuck机场官网地址：[https://cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)
+
+试用：1天2G流量
+
+最便宜的订阅有15元 150G/月。
+
+[CocoDuck机场](https://cocoduck.live/auth/register?code=25c8b515df)详细评测：由海外团队运营的高品质翻墙机场，拥有两年稳定运营历史、自有四个机房、40+全球节点，支持OpenAI和流媒体解锁，是2025年最值得信赖的稳定机场之一。
+
+| 套餐名称 | 月费 | 流量 | 节点数量 | 特色服务 | 适用人群 | 购买链接 |
+|----------|------|------|----------|----------|----------|-------|
+| 鸭宝宝 | ¥15/月 | 150GB/月 | 40+全球节点 | 基础解锁 | 超轻度用户 | [购买链接](https://cocoduck.live/auth/register?code=25c8b515df) |
+| 可达鸭 | ¥28/月 | 400GB/月 | 40+全球节点 | 全面解锁 | 日常使用 | [购买链接](https://cocoduck.live/auth/register?code=25c8b515df) |
+| 哥达鸭 | ¥41/月 | 700GB/月 | 40+全球节点 | 优先路由 | 中度用户 | [购买链接](https://cocoduck.live/auth/register?code=25c8b515df) |
+| 唐老鸭 | ¥53/月 | 1000GB/月 | 40+全球节点 | 专线服务 | 企业/团队 | [购买链接](https://cocoduck.live/auth/register?code=25c8b515df) |
+| 迷你鸭 | ¥77/年 | 77GB/月 | 40+全球节点 | 超值优惠 | 长期用户 | [购买链接](https://cocoduck.live/auth/register?code=25c8b515df) |
+
+---
+
+### 小牛云
+
+小牛云官网地址：[xiaoniuyun.cc](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)
+
+邀请码：n31onhiT
+
+试用：无
+
+最便宜的订阅有2.99元 5G/天。
+
+| 套餐 | 价格 | 总流量 | 高速带宽 | 限制设备数 | 购买地址 |
+| --- | --- | --- | --- | --- | --- |
+|体验套餐 (1天)|¥2.99|5G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|轻量套餐 (10天)|¥16.80|50G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|基础套餐 (1个月)|¥46.80|200G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|标准套餐 (3个月)|¥118.80|800G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|高级套餐 (半年)|¥202.80|2000G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|高级套餐 (1年)|¥298.80|2000G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|VIP 商务套餐 (半年)|¥358.80|5000G|1000 Mbps|10|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|VIP 商务套餐 (1年)|¥478.80|5000G|1000 Mbps|10|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|VIP 商务套餐 (2年)|¥718.80|5000G|1000 Mbps|10|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|VIP 企业套餐 (半年)|¥778.80|15000G|1000 Mbps|10|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|VIP 企业套餐 (1年)|¥1066.80|15000G|1000 Mbps|10|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|VIP 企业套餐 (2年)|¥1066.80|15000G|1000 Mbps|10|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|不限时 (50GB)|¥47.60|50G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|不限时 (200GB)|¥96.60|50G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|不限时 (500GB)|¥187.60|50G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|不限时 (1000GB)|¥257.60|50G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+|不限时 (3000GB)|¥537.60|50G|1000 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
+
+小牛云于2024年正式上线，依托母公司小牛VPN近5年的行业经验，拥有深厚的技术积淀和良好的品牌信誉，用户无需担心跑路风险。
+
+**核心优势：**
+- 采用国内知名科技企业专线接入，确保网络品质
+- 拥有庞大的节点资源池，提供超过100个高质量节点
+- 采用独享落地服务器架构，避免节点资源过度共享
+- 支持多种代理协议选择，满足不同用户需求
+- 提供充足的带宽保障，日常维持2Gbps容量，高峰期可达5Gbps
+
+凭借母品牌多年运营积累的技术实力和用户口碑，小牛云为用户提供稳定可靠的网络加速服务。
+
+---
+
+### ccyz
+
+ccyz官网地址：[ccyz.org](https://ccyz.org/QkQotDCu.html)
+
+最便宜的订阅有15元 100G/月。
+
+主打高性价比与专线稳定，采用 BGP+IEPL 双重优化，晚高峰依旧保持高速。支持 Netflix、Disney+、HBO 等主流流媒体解锁，并提供全天候客服响应，适合长期使用或需要稳定带宽的用户。
+
+| 套餐名称 | 价格 | 流量 | 峰值带宽 | 线路 | 适用人群 | 购买链接 |
+|----------|-----:|-----:|---------:|------|----------|----------|
+| Lite 套餐 · 100G | ¥15 / 月 | 100G/月 | 取决于节点 | IEPL 专线 | 轻度使用、影音追剧 | [立即购买](https://ccyz.org/QkQotDCu.html) |
+| Pro 套餐 · 200G | ¥25 / 月 | 200G/月 | 取决于节点 | IEPL 专线 | 日常/多设备用户 | [立即购买](https://ccyz.org/QkQotDCu.html) |
+
+
+---
+
+### superbiu
+
+superbiu官网地址：[superbiu.com](https://superbiu.com/#/register?code=BasmsULb)
+
+最便宜的订阅有11元 50G/月。
+
+**SuperBiu 机场** 依托三网（电信/联通/移动）入口的 IPLC 专线，实现跨境高速互联。凭借自研流媒体解锁与多区域部署，晚高峰依旧能秒开 8K 视频，并在隐私、安全方面保持高标准。
+
+#### 定期订阅套餐
+
+| 套餐名称 | 月付 | 季付 | 半年 | 年付 | 流量/月 | 购买地址 |
+|----------|-----:|-----:|-----:|-----:|--------:|-----|
+| Small Biu 50G | ¥11 | ¥30 | ¥60 | ¥120 | 50GB | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+| Mini Biu 100G | ¥16 | ¥45 | ¥90 | ¥180 | 100GB | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+| Mini Biu 200G | ¥24 | ¥70 | ¥135 | ¥260 | 200GB | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+| Medium Biu 300G | ¥33 | ¥95 | ¥185 | ¥360 | 300GB | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+| Medium Biu 500G | ¥45 | ¥132 | ¥260 | ¥495 | 500GB | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+
+
+#### 按量一次性流量包（有效期内不限时）
+
+| 套餐 | 流量 | 一次性价格 | 购买地址 |
+|------|------:|-----------:|-----|
+| Biu-as-you-go 120G | 120GB | ¥40 | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+| Biu-as-you-go 240G | 240GB | ¥79 | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+| Biu-as-you-go 380G | 380GB | ¥128 | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+| Biu-as-you-go 880G | 880GB | ¥238 | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+
+> 一次性套餐适合临时出差、备用机场或多设备共享，流量用完前不会过期。
 
 ---
 
@@ -167,23 +293,25 @@ CAC官网地址：[www.cac.mom](https://www.cac.mom/#/register?code=kYL5chvN)
 
 xxyun官网地址：[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)
 
-邀请码：XQiZqbSr
+最便宜订阅：8.88元 100G/月。
 
-试用：1天 10G
-
-xx云加速95折优惠码，只能使用一次：`xxyun.xyz`
-
-最便宜的订阅有8.89元 100G/月。
-
-超高性价比，节点质量高，客服实时在线，晚高峰不限速，不限制设备，对 Netflix、Disney+ 流媒体解锁服务也还不错，8k视频秒开。
+85折优惠码（只能使用一次）：`xxyun85`
 
 xxyun加速特性如下：
 
-- SS协议中转机场，多隧道入口机场
-- 解锁全球流媒体、AI工具。
-- 无设备和ip限制。
-- 500Mbps速率，晚高峰不限速
-- 专业人工客服，快速响应
+- 老牌机场稳定运行两年
+- 超高性价比，节点质量高，晚高峰不限速，不限制设备。
+- 全BGP中转，国内三网优化
+- 流媒体完美解锁（包括Netflix , Disney+, HBO等）
+- 全天候在线，高效客服响应
+
+| 套餐 | 价格 | 流量 | 购买地址 |
+| --- | --- | --- | --- |
+| 初级套餐 | 8.88元/每月 | 100G/月 | [点击购买](https://xxyun.de/XQiZqbSr.html) |
+| 中级套餐 | 19.9元/每月 | 300G/月 | [点击购买](https://xxyun.de/XQiZqbSr.html) |
+| 高级套餐 | 39.9元/每月 | 1000G/月 | [点击购买](https://xxyun.de/XQiZqbSr.html) |
+| 500G[不限时] | 59.9元/一次性 | 500G/不限时 | [点击购买](https://xxyun.de/XQiZqbSr.html) |
+| 2888G[不限时] | 199元/一次性 | 2888G/不限时 | [点击购买](https://xxyun.de/XQiZqbSr.html) |
 
 ---
 
@@ -359,11 +487,19 @@ okanc机场是一个新机场，但是与奈云同宗同源，有奈云的技术
 
 大哥云官网地址：[ermao.dgywzc.com](https://ermao.dgywzc.com/#/register?code=peAVAa8D)
 
-邀请码：peAVAa8D
-
 最便宜的订阅有19.9元 100G/月。
 
 大哥云机场5年老品牌，可以免费试用，支持奈飞等多家流媒体解锁，支持YOUTUBE 8K流畅观看支持IPLC线路。
+
+| 套餐名称 | 价格 | 流量 | 时长 | 峰值带宽 | 协议 | 购买 |
+|----------|------:|------:|:----:|--------:|------|------|
+| 单月套餐 A | ¥19.90 | 100G/月 | 按自然月 | 500 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+| 单月套餐 B | ¥29.90 | 150G/月 | 按自然月 | 500 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+| 季付套餐 A | ¥69.00 | 200G/月 | 90 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+| VIP1 小流量（年付） | ¥88.00 | 15G/月 | 365 天 | 500 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+| 年付套餐 A | ¥199.00 | 300G/月 | 365 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+| 年付套餐 B | ¥299.00 | 500G/月 | 365 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+| 年付套餐（1000GB） | ¥699.00 | 1000G/月 | 365 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
 
 ---
 
