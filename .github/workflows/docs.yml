@@ -24,7 +24,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: pnpm
+          cache: pnpm  # 仅在锁文件存在时启用缓存
 
       # 手动安装依赖并清理缓存
       - name: Install dependencies
