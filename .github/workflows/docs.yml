@@ -1,10 +1,12 @@
-name: docs
+name: deploy
 
 on:
   # 每当 push 到 main 分支时触发部署
+  # Deployment is triggered whenever a push is made to the main branch.
   push:
     branches: [main]
   # 手动触发部署
+  # Manually trigger deployment
   workflow_dispatch:
 
 jobs:
@@ -15,30 +17,30 @@ jobs:
       - uses: actions/checkout@v4
         with:
           # “最近更新时间” 等 git 日志相关信息，需要拉取全部提交记录
+          # "Last updated time" and other git log-related information require fetching all commit records.
           fetch-depth: 0
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          # 选择要使用的 pnpm 版本
-          version: 9
-          # 使用 pnpm 安装依赖
-          run_install: true
+        uses: pnpm/action-setup@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           # 选择要使用的 node 版本
-          node-version: 20
-          # 缓存 pnpm 依赖
-          cache: pnpm
+          node-version: 22
 
-      - name: Ensure TypeScript is installed
-        run: pnpm add typescript -D
+
+      # 安装依赖
+      # Install dependencies
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
 
       # 运行构建脚本
+      # Run the build script
       - name: Build VuePress site
-        run: pnpm build
+        run: pnpm run build
+
 
       # 查看 workflow 的文档来获取更多信息
       # @see https://github.com/crazy-max/ghaction-github-pages
@@ -51,5 +53,5 @@ jobs:
           build_dir: docs/.vuepress/dist
           fqdn: www.ermao.net
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-
+          # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
