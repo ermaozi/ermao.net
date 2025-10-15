@@ -8,9 +8,12 @@ tags:
   - clash
   - android
   - 翻墙
+  - Clash Meta
+description: 2025年Android手机Clash下载安装教程，简单易用适合新手。学习科学上网、VPN翻墙配置，包含Clash Meta For Android和Clash For Android安装、订阅URL导入和使用指南。
+
 ---
 
-2024 年 Clash for android 下载与安装，简单易用，适合新手。
+2025年实测 Clash for android 下载与安装，简单易用，适合新手。
 
 <!-- more -->
 
@@ -36,43 +39,43 @@ tags:
 
 ## 配置
 
-![alt text](images/Android手机使用clash/image.png)
+![Android Clash配置界面，点击配置按钮](images/Android手机使用clash/image.png)
 
 点击配置
 
-![alt text](images/Android手机使用clash/image-1.png)
+![Android Clash添加配置，点击右上角加号](images/Android手机使用clash/image-1.png)
 
 点击右上角的“+”号
 
-![alt text](images/Android手机使用clash/image-2.png)
+![Android Clash选择URL导入方式](images/Android手机使用clash/image-2.png)
 
 点击“URL”
 
-![alt text](images/Android手机使用clash/image-3.png)
+![Android Clash粘贴订阅URL链接](images/Android手机使用clash/image-3.png)
 
 将获取到的 URL 粘贴到这里，点击确定
 
 如果你没有 URL，可以在这里获取：[便宜好用的翻墙机场推荐评测](https://www.ermao.net/posts/vpn)
 
-![alt text](images/Android手机使用clash/image-4.png)
+![Android Clash设置自动更新时间](images/Android手机使用clash/image-4.png)
 
 自动更新随便设置，设置完成点击确定
 
-![alt text](images/Android手机使用clash/image-5.png)
+![Android Clash保存配置按钮](images/Android手机使用clash/image-5.png)
 
 完成后点击右上角的保存按钮
 
-![alt text](images/Android手机使用clash/image-6.png)
+![Android Clash选择保存的配置](images/Android手机使用clash/image-6.png)
 
 保存完成后选中刚才保存的配置
 
 ## 开始使用
 
-![alt text](images/Android手机使用clash/image-7.png)
+![Android Clash启动VPN代理按钮](images/Android手机使用clash/image-7.png)
 
 点这里运行
 
-![alt text](images/Android手机使用clash/image-8.png)
+![Android Clash科学上网成功界面](images/Android手机使用clash/image-8.png)
 
 然后就完成了
 
