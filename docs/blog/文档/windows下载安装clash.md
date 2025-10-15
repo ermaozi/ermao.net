@@ -1,5 +1,5 @@
 ---
-title: windows下载安装clash
+title: windows下载安装 clash、clash verge
 createTime: 2024/10/23 12:21:37
 permalink: /article/0gematwc/
 tags:
@@ -9,6 +9,7 @@ tags:
   - windows
   - 翻墙
   - clash verge
+description: 手把手教学Windows下载安装Clash和Clash Verge，简单易用适合新手。学习科学上网、VPN翻墙配置，包含订阅导入、Tun模式设置和代理测试指南。
 ---
 
 手把手教学安装clash，简单易用，适合新手。
@@ -23,7 +24,11 @@ tags:
 
 该客户端已汉化，并且包含了 linux、mac、windows 三个版本。
 
-[https://github.com/clash-verge-rev/clash-verge-rev/releases](https://github.com/clash-verge-rev/clash-verge-rev/releases)
+[github 官方地址](https://github.com/clash-verge-rev/clash-verge-rev/releases)
+
+[clash-verge windows 备用下载地址1](https://gitlab.com/bvpn/client/-/raw/main/Clash.Verge_2.3.2_x64-setup.exe)
+
+[clash-verge windows 备用下载地址2](https://gitee.com/openbestbest/cvr/releases/download/2.3.2/cvr_2.3.2_x64-setup.exe)
 
 @tab github 汉化版下载
 
