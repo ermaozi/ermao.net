@@ -15,6 +15,11 @@ list:
     avatar: https://github.com/pengzhanbo.png
     desc: 即使慢，驰而不息，纵会落后，纵会失败，但必须能够到达他所向的目标。
   -
+    name: YouYou
+    link: https://vpnnew.net/blog/
+    avatar: https://vpnnew.net/youyou.png
+    desc: 学无止境
+  -
     name: 川沐
     link: https://cuanmu.com
     avatar: https://cuanmu.com/favicon.ico
