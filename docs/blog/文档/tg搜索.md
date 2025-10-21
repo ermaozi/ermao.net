@@ -1,6 +1,6 @@
 ---
 title: Telegram搜索机器人推荐——查找海量资源，提升信息检索效率
-createTime: 2025/08/25 13:28:46
+createTime: 2025/10/21 13:28:46
 permalink: /article/bsnuua0h/
 tags:
   - Telegram
@@ -9,11 +9,18 @@ tags:
   - 群组搜索
   - 文件搜索
   - 频道推荐
+description: 介绍Telegram搜索机器人的功能与使用方法，推荐几款高效的搜索机器人，帮助用户快速查找频道、群组、文件等多种资源，提升信息检索效率。
 ---
 
 在信息爆炸的时代，如何高效获取自己想要的资源？Telegram搜索机器人为你带来全新解决方案，无需翻找频道、群组，只需输入关键词，即可一键查找海量内容。无论是影视剧、电子书、图片还是优质群组，Telegram搜索机器人都能帮你轻松找到。推荐搜索机器人：[@soso](https://t.me/soso?start=a_1453425105)、[@smss](https://t.me/smss?start=spread_1453425105)、[@jisou](https://t.me/jisou?start=a_1453425105)
 
 <!-- more -->
+
+## 使用准备
+
+1. 能访问外网，不会魔法的同学请参考：[便宜好用的翻墙机场推荐评测(长期更新 欢迎推荐)](https://www.ermao.net/posts/vpn/)
+
+2. 安装 Telegram 客户端，并注册账号，参考：[telegram（电报、飞机）注册使用教程](https://www.ermao.net/blog/telegram/)
 
 ## 什么是Telegram搜索机器人？
 
