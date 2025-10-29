@@ -39,7 +39,7 @@ description: 2025年翻墙机场推荐与VPN评测指南，精选便宜好用的
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 60G/月|❌|[TG](https://t.me/+rYzRmCbJfIw3ZTM1)|[前往](./v2/机场推荐ssone.md)|
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔|[TG](https://t.me/flybitvip)|[前往](./v1/机场推荐flybit.md)|
 |[xxyun](#xxyun)|[xxyun.de](https://xxyun.de/XQiZqbSr.html)| 无 |8.89元 100G/月|✔|[TG](https://t.me/+eYsE6P_xvjk2NGY5)|[前往](./v2/机场推荐xxyun.md)|
-|[ccyz](#ccyz)|[ccyz.org](https://ccyz.org/QkQotDCu.html)| 无 |15元 100G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|
+|[ccyz](#ccyz)|[ccyz.org](https://ccyz.org/QkQotDCu.html)| 1G |15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|
 |[superbiu](#superbiu)|[superbiu.com](https://superbiu.com/#/register?code=BasmsULb)| 无 |11元 50G/月|✔|[TG](https://t.me/superbiu888)|[前往](./v2/机场推荐superbiu.md)|
 |[cocoduck](#cocoduck)|[cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|
 |[小牛云](#小牛云)|[xiaoniuyun.cc](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)| 无 |2.99元 5G/天|✔|[TG](https://t.me/aoxcloud)|[前往](./v2/机场推荐小牛云.md)|
@@ -204,14 +204,14 @@ CocoDuck机场官网地址：[https://cocoduck.live](https://cocoduck.live/auth/
 
 ccyz官网地址：[ccyz.org](https://ccyz.org/QkQotDCu.html)
 
-最便宜的订阅有15元 100G/月。
+最便宜的订阅有15元 150G/月。
 
 主打高性价比与专线稳定，采用 BGP+IEPL 双重优化，晚高峰依旧保持高速。支持 Netflix、Disney+、HBO 等主流流媒体解锁，并提供全天候客服响应，适合长期使用或需要稳定带宽的用户。
 
 | 套餐名称 | 价格 | 流量 | 峰值带宽 | 线路 | 适用人群 | 购买链接 |
 |----------|-----:|-----:|---------:|------|----------|----------|
-| Lite 套餐 · 100G | ¥15 / 月 | 100G/月 | 取决于节点 | IEPL 专线 | 轻度使用、影音追剧 | [立即购买](https://ccyz.org/QkQotDCu.html) |
-| Pro 套餐 · 200G | ¥25 / 月 | 200G/月 | 取决于节点 | IEPL 专线 | 日常/多设备用户 | [立即购买](https://ccyz.org/QkQotDCu.html) |
+| Lite 套餐 · 150G | ¥15 / 月 | 150G/月 | 取决于节点 | IEPL 专线 | 轻度使用、影音追剧 | [立即购买](https://ccyz.org/QkQotDCu.html) |
+| Pro 套餐 · 280G | ¥25 / 月 | 280G/月 | 取决于节点 | IEPL 专线 | 日常/多设备用户 | [立即购买](https://ccyz.org/QkQotDCu.html) |
 
 
 ---
