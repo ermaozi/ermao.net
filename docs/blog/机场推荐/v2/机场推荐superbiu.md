@@ -14,9 +14,9 @@ tags:
 description: SuperBiu 机场详评：三网入口的国际 IPLC 专线，数据全程不走公网，支持全球流媒体与 GPT 解锁，提供包月与按量付费套餐，适合观影、炒币与低延迟游戏场景。
 ---
 
-[SuperBiu机场](https://superbiu.com/#/register?code=BasmsULb)详细评测：三网入口直连国际 IPLC，数据传输全程不经过公网，提供全球节点与自主流媒体解锁技术。无论观影、炒币还是游戏，都能畅享低延迟高速网络。
+[SuperBiu机场](https://biubiux.online/#/register?code=BasmsULb)详细评测：三网入口直连国际 IPLC，数据传输全程不经过公网，提供全球节点与自主流媒体解锁技术。无论观影、炒币还是游戏，都能畅享低延迟高速网络。
 
-SuperBiu机场官网地址：[https://superbiu.com](https://superbiu.com/#/register?code=BasmsULb)
+SuperBiu机场官网地址：[https://biubiux.online](https://biubiux.online/#/register?code=BasmsULb)
 
 <!-- more -->
 
@@ -30,7 +30,7 @@ SuperBiu机场官网地址：[https://superbiu.com](https://superbiu.com/#/regis
 
 | 项目 | 详情 |
 |------|------|
-| 🌐 **官网地址** | [superbiu.com](https://superbiu.com/#/register?code=BasmsULb) |
+| 🌐 **官网地址** | [biubiux.online](https://biubiux.online/#/register?code=BasmsULb) |
 | 💰 **最低月付** | ¥11 / 50G（Small Biu） |
 | 📦 **套餐形式** | 月付/季付/半年/年付 & 按量一次性流量包 |
 | 🚀 **线路** | 三网入口 + 国际 IPLC 专线 |
@@ -45,11 +45,11 @@ SuperBiu机场官网地址：[https://superbiu.com](https://superbiu.com/#/regis
 
 | 套餐名称 | 月付 | 季付 | 半年 | 年付 | 流量/月 | 购买地址 |
 |----------|-----:|-----:|-----:|-----:|--------:|-----|
-| Small Biu 50G | ¥11 | ¥30 | ¥60 | ¥120 | 50GB | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
-| Mini Biu 100G | ¥16 | ¥45 | ¥90 | ¥180 | 100GB | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
-| Mini Biu 200G | ¥24 | ¥70 | ¥135 | ¥260 | 200GB | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
-| Medium Biu 300G | ¥33 | ¥95 | ¥185 | ¥360 | 300GB | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
-| Medium Biu 500G | ¥45 | ¥132 | ¥260 | ¥495 | 500GB | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+| Small Biu 50G | ¥11 | ¥30 | ¥60 | ¥120 | 50GB | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+| Mini Biu 100G | ¥16 | ¥45 | ¥90 | ¥180 | 100GB | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+| Mini Biu 200G | ¥24 | ¥70 | ¥135 | ¥260 | 200GB | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+| Medium Biu 300G | ¥33 | ¥95 | ¥185 | ¥360 | 300GB | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+| Medium Biu 500G | ¥45 | ¥132 | ¥260 | ¥495 | 500GB | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
 
 > 📌 价格按官方面板实时调整为准，续费前可在后台查看最新折扣。
 
@@ -57,10 +57,10 @@ SuperBiu机场官网地址：[https://superbiu.com](https://superbiu.com/#/regis
 
 | 套餐 | 流量 | 一次性价格 | 购买地址 |
 |------|------:|-----------:|-----|
-| Biu-as-you-go 120G | 120GB | ¥40 | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
-| Biu-as-you-go 240G | 240GB | ¥79 | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
-| Biu-as-you-go 380G | 380GB | ¥128 | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
-| Biu-as-you-go 880G | 880GB | ¥238 | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+| Biu-as-you-go 120G | 120GB | ¥40 | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+| Biu-as-you-go 240G | 240GB | ¥79 | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+| Biu-as-you-go 380G | 380GB | ¥128 | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+| Biu-as-you-go 880G | 880GB | ¥238 | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
 
 > 💡 一次性套餐适合临时出差、备用机场或多设备共享，流量用完前不会过期。
 
@@ -93,7 +93,7 @@ SuperBiu机场官网地址：[https://superbiu.com](https://superbiu.com/#/regis
 
 ## 📱 SuperBiu 上手指南
 
-1. **注册账号**：访问[官网](https://superbiu.com/#/register?code=BasmsULb)，完成邮箱验证  
+1. **注册账号**：访问[官网](https://biubiux.online/#/register?code=BasmsULb)，完成邮箱验证  
 2. **选购套餐**：根据用量选择月付或一次性流量包  
 3. **复制订阅**：后台提供 Clash / Shadowrocket / Quantumult X / V2Ray 等订阅链接  
 4. **导入客户端**：粘贴订阅地址，一键同步节点  
@@ -156,7 +156,7 @@ A：一次性套餐不限制时长，流量用完前一直有效。
 
 如果你需要一款兼顾观影、游戏、炒币与远程办公的高性能机场，**SuperBiu** 是 2025 年不可错过的选择。
 
-👉 **立即体验**：[注册 SuperBiu](https://superbiu.com/#/register?code=BasmsULb)，解锁更快、更稳的全球网络。
+👉 **立即体验**：[注册 SuperBiu](https://biubiux.online/#/register?code=BasmsULb)，解锁更快、更稳的全球网络。
 
 ---
 

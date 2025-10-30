@@ -1,5 +1,5 @@
 ---
-createTime: 2025/10/21 01:00:00
+createTime: 2025/10/30 01:00:00
 sticky: 100
 tags:
   - 科学上网
@@ -40,7 +40,7 @@ description: 2025年翻墙机场推荐与VPN评测指南，精选便宜好用的
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔|[TG](https://t.me/flybitvip)|[前往](./v1/机场推荐flybit.md)|
 |[xxyun](#xxyun)|[xxyun.de](https://xxyun.de/XQiZqbSr.html)| 无 |8.89元 100G/月|✔|[TG](https://t.me/+eYsE6P_xvjk2NGY5)|[前往](./v2/机场推荐xxyun.md)|
 |[ccyz](#ccyz)|[ccyz.org](https://ccyz.org/QkQotDCu.html)| 1G |15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|
-|[superbiu](#superbiu)|[superbiu.com](https://superbiu.com/#/register?code=BasmsULb)| 无 |11元 50G/月|✔|[TG](https://t.me/superbiu888)|[前往](./v2/机场推荐superbiu.md)|
+|[superbiu](#superbiu)|[biubiux.online](https://biubiux.online/#/register?code=BasmsULb)| 无 |11元 50G/月|✔|[TG](https://t.me/superbiu888)|[前往](./v2/机场推荐superbiu.md)|
 |[cocoduck](#cocoduck)|[cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|
 |[小牛云](#小牛云)|[xiaoniuyun.cc](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)| 无 |2.99元 5G/天|✔|[TG](https://t.me/aoxcloud)|[前往](./v2/机场推荐小牛云.md)|
 |[koodog](#koodog)|[koodog.com](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)| 无 |5元 35G/月|❌|[TG](https://t.me/KooDogGroup)|[前往](./v1/机场推荐koodog.md)|
@@ -218,7 +218,7 @@ ccyz官网地址：[ccyz.org](https://ccyz.org/QkQotDCu.html)
 
 ### superbiu
 
-superbiu官网地址：[superbiu.com](https://superbiu.com/#/register?code=BasmsULb)
+superbiu官网地址：[biubiux.online](https://biubiux.online/#/register?code=BasmsULb)
 
 最便宜的订阅有11元 50G/月。
 
@@ -228,21 +228,21 @@ superbiu官网地址：[superbiu.com](https://superbiu.com/#/register?code=Basms
 
 | 套餐名称 | 月付 | 季付 | 半年 | 年付 | 流量/月 | 购买地址 |
 |----------|-----:|-----:|-----:|-----:|--------:|-----|
-| Small Biu 50G | ¥11 | ¥30 | ¥60 | ¥120 | 50GB | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
-| Mini Biu 100G | ¥16 | ¥45 | ¥90 | ¥180 | 100GB | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
-| Mini Biu 200G | ¥24 | ¥70 | ¥135 | ¥260 | 200GB | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
-| Medium Biu 300G | ¥33 | ¥95 | ¥185 | ¥360 | 300GB | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
-| Medium Biu 500G | ¥45 | ¥132 | ¥260 | ¥495 | 500GB | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+| Small Biu 50G | ¥11 | ¥30 | ¥60 | ¥120 | 50GB | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+| Mini Biu 100G | ¥16 | ¥45 | ¥90 | ¥180 | 100GB | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+| Mini Biu 200G | ¥24 | ¥70 | ¥135 | ¥260 | 200GB | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+| Medium Biu 300G | ¥33 | ¥95 | ¥185 | ¥360 | 300GB | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+| Medium Biu 500G | ¥45 | ¥132 | ¥260 | ¥495 | 500GB | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
 
 
 #### 按量一次性流量包（有效期内不限时）
 
 | 套餐 | 流量 | 一次性价格 | 购买地址 |
 |------|------:|-----------:|-----|
-| Biu-as-you-go 120G | 120GB | ¥40 | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
-| Biu-as-you-go 240G | 240GB | ¥79 | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
-| Biu-as-you-go 380G | 380GB | ¥128 | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
-| Biu-as-you-go 880G | 880GB | ¥238 | [点击购买](https://superbiu.com/#/register?code=BasmsULb) |
+| Biu-as-you-go 120G | 120GB | ¥40 | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+| Biu-as-you-go 240G | 240GB | ¥79 | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+| Biu-as-you-go 380G | 380GB | ¥128 | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+| Biu-as-you-go 880G | 880GB | ¥238 | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
 
 > 一次性套餐适合临时出差、备用机场或多设备共享，流量用完前不会过期。
 
