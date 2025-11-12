@@ -19,6 +19,6 @@
   "dependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.26",
     "@vuepress/client": "2.0.0-rc.26",
-    "vue": "^3.5.22"
+    "vue": "^3.5.24"
   }
 }
