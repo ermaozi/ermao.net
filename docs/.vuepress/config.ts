@@ -21,7 +21,7 @@ export default defineUserConfig({
     logo: '/images/logo.svg',
     home: '/',
     hostname: 'https://www.ermao.net',
-    footer: { message: "© 2024 二猫子 📧 <a href='mailto:admin@ermao.net'>admin@ermao.net</a><a href='https://www.travellings.cn/go.html' target='_blank' rel='noopener' title='开往-友链接力'></a>" },
+    footer: { message: "© 2024 二猫子 📧 <a href='mailto:admin@ermao.net'>admin@ermao.net</a>" },
     navbar: [
       { text: '二猫子博客', link: '/blog/' },
       { text: '标签', link: '/blog/tags/' },
