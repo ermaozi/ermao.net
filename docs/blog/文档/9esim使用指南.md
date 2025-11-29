@@ -40,7 +40,9 @@ description: 2025年实测 9esim使用指南完整教程：购买9esim v3卡和e
 
 9esim v3 卡原价是24美元，这里可以使用我的推广码 `ermao` 享受9折优惠，实付21.6美元。
 
-> 💡 **提示**：相比其他服务商，9esim 提供高性价比的虚拟手机号解决方案。
+:::tip
+相比其他服务商，9esim 提供高性价比的虚拟手机号解决方案。
+:::
 
 ![9esim价格](images/9esim使用指南/image.png)
 
@@ -57,6 +59,10 @@ description: 2025年实测 9esim使用指南完整教程：购买9esim v3卡和e
 ![9esim Add to basket](images/9esim使用指南/image-3.png)
 
 4. **结账**：点击 "Proceed to checkout"，填写收货信息，选择微信支付。如果没有优惠码的话，在付款前点击 "Add coupons" 输入 `ermao` 享受9折优惠。
+
+:::tip
+使用优惠码 `ermao` 可享受9折优惠。
+:::
 
 ![9esim Proceed to checkout](images/9esim使用指南/image-4.png)
 
@@ -150,5 +156,6 @@ A：9esim 使用加密技术，保护用户隐私。
 
 ---
 
-> 💡 **免责声明**：本文仅供技术学习参考，请遵守当地法律法规，合理使用虚拟手机号服务。
-
+:::info 免责声明
+：本文仅供技术学习参考，请遵守当地法律法规，合理使用虚拟手机号服务。
+:::
