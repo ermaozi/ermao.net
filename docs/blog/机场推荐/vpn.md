@@ -39,7 +39,7 @@ description: 2025年翻墙机场推荐与VPN评测指南，精选便宜好用的
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 60G/月|❌|[TG](https://t.me/+rYzRmCbJfIw3ZTM1)|[前往](./v2/机场推荐ssone.md)|
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔|[TG](https://t.me/flybitvip)|[前往](./v1/机场推荐flybit.md)|
 |[xxyun](#xxyun)|[xxyun.de](https://xxyun.de/XQiZqbSr.html)| 无 |8.89元 100G/月|✔|[TG](https://t.me/+eYsE6P_xvjk2NGY5)|[前往](./v2/机场推荐xxyun.md)|
-|[唯兔云](#唯兔云)|[vip01.onlyrabbit.cc](https://vip01.onlyrabbit.cc/#/?code=iaD6AgSx)| 无 |6元 45G/月|✔|[TG](https://t.me/onlyrabbitvip)|[前往](./v2/机场推荐唯兔云.md)|
+|[唯兔云](#唯兔云)|[vip01.onlyrabbit.cc](https://vip01.onlyrabbit.cc/#/?code=iaD6AgSx)| 无 |6元 45G/月|✔|[TG](https://t.me/v2yun_v2)|[前往](./v2/机场推荐唯兔云.md)|
 |[ccyz](#ccyz)|[ccyz.org](https://ccyz.org/QkQotDCu.html)| 1G |15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|
 |[superbiu](#superbiu)|[biubiux.online](https://biubiux.online/#/register?code=BasmsULb)| 无 |11元 50G/月|✔|[TG](https://t.me/superbiu888)|[前往](./v2/机场推荐superbiu.md)|
 |[cocoduck](#cocoduck)|[cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|
