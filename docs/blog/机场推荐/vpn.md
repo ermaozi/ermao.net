@@ -42,7 +42,6 @@ description: 2025年翻墙机场推荐与VPN评测指南，精选便宜好用的
 |[ccyz](#ccyz)|[ccyz.org](https://ccyz.org/QkQotDCu.html)| 1G |15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|
 |[superbiu](#superbiu)|[biubiux.online](https://biubiux.online/#/register?code=BasmsULb)| 无 |11元 50G/月|✔|[TG](https://t.me/superbiu888)|[前往](./v2/机场推荐superbiu.md)|
 |[cocoduck](#cocoduck)|[cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|
-|[小牛云](#小牛云)|[xiaoniuyun.cc](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)| 无 |2.99元 5G/天|✔|[TG](https://t.me/aoxcloud)|[前往](./v2/机场推荐小牛云.md)|
 |[koodog](#koodog)|[koodog.com](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)| 无 |5元 35G/月|❌|[TG](https://t.me/KooDogGroup)|[前往](./v1/机场推荐koodog.md)|
 |[99吧](#_99bar)|[99vpn.bar](https://99vpn.bar/#/register?code=qzpkbzHF)| 1天 1G |9.9元 99G/月|✔|[TG](https://t.me/jiujiuchat)|暂无|
 |[TNT](#tnt)|[ermaozi01.tntvipaff.cc](https://ermaozi01.tntvipaff.cc/#/register?code=f1EyPwf3)|无|10元60g/月(季付)|❌|[TG](https://t.me/TNTCloud2)|[前往](./v1/机场推荐TNT.md)|
@@ -68,6 +67,7 @@ description: 2025年翻墙机场推荐与VPN评测指南，精选便宜好用的
 |[CyberGuard](#cyberguard)|[cyberguard.best](https://www.cyberguard.best/#/register?code=yoyUW3R9)| 无 |18元 100G/月|✔|[TG](https://t.me/CyberGuardChat)|[前往](./v1/机场推荐CyberGuard.md)|
 |[XSUS](#xsus)|[xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔|[TG](https://t.me/xsusvpn)|[前往](./v1/机场推荐XSUS.md)|
 |[Aladdin](#aladdin)|[www.avatargpt.xyz/](https://short.thisgourl.xyz/#/register?code=tvLw0oMj)|无|30元 390G/半年|❌|暂无|暂无|
+|[小牛云](#小牛云)|[xiaoniuyun.cc](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)| 无 |预警|✔|[TG](https://t.me/aoxcloud)|[前往](./v2/机场推荐小牛云.md)|
 |[EF](#ef)|~~www.efcloud1.com~~|无|跑路|❌|跑路|跑路|
 
 
@@ -154,49 +154,6 @@ CocoDuck机场官网地址：[https://cocoduck.live](https://cocoduck.live/auth/
 | 哥达鸭 | ¥41/月 | 700GB/月 | 40+全球节点 | 优先路由 | 中度用户 | [购买链接](https://cocoduck.live/auth/register?code=25c8b515df) |
 | 唐老鸭 | ¥53/月 | 1000GB/月 | 40+全球节点 | 专线服务 | 企业/团队 | [购买链接](https://cocoduck.live/auth/register?code=25c8b515df) |
 | 迷你鸭 | ¥77/年 | 77GB/月 | 40+全球节点 | 超值优惠 | 长期用户 | [购买链接](https://cocoduck.live/auth/register?code=25c8b515df) |
-
----
-
-### 小牛云
-
-小牛云官网地址：[xiaoniuyun.cc](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)
-
-邀请码：n31onhiT
-
-试用：无
-
-最便宜的订阅有2.99元 5G/天。
-
-| 套餐 | 价格 | 总流量 | 高速带宽 | 限制设备数 | 购买地址 |
-| --- | --- | --- | --- | --- | --- |
-|体验套餐 (1天)|¥2.99|5G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
-|轻量套餐 (10天)|¥16.80|50G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
-|基础套餐 (1个月)|¥46.80|200G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
-|标准套餐 (3个月)|¥118.80|800G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
-|高级套餐 (半年)|¥202.80|2000G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
-|高级套餐 (1年)|¥298.80|2000G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
-|VIP 商务套餐 (半年)|¥358.80|5000G|1000 Mbps|10|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
-|VIP 商务套餐 (1年)|¥478.80|5000G|1000 Mbps|10|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
-|VIP 商务套餐 (2年)|¥718.80|5000G|1000 Mbps|10|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
-|VIP 企业套餐 (半年)|¥778.80|15000G|1000 Mbps|10|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
-|VIP 企业套餐 (1年)|¥1066.80|15000G|1000 Mbps|10|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
-|VIP 企业套餐 (2年)|¥1066.80|15000G|1000 Mbps|10|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
-|不限时 (50GB)|¥47.60|50G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
-|不限时 (200GB)|¥96.60|50G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
-|不限时 (500GB)|¥187.60|50G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
-|不限时 (1000GB)|¥257.60|50G|500 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
-|不限时 (3000GB)|¥537.60|50G|1000 Mbps|5|[点击购买](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|
-
-小牛云于2024年正式上线，依托母公司小牛VPN近5年的行业经验，拥有深厚的技术积淀和良好的品牌信誉，用户无需担心跑路风险。
-
-**核心优势：**
-- 采用国内知名科技企业专线接入，确保网络品质
-- 拥有庞大的节点资源池，提供超过100个高质量节点
-- 采用独享落地服务器架构，避免节点资源过度共享
-- 支持多种代理协议选择，满足不同用户需求
-- 提供充足的带宽保障，日常维持2Gbps容量，高峰期可达5Gbps
-
-凭借母品牌多年运营积累的技术实力和用户口碑，小牛云为用户提供稳定可靠的网络加速服务。
 
 ---
 
@@ -685,6 +642,24 @@ XSUS官网地址：[xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)
 试用：无
 
 最便宜的订阅有8元 168G/30天。稳定运行2年+，节点质量高，支持按流量购买，支持支付宝、微信、USDT支付。
+
+---
+
+### 小牛云
+
+::: caution
+
+大量迹象表明，小牛云机场极有可能在短期内跑路！
+
+请各位用户注意风险，谨慎续费购买！
+
+参考文章：[⚠️【机场跑路】2025年12月02日小牛云机场跑路预警](https://www.ermao.net/scamvpn/xiaoniu/)
+
+:::
+
+小牛云官网地址：[xiaoniuyun.cc](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)
+
+邀请码：n31onhiT
 
 ---
 
