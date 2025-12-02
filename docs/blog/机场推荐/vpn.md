@@ -62,7 +62,7 @@ description: 2025年翻墙机场推荐与VPN评测指南，精选便宜好用的
 |[加速啦](#加速啦)|[jiasu.la/?r=39116](https://jiasu.la/?r=39116)| 1G 不限时 |10元 80G/月|✔|[TG](https://t.me/jiasu_la)|[前往](./v1/机场推荐加速啦.md)|
 |[冲上云霄](#冲上云霄)|[cpdd.one](https://cpdd.one/?r=32083)| 1天 1G |5元 80G/30天|✔|[TG](https://t.me/vpnpn123)|[前往](./v1/机场推荐冲上云霄.md)|
 |[九霄云](#九霄云)|[shop.starpro.one](https://shop.starpro.one/#/register?code=ZXzjv7oD)| 2天 6G |15元 200G/月|✔|[QQ](https://qm.qq.com/q/EzY3dgKhIA)|[前往](./v1/机场推荐九霄云.md)|
-|[掌中世界](#掌中世界)|[www.zjs2025.com](https://www.zjs2025.com/user/register?code=S74QiRGN)| 无 | 18元 100G/月|❌|暂无|[前往](./v1/机场推荐掌中世界.md)|
+|[掌中世界](#掌中世界)|[www.zzsj.pro](https://www.zzsj.pro/user/register?code=S74QiRGN)| 无 | 18元 100G/月|❌|暂无|[前往](./v1/机场推荐掌中世界.md)|
 |[白羊星](#白羊星)|[baiyangxing.com](https://baiyangxing.com/#/register?code=gelkjfjz)| 7天 10G | 12元 100G/月|✔|暂无|[前往](./v1/机场推荐白羊星.md)|
 |[CyberGuard](#cyberguard)|[cyberguard.best](https://www.cyberguard.best/#/register?code=yoyUW3R9)| 无 |18元 100G/月|✔|[TG](https://t.me/CyberGuardChat)|[前往](./v1/机场推荐CyberGuard.md)|
 |[XSUS](#xsus)|[xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔|[TG](https://t.me/xsusvpn)|[前往](./v1/机场推荐XSUS.md)|
@@ -567,7 +567,7 @@ xxai官网地址：[xxai.uk](https://xx-ai.co?invite_code=K2TpsDcg)
 
 ### 掌中世界
 
-掌中世界官网地址：[zzsjjsq.com](https://www.zjs2025.com/user/register?code=S74QiRGN)
+掌中世界官网地址：[zzsjjsq.com](https://www.zzsj.pro/user/register?code=S74QiRGN)
 
 邀请码：S74QiRGN
 
