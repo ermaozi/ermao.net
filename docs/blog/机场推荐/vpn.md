@@ -40,6 +40,7 @@ description: 2025年翻墙机场推荐与VPN评测指南，精选便宜好用的
 |[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔|[TG](https://t.me/flybitvip)|[前往](./v1/机场推荐flybit.md)|
 |[xxyun](#xxyun)|[xxyun.de](https://xxyun.de/XQiZqbSr.html)| 无 |8.89元 100G/月|✔|[TG](https://t.me/+eYsE6P_xvjk2NGY5)|[前往](./v2/机场推荐xxyun.md)|
 |[ccyz](#ccyz)|[ccyz.org](https://ccyz.org/QkQotDCu.html)| 1G |15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|
+|[唯兔云](#唯兔云)|[vip01.onlyrabbit.cc](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx)| 无 |6元 45G/月|✔|[TG](https://t.me/v2yun_v2)|[前往](./v2/机场推荐唯兔云.md)|
 |[superbiu](#superbiu)|[biubiux.online](https://biubiux.online/#/register?code=BasmsULb)| 无 |11元 50G/月|✔|[TG](https://t.me/superbiu888)|[前往](./v2/机场推荐superbiu.md)|
 |[cocoduck](#cocoduck)|[cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|
 |[koodog](#koodog)|[koodog.com](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)| 无 |5元 35G/月|❌|[TG](https://t.me/KooDogGroup)|[前往](./v1/机场推荐koodog.md)|
@@ -170,6 +171,27 @@ ccyz官网地址：[ccyz.org](https://ccyz.org/QkQotDCu.html)
 | Lite 套餐 · 150G | ¥15 / 月 | 150G/月 | 取决于节点 | IEPL 专线 | 轻度使用、影音追剧 | [立即购买](https://ccyz.org/QkQotDCu.html) |
 | Pro 套餐 · 280G | ¥25 / 月 | 280G/月 | 取决于节点 | IEPL 专线 | 日常/多设备用户 | [立即购买](https://ccyz.org/QkQotDCu.html) |
 
+
+---
+
+### 唯兔云
+
+唯兔云官网地址：[vip01.onlyrabbit.cc](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx)
+
+唯兔云IPLC专线，Trojan协议，解锁各大流媒体，解锁ChatGPT、Gemini等AI，解锁Tiktok，支持电商、直播运营。套餐无倍率、不限速、不限制设备数量，支持支付宝微信usdt，
+除了港、台、日、美、新常规的五国节点以外，我们还有东南亚五国，韩国以及一些欧美国家。价格惠民，最低6元一个月，专线中的性价比战斗机。
+售后服务绝对有保障，多人客服团队轮流坐班，海外技术团队稳定可靠。可提供小火箭下载账号，可提供TG代注册服务等等
+
+最便宜的订阅有6元 45G/月。
+
+| 套餐名称 | 流量 | 价格 | 说明 | 购买链接 |
+|----------|------|------|------|---------|
+| **入门年付** | 45G/月 | ¥79.9/年 | 平均仅需6.6元/月，性价比极高 | [点击购买](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx) |
+| **基础套餐** | 100G/月 | ¥14.9/月 <br> ¥40.9/季 <br> ¥142.9/年 | 适合日常轻度使用 | [点击购买](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx) |
+| **进阶套餐** | 200G/月 | ¥29.9/月 <br> ¥80.9/季 <br> ¥286.9/年 | 适合主力使用 | [点击购买](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx) |
+| **高级套餐** | 500G/月 | ¥59.9/月 <br> ¥161.9/季 <br> ¥547.9/年 | 适合重度视频用户 | [点击购买](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx) |
+| **尊享套餐** | 1000G/月 | ¥119.9/月 <br> ¥323.9/季 <br> ¥1150.9/年 | 团队/工作室首选 | [点击购买](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx) |
+| **不限时套餐** | 500G | 首次¥340 | 后续续费9折，流量不过期 | [点击购买](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx) |
 
 ---
 
