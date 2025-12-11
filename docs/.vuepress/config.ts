@@ -23,10 +23,11 @@ export default defineUserConfig({
     hostname: 'https://www.ermao.net',
     footer: { message: "© 2024 二猫子 📧 <a href='mailto:admin@ermao.net'>admin@ermao.net</a>" },
     navbar: [
-      { text: '二猫子博客', link: '/blog/' },
-      { text: '标签', link: '/blog/tags/' },
-      { text: '归档', link: '/blog/archives/' },
-      { text: '友链' , link: '/friends/'},
+      { text: '二猫子博客', link: '/blog/', icon: 'material-symbols:home-rounded' },
+      { text: '机场推荐', link: '/airport/', icon: 'material-symbols:flight-takeoff' },
+      { text: '标签', link: '/blog/tags/', icon: 'material-symbols:sell' },
+      { text: '归档', link: '/blog/archives/', icon: 'material-symbols:archive-rounded' },
+      { text: '友链' , link: '/friends/', icon: 'material-symbols:footprint' },
     ],
     profile: {
         name: '二猫子',
@@ -41,6 +42,7 @@ export default defineUserConfig({
           link: 'mailto:admin@ermao.net'
         }
       ],
+    llmstxt: true,
     plugins: {
       comment: {
         provider: 'Giscus',

@@ -36,13 +36,17 @@ list:
     desc: We are all in the gutter, but some of us are looking at the stars
 ---
 
-友联格式：
+::: card title="友链格式"
 
-```
+``` bash
 name: 二猫子
 link: https://www.ermao.net/
 avatar: https://www.ermao.net/images/logo.svg
 desc: 老老实实的二猫子，从不胡说八道。
 ```
 
-邮箱地址：[admin@ermao.net](mailto:admin@ermao.net?subject=%E5%8F%8B%E9%93%BE%E7%94%B3%E8%AF%B7&body=name%3A%20%0Alink%3A%20%0Aavatar%3A%20%0Adesc%3A%20)
+:::
+
+---
+
+<LinkCard icon="material-symbols:mail-rounded" title="发送邮件" href="mailto:admin@ermao.net?subject=%E5%8F%8B%E9%93%BE%E7%94%B3%E8%AF%B7&body=name%3A%20%0Alink%3A%20%0Aavatar%3A%20%0Adesc%3A%20" />
