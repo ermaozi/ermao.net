@@ -238,8 +238,8 @@ policies 目录中的内容几乎不会更改，但 promotions 目录中的内�
 
 为了帮助您专注于 SEO 真正重要的方面，我们收集了一些在互联网上传播的最常见和最突出的主题。总之，关于这些主题的建议是，您应采取最适合自己业务的做法；我们将在下面详细说明几个具体的点：
 
-:::: card-grid
-::: card
+::: card-masonry cols="2" gap="3"
+
 - **元关键字**
 
    Google 搜索[不使用关键字元标记](https://developers.google.com/search/blog/2009/09/google-does-not-use-keywords-meta-tag?hl=zh-cn)。
@@ -258,9 +258,7 @@ policies 目录中的内容几乎不会更改，但 promotions 目录中的内�
 
     内容长度本身对于排名而言并不重要（并没有什么效果最佳的字数目标下限或上限，不过您很可能希望长度至少是一个字词）。如果您使用了不同的字词（写得自然一些，不会重复），那么仅仅因为使用了更多关键字，就有更多机会在 Google 搜索中显示。
 
-:::
-
-::: card
+#####
 
 - **子网域与子目录**
 
@@ -284,8 +282,8 @@ policies 目录中的内容几乎不会更改，但 promotions 目录中的内�
 
     [它不是](https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=zh-cn#eat)。
 
+
 :::
-::::
 
 ### 后续步骤
 
