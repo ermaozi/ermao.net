@@ -1,6 +1,6 @@
 ---
 title: 2025便宜机场推荐：SSONE机场评测（10元60G、Netflix/ChatGPT解锁、稳定高速）
-createTime: 2025/11/03 13:35:18
+createTime: 2025/12/12 13:35:18
 permalink: /article/ssone/
 tags:
   - 科学上网
@@ -234,8 +234,7 @@ SSONE机场官网地址：[https://hello-ssone.com](https://hello-ssone.com/regi
 
 ### 🏆 更多机场推荐
 - 🌟 [2025年最新机场推荐汇总](https://www.ermao.net/posts/vpn/)
-- 💰 [便宜机场推荐](https://www.ermao.net/posts/vpn/#超值推荐)
-- 🚀 [高速机场推荐](https://www.ermao.net/posts/vpn/#高质量推荐)
+- 💰 [热门便宜机场推荐](https://www.ermao.net/airport/)
 
 ## ❓ 常见问题解答
 

@@ -1,5 +1,5 @@
 ---
-createTime: 2025/11/29 01:00:00
+createTime: 2025/12/12 01:00:00
 sticky: 100
 tags:
   - 科学上网
@@ -41,6 +41,7 @@ description: 2025年翻墙机场推荐与VPN评测指南，精选便宜好用的
 |[xxyun](#xxyun)|[xxyun.de](https://xxyun.de/XQiZqbSr.html)| 无 |8.89元 100G/月|✔|[TG](https://t.me/+eYsE6P_xvjk2NGY5)|[前往](./v2/机场推荐xxyun.md)|
 |[ccyz](#ccyz)|[ccyz.org](https://ccyz.org/QkQotDCu.html)| 1G |15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|
 |[唯兔云](#唯兔云)|[vip01.onlyrabbit.cc](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx)| 无 |6元 45G/月|✔|[TG](https://t.me/v2yun_v2)|[前往](./v2/机场推荐唯兔云.md)|
+[星岛梦](#星岛梦)|[a01.sdmvipaff.cc](https://a01.sdmvipaff.cc/#/?code=O9Q9H6VY)| 无 |16元 100G/月|✔|[TG](https://t.me/thundermousecc)|[前往](./v2/机场推荐星岛梦.md)|
 |[superbiu](#superbiu)|[biubiux.online](https://biubiux.online/#/register?code=BasmsULb)| 无 |11元 50G/月|✔|[TG](https://t.me/superbiu888)|[前往](./v2/机场推荐superbiu.md)|
 |[cocoduck](#cocoduck)|[cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|
 |[koodog](#koodog)|[koodog.com](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)| 无 |5元 35G/月|❌|[TG](https://t.me/KooDogGroup)|[前往](./v1/机场推荐koodog.md)|
@@ -193,6 +194,26 @@ ccyz官网地址：[ccyz.org](https://ccyz.org/QkQotDCu.html)
 | **尊享套餐** | 1000G/月 | ¥119.9/月 <br> ¥323.9/季 <br> ¥1150.9/年 | 团队/工作室首选 | [点击购买](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx) |
 | **不限时套餐** | 500G | 首次¥340 | 后续续费9折，流量不过期 | [点击购买](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx) |
 
+---
+
+### 星岛梦
+
+星岛梦官网地址：[a01.sdmvipaff.cc](https://a01.sdmvipaff.cc/#/?code=O9Q9H6VY)
+
+星岛梦IEPL专线机场，提供高品质线路，支持 Trojan/SS 等协议，专注于稳定流媒体与跨境业务。全线解锁 Netflix、Disney+、YouTube、ChatGPT、Gemini 等平台与 AI 服务，并支持 TikTok 跨区，适合跨境电商、直播运营、远程办公等高要求用户。
+
+套餐无限速、无倍率、不限制设备数（合理使用），支持支付宝、USDT 付款。节点覆盖港台、日美新、东南亚、韩国及多国欧美地区，价格亲民，月付最低16元起，另提供1T大流量永久套餐。拥有多客服团队与海外技术支持，可提供小火箭下载、TG代注册等增值服务。
+
+最便宜的订阅有16元 100G/月。
+
+| 套餐名称 | 价格 | 流量 | 特点 | 购买链接 |
+|----------|------|------|------|---------|
+| **星岛梦 · 极速版** | ¥16.00/月 | 100GB/月 | 全IPLC专线，晚高峰不降速 | [购买链接](https://a01.sdmvipaff.cc/#/?code=O9Q9H6VY) |
+| **星岛梦 · 进阶版** | ¥32.00/月 | 200GB/月 | 全IPLC专线，晚高峰不降速 | [购买链接](https://a01.sdmvipaff.cc/#/?code=O9Q9H6VY) |
+| **星岛梦 · 闪光版** | ¥80.00/月 | 500GB/月 | 全IPLC专线，晚高峰不降速 | [购买链接](https://a01.sdmvipaff.cc/#/?code=O9Q9H6VY) |
+| **星岛梦 · 旗舰版** | ¥160.00/月 | 1.0TB/月 | 全IPLC专线，晚高峰不降速 | [购买链接](https://a01.sdmvipaff.cc/#/?code=O9Q9H6VY) |
+| **星岛梦 · 永久不限时** | ¥680.00/一次性 | 1.0TB | 无限时长，用完为止 | [购买链接](https://a01.sdmvipaff.cc/#/?code=O9Q9H6VY) |
+| **星岛梦 · 定制套餐** | ¥680.00/月 | 500GB | 专属定制节点，独享原生IP | [购买链接](https://a01.sdmvipaff.cc/#/?code=O9Q9H6VY) |
 ---
 
 ### superbiu

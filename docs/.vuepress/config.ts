@@ -21,7 +21,7 @@ export default defineUserConfig({
     logo: '/images/logo.svg',
     home: '/',
     hostname: 'https://www.ermao.net',
-    footer: { message: "© 2024 二猫子 📧 <a href='mailto:admin@ermao.net'>admin@ermao.net</a>" },
+    footer: { message: "© 2025 二猫子 📧 <a href='mailto:admin@ermao.net'>admin@ermao.net</a>" },
     navbar: [
       { text: '二猫子博客', link: '/blog/', icon: 'material-symbols:home-rounded' },
       { text: '机场推荐', link: '/airport/', icon: 'material-symbols:flight-takeoff' },

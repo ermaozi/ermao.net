@@ -121,6 +121,10 @@ A：可更换节点、切换协议或联系在线客服协助。
 
 👉 **立即体验**：[访问 CCYZ 官网](https://ccyz.org/QkQotDCu.html)，下单时别忘记输入优惠码 `ccyz` 享受 95 折！
 
+### 🏆 更多机场推荐
+- 🌟 [2025年最新机场推荐汇总](https://www.ermao.net/posts/vpn/)
+- 💰 [热门便宜机场推荐](https://www.ermao.net/airport/)
+
 ---
 
 :::info 免责声明

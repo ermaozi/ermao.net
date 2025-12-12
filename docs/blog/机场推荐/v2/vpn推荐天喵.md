@@ -107,6 +107,7 @@ A：Clash、Shadowrocket、Quantumult X、V2rayN 等常见工具均可无缝导�
 
 ### 🏆 更多机场推荐
 - 🌟 [2025年最新机场推荐汇总](https://www.ermao.net/posts/vpn/)
+- 💰 [热门便宜机场推荐](https://www.ermao.net/airport/)
 
 ---
 
