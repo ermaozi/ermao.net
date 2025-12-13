@@ -1,0 +1,88 @@
+---
+url: /article/23w1svxa/index.md
+---
+收集各大翻墙机场的优惠券信息，让大家购买VPN时能享受更多的折扣和优惠，少花冤枉钱。
+
+## xxyun加速机场85折优惠码
+
+[xxyun加速机场](https://www.ermao.net/article/0gematwc/)85折优惠码（只能使用一次）：`xxyun85`
+
+全场套餐85折优惠。
+
+活动时间：永久
+
+xxyun加速机场官网：[xxyun.xyz](https://xxyun.de/XQiZqbSr.html)
+
+## 大哥云机场优惠券
+
+国庆活动来了！
+
+注意：更换其他套餐会覆盖当前账号套餐，流量也会重置，其他参数都以最后的套餐为准。建议直接续费或购买当前相同的套餐。
+
+8折优惠码：`20251001`
+
+全场套餐8折优惠（-20%），不限次数，在售套餐，不限时流量不打折。
+
+活动时间：2025年9月28日0点—2025年10月15日晚结束截止
+
+错过不补！
+
+大哥云机场官网：[ermao.dgywzc.com](https://ermao.dgywzc.com/#/register?code=peAVAa8D)
+
+## 冲上云霄机场优惠券
+
+[冲上云霄机场](https://www.ermao.net/article/dycrz2ch/)流量优惠码：`ermaozi`
+
+使用获赠20G流量
+
+活动时间：永久有效
+
+## OKANC机场优惠券
+
+[OKANC机场](https://www.ermao.net/article/giwzl7sq/)78折优惠码：`505`
+
+全场套餐78折优惠。
+
+活动时间：2025年5月30日0点—2025年6月21日晚23点
+
+OKANC机场官网：[okanc.com](https://www.okanc.com/index.php#/register?code=3YK7Np6R)
+
+## 奈云机场优惠券
+
+[奈云机场](https://www.ermao.net/article/0gematwc/)72折优惠码：`531`
+
+全场套餐72折优惠。
+
+活动时间：2025年5月30日0点—2025年6月05日晚23点
+
+奈云机场官网：[www.v2ny.me](https://www.v2ny.me?path=register\&code=FNAu1FWB)
+
+## flyit机场优惠券
+
+[flyit机场](https://www.ermao.net/article/q8yp9r2b/)9折优惠码：`flyit`
+
+全场套餐9折优惠。
+
+活动时间：永久
+
+flyit机场官网：[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)
+
+## 灯塔cloud机场优惠券
+
+[灯塔cloud机场](https://www.ermao.net/article/osp1vx6y/)95折优惠码：`off95`
+
+全场套餐95折优惠。
+
+活动时间：永久
+
+灯塔cloud机场官网：[dengta.com](https://dengta.xn--xhq8sm16c5ls.com/#/register?code=n4jB4z5R)
+
+## xxyun加速机场优惠券
+
+[xxyun加速机场](https://www.ermao.net/article/0gematwc/)95折优惠码：`xxyun`
+
+全场套餐95折优惠。
+
+活动时间：永久
+
+xxyun加速机场官网：[xxyun.xyz](https://xxyun.de/XQiZqbSr.html)
