@@ -115,7 +115,64 @@ function updateMarkdownFile(accounts: { email: string, password: string, region:
             return;
         }
 
-        // Construct new content using card-masonry
+        // Construct new body content (without timestamp)
+        let newBody = `:::: card-masonry cols="2" gap="16"\n\n`;
+        
+        accounts.forEach(acc => {
+            let badgeType = 'info';
+            const r = acc.region;
+            if (r.includes('美')) badgeType = 'tip';
+            else if (r.includes('日')) badgeType = 'warning';
+            else if (r.includes('韩')) badgeType = 'danger';
+            else if (r.includes('中') || r.includes('国区')) badgeType = 'tip';
+
+            const regionText = acc.region;
+
+            newBody += `::: card\n\n`;
+            newBody += `<Badge type="${badgeType}" text="${regionText}" />\n\n`;
+            newBody += `账号 \`${acc.email}\`\n\n`;
+            newBody += `密码  <Plot trigger="click" effect="blur">\`${acc.password}\`</Plot>\n\n`;
+            newBody += ` <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('${acc.email}')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('${acc.password}')">复制密码</button>\n\n`;
+            newBody += `:::\n\n`;
+        });
+
+        newBody += `::::\n\n`;
+
+        const part1 = content.substring(0, headerIndex + header.length);
+        const part2 = content.substring(headerIndex + header.length);
+        
+        // Try to match card-masonry block first
+        // Group 1: Timestamp line (optional)
+        // Group 2: The card-masonry block
+        const cardMasonryRegex = /^\s*(> 更新时间：.*?\n\s*)?(:::: card-masonry[\s\S]*?::::)/m;
+        
+        // Try to match table block
+        const tableBlockRegex = /^\s*(\|.*\|\r?\n)+/m;
+
+        let match = part2.match(cardMasonryRegex);
+        let matchedLength = 0;
+        let matchIndex = -1;
+
+        if (match) {
+            matchIndex = match.index!;
+            matchedLength = match[0].length;
+            
+            // Check if content is identical
+            const existingBody = match[2];
+            if (existingBody && existingBody.trim() === newBody.trim()) {
+                console.log('内容未发生变化，跳过更新。');
+                return;
+            }
+        } else {
+            // Fallback to table check
+            match = part2.match(tableBlockRegex);
+            if (match) {
+                matchIndex = match.index!;
+                matchedLength = match[0].length;
+            }
+        }
+        
+        // If we are here, we need to update
         const now = new Date();
         const timeString = now.toLocaleString('zh-CN', { 
             timeZone: 'Asia/Shanghai',
@@ -128,65 +185,9 @@ function updateMarkdownFile(accounts: { email: string, password: string, region:
             hour12: false
         }).replace(/\//g, '-');
 
-        let newContent = `\n\n> 更新时间：${timeString}\n\n:::: card-masonry cols="2" gap="16"\n\n`;
-        
-        accounts.forEach(acc => {
-            let badgeType = 'info';
-            const r = acc.region;
-            if (r.includes('美')) badgeType = 'tip';
-            else if (r.includes('日')) badgeType = 'warning';
-            else if (r.includes('韩')) badgeType = 'danger';
-            else if (r.includes('中') || r.includes('国区')) badgeType = 'tip';
+        let newContent = `\n\n> 更新时间：${timeString}\n\n` + newBody;
 
-            const regionText = acc.region;
-
-            newContent += `::: card\n\n`;
-            newContent += `<Badge type="${badgeType}" text="${regionText}" />\n\n`;
-            newContent += `账号 \`${acc.email}\`\n\n`;
-            newContent += `密码  <Plot trigger="click" effect="blur">\`${acc.password}\`</Plot>\n\n`;
-            newContent += ` <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('${acc.email}')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('${acc.password}')">复制密码</button>\n\n`;
-            newContent += `:::\n\n`;
-        });
-
-        newContent += `::::\n\n`;
-
-        // Regex to find the existing block (either table or card-masonry)
-        // We look for the content after the header until the next section or end of file
-        // But to be safer, let's try to match the specific block types we know about.
-        
-        const part1 = content.substring(0, headerIndex + header.length);
-        const part2 = content.substring(headerIndex + header.length);
-        
-        // Try to match card-masonry block first
-        const cardMasonryRegex = /^\s*(> 更新时间：.*?\n\s*)?:::: card-masonry[\s\S]*?::::/m;
-        // Try to match table block
-        const tableBlockRegex = /^\s*(\|.*\|\r?\n)+/m;
-
-        let match = part2.match(cardMasonryRegex);
-        let matchedLength = 0;
-        let matchIndex = -1;
-
-        if (match) {
-            matchIndex = match.index!;
-            matchedLength = match[0].length;
-        } else {
-            // Fallback to table check
-            match = part2.match(tableBlockRegex);
-            if (match) {
-                matchIndex = match.index!;
-                matchedLength = match[0].length;
-            }
-        }
-        
-        if (matchIndex !== -1) {
-             const prefix = part2.substring(0, matchIndex);
-             // Ensure we are replacing the immediate next block
-             if (!prefix.trim()) {
-                 const newPart2 = part2.substring(0, matchIndex) + newContent + part2.substring(matchIndex + matchedLength);
-                 let finalContent = part1 + newPart2;
-
-                 // Inject script if missing
-                 const scriptContent = `
+        const scriptContent = `
 <script setup>
 const copy = (text) => {
   if (navigator.clipboard) {
@@ -217,6 +218,13 @@ const fallbackCopy = (text) => {
 }
 </script>
 `;
+
+        if (matchIndex !== -1) {
+             const prefix = part2.substring(0, matchIndex);
+             if (!prefix.trim()) {
+                 const newPart2 = part2.substring(0, matchIndex) + newContent + part2.substring(matchIndex + matchedLength);
+                 let finalContent = part1 + newPart2;
+
                  if (!finalContent.includes('const copy =')) {
                      finalContent += '\n' + scriptContent;
                  }
@@ -227,43 +235,10 @@ const fallbackCopy = (text) => {
                  console.error('标题后未紧跟目标块，跳过更新。');
              }
         } else {
-             // If no existing block found, append it? Or maybe just insert it.
              console.log('未找到现有块，尝试插入新块...');
              const newPart2 = newContent + part2;
              let finalContent = part1 + newPart2;
              
-             // Inject script if missing
-             const scriptContent = `
-<script setup>
-const copy = (text) => {
-  if (navigator.clipboard) {
-    navigator.clipboard.writeText(text).then(() => {
-      alert('复制成功: ' + text);
-    }).catch(err => {
-      console.error('复制失败: ', err);
-      fallbackCopy(text);
-    });
-  } else {
-    fallbackCopy(text);
-  }
-}
-
-const fallbackCopy = (text) => {
-  const textarea = document.createElement('textarea');
-  textarea.value = text;
-  document.body.appendChild(textarea);
-  textarea.select();
-  try {
-      document.execCommand('copy');
-      alert('复制成功: ' + text);
-  } catch (err) {
-      console.error('复制失败: ', err);
-      alert('复制失败，请手动复制');
-  }
-  document.body.removeChild(textarea);
-}
-</script>
-`;
              if (!finalContent.includes('const copy =')) {
                  finalContent += '\n' + scriptContent;
              }

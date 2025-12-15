@@ -30,7 +30,7 @@ description: 2025年最新免费共享美区Apple ID账号，每日更新可用�
 
 ## 免费美区 Apple ID账号
 
-> 更新时间：2025-12-15 10:48:51
+> 更新时间：2025-12-15 10:54:49
 
 :::: card-masonry cols="2" gap="16"
 
@@ -122,7 +122,7 @@ description: 2025年最新免费共享美区Apple ID账号，每日更新可用�
 
 <Badge type="warning" text="日本" />
 
-账号 `cecilyherreraeiaj3@gmail.com`
+账号 `cecilyherreraeiaj2@gmail.com`
 
 密码  <Plot trigger="click" effect="blur">`UHkTYxKg4Y`</Plot>
 
@@ -263,8 +263,6 @@ description: 2025年最新免费共享美区Apple ID账号，每日更新可用�
 :::
 
 ::::
-
-
 
 
 

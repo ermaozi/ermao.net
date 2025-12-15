@@ -29,16 +29,30 @@ jobs:
       run: pnpm install
       
     - name: Run scraper script
-      run: npx ts-node tools/get_apple_id.ts
+      id: scraper
+      run: |
+        OUTPUT=$(npx ts-node tools/get_apple_id.ts)
+        echo "$OUTPUT"
+        if echo "$OUTPUT" | grep -q "内容未发生变化，跳过更新。"; then
+          echo "should_update=false" >> $GITHUB_OUTPUT
+        else
+          echo "should_update=true" >> $GITHUB_OUTPUT
+        fi
       
     - name: Commit and push changes
+      if: steps.scraper.outputs.should_update == 'true'
       env:
         GITHUB_TOKEN: ${{ secrets.GH_PAT }}
       run: |
-
         git config core.ignorecase false
         git config --local user.email "admin@ermao.net"
         git config --local user.name "ermaozi"
         git add "docs/blog/文档/免费AppleID账号.md"
-        git commit -m "$(date '+%Y-%m-%d %H:%M:%S')更新AppleID账号列表" || echo "No changes to commit"
+        git commit -m "$(date '+%Y-%m-%d %H:%M:%S')更新AppleID账号列表"
         git push
+
+    - name: Trigger docs deployment
+      if: steps.scraper.outputs.should_update == 'true'
+      env:
+        GH_TOKEN: ${{ secrets.GH_PAT }}
+      run: gh workflow run docs.yml --ref main
