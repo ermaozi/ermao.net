@@ -32,8 +32,13 @@ jobs:
       run: npx ts-node tools/get_apple_id.ts
       
     - name: Commit and push changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_PAT }}
       run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+        git config core.ignorecase false
+        git config --local user.email "admin@ermao.net"
+        git config --local user.name "ermaozi"
         git add "docs/blog/文档/免费AppleID账号.md"
-        git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update apple id list [skip ci]" && git push)
+        git commit -m "$(date '+%Y-%m-%d %H:%M:%S')更新AppleID账号列表" || echo "No changes to commit"
+        git push
