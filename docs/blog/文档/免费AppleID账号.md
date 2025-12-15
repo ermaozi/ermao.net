@@ -30,7 +30,7 @@ description: 2025年最新免费共享美区Apple ID账号，每日更新可用�
 
 ## 免费美区 Apple ID账号
 
-> 更新时间：2025-12-15 20:10:32
+> 更新时间：2025-12-15 20:31:01
 
 :::: card-masonry cols="2" gap="16"
 
@@ -62,23 +62,11 @@ description: 2025年最新免费共享美区Apple ID账号，每日更新可用�
 
 <Badge type="tip" text="美国" />
 
-账号 `oyk7zz337l6965@mail177.com`
-
-密码  <Plot trigger="click" effect="blur">`h4rwxM4gYx`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('oyk7zz337l6965@mail177.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('h4rwxM4gYx')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="tip" text="美国" />
-
 账号 `4xow874xml2785@maoem.com`
 
-密码  <Plot trigger="click" effect="blur">`crsm8s9hDd`</Plot>
+密码  <Plot trigger="click" effect="blur">`NCDYhQg3gS`</Plot>
 
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('4xow874xml2785@maoem.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('crsm8s9hDd')">复制密码</button>
+ <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('4xow874xml2785@maoem.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('NCDYhQg3gS')">复制密码</button>
 
 :::
 
@@ -86,11 +74,11 @@ description: 2025年最新免费共享美区Apple ID账号，每日更新可用�
 
 <Badge type="tip" text="美国" />
 
-账号 `85m9m4nei59ttd@nsvcr.com`
+账号 `oyk7zz337l6965@mail177.com`
 
-密码  <Plot trigger="click" effect="blur">`5uu3wdJgZB`</Plot>
+密码  <Plot trigger="click" effect="blur">`JutxzGwa5H`</Plot>
 
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('85m9m4nei59ttd@nsvcr.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('5uu3wdJgZB')">复制密码</button>
+ <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('oyk7zz337l6965@mail177.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('JutxzGwa5H')">复制密码</button>
 
 :::
 
@@ -110,6 +98,18 @@ description: 2025年最新免费共享美区Apple ID账号，每日更新可用�
 
 <Badge type="tip" text="美国" />
 
+账号 `85m9m4nei59ttd@nsvcr.com`
+
+密码  <Plot trigger="click" effect="blur">`5uu3wdJgZB`</Plot>
+
+ <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('85m9m4nei59ttd@nsvcr.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('5uu3wdJgZB')">复制密码</button>
+
+:::
+
+::: card
+
+<Badge type="tip" text="美国" />
+
 账号 `y7s98013sd12u2@nsvcr.com`
 
 密码  <Plot trigger="click" effect="blur">`S2wHwt8vpY`</Plot>
@@ -122,11 +122,11 @@ description: 2025年最新免费共享美区Apple ID账号，每日更新可用�
 
 <Badge type="tip" text="美国" />
 
-账号 `1273dkh5w6q4o0@aihao321.com`
+账号 `925baf149vdr0n@mail177.com`
 
-密码  <Plot trigger="click" effect="blur">`5yXFyf1QNX`</Plot>
+密码  <Plot trigger="click" effect="blur">`nRd5uFCPPm`</Plot>
 
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('1273dkh5w6q4o0@aihao321.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('5yXFyf1QNX')">复制密码</button>
+ <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('925baf149vdr0n@mail177.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('nRd5uFCPPm')">复制密码</button>
 
 :::
 
@@ -136,9 +136,9 @@ description: 2025年最新免费共享美区Apple ID账号，每日更新可用�
 
 账号 `cecilyherreraeiaj3@gmail.com`
 
-密码  <Plot trigger="click" effect="blur">`CBDWs3a5MY`</Plot>
+密码  <Plot trigger="click" effect="blur">`9C1Re9HEKm`</Plot>
 
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('cecilyherreraeiaj3@gmail.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('CBDWs3a5MY')">复制密码</button>
+ <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('cecilyherreraeiaj3@gmail.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('9C1Re9HEKm')">复制密码</button>
 
 :::
 
@@ -158,11 +158,11 @@ description: 2025年最新免费共享美区Apple ID账号，每日更新可用�
 
 <Badge type="danger" text="韩国" />
 
-账号 `asbury166x@eyepaste.com`
+账号 `syrena93a@eyepaste.com`
 
-密码  <Plot trigger="click" effect="blur">`1TjhHvGGQF`</Plot>
+密码  <Plot trigger="click" effect="blur">`Bb5m9rgzMe`</Plot>
 
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('asbury166x@eyepaste.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('1TjhHvGGQF')">复制密码</button>
+ <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('syrena93a@eyepaste.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('Bb5m9rgzMe')">复制密码</button>
 
 :::
 
@@ -170,11 +170,11 @@ description: 2025年最新免费共享美区Apple ID账号，每日更新可用�
 
 <Badge type="danger" text="韩国" />
 
-账号 `syrena93a@eyepaste.com`
+账号 `asbury166x@eyepaste.com`
 
-密码  <Plot trigger="click" effect="blur">`Bb5m9rgzMe`</Plot>
+密码  <Plot trigger="click" effect="blur">`1TjhHvGGQF`</Plot>
 
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('syrena93a@eyepaste.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('Bb5m9rgzMe')">复制密码</button>
+ <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('asbury166x@eyepaste.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('1TjhHvGGQF')">复制密码</button>
 
 :::
 
@@ -196,21 +196,9 @@ description: 2025年最新免费共享美区Apple ID账号，每日更新可用�
 
 账号 `marionmschultz3tcig@gmail.com`
 
-密码  <Plot trigger="click" effect="blur">`SJcPUBm9te`</Plot>
+密码  <Plot trigger="click" effect="blur">`3z6uMhSeAF`</Plot>
 
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('marionmschultz3tcig@gmail.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('SJcPUBm9te')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="info" text="台湾" />
-
-账号 `lenaucarrollk9z0e@gmail.com`
-
-密码  <Plot trigger="click" effect="blur">`S62TGgWMmX`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('lenaucarrollk9z0e@gmail.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('S62TGgWMmX')">复制密码</button>
+ <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('marionmschultz3tcig@gmail.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('3z6uMhSeAF')">复制密码</button>
 
 :::
 
@@ -223,6 +211,18 @@ description: 2025年最新免费共享美区Apple ID账号，每日更新可用�
 密码  <Plot trigger="click" effect="blur">`yQvwN1ERvN`</Plot>
 
  <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('tanyaoduncangthvl@gmail.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('yQvwN1ERvN')">复制密码</button>
+
+:::
+
+::: card
+
+<Badge type="info" text="台湾" />
+
+账号 `lenaucarrollk9z0e@gmail.com`
+
+密码  <Plot trigger="click" effect="blur">`S62TGgWMmX`</Plot>
+
+ <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('lenaucarrollk9z0e@gmail.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('S62TGgWMmX')">复制密码</button>
 
 :::
 
@@ -275,6 +275,8 @@ description: 2025年最新免费共享美区Apple ID账号，每日更新可用�
 :::
 
 ::::
+
+
 
 
 
