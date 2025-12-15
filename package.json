@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^25.0.2",
     "sass-embedded": "^1.93.3",
     "typescript": "^5.9.3",
     "vuepress": "2.0.0-rc.26",
@@ -19,6 +20,8 @@
   "dependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.26",
     "@vuepress/client": "2.0.0-rc.26",
+    "axios": "^1.13.2",
+    "cheerio": "^1.1.2",
     "vue": "^3.5.25"
   }
 }

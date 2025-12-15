@@ -1,0 +1,37 @@
+name: Update Apple ID
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Every 6 hours
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-apple-id:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        
+    - name: Install pnpm
+      uses: pnpm/action-setup@v2
+      with:
+        version: 8
+
+    - name: Install dependencies
+      run: pnpm install
+      
+    - name: Run scraper script
+      run: npx ts-node tools/get_apple_id.ts
+      
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add "docs/blog/文档/免费AppleID账号.md"
+        git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update apple id list [skip ci]" && git push)

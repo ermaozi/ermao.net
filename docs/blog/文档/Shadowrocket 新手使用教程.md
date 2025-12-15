@@ -1,20 +1,20 @@
 ---
-title: 🚀 Shadowrocket(iOS小火箭) 新手使用教程
+title: Shadowrocket(小火箭)新手使用教程2025：下载安装、节点订阅与配置指南(含免费美区ID)
 createTime: 2025/01/03 18:18:11
 permalink: /article/z747kgjd/
 tags:
     - Shadowrocket
+    - 小火箭
     - 科学上网
-    - iOS
+    - iOS翻墙
     - Mac
-    - 苹果
+    - 苹果VPN
     - 教程
-    - VPN
+    - 节点订阅
+description: 2025最新Shadowrocket（小火箭）新手使用教程。详细介绍如何在iOS/iPhone/iPad及Mac上下载安装Shadowrocket，如何获取免费美区Apple ID，以及如何配置节点订阅链接进行科学上网。
 ---
 
-苹果手机、苹果电脑、iOS设备、Mac设备都可以使用Shadowrocket进行科学上网。教新手朋友们如何安装并使用Shadowrocket。
-
-文章内有免费的非国区Apple ID供大家下载Shadowrocket，如果有需要的朋友可以使用。
+本文为2025年最新Shadowrocket（小火箭）使用教程，适用于iPhone、iPad等iOS设备及Mac电脑。我们将手把手教新手朋友如何下载安装Shadowrocket，如何添加节点订阅链接，以及如何开启代理进行科学上网。文章内还提供免费的非国区Apple ID供大家下载Shadowrocket。
 
 <!-- more -->
 
@@ -28,7 +28,7 @@ tags:
 
 shadowrocket把并没有上线国区应用商店，首先需要先切换到我们提供的ID。
 
-<iframe src="https://s.jiesuo.one/s/ef714f6a92bd4b2ead41b19af6fec920" width="80%" height="750px" style="border: 2px solid #ccc; border-radius: 10px; overflow: auto;" scrolling="yes"></iframe>
+<LinkCard title="🍎最新免费美区Apple ID共享账号 | Shadowrocket/小火箭下载 | iOS美区账号每日更新" href="/blog/freeappleid/" description="最新免费共享美区Apple ID账号，每日更新可用。提供美国、日本、韩国、香港、台湾等地区iOS账号，支持下载Shadowrocket（小火箭）、TikTok、ChatGPT等海外应用。" />
 
 请注意一定要按步骤在App Store登录，切勿在手机“设置”中登录。
 
