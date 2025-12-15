@@ -84,8 +84,13 @@ async function scrapeAppleId() {
 
         if (accounts.length > 0) {
             console.log('成功解析到账号信息:');
+            // 为保护敏感数据，不再在控制台打印完整账号信息
+            const regionStats: { [region: string]: number } = {};
             accounts.forEach(acc => {
-                console.log(`地区: ${acc.region}, 账号: ${acc.email}, 密码: ${acc.password}`);
+                regionStats[acc.region] = (regionStats[acc.region] || 0) + 1;
+            });
+            Object.entries(regionStats).forEach(([region, count]) => {
+                console.log(`地区: ${region}, 发现账号数: ${count}`);
             });
             
             updateMarkdownFile(accounts);
