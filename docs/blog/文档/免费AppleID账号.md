@@ -147,7 +147,7 @@ const fetchData = async () => {
   loading.value = true;
   error.value = '';
   try {
-    const res = await fetch('https://get-apple-id.ermaozi.workers.dev/')
+    const res = await fetch('https://api.ermao.net/get_apple_id')
     if (!res.ok) throw new Error('网络请求失败')
     const data = await res.json()
     // 为每个账号添加复制状态标记
