@@ -30,331 +30,96 @@ description: 2025年最新免费共享美区Apple ID账号，每日更新可用�
 
 ## 免费美区 Apple ID账号
 
-> 更新时间：2025-12-16 09:05:21
-
-:::: card-masonry cols="2" gap="16"
-
-::: card
-
-<Badge type="tip" text="美国" />
-
-账号 `rosenana88@hotmail.com`
-
-密码  <Plot trigger="click" effect="blur">`5!KZUlVy`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('rosenana88@hotmail.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('5!KZUlVy')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="tip" text="美国" />
-
-账号 `fo1enx@163.com`
-
-密码  <Plot trigger="click" effect="blur">`9@sRFKbY`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('fo1enx@163.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('9@sRFKbY')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="tip" text="美国" />
-
-账号 `4xow874xml2785@maoem.com`
-
-密码  <Plot trigger="click" effect="blur">`PJ7execr1x`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('4xow874xml2785@maoem.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('PJ7execr1x')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="tip" text="美国" />
-
-账号 `oyk7zz337l6965@mail177.com`
-
-密码  <Plot trigger="click" effect="blur">`66Ah2heGn4`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('oyk7zz337l6965@mail177.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('66Ah2heGn4')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="tip" text="美国" />
-
-账号 `12@kuaiyun1.com`
-
-密码  <Plot trigger="click" effect="blur">`uV5kux2F1N`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('12@kuaiyun1.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('uV5kux2F1N')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="tip" text="美国" />
-
-账号 `13@kuaiyun1.com`
-
-密码  <Plot trigger="click" effect="blur">`mXdn6eg5Bw`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('13@kuaiyun1.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('mXdn6eg5Bw')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="tip" text="美国" />
-
-账号 `14@kuaiyun1.com`
-
-密码  <Plot trigger="click" effect="blur">`94wmeS14Xm`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('14@kuaiyun1.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('94wmeS14Xm')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="tip" text="美国" />
-
-账号 `15@kuaiyun1.com`
-
-密码  <Plot trigger="click" effect="blur">`RG921QYSyX`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('15@kuaiyun1.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('RG921QYSyX')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="warning" text="日本" />
-
-账号 `cecilyherreraeiaj3@gmail.com`
-
-密码  <Plot trigger="click" effect="blur">`ttz2abrTEt`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('cecilyherreraeiaj3@gmail.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('ttz2abrTEt')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="warning" text="日本" />
-
-账号 `didiamagdicm@outlook.com`
-
-密码  <Plot trigger="click" effect="blur">`XUYtK8mkPU`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('didiamagdicm@outlook.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('XUYtK8mkPU')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="danger" text="韩国" />
-
-账号 `syrena93a@eyepaste.com`
-
-密码  <Plot trigger="click" effect="blur">`v6V67JtUuA`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('syrena93a@eyepaste.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('v6V67JtUuA')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="danger" text="韩国" />
-
-账号 `asbury166x@eyepaste.com`
-
-密码  <Plot trigger="click" effect="blur">`jp8X6ta2xD`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('asbury166x@eyepaste.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('jp8X6ta2xD')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="danger" text="韩国" />
-
-账号 `17@kuaiyun1.com`
-
-密码  <Plot trigger="click" effect="blur">`DcVrAZgG3e`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('17@kuaiyun1.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('DcVrAZgG3e')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="info" text="香港" />
-
-账号 `paulasfordsckcg@gmail.com`
-
-密码  <Plot trigger="click" effect="blur">`WzRduQumz9`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('paulasfordsckcg@gmail.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('WzRduQumz9')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="info" text="香港" />
-
-账号 `marionmschultz3tcig@gmail.com`
-
-密码  <Plot trigger="click" effect="blur">`kFSMx8c3Zx`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('marionmschultz3tcig@gmail.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('kFSMx8c3Zx')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="info" text="香港" />
-
-账号 `19@kuaiyun1.com`
-
-密码  <Plot trigger="click" effect="blur">`fbQsGBCDs1`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('19@kuaiyun1.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('fbQsGBCDs1')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="info" text="台湾" />
-
-账号 `tanyaoduncangthvl@gmail.com`
-
-密码  <Plot trigger="click" effect="blur">`u92zDck1SG`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('tanyaoduncangthvl@gmail.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('u92zDck1SG')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="info" text="台湾" />
-
-账号 `lenaucarrollk9z0e@gmail.com`
-
-密码  <Plot trigger="click" effect="blur">`AJPtemYBz1`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('lenaucarrollk9z0e@gmail.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('AJPtemYBz1')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="info" text="台湾" />
-
-账号 `15@kuaiyun1.com`
-
-密码  <Plot trigger="click" effect="blur">`RG921QYSyX`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('15@kuaiyun1.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('RG921QYSyX')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="info" text="新加坡" />
-
-账号 `g2xHVegg9516@hotmail.com`
-
-密码  <Plot trigger="click" effect="blur">`cAUaZXQRJ3`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('g2xHVegg9516@hotmail.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('cAUaZXQRJ3')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="info" text="土耳其" />
-
-账号 `18@kuaiyun1.com`
-
-密码  <Plot trigger="click" effect="blur">`d9g8fQqWa5`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('18@kuaiyun1.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('d9g8fQqWa5')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="info" text="澳大利亚" />
-
-账号 `20@kuaiyun1.com`
-
-密码  <Plot trigger="click" effect="blur">`wh45ZQkkXX`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('20@kuaiyun1.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('wh45ZQkkXX')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="tip" text="中国" />
-
-账号 `chauthanhaffrc1521@gmail.com`
-
-密码  <Plot trigger="click" effect="blur">`e1f28JGdcq`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('chauthanhaffrc1521@gmail.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('e1f28JGdcq')">复制密码</button>
-
-:::
-
-::: card
-
-<Badge type="tip" text="中国" />
-
-账号 `javlusul25979@hotmail.com`
-
-密码  <Plot trigger="click" effect="blur">`R1kYbgjzKZ`</Plot>
-
- <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('javlusul25979@hotmail.com')">复制账号</button> <button style="cursor:pointer; margin-left:5px; padding: 2px 6px; font-size: 12px;" @click="copy('R1kYbgjzKZ')">复制密码</button>
-
-:::
-
-::::
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; padding: 10px 16px; background-color: var(--vp-c-bg-alt); border-radius: 8px;">
+  <div style="color: var(--vp-c-text-2); font-size: 14px;">
+    更新时间：{{ updateTime || '加载中...' }}
+  </div>
+  <button class="refresh-btn" @click="fetchData" :disabled="loading">
+    <span v-if="loading">刷新中...</span>
+    <span v-else>刷新</span>
+  </button>
+</div>
+
+<div v-if="loading && accounts.length === 0" style="text-align: center; padding: 20px;">
+  正在获取最新账号信息...
+</div>
+
+<div v-else-if="error" style="color: red; text-align: center; padding: 20px;">
+  {{ error }}
+</div>
+
+<div v-else class="account-grid">
+  <Card v-for="(acc, index) in accounts" :key="index">
+    <Badge :type="getBadgeType(acc.region)" :text="acc.region" />
+    <br><br>
+    账号 <code>{{ acc.email }}</code>
+    <br><br>
+    密码 <Plot trigger="click" effect="blur"><code>{{ acc.password }}</code></Plot>
+    <br><br>
+    <button class="copy-btn" @click="copy(acc.email, acc, 'email')">
+        {{ acc.copiedEmail ? '已复制' : '复制账号' }}
+    </button> 
+    <button class="copy-btn" @click="copy(acc.password, acc, 'password')">
+        {{ acc.copiedPassword ? '已复制' : '复制密码' }}
+    </button>
+  </Card>
+</div>
+
+<style>
+.account-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+/* 强制清除 Card 组件可能自带的外边距 */
+.account-grid > * {
+  margin: 0 !important;
+}
+
+.copy-btn {
+  cursor: pointer;
+  margin-right: 8px;
+  padding: 4px 12px;
+  font-size: 13px;
+  border: 1px solid var(--vp-c-gutter);
+  background-color: transparent;
+  color: var(--vp-c-text-2);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.copy-btn:hover {
+  border-color: var(--vp-c-brand);
+  color: var(--vp-c-brand);
+  background-color: var(--vp-c-bg-soft);
+}
+
+.refresh-btn {
+  cursor: pointer;
+  padding: 4px 12px;
+  font-size: 13px;
+  background-color: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 4px;
+  color: var(--vp-c-text-1);
+  transition: all 0.3s;
+}
+.refresh-btn:hover:not(:disabled) {
+  border-color: var(--vp-c-brand);
+  color: var(--vp-c-brand);
+}
+.refresh-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (min-width: 768px) {
+  .account-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
 
 
 
@@ -363,27 +128,77 @@ description: 2025年最新免费共享美区Apple ID账号，每日更新可用�
 <LinkCard title="✈️便宜好用的翻墙机场推荐评测" href="https://www.ermao.net/posts/vpn/" description="最好用且便宜的机场推荐，每个机场至少由我试用一周后才决定是否推荐。 有较为严格的审核标准，让大家伙儿们放心使用。" />
 
 <script setup>
-const copy = (text) => {
-  if (navigator.clipboard) {
-    navigator.clipboard.writeText(text).then(() => {
-      alert('复制成功: ' + text);
-    }).catch(err => {
-      console.error('复制失败: ', err);
-      fallbackCopy(text);
-    });
-  } else {
-    fallbackCopy(text);
+import { ref, onMounted } from 'vue'
+
+const accounts = ref([])
+const updateTime = ref('')
+const loading = ref(true)
+const error = ref('')
+
+const getBadgeType = (region) => {
+  if (region.includes('美')) return 'tip';
+  if (region.includes('日')) return 'warning';
+  if (region.includes('韩')) return 'danger';
+  if (region.includes('中') || region.includes('国区')) return 'tip';
+  return 'info';
+}
+
+const fetchData = async () => {
+  loading.value = true;
+  error.value = '';
+  try {
+    const res = await fetch('https://get-apple-id.ermaozi.workers.dev/')
+    if (!res.ok) throw new Error('网络请求失败')
+    const data = await res.json()
+    // 为每个账号添加复制状态标记
+    accounts.value = (data.accounts || []).map(acc => ({
+        ...acc,
+        copiedEmail: false,
+        copiedPassword: false
+    }))
+    updateTime.value = data.updated_at || ''
+  } catch (e) {
+    console.error(e)
+    error.value = '获取账号失败，请稍后刷新重试'
+  } finally {
+    loading.value = false
   }
 }
 
-const fallbackCopy = (text) => {
+onMounted(() => {
+  fetchData()
+})
+
+const copy = (text, acc, type) => {
+  const onSuccess = () => {
+      if (type === 'email') acc.copiedEmail = true;
+      if (type === 'password') acc.copiedPassword = true;
+      
+      // 2秒后恢复状态
+      setTimeout(() => {
+        if (type === 'email') acc.copiedEmail = false;
+        if (type === 'password') acc.copiedPassword = false;
+      }, 2000);
+  };
+
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(text).then(onSuccess).catch(err => {
+      console.error('复制失败: ', err);
+      fallbackCopy(text, onSuccess);
+    });
+  } else {
+    fallbackCopy(text, onSuccess);
+  }
+}
+
+const fallbackCopy = (text, onSuccess) => {
   const textarea = document.createElement('textarea');
   textarea.value = text;
   document.body.appendChild(textarea);
   textarea.select();
   try {
       document.execCommand('copy');
-      alert('复制成功: ' + text);
+      onSuccess();
   } catch (err) {
       console.error('复制失败: ', err);
       alert('复制失败，请手动复制');
