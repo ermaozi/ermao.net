@@ -1,4 +1,6 @@
 name: Update Clash Assets
+permissions:
+  contents: read
 
 on:
   schedule:
