@@ -274,7 +274,7 @@ async function main() {
             });
             if (url) {
                 // R2Uploader 内部会在相同内容时跳过上传
-                console.log(`完成: ${url}`);
+                console.log("上传完成。");
                 uploaded++;
             } else {
                 skipped++;
