@@ -30,15 +30,15 @@ permalink: /article/yifph1jd/
 
 官方下载地址：https://www.vim.org/download.php#pc
 
-![alt text](https://image.ermao.net/article/yifph1jd/image.png)
+![alt text](https://image.ermao.net/images/article/yifph1jd/image.png)
 
 点这个gvimxx.exe进行下载
 
 下载完成后直接打开，有的时候电脑比较敏感，会提示有风险。其实没啥风险。点击更多信息里面的仍要安装就可以了。
 
-![alt text](https://image.ermao.net/article/yifph1jd/image-1.png)
+![alt text](https://image.ermao.net/images/article/yifph1jd/image-1.png)
 
-![alt text](https://image.ermao.net/article/yifph1jd/image-2.png)
+![alt text](https://image.ermao.net/images/article/yifph1jd/image-2.png)
 
 然后无脑下一步就可以了。
 
@@ -46,25 +46,25 @@ permalink: /article/yifph1jd/
 
 在桌面的快捷方式上右键，打开文件所在位置。
 
-![alt text](https://image.ermao.net/article/yifph1jd/image-3.png)
+![alt text](https://image.ermao.net/images/article/yifph1jd/image-3.png)
 
 复制刚刚打开的目录路径
 
-![alt text](https://image.ermao.net/article/yifph1jd/image-4.png)
+![alt text](https://image.ermao.net/images/article/yifph1jd/image-4.png)
 
 按 win 键，输入“环境变量”并点击“编辑系统环境变量”
 
-![alt text](https://image.ermao.net/article/yifph1jd/image-5.png)
+![alt text](https://image.ermao.net/images/article/yifph1jd/image-5.png)
 
 依次进行：点击“环境变量” – 双击“Path” – 双击空白处 – 粘贴前面复制的 vim 目录路径 – 一路点击“确定”
 
-![alt text](https://image.ermao.net/article/yifph1jd/image-6.png)
+![alt text](https://image.ermao.net/images/article/yifph1jd/image-6.png)
 
 按 win 键，输入“powershell” 并按回车进入 powershell。
 
 在 powershell 中执行“vim –version”检查一下是否安装成功了吧！
 
-![alt text](https://image.ermao.net/article/yifph1jd/image-7.png)
+![alt text](https://image.ermao.net/images/article/yifph1jd/image-7.png)
 
 ## 三、配置 vim
 
@@ -114,7 +114,7 @@ colorscheme pablo
 
 完事按 ”Esc“ 键，输入”:wp!“并按回车，保存退出。前面的冒号跟叹号都是英文符号！
 
-![alt text](https://image.ermao.net/article/yifph1jd/image-8.png)
+![alt text](https://image.ermao.net/images/article/yifph1jd/image-8.png)
 
 这样 vim 的配置就大功告成了。
 
@@ -124,11 +124,11 @@ colorscheme pablo
 
 在命令窗口中执行 ”vim 小说的绝对路径“ 就可以打开小说了。
 
-![alt text](https://image.ermao.net/article/yifph1jd/image-9.png)
+![alt text](https://image.ermao.net/images/article/yifph1jd/image-9.png)
 
 效果是这样
 
-![alt text](https://image.ermao.net/article/yifph1jd/image-10.png)
+![alt text](https://image.ermao.net/images/article/yifph1jd/image-10.png)
 
 按空格可以往下翻两行，按 F2 可以保存并退出。再次打开时还可以继续上次看的位置继续看。
 
@@ -136,7 +136,7 @@ colorscheme pablo
 
 在powershell中执行命令`New-Item -Type file -Force $profile`创建profile
 
-![alt text](https://image.ermao.net/article/yifph1jd/image-11.png)
+![alt text](https://image.ermao.net/images/article/yifph1jd/image-11.png)
 
 执行`vim $profile`打开profile，并切换倒粘贴编辑模式，上文中有写。
 
@@ -194,14 +194,14 @@ function rn {
 
 power中执行 `rn -o`可以打开小说存放目录。
 
-![alt text](https://image.ermao.net/article/yifph1jd/image-12.png)
+![alt text](https://image.ermao.net/images/article/yifph1jd/image-12.png)
 
 `rn -l` 可以列出该目录中的所有小说，如果没有小说则会提示。
 
-![alt text](https://image.ermao.net/article/yifph1jd/image-13.png)
+![alt text](https://image.ermao.net/images/article/yifph1jd/image-13.png)
 
 `rn -s 小说名`可以设置默认小说
 
-![alt text](https://image.ermao.net/article/yifph1jd/image-14.png)
+![alt text](https://image.ermao.net/images/article/yifph1jd/image-14.png)
 
 然后再输入`rn`就可以直接看小说了！

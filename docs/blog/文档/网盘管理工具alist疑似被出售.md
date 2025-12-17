@@ -27,33 +27,33 @@ tags:
 3. 开发者难以联系，官方 Telegram 群组管理权变更
 4. GitHub 仓库有多次可疑修改记录，包含广告相关内容
 
-![Alist开源项目被出售](https://image.ermao.net/article/dsbch7va/image.png)
+![Alist开源项目被出售](https://image.ermao.net/images/article/dsbch7va/image.png)
 
 ## GitHub 仓库异常活动
 
 GitHub 仓库 ([http://github.com/alist-org/alist](http://github.com/alist-org/alist)) 上可见多处可疑变更，部分提交记录明确包含广告相关内容：
 
-![Alist开源项目被出售](https://image.ermao.net/article/dsbch7va/image-1.png)
+![Alist开源项目被出售](https://image.ermao.net/images/article/dsbch7va/image-1.png)
 
-![Alist开源项目被出售](https://image.ermao.net/article/dsbch7va/image-2.png)
+![Alist开源项目被出售](https://image.ermao.net/images/article/dsbch7va/image-2.png)
 
-![Alist开源项目被出售](https://image.ermao.net/article/dsbch7va/image-3.png)
+![Alist开源项目被出售](https://image.ermao.net/images/article/dsbch7va/image-3.png)
 
-![Alist开源项目被出售](https://image.ermao.net/article/dsbch7va/image-4.png)
+![Alist开源项目被出售](https://image.ermao.net/images/article/dsbch7va/image-4.png)
 
 ## Alist 桌面版应用疑似被商业化
 
 除核心项目外，AList 桌面版程序也出现了被打包销售的情况：
 
-![Alist开源项目被出售](https://image.ermao.net/article/dsbch7va/image-5.png)
+![Alist开源项目被出售](https://image.ermao.net/images/article/dsbch7va/image-5.png)
 
-![Alist开源项目被出售](https://image.ermao.net/article/dsbch7va/image-6.png)
+![Alist开源项目被出售](https://image.ermao.net/images/article/dsbch7va/image-6.png)
 
-![Alist开源项目被出售](https://image.ermao.net/article/dsbch7va/image-7.png)
+![Alist开源项目被出售](https://image.ermao.net/images/article/dsbch7va/image-7.png)
 
-![Alist开源项目被出售](https://image.ermao.net/article/dsbch7va/image-8.png)
+![Alist开源项目被出售](https://image.ermao.net/images/article/dsbch7va/image-8.png)
 
-![Alist开源项目被出售](https://image.ermao.net/article/dsbch7va/image-9.png)
+![Alist开源项目被出售](https://image.ermao.net/images/article/dsbch7va/image-9.png)
 
 ## 社区最新进展
 
@@ -70,6 +70,6 @@ Telegram 群组最新消息显示：
 
 ### Alist新作者最新回应
 
-![Alist开源项目被出售](https://image.ermao.net/article/dsbch7va/image-10.png)
+![Alist开源项目被出售](https://image.ermao.net/images/article/dsbch7va/image-10.png)
 
 附连接地址: [项目是被卖了吗？官网已经 404 了，隔壁 docs 的文档被大改持续两个星期](https://github.com/AlistGo/alist/issues/8649)

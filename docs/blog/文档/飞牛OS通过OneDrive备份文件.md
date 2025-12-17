@@ -20,7 +20,7 @@ tags:
 
 但是众所周知，你们的部分资源是不能存储在国内的网盘中（密码箱也不行）
 
-![alt text](https://image.ermao.net/article/aofygutj/image.png)
+![alt text](https://image.ermao.net/images/article/aofygutj/image.png)
 
 所以不得不将她们备份到国外混乱不堪的环境中。
 
@@ -40,7 +40,7 @@ tags:
 
 首先我们开启飞牛OS的 SSH 功能。
 
-![alt text](https://image.ermao.net/article/aofygutj/image-1.png)
+![alt text](https://image.ermao.net/images/article/aofygutj/image-1.png)
 
 然后在你本地终端登陆你的飞牛OS后台。
 
@@ -50,13 +50,13 @@ ssh 飞牛用户名@飞牛地址
 
 如下图
 
-![alt text](https://image.ermao.net/article/aofygutj/image-2.png)
+![alt text](https://image.ermao.net/images/article/aofygutj/image-2.png)
 
 密码就是你的飞牛OS后台密码。注意，输入密码时是不会显示的，直接往上敲就可以了。
 
 如果用户名、IP、密码都正确的话，你就可以登陆成功了。
 
-![alt text](https://image.ermao.net/article/aofygutj/image-3.png)
+![alt text](https://image.ermao.net/images/article/aofygutj/image-3.png)
 
 ## 切换为 root 用户
 
@@ -66,7 +66,7 @@ sudo su
 
 这里需要再输入一次密码，直接输入就好了。
 
-![alt text](https://image.ermao.net/article/aofygutj/image-4.png)
+![alt text](https://image.ermao.net/images/article/aofygutj/image-4.png)
 
 你的用户名后面的`$`变成了`#`，这就表示你已经切换为 root 用户了。
 
@@ -78,7 +78,7 @@ sudo su
 
 你也可以依次点击 `文件管理` -> `我的文件` -> `右键目录` -> `详细信息` -> `复制原始路径` 来获取你的目录的路径。
 
-![alt text](https://image.ermao.net/article/aofygutj/image-5.png)
+![alt text](https://image.ermao.net/images/article/aofygutj/image-5.png)
 
 获取到了目录之后，我们给这个目录创建一个文件夹，用来持久化存储容器的配置文件。
 
@@ -114,19 +114,19 @@ docker run -it --name onedrive \
 
 容器启动后，会提示你登陆 OneDrive。点击其中的链接，然后登陆你的 OneDrive 账号。这时候会跳转到一个页面，需要复制这个页面的地址，然后回到终端，粘贴到终端中，回车。
 
-![alt text](https://image.ermao.net/article/aofygutj/image-6.png)
+![alt text](https://image.ermao.net/images/article/aofygutj/image-6.png)
 
-![alt text](https://image.ermao.net/article/aofygutj/image-7.png)
+![alt text](https://image.ermao.net/images/article/aofygutj/image-7.png)
 
 成功登陆后，容器会自动开始同步你的文件。
 
-![alt text](https://image.ermao.net/article/aofygutj/image-8.png)
+![alt text](https://image.ermao.net/images/article/aofygutj/image-8.png)
 
 同时你的配置文件中也会多出来一个名叫`refresh_token`的文件，这个文件是用来保存你的登陆信息的。如果以后修改了微软密码，需要将这个文件删除，然后重复上面的步骤。
 
 如果以后想迁移到其他地方，可以直接把整个`conf`文件夹拷贝过去。
 
-![alt text](https://image.ermao.net/article/aofygutj/image-9.png)
+![alt text](https://image.ermao.net/images/article/aofygutj/image-9.png)
 
 ## 后台持久运行
 
@@ -154,11 +154,11 @@ docker run -d --name onedrive \
 
 启动成功后，容器会在后台持久运行。并且飞牛OS的容器管理中也可以看到该容器了。
 
-![alt text](https://image.ermao.net/article/aofygutj/image-10.png)
+![alt text](https://image.ermao.net/images/article/aofygutj/image-10.png)
 
 在运行日志中还可以看到容器的运行情况。
 
-![alt text](https://image.ermao.net/article/aofygutj/image-11.png)
+![alt text](https://image.ermao.net/images/article/aofygutj/image-11.png)
 
 ## 配置文件
 

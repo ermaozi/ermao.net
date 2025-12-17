@@ -30,11 +30,11 @@ tags:
 
 客服响应很快也足够专业。
 
-![老头VPN机场简介](https://image.ermao.net/article/rklwp5go/image.png)
+![老头VPN机场简介](https://image.ermao.net/images/article/rklwp5go/image.png)
 
 ## 老头VPN机场测试
 
-![老头VPN机场简介](https://image.ermao.net/article/rklwp5go/image-1.png)
+![老头VPN机场简介](https://image.ermao.net/images/article/rklwp5go/image-1.png)
 
 ## 机场汇总
 

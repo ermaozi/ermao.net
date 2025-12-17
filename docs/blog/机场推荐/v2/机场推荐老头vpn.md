@@ -22,7 +22,7 @@ tags:
 
 ## 🎯 老头VPN机场概览
 
-![老头VPN](https://image.ermao.net/article/laotouvpn/image.png)
+![老头VPN](https://image.ermao.net/images/article/laotouvpn/image.png)
 
 **[老头VPN](https://www.chattous.net/register?code=3OWtZ9Bi)**是一家从2016年开始运营至今的老牌机场，拥有**8年稳定运营历史**，以其**扎实可靠的服务**和**专业的客服团队**在机场圈内享有良好声誉。作为业内公认的老牌机场，老头VPN一直保持着高质量的服务水准。
 
@@ -82,7 +82,7 @@ tags:
 
 ### 📈 速度测试结果
 
-![老头VPN机场性能测试](https://image.ermao.net/article/laotouvpn/image-1.png)
+![老头VPN机场性能测试](https://image.ermao.net/images/article/laotouvpn/image-1.png)
 
 **测试环境**：
 - 🕐 测试时间：晚高峰 20:00-22:00

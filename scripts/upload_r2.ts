@@ -1,109 +1,17 @@
-import { S3Client, PutObjectCommand, HeadObjectCommand } from "@aws-sdk/client-s3";
 import fs from "fs/promises";
 import path from "path";
 import matter from "gray-matter";
 import { glob } from "glob";
-import mime from "mime-types";
 import dotenv from "dotenv";
-import { fileURLToPath } from "url";
-import crypto from "crypto";
+import R2Uploader from "./lib/r2Uploader";
 
 // 加载环境变量
 dotenv.config();
 
-// 读取必需的环境变量（并确保类型为 string）
-function requiredEnv(name: string): string {
-  const v = process.env[name];
-  if (!v) {
-    throw new Error(`Missing environment variable: ${name}`);
-  }
-  return v;
-}
-
-// ================= 配置区域 =================
-// 请在 .env 文件中设置这些变量
-const ACCOUNT_ID = requiredEnv("R2_ACCOUNT_ID");
-const ACCESS_KEY_ID = requiredEnv("R2_ACCESS_KEY_ID");
-const SECRET_ACCESS_KEY = requiredEnv("R2_SECRET_ACCESS_KEY");
-const BUCKET_NAME = requiredEnv("R2_BUCKET_NAME");
-const CUSTOM_DOMAIN = process.env.R2_CUSTOM_DOMAIN || ""; // 可为空
-const ENDPOINT = `https://${ACCOUNT_ID}.r2.cloudflarestorage.com`;
-
 // 扫描目录
 const SCAN_DIR = "docs/blog"; 
 // ===========================================
-
-const s3 = new S3Client({
-  region: "auto",
-  endpoint: ENDPOINT,
-  credentials: {
-    accessKeyId: ACCESS_KEY_ID,
-    secretAccessKey: SECRET_ACCESS_KEY,
-  },
-});
-
-// 计算文件 MD5
-async function calculateMD5(filePath: string): Promise<string> {
-  const fileBuffer = await fs.readFile(filePath);
-  const hashSum = crypto.createHash('md5');
-  hashSum.update(fileBuffer);
-  return hashSum.digest('hex');
-}
-
-// 检查文件是否已存在于 R2 且内容一致
-async function checkFileExistsAndMatch(key: string, localMD5: string): Promise<boolean> {
-  try {
-    const head = await s3.send(new HeadObjectCommand({ Bucket: BUCKET_NAME, Key: key }));
-    // S3 ETag 通常被引号包围，如 "d41d8cd98f00b204e9800998ecf8427e"
-    const remoteETag = head.ETag?.replace(/"/g, "");
-    
-    if (remoteETag === localMD5) {
-      return true; // 存在且内容一致
-    }
-    return false; // 不存在或内容不一致
-  } catch (error) {
-    return false;
-  }
-}
-
-async function uploadFile(filePath: string, key: string): Promise<string | null> {
-  try {
-    const fileContent = await fs.readFile(filePath);
-    const contentType = mime.lookup(filePath) || "application/octet-stream";
-    const localMD5 = await calculateMD5(filePath);
-
-    // 检查是否需要上传
-    const isMatch = await checkFileExistsAndMatch(key, localMD5);
-    
-    if (isMatch) {
-        console.log(`跳过 (已存在且一致): ${key}`);
-    } else {
-        console.log(`正在上传: ${filePath} -> ${key}`);
-        await s3.send(
-          new PutObjectCommand({
-            Bucket: BUCKET_NAME,
-            Key: key,
-            Body: fileContent,
-            ContentType: contentType,
-          })
-        );
-    }
-
-    if (CUSTOM_DOMAIN) {
-        // 确保 CUSTOM_DOMAIN 不以 / 结尾，key 不以 / 开头
-        const domain = CUSTOM_DOMAIN.replace(/\/$/, "");
-        const cleanKey = key.replace(/^\//, "");
-        return `${domain}/${cleanKey}`;
-    } else {
-        // R2 默认公开链接 (如果 bucket 是公开的)
-        // 或者使用 endpoint 拼接，但通常 R2 需要自定义域名才能公开访问
-        return `${ENDPOINT}/${BUCKET_NAME}/${key}`;
-    }
-  } catch (error) {
-    console.error(`上传失败 ${filePath}:`, error);
-    return null;
-  }
-}
+const uploader = R2Uploader.fromEnv();
 
 async function processFile(filePath: string) {
   const content = await fs.readFile(filePath, "utf-8");
@@ -185,10 +93,18 @@ async function processFile(filePath: string) {
     const filename = path.basename(localImgPath);
     // 为了防止重名覆盖，可以加 hash，或者保持原文件名（用户需求似乎倾向于简单）
     // 这里使用: permalink目录/文件名
-    const r2Key = `${targetDir}/${filename}`;
+    const r2Key = `images/${targetDir}/${filename}`;
 
     // 上传
-    const remoteUrl = await uploadFile(localImgPath, r2Key);
+    let remoteUrl: string | null = null;
+    try {
+      remoteUrl = await uploader.upload(localImgPath, r2Key);
+      // 控制台输出与原逻辑一致的提示
+      console.log(`已上传或已存在: ${localImgPath} -> ${r2Key}`);
+    } catch (e) {
+      console.error(`上传失败 ${localImgPath}:`, e);
+      remoteUrl = null;
+    }
 
     if (remoteUrl) {
       replacements.push({

@@ -44,7 +44,7 @@ keywords:
 ### 1. 注册 OKX 账号（新手指南）
 开始前，准备好常用邮箱或手机号，并确保网络环境稳定，以便顺利完成短信或邮件验证。
 
-![注册OKX账号](https://image.ermao.net/blog/web3okx/image.png)
+![注册OKX账号](https://image.ermao.net/images/blog/web3okx/image.png)
 
 [OKX](https://www.gtohfmmy.com/join/95824812) 目前在国内无法直接注册，需要使用国际版网站（[okx.com](https://www.gtohfmmy.com/join/95824812)）或 App。
 
@@ -62,11 +62,11 @@ OKX（欧易）官网地址：[https://www.gtohfmmy.com/join/95824812](https://w
 
 当你通过各种方式获取佣金，但佣金需要通过虚拟币结算时，你就需要一个虚拟币地址来接收这些虚拟币。
 
-![充值虚拟币](https://image.ermao.net/blog/web3okx/image-1.png)
+![充值虚拟币](https://image.ermao.net/images/blog/web3okx/image-1.png)
 
 在 [OKX](https://www.gtohfmmy.com/join/95824812) 首页就有一个非常明显的“充值数字货币按钮”。
 
-![充值虚拟币](https://image.ermao.net/blog/web3okx/image-2.png)
+![充值虚拟币](https://image.ermao.net/images/blog/web3okx/image-2.png)
 
 现在大多数平台结算佣金都会使用 USDT（泰达币），因为它是稳定币，价格波动小。网络通常选择 TRC20（波场链），因为手续费低。
 
@@ -74,7 +74,7 @@ OKX（欧易）官网地址：[https://www.gtohfmmy.com/join/95824812](https://w
 
 下面得到的地址就是你的 USDT-TRC20 地址，你可以把它提供给需要给你打款的平台。
 
-![充值虚拟币](https://image.ermao.net/blog/web3okx/image-3.png)
+![充值虚拟币](https://image.ermao.net/images/blog/web3okx/image-3.png)
 
 当收到虚拟币后，你可以在“资产管理-我的资产”中看到对应的余额。
 
@@ -86,7 +86,7 @@ OKX（欧易）官网地址：[https://www.gtohfmmy.com/join/95824812](https://w
 
 发送虚拟币就很简单了，在“资产管理-提币”页面中，选择你要发送的币种（比如 USDT），然后填写对方的地址和数量即可。
 
-![发送虚拟币](https://image.ermao.net/blog/web3okx/image-4.png)
+![发送虚拟币](https://image.ermao.net/images/blog/web3okx/image-4.png)
 
 要注意的是，虚拟币一旦发送将无法撤回，所以一定要确认地址与网络类型是否正确。
 
@@ -98,7 +98,7 @@ OKX（欧易）官网地址：[https://www.gtohfmmy.com/join/95824812](https://w
 
 当你需要把虚拟币提现到法币账户时，可以通过 OKX 的 C2C 交易功能实现。
 
-![提现虚拟币](https://image.ermao.net/blog/web3okx/image-5.png)
+![提现虚拟币](https://image.ermao.net/images/blog/web3okx/image-5.png)
 
 交易所中的 C2C 功能允许用户之间直接买卖虚拟币，你可以选择卖出 USDT，然后选择支付宝、微信或银行卡等方式收款。
 

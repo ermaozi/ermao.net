@@ -22,7 +22,7 @@ description: 2025最新Shadowrocket（小火箭）新手使用教程。详细介
 
 正版的shadowrkcket在商店里是这个样子的
 
-![alt text](https://image.ermao.net/article/z747kgjd/image.png)
+![alt text](https://image.ermao.net/images/article/z747kgjd/image.png)
 
 ## 1. 下载与安装
 

@@ -19,13 +19,13 @@ docker 部署 Aria2 下载器，并在浏览器端配置 Aria2 Explorer
 
 某日想起来查看了一下 nps 服务端的设备监控，90% 的 CPU 使用率吓了我一跳。  经排查，原来是 nps 服务资源占用过高。
 
-![alt text](https://image.ermao.net/article/b06gglcq/image.png)
+![alt text](https://image.ermao.net/images/article/b06gglcq/image.png)
 
 那么为什么一个小小的 nps 服务会有这么高的资源沿用呢？
 
 原来是我使用了 [Aria2 Explorer](https://microsoftedge.microsoft.com/addons/detail/aria2-explorer/jjfgljkjddpcpfapejfkelkbjbehagbh?hl=zh-CN) 这个浏览器插件查看下载进度。但是配置时偷懒选择了 http 协议！
 
-![alt text](https://image.ermao.net/article/b06gglcq/image-1.png)
+![alt text](https://image.ermao.net/images/article/b06gglcq/image-1.png)
 
 这样在使用 Aria2 Explorer 查看下载进度时，会无限轮询后端 Aria2 服务，导致 CPU 占用率飙升。
 
@@ -105,15 +105,15 @@ sudo docker run -d\
 
 点击获取
 
-![alt text](https://image.ermao.net/article/b06gglcq/image-2.png)
+![alt text](https://image.ermao.net/images/article/b06gglcq/image-2.png)
 
 点击添加扩展
 
-![alt text](https://image.ermao.net/article/b06gglcq/image-3.png)
+![alt text](https://image.ermao.net/images/article/b06gglcq/image-3.png)
 
 ### 配置
 
-![alt text](https://image.ermao.net/article/b06gglcq/image-4.png)
+![alt text](https://image.ermao.net/images/article/b06gglcq/image-4.png)
 
 `Secret Key` 是你在 docker run 时设置的 `RPC_SECRET`
 

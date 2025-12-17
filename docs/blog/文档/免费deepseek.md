@@ -42,7 +42,7 @@ Fofa 是一个强大的互联网设备和服务搜索引擎，可以帮助用户
 
 请注意，访问时务必遵守相关法律法规，确保您连接到合法且授权的 API，避免未经许可的操作，防止违反法律。
 
-![Ollama 本地部署的 DeepSeek](https://image.ermao.net/article/tj38tso3/image.png)
+![Ollama 本地部署的 DeepSeek](https://image.ermao.net/images/article/tj38tso3/image.png)
 
 ## 二、Shodan 搜索 Ollama API
 
@@ -64,7 +64,7 @@ Shodan 是另一个强大的搜索引擎，专门用于查找互联网上的各�
 
 Shodan 会提供关于公开服务的详细信息，如 IP 地址、端口号和可能的 API 路径等。同样，确保这些服务是合法的，并且您有权访问。
 
-![Ollama 本地部署的 DeepSeek](https://image.ermao.net/article/tj38tso3/image-1.png)
+![Ollama 本地部署的 DeepSeek](https://image.ermao.net/images/article/tj38tso3/image-1.png)
 
 ## 三、如何访问找到的 Ollama API
 
@@ -72,11 +72,11 @@ Shodan 会提供关于公开服务的详细信息，如 IP 地址、端口号和
 
 1. 下载并安装 [Chatbox AI](https://chatboxai.app/)。
 2. 打开 Chatbox 设置，在模型提供方中选择 "Ollama"。
-![Ollama 本地部署的 DeepSeek](https://image.ermao.net/article/tj38tso3/image-2.png)
+![Ollama 本地部署的 DeepSeek](https://image.ermao.net/images/article/tj38tso3/image-2.png)
 3. 在模型下拉框中选择您运行的本地模型。
-![Ollama 本地部署的 DeepSeek](https://image.ermao.net/article/tj38tso3/image-3.png)
+![Ollama 本地部署的 DeepSeek](https://image.ermao.net/images/article/tj38tso3/image-3.png)
 4. 点击保存后，您便可以通过 Chatbox 与远程 Ollama 服务进行交互。
-![Ollama 本地部署的 DeepSeek](https://image.ermao.net/article/tj38tso3/image-4.png)
+![Ollama 本地部署的 DeepSeek](https://image.ermao.net/images/article/tj38tso3/image-4.png)
 
 ## 四、安全性和合规性
 

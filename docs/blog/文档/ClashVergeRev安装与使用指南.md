@@ -13,8 +13,8 @@ Clash Verge Rev 是一款高效的代理工具，专为 macOS 用户打造，兼
 前往 Clash Verge Rev 的官方网站，根据您的设备架构下载相应的版本：
 
 - **GitHub (推荐)**: [Clash Verge Rev Releases](https://github.com/Clash-Verge-rev/clash-verge-rev/releases)
-- M 芯片版本: [Clash.Verge-aarch64.dmg](https://down.shudongapi.monster/client-download/Clash.Verge-aarch64.dmg)
-- Intel 芯片版本: [Clash.Verge.dmg](https://down.shudongapi.monster/client-download/Clash.Verge.dmg)
+- [Clash Verge macOS x64 Intel 芯片下载](https://file.ermao.net/files/clash-verge-rev/Clash.Verge.Mac.x64.dmg)
+- [Clash Verge macOS Apple Silicon (M 系列)](https://file.ermao.net/files/clash-verge-rev/Clash.Verge.Mac.aarch64.dmg)
 
 ### 安装过程：
 1. 下载完成后，双击打开 `.dmg` 文件，系统可能会提示您允许打开来自未知开发者的文件。

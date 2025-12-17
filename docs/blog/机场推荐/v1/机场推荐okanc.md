@@ -34,11 +34,11 @@ okanc机场官网地址：[okanc.com](https://www.okanc.com/index.php#/register?
 |Max版|50元/月|600GB/月|[点击购买](https://www.okanc.com/index.php#/register?code=3YK7Np6R)|
 |MAX+极致版|88元/月|1024GB/月|[点击购买](https://www.okanc.com/index.php#/register?code=3YK7Np6R)|
 
-![OKANC机场价格](https://image.ermao.net/article/giwzl7sq/image-1.png)
+![OKANC机场价格](https://image.ermao.net/images/article/giwzl7sq/image-1.png)
 
 ## OKANC机场测试
 
-![OKANC机场测试](https://image.ermao.net/article/giwzl7sq/image.png)
+![OKANC机场测试](https://image.ermao.net/images/article/giwzl7sq/image.png)
 
 ## 机场汇总
 

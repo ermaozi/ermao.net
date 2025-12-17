@@ -19,7 +19,7 @@ tags:
 
 ## 国内购买 VPN 是否违法？
 
-![国内购买vpn违法吗](https://image.ermao.net/blog/vpnhefa/image.png)
+![国内购买vpn违法吗](https://image.ermao.net/images/blog/vpnhefa/image.png)
 
 在中国境内，法律重点规范的是 **私自搭建、出租或经营 VPN（跨境专线）** 等行为；普通个人仅为自用而购买第三方服务，通常**不会被认定为违法**，更谈不上犯罪。当然，若购买后从事违法活动，仍可能触及行政或刑事责任。
 

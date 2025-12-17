@@ -28,11 +28,11 @@ flybit官网地址：[goflybit.pages.dev](https://goflybit.pages.dev/#/register?
 
 近期增加了很多节点，解锁主流流媒体和ChatGPT，IEPL接口线路和普通线路一样的价格，机场稳定，几乎全部节点全天候可用。购买之前记得领一下首页的优惠券再下单。
 
-![flybit机场价格](https://image.ermao.net/article/q8yp9r2b/image.png)
+![flybit机场价格](https://image.ermao.net/images/article/q8yp9r2b/image.png)
 
 ## flybit机场测试
 
-![flybit机场测试](https://image.ermao.net/article/q8yp9r2b/image-1.png)
+![flybit机场测试](https://image.ermao.net/images/article/q8yp9r2b/image-1.png)
 
 ## 机场汇总
 

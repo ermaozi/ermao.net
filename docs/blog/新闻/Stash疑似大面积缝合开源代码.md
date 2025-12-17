@@ -43,7 +43,7 @@ tags:
 
 ## Stash Mac 的代码结构与 SagerNet/sing-box 完全一致，甚至连文件名都没有修改。
 
-![alt text](https://image.ermao.net/news/kne6vczb/image.png)
+![alt text](https://image.ermao.net/images/news/kne6vczb/image.png)
 
 为什么说除了 Surge 和火箭以外的苹果代理都不要买，因为他们根本没有自己实现协议的能力，可以相信其他东西实现的也不咋地。
 
@@ -51,11 +51,11 @@ tags:
 
 shadow-tls 部分完全复制我的 GPL 代码，文件结构完全一样。
 
-![alt text](https://image.ermao.net/news/kne6vczb/image-1.png)
+![alt text](https://image.ermao.net/images/news/kne6vczb/image-1.png)
 
-![alt text](https://image.ermao.net/news/kne6vczb/image-2.png)
+![alt text](https://image.ermao.net/images/news/kne6vczb/image-2.png)
 
-![alt text](https://image.ermao.net/news/kne6vczb/image-3.png)
+![alt text](https://image.ermao.net/images/news/kne6vczb/image-3.png)
 
 > 我们现在在 iOS 上虽然比不上还没发布的 Surge 6，但甚至比 Surge 5 快！
 >
@@ -69,21 +69,21 @@ shadow-tls 部分完全复制我的 GPL 代码，文件结构完全一样。
 >
 > 其他软件太慢了就不放了，不过还发现了点有意思的事情，等会发
 
-![alt text](https://image.ermao.net/news/kne6vczb/image-4.png)
+![alt text](https://image.ermao.net/images/news/kne6vczb/image-4.png)
 
 ss2022 部分可以相信是来自 AGPL 的 database64128/shadowsocks-go，结构命名非常相似
 
-![alt text](https://image.ermao.net/news/kne6vczb/image-5.png)
+![alt text](https://image.ermao.net/images/news/kne6vczb/image-5.png)
 
 vless 部分某些代码与 sing-box 的命名一致
 
-![alt text](https://image.ermao.net/news/kne6vczb/image-6.png)
+![alt text](https://image.ermao.net/images/news/kne6vczb/image-6.png)
 
 tun 的 system stack 部分来自 kr328/tun2socket （原 ClashForAndroid 使用），不过授权是 MIT 用了也不算侵权。
 
-![alt text](https://image.ermao.net/news/kne6vczb/image-7.png)
+![alt text](https://image.ermao.net/images/news/kne6vczb/image-7.png)
 
-![alt text](https://image.ermao.net/news/kne6vczb/image-8.png)
+![alt text](https://image.ermao.net/images/news/kne6vczb/image-8.png)
 
 tun 的 system stack 部分来自 kr328/tun2socket （原 ClashForAndroid 使用），不过授权是 MIT 用了也不算侵权。
 
@@ -91,4 +91,4 @@ tun 的 lwip stack 部分可能来自开源代理软件 leaf 作者 eycorsican �
 
 我相信其他协议实现部分肯定还复制了（包括 mihomo、我的和其他人的）GPL 代码，不过代码量少不反编译就没办法一眼实锤，懒得继续找了。
 
-![alt text](https://image.ermao.net/news/kne6vczb/image-9.png)
+![alt text](https://image.ermao.net/images/news/kne6vczb/image-9.png)

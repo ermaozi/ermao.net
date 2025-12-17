@@ -21,7 +21,7 @@ Telegram注册使用教程：本指南适合新手学习Telegram（电报、飞�
 
 ## Telegram是什么
 
-![Telegram应用图标与隐私保护功能介绍，Telegram注册使用教程](https://image.ermao.net/blog/telegram/image-8.png)
+![Telegram应用图标与隐私保护功能介绍，Telegram注册使用教程](https://image.ermao.net/images/blog/telegram/image-8.png)
 
 Telegram 又名电报，也被称作“飞机”，是一款注重隐私保护和高效沟通的即时通讯应用。由俄罗斯企业家 Pavel Durov 于 2013 年创立，现由 Telegram FZ-LLC 公司运营，总部位于阿联酋迪拜。
 
@@ -33,7 +33,7 @@ Telegram以**Telegram隐私保护**、跨平台同步和高可用性著称。支
 
 ### 步骤0：准备工作
 
-![Telegram注册准备工作，准备手机和虚拟号码，Telegram使用指南](https://image.ermao.net/blog/telegram/image.png)
+![Telegram注册准备工作，准备手机和虚拟号码，Telegram使用指南](https://image.ermao.net/images/blog/telegram/image.png)
 
 由于Telegram首次注册必须在移动端完成，因此请先准备一台安装好客户端的手机。
 
@@ -52,29 +52,29 @@ Telegram以**Telegram隐私保护**、跨平台同步和高可用性著称。支
 
 1. 打开Telegram应用，输入你的手机号码（从国家区号开始输入），点击“→”进入下一步。
 
-![Telegram注册输入手机号界面，Telegram隐私保护设置](https://image.ermao.net/blog/telegram/image-1.png)
+![Telegram注册输入手机号界面，Telegram隐私保护设置](https://image.ermao.net/images/blog/telegram/image-1.png)
 
 2. 确认手机号码无误。
 
-![Telegram注册确认手机号步骤，Telegram群组频道创建](https://image.ermao.net/blog/telegram/image-2.png)
+![Telegram注册确认手机号步骤，Telegram群组频道创建](https://image.ermao.net/images/blog/telegram/image-2.png)
 
 3. 输入你的邮箱地址。推荐使用Gmail，但国内邮箱也可以。
 
-![Telegram注册输入邮箱验证，Telegram机器人使用](https://image.ermao.net/blog/telegram/image-3.png)
+![Telegram注册输入邮箱验证，Telegram机器人使用](https://image.ermao.net/images/blog/telegram/image-3.png)
 
 4. 此时，Telegram会向你的邮箱和手机号发送验证码，请分别输入以完成验证。
 
-![Telegram注册验证码输入，科学上网VPN工具](https://image.ermao.net/blog/telegram/image-4.png)
+![Telegram注册验证码输入，科学上网VPN工具](https://image.ermao.net/images/blog/telegram/image-4.png)
 
-![Telegram注册邮箱验证码确认，Telegram即时通讯](https://image.ermao.net/blog/telegram/image-5.png)
+![Telegram注册邮箱验证码确认，Telegram即时通讯](https://image.ermao.net/images/blog/telegram/image-5.png)
 
 5. 设置你的名字和头像，完成注册。
 
-![Telegram注册设置姓名头像，Telegram跨平台同步](https://image.ermao.net/blog/telegram/image-6.png)
+![Telegram注册设置姓名头像，Telegram跨平台同步](https://image.ermao.net/images/blog/telegram/image-6.png)
 
 6. 注册成功后可以点击这个链接完成汉化：[https://t.me/setlanguage/zh-hans-beta](https://t.me/setlanguage/zh-hans-beta)，移动端桌面端都可以使用。
 
-![Telegram汉化设置界面，Telegram日常效率技巧](https://image.ermao.net/blog/telegram/image-7.png)
+![Telegram汉化设置界面，Telegram日常效率技巧](https://image.ermao.net/images/blog/telegram/image-7.png)
 
 ### 步骤3：隐私与安全设置（强烈建议）
 
@@ -84,7 +84,7 @@ Telegram以**Telegram隐私保护**、跨平台同步和高可用性著称。支
 - 控制最后上线时间、在线状态、头像、转发来源等。
 - **设备管理**：在“设备”列表中可查看所有登录设备，建议定期清理陌生会话，一键登出其他设备。
 
-![alt text](https://image.ermao.net/blog/telegram/image-9.png)
+![alt text](https://image.ermao.net/images/blog/telegram/image-9.png)
 
 ## Telegram核心功能与使用技巧
 

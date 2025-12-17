@@ -44,7 +44,7 @@ description: 2025年实测 9esim使用指南完整教程：购买9esim v3卡和e
 相比其他服务商，9esim 提供高性价比的虚拟手机号解决方案。
 :::
 
-![9esim价格](https://image.ermao.net/blog/9esim/image.png)
+![9esim价格](https://image.ermao.net/images/blog/9esim/image.png)
 
 ## 如何购买 9esim v3 卡
 
@@ -52,11 +52,11 @@ description: 2025年实测 9esim使用指南完整教程：购买9esim v3卡和e
 
 2. **选择产品**：点击 "Buy now"。
 
-![9esim buy now](https://image.ermao.net/blog/9esim/image-1.png)
+![9esim buy now](https://image.ermao.net/images/blog/9esim/image-1.png)
 
 3. **添加购物车**：点击 "Add to basket"。
 
-![9esim Add to basket](https://image.ermao.net/blog/9esim/image-3.png)
+![9esim Add to basket](https://image.ermao.net/images/blog/9esim/image-3.png)
 
 4. **结账**：点击 "Proceed to checkout"，填写收货信息，选择微信支付。如果没有优惠码的话，在付款前点击 "Add coupons" 输入 `ermao` 享受9折优惠。
 
@@ -64,13 +64,13 @@ description: 2025年实测 9esim使用指南完整教程：购买9esim v3卡和e
 使用优惠码 `ermao` 可享受9折优惠。
 :::
 
-![9esim Proceed to checkout](https://image.ermao.net/blog/9esim/image-4.png)
+![9esim Proceed to checkout](https://image.ermao.net/images/blog/9esim/image-4.png)
 
 5. **完成付款**：确认订单，等待 3-5 天邮寄到家。
 
-![9esim 付款](https://image.ermao.net/blog/9esim/image-5.png)
+![9esim 付款](https://image.ermao.net/images/blog/9esim/image-5.png)
 
-![9esim 付款](https://image.ermao.net/blog/9esim/image-6.png)
+![9esim 付款](https://image.ermao.net/images/blog/9esim/image-6.png)
 
 ## 通过 eSIM Plus 应用购买虚拟手机号
 
@@ -78,23 +78,23 @@ description: 2025年实测 9esim使用指南完整教程：购买9esim v3卡和e
 
 2. **注册登录**：首次使用点击注册，完成账号创建。
 
-![注册esim plus](https://image.ermao.net/blog/9esim/image-7.png)
+![注册esim plus](https://image.ermao.net/images/blog/9esim/image-7.png)
 
 3. **添加 eSIM**：点击 "+" 选择 "移动数据" > "全球" > 按使用付费选项。
 
-![esim plus 添加](https://image.ermao.net/blog/9esim/image-8.png)
+![esim plus 添加](https://image.ermao.net/images/blog/9esim/image-8.png)
 
-![esim plus 选择移动数据](https://image.ermao.net/blog/9esim/image-9.png)
+![esim plus 选择移动数据](https://image.ermao.net/images/blog/9esim/image-9.png)
 
-![esim plus 选择全球](https://image.ermao.net/blog/9esim/image-10.png)
+![esim plus 选择全球](https://image.ermao.net/images/blog/9esim/image-10.png)
 
 4. **购买计划**：选择 "一次性购买"，支持虚拟货币或 PayPal 支付。
 
-![esim plus 获取此计划](https://image.ermao.net/blog/9esim/image-11.png)
+![esim plus 获取此计划](https://image.ermao.net/images/blog/9esim/image-11.png)
 
-![esim plus 一次性购买](https://image.ermao.net/blog/9esim/image-12.png)
+![esim plus 一次性购买](https://image.ermao.net/images/blog/9esim/image-12.png)
 
-![esim plus 支付](https://image.ermao.net/blog/9esim/image-13.png)
+![esim plus 支付](https://image.ermao.net/images/blog/9esim/image-13.png)
 
 ## 激活 eSIM：写卡教程
 
@@ -102,21 +102,21 @@ description: 2025年实测 9esim使用指南完整教程：购买9esim v3卡和e
 
 2. **下载写卡应用**：访问 [9esim 应用下载页](https://www.9esim.com/ecosystem-software-download/)，下载对应系统的应用（如安卓的 9eSIM-nLPA）。
 
-![9esim 应用下载](https://image.ermao.net/blog/9esim/image-14.png)
+![9esim 应用下载](https://image.ermao.net/images/blog/9esim/image-14.png)
 
 3. **生成二维码**：在 eSIM Plus 应用中选择购买的 eSIM，点击 "通过二维码" 保存图片。
 
-![esim plus 卡](https://image.ermao.net/blog/9esim/image-16.png)
+![esim plus 卡](https://image.ermao.net/images/blog/9esim/image-16.png)
 
-![esim plus 二维码](https://image.ermao.net/blog/9esim/image-17.png)
+![esim plus 二维码](https://image.ermao.net/images/blog/9esim/image-17.png)
 
-![esim plus 二维码](https://image.ermao.net/blog/9esim/image-18.png)
+![esim plus 二维码](https://image.ermao.net/images/blog/9esim/image-18.png)
 
 4. **写卡激活**：打开 9esim 应用，选择 SIM 卡槽，点击 "+" 上传二维码，确认下载。
 
-![9esim 写卡](https://image.ermao.net/blog/9esim/image-15.png)
+![9esim 写卡](https://image.ermao.net/images/blog/9esim/image-15.png)
 
-![9esim 写卡](https://image.ermao.net/blog/9esim/image-19.png)
+![9esim 写卡](https://image.ermao.net/images/blog/9esim/image-19.png)
 
 5. **完成激活**：等待写卡成功，即可使用虚拟手机号。
 
@@ -124,13 +124,13 @@ description: 2025年实测 9esim使用指南完整教程：购买9esim v3卡和e
 
 1. **访问 Google**：打开 [Google 账号管理](https://accounts.google.com/)，点击创建新账号。
 
-![google 创建账号](https://image.ermao.net/blog/9esim/image-20.png)
+![google 创建账号](https://image.ermao.net/images/blog/9esim/image-20.png)
 
 2. **输入手机号**：选择手机号验证，输入 9esim 提供的国外号码。
 
 3. **接收验证码**：等待短信验证码，输入完成注册。
 
-![google 验证码](https://image.ermao.net/blog/9esim/image-21.png)
+![google 验证码](https://image.ermao.net/images/blog/9esim/image-21.png)
 
 4. **验证成功**：如果收到验证码，说明 9esim 正常工作，可用于注册 Telegram、Twitter 等平台。
 

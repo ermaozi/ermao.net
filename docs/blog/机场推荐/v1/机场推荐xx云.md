@@ -39,11 +39,11 @@ xx云加速官网地址：[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)
 - 500Mbps速率，晚高峰不限速
 - 专业人工客服，快速响应
 
-![xx云加速 机场简介](https://image.ermao.net/article/6e3quult/image.png)
+![xx云加速 机场简介](https://image.ermao.net/images/article/6e3quult/image.png)
 
 ### xx云 机场测试
 
-![xx云加速 机场测试](https://image.ermao.net/article/6e3quult/image-1.png)
+![xx云加速 机场测试](https://image.ermao.net/images/article/6e3quult/image-1.png)
 
 ## 机场汇总
 

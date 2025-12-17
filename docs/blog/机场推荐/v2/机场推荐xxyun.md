@@ -22,7 +22,7 @@ XXYUN机场官网地址：[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)
 
 ## 🎯 XXYUN 机场概览
 
-![xx云加速logo](https://image.ermao.net/blog/xxyun/image.png)
+![xx云加速logo](https://image.ermao.net/images/blog/xxyun/image.png)
 
 **[XXYUN 机场](https://xxyun.de/XQiZqbSr.html)** 稳定运营两年，凭借超高性价比、全 BGP 中转与国内三网优化，在同档位机场中表现突出。官方承诺晚高峰不限速、节点持续维护，适合预算有限但追求稳定体验的用户。
 
@@ -61,7 +61,7 @@ XXYUN机场官网地址：[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)
 
 ## 🔬 性能与流媒体实测
 
-![xx云加速机场测速](https://image.ermao.net/blog/xxyun/image-1.png)
+![xx云加速机场测速](https://image.ermao.net/images/blog/xxyun/image-1.png)
 
 - 📍 测试环境：广东电信 300M 宽带  
 - 🕗 测试时间：日常晚高峰 20:00-21:00  

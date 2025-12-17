@@ -22,7 +22,7 @@ CCYZ机场官网地址：[https://ccyz.org/QkQotDCu.html](https://ccyz.org/QkQot
 
 ## 🎯 CCYZ 机场概览
 
-![ccyz机场logo](https://image.ermao.net/blog/ccyz/image-1.png)
+![ccyz机场logo](https://image.ermao.net/images/blog/ccyz/image-1.png)
 
 **[CCYZ 机场](https://ccyz.org/QkQotDCu.html)** 主打高性价比与专线稳定，采用 BGP+IEPL 双重优化，晚高峰依旧保持高速。支持 Netflix、Disney+、HBO 等主流流媒体解锁，并提供全天候客服响应，适合长期使用或需要稳定带宽的用户。
 
@@ -58,7 +58,7 @@ CCYZ机场官网地址：[https://ccyz.org/QkQotDCu.html](https://ccyz.org/QkQot
 
 ## 🔬 性能与流媒体实测
 
-![ccyz机场测速截图](https://image.ermao.net/blog/ccyz/image.png)
+![ccyz机场测速截图](https://image.ermao.net/images/blog/ccyz/image.png)
 
 - 📍 测试环境：江苏电信 200M 宽带  
 - 🕗 测试时间：晚高峰 20:00-21:00  

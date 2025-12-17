@@ -30,13 +30,13 @@ XSUS 机场是一家老牌机场，价格实惠，节点较多，节点质量也
 
 客服响应及时，强烈推荐这个机场。
 
-![XSUS 机场价格](https://image.ermao.net/article/bc6o8acd/image.png)
+![XSUS 机场价格](https://image.ermao.net/images/article/bc6o8acd/image.png)
 
 ## XSUS 机场测试
 
-![XSUS 机场测试1](https://image.ermao.net/article/bc6o8acd/image-1.png)
+![XSUS 机场测试1](https://image.ermao.net/images/article/bc6o8acd/image-1.png)
 
-![XSUS 机场测试2](https://image.ermao.net/article/bc6o8acd/image-2.png)
+![XSUS 机场测试2](https://image.ermao.net/images/article/bc6o8acd/image-2.png)
 
 ## 机场汇总
 

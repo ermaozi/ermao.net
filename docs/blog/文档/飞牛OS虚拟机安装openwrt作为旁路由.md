@@ -19,7 +19,7 @@ description: 飞牛OS虚拟机安装OpenWrt作为旁路由的详细教程，帮�
 
 我那用了两年零九个月的R5S软路由，终于在昨天彻底挂掉了。
 
-![alt text](https://image.ermao.net/blog/fnoswrt/image.png)
+![alt text](https://image.ermao.net/images/blog/fnoswrt/image.png)
 
 这台 R5S 于 2023 年 2 月斥巨资（616 元）购入，陪我度过了无数个日日夜夜、严寒酷暑，始终如一地为我提供网络服务。
 
@@ -35,7 +35,7 @@ description: 飞牛OS虚拟机安装OpenWrt作为旁路由的详细教程，帮�
 
 ## 飞牛OS虚拟机安装OpenWrt作为旁路由
 
-![alt text](https://image.ermao.net/blog/fnoswrt/image-1.png)
+![alt text](https://image.ermao.net/images/blog/fnoswrt/image-1.png)
 
 非常幸运，前几天我刚买了台小机器并安装了飞牛 OS 作为家庭 NAS。
 
@@ -47,41 +47,41 @@ description: 飞牛OS虚拟机安装OpenWrt作为旁路由的详细教程，帮�
 
 我直接在 [openwrt.ai](https://openwrt.ai/) 自己简单定制并编译了一个固件。
 
-![alt text](https://image.ermao.net/blog/fnoswrt/image-2.png)
+![alt text](https://image.ermao.net/images/blog/fnoswrt/image-2.png)
 
 根据需求简单选一下功能，然后编译打包下载。
 
 编译成功后直接下载镜像。一般直接下载`EFI.img.gz`结尾的文件即可。
 
-![alt text](https://image.ermao.net/blog/fnoswrt/image-3.png)
+![alt text](https://image.ermao.net/images/blog/fnoswrt/image-3.png)
 
 因为涉及到的基础知识比较多，我不太清楚哪里需要展开，哪里可以带过。如果有不懂的地方，==欢迎留言提问==。我将在第一时间回复，并在后续文章中补充。
 
 ### 2. 上传固件文件到nas
 
-![alt text](https://image.ermao.net/blog/fnoswrt/image-4.png)
+![alt text](https://image.ermao.net/images/blog/fnoswrt/image-4.png)
 
 直接在飞牛 OS 的文件管理器中上传刚才下载的固件文件。或者通过 Samba、FTP 等方式上传也可以。
 
 ### 3. 创建OpenWrt虚拟机
 
-![alt text](https://image.ermao.net/blog/fnoswrt/image-5.png)
+![alt text](https://image.ermao.net/images/blog/fnoswrt/image-5.png)
 
 打开飞牛 OS 的`虚拟机`，点击`新建虚拟机`。没有的话去`应用中心`下载一个。
 
-![alt text](https://image.ermao.net/blog/fnoswrt/image-6.png)
+![alt text](https://image.ermao.net/images/blog/fnoswrt/image-6.png)
 
 给虚拟机取个名字，操作系统选`Linux`，版本随便选。然后点下一步
 
-![alt text](https://image.ermao.net/blog/fnoswrt/image-7.png)
+![alt text](https://image.ermao.net/images/blog/fnoswrt/image-7.png)
 
 系统镜像选择刚才上传的固件文件，其他的按自己需求来，基本上是不需要改的。==开机启动建议选择是==。
 
-![alt text](https://image.ermao.net/blog/fnoswrt/image-8.png)
+![alt text](https://image.ermao.net/images/blog/fnoswrt/image-8.png)
 
 存储空间可以随意选择。
 
-![alt text](https://image.ermao.net/blog/fnoswrt/image-9.png)
+![alt text](https://image.ermao.net/images/blog/fnoswrt/image-9.png)
 
 点一下添加网卡，选择好网卡，默认配置即可。
 
@@ -89,17 +89,17 @@ description: 飞牛OS虚拟机安装OpenWrt作为旁路由的详细教程，帮�
 
 这时需要在`设置`-`网络设置`中，点击对应网口左上角的`...`，然后选择`启用 OVS`。短暂等待后该网卡即可启用 `OVS`。
 
-![alt text](https://image.ermao.net/blog/fnoswrt/image-10.png)
+![alt text](https://image.ermao.net/images/blog/fnoswrt/image-10.png)
 
 硬件直通直接忽略，点下一步。这样你的虚拟机就创建好了。
 
 ### 4. 启动OpenWrt虚拟机
 
-![alt text](https://image.ermao.net/blog/fnoswrt/image-11.png)
+![alt text](https://image.ermao.net/images/blog/fnoswrt/image-11.png)
 
 刚创建好的虚拟机会是关机状态，点击开关按钮，然后点击`开机`即可。
 
-![alt text](https://image.ermao.net/blog/fnoswrt/image-12.png)
+![alt text](https://image.ermao.net/images/blog/fnoswrt/image-12.png)
 
 开机后点击这个显示器图标，也就是`VNC 访问`。
 
@@ -109,14 +109,14 @@ description: 飞牛OS虚拟机安装OpenWrt作为旁路由的详细教程，帮�
 
 如果在编译镜像那一步没有选择好你的 IP 段，那么你需要手动配置一下 OpenWrt 的网络。
 
-![alt text](https://image.ermao.net/blog/fnoswrt/image-13.png)
+![alt text](https://image.ermao.net/images/blog/fnoswrt/image-13.png)
 
 执行以下命令
 ``` bash
 vi /etc/config/network
 ```
 
-![alt text](https://image.ermao.net/blog/fnoswrt/image-14.png)
+![alt text](https://image.ermao.net/images/blog/fnoswrt/image-14.png)
 
 修改 lan 口内容：
 
@@ -138,7 +138,7 @@ vi /etc/config/network
 ip a
 ```
 
-![alt text](https://image.ermao.net/blog/fnoswrt/image-15.png)
+![alt text](https://image.ermao.net/images/blog/fnoswrt/image-15.png)
 
 查看一下你的 OpenWrt 虚拟机的 IP 是否配置正确。
 
@@ -146,13 +146,13 @@ ip a
 
 如果上面的步骤配置得没有问题,那么你就可以通过浏览器访问 OpenWrt 虚拟机的后台了。地址栏输入你刚才配置的 OpenWrt 虚拟机的 IP 地址即可。
 
-![alt text](https://image.ermao.net/blog/fnoswrt/image-16.png)
+![alt text](https://image.ermao.net/images/blog/fnoswrt/image-16.png)
 
 第一次访问会提示你设置密码，设置好密码后即可登录后台。==请务必牢记密码==。
 
 ### 7. 配置旁路由
 
-![alt text](https://image.ermao.net/blog/fnoswrt/image-17.png)
+![alt text](https://image.ermao.net/images/blog/fnoswrt/image-17.png)
 
 在`系统`-`设置向导`-`网络设置`中勾选`旁路由模式`，然后填入 IPv4 网关地址（也就是你主路由器的 IP 地址），点击保存并应用即可。
 
@@ -162,15 +162,15 @@ ip a
 
 例如我的旁路由 IP 地址是 `192.168.1.32`，那么我家中其他设备的网关就需要设置为 `192.168.1.32`。
 
-![alt text](https://image.ermao.net/blog/fnoswrt/image-18.png)
+![alt text](https://image.ermao.net/images/blog/fnoswrt/image-18.png)
 
 PC 端可以直接在网络设置中修改网关地址。
 
-![alt text](https://image.ermao.net/blog/fnoswrt/image-19.png)
+![alt text](https://image.ermao.net/images/blog/fnoswrt/image-19.png)
 
 以 Win10 为例，点击 WiFi 图标，点击对应 WiFi 下方的属性。
 
-![alt text](https://image.ermao.net/blog/fnoswrt/image-20.png)
+![alt text](https://image.ermao.net/images/blog/fnoswrt/image-20.png)
 
 在下方的 IP 设置中点击编辑。IP 分配方式选择手动，然后开启 IPv4。网关地址填写旁路由的 IP 地址，点击保存即可。
 
