@@ -32,11 +32,11 @@ ssone官网地址：[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE
 
 客服响应及时，强烈推荐这个机场。
 
-![ssone价格](images/机场推荐ssone/image-1.png)
+![ssone价格](https://image.ermao.net/article/8jxmo76u/image-1.png)
 
 ## ssone 机场测试
 
-![ssone测试](images/机场推荐ssone/image.png)
+![ssone测试](https://image.ermao.net/article/8jxmo76u/image.png)
 
 ## 机场汇总
 

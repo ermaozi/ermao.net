@@ -22,7 +22,7 @@ GitHub 的 DNS 污染问题通常表现为域名解析被劫持到错误的 IP �
 
 **github.com 响应时间太长**
 
-![github.com 响应时间太长](images/如何解决github无法访问/image.png)
+![github.com 响应时间太长](https://image.ermao.net/article/jddtxrrw/image.png)
 
 ---
 

@@ -33,16 +33,16 @@ SFCloud 与 FCCloud 起初由 EFCloud 引流，如今 EFcloud 已经于 2025年1
 
 ## FCCloud 节点无法使用截图
 
-![FCCloud 跑路](images/SFCloud和FCCloud/image.png)
+![FCCloud 跑路](https://image.ermao.net/article/7asq3quy/image.png)
 
-![FCCloud 跑路](images/SFCloud和FCCloud/image-1.png)
+![FCCloud 跑路](https://image.ermao.net/article/7asq3quy/image-1.png)
 
 
 ## 网友预警
 
-![FCCloud 跑路](images/SFCloud和FCCloud/image-2.png)
+![FCCloud 跑路](https://image.ermao.net/article/7asq3quy/image-2.png)
 
-![FCCloud 跑路](images/SFCloud和FCCloud/image-3.png)
+![FCCloud 跑路](https://image.ermao.net/article/7asq3quy/image-3.png)
 
 ## 机场跑路（预警）投稿
 

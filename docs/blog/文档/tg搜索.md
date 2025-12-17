@@ -26,9 +26,9 @@ description: 介绍Telegram搜索机器人的功能与使用方法，推荐几�
 
 Telegram搜索机器人是一类专为Telegram用户打造的智能工具。它们可以帮助你快速检索频道、群组、文件、视频、图片等各种资源，极大提升信息获取效率。通过关键词搜索，用户可以在Telegram平台上快速定位所需内容，节省大量时间。[@soso](https://t.me/soso?start=a_1453425105)、[@smss](https://t.me/smss?start=spread_1453425105)、[@jisou](https://t.me/jisou?start=a_1453425105)
 
-![Telegram搜索机器人界面演示](images/tg搜索/image.png)
-![Telegram搜索机器人资源展示](images/tg搜索/image-1.png)
-![Telegram搜索机器人使用效果](images/tg搜索/image-2.png)
+![Telegram搜索机器人界面演示](https://image.ermao.net/article/bsnuua0h/image.png)
+![Telegram搜索机器人资源展示](https://image.ermao.net/article/bsnuua0h/image-1.png)
+![Telegram搜索机器人使用效果](https://image.ermao.net/article/bsnuua0h/image-2.png)
 
 ## Telegram搜索机器人的核心功能
 
@@ -54,7 +54,7 @@ Telegram搜索机器人是一类专为Telegram用户打造的智能工具。它�
 1. 点击以下链接，直接开始体验：[@soso](https://t.me/soso?start=a_1453425105)、[@smss](https://t.me/smss?start=spread_1453425105)、[@jisou](https://t.me/jisou?start=a_1453425105)
 2. 进入聊天窗口，输入你想查找的关键词（如“吃瓜”、“电影”、“电子书”、“群组”）。
 
-![alt text](images/tg搜索/image-3.png)
+![alt text](https://image.ermao.net/article/bsnuua0h/image-3.png)
 
 3. 等待机器人返回相关资源链接或文件，快速获取所需内容。
 

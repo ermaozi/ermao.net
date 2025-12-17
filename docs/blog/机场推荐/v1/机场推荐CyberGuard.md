@@ -47,13 +47,13 @@ CyberGuard机场官网地址：[cyberguard.best](https://www.cyberguard.best/#/r
 | 700G不限时 | ¥188.00 /一次性 | 700GB/不限时 | 一次性 | [点击购买](https://www.cyberguard.best/#/register?code=yoyUW3R9) |
 | 企业套餐 | ¥200.00 /每月 | 2TB/月 | 月付、季度、半年 | [点击购买](https://www.cyberguard.best/#/register?code=yoyUW3R9) |
 
-![CyberGuard机场价格](images/机场推荐CyberGuard/image-1.png)
+![CyberGuard机场价格](https://image.ermao.net/article/4m7fg8r9/image-1.png)
 
-![CyberGuard机场价格](images/机场推荐CyberGuard/image-2.png)
+![CyberGuard机场价格](https://image.ermao.net/article/4m7fg8r9/image-2.png)
 
 ## CyberGuard机场测试
 
-![CyberGuard机场测试](images/机场推荐CyberGuard/image.png)
+![CyberGuard机场测试](https://image.ermao.net/article/4m7fg8r9/image.png)
 
 ## 机场汇总
 

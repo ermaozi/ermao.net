@@ -23,7 +23,7 @@ SSONE机场官网地址：[https://hello-ssone.com](https://hello-ssone.com/regi
 
 ## 🎯 SSONE机场概览
 
-![SSONE](images/机场推荐ssone/image.png)
+![SSONE logo](https://image.ermao.net/article/ssone/image.png)
 
 **[SSONE机场](https://hello-ssone.com/register?aff=aBHsE1pF)**是一家专注于提供高性价比翻墙服务的机场，以其**便宜实惠的价格**和**稳定可靠的服务**在众多机场中脱颖而出。作为长期使用者，我可以负责任地向大家推荐这家机场。
 
@@ -84,7 +84,7 @@ SSONE机场官网地址：[https://hello-ssone.com](https://hello-ssone.com/regi
 
 ### 📈 速度测试结果
 
-![SSONE机场性能测试](images/机场推荐ssone/image-1.png)
+![SSONE机场性能测试](https://image.ermao.net/article/ssone/image-1.png)
 
 **测试环境**：
 - 🕐 测试时间：晚高峰 20:00-22:00

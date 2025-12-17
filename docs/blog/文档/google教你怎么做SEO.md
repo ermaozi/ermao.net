@@ -91,7 +91,7 @@ Google 抓取某个网页时，理想情况下应该和[普通用户看到的网
 
 网址的某些部分可在搜索结果中显示为面包屑导航，因此用户也可以根据网址判断某条结果对他们是否有用。
 
-![alt text](images/google教你怎么做SEO/image.png)
+![alt text](https://image.ermao.net/blog/googleseo/image.png)
 
 [网域](https://developers.google.com/search/docs/appearance/visual-elements-gallery?hl=zh-cn#domain) | [面包屑导航](https://developers.google.com/search/docs/appearance/visual-elements-gallery?hl=zh-cn#breadcrumb)
 
@@ -105,7 +105,7 @@ Google 会根据网址中的字词自动理解面包屑导航，但如果您喜�
 
 #### 在目录中将主题相似的网页归为一组
 
-![该图示展示了如何在目录中对网页进行分组](images/google教你怎么做SEO/image-1.png)
+![该图示展示了如何在目录中对网页进行分组](https://image.ermao.net/blog/googleseo/image-1.png)
 
 如果您的网站上有数千个网址，那么整理内容的方式可能会影响 Google 抓取您的网站并将其编入索引的效果。具体而言，使用目录（或文件夹）将相似的主题归为一组有助于 Google 了解各个目录中的网址变化频率。
 
@@ -150,7 +150,7 @@ policies 目录中的内容几乎不会更改，但 promotions 目录中的内�
 
 链接是将用户和搜索引擎连接到您网站的其他部分或其他网站上的相关网页的好方法。事实上，Google 每天都是通过链接发现绝大多数的新网页，因此，要想让 Google 发现您的网页并有可能在搜索结果中显示它们，您需要考虑使用链接这项重要资源。此外，链接还可以将用户（和 Google）引导至能证实您所撰写内容的其他资源，从而增加价值。
 
-![此示意图显示了一个网页如何链接到其他相关资源](images/google教你怎么做SEO/image-2.png)
+![此示意图显示了一个网页如何链接到其他相关资源](https://image.ermao.net/blog/googleseo/image-2.png)
 
 #### 撰写优质链接文字
 
@@ -158,7 +158,7 @@ policies 目录中的内容几乎不会更改，但 promotions 目录中的内�
 
 #### 在需要时提供链接
 
-![alt text](images/google教你怎么做SEO/image-3.png)
+![alt text](https://image.ermao.net/blog/googleseo/image-3.png)
 
 链接可为用户和搜索引擎提供有关某个主题的更多背景信息，这可能有助于展现您对该主题的了解程度。但是，如果您链接到无法控制的网页（例如其他网站上的内容），请确保您信任所链接到的资源。 如果您无法信任相应内容，但仍想链接到这些网站，请为该链接添加 `nofollow` [或类似注释](https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links?hl=zh-cn)，以免搜索引擎将您的网站与您要链接到的网站关联起来。这有助于避免您在 Google 搜索中的排名受到潜在负面影响。
 
@@ -172,13 +172,13 @@ policies 目录中的内容几乎不会更改，但 promotions 目录中的内�
 
 标题链接是搜索结果的标题部分，可以帮助用户决定点击哪个搜索结果。Google 会根据几个来源生成此标题链接，包括 `<title>` 元素内的字词（也称为标题文本）以及网页上的其他标题。此标题文本还可用作浏览器和书签中显示的标题。
 
-![该图示展示了标题文本在网页上的外观以及它在 HTML 中的外观](images/google教你怎么做SEO/image-4.png)
+![该图示展示了标题文本在网页上的外观以及它在 HTML 中的外观](https://image.ermao.net/blog/googleseo/image-4.png)
 
 :::tip
 **如果您使用 CMS**，那么除了专注于撰写优质标题之外，您可能不需要对标题采取任何技术性措施。大多数 CMS 都可以自动将您撰写的标题转换为 HTML 中的 `<title>` 元素。
 :::
 
-![alt text](images/google教你怎么做SEO/image-5.png)
+![alt text](https://image.ermao.net/blog/googleseo/image-5.png)
 
 您可以通过撰写合适的标题来影响 Google 搜索中的标题链接：好的标题是网页独有的标题，简洁明了，能够准确描述网页内容。例如，标题可以包括您的网站或商家名称、其他的重要信息（比如商家的实际位置），以及有关特定网页可向用户提供哪些产品/服务的一些信息。请参阅我们[关于标题链接的文档](https://developers.google.com/search/docs/appearance/title-link?hl=zh-cn)，详细了解如何创建好的标题以及如何影响网站搜索结果的标题链接。
 
@@ -186,7 +186,7 @@ policies 目录中的内容几乎不会更改，但 promotions 目录中的内�
 
 在标题链接下方，搜索结果通常包含目标网页的说明，可帮助用户决定是否应点击该搜索结果。这称为摘要。
 
-![阅读这篇完整指南，了解如何在 5 分钟内掌握各种鸡蛋烹饪方法。我们将介绍所有方法，包括：单面煎蛋、水煮蛋和煮荷包蛋。](images/google教你怎么做SEO/image-6.png)
+![阅读这篇完整指南，了解如何在 5 分钟内掌握各种鸡蛋烹饪方法。我们将介绍所有方法，包括：单面煎蛋、水煮蛋和煮荷包蛋。](https://image.ermao.net/blog/googleseo/image-6.png)
 
 摘要源自搜索结果所链接到的网页的实际内容，因此您可以完全控制可用于生成摘要的字词。有时，摘要可能来自元描述标记的内容，通常是网页的一两句话简明摘要。良好的元描述应简短、是某个网页独有的，且包含该网页中最相关的信息。如需获得更多灵感，请查看我们关于[撰写优质元描述](https://developers.google.com/search/docs/appearance/snippet?hl=zh-cn#meta-descriptions)的提示。
 

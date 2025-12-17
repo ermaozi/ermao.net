@@ -1,3 +1,4 @@
+.env
 docs/.vuepress/.temp
 docs/.vuepress/.cache
 docs/.vuepress/dist

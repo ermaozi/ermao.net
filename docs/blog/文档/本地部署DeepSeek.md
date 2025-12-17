@@ -14,7 +14,7 @@ tags:
 
 <!-- more -->
 
-![本地部署DeepSeek](images/本地部署DeepSeek/image.png)
+![本地部署DeepSeek](https://image.ermao.net/article/c3gj5lqy/image.png)
 
 ## 一、为什么选择本地部署代码大模型？
 
