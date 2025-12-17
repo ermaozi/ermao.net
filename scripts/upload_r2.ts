@@ -11,13 +11,22 @@ import crypto from "crypto";
 // 加载环境变量
 dotenv.config();
 
+// 读取必需的环境变量（并确保类型为 string）
+function requiredEnv(name: string): string {
+  const v = process.env[name];
+  if (!v) {
+    throw new Error(`Missing environment variable: ${name}`);
+  }
+  return v;
+}
+
 // ================= 配置区域 =================
 // 请在 .env 文件中设置这些变量
-const ACCOUNT_ID = process.env.R2_ACCOUNT_ID;
-const ACCESS_KEY_ID = process.env.R2_ACCESS_KEY_ID;
-const SECRET_ACCESS_KEY = process.env.R2_SECRET_ACCESS_KEY;
-const BUCKET_NAME = process.env.R2_BUCKET_NAME;
-const CUSTOM_DOMAIN = process.env.R2_CUSTOM_DOMAIN;
+const ACCOUNT_ID = requiredEnv("R2_ACCOUNT_ID");
+const ACCESS_KEY_ID = requiredEnv("R2_ACCESS_KEY_ID");
+const SECRET_ACCESS_KEY = requiredEnv("R2_SECRET_ACCESS_KEY");
+const BUCKET_NAME = requiredEnv("R2_BUCKET_NAME");
+const CUSTOM_DOMAIN = process.env.R2_CUSTOM_DOMAIN || ""; // 可为空
 const ENDPOINT = `https://${ACCOUNT_ID}.r2.cloudflarestorage.com`;
 
 // 扫描目录

@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
+    "r2": "tsx scripts/upload_r2.ts",
+    "ub": "npx update-browserslist-db@latest --yes",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -18,15 +20,12 @@
     "glob": "^13.0.0",
     "gray-matter": "^4.0.3",
     "mime-types": "^3.0.2",
-    "sass-embedded": "^1.97.0",
     "tsx": "^4.21.0",
-    "typescript": "^5.9.3",
     "vuepress": "2.0.0-rc.26",
     "vuepress-theme-plume": "1.0.0-rc.183"
   },
   "dependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.26",
-    "@vuepress/client": "2.0.0-rc.26",
     "vue": "^3.5.25"
   }
 }
