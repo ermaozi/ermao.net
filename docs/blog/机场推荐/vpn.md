@@ -43,7 +43,7 @@ description: 2025年翻墙机场推荐与VPN评测指南，精选便宜好用的
 |[唯兔云](#唯兔云)|[vip01.onlyrabbit.cc](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx)| 无 |6元 45G/月|✔|[TG](https://t.me/v2yun_v2)|[前往](./v2/机场推荐唯兔云.md)|
 [星岛梦](#星岛梦)|[a01.sdmvipaff.cc](https://a01.sdmvipaff.cc/#/?code=O9Q9H6VY)| 无 |16元 100G/月|✔|[TG](https://t.me/thundermousecc)|[前往](./v2/机场推荐星岛梦.md)|
 |[光速云](#光速云)|[a01.gsyvipaff.cc](https://a01.gsyvipaff.cc/#/?code=d1eMb3ku)| 无 |8.25元 59G/月|✔|[TG](https://t.me/LightspeedCloud)|[前往](./v2/机场推荐光速云.md)|
-|[极连云](#极连云)|[jly01.jiliancloud.net](https://jly01.jiliancloud.net/#/register?code=GHDiZb1m)| 无 |8元 60G/月|✔|[TG](https://t.me/JLYCloud)|[前往](./v2/机场推荐极连云.md)|
+|[极连云](#极连云)|[jly01.jiliancloud.net](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m)| 无 |8元 60G/月|✔|[TG](https://t.me/JLYCloud)|[前往](./v2/机场推荐极连云.md)|
 |[superbiu](#superbiu)|[biubiux.online](https://biubiux.online/#/register?code=BasmsULb)| 无 |11元 50G/月|✔|[TG](https://t.me/superbiu888)|[前往](./v2/机场推荐superbiu.md)|
 |[cocoduck](#cocoduck)|[cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|
 |[koodog](#koodog)|[koodog.com](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)| 无 |5元 35G/月|❌|[TG](https://t.me/KooDogGroup)|[前往](./v1/机场推荐koodog.md)|
@@ -241,7 +241,7 @@ ccyz官网地址：[ccyz.org](https://ccyz.org/QkQotDCu.html)
 
 ### 极连云
 
-极连云官网地址：[jly01.jiliancloud.net](https://jly01.jiliancloud.net/#/register?code=GHDiZb1m)
+极连云官网地址：[jly01.jiliancloud.net](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m)
 
 最便宜的订阅有8元 60G/月。
 
@@ -251,12 +251,12 @@ ccyz官网地址：[ccyz.org](https://ccyz.org/QkQotDCu.html)
 
 | 套餐名称 | 价格 | 流量 | 特性 | 购买链接 |
 |----------|------|------|------|----------|
-| **轻量体验(年付)** | ¥96/年 | 60GB/月 | 适合轻度用户，晚高峰不限速 | [购买链接](https://jly01.jiliancloud.net/#/register?code=GHDiZb1m) |
-| **基础套餐** | ¥15.50/月 | 100GB/月 | 全IPLC专线，原生IP | [购买链接](https://jly01.jiliancloud.net/#/register?code=GHDiZb1m) |
-| **进阶套餐** | ¥30.50/月 | 200GB/月 | 优化带宽调度，AI服务解锁 | [购买链接](https://jly01.jiliancloud.net/#/register?code=GHDiZb1m) |
-| **旗舰套餐** | ¥65.50/月 | 500GB/月 | 高速专线，低延迟体验 | [购买链接](https://jly01.jiliancloud.net/#/register?code=GHDiZb1m) |
-| **尊享套餐** | ¥120.50/月 | 1000GB/月 | 顶级旗舰，最高2.5Gbps | [购买链接](https://jly01.jiliancloud.net/#/register?code=GHDiZb1m) |
-| **不限时套餐** | ¥399.00 | 1000GB | 一次性流量，永久有效 | [购买链接](https://jly01.jiliancloud.net/#/register?code=GHDiZb1m) |
+| **轻量体验(年付)** | ¥96/年 | 60GB/月 | 适合轻度用户，晚高峰不限速 | [购买链接](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m) |
+| **基础套餐** | ¥15.50/月 | 100GB/月 | 全IPLC专线，原生IP | [购买链接](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m) |
+| **进阶套餐** | ¥30.50/月 | 200GB/月 | 优化带宽调度，AI服务解锁 | [购买链接](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m) |
+| **旗舰套餐** | ¥65.50/月 | 500GB/月 | 高速专线，低延迟体验 | [购买链接](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m) |
+| **尊享套餐** | ¥120.50/月 | 1000GB/月 | 顶级旗舰，最高2.5Gbps | [购买链接](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m) |
+| **不限时套餐** | ¥399.00 | 1000GB | 一次性流量，永久有效 | [购买链接](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m) |
 
 ---
 

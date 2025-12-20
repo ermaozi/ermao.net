@@ -12,7 +12,7 @@ description: 2025年热门翻墙机场推荐，精简内容，方便快速浏览
 
 [![机场推荐老头云](https://image.ermao.net/images/article/laotouvpn/image.png)](https://www.chattous.net/register?code=3OWtZ9Bi) [老头云](https://www.chattous.net/register?code=3OWtZ9Bi) 2016年运营至今，资历深厚，2Gbps单线接入。起步价：10元/月。[>详情](blog/机场推荐/v2/机场推荐老头vpn.md)
 
-[![机场推荐极连云](https://image.ermao.net/images/blog/jilianyun/image.jpg)](https://jly01.jiliancloud.net/#/register?code=GHDiZb1m) [极连云](https://jly01.jiliancloud.net/#/register?code=GHDiZb1m) 企业级IPLC专线，不限设备，流媒体解锁。起步价：8元/月。[>详情](blog/机场推荐/v2/机场推荐极连云.md)
+[![机场推荐极连云](https://image.ermao.net/images/blog/jilianyun/image.jpg)](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m) [极连云](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m) 企业级IPLC专线，不限设备，流媒体解锁。起步价：8元/月。[>详情](blog/机场推荐/v2/机场推荐极连云.md)
 
 [![机场推荐光速云](https://image.ermao.net/images/blog/guangsuyun/image.png)](https://a01.gsyvipaff.cc/#/?code=d1eMb3ku) [光速云](https://a01.gsyvipaff.cc/#/?code=d1eMb3ku) 高速专线，超高性价比，支持Netflix和ChatGPT。起步价：8.25元/月。[>详情](blog/机场推荐/v2/机场推荐光速云.md)
 
