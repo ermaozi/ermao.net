@@ -48,7 +48,7 @@ description: 2025年翻墙机场推荐与VPN评测指南，精选便宜好用的
 |[cocoduck](#cocoduck)|[cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|
 |[koodog](#koodog)|[koodog.com](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)| 无 |5元 35G/月|❌|[TG](https://t.me/KooDogGroup)|[前往](./v1/机场推荐koodog.md)|
 |[99吧](#_99bar)|[99vpn.bar](https://99vpn.bar/#/register?code=qzpkbzHF)| 1天 1G |9.9元 99G/月|✔|[TG](https://t.me/jiujiuchat)|暂无|
-|[TNT](#tnt)|[ermaozi01.tntvipaff.cc](https://ermaozi01.tntvipaff.cc/#/register?code=f1EyPwf3)|无|10元60g/月(季付)|❌|[TG](https://t.me/TNTCloud2)|[前往](./v1/机场推荐TNT.md)|
+|[TNT](#tnt)|[ermaozi01.tntvipaff.cc](https://ermaozi02.tntvipaff.cc/#/register?code=f1EyPwf3)|无|10元60g/月(季付)|❌|[TG](https://t.me/TNTCloud2)|[前往](./v1/机场推荐TNT.md)|
 |[CAC](#cac)|[www.cac.mom](https://www.cac.mom/#/register?code=kYL5chvN)| 无 |7.9元 168G/月|❌|[TG](https://t.me/CAC_Apex)|暂无|
 |[纵云梯](#纵云梯)|[zongyunti.com/](https://zongyunti.com/?r=60147)| 1G 不限时| 10元 60G/30天|❌|暂无|[前往](./v1/机场推荐纵云梯.md)|
 |[老头vpn](#老头vpn)|[www.chattous.net](https://www.chattous.net/register?code=3OWtZ9Bi)| 1月1G | 10元 100G/月|❌|[TG](https://t.me/OldManVPN)|[前往](./v2/机场推荐老头vpn.md)|
@@ -596,7 +596,7 @@ Aladdin官网地址：[https://www.avatargpt.xyz/](https://short.thisgourl.xyz/#
 
 ### TNT
 
-TNT官网地址：[https://ermaozi01.tntvipaff.cc](https://ermaozi01.tntvipaff.cc/#/register?code=f1EyPwf3)
+TNT官网地址：[https://ermaozi02.tntvipaff.cc](https://ermaozi02.tntvipaff.cc/#/register?code=f1EyPwf3)
 
 邀请码：f1EyPwf3
 
