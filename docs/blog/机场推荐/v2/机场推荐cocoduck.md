@@ -15,7 +15,7 @@ tags:
   - 海外团队
 ---
 
-[CocoDuck机场](https://cocoduck.live/auth/register?code=25c8b515df)详细评测：由海外团队运营的高品质翻墙机场，拥有两年稳定运营历史、自有四个机房、40+全球节点，支持OpenAI和流媒体解锁，是2025年最值得信赖的稳定机场之一。
+[CocoDuck机场](https://cocoduck.live/auth/register?code=25c8b515df)详细评测：由海外团队运营的高品质翻墙机场，拥有两年稳定运营历史、自有四个机房、40+全球节点，支持OpenAI和流媒体解锁，是2026年最值得信赖的稳定机场之一。
 
 CocoDuck机场官网地址：[https://cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)
 
@@ -258,7 +258,7 @@ CocoDuck机场官网地址：[https://cocoduck.live](https://cocoduck.live/auth/
 - 🍎 [Clash for iOS使用教程](https://www.ermao.net/article/z747kgjd/)
 
 ### 🏆 更多机场推荐
-- 🌟 [2025年最新机场推荐汇总](https://www.ermao.net/posts/vpn/)
+- 🌟 [2026年最新机场推荐汇总](https://www.ermao.net/posts/vpn/)
 - 💰 [热门便宜机场推荐](https://www.ermao.net/airport/)
 
 ## ❓ 常见问题解答

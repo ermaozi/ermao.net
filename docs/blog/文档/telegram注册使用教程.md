@@ -1,5 +1,5 @@
 ---
-title: 2025年最新 telegram（电报、飞机）注册使用教程
+title: 2026年最新 telegram（电报、飞机）注册使用教程
 createTime: 2025/10/15 01:31:07
 permalink: /blog/telegram/
 description: Telegram注册使用教程：学习Telegram隐私保护、跨平台同步、群组频道创建和机器人使用。适合新手，包含完整注册流程、核心功能和安全建议。

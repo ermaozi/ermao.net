@@ -1,5 +1,5 @@
 ---
-title: 2025年 Clash for android 下载与安装
+title: 2026年 Clash for android 下载与安装
 createTime: 2024/09/17 17:26:51
 permalink: /article/eh8f4n86/
 tags:
@@ -9,11 +9,11 @@ tags:
   - android
   - 翻墙
   - Clash Meta
-description: 2025年Android手机Clash下载安装教程，简单易用适合新手。学习科学上网、VPN翻墙配置，包含Clash Meta For Android和Clash For Android安装、订阅URL导入和使用指南。
+description: 2026年Android手机Clash下载安装教程，简单易用适合新手。学习科学上网、VPN翻墙配置，包含Clash Meta For Android和Clash For Android安装、订阅URL导入和使用指南。
 
 ---
 
-2025年实测 Clash for android 下载与安装，简单易用，适合新手。
+2026年实测 Clash for android 下载与安装，简单易用，适合新手。
 
 <!-- more -->
 

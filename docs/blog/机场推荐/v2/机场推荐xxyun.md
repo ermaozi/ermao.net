@@ -125,7 +125,7 @@ A：换节点、切换协议或重新导入订阅；仍有问题可联系在线�
 👉 **立即体验**：[前往 XXYUN 官网下单](https://xxyun.de/XQiZqbSr.html)，记得使用优惠码 `xxyun85` 享受 85 折！
 
 ## 🏆 更多机场推荐
-- 🌟 [2025年最新机场推荐汇总](https://www.ermao.net/posts/vpn/)
+- 🌟 [2026年最新机场推荐汇总](https://www.ermao.net/posts/vpn/)
 - 💰 [热门便宜机场推荐](https://www.ermao.net/airport/)
 
 

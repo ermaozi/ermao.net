@@ -1,8 +1,8 @@
 ---
-title: 2025年热门翻墙机场推荐
+title: 2026年热门翻墙机场推荐
 createTime: 2025/12/11 10:26:08
 permalink: /airport/
-description: 2025年热门翻墙机场推荐，精简内容，方便快速浏览各大机场详情。
+description: 2026年热门翻墙机场推荐，精简内容，方便快速浏览各大机场详情。
 ---
 ::: card-masonry cols="3" gap="20" 
 

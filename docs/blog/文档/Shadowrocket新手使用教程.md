@@ -11,10 +11,10 @@ tags:
     - 苹果VPN
     - 教程
     - 节点订阅
-description: 2025最新Shadowrocket（小火箭）新手使用教程。详细介绍如何在iOS/iPhone/iPad及Mac上下载安装Shadowrocket，如何获取免费美区Apple ID，以及如何配置节点订阅链接进行科学上网。
+description: 2026最新Shadowrocket（小火箭）新手使用教程。详细介绍如何在iOS/iPhone/iPad及Mac上下载安装Shadowrocket，如何获取免费美区Apple ID，以及如何配置节点订阅链接进行科学上网。
 ---
 
-本文为2025年最新Shadowrocket（小火箭）使用教程，适用于iPhone、iPad等iOS设备及Mac电脑。我们将手把手教新手朋友如何下载安装Shadowrocket，如何添加节点订阅链接，以及如何开启代理进行科学上网。文章内还提供免费的非国区Apple ID供大家下载Shadowrocket。
+本文为2026年最新Shadowrocket（小火箭）使用教程，适用于iPhone、iPad等iOS设备及Mac电脑。我们将手把手教新手朋友如何下载安装Shadowrocket，如何添加节点订阅链接，以及如何开启代理进行科学上网。文章内还提供免费的非国区Apple ID供大家下载Shadowrocket。
 
 <!-- more -->
 

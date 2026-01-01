@@ -13,7 +13,7 @@ tags:
   - 国外手机号
   - eSIM教程
   - 虚拟手机号
-description: 2025年实测 9esim使用指南完整教程：购买9esim v3卡和esim plus应用，获取国外手机号，注册Google账号、Telegram等海外服务的详细步骤。可长期持有，区别与接码平台。适合需要虚拟手机号的用户。
+description: 2026年实测 9esim使用指南完整教程：购买9esim v3卡和esim plus应用，获取国外手机号，注册Google账号、Telegram等海外服务的详细步骤。可长期持有，区别与接码平台。适合需要虚拟手机号的用户。
 ---
 
 ## 9esim 使用指南：获取国外手机号注册海外账号

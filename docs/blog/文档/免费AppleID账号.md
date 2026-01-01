@@ -1,5 +1,5 @@
 ---
-title: 2025最新免费美区Apple ID共享账号 | Shadowrocket/小火箭下载 | iOS美区账号每日更新
+title: 2026最新免费美区Apple ID共享账号 | Shadowrocket/小火箭下载 | iOS美区账号每日更新
 createTime: 2025/12/15 09:22:04
 permalink: /blog/freeappleid/
 tags:
@@ -11,10 +11,10 @@ tags:
   - iOS美区账号
   - 共享账号
   - App Store
-description: 2025年最新免费共享美区Apple ID账号，每日更新可用。提供美国、日本、韩国、香港、台湾等地区iOS账号，支持下载Shadowrocket（小火箭）、TikTok、ChatGPT等海外应用。
+description: 2026年最新免费共享美区Apple ID账号，每日更新可用。提供美国、日本、韩国、香港、台湾等地区iOS账号，支持下载Shadowrocket（小火箭）、TikTok、ChatGPT等海外应用。
 ---
 
-本文提供2025年最新免费共享的美区Apple ID账号，以及日本、韩国、香港、台湾等地区的iOS账号。这些账号主要供大家下载Shadowrocket（小火箭）、TikTok、ChatGPT等非国区App Store应用使用。账号会定期维护更新，确保可用性。
+本文提供2026年最新免费共享的美区Apple ID账号，以及日本、韩国、香港、台湾等地区的iOS账号。这些账号主要供大家下载Shadowrocket（小火箭）、TikTok、ChatGPT等非国区App Store应用使用。账号会定期维护更新，确保可用性。
 
 <!-- more -->
 

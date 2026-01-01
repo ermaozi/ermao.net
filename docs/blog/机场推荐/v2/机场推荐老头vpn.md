@@ -15,7 +15,7 @@ tags:
 ---
 
 
-[老头VPN](https://www.chattous.net/register?code=3OWtZ9Bi)详细评测：老牌翻墙机场，套餐从轻量到企业可选，最低起价 ¥25.00/月，运营8年稳定可靠、专业客服、解锁全流媒体，是2025年值得信赖的老牌机场之一。
+[老头VPN](https://www.chattous.net/register?code=3OWtZ9Bi)详细评测：老牌翻墙机场，套餐从轻量到企业可选，最低起价 ¥25.00/月，运营8年稳定可靠、专业客服、解锁全流媒体，是2026年值得信赖的老牌机场之一。
 
 老头VPN官网地址：[https://www.chattous.net](https://www.chattous.net/register?code=3OWtZ9Bi)
 
@@ -303,7 +303,7 @@ Features:
 - 🍎 [Clash for iOS使用教程](https://www.ermao.net/article/z747kgjd/)
 
 ### 🏆 更多机场推荐
-- 🌟 [2025年最新机场推荐汇总](https://www.ermao.net/posts/vpn/)
+- 🌟 [2026年最新机场推荐汇总](https://www.ermao.net/posts/vpn/)
 - 💰 [热门便宜机场推荐](https://www.ermao.net/airport/)
 
 ## ❓ 常见问题解答
