@@ -18,7 +18,7 @@
 |名称|官网地址|试用|最便宜订阅|不限时|群|详情|
 |---|---|---|--|---|---|---|
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 60G/月|❌|[TG](https://t.me/+rYzRmCbJfIw3ZTM1)|[前往](./v2/机场推荐ssone.md)|
-|[flybit](#flybit)|[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔|[TG](https://t.me/flybitvip)|[前往](./v1/机场推荐flybit.md)|
+|[flybit](#flybit)|[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔|[TG](https://t.me/flybitvip)|[前往](./v1/机场推荐flybit.md)|
 |[xxyun](#xxyun)|[xxyun.de](https://xxyun.de/XQiZqbSr.html)| 无 |8.89元 100G/月|✔|[TG](https://t.me/+eYsE6P_xvjk2NGY5)|[前往](./v2/机场推荐xxyun.md)|
 |[ccyz](#ccyz)|[ccyz.org](https://ccyz.org/QkQotDCu.html)| 1G |15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|
 |[唯兔云](#唯兔云)|[vip01.onlyrabbit.cc](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx)| 无 |6元 45G/月|✔|[TG](https://t.me/v2yun_v2)|[前往](./v2/机场推荐唯兔云.md)|
@@ -231,7 +231,7 @@ superbiu官网地址：[biubiux.online](https://biubiux.online/#/register?code=B
 
 ### flybit
 
-flybit官网地址：[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)
+flybit官网地址：[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM7)
 
 邀请码：7h1NCdM7
 

@@ -14,13 +14,13 @@ tags:
 
 flybit机场，10元 100G/月，高性价比、IEPL接口线路。
 
-flybit官网地址：[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)
+flybit官网地址：[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM7)
 
 <!-- more -->
 
 ## flybit机场官网地址
 
-[goflybit.pages.dev](https://goflybit.pages.dev/#/register?code=7h1NCdM7)
+[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM7)
 
 ## flybit机场简介
 
