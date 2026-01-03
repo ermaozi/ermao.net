@@ -15,15 +15,6 @@ tags:
 description: 2026 SSONE机场详细评测：10元60G/月、IEPL专线与广覆盖节点，支持 Netflix/Disney+/YouTube/ChatGPT 解锁；涵盖价格套餐、速度测试、客户端配置与购买指南，适合新手与重度用户的高性价比翻墙机场。
 ---
 
-::: caution
-
-大量迹象表明，SSONE机场极有可能在短期内跑路！
-
-请各位用户注意风险，谨慎续费购买！
-
-参考文章：[⚠️【机场跑路】2026年01月03日SSONE机场跑路预警](https://www.ermao.net/scamvpn/ssone/)
-:::
-
 [SSONE机场](https://hello-ssone.com/register?aff=aBHsE1pF)详细评测：10元60G/月的高性价比翻墙机场，稳定可靠、速度快、支持Netflix和ChatGPT，是2026年最值得推荐的便宜机场之一。
 
 SSONE机场官网地址：[https://hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)
