@@ -36,14 +36,14 @@ description: 2026年翻墙机场推荐与VPN评测指南，精选便宜好用的
 
 |名称|官网地址|试用|最便宜订阅|不限时|群|详情|
 |---|---|---|--|---|---|---|
-|[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 60G/月|❌|[TG](https://t.me/+rYzRmCbJfIw3ZTM1)|[前往](./v2/机场推荐ssone.md)|
+|[极连云](#极连云)|[jly01.jiliancloud.net](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m)| 无 |8元 60G/月|✔|[TG](https://t.me/JLYCloud)|[前往](./v2/机场推荐极连云.md)|
+|[老头vpn](#老头vpn)|[www.chattous.net](https://www.chattous.net/register?code=3OWtZ9Bi)| 1月1G | 10元 100G/月|❌|[TG](https://t.me/OldManVPN)|[前往](./v2/机场推荐老头vpn.md)|
 |[flybit](#flybit)|[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔|[TG](https://t.me/flybitvip)|[前往](./v1/机场推荐flybit.md)|
 |[xxyun](#xxyun)|[xxyun.de](https://xxyun.de/XQiZqbSr.html)| 无 |8.89元 100G/月|✔|[TG](https://t.me/+eYsE6P_xvjk2NGY5)|[前往](./v2/机场推荐xxyun.md)|
-|[ccyz](#ccyz)|[ccyz.org](https://ccyz.org/QkQotDCu.html)| 1G |15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|
-|[唯兔云](#唯兔云)|[vip01.onlyrabbit.cc](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx)| 无 |6元 45G/月|✔|[TG](https://t.me/v2yun_v2)|[前往](./v2/机场推荐唯兔云.md)|
 [星岛梦](#星岛梦)|[a01.sdmvipaff.cc](https://a01.sdmvipaff.cc/#/?code=O9Q9H6VY)| 无 |16元 100G/月|✔|[TG](https://t.me/thundermousecc)|[前往](./v2/机场推荐星岛梦.md)|
 |[光速云](#光速云)|[a01.gsyvipaff.cc](https://a01.gsyvipaff.cc/#/?code=d1eMb3ku)| 无 |8.25元 59G/月|✔|[TG](https://t.me/LightspeedCloud)|[前往](./v2/机场推荐光速云.md)|
-|[极连云](#极连云)|[jly01.jiliancloud.net](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m)| 无 |8元 60G/月|✔|[TG](https://t.me/JLYCloud)|[前往](./v2/机场推荐极连云.md)|
+|[ccyz](#ccyz)|[ccyz.org](https://ccyz.org/QkQotDCu.html)| 1G |15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|
+|[唯兔云](#唯兔云)|[vip01.onlyrabbit.cc](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx)| 无 |6元 45G/月|✔|[TG](https://t.me/v2yun_v2)|[前往](./v2/机场推荐唯兔云.md)|
 |[superbiu](#superbiu)|[biubiux.online](https://biubiux.online/#/register?code=BasmsULb)| 无 |11元 50G/月|✔|[TG](https://t.me/superbiu888)|[前往](./v2/机场推荐superbiu.md)|
 |[cocoduck](#cocoduck)|[cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|
 |[koodog](#koodog)|[koodog.com](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)| 无 |5元 35G/月|❌|[TG](https://t.me/KooDogGroup)|[前往](./v1/机场推荐koodog.md)|
@@ -51,7 +51,6 @@ description: 2026年翻墙机场推荐与VPN评测指南，精选便宜好用的
 |[TNT](#tnt)|[ermaozi01.tntvipaff.cc](https://ermaozi02.tntvipaff.cc/#/register?code=f1EyPwf3)|无|10元60g/月(季付)|❌|[TG](https://t.me/TNTCloud2)|[前往](./v1/机场推荐TNT.md)|
 |[CAC](#cac)|[www.cac.mom](https://www.cac.mom/#/register?code=kYL5chvN)| 无 |7.9元 168G/月|❌|[TG](https://t.me/CAC_Apex)|暂无|
 |[纵云梯](#纵云梯)|[zongyunti.com/](https://zongyunti.com/?r=60147)| 1G 不限时| 10元 60G/30天|❌|暂无|[前往](./v1/机场推荐纵云梯.md)|
-|[老头vpn](#老头vpn)|[www.chattous.net](https://www.chattous.net/register?code=3OWtZ9Bi)| 1月1G | 10元 100G/月|❌|[TG](https://t.me/OldManVPN)|[前往](./v2/机场推荐老头vpn.md)|
 |[青云梯](#青云梯)|[ermaozi01.qytvipaff.cc](https://ermaozi01.qytvipaff.cc/register?aff=W5ICDu2y)| 无 |8 元60g/月(年付)|❌|[TG](https://t.me/qingyunticc)|[前往](./v1/机场推荐青云梯.md)|
 |[阿达西](#阿达西)|[adaxi.net](https://adaxi.net/?r=68917)| 无 |3元 20G/月|✔|暂无|[前往](./v1/机场推荐阿达西.md)|
 |[奈云](#奈云)|[www.v2ny.me](https://www.v2ny.me?path=register&code=FNAu1FWB)|无|10.6元 168G/月(年付)|✔|[TG](https://t.me/v2naiun)|[前往](./v1/机场推荐奈云.md)|
@@ -72,33 +71,30 @@ description: 2026年翻墙机场推荐与VPN评测指南，精选便宜好用的
 |[XSUS](#xsus)|[xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔|[TG](https://t.me/xsusvpn)|[前往](./v1/机场推荐XSUS.md)|
 |[Aladdin](#aladdin)|[www.avatargpt.xyz/](https://short.thisgourl.xyz/#/register?code=tvLw0oMj)|无|30元 390G/半年|❌|暂无|暂无|
 |[小牛云](#小牛云)|[xiaoniuyun.cc](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)| 无 |预警|✔|[TG](https://t.me/aoxcloud)|[前往](./v2/机场推荐小牛云.md)|
+|[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |预警|❌|[TG](https://t.me/+rYzRmCbJfIw3ZTM1)|[前往](./v2/机场推荐ssone.md)|
 |[EF](#ef)|~~www.efcloud1.com~~|无|跑路|❌|跑路|跑路|
 
 
 ## 简介
 
-### ssone
+### 极连云
 
-官网地址：[m.ssone.io](https://hello-ssone.com/register?aff=aBHsE1pF)
+极连云官网地址：[jly01.jiliancloud.net](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m)
 
-邀请码：aBHsE1pF
+最便宜的订阅有8元 60G/月。
 
-试用：1天 1G
+本站长期8折优惠码：`JLY888`
 
-最便宜的订阅有10元 60G/月。
+极连云提供高性价比的IEPL专线VPN服务，支持Trojan和Shadowsocks协议，解锁Netflix、YouTube等主流流媒体平台。套餐不限速、不限设备数，适合轻度到中度用户。支持支付宝和USDT支付，拥有多节点覆盖全球，确保稳定高速连接。
 
-| 套餐名称 | 月费 | 流量 | 节点数量 | 适用人群 |购买链接|
-|----------|------|------|----------|----------|-------|
-| [Lite]微型够用 | ¥10/月 | 60GB/月 | 30+IEPL专线 | 轻度用户 |[购买链接](https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF)|
-| [Pro]实用主义 | ¥39/月 | 500GB/月 | 100+IEPL专线 | 日常使用 |[购买链接](https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF)|
-| [Pro]充盈之选 | ¥60/月 | 1200GB/月 | 100+IEPL专线 | 重度用户 |[购买链接](https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF)|
-| [Pro]团队计划 | ¥150/月 | 3600GB/月 | 100+IEPL专线 | 企业/团队 |[购买链接](https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF)|
-| [Pro]超值无忧 | ¥200/年 | 5000GB/年 | 100+IEPL专线 | 个人/企业 |[购买链接](https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF)|
-| [Pro]优惠计划 | ¥80/季 | 300GB/月 | 100+IEPL专线 | 日常使用 |[购买链接](https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF)|
-
-以上所有套餐均有月付、季付、半年、一年、两年、三年等多种付费周期可选。
-
-这家机场是我自己用的，一分钱一分货，节点较多，速度非常快，节点支持 Netflix。适合有一定需求的同学。
+| 套餐名称 | 价格 | 流量 | 特性 | 购买链接 |
+|----------|------|------|------|----------|
+| **轻量体验(年付)** | ¥96/年 | 60GB/月 | 适合轻度用户，晚高峰不限速 | [购买链接](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m) |
+| **基础套餐** | ¥15.50/月 | 100GB/月 | 全IPLC专线，原生IP | [购买链接](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m) |
+| **进阶套餐** | ¥30.50/月 | 200GB/月 | 优化带宽调度，AI服务解锁 | [购买链接](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m) |
+| **旗舰套餐** | ¥65.50/月 | 500GB/月 | 高速专线，低延迟体验 | [购买链接](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m) |
+| **尊享套餐** | ¥120.50/月 | 1000GB/月 | 顶级旗舰，最高2.5Gbps | [购买链接](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m) |
+| **不限时套餐** | ¥399.00 | 1000GB | 一次性流量，永久有效 | [购买链接](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m) |
 
 ---
 
@@ -174,7 +170,6 @@ ccyz官网地址：[ccyz.org](https://ccyz.org/QkQotDCu.html)
 | Lite 套餐 · 150G | ¥15 / 月 | 150G/月 | 取决于节点 | IEPL 专线 | 轻度使用、影音追剧 | [立即购买](https://ccyz.org/QkQotDCu.html) |
 | Pro 套餐 · 280G | ¥25 / 月 | 280G/月 | 取决于节点 | IEPL 专线 | 日常/多设备用户 | [立即购买](https://ccyz.org/QkQotDCu.html) |
 
-
 ---
 
 ### 唯兔云
@@ -236,27 +231,6 @@ ccyz官网地址：[ccyz.org](https://ccyz.org/QkQotDCu.html)
 | **量子版** | ¥68/月 | 450GB/月 | 中重度用户，大流量 | [购买链接](https://a01.gsyvipaff.cc/#/?code=d1eMb3ku) |
 | **无界版** | ¥130/月 | 900GB/月 | 自由使用，极致体验 | [购买链接](https://a01.gsyvipaff.cc/#/?code=d1eMb3ku) |
 | **不限时流量包** | ¥680 | 1000GB | 一次性购买，永不过期 | [购买链接](https://a01.gsyvipaff.cc/#/?code=d1eMb3ku) |
-
----
-
-### 极连云
-
-极连云官网地址：[jly01.jiliancloud.net](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m)
-
-最便宜的订阅有8元 60G/月。
-
-本站长期8折优惠码：`JLY888`
-
-极连云提供高性价比的IEPL专线VPN服务，支持Trojan和Shadowsocks协议，解锁Netflix、YouTube等主流流媒体平台。套餐不限速、不限设备数，适合轻度到中度用户。支持支付宝和USDT支付，拥有多节点覆盖全球，确保稳定高速连接。
-
-| 套餐名称 | 价格 | 流量 | 特性 | 购买链接 |
-|----------|------|------|------|----------|
-| **轻量体验(年付)** | ¥96/年 | 60GB/月 | 适合轻度用户，晚高峰不限速 | [购买链接](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m) |
-| **基础套餐** | ¥15.50/月 | 100GB/月 | 全IPLC专线，原生IP | [购买链接](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m) |
-| **进阶套餐** | ¥30.50/月 | 200GB/月 | 优化带宽调度，AI服务解锁 | [购买链接](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m) |
-| **旗舰套餐** | ¥65.50/月 | 500GB/月 | 高速专线，低延迟体验 | [购买链接](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m) |
-| **尊享套餐** | ¥120.50/月 | 1000GB/月 | 顶级旗舰，最高2.5Gbps | [购买链接](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m) |
-| **不限时套餐** | ¥399.00 | 1000GB | 一次性流量，永久有效 | [购买链接](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m) |
 
 ---
 
@@ -729,6 +703,19 @@ XSUS官网地址：[xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)
 试用：无
 
 最便宜的订阅有8元 168G/30天。稳定运行2年+，节点质量高，支持按流量购买，支持支付宝、微信、USDT支付。
+
+---
+
+### ssone
+
+::: caution
+大量迹象表明，ssone机场极有可能在短期内跑路！
+
+请各位用户注意风险，谨慎续费购买！
+
+参考文章：[⚠️【机场跑路】2026年01月03日SSONE机场跑路预警](https://www.ermao.net/scamvpn/ssone/)
+
+:::
 
 ---
 
