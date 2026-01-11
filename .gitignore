@@ -1,4 +1,6 @@
 .env
+auto_deploy.sh
+**/images/
 docs/.vuepress/.temp
 docs/.vuepress/.cache
 docs/.vuepress/dist
