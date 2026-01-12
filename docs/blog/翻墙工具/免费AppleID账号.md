@@ -23,6 +23,7 @@ description: 2026年最新免费共享美区Apple ID账号，每日更新可用�
 2. 使用后请及时退出账号，避免影响其他用户使用。
 3. 如果遇到账号无法登录或需要验证等问题，请尝试更换其他账号。
 4. 本站不对账号的使用问题负责，仅提供共享服务。
+5. 严禁登录 iCloud 设置，仅限 App Store 登录，==登录设置会导致锁机==！
 :::
 
 <LinkCard title="🚀 Shadowrocket(小火箭)新手使用教程：下载安装、节点订阅与配置指南" href="/article/z747kgjd/" description="最新Shadowrocket（小火箭）新手使用教程。详细介绍如何在iOS/iPhone/iPad及Mac上下载安装Shadowrocket，如何获取免费美区Apple ID，以及如何配置节点订阅链接进行科学上网。" />

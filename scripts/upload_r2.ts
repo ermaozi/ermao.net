@@ -4,6 +4,8 @@ import matter from "gray-matter";
 import { glob } from "glob";
 import dotenv from "dotenv";
 import R2Uploader from "./lib/r2Uploader";
+import crypto from "crypto";
+import exifr from "exifr";
 
 // 加载环境变量
 dotenv.config();
@@ -88,12 +90,36 @@ async function processFile(filePath: string) {
       continue;
     }
 
-    // 生成 R2 Key
+    // 生成 R2 Key: 使用 图片日期 + 哈希前6位
     const ext = path.extname(localImgPath);
-    const filename = path.basename(localImgPath);
-    // 为了防止重名覆盖，可以加 hash，或者保持原文件名（用户需求似乎倾向于简单）
-    // 这里使用: permalink目录/文件名
-    const r2Key = `images/${targetDir}/${filename}`;
+    // 读取文件并计算哈希
+    const buf = await fs.readFile(localImgPath);
+    const hash6 = crypto.createHash("sha256").update(buf).digest("hex").slice(0, 6);
+
+    // 优先尝试读取 EXIF 日期（DateTimeOriginal），回退到文件 mtime
+    let date: Date | null = null;
+    try {
+      const exif = await exifr.parse(buf as any);
+      const exifDate = (exif && (exif.DateTimeOriginal || (exif as any).CreateDate || (exif as any).ModifyDate)) as any;
+      if (exifDate) {
+        date = exifDate instanceof Date ? exifDate : new Date(exifDate);
+      }
+    } catch (e) {
+      // 忽略 EXIF 解析错误
+    }
+
+    if (!date) {
+      const stat = await fs.stat(localImgPath);
+      date = stat.mtime;
+    }
+
+    const pad = (n: number) => n.toString().padStart(2, "0");
+    const dateStr = `${date.getFullYear()}${pad(date.getMonth() + 1)}${pad(date.getDate())}_${pad(
+      date.getHours()
+    )}${pad(date.getMinutes())}${pad(date.getSeconds())}`;
+
+    const newFilename = `${dateStr}-${hash6}${ext}`;
+    const r2Key = `images/${targetDir}/${newFilename}`;
 
     // 上传
     let remoteUrl: string | null = null;

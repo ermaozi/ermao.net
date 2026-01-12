@@ -30,13 +30,20 @@ shadowrocket把并没有上线国区应用商店，首先需要先切换到我�
 
 <LinkCard title="🍎最新免费美区Apple ID共享账号 | Shadowrocket/小火箭下载 | iOS美区账号每日更新" href="/blog/freeappleid/" description="最新免费共享美区Apple ID账号，每日更新可用。提供美国、日本、韩国、香港、台湾等地区iOS账号，支持下载Shadowrocket（小火箭）、TikTok、ChatGPT等海外应用。" />
 
-请注意一定要按步骤在App Store登录，切勿在手机“设置”中登录。
 
-1. 打开手机桌面appstore应用点击头像滑到底部退出自己的账号，复制我们的账号点登录后一定要在弹出的APPLE ID安全页面选择“其它选项”-不升级。
+:::caution 警告！
+使用共享账号时请注意一定要按步骤在App Store登录，切勿在手机“设置”中登录。
+
+在“设置”中登录 Apple ID 会==导致锁机==！
+:::
+
+
+
+1. 打开手机桌面appstore应用点击头像滑到底部退出自己的账号，复制我们的账号点登录后一定要在弹出的 Apple ID 安全页面选择“其它选项”-不升级。
 
 2. 完成后appstore将会自动切换成英文商店(也有可能是中文)，果登录上商店还是中文界面请重启一下AppStore或者手机试试
 
-3. 搜索“Shadowrocket”。看我们教程最上面的图标核对一下注意辨别不要下载到山寨应用了。
+3. 搜索“Shadowrocket”。看我们教程最上面的图标核对一下注意辨别不要下载到山寨应用了。或是直接点击 [Shadowrocket下载地址](https://apps.apple.com/us/app/shadowrocket/id932747118) 跳转下载。
 
 4. 安装完成后，打开Shadowrocket。
 
@@ -66,11 +73,14 @@ shadowrocket把并没有上线国区应用商店，首先需要先切换到我�
 
 ## 4. 启动代理
 
-1. 将右上角的开关拨到“开启”位置，代理开始工作。
+1. 将右上角的开关拨到“开启”位置，代理开始工作。首次连接需输入锁屏密码或 Face ID 授权 配置。
+
+![alt text](https://image.ermao.net/images/article/z747kgjd/20260112_111749-15697a.png)
 
 2. 你可以在状态栏看到一个VPN图标，表示Shadowrocket正在运行。
 
 ## 5. 测试连接
+
 1. 打开浏览器，访问一个被墙的网站（例如Google.com）。
 
 2. 如果网站可以正常访问，说明Shadowrocket配置成功。
