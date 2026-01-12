@@ -1,5 +1,5 @@
 .env
-**.log
+**/*.log
 auto_deploy.sh
 **/images/
 docs/.vuepress/.temp
