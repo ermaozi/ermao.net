@@ -43,6 +43,7 @@ description: 2026年翻墙机场推荐与VPN评测指南，精选便宜好用的
 |[uuone](#uuone)|[uuone.de](https://uuone.de/ermao.html)| 无 |12元 150G/月|✔|暂无|[前往](./v2/机场推荐uuone.md)|
 |[极连云](#极连云)|[jly01.jiliancloud.net](https://a01.jlyvipaff.cc/#/register?code=GHDiZb1m)| 无 |8元 60G/月|✔|[TG](https://t.me/JLYCloud)|[前往](./v2/机场推荐极连云.md)|
 |[cocoduck](#cocoduck)|[cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|
+|[随便云](#随便云)|[suibian.org](https://suibian.org/register?code=YZxHwCws)| 无 |10元 68G/月|✔|[TG](https://t.me/suibianvip)|[前往](./v2/机场推荐随便云.md)|
 |[flybit](#flybit)|[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔|[TG](https://t.me/flybitvip)|[前往](./v1/机场推荐flybit.md)|
 |[唯兔云](#唯兔云)|[vip01.onlyrabbit.cc](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx)| 无 |6元 45G/月|✔|[TG](https://t.me/v2yun_v2)|[前往](./v2/机场推荐唯兔云.md)|
 |[光速云](#光速云)|[a01.gsyvipaff.cc](https://a01.gsyvipaff.cc/#/?code=d1eMb3ku)| 无 |8.25元 59G/月|✔|[TG](https://t.me/LightspeedCloud)|[前往](./v2/机场推荐光速云.md)|
@@ -178,6 +179,25 @@ CocoDuck机场官网地址：[https://cocoduck.live](https://cocoduck.live/auth/
 | 哥达鸭 | ¥41/月 | 700GB/月 | 40+全球节点 | 优先路由 | 中度用户 | [购买链接](https://cocoduck.live/auth/register?code=25c8b515df) |
 | 唐老鸭 | ¥53/月 | 1000GB/月 | 40+全球节点 | 专线服务 | 企业/团队 | [购买链接](https://cocoduck.live/auth/register?code=25c8b515df) |
 | 迷你鸭 | ¥77/年 | 77GB/月 | 40+全球节点 | 超值优惠 | 长期用户 | [购买链接](https://cocoduck.live/auth/register?code=25c8b515df) |
+
+---
+
+### 随便云
+
+随便云官网地址：[suibian.org](https://suibian.org/register?code=YZxHwCws)
+
+试用：无
+
+随便云提供灵活的月付套餐和不限时流量包，满足不同用户的需求。所有的套餐均支持 **全节点 IEPL / 中转支持** 和 **多地区 Netflix + 其他流媒体解锁**。
+
+| 套餐名称 | 价格 | 流量 | 速率限制 | 设备数 | 特性 | 购买 |
+|----------|------|------|----------|--------|------|------|
+| **轻量Lite套餐** | ¥10.00/月 | 68 GB | 500 Mbps | 3 台 | 入门首选，高速稳定 | [👉抢购](https://suibian.org/register?code=YZxHwCws) |
+| **进阶Pro套餐** | ¥20.00/月 | 168 GB | 1000 Mbps | 5 台 | 进阶推荐，千兆速率 | [👉抢购](https://suibian.org/register?code=YZxHwCws) |
+| **终极Ultimate** | ¥40.00/月 | 388 GB | 2000 Mbps | 8 台 | 大流量，2G超高速 | [👉抢购](https://suibian.org/register?code=YZxHwCws) |
+| **团队Team套餐** | ¥88.00/月 | 1000 GB | 5000 Mbps | 15 台 | 团队共享，极致速率 | [👉抢购](https://suibian.org/register?code=YZxHwCws) |
+| **100G不限时** | ¥28.00/次 | 100 GB | 1000 Mbps | 3 台 | 流量包，永久有效 | [👉抢购](https://suibian.org/register?code=YZxHwCws) |
+| **288G不限时** | ¥68.00/次 | 288 GB | 不限制 | 5 台 | 大包流量，速率无忧 | [👉抢购](https://suibian.org/register?code=YZxHwCws) |
 
 ---
 
