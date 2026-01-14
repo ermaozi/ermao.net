@@ -3,14 +3,22 @@
     <h1>网站数据</h1>
     <br><br>
     <div class="controls">
-      <button 
-        v-for="p in periods" 
-        :key="p.value" 
-        :class="{ active: currentPeriod === p.value }"
-        @click="fetchStats(p.value)"
-      >
-        {{ p.label }}
-      </button>
+      <div class="btn-group">
+        <button 
+          v-for="p in periods" 
+          :key="p.value" 
+          :class="{ active: currentPeriod === p.value }"
+          @click="fetchStats(p.value)"
+        >
+          {{ p.label }}
+        </button>
+      </div>
+      <div class="date-picker-group">
+          <input type="date" v-model="startDate" />
+          <span>至</span>
+          <input type="date" v-model="endDate" />
+          <button @click="fetchCustom" :disabled="!startDate || !endDate">查询</button>
+      </div>
     </div>
 
     <div v-if="loading" class="loading">Loading stats...</div>
@@ -36,6 +44,15 @@
             </div>
         </div>
 
+        <div class="card">
+            <h3>访客来源</h3>
+            <div class="chart-container bar-chart-height">
+                <Bar v-if="refsChartData" :data="refsChartData" :options="refsBarOptions" />
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="grid">
         <div class="card">
           <h3>国家 / 地区</h3>
           <div class="chart-container pie-container">
@@ -94,10 +111,13 @@ let workerUrl = __STATS_WORKER_URL__
 if (typeof workerUrl === 'string' && workerUrl.startsWith('"') && workerUrl.endsWith('"')) {
     workerUrl = workerUrl.slice(1, -1)
 }
-const stats = ref({ total: 0, pages: [], countries: [], uas: [], timeSeries: [] })
+const stats = ref({ total: 0, pages: [], countries: [], uas: [], timeSeries: [], refs: [] })
 const loading = ref(false)
 const error = ref(null)
 const currentPeriod = ref('24h')
+const startDate = ref('')
+const endDate = ref('')
+const isCustomMode = ref(false)
 const router = useRouter()
 const routeMap = ref(new Map())
 
@@ -158,33 +178,87 @@ const buildRouteMap = () => {
 
 const lineChartData = computed(() => {
     const rawData = stats.value.timeSeries || [];
-    const period = currentPeriod.value;
     
-    // Generate buckets
+    // Generate buckets based on period or custom range
     const buckets = [];
     const now = new Date();
     
-    if (period === '24h') {
-        for (let i = 23; i >= 0; i--) {
-            const d = new Date(now.getTime() - i * 3600 * 1000);
-            const label = d.toISOString().slice(0, 13).replace('T', ' ') + ':00';
-            const displayLabel = d.getHours() + ':00';
-            buckets.push({ label, displayLabel, value: 0 });
+    if (isCustomMode.value && stats.value.range) {
+        // Custom Range Logic
+        const start = stats.value.range.start;
+        const end = stats.value.range.end;
+        const diff = end - start;
+        const oneDay = 24 * 3600 * 1000;
+        
+        let step;
+        let formatLabel;
+        let formatDisplay;
+        
+        if (diff <= oneDay + 1000) {
+             step = 3600 * 1000; // Hour
+             formatLabel = (d) => d.toISOString().slice(0, 13).replace('T', ' ') + ':00';
+             formatDisplay = (d) => d.getHours() + ':00';
+        } else if (diff > 180 * oneDay) {
+             step = 30 * oneDay; // Month (Approx) - tricky for exact months
+        } else {
+             step = oneDay; // Day
+             formatLabel = (d) => d.toISOString().slice(0, 10);
+             formatDisplay = (d) => (d.getMonth() + 1) + '-' + d.getDate();
         }
-    } else if (period === '7d' || period === '30d') {
-        const days = period === '7d' ? 7 : 30;
-        for (let i = days - 1; i >= 0; i--) {
-            const d = new Date(now.getTime() - i * 24 * 3600 * 1000);
-            const label = d.toISOString().slice(0, 10);
-            const displayLabel = (d.getMonth() + 1) + '-' + d.getDate();
-            buckets.push({ label, displayLabel, value: 0 });
+
+        if (formatLabel) {
+             // Fill gaps
+             for (let t = start; t <= end; t += step) {
+                 const d = new Date(t);
+                 buckets.push({ 
+                     label: formatLabel(d), 
+                     displayLabel: formatDisplay(d), 
+                     value: 0 
+                 });
+             }
+        } else {
+            // Fallback for Month view or complex ranges: just use raw data
+             rawData.forEach(d => {
+                 buckets.push({ label: d.label, displayLabel: d.label, value: d.count });
+             });
+             return {
+                labels: buckets.map(b => b.displayLabel),
+                datasets: [{
+                    label: 'Visits',
+                    backgroundColor: 'rgba(62, 175, 124, 0.2)',
+                    borderColor: '#3eaf7c',
+                    pointBackgroundColor: '#3eaf7c',
+                    data: buckets.map(b => b.value),
+                    fill: true,
+                    tension: 0.4
+                }]
+            }
         }
-    } else if (period === '1y') {
-         for (let i = 11; i >= 0; i--) {
-            const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
-            const label = d.toISOString().slice(0, 7);
-             const displayLabel = d.getFullYear() + '-' + (d.getMonth() + 1);
-            buckets.push({ label, displayLabel, value: 0 });
+    } else {
+        // Standard Period Logic
+        const period = currentPeriod.value;
+        if (period === '24h') {
+            for (let i = 23; i >= 0; i--) {
+                const d = new Date(now.getTime() - i * 3600 * 1000);
+                const label = d.toISOString().slice(0, 13).replace('T', ' ') + ':00';
+                const displayLabel = d.getHours() + ':00';
+                buckets.push({ label, displayLabel, value: 0 });
+            }
+        } else if (period === '7d' || period === '30d') {
+            const days = period === '7d' ? 7 : 30;
+            for (let i = days - 1; i >= 0; i--) {
+                const d = new Date(now.getTime() - i * 24 * 3600 * 1000);
+                const label = d.toISOString().slice(0, 10);
+                const displayLabel = (d.getMonth() + 1) + '-' + d.getDate();
+                buckets.push({ label, displayLabel, value: 0 });
+            }
+        } else if (period === '1y') {
+            for (let i = 11; i >= 0; i--) {
+                const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
+                const label = d.toISOString().slice(0, 7);
+                const displayLabel = d.getFullYear() + '-' + (d.getMonth() + 1);
+                buckets.push({ label, displayLabel, value: 0 });
+            }
         }
     }
 
@@ -243,13 +317,28 @@ const uaChartData = computed(() => {
     const uas = stats.value.uas || [];
     const colors = ['#e74c3c', '#8e44ad', '#3498db', '#16a085', '#f39c12', '#d35400', '#2c3e50', '#7f8c8d'];
     return {
-        labels: uas.map(u => u.ua),
+        labels: uas.map(u => u.ua_group),
         datasets: [{
             backgroundColor: colors,
             data: uas.map(u => u.count),
             hoverOffset: 8,
             borderRadius: 5,
             borderWidth: 1
+        }]
+    }
+})
+
+const refsChartData = computed(() => {
+    const refs = (stats.value.refs || []).slice(0, 15);
+    return {
+        labels: refs.map(r => {
+            return r.ref.length > 30 ? r.ref.substring(0, 27) + '...' : r.ref
+        }),
+        datasets: [{
+            label: 'Visits',
+            backgroundColor: '#3498db',
+            data: refs.map(r => r.count),
+            barPercentage: 0.6
         }]
     }
 })
@@ -306,6 +395,38 @@ const barOptions = {
     }
 }
 
+const refsBarOptions = {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    onClick: (e, elements) => {
+        if (elements && elements.length > 0) {
+            const index = elements[0].index;
+            const refs = (stats.value.refs || []).slice(0, 15);
+            if (refs[index] && refs[index].ref && refs[index].ref.startsWith('http')) {
+                window.open(refs[index].ref, '_blank');
+            }
+        }
+    },
+    plugins: {
+        legend: { display: false },
+        datalabels: {
+            anchor: 'end',
+            align: 'end',
+            color: '#888',
+            font: { weight: 'bold' }
+        }
+    },
+    scales: {
+        x: { 
+            beginAtZero: true 
+        },
+        y: {
+            grid: { display: false }
+        }
+    }
+}
+
 const pieOptions = {
     responsive: true,
     maintainAspectRatio: false,
@@ -339,6 +460,45 @@ const pieOptions = {
 
 // --- Fetch ---
 
+const fetchCustom = async () => {
+    if (!startDate.value || !endDate.value) return;
+    
+    // Parse dates. Input is YYYY-MM-DD
+    // Start: YYYY-MM-DD 00:00:00
+    // End: YYYY-MM-DD 23:59:59 (to include the full last day)
+    
+    const start = new Date(startDate.value + 'T00:00:00').getTime();
+    const end = new Date(endDate.value + 'T23:59:59').getTime();
+    
+    if (isNaN(start) || isNaN(end)) return;
+    
+    // Reset standard period buttons
+    currentPeriod.value = ''; 
+    isCustomMode.value = true;
+    
+    // Construct URL manually
+    loading.value = true;
+    error.value = null;
+    
+    try {
+        const res = await fetch(`${workerUrl}/stats?start=${start}&end=${end}`)
+        
+        const contentType = res.headers.get('content-type')
+        if (!contentType || !contentType.includes('application/json')) {
+             throw new Error(`Worker returned non-JSON response.`)
+        }
+
+        if (!res.ok) throw new Error(`Failed to fetch stats: ${res.status}`)
+        
+        const data = await res.json()
+        stats.value = data
+    } catch (e) {
+        error.value = e.message
+    } finally {
+        loading.value = false
+    }
+}
+
 const fetchStats = async (period) => {
   if (!workerUrl) {
     error.value = 'Worker URL not configured'
@@ -347,6 +507,10 @@ const fetchStats = async (period) => {
   
   loading.value = true
   currentPeriod.value = period
+  isCustomMode.value = false // Reset custom mode
+  // Clear date pickers to show we are in preset mode
+  startDate.value = ''
+  endDate.value = ''
   error.value = null
   
   try {
@@ -385,7 +549,29 @@ onMounted(() => {
 .controls {
   margin-bottom: 2rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.date-picker-group {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+input[type="date"] {
+    padding: 0.4rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: var(--vp-c-bg-soft);
+    color: var(--vp-c-text-1);
 }
 
 button {
