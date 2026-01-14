@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { PostsCoverStyle, ThemePostsItem } from 'vuepress-theme-plume/lib/shared/index.js'
+import type { PostsCoverStyle, ThemePostsItem } from 'vuepress-theme-plume/shared'
 
 import VPLink from '@theme/VPLink.vue'
 import { isMobile as _isMobile } from '@vuepress/helper/client'
