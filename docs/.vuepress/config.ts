@@ -1,9 +1,16 @@
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { plumeTheme } from 'vuepress-theme-plume'
+// @ts-ignore
+import statsPlugin from './plugins/stats/index.js'
 
 export default defineUserConfig({
   lang: 'zh-CN',
+  plugins: [
+    statsPlugin({
+      workerUrl: 'https://views.ermao.net' // 请替换为实际的 Worker 地址
+    })
+  ],
   head: [
     ['link', { rel: 'icon', href: '/images/favicon.ico' }],
     ["meta", {"name": "keywords", "content": "机场,便宜机场,梯子,vpn,科学上网,翻墙,clash,trojan,python,服务器"}],

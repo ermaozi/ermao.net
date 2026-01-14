@@ -18,17 +18,19 @@
     "@aws-sdk/lib-storage": "^3.953.0",
     "@types/mime-types": "^3.0.1",
     "@types/node": "^25.0.3",
+    "@vuepress/client": "2.0.0-rc.26",
     "dotenv": "^17.2.3",
+    "exifr": "^7.0.0",
     "glob": "^13.0.0",
     "gray-matter": "^4.0.3",
     "mime-types": "^3.0.2",
     "tsx": "^4.21.0",
+    "vue": "^3.5.26",
+    "vue-router": "^4.6.4",
     "vuepress": "2.0.0-rc.26",
     "vuepress-theme-plume": "1.0.0-rc.184"
   },
   "dependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.26",
-    "vue": "^3.5.26",
-    "exifr": "^7.0.0"
+    "@vuepress/bundler-vite": "2.0.0-rc.26"
   }
 }

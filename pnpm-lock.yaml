@@ -11,12 +11,6 @@ importers:
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.26
         version: 2.0.0-rc.26(@types/node@25.0.3)(stylus@0.64.0)(tsx@4.21.0)(typescript@5.9.3)
-      exifr:
-        specifier: ^7.0.0
-        version: 7.1.3
-      vue:
-        specifier: ^3.5.26
-        version: 3.5.26(typescript@5.9.3)
     devDependencies:
       '@aws-sdk/client-s3':
         specifier: ^3.962.0
@@ -30,9 +24,15 @@ importers:
       '@types/node':
         specifier: ^25.0.3
         version: 25.0.3
+      '@vuepress/client':
+        specifier: 2.0.0-rc.26
+        version: 2.0.0-rc.26(typescript@5.9.3)
       dotenv:
         specifier: ^17.2.3
         version: 17.2.3
+      exifr:
+        specifier: ^7.0.0
+        version: 7.1.3
       glob:
         specifier: ^13.0.0
         version: 13.0.0
@@ -45,6 +45,12 @@ importers:
       tsx:
         specifier: ^4.21.0
         version: 4.21.0
+      vue:
+        specifier: ^3.5.26
+        version: 3.5.26(typescript@5.9.3)
+      vue-router:
+        specifier: ^4.6.4
+        version: 4.6.4(vue@3.5.26(typescript@5.9.3))
       vuepress:
         specifier: 2.0.0-rc.26
         version: 2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@25.0.3)(stylus@0.64.0)(tsx@4.21.0)(typescript@5.9.3))(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3))
@@ -3005,8 +3011,8 @@ packages:
       yaml:
         optional: true
 
-  vue-router@4.6.3:
-    resolution: {integrity: sha512-ARBedLm9YlbvQomnmq91Os7ck6efydTSpRP3nuOKCvgJOHNrhRoJDSKtee8kcL1Vf7nz6U+PMBL+hTvR3bTVQg==}
+  vue-router@4.6.4:
+    resolution: {integrity: sha512-Hz9q5sa33Yhduglwz6g9skT8OBPii+4bFn88w6J+J4MfEo4KRRpmiNG/hHHkdbRFlLBOqxN8y8gf2Fb0MTUgVg==}
     peerDependencies:
       vue: ^3.5.0
 
@@ -4994,7 +5000,7 @@ snapshots:
       rollup: 4.53.3
       vite: 7.1.12(@types/node@25.0.3)(stylus@0.64.0)(tsx@4.21.0)
       vue: 3.5.26(typescript@5.9.3)
-      vue-router: 4.6.3(vue@3.5.26(typescript@5.9.3))
+      vue-router: 4.6.4(vue@3.5.26(typescript@5.9.3))
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -5017,7 +5023,7 @@ snapshots:
       '@vuepress/shared': 2.0.0-rc.26
       '@vuepress/utils': 2.0.0-rc.26
       vue: 3.5.26(typescript@5.9.3)
-      vue-router: 4.6.3(vue@3.5.26(typescript@5.9.3))
+      vue-router: 4.6.4(vue@3.5.26(typescript@5.9.3))
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -5041,7 +5047,7 @@ snapshots:
       '@vue/devtools-kit': 8.0.5
       '@vuepress/shared': 2.0.0-rc.26
       vue: 3.5.26(typescript@5.9.3)
-      vue-router: 4.6.3(vue@3.5.26(typescript@5.9.3))
+      vue-router: 4.6.4(vue@3.5.26(typescript@5.9.3))
     transitivePeerDependencies:
       - typescript
 
@@ -6796,7 +6802,7 @@ snapshots:
       stylus: 0.64.0
       tsx: 4.21.0
 
-  vue-router@4.6.3(vue@3.5.26(typescript@5.9.3)):
+  vue-router@4.6.4(vue@3.5.26(typescript@5.9.3)):
     dependencies:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.26(typescript@5.9.3)
