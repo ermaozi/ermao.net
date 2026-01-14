@@ -33,6 +33,9 @@
     "vuepress-theme-plume": "1.0.0-rc.184"
   },
   "dependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.26"
+    "@vuepress/bundler-vite": "2.0.0-rc.26",
+    "chart.js": "^4.5.1",
+    "chartjs-plugin-datalabels": "^2.2.0",
+    "vue-chartjs": "^5.3.3"
   }
 }

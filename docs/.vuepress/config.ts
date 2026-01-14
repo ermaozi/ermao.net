@@ -49,6 +49,7 @@ export default defineUserConfig({
           { text: '归档', link: '/blog/archives/', icon: 'material-symbols:archive-rounded' },
           { text: '友链' , link: '/friends/', icon: 'material-symbols:footprint' },
           { text: '标签', link: '/blog/tags/', icon: 'material-symbols:sell' },
+          { text: '统计', link: '/stats/', icon: 'ic:baseline-data-usage' },
         ],
       },
     ],
@@ -78,11 +79,13 @@ export default defineUserConfig({
     },
     markdown: {
       collapse: true,
+      chartjs: true,
     }
   }),
   bundler: viteBundler({
     viteOptions: {
       optimizeDeps: {
+        include: ['vue-chartjs', 'chart.js'],
         exclude: [
           'mark.js/src/vanilla.js',
           '@vueuse/integrations/useFocusTrap',

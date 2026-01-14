@@ -2,10 +2,12 @@ import { defineClientConfig } from '@vuepress/client'
 import { useRouter } from 'vue-router'
 import PageViews from './components/PageViews.vue'
 import StatsLayout from './layouts/StatsLayout.vue'
+import FullStatsLayout from './layouts/FullStatsLayout.vue'
 
 export default defineClientConfig({
   layouts: {
-    Layout: StatsLayout
+    Layout: StatsLayout,
+    StatsLayout: FullStatsLayout
   },
   enhance({ app }) {
     app.component('PageViews', PageViews)

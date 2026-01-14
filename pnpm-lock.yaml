@@ -11,6 +11,15 @@ importers:
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.26
         version: 2.0.0-rc.26(@types/node@25.0.3)(stylus@0.64.0)(tsx@4.21.0)(typescript@5.9.3)
+      chart.js:
+        specifier: ^4.5.1
+        version: 4.5.1
+      chartjs-plugin-datalabels:
+        specifier: ^2.2.0
+        version: 2.2.0(chart.js@4.5.1)
+      vue-chartjs:
+        specifier: ^5.3.3
+        version: 5.3.3(chart.js@4.5.1)(vue@3.5.26(typescript@5.9.3))
     devDependencies:
       '@aws-sdk/client-s3':
         specifier: ^3.962.0
@@ -62,7 +71,7 @@ importers:
         version: 2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@25.0.3)(stylus@0.64.0)(tsx@4.21.0)(typescript@5.9.3))(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3))
       vuepress-theme-plume:
         specifier: 1.0.0-rc.184
-        version: 1.0.0-rc.184(@algolia/client-search@5.46.2)(@types/markdown-it@14.1.2)(axios@1.13.2)(markdown-it@14.1.0)(qrcode@1.5.4)(react@19.2.0)(search-insights@2.17.3)(stylus@0.64.0)(typescript@5.9.3)(vuepress@2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@25.0.3)(stylus@0.64.0)(tsx@4.21.0)(typescript@5.9.3))(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3)))
+        version: 1.0.0-rc.184(@algolia/client-search@5.46.2)(@types/markdown-it@14.1.2)(axios@1.13.2)(chart.js@4.5.1)(markdown-it@14.1.0)(qrcode@1.5.4)(react@19.2.0)(search-insights@2.17.3)(stylus@0.64.0)(typescript@5.9.3)(vuepress@2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@25.0.3)(stylus@0.64.0)(tsx@4.21.0)(typescript@5.9.3))(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3)))
 
 packages:
 
@@ -741,6 +750,9 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
+  '@kurkle/color@0.3.4':
+    resolution: {integrity: sha512-M5UknZPHRu3DEDWoipU6sE8PdkZ6Z/S+v4dD+Ke8IaNlpdSQah50lz1KtcFBa2vsdOnwbbnxJwVM4wty6udA5w==}
 
   '@lit-labs/ssr-dom-shim@1.5.0':
     resolution: {integrity: sha512-HLomZXMmrCFHSRKESF5vklAKsDY7/fsT/ZhqCu3V0UoW/Qbv8wxmO4W9bx4KnCCF2Zak4yuk+AGraK/bPmI4kA==}
@@ -1884,6 +1896,15 @@ packages:
   character-entities@2.0.2:
     resolution: {integrity: sha512-shx7oQ0Awen/BRIdkjkvz54PnEEI/EjwXDSIZp86/KKdbafHh1Df/RYGBhn4hbe2+uKC9FnT5UCEdyPz3ai9hQ==}
 
+  chart.js@4.5.1:
+    resolution: {integrity: sha512-GIjfiT9dbmHRiYi6Nl2yFCq7kkwdkp1W/lp2J99rX0yo9tgJGn3lKQATztIjb5tVtevcBtIdICNWqlq5+E8/Pw==}
+    engines: {pnpm: '>=8'}
+
+  chartjs-plugin-datalabels@2.2.0:
+    resolution: {integrity: sha512-14ZU30lH7n89oq+A4bWaJPnAG8a7ZTk7dKf48YAzMvJjQtjrgg5Dpk9f+LbjCF6bpx3RAGTeL13IXpKQYyRvlw==}
+    peerDependencies:
+      chart.js: '>=3.0.0'
+
   cheerio-select@2.1.0:
     resolution: {integrity: sha512-9v9kG0LvzrlcungtnJtpGNxY+fzECQKhK4EGJX2vByejiMX84MFNQw4UxPJl3bFbTMw+Dfs37XaIkCwTZfLh4g==}
 
@@ -3017,6 +3038,12 @@ packages:
       yaml:
         optional: true
 
+  vue-chartjs@5.3.3:
+    resolution: {integrity: sha512-jqxtL8KZ6YJ5NTv6XzrzLS7osyegOi28UGNZW0h9OkDL7Sh1396ht4Dorh04aKrl2LiSalQ84WtqiG0RIJb0tA==}
+    peerDependencies:
+      chart.js: ^4.1.1
+      vue: ^3.0.0-0 || ^2.7.0
+
   vue-router@4.6.4:
     resolution: {integrity: sha512-Hz9q5sa33Yhduglwz6g9skT8OBPii+4bFn88w6J+J4MfEo4KRRpmiNG/hHHkdbRFlLBOqxN8y8gf2Fb0MTUgVg==}
     peerDependencies:
@@ -4071,6 +4098,8 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
+
+  '@kurkle/color@0.3.4': {}
 
   '@lit-labs/ssr-dom-shim@1.5.0': {}
 
@@ -5177,7 +5206,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@vuepress/plugin-markdown-chart@2.0.0-rc.121(markdown-it@14.1.0)(typescript@5.9.3)(vuepress@2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@25.0.3)(stylus@0.64.0)(tsx@4.21.0)(typescript@5.9.3))(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3)))':
+  '@vuepress/plugin-markdown-chart@2.0.0-rc.121(chart.js@4.5.1)(markdown-it@14.1.0)(typescript@5.9.3)(vuepress@2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@25.0.3)(stylus@0.64.0)(tsx@4.21.0)(typescript@5.9.3))(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3)))':
     dependencies:
       '@mdit/plugin-container': 0.22.2(markdown-it@14.1.0)
       '@mdit/plugin-plantuml': 0.23.0(markdown-it@14.1.0)
@@ -5185,6 +5214,8 @@ snapshots:
       '@vueuse/core': 14.1.0(vue@3.5.26(typescript@5.9.3))
       vue: 3.5.26(typescript@5.9.3)
       vuepress: 2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@25.0.3)(stylus@0.64.0)(tsx@4.21.0)(typescript@5.9.3))(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3))
+    optionalDependencies:
+      chart.js: 4.5.1
     transitivePeerDependencies:
       - markdown-it
       - typescript
@@ -5481,6 +5512,14 @@ snapshots:
   character-entities-legacy@3.0.0: {}
 
   character-entities@2.0.2: {}
+
+  chart.js@4.5.1:
+    dependencies:
+      '@kurkle/color': 0.3.4
+
+  chartjs-plugin-datalabels@2.2.0(chart.js@4.5.1):
+    dependencies:
+      chart.js: 4.5.1
 
   cheerio-select@2.1.0:
     dependencies:
@@ -6807,6 +6846,11 @@ snapshots:
       stylus: 0.64.0
       tsx: 4.21.0
 
+  vue-chartjs@5.3.3(chart.js@4.5.1)(vue@3.5.26(typescript@5.9.3)):
+    dependencies:
+      chart.js: 4.5.1
+      vue: 3.5.26(typescript@5.9.3)
+
   vue-router@4.6.4(vue@3.5.26(typescript@5.9.3)):
     dependencies:
       '@vue/devtools-api': 6.6.4
@@ -6855,7 +6899,7 @@ snapshots:
       - '@types/markdown-it'
       - typescript
 
-  vuepress-theme-plume@1.0.0-rc.184(@algolia/client-search@5.46.2)(@types/markdown-it@14.1.2)(axios@1.13.2)(markdown-it@14.1.0)(qrcode@1.5.4)(react@19.2.0)(search-insights@2.17.3)(stylus@0.64.0)(typescript@5.9.3)(vuepress@2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@25.0.3)(stylus@0.64.0)(tsx@4.21.0)(typescript@5.9.3))(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3))):
+  vuepress-theme-plume@1.0.0-rc.184(@algolia/client-search@5.46.2)(@types/markdown-it@14.1.2)(axios@1.13.2)(chart.js@4.5.1)(markdown-it@14.1.0)(qrcode@1.5.4)(react@19.2.0)(search-insights@2.17.3)(stylus@0.64.0)(typescript@5.9.3)(vuepress@2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@25.0.3)(stylus@0.64.0)(tsx@4.21.0)(typescript@5.9.3))(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3))):
     dependencies:
       '@iconify/utils': 3.1.0
       '@iconify/vue': 5.0.0(vue@3.5.26(typescript@5.9.3))
@@ -6869,7 +6913,7 @@ snapshots:
       '@vuepress/plugin-docsearch': 2.0.0-rc.121(@algolia/client-search@5.46.2)(react@19.2.0)(search-insights@2.17.3)(typescript@5.9.3)(vuepress@2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@25.0.3)(stylus@0.64.0)(tsx@4.21.0)(typescript@5.9.3))(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3)))
       '@vuepress/plugin-git': 2.0.0-rc.121(typescript@5.9.3)(vuepress@2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@25.0.3)(stylus@0.64.0)(tsx@4.21.0)(typescript@5.9.3))(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3)))
       '@vuepress/plugin-llms': 2.0.0-rc.121(typescript@5.9.3)(vuepress@2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@25.0.3)(stylus@0.64.0)(tsx@4.21.0)(typescript@5.9.3))(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3)))
-      '@vuepress/plugin-markdown-chart': 2.0.0-rc.121(markdown-it@14.1.0)(typescript@5.9.3)(vuepress@2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@25.0.3)(stylus@0.64.0)(tsx@4.21.0)(typescript@5.9.3))(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3)))
+      '@vuepress/plugin-markdown-chart': 2.0.0-rc.121(chart.js@4.5.1)(markdown-it@14.1.0)(typescript@5.9.3)(vuepress@2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@25.0.3)(stylus@0.64.0)(tsx@4.21.0)(typescript@5.9.3))(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3)))
       '@vuepress/plugin-markdown-hint': 2.0.0-rc.121(markdown-it@14.1.0)(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3))(vuepress@2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@25.0.3)(stylus@0.64.0)(tsx@4.21.0)(typescript@5.9.3))(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3)))
       '@vuepress/plugin-markdown-image': 2.0.0-rc.121(markdown-it@14.1.0)(typescript@5.9.3)(vuepress@2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@25.0.3)(stylus@0.64.0)(tsx@4.21.0)(typescript@5.9.3))(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3)))
       '@vuepress/plugin-markdown-include': 2.0.0-rc.121(markdown-it@14.1.0)(typescript@5.9.3)(vuepress@2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@25.0.3)(stylus@0.64.0)(tsx@4.21.0)(typescript@5.9.3))(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3)))
