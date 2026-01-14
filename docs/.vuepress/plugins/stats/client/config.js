@@ -54,8 +54,14 @@ export default defineClientConfig({
     }
 
     if (typeof window !== 'undefined') {
-        router.afterEach((to) => {
-            sendView(to.fullPath)
+        router.afterEach((to, from) => {
+            const toPath = to.fullPath.split('#')[0]
+            const fromPath = from?.fullPath?.split('#')[0]
+
+            // 忽略仅 hash 变化的路由跳转
+            if (toPath === fromPath) return
+
+            sendView(toPath)
         })
     }
   }
