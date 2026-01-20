@@ -1,5 +1,5 @@
 ---
-createTime: 2026/01/01 01:00:00
+createTime: 2026/01/20 01:00:00
 sticky: 100
 tags:
   - 科学上网
@@ -38,7 +38,7 @@ description: 2026年翻墙机场推荐与VPN评测指南，精选便宜好用的
 |---|---|---|--|---|---|---|
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 60G/月|❌|[TG](https://t.me/+rYzRmCbJfIw3ZTM1)|[前往](./v2/机场推荐ssone.md)|
 |[flybit](#flybit)|[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔|[TG](https://t.me/flybitvip)|[前往](./v1/机场推荐flybit.md)|
-|[xxyun](#xxyun)|[xxyun.de](https://xxyun.de/XQiZqbSr.html)| 无 |8.89元 100G/月|✔|[TG](https://t.me/+eYsE6P_xvjk2NGY5)|[前往](./v2/机场推荐xxyun.md)|
+|[xxyun](#xxyun)|[xxyun.de](https://xxyun.de/XQiZqbSr.html)| 无 |9.99元 100G/月|✔|[TG](https://t.me/+eYsE6P_xvjk2NGY5)|[前往](./v2/机场推荐xxyun.md)|
 |[ccyz](#ccyz)|[ccyz.org](https://ccyz.org/QkQotDCu.html)| 1G |15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|
 [星岛梦](#星岛梦)|[ermaov1.xdmvipaff.cc](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY)| 无 |16元 100G/月|✔|[TG](https://t.me/XDM6666666)|[前往](./v2/机场推荐星岛梦.md)|
 |[uuone](#uuone)|[uuone.de](https://uuone.de/ermao.html)| 无 |12元 150G/月|✔|暂无|[前往](./v2/机场推荐uuone.md)|
@@ -396,7 +396,9 @@ CAC官网地址：[www.cac.mom](https://www.cac.mom/#/register?code=kYL5chvN)
 
 xxyun官网地址：[https://xxyun.de](https://xxyun.de/XQiZqbSr.html)
 
-最便宜订阅：8.88元 100G/月。
+最便宜订阅：9.99元 100G/月。
+
+9折优惠码：`xxyun`
 
 85折优惠码（只能使用一次）：`xxyun85`
 
@@ -410,10 +412,10 @@ xxyun加速特性如下：
 
 | 套餐 | 价格 | 流量 | 购买地址 |
 | --- | --- | --- | --- |
-| 初级套餐 | 8.88元/每月 | 100G/月 | [点击购买](https://xxyun.de/XQiZqbSr.html) |
+| 初级套餐 | 9.99元/每月 | 100G/月 | [点击购买](https://xxyun.de/XQiZqbSr.html) |
 | 中级套餐 | 19.9元/每月 | 300G/月 | [点击购买](https://xxyun.de/XQiZqbSr.html) |
 | 高级套餐 | 39.9元/每月 | 1000G/月 | [点击购买](https://xxyun.de/XQiZqbSr.html) |
-| 500G[不限时] | 59.9元/一次性 | 500G/不限时 | [点击购买](https://xxyun.de/XQiZqbSr.html) |
+| 500G[不限时] | 66.66元/一次性 | 500G/不限时 | [点击购买](https://xxyun.de/XQiZqbSr.html) |
 | 2888G[不限时] | 199元/一次性 | 2888G/不限时 | [点击购买](https://xxyun.de/XQiZqbSr.html) |
 
 ---

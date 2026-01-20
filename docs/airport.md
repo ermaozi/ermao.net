@@ -34,7 +34,7 @@ description: 2026年热门翻墙机场推荐，精简内容，方便快速浏览
 
 [![机场推荐superbiu](https://image.ermao.net/images/blog/superbiu/image-1.jpg)](https://biubiux.online/#/register?code=BasmsULb) [SuperBiu](https://biubiux.online/#/register?code=BasmsULb) 三网IPLC专线，晚高峰秒开8K，自研流媒体解锁。起步价：11元/月。[>详情](blog/机场推荐/v2/机场推荐superbiu.md)
 
-[![机场推荐xxyun](https://image.ermao.net/images/blog/xxyun/image.png)](https://xxyun.de/XQiZqbSr.html) [xx云](https://xxyun.de/XQiZqbSr.html) 稳定运行两年，晚高峰不限速不限设备，全BGP中转。起步价：8.89元/月。[>详情](blog/机场推荐/v2/机场推荐xxyun.md)
+[![机场推荐xxyun](https://image.ermao.net/images/blog/xxyun/image.png)](https://xxyun.de/XQiZqbSr.html) [xx云](https://xxyun.de/XQiZqbSr.html) 稳定运行两年，晚高峰不限速不限设备，全BGP中转。起步价：9.99元/月。[>详情](blog/机场推荐/v2/机场推荐xxyun.md)
 
 :::
 
