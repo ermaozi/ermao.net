@@ -52,6 +52,7 @@ description: 2026年最新免费共享美区Apple ID账号，每日更新可用�
 <div v-else class="account-grid">
   <Card v-for="(acc, index) in accounts" :key="index">
     <Badge :type="getBadgeType(acc.region)" :text="acc.region" />
+    <span class="account_warring">只能登录 App Store，登录设置会导致锁机！</span>
     <br><br>
     账号 <code>{{ acc.email }}</code>
     <br><br>
@@ -67,6 +68,11 @@ description: 2026年最新免费共享美区Apple ID账号，每日更新可用�
 </div>
 
 <style>
+.account_warring {
+  color: #ff4d4f;
+  font-size: 13px;
+  margin: 4px;
+}
 .account-grid {
   display: grid;
   grid-template-columns: 1fr;
