@@ -41,6 +41,7 @@ description: 2026年翻墙机场推荐与VPN评测指南，精选便宜好用的
 |[xxyun](#xxyun)|[xxyun.de](https://xxyun.de/XQiZqbSr.html)| 无 |9.99元 100G/月|✔|[TG](https://t.me/+eYsE6P_xvjk2NGY5)|[前往](./v2/机场推荐xxyun.md)|
 |[ccyz](#ccyz)|[ccyz.org](https://ccyz.org/QkQotDCu.html)| 1G |15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|
 [星岛梦](#星岛梦)|[ermaov1.xdmvipaff.cc](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY)| 无 |16元 100G/月|✔|[TG](https://t.me/XDM6666666)|[前往](./v2/机场推荐星岛梦.md)|
+|[光年梯](#光年梯)|[ermaozi01.gntvipaff.cc](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr)| 无 |18元 110G/月|✔|[TG](https://t.me/guangnianti)|[前往](./v2/机场推荐光年梯.md)|
 |[uuone](#uuone)|[uuone.de](https://uuone.de/ermao.html)| 无 |12元 150G/月|✔|暂无|[前往](./v2/机场推荐uuone.md)|
 |[极连云](#极连云)|[ermaozi01.jlcvipaff.cc](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m)| 无 |8元 60G/月|✔|[TG](https://t.me/JLYCloud)|[前往](./v2/机场推荐极连云.md)|
 |[cocoduck](#cocoduck)|[cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|
@@ -115,6 +116,24 @@ flybit官网地址：[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM
 最便宜的订阅有12元 100G/月。
 
 解锁主流流媒体和ChatGPT，IEPL接口线路和普通线路一样的价格，机场稳定，几乎全部节点全天候可用。购买之前记得领一下首页的优惠券再下单。
+
+---
+
+### 光年梯
+
+光年梯官网地址：[ermaozi01.gntvipaff.cc](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr)
+
+最便宜的订阅有18元 110G/月。
+
+光年梯是由资深团队运营的高品质翻墙机场，拥有多年的稳定运营历史和丰富的技术经验。其自有机房和全球节点网络确保了用户能够享受到快速、稳定的网络连接。
+
+| 套餐名称 | 月费 | 流量 | 特性 | 适用人群 | 购买链接 |
+|----------|------|------|------|----------|----------|
+| **入门版** | ¥18.00/月 | 110GB/月 | 全IPLC专线，SS协议，不限速，不限客户端 | 轻度/入门 | [购买链接](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) |
+| **晋级版** | ¥34.00/月 | 220GB/月 | 全节点 x1 · 高峰满速 | 进阶使用 | [购买链接](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) |
+| **专业版** | ¥68.00/月 | 450GB/月 | 全节点 x1 · 高峰满速 | 主力使用 | [购买链接](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) |
+| **至尊版** | ¥130.00/月 | 900GB/月 | 全节点 x1 · 高峰满速 | 重度用户 | [购买链接](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) |
+| **独享私人专线** | ¥680.00/月 | 500GB/月 | 独立带宽，独立公网IP，全程独享 | 企业/极致 | [购买链接](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) |
 
 ---
 
