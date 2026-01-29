@@ -36,6 +36,10 @@ description: 2026年热门翻墙机场推荐，精简内容，方便快速浏览
 
 [![机场推荐xxyun](https://image.ermao.net/images/blog/xxyun/image.png)](https://xxyun.de/XQiZqbSr.html) [xx云](https://xxyun.de/XQiZqbSr.html) 稳定运行两年，晚高峰不限速不限设备，全BGP中转。起步价：9.99元/月。[>详情](blog/机场推荐/v2/机场推荐xxyun.md)
 
+[![机场推荐光年梯](https://image.ermao.net/images/blog/guangnianti/20260129_160048-961842.jpg)](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) [光年梯](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) 18元110G，IEPL Trojan专线，晚高峰不限速，新加坡团队。起步价：18元/月。[>详情](blog/机场推荐/v2/机场推荐光年梯.md)
+
+[![机场推荐xsus](https://image.ermao.net/images/blog/xsus/20260129_162650-08b59d.png)](https://xs-us.xyz/register?code=xJFcT1Dw) [xsus](https://xs-us.xyz/register?code=xJFcT1Dw) 10元168G起，BGP三网优化，晚高峰不掉速，不限时套餐。起步价：10元/月。[>详情](blog/机场推荐/v2/机场推荐xsus.md)
+
 :::
 
 ---
