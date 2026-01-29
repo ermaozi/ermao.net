@@ -84,7 +84,7 @@ Telegram以**Telegram隐私保护**、跨平台同步和高可用性著称。支
 - 控制最后上线时间、在线状态、头像、转发来源等。
 - **设备管理**：在“设备”列表中可查看所有登录设备，建议定期清理陌生会话，一键登出其他设备。
 
-![alt text](https://image.ermao.net/images/blog/telegram/image-9.png)
+![telegram注册使用教程 示例图片](https://image.ermao.net/images/blog/telegram/image-9.png)
 
 ## Telegram核心功能与使用技巧
 

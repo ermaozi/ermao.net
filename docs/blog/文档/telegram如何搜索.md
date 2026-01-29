@@ -36,7 +36,7 @@ description: >-
 
 点击这里：[telegram 一键汉化](https://t.me/setlanguage/zhcncc)。
 
-![alt text](https://image.ermao.net/images/article/wwpg9n59/image-2.png)
+![telegram如何搜索 示例图片](https://image.ermao.net/images/article/wwpg9n59/image-2.png)
 
 跳转后点击`Apply Language`，即可完成汉化。
 
@@ -44,11 +44,11 @@ description: >-
 
 注册完成后，直接点击这个连接：[telegram极搜搜索](https://t.me/jisou?start=a_1453425105)
 
-![alt text](https://image.ermao.net/images/article/wwpg9n59/image.png)
+![telegram如何搜索 示例图片](https://image.ermao.net/images/article/wwpg9n59/image.png)
 
 随后跳转到 telegram 中就可以进行搜索了！
 
-![alt text](https://image.ermao.net/images/article/wwpg9n59/image-1.png)
+![telegram如何搜索 示例图片](https://image.ermao.net/images/article/wwpg9n59/image-1.png)
 
 ## 注意！
 

@@ -22,7 +22,7 @@ description: 2026最新Shadowrocket（小火箭）新手使用教程。详细介
 
 正版的shadowrkcket在商店里是这个样子的
 
-![alt text](https://image.ermao.net/images/article/z747kgjd/image.png)
+![Shadowrocket新手使用教程 示例图片](https://image.ermao.net/images/article/z747kgjd/image.png)
 
 ## 1. 下载与安装
 
@@ -75,7 +75,7 @@ shadowrocket把并没有上线国区应用商店，首先需要先切换到我�
 
 1. 将右上角的开关拨到“开启”位置，代理开始工作。首次连接需输入锁屏密码或 Face ID 授权 配置。
 
-![alt text](https://image.ermao.net/images/article/z747kgjd/20260112_111749-15697a.png)
+![20260112 111749 15697a](https://image.ermao.net/images/article/z747kgjd/20260112_111749-15697a.png)
 
 2. 你可以在状态栏看到一个VPN图标，表示Shadowrocket正在运行。
 

@@ -91,7 +91,7 @@ Google 抓取某个网页时，理想情况下应该和[普通用户看到的网
 
 网址的某些部分可在搜索结果中显示为面包屑导航，因此用户也可以根据网址判断某条结果对他们是否有用。
 
-![alt text](https://image.ermao.net/images/blog/googleseo/image.png)
+![google教你怎么做SEO 示例图片](https://image.ermao.net/images/blog/googleseo/image.png)
 
 [网域](https://developers.google.com/search/docs/appearance/visual-elements-gallery?hl=zh-cn#domain) | [面包屑导航](https://developers.google.com/search/docs/appearance/visual-elements-gallery?hl=zh-cn#breadcrumb)
 
@@ -158,7 +158,7 @@ policies 目录中的内容几乎不会更改，但 promotions 目录中的内�
 
 #### 在需要时提供链接
 
-![alt text](https://image.ermao.net/images/blog/googleseo/image-3.png)
+![google教你怎么做SEO 示例图片](https://image.ermao.net/images/blog/googleseo/image-3.png)
 
 链接可为用户和搜索引擎提供有关某个主题的更多背景信息，这可能有助于展现您对该主题的了解程度。但是，如果您链接到无法控制的网页（例如其他网站上的内容），请确保您信任所链接到的资源。 如果您无法信任相应内容，但仍想链接到这些网站，请为该链接添加 `nofollow` [或类似注释](https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links?hl=zh-cn)，以免搜索引擎将您的网站与您要链接到的网站关联起来。这有助于避免您在 Google 搜索中的排名受到潜在负面影响。
 
@@ -178,7 +178,7 @@ policies 目录中的内容几乎不会更改，但 promotions 目录中的内�
 **如果您使用 CMS**，那么除了专注于撰写优质标题之外，您可能不需要对标题采取任何技术性措施。大多数 CMS 都可以自动将您撰写的标题转换为 HTML 中的 `<title>` 元素。
 :::
 
-![alt text](https://image.ermao.net/images/blog/googleseo/image-5.png)
+![google教你怎么做SEO 示例图片](https://image.ermao.net/images/blog/googleseo/image-5.png)
 
 您可以通过撰写合适的标题来影响 Google 搜索中的标题链接：好的标题是网页独有的标题，简洁明了，能够准确描述网页内容。例如，标题可以包括您的网站或商家名称、其他的重要信息（比如商家的实际位置），以及有关特定网页可向用户提供哪些产品/服务的一些信息。请参阅我们[关于标题链接的文档](https://developers.google.com/search/docs/appearance/title-link?hl=zh-cn)，详细了解如何创建好的标题以及如何影响网站搜索结果的标题链接。
 

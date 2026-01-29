@@ -24,11 +24,11 @@ TrueNAS Scale虚拟化使用ZVOL存储虚拟机，存储路径为：
 
 依次点击 虚拟化 -> 设备 -> 磁盘 -> 编辑 就可以看到该虚拟机具体路径
 
-![alt text](https://image.ermao.net/images/article/vgf2ez1r/image.png)
+![TrueNAS虚拟机备份 示例图片](https://image.ermao.net/images/article/vgf2ez1r/image.png)
 
-![alt text](https://image.ermao.net/images/article/vgf2ez1r/image-1.png)
+![TrueNAS虚拟机备份 示例图片](https://image.ermao.net/images/article/vgf2ez1r/image-1.png)
 
-![alt text](https://image.ermao.net/images/article/vgf2ez1r/image-2.png)
+![TrueNAS虚拟机备份 示例图片](https://image.ermao.net/images/article/vgf2ez1r/image-2.png)
 
 使用dd命令可将虚拟机打包为raw格式的img文件：
 

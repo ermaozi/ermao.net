@@ -54,7 +54,7 @@ Telegram搜索机器人是一类专为Telegram用户打造的智能工具。它�
 1. 点击以下链接，直接开始体验：[@soso](https://t.me/soso?start=a_1453425105)、[@smss](https://t.me/smss?start=spread_1453425105)、[@jisou](https://t.me/jisou?start=a_1453425105)
 2. 进入聊天窗口，输入你想查找的关键词（如“吃瓜”、“电影”、“电子书”、“群组”）。
 
-![alt text](https://image.ermao.net/images/article/bsnuua0h/image-3.png)
+![tg搜索 示例图片](https://image.ermao.net/images/article/bsnuua0h/image-3.png)
 
 3. 等待机器人返回相关资源链接或文件，快速获取所需内容。
 
