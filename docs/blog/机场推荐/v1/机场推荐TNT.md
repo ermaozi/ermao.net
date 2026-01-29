@@ -1,6 +1,6 @@
 ---
 title: ✈️机场推荐【TNT】 - 新机场、IPLC专线
-createTime: 2025/03/02 05:59:25
+createTime: '2025/03/02 05:59:25'
 permalink: /article/4uxesz79/
 tags:
   - 科学上网
@@ -10,6 +10,9 @@ tags:
   - 评测
   - 便宜机场
   - TNT
+description: >-
+  TNT机场，近期新上季付轻量包，专门为用量小的用户设计，10元/月。新机场、IPLC专线。
+  TNT官网地址：https://ermaozi02.tntvipaff.cc
 ---
 
 TNT机场，近期新上季付轻量包，专门为用量小的用户设计，10元/月。新机场、IPLC专线。

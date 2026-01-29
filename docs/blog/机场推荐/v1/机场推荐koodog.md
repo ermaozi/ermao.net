@@ -1,6 +1,6 @@
 ---
 title: ✈️机场推荐【koodog】- 新机场，便宜实惠，体验流畅
-createTime: 2025/08/23 13:36:29
+createTime: '2025/08/23 13:36:29'
 permalink: /article/rq55p9dn/
 tags:
   - 科学上网
@@ -10,6 +10,9 @@ tags:
   - 评测
   - 便宜机场
   - koodog
+description: >-
+  KooDog 使用 Trojan 协议，相对安全稳定。网络入口提供了三网专线支持，实测 单线程峰值可跑到
+  2Gbps，无论是刷流媒体还是下载大文件，表现都非常流畅。 KooDog 机场官网地址：koodog.com
 ---
 
 [KooDog](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz) 使用 Trojan 协议，相对安全稳定。网络入口提供了三网专线支持，实测 单线程峰值可跑到 2Gbps，无论是刷流媒体还是下载大文件，表现都非常流畅。

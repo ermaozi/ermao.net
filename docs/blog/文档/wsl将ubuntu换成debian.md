@@ -1,8 +1,8 @@
 ---
 title: wsl将ubuntu换成debian
-createTime: 2025/01/26 20:18:30
+createTime: '2025/01/26 20:18:30'
 permalink: /article/ubm5k5vn/
-tags: 
+tags:
   - wsl
   - debian
   - ubuntu
@@ -12,6 +12,7 @@ tags:
   - windows10
   - windows11
   - windows-terminal
+description: 因为 debian 更稳定、更轻量，所以想把 wsl2 中的 ubuntu 换成 debian。 本文记录一下过程。
 ---
 
 因为 debian 更稳定、更轻量，所以想把 wsl2 中的 ubuntu 换成 debian。

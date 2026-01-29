@@ -1,6 +1,6 @@
 ---
 title: 如何在telegram中使用极搜搜索
-createTime: 2025/04/12 23:34:36
+createTime: '2025/04/12 23:34:36'
 permalink: /article/wwpg9n59/
 tags:
   - telegram
@@ -9,6 +9,9 @@ tags:
   - 教程
   - 科学上网
   - 资源
+description: >-
+  目前 telegram 开放了部分 +86 手机号注册，一些没有境外手机号的同学可以尝试注册了。但是 telegram 资源十分丰富，我们该如何在
+  telegram 中进行搜索呢？ 这边文章教大家如何使用极搜在 telegram 中进行搜索。
 ---
 
 目前 telegram 开放了部分 +86 手机号注册，一些没有境外手机号的同学可以尝试注册了。但是 telegram 资源十分丰富，我们该如何在 telegram 中进行搜索呢？

@@ -1,6 +1,6 @@
 ---
 title: ✈️【2026机场推荐】CocoDuck - 海外团队运营、自有机房、两年稳定服务
-createTime: 2025/09/16 04:48:48
+createTime: '2025/09/16 04:48:48'
 permalink: /article/cocoduck/
 tags:
   - 科学上网
@@ -13,6 +13,9 @@ tags:
   - 性价比VPN
   - 稳定机场
   - 海外团队
+description: >-
+  CocoDuck机场详细评测：由海外团队运营的高品质翻墙机场，拥有两年稳定运营历史、自有四个机房、40+全球节点，支持OpenAI和流媒体解锁，是2026年最值得信赖的稳定机场之一。
+  CocoDuck机场官网地址：https://cocoduck.live
 ---
 
 [CocoDuck机场](https://cocoduck.live/auth/register?code=25c8b515df)详细评测：由海外团队运营的高品质翻墙机场，拥有两年稳定运营历史、自有四个机房、40+全球节点，支持OpenAI和流媒体解锁，是2026年最值得信赖的稳定机场之一。

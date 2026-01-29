@@ -1,7 +1,16 @@
 ---
 title: macOS ClashVergeRev 安装与使用指南
-createTime: 2025/01/22 22:50:41
+createTime: '2025/01/22 22:50:41'
 permalink: /article/6vxkmmuh/
+description: >-
+  Clash Verge Rev 是一款高效的代理工具，专为 macOS 用户打造，兼容 M 芯片和 Intel 芯片。本文将为您详细介绍如何在 macOS
+  上安装和配置 Clash Verge Rev，帮助您顺利开始使用。
+tags:
+  - 翻墙
+  - 科学上网
+  - Clash
+  - macOS
+  - Mac
 ---
 Clash Verge Rev 是一款高效的代理工具，专为 macOS 用户打造，兼容 M 芯片和 Intel 芯片。本文将为您详细介绍如何在 macOS 上安装和配置 Clash Verge Rev，帮助您顺利开始使用。
 

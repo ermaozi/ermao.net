@@ -1,6 +1,6 @@
 ---
 title: ⚠️【机场跑路】2025年2月11日SFCloud与FCCloud机场跑路
-createTime: 2025/02/11 07:48:36
+createTime: '2025/02/11 07:48:36'
 permalink: /article/7asq3quy/
 tags:
   - 科学上网
@@ -10,6 +10,10 @@ tags:
   - 预警
   - SFCloud
   - FCCloud
+description: >-
+  2025年2月11日，SFCloud与FCCloud官方确认已跑路。官网无法访问，节点全挂，工单不回复。 **立即停止续费，避免更大损失！**
+  目前，~~XSUS~~ 表示可以接手SFCloud和FCCloud用户（按原订阅30%接收），详情请在~~XSUS 官网~~ 注册后提交工单咨询。
+  在选择机场时，推荐选择...
 ---
 2025年2月11日，SFCloud与FCCloud官方确认已跑路。官网无法访问，节点全挂，工单不回复。
 

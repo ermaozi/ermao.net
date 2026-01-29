@@ -1,6 +1,6 @@
 ---
 title: 通过Ollama本地部署DeepSeek代码大模型：从硬件配置到VSCode实战指南
-createTime: 2025/01/31 19:22:10
+createTime: '2025/01/31 19:22:10'
 permalink: /article/c3gj5lqy/
 tags:
   - 人工智能
@@ -8,6 +8,8 @@ tags:
   - 自然语言处理
   - 模型部署
   - DeepSeek
+description: >-
+  本文手把手教你通过Ollama在本地部署DeepSeek代码大模型，详解从FP32到INT4不同量化精度的硬件配置方案，并实战演示如何在VSCode中实现智能代码补全、实时错误检测和上下文感知开发。掌握零延迟的本地AI编程助手部署技巧，兼顾数据隐私与开发效率！
 ---
 
 本文手把手教你通过Ollama在本地部署DeepSeek代码大模型，详解从FP32到INT4不同量化精度的硬件配置方案，并实战演示如何在VSCode中实现智能代码补全、实时错误检测和上下文感知开发。掌握零延迟的本地AI编程助手部署技巧，兼顾数据隐私与开发效率！

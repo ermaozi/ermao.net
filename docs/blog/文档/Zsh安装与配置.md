@@ -1,8 +1,8 @@
 ---
 title: Zsh 安装与配置 - 使用 Oh My Zsh 美化终端
-createTime: 2025/01/27 11:07:08
+createTime: '2025/01/27 11:07:08'
 permalink: /article/106izvxs/
-tags: 
+tags:
   - Zsh
   - Oh My Zsh
   - 终端
@@ -10,6 +10,9 @@ tags:
   - Debian
   - Shell
   - 命令行
+description: >-
+  传统的 Bash 功能相对简陋且不美观。本文将带你通过 Debian 系统(Ubuntu 也一样)，安装 Zsh 以及 Oh My
+  Zsh，对终端进行美化。Oh My Zsh 是 Zsh 的一个扩展工具集，提供了丰富的功能和主题，让终端界面更加个性化和高效。
 ---
 
 传统的 Bash 功能相对简陋且不美观。本文将带你通过 Debian 系统(Ubuntu 也一样)，安装 Zsh 以及 Oh My Zsh，对终端进行美化。Oh My Zsh 是 Zsh 的一个扩展工具集，提供了丰富的功能和主题，让终端界面更加个性化和高效。

@@ -1,5 +1,5 @@
 ---
-createTime: 2024/05/09 12:00:00
+createTime: '2024/05/09 12:00:00'
 tags:
   - nas
   - aria2
@@ -7,6 +7,7 @@ tags:
   - websocket
 title: docker 部署 aria2
 permalink: /article/b06gglcq/
+description: docker 部署 Aria2 下载器，并在浏览器端配置 Aria2 Explorer
 ---
 
 docker 部署 Aria2 下载器，并在浏览器端配置 Aria2 Explorer

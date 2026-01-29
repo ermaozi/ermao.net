@@ -1,6 +1,6 @@
 ---
 title: ⚠️【机场跑路】2025年4月28日XSUS机场跑路预警(已恢复)
-createTime: 2025/03/28 02:43:21
+createTime: '2025/03/28 02:43:21'
 permalink: /article/mwk3l9oq/
 tags:
   - 科学上网
@@ -8,6 +8,9 @@ tags:
   - 机场
   - 跑路
   - XSUS
+description: >-
+  目前已恢复使用。 XSUS机场跑路预警！ XSUS官网经常无法访问，客服长时间不回复消息，telegram公告频道长时间无消息。
+  已是高危表现！**请立即停止续费！**
 ---
 
 目前已恢复使用。

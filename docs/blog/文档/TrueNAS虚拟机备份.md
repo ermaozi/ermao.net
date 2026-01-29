@@ -1,5 +1,5 @@
 ---
-createTime: 2024/08/04 12:00:00
+createTime: '2024/08/04 12:00:00'
 tags:
   - NAS
   - 虚拟机
@@ -7,6 +7,7 @@ tags:
   - TrueNAS
 title: TrueNAS虚拟机备份
 permalink: /article/vgf2ez1r/
+description: TrueNAS虚拟机备份
 ---
 
 TrueNAS虚拟机备份

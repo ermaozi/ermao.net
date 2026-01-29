@@ -1,6 +1,6 @@
 ---
 title: AList 项目所有权疑似更迭：开源网盘工具引发社区关注
-createTime: 2025/06/11 03:13:39
+createTime: '2025/06/11 03:13:39'
 permalink: /article/dsbch7va/
 tags:
   - AList
@@ -12,6 +12,7 @@ tags:
   - Docker
   - Telegram
   - 腾讯云 COS
+description: 近日，广受欢迎的开源网盘管理工具 AList 疑似发生所有权变更，引发社区广泛讨论和担忧。多个迹象表明项目可能已被转手，用户需警惕潜在风险。
 ---
 
 近日，广受欢迎的开源网盘管理工具 AList 疑似发生所有权变更，引发社区广泛讨论和担忧。多个迹象表明项目可能已被转手，用户需警惕潜在风险。

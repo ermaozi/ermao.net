@@ -1,6 +1,6 @@
 ---
 title: 搜索引擎查找 Ollama 本地部署的 DeepSeek，实现免费 AI 运行
-createTime: 2025/02/12 7:25:01
+createTime: '2025/02/12 7:25:01'
 permalink: /article/tj38tso3/
 tags:
   - Ollama
@@ -11,6 +11,10 @@ tags:
   - AI
   - 搜索引擎
   - 免费
+description: >-
+  大多数教程都集中在如何本地部署 DeepSeek 模型，但本教程将引导您探索另一种方法：通过搜索引擎（如 Fofa 和 Shodan）查找公开的
+  Ollama 模型 API 服务。 Ollama 是一个强大的支持本地部署的大型语言模型，允许用户通过 API 进行交互。借助 Fofa 和 Shodan
+  等搜索引擎，...
 ---
 
 大多数教程都集中在如何本地部署 DeepSeek 模型，但本教程将引导您探索另一种方法：通过搜索引擎（如 Fofa 和 Shodan）查找公开的 Ollama 模型 API 服务。

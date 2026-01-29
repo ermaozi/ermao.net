@@ -1,11 +1,15 @@
 ---
 title: 全网最全！6种方法解决 GitHub 国内由于 DNS 污染导致无法访问的问题
-createTime: 2025/02/27 10:07:16
+createTime: '2025/02/27 10:07:16'
 permalink: /article/jddtxrrw/
 tags:
   - GitHub
   - DNS
   - VPN
+description: >-
+  GitHub 是一个面向开源及私有软件项目的托管平台，不管是行业大佬还是编程小白都可以在 GitHub 上交流学习，但是国内的 GitHub
+  访问被污染，导致无法正常访问。 本文通过 6 种方法解决 GitHub
+  访问被污染的问题。如果全部方法试用后仍然无法访问（概率极低），欢迎在下方评论，手把手帮你处理！
 ---
 
 GitHub 是一个面向开源及私有软件项目的托管平台，不管是行业大佬还是编程小白都可以在 GitHub 上交流学习，但是国内的 GitHub 访问被污染，导致无法正常访问。

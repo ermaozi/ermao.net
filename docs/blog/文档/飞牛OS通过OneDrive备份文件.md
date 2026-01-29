@@ -1,13 +1,14 @@
 ---
 title: 飞牛OS通过docker安装OneDrive备份文件(超多废话版)
-createTime: 2025/01/06 12:15:17
+createTime: '2025/01/06 12:15:17'
 permalink: /article/aofygutj/
 tags:
-    - 飞牛OS
-    - docker
-    - OneDrive
-    - 备份
-    - 文件
+  - 飞牛OS
+  - docker
+  - OneDrive
+  - 备份
+  - 文件
+description: 手把手教学飞牛OS如何通过docker安装OneDrive备份文件
 ---
 
 手把手教学飞牛OS如何通过docker安装OneDrive备份文件

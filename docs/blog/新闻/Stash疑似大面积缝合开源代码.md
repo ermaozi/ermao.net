@@ -1,6 +1,6 @@
 ---
 title: 【新闻】Stash 疑似大面积“缝合”开源代码
-createTime: 2025/07/05 10:18:57
+createTime: '2025/07/05 10:18:57'
 permalink: /news/kne6vczb/
 tags:
   - 科学上网
@@ -11,6 +11,9 @@ tags:
   - 抄袭
   - GPL
   - AGPL
+description: >-
+  接群友匿名投稿，知名代理软件 Stash Mac 涉嫌大量复制粘贴开源代码，涉及多个GPL、AGPL协议下的代码库。
+  爆料源：https://x.com/nek0hasekai/status/1941361311130235189
 ---
 
 接群友匿名投稿，知名代理软件 Stash Mac 涉嫌大量复制粘贴开源代码，涉及多个GPL、AGPL协议下的代码库。

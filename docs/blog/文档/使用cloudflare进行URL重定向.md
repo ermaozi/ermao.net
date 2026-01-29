@@ -1,6 +1,6 @@
 ---
 title: 使用cloudflare进行URL重定向
-createTime: 2024/08/31 21:12:45
+createTime: '2024/08/31 21:12:45'
 permalink: /article/jqtuqouj/
 tags:
   - cloudflare
@@ -8,6 +8,10 @@ tags:
   - wordpress
   - github pages
   - 博客
+description: >-
+  之前我的博客一直使用 wordpress，但是由于 wordpress 太过笨重、维护难度大、国内访问速度慢、还需要花钱租用后端服务器。所以我决定迁移到
+  github pages 重搞一个博客。 但是之前放在公网上的文章链接都是 wordpress 的，我又舍不得放弃这部分流量，所以用 cloudflare
+  进行...
 ---
 
 之前我的博客一直使用 wordpress，但是由于 wordpress 太过笨重、维护难度大、国内访问速度慢、还需要花钱租用后端服务器。所以我决定迁移到 github pages 重搞一个博客。

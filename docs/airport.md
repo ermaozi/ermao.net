@@ -1,8 +1,14 @@
 ---
 title: 2026年热门翻墙机场推荐
-createTime: 2025/12/11 10:26:08
+createTime: '2025/12/11 10:26:08'
 permalink: /airport/
 description: 2026年热门翻墙机场推荐，精简内容，方便快速浏览各大机场详情。
+tags:
+  - 机场
+  - 订阅
+  - 节点
+  - 翻墙
+  - 科学上网
 ---
 
 <LinkCard title="✈️全部便宜好用的翻墙机场推荐评测" href="/posts/vpn/" description="热门机场不够看？点击查看市面上所有的主流的稳定机场，价格亲民，线路稳定。" />

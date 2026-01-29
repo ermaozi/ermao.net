@@ -1,6 +1,6 @@
 ---
 title: ✈️机场推荐【CyberGuard】 - 质量高、稳定运营两年
-createTime: 2025/06/22 03:25:55
+createTime: '2025/06/22 03:25:55'
 permalink: /article/4m7fg8r9/
 tags:
   - 科学上网
@@ -10,6 +10,9 @@ tags:
   - 评测
   - CyberGuard
   - CyberGuard官网地址
+description: >-
+  CyberGuard 是一家提供高速稳定 VPN 服务的机场，支持多种设备和平台，适合需要翻墙的用户。
+  CyberGuard机场官网地址：cyberguard.best
 ---
 
 CyberGuard 是一家提供高速稳定 VPN 服务的机场，支持多种设备和平台，适合需要翻墙的用户。

@@ -1,6 +1,6 @@
 ---
 title: ✈️机场推荐【xx云加速】 - 新机场、价格实惠
-createTime: 2025/02/22 11:25:56
+createTime: '2025/02/22 11:25:56'
 permalink: /article/6e3quult/
 tags:
   - 科学上网
@@ -11,6 +11,9 @@ tags:
   - 便宜机场
   - xx云
   - xx云加速
+description: >-
+  xx云加速超高性价比，节点质量高，客服实时在线，晚高峰不限速，不限制设备，对 Netflix、Disney+ 流媒体解锁服务也还不错，8k视频秒开。
+  xxyun加速95折优惠码，只能使用一次：`xxyun.xyz` xx云加速官网地址：https://xxyun.de
 ---
 
 xx云加速超高性价比，节点质量高，客服实时在线，晚高峰不限速，不限制设备，对 Netflix、Disney+ 流媒体解锁服务也还不错，8k视频秒开。
