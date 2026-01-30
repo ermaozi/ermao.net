@@ -1,0 +1,44 @@
+/* Customize global styles */
+
+/* Make .vp-posts-nav children display in a row */
+/* Customize global styles */
+
+.vp-posts-nav {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+/* Ensure children behave nicely in the flex container */
+.vp-posts-nav .nav-link {
+  flex: 1;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 8px 4px !important;
+  min-width: 0; /* Allow shrinking */
+  display: flex !important;
+  flex-direction: column !important; /* Stack icon and text vertically to save horizontal space */
+  align-items: center !important;
+  text-align: center !important;
+  height: auto !important;
+}
+
+.vp-posts-nav .nav-link .text {
+    padding-right: 0 !important;
+    font-size: 12px;
+}
+
+.vp-posts-nav .nav-link .total {
+    display: none !important; /* Hide count to save space */
+}
+.vp-posts-nav .nav-link .vpi-chevron-right {
+    display: none !important; /* Hide arrow */
+}
+
+.vp-posts-nav .nav-link .icon-logo {
+    margin-right: 0 !important;
+    margin-bottom: 4px;
+}
