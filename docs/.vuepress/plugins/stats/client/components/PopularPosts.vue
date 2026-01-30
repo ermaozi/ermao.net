@@ -9,30 +9,61 @@ import { usePageData } from '@vuepress/client'
 const popularPosts = ref([])
 const loading = ref(true)
 const canShow = ref(false)
+const targetSelector = ref('.vp-posts-aside')
 const router = useRouter()
 const route = useRoute()
 const page = usePageData()
 
-const isHome = computed(() => {
-    // Show on root home or blog home
-    return page.value.path === '/' || page.value.path === '/blog/' || page.value.frontmatter.home === true
+const shouldShow = computed(() => {
+    // Show on almost everywhere except 404
+    return !page.value.path.includes('/404')
 })
 
-const checkDomAndShow = async () => {
-    canShow.value = false
-    if (!isHome.value) return
+let pollingTimer = null
 
+const checkDomAndShow = async () => {
+    if (pollingTimer) {
+        clearTimeout(pollingTimer)
+        pollingTimer = null
+    }
+    
+    canShow.value = false
+    if (!shouldShow.value) return
+
+    // Wait for route transition/animation to likely finish
+    await new Promise(resolve => setTimeout(resolve, 300))
     await nextTick()
+    
+    // Determine potential targets
+    // .vp-posts-aside -> Blog Home / List pages
+    // .vp-doc-aside -> Article pages
+    const selectors = ['.vp-posts-aside', '.vp-doc-aside']
     
     // Poll for the sidebar element
     let attempts = 0
     const check = () => {
-        const el = document.querySelector('.vp-posts-aside')
-        if (el) {
-            canShow.value = true
-        } else if (attempts < 20) { // Try for ~2 seconds
+        // Try to find ANY valid target
+        // If transition is happening, we might see multiple.
+        // We prefer the one that looks "active" or "new".
+        // But simple querySelector returns the first match.
+        
+        let found = false
+        for (const sel of selectors) {
+             const els = document.querySelectorAll(sel)
+             if (els.length > 0) {
+                 // Pick the last one usually implies the one being mounted on top/after
+                 targetSelector.value = sel
+                 canShow.value = true
+                 found = true
+                 break
+             }
+        }
+        
+        if (found) return
+
+        if (attempts < 50) { // Try for ~5 seconds
             attempts++
-            setTimeout(check, 100)
+            pollingTimer = setTimeout(check, 100)
         }
     }
     check()
@@ -110,8 +141,8 @@ const navigate = (path) => {
 
 <template>
   <ClientOnly>
-    <Teleport to=".vp-posts-aside" v-if="canShow">
-      <div class="popular-posts-widget">
+    <Teleport :to="targetSelector" v-if="canShow">
+      <div class="popular-posts-widget" :class="{'in-doc': targetSelector === '.vp-doc-aside'}">
         <div class="widget-header">
           <span class="widget-title">热门文章</span>
         </div>
@@ -144,6 +175,17 @@ const navigate = (path) => {
   padding: 4px 0;
   font-size: 13px;
   margin-top: 20px;
+}
+
+.popular-posts-widget.in-doc {
+    margin-top: 32px; /* bit more space below TOC */
+    padding-top: 20px;
+    border-top: 1px solid var(--vp-c-divider);
+}
+
+.popular-posts-widget.in-doc .widget-header {
+    border-bottom: none;
+    margin-bottom: 4px;
 }
 
 .widget-header {
