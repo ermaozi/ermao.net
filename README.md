@@ -21,10 +21,15 @@
 |[flybit](#flybit)|[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔|[TG](https://t.me/flybitvip)|[前往](./v1/机场推荐flybit.md)|
 |[xxyun](#xxyun)|[xxyun.de](https://xxyun.de/XQiZqbSr.html)| 无 |9.99元 100G/月|✔|[TG](https://t.me/+eYsE6P_xvjk2NGY5)|[前往](./v2/机场推荐xxyun.md)|
 |[ccyz](#ccyz)|[ccyz.org](https://ccyz.org/QkQotDCu.html)| 1G |15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|
-|[唯兔云](#唯兔云)|[vip01.onlyrabbit.cc](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx)| 无 |6元 45G/月|✔|[TG](https://t.me/v2yun_v2)|[前往](./v2/机场推荐唯兔云.md)|
-[星岛梦](#星岛梦)|[ermaov1.xdmvipaff.cc](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY)| 无 |16元 100G/月|✔|[TG](https://t.me/thundermousecc)|[前往](./v2/机场推荐星岛梦.md)|
-|[superbiu](#superbiu)|[biubiux.online](https://biubiux.online/#/register?code=BasmsULb)| 无 |11元 50G/月|✔|[TG](https://t.me/superbiu888)|[前往](./v2/机场推荐superbiu.md)|
+[星岛梦](#星岛梦)|[ermaov1.xdmvipaff.cc](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY)| 无 |16元 100G/月|✔|[TG](https://t.me/XDM6666666)|[前往](./v2/机场推荐星岛梦.md)|
+|[光年梯](#光年梯)|[ermaozi01.gntvipaff.cc](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr)| 无 |18元 110G/月|✔|[TG](https://t.me/guangnianti)|[前往](./v2/机场推荐光年梯.md)|
+|[uuone](#uuone)|[uuone.de](https://uuone.de/ermao.html)| 无 |12元 150G/月|✔|暂无|[前往](./v2/机场推荐uuone.md)|
+|[极连云](#极连云)|[ermaozi01.jlcvipaff.cc](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m)| 无 |8元 60G/月|✔|[TG](https://t.me/JLYCloud)|[前往](./v2/机场推荐极连云.md)|
 |[cocoduck](#cocoduck)|[cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|
+|[随便云](#随便云)|[suibian.cloud](https://suibian.cloud/register?code=YZxHwCws)| 无 |10元 68G/月|✔|[TG](https://t.me/suibianvip)|[前往](./v2/机场推荐随便云.md)|
+|[唯兔云](#唯兔云)|[vip01.onlyrabbit.cc](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx)| 无 |6元 45G/月|✔|[TG](https://t.me/v2yun_v2)|[前往](./v2/机场推荐唯兔云.md)|
+|[光速云](#光速云)|[a01.gsyvipaff.cc](https://a01.gsyvipaff.cc/#/?code=d1eMb3ku)| 无 |8.25元 59G/月|✔|[TG](https://t.me/LightspeedCloud)|[前往](./v2/机场推荐光速云.md)|
+|[superbiu](#superbiu)|[biubiux.online](https://biubiux.online/#/register?code=BasmsULb)| 无 |11元 50G/月|✔|[TG](https://t.me/superbiu888)|[前往](./v2/机场推荐superbiu.md)|
 |[koodog](#koodog)|[koodog.com](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)| 无 |5元 35G/月|❌|[TG](https://t.me/KooDogGroup)|[前往](./v1/机场推荐koodog.md)|
 |[99吧](#_99bar)|[99vpn.bar](https://99vpn.bar/#/register?code=qzpkbzHF)| 1天 1G |9.9元 99G/月|✔|[TG](https://t.me/jiujiuchat)|暂无|
 |[TNT](#tnt)|[ermaozi01.tntvipaff.cc](https://ermaozi02.tntvipaff.cc/#/register?code=f1EyPwf3)|无|10元60g/月(季付)|❌|[TG](https://t.me/TNTCloud2)|[前往](./v1/机场推荐TNT.md)|
@@ -81,6 +86,57 @@
 
 ---
 
+### flybit
+
+flybit官网地址：[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM7)
+
+邀请码：7h1NCdM7
+
+试用：1天 2G
+
+最便宜的订阅有12元 100G/月。
+
+解锁主流流媒体和ChatGPT，IEPL接口线路和普通线路一样的价格，机场稳定，几乎全部节点全天候可用。购买之前记得领一下首页的优惠券再下单。
+
+---
+
+### 光年梯
+
+光年梯官网地址：[ermaozi01.gntvipaff.cc](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr)
+
+最便宜的订阅有18元 110G/月。
+
+光年梯是由资深团队运营的高品质翻墙机场，拥有多年的稳定运营历史和丰富的技术经验。其自有机房和全球节点网络确保了用户能够享受到快速、稳定的网络连接。
+
+| 套餐名称 | 月费 | 流量 | 特性 | 适用人群 | 购买链接 |
+|----------|------|------|------|----------|----------|
+| **入门版** | ¥18.00/月 | 110GB/月 | 全IPLC专线，SS协议，不限速，不限客户端 | 轻度/入门 | [购买链接](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) |
+| **晋级版** | ¥34.00/月 | 220GB/月 | 全节点 x1 · 高峰满速 | 进阶使用 | [购买链接](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) |
+| **专业版** | ¥68.00/月 | 450GB/月 | 全节点 x1 · 高峰满速 | 主力使用 | [购买链接](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) |
+| **至尊版** | ¥130.00/月 | 900GB/月 | 全节点 x1 · 高峰满速 | 重度用户 | [购买链接](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) |
+| **独享私人专线** | ¥680.00/月 | 500GB/月 | 独立带宽，独立公网IP，全程独享 | 企业/极致 | [购买链接](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) |
+
+---
+
+### uuone
+
+官网地址：[uuone.de](https://uuone.de/ermao.html)
+
+最便宜的订阅有12元 150G/月。
+
+使用本站专属优惠码 `uuone`，全场套餐 **9折** 优惠！
+
+| 套餐名称 | 原价 | **券后价** | 流量 | 特性 | 购买 |
+|----------|------|------------|------|------|------|
+| **Lite套餐** | ¥12/月 | **¥10.8** | 150G/月 | 入门首选，BGP中转 | [👉抢购](https://uuone.de/ermao.html) |
+| **Pro套餐** 🌟 | ¥23/月 | **¥20.7** | 300G/月 | 进阶推荐，流量充裕 | [👉抢购](https://uuone.de/ermao.html) |
+| **Max套餐** | ¥45/月 | **¥40.5** | 800G/月 | 超大流量，4K无忧 | [👉抢购](https://uuone.de/ermao.html) |
+| **永久套餐** | ¥80 | **¥72** | 450G | 一次性流量，不过期 | [👉抢购](https://uuone.de/ermao.html) |
+
+[uuone](https://uuone.de/ermao.html) 是一家专注于提供 **高性价比** 出海加速服务的 **翻墙机场**。其核心优势在于提供 **BGP三网优化** 中转线路，确保超高性价比的同时，拥有高质量的节点表现。
+
+---
+
 ### cyberguard
 
 CyberGuard官网地址：[cyberguard.best](https://www.cyberguard.best/#/register?code=yoyUW3R9)
@@ -112,7 +168,7 @@ CyberGuard主要提供安全网络访问解决方案。由网络安全专家团�
 
 试用：1月 1G
 
-最便宜的订阅有15.5元 150G/月。
+最便宜的订阅有25元 150G/月。
 
 老头VPN 从2016年开始运营，资历非常老，期间一直保持高质量服务。全球华人公认的老牌国际加速服务厂商 高达2Gbps的单线接入能力。
 
@@ -128,7 +184,7 @@ CocoDuck机场官网地址：[https://cocoduck.live](https://cocoduck.live/auth/
 
 最便宜的订阅有15元 150G/月。
 
-[CocoDuck机场](https://cocoduck.live/auth/register?code=25c8b515df)详细评测：由海外团队运营的高品质翻墙机场，拥有两年稳定运营历史、自有四个机房、40+全球节点，支持OpenAI和流媒体解锁，是2026年最值得信赖的稳定机场之一。
+[CocoDuck机场](https://cocoduck.live/auth/register?code=25c8b515df)详细评测：由海外团队运营的高品质翻墙机场，拥有两年稳定运营历史、自有四个机房、40+全球节点，支持OpenAI和流媒体解锁，是比较值得信赖的稳定机场之一。
 
 | 套餐名称 | 月费 | 流量 | 节点数量 | 特色服务 | 适用人群 | 购买链接 |
 |----------|------|------|----------|----------|----------|-------|
@@ -137,6 +193,25 @@ CocoDuck机场官网地址：[https://cocoduck.live](https://cocoduck.live/auth/
 | 哥达鸭 | ¥41/月 | 700GB/月 | 40+全球节点 | 优先路由 | 中度用户 | [购买链接](https://cocoduck.live/auth/register?code=25c8b515df) |
 | 唐老鸭 | ¥53/月 | 1000GB/月 | 40+全球节点 | 专线服务 | 企业/团队 | [购买链接](https://cocoduck.live/auth/register?code=25c8b515df) |
 | 迷你鸭 | ¥77/年 | 77GB/月 | 40+全球节点 | 超值优惠 | 长期用户 | [购买链接](https://cocoduck.live/auth/register?code=25c8b515df) |
+
+---
+
+### 随便云
+
+随便云官网地址：[suibian.cloud](https://suibian.cloud/register?code=YZxHwCws)
+
+试用：无
+
+随便云提供灵活的月付套餐和不限时流量包，满足不同用户的需求。所有的套餐均支持 **全节点 IEPL / 中转支持** 和 **多地区 Netflix + 其他流媒体解锁**。
+
+| 套餐名称 | 价格 | 流量 | 速率限制 | 设备数 | 特性 | 购买 |
+|----------|------|------|----------|--------|------|------|
+| **轻量Lite套餐** | ¥10.00/月 | 68 GB | 500 Mbps | 3 台 | 入门首选，高速稳定 | [👉抢购](https://suibian.cloud/register?code=YZxHwCws) |
+| **进阶Pro套餐** | ¥20.00/月 | 168 GB | 1000 Mbps | 5 台 | 进阶推荐，千兆速率 | [👉抢购](https://suibian.cloud/register?code=YZxHwCws) |
+| **终极Ultimate** | ¥40.00/月 | 388 GB | 2000 Mbps | 8 台 | 大流量，2G超高速 | [👉抢购](https://suibian.cloud/register?code=YZxHwCws) |
+| **团队Team套餐** | ¥88.00/月 | 1000 GB | 5000 Mbps | 15 台 | 团队共享，极致速率 | [👉抢购](https://suibian.cloud/register?code=YZxHwCws) |
+| **100G不限时** | ¥28.00/次 | 100 GB | 1000 Mbps | 3 台 | 流量包，永久有效 | [👉抢购](https://suibian.cloud/register?code=YZxHwCws) |
+| **288G不限时** | ¥68.00/次 | 288 GB | 不限制 | 5 台 | 大包流量，速率无忧 | [👉抢购](https://suibian.cloud/register?code=YZxHwCws) |
 
 ---
 
@@ -197,6 +272,48 @@ ccyz官网地址：[ccyz.org](https://ccyz.org/QkQotDCu.html)
 | **星岛梦 · 定制套餐** | ¥680.00/月 | 500GB | 专属定制节点，独享原生IP | [购买链接](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY) |
 ---
 
+### 光速云
+
+光速云官网地址：[a01.gsyvipaff.cc](https://a01.gsyvipaff.cc/#/?code=d1eMb3ku)
+
+最便宜的订阅有8.25元 59G/月。
+
+光速云IEPL专线机场，提供高品质线路，支持 Trojan/SS 等协议，专注于稳定流媒体与跨境业务。全线解锁 Netflix、Disney+、YouTube、ChatGPT、Gemini 等平台与 AI 服务，并支持 TikTok 跨区，适合跨境电商、直播运营、远程办公等高要求用户。
+
+套餐无限速、无倍率、不限制设备数（合理使用），支持支付宝、USDT 付款。节点覆盖港台、日美新、东南亚、韩国及多国欧美地区，价格亲民，月付最低8.25元起，另提供1T大流量永久套餐。拥有多客服团队与海外技术支持，可提供小火箭下载、TG代注册等增值服务。
+
+| 套餐名称 | 价格 | 流量 | 特性 | 购买链接 |
+|----------|------|------|------|----------|
+| **轻量版(年付)** | ¥99/年 | 59GB/月 | 超长续订首选，折合¥8.25/月 | [购买链接](https://a01.gsyvipaff.cc/#/?code=d1eMb3ku) |
+| **极速版** | ¥17/月 | 110GB/月 | 入门体验，性价比高 | [购买链接](https://a01.gsyvipaff.cc/#/?code=d1eMb3ku) |
+| **流光版** | ¥34/月 | 220GB/月 | 主流推荐，适合日常使用 | [购买链接](https://a01.gsyvipaff.cc/#/?code=d1eMb3ku) |
+| **量子版** | ¥68/月 | 450GB/月 | 中重度用户，大流量 | [购买链接](https://a01.gsyvipaff.cc/#/?code=d1eMb3ku) |
+| **无界版** | ¥130/月 | 900GB/月 | 自由使用，极致体验 | [购买链接](https://a01.gsyvipaff.cc/#/?code=d1eMb3ku) |
+| **不限时流量包** | ¥680 | 1000GB | 一次性购买，永不过期 | [购买链接](https://a01.gsyvipaff.cc/#/?code=d1eMb3ku) |
+
+---
+
+### 极连云
+
+极连云官网地址：[ermaozi01.jlcvipaff.cc](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m)
+
+最便宜的订阅有8元 60G/月。
+
+本站长期8折优惠码：`JLY888`
+
+极连云提供高性价比的IEPL专线VPN服务，支持Trojan和Shadowsocks协议，解锁Netflix、YouTube等主流流媒体平台。套餐不限速、不限设备数，适合轻度到中度用户。支持支付宝和USDT支付，拥有多节点覆盖全球，确保稳定高速连接。
+
+| 套餐名称 | 价格 | 流量 | 特性 | 购买链接 |
+|----------|------|------|------|----------|
+| **轻量体验(年付)** | ¥96/年 | 60GB/月 | 适合轻度用户，晚高峰不限速 | [购买链接](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m) |
+| **基础套餐** | ¥15.50/月 | 100GB/月 | 全IPLC专线，原生IP | [购买链接](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m) |
+| **进阶套餐** | ¥30.50/月 | 200GB/月 | 优化带宽调度，AI服务解锁 | [购买链接](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m) |
+| **旗舰套餐** | ¥65.50/月 | 500GB/月 | 高速专线，低延迟体验 | [购买链接](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m) |
+| **尊享套餐** | ¥120.50/月 | 1000GB/月 | 顶级旗舰，最高2.5Gbps | [购买链接](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m) |
+| **不限时套餐** | ¥399.00 | 1000GB | 一次性流量，永久有效 | [购买链接](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m) |
+
+---
+
 ### superbiu
 
 superbiu官网地址：[biubiux.online](https://biubiux.online/#/register?code=BasmsULb)
@@ -226,20 +343,6 @@ superbiu官网地址：[biubiux.online](https://biubiux.online/#/register?code=B
 | Biu-as-you-go 880G | 880GB | ¥238 | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
 
 > 一次性套餐适合临时出差、备用机场或多设备共享，流量用完前不会过期。
-
----
-
-### flybit
-
-flybit官网地址：[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM7)
-
-邀请码：7h1NCdM7
-
-试用：1天 2G
-
-最便宜的订阅有12元 100G/月。
-
-解锁主流流媒体和ChatGPT，IEPL接口线路和普通线路一样的价格，机场稳定，几乎全部节点全天候可用。购买之前记得领一下首页的优惠券再下单。
 
 ---
 
@@ -323,7 +426,7 @@ xxyun加速特性如下：
 
 试用：1天 1G
 
-最便宜的订阅有9.9元 99G/月。
+最便宜的订阅有12.9元 99G/月。
 
 成立时间：2024.8.23
 翻墙协议：Shadowsocks
@@ -336,11 +439,13 @@ xxyun加速特性如下：
 
 | 套餐 | 价格 | 流量 | 购买地址 |
 | --- | --- | --- | --- |
-| 星耀VIP | ¥9.9/一个月 | 99GB/月 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
-| 铂金VIP | ¥19.9/一个月 | 199GB/月 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
-| 钻石VIP | ¥29.9/一个月 | 299GB/月 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
-| 皇冠SVIP | ¥99.99/一次性 | 666GB/不限时 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
-| 尊耀SVIP | ¥199.99/一次性 | 1399GB/不限时 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 九九@星耀VIP | 月付¥12.9 / 季付¥36.9 / 半年¥72.9 / 年付¥139.9 | 99 GB/月 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 九九@铂金VIP | 月付¥24.9 / 季付¥72.9 / 半年¥139.9 / 年付¥274.9 | 199 GB/月 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 九九@钻石VIP | 月付¥36.9 / 季付¥108.9 / 半年¥212.9 / 年付¥419.9 | 299 GB/月 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 九九@星钻SVIP | ¥35.9/一次性 | 111 GB/不限时 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 九九@至尊SVIP | ¥69.9/一次性 | 222 GB/不限时 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 九九@皇冠SVIP | ¥139.9/一次性 | 555 GB/不限时 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 九九@尊耀SVIP | ¥259.9/一次性 | 1111 GB/不限时 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
 
 ---
 
@@ -348,7 +453,7 @@ xxyun加速特性如下：
 
 灯塔cloud官网地址：[https://dengtacloud.com](https://dengta.xn--xhq8sm16c5ls.com/#/register?code=n4jB4z5R)
 
-最便宜的订阅有11.6元 100G/月(半年付)。
+最便宜的订阅有10元 100G/月。
 
 | 套餐 | 价格 | 流量 | 购买地址 |
 | --- | --- | --- | --- |

@@ -445,7 +445,7 @@ xxyun加速特性如下：
 
 试用：1天 1G
 
-最便宜的订阅有9.9元 99G/月。
+最便宜的订阅有12.9元 99G/月。
 
 成立时间：2024.8.23
 翻墙协议：Shadowsocks
@@ -458,11 +458,13 @@ xxyun加速特性如下：
 
 | 套餐 | 价格 | 流量 | 购买地址 |
 | --- | --- | --- | --- |
-| 星耀VIP | ¥9.9/一个月 | 99GB/月 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
-| 铂金VIP | ¥19.9/一个月 | 199GB/月 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
-| 钻石VIP | ¥29.9/一个月 | 299GB/月 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
-| 皇冠SVIP | ¥99.99/一次性 | 666GB/不限时 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
-| 尊耀SVIP | ¥199.99/一次性 | 1399GB/不限时 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 九九@星耀VIP | 月付¥12.9 / 季付¥36.9 / 半年¥72.9 / 年付¥139.9 | 99 GB/月 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 九九@铂金VIP | 月付¥24.9 / 季付¥72.9 / 半年¥139.9 / 年付¥274.9 | 199 GB/月 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 九九@钻石VIP | 月付¥36.9 / 季付¥108.9 / 半年¥212.9 / 年付¥419.9 | 299 GB/月 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 九九@星钻SVIP | ¥35.9/一次性 | 111 GB/不限时 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 九九@至尊SVIP | ¥69.9/一次性 | 222 GB/不限时 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 九九@皇冠SVIP | ¥139.9/一次性 | 555 GB/不限时 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 九九@尊耀SVIP | ¥259.9/一次性 | 1111 GB/不限时 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
 
 ---
 
