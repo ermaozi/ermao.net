@@ -72,7 +72,7 @@ description: 2026年翻墙机场推荐与VPN评测指南，精选便宜好用的
 |[纵云梯](#纵云梯)|[zongyunti.com/](https://zongyunti.com/?r=60147)| 1G 不限时| 10元 60G/30天|❌|暂无|[前往](./v1/机场推荐纵云梯.md)|
 |[xxai](#xxai)|[xxai.uk](https://xx-ai.co?invite_code=K2TpsDcg)| 无 |16.9元 100G/月|✔|[TG](https://t.me/xxai_official)|暂无|
 |[Aladdin](#aladdin)|[www.avatargpt.xyz/](https://short.thisgourl.xyz/#/register?code=tvLw0oMj)|无|30元 390G/半年|❌|暂无|暂无|
-|[好鸭云](#好鸭云)|[my.niceduck.io](https://my.niceduck.io/register?code=QS0hzI2y)| 无 |12元 100G/月|❌|[TG](https://t.me/niceduck_group)|[前往](./v1/机场推荐好鸭云.md)|
+|[好鸭云](#好鸭云)|[vuser.niceduck.io](https://vuser.niceduck.io/register?code=QS0hzI2y)| 无 |12元 100G/月|❌|[TG](https://t.me/niceduck_group)|[前往](./v1/机场推荐好鸭云.md)|
 |[光年梯](#光年梯)|[ermaozi01.gntvipaff.cc](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr)| 无 |18元 110G/月|✔|[TG](https://t.me/guangnianti)|[前往](./v2/机场推荐光年梯.md)|
 |[小牛云](#小牛云)|[xiaoniuyun.cc](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)| 无 |预警|✔|[TG](https://t.me/aoxcloud)|[前往](./v2/机场推荐小牛云.md)|
 |[EF](#ef)|~~www.efcloud1.com~~|无|跑路|❌|跑路|跑路|
@@ -631,7 +631,7 @@ okanc机场是一个新机场，但是与奈云同宗同源，有奈云的技术
 
 ### 好鸭云
 
-好鸭云官网地址：[my.niceduck.io](https://my.niceduck.io/register?code=QS0hzI2y)
+好鸭云官网地址：[vuser.niceduck.io](https://vuser.niceduck.io/register?code=QS0hzI2y)
 
 邀请码：QS0hzI2y
 
