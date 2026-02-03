@@ -80,6 +80,7 @@ export default defineUserConfig({
     markdown: {
       collapse: true,
       chartjs: true,
+      youtube: true, 
     }
   }),
   bundler: viteBundler({
