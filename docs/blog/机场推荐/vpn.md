@@ -41,6 +41,7 @@ description: 2026年翻墙机场推荐与VPN评测指南，精选便宜好用的
 |[flybit](#flybit)|[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔|[TG](https://t.me/flybitvip)|[前往](./v1/机场推荐flybit.md)|
 |[cocoduck](#cocoduck)|[cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|
 |[奈云](#奈云)|[aff.v2ny.mom](https://aff.v2ny.mom?path=register&code=FNAu1FWB)|无|10.6元 168G/月(年付)|✔|[TG](https://t.me/v2naiun)|[前往](./v1/机场推荐奈云.md)|
+|[全球云](#全球云)|[ermaozi01.gcvipaff.cc](https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA)| 无 |20元 120G/月|✔|暂无|[前往](./v2/机场推荐全球云.md)|
 |[阿达西](#阿达西)|[adaxi.net](https://adaxi.net/?r=68917)| 无 |3元 20G/月|✔|暂无|[前往](./v1/机场推荐阿达西.md)|
 |[XSUS](#xsus)|[xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔|[TG](https://t.me/xsusvpn)|[前往](./v1/机场推荐XSUS.md)|
 |[ccyz](#ccyz)|[ccyz.org](https://ccyz.org/QkQotDCu.html)| 1G |15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|
@@ -153,6 +154,22 @@ flybit官网地址：[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM
 | **永久套餐** | ¥80 | **¥72** | 450G | 一次性流量，不过期 | [👉抢购](https://uuone.de/ermao.html) |
 
 [uuone](https://uuone.de/ermao.html) 是一家专注于提供 **高性价比** 出海加速服务的 **翻墙机场**。其核心优势在于提供 **BGP三网优化** 中转线路，确保超高性价比的同时，拥有高质量的节点表现。
+
+---
+
+### 全球云
+
+全球云机场官网地址：[ermaozi01.gcvipaff.cc](https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA)
+
+最便宜的订阅有20元 120G/月。
+
+| 套餐名称 | 价格 | 流量/说明 | 购买链接 |
+| :--- | :--- | :--- | :--- |
+| **BGP 智能优化 · 入门方案** | 20元/月 | **120GB**<br>BGP多线路智能调度，Trojan协议，不限设备，解锁流媒体/AI | [立即购买](https://ermaozi01.gcvipaff.cc/#/order?planId=1) |
+| **BGP 智能优化 · 进阶方案** | 40元/月 | **300GB**<br>BGP三网智能优化，稳定优先，4K秒开，解锁流媒体/AI | [立即购买](https://ermaozi01.gcvipaff.cc/#/order?planId=2) |
+| **BGP 智能优化 · 高端方案** | 100元/月 | **700GB**<br>BGP多线融合调度，带宽充足，8K超清，解锁流媒体/AI | [立即购买](https://ermaozi01.gcvipaff.cc/#/order?planId=3) |
+| **BGP 智能优化 · 商业方案** | 180元/月 | **1.5TB**<br>企业级BGP智能路由，商用级 ChatGPT/Claude 支持，高并发 | [立即购买](https://ermaozi01.gcvipaff.cc/#/order?planId=4) |
+| **独享私人专线节点** | 600元/月 | **500GB**<br>独立带宽资源，独立公网 IP，适合 TikTok 直播/独立站 | [立即购买](https://ermaozi01.gcvipaff.cc/#/order?planId=5) |
 
 ---
 
