@@ -117,7 +117,6 @@ A: 主流机场支持：
 |[大哥云](#大哥云)|[ermao.dgywzc.com](https://ermao.dgywzc.com/#/register?code=peAVAa8D)| 无 |19.9元 100G/月|❌|[TG](https://t.me/dageyun)|[前往](./v2/机场推荐大哥云.md)|
 |[CyberGuard](#cyberguard)|[cyberguard.best](https://www.cyberguard.best/#/register?code=yoyUW3R9)| 无 |18元 100G/月|✔|[TG](https://t.me/CyberGuardChat)|[前往](./v1/机场推荐CyberGuard.md)|
 |[冲上云霄](#冲上云霄)|[cpdd.one](https://cpdd.one/?r=32083)| 1天 1G |5元 80G/30天|✔|[TG](https://t.me/vpnpn123)|[前往](./v1/机场推荐冲上云霄.md)|
-|[九霄云](#九霄云)|[shop.starpro.one](https://shop.starpro.one/#/register?code=ZXzjv7oD)| 2天 6G |15元 200G/月|✔|[QQ](https://qm.qq.com/q/EzY3dgKhIA)|[前往](./v1/机场推荐九霄云.md)|
 |[光速云](#光速云)|[a01.gsyvipaff.cc](https://a01.gsyvipaff.cc/#/?code=d1eMb3ku)| 无 |8.25元 59G/月|✔|[TG](https://t.me/LightspeedCloud)|[前往](./v2/机场推荐光速云.md)|
 |[闪狐云](#闪狐云)|[flashfox.cc](https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv)| 无 |20元 120G/月|❌|[TG](https://t.me/flashfoxcloud)|[前往](./v1/机场推荐闪狐云.md)|
 |[99吧](#_99bar)|[99vpn.bar](https://99vpn.bar/#/register?code=qzpkbzHF)| 1天 1G |9.9元 99G/月|✔|[TG](https://t.me/jiujiuchat)|暂无|
@@ -834,32 +833,6 @@ xxai官网地址：[xxai.uk](https://xx-ai.co?invite_code=K2TpsDcg)
 最便宜的订阅有5元 80G/30天。
 
 这是目前来看最便宜的机场，用户也比较多，节点质量过关。缺点是购买稍微麻烦一点，需要购买充值码进行充值后才能购买套餐。
-
----
-
-### 九霄云
-
-九霄云官网地址：[https://shop.starpro.one](https://shop.starpro.one/#/register?code=ZXzjv7oD)
-
-邀请码：ZXzjv7oD
-
-优惠码：`9xiaoyyds` 9折优惠
-
-试用：8G 2天
-
-最便宜的订阅有15元 200G/月。
-
-服务好，回购率高，基本上是5分钟以内客服就回复了.
-
-同时性价比高，支持支付宝、微信支付。
-
-| 套餐 | 价格 | 流量 | 购买地址 |
-| --- | --- | --- | --- |
-|基础版|¥15.00 /每月|200GB| [点击购买](https://shop.starpro.one/#/register?code=ZXzjv7oD) |
-|流量放心用|¥99.00 /一次性|1000GB| [点击购买](https://shop.starpro.one/#/register?code=ZXzjv7oD) |
-|标准版|¥35.00 /每月|600GB| [点击购买](https://shop.starpro.one/#/register?code=ZXzjv7oD) |
-|顶配版|¥60.00 /每月|1500GB| [点击购买](https://shop.starpro.one/#/register?code=ZXzjv7oD) |
-|海外项目线路|¥680.00 /每月|10TB| [点击购买](https://shop.starpro.one/#/register?code=ZXzjv7oD) |
 
 ---
 
