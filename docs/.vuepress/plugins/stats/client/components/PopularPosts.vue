@@ -22,6 +22,7 @@ const shouldShow = computed(() => {
 let pollingTimer = null
 
 const checkDomAndShow = async () => {
+    if (typeof document === 'undefined') return
     if (pollingTimer) {
         clearTimeout(pollingTimer)
         pollingTimer = null
