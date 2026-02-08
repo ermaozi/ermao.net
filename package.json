@@ -15,7 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "@aws-sdk/client-s3": "^3.968.0",
-    "@aws-sdk/lib-storage": "^3.953.0",
+    "@aws-sdk/lib-storage": "^3.968.0",
     "@types/mime-types": "^3.0.1",
     "@types/node": "^25.0.8",
     "@vuepress/client": "2.0.0-rc.26",
