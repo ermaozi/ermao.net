@@ -1,0 +1,109 @@
+---
+url: /article/23w1svxa/index.md
+description: 收集各大翻墙机场的优惠券信息，让大家购买VPN时能享受更多的折扣和优惠，少花冤枉钱。
+---
+收集各大翻墙机场的优惠券信息，让大家购买VPN时能享受更多的折扣和优惠，少花冤枉钱。
+
+## 极连云机场优惠券
+
+[极连云机场](../机场推荐/v2/机场推荐极连云.md)8折优惠码：`JLY888`
+
+全场套餐8折优惠，年付小包（轻量体验）折后约76.8元/年。
+
+活动时间：永久有效
+
+极连云机场官网：[ermaozi01.jlcvipaff.cc](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m)
+
+## 光速云机场优惠券
+
+[光速云机场](../机场推荐/v2/机场推荐光速云.md)85折优惠码：`ok88`
+
+全场套餐8折优惠。
+
+活动时间：2025年12月14日0点—2026年1月31日晚23点，限量5000个。
+
+光速云机场官网：[vip01.lightspeed.club](https://a01.gsyvipaff.cc/#/?code=d1eMb3ku)
+
+## xxyun加速机场85折优惠码
+
+[xxyun加速机场](../机场推荐/v1/机场推荐xx云.md)85折优惠码（只能使用一次）：`xxyun85`
+
+全场套餐85折优惠。
+
+活动时间：永久有效
+
+xxyun加速机场官网：[xxyun.xyz](https://xxyun.de/XQiZqbSr.html)
+
+## 冲上云霄机场优惠券
+
+[冲上云霄机场](../机场推荐/v1/机场推荐冲上云霄.md)流量优惠码：`ermaozi`
+
+使用获赠20G流量
+
+活动时间：永久有效
+
+## flyit机场优惠券
+
+[flyit机场](../机场推荐/v1/机场推荐flybit.md)9折优惠码：`flyit`
+
+全场套餐9折优惠。
+
+活动时间：永久有效
+
+flyit机场官网：[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM7)
+
+## 灯塔cloud机场优惠券
+
+[灯塔cloud机场](../机场推荐/v1/机场推荐灯塔cloud.md)95折优惠码：`off95`
+
+全场套餐95折优惠。
+
+活动时间：永久有效
+
+灯塔cloud机场官网：[dengta.com](https://dengta.xn--xhq8sm16c5ls.com/#/register?code=n4jB4z5R)
+
+## xxyun加速机场优惠券
+
+[xxyun加速机场](../机场推荐/v1/机场推荐xx云.md)95折优惠码：`xxyun`
+
+全场套餐95折优惠。
+
+活动时间：永久有效
+
+xxyun加速机场官网：[xxyun.xyz](https://xxyun.de/XQiZqbSr.html)
+
+## 大哥云机场优惠券
+
+[大哥云机场](../机场推荐/v2/机场推荐大哥云.md) 国庆活动来了！
+
+注意：更换其他套餐会覆盖当前账号套餐，流量也会重置，其他参数都以最后的套餐为准。建议直接续费或购买当前相同的套餐。
+
+8折优惠码：`20251001`
+
+全场套餐8折优惠（-20%），不限次数，在售套餐，不限时流量不打折。
+
+活动时间：2025年9月28日0点—2025年10月15日晚结束截止
+
+错过不补！
+
+大哥云机场官网：[ermao.dgywzc.com](https://ermao.dgywzc.com/#/register?code=peAVAa8D)
+
+## OKANC机场优惠券
+
+[OKANC机场](https://www.ermao.net/article/giwzl7sq/)78折优惠码：`505`
+
+全场套餐78折优惠。
+
+活动时间：2025年5月30日0点—2025年6月21日晚23点
+
+OKANC机场官网：[okanc.com](https://www.okanc.com/index.php#/register?code=3YK7Np6R)
+
+## 奈云机场优惠券
+
+[奈云机场](https://www.ermao.net/article/0gematwc/)72折优惠码：`531`
+
+全场套餐72折优惠。
+
+活动时间：2025年5月30日0点—2025年6月05日晚23点
+
+奈云机场官网：[aff.v2ny.mom](https://aff.v2ny.mom?path=register\&code=FNAu1FWB)
