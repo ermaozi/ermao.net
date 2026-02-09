@@ -23,7 +23,7 @@
     "@vuepress/plugin-reading-time": "2.0.0-rc.121",
     "dotenv": "^17.2.3",
     "exifr": "^7.0.0",
-    "glob": "^13.0.0",
+    "glob": "^13.0.1",
     "gray-matter": "^4.0.3",
     "mime-types": "^3.0.2",
     "tsx": "^4.21.0",
