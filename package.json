@@ -20,7 +20,7 @@
     "@types/node": "^25.0.8",
     "@vuepress/client": "2.0.0-rc.26",
     "@vuepress/helper": "2.0.0-rc.121",
-    "@vuepress/plugin-reading-time": "2.0.0-rc.121",
+    "@vuepress/plugin-reading-time": "2.0.0-rc.122",
     "dotenv": "^17.2.3",
     "exifr": "^7.0.0",
     "glob": "^13.0.0",
