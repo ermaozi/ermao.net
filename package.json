@@ -27,7 +27,7 @@
     "gray-matter": "^4.0.3",
     "mime-types": "^3.0.2",
     "tsx": "^4.21.0",
-    "vue": "^3.5.26",
+    "vue": "^3.5.28",
     "vue-router": "^4.6.4",
     "vuepress": "2.0.0-rc.26",
     "vuepress-theme-plume": "1.0.0-rc.187"
