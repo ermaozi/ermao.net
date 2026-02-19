@@ -1,0 +1,108 @@
+# LLM DocumentationThis file contains links to all documentation sections.
+
+## Table of Contents
+
+### 博客
+
+- [python装饰器详解](/article/0de7lze1/index.md): Python 装饰器（Decorator）是一个非常强大且灵活的特性，它允许你在不修改函数本身的情况下，动态地改变或扩展函数的行为。装饰器通常用于以下场景：日志记录、性能计时、访问控制、缓存等。理解装饰器的原理和使用方法将使你能够编写更加优雅且高效的代码。 本文将详细讲解 Python 装饰器的概念、基本用法、如...
+- [Windows/Linux/Mac 安装 Clash Verge（含订阅配置教程）](/article/0gematwc/index.md): 手把手教学 Windows、macOS、Linux 安装 Clash Verge 与 Clash，附订阅导入、Tun 模式开启、系统代理与测试步骤，新手也能快速完成科学上网配置。
+- [Zsh 安装与配置 - 使用 Oh My Zsh 美化终端](/article/106izvxs/index.md): 传统的 Bash 功能相对简陋且不美观。本文将带你通过 Debian 系统(Ubuntu 也一样)，安装 Zsh 以及 Oh My Zsh，对终端进行美化。Oh My Zsh 是 Zsh 的一个扩展工具集，提供了丰富的功能和主题，让终端界面更加个性化和高效。
+- [💸各大机场优惠券汇总](/article/23w1svxa/index.md): 收集各大翻墙机场的优惠券信息，让大家购买VPN时能享受更多的折扣和优惠，少花冤枉钱。
+- [✈️机场推荐【CyberGuard】 - 质量高、稳定运营两年](/article/4m7fg8r9/index.md): CyberGuard 是一家提供高速稳定 VPN 服务的机场，支持多种设备和平台，适合需要翻墙的用户。 CyberGuard机场官网地址：cyberguard.best
+- [✈️机场推荐【TNT】 - 新机场、IPLC专线](/article/4uxesz79/index.md): TNT机场，近期新上季付轻量包，专门为用量小的用户设计，10元/月。新机场、IPLC专线。 TNT官网地址：https://ermaozi02.tntvipaff.cc
+- [✈️机场推荐【xx云加速】 - 新机场、价格实惠](/article/6e3quult/index.md): xx云加速超高性价比，节点质量高，客服实时在线，晚高峰不限速，不限制设备，对 Netflix、Disney+ 流媒体解锁服务也还不错，8k视频秒开。 xxyun加速95折优惠码，只能使用一次：`xxyun.xyz` xx云加速官网地址：https://xxyun.de
+- [macOS ClashVergeRev 安装与使用指南](/article/6vxkmmuh/index.md): Clash Verge Rev 是一款高效的代理工具，专为 macOS 用户打造，兼容 M 芯片和 Intel 芯片。本文将为您详细介绍如何在 macOS 上安装和配置 Clash Verge Rev，帮助您顺利开始使用。
+- [✈️机场推荐【好鸭云】 - 价格实惠、送emby影视服务](/article/73dnyy9a/index.md): vuser.niceduck.io 购买记得用77折好鸭云优惠码 `duck-77` 又名`niceduck`，MisakaF、aca替代方案。 最便宜的订阅有12元 100G/月。使用77折好鸭云优惠码`duck-77`后，最低价格为9.24元 好鸭云节点非常稳定，老板态度好，客服也很热情，支持支付宝。 购买订阅后，...
+- [⚠️【机场跑路】2025年2月11日SFCloud与FCCloud机场跑路](/article/7asq3quy/index.md): 2025年2月11日，SFCloud与FCCloud官方确认已跑路。官网无法访问，节点全挂，工单不回复。 **立即停止续费，避免更大损失！** 目前，~~XSUS~~ 表示可以接手SFCloud和FCCloud用户（按原订阅30%接收），详情请在~~XSUS 官网~~ 注册后提交工单咨询。 在选择机场时，推荐选择...
+- [✈️机场推荐【掌中世界】 - 7天免费试用](/article/7eogfldo/index.md): 掌中世界机场有7天免费试用、24小时客服在线、一键加速、YouTube、三网5G加持、iOS专享福利、Netflix热门剧集解锁、全家设备通用 掌中世界官网地址：https://qq.zjs2025.com
+- [✈️【机场推荐】SSONE - 便宜实惠、高性价比、稳定可靠](/article/8jxmo76u/index.md): ssone机场，10元 100G/月，高性价比、稳定可靠、便宜机场。 ssone官网地址：hello-ssone.com
+- [✈️机场推荐【大哥云】 - 高性价比、老牌机场](/article/994p0u8j/index.md): https://ermao.dgywzc.com 最便宜的订阅有19.9元 100G/月。 大哥云机场5年老品牌，可以免费试用，支持奈飞等多家流媒体解锁，支持YOUTUBE 8K流畅观看支持IPLC线路。 https://www.ermao.net/posts/vpn - 📱 clash for Android...
+- [软路由安装openwrt](/article/9zktdhyx/index.md): 最近有朋友找我帮忙给他的软路由装个 openwrt，顺手写个教程，后面有想要装 openwrt 的朋友可以参考一下。
+- [飞牛OS通过docker安装OneDrive备份文件(超多废话版)](/article/aofygutj/index.md): 手把手教学飞牛OS如何通过docker安装OneDrive备份文件
+- [docker 部署 aria2](/article/b06gglcq/index.md): docker 部署 Aria2 下载器，并在浏览器端配置 Aria2 Explorer
+- [✈️机场推荐【龙猫云】 - 全IPLC专线、老牌机场](/article/b6t9mwuv/index.md): https://ermaozi01.lmvipaff03.cc/ 最便宜的订阅有 15元 100G/月。 **特性如下** - 超高性价比，节点质量高，客服实时在线，晚高峰不限速，不限制设备。 - IPLC深港、沪美、沪日专线， - 流媒体完美解锁（包括Netflix , Disney+, HBO等） - 完美解...
+- [✈️机场推荐【XSUS】 - 高性价比、老牌机场](/article/bc6o8acd/index.md): xsus机场，最低 8元 168G/月。老牌机场、稳定可靠、高性价比。 xsus官网地址：https://xs-us.xyz
+- [✈️机场推荐【闪狐云】 - 高性价比、新机场、优质节点](/article/bls8yo25/index.md): https://erozi01.ffvipaff.cc 闪狐云跨境专线，畅享全球网络无缝连接。 ⚡ 高速稳定，全球畅游 通过五大运营商BGP+IPLC动态优化和国际多个出口节点，闪狐云的网络连接稳定无忧，确保您随时随地享受如本地般的极速上网体验。无论是高清流媒体观看、在线游戏，还是重要的工作会议，网络质量始终如一...
+- [Telegram搜索机器人推荐——查找海量资源，提升信息检索效率](/article/bsnuua0h/index.md): 介绍Telegram搜索机器人的功能与使用方法，推荐几款高效的搜索机器人，帮助用户快速查找频道、群组、文件等多种资源，提升信息检索效率。
+- [Python生成器详解](/article/btszw3im/index.md): 生成器是 Python 中非常重要的特性之一，它能够让你以一种优雅且高效的方式处理大量数据。生成器可以在需要时动态生成数据，而不是一次性地把所有数据加载到内存中，这在处理大规模数据集时非常有用。本文将详细讲解生成器的概念、如何定义生成器、以及它的常见用途和最佳实践。 生成器是一种特殊的迭代器，它是通过 `yiel...
+- [通过Ollama本地部署DeepSeek代码大模型：从硬件配置到VSCode实战指南](/article/c3gj5lqy/index.md): 本文手把手教你通过Ollama在本地部署DeepSeek代码大模型，详解从FP32到INT4不同量化精度的硬件配置方案，并实战演示如何在VSCode中实现智能代码补全、实时错误检测和上下文感知开发。掌握零延迟的本地AI编程助手部署技巧，兼顾数据隐私与开发效率！
+- [⚠️【机场跑路】2025年2月27日阿童木机场跑路](/article/cge8887u/index.md): 2025年2月23日起，阿童木机场大量节点断连、客服失联、官网可以正常访问与购买。 **高度预警！** 立即停止购买与续费！
+- [2026年如何选择靠谱的翻墙机场？防跑路避坑指南](/article/choose-good-airport/index.md): 寻找翻墙机场时如何避坑？本文从实战出发，教你通过月付原则、线路识别（IEPL/CN2）、晚高峰测速、流媒体解锁测试等科学方法，筛选出最稳、最快、不易跑路的优质机场。
+- [✈️【2026机场推荐】CocoDuck - 海外团队运营、自有机房、两年稳定服务](/article/cocoduck/index.md): CocoDuck机场详细评测：由海外团队运营的高品质翻墙机场，拥有两年稳定运营历史、自有四个机房、40+全球节点，支持OpenAI和流媒体解锁，是2026年最值得信赖的稳定机场之一。 CocoDuck机场官网地址：https://cocoduck.live
+- [安卓电视/盒子/平板免费使用Emby](/article/d3apexwx/index.md): Emby是一款功能强大的媒体服务器，可以将你的音乐、视频、图片等媒体文件存储在服务器上，然后通过客户端在各种设备上观看。Emby支持多种设备，包括安卓电视、安卓盒子、安卓平板等。本文将介绍如何在安卓电视/盒子/平板上免费使用Emby。
+- [✈️机场推荐【奈云】 - 老牌机场、节点超多](/article/ds0jr525/index.md): 奈云机场是绝对的老牌机场，已稳定运营6年以上未出现过负面评价，节点数量非常多，足以满足大部分用户的需求。支持支付宝、微信支付。 奈云机场官网地址：aff.v2ny.mom
+- [AList 项目所有权疑似更迭：开源网盘工具引发社区关注](/article/dsbch7va/index.md): 近日，广受欢迎的开源网盘管理工具 AList 疑似发生所有权变更，引发社区广泛讨论和担忧。多个迹象表明项目可能已被转手，用户需警惕潜在风险。
+- [✈️机场推荐【冲上云霄】 - 自研平台、台湾家宽](/article/dycrz2ch/index.md): 冲上云霄是一个全自研开发平台，台湾家宽，隧道晚高峰自动切BGP入口、三网专线、GPT不降智。累计消费最高可以享七五折。 冲上云霄优惠码：`ermaozi` 购买套餐后使用此优惠码可以获得 20G 流量。 冲上云霄官网地址：https://cpdd.one
+- [✈️机场推荐【纵云梯】 - 新机场、节点通畅](/article/e5lzcgzg/index.md): 纵云梯机场是一个全自研开发平台，台湾家宽，隧道晚高峰自动切BGP入口、三网专线、GPT不降智。累计消费最高可以享七五折。 纵云梯官网地址：https://zongyunti.com/
+- [2026年 Clash for android 下载与安装](/article/eh8f4n86/index.md): 2026年Android手机Clash下载安装教程，简单易用适合新手。学习科学上网、VPN翻墙配置，包含Clash Meta For Android和Clash For Android安装、订阅URL导入和使用指南。
+- [路由器翻墙详细教程：2026年最佳路由器VPN配置指南](/article/fanqiang/index.md): 路由器翻墙是实现全家设备科学上网的最佳解决方案。通过在路由器上配置VPN，智能电视、游戏机、手机、电脑等所有设备都能自动获得翻墙能力，无需单独安装VPN软件。 本教程包含华为、小米、TP-Link路由器的VPN配置方法，推荐2026年最佳路由器VPN（SSONE机场、CocoDuck机场），提供路由器选择指南和性...
+- [什么是翻墙？2026年最新Clash代理工具完整指南](/article/fanqiang2/index.md): 2026年最新翻墙指南，详细介绍Clash、V2Ray等代理工具的使用方法，科学上网、网络安全、跨区解锁一次搞懂！
+- [✈️【机场推荐】小牛云 - 老牌机场、稳定可靠](/article/fhvr729f/index.md): ~~小牛云于2024年正式上线，依托母公司小牛VPN近5年的行业经验，拥有深厚的技术积淀和良好的品牌信誉，用户无需担心跑路风险~~。 小牛云官网地址：xiaoniuyun.cc
+- [GitHub无法访问？2026年最新6种解决方法（含DNS修改与加速工具）](/article/github/index.md): 国内访问GitHub经常遇到连接超时、无法打开或速度极慢的问题，通常是由于DNS污染或网络阻断导致的。本文整理了2026年最新6种解决GitHub无法访问的方法，包括修改Hosts文件、使用GitHub加速器、配置加密DNS以及终极VPN方案，助你秒开GitHub！
+- [✈️机场推荐【OKANC】 - 新机场、大流量、高质量](/article/giwzl7sq/index.md): okanc机场是一个新机场，但是与奈云同宗同源，有奈云的技术积累以及信誉保障，可以放心购买。节点主打高质量，速度快，延迟低。只是价格偏贵，适合电商、游戏等高需求用户。 okanc机场官网地址：okanc.com
+- [ubuntu2204中mongodb数据导入导出](/article/gokrv7a1/index.md): 近期在搭建开发环境时需要用到部分生产数据用于测试，单独作一篇文章来记录相关命令。
+- [✈️机场推荐【九霄云】 - 服务好，回购率高](/article/gqs2dway/index.md): 九霄云机场，16.8元 80G/月，轻量级机场、价格超低。 九霄云官网地址：https://shop.starpro.one
+- [✈️机场推荐【百变小樱】 - 五年老机场、免费流媒体账号](/article/jd2i293q/index.md): 百变小樱是一家自2020年起运营的低调小众机场，线路稳定可靠。团队已迁至海外运营，确保无按流量风险，主打产品特点为稳定性、全流媒体解锁、超低价格以及附赠流媒体账号。 百变小樱优惠码： 半年95折`happy10-1-6month`、一年88折`happy10-1-1year`、三年78折`happy10-1-3y...
+- [全网最全！6种方法解决 GitHub 国内由于 DNS 污染导致无法访问的问题](/article/jddtxrrw/index.md): GitHub 是一个面向开源及私有软件项目的托管平台，不管是行业大佬还是编程小白都可以在 GitHub 上交流学习，但是国内的 GitHub 访问被污染，导致无法正常访问。 本文通过 6 种方法解决 GitHub 访问被污染的问题。如果全部方法试用后仍然无法访问（概率极低），欢迎在下方评论，手把手帮你处理！
+- [使用cloudflare进行URL重定向](/article/jqtuqouj/index.md): 之前我的博客一直使用 wordpress，但是由于 wordpress 太过笨重、维护难度大、国内访问速度慢、还需要花钱租用后端服务器。所以我决定迁移到 github pages 重搞一个博客。 但是之前放在公网上的文章链接都是 wordpress 的，我又舍不得放弃这部分流量，所以用 cloudflare 进行...
+- [二月份的琐事](/article/k8gjtpf8/index.md): 近期的事情还挺多。 当然了，以往的事情也并不少，只是记不得去写。今天闲来无事，翻了翻陌生人的博客，感觉琐事挺有意思的。 也好久没写过关于自己的流水账了。
+- [✈️机场推荐【加速啦】- 便宜实惠、高性价比](/article/kewe92tu/index.md): https://jiasu.la 最便宜的订阅有10元 80G/月。 全自研开发面板，海外团队运营，专线节点1倍率，安全好用省心无日志纪录，节点质量高，客服实时在线，晚高峰不限速，不限制设备。 https://www.ermao.net/posts/vpn - 📱 clash for Android - 🖥 ...
+- [✈️【2026机场推荐】老头VPN - 公认老牌机场、稳定实惠、运营8年](/article/laotouvpn/index.md): 老头VPN详细评测：老牌翻墙机场，套餐从轻量到企业可选，最低起价 ¥25.00/月，运营8年稳定可靠、专业客服、解锁全流媒体，是2026年值得信赖的老牌机场之一。 老头VPN官网地址：https://www.chattous.net
+- [✈️机场推荐【青云梯】 - 高性价比、老牌机场](/article/mcridsxx/index.md): ermaozi01.qytvipaff.cc 最便宜的订阅有 8元 60g/月(年付)。 五年老牌机场，常年稳定运行，解锁Chatgpt，Tiktok及各大流媒体，IPLC专线节点，不限制同时使用客户端数量，高效客服响应，支持支付宝支付。 https://www.ermao.net/posts/vpn - 📱 ...
+- [⚠️【机场跑路】2025年4月28日XSUS机场跑路预警(已恢复)](/article/mwk3l9oq/index.md): 目前已恢复使用。 XSUS机场跑路预警！ XSUS官网经常无法访问，客服长时间不回复消息，telegram公告频道长时间无消息。 已是高危表现！**请立即停止续费！**
+- [⚠️【机场跑路】2025年1月25日EFCloud机场跑路](/article/nz313xp6/index.md): 2025年1月25日，EFCloud 机场跑路，官网可以法访问，订阅无法使用。机场已证实跑路，不再推荐使用。 目前 ~~XSUS~~ 正在接手EF用户，可转移部分订阅。详情可加TG群 ~~@xsusvpn~~ 咨询
+- [⏰ 免费机场 免费梯子 翻墙VPN](/article/oh8wwokl/index.md): ✈️ 免费机场 / 免费VPN -> 自动获取免 clash/v2ray/trojan/sr/ssr 订阅链接，间隔12小时持续更新 | 科学上网 | 翻墙
+- [✈️机场推荐【灯塔cloud】- 稳定、老牌机场](/article/osp1vx6y/index.md): 灯塔cloud机场客服响应速度很快，态度非常好，节点质量也很棒。灯塔Cloud团队会定期更新节点列表，确保节点的稳定性和可用性。同时，节点会根据网络状况动态调整，提供最优的连接体验。 灯塔cloud官网地址：https://dengtacloud.com 灯塔cloud优惠码：`XF777`，可享受95折优惠。
+- [✈️机场推荐【flybit】- 便宜实惠、高性价比](/article/q8yp9r2b/index.md): flybit机场，10元 100G/月，高性价比、IEPL接口线路。 flybit官网地址：goflybit.com
+- [如何判断一个机场使用的线路类型（如IPLC/IEPL专线、CN2、BGP中转等）](/article/r50bpg9j/index.md): 感谢网友@wannaCSmajor的提问： > 猫哥，我看有种说法是：“选购机场时，主要是看线路，其次才是节点数量，尽量选择IPLC/IEPL内网专线、BGP多入口中转（总体线路质量：华为云内网专线>IEPL内网专线>CN2>普通公网普通中转），在保证能流畅看视频前提下，稳定性最重要，其次才是速度”，请问怎么才能...
+- [python迭代器详解](/article/r6u6yjj9/index.md): 在 Python 中，**迭代器（Iterator）** 是用于访问集合中元素的一种对象。迭代器不仅能够遍历集合，还能在遍历过程中保持状态，允许你按需逐步访问元素，而无需一次性将所有元素加载到内存中。掌握迭代器的使用，可以帮助你编写更加高效且节省内存的代码。 本文将详细介绍 Python 中迭代器的概念、如何定义...
+- [✈️【机场推荐】老头VPN - 公认老牌机场、稳定实惠](/article/rklwp5go/index.md): 老头VPN，15.5元 150G/月，公认老牌机场、稳定实惠。 老头VPN官网地址：https://www.chattous.net
+- [✈️机场推荐【koodog】- 新机场，便宜实惠，体验流畅](/article/rq55p9dn/index.md): KooDog 使用 Trojan 协议，相对安全稳定。网络入口提供了三网专线支持，实测 单线程峰值可跑到 2Gbps，无论是刷流媒体还是下载大文件，表现都非常流畅。 KooDog 机场官网地址：koodog.com
+- [翻墙之后如何利用信息差赚点外快](/article/rsvptr5x/index.md): 先教大家一个最简单最靠谱的方法——通过推广Telegram的极搜机器人，每月赚200刀（约1400人民币）。
+- [2026便宜机场推荐：SSONE机场评测（10元60G、Netflix/ChatGPT解锁、稳定高速）](/article/ssone/index.md): 2026 SSONE机场详细评测：10元60G/月、IEPL专线与广覆盖节点，支持 Netflix/Disney+/YouTube/ChatGPT 解锁；涵盖价格套餐、速度测试、客户端配置与购买指南，适合新手与重度用户的高性价比翻墙机场。
+- [搜索引擎查找 Ollama 本地部署的 DeepSeek，实现免费 AI 运行](/article/tj38tso3/index.md): 大多数教程都集中在如何本地部署 DeepSeek 模型，但本教程将引导您探索另一种方法：通过搜索引擎（如 Fofa 和 Shodan）查找公开的 Ollama 模型 API 服务。 Ollama 是一个强大的支持本地部署的大型语言模型，允许用户通过 API 进行交互。借助 Fofa 和 Shodan 等搜索引擎，...
+- [HTTP 状态码大全](/article/u5a30qtd/index.md): HTTP 状态码是服务器响应请求时返回的状态码，用于表示服务器的响应状态。常见的状态码有 5 类，分别以不同的数字开头，每个状态码都有特定的含义。
+- [wsl将ubuntu换成debian](/article/ubm5k5vn/index.md): 因为 debian 更稳定、更轻量，所以想把 wsl2 中的 ubuntu 换成 debian。 本文记录一下过程。
+- [TrueNAS虚拟机备份](/article/vgf2ez1r/index.md): TrueNAS虚拟机备份
+- [安卓TV软件推荐与下载](/article/vw1nq52m/index.md): 推荐一些安卓TV软件，以及下载地址。
+- [唯兔云怎么样？2026最新评测 - IPLC专线机场推荐(6元起/不限设备/解锁ChatGPT)](/article/weituyun/index.md): 2026年唯兔云(OnlyRabbit)最新评测：最低6元/月的IPLC专线机场，不限速、不限设备数量。完美解锁Netflix/Disney+/TikTok/ChatGPT/Gemini。提供港台日美新及东南亚节点，是跨境电商、直播运营及重度流媒体用户的性价比首选。
+- [如何在telegram中使用极搜搜索](/article/wwpg9n59/index.md): 目前 telegram 开放了部分 +86 手机号注册，一些没有境外手机号的同学可以尝试注册了。但是 telegram 资源十分丰富，我们该如何在 telegram 中进行搜索呢？ 这边文章教大家如何使用极搜在 telegram 中进行搜索。
+- [2026年稳定机场推荐：星岛梦机场评测（IEPL专线、不限速、解锁流媒体）](/article/xingdaomeng/index.md): 2026 星岛梦机场详细评测：IEPL专线接入，月付16元起，支持1T不限时套餐；全线解锁Netflix/Disney+/ChatGPT/TikTok，不限速不限设备，适合跨境电商与重度流媒体用户。
+- [使用Vim上班看小说](/article/yifph1jd/index.md): 据媒体报导，2022届高校毕业生规模预计达1076万人，同比增加167万人，再创历史新高。 如此大规模的毕业生涌入人才市场，企业该如何消化呢？又有什么办法能够降低就业难度呢？ 以我拙见，这并非老板需要考虑的问题，而是需要我们在职社畜来进行努力。努力的方向也很简单：停止内卷、投身摸鱼事业，降低单人工作量以增加就业岗...
+- [Shadowrocket(小火箭)新手使用教程2025：下载安装、节点订阅与配置指南(含免费美区ID)](/article/z747kgjd/index.md): 2026最新Shadowrocket（小火箭）新手使用教程。详细介绍如何在iOS/iPhone/iPad及Mac上下载安装Shadowrocket，如何获取免费美区Apple ID，以及如何配置节点订阅链接进行科学上网。
+- [✈️【机场推荐】阿达西 - 价格最优、节点通畅](/article/zf12sje8/index.md): 阿达西机场是一个新机场，价格最优，节点通畅，适合长期使用。阿达西机场的节点质量非常好，速度快，延迟低，适合各种网络需求。 阿达西机场官网地址：https://adaxi.net
+- [✈️机场推荐【白羊星】 - 节点稳定、全流媒体解锁](/article/zuuzyvvh/index.md): 白羊星机场，12元 100G/月，轻量级机场、价格超低。 白羊星官网地址：baiyangxing.com
+- [9esim使用指南 - 获取国外手机号，注册Google、Telegram等账号](/blog/9esim/index.md): 2026年实测 9esim使用指南完整教程：购买9esim v3卡和esim plus应用，获取国外手机号，注册Google账号、Telegram等海外服务的详细步骤。可长期持有，区别与接码平台。适合需要虚拟手机号的用户。
+- [✈️【2026机场推荐】CCYZ - 15元100G，高性价比 IEPL 专线机场](/blog/ccyz/index.md): CCYZ 机场评测，15 元 100G 起步，IEPL 专线+BGP 中转，提供高性价比、晚高峰不限速、流媒体全解锁的稳定翻墙体验，并附优惠券与套餐解析。
+- [✈️【2026机场推荐】大哥云 - 高性价比、老牌机场](/blog/dageyun/index.md): 大哥云机场详细测评：提供多地域节点、高性价比订阅、支持 Netflix / ChatGPT，适合需要稳定带宽和流媒体解锁的长期开梯用户。
+- [飞牛OS虚拟机安装openwrt作为旁路由](/blog/fnoswrt/index.md): 飞牛OS虚拟机安装OpenWrt作为旁路由的详细教程，帮助你在飞牛OS上轻松搭建OpenWrt旁路由，实现家庭网络管理与优化。
+- [2026最新免费美区Apple ID共享账号 | Shadowrocket/小火箭下载 | iOS美区账号每日更新](/blog/freeappleid/index.md): 2026年最新免费共享美区Apple ID账号，每日更新可用。提供美国、日本、韩国、香港、台湾等地区iOS账号，支持下载Shadowrocket（小火箭）、TikTok、ChatGPT等海外应用。
+- [翻墙之后可以做什么？2026年科学上网必备国外网站清单](/blog/gfwwebstie/index.md): 翻墙后能访问的网站完整指南：按类别深度介绍 GitHub、YouTube、Google、Netflix 等国外主流网站。包含官网链接、核心功能、使用场景与独家实用技巧，适合新手与进阶用户阅读。
+- [Google官方SEO入门指南完整版：从零开始优化网站排名](/blog/googleseo/index.md): Google官方教你如何做好SEO（搜索引擎优化），提升网站在搜索结果中的排名和流量。本文详细解读Google的SEO入门指南，帮助你优化网站内容和结构。
+- [2026稳定性价比机场推荐：光年梯机场评测（18元110G、IEPL Trojan专线、流媒体/ChatGPT全解锁）](/blog/guangnianti/index.md): 2026 光年梯机场详细评测：18元110G/月、IEPL Trojan专线与ss协议支持，新加坡海外团队运营。支持 Netflix/Disney+/YouTube 4K/ChatGPT 解锁；晚高峰不限速，适合对稳定性有高要求的用户。
+- [2026稳定机场推荐：光速云评测（高速专线、性价比之选、流媒体解锁）](/blog/guangsuyun/index.md): 2026光速云(Lightspeed Cloud)详细评测：最低年付99元，月付17元起。采用高速专线，解锁Netflix/ChatGPT，晚高峰稳定。适合跨境办公、留学生及流媒体用户。
+- [【新闻】海南新增SEA-H2X与ALC海缆：海口出入口局助力跃居全国第二，解析中国流量出海新枢纽](/blog/hainanguanlan/index.md): 海南新增 SEA-H2X 与 ALC 两条国际海缆，总设定容量约 498Tb；海口三网出入口局叠加自贸港与中国—东盟政策红利，或使海南超越上海、仅次于香港。文内附海缆容量排名、数据口径说明与产业影响解读。
+- [电脑如何翻墙？2026年Windows与Mac科学上网新手指南](/blog/how-to-vpn-on-computer/index.md): 2026年最新电脑翻墙指南，专为Windows和Mac小白用户设计。详解Clash Verge Rev安装、节点订阅导入及常见问题解决，助你快速实现PC端科学上网。
+- [手机如何翻墙？2026年最新Android与iOS科学上网保姆级教程](/blog/how-to-vpn-on-mobile/index.md): 2026年最新手机翻墙指南，手把手教你如何在Android和iPhone(iOS)手机上实现科学上网。从软件下载(Clash/Shadowrocket)到节点配置，零基础也能学会。
+- [2026稳定机场推荐：极连云(JiLianCloud)评测，全IPLC专线不限设备](/blog/jilianyun/index.md): 2026极连云(JiLianCloud)详细评测：极连云怎么样？极连云官网地址是多少？本文详细介绍极连云套餐价格、优惠码及测速表现。极连云采用企业级IPLC/IEPL专线，全节点解锁Netflix/ChatGPT，不限制设备数量，是高性价比的科学上网选择。
+- [✈️【2026机场推荐】全球云 - 20元月付Trojan专线机场，高速解锁流媒体](/blog/quanqiuyun/index.md): 全球云机场评测，专注 IPLC/IEPL 专线加速，提供 Shadowrocket/Clash 等多端支持。最低 20 元月付，原生 IP 解锁 Netflix/Disney+，晚高峰稳定。
+- [2026年软路由全屋翻墙指南：OpenWrt安装配置与旁路由教程](/blog/softrouter/index.md): 想要实现全屋设备（手机、电视、PS5/Switch）自动翻墙？最强方案是使用软路由。本文从零开始，详细介绍软路由硬件选择、OpenWrt系统刷机、旁路由模式配置及OpenClash/PassWall插件使用教程，助你打造极致的家庭科学上网环境。
+- [2026稳定机场推荐：随便云(SuiBian)评测 - 多线BGP回源/全球专线/不跳延迟 - 高性价比翻墙VPN](/blog/suibian/index.md): 2026年随便云(SuiBian)机场深度评测：随便云怎么样？官网地址是多少？随便云提供多线BGP回源与全球IEPL专线，晚高峰稳定不跳延迟，完美解锁Netflix/Disney+流媒体。最低仅需10元/月，附最新注册地址及全平台客户端配置教程。
+- [✈️【2026机场推荐】SuperBiu - 三网入口 IPLC，全球流媒体秒开](/blog/superbiu/index.md): SuperBiu 机场详评：三网入口的国际 IPLC 专线，数据全程不走公网，支持全球流媒体与 GPT 解锁，提供包月与按量付费套餐，适合观影、炒币与低延迟游戏场景。
+- [2026年最新 telegram（电报、飞机）注册使用教程](/blog/telegram/index.md): Telegram注册使用教程：学习Telegram隐私保护、跨平台同步、群组频道创建和机器人使用。适合新手，包含完整注册流程、核心功能和安全建议。
+- [2026 ✈️【vpn推荐】天喵加速器 - 免费稳定VPN，游戏视频加速首选](/blog/tianmiao/index.md): 2026年最新天喵加速器评测与推荐：永久免费、高速稳定的VPN服务，支持多国节点与IP代理，专为游戏与视频加速优化。详细套餐价格、使用指南与常见问题解答，助你轻松跨境上网。
+- [2026稳定机场推荐：uuone评测 - BGP中转/晚高峰不限速/解锁Netflix - 高性价比翻墙VPN](/blog/uuone/index.md): 2026年uuone机场深度评测：uuone怎么样？官网地址是多少？uuone提供BGP三网优化线路，晚高峰不限速，完美解锁Netflix/Disney+流媒体。最低仅需12元/月，附最新9折优惠码及Clash/Shadowrocket配置教程。
+- [国内购买vpn违法吗？](/blog/vpnhefa/index.md): 解析在中国购买 VPN 的法律界限，阐明“私自搭建违法、普通购买通常不违法”的逻辑，并给出合规使用建议。
+- [OKX虚拟币入门教程：注册、USDT充值、转账与提现全流程攻略](/blog/web3okx/index.md): 虚拟币入门：快速理解数字货币、Web3、USDT、交易所分类（CEX与DEX），以及OKX开户、充值、交易与基础风险提示。
+- [✈️【2026机场推荐】小牛云 - 老牌机场、稳定可靠](/blog/xiaoniu/index.md): ~~小牛云于2024年正式上线，依托母公司小牛VPN近5年的行业经验，拥有深厚的技术积淀和良好的品牌信誉，用户无需担心跑路风险~~。 小牛云官网地址：xiaoniuyun.cc
+- [2026年稳定机场推荐：xsus机场评测（BGP三网优化、不限时流量、晚高峰不掉速）](/blog/xsus/index.md): 2026 xsus机场详细评测：BGP三网优化线路，晚高峰不炸速，支持Netflix/Disney+等流媒体解锁。提供10元/168G起的高性价比套餐及不限时流量包，适合追求稳定体验的用户。
+- [✈️【2026机场推荐】XXYUN - 9.99元100G，老牌高性价比 BGP 专线机场](/blog/xxyun/index.md): XXYUN 机场详评：老牌运营两年、全 BGP 中转、9.99 元 100G 入门价，并提供流媒体全解锁与 85 折/9 折优惠券，是 2026 年值得关注的高性价比专线机场。
+
+### Others
+
+- [2026年热门翻墙机场推荐](/airport/index.md): 2026年热门翻墙机场推荐，精简内容，方便快速浏览各大机场详情。
+- [友链](/friends/index.md): 互换友链的朋友请把信息发送到我的邮箱，我会尽快添加。
+- [【新闻】Stash 疑似大面积“缝合”开源代码](/news/kne6vczb/index.md): 接群友匿名投稿，知名代理软件 Stash Mac 涉嫌大量复制粘贴开源代码，涉及多个GPL、AGPL协议下的代码库。 爆料源：https://x.com/nek0hasekai/status/1941361311130235189
+- [2026年便宜好用的翻墙机场推荐评测(科学上网长期更新)](/posts/vpn/index.md): 2026年翻墙机场推荐与VPN评测指南，精选便宜好用的科学上网工具，涵盖节点速度、套餐价格与设置教程，帮助国内用户稳定访问Netflix、ChatGPT等海外服务。
+- [⚠️【机场跑路】2025年12月02日小牛云机场跑路预警](/scamvpn/xiaoniu/index.md): 2025年12月01日起，小牛云机场大量节点断连、客服失联、官网可以正常访问与购买。 **中度预警！** 谨慎续费购买！
+- [](/stats/index.md)

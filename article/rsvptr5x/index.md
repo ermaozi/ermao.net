@@ -1,0 +1,77 @@
+---
+url: /article/rsvptr5x/index.md
+description: 先教大家一个最简单最靠谱的方法——通过推广Telegram的极搜机器人，每月赚200刀（约1400人民币）。
+---
+先教大家一个最简单最靠谱的方法——通过推广Telegram的[极搜机器人](https://t.me/jisou?start=a_1453425105)，每月赚200刀（约1400人民币）。
+
+## 先使用极搜机器人
+
+登陆Telegram后，直接点击这个链接：[极搜机器人](https://t.me/jisou?start=a_1453425105)
+
+就可以自动启用了。
+
+![极搜机器人](https://image.ermao.net/images/article/rsvptr5x/image.png)
+
+## 获取推广链接
+
+先输入`/pc`呼出推广数据菜单。点击`邀请赚钱`。
+
+![极搜机器人](https://image.ermao.net/images/article/rsvptr5x/image-1.png)
+
+点击复制[专属分享链接](https://t.me/jisou?start=a_1453425105)后就可以把这个链接分享给别人了。
+
+![极搜机器人](https://image.ermao.net/images/article/rsvptr5x/image-2.png)
+
+## 推广奖励
+
+![极搜机器人](https://image.ermao.net/images/article/rsvptr5x/image-3.png)
+
+详细推广奖励如下，上面说到的是链接推广，每个人头只有0.08刀，你也可以创建一个频道或群组，邀请[极搜机器人](https://t.me/jisou?start=a_1453425105)进来，这样奖励会更高。
+
+### 拉新奖励
+
+邀请方式一：使用[极搜机器人](https://t.me/jisou?start=a_1453425105)直推一个新用户获得0.08美元拉新奖励
+
+邀请方式二：把[极搜机器人](https://t.me/jisou?start=a_1453425105)邀请进群组|频道，就会收到一条推送，然后点击在“此群组|频道分享极搜”。[极搜机器人](https://t.me/jisou?start=a_1453425105)就会定时向此群组|频道推送拉新文案。新用户点此文案下方按钮进入极搜，你会获得0.16美元拉新奖励
+
+### 裂变奖励
+
+你的一级直推，每裂变一个用户，你会获得0.02美元二级裂变奖励
+
+### 搜索收益
+
+你的直推用户每进行一次搜索，你会获得0.0036美元收益。你的二级裂变用户每进行一次搜索你获得0.0009美元收益。
+
+### 创建搜索群
+
+创建一个搜索群，将[极搜机器人](https://t.me/jisou?start=a_1453425105)邀请进群，并开启搜索。只要有人在你的群每进行一次搜索你都会获得0.0036美元收益。开启了置顶权限且群日活超过30人，还会有置顶广告收益。
+
+## 提现
+
+当你的余额大于50刀后，在[极搜机器人](https://t.me/jisou?start=a_1453425105)输入`/pc`呼出推广数据菜单。点击`收益提现`。
+
+![极搜机器人](https://image.ermao.net/images/article/rsvptr5x/image-4.png)
+
+然后点击`立即提现`
+
+![极搜机器人](https://image.ermao.net/images/article/rsvptr5x/image-5.png)
+
+点击`UT钱包`
+
+![极搜机器人](https://image.ermao.net/images/article/rsvptr5x/image-6.png)
+
+回复提现金额后就可以完成提现了。要注意的是不满50刀无法提现。
+
+![极搜机器人](https://image.ermao.net/images/article/rsvptr5x/image-7.png)
+
+等待一段时间（大约24小时）审核后，你就可以在[UT钱包](https://t.me/UTBOT)中看到提现的金额了。
+
+在[UT钱包](https://t.me/UTBOT)中可以点击`提币`将钱包中的USTD提到自己的钱包或交易所中。要注意的是，每次提币需要支付2USTD的手续费。
+
+![UT钱包](https://image.ermao.net/images/article/rsvptr5x/image-8.png)
+
+## 总结
+
+通过推广[极搜机器人](https://t.me/jisou?start=a_1453425105)，你可以轻松赚取外快。只需分享你的推广链接，邀请新用户注册并使用极搜进行搜索，就能获得丰厚的奖励。
+
+如果有同学不知道USTD怎么注册钱包、兑换人民币、不知道怎么注册安装Telegram，可以在评论区留言。新手比较多的话，我会单独出一篇教程。
