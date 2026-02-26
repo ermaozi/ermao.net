@@ -44,6 +44,8 @@ tags:
 
 [![机场推荐光年梯](https://image.ermao.net/images/blog/guangnianti/20260129_160048-961842.jpg)](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) [光年梯](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) 18元110G，IEPL Trojan专线，晚高峰不限速，新加坡团队。起步价：18元/月。[>详情](blog/机场推荐/v2/机场推荐光年梯.md)
 
+[![机场推荐隐云](https://image.ermao.net/images/blog/yinyun/20260226_181353-f3269a.png)](https://wkacc.xyz/?code=db949e40) [隐云](https://wkacc.xyz/?code=db949e40) 双模驱动（专属客户端+通用订阅），IPLC/IEPL/BGP多线路专线，魔法节点智能分流。起步价：25元/月。[>详情](blog/机场推荐/v2/机场推荐隐云.md)
+
 [![机场推荐xsus](https://image.ermao.net/images/blog/xsus/20260129_162650-08b59d.png)](https://xs-us.xyz/register?code=xJFcT1Dw) [xsus](https://xs-us.xyz/register?code=xJFcT1Dw) 10元168G起，BGP三网优化，晚高峰不掉速，不限时套餐。起步价：10元/月。[>详情](blog/机场推荐/v2/机场推荐xsus.md)
 
 :::

@@ -117,6 +117,7 @@ description: 2026年最新翻墙机场推荐与好用的VPN评测指南，精选
 |[xxyun](#xxyun)|[xxyun.de](https://xxyun.de/XQiZqbSr.html)| 无 |9.99元 100G/月|✔|[TG](https://t.me/+eYsE6P_xvjk2NGY5)|[前往](./v2/机场推荐xxyun.md)|
 |[flybit](#flybit)|[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔|[TG](https://t.me/flybitvip)|[前往](./v1/机场推荐flybit.md)|
 |[cocoduck](#cocoduck)|[cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|
+|[隐云](#隐云)|[wkacc.xyz](https://wkacc.xyz/?code=db949e40)| 无 |25元 150G/月|❌|暂无|[前往](./v2/机场推荐隐云.md)|
 |[奈云](#奈云)|[aff.v2ny.mom](https://aff.v2ny.mom?path=register&code=FNAu1FWB)|无|10.6元 168G/月(年付)|✔|[TG](https://t.me/v2naiun)|[前往](./v1/机场推荐奈云.md)|
 |[全球云](#全球云)|[ermaozi01.gcvipaff.cc](https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA)| 无 |20元 120G/月|✔|[TG](https://t.me/quanqiuyun001)|[前往](./v2/机场推荐全球云.md)|
 |[阿达西](#阿达西)|[adaxi.net](https://adaxi.net/?r=68917)| 无 |3元 20G/月|✔|暂无|[前往](./v1/机场推荐阿达西.md)|
@@ -251,6 +252,27 @@ flybit官网地址：[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM
 | **BGP 智能优化 · 高端方案** | 100元/月 | **700GB**<br>BGP多线融合调度，带宽充足，8K超清，解锁流媒体/AI | [立即购买](https://ermaozi01.gcvipaff.cc/#/order?planId=3) |
 | **BGP 智能优化 · 商业方案** | 180元/月 | **1.5TB**<br>企业级BGP智能路由，商用级 ChatGPT/Claude 支持，高并发 | [立即购买](https://ermaozi01.gcvipaff.cc/#/order?planId=4) |
 | **独享私人专线节点** | 600元/月 | **500GB**<br>独立带宽资源，独立公网 IP，适合 TikTok 直播/独立站 | [立即购买](https://ermaozi01.gcvipaff.cc/#/order?planId=5) |
+
+---
+
+### 隐云
+
+隐云机场官网地址：[wkacc.xyz](https://wkacc.xyz/?code=db949e40)
+
+最便宜的订阅有25元 150G/月。
+
+隐云是业内独家提供 **VPN 专属客户端与通用订阅兼容双模式** 的机场服务商。采用企业级 IPLC / IEPL / BGP 多线路专线架构，覆盖全球 30+ 国家和地区超 100 个节点，99.9% 高可用保障。独家"魔法节点"技术实现服务端智能分流，无需客户端配置即可自动将 Netflix、Disney+、ChatGPT 等服务路由至最优解锁线路。
+
+**付费周期折扣**：月付无折扣 / 季付 95 折 / 年付 8 折
+
+| 套餐 | 模式 | 价格 | 流量 | 设备限制 | 购买链接 |
+|:-----|:-----|-----:|:----:|:--------:|:---------|
+| 轻量版 | 专属客户端 | ¥29/月 | 不限 | 2 台同时在线 | [立即购买](https://wkacc.xyz/?code=db949e40) |
+| 轻量版 | 通用订阅 | ¥25/月 | 150GB/月 | 不限 | [立即购买](https://wkacc.xyz/?code=db949e40) |
+| 标准版 | 专属客户端 | ¥49/月 | 不限 | 5 台同时在线 | [立即购买](https://wkacc.xyz/?code=db949e40) |
+| 标准版 | 通用订阅 | ¥49/月 | 400GB/月 | 不限 | [立即购买](https://wkacc.xyz/?code=db949e40) |
+| 高级版 | 专属客户端 | ¥99/月 | 不限 | 10 台同时在线 | [立即购买](https://wkacc.xyz/?code=db949e40) |
+| 高级版 | 通用订阅 | ¥99/月 | 1024GB/月 | 不限 | [立即购买](https://wkacc.xyz/?code=db949e40) |
 
 ---
 
