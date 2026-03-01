@@ -59,8 +59,8 @@ export default defineClientConfig({
       }
     }
 
-    if (typeof window !== 'undefined') {
-        router.afterEach((to, from) => {
+    if (typeof window !== 'undefined' && router?.afterEach) {
+      router.afterEach((to, from) => {
             const toPath = to.fullPath.split('#')[0]
             const fromPath = from?.fullPath?.split('#')[0]
 
