@@ -31,7 +31,7 @@
     "vue": "^3.5.29",
     "vue-router": "^4.6.4",
     "vuepress": "2.0.0-rc.26",
-    "vuepress-theme-plume": "1.0.0-rc.187"
+    "vuepress-theme-plume": "1.0.0-rc.191"
   },
   "dependencies": {
     "@iconify/json": "^2.2.443",
