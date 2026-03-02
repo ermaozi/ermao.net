@@ -16,6 +16,8 @@ tags:
 
 ::: card-masonry cols="3" gap="20" 
 
+[![机场推荐flybit](https://image.ermao.net/images/blog/flybit/20260302_202715-c22f02.png)](https://goflybit.com/#/register?code=7h1NCdM7) [flybit](https://goflybit.com/#/register?code=7h1NCdM7) 全IEPL专线，晚高峰稳定不卡顿，解锁Netflix/ChatGPT。起步价：15元/月。[>详情](blog/机场推荐/v2/机场推荐flybit.md)
+
 [![机场推荐uuone](https://image.ermao.net/images/blog/uuone/image-1.png)](https://uuone.de/ermao.html) [uuone](https://uuone.de/ermao.html) 高性价比BGP三网优化，晚高峰不限速，解锁Netflix。起步价：12元/月。[>详情](blog/机场推荐/v2/机场推荐uuone.md)
 
 [![机场推荐大哥云](https://image.ermao.net/images/blog/dageyun/image.jpg)](https://ermao.dgywzc.com/#/register?code=peAVAa8D) [大哥云](https://ermao.dgywzc.com/#/register?code=peAVAa8D) 5年老牌，免费试用，支持流媒体及8K，IPLC线路。起步价：19.9元/月。[>详情](blog/机场推荐/v2/机场推荐大哥云.md)
