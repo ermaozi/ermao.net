@@ -116,8 +116,9 @@ description: 2026年最新翻墙机场推荐与好用的VPN评测指南，精选
 |[flybit](#flybit)|[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM7)| 1天2G |15元 128G/月|✔|[TG](https://t.me/flybitvip)|[前往](./v2/机场推荐flybit.md)|
 |[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 60G/月|❌|[TG](https://t.me/+rYzRmCbJfIw3ZTM1)|[前往](./v2/机场推荐ssone.md)|
 |[xxyun](#xxyun)|[xxyun.de](https://xxyun.de/XQiZqbSr.html)| 无 |9.99元 100G/月|✔|[TG](https://t.me/+eYsE6P_xvjk2NGY5)|[前往](./v2/机场推荐xxyun.md)|
-|[XSUS](#xsus)|[xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔|[TG](https://t.me/xsusvpn)|[前往](./v1/机场推荐XSUS.md)|
+|[XSUS](#xsus)|[xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔|[TG](https://t.me/xsusvpn)|[前往](./v2/机场推荐xsus.md)|
 |[奈云](#奈云)|[aff.v2ny.mom](https://aff.v2ny.mom?path=register&code=FNAu1FWB)|无|10.6元 168G/月(年付)|✔|[TG](https://t.me/v2naiun)|[前往](./v1/机场推荐奈云.md)|
+|[迅达](#迅达)|[sulianproxy.com](https://sulianproxy.com/register?code=bXIAotbG)| 免费试用 |15元 120G/月|❌|[TG](https://t.me/xundaroot)|[前往](./v2/机场推荐迅达.md)|
 |[隐云](#隐云)|[wkacc.xyz](https://wkacc.xyz/?code=db949e40)| 无 |25元 150G/月|❌|暂无|[前往](./v2/机场推荐隐云.md)|
 |[cocoduck](#cocoduck)|[cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|
 |[阿达西](#阿达西)|[adaxi.net](https://adaxi.net/?r=68917)| 无 |3元 20G/月|✔|暂无|[前往](./v1/机场推荐阿达西.md)|
@@ -627,6 +628,26 @@ xxyun加速特性如下：
 | 280G [按量计费] | ¥98.00 /一次性 | 280GB/不限时 | [点击购买](https://aff.v2ny.mom?path=register&code=FNAu1FWB) |
 | 680G [按量计费] | ¥218.00 /一次性 | 680GB/不限时 | [点击购买](https://aff.v2ny.mom?path=register&code=FNAu1FWB) |
 | 2048G [按量计费] | ¥498.00 /一次性 | 2048GB/不限时 | [点击购买](https://aff.v2ny.mom?path=register&code=FNAu1FWB) |
+
+---
+
+### 迅达
+
+迅达机场官网地址：[sulianproxy.com](https://sulianproxy.com/register?code=bXIAotbG)
+
+试用：注册可免费试用
+
+最便宜的订阅有15元 120G/月。
+
+迅达主打稳定与高性价比，节点覆盖 87 个国家，支持 Netflix、YouTube 4K、TikTok、ChatGPT 等主流服务访问。套餐支持 5-10 台设备同时在线，提供 7x24 小时工单支持；官方明确限个人使用，禁止多人共用。
+
+| 套餐 | 价格 | 流量 | 线路/设备 | 购买地址 |
+| --- | --- | --- | --- | --- |
+| 基础套 | ¥15 /月 | 120GB/月 | 小众节点，5台设备；手动重置 ¥15/次 | [点击购买](https://sulianproxy.com/register?code=bXIAotbG) |
+| 中级套（推荐） | ¥35 /月 | 300GB/月 | 多地BGP跨境专线，10台设备；手动重置 ¥35/次 | [点击购买](https://sulianproxy.com/register?code=bXIAotbG) |
+| 高级套 | ¥50 /月 | 600GB/月 | 全域企业级跨境专线，10台设备；手动重置 ¥50/次 | [点击购买](https://sulianproxy.com/register?code=bXIAotbG) |
+
+官方频道：[t.me/xundaroot](https://t.me/xundaroot)
 
 ---
 
