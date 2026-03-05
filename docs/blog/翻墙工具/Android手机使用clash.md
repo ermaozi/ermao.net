@@ -1,5 +1,5 @@
 ---
-title: 2026年 Clash for android 下载与安装
+title: 2026年 Clash for Android 下载与安装
 createTime: 2024/09/17 17:26:51
 permalink: /article/eh8f4n86/
 tags:
@@ -13,7 +13,7 @@ description: 2026年Android手机Clash下载安装教程，简单易用适合新
 
 ---
 
-2026年实测 Clash for android 下载与安装，简单易用，适合新手。
+2026 年实测 Clash for Android 下载与安装，简单易用，适合新手。
 
 <!-- more -->
 
@@ -35,7 +35,7 @@ description: 2026年Android手机Clash下载安装教程，简单易用适合新
 
 :::
 
-上选一个安装，推荐下载 Clash Meta For Android
+上面 3 个版本任选其一，推荐下载 Clash Meta For Android。
 
 ## 配置
 
@@ -55,7 +55,7 @@ description: 2026年Android手机Clash下载安装教程，简单易用适合新
 
 将获取到的 URL 粘贴到这里，点击确定
 
-如果你没有 URL，可以在这里获取：[便宜好用的翻墙机场推荐评测](https://www.ermao.net/posts/vpn)
+如果你没有 URL，可以在这里获取：[便宜好用的翻墙机场推荐评测](/posts/vpn)
 
 ![Android Clash设置自动更新时间](https://image.ermao.net/images/article/eh8f4n86/image-4.png)
 
@@ -77,7 +77,13 @@ description: 2026年Android手机Clash下载安装教程，简单易用适合新
 
 ![Android Clash科学上网成功界面](https://image.ermao.net/images/article/eh8f4n86/image-8.png)
 
-然后就完成了
+然后就完成了。
+
+## 延伸阅读
+
+- [iOS Clash Mi 使用教程](/blog/rkfw4zkq/)
+- [手机如何翻墙（Android + iOS）](/blog/how-to-vpn-on-mobile/)
+- [电脑如何翻墙（Windows + Mac）](/blog/how-to-vpn-on-computer/)
 
 ## 其他
 
