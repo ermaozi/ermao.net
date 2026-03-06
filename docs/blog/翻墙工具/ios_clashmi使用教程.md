@@ -17,7 +17,7 @@ Clash Mi 是一款内置 `mihomo`（Clash Meta）内核的代理工具，支持 
 
 <!-- more -->
 
-![Clash Mi 官网与应用概览](images/ios_clashmi使用教程/image-1.png)
+![Clash Mi 官网与应用概览](https://image.ermao.net/images/blog/clashmi/20260305_103545-57abfa.png)
 
 官网地址：[https://clashmi.app/](https://clashmi.app/)
 
@@ -27,7 +27,7 @@ Clash Mi 是一款内置 `mihomo`（Clash Meta）内核的代理工具，支持 
 - 上手门槛低，导入机场订阅即可使用。
 - 界面简洁，适合新手快速入门。
 
-![Clash Mi 主界面预览](images/ios_clashmi使用教程/image-2.png)
+![Clash Mi 主界面预览](https://image.ermao.net/images/blog/clashmi/20260305_103743-3935fc.png)
 
 ## 使用前准备
 
@@ -67,19 +67,19 @@ Clash Mi 只是客户端，连接外网还需要可用的 Clash 订阅。
 
 进入 `我的配置` -> 右上角 `+` -> `添加配置链接`，粘贴你的订阅 URL。
 
-![Clash Mi 添加配置](images/ios_clashmi使用教程/image-3.png)
+![Clash Mi 添加配置](https://image.ermao.net/images/blog/clashmi/20260305_103809-b1ab1b.png)
 
 ### 第 2 步：确认配置已生效
 
 导入后在配置列表中选中你刚添加的订阅。
 
-![Clash Mi 配置列表](images/ios_clashmi使用教程/image-4.png)
+![Clash Mi 配置列表](https://image.ermao.net/images/blog/clashmi/20260305_103816-7c1edf.png)
 
 ### 第 3 步：开启连接
 
 返回首页，打开连接按钮即可。
 
-![Clash Mi 开启连接](images/ios_clashmi使用教程/image-5.png)
+![Clash Mi 开启连接](https://image.ermao.net/images/blog/clashmi/20260305_103836-d45527.png)
 
 ## 三、在线面板怎么用
 
