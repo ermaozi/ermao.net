@@ -32,6 +32,8 @@ tags:
 
 [![机场推荐光速云](https://image.ermao.net/images/blog/guangsuyun/image.png)](https://a01.gsyvipaff.cc/#/?code=d1eMb3ku) [光速云](https://a01.gsyvipaff.cc/#/?code=d1eMb3ku) 高速专线，超高性价比，支持Netflix和ChatGPT。起步价：8.25元/月。[>详情](blog/机场推荐/v2/机场推荐光速云.md)
 
+[![机场推荐runway](https://image.ermao.net/images/blog/1szjh0in/20260310_102236-6690ab.png)](https://www.runwayhz.com/#/register?code=RiIDywqb) [Runway](https://www.runwayhz.com/#/register?code=RiIDywqb) Shadowsocks 协议，分层套餐清晰，支持 Netflix/YouTube 解锁。起步价：9.9元/月。[>详情](blog/机场推荐/v2/机场推荐runway.md)
+
 [![机场推荐唯兔云](https://image.ermao.net/images/article/weituyun/image.png)](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx) [唯兔云](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx) IPLC专线，低价高质，支持Netflix和ChatGPT。起步价：6元/月。[>详情](blog/机场推荐/v2/机场推荐唯兔云.md)
 
 [![机场推荐星岛梦](https://image.ermao.net/images/article/xingdaomeng/image.png)](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY) [星岛梦](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY) IEPL专线，晚高峰不降速，解锁主流流媒体。起步价：16元/月。[>详情](blog/机场推荐/v2/机场推荐星岛梦.md)

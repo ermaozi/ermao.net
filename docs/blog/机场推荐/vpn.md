@@ -118,6 +118,7 @@ description: 2026年最新翻墙机场推荐与好用的VPN评测指南，精选
 |[xxyun](#xxyun)|[xxyun.de](https://xxyun.de/XQiZqbSr.html)| 无 |9.99元 100G/月|✔|[TG](https://t.me/+eYsE6P_xvjk2NGY5)|[前往](./v2/机场推荐xxyun.md)|
 |[XSUS](#xsus)|[xs-us.xyz](https://xs-us.xyz/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔|[TG](https://t.me/xsusvpn)|[前往](./v2/机场推荐xsus.md)|
 |[奈云](#奈云)|[aff.v2ny.mom](https://aff.v2ny.mom?path=register&code=FNAu1FWB)|无|10.6元 168G/月(年付)|✔|[TG](https://t.me/v2naiun)|[前往](./v1/机场推荐奈云.md)|
+|[Runway](#runway)|[runwayhz.com](https://www.runwayhz.com/#/register?code=RiIDywqb)| 无 |9.9元 100G/月|✔|[TG](https://t.me/runwayhzop)|[前往](./v2/机场推荐runway.md)|
 |[迅达](#迅达)|[sulianproxy.com](https://sulianproxy.com/register?code=bXIAotbG)| 免费试用 |15元 120G/月|❌|[TG](https://t.me/xundaroot)|[前往](./v2/机场推荐迅达.md)|
 |[隐云](#隐云)|[wkacc.xyz](https://wkacc.xyz/?code=db949e40)| 无 |25元 150G/月|❌|暂无|[前往](./v2/机场推荐隐云.md)|
 |[cocoduck](#cocoduck)|[cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|
@@ -628,6 +629,26 @@ xxyun加速特性如下：
 | 280G [按量计费] | ¥98.00 /一次性 | 280GB/不限时 | [点击购买](https://aff.v2ny.mom?path=register&code=FNAu1FWB) |
 | 680G [按量计费] | ¥218.00 /一次性 | 680GB/不限时 | [点击购买](https://aff.v2ny.mom?path=register&code=FNAu1FWB) |
 | 2048G [按量计费] | ¥498.00 /一次性 | 2048GB/不限时 | [点击购买](https://aff.v2ny.mom?path=register&code=FNAu1FWB) |
+
+---
+
+### runway
+
+Runway官网地址：[www.runwayhz.com](https://www.runwayhz.com/#/register?code=RiIDywqb)
+
+最便宜的订阅有9.9元 100G/月。
+
+Runway 主打「打造极致的互联网连接跑道」，采用 Shadowsocks 协议，提供从入门到高流量的分层套餐，支持 Netflix、YouTube 等流媒体解锁。
+
+| 套餐名称 | 月费 | 流量 | 国家接入 | 带宽/速率 | 购买链接 |
+|----------|------|------|----------|-----------|----------|
+| 经济舱 (Economy) | ¥9.90/月 | 100GB/月 | 5+国家 | 限速 200Mbps | [点击购买](https://www.runwayhz.com/#/register?code=RiIDywqb) |
+| 商务舱 (Business) | ¥19.90/月 | 200GB/月 | 10+国家 | 限速 400Mbps | [点击购买](https://www.runwayhz.com/#/register?code=RiIDywqb) |
+| 头等舱 (First Class) | ¥50.00/月 | 600GB/月 | 10+国家 | 不限速 | [点击购买](https://www.runwayhz.com/#/register?code=RiIDywqb) |
+| 空中流量包 | ¥45.00/次 | 150GB/不限时 | 10+国家 | 不限速 | [点击购买](https://www.runwayhz.com/#/register?code=RiIDywqb) |
+
+官方频道：[t.me/runwayhzop](https://t.me/runwayhzop)  
+官方群组：[t.me/Runway_Chat](https://t.me/Runway_Chat)
 
 ---
 
