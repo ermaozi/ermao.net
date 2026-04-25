@@ -1,0 +1,43 @@
+{
+  "name": "ermao.net",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "r2": "tsx scripts/upload_r2.ts",
+    "update:clash": "tsx scripts/update_clash.ts",
+    "ub": "npx update-browserslist-db@latest --yes",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@aws-sdk/client-s3": "^3.968.0",
+    "@aws-sdk/lib-storage": "^3.968.0",
+    "@types/mime-types": "^3.0.1",
+    "@types/node": "^25.0.8",
+    "@vuepress/client": "2.0.0-rc.26",
+    "@vuepress/helper": "2.0.0-rc.121",
+    "@vuepress/plugin-reading-time": "2.0.0-rc.121",
+    "dotenv": "^17.2.3",
+    "exifr": "^7.0.0",
+    "glob": "^13.0.1",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.1.1",
+    "mime-types": "^3.0.2",
+    "tsx": "^4.21.0",
+    "vue": "^3.5.29",
+    "vue-router": "^4.6.4",
+    "vuepress": "2.0.0-rc.26",
+    "vuepress-theme-plume": "1.0.0-rc.187"
+  },
+  "dependencies": {
+    "@iconify/json": "^2.2.443",
+    "@vuepress/bundler-vite": "2.0.0-rc.26",
+    "chart.js": "^4.5.1",
+    "chartjs-plugin-datalabels": "^2.2.0",
+    "vue-chartjs": "^5.3.3"
+  }
+}

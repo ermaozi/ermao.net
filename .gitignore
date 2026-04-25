@@ -1,0 +1,9 @@
+.env
+**/*.log
+auto_deploy.sh
+**/images/
+docs/.vuepress/.temp
+docs/.vuepress/.cache
+docs/.vuepress/dist
+node_modules
+.github/monthly-sync/records/
