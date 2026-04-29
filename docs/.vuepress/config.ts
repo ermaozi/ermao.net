@@ -41,7 +41,7 @@ export default defineUserConfig({
         items: [
           { text: 'Windows/Linux/MacOS', link: '/article/0gematwc/', icon: 'ic:baseline-personal-video' },
           { text: 'Android手机', link: '/article/eh8f4n86/', icon: 'ic:baseline-android' },
-          { text: 'iOS苹果手机', link: '/article/z747kgjd/', icon: 'ic:baseline-rocket-launch' },
+          { text: 'iOS苹果手机', link: '/blog/clashmi/', icon: 'ic:baseline-rocket-launch' },
           { text: '免费AppleID共享账号', link: '/blog/freeappleid/', icon: 'ic:twotone-apple' },
         ],
       },
