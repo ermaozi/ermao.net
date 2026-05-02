@@ -43,7 +43,7 @@ tags:
 ``` bash
 name: 二毛
 link: https://www.ermao.net/
-avatar: https://www.ermao.net/images/logo.svg
+avatar: https://www.ermao.net/img/logo.svg
 desc: 老老实实的二毛，从不胡说八道。
 ```
 

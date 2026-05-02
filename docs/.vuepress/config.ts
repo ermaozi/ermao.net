@@ -28,7 +28,7 @@ export default defineUserConfig({
         tagsLink: '/blog/tags/',
         categoriesLink: '/blog/categories/',
       },],
-    logo: '/images/logo.svg',
+    logo: '/img/logo.svg',
     home: '/',
     hostname: 'https://www.ermao.net',
     footer: { message: "© 2025 二毛 📧 <a href='mailto:admin@ermao.net'>admin@ermao.net</a>" },
@@ -59,7 +59,7 @@ export default defineUserConfig({
     profile: {
         name: '二毛',
         description: '老老实实的二毛',
-        avatar: '/images/logo.svg',
+        avatar: '/img/logo.svg',
       },
     social: [
         { icon: 'github', link: 'https://github.com/ermaozi' },
