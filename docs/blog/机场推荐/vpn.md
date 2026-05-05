@@ -1,5 +1,5 @@
 ---
-createTime: 2026/04/22 04:00:00
+createTime: 2026/05/05 04:00:00
 sticky: 100
 tags:
   - 科学上网
@@ -134,13 +134,15 @@ description: 2026年最新翻墙机场推荐与好用的VPN评测指南，精选
 |[隐云](#隐云)|[官网地址](https://wkacc.xyz/?code=db949e40)|✔|25元 150G/月|❌|暂无|[前往](./v2/机场推荐隐云.md)|<span style="color:red">↑17</span>|
 |[Runway](#runway)|[官网地址](https://www.runwayhz.com/#/register?code=RiIDywqb)|❌|9.9元 100G/月|✔|[TG](https://t.me/runwayhzop)|[前往](./v2/机场推荐runway.md)|<span style="color:green">↓5</span>|
 |[唯兔云](#唯兔云)|[官网地址](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx)|❌|6元 45G/月|✔|[TG](https://t.me/v2yun_v2)|[前往](./v2/机场推荐唯兔云.md)|<span style="color:green">↓1</span>|
+|[u1s1](#u1s1)|[官网地址](https://secha7689.malaixiya1.cyou/#/?code=FC32x5Vs)|✔|20元 120G/月|✔|✖|[前往](./2026/机场推荐u1s1.md)|新上|
+|[一翻云](#一翻云)|[官网地址](https://falmera.1flyuntt.cc/#/register?code=wQxPnuZv)|✔|30元 150G/月|✔|[TG](https://t.me/1flyunvip)|[前往](./2026/机场推荐一翻云.md)|新上|
 |[冲上云霄](#冲上云霄)|[官网地址](https://cpdd.one/?r=32083)|✔|5元 80G/30天|✔|[TG](https://t.me/vpnpn123)|[前往](./v1/机场推荐冲上云霄.md)|<span style="color:green">↓4</span>|
 |[大哥云](#大哥云)|[官网地址](https://ermao.dgywzc.com/#/register?code=peAVAa8D)|✔|19.9元 100G/月|❌|[TG](https://t.me/dageyun)|[前往](./v2/机场推荐大哥云.md)|<span style="color:green">↓1</span>|
 |[龙猫云](#龙猫云)|[官网地址](https://ermaozi01.lmvipaff03.cc/register?aff=aOkm2wPW)|✔|15元 100G/月|❌|[TG](https://t.me/totoro_clouds)|[前往](./v1/机场推荐龙猫云.md)|<span style="color:green">↓3</span>|
 |[星岛梦](#星岛梦)|[官网地址](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY)|❌|16元 100G/月|✔|[TG](https://t.me/XDM6666666)|[前往](./v2/机场推荐星岛梦.md)|<span style="color:red">↑1</span>|
 |[Danke](#danke)|[官网地址](https://2iipd.dklineo.top/#/register?code=a0zksG3J)|❌|3元 88GB/月|✔|[TG](https://t.me/dankewed1)|[前往](./v2/机场推荐danke.md)|<span style="color:red">↑33</span>|
 |[ccyz](#ccyz)|[官网地址](https://ccyz.org/?code=QkQotDCu)|❌|15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|-|
-|[ssone](#ssone)|[官网地址](https://hello-ssone.com/register?aff=aBHsE1pF)|❌|10元 60G/月|❌|[TG](https://t.me/+rYzRmCbJfIw3ZTM1)|[前往](./v2/机场推荐ssone.md)|<span style="color:green">↓5</span>|
+|[ssone](#ssone)|[官网地址](https://hello-ssone.com/register?aff=aBHsE1pF)|❌|15元 60G/月|❌|[TG](https://t.me/+rYzRmCbJfIw3ZTM1)|[前往](./v2/机场推荐ssone.md)|<span style="color:green">↓5</span>|
 |[青云梯](#青云梯)|[官网地址](https://ermaozi01.qytvipaff.cc/register?aff=W5ICDu2y)|❌|8 元60g/月(年付)|❌|[TG](https://t.me/qingyunticc)|[前往](./v1/机场推荐青云梯.md)|<span style="color:red">↑8</span>|
 |[极连云](#极连云)|[官网地址](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m)|❌|8元 60G/月|✔|[TG](https://t.me/JLYCloud)|[前往](./v2/机场推荐极连云.md)|<span style="color:green">↓2</span>|
 |[CAC](#cac)|[官网地址](https://www.cac.mom/#/register?code=kYL5chvN)|❌|7.9元 168G/月|❌|[TG](https://t.me/CAC_Apex)|暂无|<span style="color:red">↑25</span>|
@@ -178,6 +180,19 @@ description: 2026年最新翻墙机场推荐与好用的VPN评测指南，精选
 
 
 ## 好用的VPN机场详细评测与套餐价格
+
+---
+
+### u1s1
+
+[u1s1](https://secha7689.malaixiya1.cyou/#/?code=FC32x5Vs) 机场是一家主打 IPLC 专线并且不限制设备连接数的翻墙机场。他们拥有最高 2000Mbps 的带宽，并承诺晚高峰不降速。解锁 Netflix、TikTok 等流媒体以及 ChatGPT，最低起步价 20元/120G 每月，也有 580元 1000G 的无限制流量包，适合多设备重度流媒体及AI玩家。
+
+官网：[secha7689.malaixiya1.cyou](https://secha7689.malaixiya1.cyou/#/?code=FC32x5Vs)
+起步价：20元 120G/月
+不限时套餐：有（580元/1000G）
+解锁：Netflix, TikTok, ChatGPT
+定制：支持定制方案与提供小火箭账号
+详情评测：[查看 U1S1 详细评测](./2026/机场推荐u1s1.md)
 
 ---
 
