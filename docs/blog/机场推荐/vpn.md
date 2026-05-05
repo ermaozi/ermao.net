@@ -137,7 +137,7 @@ description: 2026年最新翻墙机场推荐与好用的VPN评测指南，精选
 |[u1s1](#u1s1)|[官网地址](https://secha7689.malaixiya1.cyou/#/?code=FC32x5Vs)|✔|20元 120G/月|✔|✖|[前往](./2026/机场推荐u1s1.md)|新上|
 |[一翻云](#一翻云)|[官网地址](https://falmera.1flyuntt.cc/#/register?code=wQxPnuZv)|❌|30元 150G/月|✔|[TG](https://t.me/1flyunvip)|[前往](./2026/机场推荐一翻云.md)|新上|
 |[sogo云](#sogo云)|[官网地址](https://falvorn.sogoyunt.cc/#/register?code=yxneZJKR)|❌|20元 150G/月|✔|[TG](https://t.me/sogoyun)|[前往](./2026/机场推荐sogo云.md)|新上|
-|[二猫云](#二猫云)|[官网地址](https://ermaozi01.emzvipaff.cc/#/register?code=O9Q9H6VY)|❌|16元 100G/月|✔|[TG](https://t.me/ermaov1)|[前往](./v2/机场推荐二猫云.md)|新上|
+|[二猫云](#二猫云)|[官网地址](https://velmora.2maoyuntt.club/#/register?code=6n2UaV1A)|❌|16元 100G/月|✔|[TG](https://t.me/ermaov1)|[前往](./v2/机场推荐二猫云.md)|新上|
 |[寰宇云](#寰宇云)|[官网地址](https://huanyuyunvip.com/#/register?code=W82s7u2a)|❌|18元 150GB/月|✔|[TG](https://t.me/+zXIUmCa1aLBmOGQx)|[前往](./2026/机场推荐寰宇云.md)|新上|
 |[冲上云霄](#冲上云霄)|[官网地址](https://cpdd.one/?r=32083)|✔|5元 80G/30天|✔|[TG](https://t.me/vpnpn123)|[前往](./v1/机场推荐冲上云霄.md)|<span style="color:green">↓4</span>|
 |[大哥云](#大哥云)|[官网地址](https://ermao.dgywzc.com/#/register?code=peAVAa8D)|✔|19.9元 100G/月|❌|[TG](https://t.me/dageyun)|[前往](./v2/机场推荐大哥云.md)|<span style="color:green">↓1</span>|
