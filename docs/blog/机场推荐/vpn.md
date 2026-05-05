@@ -135,7 +135,10 @@ description: 2026年最新翻墙机场推荐与好用的VPN评测指南，精选
 |[Runway](#runway)|[官网地址](https://www.runwayhz.com/#/register?code=RiIDywqb)|❌|9.9元 100G/月|✔|[TG](https://t.me/runwayhzop)|[前往](./v2/机场推荐runway.md)|<span style="color:green">↓5</span>|
 |[唯兔云](#唯兔云)|[官网地址](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx)|❌|6元 45G/月|✔|[TG](https://t.me/v2yun_v2)|[前往](./v2/机场推荐唯兔云.md)|<span style="color:green">↓1</span>|
 |[u1s1](#u1s1)|[官网地址](https://secha7689.malaixiya1.cyou/#/?code=FC32x5Vs)|✔|20元 120G/月|✔|✖|[前往](./2026/机场推荐u1s1.md)|新上|
-|[一翻云](#一翻云)|[官网地址](https://falmera.1flyuntt.cc/#/register?code=wQxPnuZv)|✔|30元 150G/月|✔|[TG](https://t.me/1flyunvip)|[前往](./2026/机场推荐一翻云.md)|新上|
+|[一翻云](#一翻云)|[官网地址](https://falmera.1flyuntt.cc/#/register?code=wQxPnuZv)|❌|30元 150G/月|✔|[TG](https://t.me/1flyunvip)|[前往](./2026/机场推荐一翻云.md)|新上|
+|[sogo云](#sogo云)|[官网地址](https://falvorn.sogoyunt.cc/#/register?code=yxneZJKR)|❌|20元 150G/月|✔|[TG](https://t.me/sogoyun)|[前往](./2026/机场推荐sogo云.md)|新上|
+|[二猫云](#二猫云)|[官网地址](https://ermaozi01.emzvipaff.cc/#/register?code=O9Q9H6VY)|❌|16元 100G/月|✔|[TG](https://t.me/ermaov1)|[前往](./v2/机场推荐二猫云.md)|新上|
+|[寰宇云](#寰宇云)|[官网地址](https://huanyuyunvip.com/#/register?code=W82s7u2a)|❌|18元 150GB/月|✔|[TG](https://t.me/+zXIUmCa1aLBmOGQx)|[前往](./2026/机场推荐寰宇云.md)|新上|
 |[冲上云霄](#冲上云霄)|[官网地址](https://cpdd.one/?r=32083)|✔|5元 80G/30天|✔|[TG](https://t.me/vpnpn123)|[前往](./v1/机场推荐冲上云霄.md)|<span style="color:green">↓4</span>|
 |[大哥云](#大哥云)|[官网地址](https://ermao.dgywzc.com/#/register?code=peAVAa8D)|✔|19.9元 100G/月|❌|[TG](https://t.me/dageyun)|[前往](./v2/机场推荐大哥云.md)|<span style="color:green">↓1</span>|
 |[龙猫云](#龙猫云)|[官网地址](https://ermaozi01.lmvipaff03.cc/register?aff=aOkm2wPW)|✔|15元 100G/月|❌|[TG](https://t.me/totoro_clouds)|[前往](./v1/机场推荐龙猫云.md)|<span style="color:green">↓3</span>|
@@ -168,7 +171,6 @@ description: 2026年最新翻墙机场推荐与好用的VPN评测指南，精选
 |[koodog](#koodog)|[官网地址](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)|❌|5元 35G/月|❌|[TG](https://t.me/KooDogGroup)|[前往](./v1/机场推荐koodog.md)|<span style="color:green">↓1</span>|
 |[好鸭云](#好鸭云)|[官网地址](https://vuser.niceduck.io/register?code=QS0hzI2y)|❌|12元 100G/月|❌|[TG](https://t.me/niceduck_group)|[前往](./v1/机场推荐好鸭云.md)|<span style="color:green">↓1</span>|
 |[xxai](#xxai)|[官网地址](https://xx-ai.co?invite_code=K2TpsDcg)|❌|16.9元 100G/月|✔|[TG](https://t.me/xxai_official)|暂无|<span style="color:green">↓1</span>|
-|[寰宇云](#寰宇云)|[官网地址](https://huanyuyunvip.com/#/register?code=W82s7u2a)|❌|18元 150GB/月|✔|[TG](https://t.me/+zXIUmCa1aLBmOGQx)|[前往](./2026/机场推荐寰宇云.md)|<span style="color:green">↓21</span>|
 |[99吧](#_99bar)|[官网地址](https://99vpn.bar/#/register?code=qzpkbzHF)|❌|12.9元 99G/月|✔|[TG](https://t.me/jiujiuchat)|暂无|<span style="color:green">↓12</span>|
 
 **⚠️ 以下机场存在风险，仅供参考：**
