@@ -78,6 +78,7 @@ export default defineUserConfig({
       },
     },
     markdown: {
+      mermaid: true,
       collapse: true,
       chartjs: true,
       youtube: true,

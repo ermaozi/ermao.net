@@ -59,9 +59,9 @@ head:
       }
 ---
 
-[CocoDuck机场](https://cocoduck.live/auth/register?code=25c8b515df)详细评测：由海外团队运营的高品质翻墙机场，拥有两年稳定运营历史、自有四个机房、40+全球节点，支持OpenAI和流媒体解锁，是2026年最值得信赖的稳定机场之一。
+[CocoDuck机场](https://www.cocoduck.live/auth/register?code=25c8b515df)详细评测：由海外团队运营的高品质翻墙机场，拥有两年稳定运营历史、自有四个机房、40+全球节点，支持OpenAI和流媒体解锁，是2026年最值得信赖的稳定机场之一。
 
-CocoDuck机场官网地址：[https://cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df)
+CocoDuck机场官网地址：[https://www.cocoduck.live](https://www.cocoduck.live/auth/register?code=25c8b515df)
 
 <!-- more -->
 
@@ -94,7 +94,7 @@ CocoDuck机场官网地址：[https://cocoduck.live](https://cocoduck.live/auth/
 
 | 项目 | 详情 |
 |------|------|
-| 🌐 **官网地址** | [cocoduck.live](https://cocoduck.live/auth/register?code=25c8b515df) |
+| 🌐 **官网地址** | [www.cocoduck.live](https://www.cocoduck.live/auth/register?code=25c8b515df) |
 | ⏰ **运营时间** | 2年+ 稳定运营 |
 | 👨‍💻 **团队背景** | 海外团队，主要在北美 |
 | 🎁 **免费试用** | 1天2G流量 |
@@ -107,11 +107,11 @@ CocoDuck机场官网地址：[https://cocoduck.live](https://cocoduck.live/auth/
 
 | 套餐名称 | 月费 | 流量 | 节点数量 | 特色服务 | 适用人群 | 购买链接 |
 |----------|------|------|----------|----------|----------|-------|
-| 鸭宝宝 | ¥15/月 | 150GB/月 | 40+全球节点 | 基础解锁 | 超轻度用户 | [购买链接](https://cocoduck.live/auth/register?code=25c8b515df) |
-| 可达鸭 | ¥28/月 | 400GB/月 | 40+全球节点 | 全面解锁 | 日常使用 | [购买链接](https://cocoduck.live/auth/register?code=25c8b515df) |
-| 哥达鸭 | ¥41/月 | 700GB/月 | 40+全球节点 | 优先路由 | 中度用户 | [购买链接](https://cocoduck.live/auth/register?code=25c8b515df) |
-| 唐老鸭 | ¥53/月 | 1000GB/月 | 40+全球节点 | 专线服务 | 企业/团队 | [购买链接](https://cocoduck.live/auth/register?code=25c8b515df) |
-| 迷你鸭 | ¥77/年 | 77GB/月 | 40+全球节点 | 超值优惠 | 长期用户 | [购买链接](https://cocoduck.live/auth/register?code=25c8b515df) |
+| 鸭宝宝 | ¥15/月 | 150GB/月 | 40+全球节点 | 基础解锁 | 超轻度用户 | [购买链接](https://www.cocoduck.live/auth/register?code=25c8b515df) |
+| 可达鸭 | ¥28/月 | 400GB/月 | 40+全球节点 | 全面解锁 | 日常使用 | [购买链接](https://www.cocoduck.live/auth/register?code=25c8b515df) |
+| 哥达鸭 | ¥41/月 | 700GB/月 | 40+全球节点 | 优先路由 | 中度用户 | [购买链接](https://www.cocoduck.live/auth/register?code=25c8b515df) |
+| 唐老鸭 | ¥53/月 | 1000GB/月 | 40+全球节点 | 专线服务 | 企业/团队 | [购买链接](https://www.cocoduck.live/auth/register?code=25c8b515df) |
+| 迷你鸭 | ¥77/年 | 77GB/月 | 40+全球节点 | 超值优惠 | 长期用户 | [购买链接](https://www.cocoduck.live/auth/register?code=25c8b515df) |
 
 > 💡 **说明**：除迷你鸭外均有半年付、年付套餐。
 
@@ -282,7 +282,7 @@ CocoDuck机场官网地址：[https://cocoduck.live](https://cocoduck.live/auth/
 
 ### 📝 注册购买流程
 
-1. **访问官网**：打开 [CocoDuck官网](https://cocoduck.live/auth/register?code=25c8b515df)
+1. **访问官网**：打开 [CocoDuck官网](https://www.cocoduck.live/auth/register?code=25c8b515df)
 2. **免费试用**：注册账户获得1天2G免费试用
 3. **选择套餐**：根据使用需求选择合适套餐
 4. **完成支付**：支持支付宝、微信多种方式
@@ -391,7 +391,7 @@ A: 推荐朋友注册购买可获得流量奖励。
 - **程序开发者**：GitHub、Stack Overflow等平台高频使用
 - **企业团队**：需要稳定可靠的团队翻墙解决方案
 
-**立即体验**：[点击访问CocoDuck官网](https://cocoduck.live/auth/register?code=25c8b515df)，注册即可获得1天2G免费试用！
+**立即体验**：[点击访问CocoDuck官网](https://www.cocoduck.live/auth/register?code=25c8b515df)，注册即可获得1天2G免费试用！
 
 ---
 

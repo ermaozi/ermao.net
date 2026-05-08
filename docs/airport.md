@@ -44,7 +44,7 @@ tags:
 
 [![机场推荐寰宇云](https://image.ermao.net/images/blog/huanyuyun/20260417_082505-079a0c.png)](https://huanyuyunbest.com/#/register?code=W82s7u2a) [寰宇云](https://huanyuyunbest.com/#/register?code=W82s7u2a) 新开业IPLC中转定位，月付、年付小包和不限时流量包并行，更适合先低成本验证稳定性。起步价：14元/月（折后）。[>详情](blog/机场推荐/2026/机场推荐寰宇云.md)
 
-[![机场推荐Sogo云](https://image.ermao.net/images/blog/sogo云/20260414_090807-edf50c.png)](https://falvorn.sogoyunt.cc/#/register?code=yxneZJKR) [Sogo云](https://falvorn.sogoyunt.cc/#/register?code=yxneZJKR) 自研客户端一键使用，支持通用订阅与一次性流量包，适合先低档验证再升级。起步价：20元/月。[>详情](blog/机场推荐/2026/机场推荐sogo云.md)
+[![机场推荐Sogo云](https://image.ermao.net/images/blog/sogo云/20260414_090807-edf50c.png)](https://01.sogoyunaff.cc/#/register?code=yxneZJKR) [Sogo云](https://01.sogoyunaff.cc/#/register?code=yxneZJKR) 自研客户端一键使用，支持通用订阅与一次性流量包，适合先低档验证再升级。起步价：20元/月。[>详情](blog/机场推荐/2026/机场推荐sogo云.md)
 
 [![机场推荐传送门](https://image.ermao.net/images/blog/8svdlqds/20260407_102504-14e480.png)](https://aa.csmfby.com/?code=b9eUUu00) [传送门](https://aa.csmfby.com/?code=b9eUUu00) 自研App降低配置门槛，订阅异常自动恢复，节点异常可自动切换，适合不想手动排障的用户。起步价：99元/年。[>详情](blog/机场推荐/2026/机场推荐传送门.md)
 
@@ -58,7 +58,7 @@ tags:
 
 [![机场推荐ccyz](https://image.ermao.net/images/blog/ccyz/image-1.png)](https://ccyz.org/?code=QkQotDCu) [CCYZ](https://ccyz.org/?code=QkQotDCu) BGP+IEPL双重优化，晚高峰高速，解锁主流流媒体。起步价：15元/月。[>详情](blog/机场推荐/v2/机场推荐ccyz.md)
 
-[![机场推荐cocoduck](https://image.ermao.net/images/article/cocoduck/image.png)](https://cocoduck.live/auth/register?code=25c8b515df) [CocoDuck](https://cocoduck.live/auth/register?code=25c8b515df) 海外团队运营，自有机房，支持OpenAI和流媒体解锁。起步价：15元/月。[>详情](blog/机场推荐/v2/机场推荐cocoduck.md)
+[![机场推荐cocoduck](https://image.ermao.net/images/article/cocoduck/image.png)](https://www.cocoduck.live/auth/register?code=25c8b515df) [CocoDuck](https://www.cocoduck.live/auth/register?code=25c8b515df) 海外团队运营，自有机房，支持OpenAI和流媒体解锁。起步价：15元/月。[>详情](blog/机场推荐/v2/机场推荐cocoduck.md)
 
 [![机场推荐superbiu](https://image.ermao.net/images/blog/superbiu/image-1.jpg)](https://biubiux.online/#/register?code=BasmsULb) [SuperBiu](https://biubiux.online/#/register?code=BasmsULb) 三网IPLC专线，晚高峰秒开8K，自研流媒体解锁。起步价：11元/月。[>详情](blog/机场推荐/v2/机场推荐superbiu.md)
 
