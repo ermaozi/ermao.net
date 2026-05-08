@@ -62,7 +62,7 @@ export default defineUserConfig({
         avatar: '/img/logo.svg',
       },
     social: [
-        { icon: 'github', link: 'https://github.com/ermaozi' },
+        { icon: 'x', link: 'https://x.com/ermaozi4' },
         { icon: 'telegram', link: 'https://t.me/ermaozi01' },
         { icon: 'ic:round-email', link: 'mailto:admin@ermao.net' }
       ],
