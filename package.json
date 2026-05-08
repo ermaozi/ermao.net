@@ -18,7 +18,7 @@
     "@aws-sdk/lib-storage": "^3.968.0",
     "@types/mime-types": "^3.0.1",
     "@types/node": "^25.0.8",
-    "@vuepress/client": "2.0.0-rc.26",
+    "@vuepress/client": "2.0.0-rc.28",
     "@vuepress/helper": "2.0.0-rc.121",
     "@vuepress/plugin-reading-time": "2.0.0-rc.121",
     "dotenv": "^17.2.3",
