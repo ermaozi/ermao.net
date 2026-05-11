@@ -28,7 +28,7 @@ tags:
 
 [![机场推荐老头云](https://image.ermao.net/images/article/laotouvpn/image.png)](https://www.chattous.net/register?code=3OWtZ9Bi) [老头云](https://www.chattous.net/register?code=3OWtZ9Bi) 2016年运营至今，资历深厚，2Gbps单线接入。起步价：10元/月。[>详情](blog/机场推荐/v2/机场推荐老头vpn.md)
 
-[![机场推荐u1s1](https://image.ermao.net/images/article/u1s1/20260505_152753-9d7d99.png)](https://secha7689.malaixiya1.cyou/#/?code=FC32x5Vs) [U1S1](https://secha7689.malaixiya1.cyou/#/?code=FC32x5Vs) 全专线IPLC不限设备，晚高峰极速体验。起步价：20元/月。[>详情](blog/机场推荐/2026/机场推荐u1s1.md)
+[![机场推荐u1s1](https://image.ermao.net/images/article/u1s1/20260505_152753-9d7d99.png)](https://ermaozi01.vipaff.cc/#/?code=FC32x5Vs) [U1S1](https://ermaozi01.vipaff.cc/#/?code=FC32x5Vs) 全专线IPLC不限设备，晚高峰极速体验。起步价：20元/月。[>详情](blog/机场推荐/2026/机场推荐u1s1.md)
 
 [![机场推荐Edge-X](https://image.ermao.net/images/article/edge-x/20260509_083554-1403ca.png)](https://edge-invite.com/#/register?code=LCH9laOs) [Edge-X](https://edge-invite.com/#/register?code=LCH9laOs) IEPL专线为主，支持流媒体与AI解锁，闲时倍率更低，适合先低档验证再升级。起步价：22.8元/月。[>详情](blog/机场推荐/2026/机场推荐edge-x.md)
 
@@ -46,7 +46,7 @@ tags:
 
 [![机场推荐寰宇云](https://image.ermao.net/images/blog/huanyuyun/20260417_082505-079a0c.png)](https://huanyuyunbest.com/#/register?code=W82s7u2a) [寰宇云](https://huanyuyunbest.com/#/register?code=W82s7u2a) 新开业IPLC中转定位，月付、年付小包和不限时流量包并行，更适合先低成本验证稳定性。起步价：14元/月（折后）。[>详情](blog/机场推荐/2026/机场推荐寰宇云.md)
 
-[![机场推荐Sogo云](https://image.ermao.net/images/blog/sogo云/20260414_090807-edf50c.png)](https://01.sogoyunaff.cc/#/login?code=yxneZJKR) [Sogo云](https://01.sogoyunaff.cc/#/login?code=yxneZJKR) 自研客户端一键使用，支持通用订阅与一次性流量包，适合先低档验证再升级。起步价：20元/月。[>详情](blog/机场推荐/2026/机场推荐sogo云.md)
+[![机场推荐Sogo云](https://image.ermao.net/images/blog/sogo云/20260414_090807-edf50c.png)](https://vip4.huanyuyunbest.com/#/register?code=yxneZJKR) [Sogo云](https://vip4.huanyuyunbest.com/#/register?code=yxneZJKR) 自研客户端一键使用，支持通用订阅与一次性流量包，适合先低档验证再升级。起步价：20元/月。[>详情](blog/机场推荐/2026/机场推荐sogo云.md)
 
 [![机场推荐传送门](https://image.ermao.net/images/blog/8svdlqds/20260407_102504-14e480.png)](https://aa.csmfby.com/?code=b9eUUu00) [传送门](https://aa.csmfby.com/?code=b9eUUu00) 自研App降低配置门槛，订阅异常自动恢复，节点异常可自动切换，适合不想手动排障的用户。起步价：99元/年。[>详情](blog/机场推荐/2026/机场推荐传送门.md)
 
