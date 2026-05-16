@@ -152,8 +152,8 @@ description: 2026年最新翻墙机场推荐与好用的VPN评测指南，精选
 |[龙猫云](#龙猫云)|[官网地址](https://ermaozi01.lmvipaff03.cc/register?aff=aOkm2wPW)|✔|15元 100G/月|❌|[TG](https://t.me/totoro_clouds)|[前往](./v1/机场推荐龙猫云.md)|<span style="color:green">↓3</span>|
 |[星岛梦](#星岛梦)|[官网地址](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY)|❌|16元 100G/月|✔|[TG](https://t.me/XDM6666666)|[前往](./v2/机场推荐星岛梦.md)|<span style="color:red">↑1</span>|
 |[Danke](#danke)|[官网地址](https://2iipd.dklineo.top/#/register?code=a0zksG3J)|❌|3元 88GB/月|✔|[TG](https://t.me/dankewed1)|[前往](./v2/机场推荐danke.md)|<span style="color:red">↑33</span>|
-|[ccyz](#ccyz)|[官网地址](https://ccyz.org/?code=QkQotDCu)|❌|15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|-|
-|[ssone](#ssone)|[官网地址](https://hello-ssone.com/register?aff=aBHsE1pF)|❌|15元 60G/月|❌|[TG](https://t.me/+rYzRmCbJfIw3ZTM1)|[前往](./v2/机场推荐ssone.md)|<span style="color:green">↓5</span>|
+|[ccyz](#ccyz)|[官网地址](https://xxyun.at/?code=HOWnn58c)|❌|15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|-|
+|[ssone](#ssone)|[官网地址](https://www.flybit6202.com/#/register?code=MmE2PsQJ)|❌|15元 60G/月|❌|[TG](https://t.me/+rYzRmCbJfIw3ZTM1)|[前往](./v2/机场推荐ssone.md)|<span style="color:green">↓5</span>|
 |[青云梯](#青云梯)|[官网地址](https://ermaozi02.qytvipaff.cc/register?aff=W5ICDu2y)|❌|8 元60g/月(年付)|❌|[TG](https://t.me/qingyunticc)|[前往](./v1/机场推荐青云梯.md)|<span style="color:red">↑8</span>|
 |[极连云](#极连云)|[官网地址](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m)|❌|8元 60G/月|✔|[TG](https://t.me/JLYCloud)|[前往](./v2/机场推荐极连云.md)|<span style="color:green">↓2</span>|
 |[CAC](#cac)|[官网地址](https://www.cac.mom/#/register?code=kYL5chvN)|❌|7.9元 168G/月|❌|[TG](https://t.me/CAC_Apex)|暂无|<span style="color:red">↑25</span>|
@@ -555,7 +555,7 @@ Telegram频道：[https://t.me/dankewed1](https://t.me/dankewed1)
 
 ### ccyz
 
-ccyz官网地址：[ccyz.org](https://ccyz.org/?code=QkQotDCu)
+ccyz官网地址：[ccyz.org](https://xxyun.at/?code=HOWnn58c)
 
 最便宜的订阅有15元 150G/月。
 
@@ -563,14 +563,14 @@ ccyz官网地址：[ccyz.org](https://ccyz.org/?code=QkQotDCu)
 
 | 套餐名称 | 价格 | 流量 | 峰值带宽 | 线路 | 适用人群 | 购买链接 |
 |----------|-----:|-----:|---------:|------|----------|----------|
-| Lite 套餐 · 150G | ¥15 / 月 | 150G/月 | 取决于节点 | IEPL 专线 | 轻度使用、影音追剧 | [立即购买](https://ccyz.org/?code=QkQotDCu) |
-| Pro 套餐 · 280G | ¥25 / 月 | 280G/月 | 取决于节点 | IEPL 专线 | 日常/多设备用户 | [立即购买](https://ccyz.org/?code=QkQotDCu) |
+| Lite 套餐 · 150G | ¥15 / 月 | 150G/月 | 取决于节点 | IEPL 专线 | 轻度使用、影音追剧 | [立即购买](https://xxyun.at/?code=HOWnn58c) |
+| Pro 套餐 · 280G | ¥25 / 月 | 280G/月 | 取决于节点 | IEPL 专线 | 日常/多设备用户 | [立即购买](https://xxyun.at/?code=HOWnn58c) |
 
 ---
 
 ### ssone
 
-官网地址：[m.ssone.io](https://hello-ssone.com/register?aff=aBHsE1pF)
+官网地址：[m.ssone.io](https://www.flybit6202.com/#/register?code=MmE2PsQJ)
 
 邀请码：aBHsE1pF
 

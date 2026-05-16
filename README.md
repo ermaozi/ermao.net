@@ -17,10 +17,10 @@
 
 |名称|官网地址|试用|最便宜订阅|不限时|群|详情|
 |---|---|---|--|---|---|---|
-|[ssone](#ssone)|[hello-ssone.com](https://hello-ssone.com/register?aff=aBHsE1pF)| 1天 1G |10元 60G/月|❌|[TG](https://t.me/+rYzRmCbJfIw3ZTM1)|[前往](./v2/机场推荐ssone.md)|
+|[ssone](#ssone)|[hello-ssone.com](https://www.flybit6202.com/#/register?code=MmE2PsQJ)| 1天 1G |10元 60G/月|❌|[TG](https://t.me/+rYzRmCbJfIw3ZTM1)|[前往](./v2/机场推荐ssone.md)|
 |[flybit](#flybit)|[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔|[TG](https://t.me/flybitvip)|[前往](./v1/机场推荐flybit.md)|
 |[xxyun](#xxyun)|[xxyun.de](https://xxyun.at/?code=HOWnn58c)| 无 |9.99元 100G/月|✔|[TG](https://t.me/+eYsE6P_xvjk2NGY5)|[前往](./v2/机场推荐xxyun.md)|
-|[ccyz](#ccyz)|[ccyz.org](https://ccyz.org/?code=QkQotDCu)| 1G |15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|
+|[ccyz](#ccyz)|[ccyz.org](https://xxyun.at/?code=HOWnn58c)| 1G |15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|
 [星岛梦](#星岛梦)|[ermaov1.xdmvipaff.cc](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY)| 无 |16元 100G/月|✔|[TG](https://t.me/XDM6666666)|[前往](./v2/机场推荐星岛梦.md)|
 |[光年梯](#光年梯)|[ermaozi01.gntvipaff.cc](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr)| 无 |18元 110G/月|✔|[TG](https://t.me/guangnianti)|[前往](./v2/机场推荐光年梯.md)|
 |[uuone](#uuone)|[uuone.de](https://uuone.at/?code=AjqYdZlJ)| 无 |12元 150G/月|✔|暂无|[前往](./v2/机场推荐uuone.md)|
@@ -63,7 +63,7 @@
 
 ### ssone
 
-官网地址：[m.ssone.io](https://hello-ssone.com/register?aff=aBHsE1pF)
+官网地址：[m.ssone.io](https://www.flybit6202.com/#/register?code=MmE2PsQJ)
 
 邀请码：aBHsE1pF
 
@@ -217,7 +217,7 @@ CocoDuck机场官网地址：[https://www.cocoduck.live](https://www.cocoduck.li
 
 ### ccyz
 
-ccyz官网地址：[ccyz.org](https://ccyz.org/?code=QkQotDCu)
+ccyz官网地址：[ccyz.org](https://xxyun.at/?code=HOWnn58c)
 
 最便宜的订阅有15元 150G/月。
 
@@ -225,8 +225,8 @@ ccyz官网地址：[ccyz.org](https://ccyz.org/?code=QkQotDCu)
 
 | 套餐名称 | 价格 | 流量 | 峰值带宽 | 线路 | 适用人群 | 购买链接 |
 |----------|-----:|-----:|---------:|------|----------|----------|
-| Lite 套餐 · 150G | ¥15 / 月 | 150G/月 | 取决于节点 | IEPL 专线 | 轻度使用、影音追剧 | [立即购买](https://ccyz.org/?code=QkQotDCu) |
-| Pro 套餐 · 280G | ¥25 / 月 | 280G/月 | 取决于节点 | IEPL 专线 | 日常/多设备用户 | [立即购买](https://ccyz.org/?code=QkQotDCu) |
+| Lite 套餐 · 150G | ¥15 / 月 | 150G/月 | 取决于节点 | IEPL 专线 | 轻度使用、影音追剧 | [立即购买](https://xxyun.at/?code=HOWnn58c) |
+| Pro 套餐 · 280G | ¥25 / 月 | 280G/月 | 取决于节点 | IEPL 专线 | 日常/多设备用户 | [立即购买](https://xxyun.at/?code=HOWnn58c) |
 
 
 ---

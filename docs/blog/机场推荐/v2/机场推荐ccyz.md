@@ -59,9 +59,9 @@ head:
       }
 ---
 
-[CCYZ机场](https://ccyz.org/?code=QkQotDCu)详细评测：15元100G/月起的高性价比专线机场，BGP+IEPL 保障晚高峰稳定，支持 Netflix、Disney+、ChatGPT 等主流服务解锁，新客还可先领 1G 免费试用，再叠加 95 折优惠券省钱入手。
+[CCYZ机场](https://xxyun.at/?code=HOWnn58c)详细评测：15元100G/月起的高性价比专线机场，BGP+IEPL 保障晚高峰稳定，支持 Netflix、Disney+、ChatGPT 等主流服务解锁，新客还可先领 1G 免费试用，再叠加 95 折优惠券省钱入手。
 
-CCYZ机场官网地址：[https://ccyz.org/?code=QkQotDCu](https://ccyz.org/?code=QkQotDCu)
+CCYZ机场官网地址：[https://xxyun.at/?code=HOWnn58c](https://xxyun.at/?code=HOWnn58c)
 
 <!-- more -->
 
@@ -82,13 +82,13 @@ CCYZ机场官网地址：[https://ccyz.org/?code=QkQotDCu](https://ccyz.org/?cod
 
 ![ccyz机场logo](https://image.ermao.net/images/blog/ccyz/image-1.png)
 
-**[CCYZ 机场](https://ccyz.org/?code=QkQotDCu)** 主打高性价比与专线稳定，采用 BGP+IEPL 双重优化，晚高峰依旧保持高速。支持 Netflix、Disney+、HBO 等主流流媒体解锁，并提供全天候客服响应，适合长期使用或需要稳定带宽的用户。
+**[CCYZ 机场](https://xxyun.at/?code=HOWnn58c)** 主打高性价比与专线稳定，采用 BGP+IEPL 双重优化，晚高峰依旧保持高速。支持 Netflix、Disney+、HBO 等主流流媒体解锁，并提供全天候客服响应，适合长期使用或需要稳定带宽的用户。
 
 ### 📊 基本信息速览
 
 | 项目 | 详情 |
 |------|------|
-| 🌐 **官网地址** | [https://ccyz.org/?code=QkQotDCu](https://ccyz.org/?code=QkQotDCu) |
+| 🌐 **官网地址** | [https://xxyun.at/?code=HOWnn58c](https://xxyun.at/?code=HOWnn58c) |
 | 💰 **最便宜订阅** | 15 元 / 100G / 月（Lite 套餐） |
 | 🎁 **免费试用** | 注册即赠 1G 体验流量 |
 | 🎟️ **优惠券** | 全场 95 折：`ccyz` |
@@ -101,8 +101,8 @@ CCYZ机场官网地址：[https://ccyz.org/?code=QkQotDCu](https://ccyz.org/?cod
 
 | 套餐名称 | 价格 | 流量 | 峰值带宽 | 线路 | 适用人群 | 购买链接 |
 |----------|-----:|-----:|---------:|------|----------|----------|
-| Lite 套餐 · 150G | ¥15 / 月 | 150G/月 | 取决于节点 | IEPL 专线 | 轻度使用、影音追剧 | [立即购买](https://ccyz.org/?code=QkQotDCu) |
-| Pro 套餐 · 280G | ¥25 / 月 | 280G/月 | 取决于节点 | IEPL 专线 | 日常/多设备用户 | [立即购买](https://ccyz.org/?code=QkQotDCu) |
+| Lite 套餐 · 150G | ¥15 / 月 | 150G/月 | 取决于节点 | IEPL 专线 | 轻度使用、影音追剧 | [立即购买](https://xxyun.at/?code=HOWnn58c) |
+| Pro 套餐 · 280G | ¥25 / 月 | 280G/月 | 取决于节点 | IEPL 专线 | 日常/多设备用户 | [立即购买](https://xxyun.at/?code=HOWnn58c) |
 
 > 💡 **省钱攻略**：注册先领 1G 免费试用，正式下单输入优惠券 `ccyz` 享 95 折，两款套餐均适用。
 
@@ -128,7 +128,7 @@ CCYZ机场官网地址：[https://ccyz.org/?code=QkQotDCu](https://ccyz.org/?cod
 
 ## 📱 客户端配置指南 {#client}
 
-1. **注册账号**：访问[官网](https://ccyz.org/?code=QkQotDCu)完成注册与邮箱验证。  
+1. **注册账号**：访问[官网](https://xxyun.at/?code=HOWnn58c)完成注册与邮箱验证。  
 2. **购买套餐**：选择 Lite 或 Pro 套餐，结算时输入优惠码 `ccyz`。  
 3. **获取订阅**：在用户中心复制 Clash / Shadowrocket / Trojan 订阅链接。  
 4. **导入客户端**：按设备选择对应客户端，粘贴订阅一键更新节点。  
@@ -177,7 +177,7 @@ A：可更换节点、切换协议或联系在线客服协助。
 
 如果你正在寻找一款价格亲民、专线品质、流媒体友好的机场，**CCYZ** 是 2026 年值得尝试的选择之一。
 
-👉 **立即体验**：[访问 CCYZ 官网](https://ccyz.org/?code=QkQotDCu)，下单时别忘记输入优惠码 `ccyz` 享受 95 折！
+👉 **立即体验**：[访问 CCYZ 官网](https://xxyun.at/?code=HOWnn58c)，下单时别忘记输入优惠码 `ccyz` 享受 95 折！
 
 ### 🏆 更多机场推荐
 - 🌟 [2026年最新机场推荐汇总](https://www.ermao.net/posts/vpn/)

@@ -16,7 +16,7 @@ tags:
 
 ::: card-masonry cols="3" gap="20" 
 
-[![机场推荐ssone](https://image.ermao.net/images/article/ssone/image.png)](https://hello-ssone.com/register?aff=aBHsE1pF) [SSONE](https://hello-ssone.com/register?aff=aBHsE1pF) 节点多速度快，支持 Netflix，适合进阶用户。起步价：10元/月。[>详情](blog/机场推荐/v2/机场推荐ssone.md)
+[![机场推荐ssone](https://image.ermao.net/images/article/ssone/image.png)](https://www.flybit6202.com/#/register?code=MmE2PsQJ) [SSONE](https://www.flybit6202.com/#/register?code=MmE2PsQJ) 节点多速度快，支持 Netflix，适合进阶用户。起步价：10元/月。[>详情](blog/机场推荐/v2/机场推荐ssone.md)
 
 [![机场推荐flybit](https://image.ermao.net/images/blog/flybit/20260302_202715-c22f02.png)](https://goflybit.com/#/register?code=7h1NCdM7) [flybit](https://goflybit.com/#/register?code=7h1NCdM7) 全IEPL专线，晚高峰稳定不卡顿，解锁Netflix/ChatGPT。起步价：15元/月。[>详情](blog/机场推荐/v2/机场推荐flybit.md)
 
@@ -58,7 +58,7 @@ tags:
 
 [![机场推荐星岛梦](https://image.ermao.net/images/article/xingdaomeng/image.png)](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY) [星岛梦](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY) IEPL专线，晚高峰不降速，解锁主流流媒体。起步价：16元/月。[>详情](blog/机场推荐/v2/机场推荐星岛梦.md)
 
-[![机场推荐ccyz](https://image.ermao.net/images/blog/ccyz/image-1.png)](https://ccyz.org/?code=QkQotDCu) [CCYZ](https://ccyz.org/?code=QkQotDCu) BGP+IEPL双重优化，晚高峰高速，解锁主流流媒体。起步价：15元/月。[>详情](blog/机场推荐/v2/机场推荐ccyz.md)
+[![机场推荐ccyz](https://image.ermao.net/images/blog/ccyz/image-1.png)](https://xxyun.at/?code=HOWnn58c) [CCYZ](https://xxyun.at/?code=HOWnn58c) BGP+IEPL双重优化，晚高峰高速，解锁主流流媒体。起步价：15元/月。[>详情](blog/机场推荐/v2/机场推荐ccyz.md)
 
 [![机场推荐cocoduck](https://image.ermao.net/images/article/cocoduck/image.png)](https://www.cocoduck.live/auth/register?code=25c8b515df) [CocoDuck](https://www.cocoduck.live/auth/register?code=25c8b515df) 海外团队运营，自有机房，支持OpenAI和流媒体解锁。起步价：15元/月。[>详情](blog/机场推荐/v2/机场推荐cocoduck.md)
 
