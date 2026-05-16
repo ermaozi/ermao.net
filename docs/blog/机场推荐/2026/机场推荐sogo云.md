@@ -11,7 +11,7 @@ tags:
 
 Sogo云是一个新开业的机场服务，定位是降低上手门槛，主打自研客户端一键使用，并提供通用订阅兼容。价格区间覆盖轻度到重度流量需求，最低门槛为 20 元 120GB/月（活动档），常规月付档从 25 元起。
 
-官网与注册：[01.sogoyunaff.cc](https://vip4.huanyuyunbest.com/#/register?code=yxneZJKR)
+官网与注册：[01.sogoyunaff.cc](https://trevona.sogocloudz.cc/#/login?code=yxneZJKR)
 
 <!-- more -->
 
