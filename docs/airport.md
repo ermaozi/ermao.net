@@ -44,7 +44,7 @@ tags:
 
 [![二猫云](https://image.ermao.net/images/blog/ermaoyun/20260414_104113-5bbd8b.png)](https://velmora.2maoyuntt.club/#/register?code=6n2UaV1A) [二猫云](https://velmora.2maoyuntt.club/#/register?code=6n2UaV1A) 新开机场，IPLC/IEPL专线定位，套餐阶梯从100GB到800GB，适合先低档验证稳定性。起步价：20元/月。[>详情](blog/机场推荐/2026/机场推荐二猫云.md)
 
-[![机场推荐寰宇云](https://image.ermao.net/images/blog/huanyuyun/20260417_082505-079a0c.png)](https://huanyuyunbest.com/#/register?code=W82s7u2a) [寰宇云](https://huanyuyunbest.com/#/register?code=W82s7u2a) 新开业IPLC中转定位，月付、年付小包和不限时流量包并行，更适合先低成本验证稳定性。起步价：14元/月（折后）。[>详情](blog/机场推荐/2026/机场推荐寰宇云.md)
+[![机场推荐寰宇云](https://image.ermao.net/images/blog/huanyuyun/20260417_082505-079a0c.png)](https://vip4.huanyuyunbest.com/#/register?code=W82s7u2a) [寰宇云](https://vip4.huanyuyunbest.com/#/register?code=W82s7u2a) 新开业IPLC中转定位，月付、年付小包和不限时流量包并行，更适合先低成本验证稳定性。起步价：14元/月（折后）。[>详情](blog/机场推荐/2026/机场推荐寰宇云.md)
 
 [![机场推荐Sogo云](https://image.ermao.net/images/blog/sogo云/20260414_090807-edf50c.png)](https://trevona.sogocloudz.cc/#/login?code=yxneZJKR) [Sogo云](https://trevona.sogocloudz.cc/#/login?code=yxneZJKR) 自研客户端一键使用，支持通用订阅与一次性流量包，适合先低档验证再升级。起步价：20元/月。[>详情](blog/机场推荐/2026/机场推荐sogo云.md)
 
