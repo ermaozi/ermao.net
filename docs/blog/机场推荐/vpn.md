@@ -154,7 +154,7 @@ description: 2026年最新翻墙机场推荐与好用的VPN评测指南，精选
 |[Danke](#danke)|[官网地址](https://2iipd.dklineo.top/#/register?code=a0zksG3J)|❌|3元 88GB/月|✔|[TG](https://t.me/dankewed1)|[前往](./v2/机场推荐danke.md)|<span style="color:red">↑33</span>|
 |[ccyz](#ccyz)|[官网地址](https://ccyz.org/?code=QkQotDCu)|❌|15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|-|
 |[ssone](#ssone)|[官网地址](https://hello-ssone.com/register?aff=aBHsE1pF)|❌|15元 60G/月|❌|[TG](https://t.me/+rYzRmCbJfIw3ZTM1)|[前往](./v2/机场推荐ssone.md)|<span style="color:green">↓5</span>|
-|[青云梯](#青云梯)|[官网地址](https://ermaozi01.qytvipaff.cc/register?aff=W5ICDu2y)|❌|8 元60g/月(年付)|❌|[TG](https://t.me/qingyunticc)|[前往](./v1/机场推荐青云梯.md)|<span style="color:red">↑8</span>|
+|[青云梯](#青云梯)|[官网地址](https://ermaozi02.qytvipaff.cc/register?aff=W5ICDu2y)|❌|8 元60g/月(年付)|❌|[TG](https://t.me/qingyunticc)|[前往](./v1/机场推荐青云梯.md)|<span style="color:red">↑8</span>|
 |[极连云](#极连云)|[官网地址](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m)|❌|8元 60G/月|✔|[TG](https://t.me/JLYCloud)|[前往](./v2/机场推荐极连云.md)|<span style="color:green">↓2</span>|
 |[CAC](#cac)|[官网地址](https://www.cac.mom/#/register?code=kYL5chvN)|❌|7.9元 168G/月|❌|[TG](https://t.me/CAC_Apex)|暂无|<span style="color:red">↑25</span>|
 |[光年梯](#光年梯)|[官网地址](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr)|❌|18元 110G/月|✔|[TG](https://t.me/guangnianti)|[前往](./v2/机场推荐光年梯.md)|<span style="color:green">↓13</span>|
@@ -591,7 +591,7 @@ ccyz官网地址：[ccyz.org](https://ccyz.org/?code=QkQotDCu)
 
 ### 青云梯
 
-青云梯官网地址：[ermaozi01.qytvipaff.cc](https://ermaozi01.qytvipaff.cc/register?aff=W5ICDu2y)
+青云梯官网地址：[ermaozi02.qytvipaff.cc](https://ermaozi02.qytvipaff.cc/register?aff=W5ICDu2y)
 
 邀请码：W5ICDu2y
 
