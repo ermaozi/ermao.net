@@ -43,7 +43,7 @@
 |[龙猫云](#龙猫云)|[lmspeed.co](https://ermaozi01.lmvipaff03.cc/register?aff=aOkm2wPW)| 无 |15元 100G/月|❌|[TG](https://t.me/totoro_clouds)|[前往](./v1/机场推荐龙猫云.md)|
 |[闪狐云](#闪狐云)|[flashfox.cc](https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv)| 无 |20元 120G/月|❌|[TG](https://t.me/flashfoxcloud)|[前往](./v1/机场推荐闪狐云.md)|
 |[灯塔cloud](#灯塔cloud)|[www.dengta.cloud](https://www.dengta.cloud/#/register?code=n4jB4z5R)| 无 |10元 100G/月|❌|[TG](https://t.me/+xBRgJGSBcNdlNWJl)|[前往](./v1/机场推荐灯塔cloud.md)|
-|[百变小樱](#百变小樱)|[bbxy88.com](https://bbxy.xn--cesw6hd3s99f.com/auth/register?code=WuuD)| 无 | 15元 100G/30天|❌|[TG](https://t.me/+IugiUXlyYqgyNjE0)|[前往](./v1/机场推荐百变小樱.md)|
+|[百变小樱](#百变小樱)|[bbxy88.com](https://cn2.cardsakura.buzz/v2/register?code=WuuD)| 无 | 15元 100G/30天|❌|[TG](https://t.me/+IugiUXlyYqgyNjE0)|[前往](./v1/机场推荐百变小樱.md)|
 |[大哥云](#大哥云)|[ermao.dgywzc.com](https://ermao.dgywzc.com/#/register?code=peAVAa8D)| 无 |19.9元 100G/月|❌|[TG](https://t.me/dageyun)|[前往](./v2/机场推荐大哥云.md)|
 |[好鸭云](#好鸭云)|[vuser.niceduck.io](https://vuser.niceduck.io/register?code=QS0hzI2y)| 无 |12元 100G/月|❌|[TG](https://t.me/niceduck_group)|[前往](./v1/机场推荐好鸭云.md)|
 |[xxai](#xxai)|[xxai.uk](https://xx-ai.co?invite_code=K2TpsDcg)| 无 |16.9元 100G/月|✔|[TG](https://t.me/xxai_official)|暂无|
@@ -525,7 +525,7 @@ okanc机场是一个新机场，但是与奈云同宗同源，有奈云的技术
 
 ### 百变小樱
 
-百变小樱官网地址：[https://bbxy88.com](https://bbxy.xn--cesw6hd3s99f.com/auth/register?code=WuuD)
+百变小樱官网地址：[https://bbxy88.com](https://cn2.cardsakura.buzz/v2/register?code=WuuD)
 
 试用：无
 
