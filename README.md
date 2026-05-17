@@ -39,7 +39,7 @@
 |[青云梯](#青云梯)|[ermaozi02.qytvipaff.cc](https://ermaozi02.qytvipaff.cc/register?aff=W5ICDu2y)| 无 |8 元60g/月(年付)|❌|[TG](https://t.me/qingyunticc)|[前往](./v1/机场推荐青云梯.md)|
 |[阿达西](#阿达西)|[adaxi.net](https://adaxi.net/?r=68917)| 无 |3元 20G/月|✔|暂无|[前往](./v1/机场推荐阿达西.md)|
 |[奈云](#奈云)|[v2ny788.top](https://v2ny788.top?path=register&code=FNAu1FWB)|无|10.6元 168G/月(年付)|✔|[TG](https://t.me/v2naiun)|[前往](./v1/机场推荐奈云.md)|
-|[okanc](#okanc)|[okanc.com](https://www.okanc.com/index.php#/register?code=3YK7Np6R)| 无 |46元 328G/月|❌|[TG](https://t.me/okancup)|[前往](./v1/机场推荐okanc.md)|
+|[okanc](#okanc)|[okanc.com](https://www.okanc.com/#/register?code=spBqEcUn)| 无 |46元 328G/月|❌|[TG](https://t.me/okancup)|[前往](./v1/机场推荐okanc.md)|
 |[龙猫云](#龙猫云)|[lmspeed.co](https://ermaozi01.lmvipaff03.cc/register?aff=aOkm2wPW)| 无 |15元 100G/月|❌|[TG](https://t.me/totoro_clouds)|[前往](./v1/机场推荐龙猫云.md)|
 |[闪狐云](#闪狐云)|[flashfox.cc](https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv)| 无 |20元 120G/月|❌|[TG](https://t.me/flashfoxcloud)|[前往](./v1/机场推荐闪狐云.md)|
 |[灯塔cloud](#灯塔cloud)|[www.dengta.cloud](https://www.dengta.cloud/#/register?code=n4jB4z5R)| 无 |10元 100G/月|❌|[TG](https://t.me/+xBRgJGSBcNdlNWJl)|[前往](./v1/机场推荐灯塔cloud.md)|
@@ -491,7 +491,7 @@ xxyun加速特性如下：
 
 ### okanc
 
-okanc官网地址：[okanc.com](https://www.okanc.com/index.php#/register?code=3YK7Np6R)
+okanc官网地址：[okanc.com](https://www.okanc.com/#/register?code=spBqEcUn)
 
 邀请码：3YK7Np6R
 
@@ -503,9 +503,9 @@ okanc机场是一个新机场，但是与奈云同宗同源，有奈云的技术
 
 |套餐|价格|流量|购买地址|
 |---|---|---|---|
-|Pro版|46元/月|328GB/月|[点击购买](https://www.okanc.com/index.php#/register?code=3YK7Np6R)|
-|Max版|50元/月|600GB/月|[点击购买](https://www.okanc.com/index.php#/register?code=3YK7Np6R)|
-|MAX+极致版|88元/月|1024GB/月|[点击购买](https://www.okanc.com/index.php#/register?code=3YK7Np6R)|
+|Pro版|46元/月|328GB/月|[点击购买](https://www.okanc.com/#/register?code=spBqEcUn)|
+|Max版|50元/月|600GB/月|[点击购买](https://www.okanc.com/#/register?code=spBqEcUn)|
+|MAX+极致版|88元/月|1024GB/月|[点击购买](https://www.okanc.com/#/register?code=spBqEcUn)|
 
 ---
 
