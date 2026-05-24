@@ -84,7 +84,7 @@ description: 2026年最新翻墙机场推荐与好用的VPN评测指南，精选
    A: 主流机场支持：
    - Windows、macOS、Linux电脑
    - iOS、Android手机
-   - [路由器](/article/fanqiang/)（实现全家科学上网）
+   - [路由器](/posts/router/)（实现全家科学上网，详见[软路由小白保姆级教程](/blog/router-setup-guide/)）
    - Apple TV、游戏机等
 
 - 2026年最新科学上网趋势
