@@ -134,7 +134,7 @@ description: 2026年最新翻墙机场推荐与好用的VPN评测指南，精选
 |[xxyun](#xxyun)|[官网地址](https://xxyun.at/?code=HOWnn58c)|✔|9.99元 100G/月|✔|[TG](https://t.me/+eYsE6P_xvjk2NGY5)|[前往](./v2/机场推荐xxyun.md)|-|
 |[奈云](#奈云)|[官网地址](https://v2ny788.top?path=register&code=FNAu1FWB)|✔|10.6元 168G/月(年付)|✔|[TG](https://t.me/v2naiun)|[前往](./v1/机场推荐奈云.md)|<span style="color:red">↑1</span>|
 |[cocoduck](#cocoduck)|[官网地址](https://www.cocoduck.live/auth/register?code=25c8b515df)|✔|15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|<span style="color:green">↓1</span>|
-|[网际快车](#网际快车)|[官网地址](https://wjkc.click?c=USNCXQ)|✔|6.8元 20GB(不限时)|✔|暂无|[前往](./v2/机场推荐网际快车.md)|<span style="color:red">↑9</span>|
+|[网际快车](#网际快车)|[官网地址](https://ermao.快车.com?c=USNCXQ)|✔|6.8元 20GB(不限时)|✔|暂无|[前往](./v2/机场推荐网际快车.md)|<span style="color:red">↑9</span>|
 |[阿达西](#阿达西)|[官网地址](https://adaxi.net/?r=68917)|❌|3元 20G/月|✔|暂无|[前往](./v1/机场推荐阿达西.md)|-|
 |[老头vpn](#老头vpn)|[官网地址](https://www.chattous.net/register?code=3OWtZ9Bi)|❌| 25元 150G/月|❌|[TG](https://t.me/OldManVPN)|[前往](./v2/机场推荐老头vpn.md)|<span style="color:red">↑41</span>|
 |[uuone](#uuone)|[官网地址](https://uuone.at/?code=AjqYdZlJ)|❌|12元 150G/月|✔|暂无|[前往](./v2/机场推荐uuone.md)|<span style="color:green">↓1</span>|
@@ -324,7 +324,7 @@ CocoDuck机场官网地址：[https://www.cocoduck.live](https://www.cocoduck.li
 
 ### 网际快车
 
-官网地址：[wjkc.click](https://wjkc.click?c=USNCXQ)
+官网地址：[ermao.快车.com](https://ermao.快车.com?c=USNCXQ)
 
 最便宜的套餐：6.8元 20GB（不限时）。
 
@@ -332,15 +332,15 @@ CocoDuck机场官网地址：[https://www.cocoduck.live](https://www.cocoduck.li
 
 | 套餐名称 | 价格 | 流量/时长 | 特性 | 购买 |
 |----------|------|-----------|------|------|
-| 入门流量包 | ¥6.8 | 20GB（不限时） | 永不过期，不限设备 | [立即购买](https://wjkc.click?c=USNCXQ) |
-| 标准套餐 | ¥16 | 100GB（不限时） | 永不过期 | [立即购买](https://wjkc.click?c=USNCXQ) |
-| 优选套餐 | ¥29 | 200GB（不限时） | 主力推荐 | [立即购买](https://wjkc.click?c=USNCXQ) |
-| 高级套餐 | ¥49 | 380GB（不限时） | 中重度用户 | [立即购买](https://wjkc.click?c=USNCXQ) |
-| 大神套餐 | ¥118 | 1000GB（不限时） | 大流量囤货 | [立即购买](https://wjkc.click?c=USNCXQ) |
-| 至尊套餐 | ¥198 | 1980GB（不限时） | 超大容量 | [立即购买](https://wjkc.click?c=USNCXQ) |
-| 包月套餐 | ¥24 | 30天，每日60GB | 高频使用 | [立即购买](https://wjkc.click?c=USNCXQ) |
-| 包季套餐 | ¥58 | 90天，每日60GB | 连续使用 | [立即购买](https://wjkc.click?c=USNCXQ) |
-| 包年套餐 | ¥186 | 365天，每日60GB | 年度重度用户 | [立即购买](https://wjkc.click?c=USNCXQ) |
+| 入门流量包 | ¥6.8 | 20GB（不限时） | 永不过期，不限设备 | [立即购买](https://ermao.快车.com?c=USNCXQ) |
+| 标准套餐 | ¥16 | 100GB（不限时） | 永不过期 | [立即购买](https://ermao.快车.com?c=USNCXQ) |
+| 优选套餐 | ¥29 | 200GB（不限时） | 主力推荐 | [立即购买](https://ermao.快车.com?c=USNCXQ) |
+| 高级套餐 | ¥49 | 380GB（不限时） | 中重度用户 | [立即购买](https://ermao.快车.com?c=USNCXQ) |
+| 大神套餐 | ¥118 | 1000GB（不限时） | 大流量囤货 | [立即购买](https://ermao.快车.com?c=USNCXQ) |
+| 至尊套餐 | ¥198 | 1980GB（不限时） | 超大容量 | [立即购买](https://ermao.快车.com?c=USNCXQ) |
+| 包月套餐 | ¥24 | 30天，每日60GB | 高频使用 | [立即购买](https://ermao.快车.com?c=USNCXQ) |
+| 包季套餐 | ¥58 | 90天，每日60GB | 连续使用 | [立即购买](https://ermao.快车.com?c=USNCXQ) |
+| 包年套餐 | ¥186 | 365天，每日60GB | 年度重度用户 | [立即购买](https://ermao.快车.com?c=USNCXQ) |
 
 ---
 

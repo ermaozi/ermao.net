@@ -38,7 +38,7 @@ tags:
 
 [![机场推荐runway](https://image.ermao.net/images/blog/1szjh0in/20260310_102236-6690ab.png)](https://www.runwayhz.com/#/register?code=RiIDywqb) [Runway](https://www.runwayhz.com/#/register?code=RiIDywqb) Shadowsocks 协议，分层套餐清晰，支持 Netflix/YouTube 解锁。起步价：9.9元/月。[>详情](blog/机场推荐/v2/机场推荐runway.md)
 
-[![机场推荐网际快车](https://image.ermao.net/images/blog/wangjikuaiche-review-price/20260320_093817-9c5367.png)](https://wjkc.click?c=USNCXQ) [网际快车](https://wjkc.click?c=USNCXQ) 住宅IP，万能订阅+四端专用VPN，不限设备数量，支持AI与流媒体。起步价：6.8元起。[>详情](blog/机场推荐/v2/机场推荐网际快车.md)
+[![机场推荐网际快车](https://image.ermao.net/images/blog/wangjikuaiche-review-price/20260320_093817-9c5367.png)](https://ermao.快车.com?c=USNCXQ) [网际快车](https://ermao.快车.com?c=USNCXQ) 住宅IP，万能订阅+四端专用VPN，不限设备数量，支持AI与流媒体。起步价：6.8元起。[>详情](blog/机场推荐/v2/机场推荐网际快车.md)
 
 [![机场推荐瞬云](https://image.ermao.net/images/blog/shunyun/20260407_101246-ab75d9.png)](https://aaa.jichang.best/#/register?code=QEiJcAPp) [瞬云](https://aaa.jichang.best/#/register?code=QEiJcAPp) 30+节点覆盖，多地区ANYCAST高速线路，支持Netflix/Disney+/ChatGPT，支付方式完善。起步价：8.25元/月。[>详情](blog/机场推荐/2026/机场推荐瞬云.md)
 
