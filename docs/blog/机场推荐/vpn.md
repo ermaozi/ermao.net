@@ -132,7 +132,7 @@ description: 2026年最新翻墙机场推荐与好用的VPN评测指南，精选
 |[flybit](#flybit)|[官网地址](https://goflybit.com/#/register?code=7h1NCdM7)|✔|15元 128G/月|✔|[TG](https://t.me/flybitvip)|[前往](./v2/机场推荐flybit.md)|-|
 |[XSUS](#xsus)|[官网地址](https://xsus.cloud/register?code=xJFcT1Dw)|✔|8元 168G/30天|✔|[TG](https://t.me/xsusvpn)|[前往](./v2/机场推荐xsus.md)|-|
 |[xxyun](#xxyun)|[官网地址](https://xxyun.at/?code=HOWnn58c)|✔|9.99元 100G/月|✔|[TG](https://t.me/+eYsE6P_xvjk2NGY5)|[前往](./v2/机场推荐xxyun.md)|-|
-|[奈云](#奈云)|[官网地址](https://v2ny788.top?path=register&code=FNAu1FWB)|✔|10.6元 168G/月(年付)|✔|[TG](https://t.me/v2naiun)|[前往](./v1/机场推荐奈云.md)|<span style="color:red">↑1</span>|
+|[奈云](#奈云)|[官网地址](https://www.nyaff.cc?path=register&code=FNAu1FWB)|✔|10.6元 168G/月(年付)|✔|[TG](https://t.me/v2naiun)|[前往](./v1/机场推荐奈云.md)|<span style="color:red">↑1</span>|
 |[cocoduck](#cocoduck)|[官网地址](https://www.cocoduck.live/auth/register?code=25c8b515df)|✔|15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|<span style="color:green">↓1</span>|
 |[网际快车](#网际快车)|[官网地址](https://ermao.快车.com?c=USNCXQ)|✔|6.8元 20GB(不限时)|✔|暂无|[前往](./v2/机场推荐网际快车.md)|<span style="color:red">↑9</span>|
 |[阿达西](#阿达西)|[官网地址](https://adaxi.net/?r=68917)|❌|3元 20G/月|✔|暂无|[前往](./v1/机场推荐阿达西.md)|-|
@@ -281,7 +281,7 @@ xxyun加速特性如下：
 
 ### 奈云
 
-奈云机场官网地址：[v2ny788.top](https://v2ny788.top?path=register&code=FNAu1FWB)
+奈云机场官网地址：[www.nyaff.cc](https://www.nyaff.cc?path=register&code=FNAu1FWB)
 
 邀请码：FNAu1FWB
 
@@ -293,12 +293,12 @@ xxyun加速特性如下：
 
 | 套餐 | 价格 | 流量 | 购买地址 |
 | --- | --- | --- | --- |
-| Basic-基础套餐(特惠) | ¥128.00/每年 | 168G/月 | [点击购买](https://v2ny788.top?path=register&code=FNAu1FWB) |
-| Pro-进阶套餐 | ¥28.00 /每月 | 388GB/月 | [点击购买](https://v2ny788.top?path=register&code=FNAu1FWB) |
-| Max-专业套餐 | ¥49.00 /每月 | 788GB/月 | [点击购买](https://v2ny788.top?path=register&code=FNAu1FWB) |
-| 280G [按量计费] | ¥98.00 /一次性 | 280GB/不限时 | [点击购买](https://v2ny788.top?path=register&code=FNAu1FWB) |
-| 680G [按量计费] | ¥218.00 /一次性 | 680GB/不限时 | [点击购买](https://v2ny788.top?path=register&code=FNAu1FWB) |
-| 2048G [按量计费] | ¥498.00 /一次性 | 2048GB/不限时 | [点击购买](https://v2ny788.top?path=register&code=FNAu1FWB) |
+| Basic-基础套餐(特惠) | ¥128.00/每年 | 168G/月 | [点击购买](https://www.nyaff.cc?path=register&code=FNAu1FWB) |
+| Pro-进阶套餐 | ¥28.00 /每月 | 388GB/月 | [点击购买](https://www.nyaff.cc?path=register&code=FNAu1FWB) |
+| Max-专业套餐 | ¥49.00 /每月 | 788GB/月 | [点击购买](https://www.nyaff.cc?path=register&code=FNAu1FWB) |
+| 280G [按量计费] | ¥98.00 /一次性 | 280GB/不限时 | [点击购买](https://www.nyaff.cc?path=register&code=FNAu1FWB) |
+| 680G [按量计费] | ¥218.00 /一次性 | 680GB/不限时 | [点击购买](https://www.nyaff.cc?path=register&code=FNAu1FWB) |
+| 2048G [按量计费] | ¥498.00 /一次性 | 2048GB/不限时 | [点击购买](https://www.nyaff.cc?path=register&code=FNAu1FWB) |
 
 ---
 

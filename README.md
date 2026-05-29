@@ -38,7 +38,7 @@
 |[老头vpn](#老头vpn)|[www.chattous.net](https://www.chattous.net/register?code=3OWtZ9Bi)| 1月1G | 10元 100G/月|❌|[TG](https://t.me/OldManVPN)|[前往](./v2/机场推荐老头vpn.md)|
 |[青云梯](#青云梯)|[ermaozi02.qytvipaff.cc](https://ermaozi02.qytvipaff.cc/register?aff=W5ICDu2y)| 无 |8 元60g/月(年付)|❌|[TG](https://t.me/qingyunticc)|[前往](./v1/机场推荐青云梯.md)|
 |[阿达西](#阿达西)|[adaxi.net](https://adaxi.net/?r=68917)| 无 |3元 20G/月|✔|暂无|[前往](./v1/机场推荐阿达西.md)|
-|[奈云](#奈云)|[v2ny788.top](https://v2ny788.top?path=register&code=FNAu1FWB)|无|10.6元 168G/月(年付)|✔|[TG](https://t.me/v2naiun)|[前往](./v1/机场推荐奈云.md)|
+|[奈云](#奈云)|[www.nyaff.cc](https://www.nyaff.cc?path=register&code=FNAu1FWB)|无|10.6元 168G/月(年付)|✔|[TG](https://t.me/v2naiun)|[前往](./v1/机场推荐奈云.md)|
 |[okanc](#okanc)|[okanc.com](https://www.okanc.com/#/register?code=spBqEcUn)| 无 |46元 328G/月|❌|[TG](https://t.me/okancup)|[前往](./v1/机场推荐okanc.md)|
 |[龙猫云](#龙猫云)|[lmspeed.co](https://ermaozi01.lmvipaff03.cc/register?aff=aOkm2wPW)| 无 |15元 100G/月|❌|[TG](https://t.me/totoro_clouds)|[前往](./v1/机场推荐龙猫云.md)|
 |[闪狐云](#闪狐云)|[flashfox.cc](https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv)| 无 |20元 120G/月|❌|[TG](https://t.me/flashfoxcloud)|[前往](./v1/机场推荐闪狐云.md)|
@@ -468,7 +468,7 @@ xxyun加速特性如下：
 
 ### 奈云
 
-奈云机场官网地址：[v2ny788.top](https://v2ny788.top?path=register&code=FNAu1FWB)
+奈云机场官网地址：[www.nyaff.cc](https://www.nyaff.cc?path=register&code=FNAu1FWB)
 
 邀请码：FNAu1FWB
 
@@ -480,12 +480,12 @@ xxyun加速特性如下：
 
 | 套餐 | 价格 | 流量 | 购买地址 |
 | --- | --- | --- | --- |
-| Basic-基础套餐(特惠) | ¥128.00/每年 | 168G/月 | [点击购买](https://v2ny788.top?path=register&code=FNAu1FWB) |
-| Pro-进阶套餐 | ¥28.00 /每月 | 388GB/月 | [点击购买](https://v2ny788.top?path=register&code=FNAu1FWB) |
-| Max-专业套餐 | ¥49.00 /每月 | 788GB/月 | [点击购买](https://v2ny788.top?path=register&code=FNAu1FWB) |
-| 280G [按量计费] | ¥98.00 /一次性 | 280GB/不限时 | [点击购买](https://v2ny788.top?path=register&code=FNAu1FWB) |
-| 680G [按量计费] | ¥218.00 /一次性 | 680GGB/不限时 | [点击购买](https://v2ny788.top?path=register&code=FNAu1FWB) |
-| 2048G [按量计费] | ¥498.00 /一次性 | 2048GGB/不限时 | [点击购买](https://v2ny788.top?path=register&code=FNAu1FWB) |
+| Basic-基础套餐(特惠) | ¥128.00/每年 | 168G/月 | [点击购买](https://www.nyaff.cc?path=register&code=FNAu1FWB) |
+| Pro-进阶套餐 | ¥28.00 /每月 | 388GB/月 | [点击购买](https://www.nyaff.cc?path=register&code=FNAu1FWB) |
+| Max-专业套餐 | ¥49.00 /每月 | 788GB/月 | [点击购买](https://www.nyaff.cc?path=register&code=FNAu1FWB) |
+| 280G [按量计费] | ¥98.00 /一次性 | 280GB/不限时 | [点击购买](https://www.nyaff.cc?path=register&code=FNAu1FWB) |
+| 680G [按量计费] | ¥218.00 /一次性 | 680GGB/不限时 | [点击购买](https://www.nyaff.cc?path=register&code=FNAu1FWB) |
+| 2048G [按量计费] | ¥498.00 /一次性 | 2048GGB/不限时 | [点击购买](https://www.nyaff.cc?path=register&code=FNAu1FWB) |
 
 ---
 
