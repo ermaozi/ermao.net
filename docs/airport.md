@@ -36,6 +36,8 @@ tags:
 
 [![机场推荐边缘节点](https://image.ermao.net/images/blog/l2oqiuhi/20260601_171909-544e6c.png)](https://lunvexa.edgenovayun.cc/#/register?code=n5uSqGLR) [边缘节点](https://lunvexa.edgenovayun.cc/#/register?code=n5uSqGLR) 低门槛年付方案可先试错，再按流量升级月付档；更适合不强依赖通用订阅的用户。起步价：9元/月（年付45G折算）。[>详情](blog/机场推荐/2026/机场推荐边缘节点.md)
 
+[![机场推荐快狸](https://image.ermao.net/images/blog/xvqi7n99/20260601_171625-67cb05.png)](https://ermaozi.kuailicloud.cc/#/register?code=nwj3Tk14) [快狸](https://ermaozi.kuailicloud.cc/#/register?code=nwj3Tk14) 低门槛新站定位，10元/月30G可先试错；更适合先小档验证稳定性再升级。起步价：10元/月。[>详情](blog/机场推荐/2026/机场推荐快狸.md)
+
 [![机场推荐极连云](https://image.ermao.net/images/blog/jilianyun/image.jpg)](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m) [极连云](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m) 企业级IPLC专线，不限设备，流媒体解锁。起步价：8元/月。[>详情](blog/机场推荐/v2/机场推荐极连云.md)
 
 [![机场推荐光速云](https://image.ermao.net/images/blog/guangsuyun/image.png)](https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku) [光速云](https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku) 高速专线，超高性价比，支持Netflix和ChatGPT。起步价：8.25元/月。[>详情](blog/机场推荐/v2/机场推荐光速云.md)
