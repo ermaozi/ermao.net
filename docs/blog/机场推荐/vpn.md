@@ -178,7 +178,6 @@ description: 2026年最新翻墙机场推荐与好用的VPN评测指南，精选
 |[一翻云](#一翻云)|[官网地址](https://falmera.1flyuntt.cc/#/register?code=wQxPnuZv)|❌|30元 150G/月|✔|[TG](https://t.me/1flyunvip)|[前往](./2026/机场推荐一翻云.md)|<span style="color:green">↓32</span>|
 |[sogo云](#sogo云)|[官网地址](https://trevona.sogocloudz.cc/#/login?code=yxneZJKR)|❌|20元 150G/月|✔|[TG](https://t.me/sogoyun)|[前往](./2026/机场推荐sogo云.md)|<span style="color:green">↓32</span>|
 |[青云梯](#青云梯)|[官网地址](https://ermaozi02.qytvipaff.cc/register?aff=W5ICDu2y)|❌|8 元60g/月(年付)|❌|[TG](https://t.me/qingyunticc)|[前往](./v1/机场推荐青云梯.md)|<span style="color:green">↓23</span>|
-|[koodog](#koodog)|[官网地址](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)|❌|5元 35G/月|❌|[TG](https://t.me/KooDogGroup)|[前往](./v1/机场推荐koodog.md)|<span style="color:green">↓2</span>|
 |[99吧](#_99bar)|[官网地址](https://99vpn.bar/#/register?code=qzpkbzHF)|❌|12.9元 99G/月|✔|[TG](https://t.me/jiujiuchat)|暂无|-|
 
 **⚠️ 以下机场存在风险，仅供参考：**
@@ -187,6 +186,7 @@ description: 2026年最新翻墙机场推荐与好用的VPN评测指南，精选
 |---|---|---|---|
 |[小牛云](#小牛云)|[官网地址](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|⚠️ **跑路预警**|[前往](./v2/机场推荐小牛云.md)|
 |[EF](#ef)|~~www.efcloud1.com~~|❌ **已跑路**|[跑路详情](/article/nz313xp6/)|
+|[koodog](#koodog)|[官网地址](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)|❌ **已跑路**|[跑路详情](/scamvpn/koodog/)|
 
 
 ## 好用的VPN机场详细评测与套餐价格
