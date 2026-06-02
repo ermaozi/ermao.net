@@ -34,7 +34,7 @@ tags:
 
 [![机场推荐速界](https://image.ermao.net/images/article/sujie/20260601_161523-e997ac.png)](https://ermaozi01.speedworldaff.cc/#/register?code=7rQfT6CS) [速界](https://ermaozi01.speedworldaff.cc/#/register?code=7rQfT6CS) IEPL路线定位，套餐从月付到三年付覆盖完整，适合先低档验证再升级。起步价：25元/月。[>详情](blog/机场推荐/2026/机场推荐速界.md)
 
-[![机场推荐边缘节点](https://image.ermao.net/images/blog/l2oqiuhi/20260601_171909-544e6c.png)](https://lunvexa.edgenovayun.cc/#/register?code=n5uSqGLR) [边缘节点](https://lunvexa.edgenovayun.cc/#/register?code=n5uSqGLR) 低门槛年付方案可先试错，再按流量升级月付档；更适合不强依赖通用订阅的用户。起步价：9元/月（年付45G折算）。[>详情](blog/机场推荐/2026/机场推荐边缘节点.md)
+[![机场推荐边缘节点](https://image.ermao.net/images/blog/l2oqiuhi/20260601_171909-544e6c.png)](https://ermaozi.edgenovaaff.cc/#/register?code=n5uSqGLR) [边缘节点](https://ermaozi.edgenovaaff.cc/#/register?code=n5uSqGLR) 低门槛年付方案可先试错，再按流量升级月付档；更适合不强依赖通用订阅的用户。起步价：9元/月（年付45G折算）。[>详情](blog/机场推荐/2026/机场推荐边缘节点.md)
 
 [![机场推荐快狸](https://image.ermao.net/images/blog/xvqi7n99/20260601_171625-67cb05.png)](https://ermaozi.kuailicloud.cc/#/register?code=nwj3Tk14) [快狸](https://ermaozi.kuailicloud.cc/#/register?code=nwj3Tk14) 低门槛新站定位，10元/月30G可先试错；更适合先小档验证稳定性再升级。起步价：10元/月。[>详情](blog/机场推荐/2026/机场推荐快狸.md)
 
@@ -78,7 +78,7 @@ tags:
 
 [![机场推荐xsus](https://image.ermao.net/images/blog/xsus/20260129_162650-08b59d.png)](https://xsus.cloud/register?code=xJFcT1Dw) [xsus](https://xsus.cloud/register?code=xJFcT1Dw) 10元168G起，BGP三网优化，晚高峰不掉速，不限时套餐。起步价：10元/月。[>详情](blog/机场推荐/v2/机场推荐xsus.md)
 
-[![机场推荐danke](https://image.ermao.net/images/blog/danke/20260403_165913-188225.png)](https://2iipd.dklineo.top/#/register?code=a0zksG3J) [Danke](https://2iipd.dklineo.top/#/register?code=a0zksG3J) 稳定三年，低至3元/月，AnyTLS加密协议，500GB与不限时流量包可选。起步价：3元/月。[>详情](blog/机场推荐/v2/机场推荐danke.md)
+[![机场推荐danke](https://image.ermao.net/images/blog/danke/20260403_165913-188225.png)](https://www.dankewed.com/#/register?code=a0zksG3J) [Danke](https://www.dankewed.com/#/register?code=a0zksG3J) 稳定三年，低至3元/月，AnyTLS加密协议，500GB与不限时流量包可选。起步价：3元/月。[>详情](blog/机场推荐/v2/机场推荐danke.md)
 
 :::
 
