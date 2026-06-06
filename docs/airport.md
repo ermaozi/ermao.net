@@ -32,7 +32,7 @@ tags:
 
 [![机场推荐Edge-X](https://image.ermao.net/images/article/edge-x/20260509_083554-1403ca.png)](https://edge-invite.com/#/register?code=LCH9laOs) [Edge-X](https://edge-invite.com/#/register?code=LCH9laOs) IEPL专线为主，支持流媒体与AI解锁，闲时倍率更低，适合先低档验证再升级。起步价：22.8元/月。[>详情](blog/机场推荐/2026/机场推荐edge-x.md)
 
-[![机场推荐速界](https://image.ermao.net/images/article/sujie/20260601_161523-e997ac.png)](https://ermaozi01.speedworldaff.cc/#/register?code=7rQfT6CS) [速界](https://ermaozi01.speedworldaff.cc/#/register?code=7rQfT6CS) IEPL路线定位，套餐从月付到三年付覆盖完整，适合先低档验证再升级。起步价：25元/月。[>详情](blog/机场推荐/2026/机场推荐速界.md)
+[![机场推荐速界](https://image.ermao.net/images/article/sujie/20260601_161523-e997ac.png)](https://ermaozi01.speedworldaff.cc/#/register?code=SLWrHAPx) [速界](https://ermaozi01.speedworldaff.cc/#/register?code=SLWrHAPx) IEPL路线定位，套餐从月付到三年付覆盖完整，适合先低档验证再升级。起步价：25元/月。[>详情](blog/机场推荐/2026/机场推荐速界.md)
 
 [![机场推荐边缘节点](https://image.ermao.net/images/blog/l2oqiuhi/20260601_171909-544e6c.png)](https://ermaozi.edgenovaaff.cc/#/register?code=n5uSqGLR) [边缘节点](https://ermaozi.edgenovaaff.cc/#/register?code=n5uSqGLR) 低门槛年付方案可先试错，再按流量升级月付档；更适合不强依赖通用订阅的用户。起步价：9元/月（年付45G折算）。[>详情](blog/机场推荐/2026/机场推荐边缘节点.md)
 
