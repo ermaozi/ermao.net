@@ -30,7 +30,7 @@ tags:
 
 [![机场推荐u1s1](https://image.ermao.net/images/article/u1s1/20260505_152753-9d7d99.png)](https://ermaozi01.vipaff.cc/#/?code=FC32x5Vs) [U1S1](https://ermaozi01.vipaff.cc/#/?code=FC32x5Vs) 全专线IPLC不限设备，晚高峰极速体验。起步价：20元/月。[>详情](blog/机场推荐/2026/机场推荐u1s1.md)
 
-[![机场推荐Edge-X](https://image.ermao.net/images/article/edge-x/20260509_083554-1403ca.png)](https://edge-invite.com/#/register?code=LCH9laOs) [Edge-X](https://edge-invite.com/#/register?code=LCH9laOs) IEPL专线为主，支持流媒体与AI解锁，闲时倍率更低，适合先低档验证再升级。起步价：22.8元/月。[>详情](blog/机场推荐/2026/机场推荐edge-x.md)
+[![机场推荐Edge-X](https://image.ermao.net/images/article/edge-x/20260619_163356-bc37f3.png)](https://edge-invite.com/#/register?code=LCH9laOs) [Edge-X](https://edge-invite.com/#/register?code=LCH9laOs) IEPL专线为主，支持流媒体与AI解锁，闲时倍率更低，适合先低档验证再升级。起步价：22.8元/月。[>详情](blog/机场推荐/2026/机场推荐edge-x.md)
 
 [![机场推荐速界](https://image.ermao.net/images/article/sujie/20260601_161523-e997ac.png)](https://ermaozi01.speedworldaff.cc/#/register?code=SLWrHAPx) [速界](https://ermaozi01.speedworldaff.cc/#/register?code=SLWrHAPx) IEPL路线定位，套餐从月付到三年付覆盖完整，适合先低档验证再升级。起步价：25元/月。[>详情](blog/机场推荐/2026/机场推荐速界.md)
 
