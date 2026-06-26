@@ -3,17 +3,57 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { plumeTheme } from 'vuepress-theme-plume'
 // @ts-ignore
 import statsPlugin from './plugins/stats/index.js'
+
+const hostname = 'https://www.ermao.net'
+const utilityPagePrefixes = ['/blog/tags/', '/blog/categories/', '/blog/archives/']
+const utilityPagePaths = ['/stats/']
+
+const isUtilityPage = (path: string) =>
+  utilityPagePaths.includes(path) || utilityPagePrefixes.some(prefix => path.startsWith(prefix))
+
+const isArticlePage = (page: any) =>
+  Boolean(page.filePathRelative?.startsWith('blog/'))
+  && !page.frontmatter.home
+  && !isUtilityPage(page.path)
+
+const appendNoindex = (head: any[]) => {
+  const hasRobots = head.some((item) => item?.[0] === 'meta' && item?.[1]?.name === 'robots')
+  if (!hasRobots) {
+    head.push(['meta', { name: 'robots', content: 'noindex,follow' }])
+  }
+}
+
+const utilityPagesPlugin = () => ({
+  name: 'ermao-utility-pages',
+  extendsPage: (page: any) => {
+    if (!isUtilityPage(page.path)) return
+
+    page.frontmatter.search = false
+    page.frontmatter.sitemap = false
+    page.frontmatter.head ??= []
+    appendNoindex(page.frontmatter.head)
+  },
+})
+
 export default defineUserConfig({
   lang: 'zh-CN',
   title: '二毛',
   description: "开发、运维、科学上网相关内容，打破技术壁垒",
+  shouldPrefetch: false,
   plugins: [
+    utilityPagesPlugin(),
     statsPlugin({
       workerUrl: 'https://views.ermao.net' // 请替换为实际的 Worker 地址
     })
   ],
   head: [
-    ['link', { rel: 'icon', href: '/images/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/img/logo.svg', type: 'image/svg+xml' }],
+    ['link', { rel: 'preconnect', href: 'https://image.ermao.net' }],
+    ['link', { rel: 'preconnect', href: 'https://views.ermao.net' }],
+    ['link', { rel: 'dns-prefetch', href: 'https://giscus.app' }],
+    ['meta', { name: 'theme-color', content: '#336f87' }],
+    ['meta', { name: 'color-scheme', content: 'light dark' }],
+    ['meta', { name: 'referrer', content: 'strict-origin-when-cross-origin' }],
     ["meta", {"name": "keywords", "content": "机场,便宜机场,梯子,vpn,科学上网,翻墙,clash,trojan,python,服务器"}],
     ["meta", {"name": "yandex-verification", "content": "e1e26631cf282ae3"}],
     ["meta", {"name": "baidu-site-verification", "content": "codeva-XDTarR9mnY"}]
@@ -30,7 +70,7 @@ export default defineUserConfig({
       },],
     logo: '/img/logo.svg',
     home: '/',
-    hostname: 'https://www.ermao.net',
+    hostname,
     footer: { message: "© 2025 二毛 📧 <a href='mailto:admin@ermao.net'>admin@ermao.net</a>" },
     navbar: [
       { text: '二毛博客', link: '/blog/', icon: 'material-symbols:home-rounded' },
@@ -67,7 +107,35 @@ export default defineUserConfig({
         { icon: 'ic:round-email', link: 'mailto:admin@ermao.net' }
       ],
     llmstxt: true,
+    search: {
+      provider: 'local',
+      isSearchable: page =>
+        Boolean(page.filePath)
+        && page.frontmatter.search !== false
+        && !isUtilityPage(page.path),
+    },
     plugins: {
+      markdownImage: {
+        lazyload: true,
+      },
+      sitemap: {
+        changefreq: 'weekly',
+      },
+      seo: {
+        canonical: hostname,
+        fallBackImage: `${hostname}/img/logo.svg`,
+        author: {
+          name: '二毛',
+          url: hostname,
+        },
+        twitterID: '@ermaozi4',
+        isArticle: isArticlePage,
+        customHead: (head, page) => {
+          if (isUtilityPage(page.path)) {
+            appendNoindex(head)
+          }
+        },
+      },
       comment: {
         provider: 'Giscus',
         comment: true,
@@ -75,6 +143,7 @@ export default defineUserConfig({
         repoId: 'R_kgDOL4rZSQ',
         category: 'Announcements',
         categoryId: 'DIC_kwDOL4rZSc4CiGyu',
+        lazyLoading: true,
       },
     },
     markdown: {

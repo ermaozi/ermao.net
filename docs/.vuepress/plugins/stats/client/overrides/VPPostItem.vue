@@ -4,7 +4,7 @@ import type { PostsCoverStyle, ThemePostsItem } from 'vuepress-theme-plume/share
 import VPLink from '@theme/VPLink.vue'
 import { isMobile as _isMobile } from '@vuepress/helper/client'
 import { getReadingTimeLocale, useReadingTimeLocaleConfig } from '@vuepress/plugin-reading-time/client'
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { withBase } from 'vuepress/client'
 import { useData, useInternalLink, useTagColors } from 'vuepress-theme-plume/client'
 
@@ -17,11 +17,17 @@ const { post, index } = defineProps<{
 
 const isMobile = ref(false)
 
-onMounted(() => {
+const updateIsMobile = () => {
   isMobile.value = _isMobile()
-  window.addEventListener('resize', () => {
-    isMobile.value = _isMobile()
-  })
+}
+
+onMounted(() => {
+  updateIsMobile()
+  window.addEventListener('resize', updateIsMobile, { passive: true })
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateIsMobile)
 })
 
 const { collection } = useData<'page', 'post'>()
@@ -124,7 +130,7 @@ const coverStyles = computed(() => {
       v-if="post.cover" class="post-cover" data-allow-mismatch
       :class="{ compact: coverCompact }" :style="coverStyles"
     >
-      <img :src="withBase(post.cover)" :alt="post.title" loading="lazy">
+      <img :src="withBase(post.cover)" :alt="post.title" loading="lazy" decoding="async">
     </div>
     <div class="post-item-content">
       <h3>

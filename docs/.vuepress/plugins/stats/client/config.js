@@ -1,7 +1,7 @@
 import { defineClientConfig } from '@vuepress/client'
 import { useRouter } from 'vue-router'
 import PageViews from './components/PageViews.vue'
-import PopularPosts from './components/PopularPosts.vue'
+import PopularPostsRoot from './components/PopularPostsRoot.vue'
 import StatsLayout from './layouts/StatsLayout.vue'
 import FullStatsLayout from './layouts/FullStatsLayout.vue'
 
@@ -11,7 +11,7 @@ export default defineClientConfig({
     StatsLayout: FullStatsLayout
   },
   rootComponents: [
-    PopularPosts
+    PopularPostsRoot
   ],
   enhance({ app }) {
     app.component('PageViews', PageViews)

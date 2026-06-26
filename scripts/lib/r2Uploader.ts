@@ -100,13 +100,28 @@ export class R2Uploader {
     return { md5: hashSum.digest("hex"), size };
   }
 
-  private async isRemoteSame(key: string, localMD5: string): Promise<boolean> {
+  private getCacheControl(key: string, contentType: string): string | undefined {
+    const immutableAsset = /\.(?:avif|webp|png|jpe?g|gif|svg|ico|css|js|mjs|woff2?|ttf)$/i.test(key);
+
+    if (immutableAsset || contentType.startsWith("image/")) {
+      return "public, max-age=31536000, immutable";
+    }
+
+    return undefined;
+  }
+
+  private async isRemoteSame(
+    key: string,
+    localMD5: string,
+    cacheControl?: string
+  ): Promise<boolean> {
     try {
       const head = await this.s3.send(
         new HeadObjectCommand({ Bucket: this.bucket, Key: key })
       );
       const remoteETag = head.ETag?.replace(/"/g, "");
-      return remoteETag === localMD5;
+      const cacheMatches = !cacheControl || head.CacheControl === cacheControl;
+      return remoteETag === localMD5 && cacheMatches;
     } catch {
       return false;
     }
@@ -115,10 +130,11 @@ export class R2Uploader {
   async upload(localFilePath: string, key: string, opts?: UploadOptions): Promise<string> {
     const force = !!opts?.force;
     const contentType = mime.lookup(localFilePath) || "application/octet-stream";
+    const cacheControl = this.getCacheControl(key, contentType);
     const { md5: localMD5, size } = await this.calculateMD5AndSize(localFilePath);
 
     if (!force) {
-      const same = await this.isRemoteSame(key, localMD5);
+      const same = await this.isRemoteSame(key, localMD5, cacheControl);
       if (same) {
         return this.buildPublicUrl(key);
       }
@@ -138,6 +154,7 @@ export class R2Uploader {
           Body: createReadStream(localFilePath),
           ContentType: contentType,
           ContentLength: size,
+          CacheControl: cacheControl,
         },
         queueSize: 4,
         partSize: 5 * 1024 * 1024, // 5MB 分片

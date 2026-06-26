@@ -1,25 +1,54 @@
 <script setup>
-import { ref, onMounted, computed, watch, nextTick } from 'vue'
-import { useRouter, useRoute } from 'vue-router'
+import { ref, computed, watch, nextTick, onUnmounted } from 'vue'
+import { useRouter } from 'vue-router'
 // @ts-ignore
 import { pageMap } from '@stats/page-map'
 // @ts-ignore
 import { usePageData } from '@vuepress/client'
 
 const popularPosts = ref([])
-const loading = ref(true)
+const loading = ref(false)
 const canShow = ref(false)
 const targetSelector = ref('.vp-posts-aside')
+const hasLoaded = ref(false)
 const router = useRouter()
-const route = useRoute()
 const page = usePageData()
+const pageMapKeys = Object.keys(pageMap)
 
 const shouldShow = computed(() => {
-    // Show on almost everywhere except 404
-    return !page.value.path.includes('/404')
+    return !page.value.path.includes('/404') && page.value.path !== '/stats/'
 })
 
 let pollingTimer = null
+
+const resolveWorkerUrl = () => {
+    // @ts-ignore
+    let workerUrl = __STATS_WORKER_URL__
+    if (typeof workerUrl === 'string' && workerUrl.startsWith('"') && workerUrl.endsWith('"')) {
+        workerUrl = workerUrl.slice(1, -1)
+    }
+    return workerUrl
+}
+
+const fetchPopularPosts = async () => {
+    const workerUrl = resolveWorkerUrl()
+    if (!workerUrl || hasLoaded.value || loading.value) return
+
+    loading.value = true
+
+    try {
+        const res = await fetch(`${workerUrl}/popular`)
+        if (res.ok) {
+            const data = await res.json()
+            popularPosts.value = Array.isArray(data) ? data : []
+            hasLoaded.value = true
+        }
+    } catch (e) {
+        console.error('[stats] fetch popular posts error', e)
+    } finally {
+        loading.value = false
+    }
+}
 
 const checkDomAndShow = async () => {
     if (typeof document === 'undefined') return
@@ -55,6 +84,7 @@ const checkDomAndShow = async () => {
                  // Pick the last one usually implies the one being mounted on top/after
                  targetSelector.value = sel
                  canShow.value = true
+                 fetchPopularPosts()
                  found = true
                  break
              }
@@ -72,6 +102,13 @@ const checkDomAndShow = async () => {
 
 watch(() => page.value.path, checkDomAndShow, { immediate: true })
 
+onUnmounted(() => {
+    if (pollingTimer) {
+        clearTimeout(pollingTimer)
+        pollingTimer = null
+    }
+})
+
 // Filter out 404, home, stats page itself if they appear
 const filteredPosts = computed(() => {
     return popularPosts.value.filter(p => {
@@ -83,6 +120,8 @@ const filteredPosts = computed(() => {
         if (path === '/stats') return false;
         if (path.startsWith('/tags/')) return false;
         if (path.startsWith('/archives/')) return false;
+        if (path.startsWith('/blog/tags/')) return false;
+        if (path.startsWith('/blog/archives/')) return false;
         if (path.startsWith('/blog/categories/')) return false;
         if (path === '/friends' || path === '/friends.html') return false;
         if (path === '/blog' || path === '/blog.html') return false;
@@ -90,7 +129,7 @@ const filteredPosts = computed(() => {
         if (p.path.includes('/page/')) return false;
         
         // Try to find title
-        const mapKey = Object.keys(pageMap).find(k => 
+        const mapKey = pageMapKeys.find(k => 
             k === p.path || 
             k === path || 
             k === p.path + '.html' ||
@@ -109,31 +148,6 @@ const filteredPosts = computed(() => {
 const getTitle = (post) => {
     return post._title || post.path
 }
-
-onMounted(async () => {
-    // @ts-ignore
-    let workerUrl = __STATS_WORKER_URL__
-    if (typeof workerUrl === 'string' && workerUrl.startsWith('"') && workerUrl.endsWith('"')) {
-        workerUrl = workerUrl.slice(1, -1)
-    }
-    console.log('[PopularPosts] Worker URL:', workerUrl)
-    if (!workerUrl) return;
-
-    try {
-        const res = await fetch(`${workerUrl}/popular`);
-        if (res.ok) {
-            const data = await res.json();
-            console.log('[PopularPosts] Data received:', data)
-            popularPosts.value = data
-        } else {
-             console.error('[PopularPosts] Failed to load. Status:', res.status);
-        }
-    } catch (e) {
-        console.error('[PopularPosts] Error:', e)
-    } finally {
-        loading.value = false
-    }
-})
 
 const navigate = (path) => {
     router.push(path)
