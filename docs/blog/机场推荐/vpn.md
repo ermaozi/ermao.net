@@ -178,7 +178,7 @@ description: 2026年最新翻墙机场推荐与好用的VPN评测指南，精选
 |[TNT](#tnt)|[官网地址](https://ermaozi02.tntvipaff.cc/#/register?code=f1EyPwf3)|❌|10元60g/月(季付)|❌|[TG](https://t.me/TNTCloud2)|[前往](./v1/机场推荐TNT.md)|<span style="color:red">↑1</span>|
 |[Aladdin](#aladdin)|[官网地址](https://short.thisgourl.xyz/#/register?code=tvLw0oMj)|❌|30元 390G/半年|❌|暂无|暂无|<span style="color:red">↑2</span>|
 |[xxai](#xxai)|[官网地址](https://xx-ai.co?invite_code=K2TpsDcg)|❌|16.9元 100G/月|✔|[TG](https://t.me/xxai_official)|暂无|<span style="color:red">↑4</span>|
-|[一翻云](#一翻云)|[官网地址](https://falmera.1flyuntt.cc/#/register?code=wQxPnuZv)|❌|30元 150G/月|✔|[TG](https://t.me/1flyunvip)|[前往](./2026/机场推荐一翻云.md)|<span style="color:green">↓32</span>|
+|[一翻云](#一翻云)|[官网地址](https://ermaozi.yifanaff.com/#/register?code=wQxPnuZv)|❌|30元 150G/月|✔|[TG](https://t.me/1flyunvip)|[前往](./2026/机场推荐一翻云.md)|<span style="color:green">↓32</span>|
 |[sogo云](#sogo云)|[官网地址](https://01.sogoyunaff.cc/#/login?code=yxneZJKR)|❌|20元 150G/月|✔|[TG](https://t.me/sogoyun)|[前往](./2026/机场推荐sogo云.md)|<span style="color:green">↓32</span>|
 |[青云梯](#青云梯)|[官网地址](https://ermaozi02.qytvipaff.cc/register?aff=W5ICDu2y)|❌|8 元60g/月(年付)|❌|[TG](https://t.me/qingyunticc)|[前往](./v1/机场推荐青云梯.md)|<span style="color:green">↓23</span>|
 |[99吧](#_99bar)|[官网地址](https://99vpn.bar/#/register?code=qzpkbzHF)|❌|12.9元 99G/月|✔|[TG](https://t.me/jiujiuchat)|暂无|-|
@@ -1111,7 +1111,7 @@ xxai官网地址：[xxai.uk](https://xx-ai.co?invite_code=K2TpsDcg)
 
 ### 一翻云
 
-官网地址：[01.1flyunaff.cc](https://falmera.1flyuntt.cc/#/register?code=wQxPnuZv)
+官网地址：[01.1flyunaff.cc](https://ermaozi.yifanaff.com/#/register?code=wQxPnuZv)
 
 优惠码：`YFY168`（限时 8 折）
 
@@ -1121,10 +1121,10 @@ xxai官网地址：[xxai.uk](https://xx-ai.co?invite_code=K2TpsDcg)
 
 | 套餐 | 月付 | 流量 | 购买地址 |
 | --- | --- | --- | --- |
-| VIP1 | 30元/月 | 150GB/月 | [点击购买](https://falmera.1flyuntt.cc/#/register?code=wQxPnuZv) |
-| VIP2 | 60元/月 | 300GB/月 | [点击购买](https://falmera.1flyuntt.cc/#/register?code=wQxPnuZv) |
-| VIP3 | 120元/月 | 600GB/月 | [点击购买](https://falmera.1flyuntt.cc/#/register?code=wQxPnuZv) |
-| VIP4 | 240元/月 | 1200GB/月 | [点击购买](https://falmera.1flyuntt.cc/#/register?code=wQxPnuZv) |
+| VIP1 | 30元/月 | 150GB/月 | [点击购买](https://ermaozi.yifanaff.com/#/register?code=wQxPnuZv) |
+| VIP2 | 60元/月 | 300GB/月 | [点击购买](https://ermaozi.yifanaff.com/#/register?code=wQxPnuZv) |
+| VIP3 | 120元/月 | 600GB/月 | [点击购买](https://ermaozi.yifanaff.com/#/register?code=wQxPnuZv) |
+| VIP4 | 240元/月 | 1200GB/月 | [点击购买](https://ermaozi.yifanaff.com/#/register?code=wQxPnuZv) |
 
 ---
 

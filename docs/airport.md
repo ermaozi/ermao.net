@@ -56,7 +56,7 @@ tags:
 
 [![机场推荐传送门](https://image.ermao.net/images/blog/8svdlqds/20260407_102504-14e480.png)](https://aa.csmfby.com/?code=b9eUUu00) [传送门](https://aa.csmfby.com/?code=b9eUUu00) 自研App降低配置门槛，订阅异常自动恢复，节点异常可自动切换，适合不想手动排障的用户。起步价：99元/年。[>详情](blog/机场推荐/2026/机场推荐传送门.md)
 
-[![机场推荐一翻云](https://image.ermao.net/images/article/yifanyun/20260422_214050-889482.png)](https://falmera.1flyuntt.cc/#/register?code=wQxPnuZv) [一翻云](https://falmera.1flyuntt.cc/#/register?code=wQxPnuZv) 低门槛四档流量梯度，支持一次性订阅，适合先月付验证再升级。起步价：30元/月。[>详情](blog/机场推荐/2026/机场推荐一翻云.md)
+[![机场推荐一翻云](https://image.ermao.net/images/article/yifanyun/20260422_214050-889482.png)](https://ermaozi.yifanaff.com/#/register?code=wQxPnuZv) [一翻云](https://ermaozi.yifanaff.com/#/register?code=wQxPnuZv) 低门槛四档流量梯度，支持一次性订阅，适合先月付验证再升级。起步价：30元/月。[>详情](blog/机场推荐/2026/机场推荐一翻云.md)
 
 [![机场推荐梦想云](https://image.ermao.net/images/blog/mengxiangyun/20260403_092831-7354b4.png)](https://gx.dreamcl.sbs/#/register?code=GFUAEweX) [梦想云](https://gx.dreamcl.sbs/#/register?code=GFUAEweX) 三网直连混搭+BGP跨境专线，流媒体和ChatGPT可用性较好，适合长期主力使用。起步价：8.8元/月。[>详情](blog/机场推荐/v1/机场推荐梦想云.md)
 
