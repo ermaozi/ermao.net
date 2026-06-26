@@ -1,0 +1,1543 @@
+---
+url: /posts/vpn/index.md
+description: >-
+  2026年翻墙机场推荐与VPN机场评测，整理50+便宜好用机场、低价套餐、IEPL/IPLC专线、通用订阅、Netflix/ChatGPT解锁、Clash/Shadowrocket教程和跑路预警，适合新手快速选择稳定科学上网方案。
+---
+![翻墙机场推荐评测](https://image.ermao.net/images/posts/vpn/20260315_110648-5171d6.png)
+
+# 2026年翻墙机场推荐：便宜好用的VPN机场评测与科学上网指南(长期更新)
+
+寻找**2026年翻墙机场推荐**、**便宜机场**或**好用的VPN机场评测**？这篇文章会把常见科学上网需求拆开：低价月付、按量不限时、IEPL/IPLC 专线、通用订阅、ChatGPT/Netflix/YouTube 解锁、Clash/Shadowrocket 客户端配置，以及跑路预警。无论你是第一次买机场订阅，还是想找一个稳定的备用机场，都可以先从这份长期更新榜单里筛选。
+
+如果你是第一次接触机场订阅、Clash 节点、Shadowrocket 或通用订阅，建议先看[《2026翻墙机场订阅指南：Clash节点购买、导入与机场推荐》](/article/jichang-subscription-guide/)，理解“机场、VPN、客户端、节点”之间的关系后，再回来挑选套餐会更省心。
+
+本文更新于 **2026年6月26日**。每个机场至少由我试用一周后才决定是否推荐，重点看晚高峰稳定性、套餐价格、节点可用率、客服响应、通用订阅支持和网上口碑。如果你还不清楚如何辨别机场优劣，建议先阅读[《如何选择VPN机场避坑指南》](/article/choose-good-airport/)。
+
+## 什么是VPN和机场？如何选择科学上网工具？
+
+::: collapse
+
+* VPN vs 机场：区别与选择建议
+
+  **VPN（虚拟专用网络）**是一种加密的网络连接技术，可以保护您的在线隐私和数据安全。而**机场**（也称为代理服务）是国内用户常用的科学上网工具，通常基于Shadowsocks、V2Ray、Trojan等协议。
+
+  **主要区别：**
+
+  * **VPN**：商业VPN服务通常价格较高（月费20-80元），但提供完整的网络加密和多平台支持，适合对隐私要求高的用户
+  * **机场**：价格更实惠（常见低价套餐约3-15元/月），专注于突破网络限制，性价比更高，适合日常科学上网需求
+
+  **如何选择好用的VPN或机场？**
+
+  1. **稳定性**：选择运营2年以上的服务商，避免频繁跑路风险
+  2. **速度**：优先选择有IEPL/IPLC专线的机场，观看4K视频无压力
+  3. **价格**：根据流量需求选择，轻度用户可选择10元以下套餐或不限时流量包
+  4. **支付方式**：支持支付宝、微信等国内支付方式
+  5. **客服响应**：有活跃的[Telegram](/blog/telegram/)群组或24小时工单系统
+
+* 低价机场与便宜套餐推荐标准
+
+  在我们的**VPN推荐**评测中，性价比是很多用户关注的重点。低价机场、10元以下套餐和不限时流量包门槛低，适合作为新手试用或备用线路。
+
+  本文推荐的低价机场和便宜机场都经过筛选，确保它们是真正**好用的VPN**替代品：
+
+  * ✅ 价格透明，无隐藏费用
+  * ✅ 节点稳定，不频繁掉线
+  * ✅ 支持主流客户端（[Clash](/article/0gematwc/)、V2Ray、[Shadowrocket](/article/z747kgjd/)等）
+  * ✅ 可访问Netflix、ChatGPT、YouTube等海外服务
+  * ✅ 提供试用或退款保证
+
+* 科学上网常见问题解答(FAQ)
+
+  **Q1: 使用VPN和机场安全吗？**
+
+  A: 选择正规服务商，不在敏感时期进行敏感操作，风险较低。建议：
+
+  * 不要使用免费VPN（易泄露隐私）
+  * 选择口碑好、运营时间长的机场
+  * 不要在墙内讨论敏感话题
+
+  **Q2: 一个月需要多少流量？**
+
+  A: 根据使用场景：
+
+  * 轻度使用（浏览网页、社交）：50-100GB/月
+  * 中度使用（看视频、下载）：200-500GB/月
+  * 重度使用（4K视频、大量下载）：500GB-1TB/月
+
+  **Q3: 如何使用VPN和机场？**
+
+  A: 基本步骤：
+
+  1. 注册并购买套餐
+  2. 下载客户端（Clash、V2Ray、Shadowrocket等）
+  3. 复制订阅链接并导入客户端
+  4. 选择节点并连接
+
+  **Q4: 哪些设备可以使用？**
+
+  A: 主流机场支持：
+
+  * Windows、macOS、Linux电脑
+  * iOS、Android手机
+  * [路由器](/posts/router/)（实现全家科学上网，详见[软路由小白保姆级教程](/blog/router-setup-guide/)）
+  * Apple TV、游戏机等
+
+* 2026年最新科学上网趋势
+
+  1. **协议升级**：Hysteria、TUIC等新协议提供更快速度和更强抗封锁能力
+  2. **价格战**：更多低价套餐和按量流量包出现，性价比持续提升
+  3. **专线普及**：IEPL/IPLC专线价格下降，中高端机场标配
+  4. **AI服务支持**：越来越多机场优化ChatGPT、Claude等AI服务访问
+     :::
+
+## 机场推荐说明
+
+近期常常收到私信或评论，希望我能测评某某机场。这里简单说明一下推荐标准（更详细的选购指南请参阅[《2026年怎么选VPN机场？避坑与防跑路指南》](/article/choose-good-airport/)）。
+
+* 机场运营 2 年及以上。
+* 官网能在中国大陆访问，且支持支付宝或微信等国内常用的支付方式。
+* 存在有效的工单处理通道。
+* 价格不要太贵。
+* 不要经常掉线，或是订阅链接经常自动更换。
+* 网上没有大量的黑料或是纠纷。
+* 如果同学们有符合条件的机场，欢迎评论或私信推荐！
+
+为了让这份**翻墙机场推荐**不是简单堆链接，我会把每个机场按下面几个维度交叉判断：
+
+| 评测维度 | 主要看什么 | 为什么重要 |
+| --- | --- | --- |
+| 稳定性 | 晚高峰是否频繁断线、节点是否大面积超时 | 决定能不能长期作为主力机场 |
+| 速度体验 | YouTube 1080P/4K、Google、GitHub、ChatGPT 访问情况 | 比单纯测速数字更接近日常使用 |
+| 套餐价格 | 月付价格、每月流量、是否有不限时流量包 | 方便新手按预算选择便宜机场 |
+| 线路质量 | IEPL/IPLC、BGP中转、直连、倍率规则 | 影响延迟、抗拥塞和晚高峰表现 |
+| 客户端兼容 | 是否支持 Clash、Shadowrocket、V2RayNG、通用订阅 | 影响 Windows、macOS、Android、iOS 多端使用 |
+| 风险信号 | 工单响应、群组状态、官网可访问性、历史口碑 | 降低机场跑路和长期失联风险 |
+
+## 2026年翻墙机场推荐一览表
+
+::: warning
+请务必更换最新客户端！[Android](/article/eh8f4n86/)/[iOS](/blog/clashmi/)/[Windows](/article/0gematwc/)
+
+很多用户因为客户端版本低或压根不支持[anytls](/article/anytls-guide/)， 导致导入订阅失败
+
+后面各种稀奇古怪的新协议应该是趋势，目前防识别最好的就是 [anytls](/article/anytls-guide/) 与 vless + 流控，建议优先选择支持这两种协议的机场
+:::
+
+以下排序以==每月销量（包含新购与续费）==为主，销量越高的机场排在越前面。
+
+\*\[机场名称]: 点击可跳转至下方简介，有更详细的介绍与价格表。
+
+\*\[不限时]: 指的是购买后流量不受时间限制，直到流量用完为止。
+
+\*\[通用订阅]: 是否支持通用订阅链接以供第三方客户端（如clash、v2ray、小火箭等）使用，而非仅能使用自有客户端。
+
+\*\[群组]: 是否有活跃的群组，通常为Telegram群或频道。购买订阅前优先考虑可以自由发言且客服响应较快的群组，能在遇到问题时第一时间获得帮助。
+
+|机场名称|官网地址|通用订阅|最便宜订阅|不限时|群组|详情|变化|
+|---|---|:---:|--|:---:|---|---|---|
+|[flybit](#flybit)|[官网地址](https://goflybit.com/#/register?code=7h1NCdM7)|✔|15元 128G/月|✔|[TG](https://t.me/flybitvip)|[前往](./v2/机场推荐flybit.md)|-|
+|[XSUS](#xsus)|[官网地址](https://xsus.cloud/register?code=xJFcT1Dw)|✔|8元 168G/30天|✔|[TG](https://t.me/xsusvpn)|[前往](./v2/机场推荐xsus.md)|-|
+|[xxyun](#xxyun)|[官网地址](https://xxyun.at/?code=HOWnn58c)|✔|9.99元 100G/月|✔|[TG](https://t.me/+eYsE6P_xvjk2NGY5)|[前往](./v2/机场推荐xxyun.md)|-|
+|[cocoduck](#cocoduck)|[官网地址](https://www.cocoduck.live/auth/register?code=25c8b515df)|✔|15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|↑1|
+|[网际快车](#网际快车)|[官网地址](https://ermao.快车.com?c=USNCXQ)|✔|6.8元 20GB(不限时)|✔|暂无|[前往](./v2/机场推荐网际快车.md)|↑1|
+|[阿达西](#阿达西)|[官网地址](https://adaxi.net/?r=68917)|❌|3元 20G/月|✔|暂无|[前往](./v1/机场推荐阿达西.md)|↑1|
+|[ssone](#ssone)|[官网地址](https://www.flybit6202.com/#/register?code=MmE2PsQJ)|❌|15元 60G/月|❌|[TG](https://t.me/+rYzRmCbJfIw3ZTM1)|[前往](./v2/机场推荐ssone.md)|↑18|
+|[u1s1](#u1s1)|[官网地址](https://ermaozi01.vipaff.cc/#/?code=FC32x5Vs)|✔|20元 120G/月|✔|✖|[前往](./2026/机场推荐u1s1.md)|↑6|
+|[uuone](#uuone)|[官网地址](https://uuone.at/?code=AjqYdZlJ)|❌|12元 150G/月|✔|暂无|[前往](./v2/机场推荐uuone.md)|-|
+|[奈云](#奈云)|[官网地址](https://www.nyaff.cc?path=register\&code=FNAu1FWB)|✔|10.6元 168G/月(年付)|✔|[TG](https://t.me/v2naiun)|[前往](./v1/机场推荐奈云.md)|↓6|
+|[冲上云霄](#冲上云霄)|[官网地址](https://cpdd.one/?r=32083)|✔|5元 80G/30天|✔|[TG](https://t.me/vpnpn123)|[前往](./v1/机场推荐冲上云霄.md)|↑8|
+|[隐云](#隐云)|[官网地址](https://wkacc.xyz/?code=db949e40)|✔|25元 150G/月|❌|暂无|[前往](./v2/机场推荐隐云.md)|↓2|
+|[大哥云](#大哥云)|[官网地址](https://ermao.dgywzc.com/#/register?code=peAVAa8D)|✔|19.9元 100G/月|❌|[TG](https://t.me/dageyun)|[前往](./v2/机场推荐大哥云.md)|↑7|
+|[CAC](#cac)|[官网地址](https://www.cac.mom/#/register?code=kYL5chvN)|❌|7.9元 168G/月|❌|[TG](https://t.me/CAC_Apex)|暂无|↑14|
+|[Danke](#danke)|[官网地址](https://www.dankewed.com/#/register?code=a0zksG3J)|❌|3元 88GB/月|✔|[TG](https://t.me/dankewed1)|[前往](./v2/机场推荐danke.md)|↑8|
+|[Edge-X](#edge-x)|[官网地址](https://edge-invite.com/#/register?code=LCH9laOs)|✔|22.8元/月起|❌|[TG](https://t.me/EdgeX_Notice)|[前往](./2026/机场推荐edge-x.md)|↓3|
+|[速界](#速界)|[官网地址](https://ermaozi01.speedworldaff.cc/#/register?code=SLWrHAPx)|❌|25元/月|❌|暂无|[前往](./2026/机场推荐速界.md)|新上|
+|[边缘节点](#边缘节点)|[官网地址](https://ermaozi.edgenovaaff.cc/#/register?code=oErRsBNy)|❌|9元/月(年付45G)|✔|暂无|[前往](./2026/机场推荐边缘节点.md)|新上|
+|[快狸](#快狸)|[官网地址](https://ermaozi.kuailicloud.cc/#/register?code=nwj3Tk14)|❌|10元 30G/月|✔|暂无|[前往](./2026/机场推荐快狸.md)|新上|
+|[龙猫云](#龙猫云)|[官网地址](https://ermaozi01.lmvipaff03.cc/register?aff=aOkm2wPW)|✔|15元 100G/月|❌|[TG](https://t.me/totoro_clouds)|[前往](./v1/机场推荐龙猫云.md)|↑4|
+|[唯兔云](#唯兔云)|[官网地址](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx)|❌|6元 45G/月|✔|[TG](https://t.me/v2yun_v2)|[前往](./v2/机场推荐唯兔云.md)|↓6|
+|[百变小樱](#百变小樱)|[官网地址](https://cn2.cardsakura.buzz/v2/register?code=WuuD)|✔| 15元 100G/30天|❌|[TG](https://t.me/+IugiUXlyYqgyNjE0)|[前往](./v1/机场推荐百变小樱.md)|↑16|
+|[寰宇云](#寰宇云)|[官网地址](https://vip4.huanyuyunbest.com/#/register?code=W82s7u2a)|❌|18元 150GB/月|✔|[TG](https://t.me/+zXIUmCa1aLBmOGQx)|[前往](./2026/机场推荐寰宇云.md)|↓2|
+|[光速云](#光速云)|[官网地址](https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku)|❌|8.25元 59G/月|✔|[TG](https://t.me/LightspeedCloud)|[前往](./v2/机场推荐光速云.md)|↑17|
+|[星岛梦](#星岛梦)|[官网地址](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY)|❌|16元 100G/月|✔|[TG](https://t.me/XDM6666666)|[前往](./v2/机场推荐星岛梦.md)|-|
+|[闪狐云](#闪狐云)|[官网地址](https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv)|✔|20元 120G/月|❌|[TG](https://t.me/flashfoxcloud)|[前往](./v1/机场推荐闪狐云.md)|↑9|
+|[掌中世界](#掌中世界)|[官网地址](https://qq.zjs2025.com/user/register?code=S74QiRGN)|❌| 18元 100G/月|❌|暂无|[前往](./v1/机场推荐掌中世界.md)|↑17|
+|[灯塔cloud](#灯塔cloud)|[官网地址](https://www.dengta.cloud/#/register?code=n4jB4z5R)|❌|10元 100G/月|❌|[TG](https://t.me/+xBRgJGSBcNdlNWJl)|[前往](./v1/机场推荐灯塔cloud.md)|↑5|
+|[好鸭云](#好鸭云)|[官网地址](https://vuser.niceduck.io/register?code=QS0hzI2y)|❌|12元 100G/月|❌|[TG](https://t.me/niceduck_group)|[前往](./v1/机场推荐好鸭云.md)|↑23|
+|[迅达](#迅达)|[官网地址](https://sulianproxy.com/register?code=bXIAotbG)|❌|15元 120G/月|❌|[TG](https://t.me/xundaroot)|[前往](./v2/机场推荐迅达.md)|↑15|
+|[全球云](#全球云)|[官网地址](https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA)|❌|20元 120G/月|✔|[TG](https://t.me/quanqiuyun001)|[前往](./v2/机场推荐全球云.md)|↑15|
+|[Runway](#runway)|[官网地址](https://www.runwayhz.com/#/register?code=RiIDywqb)|❌|9.9元 100G/月|✔|[TG](https://t.me/runwayhzop)|[前往](./v2/机场推荐runway.md)|↓18|
+|[光年梯](#光年梯)|[官网地址](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr)|❌|18元 110G/月|✔|[TG](https://t.me/guangnianti)|[前往](./v2/机场推荐光年梯.md)|↓1|
+|[随便云](#随便云)|[官网地址](https://wcnm.one/register?code=YZxHwCws)|✔|10元 68G/月|✔|[TG](https://t.me/suibianvip)|[前往](./v2/机场推荐随便云.md)|↑8|
+|[老头vpn](#老头vpn)|[官网地址](https://www.chattous.net/register?code=3OWtZ9Bi)|❌| 25元 150G/月|❌|[TG](https://t.me/OldManVPN)|[前往](./v2/机场推荐老头vpn.md)|↓24|
+|[纵云梯](#纵云梯)|[官网地址](https://zongyunti.com/?r=60147)|✔| 10元 60G/30天|❌|暂无|[前往](./v1/机场推荐纵云梯.md)|↑4|
+|[极连云](#极连云)|[官网地址](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m)|❌|8元 60G/月|✔|[TG](https://t.me/JLYCloud)|[前往](./v2/机场推荐极连云.md)|↓7|
+|[加速啦](#加速啦)|[官网地址](https://jiasu.la/?r=39116)|✔|10元 80G/月|✔|[TG](https://t.me/jiasu_la)|[前往](./v1/机场推荐加速啦.md)|↑5|
+|[superbiu](#superbiu)|[官网地址](https://biubiux.online/#/register?code=BasmsULb)|❌|11元 50G/月|✔|[TG](https://t.me/superbiu888)|[前往](./v2/机场推荐superbiu.md)|↑8|
+|[CyberGuard](#cyberguard)|[官网地址](https://www.cyberguard.best/#/register?code=yoyUW3R9)|❌|18元 100G/月|✔|[TG](https://t.me/CyberGuardChat)|[前往](./v1/机场推荐CyberGuard.md)|↓6|
+|[白羊星](#白羊星)|[官网地址](https://baiyangxi.com/#/register?code=gelkjfjz)|❌| 12元 100G/月|✔|暂无|[前往](./v1/机场推荐白羊星.md)|↓4|
+|[瞬云](#瞬云)|[官网地址](https://aaa.jichang.best/#/register?code=QEiJcAPp)|✔|8.25元 59G/月|❌|暂无|[前往](./2026/机场推荐瞬云.md)|↑7|
+|[二猫云](#二猫云)|[官网地址](https://v01.2maoyunaff.cc/#/register?code=6n2UaV1A)|❌|16元 100G/月|✔|[TG](https://t.me/ermaov1)|[前往](./v2/机场推荐二猫云.md)|↓23|
+|[ccyz](#ccyz)|[官网地址](https://xxyun.at/?code=HOWnn58c)|❌|15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|↓17|
+|[梦想云](#梦想云)|[官网地址](https://gx.dreamcl.sbs/#/register?code=GFUAEweX)|❌|8.8元 300GB/月|❌|暂无|[前往](./v1/机场推荐梦想云.md)|↓9|
+|[okanc](#okanc)|[官网地址](https://www.okanc.com/#/register?code=spBqEcUn)|❌|46元 328G/月|❌|[TG](https://t.me/okancup)|[前往](./v1/机场推荐okanc.md)|↓7|
+|[TNT](#tnt)|[官网地址](https://ermaozi02.tntvipaff.cc/#/register?code=f1EyPwf3)|❌|10元60g/月(季付)|❌|[TG](https://t.me/TNTCloud2)|[前往](./v1/机场推荐TNT.md)|↑1|
+|[Aladdin](#aladdin)|[官网地址](https://short.thisgourl.xyz/#/register?code=tvLw0oMj)|❌|30元 390G/半年|❌|暂无|暂无|↑2|
+|[xxai](#xxai)|[官网地址](https://xx-ai.co?invite_code=K2TpsDcg)|❌|16.9元 100G/月|✔|[TG](https://t.me/xxai_official)|暂无|↑4|
+|[一翻云](#一翻云)|[官网地址](https://ermaozi.yifanaff.com/#/register?code=wQxPnuZv)|❌|30元 150G/月|✔|[TG](https://t.me/1flyunvip)|[前往](./2026/机场推荐一翻云.md)|↓32|
+|[sogo云](#sogo云)|[官网地址](https://ermaozi.sogoaff.com/#/login?code=yxneZJKR)|❌|20元 150G/月|✔|[TG](https://t.me/sogoyun)|[前往](./2026/机场推荐sogo云.md)|↓32|
+|[青云梯](#青云梯)|[官网地址](https://ermaozi02.qytvipaff.cc/register?aff=W5ICDu2y)|❌|8 元60g/月(年付)|❌|[TG](https://t.me/qingyunticc)|[前往](./v1/机场推荐青云梯.md)|↓23|
+|[99吧](#_99bar)|[官网地址](https://99vpn.bar/#/register?code=qzpkbzHF)|❌|12.9元 99G/月|✔|[TG](https://t.me/jiujiuchat)|暂无|-|
+
+**⚠️ 以下机场存在风险，仅供参考：**
+
+|名称|官网地址|状态|详情|
+|---|---|---|---|
+|[小牛云](#小牛云)|[官网地址](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|⚠️ **跑路预警**|[前往](./v2/机场推荐小牛云.md)|
+|[EF](#ef)|~~www.efcloud1.com~~|❌ **已跑路**|[跑路详情](/article/nz313xp6/)|
+|[koodog](#koodog)|[官网地址](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)|❌ **已跑路**|[跑路详情](/scamvpn/koodog/)|
+
+## 好用的VPN机场详细评测与套餐价格
+
+***
+
+### flybit
+
+flybit官网地址：[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM7)
+
+邀请码：7h1NCdM7
+
+试用：1天 2G
+
+最便宜的订阅为15元 128G/月。
+
+解锁主流流媒体和ChatGPT，IEPL接口线路和普通线路一样的价格，机场稳定，几乎全部节点全天候可用。购买之前记得领一下首页的优惠券再下单。
+
+***
+
+### XSUS
+
+XSUS官网地址：[xsus.cloud](https://xsus.cloud/register?code=xJFcT1Dw)
+
+邀请码：xJFcT1Dw
+
+试用：无
+
+最便宜的订阅有8元 168G/30天。稳定运行2年+，节点质量高，支持按流量购买，支持支付宝、微信、USDT支付。
+
+***
+
+### xxyun
+
+xxyun官网地址：[https://xxyun.de](https://xxyun.at/?code=HOWnn58c)
+
+最便宜订阅：9.99元 100G/月。
+
+9折优惠码：`xxyun`
+
+85折优惠码（只能使用一次）：`xxyun85`
+
+xxyun加速特性如下：
+
+* 老牌机场稳定运行两年
+* 超高性价比，节点质量高，晚高峰不限速，不限制设备。
+* 全BGP中转，国内三网优化
+* 流媒体完美解锁（包括Netflix , Disney+, HBO等）
+* 全天候在线，高效客服响应
+
+| 套餐 | 价格 | 流量 | 购买地址 |
+| --- | --- | --- | --- |
+| 初级套餐 | 9.99元/每月 | 100G/月 | [点击购买](https://xxyun.at/?code=HOWnn58c) |
+| 中级套餐 | 19.9元/每月 | 300G/月 | [点击购买](https://xxyun.at/?code=HOWnn58c) |
+| 高级套餐 | 39.9元/每月 | 1000G/月 | [点击购买](https://xxyun.at/?code=HOWnn58c) |
+| 500G\[不限时] | 66.66元/一次性 | 500G/不限时 | [点击购买](https://xxyun.at/?code=HOWnn58c) |
+| 2888G\[不限时] | 199元/一次性 | 2888G/不限时 | [点击购买](https://xxyun.at/?code=HOWnn58c) |
+
+***
+
+### cocoduck
+
+CocoDuck机场官网地址：[https://www.cocoduck.live](https://www.cocoduck.live/auth/register?code=25c8b515df)
+
+试用：1天2G流量
+
+最便宜的订阅有15元 150G/月。
+
+[CocoDuck机场](https://www.cocoduck.live/auth/register?code=25c8b515df)详细评测：由海外团队运营的高品质翻墙机场，拥有两年稳定运营历史、自有四个机房、40+全球节点，支持OpenAI和流媒体解锁，是比较值得信赖的稳定机场之一。
+
+| 套餐名称 | 月费 | 流量 | 节点数量 | 特色服务 | 适用人群 | 购买链接 |
+|----------|------|------|----------|----------|----------|-------|
+| 鸭宝宝 | ¥15/月 | 150GB/月 | 40+全球节点 | 基础解锁 | 超轻度用户 | [购买链接](https://www.cocoduck.live/auth/register?code=25c8b515df) |
+| 可达鸭 | ¥28/月 | 400GB/月 | 40+全球节点 | 全面解锁 | 日常使用 | [购买链接](https://www.cocoduck.live/auth/register?code=25c8b515df) |
+| 哥达鸭 | ¥41/月 | 700GB/月 | 40+全球节点 | 优先路由 | 中度用户 | [购买链接](https://www.cocoduck.live/auth/register?code=25c8b515df) |
+| 唐老鸭 | ¥53/月 | 1000GB/月 | 40+全球节点 | 专线服务 | 企业/团队 | [购买链接](https://www.cocoduck.live/auth/register?code=25c8b515df) |
+| 迷你鸭 | ¥77/年 | 77GB/月 | 40+全球节点 | 超值优惠 | 长期用户 | [购买链接](https://www.cocoduck.live/auth/register?code=25c8b515df) |
+
+***
+
+### 网际快车
+
+官网地址：[ermao.快车.com](https://ermao.快车.com?c=USNCXQ)
+
+最便宜的套餐：6.8元 20GB（不限时）。
+
+网际快车主打住宅IP、万能订阅与四端专用VPN，支持不限设备数量，适合多设备家庭和长期备用线路场景。
+
+| 套餐名称 | 价格 | 流量/时长 | 特性 | 购买 |
+|----------|------|-----------|------|------|
+| 入门流量包 | ¥6.8 | 20GB（不限时） | 永不过期，不限设备 | [立即购买](https://ermao.快车.com?c=USNCXQ) |
+| 标准套餐 | ¥16 | 100GB（不限时） | 永不过期 | [立即购买](https://ermao.快车.com?c=USNCXQ) |
+| 优选套餐 | ¥29 | 200GB（不限时） | 主力推荐 | [立即购买](https://ermao.快车.com?c=USNCXQ) |
+| 高级套餐 | ¥49 | 380GB（不限时） | 中重度用户 | [立即购买](https://ermao.快车.com?c=USNCXQ) |
+| 大神套餐 | ¥118 | 1000GB（不限时） | 大流量囤货 | [立即购买](https://ermao.快车.com?c=USNCXQ) |
+| 至尊套餐 | ¥198 | 1980GB（不限时） | 超大容量 | [立即购买](https://ermao.快车.com?c=USNCXQ) |
+| 包月套餐 | ¥24 | 30天，每日60GB | 高频使用 | [立即购买](https://ermao.快车.com?c=USNCXQ) |
+| 包季套餐 | ¥58 | 90天，每日60GB | 连续使用 | [立即购买](https://ermao.快车.com?c=USNCXQ) |
+| 包年套餐 | ¥186 | 365天，每日60GB | 年度重度用户 | [立即购买](https://ermao.快车.com?c=USNCXQ) |
+
+***
+
+### 阿达西
+
+阿达西官网地址：[https://adaxi.net](https://adaxi.net/?r=68917)
+
+邀请码：68917
+
+试用：无
+
+最便宜的订阅有3元 20G/月。
+
+新出的轻量级机场，这是目前最便宜的机场！节点虽少但背靠大树好乘凉，速度和稳定性都不错。
+
+非常适合偶尔翻墙或是长时间浏览推特、Facebook等社交网站的同学。
+
+***
+
+### ssone
+
+官网地址：[m.ssone.io](https://www.flybit6202.com/#/register?code=MmE2PsQJ)
+
+邀请码：aBHsE1pF
+
+最便宜的订阅有15元 60G/月。
+
+| 套餐名称 | 月费 | 流量 | 节点数量 | 适用人群 |购买链接|
+|----------|------|------|----------|----------|-------|
+| \[Lite]微型够用 | ¥15/月 | 60GB/月 | 30+IEPL专线 | 轻度用户 |[购买链接](https://hello-ssone.com/cart?plan=lite\&aff=aBHsE1pF)|
+| \[Pro]实用主义 | ¥39/月 | 500GB/月 | 100+IEPL专线 | 日常使用 |[购买链接](https://hello-ssone.com/cart?plan=lite\&aff=aBHsE1pF)|
+| \[Pro]充盈之选 | ¥60/月 | 1200GB/月 | 100+IEPL专线 | 重度用户 |[购买链接](https://hello-ssone.com/cart?plan=lite\&aff=aBHsE1pF)|
+| \[Pro]团队计划 | ¥150/月 | 3600GB/月 | 100+IEPL专线 | 企业/团队 |[购买链接](https://hello-ssone.com/cart?plan=lite\&aff=aBHsE1pF)|
+| \[Pro]超值无忧 | ¥200/年 | 5000GB/年 | 100+IEPL专线 | 个人/企业 |[购买链接](https://hello-ssone.com/cart?plan=lite\&aff=aBHsE1pF)|
+| \[Pro]优惠计划 | ¥80/季 | 300GB/月 | 100+IEPL专线 | 日常使用 |[购买链接](https://hello-ssone.com/cart?plan=lite\&aff=aBHsE1pF)|
+
+以上所有套餐均有月付、季付、半年、一年、两年、三年等多种付费周期可选。
+
+***
+
+### u1s1
+
+[u1s1](https://ermaozi01.vipaff.cc/#/?code=FC32x5Vs) 机场是一家主打 IPLC 专线并且不限制设备连接数的翻墙机场。他们拥有最高 2000Mbps 的带宽，并承诺晚高峰不降速。解锁 Netflix、TikTok 等流媒体以及 ChatGPT，最低起步价 20元/120G 每月，也有 580元 1000G 的无限制流量包，适合多设备重度流媒体及AI玩家。
+
+官网：[ermaozi01.vipaff.cc](https://ermaozi01.vipaff.cc/#/?code=FC32x5Vs)
+起步价：20元 120G/月
+不限时套餐：有（580元/1000G）
+解锁：Netflix, TikTok, ChatGPT
+定制：支持定制方案与提供小火箭账号
+详情评测：[查看 U1S1 详细评测](./2026/机场推荐u1s1.md)
+
+***
+
+### uuone
+
+官网地址：[uuone.de](https://uuone.at/?code=AjqYdZlJ)
+
+最便宜的订阅有12元 150G/月。
+
+使用本站专属优惠码 `uuone`，全场套餐 **9折** 优惠！
+
+| 套餐名称 | 原价 | **券后价** | 流量 | 特性 | 购买 |
+|----------|------|------------|------|------|------|
+| **Lite套餐** | ¥12/月 | **¥10.8** | 150G/月 | 入门首选，BGP中转 | [👉抢购](https://uuone.at/?code=AjqYdZlJ) |
+| **Pro套餐** 🌟 | ¥23/月 | **¥20.7** | 300G/月 | 进阶推荐，流量充裕 | [👉抢购](https://uuone.at/?code=AjqYdZlJ) |
+| **Max套餐** | ¥45/月 | **¥40.5** | 800G/月 | 超大流量，4K无忧 | [👉抢购](https://uuone.at/?code=AjqYdZlJ) |
+| **永久套餐** | ¥80 | **¥72** | 450G | 一次性流量，不过期 | [👉抢购](https://uuone.at/?code=AjqYdZlJ) |
+
+[uuone](https://uuone.at/?code=AjqYdZlJ) 是一家专注于提供 **高性价比** 出海加速服务的 **翻墙机场**。其核心优势在于提供 **BGP三网优化** 中转线路，确保超高性价比的同时，拥有高质量的节点表现。
+
+***
+
+### 奈云
+
+奈云机场官网地址：[www.nyaff.cc](https://www.nyaff.cc?path=register\&code=FNAu1FWB)
+
+邀请码：FNAu1FWB
+
+试用：无
+
+最便宜的订阅有10.6元 168G/月(年付)。
+
+奈云机场是绝对的老牌机场，已稳定运营6年以上未出现过负面评价，节点数量非常多，足以满足大部分用户的需求。支持支付宝、微信支付。
+
+| 套餐 | 价格 | 流量 | 购买地址 |
+| --- | --- | --- | --- |
+| Basic-基础套餐(特惠) | ¥128.00/每年 | 168G/月 | [点击购买](https://www.nyaff.cc?path=register\&code=FNAu1FWB) |
+| Pro-进阶套餐 | ¥28.00 /每月 | 388GB/月 | [点击购买](https://www.nyaff.cc?path=register\&code=FNAu1FWB) |
+| Max-专业套餐 | ¥49.00 /每月 | 788GB/月 | [点击购买](https://www.nyaff.cc?path=register\&code=FNAu1FWB) |
+| 280G \[按量计费] | ¥98.00 /一次性 | 280GB/不限时 | [点击购买](https://www.nyaff.cc?path=register\&code=FNAu1FWB) |
+| 680G \[按量计费] | ¥218.00 /一次性 | 680GB/不限时 | [点击购买](https://www.nyaff.cc?path=register\&code=FNAu1FWB) |
+| 2048G \[按量计费] | ¥498.00 /一次性 | 2048GB/不限时 | [点击购买](https://www.nyaff.cc?path=register\&code=FNAu1FWB) |
+
+***
+
+### 冲上云霄
+
+冲上云霄官网地址：[cpdd.one](https://cpdd.one/?r=32083)
+
+邀请码：32083
+
+试用：1天 1G
+
+最便宜的订阅有5元 80G/30天。
+
+这是目前来看最便宜的机场，用户也比较多，节点质量过关。缺点是购买稍微麻烦一点，需要购买充值码进行充值后才能购买套餐。
+
+***
+
+### 隐云
+
+隐云机场官网地址：[wkacc.xyz](https://wkacc.xyz/?code=db949e40)
+
+最便宜的订阅有25元 150G/月。
+
+隐云是业内独家提供 **VPN 专属客户端与通用订阅兼容双模式** 的机场服务商。采用企业级 IPLC / IEPL / BGP 多线路专线架构，覆盖全球 30+ 国家和地区超 100 个节点，99.9% 高可用保障。独家"魔法节点"技术实现服务端智能分流，无需客户端配置即可自动将 Netflix、Disney+、ChatGPT 等服务路由至最优解锁线路。
+
+**付费周期折扣**：月付无折扣 / 季付 95 折 / 年付 8 折
+
+| 套餐 | 模式 | 价格 | 流量 | 设备限制 | 购买链接 |
+|:-----|:-----|-----:|:----:|:--------:|:---------|
+| 轻量版 | 专属客户端 | ¥29/月 | 不限 | 2 台同时在线 | [立即购买](https://wkacc.xyz/?code=db949e40) |
+| 轻量版 | 通用订阅 | ¥25/月 | 150GB/月 | 不限 | [立即购买](https://wkacc.xyz/?code=db949e40) |
+| 标准版 | 专属客户端 | ¥49/月 | 不限 | 5 台同时在线 | [立即购买](https://wkacc.xyz/?code=db949e40) |
+| 标准版 | 通用订阅 | ¥49/月 | 400GB/月 | 不限 | [立即购买](https://wkacc.xyz/?code=db949e40) |
+| 高级版 | 专属客户端 | ¥99/月 | 不限 | 10 台同时在线 | [立即购买](https://wkacc.xyz/?code=db949e40) |
+| 高级版 | 通用订阅 | ¥99/月 | 1024GB/月 | 不限 | [立即购买](https://wkacc.xyz/?code=db949e40) |
+
+***
+
+### 大哥云
+
+大哥云官网地址：[ermao.dgywzc.com](https://ermao.dgywzc.com/#/register?code=peAVAa8D)
+
+最便宜的订阅有19.9元 100G/月。
+
+大哥云机场5年老品牌，可以免费试用，支持奈飞等多家流媒体解锁，支持YOUTUBE 8K流畅观看支持IPLC线路。
+
+| 套餐名称 | 价格 | 流量 | 时长 | 峰值带宽 | 协议 | 购买 |
+|----------|------:|------:|:----:|--------:|------|------|
+| 单月套餐 A | ¥19.90 | 100G/月 | 按自然月 | 500 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+| 单月套餐 B | ¥29.90 | 150G/月 | 按自然月 | 500 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+| 季付套餐 A | ¥69.00 | 200G/月 | 90 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+| VIP1 小流量（年付） | ¥88.00 | 15G/月 | 365 天 | 500 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+| 年付套餐 A | ¥199.00 | 300G/月 | 365 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+| 年付套餐 B | ¥299.00 | 500G/月 | 365 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+| 年付套餐（1000GB） | ¥699.00 | 1000G/月 | 365 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+
+***
+
+### cac
+
+CAC官网地址：[www.cac.mom](https://www.cac.mom/#/register?code=kYL5chvN)
+
+轻量机场，价格非常便宜，适合应急用。
+
+| 套餐 | 价格 | 流量 | 备注 | 购买地址 |
+| --- | --- | --- | --- | --- |
+| LITE套餐 | ¥7.90 /每月 | 168GB/月 | 可支持5台设备同时接入 | [点击购买](https://www.cac.mom/#/register?code=kYL5chvN) |
+| PRO套餐 | ¥15.00 /每月 | 398GB/月 | 可支持5台设备同时接入 | [点击购买](https://www.cac.mom/#/register?code=kYL5chvN) |
+
+***
+
+### Danke
+
+Danke官网地址：[www.dankewed.com](https://www.dankewed.com/#/register?code=a0zksG3J)
+
+最便宜套餐：3元 88GB/月。
+
+| 套餐名称 | 价格 | 流量 | 适合人群 | 购买链接 |
+| --- | --- | --- | --- | --- |
+| 年费6T特惠 | ¥68/年 | 每月 500GB（全年 6TB） | 长期稳定使用、预算优先 | [立即购买](https://www.dankewed.com/#/register?code=a0zksG3J) |
+| Mini | ¥9.90/月 | 每月 500GB | 日常刷视频、AI工具中度使用 | [立即购买](https://www.dankewed.com/#/register?code=a0zksG3J) |
+| Pro | ¥18.00/月 | 每月 1000GB | 多设备与重度流量用户 | [立即购买](https://www.dankewed.com/#/register?code=a0zksG3J) |
+| 体验套餐 | ¥3.00/月 | 88GB/30天 | 先测试线路和稳定性 | [立即购买](https://www.dankewed.com/#/register?code=a0zksG3J) |
+| 不限时500GB | ¥49.90/一次性 | 总计 500GB（用完即止） | 低频备用、按量使用 | [立即购买](https://www.dankewed.com/#/register?code=a0zksG3J) |
+| 不限时1000GB | ¥89.90/一次性 | 总计 1000GB（用完即止） | 需要大容量备用流量 | [立即购买](https://www.dankewed.com/#/register?code=a0zksG3J) |
+
+这是一个主打高性价比的中转机场，官方定位是“稳定三年，低至3元/月”。提供 500GB 月付与不限时流量包，支持 AnyTLS 协议，适合想先低成本试用、再按需求升级套餐的用户。
+
+Telegram频道：<https://t.me/dankewed1>
+
+***
+
+### Edge-X
+
+Edge-X 官网地址：[edge-x.net](https://edge-invite.com/#/register?code=LCH9laOs)
+
+最便宜的订阅为 22.8元/月起。
+无 一次性订阅。
+
+Edge-X 的定位是 IEPL 专线为主、直连节点为补充，并通过倍率策略降低错峰成本。已知信息里 IEPL 日常 1 倍率，02:00-10:00 为 0.5 倍率，直连节点全天 0.2 倍率，更适合先低档验证再升级。
+
+| 套餐名称 | 价格 | 流量 | 适用人群 | 购买链接 |
+| --- | --- | --- | --- | --- |
+| 基础档 | 22.8元/月 | 100GB 或 200GB（以官网支付页为准） | 轻度和中度用户 | [立即购买](https://edge-invite.com/#/register?code=LCH9laOs) |
+| 进阶档 | 34.8元/月 | 300GB/月 | 日常视频与 AI 工具用户 | [立即购买](https://edge-invite.com/#/register?code=LCH9laOs) |
+| 高流量档 | 64.8元/月 | 600GB/月 | 多设备中重度用户 | [立即购买](https://edge-invite.com/#/register?code=LCH9laOs) |
+
+详情评测：[查看 Edge-X 详细评测](./2026/机场推荐edge-x.md)
+
+***
+
+### 速界
+
+速界官网地址：[speedworld.cc](https://ermaozi01.speedworldaff.cc/#/register?code=SLWrHAPx)
+
+最便宜的订阅为 25元/月。
+无 一次性订阅。
+
+速界主打 IEPL 路线和多档周期套餐，当前可确认信息是：不支持通用订阅、暂无 TG 群或频道。更适合先小档验证，再按真实使用量升级。
+
+| 套餐名称 | 价格 | 流量/周期 | 适用人群 | 购买链接 |
+| --- | --- | --- | --- | --- |
+| 极速版 | 25元/月 | 月付到三年付可选 | 轻度与入门用户 | [立即购买](https://ermaozi01.speedworldaff.cc/#/register?code=SLWrHAPx) |
+| 超速版 | 50元/月 | 月付到三年付可选 | 日常中度使用 | [立即购买](https://ermaozi01.speedworldaff.cc/#/register?code=SLWrHAPx) |
+| 光速版 | 100元/月 | 月付到三年付可选 | 高频流媒体和多设备 | [立即购买](https://ermaozi01.speedworldaff.cc/#/register?code=SLWrHAPx) |
+| 跃迁版 | 200元/月 | 月付到三年付可选 | 中重度用户 | [立即购买](https://ermaozi01.speedworldaff.cc/#/register?code=SLWrHAPx) |
+| 年付体验包 | 88元/年 | 年付体验档 | 预算敏感先体验 | [立即购买](https://ermaozi01.speedworldaff.cc/#/register?code=SLWrHAPx) |
+
+详情评测：[查看速界详细评测](./2026/机场推荐速界.md)
+
+***
+
+### 边缘节点
+
+边缘节点官网地址：[ermaozi.edgenovaaff.cc](https://ermaozi.edgenovaaff.cc/#/register?code=oErRsBNy)
+
+最便宜的订阅为 108元/年付45G（折合约9元/月）。
+有 一次性订阅。
+
+边缘节点更偏向低门槛试错路线：有 108 元年付小流量入门档，也有 25/50/100/200 元月付阶梯。已知边界是暂不支持通用订阅、暂无 TG 群，更适合先小档验证再升级。
+
+| 套餐名称 | 价格 | 流量 | 适用人群 | 购买链接 |
+| --- | --- | --- | --- | --- |
+| 年付入门档 | 108元/年 | 45G/年 | 预算敏感、轻度备用 | [立即购买](https://ermaozi.edgenovaaff.cc/#/register?code=oErRsBNy) |
+| 标准套餐 | 25元/月 | 120G/月 | 轻中度日常使用 | [立即购买](https://ermaozi.edgenovaaff.cc/#/register?code=oErRsBNy) |
+| 进阶套餐 | 50元/月 | 250G/月 | 中度视频和工具访问 | [立即购买](https://ermaozi.edgenovaaff.cc/#/register?code=oErRsBNy) |
+| 高级套餐 | 100元/月 | 500G/月 | 高频多设备场景 | [立即购买](https://ermaozi.edgenovaaff.cc/#/register?code=oErRsBNy) |
+| 极限套餐 | 200元/月 | 1000G/月 | 中重度流量用户 | [立即购买](https://ermaozi.edgenovaaff.cc/#/register?code=oErRsBNy) |
+
+详情评测：[查看边缘节点详细评测](./2026/机场推荐边缘节点.md)
+
+***
+
+### 快狸
+
+快狸官网地址：[ermaozi.kuailicloud.cc](https://ermaozi.kuailicloud.cc/#/register?code=nwj3Tk14)
+
+最便宜的订阅为 10元 30G/月。
+有 一次性订阅。
+
+快狸目前定位是低门槛入门：最低档价格友好，支付方式完善，套餐梯度从轻度到重度都有覆盖。当前已知边界是暂不支持通用订阅、暂无 TG 群，更适合先小档验证再决定是否长期续费。
+
+| 套餐名称 | 价格 | 流量 | 周期 | 购买链接 |
+| --- | --- | --- | --- | --- |
+| 森狸年付小套餐 | 120元/年 | 30GB/月 | 年付/两年/三年 | [立即购买](https://ermaozi.kuailicloud.cc/#/register?code=nwj3Tk14) |
+| 月猩月付小套餐 | 15元/月 | 50GB/月 | 月付 | [立即购买](https://ermaozi.kuailicloud.cc/#/register?code=nwj3Tk14) |
+| 小狸基础版 | 22元/月 | 100GB/月 | 月付/半年/一年 | [立即购买](https://ermaozi.kuailicloud.cc/#/register?code=nwj3Tk14) |
+| 灵理标准版 | 35元/月 | 250GB/月 | 月付/季度/半年/一年 | [立即购买](https://ermaozi.kuailicloud.cc/#/register?code=nwj3Tk14) |
+| 夜理强化版 | 95元/月 | 500GB/月 | 月付/季度/半年/一年 | [立即购买](https://ermaozi.kuailicloud.cc/#/register?code=nwj3Tk14) |
+| 天狸顶配版 | 180元/月 | 1000GB/月 | 月付/季度/半年/一年 | [立即购买](https://ermaozi.kuailicloud.cc/#/register?code=nwj3Tk14) |
+
+详情评测：[查看快狸详细评测](./2026/机场推荐快狸.md)
+
+***
+
+### 龙猫云
+
+龙猫云官网地址：[lmspeed.co](https://ermaozi01.lmvipaff03.cc/register?aff=aOkm2wPW)
+
+邀请码：aOkm2wPW
+
+试用：无
+
+最便宜的订阅有15元 150G/月。
+
+**特性如下**
+
+* 超高性价比，节点质量高，客服实时在线，晚高峰不限速，不限制设备。
+* IPLC深港、沪美、沪日专线，
+* 流媒体完美解锁（包括Netflix , Disney+, HBO等）
+* 完美解锁ChatGPT、Gemini、Copilot
+* 支持Tiktok本土短视频运营和直播
+
+***
+
+### 唯兔云
+
+唯兔云官网地址：[vip01.onlyrabbit.cc](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx)
+
+唯兔云IPLC专线，Trojan协议，解锁各大流媒体，解锁ChatGPT、Gemini等AI，解锁Tiktok，支持电商、直播运营。套餐无倍率、不限速、不限制设备数量，支持支付宝微信usdt，
+除了港、台、日、美、新常规的五国节点以外，我们还有东南亚五国，韩国以及一些欧美国家。价格惠民，最低6元一个月，专线中的性价比战斗机。
+售后服务绝对有保障，多人客服团队轮流坐班，海外技术团队稳定可靠。可提供小火箭下载账号，可提供TG代注册服务等等
+
+最便宜的订阅有6元 45G/月。
+
+| 套餐名称 | 流量 | 价格 | 说明 | 购买链接 |
+|----------|------|------|------|---------|
+| **入门年付** | 45G/月 | ¥79.9/年 | 平均仅需6.6元/月，性价比极高 | [点击购买](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx) |
+| **基础套餐** | 100G/月 | ¥14.9/月  ¥40.9/季  ¥142.9/年 | 适合日常轻度使用 | [点击购买](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx) |
+| **进阶套餐** | 200G/月 | ¥29.9/月  ¥80.9/季  ¥286.9/年 | 适合主力使用 | [点击购买](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx) |
+| **高级套餐** | 500G/月 | ¥59.9/月  ¥161.9/季  ¥547.9/年 | 适合重度视频用户 | [点击购买](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx) |
+| **尊享套餐** | 1000G/月 | ¥119.9/月  ¥323.9/季  ¥1150.9/年 | 团队/工作室首选 | [点击购买](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx) |
+| **不限时套餐** | 500G | 首次¥340 | 后续续费9折，流量不过期 | [点击购买](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx) |
+
+***
+
+### 百变小樱
+
+百变小樱官网地址：[https://bbxy88.com](https://cn2.cardsakura.buzz/v2/register?code=WuuD)
+
+试用：无
+
+最便宜的订阅有15元 100G/30天。
+
+百变小樱优惠码：
+
+* 半年付95折优惠码：`happy10-1-6month`
+* 年付88折优惠码：`happy10-1-1year`
+* 三年付78折优惠码：`happy10-1-3years`
+
+百变小樱是一家自2020年起运营的低调小众机场，线路稳定可靠，采用隧道与专线结合的架构。其套餐支持两种不同的使用方式，并配有定制化精简面板，有效避免节点列表冗长。团队已迁至海外运营，确保无按流量风险，主打产品特点为稳定性、全流媒体解锁、超低价格以及附赠流媒体账号。
+
+另外，此机场支持SSR系列代理软件，例如小火箭和Clash。
+
+支付方式涵盖支付宝、微信支付以及USDT。
+
+***
+
+### 寰宇云
+
+寰宇云官网地址：[vip4.huanyuyunbest.com](https://vip4.huanyuyunbest.com/#/register?code=W82s7u2a)
+
+最便宜的订阅为 18元 150GB/月，活动后约 14元。
+有 一次性订阅。
+
+寰宇云是新开业的 IPLC 中转定位机场，月付、年付小包和不限时流量包并行，适合先低成本验证本地可用性，再决定是否升级长期使用。
+
+| 套餐名称 | 价格 | 流量 | 适用人群 | 购买链接 |
+|----------|------|------|----------|----------|
+| 限定年付小包 | 89元/年 | 60GB/月 | 轻度小流量用户、备用线用户 | [立即购买](https://vip4.huanyuyunbest.com/#/register?code=W82s7u2a) |
+| 卫星 | 18元/月（折后约14元） | 150GB/月 | 轻度到中度日常用户 | [立即购买](https://vip4.huanyuyunbest.com/#/register?code=W82s7u2a) |
+| 行星 | 34元/月 | 300GB/月 | 中度流媒体与 AI 工具用户 | [立即购买](https://vip4.huanyuyunbest.com/#/register?code=W82s7u2a) |
+| 恒星 | 60元/月 | 600GB/月 | 重度多设备用户 | [立即购买](https://vip4.huanyuyunbest.com/#/register?code=W82s7u2a) |
+| 巨量不限时 | 168元/一次性 | 1000GB 总量 | 低频备用需求 | [立即购买](https://vip4.huanyuyunbest.com/#/register?code=W82s7u2a) |
+| 海量不限时 | 398元/一次性 | 3000GB 总量 | 中长期非连续高频用户 | [立即购买](https://vip4.huanyuyunbest.com/#/register?code=W82s7u2a) |
+
+***
+
+### 光速云
+
+光速云官网地址：[zimaoer01.gsyvipaff.cc](https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku)
+
+最便宜的订阅有8.25元 59G/月。
+
+光速云IEPL专线机场，提供高品质线路，支持 Trojan/SS 等协议，专注于稳定流媒体与跨境业务。全线解锁 Netflix、Disney+、YouTube、ChatGPT、Gemini 等平台与 AI 服务，并支持 TikTok 跨区，适合跨境电商、直播运营、远程办公等高要求用户。
+
+套餐无限速、无倍率、不限制设备数（合理使用），支持支付宝、USDT 付款。节点覆盖港台、日美新、东南亚、韩国及多国欧美地区，价格亲民，月付最低8.25元起，另提供1T大流量永久套餐。拥有多客服团队与海外技术支持，可提供小火箭下载、TG代注册等增值服务。
+
+| 套餐名称 | 价格 | 流量 | 特性 | 购买链接 |
+|----------|------|------|------|----------|
+| **轻量版(年付)** | ¥99/年 | 59GB/月 | 超长续订首选，折合¥8.25/月 | [购买链接](https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku) |
+| **极速版** | ¥17/月 | 110GB/月 | 入门体验，性价比高 | [购买链接](https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku) |
+| **流光版** | ¥34/月 | 220GB/月 | 主流推荐，适合日常使用 | [购买链接](https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku) |
+| **量子版** | ¥68/月 | 450GB/月 | 中重度用户，大流量 | [购买链接](https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku) |
+| **无界版** | ¥130/月 | 900GB/月 | 自由使用，极致体验 | [购买链接](https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku) |
+| **不限时流量包** | ¥680 | 1000GB | 一次性购买，永不过期 | [购买链接](https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku) |
+
+***
+
+### 星岛梦
+
+星岛梦官网地址：[ermaov1.xdmvipaff.cc](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY)
+
+星岛梦IEPL专线机场，提供高品质线路，支持 Trojan/SS 等协议，专注于稳定流媒体与跨境业务。全线解锁 Netflix、Disney+、YouTube、ChatGPT、Gemini 等平台与 AI 服务，并支持 TikTok 跨区，适合跨境电商、直播运营、远程办公等高要求用户。
+
+套餐无限速、无倍率、不限制设备数（合理使用），支持支付宝、USDT 付款。节点覆盖港台、日美新、东南亚、韩国及多国欧美地区，价格亲民，月付最低16元起，另提供1T大流量永久套餐。拥有多客服团队与海外技术支持，可提供小火箭下载、TG代注册等增值服务。
+
+最便宜的订阅有16元 100G/月。
+
+| 套餐名称 | 价格 | 流量 | 特点 | 购买链接 |
+|----------|------|------|------|---------|
+| **星岛梦 · 极速版** | ¥16.00/月 | 100GB/月 | 全IPLC专线，晚高峰不降速 | [购买链接](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY) |
+| **星岛梦 · 进阶版** | ¥32.00/月 | 200GB/月 | 全IPLC专线，晚高峰不降速 | [购买链接](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY) |
+| **星岛梦 · 闪光版** | ¥80.00/月 | 500GB/月 | 全IPLC专线，晚高峰不降速 | [购买链接](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY) |
+| **星岛梦 · 旗舰版** | ¥160.00/月 | 1.0TB/月 | 全IPLC专线，晚高峰不降速 | [购买链接](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY) |
+| **星岛梦 · 永久不限时** | ¥680.00/一次性 | 1.0TB | 无限时长，用完为止 | [购买链接](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY) |
+| **星岛梦 · 定制套餐** | ¥680.00/月 | 500GB | 专属定制节点，独享原生IP | [购买链接](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY) |
+
+***
+
+### 闪狐云
+
+闪狐云官网地址：[flashfox.cc](https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv)
+
+邀请码：NCO1w4Iv
+
+试用：无
+
+最便宜的订阅有20元 120G/月。
+
+闪狐云是目前我用过的节点质量最高的机场，价格虽然不是最便宜的，但是性价比非常高。支持支付宝。
+
+**特性如下**
+
+* BGP隧道中转，IPLC高速内网纯专线出口，延迟低
+* 5大运营商动态优化。
+* trojan协议，安全、高速、加密。
+* 解锁全球流媒体、AI工具。
+* 无设备和ip限制。
+* 1000Mbps速率，晚高峰不限速
+* 专业人工客服，快速响应
+* 接受企业或者个人定制业务
+
+***
+
+### 掌中世界
+
+掌中世界官网地址：[zzsjjsq.com](https://qq.zjs2025.com/user/register?code=S74QiRGN)
+
+邀请码：S74QiRGN
+
+试用：7天 10G
+
+最便宜的订阅有18元 100G/月。
+
+节点稳定，客服24小时在线，解锁主流流媒体。
+
+***
+
+### 灯塔cloud
+
+灯塔cloud官网地址：<https://www.dengta.cloud/#/register?code=n4jB4z5R>
+
+最便宜的订阅有10元 100G/月。
+
+| 套餐 | 价格 | 流量 | 购买地址 |
+| --- | --- | --- | --- |
+| 标准版 | ¥70.00/6个月 | 100GB/月 | [点击购买](https://www.dengta.cloud/#/register?code=n4jB4z5R) |
+| 个人套餐(三个月) | ¥89.00/三个月 | 600GB/月 | [点击购买](https://www.dengta.cloud/#/register?code=n4jB4z5R) |
+| 个人套餐(六个月) | ¥155.00/六个月 | 600GB/月 | [点击购买](https://www.dengta.cloud/#/register?code=n4jB4z5R) |
+| 个人套餐(一年) | ¥279.00/一年 | 600GB/月 | [点击购买](https://www.dengta.cloud/#/register?code=n4jB4z5R) |
+
+灯塔cloud机场客服响应速度很快，态度非常好，节点质量也很棒。灯塔Cloud团队会定期更新节点列表，确保节点的稳定性和可用性。同时，节点会根据网络状况动态调整，提供最优的连接体验。
+
+***
+
+### 好鸭云
+
+好鸭云官网地址：[vuser.niceduck.io](https://vuser.niceduck.io/register?code=QS0hzI2y)
+
+邀请码：QS0hzI2y
+
+最便宜的订阅有12元 100G/月。
+
+节点非常稳定，老板态度好，客服也很热情，支持支付宝。
+
+最重要的是会随套餐**送Emby影视服务**(一个看高清电影、电视剧、番剧的站点)！MisakaF、aca替代方案。喜欢看剧的同学可以试试。
+
+***
+
+### 迅达
+
+迅达机场官网地址：[sulianproxy.com](https://sulianproxy.com/register?code=bXIAotbG)
+
+试用：注册可免费试用
+
+最便宜的订阅有15元 120G/月。
+
+迅达主打稳定与高性价比，节点覆盖 87 个国家，支持 Netflix、YouTube 4K、TikTok、ChatGPT 等主流服务访问。套餐支持 5-10 台设备同时在线，提供 7x24 小时工单支持；官方明确限个人使用，禁止多人共用。
+
+| 套餐 | 价格 | 流量 | 线路/设备 | 购买地址 |
+| --- | --- | --- | --- | --- |
+| 基础套 | ¥15 /月 | 120GB/月 | 小众节点，5台设备；手动重置 ¥15/次 | [点击购买](https://sulianproxy.com/register?code=bXIAotbG) |
+| 中级套（推荐） | ¥35 /月 | 300GB/月 | 多地BGP跨境专线，10台设备；手动重置 ¥35/次 | [点击购买](https://sulianproxy.com/register?code=bXIAotbG) |
+| 高级套 | ¥50 /月 | 600GB/月 | 全域企业级跨境专线，10台设备；手动重置 ¥50/次 | [点击购买](https://sulianproxy.com/register?code=bXIAotbG) |
+
+官方频道：[t.me/xundaroot](https://t.me/xundaroot)
+
+***
+
+### 全球云
+
+全球云机场官网地址：[ermaozi01.gcvipaff.cc](https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA)
+
+最便宜的订阅有20元 120G/月。
+
+| 套餐名称 | 价格 | 流量/说明 | 购买链接 |
+| :--- | :--- | :--- | :--- |
+| **BGP 智能优化 · 入门方案** | 20元/月 | **120GB**BGP多线路智能调度，Trojan协议，不限设备，解锁流媒体/AI | [立即购买](https://ermaozi01.gcvipaff.cc/#/order?planId=1) |
+| **BGP 智能优化 · 进阶方案** | 40元/月 | **300GB**BGP三网智能优化，稳定优先，4K秒开，解锁流媒体/AI | [立即购买](https://ermaozi01.gcvipaff.cc/#/order?planId=2) |
+| **BGP 智能优化 · 高端方案** | 100元/月 | **700GB**BGP多线融合调度，带宽充足，8K超清，解锁流媒体/AI | [立即购买](https://ermaozi01.gcvipaff.cc/#/order?planId=3) |
+| **BGP 智能优化 · 商业方案** | 180元/月 | **1.5TB**企业级BGP智能路由，商用级 ChatGPT/Claude 支持，高并发 | [立即购买](https://ermaozi01.gcvipaff.cc/#/order?planId=4) |
+| **独享私人专线节点** | 600元/月 | **500GB**独立带宽资源，独立公网 IP，适合 TikTok 直播/独立站 | [立即购买](https://ermaozi01.gcvipaff.cc/#/order?planId=5) |
+
+***
+
+### runway
+
+Runway官网地址：[www.runwayhz.com](https://www.runwayhz.com/#/register?code=RiIDywqb)
+
+最便宜的订阅有9.9元 100G/月。
+
+Runway 主打「打造极致的互联网连接跑道」，采用 Shadowsocks 协议，提供从入门到高流量的分层套餐，支持 Netflix、YouTube 等流媒体解锁。
+
+| 套餐名称 | 月费 | 流量 | 国家接入 | 带宽/速率 | 购买链接 |
+|----------|------|------|----------|-----------|----------|
+| 经济舱 (Economy) | ¥9.90/月 | 100GB/月 | 5+国家 | 限速 200Mbps | [点击购买](https://www.runwayhz.com/#/register?code=RiIDywqb) |
+| 商务舱 (Business) | ¥19.90/月 | 200GB/月 | 10+国家 | 限速 400Mbps | [点击购买](https://www.runwayhz.com/#/register?code=RiIDywqb) |
+| 头等舱 (First Class) | ¥50.00/月 | 600GB/月 | 10+国家 | 不限速 | [点击购买](https://www.runwayhz.com/#/register?code=RiIDywqb) |
+| 空中流量包 | ¥45.00/次 | 150GB/不限时 | 10+国家 | 不限速 | [点击购买](https://www.runwayhz.com/#/register?code=RiIDywqb) |
+
+官方频道：[t.me/runwayhzop](https://t.me/runwayhzop)\
+官方群组：[t.me/Runway\_Chat](https://t.me/Runway_Chat)
+
+***
+
+### 光年梯
+
+光年梯官网地址：[ermaozi01.gntvipaff.cc](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr)
+
+最便宜的订阅有18元 110G/月。
+
+光年梯是由资深团队运营的高品质翻墙机场，拥有多年的稳定运营历史和丰富的技术经验。其自有机房和全球节点网络确保了用户能够享受到快速、稳定的网络连接。
+
+| 套餐名称 | 月费 | 流量 | 特性 | 适用人群 | 购买链接 |
+|----------|------|------|------|----------|----------|
+| **入门版** | ¥18.00/月 | 110GB/月 | 全IPLC专线，SS协议，不限速，不限客户端 | 轻度/入门 | [购买链接](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) |
+| **晋级版** | ¥34.00/月 | 220GB/月 | 全节点 x1 · 高峰满速 | 进阶使用 | [购买链接](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) |
+| **专业版** | ¥68.00/月 | 450GB/月 | 全节点 x1 · 高峰满速 | 主力使用 | [购买链接](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) |
+| **至尊版** | ¥130.00/月 | 900GB/月 | 全节点 x1 · 高峰满速 | 重度用户 | [购买链接](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) |
+| **独享私人专线** | ¥680.00/月 | 500GB/月 | 独立带宽，独立公网IP，全程独享 | 企业/极致 | [购买链接](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) |
+
+***
+
+### 随便云
+
+随便云官网地址：[wcnm.one](https://wcnm.one/register?code=YZxHwCws)
+
+试用：无
+
+随便云提供灵活的月付套餐和不限时流量包，满足不同用户的需求。所有的套餐均支持 **全节点 IEPL / 中转支持** 和 **多地区 Netflix + 其他流媒体解锁**。
+
+| 套餐名称 | 价格 | 流量 | 速率限制 | 设备数 | 特性 | 购买 |
+|----------|------|------|----------|--------|------|------|
+| **轻量Lite套餐** | ¥10.00/月 | 68 GB | 500 Mbps | 3 台 | 入门首选，高速稳定 | [👉抢购](https://wcnm.one/register?code=YZxHwCws) |
+| **进阶Pro套餐** | ¥20.00/月 | 168 GB | 1000 Mbps | 5 台 | 进阶推荐，千兆速率 | [👉抢购](https://wcnm.one/register?code=YZxHwCws) |
+| **终极Ultimate** | ¥40.00/月 | 388 GB | 2000 Mbps | 8 台 | 大流量，2G超高速 | [👉抢购](https://wcnm.one/register?code=YZxHwCws) |
+| **团队Team套餐** | ¥88.00/月 | 1000 GB | 5000 Mbps | 15 台 | 团队共享，极致速率 | [👉抢购](https://wcnm.one/register?code=YZxHwCws) |
+| **100G不限时** | ¥28.00/次 | 100 GB | 1000 Mbps | 3 台 | 流量包，永久有效 | [👉抢购](https://wcnm.one/register?code=YZxHwCws) |
+| **288G不限时** | ¥68.00/次 | 288 GB | 不限制 | 5 台 | 大包流量，速率无忧 | [👉抢购](https://wcnm.one/register?code=YZxHwCws) |
+
+***
+
+### 老头vpn
+
+老头vpn官网地址：[www.chattous.net](https://www.chattous.net/register?code=3OWtZ9Bi)
+
+邀请码：3OWtZ9Bi
+
+试用：1月 1G
+
+最便宜的订阅有25元 150G/月。
+
+老头VPN 从2016年开始运营，资历非常老，期间一直保持高质量服务。全球华人公认的老牌国际加速服务厂商 高达2Gbps的单线接入能力。
+
+支持微信支付宝。
+
+***
+
+### 纵云梯
+
+纵云梯官网地址：[https://zongyunti.com/](https://zongyunti.com/?r=60147)
+
+邀请码：60147
+
+试用：1G 不限时
+
+最便宜的订阅有10元 60G/30天。
+
+纵云梯是一家新机场，个人体验了一下速度还不错，客服响应也比较快。
+
+***
+
+### 极连云
+
+极连云官网地址：[ermaozi01.jlcvipaff.cc](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m)
+
+最便宜的订阅有8元 60G/月。
+
+本站长期8折优惠码：`JLY888`
+
+极连云提供高性价比的IEPL专线VPN服务，支持Trojan和Shadowsocks协议，解锁Netflix、YouTube等主流流媒体平台。套餐不限速、不限设备数，适合轻度到中度用户。支持支付宝和USDT支付，拥有多节点覆盖全球，确保稳定高速连接。
+
+| 套餐名称 | 价格 | 流量 | 特性 | 购买链接 |
+|----------|------|------|------|----------|
+| **轻量体验(年付)** | ¥96/年 | 60GB/月 | 适合轻度用户，晚高峰不限速 | [购买链接](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m) |
+| **基础套餐** | ¥15.50/月 | 100GB/月 | 全IPLC专线，原生IP | [购买链接](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m) |
+| **进阶套餐** | ¥30.50/月 | 200GB/月 | 优化带宽调度，AI服务解锁 | [购买链接](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m) |
+| **旗舰套餐** | ¥65.50/月 | 500GB/月 | 高速专线，低延迟体验 | [购买链接](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m) |
+| **尊享套餐** | ¥120.50/月 | 1000GB/月 | 顶级旗舰，最高2.5Gbps | [购买链接](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m) |
+| **不限时套餐** | ¥399.00 | 1000GB | 一次性流量，永久有效 | [购买链接](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m) |
+
+***
+
+### 加速啦
+
+加速啦官网地址：[jiasu.la](https://jiasu.la/?r=39116)
+
+邀请码：39116
+
+试用：1G 不限时
+
+最便宜的订阅有10元 80G/月。
+
+全自研开发面板，海外团队运营，专线节点1倍率，安全好用省心无日志纪录，节点质量高，客服实时在线，晚高峰不限速，不限制设备。
+
+***
+
+### superbiu
+
+superbiu官网地址：[biubiux.online](https://biubiux.online/#/register?code=BasmsULb)
+
+最便宜的订阅有11元 50G/月。
+
+**SuperBiu 机场** 依托三网（电信/联通/移动）入口的 IPLC 专线，实现跨境高速互联。凭借自研流媒体解锁与多区域部署，晚高峰依旧能秒开 8K 视频，并在隐私、安全方面保持高标准。
+
+#### 定期订阅套餐
+
+| 套餐名称 | 月付 | 季付 | 半年 | 年付 | 流量/月 | 购买地址 |
+|----------|-----:|-----:|-----:|-----:|--------:|-----|
+| Small Biu 50G | ¥11 | ¥30 | ¥60 | ¥120 | 50GB | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+| Mini Biu 100G | ¥16 | ¥45 | ¥90 | ¥180 | 100GB | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+| Mini Biu 200G | ¥24 | ¥70 | ¥135 | ¥260 | 200GB | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+| Medium Biu 300G | ¥33 | ¥95 | ¥185 | ¥360 | 300GB | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+| Medium Biu 500G | ¥45 | ¥132 | ¥260 | ¥495 | 500GB | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+
+#### 按量一次性流量包（有效期内不限时）
+
+| 套餐 | 流量 | 一次性价格 | 购买地址 |
+|------|------:|-----------:|-----|
+| Biu-as-you-go 120G | 120GB | ¥40 | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+| Biu-as-you-go 240G | 240GB | ¥79 | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+| Biu-as-you-go 380G | 380GB | ¥128 | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+| Biu-as-you-go 880G | 880GB | ¥238 | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
+
+> 一次性套餐适合临时出差、备用机场或多设备共享，流量用完前不会过期。
+
+***
+
+### cyberguard
+
+CyberGuard官网地址：[cyberguard.best](https://www.cyberguard.best/#/register?code=yoyUW3R9)
+
+最便宜订阅：18元 100G/月。
+
+| 套餐 | 价格 | 流量 | 备注 | 购买地址 |
+| --- | --- | --- | --- | --- |
+| 轻量套餐 | ¥18.00 /每月 | 100GB/月 | 月付、半年、一年、三年 | [点击购买](https://www.cyberguard.best/#/register?code=yoyUW3R9) |
+| 标准套餐 | ¥28.00 /每月 | 300GB/月 | 月付、季度、一年、三年 | [点击购买](https://www.cyberguard.best/#/register?code=yoyUW3R9) |
+| 高速套餐 | ¥50.00 /每月 | 600GB/月 | 月付、季度、半年、一年、两年 | [点击购买](https://www.cyberguard.best/#/register?code=yoyUW3R9) |
+| 200G不限时 | ¥79.00 /一次性 | 200GB/不限时 | 一次性 | [点击购买](https://www.cyberguard.best/#/register?code=yoyUW3R9) |
+| 700G不限时 | ¥188.00 /一次性 | 700GB/不限时 | 一次性 | [点击购买](https://www.cyberguard.best/#/register?code=yoyUW3R9) |
+| 企业套餐 | ¥200.00 /每月 | 2TB/月 | 月付、季度、半年 | [点击购买](https://www.cyberguard.best/#/register?code=yoyUW3R9) |
+
+CyberGuard主要提供安全网络访问解决方案。由网络安全专家团队创立，总部位于北美，专为亚太地区用户优化设计。
+
+经过5年技术打磨，该服务致力于保障用户数据安全并提供顺畅网络体验。其创新技术架构帮助用户保护隐私的同时，确保稳定访问各类网络资源。
+
+适合需要数据安全保障和流畅网络体验的各类用户使用
+
+***
+
+### 白羊星
+
+白羊星官网地址：[baiyangxi.com](https://baiyangxi.com/#/register?code=gelkjfjz)
+
+邀请码：gelkjfjz
+
+试用：无
+
+最便宜的订阅有12元 100G/月。
+
+白羊星是一家新兴机场，节点质量还不错，支持按流量购买，支持支付宝、微信、USDT支付。
+
+***
+
+### 瞬云
+
+官网地址：[aaa.jichang.best](https://aaa.jichang.best/#/register?code=QEiJcAPp)
+
+最便宜订阅：99元/年（约 8.25 元/月），59G/月。
+
+瞬云主打 30+ 多地区节点与 ANYCAST 高速线路，官方标示支持 Netflix、Disney+、TikTok、ChatGPT 等场景，支持支付宝、微信、USDT 支付，并提供工单和在线客服。
+
+| 套餐 | 价格 | 流量 | 线路 | 购买地址 |
+| --- | --- | --- | --- | --- |
+| 限时年付小包 | 99元/年 | 59G/月 | ANYCAST高速节点 | [点击购买](https://aaa.jichang.best/#/register?code=QEiJcAPp) |
+| 行者 | 20元/月 | 150G/月 | ANYCAST高速节点 | [点击购买](https://aaa.jichang.best/#/register?code=QEiJcAPp) |
+| 纵横 | 36元/月 | 300G/月 | ANYCAST高速节点 | [点击购买](https://aaa.jichang.best/#/register?code=QEiJcAPp) |
+| 凌霄 | 68元/月 | 600G/月 | ANYCAST高速节点 | [点击购买](https://aaa.jichang.best/#/register?code=QEiJcAPp) |
+
+***
+
+### 二猫云
+
+二猫云官网地址：[二猫云官网](https://v01.2maoyunaff.cc/#/register?code=6n2UaV1A)
+
+最便宜的订阅为 20元 100GB/月。
+无 一次性订阅。
+
+二猫云定位是新开业的专线型月付机场，套餐阶梯从 100GB 到 800GB，适合先用低档验证晚高峰稳定性后再升级。
+
+| 套餐名称 | 价格 | 流量 | 适用人群 | 购买链接 |
+|----------|------|------|----------|----------|
+| 白猫套餐 | 20元/月 | 100GB/月 | 轻度用户、备用线用户 | [立即购买](https://v01.2maoyunaff.cc/#/register?code=6n2UaV1A) |
+| 橘猫畅玩版 | 40元/月 | 200GB/月 | 日常主力用户 | [立即购买](https://v01.2maoyunaff.cc/#/register?code=6n2UaV1A) |
+| 牛奶猫尊享版 | 80元/月 | 400GB/月 | 中重度使用者 | [立即购买](https://v01.2maoyunaff.cc/#/register?code=6n2UaV1A) |
+| 黑猫无限版 | 160元/月 | 800GB/月 | 高频多设备用户 | [立即购买](https://v01.2maoyunaff.cc/#/register?code=6n2UaV1A) |
+
+### ccyz
+
+ccyz官网地址：[ccyz.org](https://xxyun.at/?code=HOWnn58c)
+
+最便宜的订阅有15元 150G/月。
+
+主打高性价比与专线稳定，采用 BGP+IEPL 双重优化，晚高峰依旧保持高速。支持 Netflix、Disney+、HBO 等主流流媒体解锁，并提供全天候客服响应，适合长期使用或需要稳定带宽的用户。
+
+| 套餐名称 | 价格 | 流量 | 峰值带宽 | 线路 | 适用人群 | 购买链接 |
+|----------|-----:|-----:|---------:|------|----------|----------|
+| Lite 套餐 · 150G | ¥15 / 月 | 150G/月 | 取决于节点 | IEPL 专线 | 轻度使用、影音追剧 | [立即购买](https://xxyun.at/?code=HOWnn58c) |
+| Pro 套餐 · 280G | ¥25 / 月 | 280G/月 | 取决于节点 | IEPL 专线 | 日常/多设备用户 | [立即购买](https://xxyun.at/?code=HOWnn58c) |
+
+***
+
+### 梦想云
+
+梦想云官网地址：<https://gx.dreamcl.sbs/#/register?code=GFUAEweX>
+
+试用：无
+
+最便宜的订阅有8.8元 300GB/月。
+
+梦想云开设于 2023 年 2 月，主打三网直连混搭与 BGP 跨境专线，节点以常用五大地区为主。流媒体与 ChatGPT 可用性表现较稳，适合作为日常主力线路。
+
+| 套餐 | 价格 | 流量 | 购买链接 |
+| --- | --- | --- | --- |
+| 轻度-进阶套餐 | ¥8.80/月 | 300GB/月 | [立即购买](https://gx.dreamcl.sbs/#/register?code=GFUAEweX) |
+| 豪华-进阶套餐 | ¥11.90/月 | 500GB/月 | [立即购买](https://gx.dreamcl.sbs/#/register?code=GFUAEweX) |
+| TK专线贵宾V2（联系客服） | ¥250.00/月 | 无限流量 | [注册后联系客服](https://gx.dreamcl.sbs/#/register?code=GFUAEweX) |
+| TK专线贵宾V3（联系客服） | ¥300.00/月 | 500GB/月 | [注册后联系客服](https://gx.dreamcl.sbs/#/register?code=GFUAEweX) |
+
+***
+
+### okanc
+
+okanc官网地址：[okanc.com](https://www.okanc.com/#/register?code=spBqEcUn)
+
+邀请码：3YK7Np6R
+
+试用：无
+
+最便宜的订阅有46元 328G/月。
+
+okanc机场是一个新机场，但是与奈云同宗同源，有奈云的技术积累以及信誉保障，可以放心购买。节点主打高质量，速度快，延迟低。只是价格偏贵，适合电商、游戏等高需求用户。
+
+|套餐|价格|流量|购买地址|
+|---|---|---|---|
+|Pro版|46元/月|328GB/月|[点击购买](https://www.okanc.com/#/register?code=spBqEcUn)|
+|Max版|50元/月|600GB/月|[点击购买](https://www.okanc.com/#/register?code=spBqEcUn)|
+|MAX+极致版|88元/月|1024GB/月|[点击购买](https://www.okanc.com/#/register?code=spBqEcUn)|
+
+***
+
+### TNT
+
+TNT官网地址：[https://ermaozi02.tntvipaff.cc](https://ermaozi02.tntvipaff.cc/#/register?code=f1EyPwf3)
+
+邀请码：f1EyPwf3
+
+试用：无
+
+最低 10元60g/月(季付)
+
+* 全IPLC专线，不限速
+* 原生IP解锁流媒体
+* 解锁 Chatgpt，Tiktok
+* 高效客服响应
+* 不限制客户端
+
+***
+
+### Aladdin
+
+Aladdin官网地址：[https://www.avatargpt.xyz/](https://short.thisgourl.xyz/#/register?code=tvLw0oMj)
+
+邀请码：RtNzblsTdt
+
+试用：无
+
+最便宜的订阅有30元 390G/半年。
+
+这家机场是我自己用的，节点质量非常高，解锁大部分主流媒体，可以访问openai，有 emby 和 奈飞 劫持。支持支付宝、微信、USDT支付。
+
+***
+
+### xxai
+
+xxai官网地址：[xxai.uk](https://xx-ai.co?invite_code=K2TpsDcg)
+
+邀请码：K2TpsDcg
+
+最便宜的订阅有16.9元 100G/月。
+
+节点质量非常硬。全 IEPL 专线节点、低延迟游戏 & 直播专线、AI 工具 & 流媒体视频解锁。支持按流量购买。
+
+***
+
+### 一翻云
+
+官网地址：[01.1flyunaff.cc](https://ermaozi.yifanaff.com/#/register?code=wQxPnuZv)
+
+优惠码：`YFY168`（限时 8 折）
+
+最便宜订阅：30元 150GB/月。
+
+一翻云适合预算敏感、希望先从小档位验证可用性的用户。套餐梯度从 150GB 到 1200GB，覆盖轻度到中重度需求，同时提供一次性流量包；通用订阅暂不支持，更建议按月付路径逐步升级。
+
+| 套餐 | 月付 | 流量 | 购买地址 |
+| --- | --- | --- | --- |
+| VIP1 | 30元/月 | 150GB/月 | [点击购买](https://ermaozi.yifanaff.com/#/register?code=wQxPnuZv) |
+| VIP2 | 60元/月 | 300GB/月 | [点击购买](https://ermaozi.yifanaff.com/#/register?code=wQxPnuZv) |
+| VIP3 | 120元/月 | 600GB/月 | [点击购买](https://ermaozi.yifanaff.com/#/register?code=wQxPnuZv) |
+| VIP4 | 240元/月 | 1200GB/月 | [点击购买](https://ermaozi.yifanaff.com/#/register?code=wQxPnuZv) |
+
+***
+
+### Sogo云
+
+Sogo云官网地址：[ermaozi.sogoaff.com](https://ermaozi.sogoaff.com/#/login?code=yxneZJKR)
+
+最便宜的订阅为 20元 120GB/月(活动档)，常规月付从 25元 120GB/月起。
+有 一次性订阅。
+
+Sogo云定位偏新手友好，提供自研客户端一键使用，同时支持通用订阅导入。作为新开业服务，更建议先用低档套餐连续验证高峰稳定性，再决定是否长期使用。
+
+| 套餐名称 | 价格 | 流量 | 适用人群 | 购买链接 |
+|----------|------|------|----------|----------|
+| 基础版 | 25元/月 | 120GB/月 | 轻度用户 | [立即购买](https://vip4.huanyuyunbest.com/#/register?code=yxneZJKR) |
+| 优选版 | 50元/月 | 250GB/月 | 日常主力 | [立即购买](https://vip4.huanyuyunbest.com/#/register?code=yxneZJKR) |
+| 强化版 | 100元/月 | 500GB/月 | 中重度用户 | [立即购买](https://vip4.huanyuyunbest.com/#/register?code=yxneZJKR) |
+| 顶配版 | 200元/月 | 1000GB/月 | 高频用户 | [立即购买](https://vip4.huanyuyunbest.com/#/register?code=yxneZJKR) |
+| 一次性基础 | 100元 | 100GB | 短期备用 | [立即购买](https://vip4.huanyuyunbest.com/#/register?code=yxneZJKR) |
+
+***
+
+### 青云梯
+
+青云梯官网地址：[ermaozi02.qytvipaff.cc](https://ermaozi02.qytvipaff.cc/register?aff=W5ICDu2y)
+
+邀请码：W5ICDu2y
+
+试用：无
+
+最便宜的订阅有25元 150G/月。
+
+机场比较稳定，解锁Chatgpt，Tiktok及各大流媒体，四年老牌专线，最便宜套餐 98 一年每月 60g，折合每个月 8 元。
+
+***
+
+### koodog
+
+koodog官网地址：[koodog.com](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)
+
+最便宜订阅：5元 35G/月。
+
+KooDog 使用 Trojan 协议，相对安全稳定。网络入口提供了三网专线支持，实测 单线程峰值可跑到 2Gbps，无论是刷流媒体还是下载大文件，表现都非常流畅。
+
+| 套餐 | 价格 | 流量 | 备注 | 购买地址 |
+| --- | --- | --- | --- | --- |
+| Edge Lightsail | ¥5.00 /每月 | 35G/月 | 无 | [点击购买](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz) |
+| Edge | ¥15.00 /每月 | 150GB/月 | 无 | [点击购买](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz) |
+| Lightsail | ¥15.00 /每月 | 100GB/月 | Emby、奈飞 Porn Prime免登入观影 | [点击购买](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz) |
+| Basic | ¥30.00 /每月 | 200GB/月 | Emby、奈飞 Porn Prime免登入观影 | [点击购买](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz) |
+| Premium | ¥50.00 /每月 | 350GB/月 | Emby、奈飞 Porn Prime免登入观影 | [点击购买](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz) |
+| Pro | ¥100.00 /每月 | 700GB/月 | Emby、奈飞 Porn Prime免登入观影 | [点击购买](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz) |
+
+### 99bar
+
+99吧官网地址：[99vpn.bar](https://99vpn.bar/#/register?code=qzpkbzHF)
+
+试用：1天 1G
+
+最便宜的订阅有12.9元 99G/月。
+
+成立时间：2024.8.23
+翻墙协议：Shadowsocks
+入口：深港IEPL专线 + 广东移动中转
+过境：IEPL ；公网中转
+落地：快车道、BageVM、Lain、Akari、Misaka、等
+解锁支持： Netflix、Disney+、TikTok、ChatGPT
+
+备注：无设备数量限制，多端配置同步，全网所有节点​​1倍率扣流。
+
+| 套餐 | 价格 | 流量 | 购买地址 |
+| --- | --- | --- | --- |
+| 九九@星耀VIP | 月付¥12.9 / 季付¥36.9 / 半年¥72.9 / 年付¥139.9 | 99 GB/月 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 九九@铂金VIP | 月付¥24.9 / 季付¥72.9 / 半年¥139.9 / 年付¥274.9 | 199 GB/月 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 九九@钻石VIP | 月付¥36.9 / 季付¥108.9 / 半年¥212.9 / 年付¥419.9 | 299 GB/月 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 九九@星钻SVIP | ¥35.9/一次性 | 111 GB/不限时 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 九九@至尊SVIP | ¥69.9/一次性 | 222 GB/不限时 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 九九@皇冠SVIP | ¥139.9/一次性 | 555 GB/不限时 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+| 九九@尊耀SVIP | ¥259.9/一次性 | 1111 GB/不限时 | [点击购买](https://99vpn.bar/#/register?code=qzpkbzHF) |
+
+***
+
+### 传送门
+
+官网地址：[https://aa.csmfby.com](https://aa.csmfby.com/?code=b9eUUu00)
+
+传送门的定位很明确：降低客户端与订阅维护门槛，强调“打开即用”。如果你经常遇到订阅失效、客户端配置复杂、晚高峰卡顿，这类把运维能力封装进自研 App 的机场，会比传统只给订阅链接的服务更省心。
+
+| 套餐 | 价格 | 周期 | 流量 | 设备数 | 限速 | 备注 |
+|------|------|------|------|--------|------|------|
+| 包月无限流量 | ¥68.00 | 月付 | 不限量 | 1 台 | 500 Mbps | 官方提示流量异常可能封禁 |
+| 包月 200G | ¥29.80 | 月付 | 200G/月 | 3 台 | 5000 Mbps | 含全部节点 |
+| 包月 400G | ¥39.90 | 月付 | 400G/月 | 3 台 | 5000 Mbps | 含全部节点 |
+| 包年 1000G | ¥99.00 | 年付 | 1000G/年 | 3 台 | 1000 Mbps | 月均约 8 元 |
+| 永久 2000G | ¥168.00 | 一次性 | 2000G 总量 | 3 台 | 2000 Mbps | 官方标注“绝版” |
+| 永久 3800G | ¥268.00 | 一次性 | 3800G 总量 | 3 台 | 2000 Mbps | 官方标注“绝版” |
+| 家宽原生 IP 独享专线 | ¥488.00 | 月付 | 定制 | 定制 | 定制 | 面向虾皮/TikTok/直播/跨境场景 |
+
+***
+
+### 小牛云
+
+::: caution
+
+大量迹象表明，小牛云机场极有可能在短期内跑路！
+
+请各位用户注意风险，谨慎续费购买！
+
+参考文章：[⚠️【机场跑路】2025年12月02日小牛云机场跑路预警](https://www.ermao.net/scamvpn/xiaoniu/)
+
+:::
+
+小牛云官网地址：[xiaoniuyun.cc](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)
+
+邀请码：n31onhiT
+
+***
+
+### EF
+
+EF官网地址：~~https://www.efcloud1.com~~
+
+邀请码：kbbSUTvm
+
+试用：无
+
+2025年1月份，EF 机场确认跑路，官网可以访问，订阅无法使用。
+
+***
+
+## VPN和机场使用教程：科学上网新手完整指南
+
+### 第一步：选择合适的科学上网工具
+
+根据您的需求选择（不知道怎么选？看[VPN机场避坑指南](/article/choose-good-airport/)）：
+
+* **预算有限**：推荐10元以下套餐或不限时流量包（如[阿达西](./v1/机场推荐阿达西.md)、[冲上云霄](./v1/机场推荐冲上云霄.md)、[网际快车](./v2/机场推荐网际快车.md)）
+* **追求稳定**：选择运营3年以上的老牌机场（如[ssone](./v2/机场推荐ssone.md)、[xxyun](./v2/机场推荐xxyun.md)）
+* **观看4K视频**：选择IEPL专线机场（速度100Mbps+）
+* **企业团队**：选择支持多设备的高流量套餐
+
+### 第二步：客户端下载与配置
+
+**Windows系统推荐：**
+
+* [Clash Verge Rev](/article/0gematwc/)（最流行，界面友好）
+* V2RayN（轻量级，资源占用少）
+* Shadowsocks-Windows（经典稳定）
+
+**macOS系统推荐：**
+
+* [Clash Verge Rev](/article/0gematwc/)（跨平台，功能强大）
+* [ClashVerge Rev macOS版](/article/6vxkmmuh/)（macOS专属教程）
+* Surge（专业级，需付费）
+
+**iOS系统推荐：**
+
+* [Shadowrocket 小火箭](/article/z747kgjd/)（需美区账号购买，可使用[免费AppleID](/blog/freeappleid/)）
+* Surge（功能最全，价格较高）
+* Quantumult X（圈X，功能强大）
+
+**Android系统推荐：**
+
+* [Clash Meta for Android](/article/eh8f4n86/)（开源免费）
+* V2RayNG（轻量高效）
+* Surfboard（界面简洁）
+
+> 📱 完整教程：[电脑如何翻墙](/blog/how-to-vpn-on-computer/) | [手机如何翻墙](/blog/how-to-vpn-on-mobile/)
+
+### 第三步：导入订阅并连接
+
+1. 在机场官网复制订阅链接（Subscription URL）
+2. 打开客户端，找到"订阅"或"配置"选项
+3. 粘贴订阅链接并更新
+4. 选择合适的节点（建议选择延迟低的）
+5. 开启代理模式（规则模式/全局模式）
+
+**代理模式选择：**
+
+* **规则模式**：自动分流，国内网站直连，节省流量（推荐）
+* **全局模式**：所有流量走代理，适合需要全程加密的场景
+* **直连模式**：不使用代理
+
+### 第四步：测试连接
+
+连接成功后，访问以下网站测试：
+
+* [Google.com](https://google.com)（基础测试）
+* [YouTube.com](https://youtube.com)（视频速度测试）
+* [Netflix.com](https://netflix.com)（流媒体解锁测试）
+* [ChatGPT.com](https://chatgpt.com)（AI服务测试）
+
+***
+
+## 科学上网安全使用建议与隐私保护
+
+### 隐私保护最佳实践
+
+1. **不要使用免费VPN**
+   * 免费VPN常有安全隐患
+   * 可能记录并出售用户数据
+   * 速度慢且不稳定
+
+2. **选择可信赖的机场**
+   * 优先选择运营2年以上的服务商
+   * 查看用户评价和口碑
+   * 避免三无机场（无群组、无客服、无口碑）
+
+3. **保护账号安全**
+   * 使用独立密码，不与其他网站共用
+   * 开启两步验证（如有）
+   * 定期更改密码
+
+4. **合理使用代理**
+   * 遵守当地法律法规
+   * 不进行违法活动
+   * 不传播敏感内容
+
+## 科学上网常见问题排查
+
+### 连接VPN后无法上网怎么办？
+
+* 检查订阅链接是否正确
+* 尝试切换其他节点
+* 确认代理模式设置正确
+* 检查本地网络是否正常
+
+### 翻墙速度很慢怎么解决？
+
+* 选择延迟更低的节点
+* 避开高峰期（晚上8-11点）
+* 检查是否超出流量限制
+* 考虑升级到IEPL专线套餐
+
+### 无法访问特定网站怎么办？
+
+* 尝试切换节点（某些节点IP可能被封）
+* 使用全局模式
+* 检查该网站是否有地区限制
+* 联系机场客服询问
+
+### 科学上网频繁断线如何排查？
+
+* 检查本地网络稳定性
+* 更换协议（从SS换到V2Ray/Trojan）
+* 避免使用过载节点
+* 考虑更换更稳定的机场
+
+***
+
+## 翻墙机场推荐常见问题(FAQ)
+
+### 2026年翻墙机场怎么选最稳？
+
+优先选择运营时间较长、支持通用订阅、有工单或群组客服、晚高峰稳定、支持支付宝或微信付款的机场。第一次购买建议只买试用或月付套餐，连续测试 YouTube、ChatGPT、Google、GitHub 后再决定是否长期使用。
+
+### 机场和VPN有什么区别？
+
+VPN 通常是安装后直接连接的一体化软件；机场则提供节点和订阅链接，需要配合 Clash、Shadowrocket、V2RayNG 等客户端使用。机场一般节点更多、价格更低、分流更灵活，更适合长期科学上网和多设备使用。
+
+### 便宜机场靠谱吗？
+
+便宜机场可以作为备用或轻度使用，但不建议只看价格。除了月费，还要看运营时间、客服响应、通用订阅、节点稳定性、用户反馈和是否提供试用。价格过低、强制年付或突然推出终身套餐的机场需要谨慎。
+
+### 机场套餐一个月需要多少流量？
+
+轻度网页和社交通常 50GB 到 100GB/月够用；日常 YouTube、ChatGPT、GitHub 建议 150GB 到 300GB/月；4K 流媒体、多设备或下载较多的用户建议 500GB/月以上。
+
+### 新手使用机场需要安装什么客户端？
+
+Windows、macOS 和 Linux 推荐 [Clash Verge Rev](/article/0gematwc/)；Android 推荐 [Clash Meta for Android](/article/eh8f4n86/) 或 V2RayNG；iPhone 和 iPad 常用 [Shadowrocket](/article/z747kgjd/)、Clash Mi、Quantumult X。购买机场后复制订阅链接导入客户端即可。
+
+### 如何降低机场跑路风险？
+
+不要一上来购买长期套餐，优先月付或按量包；关注官网、公告频道、工单响应和用户群反馈；准备一个备用机场；遇到客服失联、节点长期全红、群组禁言或官网频繁失联时及时停止续费。
+
+***
+
+## 不同需求场景的VPN机场推荐方案
+
+### 学生党/预算有限用户
+
+**推荐机场：**
+
+* [阿达西](./v1/机场推荐阿达西.md)（3元 20G/月）
+* [冲上云霄](./v1/机场推荐冲上云霄.md)（5元 80G/30天）
+* [网际快车](./v2/机场推荐网际快车.md)（6.8元 20GB，不限时）
+* [唯兔云](./v2/机场推荐唯兔云.md)（6元 45G/月）
+
+**使用建议：**
+
+* 选择按流量计费套餐
+* 使用规则模式节省流量
+* 仅在需要时开启代理
+
+### 日常使用/追剧用户
+
+**推荐机场：**
+
+* [XSUS](./v2/机场推荐xsus.md)（8元 168G/30天）
+* [xxyun](./v2/机场推荐xxyun.md)（9.99元 100G/月）
+* [flybit](./v2/机场推荐flybit.md)（15元 128G/月）
+
+**使用建议：**
+
+* 选择月付套餐，流量100G以上
+* 优先选择有流媒体解锁的节点
+* 观看4K视频需要IEPL专线
+
+### 远程办公/开发者
+
+**推荐机场：**
+
+* [ssone](./v2/机场推荐ssone.md)（IEPL专线，稳定性强）
+* [闪狐云](./v1/机场推荐闪狐云.md)（BGP+IPLC，不限设备）
+* [奈云](./v1/机场推荐奈云.md)（稳定运营6年+，老牌可靠）
+
+**使用建议：**
+
+* 选择稳定性高的机场
+* 使用不限时套餐
+* 配置多个备用机场
+* 优先选择原生IP节点
+
+### 游戏加速/重度用户
+
+**推荐机场：**
+
+* [ssone](./v2/机场推荐ssone.md) Pro（39元 500G/月）
+* [全球云](./v2/机场推荐全球云.md)（支持大流量套餐）
+* [闪狐云](./v1/机场推荐闪狐云.md)（IPLC专线，低延迟）
+
+**使用建议：**
+
+* 选择游戏专线节点
+* 使用低延迟节点（<50ms）
+* 先确认本地网络稳定，再考虑长期套餐
+* 配置[路由器](/article/fanqiang/)实现全家设备科学上网
+
+***
+
+## 2026年VPN机场选购避坑指南
+
+### 翻墙机场跑路的征兆
+
+警惕以下情况，及时止损（真实案例：[阿童木跑路](/article/cge8887u/)、[EFCloud跑路](/article/nz313xp6/)、[小牛云预警](/scamvpn/xiaoniu/)）：
+
+* ❌ 客服长期不回复（超过3天）
+* ❌ Telegram群组被解散或禁言
+* ❌ 订阅链接频繁失效
+* ❌ 大量用户投诉无法使用
+* ❌ 官网长时间无法访问
+* ❌ 突然推出"超低价终身会员"
+
+### 选择机场的黄金法则
+
+* ✅ **运营时间**：至少2年以上
+* ✅ **用户群体**：有活跃的Telegram或QQ群
+* ✅ **支付方式**：支持支付宝/微信（说明面向国内用户）
+* ✅ **客服响应**：24小时内有回复
+* ✅ **价格合理**：太便宜（低于5元/100G）或太贵都要警惕
+* ✅ **节点质量**：提供IEPL/IPLC专线
+* ✅ **可试用**：提供免费试用或退款保证
+
+### 不推荐的机场类型
+
+* ⚠️ **新机场**（运营不足半年）：跑路风险高
+* ⚠️ **无客服**：遇到问题无人处理
+* ⚠️ **频繁换域名**：说明稳定性差
+* ⚠️ **强制年付**：可能是跑路前的收割
+* ⚠️ **吹嘘"翻墙"等敏感词**：引起不必要的注意
+
+***
+
+## 2026年VPN机场优惠活动与试用信息
+
+以下优惠码、试用和折扣信息会随文章长期更新，实际可用性以下单页为准：
+
+1. **[xxyun](./v2/机场推荐xxyun.md)**：使用优惠码 `xxyun` 享9折优惠
+2. **[ssone](./v2/机场推荐ssone.md)**：适合优先考虑 IEPL 专线的用户，试用与活动以官网为准
+3. **[flybit](./v2/机场推荐flybit.md)**：注册即送1天2G试用流量
+4. **[cocoduck](./v2/机场推荐cocoduck.md)**：首次购买送1天2G体验
+5. **[极连云](./v2/机场推荐极连云.md)**：长期8折优惠码 `JLY888`
+6. **[uuone](./v2/机场推荐uuone.md)**：专属优惠码 `uuone` 全场9折
+
+> 更多优惠码持续更新中，另可查看[各大机场优惠券汇总](/article/23w1svxa/)。
+
+***
+
+## 总结：2026年如何找到最好用的VPN和便宜机场
+
+选择VPN和机场的核心要点：
+
+1. **明确需求**：根据流量使用量和预算选择
+2. **多看评测**：参考真实用户反馈
+3. **从小额开始**：先购买月付套餐试用
+4. **准备备用**：建议同时使用2-3个机场
+5. **关注本站**：我们会持续更新最新评测和跑路预警
+
+**2026年最推荐的VPN机场组合：**
+
+* **主力机场**：[flybit](./v2/机场推荐flybit.md)、[XSUS](./v2/机场推荐xsus.md) 或 [xxyun](./v2/机场推荐xxyun.md)（价格、速度和稳定性比较均衡）
+* **专线优先**：[ssone](./v2/机场推荐ssone.md)、[Edge-X](./2026/机场推荐edge-x.md) 或 [u1s1](./2026/机场推荐u1s1.md)（更适合晚高峰、远程办公和低延迟需求）
+* **备用机场**：[网际快车](./v2/机场推荐网际快车.md)、[阿达西](./v1/机场推荐阿达西.md) 或 [冲上云霄](./v1/机场推荐冲上云霄.md)（低价或不限时流量，适合应急使用）
+
+不知道如何挑选？可以阅读[《2026年怎么选VPN机场？避坑与防跑路指南》](/article/choose-good-airport/)，从线路、测速到跑路预警，手把手教你筛选。
+
+记住：没有完美的VPN或机场，只有最适合您需求的服务。定期关注本站更新，我们会第一时间预警跑路机场，推荐优质新机场。
+
+**欢迎在评论区分享您的使用体验，或推荐其他优质机场！**
+
+***
