@@ -79,6 +79,7 @@ export default defineUserConfig({
         text: '翻墙工具',
         icon: 'ic:baseline-construction',
         items: [
+          { text: '工具汇总推荐', link: '/article/fanqiang-tools/', icon: 'ic:baseline-construction' },
           { text: 'Windows/Linux/MacOS', link: '/article/0gematwc/', icon: 'ic:baseline-personal-video' },
           { text: 'Android手机', link: '/article/eh8f4n86/', icon: 'ic:baseline-android' },
           { text: 'iOS苹果手机', link: '/blog/clashmi/', icon: 'ic:baseline-rocket-launch' },
