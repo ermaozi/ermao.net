@@ -18,7 +18,7 @@ tags:
   - 翻墙VPN
   - 梯子
 title: 2026年翻墙机场推荐：便宜好用的VPN机场评测与科学上网指南(长期更新)
-updateTime: 2026/06/26 19:07:46
+updateTime: 2026/07/01 12:30:00
 permalink: /posts/vpn/
 description: 2026年翻墙机场推荐与VPN机场评测，整理50+便宜好用机场、低价套餐、IEPL/IPLC专线、通用订阅、Netflix/ChatGPT解锁、Clash/Shadowrocket教程和跑路预警，适合新手快速选择稳定科学上网方案。
 head:
@@ -95,7 +95,7 @@ head:
 
 如果你是第一次接触机场订阅、Clash 节点、Shadowrocket 或通用订阅，建议先看[《2026翻墙机场订阅指南：Clash节点购买、导入与机场推荐》](/article/jichang-subscription-guide/)，理解“机场、VPN、客户端、节点”之间的关系后，再回来挑选套餐会更省心。
 
-本文更新于 **2026年6月26日**。每个机场至少由我试用一周后才决定是否推荐，重点看晚高峰稳定性、套餐价格、节点可用率、客服响应、通用订阅支持和网上口碑。如果你还不清楚如何辨别机场优劣，建议先阅读[《如何选择VPN机场避坑指南》](/article/choose-good-airport/)。
+本文更新于 **2026年7月1日**。每个机场至少由我试用一周后才决定是否推荐，重点看晚高峰稳定性、套餐价格、节点可用率、客服响应、通用订阅支持和网上口碑。如果你还不清楚如何辨别机场优劣，建议先阅读[《如何选择VPN机场避坑指南》](/article/choose-good-airport/)。
 
 <!-- more -->
 
@@ -221,11 +221,8 @@ head:
 |[ssone](#ssone)|[官网地址](https://www.flybit6202.com/#/register?code=MmE2PsQJ)|❌|15元 60G/月|❌|[TG](https://t.me/+rYzRmCbJfIw3ZTM1)|[前往](./v2/机场推荐ssone.md)|<span style="color:red">↑18</span>|
 |[u1s1](#u1s1)|[官网地址](https://ermaozi01.vipaff.cc/#/?code=FC32x5Vs)|✔|20元 120G/月|✔|✖|[前往](./2026/机场推荐u1s1.md)|<span style="color:red">↑6</span>|
 |[uuone](#uuone)|[官网地址](https://uuone.at/?code=AjqYdZlJ)|❌|12元 150G/月|✔|暂无|[前往](./v2/机场推荐uuone.md)|-|
-|[奈云](#奈云)|[官网地址](https://www.nyaff.cc?path=register&code=FNAu1FWB)|✔|10.6元 168G/月(年付)|✔|[TG](https://t.me/v2naiun)|[前往](./v1/机场推荐奈云.md)|<span style="color:green">↓6</span>|
 |[冲上云霄](#冲上云霄)|[官网地址](https://cpdd.one/?r=32083)|✔|5元 80G/30天|✔|[TG](https://t.me/vpnpn123)|[前往](./v1/机场推荐冲上云霄.md)|<span style="color:red">↑8</span>|
-|[隐云](#隐云)|[官网地址](https://wkacc.xyz/?code=db949e40)|✔|25元 150G/月|❌|暂无|[前往](./v2/机场推荐隐云.md)|<span style="color:green">↓2</span>|
 |[大哥云](#大哥云)|[官网地址](https://ermao.dgywzc.com/#/register?code=peAVAa8D)|✔|19.9元 100G/月|❌|[TG](https://t.me/dageyun)|[前往](./v2/机场推荐大哥云.md)|<span style="color:red">↑7</span>|
-|[CAC](#cac)|[官网地址](https://www.cac.mom/#/register?code=kYL5chvN)|❌|7.9元 168G/月|❌|[TG](https://t.me/CAC_Apex)|暂无|<span style="color:red">↑14</span>|
 |[Danke](#danke)|[官网地址](https://www.dankewed.com/#/register?code=a0zksG3J)|❌|3元 88GB/月|✔|[TG](https://t.me/dankewed1)|[前往](./v2/机场推荐danke.md)|<span style="color:red">↑8</span>|
 |[Edge-X](#edge-x)|[官网地址](https://edge-invite.com/#/register?code=LCH9laOs)|✔|22.8元/月起|❌|[TG](https://t.me/EdgeX_Notice)|[前往](./2026/机场推荐edge-x.md)|<span style="color:green">↓3</span>|
 |[速界](#速界)|[官网地址](https://ermaozi01.speedworldaff.cc/#/register?code=SLWrHAPx)|❌|25元/月|❌|暂无|[前往](./2026/机场推荐速界.md)|新上|
@@ -257,7 +254,6 @@ head:
 |[二猫云](#二猫云)|[官网地址](https://v01.2maoyunaff.cc/#/register?code=6n2UaV1A)|❌|16元 100G/月|✔|[TG](https://t.me/ermaov1)|[前往](./v2/机场推荐二猫云.md)|<span style="color:green">↓23</span>|
 |[ccyz](#ccyz)|[官网地址](https://xxyun.at/?code=HOWnn58c)|❌|15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|<span style="color:green">↓17</span>|
 |[梦想云](#梦想云)|[官网地址](https://gx.dreamcl.sbs/#/register?code=GFUAEweX)|❌|8.8元 300GB/月|❌|暂无|[前往](./v1/机场推荐梦想云.md)|<span style="color:green">↓9</span>|
-|[okanc](#okanc)|[官网地址](https://www.okanc.com/#/register?code=spBqEcUn)|❌|46元 328G/月|❌|[TG](https://t.me/okancup)|[前往](./v1/机场推荐okanc.md)|<span style="color:green">↓7</span>|
 |[TNT](#tnt)|[官网地址](https://ermaozi02.tntvipaff.cc/#/register?code=f1EyPwf3)|❌|10元60g/月(季付)|❌|[TG](https://t.me/TNTCloud2)|[前往](./v1/机场推荐TNT.md)|<span style="color:red">↑1</span>|
 |[Aladdin](#aladdin)|[官网地址](https://short.thisgourl.xyz/#/register?code=tvLw0oMj)|❌|30元 390G/半年|❌|暂无|暂无|<span style="color:red">↑2</span>|
 |[xxai](#xxai)|[官网地址](https://xx-ai.co?invite_code=K2TpsDcg)|❌|16.9元 100G/月|✔|[TG](https://t.me/xxai_official)|暂无|<span style="color:red">↑4</span>|
@@ -270,6 +266,10 @@ head:
 
 |名称|官网地址|状态|详情|
 |---|---|---|---|
+|[奈云](#奈云)|~~www.nyaff.cc~~|⚠️ **高危预警**|[跑路详情](/scamvpn/naiyun/)|
+|[隐云](#隐云)|~~wkacc.xyz~~|⚠️ **跑路预警**|[跑路详情](/scamvpn/yinyun/)|
+|[CAC](#cac)|~~www.cac.mom~~|⚠️ **跑路预警**|[跑路详情](/scamvpn/cac/)|
+|[okanc / OKAC](#okanc)|~~www.okanc.com~~|⚠️ **跑路预警**|[跑路详情](/scamvpn/okac/)|
 |[小牛云](#小牛云)|[官网地址](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|⚠️ **跑路预警**|[前往](./v2/机场推荐小牛云.md)|
 |[EF](#ef)|~~www.efcloud1.com~~|❌ **已跑路**|[跑路详情](/article/nz313xp6/)|
 |[koodog](#koodog)|[官网地址](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)|❌ **已跑路**|[跑路详情](/scamvpn/koodog/)|
@@ -446,7 +446,13 @@ CocoDuck机场官网地址：[https://www.cocoduck.live](https://www.cocoduck.li
 
 ### 奈云
 
-奈云机场官网地址：[www.nyaff.cc](https://www.nyaff.cc?path=register&code=FNAu1FWB)
+奈云机场官网地址：~~www.nyaff.cc~~
+
+::: warning 最新风险提示
+2026年06月底起，奈云出现客服失联、节点不可用、官网无法访问与订阅链接失效等异常。奈云、隐云、CAC、OKAC 属于同一运营主体，当前建议停止续费与新增购买。
+
+详情见：[奈云机场高度疑似跑路](/scamvpn/naiyun/)
+:::
 
 邀请码：FNAu1FWB
 
@@ -454,16 +460,16 @@ CocoDuck机场官网地址：[https://www.cocoduck.live](https://www.cocoduck.li
 
 最便宜的订阅有10.6元 168G/月(年付)。
 
-奈云机场是绝对的老牌机场，已稳定运营6年以上未出现过负面评价，节点数量非常多，足以满足大部分用户的需求。支持支付宝、微信支付。
+奈云此前属于老牌机场，但目前已经进入高危预警状态，不再建议作为新购或续费选择。
 
 | 套餐 | 价格 | 流量 | 购买地址 |
 | --- | --- | --- | --- |
-| Basic-基础套餐(特惠) | ¥128.00/每年 | 168G/月 | [点击购买](https://www.nyaff.cc?path=register&code=FNAu1FWB) |
-| Pro-进阶套餐 | ¥28.00 /每月 | 388GB/月 | [点击购买](https://www.nyaff.cc?path=register&code=FNAu1FWB) |
-| Max-专业套餐 | ¥49.00 /每月 | 788GB/月 | [点击购买](https://www.nyaff.cc?path=register&code=FNAu1FWB) |
-| 280G [按量计费] | ¥98.00 /一次性 | 280GB/不限时 | [点击购买](https://www.nyaff.cc?path=register&code=FNAu1FWB) |
-| 680G [按量计费] | ¥218.00 /一次性 | 680GB/不限时 | [点击购买](https://www.nyaff.cc?path=register&code=FNAu1FWB) |
-| 2048G [按量计费] | ¥498.00 /一次性 | 2048GB/不限时 | [点击购买](https://www.nyaff.cc?path=register&code=FNAu1FWB) |
+| Basic-基础套餐(特惠) | ¥128.00/每年 | 168G/月 | [查看风险](/scamvpn/naiyun/) |
+| Pro-进阶套餐 | ¥28.00 /每月 | 388GB/月 | [查看风险](/scamvpn/naiyun/) |
+| Max-专业套餐 | ¥49.00 /每月 | 788GB/月 | [查看风险](/scamvpn/naiyun/) |
+| 280G [按量计费] | ¥98.00 /一次性 | 280GB/不限时 | [查看风险](/scamvpn/naiyun/) |
+| 680G [按量计费] | ¥218.00 /一次性 | 680GB/不限时 | [查看风险](/scamvpn/naiyun/) |
+| 2048G [按量计费] | ¥498.00 /一次性 | 2048GB/不限时 | [查看风险](/scamvpn/naiyun/) |
 
 ---
 
@@ -483,22 +489,28 @@ CocoDuck机场官网地址：[https://www.cocoduck.live](https://www.cocoduck.li
 
 ### 隐云
 
-隐云机场官网地址：[wkacc.xyz](https://wkacc.xyz/?code=db949e40)
+隐云机场官网地址：~~wkacc.xyz~~
+
+::: warning 最新风险提示
+隐云与奈云、CAC、OKAC 属于同一运营主体。由于同主体项目近期已经出现官网、节点、客服和管理响应异常，隐云同步纳入跑路预警观察，建议停止续费与新增购买。
+
+详情见：[隐云机场跑路预警](/scamvpn/yinyun/)
+:::
 
 最便宜的订阅有25元 150G/月。
 
-隐云是业内独家提供 **VPN 专属客户端与通用订阅兼容双模式** 的机场服务商。采用企业级 IPLC / IEPL / BGP 多线路专线架构，覆盖全球 30+ 国家和地区超 100 个节点，99.9% 高可用保障。独家"魔法节点"技术实现服务端智能分流，无需客户端配置即可自动将 Netflix、Disney+、ChatGPT 等服务路由至最优解锁线路。
+隐云此前主打专属客户端与通用订阅兼容双模式，但目前需要优先按同主体联动风险处理，不再建议作为新购或续费选择。
 
 **付费周期折扣**：月付无折扣 / 季付 95 折 / 年付 8 折
 
 | 套餐 | 模式 | 价格 | 流量 | 设备限制 | 购买链接 |
 |:-----|:-----|-----:|:----:|:--------:|:---------|
-| 轻量版 | 专属客户端 | ¥29/月 | 不限 | 2 台同时在线 | [立即购买](https://wkacc.xyz/?code=db949e40) |
-| 轻量版 | 通用订阅 | ¥25/月 | 150GB/月 | 不限 | [立即购买](https://wkacc.xyz/?code=db949e40) |
-| 标准版 | 专属客户端 | ¥49/月 | 不限 | 5 台同时在线 | [立即购买](https://wkacc.xyz/?code=db949e40) |
-| 标准版 | 通用订阅 | ¥49/月 | 400GB/月 | 不限 | [立即购买](https://wkacc.xyz/?code=db949e40) |
-| 高级版 | 专属客户端 | ¥99/月 | 不限 | 10 台同时在线 | [立即购买](https://wkacc.xyz/?code=db949e40) |
-| 高级版 | 通用订阅 | ¥99/月 | 1024GB/月 | 不限 | [立即购买](https://wkacc.xyz/?code=db949e40) |
+| 轻量版 | 专属客户端 | ¥29/月 | 不限 | 2 台同时在线 | [查看风险](/scamvpn/yinyun/) |
+| 轻量版 | 通用订阅 | ¥25/月 | 150GB/月 | 不限 | [查看风险](/scamvpn/yinyun/) |
+| 标准版 | 专属客户端 | ¥49/月 | 不限 | 5 台同时在线 | [查看风险](/scamvpn/yinyun/) |
+| 标准版 | 通用订阅 | ¥49/月 | 400GB/月 | 不限 | [查看风险](/scamvpn/yinyun/) |
+| 高级版 | 专属客户端 | ¥99/月 | 不限 | 10 台同时在线 | [查看风险](/scamvpn/yinyun/) |
+| 高级版 | 通用订阅 | ¥99/月 | 1024GB/月 | 不限 | [查看风险](/scamvpn/yinyun/) |
 
 ---
 
@@ -524,14 +536,20 @@ CocoDuck机场官网地址：[https://www.cocoduck.live](https://www.cocoduck.li
 
 ### cac
 
-CAC官网地址：[www.cac.mom](https://www.cac.mom/#/register?code=kYL5chvN)
+CAC官网地址：~~www.cac.mom~~
 
-轻量机场，价格非常便宜，适合应急用。
+::: warning 最新风险提示
+CAC 已出现官网无法访问反馈，并且与奈云、隐云、OKAC 属于同一运营主体。当前建议停止续费与新增购买。
+
+详情见：[CAC机场跑路预警](/scamvpn/cac/)
+:::
+
+CAC 此前属于轻量低价机场，但目前已经纳入跑路预警，不再建议作为应急备用。
 
 | 套餐 | 价格 | 流量 | 备注 | 购买地址 |
 | --- | --- | --- | --- | --- |
-| LITE套餐 | ¥7.90 /每月 | 168GB/月 | 可支持5台设备同时接入 | [点击购买](https://www.cac.mom/#/register?code=kYL5chvN) |
-| PRO套餐 | ¥15.00 /每月 | 398GB/月 | 可支持5台设备同时接入 | [点击购买](https://www.cac.mom/#/register?code=kYL5chvN) |
+| LITE套餐 | ¥7.90 /每月 | 168GB/月 | 可支持5台设备同时接入 | [查看风险](/scamvpn/cac/) |
+| PRO套餐 | ¥15.00 /每月 | 398GB/月 | 可支持5台设备同时接入 | [查看风险](/scamvpn/cac/) |
 
 ---
 
@@ -1130,7 +1148,13 @@ ccyz官网地址：[ccyz.org](https://xxyun.at/?code=HOWnn58c)
 
 ### okanc
 
-okanc官网地址：[okanc.com](https://www.okanc.com/#/register?code=spBqEcUn)
+okanc官网地址：~~okanc.com~~
+
+::: warning 最新风险提示
+OKAC / okanc 已出现线路持续异常、官网不可访问、客服与管理响应中断等问题，并且与奈云、隐云、CAC 属于同一运营主体。当前建议停止续费与新增购买。
+
+详情见：[OKAC机场跑路预警](/scamvpn/okac/)
+:::
 
 邀请码：3YK7Np6R
 
@@ -1138,13 +1162,13 @@ okanc官网地址：[okanc.com](https://www.okanc.com/#/register?code=spBqEcUn)
 
 最便宜的订阅有46元 328G/月。
 
-okanc机场是一个新机场，但是与奈云同宗同源，有奈云的技术积累以及信誉保障，可以放心购买。节点主打高质量，速度快，延迟低。只是价格偏贵，适合电商、游戏等高需求用户。
+okanc 此前与奈云同一运营体系，但目前同主体项目已经出现联动异常，本站不再建议新购或续费。
 
 |套餐|价格|流量|购买地址|
 |---|---|---|---|
-|Pro版|46元/月|328GB/月|[点击购买](https://www.okanc.com/#/register?code=spBqEcUn)|
-|Max版|50元/月|600GB/月|[点击购买](https://www.okanc.com/#/register?code=spBqEcUn)|
-|MAX+极致版|88元/月|1024GB/月|[点击购买](https://www.okanc.com/#/register?code=spBqEcUn)|
+|Pro版|46元/月|328GB/月|[查看风险](/scamvpn/okac/)|
+|Max版|50元/月|600GB/月|[查看风险](/scamvpn/okac/)|
+|MAX+极致版|88元/月|1024GB/月|[查看风险](/scamvpn/okac/)|
 
 ---
 
@@ -1510,7 +1534,7 @@ Windows、macOS 和 Linux 推荐 [Clash Verge Rev](/article/0gematwc/)；Android
 **推荐机场：**
 - [ssone](./v2/机场推荐ssone.md)（IEPL专线，稳定性强）
 - [闪狐云](./v1/机场推荐闪狐云.md)（BGP+IPLC，不限设备）
-- [奈云](./v1/机场推荐奈云.md)（稳定运营6年+，老牌可靠）
+- [大哥云](./v2/机场推荐大哥云.md)（老牌机场，支持流媒体解锁）
 
 **使用建议：**
 - 选择稳定性高的机场

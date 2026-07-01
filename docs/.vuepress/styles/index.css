@@ -49,6 +49,51 @@ html {
   white-space: nowrap;
 }
 
+.scamvpn-summary-page .vp-doc table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  overflow-x: visible;
+  white-space: normal;
+}
+
+.scamvpn-summary-page .vp-doc th,
+.scamvpn-summary-page .vp-doc td {
+  vertical-align: top;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.scamvpn-summary-page .vp-doc th:nth-child(1),
+.scamvpn-summary-page .vp-doc td:nth-child(1) {
+  width: 16%;
+}
+
+.scamvpn-summary-page .vp-doc th:nth-child(2),
+.scamvpn-summary-page .vp-doc td:nth-child(2) {
+  width: 17%;
+}
+
+.scamvpn-summary-page .vp-doc th:nth-child(3),
+.scamvpn-summary-page .vp-doc td:nth-child(3) {
+  width: 12%;
+}
+
+.scamvpn-summary-page .vp-doc th:nth-child(4),
+.scamvpn-summary-page .vp-doc td:nth-child(4) {
+  width: 40%;
+}
+
+.scamvpn-summary-page .vp-doc th:nth-child(5),
+.scamvpn-summary-page .vp-doc td:nth-child(5) {
+  width: 15%;
+}
+
+.scamvpn-summary-page .vp-doc .vp-badge {
+  white-space: nowrap;
+}
+
 .vp-doc blockquote {
   margin: 1.25rem 0;
   padding: 0.15rem 1rem;

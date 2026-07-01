@@ -1,5 +1,5 @@
 ---
-title: ✈️机场推荐【OKANC】 - 新机场、大流量、高质量
+title: ⚠️【风险预警】OKAC/OKANC机场跑路预警，停止续费购买
 createTime: '2025/06/01 03:02:29'
 permalink: /article/giwzl7sq/
 tags:
@@ -10,32 +10,41 @@ tags:
   - 评测
   - okanc机场
   - okanc机场官网地址
+  - 机场跑路
+  - 风险预警
 description: >-
-  okanc机场是一个新机场，但是与奈云同宗同源，有奈云的技术积累以及信誉保障，可以放心购买。节点主打高质量，速度快，延迟低。只是价格偏贵，适合电商、游戏等高需求用户。
-  okanc机场官网地址：okanc.com
+  OKAC/OKANC近期出现线路持续异常、官网不可访问、客服与管理响应中断等问题；OKAC与奈云、隐云、CAC同属一个运营主体，当前按跑路预警处理。
 ---
 
-okanc机场是一个新机场，但是与奈云同宗同源，有奈云的技术积累以及信誉保障，可以放心购买。节点主打高质量，速度快，延迟低。只是价格偏贵，适合电商、游戏等高需求用户。
+截至2026年07月01日，OKAC/OKANC 已出现线路持续异常、官网不可访问、客服与管理响应中断等问题，当前按跑路预警处理。
 
-okanc机场官网地址：[okanc.com](https://www.okanc.com/#/register?code=spBqEcUn)
+::: warning 最新风险提示
+OKAC 与奈云、隐云、CAC 属于同一运营主体。同主体下多个项目近期已经出现官网、节点、客服和管理响应异常。
+
+请立即停止续费与新增购买，并保存套餐、支付、订阅和客服沟通记录。详情见：[OKAC机场跑路预警](/scamvpn/okac/)
+:::
+
+okanc机场官网地址：~~okanc.com~~
 
 <!-- more -->
 
 ## OKANC机场官网地址
 
-[okanc.com](https://www.okanc.com/#/register?code=spBqEcUn)
+~~okanc.com~~
 
 ## OKANC机场简介
 
-[OKANC机场](https://www.okanc.com/#/register?code=spBqEcUn)与奈云同宗同源，有奈云的技术积累以及信誉保障，可以放心购买。[OKANC机场](https://www.okanc.com/#/register?code=spBqEcUn)节点主打高质量，速度快，延迟低。只是价格偏贵，适合电商、游戏等高需求用户。
+OKANC 此前与奈云同一运营体系，但目前同主体项目已经出现联动异常。本站不再建议新购或续费 OKAC/OKANC。
+
+相关主体说明：OKAC、奈云、隐云、CAC 属于同一运营主体，风险需要合并观察，不建议把同主体下其他服务当作备用方案。
 
 ## OKANC机场价格
 
 |套餐|价格|流量|购买地址|
 |---|---|---|---|
-|Pro版|46元/月|328GB/月|[点击购买](https://www.okanc.com/#/register?code=spBqEcUn)|
-|Max版|50元/月|600GB/月|[点击购买](https://www.okanc.com/#/register?code=spBqEcUn)|
-|MAX+极致版|88元/月|1024GB/月|[点击购买](https://www.okanc.com/#/register?code=spBqEcUn)|
+|Pro版|46元/月|328GB/月|[查看风险](/scamvpn/okac/)|
+|Max版|50元/月|600GB/月|[查看风险](/scamvpn/okac/)|
+|MAX+极致版|88元/月|1024GB/月|[查看风险](/scamvpn/okac/)|
 
 ![OKANC机场价格](https://image.ermao.net/images/article/giwzl7sq/image-1.png)
 
