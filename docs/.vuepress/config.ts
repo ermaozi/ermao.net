@@ -74,11 +74,12 @@ export default defineUserConfig({
     footer: { message: "© 2025 二毛 📧 <a href='mailto:admin@ermao.net'>admin@ermao.net</a>" },
     navbar: [
       { text: '二毛博客', link: '/blog/', icon: 'material-symbols:home-rounded' },
-      { text: '机场推荐', link: '/airport/', icon: 'material-symbols:flight-takeoff' },
+      { text: '交流群', link: 'https://t.me/fanqiangjiaoliu', icon: 'material-symbols:group-rounded' },
       {
         text: '翻墙工具',
         icon: 'ic:baseline-construction',
         items: [
+          { text: '机场推荐', link: '/airport/', icon: 'material-symbols:flight-takeoff' },
           { text: '工具汇总推荐', link: '/article/fanqiang-tools/', icon: 'ic:baseline-construction' },
           { text: 'Windows/Linux/MacOS', link: '/article/0gematwc/', icon: 'ic:baseline-personal-video' },
           { text: 'Android手机', link: '/article/eh8f4n86/', icon: 'ic:baseline-android' },
