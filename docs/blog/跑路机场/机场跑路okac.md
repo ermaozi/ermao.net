@@ -61,47 +61,47 @@ OKAC官网：用户反馈 `www.okanc.com`、`https://www.okads.top/`、`https://
 
 5月11日，TG 群内出现“A线异常，仅剩B线可用”的反馈，管理当日回复“已修复”。但5月13日，群内再次出现 A 线异常和多线路故障反馈，说明故障并未稳定解除。
 
-![2026年5月11日TG群反馈A线异常及管理回复已修复](images/机场跑路okac/image.png)
+![2026年5月11日TG群反馈A线异常及管理回复已修复](https://image.ermao.net/images/scamvpn/okac/20260701_112658-d57a4f.png)
 
-![2026年5月13日TG群再次反馈A线异常与多线路故障](images/机场跑路okac/image-1.png)
+![2026年5月13日TG群再次反馈A线异常与多线路故障](https://image.ermao.net/images/scamvpn/okac/20260701_112705-8bc65b.png)
 
 ### 2026年05月17日 数据丢失、补单沟通与官网异常
 
 5月17日，管理发布“数据丢失”相关说明，并提到用户可联系客服补单。同期出现官网不可访问反馈。对于付费机场来说，数据丢失叠加官网异常，本身就是非常严重的运营风险。
 
-![2026年5月17日管理发布数据丢失与补单说明](images/机场跑路okac/image-2.png)
+![2026年5月17日管理发布数据丢失与补单说明](https://image.ermao.net/images/scamvpn/okac/20260701_112716-19816f.png)
 
-![2026年5月17日补单阶段客服沟通记录截图](images/机场跑路okac/image-3.png)
+![2026年5月17日补单阶段客服沟通记录截图](https://image.ermao.net/images/scamvpn/okac/20260701_112726-b90526.png)
 
 ### 2026年05月下旬至06月中旬 节点频繁报红，连上也不可用
 
 5月下旬到6月中旬，用户持续反馈节点频繁报红、连接异常、延迟升高，以及“连接成功但无法使用”等问题。故障持续时间已经超过普通短期维护范围。
 
-![2026年5月下旬用户反馈节点频繁报红与不可用截图一](images/机场跑路okac/image-4.png)
+![2026年5月下旬用户反馈节点频繁报红与不可用截图一](https://image.ermao.net/images/scamvpn/okac/20260701_112734-a052bd.png)
 
-![2026年5月下旬至6月上旬用户反馈连接异常截图二](images/机场跑路okac/image-5.png)
+![2026年5月下旬至6月上旬用户反馈连接异常截图二](https://image.ermao.net/images/scamvpn/okac/20260701_112740-c0f8ac.png)
 
-![2026年6月上旬用户反馈连接成功但无法使用截图三](images/机场跑路okac/image-6.png)
+![2026年6月上旬用户反馈连接成功但无法使用截图三](https://image.ermao.net/images/scamvpn/okac/20260701_112748-0a3afa.png)
 
-![2026年6月中旬用户反馈延迟升高与服务不稳定截图四](images/机场跑路okac/image-7.png)
+![2026年6月中旬用户反馈延迟升高与服务不稳定截图四](https://image.ermao.net/images/scamvpn/okac/20260701_112754-8705c3.png)
 
 ### 2026年06月12日至06月14日 官方承认中断风险，随后缺少后续进展
 
 6月12日，管理发布“特殊情况导致服务可能中断3-5天，后续给赔偿方案”的消息。6月14日后，未见新的有效恢复通知或后续解释，沟通链路明显减弱。
 
-![2026年6月12日管理发布服务可能中断3到5天通知](images/机场跑路okac/image-8.png)
+![2026年6月12日管理发布服务可能中断3到5天通知](https://image.ermao.net/images/scamvpn/okac/20260701_112801-228711.png)
 
-![2026年6月14日管理最后一条可见消息截图](images/机场跑路okac/image-9.png)
+![2026年6月14日管理最后一条可见消息截图](https://image.ermao.net/images/scamvpn/okac/20260701_112808-346966.png)
 
 ### 2026年06月中下旬 工单响应减弱，全线崩断反馈集中
 
 6月中下旬，用户继续反馈官网与节点异常叠加、工单和沟通响应减弱。到6月22日，群内出现全线崩断和无有效响应的集中反馈。
 
-![2026年6月中下旬用户反馈工单与沟通响应减弱截图一](images/机场跑路okac/image-10.png)
+![2026年6月中下旬用户反馈工单与沟通响应减弱截图一](https://image.ermao.net/images/scamvpn/okac/20260701_112814-dc4971.png)
 
-![2026年6月中下旬用户反馈官网与节点异常叠加截图二](images/机场跑路okac/image-11.png)
+![2026年6月中下旬用户反馈官网与节点异常叠加截图二](https://image.ermao.net/images/scamvpn/okac/20260701_112821-d5ae90.png)
 
-![2026年6月22日用户反馈全线崩断与无有效响应截图](images/机场跑路okac/image-12.png)
+![2026年6月22日用户反馈全线崩断与无有效响应截图](https://image.ermao.net/images/scamvpn/okac/20260701_112829-2c4ce2.png)
 
 ## OKAC机场跑路结论
 
