@@ -18,7 +18,7 @@ tags:
 
 [![机场推荐ssone](https://image.ermao.net/images/article/ssone/image.png)](https://www.flybit6202.com/#/register?code=MmE2PsQJ) [SSONE](https://www.flybit6202.com/#/register?code=MmE2PsQJ) 节点多速度快，支持 Netflix，适合进阶用户。起步价：10元/月。[>详情](blog/机场推荐/2026/机场推荐ssone.md)
 
-[![机场推荐山水云](https://image.ermao.net/images/blog/2k7jn2n8/20260704_195922-14ee83.png)](https://山水云.com/#/register?code=zQA4TyPT) [山水云](https://山水云.com/#/register?code=zQA4TyPT) 3年运营，支持通用订阅和一次性套餐，月付 14.99 元起。[>详情](blog/机场推荐/2026/机场推荐山水云.md)
+[![机场推荐山水云](https://image.ermao.net/images/blog/2k7jn2n8/20260704_195922-14ee83.png)](https://ss2.byvvcsx.com/#/register?code=zQA4TyPT) [山水云](https://ss2.byvvcsx.com/#/register?code=zQA4TyPT) 3年运营，支持通用订阅和一次性套餐，月付 14.99 元起。[>详情](blog/机场推荐/2026/机场推荐山水云.md)
 
 [![影子云](https://image.ermao.net/images/blog/yingziyun/20260704_193846-0433db.png)](https://www.yingzi01.com/register?code=TYHpo13G) [影子云](https://www.yingzi01.com/register?code=TYHpo13G) 海外公有云中转，支持通用订阅和一次性套餐。起步价：18.8元/月。[>详情](blog/机场推荐/2026/机场推荐影子云.md)
 
