@@ -18,6 +18,8 @@ tags:
 
 [![机场推荐ssone](https://image.ermao.net/images/article/ssone/image.png)](https://www.flybit6202.com/#/register?code=MmE2PsQJ) [SSONE](https://www.flybit6202.com/#/register?code=MmE2PsQJ) 节点多速度快，支持 Netflix，适合进阶用户。起步价：10元/月。[>详情](blog/机场推荐/2026/机场推荐ssone.md)
 
+[![影子云](https://image.ermao.net/images/blog/yingziyun/20260704_193846-0433db.png)](https://www.yingzi01.com/register?code=TYHpo13G) [影子云](https://www.yingzi01.com/register?code=TYHpo13G) 海外公有云中转，支持通用订阅和一次性套餐。起步价：18.8元/月。[>详情](blog/机场推荐/2026/机场推荐影子云.md)
+
 [![机场推荐flybit](https://image.ermao.net/images/blog/flybit/20260302_202715-c22f02.png)](https://goflybit.com/#/register?code=7h1NCdM7) [flybit](https://goflybit.com/#/register?code=7h1NCdM7) 全IEPL专线，晚高峰稳定不卡顿，解锁Netflix/ChatGPT。起步价：15元/月。[>详情](blog/机场推荐/2026/机场推荐flybit.md)
 
 [![机场推荐uuone](https://image.ermao.net/images/blog/uuone/image-1.png)](https://uuone.at/?code=AjqYdZlJ) [uuone](https://uuone.at/?code=AjqYdZlJ) 高性价比BGP三网优化，晚高峰不限速，解锁Netflix。起步价：12元/月。[>详情](blog/机场推荐/2026/机场推荐uuone.md)
