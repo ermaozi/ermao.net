@@ -1,7 +1,7 @@
 ---
 friends: true
 title: 友链
-description: 互换友链的朋友请把信息发送到我的邮箱，我会尽快添加。
+description: 二毛博客友链页面，收录科学上网、技术博客、资源分享等相关站点；欢迎内容稳定、长期维护的网站按格式发送信息申请互换友链。
 permalink: /friends/
 list:
   - name: 便宜高性价比机场推荐

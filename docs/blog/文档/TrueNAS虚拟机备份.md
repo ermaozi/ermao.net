@@ -7,7 +7,7 @@ tags:
   - TrueNAS
 title: TrueNAS虚拟机备份
 permalink: /article/vgf2ez1r/
-description: TrueNAS虚拟机备份
+description: TrueNAS Scale 虚拟机备份教程，记录如何找到 ZVOL 虚拟磁盘路径，并使用 dd 命令导出 raw 镜像，适合迁移和灾备前参考。
 ---
 
 TrueNAS虚拟机备份

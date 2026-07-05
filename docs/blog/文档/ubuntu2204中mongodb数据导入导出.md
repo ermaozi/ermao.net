@@ -8,7 +8,7 @@ tags:
   - 备份
 createTime: '2024/09/28 08:36:06'
 permalink: /article/gokrv7a1/
-description: 近期在搭建开发环境时需要用到部分生产数据用于测试，单独作一篇文章来记录相关命令。
+description: Ubuntu 22.04 中 MongoDB 数据导入导出笔记，整理 mongoexport、mongoimport 等工具安装与常用命令，适合开发环境迁移测试数据时参考。
 ---
 
 近期在搭建开发环境时需要用到部分生产数据用于测试，单独作一篇文章来记录相关命令。

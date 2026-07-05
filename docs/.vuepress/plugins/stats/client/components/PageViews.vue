@@ -30,9 +30,7 @@ const fetchCount = async (p) => {
             const data = await res.json()
             count.value = data.count
         }
-    } catch (e) {
-        console.error('[stats] fetch count error', e)
-    }
+    } catch (e) {}
 }
 
 onMounted(() => {

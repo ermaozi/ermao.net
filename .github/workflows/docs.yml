@@ -33,8 +33,8 @@ jobs:
           # 缓存 pnpm 依赖
           cache: pnpm
 
-      - name: Ensure TypeScript is installed
-        run: pnpm add typescript -D
+      - name: Audit site content
+        run: pnpm run audit:site
 
       # 运行构建脚本
       - name: Build VuePress site
@@ -52,4 +52,3 @@ jobs:
           fqdn: www.ermao.net
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-

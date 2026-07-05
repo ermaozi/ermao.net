@@ -8,7 +8,7 @@ tags:
   - OneDrive
   - 备份
   - 文件
-description: 手把手教学飞牛OS如何通过docker安装OneDrive备份文件
+description: 飞牛 OS 通过 Docker 安装 OneDrive 并备份文件的教程，记录账号准备、容器部署、同步配置和备份注意事项，适合 NAS 用户参考。
 ---
 
 手把手教学飞牛OS如何通过docker安装OneDrive备份文件

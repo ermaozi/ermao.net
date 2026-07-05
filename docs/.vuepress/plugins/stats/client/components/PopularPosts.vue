@@ -44,7 +44,7 @@ const fetchPopularPosts = async () => {
             hasLoaded.value = true
         }
     } catch (e) {
-        console.error('[stats] fetch popular posts error', e)
+        popularPosts.value = []
     } finally {
         loading.value = false
     }

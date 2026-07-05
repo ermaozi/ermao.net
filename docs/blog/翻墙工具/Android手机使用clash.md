@@ -81,7 +81,7 @@ description: 2026年Android手机Clash下载安装教程，简单易用适合新
 
 ## 延伸阅读
 
-- [iOS Clash Mi 使用教程](/blog/rkfw4zkq/)
+- [iOS Clash Mi 使用教程](/blog/clashmi/)
 - [手机如何翻墙（Android + iOS）](/blog/how-to-vpn-on-mobile/)
 - [电脑如何翻墙（Windows + Mac）](/blog/how-to-vpn-on-computer/)
 

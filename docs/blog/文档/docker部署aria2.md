@@ -7,7 +7,7 @@ tags:
   - websocket
 title: docker 部署 aria2
 permalink: /article/b06gglcq/
-description: docker 部署 Aria2 下载器，并在浏览器端配置 Aria2 Explorer
+description: Docker 部署 Aria2 下载器教程，包含 Aria2 服务配置、Aria2 Explorer 浏览器插件连接、WebSocket 访问和内网穿透场景下的性能排查。
 ---
 
 docker 部署 Aria2 下载器，并在浏览器端配置 Aria2 Explorer

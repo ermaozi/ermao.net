@@ -26,11 +26,11 @@ description: >-
 
 ![使用cloudflare进行URL重定向 示例图片](https://image.ermao.net/images/article/jqtuqouj/image.png)
 
-我要把 [blog.ermao.net](blog.ermao.net) 跟 [ermao.net](ermao.net) 的所有请求都重定向到 [www.ermao.net](www.ermao.net)。
+我要把 [blog.ermao.net](https://blog.ermao.net) 跟 [ermao.net](https://ermao.net) 的所有请求都重定向到 [www.ermao.net](https://www.ermao.net)。
 
-所以要将 [blog.ermao.net](blog.ermao.net) 跟 [ermao.net](ermao.net) 都在cloudflare上解析。这个 ip 可以随便填，但是代理状态必须是已代理。
+所以要将 [blog.ermao.net](https://blog.ermao.net) 跟 [ermao.net](https://ermao.net) 都在cloudflare上解析。这个 ip 可以随便填，但是代理状态必须是已代理。
 
-目标地址 [www.ermao.net](www.ermao.net) 则正常使用`CNAME`解析到 github pages 即可。
+目标地址 [www.ermao.net](https://www.ermao.net) 则正常使用`CNAME`解析到 github pages 即可。
 
 ## 2. 在 cloudflare 进行URL重定向
 

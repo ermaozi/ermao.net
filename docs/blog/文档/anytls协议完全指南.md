@@ -752,7 +752,7 @@ brew install sing-box
 
 或手动下载
 
-[https://github.com/SagerNet/sing-box/releases]([https://github.com/SagerNet/sing-box/releases)
+[https://github.com/SagerNet/sing-box/releases](https://github.com/SagerNet/sing-box/releases)
 
 #### 4.4.2 创建配置文件
 
@@ -1617,6 +1617,6 @@ sudo certbot renew --force-renewal
 
 ### 9.3 选机场与避坑
 
-- [机场推荐总览](../机场推荐/2026/vpn.md)
+- [机场推荐总览](/posts/vpn/)
 - [如何选择机场](./如何选择机场.md)
 - [机场跑路汇总](../跑路机场/机场跑路汇总.md)
