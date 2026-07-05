@@ -60,7 +60,6 @@ head:
       }
 ---
 
-
 [老头VPN](https://www.chattous.net/register?code=3OWtZ9Bi)详细评测：老牌翻墙机场，套餐从轻量到企业可选，最低起价 ¥25.00/月，运营8年稳定可靠、专业客服、解锁全流媒体，是2026年值得信赖的老牌机场之一。
 
 老头VPN官网地址：[https://www.chattous.net](https://www.chattous.net/register?code=3OWtZ9Bi)
@@ -83,7 +82,6 @@ head:
 - [🎯 总结](#conclusion)
 
 ---
-
 
 ## 🎯 老头VPN机场概览 {#overview}
 
@@ -370,7 +368,6 @@ Features:
 - 🌟 [2026年最新机场推荐汇总](https://www.ermao.net/posts/vpn/)
 - 💰 [热门便宜机场推荐](https://www.ermao.net/airport/)
 
-
 ## 📱 客户端下载与使用教程 {#client-usage}
 
 为方便用户快速上手，我们整理了详细的各平台客户端使用教程：
@@ -381,7 +378,6 @@ Features:
 | **iOS** | Shadowrocket | [小火箭(Shadowrocket)使用教程](/article/z747kgjd/) |
 | **Windows** | Clash Verge Rev | [Windows Clash 安装教程](/article/0gematwc/) |
 | **macOS** | ClashX / Verge | [Mac Clash 使用教程](/article/0gematwc/) |
-
 
 ## ❓ 常见问题解答 {#faq}
 

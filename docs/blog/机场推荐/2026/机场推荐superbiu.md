@@ -79,7 +79,6 @@ SuperBiu机场官网地址：[https://biubiux.online](https://biubiux.online/#/r
 
 ---
 
-
 ## 🎯 SuperBiu 机场概览 {#overview}
 
 ![superbiu机场logo](https://image.ermao.net/images/blog/superbiu/image-1.jpg)
@@ -192,7 +191,6 @@ SuperBiu机场官网地址：[https://biubiux.online](https://biubiux.online/#/r
 - 🔄 节点实时轮换，自动阻断恶意 IP  
 - 🧾 无日志策略，仅保留必要计费信息  
 
-
 ## 📱 客户端下载与使用教程 {#client-usage}
 
 为方便用户快速上手，我们整理了详细的各平台客户端使用教程：
@@ -203,7 +201,6 @@ SuperBiu机场官网地址：[https://biubiux.online](https://biubiux.online/#/r
 | **iOS** | Shadowrocket | [小火箭(Shadowrocket)使用教程](/article/z747kgjd/) |
 | **Windows** | Clash Verge Rev | [Windows Clash 安装教程](/article/0gematwc/) |
 | **macOS** | ClashX / Verge | [Mac Clash 使用教程](/article/0gematwc/) |
-
 
 ## ❓ 常见问题 {#faq}
 
@@ -218,6 +215,12 @@ A：官方承诺晚高峰不降速，若遇异常可提交工单排查线路。
 
 **Q：按量套餐有效期多久？**  
 A：一次性套餐不限制时长，流量用完前一直有效。
+
+## 下单前提醒 {#risks}
+
+- 不要只看宣传页里的最低价。真正下单前，再到支付页核对一次流量、倍率、设备数、重置周期和优惠是否生效。
+- 第一次尽量买小档或月付，用自己的网络跑几天。晚高峰、ChatGPT、YouTube/Netflix、常用地区都测过，再考虑要不要买更长周期。
+- 如果这条线路要用于工作、直播、店铺或账号运营，最好同时准备备用机场。节点维护、临时拥塞和策略调整都很常见，别把重要场景压在一条线上。
 
 ## ✅ 总结：SuperBiu 值得买吗？ {#conclusion}
 
