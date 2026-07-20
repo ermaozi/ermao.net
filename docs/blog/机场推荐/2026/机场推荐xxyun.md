@@ -98,13 +98,7 @@ XXYUN机场官网地址：[https://xxyun.de](https://xxyun.at/?code=HOWnn58c)
 
 ## 💳 XXYUN 套餐价格 {#price}
 
-| 套餐名称 | 价格 | 流量 | 类型 | 适用人群 | 购买链接 |
-|----------|-----:|-----:|------|----------|----------|
-| 初级套餐 | ¥9.99 / 月 | 100G/月 | 月付 | 轻量追剧、社区浏览 | [立即购买](https://xxyun.at/?code=HOWnn58c) |
-| 中级套餐 | ¥19.9 / 月 | 300G/月 | 月付 | 日常办公、多人共用 | [立即购买](https://xxyun.at/?code=HOWnn58c) |
-| 高级套餐 | ¥39.9 / 月 | 1000G/月 | 月付 | 重度影视、直播上传 | [立即购买](https://xxyun.at/?code=HOWnn58c) |
-| 500G 不限时 | ¥66.66 / 次 | 500G/不限时 | 一次性 | 偶尔使用、旅行备用 | [立即购买](https://xxyun.at/?code=HOWnn58c) |
-| 2888G 不限时 | ¥199 / 次 | 2888G/不限时 | 一次性 | 长期囤货、家庭共用 | [立即购买](https://xxyun.at/?code=HOWnn58c) |
+<AirportPlanTable airport-id="xxyun" />
 
 > 💡 **省钱技巧**：使用优惠码 `xxyun` 可享 9 折，首次下单输入优惠码 `xxyun85` 可享 85 折，建议先购月付体验再考虑长期方案。
 

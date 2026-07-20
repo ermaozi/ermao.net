@@ -144,6 +144,10 @@ for (const page of pages) {
     addIssue(warnings, 'long-description', page.file, `${description.length} chars`)
   }
 
+  if (/^:{3,4}\s+card-masonry\b/m.test(page.content)) {
+    addIssue(warnings, 'client-only-card-masonry', page.file, 'Card masonry content is empty in SSR HTML')
+  }
+
   if (frontmatter.createTime) {
     const createdAt = new Date(String(frontmatter.createTime).replace(/\//g, '-'))
     if (Number.isNaN(createdAt.getTime())) {

@@ -5,8 +5,37 @@ import { plumeTheme } from 'vuepress-theme-plume'
 import statsPlugin from './plugins/stats/index.js'
 
 const hostname = 'https://www.ermao.net'
+const siteDescription = '二毛博客长期更新科学上网教程、机场推荐、翻墙工具、软路由配置、Python 编程和实用软件资源。'
 const utilityPagePrefixes = ['/blog/tags/', '/blog/categories/', '/blog/archives/']
 const utilityPagePaths = ['/stats/']
+
+const siteStructuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': `${hostname}/#website`,
+      url: hostname,
+      name: '二毛',
+      description: siteDescription,
+      inLanguage: 'zh-CN',
+      publisher: {
+        '@id': `${hostname}/#person`,
+      },
+    },
+    {
+      '@type': 'Person',
+      '@id': `${hostname}/#person`,
+      name: '二毛',
+      url: hostname,
+      image: `${hostname}/img/logo.svg`,
+      sameAs: [
+        'https://x.com/ermaozi4',
+        'https://t.me/ermaozi01',
+      ],
+    },
+  ],
+}
 
 const isUtilityPage = (path: string) =>
   utilityPagePaths.includes(path) || utilityPagePrefixes.some(prefix => path.startsWith(prefix))
@@ -38,7 +67,7 @@ const utilityPagesPlugin = () => ({
 export default defineUserConfig({
   lang: 'zh-CN',
   title: '二毛',
-  description: "开发、运维、科学上网相关内容，打破技术壁垒",
+  description: siteDescription,
   shouldPrefetch: false,
   plugins: [
     utilityPagesPlugin(),
@@ -54,6 +83,9 @@ export default defineUserConfig({
     ['meta', { name: 'theme-color', content: '#336f87' }],
     ['meta', { name: 'color-scheme', content: 'light dark' }],
     ['meta', { name: 'referrer', content: 'strict-origin-when-cross-origin' }],
+    ['meta', { property: 'og:image:alt', content: '二毛博客' }],
+    ['meta', { name: 'twitter:site', content: '@ermaozi4' }],
+    ['script', { type: 'application/ld+json' }, JSON.stringify(siteStructuredData)],
     ["meta", {"name": "keywords", "content": "机场,便宜机场,梯子,vpn,科学上网,翻墙,clash,trojan,python,服务器"}],
     ["meta", {"name": "yandex-verification", "content": "e1e26631cf282ae3"}],
     ["meta", {"name": "baidu-site-verification", "content": "codeva-XDTarR9mnY"}]
