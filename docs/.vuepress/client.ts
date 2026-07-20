@@ -1,19 +1,16 @@
+import { defineAsyncComponent } from 'vue'
 import { defineClientConfig } from 'vuepress/client'
 import './styles/index.css'
-import AirportDetailList from './components/AirportDetailList.vue'
-import AirportGuideGrid from './components/AirportGuideGrid.vue'
-import AirportList from './components/AirportList.vue'
-import AirportPlanTable from './components/AirportPlanTable.vue'
-import AirportRankingTable from './components/AirportRankingTable.vue'
-import AirportRiskList from './components/AirportRiskList.vue'
 
 export default defineClientConfig({
   enhance({ app }) {
-    app.component('AirportDetailList', AirportDetailList)
-    app.component('AirportGuideGrid', AirportGuideGrid)
-    app.component('AirportList', AirportList)
-    app.component('AirportPlanTable', AirportPlanTable)
-    app.component('AirportRankingTable', AirportRankingTable)
-    app.component('AirportRiskList', AirportRiskList)
+    // These components only occur on the airport landing page. Keeping them out
+    // of the global entry prevents their data and styles from delaying every page.
+    app.component('AirportDetailList', defineAsyncComponent(() => import('./components/AirportDetailList.vue')))
+    app.component('AirportGuideGrid', defineAsyncComponent(() => import('./components/AirportGuideGrid.vue')))
+    app.component('AirportList', defineAsyncComponent(() => import('./components/AirportList.vue')))
+    app.component('AirportPlanTable', defineAsyncComponent(() => import('./components/AirportPlanTable.vue')))
+    app.component('AirportRankingTable', defineAsyncComponent(() => import('./components/AirportRankingTable.vue')))
+    app.component('AirportRiskList', defineAsyncComponent(() => import('./components/AirportRiskList.vue')))
   },
 })

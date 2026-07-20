@@ -114,6 +114,17 @@ html {
   background-color: var(--vp-c-bg-soft);
 }
 
+/* Reserve stable boxes for theme-owned images that do not expose dimensions. */
+.vp-navbar-title .logo {
+  aspect-ratio: 1;
+}
+
+.vp-profile > p > img,
+.posts-modal .avatar img {
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
 @media (max-width: 719px) {
   .vp-doc {
     font-size: 15.5px;

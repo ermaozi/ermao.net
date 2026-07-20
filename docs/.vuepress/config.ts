@@ -3,6 +3,7 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { plumeTheme } from 'vuepress-theme-plume'
 // @ts-ignore
 import statsPlugin from './plugins/stats/index.js'
+import imagePerformancePlugin from './plugins/image-performance.js'
 
 const hostname = 'https://www.ermao.net'
 const siteDescription = '二毛博客长期更新科学上网教程、机场推荐、翻墙工具、软路由配置、Python 编程和实用软件资源。'
@@ -71,6 +72,7 @@ export default defineUserConfig({
   shouldPrefetch: false,
   plugins: [
     utilityPagesPlugin(),
+    imagePerformancePlugin(),
     statsPlugin({
       workerUrl: 'https://views.ermao.net' // 请替换为实际的 Worker 地址
     })
@@ -78,7 +80,7 @@ export default defineUserConfig({
   head: [
     ['link', { rel: 'icon', href: '/img/logo.svg', type: 'image/svg+xml' }],
     ['link', { rel: 'preconnect', href: 'https://image.ermao.net' }],
-    ['link', { rel: 'preconnect', href: 'https://views.ermao.net' }],
+    ['link', { rel: 'dns-prefetch', href: 'https://views.ermao.net' }],
     ['link', { rel: 'dns-prefetch', href: 'https://giscus.app' }],
     ['meta', { name: 'theme-color', content: '#336f87' }],
     ['meta', { name: 'color-scheme', content: 'light dark' }],
@@ -149,9 +151,7 @@ export default defineUserConfig({
         && !isUtilityPage(page.path),
     },
     plugins: {
-      markdownImage: {
-        lazyload: true,
-      },
+      markdownImage: false,
       sitemap: {
         changefreq: 'weekly',
       },
