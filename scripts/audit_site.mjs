@@ -20,6 +20,7 @@ const markdownFiles = (await glob('docs/**/*.md', {
 const pages = []
 const errors = []
 const warnings = []
+const geoNotes = []
 
 const addIssue = (bucket, type, file, message) => {
   bucket.push({ type, file, message })
@@ -157,6 +158,28 @@ for (const page of pages) {
       addIssue(errors, 'future-create-time', page.file, String(frontmatter.createTime))
     }
   }
+
+  if (page.file.includes('/机场推荐/') && !/202[0-9]/.test(toText(frontmatter.updateTime))) {
+    addIssue(warnings, 'review-missing-update-time', page.file, 'Airport review has no explicit updateTime')
+  }
+
+  if (page.file.includes('/机场推荐/') && /无日志|永不跑路|跑路风险低|完美解锁/.test(page.content)) {
+    addIssue(geoNotes, 'claim-needs-evidence-review', page.file, 'Contains a high-trust claim; verify source and wording')
+  }
+}
+
+const trustRoutes = [
+  '/about/',
+  '/editorial-policy/',
+  '/review-methodology/',
+  '/affiliate-disclosure/',
+  '/corrections/',
+]
+
+for (const route of trustRoutes) {
+  if (!routeSet.has(route)) {
+    addIssue(errors, 'missing-trust-page', 'docs/', route)
+  }
 }
 
 const resolveRelativeCandidates = (sourceFile, target) => {
@@ -243,6 +266,7 @@ const printIssues = (label, issues) => {
 console.log(`Audited ${markdownFiles.length} markdown files.`)
 printIssues('Errors', errors)
 printIssues('Warnings', warnings)
+printIssues('GEO review queue', geoNotes)
 
 if (errors.length > 0) {
   process.exitCode = 1

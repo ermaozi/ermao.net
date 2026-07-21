@@ -114,6 +114,84 @@ html {
   background-color: var(--vp-c-bg-soft);
 }
 
+/* Shared presentation for the public trust and methodology pages. */
+.geo-trust-page .vp-doc {
+  max-width: 860px;
+}
+
+.geo-trust-page .vp-doc > h1 + blockquote {
+  margin: 1.25rem 0 1.75rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid color-mix(in srgb, var(--vp-c-brand-1) 28%, transparent);
+  border-left: 4px solid var(--vp-c-brand-1);
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--vp-c-bg-soft), color-mix(in srgb, var(--vp-c-brand-soft) 48%, var(--vp-c-bg)));
+  color: var(--vp-c-text-1);
+  font-size: 1.04em;
+}
+
+.geo-trust-page .vp-doc > h1 + blockquote p {
+  margin: 0;
+}
+
+.geo-trust-page .vp-doc h2 {
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.geo-trust-page .vp-doc .vp-card-grid {
+  gap: 1rem;
+}
+
+.geo-trust-page .vp-doc .vp-card-grid > ul {
+  display: contents;
+}
+
+.geo-trust-page .vp-doc .vp-card-grid > ul > li {
+  min-width: 0;
+  margin: 0;
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+  list-style: none;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.geo-trust-page .vp-doc .vp-card-grid > ul > li > p:first-child {
+  margin-top: 0;
+  color: var(--vp-c-text-1);
+  font-size: 1.02em;
+}
+
+.geo-trust-page .vp-doc .vp-card-grid > ul > li > p:last-child {
+  margin-bottom: 0;
+  color: var(--vp-c-text-2);
+  font-size: 0.94em;
+  line-height: 1.7;
+}
+
+.geo-trust-page .vp-doc .vp-card-grid > ul > li:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--vp-c-brand-1) 48%, var(--vp-c-divider));
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--vp-c-brand-1) 10%, transparent);
+}
+
+.geo-trust-page .vp-doc hr {
+  margin: 2.25rem 0 1.25rem;
+}
+
+@media (max-width: 719px) {
+  .geo-trust-page .vp-doc > h1 + blockquote {
+    padding: 0.9rem 1rem;
+    border-radius: 10px;
+  }
+
+  .geo-trust-page .vp-doc table {
+    white-space: normal;
+  }
+}
+
 /* Reserve stable boxes for theme-owned images that do not expose dimensions. */
 .vp-navbar-title .logo {
   aspect-ratio: 1;

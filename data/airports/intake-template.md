@@ -21,6 +21,12 @@ pnpm airport:check
 是否支持通用订阅:
 TG群或频道:
 测速截图:
+资料来源URL:
+资料采集日期:
+本站实测日期:
+测试地区/运营商/基础带宽:
+测试设备/客户端:
+测试时段与次数:
 是否有一次性订阅(限量不限时):
 最便宜的订阅价格与流量:
 价格表:
@@ -42,6 +48,11 @@ description:
 universalSubscription: unknown
 telegramHref:
 speedTestImages: []
+sources: []
+sourceCheckedAt:
+testedAt: unknown
+testEnvironment:
+testWindow:
 hasOneTimePackage: unknown
 minPlanText:
 minPlan:
@@ -76,3 +87,6 @@ private:
 4. 价格尽量拆成 `price`、`traffic`、`period`；无法拆分时保留到 `text`。
 5. 商家宣传但未经实测的信息保留 `claimedByProvider: true`，文章措辞避免写成实测结论。
 6. 缺少 logo、测速截图、价格表时不要阻塞录入，后续补齐。
+7. `资料来源URL` 与 `资料采集日期` 必须成对保存；商家口述不能标成本站实测。
+8. `本站实测日期` 为空时，`testedAt` 必须为 `unknown`，文章不得使用“本站实测”措辞。
+9. 延迟、速度、丢包率等数据必须同时保留测试环境、时段和次数；单张测速图不能推出长期稳定性。

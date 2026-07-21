@@ -4,6 +4,7 @@ import { plumeTheme } from 'vuepress-theme-plume'
 // @ts-ignore
 import statsPlugin from './plugins/stats/index.js'
 import imagePerformancePlugin from './plugins/image-performance.js'
+import geoPlugin, { enhanceArticleJsonLd } from './plugins/geo.js'
 
 const hostname = 'https://www.ermao.net'
 const siteDescription = '二毛博客长期更新科学上网教程、机场推荐、翻墙工具、软路由配置、Python 编程和实用软件资源。'
@@ -21,15 +22,16 @@ const siteStructuredData = {
       description: siteDescription,
       inLanguage: 'zh-CN',
       publisher: {
-        '@id': `${hostname}/#person`,
+        '@id': `${hostname}/about/#person`,
       },
     },
     {
       '@type': 'Person',
-      '@id': `${hostname}/#person`,
+      '@id': `${hostname}/about/#person`,
       name: '二毛',
-      url: hostname,
+      url: `${hostname}/about/`,
       image: `${hostname}/img/logo.svg`,
+      description: '二毛博客作者，长期记录科学上网工具、机场服务、软路由与实用软件的测试和使用经验。',
       sameAs: [
         'https://x.com/ermaozi4',
         'https://t.me/ermaozi01',
@@ -73,6 +75,7 @@ export default defineUserConfig({
   plugins: [
     utilityPagesPlugin(),
     imagePerformancePlugin(),
+    geoPlugin(),
     statsPlugin({
       workerUrl: 'https://views.ermao.net' // 请替换为实际的 Worker 地址
     })
@@ -105,7 +108,7 @@ export default defineUserConfig({
     logo: '/img/logo.svg',
     home: '/',
     hostname,
-    footer: { message: "© 2025 二毛 📧 <a href='mailto:admin@ermao.net'>admin@ermao.net</a>" },
+    footer: { message: "© 2025 二毛 · <a href='/editorial-policy/'>编辑政策</a> · <a href='/affiliate-disclosure/'>推广披露</a> · <a href='/corrections/'>更正</a> · 📧 <a href='mailto:admin@ermao.net'>admin@ermao.net</a>" },
     navbar: [
       { text: '二毛博客', link: '/blog/', icon: 'material-symbols:home-rounded' },
       { text: '交流群', link: 'https://t.me/fanqiangjiaoliu', icon: 'material-symbols:group-rounded' },
@@ -129,6 +132,7 @@ export default defineUserConfig({
           { text: '友链' , link: '/friends/', icon: 'material-symbols:footprint' },
           { text: '标签', link: '/blog/tags/', icon: 'material-symbols:sell' },
           { text: '统计', link: '/stats/', icon: 'ic:baseline-data-usage' },
+          { text: '关于与评测方法', link: '/about/', icon: 'material-symbols:verified-user-outline' },
         ],
       },
     ],
@@ -164,6 +168,7 @@ export default defineUserConfig({
         },
         twitterID: '@ermaozi4',
         isArticle: isArticlePage,
+        jsonLd: (jsonLd, page) => enhanceArticleJsonLd(jsonLd as Record<string, any>, page) as any,
         customHead: (head, page) => {
           if (isUtilityPage(page.path)) {
             appendNoindex(head)
