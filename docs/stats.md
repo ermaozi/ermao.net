@@ -1,4 +1,6 @@
 ---
+title: 二毛博客内容统计
+description: 查看二毛博客的文章数量、分类分布、更新情况和站内内容变化趋势。
 pageClass: custom-page-class
 layout: Layout
 sidebar: false
