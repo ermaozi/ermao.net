@@ -92,6 +92,7 @@ for (const file of markdownFiles) {
 
 const routeSet = new Set(['/'])
 const permalinkMap = new Map()
+const descriptionMap = new Map()
 
 for (const page of pages) {
   const permalink = toText(page.data?.permalink)
@@ -107,11 +108,25 @@ for (const page of pages) {
   if (page.data?.home) {
     addRouteVariants(routeSet, '/')
   }
+
+  const description = toText(page.data?.description)
+  if (description) {
+    if (!descriptionMap.has(description)) {
+      descriptionMap.set(description, [])
+    }
+    descriptionMap.get(description).push(page.file)
+  }
 }
 
 for (const [permalink, files] of permalinkMap.entries()) {
   if (files.length > 1) {
     addIssue(errors, 'duplicate-permalink', files.join(', '), permalink)
+  }
+}
+
+for (const [description, files] of descriptionMap.entries()) {
+  if (files.length > 1) {
+    addIssue(errors, 'duplicate-description', files.join(', '), description)
   }
 }
 

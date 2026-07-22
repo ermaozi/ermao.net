@@ -10,6 +10,13 @@ const hostname = 'https://www.ermao.net'
 const siteDescription = '二毛网络工具资料库长期更新机场评测与风险记录，以及 Clash、Shadowrocket、软路由配置和网络故障排查教程。'
 const utilityPagePrefixes = ['/blog/tags/', '/blog/categories/', '/blog/archives/']
 const utilityPagePaths = ['/stats/']
+const generatedPageDescriptions: Record<string, string> = {
+  '/blog/': '浏览二毛博客的全部文章，涵盖机场评测与风险记录、Clash 和 Shadowrocket 客户端、软路由配置及网络故障排查。',
+  '/blog/archives/': '按发布时间浏览二毛博客文章归档，查找历年机场评测、网络工具教程、风险预警和每周网络动态。',
+  '/blog/categories/': '按内容分类浏览二毛博客，快速进入机场推荐、翻墙工具、风险预警、网络新闻和技术文档等栏目。',
+  '/blog/tags/': '通过主题标签查找二毛博客内容，包括 Clash、VPN、机场评测、Shadowrocket、OpenWrt 和网络安全等主题。',
+  '/stats/': '查看二毛博客的公开内容统计，包括文章数量、分类分布、更新情况和站内内容变化趋势。',
+}
 
 const siteStructuredData = {
   '@context': 'https://schema.org',
@@ -58,6 +65,11 @@ const appendNoindex = (head: any[]) => {
 const utilityPagesPlugin = () => ({
   name: 'ermao-utility-pages',
   extendsPage: (page: any) => {
+    const description = generatedPageDescriptions[page.path]
+    if (description) {
+      page.frontmatter.description = description
+    }
+
     if (!isUtilityPage(page.path)) return
 
     page.frontmatter.search = false
