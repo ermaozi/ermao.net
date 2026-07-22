@@ -7,7 +7,7 @@ import imagePerformancePlugin from './plugins/image-performance.js'
 import geoPlugin, { enhanceArticleJsonLd } from './plugins/geo.js'
 
 const hostname = 'https://www.ermao.net'
-const siteDescription = '二毛博客长期更新科学上网教程、机场推荐、翻墙工具、软路由配置、Python 编程和实用软件资源。'
+const siteDescription = '二毛网络工具资料库长期更新机场评测与风险记录，以及 Clash、Shadowrocket、软路由配置和网络故障排查教程。'
 const utilityPagePrefixes = ['/blog/tags/', '/blog/categories/', '/blog/archives/']
 const utilityPagePaths = ['/stats/']
 
@@ -91,7 +91,7 @@ export default defineUserConfig({
     ['meta', { property: 'og:image:alt', content: '二毛博客' }],
     ['meta', { name: 'twitter:site', content: '@ermaozi4' }],
     ['script', { type: 'application/ld+json' }, JSON.stringify(siteStructuredData)],
-    ["meta", {"name": "keywords", "content": "机场,便宜机场,梯子,vpn,科学上网,翻墙,clash,trojan,python,服务器"}],
+    ["meta", {"name": "keywords", "content": "机场评测,机场风险,VPN,科学上网,翻墙,Clash,Shadowrocket,软路由,OpenWrt"}],
     ["meta", {"name": "yandex-verification", "content": "e1e26631cf282ae3"}],
     ["meta", {"name": "baidu-site-verification", "content": "codeva-XDTarR9mnY"}]
   ],
