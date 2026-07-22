@@ -1,6 +1,7 @@
 ---
 title: ⚠️【风险预警】OKAC/OKANC机场跑路预警，停止续费购买
 createTime: '2025/06/01 03:02:29'
+updateTime: '2026/07/22 00:00:00'
 permalink: /article/giwzl7sq/
 tags:
   - 科学上网

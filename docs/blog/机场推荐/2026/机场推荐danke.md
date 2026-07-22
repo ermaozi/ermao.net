@@ -1,6 +1,7 @@
 ---
 title: 2026 Danke机场评测：稳定三年，低至3元/月｜500GB与不限时套餐
 createTime: 2026/03/03 16:58:55
+updateTime: '2026/07/22 00:00:00'
 permalink: /blog/danke/
 tags:
   - 科学上网

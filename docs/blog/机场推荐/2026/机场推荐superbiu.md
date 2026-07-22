@@ -189,7 +189,7 @@ SuperBiu机场官网地址：[https://biubiux.online](https://biubiux.online/#/r
 - 🔒 全程加密隧道，避免 ISP 嗅探与流量审查  
 - 🛑 数据不落公网，降低 DDoS 与封锁概率  
 - 🔄 节点实时轮换，自动阻断恶意 IP  
-- 🧾 无日志策略，仅保留必要计费信息  
+- 🧾 服务商声称仅保留必要计费信息；本站未见独立审计
 
 ## 📱 客户端下载与使用教程 {#client-usage}
 
