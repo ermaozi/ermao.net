@@ -121,11 +121,6 @@ export default defineUserConfig({
         archivesLink: '/blog/archives/',
         tagsLink: '/blog/tags/',
         categoriesLink: '/blog/categories/',
-        profile: {
-          name: '二毛',
-          description: '老老实实的二毛',
-          avatar: '/img/logo.svg',
-        },
       },],
     logo: '/img/logo.svg',
     home: '/',
@@ -158,6 +153,11 @@ export default defineUserConfig({
         ],
       },
     ],
+    profile: {
+      name: '二毛',
+      description: '老老实实的二毛',
+      avatar: '/img/logo.svg',
+    },
     social: [
         { icon: 'x', link: 'https://x.com/ermaozi4' },
         { icon: 'telegram', link: 'https://t.me/ermaozi01' },

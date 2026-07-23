@@ -1,8 +1,10 @@
 import { defineAsyncComponent } from 'vue'
 import { defineClientConfig } from 'vuepress/client'
+import SeoRouteHeading from './components/SeoRouteHeading.vue'
 import './styles/index.css'
 
 export default defineClientConfig({
+  rootComponents: [SeoRouteHeading],
   enhance({ app }) {
     // These components only occur on the airport landing page. Keeping them out
     // of the global entry prevents their data and styles from delaying every page.

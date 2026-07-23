@@ -1,5 +1,5 @@
 ---
-title: Shadowrocket(小火箭)新手使用教程2026：下载安装、节点订阅与配置指南(含免费美区ID)
+title: Shadowrocket（小火箭）下载安装与节点订阅教程（2026）
 createTime: 2025/01/03 18:18:11
 permalink: /article/z747kgjd/
 tags:
@@ -11,7 +11,7 @@ tags:
     - 苹果VPN
     - 教程
     - 节点订阅
-description: 2026最新Shadowrocket（小火箭）新手使用教程。详细介绍如何在iOS/iPhone/iPad及Mac上下载安装Shadowrocket，如何获取免费美区Apple ID，以及如何配置节点订阅链接进行科学上网。
+description: 2026年Shadowrocket（小火箭）新手教程，说明iPhone、iPad和Mac的下载安装、外区Apple ID使用提醒、节点订阅导入、连接测试与常见问题。
 ---
 
 :::tip 温馨提示
