@@ -42,6 +42,20 @@ const toText = (value) => {
   return String(value).trim()
 }
 
+const parseSiteDateTime = (value) => {
+  const normalized = String(value).trim()
+  const match = normalized.match(
+    /^(\d{4})[/-](\d{1,2})[/-](\d{1,2})[ T](\d{1,2}):(\d{1,2}):(\d{1,2})$/,
+  )
+
+  if (!match) return new Date(Number.NaN)
+
+  const [, year, month, day, hour, minute, second] = match
+  return new Date(
+    `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}T${hour.padStart(2, '0')}:${minute.padStart(2, '0')}:${second.padStart(2, '0')}+08:00`,
+  )
+}
+
 const addRouteVariants = (routeSet, route) => {
   if (!route || !route.startsWith('/')) return
 
@@ -165,7 +179,7 @@ for (const page of pages) {
   }
 
   if (frontmatter.createTime) {
-    const createdAt = new Date(String(frontmatter.createTime).replace(/\//g, '-'))
+    const createdAt = parseSiteDateTime(frontmatter.createTime)
     if (Number.isNaN(createdAt.getTime())) {
       addIssue(errors, 'invalid-create-time', page.file, String(frontmatter.createTime))
     }
