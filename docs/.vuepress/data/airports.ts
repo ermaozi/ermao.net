@@ -59,6 +59,7 @@ export type AirportSource = Omit<AirportRecord, 'plans'> & {
 // cocoduck: docs/blog/机场推荐/2026/机场推荐cocoduck.md — 💳 CocoDuck机场套餐价格
 // u1s1: docs/blog/机场推荐/2026/机场推荐u1s1.md — 💳 套餐选择建议
 // 大哥云: docs/blog/机场推荐/2026/机场推荐大哥云.md — 💳 大哥云套餐价格
+// 无忧链接: docs/blog/机场推荐/2026/机场推荐无忧链接.md — 周期套餐 / 一次性不限时流量包
 // 可信云: docs/blog/机场推荐/2026/机场推荐可信云.md — 周期套餐
 // 梯子云: docs/blog/机场推荐/2026/机场推荐梯子云.md — 周期套餐 / 一次性不限时流量包
 // uuone: docs/blog/机场推荐/2026/机场推荐uuone.md — 💳 uuone 价格套餐与最新优惠码
@@ -434,6 +435,65 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "text": "年付套餐（1000GB），¥699.00，1000G/月"
     }
   ],
+  "无忧链接": [
+    {
+      "name": "mini链接",
+      "priceText": "¥79/年",
+      "traffic": "40GB/年",
+      "type": "周期订阅",
+      "audience": "偶尔使用、低频备用",
+      "purchaseHref": "https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb",
+      "text": "mini链接，¥79/年，40GB/年"
+    },
+    {
+      "name": "舒心链接",
+      "priceText": "¥19/月；¥51/季；¥96/半年；¥182/年",
+      "traffic": "100GB/月",
+      "type": "周期订阅",
+      "audience": "日常网页、社交与轻度视频",
+      "purchaseHref": "https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb",
+      "text": "舒心链接，¥19/月；¥51/季；¥96/半年；¥182/年，100GB/月"
+    },
+    {
+      "name": "省心链接",
+      "priceText": "¥33/月；¥89/季；¥168/半年；¥316/年",
+      "traffic": "200GB/月",
+      "type": "周期订阅",
+      "audience": "AI 工具、办公与中等频率视频",
+      "purchaseHref": "https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb",
+      "text": "省心链接，¥33/月；¥89/季；¥168/半年；¥316/年，200GB/月"
+    },
+    {
+      "name": "随心链接",
+      "priceText": "¥77/月；¥207/季；¥398/半年；¥739/年",
+      "traffic": "500GB/月",
+      "type": "周期订阅",
+      "audience": "高频流媒体与多设备使用",
+      "purchaseHref": "https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb",
+      "text": "随心链接，¥77/月；¥207/季；¥398/半年；¥739/年，500GB/月"
+    },
+    {
+      "name": "忘忧链接",
+      "priceText": "¥117/月；¥315/季；¥596/半年；¥1123/年",
+      "traffic": "1TB/月",
+      "type": "周期订阅",
+      "audience": "大流量与重度使用",
+      "purchaseHref": "https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb",
+      "text": "忘忧链接，¥117/月；¥315/季；¥596/半年；¥1123/年，1TB/月"
+    },
+    {
+      "name": "不限时 100GB 流量包",
+      "priceText": "¥16.15/一次性",
+      "traffic": "100GB",
+      "type": "不限时流量包",
+      "features": [
+        "特点：低频备用；名称及规则以结算页为准"
+      ],
+      "purchaseHref": "https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb",
+      "text": "不限时 100GB 流量包，¥16.15/一次性，100GB",
+      "oneTime": true
+    }
+  ],
   "可信云": [
     {
       "name": "轻量月付",
@@ -497,7 +557,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "125GB/月",
       "type": "周期订阅",
       "audience": "轻度日常使用，适合先月付体验",
-      "purchaseHref": "https://asfawsf.ladderttt.sbs/#/?code=VZVXWbiq",
+      "purchaseHref": "https://ermaozi01.ladderaff.com/#/?code=VZVXWbiq",
       "text": "初阶网络·基础视界，¥25/月；¥71.25/季；¥135/半年；¥255/年；¥480/两年；¥675/三年，125GB/月"
     },
     {
@@ -506,7 +566,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "350GB/月",
       "type": "周期订阅",
       "audience": "日常视频、AI 工具与远程办公",
-      "purchaseHref": "https://asfawsf.ladderttt.sbs/#/?code=VZVXWbiq",
+      "purchaseHref": "https://ermaozi01.ladderaff.com/#/?code=VZVXWbiq",
       "text": "中阶加速·极清多线，¥60/月；¥171/季；¥324/半年；¥612/年；¥1152/两年；¥1620/三年，350GB/月"
     },
     {
@@ -515,7 +575,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "750GB/月",
       "type": "周期订阅",
       "audience": "中重度视频与多设备使用",
-      "purchaseHref": "https://asfawsf.ladderttt.sbs/#/?code=VZVXWbiq",
+      "purchaseHref": "https://ermaozi01.ladderaff.com/#/?code=VZVXWbiq",
       "text": "高阶专线·全球智联，¥110/月；¥313.50/季；¥594/半年；¥1122/年；¥2112/两年；¥2970/三年，750GB/月"
     },
     {
@@ -524,7 +584,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "1.6TB/月",
       "type": "周期订阅",
       "audience": "大流量或团队用户",
-      "purchaseHref": "https://asfawsf.ladderttt.sbs/#/?code=VZVXWbiq",
+      "purchaseHref": "https://ermaozi01.ladderaff.com/#/?code=VZVXWbiq",
       "text": "顶阶商业·全球骨干，¥190/月；¥541.50/季；¥1026/半年；¥1938/年；¥3648/两年；¥5130/三年，1.6TB/月"
     },
     {
@@ -533,7 +593,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "60GB/年",
       "type": "周期订阅",
       "audience": "使用频率较低、希望控制年费",
-      "purchaseHref": "https://asfawsf.ladderttt.sbs/#/?code=VZVXWbiq",
+      "purchaseHref": "https://ermaozi01.ladderaff.com/#/?code=VZVXWbiq",
       "text": "天梯随行·年度保活方案，¥89/年，60GB/年"
     },
     {
@@ -542,7 +602,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "500GB/月",
       "type": "周期订阅",
       "audience": "有私人定制线路需求的用户",
-      "purchaseHref": "https://asfawsf.ladderttt.sbs/#/?code=VZVXWbiq",
+      "purchaseHref": "https://ermaozi01.ladderaff.com/#/?code=VZVXWbiq",
       "text": "云端独享·私人定制专线，¥650/月，500GB/月"
     },
     {
@@ -553,7 +613,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特点：低频备用"
       ],
-      "purchaseHref": "https://asfawsf.ladderttt.sbs/#/?code=VZVXWbiq",
+      "purchaseHref": "https://ermaozi01.ladderaff.com/#/?code=VZVXWbiq",
       "text": "云端买断·永不限时轻量包，¥169/一次性，120GB",
       "oneTime": true
     },
@@ -565,7 +625,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特点：阶段性补充流量"
       ],
-      "purchaseHref": "https://asfawsf.ladderttt.sbs/#/?code=VZVXWbiq",
+      "purchaseHref": "https://ermaozi01.ladderaff.com/#/?code=VZVXWbiq",
       "text": "云端买断·永不限时标准包，¥449/一次性，350GB",
       "oneTime": true
     },
@@ -577,7 +637,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特点：较高流量的长期备用"
       ],
-      "purchaseHref": "https://asfawsf.ladderttt.sbs/#/?code=VZVXWbiq",
+      "purchaseHref": "https://ermaozi01.ladderaff.com/#/?code=VZVXWbiq",
       "text": "云端买断·永不限时精英包，¥849/一次性，700GB",
       "oneTime": true
     }
@@ -1906,7 +1966,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "150GB/月",
       "type": "周期订阅",
       "audience": "网页、社交、短视频和轻度流媒体",
-      "purchaseHref": "https://asfeoasf.wavenetttt.homes/#/?code=hghwewpc",
+      "purchaseHref": "https://ermaozi01.wavenetaff.com/#/?code=hghwewpc",
       "text": "浪网 入门，¥30/月，150GB/月"
     },
     {
@@ -1915,7 +1975,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "400GB/月",
       "type": "周期订阅",
       "audience": "日常办公、AI 工具和中等频率视频",
-      "purchaseHref": "https://asfeoasf.wavenetttt.homes/#/?code=hghwewpc",
+      "purchaseHref": "https://ermaozi01.wavenetaff.com/#/?code=hghwewpc",
       "text": "浪网 进阶，¥70/月，400GB/月"
     },
     {
@@ -1924,7 +1984,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "800GB/月",
       "type": "周期订阅",
       "audience": "高频视频、下载和远程办公",
-      "purchaseHref": "https://asfeoasf.wavenetttt.homes/#/?code=hghwewpc",
+      "purchaseHref": "https://ermaozi01.wavenetaff.com/#/?code=hghwewpc",
       "text": "浪网 高端，¥120/月，800GB/月"
     },
     {
@@ -1933,7 +1993,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "2TB/月",
       "type": "周期订阅",
       "audience": "团队、大流量和高并发使用",
-      "purchaseHref": "https://asfeoasf.wavenetttt.homes/#/?code=hghwewpc",
+      "purchaseHref": "https://ermaozi01.wavenetaff.com/#/?code=hghwewpc",
       "text": "浪网 商业，¥200/月，2TB/月"
     },
     {
@@ -1942,7 +2002,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "80GB/月",
       "type": "周期订阅",
       "audience": "轻度长期使用",
-      "purchaseHref": "https://asfeoasf.wavenetttt.homes/#/?code=hghwewpc",
+      "purchaseHref": "https://ermaozi01.wavenetaff.com/#/?code=hghwewpc",
       "text": "浪网 年付标准，¥119/年，80GB/月"
     },
     {
@@ -1951,7 +2011,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "500GB/月",
       "type": "周期订阅",
       "audience": "独立 IP、直播和跨境业务",
-      "purchaseHref": "https://asfeoasf.wavenetttt.homes/#/?code=hghwewpc",
+      "purchaseHref": "https://ermaozi01.wavenetaff.com/#/?code=hghwewpc",
       "text": "浪网 定制线路包，¥640/月，500GB/月"
     },
     {
@@ -1962,7 +2022,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特点：独立 IP、限 1 台设备"
       ],
-      "purchaseHref": "https://asfeoasf.wavenetttt.homes/#/?code=hghwewpc",
+      "purchaseHref": "https://ermaozi01.wavenetaff.com/#/?code=hghwewpc",
       "text": "浪网 小流量包，¥239/一次性，180GB",
       "oneTime": true
     },
@@ -1974,7 +2034,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特点：适合经常出差及两台设备使用"
       ],
-      "purchaseHref": "https://asfeoasf.wavenetttt.homes/#/?code=hghwewpc",
+      "purchaseHref": "https://ermaozi01.wavenetaff.com/#/?code=hghwewpc",
       "text": "浪网 标准流量包，¥569/一次性，450GB",
       "oneTime": true
     },
@@ -1986,7 +2046,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特点：面向重度生产力和业务用户"
       ],
-      "purchaseHref": "https://asfeoasf.wavenetttt.homes/#/?code=hghwewpc",
+      "purchaseHref": "https://ermaozi01.wavenetaff.com/#/?code=hghwewpc",
       "text": "浪网 精英流量包，¥1099/一次性，900GB",
       "oneTime": true
     }
@@ -2321,10 +2381,25 @@ export const airportSources: AirportSource[] = [
     rankChangeLabel: '↑1',
   },
   {
+    id: '无忧链接',
+    name: '无忧链接',
+    description: '无忧链接支持通用订阅与主流客户端，周期套餐最低 19 元 100GB/月，另有年付小包和一次性不限时流量包，适合先从月付小档验证本地线路与目标平台。',
+    rank: 10,
+    officialHref: 'https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb',
+    universalSubscription: true,
+    minPlanText: '19元 100GB/月',
+    hasOneTimePackage: true,
+    telegramHref: 'https://t.me/axxxing',
+    reviewHref: '/blog/wuyoulink/',
+    rankChangeLabel: '新上',
+    image: 'https://image.ermao.net/images/blog/wuyoulink/20260723_155542-f42aee.png',
+    tags: ['通用订阅', '不限时流量包', '流媒体'],
+  },
+  {
     id: '可信云',
     name: '可信云',
     description: '可信云主打 IPLC 专线、1 倍流量与不限设备，周期套餐最低 9 元 45GB/月；目前暂不支持通用订阅，适合先从月付小档验证客户端兼容和本地线路表现。',
-    rank: 10,
+    rank: 11,
     officialHref: 'https://ermaozi01.kosingaff.com/#/register?code=aG3TCu1y',
     universalSubscription: false,
     minPlanText: '9元 45GB/月',
@@ -2339,8 +2414,8 @@ export const airportSources: AirportSource[] = [
     id: '梯子云',
     name: '梯子云（LadderCloud）',
     description: '梯子云主打 VLESS、IEPL 与自研全平台客户端，同时支持通用订阅；套餐覆盖月付、年度小包和一次性不限时流量包，适合先从小档验证本地线路表现。',
-    rank: 11,
-    officialHref: 'https://asfawsf.ladderttt.sbs/#/?code=VZVXWbiq',
+    rank: 12,
+    officialHref: 'https://ermaozi01.ladderaff.com/#/?code=VZVXWbiq',
     universalSubscription: true,
     minPlanText: '25元 125GB/月',
     hasOneTimePackage: true,
@@ -2354,7 +2429,7 @@ export const airportSources: AirportSource[] = [
     id: 'uuone',
     name: 'uuone',
     description: 'uuone 是一家专注于提供 高性价比 出海加速服务的 翻墙机场。其核心优势在于提供 BGP三网优化 中转线路，确保超高性价比的同时，拥有高质量的节点表现。',
-    rank: 12,
+    rank: 13,
     officialHref: 'https://uuone.at/?code=AjqYdZlJ',
     universalSubscription: false,
     minPlanText: '12元 150G/月',
@@ -2369,7 +2444,7 @@ export const airportSources: AirportSource[] = [
     id: 'danke',
     name: 'Danke',
     description: '这是一个主打高性价比的中转机场，官方定位是“稳定三年，低至3元/月”。提供 500GB 月付与不限时流量包，支持 AnyTLS 协议，适合想先低成本试用、再按需求升级套餐的用户。',
-    rank: 13,
+    rank: 14,
     officialHref: 'https://www.dankewed.com/#/register?code=a0zksG3J',
     universalSubscription: false,
     minPlanText: '3元 88GB/月',
@@ -2384,7 +2459,7 @@ export const airportSources: AirportSource[] = [
     id: '影子云',
     name: '影子云',
     description: '影子云更适合想先小包试用的人，卖点集中在海外公有云中转、AnyTLS/Hysteria2 和通用订阅。它不属于低价冲量型机场，但如果你想找一条手机电脑都能直接导入、先用起来再决定是否长期续费的线路，这家可以放进候选名单。',
-    rank: 14,
+    rank: 15,
     officialHref: 'https://www.yingzi01.com/register?code=TYHpo13G',
     universalSubscription: true,
     minPlanText: '18.80元 150G/月',
@@ -2399,7 +2474,7 @@ export const airportSources: AirportSource[] = [
     id: '山水云',
     name: '山水云',
     description: '山水云主打通用订阅，节点以中转 + 直连为主，支持微信和支付宝，适合想先用低门槛月付试水、后续再按流量升级的用户。',
-    rank: 15,
+    rank: 16,
     officialHref: 'https://ss2.byvvcsx.com/#/register?code=zQA4TyPT',
     universalSubscription: true,
     minPlanText: '14.99元 100G/月',
@@ -2414,7 +2489,7 @@ export const airportSources: AirportSource[] = [
     id: 'ssone',
     name: 'ssone',
     description: '以上所有套餐均有月付、季付、半年、一年、两年、三年等多种付费周期可选。',
-    rank: 16,
+    rank: 17,
     officialHref: 'https://www.flybit6202.com/#/register?code=MmE2PsQJ',
     universalSubscription: false,
     minPlanText: '15元 60G/月',
@@ -2429,7 +2504,7 @@ export const airportSources: AirportSource[] = [
     id: '龙猫云',
     name: '龙猫云',
     description: '超高性价比，节点质量高，客服实时在线，晚高峰不限速，不限制设备。IPLC深港、沪美、沪日专线，流媒体完美解锁（包括Netflix , Disney+, HBO等） 完美解锁ChatGPT、Gemini、Copilot 支持Tiktok本土短视频运营和直播',
-    rank: 17,
+    rank: 18,
     officialHref: 'https://ermaozi01.lmvipaff03.cc/register?aff=aOkm2wPW',
     universalSubscription: true,
     minPlanText: '15元 100G/月',
@@ -2442,7 +2517,7 @@ export const airportSources: AirportSource[] = [
     id: 'edge-x',
     name: 'Edge-X',
     description: 'Edge-X 的定位是 IEPL 专线为主、直连节点为补充，并通过倍率策略降低错峰成本。已知信息里 IEPL 日常 1 倍率，02:00-10:00 为 0.5 倍率，直连节点全天 0.2 倍率，更适合先低档验证再升级。',
-    rank: 18,
+    rank: 19,
     officialHref: 'https://edge-invite.com/#/register?code=LCH9laOs',
     universalSubscription: true,
     minPlanText: '22.8元/月起',
@@ -2457,7 +2532,7 @@ export const airportSources: AirportSource[] = [
     id: '迅达',
     name: '迅达',
     description: '迅达主打稳定与高性价比，节点覆盖 87 个国家，支持 Netflix、YouTube 4K、TikTok、ChatGPT 等主流服务访问。套餐支持 5-10 台设备同时在线，提供 7x24 小时工单支持；官方明确限个人使用，禁止多人共用。',
-    rank: 19,
+    rank: 20,
     officialHref: 'https://sulianproxy.com/register?code=bXIAotbG',
     universalSubscription: false,
     minPlanText: '15元 120G/月',
@@ -2470,7 +2545,7 @@ export const airportSources: AirportSource[] = [
     id: '星岛梦',
     name: '星岛梦',
     description: '星岛梦IEPL专线机场，提供高品质线路，支持 Trojan/SS 等协议，专注于稳定流媒体与跨境业务。全线解锁 Netflix、Disney+、YouTube、ChatGPT、Gemini 等平台与 AI 服务，并支持 TikTok 跨区，适合跨境电商、直播运营、远程办公等高要求用户。套餐无限速、无倍率、不限制设备数（合理使用），支持支付宝、USDT 付款。节点覆盖港台、日美新、东南亚、韩国及多国欧美地区，价格亲民，月付最低16元起，另提供1T大流量永久套餐。拥有多客服团队与海外技术支持，可提供小火箭下载、TG代注册等增值服务。',
-    rank: 20,
+    rank: 21,
     officialHref: 'https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY',
     universalSubscription: false,
     minPlanText: '16元 100G/月',
@@ -2485,7 +2560,7 @@ export const airportSources: AirportSource[] = [
     id: '唯兔云',
     name: '唯兔云',
     description: '唯兔云IPLC专线，Trojan协议，解锁各大流媒体，解锁ChatGPT、Gemini等AI，解锁Tiktok，支持电商、直播运营。套餐无倍率、不限速、不限制设备数量，支持支付宝微信usdt，除了港、台、日、美、新常规的五国节点以外，我们还有东南亚五国，韩国以及一些欧美国家。价格惠民，最低6元一个月，专线中的性价比战斗机。售后服务绝对有保障，多人客服团队轮流坐班，海外技术团队稳定可靠。可提供小火箭下载账号，可提供TG代注册服务等等',
-    rank: 21,
+    rank: 22,
     officialHref: 'https://a01.v2cvipaff.cc/#/?code=iaD6AgSx',
     universalSubscription: false,
     minPlanText: '6元 45G/月',
@@ -2500,7 +2575,7 @@ export const airportSources: AirportSource[] = [
     id: '灵动云',
     name: '灵动云',
     description: '灵动云于 2025 年开始运营，官方主打 Trojan 协议专线、流媒体与 ChatGPT 解锁，提供月付、年付小包和一次性不限时流量包，适合先用小档验证或作为备用线路。',
-    rank: 22,
+    rank: 23,
     officialHref: 'https://ermaozi01.lingdongaff.com/#/?code=aJUlcAOo',
     universalSubscription: true,
     minPlanText: '20元 100GB/月',
@@ -2515,7 +2590,7 @@ export const airportSources: AirportSource[] = [
     id: 'superbiu',
     name: 'superbiu',
     description: 'SuperBiu 机场 依托三网（电信/联通/移动）入口的 IPLC 专线，实现跨境高速互联。凭借自研流媒体解锁与多区域部署，晚高峰依旧能秒开 8K 视频，并在隐私、安全方面保持高标准。一次性套餐适合临时出差、备用机场或多设备共享，流量用完前不会过期。',
-    rank: 24,
+    rank: 25,
     officialHref: 'https://biubiux.online/#/register?code=BasmsULb',
     universalSubscription: false,
     minPlanText: '11元 50G/月',
@@ -2530,7 +2605,7 @@ export const airportSources: AirportSource[] = [
     id: '极连云',
     name: '极连云',
     description: '极连云提供高性价比的IEPL专线VPN服务，支持Trojan和Shadowsocks协议，解锁Netflix、YouTube等主流流媒体平台。套餐不限速、不限设备数，适合轻度到中度用户。支持支付宝和USDT支付，拥有多节点覆盖全球，确保稳定高速连接。',
-    rank: 25,
+    rank: 26,
     officialHref: 'https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m',
     universalSubscription: false,
     minPlanText: '8元 60G/月',
@@ -2545,7 +2620,7 @@ export const airportSources: AirportSource[] = [
     id: 'runway',
     name: 'Runway',
     description: 'Runway 主打「打造极致的互联网连接跑道」，采用 Shadowsocks 协议，提供从入门到高流量的分层套餐，支持 Netflix、YouTube 等流媒体解锁。',
-    rank: 26,
+    rank: 27,
     officialHref: 'https://www.runwayhz.com/#/register?code=RiIDywqb',
     universalSubscription: false,
     minPlanText: '9.9元 100G/月',
@@ -2560,7 +2635,7 @@ export const airportSources: AirportSource[] = [
     id: '闪狐云',
     name: '闪狐云',
     description: '闪狐云是目前我用过的节点质量最高的机场，价格虽然不是最便宜的，但是性价比非常高。支持支付宝。BGP隧道中转，IPLC高速内网纯专线出口，延迟低 5大运营商动态优化。trojan协议，安全、高速、加密。解锁全球流媒体、AI工具。无设备和ip限制。1000Mbps速率，晚高峰不限速 专业人工客服，快速响应 接受企业或者个人定制业务',
-    rank: 27,
+    rank: 28,
     officialHref: 'https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv',
     universalSubscription: true,
     minPlanText: '20元 120G/月',
@@ -2573,7 +2648,7 @@ export const airportSources: AirportSource[] = [
     id: '光年梯',
     name: '光年梯',
     description: '光年梯是由资深团队运营的高品质翻墙机场，拥有多年的稳定运营历史和丰富的技术经验。其自有机房和全球节点网络确保了用户能够享受到快速、稳定的网络连接。',
-    rank: 28,
+    rank: 29,
     officialHref: 'https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr',
     universalSubscription: false,
     minPlanText: '18元 110G/月',
@@ -2588,7 +2663,7 @@ export const airportSources: AirportSource[] = [
     id: '梦想云',
     name: '梦想云',
     description: '梦想云开设于 2023 年 2 月，主打三网直连混搭与 BGP 跨境专线，节点以常用五大地区为主。流媒体与 ChatGPT 可用性表现较稳，适合作为日常主力线路。',
-    rank: 29,
+    rank: 30,
     officialHref: 'https://gx.dreamcl.sbs/#/register?code=GFUAEweX',
     universalSubscription: false,
     minPlanText: '8.8元 300GB/月',
@@ -2603,7 +2678,7 @@ export const airportSources: AirportSource[] = [
     id: '灯塔cloud',
     name: '灯塔cloud',
     description: '灯塔cloud机场客服响应速度很快，态度非常好，节点质量也很棒。灯塔Cloud团队会定期更新节点列表，确保节点的稳定性和可用性。同时，节点会根据网络状况动态调整，提供最优的连接体验。',
-    rank: 30,
+    rank: 31,
     officialHref: 'https://www.dengta.cloud/#/register?code=n4jB4z5R',
     universalSubscription: false,
     minPlanText: '10元 100G/月',
@@ -2616,7 +2691,7 @@ export const airportSources: AirportSource[] = [
     id: 'cyberguard',
     name: 'CyberGuard',
     description: 'CyberGuard主要提供安全网络访问解决方案。由网络安全专家团队创立，总部位于北美，专为亚太地区用户优化设计。经过5年技术打磨，该服务致力于保障用户数据安全并提供顺畅网络体验。其创新技术架构帮助用户保护隐私的同时，确保稳定访问各类网络资源。适合需要数据安全保障和流畅网络体验的各类用户使用',
-    rank: 31,
+    rank: 32,
     officialHref: 'https://www.cyberguard.best/#/register?code=yoyUW3R9',
     universalSubscription: false,
     minPlanText: '18元 100G/月',
@@ -2629,7 +2704,7 @@ export const airportSources: AirportSource[] = [
     id: '百变小樱',
     name: '百变小樱',
     description: '百变小樱是一家自2020年起运营的低调小众机场，线路稳定可靠，采用隧道与专线结合的架构。其套餐支持两种不同的使用方式，并配有定制化精简面板，有效避免节点列表冗长。团队已迁至海外运营，确保无按流量风险，主打产品特点为稳定性、全流媒体解锁、超低价格以及附赠流媒体账号。另外，此机场支持SSR系列代理软件，例如小火箭和Clash。支付方式涵盖支付宝、微信支付以及USDT。',
-    rank: 32,
+    rank: 33,
     officialHref: 'https://cn2.cardsakura.buzz/v2/register?code=WuuD',
     universalSubscription: true,
     minPlanText: '15元 100G/30天',
@@ -2642,7 +2717,7 @@ export const airportSources: AirportSource[] = [
     id: '白羊星',
     name: '白羊星',
     description: '白羊星是一家新兴机场，节点质量还不错，支持按流量购买，支持支付宝、微信、USDT支付。',
-    rank: 33,
+    rank: 34,
     officialHref: 'https://baiyangxi.com/#/register?code=gelkjfjz',
     universalSubscription: false,
     minPlanText: '12元 100G/月',
@@ -2655,7 +2730,7 @@ export const airportSources: AirportSource[] = [
     id: 'sogo云',
     name: 'sogo云',
     description: 'Sogo云定位偏新手友好，提供自研客户端一键使用，同时支持通用订阅导入。作为新开业服务，更建议先用低档套餐连续验证高峰稳定性，再决定是否长期使用。',
-    rank: 34,
+    rank: 35,
     officialHref: 'https://ermaozi.sogoaff.com/#/login?code=yxneZJKR',
     universalSubscription: false,
     minPlanText: '20元 150G/月',
@@ -2670,7 +2745,7 @@ export const airportSources: AirportSource[] = [
     id: '光速云',
     name: '光速云',
     description: '光速云IEPL专线机场，提供高品质线路，支持 Trojan/SS 等协议，专注于稳定流媒体与跨境业务。全线解锁 Netflix、Disney+、YouTube、ChatGPT、Gemini 等平台与 AI 服务，并支持 TikTok 跨区，适合跨境电商、直播运营、远程办公等高要求用户。套餐无限速、无倍率、不限制设备数（合理使用），支持支付宝、USDT 付款。节点覆盖港台、日美新、东南亚、韩国及多国欧美地区，价格亲民，月付最低8.25元起，另提供1T大流量永久套餐。拥有多客服团队与海外技术支持，可提供小火箭下载、TG代注册等增值服务。',
-    rank: 35,
+    rank: 36,
     officialHref: 'https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku',
     universalSubscription: false,
     minPlanText: '8.25元 59G/月',
@@ -2685,7 +2760,7 @@ export const airportSources: AirportSource[] = [
     id: '全球云',
     name: '全球云',
     description: '全球云 当前最低订阅为 20元 120G/月，购买前建议先看详情页、自行测试常用节点和晚高峰表现。',
-    rank: 36,
+    rank: 37,
     officialHref: 'https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA',
     universalSubscription: false,
     minPlanText: '20元 120G/月',
@@ -2698,7 +2773,7 @@ export const airportSources: AirportSource[] = [
     id: 'tnt',
     name: 'TNT',
     description: '全IPLC专线，不限速 原生IP解锁流媒体 解锁 Chatgpt，Tiktok 高效客服响应 不限制客户端',
-    rank: 37,
+    rank: 38,
     officialHref: 'https://ermaozi02.tntvipaff.cc/#/register?code=f1EyPwf3',
     universalSubscription: false,
     minPlanText: '10元60g/月(季付)',
@@ -2711,7 +2786,7 @@ export const airportSources: AirportSource[] = [
     id: '纵云梯',
     name: '纵云梯',
     description: '纵云梯是一家新机场，个人体验了一下速度还不错，客服响应也比较快。',
-    rank: 38,
+    rank: 39,
     officialHref: 'https://zongyunti.com/?r=60147',
     universalSubscription: true,
     minPlanText: '10元 60G/30天',
@@ -2724,7 +2799,7 @@ export const airportSources: AirportSource[] = [
     id: '加速啦',
     name: '加速啦',
     description: '全自研开发面板，海外团队运营，专线节点1倍率，安全好用省心无日志纪录，节点质量高，客服实时在线，晚高峰不限速，不限制设备。',
-    rank: 39,
+    rank: 40,
     officialHref: 'https://jiasu.la/?r=39116',
     universalSubscription: true,
     minPlanText: '10元 80G/月',
@@ -2737,7 +2812,7 @@ export const airportSources: AirportSource[] = [
     id: '_99bar',
     name: '99吧',
     description: '成立时间：2024.8.23 翻墙协议：Shadowsocks 入口：深港IEPL专线 + 广东移动中转 过境：IEPL；公网中转 落地：快车道、BageVM、Lain、Akari、Misaka、等 解锁支持： Netflix、Disney+、TikTok、ChatGPT 备注：无设备数量限制，多端配置同步，全网所有节点​​1倍率扣流。',
-    rank: 40,
+    rank: 41,
     officialHref: 'https://99vpn.bar/#/register?code=qzpkbzHF',
     universalSubscription: false,
     minPlanText: '12.9元 99G/月',
@@ -2750,7 +2825,7 @@ export const airportSources: AirportSource[] = [
     id: 'aladdin',
     name: 'Aladdin',
     description: '这家机场是我自己用的，节点质量非常高，解锁大部分主流媒体，可以访问openai，有 emby 和 奈飞 劫持。支持支付宝、微信、USDT支付。',
-    rank: 41,
+    rank: 42,
     officialHref: 'https://short.thisgourl.xyz/#/register?code=tvLw0oMj',
     universalSubscription: false,
     minPlanText: '30元 390G/半年',
@@ -2763,7 +2838,7 @@ export const airportSources: AirportSource[] = [
     id: '老头vpn',
     name: '老头vpn',
     description: '老头VPN 从2016年开始运营，资历非常老，期间一直保持高质量服务。全球华人公认的老牌国际加速服务厂商 高达2Gbps的单线接入能力。支持微信支付宝。',
-    rank: 42,
+    rank: 43,
     officialHref: 'https://www.chattous.net/register?code=3OWtZ9Bi',
     universalSubscription: false,
     minPlanText: '25元 150G/月',
@@ -2778,7 +2853,7 @@ export const airportSources: AirportSource[] = [
     id: '寰宇云',
     name: '寰宇云',
     description: '寰宇云是新开业的 IPLC 中转定位机场，月付、年付小包和不限时流量包并行，适合先低成本验证本地可用性，再决定是否升级长期使用。',
-    rank: 43,
+    rank: 44,
     officialHref: 'https://vip4.huanyuyunbest.com/#/register?code=W82s7u2a',
     universalSubscription: false,
     minPlanText: '18元 150GB/月',
@@ -2793,7 +2868,7 @@ export const airportSources: AirportSource[] = [
     id: '掌中世界',
     name: '掌中世界',
     description: '节点稳定，客服24小时在线，解锁主流流媒体。',
-    rank: 44,
+    rank: 45,
     officialHref: 'https://qq.zjs2025.com/user/register?code=S74QiRGN',
     universalSubscription: false,
     minPlanText: '18元 100G/月',
@@ -2806,7 +2881,7 @@ export const airportSources: AirportSource[] = [
     id: '瞬云',
     name: '瞬云',
     description: '瞬云主打 30+ 多地区节点与 ANYCAST 高速线路，官方标示支持 Netflix、Disney+、TikTok、ChatGPT 等场景，支持支付宝、微信、USDT 支付，并提供工单和在线客服。',
-    rank: 45,
+    rank: 46,
     officialHref: 'https://aaa.jichang.best/#/register?code=QEiJcAPp',
     universalSubscription: true,
     minPlanText: '8.25元 59G/月',
@@ -2821,7 +2896,7 @@ export const airportSources: AirportSource[] = [
     id: '二猫云',
     name: '二猫云',
     description: '二猫云定位是新开业的专线型月付机场，套餐阶梯从 100GB 到 800GB，适合先用低档验证晚高峰稳定性后再升级。',
-    rank: 46,
+    rank: 47,
     officialHref: 'https://v01.2maoyunaff.cc/#/register?code=6n2UaV1A',
     universalSubscription: false,
     minPlanText: '16元 100G/月',
@@ -2836,7 +2911,7 @@ export const airportSources: AirportSource[] = [
     id: 'xxai',
     name: 'xxai',
     description: '节点质量非常硬。全 IEPL 专线节点、低延迟游戏 & 直播专线、AI 工具 & 流媒体视频解锁。支持按流量购买。',
-    rank: 47,
+    rank: 48,
     officialHref: 'https://xx-ai.co?invite_code=K2TpsDcg',
     universalSubscription: false,
     minPlanText: '16.9元 100G/月',
@@ -2849,7 +2924,7 @@ export const airportSources: AirportSource[] = [
     id: '一翻云',
     name: '一翻云',
     description: '一翻云适合预算敏感、希望先从小档位验证可用性的用户。套餐梯度从 150GB 到 1200GB，覆盖轻度到中重度需求，同时提供一次性流量包；通用订阅暂不支持，更建议按月付路径逐步升级。',
-    rank: 48,
+    rank: 49,
     officialHref: 'https://ermaozi.yifanaff.com/#/register?code=wQxPnuZv',
     universalSubscription: false,
     minPlanText: '30元 150G/月',
@@ -2864,7 +2939,7 @@ export const airportSources: AirportSource[] = [
     id: '速界',
     name: '速界',
     description: '速界主打 IEPL 路线和多档周期套餐，当前可确认信息是：不支持通用订阅、暂无 TG 群或频道。更适合先小档验证，再按真实使用量升级。',
-    rank: 49,
+    rank: 50,
     officialHref: 'https://ermaozi01.speedworldaff.cc/#/register?code=SLWrHAPx',
     universalSubscription: false,
     minPlanText: '25元/月',
@@ -2879,7 +2954,7 @@ export const airportSources: AirportSource[] = [
     id: '快狸',
     name: '快狸',
     description: '快狸目前定位是低门槛入门：最低档价格友好，支付方式完善，套餐梯度从轻度到重度都有覆盖。当前已知边界是暂不支持通用订阅、暂无 TG 群，更适合先小档验证再决定是否长期续费。',
-    rank: 50,
+    rank: 51,
     officialHref: 'https://ermaozi.kuailicloud.cc/#/register?code=nwj3Tk14',
     universalSubscription: false,
     minPlanText: '10元 30G/月',
@@ -2894,7 +2969,7 @@ export const airportSources: AirportSource[] = [
     id: '边缘节点',
     name: '边缘节点',
     description: '边缘节点更偏向低门槛试错路线：有 108 元年付小流量入门档，也有 25/50/100/200 元月付阶梯。已知边界是暂不支持通用订阅、暂无 TG 群，更适合先小档验证再升级。',
-    rank: 51,
+    rank: 52,
     officialHref: 'https://ermaozi.edgenovaaff.cc/#/register?code=oErRsBNy',
     universalSubscription: false,
     minPlanText: '9元/月(年付45G)',
@@ -2909,7 +2984,7 @@ export const airportSources: AirportSource[] = [
     id: '好鸭云',
     name: '好鸭云',
     description: '节点非常稳定，老板态度好，客服也很热情，支持支付宝。最重要的是会随套餐送Emby影视服务(一个看高清电影、电视剧、番剧的站点)！MisakaF、aca替代方案。喜欢看剧的同学可以试试。',
-    rank: 52,
+    rank: 53,
     officialHref: 'https://vuser.niceduck.io/register?code=QS0hzI2y',
     universalSubscription: false,
     minPlanText: '12元 100G/月',
@@ -2922,7 +2997,7 @@ export const airportSources: AirportSource[] = [
     id: '随便云',
     name: '随便云',
     description: '随便云提供灵活的月付套餐和不限时流量包，满足不同用户的需求。所有的套餐均支持 全节点 IEPL / 中转支持 和 多地区 Netflix + 其他流媒体解锁。',
-    rank: 53,
+    rank: 54,
     officialHref: 'https://wcnm.one/register?code=YZxHwCws',
     universalSubscription: true,
     minPlanText: '10元 68G/月',
@@ -2937,7 +3012,7 @@ export const airportSources: AirportSource[] = [
     id: 'ccyz',
     name: 'ccyz',
     description: '主打高性价比与专线稳定，采用 BGP+IEPL 双重优化，晚高峰依旧保持高速。支持 Netflix、Disney+、HBO 等主流流媒体解锁，并提供全天候客服响应，适合长期使用或需要稳定带宽的用户。',
-    rank: 54,
+    rank: 55,
     officialHref: 'https://xxyun.at/?code=HOWnn58c',
     universalSubscription: false,
     minPlanText: '15元 150G/月',
@@ -2952,7 +3027,7 @@ export const airportSources: AirportSource[] = [
     id: '青云梯',
     name: '青云梯',
     description: '机场比较稳定，解锁Chatgpt，Tiktok及各大流媒体，四年老牌专线，最便宜套餐 98 一年每月 60g，折合每个月 8 元。',
-    rank: 55,
+    rank: 56,
     officialHref: 'https://ermaozi02.qytvipaff.cc/register?aff=W5ICDu2y',
     universalSubscription: false,
     minPlanText: '8 元60g/月(年付)',
@@ -2965,8 +3040,8 @@ export const airportSources: AirportSource[] = [
     id: '浪网',
     name: '浪网',
     description: '浪网主打高性能 VLESS、BGP 多线路智能调度和专线出口，并提供自研客户端降低配置门槛。套餐覆盖月付、年付、一次性不限时流量包与独立 IP 定制线路，适合从新手日常使用到大流量、直播和跨境业务等不同场景。',
-    rank: 23,
-    officialHref: 'https://asfeoasf.wavenetttt.homes/#/?code=hghwewpc',
+    rank: 24,
+    officialHref: 'https://ermaozi01.wavenetaff.com/#/?code=hghwewpc',
     universalSubscription: false,
     minPlanText: '30元 150GB/月',
     hasOneTimePackage: true,
