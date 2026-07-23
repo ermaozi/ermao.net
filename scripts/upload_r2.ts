@@ -155,9 +155,25 @@ async function processFile(filePath: string) {
 }
 
 async function main() {
-  console.log("开始扫描 Markdown 文件...");
-  // 扫描 docs 下所有 md 文件
-  const files = await glob(`${SCAN_DIR}/**/*.md`, { ignore: "**/node_modules/**" });
+  const requestedFiles = process.argv.slice(2).filter(arg => arg !== "--");
+  let files: string[];
+
+  if (requestedFiles.length > 0) {
+    files = requestedFiles.map(file => path.resolve(file));
+    const blogRoot = path.resolve(SCAN_DIR);
+
+    for (const file of files) {
+      const relative = path.relative(blogRoot, file);
+      if (relative.startsWith("..") || path.isAbsolute(relative) || path.extname(file) !== ".md") {
+        throw new Error(`仅支持处理 ${SCAN_DIR} 下的 Markdown 文件: ${file}`);
+      }
+      await fs.access(file);
+    }
+    console.log(`开始处理指定 Markdown 文件 (${files.length})...`);
+  } else {
+    console.log("开始扫描 Markdown 文件...");
+    files = await glob(`${SCAN_DIR}/**/*.md`, { ignore: "**/node_modules/**" });
+  }
   
   console.log(`找到 ${files.length} 个文件。`);
 
@@ -168,4 +184,7 @@ async function main() {
   console.log("处理完成!");
 }
 
-main().catch(console.error);
+main().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});
