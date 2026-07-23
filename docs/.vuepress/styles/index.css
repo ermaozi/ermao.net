@@ -43,10 +43,20 @@ html {
 }
 
 .vp-doc table {
-  display: block;
+  display: table;
   width: 100%;
-  overflow-x: auto;
-  white-space: nowrap;
+  max-width: 100%;
+  table-layout: auto;
+  overflow-x: visible;
+  white-space: normal;
+}
+
+.vp-doc th,
+.vp-doc td {
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .scamvpn-summary-page .vp-doc table {
