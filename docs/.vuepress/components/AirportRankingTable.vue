@@ -14,8 +14,9 @@ const boolClass = (value: AirportBoolean) => ({
 })
 
 const changeClass = (value?: string) => ({
-  'is-up': value?.startsWith('↑') || value === '新上',
+  'is-up': value?.startsWith('↑'),
   'is-down': value?.startsWith('↓'),
+  'is-new': value === '新上',
 })
 </script>
 
@@ -227,6 +228,10 @@ const changeClass = (value?: string) => ({
 
 .airport-ranking-change.is-down {
   color: #16a34a;
+}
+
+.airport-ranking-change.is-new {
+  color: #fff;
 }
 
 @media (max-width: 719px) {
