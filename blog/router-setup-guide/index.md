@@ -1,0 +1,283 @@
+---
+url: /blog/router-setup-guide/index.md
+description: >-
+  2026年软路由搭建保姆级教程，从零刷入 ImmortalWRT，配置 OpenClash 实现全屋设备无感科学上网。含磊科 N60Pro
+  实战刷机步骤、U-Boot 防砖写入、SSH 备份原厂固件及 OpenClash 订阅配置全流程，约 30 分钟完成。
+---
+开代理、等连通、确认能用……每天只要一开电脑，就要重复这三件小事，说实话确实挺烦的。
+
+后来我把代理步骤直接挪到了“路由器”这一层，现在的常态变成了：打开电脑，直接开始干活。手机、平板、主机只要连上家里的 WiFi，就自动走代理出国，彻底告别了在每台设备上单独装客户端的折腾。顺便，像视频广告拦截、DNS 防污染这些进阶玩法，也能统一在路由器上搞定。
+
+这篇教程，我会用通俗易懂的大白话，带你完整走一遍 **软路由刷机** 和 **代理配置** 的流程。下一篇我们再来折腾 DNS 分流和广告拦截。
+
+## 什么是软路由？为什么全屋翻墙需要它？
+
+核心思路很简单：**把代理软件装在全屋网络的最出口，让下面的设备无感接入**。
+
+* **硬路由（比如普通的小米、华为路由器）**：系统是封闭的，出厂就锁死了，你没法在上面装额外的代理软件。
+* **软路由（更像是一台迷你电脑）**：跑的是基于 Linux 的开源系统，拔掉限制后，你可以自由刷入开源固件（比如 OpenWrt）、装海量插件、甚至跑 Docker。
+
+本文我拿**磊科 N60Pro** 作为演示设备。选它的原因很简单，性价比高且支持刷入 **ImmortalWRT**（OpenWrt 的强力国内分支）。相比原版 OpenWRT，它对国产硬件的支持更好，自带中文界面和国内软件源，对新手极度友好。即便你用的是别的软路由，核心流程也是万变不离其宗。
+
+## 刷机前的准备工作
+
+如果顺利的话，大概 30 分钟内就能搞定这一套流程。每一步都有手把手图解。
+
+你需要先准备：
+
+* 一台支持刷机（最好支持 ImmortalWRT）的软路由。
+* 一根网线（刷机时千万千万推荐有线连接，别用 WiFi 冒险）。
+* 电脑上的终端工具（Mac/Linux 自带终端；Windows 用户可以用 PowerShell 或系统自带的运行工具）。
+* 你自己平时用的代理服务（订阅链接或配置文件就行，还没有的话先看[机场推荐](/posts/vpn/)选一个）。
+
+正式动手前，我们需要先去下载两个关键的“安装包”：
+
+### 1. 下载 U-Boot 引导文件
+
+U-Boot 你可以把它理解成电脑的“PE 启动盘”或者“BIOS”。有了它，我们才能把原本自带的系统抹掉，强行注入新系统。
+
+下载地址：
+<https://www.right.com.cn/forum/thread-8328967-1-1.html>
+
+（以磊科 N60Pro 为例，我的文件名是 `mt7986-netcore_n60-pro-fip.bin`）
+
+::: warning 高危提醒
+这是整个流程最核心的一步，**找文件时千万核对准你的设备型号**。下成别人家型号的文件强刷进去，路由器大概率直接变砖。
+:::
+
+![U-Boot 下载示意](https://image.ermao.net/images/blog/router-setup-guide/20260524_150832-fb8fdc.png)
+
+### 2. 下载 ImmortalWRT 系统固件
+
+这就是我们最终要给路由器穿上的“新系统”了。
+
+下载地址：
+<https://firmware-selector.immortalwrt.org/>
+
+直接在网站里搜你的路由器精确型号，然后下载对应的系统固件。
+
+![ImmortalWRT 固件选择](https://image.ermao.net/images/blog/router-setup-guide/20260524_150844-f81af9.png)
+
+## 第一步：连接路由器与开启 SSH 权限
+
+要在电脑里隔空操控路由器，我们需要打开一条加密通道，叫 **SSH**。
+
+1. 用网线把路由器和电脑连起来，给路由器插电开机。
+2. 浏览器输入 `192.168.0.1`（磊科的默认后台地址），进入设置界面。
+   ![进入后台](https://image.ermao.net/images/blog/router-setup-guide/20260524_150932-98cf90.png)
+3. 忽略那些乱七八糟的引导，直接点击**跳过上网设置**，完成初始化。
+   ![跳过上网设置](https://image.ermao.net/images/blog/router-setup-guide/20260524_150945-af7962.png)
+4. 记得**设置好管理密码**，待会走 SSH 通道时必须要用到这个密码。
+   ![设置管理密码](https://image.ermao.net/images/blog/router-setup-guide/20260524_150955-7ff524.png)
+5. 进入路由器首页，找到 `应用 -> 远程访问`，确认 **SSH 服务已经开启**。这样我们才有权限往里面写代码。
+   ![开启 SSH](https://image.ermao.net/images/blog/router-setup-guide/20260524_151033-aefa3c.png)
+
+## 第二步：进入路由器底层并备份原厂系统
+
+刷机界有句老话：“不备份，就等死。”万一刷劈了，拿着备份文件还能原地复活；没有备份，可能就得掏钱换主板了。
+
+打开电脑终端，登录你的路由器：
+
+```bash
+ssh useradmin@192.168.0.1
+```
+
+第一次连会问你个问题，输入 `yes` 回车，然后盲打你的管理密码（终端输入密码时屏幕不会显示字，正常现象，敲完回车就行）。
+
+![SSH 登录](https://image.ermao.net/images/blog/router-setup-guide/20260524_151050-b91856.png)
+
+连上后，我们先查一下路由器的“磁盘分区”：
+
+```bash
+cat /proc/mtd
+```
+
+![查看分区](https://image.ermao.net/images/blog/router-setup-guide/20260524_151118-3a27df.png)
+
+接着开始执行备份。这就像把重要的内脏都复刻一份：
+
+```bash
+# 备份 BL2 引导分区（mtd1）
+dd if=/dev/mtd1 of=/tmp/mtd1_BL2.bin
+
+# 备份 u-boot-env 环境变量（mtd2）
+dd if=/dev/mtd2 of=/tmp/mtd2_ubootenv.bin
+
+# 备份 Factory 校准分区（mtd3，重中之重！）
+dd if=/dev/mtd3 of=/tmp/mtd3_Factory.bin
+
+# 备份 ubi 系统固件（mtd5）
+dd if=/dev/mtd5 of=/tmp/mtd5_ubi.bin
+```
+
+::: tip 备份小贴士
+`mtd3` 是无价的工厂校准数据（比如设备的通信频段微调），一旦丢了神仙难救，**必须备份**。
+
+`mtd5` 容量稍微有点大，跑进度时需要多等一会儿，别强行关掉。
+:::
+
+检查一下文件是不是都老老实实躺在 `/tmp` 里了：
+
+![备份文件检查](https://image.ermao.net/images/blog/router-setup-guide/20260524_151137-ec99fb.png)
+
+然后，我们要**开一个全新的电脑终端窗口**（注意，不是刚才那个连着路由器的窗口），把这些救命的备份文件从路由器扒到你的电脑本地。输入下面这段代码（依然会提示输入密码）：
+
+```bash
+scp -O useradmin@192.168.0.1:'/tmp/mtd*' ~/Downloads/
+```
+
+![导出备份](https://image.ermao.net/images/blog/router-setup-guide/20260524_151148-007f97.png)
+
+## 第三步：刷入 U-Boot（底层引导）
+
+备份搞定，接下来可以放心大胆地折腾了。
+
+继续在**电脑终端窗口**里操作，把你刚下载好的 U-Boot（引导文件）隔空扔给路由器：
+
+```bash
+scp -O ~/Downloads/mt7986-netcore_n60-pro-fip.bin useradmin@192.168.0.1:/tmp/
+```
+
+传完后，切回到**连着路由器的终端窗口**，给它最后致命一击——把引导系统写进去：
+
+```bash
+mtd write /tmp/mt7986-netcore_n60-pro-fip.bin FIP
+```
+
+![刷入 U-Boot](https://image.ermao.net/images/blog/router-setup-guide/20260524_151200-c0c503.png)
+
+只要屏幕没报错，恭喜你，最危险的一道坎儿已经过了！
+
+## 第四步：给路由器穿上新衣服（刷入 ImmortalWRT）
+
+1. **直接拔掉路由器电源关机**。
+2. 找根牙签，**按住路由器底部的 Reset 小孔别松手**。
+3. 给路由器**通电**，继续死死按住 Reset 键。在心里默念大概 **10 秒钟**，再松开。
+4. 这时，你的路由器已经被强行逼进了 U-Boot 的“抢救模式”。
+5. 浏览器访问 `192.168.1.1`，你会看到一个非常简陋的刷机页面。
+6. 点击 `Choose file` 选择你下载好的 ImmortalWRT 系统固件，然后点 `Update`，耐心等进度条跑完。
+
+一旦弹出绿色的成功通过页面，刷机就彻底宣告结束了。
+
+![U-Boot 刷机页](https://image.ermao.net/images/blog/router-setup-guide/20260524_151235-6d1e20.png)
+![刷机成功](https://image.ermao.net/images/blog/router-setup-guide/20260524_151243-bcbaa3.png)
+
+## 第五步：连上网并搞定 OpenClash 代理
+
+系统换好了，但它现在还是个“空壳”，我们得给它配置网络和翻墙组件。
+
+### 1. 登录全新后台
+
+路由器重启后，浏览器的地址换成了 `192.168.1.1`（ImmortalWRT 和 OpenWrt 的默认地址）。
+
+第一次进去没有密码，直接登录。为了安全起见，进去后马上在系统设置里**设个靠谱的管理密码**（这也会是之后 SSH 连它的新密码）。
+
+![首次登录](https://image.ermao.net/images/blog/router-setup-guide/20260524_151255-81a4a9.png)
+![设置 ImmortalWRT 管理密码](https://image.ermao.net/images/blog/router-setup-guide/20260524_151309-200d38.png)
+
+### 2. 让路由器通网
+
+这里看你家里的实际情况，分两条路走：
+
+* **当做主路由用**：把光猫牵出来的网线，直插软路由的 WAN 口，走正常的宽带拨号。
+* **作为无线旁路由（无线中继）**：家里已有主路由且不想动现成网络，这是最省事的办法。
+
+我走的是极简的无线中继路子：
+进入后台菜单：`网络 -> 无线`。开启无线功能后，切换到 `5GHz` 频段，点击“扫描”，找到你家正在用的主 WiFi，输好密码连上去。
+
+要是你想拿这台软路由本身发发射新的 WiFi 信号，记得再回去给它的 `2.4GHz` 和 `5GHz` 设个密码。
+
+![扫描并连接主路由](https://image.ermao.net/images/blog/router-setup-guide/20260524_151341-49b103.png)
+![设置无线密码 1](https://image.ermao.net/images/blog/router-setup-guide/20260524_151350-e02322.png)
+![设置无线密码 2](https://image.ermao.net/images/blog/router-setup-guide/20260524_151358-e50b81.png)
+
+### 3. 安装代理神器 OpenClash
+
+网络一通，好戏上演。
+去后台点 `系统 -> 软件包`。先点击“更新列表”拉取最新的国内软件源，然后在搜索框里敲 `OpenClash` 并点击安装。
+
+![更新软件包列表](https://image.ermao.net/images/blog/router-setup-guide/20260524_151456-51d3a4.png)
+![安装 OpenClash](https://image.ermao.net/images/blog/router-setup-guide/20260524_151505-8215ae.png)
+
+> **小插曲**：安装时如果网页一直转圈提示“超时”，别慌，大概率是前端假死，后台其实已经装好了。**安装完最好退出后台重新登录一次**，左边才能刷出 OpenClash 菜单。
+
+### 4. 补齐内核与导入机场订阅
+
+点开刚装好的 `服务 -> OpenClash`。初次见面，它会逼你装运行内核。按弹窗提示点确定，一般选第 2 个内核（比如 Meta 内核）延迟会更低更稳。
+
+![下载内核](https://image.ermao.net/images/blog/router-setup-guide/20260524_151517-dc0a3c.png)
+![查看运行日志](https://image.ermao.net/images/blog/router-setup-guide/20260524_151526-d4bc39.png)
+
+看着日志跑完安装后，回到它的首页点击**配置文件订阅**，把你的机场节点链接粘进去（还没有订阅？去[翻墙机场推荐](/posts/vpn/)挑一个），更新出配置列表。
+
+![导入配置文件](https://image.ermao.net/images/blog/router-setup-guide/20260524_151533-3286d1.png)
+
+### 5. 启动引擎！
+
+一切就绪，回到控制面板首页，直接拨动那个**启动开关**，让内核原地重启。
+
+![启动代理](https://image.ermao.net/images/blog/router-setup-guide/20260524_151544-5d907e.png)
+
+翻看最下方的运行日志，只要没有满屏飘红、提示正常通过，**恭喜你，这台全屋科学上网的“真·路由器”就算大功告成了！**
+
+![启动成功日志](https://image.ermao.net/images/blog/router-setup-guide/20260524_151554-89f78d.png)
+
+***
+
+## 避雷总结与效果验收
+
+### 看看我们解放了什么
+
+现在随便拿个吃着灰的平板、或者手机连上这台路由器的 WiFi，打开 YouTube 测刷一下，秒开就说明彻底舒坦了。以后新买任何设备，连上 WiFi 自动走代理，Claude Code 打开直接干活，彻底戒掉了“每次折腾客户端”的烦恼。
+
+### 帮大家排点坑
+
+为了写这篇，我中间硬生生把旧路由干成了砖（最后厚着脸皮找商家扯皮给换了新😂），大家操作时注意这些血泪教训：
+
+1. **U-Boot 型号匹配是底线**：刷进引导文件前核对 3 遍型号都不过分！
+2. **长按 Reset 时机要对**：一定要在**没插电的瞬间**就开始按住，提前松手绝对进不去纯净的刷机页面。
+3. **后台地址玄学**：刷机前是 `192.168.0.1`，刷成 ImmortalWRT 后地址永远变成了 `192.168.1.1`，别迷路。
+4. **OpenClash 不显形**：装完死活看不到菜单，其实退出登录再进来就好了。
+5. **内核下载失败**：下载内核走的是外网，如果本地压根没网，内核是拉不下来的，请回头检查“网络连通性”。
+
+***
+
+## 常见问题解答
+
+### 软路由和普通路由器有什么区别？
+
+普通路由器（小米、华为等）系统封闭，装不了第三方代理软件。**软路由**运行开源的 OpenWrt/ImmortalWRT，可以安装 OpenClash 等插件，让路由器下的所有设备连上 WiFi 就自动走代理，真正实现全屋无感科学上网，还能顺带做广告拦截、DNS 防污染。
+
+### ImmortalWRT 和 OpenWrt 哪个更适合国内新手？
+
+推荐 **ImmortalWRT**。它是 OpenWrt 的国内增强版，自带中文界面、国内软件源、对国产硬件的驱动支持更完善。两者底层内核相同，ImmortalWRT 的插件安装更顺畅，社区资源也更贴近国内用户场景。
+
+### 软路由刷机会变砖吗？怎么防砖？
+
+风险可控，防砖三要素：
+
+1. **U-Boot 文件严格对应设备型号**，型号错误必砖；
+2. **刷机前完整备份原厂分区**，尤其是 `mtd3` Factory 校准分区（硬件频段校准数据，丢失无法找回）；
+3. 备份完整的情况下，即使刷坏也能靠备份文件恢复。
+
+### OpenClash 安装后左侧菜单不出现怎么办？
+
+退出后台重新登录一次就好。这是 ImmortalWRT 前端缓存问题，不是安装失败。
+
+### 软路由做主路由还是旁路由（无线中继）？
+
+* **主路由**：直接接光猫，全屋流量都经过软路由，功能最完整，但需要重新配置家庭网络拓扑。
+* **旁路由/无线中继**：挂在现有路由器之后，保留原网络不变，省事适合大多数新手，本文演示的就是这种方案。
+
+***
+
+## 延伸阅读
+
+软路由解决的是"全屋出口"这一层，周边还有不少可以继续折腾的方向：
+
+* [翻墙机场推荐评测](/posts/vpn/) — 没有机场节点，OpenClash 也是空壳，这里精选了一批长测过的稳定机场
+* [Clash 规则配置进阶教程](/blog/clash-rules-config/) — 配好分流规则才算真正发挥 OpenClash 的威力，国内直连、海外代理、广告拦截一次到位
+* [手机如何翻墙（Android & iOS）](/blog/how-to-vpn-on-mobile/) — 没有软路由时单设备的翻墙方案
+* [电脑如何翻墙（Windows & Mac）](/blog/how-to-vpn-on-computer/) — 桌面端科学上网指南
+* [Android Clash 客户端教程](/article/eh8f4n86/) — 安卓手机独立配置
+* [iOS Shadowrocket 使用教程](/article/z747kgjd/) — iPhone 端小火箭配置

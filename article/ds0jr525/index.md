@@ -1,0 +1,55 @@
+---
+url: /article/ds0jr525/index.md
+description: >-
+  奈云机场近期出现客服失联、节点不可用、官网无法访问与订阅链接失效等异常；2026年07月01日隐云官方频道发文确认奈云已经倒闭，当前按已确认跑路处理，建议停止续费购买。
+---
+截至2026年07月01日，奈云已出现客服失联、节点不可用、官网无法访问与订阅链接失效等异常，并已有隐云官方频道发文确认奈云已经倒闭，当前按已确认跑路处理。
+
+::: warning 最新风险提示
+奈云、隐云、CAC、OKAC 属于同一运营主体。同主体下多个项目近期已经出现官网、节点、客服和管理响应异常。
+
+请立即停止续费与新增购买，并保存套餐、支付、订阅和客服沟通记录。详情见：[奈云机场已确认跑路](/scamvpn/naiyun/)
+:::
+
+奈云机场官网地址：~~www.nyaff.cc~~
+
+## 奈云机场官网地址
+
+\~~www.nyaff.cc~~
+
+## 奈云机场简介
+
+奈云此前属于老牌机场，但目前已确认跑路。结合现有反馈，本站不再建议新购或续费奈云。
+
+相关主体说明：奈云、隐云、CAC、OKAC 属于同一运营主体，风险需要合并观察，不建议把同主体下其他服务当作备用方案。
+
+## 奈云机场价格
+
+| 套餐 | 价格 | 流量 | 购买地址 |
+| --- | --- | --- | --- |
+| Basic-基础套餐(特惠) | ¥128.00/每年 | 168G/月 | [查看风险](/scamvpn/naiyun/) |
+| Pro-进阶套餐 | ¥28.00 /每月 | 388GB/月 | [查看风险](/scamvpn/naiyun/) |
+| Max-专业套餐 | ¥49.00 /每月 | 788GB/月 | [查看风险](/scamvpn/naiyun/) |
+| 280G \[按量计费] | ¥98.00 /一次性 | 280GB/不限时 | [查看风险](/scamvpn/naiyun/) |
+| 680G \[按量计费] | ¥218.00 /一次性 | 680GGB/不限时 | [查看风险](/scamvpn/naiyun/) |
+| 2048G \[按量计费] | ¥498.00 /一次性 | 2048GGB/不限时 | [查看风险](/scamvpn/naiyun/) |
+
+![奈云机场价格](https://image.ermao.net/images/article/ds0jr525/image.png)
+
+## 奈云机场测试
+
+![奈云机场测试](https://image.ermao.net/images/article/ds0jr525/image-1.png)
+
+![奈云机场测试](https://image.ermao.net/images/article/ds0jr525/image-2.png)
+
+![奈云机场测试](https://image.ermao.net/images/article/ds0jr525/image-3.png)
+
+## 机场汇总
+
+<https://www.ermao.net/posts/vpn>
+
+## 客户端使用方法
+
+* 📱 [clash for Android](https://www.ermao.net/article/eh8f4n86/)
+* 🖥 [clash for Windows](https://www.ermao.net/article/0gematwc/)
+* 🍎 [clash for iOS](https://www.ermao.net/article/z747kgjd/)
