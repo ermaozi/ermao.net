@@ -11,6 +11,7 @@
     "airport:extract-plans": "tsx scripts/airports/extract-plans.ts",
     "airport:sync-plans": "tsx scripts/airports/sync-plans.ts",
     "airport:intake": "tsx scripts/airports/intake.ts",
+    "news:image:download": "tsx scripts/news_images.ts",
     "r2": "tsx scripts/upload_r2.ts",
     "update:clash": "tsx scripts/update_clash.ts",
     "ub": "npx update-browserslist-db@latest --yes",

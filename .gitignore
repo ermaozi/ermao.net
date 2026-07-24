@@ -7,3 +7,4 @@ docs/.vuepress/.cache
 docs/.vuepress/dist
 node_modules
 .github/monthly-sync/records/
+/.news-archive/
