@@ -1,6 +1,7 @@
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { plumeTheme } from 'vuepress-theme-plume'
+import { fileURLToPath } from 'node:url'
 // @ts-ignore
 import statsPlugin from './plugins/stats/index.js'
 import imagePerformancePlugin from './plugins/image-performance.js'
@@ -62,6 +63,15 @@ const appendNoindex = (head: any[]) => {
   }
 }
 
+const homepagePostLinksPlugin = () => ({
+  name: 'ermao-homepage-post-links',
+  alias: {
+    '@theme/Posts/VPPostsExtract.vue': fileURLToPath(
+      new URL('./overrides/VPPostsExtract.vue', import.meta.url),
+    ),
+  },
+})
+
 const utilityPagesPlugin = () => ({
   name: 'ermao-utility-pages',
   extendsPage: (page: any) => {
@@ -90,6 +100,7 @@ export default defineUserConfig({
   description: siteDescription,
   shouldPrefetch: false,
   plugins: [
+    homepagePostLinksPlugin(),
     utilityPagesPlugin(),
     imagePerformancePlugin(),
     geoPlugin(),
