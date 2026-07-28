@@ -25,7 +25,7 @@
 |[光年梯](#光年梯)|[ermaozi01.gntvipaff.cc](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr)| 无 |18元 110G/月|✔|[TG](https://t.me/guangnianti)|[前往](./v2/机场推荐光年梯.md)|
 |[uuone](#uuone)|[uuone.de](https://uuone.at/?code=AjqYdZlJ)| 无 |12元 150G/月|✔|暂无|[前往](./v2/机场推荐uuone.md)|
 |[极连云](#极连云)|[ermaozi01.jlcvipaff.cc](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m)| 无 |8元 60G/月|✔|[TG](https://t.me/JLYCloud)|[前往](./v2/机场推荐极连云.md)|
-|[cocoduck](#cocoduck)|[www.cocoduck.live](https://www.cocoduck.live/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|
+|[cocoduck](#cocoduck)|[www.cocoduck.site](https://www.cocoduck.site/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|
 |[随便云](#随便云)|[wcnm.one](https://wcnm.one/register?code=YZxHwCws)| 无 |10元 68G/月|✔|[TG](https://t.me/suibianvip)|[前往](./v2/机场推荐随便云.md)|
 |[唯兔云](#唯兔云)|[vip01.onlyrabbit.cc](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx)| 无 |6元 45G/月|✔|[TG](https://t.me/v2yun_v2)|[前往](./v2/机场推荐唯兔云.md)|
 |[光速云](#光速云)|[zimaoer01.gsyvipaff.cc](https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku)| 无 |8.25元 59G/月|✔|[TG](https://t.me/LightspeedCloud)|[前往](./v2/机场推荐光速云.md)|
@@ -178,21 +178,21 @@ CyberGuard主要提供安全网络访问解决方案。由网络安全专家团�
 
 ### cocoduck
 
-CocoDuck机场官网地址：[https://www.cocoduck.live](https://www.cocoduck.live/auth/register?code=25c8b515df)
+CocoDuck机场官网地址：[https://www.cocoduck.site](https://www.cocoduck.site/auth/register?code=25c8b515df)
 
 试用：1天2G流量
 
 最便宜的订阅有15元 150G/月。
 
-[CocoDuck机场](https://www.cocoduck.live/auth/register?code=25c8b515df)详细评测：由海外团队运营的高品质翻墙机场，拥有两年稳定运营历史、自有四个机房、40+全球节点，支持OpenAI和流媒体解锁，是比较值得信赖的稳定机场之一。
+[CocoDuck机场](https://www.cocoduck.site/auth/register?code=25c8b515df)详细评测：由海外团队运营的高品质翻墙机场，拥有两年稳定运营历史、自有四个机房、40+全球节点，支持OpenAI和流媒体解锁，是比较值得信赖的稳定机场之一。
 
 | 套餐名称 | 月费 | 流量 | 节点数量 | 特色服务 | 适用人群 | 购买链接 |
 |----------|------|------|----------|----------|----------|-------|
-| 鸭宝宝 | ¥15/月 | 150GB/月 | 40+全球节点 | 基础解锁 | 超轻度用户 | [购买链接](https://www.cocoduck.live/auth/register?code=25c8b515df) |
-| 可达鸭 | ¥28/月 | 400GB/月 | 40+全球节点 | 全面解锁 | 日常使用 | [购买链接](https://www.cocoduck.live/auth/register?code=25c8b515df) |
-| 哥达鸭 | ¥41/月 | 700GB/月 | 40+全球节点 | 优先路由 | 中度用户 | [购买链接](https://www.cocoduck.live/auth/register?code=25c8b515df) |
-| 唐老鸭 | ¥53/月 | 1000GB/月 | 40+全球节点 | 专线服务 | 企业/团队 | [购买链接](https://www.cocoduck.live/auth/register?code=25c8b515df) |
-| 迷你鸭 | ¥77/年 | 77GB/月 | 40+全球节点 | 超值优惠 | 长期用户 | [购买链接](https://www.cocoduck.live/auth/register?code=25c8b515df) |
+| 鸭宝宝 | ¥15/月 | 150GB/月 | 40+全球节点 | 基础解锁 | 超轻度用户 | [购买链接](https://www.cocoduck.site/auth/register?code=25c8b515df) |
+| 可达鸭 | ¥28/月 | 400GB/月 | 40+全球节点 | 全面解锁 | 日常使用 | [购买链接](https://www.cocoduck.site/auth/register?code=25c8b515df) |
+| 哥达鸭 | ¥41/月 | 700GB/月 | 40+全球节点 | 优先路由 | 中度用户 | [购买链接](https://www.cocoduck.site/auth/register?code=25c8b515df) |
+| 唐老鸭 | ¥53/月 | 1000GB/月 | 40+全球节点 | 专线服务 | 企业/团队 | [购买链接](https://www.cocoduck.site/auth/register?code=25c8b515df) |
+| 迷你鸭 | ¥77/年 | 77GB/月 | 40+全球节点 | 超值优惠 | 长期用户 | [购买链接](https://www.cocoduck.site/auth/register?code=25c8b515df) |
 
 ---
 
