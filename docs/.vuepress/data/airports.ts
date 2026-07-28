@@ -3738,7 +3738,7 @@ export const airportSources: AirportSource[] = [
     name: '百变小樱',
     description: '百变小樱是一家自2020年起运营的低调小众机场，线路稳定可靠，采用隧道与专线结合的架构。其套餐支持两种不同的使用方式，并配有定制化精简面板，有效避免节点列表冗长。团队已迁至海外运营，确保无按流量风险，主打产品特点为稳定性、全流媒体解锁、超低价格以及附赠流媒体账号。另外，此机场支持SSR系列代理软件，例如小火箭和Clash。支付方式涵盖支付宝、微信支付以及USDT。',
     rank: 41,
-    officialHref: 'https://cn2.cardsakura.buzz/v2/register?code=WuuD',
+    officialHref: 'https://www.bbxy88.xyz/v2/register?code=WuuD',
     universalSubscription: true,
     minPlanText: '15元 100G/30天',
     hasOneTimePackage: false,
