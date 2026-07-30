@@ -14,24 +14,18 @@ permalink: /stats/
 
 <style>
 .custom-page-class .vp-doc,
-.custom-page-class .vp-doc-container .container,
 .custom-page-class .vp-doc-container .content,
 .custom-page-class .vp-doc-container .content-container {
-  max-width: 100% !important;
+  max-width: 1180px !important;
 }
 
-/* Override media query constraints */
-@media (min-width: 960px) {
-  .custom-page-class .vp-doc-container:not(.has-sidebar) .container,
-  .custom-page-class .vp-doc-container:not(.has-sidebar) .content {
-    max-width: 90% !important;
-  }
+.custom-page-class .vp-doc > h1 {
+  max-width: 860px;
 }
 
-@media (min-width: 1440px) {
-  .custom-page-class .vp-doc-container:not(.has-sidebar) .container,
-  .custom-page-class .vp-doc-container:not(.has-sidebar) .content {
-    max-width: 90% !important;
+@media (max-width: 719px) {
+  .custom-page-class .vp-doc {
+    padding-inline: 16px;
   }
 }
 </style>

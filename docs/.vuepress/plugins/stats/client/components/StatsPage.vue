@@ -1,96 +1,271 @@
 <template>
-  <div class="stats-container">
-    <h1>网站数据</h1>
-    <br><br>
-    <div class="controls">
-      <div class="btn-group">
-        <button 
-          v-for="p in periods" 
-          :key="p.value" 
-          :class="{ active: currentPeriod === p.value }"
-          @click="fetchStats(p.value)"
+  <section class="stats-dashboard" aria-label="网站公开访问数据">
+    <div class="overview-card">
+      <section class="total-panel" aria-labelledby="stats-total-title">
+        <span class="eyebrow">PUBLIC INSIGHTS</span>
+        <h2 id="stats-total-title">当前访问量</h2>
+
+        <div class="total-orbit" :class="{ 'is-loading': loading }" aria-live="polite">
+          <svg viewBox="0 0 200 200" aria-hidden="true">
+            <circle class="orbit-track" cx="100" cy="100" r="82" />
+            <circle class="orbit-progress" cx="100" cy="100" r="82" />
+            <circle class="orbit-inner" cx="100" cy="100" r="67" />
+          </svg>
+          <div class="total-value">
+            <strong>{{ formattedTotal }}</strong>
+            <span>次访问</span>
+          </div>
+        </div>
+
+        <div
+          v-if="hasComparison"
+          class="period-comparison"
+          :class="`is-${comparisonSummary.tone}`"
+          aria-live="polite"
         >
-          {{ p.label }}
-        </button>
-      </div>
-      <div class="date-picker-group">
-          <input type="date" v-model="startDate" />
-          <span>至</span>
-          <input type="date" v-model="endDate" />
-          <button @click="fetchCustom" :disabled="!startDate || !endDate">查询</button>
-      </div>
-    </div>
-
-    <div v-if="loading" class="loading">Loading stats...</div>
-    <div v-else-if="error" class="error">{{ error }}</div>
-    
-    <div v-else class="stats-content">
-      <div class="summary-card">
-        <div class="big-number">{{ stats.total }}</div>
-      </div>
-
-      <div class="card chart-card">
-          <h3>Visits Over Time</h3>
-          <div class="chart-container line-chart-height">
-              <Line v-if="lineChartData" :data="lineChartData" :options="lineOptions" />
-          </div>
-      </div>
-      <br>
-      <div class="grid">
-        <div class="card">
-            <h3>页面访问</h3>
-            <div class="chart-container bar-chart-height">
-                <Bar v-if="pagesChartData" :data="pagesChartData" :options="barOptions" />
-            </div>
-        </div>
-
-        <div class="card">
-            <h3>访客来源</h3>
-            <div class="chart-container bar-chart-height">
-                <Bar v-if="refsChartData" :data="refsChartData" :options="refsBarOptions" />
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="grid">
-        <div class="card">
-          <h3>国家 / 地区</h3>
-          <div class="chart-container pie-container">
-             <Doughnut v-if="countryChartData" :data="countryChartData" :options="pieOptions" />
+          <span aria-hidden="true">{{ comparisonSummary.icon }}</span>
+          <div>
+            <strong>{{ comparisonSummary.label }}</strong>
+            <small>上周期 {{ formattedPreviousTotal }} 次访问</small>
           </div>
         </div>
 
-        <div class="card">
-            <h3>终端</h3>
-            <div class="chart-container pie-container">
-                 <Doughnut v-if="uaChartData" :data="uaChartData" :options="pieOptions" />
+        <span class="status-chip">
+          <i aria-hidden="true" />
+          {{ currentRangeLabel }}
+        </span>
+        <p>公开展示站内访问趋势，不收集或呈现可识别个人身份的信息。</p>
+      </section>
+
+      <section class="insights-panel" aria-labelledby="stats-insights-title">
+        <div class="panel-heading">
+          <div>
+            <span class="eyebrow">DATA PULSE</span>
+            <h2 id="stats-insights-title">数据概览</h2>
+          </div>
+          <button
+            type="button"
+            class="icon-button"
+            :disabled="loading"
+            aria-label="刷新统计数据"
+            title="刷新统计数据"
+            @click="refreshCurrent"
+          >
+            <span :class="{ spinning: loading }" aria-hidden="true">↻</span>
+          </button>
+        </div>
+
+        <div class="insight-grid">
+          <article v-for="item in summaryItems" :key="item.label" class="insight-card">
+            <span class="insight-icon" aria-hidden="true">{{ item.icon }}</span>
+            <div>
+              <span>{{ item.label }}</span>
+              <strong :title="item.value">{{ item.value }}</strong>
+              <small>{{ item.meta }}</small>
             </div>
+          </article>
+        </div>
+
+        <div class="update-line">
+          <span :class="serviceState.className">
+            <i aria-hidden="true" />
+            {{ serviceState.label }}
+          </span>
+          <time v-if="lastUpdated" :datetime="lastUpdated.toISOString()">
+            更新于 {{ lastUpdatedLabel }}
+          </time>
+          <span v-else>等待首次同步</span>
+        </div>
+      </section>
+    </div>
+
+    <section class="filter-card" aria-labelledby="stats-filter-title">
+      <div class="filter-heading">
+        <div>
+          <span class="eyebrow">TIME RANGE</span>
+          <h2 id="stats-filter-title">选择统计范围</h2>
+        </div>
+        <span class="range-badge">{{ currentRangeLabel }}</span>
+      </div>
+
+      <div class="filter-controls">
+        <div class="period-switch" aria-label="快捷时间范围">
+          <button
+            v-for="period in periods"
+            :key="period.value"
+            type="button"
+            :class="{ active: currentPeriod === period.value }"
+            :aria-pressed="currentPeriod === period.value"
+            :disabled="loading"
+            @click="fetchStats(period.value)"
+          >
+            {{ period.label }}
+          </button>
+        </div>
+
+        <form class="date-picker-group" @submit.prevent="fetchCustom">
+          <label>
+            <span>开始日期</span>
+            <input v-model="startDate" type="date" :max="maxDate" />
+          </label>
+          <span class="date-separator" aria-hidden="true">→</span>
+          <label>
+            <span>结束日期</span>
+            <input v-model="endDate" type="date" :max="maxDate" />
+          </label>
+          <button
+            type="submit"
+            class="query-button"
+            :disabled="loading || !startDate || !endDate"
+          >
+            查询
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <div v-if="error && hasLoaded" class="inline-notice" role="alert">
+      <span aria-hidden="true">!</span>
+      <p>{{ error }}</p>
+      <button type="button" @click="refreshCurrent">重新加载</button>
+    </div>
+
+    <section v-if="loading && !hasLoaded" class="loading-state" aria-live="polite">
+      <div class="loading-heading">
+        <span class="loading-mark" aria-hidden="true" />
+        <div>
+          <strong>正在汇总公开数据</strong>
+          <span>连接统计服务并生成图表…</span>
         </div>
       </div>
+      <div class="skeleton-grid">
+        <div v-for="index in 5" :key="index" class="skeleton-card">
+          <span />
+          <i />
+        </div>
+      </div>
+    </section>
+
+    <section v-else-if="error && !hasLoaded" class="error-state" role="alert">
+      <span class="error-icon" aria-hidden="true">!</span>
+      <div>
+        <span class="eyebrow">CONNECTION ERROR</span>
+        <h2>统计服务暂时不可用</h2>
+        <p>{{ error }}</p>
+      </div>
+      <button type="button" class="secondary-button" @click="refreshCurrent">重新请求</button>
+    </section>
+
+    <div v-else class="stats-content" :class="{ 'is-refreshing': loading }">
+      <section class="chart-card trend-card" aria-labelledby="trend-title">
+        <div class="chart-heading">
+          <div>
+            <span class="eyebrow">TRAFFIC TREND</span>
+            <h2 id="trend-title">访问趋势</h2>
+            <p>{{ trendDescription }}</p>
+          </div>
+          <span class="chart-badge">{{ trendPointCount }} 个数据点</span>
+        </div>
+        <div class="chart-container line-chart-height">
+          <Line :data="lineChartData" :options="lineOptions" />
+        </div>
+      </section>
+
+      <div class="chart-grid">
+        <section class="chart-card" aria-labelledby="pages-title">
+          <div class="chart-heading compact">
+            <div>
+              <span class="eyebrow">POPULAR CONTENT</span>
+              <h2 id="pages-title">热门页面</h2>
+              <p>点击柱状条可打开对应内容。</p>
+            </div>
+            <span class="chart-index">01</span>
+          </div>
+          <div v-if="hasPages" class="chart-container bar-chart-height">
+            <Bar :data="pagesChartData" :options="barOptions" />
+          </div>
+          <div v-else class="empty-chart">当前范围暂无页面访问记录</div>
+        </section>
+
+        <section class="chart-card" aria-labelledby="refs-title">
+          <div class="chart-heading compact">
+            <div>
+              <span class="eyebrow">DISCOVERY CHANNELS</span>
+              <h2 id="refs-title">访客来源</h2>
+              <p>了解读者从搜索或其他站点进入的路径。</p>
+            </div>
+            <span class="chart-index">02</span>
+          </div>
+          <div v-if="hasRefs" class="chart-container bar-chart-height">
+            <Bar :data="refsChartData" :options="refsBarOptions" />
+          </div>
+          <div v-else class="empty-chart">当前范围暂无来源记录</div>
+        </section>
+      </div>
+
+      <div class="chart-grid compact-grid">
+        <section class="chart-card" aria-labelledby="country-title">
+          <div class="chart-heading compact">
+            <div>
+              <span class="eyebrow">GLOBAL REACH</span>
+              <h2 id="country-title">国家与地区</h2>
+              <p>按公开的国家或地区代码汇总。</p>
+            </div>
+            <span class="chart-index">03</span>
+          </div>
+          <div v-if="hasCountries" class="chart-container pie-container">
+            <Doughnut :data="countryChartData" :options="pieOptions" />
+          </div>
+          <div v-else class="empty-chart">当前范围暂无地区记录</div>
+        </section>
+
+        <section class="chart-card" aria-labelledby="ua-title">
+          <div class="chart-heading compact">
+            <div>
+              <span class="eyebrow">CLIENT MIX</span>
+              <h2 id="ua-title">浏览器终端</h2>
+              <p>展示聚合后的浏览器类型分布。</p>
+            </div>
+            <span class="chart-index">04</span>
+          </div>
+          <div v-if="hasUserAgents" class="chart-container pie-container">
+            <Doughnut :data="uaChartData" :options="pieOptions" />
+          </div>
+          <div v-else class="empty-chart">当前范围暂无终端记录</div>
+        </section>
+      </div>
+
+      <aside class="privacy-note">
+        <span class="privacy-icon" aria-hidden="true">⌁</span>
+        <div>
+          <strong>关于这些数据</strong>
+          <p>页面仅展示聚合后的访问次数、内容路径、来源域名、国家或地区及浏览器类型，不在此页面公开单个访客的 IP、设备标识或访问轨迹。</p>
+        </div>
+      </aside>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>
-import { ref, onMounted, computed } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
 // @ts-ignore
 import { pageMap } from '@stats/page-map'
 import {
-  Chart as ChartJS,
+  ArcElement,
+  BarElement,
   CategoryScale,
+  Chart as ChartJS,
+  Filler,
+  Legend,
+  LineElement,
   LinearScale,
   PointElement,
-  LineElement,
-  BarElement,
-  ArcElement,
   Title,
   Tooltip,
-  Legend,
-  Filler
 } from 'chart.js'
-import { Line, Bar, Doughnut } from 'vue-chartjs'
 import ChartDataLabels from 'chartjs-plugin-datalabels'
+import { Bar, Doughnut, Line } from 'vue-chartjs'
 
 ChartJS.register(
   CategoryScale,
@@ -103,17 +278,29 @@ ChartJS.register(
   Tooltip,
   Legend,
   Filler,
-  ChartDataLabels
+  ChartDataLabels,
 )
 
-// Assume access to __STATS_WORKER_URL__ from define
 let workerUrl = __STATS_WORKER_URL__
 if (typeof workerUrl === 'string' && workerUrl.startsWith('"') && workerUrl.endsWith('"')) {
-    workerUrl = workerUrl.slice(1, -1)
+  workerUrl = workerUrl.slice(1, -1)
 }
-const stats = ref({ total: 0, pages: [], countries: [], uas: [], timeSeries: [], refs: [] })
+
+const emptyStats = () => ({
+  total: 0,
+  pages: [],
+  countries: [],
+  uas: [],
+  timeSeries: [],
+  refs: [],
+  previousPeriod: null,
+})
+
+const stats = ref(emptyStats())
 const loading = ref(false)
-const error = ref(null)
+const error = ref('')
+const hasLoaded = ref(false)
+const lastUpdated = ref(null)
 const currentPeriod = ref('24h')
 const startDate = ref('')
 const endDate = ref('')
@@ -121,530 +308,1736 @@ const isCustomMode = ref(false)
 const router = useRouter()
 const routeMap = ref(new Map())
 
+let activeRequest = null
+let themeObserver = null
+
 const periods = [
   { label: '24 小时', value: '24h' },
   { label: '7 天', value: '7d' },
   { label: '30 天', value: '30d' },
-  { label: '1 年', value: '1y' }
+  { label: '1 年', value: '1y' },
+]
+const COMPARABLE_PERIODS = new Set(['24h', '7d', '30d'])
+
+const chartTheme = ref({
+  text: '#64748b',
+  muted: '#94a3b8',
+  grid: 'rgba(148, 163, 184, 0.18)',
+  surface: '#ffffff',
+  tooltip: '#172033',
+})
+
+const chartPalette = [
+  '#2f7f98',
+  '#2f9b87',
+  '#6676c8',
+  '#b47731',
+  '#b75871',
+  '#3f8bbd',
+  '#708b3d',
+  '#9a68b5',
+  '#3d948e',
+  '#8a755d',
 ]
 
-// --- Helpers ---
+const maxDate = computed(() => {
+  const now = new Date()
+  const year = now.getFullYear()
+  const month = String(now.getMonth() + 1).padStart(2, '0')
+  const day = String(now.getDate()).padStart(2, '0')
+  return `${year}-${month}-${day}`
+})
 
-const getPageTitle = (path) => {
-    if (!path) return 'Unknown'
-    
-    // 1. Try exact match from imported map
-    if (pageMap && pageMap[path]) return pageMap[path]
-
-    // 2. Try decoded
-    let decoded = path
-    try { decoded = decodeURI(path) } catch (e) {}
-    if (pageMap && pageMap[decoded]) return pageMap[decoded]
-    
-    // 3. Try removing .html or trailing slash
-    const cleanPath = decoded.replace(/(\.html|\/)$/, '')
-    if (pageMap && pageMap[cleanPath]) return pageMap[cleanPath]
-    
-    // 4. Try adding .html or /
-    if (pageMap && pageMap[cleanPath + '.html']) return pageMap[cleanPath + '.html']
-    if (pageMap && pageMap[cleanPath + '/']) return pageMap[cleanPath + '/']
-
-    // Fallback to routeMap built from router (client side only pages?)
-    if (routeMap.value.has(path)) return routeMap.value.get(path)
-
-    return decoded || path
+const safeCount = value => {
+  const number = Number(value)
+  return Number.isFinite(number) ? number : 0
 }
 
-const getCountryName = (code) => {
-    if (!code || code === 'Unknown' || code === 'XX') return '未知地区';
-    try {
-        const regionNames = new Intl.DisplayNames(['zh-Hans'], {type: 'region'});
-        return regionNames.of(code) || code;
-    } catch (e) {
-        return code;
-    }
+const formatCount = value =>
+  new Intl.NumberFormat('zh-CN', { maximumFractionDigits: 0 }).format(safeCount(value))
+
+const getPageTitle = path => {
+  if (!path) return '未知页面'
+  if (pageMap?.[path]) return pageMap[path]
+
+  let decoded = path
+  try {
+    decoded = decodeURI(path)
+  }
+  catch {
+    decoded = path
+  }
+
+  if (pageMap?.[decoded]) return pageMap[decoded]
+
+  const cleanPath = decoded.replace(/(\.html|\/)$/, '')
+  if (pageMap?.[cleanPath]) return pageMap[cleanPath]
+  if (pageMap?.[`${cleanPath}.html`]) return pageMap[`${cleanPath}.html`]
+  if (pageMap?.[`${cleanPath}/`]) return pageMap[`${cleanPath}/`]
+  if (routeMap.value.has(path)) return routeMap.value.get(path)
+
+  return decoded || path
 }
+
+const getCountryName = code => {
+  if (!code || code === 'Unknown' || code === 'XX') return '未知地区'
+
+  try {
+    const regionNames = new Intl.DisplayNames(['zh-Hans'], { type: 'region' })
+    return regionNames.of(code) || code
+  }
+  catch {
+    return code
+  }
+}
+
+const getRefLabel = value => {
+  if (!value) return '直接访问'
+
+  try {
+    const url = new URL(value)
+    return url.hostname.replace(/^www\./, '') || value
+  }
+  catch {
+    return value === 'Unknown' ? '未知来源' : value
+  }
+}
+
+const shorten = (value, maxLength) =>
+  value.length > maxLength ? `${value.slice(0, Math.max(1, maxLength - 1))}…` : value
 
 const buildRouteMap = () => {
-   const routes = router.getRoutes()
-    for (const route of routes) {
-        if (route.meta && route.meta.title) {
-            routeMap.value.set(route.path, route.meta.title)
-        }
+  for (const route of router.getRoutes()) {
+    if (route.meta?.title) {
+      routeMap.value.set(route.path, route.meta.title)
     }
+  }
 }
 
-// --- Chart Data Computeds ---
+const formattedTotal = computed(() => formatCount(stats.value.total))
+const hasComparison = computed(() => Boolean(
+  stats.value.previousPeriod
+    && COMPARABLE_PERIODS.has(currentPeriod.value)
+    && !isCustomMode.value,
+))
+const formattedPreviousTotal = computed(() =>
+  formatCount(stats.value.previousPeriod?.total),
+)
+
+const comparisonSummary = computed(() => {
+  const current = safeCount(stats.value.total)
+  const previous = safeCount(stats.value.previousPeriod?.total)
+  const change = current - previous
+
+  if (previous === 0) {
+    return current === 0
+      ? { icon: '→', label: '与上周期持平', tone: 'neutral' }
+      : { icon: '↗', label: '上周期暂无访问', tone: 'positive' }
+  }
+
+  const percentage = Math.abs(change * 100 / previous)
+  const formatted = new Intl.NumberFormat('zh-CN', {
+    maximumFractionDigits: percentage >= 100 ? 0 : 1,
+  }).format(percentage)
+
+  if (change > 0) {
+    return { icon: '↑', label: `较上周期增长 ${formatted}%`, tone: 'positive' }
+  }
+  if (change < 0) {
+    return { icon: '↓', label: `较上周期下降 ${formatted}%`, tone: 'negative' }
+  }
+  return { icon: '→', label: '与上周期持平', tone: 'neutral' }
+})
+
+const trendDescription = computed(() =>
+  hasComparison.value
+    ? '实线为本周期，虚线为紧邻的上一周期，时间点按相同位置对齐。'
+    : '观察当前时间范围内的访问波动与内容热度变化。',
+)
+
+const currentRangeLabel = computed(() => {
+  if (isCustomMode.value && startDate.value && endDate.value) {
+    return `${startDate.value} 至 ${endDate.value}`
+  }
+
+  return periods.find(period => period.value === currentPeriod.value)?.label || '自定义范围'
+})
+
+const serviceState = computed(() => {
+  if (error.value) return { label: '服务连接异常', className: 'is-error' }
+  if (loading.value) return { label: '正在同步数据', className: 'is-loading' }
+  if (hasLoaded.value) return { label: '数据服务在线', className: 'is-ready' }
+  return { label: '等待连接服务', className: 'is-idle' }
+})
+
+const lastUpdatedLabel = computed(() => {
+  if (!lastUpdated.value) return ''
+
+  return new Intl.DateTimeFormat('zh-CN', {
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false,
+  }).format(lastUpdated.value)
+})
+
+const summaryItems = computed(() => {
+  const topPage = stats.value.pages?.[0]
+  const topCountry = stats.value.countries?.[0]
+  const topUa = stats.value.uas?.[0]
+  const topRef = stats.value.refs?.[0]
+
+  return [
+    {
+      icon: '↗',
+      label: '热门内容',
+      value: topPage ? getPageTitle(topPage.path) : '暂无数据',
+      meta: topPage ? `${formatCount(topPage.count)} 次访问` : '等待访问记录',
+    },
+    {
+      icon: '◎',
+      label: '主要地区',
+      value: topCountry ? getCountryName(topCountry.country) : '暂无数据',
+      meta: topCountry ? `${formatCount(topCountry.count)} 次访问` : '等待地区记录',
+    },
+    {
+      icon: '⌘',
+      label: '主要终端',
+      value: topUa?.ua_group || '暂无数据',
+      meta: topUa ? `${formatCount(topUa.count)} 次访问` : '等待终端记录',
+    },
+    {
+      icon: '⌁',
+      label: '主要来源',
+      value: topRef ? getRefLabel(topRef.ref) : '暂无数据',
+      meta: topRef ? `${formatCount(topRef.count)} 次访问` : '等待来源记录',
+    },
+  ]
+})
+
+const hasPages = computed(() => Boolean(stats.value.pages?.length))
+const hasRefs = computed(() => Boolean(stats.value.refs?.length))
+const hasCountries = computed(() => Boolean(stats.value.countries?.length))
+const hasUserAgents = computed(() => Boolean(stats.value.uas?.length))
+const trendPointCount = computed(() => lineChartData.value.labels.length)
+
+const HOUR_MS = 60 * 60 * 1000
+const DAY_MS = 24 * HOUR_MS
+
+const getSeriesResolution = range => {
+  const difference = safeCount(range?.end) - safeCount(range?.start)
+  if (difference <= 2 * DAY_MS) return 'hour'
+  if (difference > 180 * DAY_MS) return 'month'
+  return 'day'
+}
+
+const floorBucket = (timestamp, resolution) => {
+  const date = new Date(timestamp)
+  if (resolution === 'hour') return Math.floor(timestamp / HOUR_MS) * HOUR_MS
+  if (resolution === 'month') {
+    return Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), 1)
+  }
+  return Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate())
+}
+
+const nextBucket = (timestamp, resolution) => {
+  if (resolution === 'hour') return timestamp + HOUR_MS
+  if (resolution === 'day') return timestamp + DAY_MS
+  const date = new Date(timestamp)
+  return Date.UTC(date.getUTCFullYear(), date.getUTCMonth() + 1, 1)
+}
+
+const getBucketKey = (timestamp, resolution) => {
+  const iso = new Date(timestamp).toISOString()
+  if (resolution === 'hour') return `${iso.slice(0, 13).replace('T', ' ')}:00`
+  if (resolution === 'month') return iso.slice(0, 7)
+  return iso.slice(0, 10)
+}
+
+const getBucketLabel = (timestamp, resolution, includeWeekday = false) => {
+  const date = new Date(timestamp)
+  if (resolution === 'hour') {
+    return `${String(date.getHours()).padStart(2, '0')}:00`
+  }
+  if (resolution === 'month') {
+    return `${date.getUTCFullYear()}-${date.getUTCMonth() + 1}`
+  }
+  const dateLabel = `${date.getUTCMonth() + 1}-${date.getUTCDate()}`
+  if (!includeWeekday) return dateLabel
+
+  const weekdays = ['周日', '周一', '周二', '周三', '周四', '周五', '周六']
+  return `${dateLabel} ${weekdays[date.getUTCDay()]}`
+}
+
+const buildSeriesBuckets = (range, rawData, resolution, includeWeekday = false) => {
+  const start = Number(range?.start)
+  const end = Number(range?.end)
+  const dataMap = new Map(
+    (rawData || []).map(item => [item.label, safeCount(item.count)]),
+  )
+
+  if (!Number.isFinite(start) || !Number.isFinite(end) || end <= start) {
+    return (rawData || []).map(item => ({
+      key: item.label,
+      displayLabel: item.label,
+      value: safeCount(item.count),
+    }))
+  }
+
+  const buckets = []
+  const first = floorBucket(start, resolution)
+  const last = floorBucket(Math.max(start, end - 1), resolution)
+  for (let cursor = first; cursor <= last; cursor = nextBucket(cursor, resolution)) {
+    const key = getBucketKey(cursor, resolution)
+    buckets.push({
+      key,
+      displayLabel: getBucketLabel(cursor, resolution, includeWeekday),
+      value: dataMap.get(key) || 0,
+    })
+  }
+  return buckets
+}
 
 const lineChartData = computed(() => {
-    const rawData = stats.value.timeSeries || [];
-    
-    // Generate buckets based on period or custom range
-    const buckets = [];
-    const now = new Date();
-    
-    if (isCustomMode.value && stats.value.range) {
-        // Custom Range Logic
-        const start = stats.value.range.start;
-        const end = stats.value.range.end;
-        const diff = end - start;
-        const oneDay = 24 * 3600 * 1000;
-        
-        let step;
-        let formatLabel;
-        let formatDisplay;
-        
-        if (diff <= oneDay + 1000) {
-             step = 3600 * 1000; // Hour
-             formatLabel = (d) => d.toISOString().slice(0, 13).replace('T', ' ') + ':00';
-             formatDisplay = (d) => d.getHours() + ':00';
-        } else if (diff > 180 * oneDay) {
-             step = 30 * oneDay; // Month (Approx) - tricky for exact months
-        } else {
-             step = oneDay; // Day
-             formatLabel = (d) => d.toISOString().slice(0, 10);
-             formatDisplay = (d) => (d.getMonth() + 1) + '-' + d.getDate();
-        }
+  const resolution = getSeriesResolution(stats.value.range)
+  const includeWeekday = !isCustomMode.value
+    && (currentPeriod.value === '7d' || currentPeriod.value === '30d')
+  const currentBuckets = buildSeriesBuckets(
+    stats.value.range,
+    stats.value.timeSeries,
+    resolution,
+    includeWeekday,
+  )
+  const datasets = [
+    {
+      label: hasComparison.value ? '本周期' : '访问次数',
+      data: currentBuckets.map(bucket => bucket.value),
+      borderColor: '#2f7f98',
+      backgroundColor: 'rgba(47, 127, 152, 0.14)',
+      pointBackgroundColor: '#2f9b87',
+      pointBorderColor: chartTheme.value.surface,
+      pointBorderWidth: 2,
+      pointRadius: 0,
+      pointHoverRadius: 5,
+      borderWidth: 3,
+      fill: true,
+      tension: 0.36,
+    },
+  ]
 
-        if (formatLabel) {
-             // Fill gaps
-             for (let t = start; t <= end; t += step) {
-                 const d = new Date(t);
-                 buckets.push({ 
-                     label: formatLabel(d), 
-                     displayLabel: formatDisplay(d), 
-                     value: 0 
-                 });
-             }
-        } else {
-            // Fallback for Month view or complex ranges: just use raw data
-             rawData.forEach(d => {
-                 buckets.push({ label: d.label, displayLabel: d.label, value: d.count });
-             });
-             return {
-                labels: buckets.map(b => b.displayLabel),
-                datasets: [{
-                    label: 'Visits',
-                    backgroundColor: 'rgba(62, 175, 124, 0.2)',
-                    borderColor: '#3eaf7c',
-                    pointBackgroundColor: '#3eaf7c',
-                    data: buckets.map(b => b.value),
-                    fill: true,
-                    tension: 0.4
-                }]
-            }
-        }
-    } else {
-        // Standard Period Logic
-        const period = currentPeriod.value;
-        if (period === '24h') {
-            for (let i = 23; i >= 0; i--) {
-                const d = new Date(now.getTime() - i * 3600 * 1000);
-                const label = d.toISOString().slice(0, 13).replace('T', ' ') + ':00';
-                const displayLabel = d.getHours() + ':00';
-                buckets.push({ label, displayLabel, value: 0 });
-            }
-        } else if (period === '7d' || period === '30d') {
-            const days = period === '7d' ? 7 : 30;
-            for (let i = days - 1; i >= 0; i--) {
-                const d = new Date(now.getTime() - i * 24 * 3600 * 1000);
-                const label = d.toISOString().slice(0, 10);
-                const displayLabel = (d.getMonth() + 1) + '-' + d.getDate();
-                buckets.push({ label, displayLabel, value: 0 });
-            }
-        } else if (period === '1y') {
-            for (let i = 11; i >= 0; i--) {
-                const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
-                const label = d.toISOString().slice(0, 7);
-                const displayLabel = d.getFullYear() + '-' + (d.getMonth() + 1);
-                buckets.push({ label, displayLabel, value: 0 });
-            }
-        }
-    }
+  if (hasComparison.value) {
+    const previous = stats.value.previousPeriod
+    const previousBuckets = buildSeriesBuckets(
+      previous.range,
+      previous.timeSeries,
+      resolution,
+      includeWeekday,
+    )
+    datasets.push({
+      label: '上周期',
+      data: currentBuckets.map((_bucket, index) => previousBuckets[index]?.value || 0),
+      borderColor: chartTheme.value.muted,
+      backgroundColor: 'transparent',
+      pointBackgroundColor: chartTheme.value.muted,
+      pointBorderColor: chartTheme.value.surface,
+      pointBorderWidth: 1,
+      pointRadius: 0,
+      pointHoverRadius: 4,
+      borderWidth: 2,
+      borderDash: [7, 5],
+      fill: false,
+      tension: 0.3,
+    })
+  }
 
-    // Fill data
-    const dataMap = new Map(rawData.map(d => [d.label, d.count]));
-    buckets.forEach(b => {
-        if (dataMap.has(b.label)) b.value = dataMap.get(b.label);
-    });
-
-    return {
-        labels: buckets.map(b => b.displayLabel),
-        datasets: [{
-            label: 'Visits',
-            backgroundColor: 'rgba(62, 175, 124, 0.2)',
-            borderColor: '#3eaf7c',
-            pointBackgroundColor: '#3eaf7c',
-            data: buckets.map(b => b.value),
-            fill: true,
-            tension: 0.4
-        }]
-    }
+  return {
+    labels: currentBuckets.map(bucket => bucket.displayLabel),
+    datasets,
+  }
 })
 
 const pagesChartData = computed(() => {
-    const pages = (stats.value.pages || []).slice(0, 15); // Top 20
-    return {
-        labels: pages.map(p => {
-            const title = getPageTitle(p.path)
-            return title.length > 20 ? title.substring(0, 15) + '...' : title
-        }),
-        datasets: [{
-            label: 'Views',
-            backgroundColor: '#3eaf7c',
-            data: pages.map(p => p.count),
-            barPercentage: 0.6
-        }]
-    }
-})
-
-const countryChartData = computed(() => {
-    const countries = (stats.value.countries || []).slice(0, 10);
-    const colors = ['#3eaf7c', '#3498db', '#f1c40f', '#e74c3c', '#9b59b6', '#1abc9c', '#e67e22', '#34495e', '#2ecc71', '#95a5a6'];
-    return {
-        labels: countries.map(c => getCountryName(c.country)),
-        datasets: [{
-            backgroundColor: colors,
-            data: countries.map(c => c.count),
-            hoverOffset: 8,
-            borderRadius: 5,
-            borderWidth: 1
-        }]
-    }
-})
-
-const uaChartData = computed(() => {
-    const uas = stats.value.uas || [];
-    const colors = ['#e74c3c', '#8e44ad', '#3498db', '#16a085', '#f39c12', '#d35400', '#2c3e50', '#7f8c8d'];
-    return {
-        labels: uas.map(u => u.ua_group),
-        datasets: [{
-            backgroundColor: colors,
-            data: uas.map(u => u.count),
-            hoverOffset: 8,
-            borderRadius: 5,
-            borderWidth: 1
-        }]
-    }
+  const pages = (stats.value.pages || []).slice(0, 12)
+  return {
+    labels: pages.map(page => shorten(getPageTitle(page.path), 18)),
+    datasets: [
+      {
+        label: '访问次数',
+        data: pages.map(page => safeCount(page.count)),
+        backgroundColor: 'rgba(47, 127, 152, 0.86)',
+        hoverBackgroundColor: '#2f9b87',
+        borderRadius: 7,
+        borderSkipped: false,
+        maxBarThickness: 24,
+      },
+    ],
+  }
 })
 
 const refsChartData = computed(() => {
-    const refs = (stats.value.refs || []).slice(0, 15);
-    return {
-        labels: refs.map(r => {
-            return r.ref.length > 30 ? r.ref.substring(0, 27) + '...' : r.ref
-        }),
-        datasets: [{
-            label: 'Visits',
-            backgroundColor: '#3498db',
-            data: refs.map(r => r.count),
-            barPercentage: 0.6
-        }]
-    }
+  const refs = (stats.value.refs || []).slice(0, 12)
+  return {
+    labels: refs.map(ref => shorten(getRefLabel(ref.ref), 24)),
+    datasets: [
+      {
+        label: '访问次数',
+        data: refs.map(ref => safeCount(ref.count)),
+        backgroundColor: 'rgba(102, 118, 200, 0.82)',
+        hoverBackgroundColor: '#2f9b87',
+        borderRadius: 7,
+        borderSkipped: false,
+        maxBarThickness: 24,
+      },
+    ],
+  }
 })
 
-// --- Chart Options ---
+const countryChartData = computed(() => {
+  const countries = (stats.value.countries || []).slice(0, 10)
+  return {
+    labels: countries.map(country => getCountryName(country.country)),
+    datasets: [
+      {
+        data: countries.map(country => safeCount(country.count)),
+        backgroundColor: chartPalette,
+        borderColor: chartTheme.value.surface,
+        borderWidth: 3,
+        borderRadius: 4,
+        hoverOffset: 8,
+      },
+    ],
+  }
+})
 
-const lineOptions = {
-    responsive: true,
-    maintainAspectRatio: false,
-    plugins: {
-        legend: { display: false },
-        datalabels: { display: false }
+const uaChartData = computed(() => {
+  const userAgents = (stats.value.uas || []).slice(0, 10)
+  return {
+    labels: userAgents.map(item => item.ua_group || '未知终端'),
+    datasets: [
+      {
+        data: userAgents.map(item => safeCount(item.count)),
+        backgroundColor: [...chartPalette].reverse(),
+        borderColor: chartTheme.value.surface,
+        borderWidth: 3,
+        borderRadius: 4,
+        hoverOffset: 8,
+      },
+    ],
+  }
+})
+
+const tooltipOptions = () => ({
+  backgroundColor: chartTheme.value.tooltip,
+  titleColor: '#ffffff',
+  bodyColor: '#ffffff',
+  borderColor: 'rgba(255, 255, 255, 0.14)',
+  borderWidth: 1,
+  padding: 11,
+  cornerRadius: 9,
+  displayColors: false,
+  callbacks: {
+    label: context => ` ${formatCount(context.raw)} 次访问`,
+  },
+})
+
+const lineOptions = computed(() => ({
+  responsive: true,
+  maintainAspectRatio: false,
+  interaction: {
+    intersect: false,
+    mode: 'index',
+  },
+  animation: {
+    duration: 650,
+    easing: 'easeOutQuart',
+  },
+  plugins: {
+    legend: {
+      display: hasComparison.value,
+      position: 'top',
+      align: 'end',
+      labels: {
+        color: chartTheme.value.text,
+        usePointStyle: true,
+        pointStyle: 'line',
+        boxWidth: 24,
+        boxHeight: 7,
+        padding: 16,
+        font: { size: 11, weight: '700' },
+      },
     },
-    scales: {
-        y: { 
-            beginAtZero: true,
-            grid: { color: '#f0f0f0' }
-        },
-        x: {
-            grid: { display: false }
-        }
-    }
+    datalabels: { display: false },
+    tooltip: tooltipOptions(),
+  },
+  scales: {
+    y: {
+      beginAtZero: true,
+      ticks: {
+        color: chartTheme.value.text,
+        precision: 0,
+        padding: 10,
+      },
+      border: { display: false },
+      grid: {
+        color: chartTheme.value.grid,
+        drawTicks: false,
+      },
+    },
+    x: {
+      ticks: {
+        color: chartTheme.value.text,
+        maxRotation: 0,
+        autoSkipPadding: 20,
+        padding: 10,
+      },
+      border: { display: false },
+      grid: { display: false },
+    },
+  },
+}))
+
+const setChartCursor = (event, elements) => {
+  const target = event?.native?.target
+  if (target?.style) target.style.cursor = elements?.length ? 'pointer' : 'default'
 }
 
-const barOptions = {
-    indexAxis: 'y',
-    responsive: true,
-    maintainAspectRatio: false,
-    onClick: (e, elements) => {
-        if (elements && elements.length > 0) {
-            const index = elements[0].index;
-            const pages = (stats.value.pages || []).slice(0, 15);
-            if (pages[index] && pages[index].path) {
-                window.open(pages[index].path, '_blank');
-            }
-        }
+const createBarOptions = (itemsGetter, openItem) => computed(() => ({
+  indexAxis: 'y',
+  responsive: true,
+  maintainAspectRatio: false,
+  onHover: setChartCursor,
+  onClick: (_event, elements) => {
+    if (!elements?.length) return
+    const item = itemsGetter()[elements[0].index]
+    if (item) openItem(item)
+  },
+  layout: {
+    padding: { right: 40 },
+  },
+  plugins: {
+    legend: { display: false },
+    tooltip: tooltipOptions(),
+    datalabels: {
+      display: context => context.chart.width > 430,
+      anchor: 'end',
+      align: 'end',
+      clamp: true,
+      color: chartTheme.value.text,
+      font: { size: 11, weight: '700' },
+      formatter: value => formatCount(value),
     },
-    plugins: {
-        legend: { display: false },
-        datalabels: {
-            anchor: 'end',
-            align: 'end',
-            color: '#888',
-            font: { weight: 'bold' }
-        }
+  },
+  scales: {
+    x: {
+      beginAtZero: true,
+      ticks: {
+        color: chartTheme.value.text,
+        precision: 0,
+      },
+      border: { display: false },
+      grid: {
+        color: chartTheme.value.grid,
+        drawTicks: false,
+      },
     },
-    scales: {
-        x: { 
-            beginAtZero: true 
-        },
-        y: {
-            grid: { display: false }
-        }
+    y: {
+      ticks: {
+        color: chartTheme.value.text,
+        font: { size: 11, weight: '600' },
+      },
+      border: { display: false },
+      grid: { display: false },
+    },
+  },
+}))
+
+const barOptions = createBarOptions(
+  () => (stats.value.pages || []).slice(0, 12),
+  page => {
+    if (page.path && typeof window !== 'undefined') window.open(page.path, '_blank', 'noopener')
+  },
+)
+
+const refsBarOptions = createBarOptions(
+  () => (stats.value.refs || []).slice(0, 12),
+  ref => {
+    if (ref.ref?.startsWith('http') && typeof window !== 'undefined') {
+      window.open(ref.ref, '_blank', 'noopener,noreferrer')
     }
+  },
+)
+
+const pieOptions = computed(() => ({
+  responsive: true,
+  maintainAspectRatio: false,
+  cutout: '68%',
+  animation: {
+    animateRotate: true,
+    duration: 700,
+  },
+  plugins: {
+    tooltip: tooltipOptions(),
+    legend: {
+      position: 'bottom',
+      labels: {
+        color: chartTheme.value.text,
+        usePointStyle: true,
+        pointStyle: 'circle',
+        boxWidth: 7,
+        boxHeight: 7,
+        padding: 14,
+        font: { size: 11, weight: '600' },
+      },
+    },
+    datalabels: {
+      display: context => context.chart.width > 340,
+      color: '#ffffff',
+      textAlign: 'center',
+      font: { size: 10, weight: '800' },
+      formatter: (value, context) => {
+        const values = context.chart.data.datasets[0].data
+        const total = values.reduce((sum, item) => sum + safeCount(item), 0)
+        if (!total) return ''
+        const percentage = value * 100 / total
+        return percentage >= 7 ? `${percentage.toFixed(0)}%` : ''
+      },
+    },
+  },
+}))
+
+const normalizeStats = data => ({
+  ...emptyStats(),
+  ...data,
+  total: safeCount(data?.total),
+  pages: Array.isArray(data?.pages) ? data.pages : [],
+  countries: Array.isArray(data?.countries) ? data.countries : [],
+  uas: Array.isArray(data?.uas) ? data.uas : [],
+  timeSeries: Array.isArray(data?.timeSeries) ? data.timeSeries : [],
+  refs: Array.isArray(data?.refs) ? data.refs : [],
+  previousPeriod: data?.previousPeriod
+    ? {
+        ...data.previousPeriod,
+        total: safeCount(data.previousPeriod.total),
+        timeSeries: Array.isArray(data.previousPeriod.timeSeries)
+          ? data.previousPeriod.timeSeries
+          : [],
+      }
+    : null,
+})
+
+const requestStats = async url => {
+  activeRequest?.abort()
+  const controller = new AbortController()
+  activeRequest = controller
+  loading.value = true
+  error.value = ''
+
+  const timeout = window.setTimeout(() => controller.abort(), 10000)
+
+  try {
+    const response = await fetch(url, {
+      headers: { Accept: 'application/json' },
+      signal: controller.signal,
+    })
+
+    const contentType = response.headers.get('content-type') || ''
+    if (!contentType.includes('application/json')) {
+      throw new Error('统计服务返回了无法识别的数据格式')
+    }
+    if (!response.ok) {
+      throw new Error(`统计服务返回 HTTP ${response.status}`)
+    }
+
+    const data = await response.json()
+    stats.value = normalizeStats(data)
+    hasLoaded.value = true
+    const generatedAt = Number(data?.meta?.generatedAt)
+    lastUpdated.value = new Date(Number.isFinite(generatedAt) ? generatedAt : Date.now())
+  }
+  catch (reason) {
+    if (reason?.name === 'AbortError' && activeRequest !== controller) return
+
+    error.value = reason?.name === 'AbortError'
+      ? '请求等待时间过长，请稍后重试。'
+      : reason?.message || '无法连接统计服务，请稍后重试。'
+  }
+  finally {
+    window.clearTimeout(timeout)
+    if (activeRequest === controller) {
+      activeRequest = null
+      loading.value = false
+    }
+  }
 }
 
-const refsBarOptions = {
-    indexAxis: 'y',
-    responsive: true,
-    maintainAspectRatio: false,
-    onClick: (e, elements) => {
-        if (elements && elements.length > 0) {
-            const index = elements[0].index;
-            const refs = (stats.value.refs || []).slice(0, 15);
-            if (refs[index] && refs[index].ref && refs[index].ref.startsWith('http')) {
-                window.open(refs[index].ref, '_blank');
-            }
-        }
-    },
-    plugins: {
-        legend: { display: false },
-        datalabels: {
-            anchor: 'end',
-            align: 'end',
-            color: '#888',
-            font: { weight: 'bold' }
-        }
-    },
-    scales: {
-        x: { 
-            beginAtZero: true 
-        },
-        y: {
-            grid: { display: false }
-        }
-    }
-}
-
-const pieOptions = {
-    responsive: true,
-    maintainAspectRatio: false,
-    cutout: '60%',
-    plugins: {
-        legend: {
-            position: 'right',
-            labels: {
-                boxWidth: 12,
-                font: { size: 12 }
-            }
-        },
-        datalabels: {
-            color: '#fff',
-            textAlign: 'center',
-            font: { weight: 'bold' },
-            formatter: (value, ctx) => {
-                let sum = 0;
-                let dataArr = ctx.chart.data.datasets[0].data;
-                dataArr.map(data => {
-                    sum += data;
-                });
-                if (sum === 0) return '';
-                let percentage = (value * 100 / sum).toFixed(1) + "%";
-                if (value < 5) return ''; 
-                return `${percentage}\n${value}`;
-            }
-        }
-    }
-}
-
-// --- Fetch ---
-
-const fetchCustom = async () => {
-    if (!startDate.value || !endDate.value) return;
-    
-    // Parse dates. Input is YYYY-MM-DD
-    // Start: YYYY-MM-DD 00:00:00
-    // End: YYYY-MM-DD 23:59:59 (to include the full last day)
-    
-    const start = new Date(startDate.value + 'T00:00:00').getTime();
-    const end = new Date(endDate.value + 'T23:59:59').getTime();
-    
-    if (isNaN(start) || isNaN(end)) return;
-    
-    // Reset standard period buttons
-    currentPeriod.value = ''; 
-    isCustomMode.value = true;
-    
-    // Construct URL manually
-    loading.value = true;
-    error.value = null;
-    
-    try {
-        const res = await fetch(`${workerUrl}/stats?start=${start}&end=${end}`)
-        
-        const contentType = res.headers.get('content-type')
-        if (!contentType || !contentType.includes('application/json')) {
-             throw new Error(`Worker returned non-JSON response.`)
-        }
-
-        if (!res.ok) throw new Error(`Failed to fetch stats: ${res.status}`)
-        
-        const data = await res.json()
-        stats.value = data
-    } catch (e) {
-        error.value = e.message
-    } finally {
-        loading.value = false
-    }
-}
-
-const fetchStats = async (period) => {
+const fetchStats = async period => {
   if (!workerUrl) {
-    error.value = 'Worker URL not configured'
+    error.value = '统计服务地址尚未配置。'
     return
   }
-  
-  loading.value = true
+
   currentPeriod.value = period
-  isCustomMode.value = false // Reset custom mode
-  // Clear date pickers to show we are in preset mode
+  isCustomMode.value = false
   startDate.value = ''
   endDate.value = ''
-  error.value = null
-  
-  try {
-    const res = await fetch(`${workerUrl}/stats?period=${period}`)
-    
-    const contentType = res.headers.get('content-type')
-    if (!contentType || !contentType.includes('application/json')) {
-         const text = await res.text()
-         throw new Error(`Worker returned non-JSON response. Status: ${res.status}`)
-    }
+  await requestStats(`${workerUrl}/stats?period=${encodeURIComponent(period)}`)
+}
 
-    if (!res.ok) throw new Error(`Failed to fetch stats: ${res.status} ${res.statusText}`)
-    
-    const data = await res.json()
-    stats.value = data
-  } catch (e) {
-    error.value = e.message
-  } finally {
-    loading.value = false
+const fetchCustom = async () => {
+  if (!workerUrl || !startDate.value || !endDate.value) return
+
+  const start = new Date(`${startDate.value}T00:00:00`).getTime()
+  const exclusiveEndDate = new Date(`${endDate.value}T00:00:00`)
+  exclusiveEndDate.setDate(exclusiveEndDate.getDate() + 1)
+  const end = exclusiveEndDate.getTime()
+
+  if (!Number.isFinite(start) || !Number.isFinite(end)) {
+    error.value = '请选择有效的开始与结束日期。'
+    return
+  }
+  if (start > end) {
+    error.value = '开始日期不能晚于结束日期。'
+    return
+  }
+
+  currentPeriod.value = ''
+  isCustomMode.value = true
+  await requestStats(`${workerUrl}/stats?start=${start}&end=${end}`)
+}
+
+const refreshCurrent = () => {
+  if (isCustomMode.value && startDate.value && endDate.value) {
+    fetchCustom()
+  }
+  else {
+    fetchStats(currentPeriod.value || '24h')
+  }
+}
+
+const readThemeValue = (styles, name, fallback) =>
+  styles.getPropertyValue(name).trim() || fallback
+
+const syncChartTheme = () => {
+  const rootStyles = getComputedStyle(document.documentElement)
+  const isDark = document.documentElement.dataset.theme === 'dark'
+    || document.documentElement.classList.contains('dark')
+
+  chartTheme.value = {
+    text: readThemeValue(rootStyles, '--vp-c-text-2', isDark ? '#b6c2cf' : '#64748b'),
+    muted: readThemeValue(rootStyles, '--vp-c-text-3', isDark ? '#7f8b99' : '#94a3b8'),
+    grid: isDark ? 'rgba(148, 163, 184, 0.13)' : 'rgba(100, 116, 139, 0.14)',
+    surface: readThemeValue(rootStyles, '--vp-c-bg', isDark ? '#16181d' : '#ffffff'),
+    tooltip: isDark ? '#0d1118' : '#172033',
   }
 }
 
 onMounted(() => {
   buildRouteMap()
+  syncChartTheme()
+  themeObserver = new MutationObserver(syncChartTheme)
+  themeObserver.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['class', 'data-theme'],
+  })
   fetchStats('24h')
+})
+
+onBeforeUnmount(() => {
+  activeRequest?.abort()
+  themeObserver?.disconnect()
 })
 </script>
 
 <style scoped>
-.stats-container {
-  padding: 2rem;
-  max-width: 100%;
-  margin: 0 auto;
+.stats-dashboard {
+  --stats-brand: #2f7f98;
+  --stats-accent: #2f9b87;
+  --stats-purple: #6676c8;
+  --stats-warning: #b47731;
+  margin: 1.75rem auto 3rem;
+  color: var(--vp-c-text-1);
 }
 
-.controls {
-  margin-bottom: 2rem;
+.stats-dashboard *,
+.stats-dashboard *::before,
+.stats-dashboard *::after {
+  box-sizing: border-box;
+}
+
+.overview-card {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: minmax(300px, 0.82fr) minmax(440px, 1.25fr);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 18px;
+  background: var(--vp-c-bg);
+  box-shadow: 0 22px 60px color-mix(in srgb, var(--vp-c-brand-1) 10%, transparent);
+}
+
+.total-panel,
+.insights-panel {
+  min-width: 0;
+  padding: 30px;
+}
+
+.total-panel {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid var(--vp-c-divider);
+  background:
+    radial-gradient(circle at 50% 24%, color-mix(in srgb, var(--vp-c-brand-soft) 72%, transparent), transparent 46%),
+    radial-gradient(circle at 8% 92%, color-mix(in srgb, var(--stats-accent) 12%, transparent), transparent 34%),
+    var(--vp-c-bg);
+  text-align: center;
+}
+
+.eyebrow {
+  color: var(--vp-c-brand-1);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.total-panel h2,
+.insights-panel h2,
+.filter-card h2,
+.chart-card h2,
+.error-state h2 {
+  margin: 3px 0 0;
+  border: 0;
+  color: var(--vp-c-text-1);
+  font-size: 20px;
+  line-height: 1.35;
+}
+
+.total-orbit {
+  position: relative;
+  width: 196px;
+  height: 196px;
+  margin: 21px auto 16px;
+}
+
+.total-orbit svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.orbit-track,
+.orbit-progress,
+.orbit-inner {
+  fill: none;
+}
+
+.orbit-track {
+  stroke: var(--vp-c-bg-alt);
+  stroke-width: 8;
+}
+
+.orbit-progress {
+  stroke: var(--stats-brand);
+  stroke-dasharray: 385 132;
+  stroke-linecap: round;
+  stroke-width: 9;
+  animation: orbit-drift 12s linear infinite;
+  transform-origin: center;
+}
+
+.orbit-inner {
+  stroke: color-mix(in srgb, var(--stats-accent) 22%, var(--vp-c-divider));
+  stroke-dasharray: 2 9;
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+.total-orbit.is-loading .orbit-progress {
+  animation-duration: 1.2s;
+}
+
+.total-value {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.total-value strong {
+  max-width: 160px;
+  overflow: hidden;
+  font-size: clamp(34px, 4vw, 44px);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  text-overflow: ellipsis;
+}
+
+.total-value span {
+  margin-top: 7px;
+  color: var(--vp-c-text-3);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.period-comparison {
+  display: inline-flex;
+  max-width: 100%;
+  align-items: center;
+  gap: 9px;
+  margin: -2px auto 13px;
+  padding: 8px 11px;
+  border: 1px solid color-mix(in srgb, currentColor 22%, var(--vp-c-border));
+  border-radius: 11px;
+  color: var(--stats-accent);
+  background: color-mix(in srgb, currentColor 7%, var(--vp-c-bg));
+  text-align: left;
+}
+
+.period-comparison > span {
+  display: grid;
+  width: 25px;
+  height: 25px;
+  flex: none;
+  place-items: center;
+  border-radius: 8px;
+  background: color-mix(in srgb, currentColor 12%, var(--vp-c-bg));
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.period-comparison div {
+  display: grid;
+  min-width: 0;
+  gap: 1px;
+}
+
+.period-comparison strong,
+.period-comparison small {
+  overflow: hidden;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.period-comparison strong {
+  font-size: 11.5px;
+}
+
+.period-comparison small {
+  color: var(--vp-c-text-3);
+  font-size: 10px;
+}
+
+.period-comparison.is-negative {
+  color: #b75871;
+}
+
+.period-comparison.is-neutral {
+  color: var(--vp-c-text-2);
+}
+
+.status-chip,
+.range-badge,
+.chart-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid color-mix(in srgb, var(--stats-accent) 24%, var(--vp-c-border));
+  border-radius: 999px;
+  color: var(--stats-accent);
+  background: color-mix(in srgb, var(--stats-accent) 9%, var(--vp-c-bg));
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.status-chip {
+  gap: 7px;
+  max-width: 100%;
+  padding: 6px 11px;
+}
+
+.status-chip i,
+.update-line i {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--stats-accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--stats-accent) 15%, transparent);
+}
+
+.total-panel > p {
+  max-width: 330px;
+  margin: 14px auto 0;
+  color: var(--vp-c-text-2);
+  font-size: 12.5px;
+  line-height: 1.7;
+}
+
+.panel-heading,
+.filter-heading,
+.chart-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.icon-button {
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  border: 1px solid var(--vp-c-border);
+  border-radius: 9px;
+  color: var(--vp-c-text-2);
+  background: var(--vp-c-bg-soft);
+  font: inherit;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.icon-button:hover:not(:disabled) {
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
+}
+
+.icon-button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.icon-button .spinning {
+  animation: spin 0.9s linear infinite;
+}
+
+.insight-grid {
+  display: grid;
+  margin-top: 23px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 11px;
+}
+
+.insight-card {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: 11px;
+  padding: 14px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.insight-card:hover {
+  border-color: color-mix(in srgb, var(--vp-c-brand-1) 35%, var(--vp-c-border));
+  transform: translateY(-2px);
+}
+
+.insight-icon {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border-radius: 11px;
+  color: var(--stats-brand);
+  background:
+    linear-gradient(145deg, color-mix(in srgb, var(--stats-brand) 16%, var(--vp-c-bg)), var(--vp-c-bg));
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.insight-card:nth-child(2) .insight-icon {
+  color: var(--stats-accent);
+  background: linear-gradient(145deg, color-mix(in srgb, var(--stats-accent) 16%, var(--vp-c-bg)), var(--vp-c-bg));
+}
+
+.insight-card:nth-child(3) .insight-icon {
+  color: var(--stats-purple);
+  background: linear-gradient(145deg, color-mix(in srgb, var(--stats-purple) 16%, var(--vp-c-bg)), var(--vp-c-bg));
+}
+
+.insight-card:nth-child(4) .insight-icon {
+  color: var(--stats-warning);
+  background: linear-gradient(145deg, color-mix(in srgb, var(--stats-warning) 16%, var(--vp-c-bg)), var(--vp-c-bg));
+}
+
+.insight-card div {
+  min-width: 0;
+}
+
+.insight-card div > span,
+.insight-card small {
+  display: block;
+  color: var(--vp-c-text-3);
+  font-size: 10.5px;
+  line-height: 1.4;
+}
+
+.insight-card strong {
+  display: block;
+  overflow: hidden;
+  margin: 3px 0;
+  color: var(--vp-c-text-1);
+  font-size: 13px;
+  line-height: 1.45;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.update-line {
+  display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
+  margin-top: 15px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--vp-c-divider);
+  color: var(--vp-c-text-3);
+  font-size: 10.5px;
 }
 
-.btn-group {
-    display: flex;
-    gap: 0.5rem;
+.update-line > span:first-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--stats-accent);
+  font-weight: 750;
+}
+
+.update-line > span:first-child.is-error {
+  color: var(--stats-warning);
+}
+
+.update-line > span:first-child.is-error i {
+  background: var(--stats-warning);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--stats-warning) 15%, transparent);
+}
+
+.update-line > span:first-child.is-loading i {
+  animation: pulse 1.1s ease-in-out infinite;
+}
+
+.filter-card,
+.chart-card,
+.loading-state,
+.error-state {
+  border: 1px solid var(--vp-c-border);
+  border-radius: 16px;
+  background: var(--vp-c-bg);
+  box-shadow: 0 14px 38px color-mix(in srgb, var(--vp-c-brand-1) 7%, transparent);
+}
+
+.filter-card {
+  margin-top: 22px;
+  padding: 20px 22px;
+  background:
+    linear-gradient(120deg, color-mix(in srgb, var(--vp-c-brand-soft) 28%, transparent), transparent 35%),
+    var(--vp-c-bg);
+}
+
+.range-badge,
+.chart-badge {
+  padding: 5px 10px;
+}
+
+.filter-controls {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 17px;
+}
+
+.period-switch {
+  display: inline-grid;
+  flex: none;
+  padding: 4px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 11px;
+  background: var(--vp-c-bg-soft);
+  grid-template-columns: repeat(4, minmax(64px, 1fr));
+}
+
+.period-switch button,
+.query-button,
+.inline-notice button,
+.secondary-button {
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.period-switch button {
+  min-height: 35px;
+  padding: 7px 11px;
+  border-radius: 8px;
+  color: var(--vp-c-text-2);
+  background: transparent;
+  font-size: 12px;
+  font-weight: 750;
+  transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.period-switch button:hover:not(:disabled) {
+  color: var(--vp-c-brand-1);
+}
+
+.period-switch button.active {
+  color: #fff;
+  background: var(--vp-c-brand-1);
+  box-shadow: 0 6px 15px color-mix(in srgb, var(--vp-c-brand-1) 22%, transparent);
+}
+
+.period-switch button:disabled,
+.query-button:disabled {
+  cursor: wait;
+  opacity: 0.62;
 }
 
 .date-picker-group {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
+  display: flex;
+  min-width: 0;
+  align-items: flex-end;
+  gap: 8px;
 }
 
-input[type="date"] {
-    padding: 0.4rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background: var(--vp-c-bg-soft);
-    color: var(--vp-c-text-1);
-}
-
-button {
-  padding: 0.5rem 1rem;
-  border: 1px solid #ddd;
-  background: transparent;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-button.active {
-  background: #3eaf7c;
-  color: white;
-  border-color: #3eaf7c;
-}
-
-.grid {
+.date-picker-group label {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 2rem;
+  min-width: 0;
+  gap: 5px;
 }
 
-.card {
-  border: 1px solid #eee;
-  padding: 1rem;
+.date-picker-group label > span {
+  color: var(--vp-c-text-3);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.date-picker-group input {
+  width: 142px;
+  min-height: 38px;
+  padding: 7px 9px;
+  border: 1px solid var(--vp-c-border);
   border-radius: 8px;
+  outline: 0;
+  color: var(--vp-c-text-1);
   background: var(--vp-c-bg-soft);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  color-scheme: light dark;
+  font: inherit;
+  font-size: 11.5px;
 }
 
-.full-width {
-    grid-column: 1 / -1;
+.date-picker-group input:focus {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--vp-c-brand-1) 12%, transparent);
 }
 
-.summary-card {
-  margin-bottom: 2rem;
-  text-align: center;
-  padding: 2rem;
-  background: var(--vp-c-bg-soft);
+.date-separator {
+  padding-bottom: 9px;
+  color: var(--vp-c-text-3);
+  font-size: 13px;
+}
+
+.query-button,
+.secondary-button {
+  min-height: 38px;
+  padding: 8px 15px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  color: #fff;
+  background: var(--vp-c-brand-1);
+  box-shadow: 0 7px 16px color-mix(in srgb, var(--vp-c-brand-1) 18%, transparent);
+  font-size: 12px;
+  font-weight: 800;
 }
 
-.big-number {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #3eaf7c;
+.query-button:hover:not(:disabled),
+.secondary-button:hover {
+  background: var(--vp-c-brand-2);
+}
+
+.inline-notice {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  padding: 12px 14px;
+  border: 1px solid color-mix(in srgb, var(--stats-warning) 28%, var(--vp-c-border));
+  border-radius: 11px;
+  background: color-mix(in srgb, var(--stats-warning) 8%, var(--vp-c-bg));
+}
+
+.inline-notice > span {
+  display: grid;
+  width: 26px;
+  height: 26px;
+  flex: none;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--stats-warning);
+  background: color-mix(in srgb, var(--stats-warning) 15%, var(--vp-c-bg));
+  font-weight: 900;
+}
+
+.inline-notice p {
+  flex: 1;
+  margin: 0;
+  color: var(--vp-c-text-2);
+  font-size: 12px;
+}
+
+.inline-notice button {
+  padding: 5px 9px;
+  border-radius: 6px;
+  color: var(--stats-warning);
+  background: transparent;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.loading-state,
+.error-state {
+  margin-top: 22px;
+  padding: 28px;
+}
+
+.loading-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.loading-heading div {
+  display: grid;
+  gap: 2px;
+}
+
+.loading-heading strong {
+  font-size: 14px;
+}
+
+.loading-heading span:last-child {
+  color: var(--vp-c-text-3);
+  font-size: 11px;
+}
+
+.loading-mark {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--vp-c-divider);
+  border-top-color: var(--vp-c-brand-1);
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+.skeleton-grid {
+  display: grid;
+  margin-top: 23px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.skeleton-card {
+  min-height: 220px;
+  padding: 18px;
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+}
+
+.skeleton-card:first-child {
+  min-height: 340px;
+  grid-column: 1 / -1;
+}
+
+.skeleton-card span,
+.skeleton-card i {
+  display: block;
+  border-radius: 7px;
+  background: linear-gradient(90deg, var(--vp-c-bg-alt), var(--vp-c-divider), var(--vp-c-bg-alt));
+  background-size: 220% 100%;
+  animation: skeleton-wave 1.4s linear infinite;
+}
+
+.skeleton-card span {
+  width: 34%;
+  height: 18px;
+}
+
+.skeleton-card i {
+  height: 65%;
+  margin-top: 24px;
+}
+
+.error-state {
+  display: flex;
+  min-height: 250px;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  text-align: left;
+}
+
+.error-icon {
+  display: grid;
+  width: 50px;
+  height: 50px;
+  flex: none;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--stats-warning);
+  background: color-mix(in srgb, var(--stats-warning) 13%, var(--vp-c-bg));
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.error-state p {
+  max-width: 480px;
+  margin: 9px 0 0;
+  color: var(--vp-c-text-2);
+  font-size: 12.5px;
+}
+
+.stats-content {
+  position: relative;
+  transition: opacity 0.2s ease;
+}
+
+.stats-content.is-refreshing {
+  opacity: 0.58;
+  pointer-events: none;
+}
+
+.chart-card {
+  min-width: 0;
+  padding: 23px;
+}
+
+.trend-card {
+  margin-top: 22px;
+  background:
+    radial-gradient(circle at 92% 0%, color-mix(in srgb, var(--stats-brand) 9%, transparent), transparent 29%),
+    var(--vp-c-bg);
+}
+
+.chart-grid {
+  display: grid;
+  margin-top: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.chart-heading p {
+  margin: 7px 0 0;
+  color: var(--vp-c-text-3);
+  font-size: 11.5px;
+  line-height: 1.55;
+}
+
+.chart-heading.compact {
+  min-height: 67px;
+}
+
+.chart-index {
+  color: color-mix(in srgb, var(--vp-c-brand-1) 32%, var(--vp-c-text-3));
+  font-family: var(--vp-font-family-mono);
+  font-size: 27px;
+  font-weight: 800;
+  line-height: 1;
 }
 
 .chart-container {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
+  margin-top: 18px;
 }
 
 .line-chart-height {
-    height: 450px;
+  height: 340px;
 }
 
 .bar-chart-height {
-    height: 500px;
+  height: 440px;
 }
 
 .pie-container {
+  height: 390px;
+}
+
+.empty-chart {
+  display: grid;
+  min-height: 260px;
+  place-items: center;
+  margin-top: 18px;
+  border: 1px dashed var(--vp-c-divider);
+  border-radius: 12px;
+  color: var(--vp-c-text-3);
+  background: var(--vp-c-bg-soft);
+  font-size: 12px;
+}
+
+.privacy-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-top: 20px;
+  padding: 17px 19px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 13px;
+  background: color-mix(in srgb, var(--vp-c-brand-soft) 38%, var(--vp-c-bg));
+}
+
+.privacy-icon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex: none;
+  place-items: center;
+  border-radius: 9px;
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg);
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.privacy-note strong {
+  display: block;
+  font-size: 12.5px;
+}
+
+.privacy-note p {
+  margin: 4px 0 0;
+  color: var(--vp-c-text-2);
+  font-size: 11.5px;
+  line-height: 1.65;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+}
+
+@keyframes orbit-drift {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.35;
+    transform: scale(0.72);
+  }
+}
+
+@keyframes skeleton-wave {
+  to {
+    background-position: -220% 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .overview-card {
+    grid-template-columns: minmax(270px, 0.75fr) minmax(370px, 1.25fr);
+  }
+
+  .total-panel,
+  .insights-panel {
+    padding: 24px;
+  }
+
+  .filter-controls {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .period-switch {
+    width: 100%;
+  }
+
+  .date-picker-group {
+    width: 100%;
+  }
+
+  .date-picker-group label {
+    flex: 1;
+  }
+
+  .date-picker-group input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .overview-card,
+  .chart-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .total-panel {
+    border-right: 0;
+    border-bottom: 1px solid var(--vp-c-divider);
+  }
+
+  .line-chart-height {
     height: 300px;
+  }
+
+  .bar-chart-height {
+    height: 410px;
+  }
+
+  .pie-container {
+    height: 370px;
+  }
 }
 
-.loading, .error {
-  text-align: center;
-  padding: 2rem;
-  font-size: 1.2rem;
+@media (max-width: 520px) {
+  .stats-dashboard {
+    margin-top: 1.25rem;
+  }
+
+  .overview-card,
+  .filter-card,
+  .chart-card,
+  .loading-state,
+  .error-state {
+    border-radius: 14px;
+  }
+
+  .total-panel,
+  .insights-panel,
+  .chart-card,
+  .loading-state,
+  .error-state {
+    padding: 19px;
+  }
+
+  .total-orbit {
+    width: 178px;
+    height: 178px;
+  }
+
+  .insight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-card {
+    padding: 17px;
+  }
+
+  .filter-heading {
+    align-items: center;
+  }
+
+  .range-badge {
+    max-width: 145px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .period-switch {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .date-picker-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .date-separator {
+    display: none;
+  }
+
+  .query-button {
+    grid-column: 1 / -1;
+  }
+
+  .chart-heading {
+    gap: 12px;
+  }
+
+  .chart-badge,
+  .chart-index {
+    display: none;
+  }
+
+  .line-chart-height {
+    height: 270px;
+  }
+
+  .bar-chart-height {
+    height: 390px;
+  }
+
+  .pie-container {
+    height: 350px;
+  }
+
+  .update-line {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .skeleton-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skeleton-card:first-child {
+    min-height: 280px;
+  }
+
+  .skeleton-card:first-child,
+  .skeleton-card {
+    grid-column: auto;
+  }
+
+  .error-state {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .inline-notice {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .inline-notice button {
+    margin-left: 38px;
+  }
 }
 
-.error {
-  color: red;
+@media (prefers-reduced-motion: reduce) {
+  .orbit-progress,
+  .icon-button .spinning,
+  .loading-mark,
+  .update-line > span:first-child.is-loading i,
+  .skeleton-card span,
+  .skeleton-card i {
+    animation: none;
+  }
+
+  .insight-card {
+    transition: none;
+  }
 }
 </style>
