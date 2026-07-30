@@ -14,5 +14,6 @@ export default defineClientConfig({
     app.component('AirportPlanTable', defineAsyncComponent(() => import('./components/AirportPlanTable.vue')))
     app.component('AirportRankingTable', defineAsyncComponent(() => import('./components/AirportRankingTable.vue')))
     app.component('AirportRiskList', defineAsyncComponent(() => import('./components/AirportRiskList.vue')))
+    app.component('ClaudeEnvCheck', defineAsyncComponent(() => import('./components/ClaudeEnvCheck.vue')))
   },
 })

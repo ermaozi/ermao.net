@@ -160,6 +160,7 @@ export default defineUserConfig({
           { text: '友链' , link: '/friends/', icon: 'material-symbols:footprint' },
           { text: '标签', link: '/blog/tags/', icon: 'material-symbols:sell' },
           { text: '统计', link: '/stats/', icon: 'ic:baseline-data-usage' },
+          { text: 'Claude 环境自检', link: '/claude-env-check/', icon: 'material-symbols:shield-outline-rounded' },
           { text: '关于与评测方法', link: '/about/', icon: 'material-symbols:verified-user-outline' },
         ],
       },
