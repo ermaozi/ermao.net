@@ -28,7 +28,7 @@
 |[cocoduck](#cocoduck)|[www.cocoduck.site](https://www.cocoduck.site/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|
 |[随便云](#随便云)|[wcnm.one](https://wcnm.one/register?code=YZxHwCws)| 无 |10元 68G/月|✔|[TG](https://t.me/suibianvip)|[前往](./v2/机场推荐随便云.md)|
 |[唯兔云](#唯兔云)|[vip01.onlyrabbit.cc](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx)| 无 |6元 45G/月|✔|[TG](https://t.me/v2yun_v2)|[前往](./v2/机场推荐唯兔云.md)|
-|[光速云](#光速云)|[zimaoer01.gsyvipaff.cc](https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku)| 无 |8.25元 59G/月|✔|[TG](https://t.me/LightspeedCloud)|[前往](./v2/机场推荐光速云.md)|
+|[光速云](#光速云)|[ermaozi01.gsyvipaff.com](https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku)| 无 |8.25元 59G/月|✔|[TG](https://t.me/LightspeedCloud)|[前往](./v2/机场推荐光速云.md)|
 |[superbiu](#superbiu)|[biubiux.online](https://biubiux.online/#/register?code=BasmsULb)| 无 |11元 50G/月|✔|[TG](https://t.me/superbiu888)|[前往](./v2/机场推荐superbiu.md)|
 |[koodog](#koodog)|[koodog.com](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)| 无 |5元 35G/月|❌|[TG](https://t.me/KooDogGroup)|[前往](./v1/机场推荐koodog.md)|
 |[99吧](#_99bar)|[99vpn.bar](https://99vpn.bar/#/register?code=qzpkbzHF)| 1天 1G |9.9元 99G/月|✔|[TG](https://t.me/jiujiuchat)|暂无|
@@ -274,7 +274,7 @@ ccyz官网地址：[ccyz.org](https://xxyun.at/?code=HOWnn58c)
 
 ### 光速云
 
-光速云官网地址：[zimaoer01.gsyvipaff.cc](https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku)
+光速云官网地址：[ermaozi01.gsyvipaff.com](https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku)
 
 最便宜的订阅有8.25元 59G/月。
 
@@ -284,12 +284,12 @@ ccyz官网地址：[ccyz.org](https://xxyun.at/?code=HOWnn58c)
 
 | 套餐名称 | 价格 | 流量 | 特性 | 购买链接 |
 |----------|------|------|------|----------|
-| **轻量版(年付)** | ¥99/年 | 59GB/月 | 超长续订首选，折合¥8.25/月 | [购买链接](https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku) |
-| **极速版** | ¥17/月 | 110GB/月 | 入门体验，性价比高 | [购买链接](https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku) |
-| **流光版** | ¥34/月 | 220GB/月 | 主流推荐，适合日常使用 | [购买链接](https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku) |
-| **量子版** | ¥68/月 | 450GB/月 | 中重度用户，大流量 | [购买链接](https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku) |
-| **无界版** | ¥130/月 | 900GB/月 | 自由使用，极致体验 | [购买链接](https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku) |
-| **不限时流量包** | ¥680 | 1000GB | 一次性购买，永不过期 | [购买链接](https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku) |
+| **轻量版(年付)** | ¥99/年 | 59GB/月 | 超长续订首选，折合¥8.25/月 | [购买链接](https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku) |
+| **极速版** | ¥17/月 | 110GB/月 | 入门体验，性价比高 | [购买链接](https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku) |
+| **流光版** | ¥34/月 | 220GB/月 | 主流推荐，适合日常使用 | [购买链接](https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku) |
+| **量子版** | ¥68/月 | 450GB/月 | 中重度用户，大流量 | [购买链接](https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku) |
+| **无界版** | ¥130/月 | 900GB/月 | 自由使用，极致体验 | [购买链接](https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku) |
+| **不限时流量包** | ¥680 | 1000GB | 一次性购买，永不过期 | [购买链接](https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku) |
 
 ---
 

@@ -2426,7 +2426,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特性：超长续订首选，折合¥8.25/月"
       ],
-      "purchaseHref": "https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku",
+      "purchaseHref": "https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku",
       "text": "轻量版(年付)，¥99/年，59GB/月"
     },
     {
@@ -2437,7 +2437,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特性：入门体验，性价比高"
       ],
-      "purchaseHref": "https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku",
+      "purchaseHref": "https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku",
       "text": "极速版，¥17/月，110GB/月"
     },
     {
@@ -2448,7 +2448,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特性：主流推荐，适合日常使用"
       ],
-      "purchaseHref": "https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku",
+      "purchaseHref": "https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku",
       "text": "流光版，¥34/月，220GB/月"
     },
     {
@@ -2459,7 +2459,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特性：中重度用户，大流量"
       ],
-      "purchaseHref": "https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku",
+      "purchaseHref": "https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku",
       "text": "量子版，¥68/月，450GB/月"
     },
     {
@@ -2470,7 +2470,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特性：自由使用，极致体验"
       ],
-      "purchaseHref": "https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku",
+      "purchaseHref": "https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku",
       "text": "无界版，¥130/月，900GB/月"
     },
     {
@@ -2481,7 +2481,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特性：一次性购买，永不过期"
       ],
-      "purchaseHref": "https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku",
+      "purchaseHref": "https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku",
       "text": "不限时流量包，¥680，1000GB",
       "oneTime": true
     }
@@ -3779,7 +3779,7 @@ export const airportSources: AirportSource[] = [
     name: '光速云',
     description: '光速云IEPL专线机场，提供高品质线路，支持 Trojan/SS 等协议，专注于稳定流媒体与跨境业务。全线解锁 Netflix、Disney+、YouTube、ChatGPT、Gemini 等平台与 AI 服务，并支持 TikTok 跨区，适合跨境电商、直播运营、远程办公等高要求用户。套餐无限速、无倍率、不限制设备数（合理使用），支持支付宝、USDT 付款。节点覆盖港台、日美新、东南亚、韩国及多国欧美地区，价格亲民，月付最低8.25元起，另提供1T大流量永久套餐。拥有多客服团队与海外技术支持，可提供小火箭下载、TG代注册等增值服务。',
     rank: 44,
-    officialHref: 'https://zimaoer01.gsyvipaff.cc/#/?code=d1eMb3ku',
+    officialHref: 'https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku',
     universalSubscription: false,
     minPlanText: '8.25元 59G/月',
     hasOneTimePackage: true,
