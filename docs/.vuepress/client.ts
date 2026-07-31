@@ -13,6 +13,7 @@ export default defineClientConfig({
     app.component('AirportList', defineAsyncComponent(() => import('./components/AirportList.vue')))
     app.component('AirportPlanTable', defineAsyncComponent(() => import('./components/AirportPlanTable.vue')))
     app.component('AirportRankingTable', defineAsyncComponent(() => import('./components/AirportRankingTable.vue')))
+    app.component('AdBoardDemo', defineAsyncComponent(() => import('./components/AdBoardDemo.vue')))
     app.component('AirportRiskList', defineAsyncComponent(() => import('./components/AirportRiskList.vue')))
     app.component('ClaudeEnvCheck', defineAsyncComponent(() => import('./components/ClaudeEnvCheck.vue')))
   },

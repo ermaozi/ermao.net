@@ -34,8 +34,9 @@ const utilityPagePrefixes = [
   '/en/blog/categories/',
   '/en/blog/archives/',
 ]
-const utilityPagePaths = ['/stats/', '/en/stats/']
+const utilityPagePaths = ['/ad-board/', '/stats/', '/en/stats/']
 const generatedPageDescriptions: Record<string, string> = {
+  '/ad-board/': '在二毛广告板发表百字以内的匿名便签；便签优先落在空隙处，点赞后立即置顶，外部链接跳转前显示风险提示。',
   '/blog/': '浏览二毛博客的全部文章，涵盖机场评测与风险记录、Clash 和 Shadowrocket 客户端、软路由配置及网络故障排查。',
   '/blog/archives/': '按发布时间浏览二毛博客文章归档，查找历年机场评测、网络工具教程、风险预警和每周网络动态。',
   '/blog/categories/': '按内容分类浏览二毛博客，快速进入机场推荐、翻墙工具、风险预警、网络新闻和技术文档等栏目。',
@@ -188,6 +189,7 @@ export default defineUserConfig({
               { text: '友链', link: '/friends/', icon: 'material-symbols:footprint' },
               { text: '标签', link: '/blog/tags/', icon: 'material-symbols:sell' },
               { text: '统计', link: '/stats/', icon: 'ic:baseline-data-usage' },
+              { text: '广告板', link: '/ad-board/', icon: 'material-symbols:dashboard-outline-rounded' },
               { text: 'Claude 环境自检', link: '/claude-env-check/', icon: 'material-symbols:shield-outline-rounded' },
               { text: '关于与评测方法', link: '/about/', icon: 'material-symbols:verified-user-outline' },
             ],
