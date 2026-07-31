@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, watch, nextTick, onUnmounted } from 'vue'
+import { ref, computed, watch, nextTick, onMounted, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
 // @ts-ignore
 import { pageMap } from '@stats/page-map'
@@ -7,10 +7,14 @@ import { pageMap } from '@stats/page-map'
 import { usePageData } from '@vuepress/client'
 
 const popularPosts = ref([])
-const loading = ref(false)
+const likedPosts = ref([])
+const activeTab = ref('popular')
+const popularLoading = ref(false)
+const likesLoading = ref(false)
 const canShow = ref(false)
 const targetSelector = ref('.vp-posts-aside')
-const hasLoaded = ref(false)
+const popularHasLoaded = ref(false)
+const likesHasLoaded = ref(false)
 const router = useRouter()
 const page = usePageData()
 const pageMapKeys = Object.keys(pageMap)
@@ -20,6 +24,7 @@ const shouldShow = computed(() => {
 })
 
 let pollingTimer = null
+let likesRefreshPending = false
 
 const resolveWorkerUrl = () => {
     // @ts-ignore
@@ -30,24 +35,63 @@ const resolveWorkerUrl = () => {
     return workerUrl
 }
 
-const fetchPopularPosts = async () => {
+const fetchPopularPosts = async (force = false) => {
     const workerUrl = resolveWorkerUrl()
-    if (!workerUrl || hasLoaded.value || loading.value) return
+    if (!workerUrl || (!force && popularHasLoaded.value) || popularLoading.value) return
 
-    loading.value = true
+    popularLoading.value = true
 
     try {
-        const res = await fetch(`${workerUrl}/popular`)
+        const cacheBuster = force ? `?refresh=${Date.now()}` : ''
+        const res = await fetch(`${workerUrl}/popular${cacheBuster}`)
         if (res.ok) {
             const data = await res.json()
             popularPosts.value = Array.isArray(data) ? data : []
-            hasLoaded.value = true
+            popularHasLoaded.value = true
         }
     } catch (e) {
         popularPosts.value = []
     } finally {
-        loading.value = false
+        popularLoading.value = false
     }
+}
+
+const fetchLikedPosts = async (force = false) => {
+    const workerUrl = resolveWorkerUrl()
+    if (!workerUrl || (!force && likesHasLoaded.value) || likesLoading.value) return
+
+    likesLoading.value = true
+
+    try {
+        const cacheBuster = force ? `&refresh=${Date.now()}` : ''
+        const res = await fetch(`${workerUrl}/api/likes/top?limit=6${cacheBuster}`, {
+            cache: 'no-store'
+        })
+        if (res.ok) {
+            const data = await res.json()
+            likedPosts.value = Array.isArray(data) ? data : []
+            likesHasLoaded.value = true
+        }
+    } catch (e) {
+        likedPosts.value = []
+    } finally {
+        likesLoading.value = false
+        if (likesRefreshPending) {
+            likesRefreshPending = false
+            likesHasLoaded.value = false
+            fetchLikedPosts(true)
+        }
+    }
+}
+
+const fetchActivePosts = () => {
+    if (activeTab.value === 'likes') return fetchLikedPosts()
+    return fetchPopularPosts()
+}
+
+const selectTab = (tab) => {
+    activeTab.value = tab
+    fetchActivePosts()
 }
 
 const checkDomAndShow = async () => {
@@ -84,7 +128,7 @@ const checkDomAndShow = async () => {
                  // Pick the last one usually implies the one being mounted on top/after
                  targetSelector.value = sel
                  canShow.value = true
-                 fetchPopularPosts()
+                 fetchActivePosts()
                  found = true
                  break
              }
@@ -102,16 +146,40 @@ const checkDomAndShow = async () => {
 
 watch(() => page.value.path, checkDomAndShow, { immediate: true })
 
+const refreshAfterLike = () => {
+    likesHasLoaded.value = false
+    if (activeTab.value !== 'likes') return
+    if (likesLoading.value) {
+        likesRefreshPending = true
+        return
+    }
+    fetchLikedPosts(true)
+}
+
+onMounted(() => {
+    window.addEventListener('ermao:like-updated', refreshAfterLike)
+})
+
 onUnmounted(() => {
     if (pollingTimer) {
         clearTimeout(pollingTimer)
         pollingTimer = null
     }
+    window.removeEventListener('ermao:like-updated', refreshAfterLike)
 })
 
 // Filter out 404, home, stats page itself if they appear
+const activePosts = computed(() =>
+    activeTab.value === 'likes' ? likedPosts.value : popularPosts.value
+)
+
+const loading = computed(() =>
+    activeTab.value === 'likes' ? likesLoading.value : popularLoading.value
+)
+
 const filteredPosts = computed(() => {
-    return popularPosts.value.filter(p => {
+    const limit = activeTab.value === 'likes' ? 6 : 10
+    return activePosts.value.filter(p => {
         const path = p.path.replace(/\/$/, '')
         
         // Exclude root and special paths
@@ -128,25 +196,20 @@ const filteredPosts = computed(() => {
         // Exclude pagination pages
         if (p.path.includes('/page/')) return false;
         
-        // Try to find title
-        const mapKey = pageMapKeys.find(k => 
-            k === p.path || 
-            k === path || 
-            k === p.path + '.html' ||
-            k.replace(/\/$/, '') === path ||
-            k.replace(/\.html$/, '') === path
-        )
-        
-        if (mapKey) {
-           p._title = pageMap[mapKey]
-        }
-        
         return true;
-    }).slice(0, 10) // Top 10
+    }).slice(0, limit)
 })
 
 const getTitle = (post) => {
-    return post._title || post.path
+    const path = post.path.replace(/\/$/, '')
+    const mapKey = pageMapKeys.find(k =>
+        k === post.path ||
+        k === path ||
+        k === post.path + '.html' ||
+        k.replace(/\/$/, '') === path ||
+        k.replace(/\.html$/, '') === path
+    )
+    return mapKey ? pageMap[mapKey] : post.path
 }
 
 const navigate = (path) => {
@@ -159,7 +222,28 @@ const navigate = (path) => {
     <Teleport :to="targetSelector" v-if="canShow">
       <div class="popular-posts-widget" :class="{'in-doc': targetSelector === '.vp-doc-aside'}">
         <div class="widget-header">
-          <span class="widget-title">热门文章</span>
+          <div class="widget-tabs" role="tablist" aria-label="文章排行">
+            <button
+              type="button"
+              class="widget-tab"
+              :class="{ active: activeTab === 'popular' }"
+              role="tab"
+              :aria-selected="activeTab === 'popular'"
+              @click="selectTab('popular')"
+            >
+              热门文章
+            </button>
+            <button
+              type="button"
+              class="widget-tab"
+              :class="{ active: activeTab === 'likes' }"
+              role="tab"
+              :aria-selected="activeTab === 'likes'"
+              @click="selectTab('likes')"
+            >
+              点赞排行
+            </button>
+          </div>
         </div>
         
         <div v-if="loading" style="text-align: center; padding: 20px; color: #999;">
@@ -167,14 +251,20 @@ const navigate = (path) => {
         </div>
 
         <div v-else-if="filteredPosts.length === 0" style="text-align: center; padding: 20px; color: #999;">
-           暂无热门数据
+           {{ activeTab === 'likes' ? '暂无点赞数据' : '暂无热门数据' }}
         </div>
 
         <ul v-else class="post-list">
           <li v-for="(post, index) in filteredPosts" :key="post.path" @click="navigate(post.path)">
             <span class="post-rank" :class="{'top-3': index < 3}">{{ index + 1 }}</span>
             <span class="post-title" :title="getTitle(post)">{{ getTitle(post) }}</span>
-            <span class="post-count">{{ post.count }}</span>
+            <span
+              class="post-count"
+              :class="{ likes: activeTab === 'likes' }"
+              :aria-label="activeTab === 'likes' ? `${post.count} 个赞` : `${post.count} 次浏览`"
+            >
+              {{ activeTab === 'likes' ? `♥ ${post.count}` : post.count }}
+            </span>
           </li>
         </ul>
       </div>
@@ -212,10 +302,37 @@ const navigate = (path) => {
   border-bottom: 1px solid var(--vp-c-divider, #eaecef);
 }
 
-.widget-title {
-  margin-left: 12px;
+.widget-tabs {
+  display: flex;
+  gap: 4px;
+  width: 100%;
+}
+
+.widget-tab {
+  padding: 5px 10px;
+  color: var(--vp-c-text-2);
+  font: inherit;
   font-weight: 600;
-  font-size: 14px;
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: color 0.18s ease, background-color 0.18s ease;
+}
+
+.widget-tab:hover {
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg-soft);
+}
+
+.widget-tab.active {
+  color: var(--vp-c-brand-1);
+  background: color-mix(in srgb, var(--vp-c-brand-1) 11%, transparent);
+}
+
+.widget-tab:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
 }
 
 .post-list {
@@ -263,6 +380,10 @@ const navigate = (path) => {
   color: var(--vp-c-text-2, #999);
   min-width: 30px;
   text-align: right;
+}
+
+.post-count.likes {
+  color: #df4964;
 }
 
 /* @media (max-width: 960px) {

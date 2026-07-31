@@ -8,6 +8,7 @@ import imagePerformancePlugin from './plugins/image-performance.js'
 import geoPlugin, { enhanceArticleJsonLd } from './plugins/geo.js'
 
 const hostname = 'https://www.ermao.net'
+const statsWorkerUrl = process.env.STATS_WORKER_URL || 'https://views.ermao.net'
 const siteDescription = '二毛网络工具资料库长期更新机场评测与风险记录，以及 Clash、Shadowrocket、软路由配置和网络故障排查教程。'
 const utilityPagePrefixes = ['/blog/tags/', '/blog/categories/', '/blog/archives/']
 const utilityPagePaths = ['/stats/']
@@ -105,7 +106,7 @@ export default defineUserConfig({
     imagePerformancePlugin(),
     geoPlugin(),
     statsPlugin({
-      workerUrl: 'https://views.ermao.net' // 请替换为实际的 Worker 地址
+      workerUrl: statsWorkerUrl
     })
   ],
   head: [

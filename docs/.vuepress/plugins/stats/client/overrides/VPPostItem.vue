@@ -8,6 +8,7 @@ import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { withBase } from 'vuepress/client'
 import { useData, useInternalLink, useTagColors } from 'vuepress-theme-plume/client'
 
+import ArticleLikeButton from '../components/ArticleLikeButton.vue'
 import PageViews from '../components/PageViews.vue'
 
 const { post, index } = defineProps<{
@@ -170,9 +171,9 @@ const coverStyles = computed(() => {
           <span class="icon vpi-clock" />
           <span>{{ createTime }}</span>
         </div>
-        <!-- Injected PageViews -->
-        <div class="page-views" style="margin-left: -10px;">
-           <PageViews :path="post.path" />
+        <div class="post-engagement">
+          <PageViews :path="post.path" />
+          <ArticleLikeButton :path="post.path" compact />
         </div>
       </div>
       <div v-if="post.excerpt" class="vp-doc excerpt" v-html="post.excerpt" />
@@ -366,6 +367,11 @@ const coverStyles = computed(() => {
   gap: 0 6px;
   align-items: center;
   justify-content: flex-start;
+}
+
+.post-item-content .post-meta .post-engagement {
+  gap: 2px;
+  margin-left: -10px;
 }
 
 .post-item-content .post-meta .tag-list .tag {
