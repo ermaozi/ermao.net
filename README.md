@@ -40,7 +40,7 @@
 |[阿达西](#阿达西)|[adaxi.net](https://adaxi.net/?r=68917)| 无 |3元 20G/月|✔|暂无|[前往](./v1/机场推荐阿达西.md)|
 |[奈云](#奈云)|[www.nyaff.cc](https://www.nyaff.cc?path=register&code=FNAu1FWB)|无|10.6元 168G/月(年付)|✔|[TG](https://t.me/v2naiun)|[前往](./v1/机场推荐奈云.md)|
 |[okanc](#okanc)|[okanc.com](https://www.okanc.com/#/register?code=spBqEcUn)| 无 |46元 328G/月|❌|[TG](https://t.me/okancup)|[前往](./v1/机场推荐okanc.md)|
-|[龙猫云](#龙猫云)|[lmspeed.co](https://ermaozi01.lmvipaff03.cc/register?aff=aOkm2wPW)| 无 |15元 100G/月|❌|[TG](https://t.me/totoro_clouds)|[前往](./v1/机场推荐龙猫云.md)|
+|[龙猫云](#龙猫云)|[ermaozi01.lmvipaff.com](https://ermaozi01.lmvipaff.com/register?aff=aOkm2wPW)| 无 |15元 100G/月|❌|[TG](https://t.me/totoro_clouds)|[前往](./v1/机场推荐龙猫云.md)|
 |[闪狐云](#闪狐云)|[flashfox.cc](https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv)| 无 |20元 120G/月|❌|[TG](https://t.me/flashfoxcloud)|[前往](./v1/机场推荐闪狐云.md)|
 |[灯塔cloud](#灯塔cloud)|[www.dengta.cloud](https://www.dengta.cloud/#/register?code=n4jB4z5R)| 无 |10元 100G/月|❌|[TG](https://t.me/+xBRgJGSBcNdlNWJl)|[前往](./v1/机场推荐灯塔cloud.md)|
 |[百变小樱](#百变小樱)|[www.bbxy88.xyz](https://www.bbxy88.xyz/v2/register?code=WuuD)| 无 | 15元 100G/30天|❌|[TG](https://t.me/+IugiUXlyYqgyNjE0)|[前往](./v1/机场推荐百变小樱.md)|
@@ -572,7 +572,7 @@ okanc机场是一个新机场，但是与奈云同宗同源，有奈云的技术
 
 ### 龙猫云
 
-龙猫云官网地址：[lmspeed.co](https://ermaozi01.lmvipaff03.cc/register?aff=aOkm2wPW)
+龙猫云官网地址：[ermaozi01.lmvipaff.com](https://ermaozi01.lmvipaff.com/register?aff=aOkm2wPW)
 
 邀请码：aOkm2wPW
 

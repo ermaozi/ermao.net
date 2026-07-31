@@ -3538,7 +3538,7 @@ export const airportSources: AirportSource[] = [
     name: '龙猫云',
     description: '超高性价比，节点质量高，客服实时在线，晚高峰不限速，不限制设备。IPLC深港、沪美、沪日专线，流媒体完美解锁（包括Netflix , Disney+, HBO等） 完美解锁ChatGPT、Gemini、Copilot 支持Tiktok本土短视频运营和直播',
     rank: 26,
-    officialHref: 'https://ermaozi01.lmvipaff03.cc/register?aff=aOkm2wPW',
+    officialHref: 'https://ermaozi01.lmvipaff.com/register?aff=aOkm2wPW',
     universalSubscription: true,
     minPlanText: '15元 100G/月',
     hasOneTimePackage: false,
