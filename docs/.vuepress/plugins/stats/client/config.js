@@ -4,6 +4,7 @@ import PageViews from './components/PageViews.vue'
 import PopularPostsRoot from './components/PopularPostsRoot.vue'
 import StatsLayout from './layouts/StatsLayout.vue'
 import FullStatsLayout from './layouts/FullStatsLayout.vue'
+import { canonicalizeStatsPath } from './stats-path.js'
 
 const resolveWorkerUrl = () => {
   // @ts-ignore
@@ -16,7 +17,7 @@ const resolveWorkerUrl = () => {
   return workerUrl
 }
 
-const normalizePath = (path) => path?.split('#')[0] || ''
+const normalizePath = canonicalizeStatsPath
 
 export default defineClientConfig({
   layouts: {

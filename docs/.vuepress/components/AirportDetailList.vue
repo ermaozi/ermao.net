@@ -1,38 +1,75 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useLang } from 'vuepress/client'
 import { airportRanking, type AirportBoolean } from '../data/airports'
+import { localizeAirportRecord } from '../data/airports-i18n'
 import AirportPlanTable from './AirportPlanTable.vue'
 
+const lang = useLang()
+const isEnglish = computed(() => lang.value?.startsWith('en'))
+const airports = computed(() =>
+  airportRanking.map(item => isEnglish.value ? localizeAirportRecord(item) : item),
+)
+
 const boolText = (value: AirportBoolean) => {
-  if (value === true) return '是'
-  if (value === false) return '否'
-  return '待补'
+  if (value === true) return isEnglish.value ? 'Yes' : '是'
+  if (value === false) return isEnglish.value ? 'No' : '否'
+  return isEnglish.value ? 'Unknown' : '待补'
 }
+
+const localizedHref = (href?: string) =>
+  href && isEnglish.value && href.startsWith('/') && !href.startsWith('/en/')
+    ? `/en${href}`
+    : href
+
+const labels = computed(() => isEnglish.value
+  ? {
+      section: 'Provider summaries and plan prices',
+      meta: 'Provider details',
+      official: 'Official site',
+      minimum: 'Lowest listed plan',
+      universal: 'Standard subscription',
+      nonExpiring: 'Non-expiring plan',
+      group: 'Telegram group',
+      review: 'Full review',
+    }
+  : {
+      section: '机场详细简介与套餐价格',
+      meta: '机场基础信息',
+      official: '官网地址',
+      minimum: '最低订阅',
+      universal: '通用订阅',
+      nonExpiring: '不限时',
+      group: 'TG 群组',
+      review: '详细评测',
+    },
+)
 </script>
 
 <template>
-  <section class="airport-detail-list" aria-label="机场详细简介与套餐价格">
-    <article v-for="item in airportRanking" :key="item.id" class="airport-detail-item">
+  <section class="airport-detail-list" :aria-label="labels.section">
+    <article v-for="item in airports" :key="item.id" class="airport-detail-item">
       <h3 :id="item.id">
         <span class="airport-detail-rank">{{ item.rank }}</span>
         {{ item.name }}
       </h3>
 
-      <div class="airport-detail-meta" aria-label="机场基础信息">
+      <div class="airport-detail-meta" :aria-label="labels.meta">
         <a
           :href="item.officialHref"
           target="_blank"
           rel="sponsored nofollow noopener"
-        >官网地址</a>
-        <span>最低订阅：{{ item.minPlanText }}</span>
-        <span>通用订阅：{{ boolText(item.universalSubscription) }}</span>
-        <span>不限时：{{ boolText(item.hasOneTimePackage) }}</span>
+        >{{ labels.official }}</a>
+        <span>{{ labels.minimum }}: {{ item.minPlanText }}</span>
+        <span>{{ labels.universal }}: {{ boolText(item.universalSubscription) }}</span>
+        <span>{{ labels.nonExpiring }}: {{ boolText(item.hasOneTimePackage) }}</span>
         <a
           v-if="item.telegramHref"
           :href="item.telegramHref"
           target="_blank"
           rel="nofollow noopener"
-        >TG 群组</a>
-        <a v-if="item.reviewHref" :href="item.reviewHref">详细评测</a>
+        >{{ labels.group }}</a>
+        <a v-if="item.reviewHref" :href="localizedHref(item.reviewHref)">{{ labels.review }}</a>
       </div>
 
       <p class="airport-detail-description">

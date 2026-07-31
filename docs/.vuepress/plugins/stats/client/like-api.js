@@ -1,3 +1,5 @@
+import { canonicalizeStatsPath } from './stats-path.js'
+
 const VISITOR_STORAGE_KEY = 'ermao_like_visitor_v1'
 const statusRequests = new Map()
 
@@ -74,8 +76,9 @@ const parseResponse = async (response) => {
 }
 
 export const getLikeStatus = (path, force = false) => {
+  path = canonicalizeStatsPath(path)
   const workerUrl = resolveWorkerUrl()
-  if (!workerUrl) return Promise.reject(new Error('点赞服务地址未配置'))
+  if (!workerUrl || !path) return Promise.reject(new Error('点赞服务地址未配置'))
   if (!force && statusRequests.has(path)) return statusRequests.get(path)
 
   const request = fetch(
@@ -98,8 +101,9 @@ export const getLikeStatus = (path, force = false) => {
 }
 
 const updateLike = async (path, method) => {
+  path = canonicalizeStatsPath(path)
   const workerUrl = resolveWorkerUrl()
-  if (!workerUrl) throw new Error('点赞服务地址未配置')
+  if (!workerUrl || !path) throw new Error('点赞服务地址未配置')
 
   const response = await fetch(`${workerUrl}/api/likes`, {
     method,

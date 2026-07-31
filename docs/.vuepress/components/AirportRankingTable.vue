@@ -1,10 +1,19 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useLang } from 'vuepress/client'
 import { airportRanking, type AirportBoolean } from '../data/airports'
+import { localizeAirportRecord } from '../data/airports-i18n'
+
+const lang = useLang()
+const isEnglish = computed(() => lang.value?.startsWith('en'))
+const airports = computed(() =>
+  airportRanking.map(item => isEnglish.value ? localizeAirportRecord(item) : item),
+)
 
 const boolText = (value: AirportBoolean) => {
   if (value === true) return '✔'
   if (value === false) return '✘'
-  return '待补'
+  return isEnglish.value ? 'Unknown' : '待补'
 }
 
 const boolClass = (value: AirportBoolean) => ({
@@ -16,8 +25,43 @@ const boolClass = (value: AirportBoolean) => ({
 const changeClass = (value?: string) => ({
   'is-up': value?.startsWith('↑'),
   'is-down': value?.startsWith('↓'),
-  'is-new': value === '新上',
+  'is-new': value === '新上' || value === 'New',
 })
+
+const changeText = (value?: string) =>
+  isEnglish.value && value === '新上' ? 'New' : value || '-'
+
+const localizedHref = (href?: string) =>
+  href && isEnglish.value && href.startsWith('/') && !href.startsWith('/en/')
+    ? `/en${href}`
+    : href
+
+const labels = computed(() => isEnglish.value
+  ? {
+      name: 'Provider',
+      official: 'Website',
+      universal: 'Standard subscription',
+      minimum: 'Lowest listed plan',
+      nonExpiring: 'Non-expiring',
+      group: 'Group',
+      details: 'Details',
+      change: 'Change',
+      none: 'None',
+      visit: 'View',
+    }
+  : {
+      name: '机场名称',
+      official: '官网',
+      universal: '通用订阅',
+      minimum: '最便宜订阅',
+      nonExpiring: '不限时',
+      group: '群组',
+      details: '详情',
+      change: '变化',
+      none: '暂无',
+      visit: '前往',
+    },
+)
 </script>
 
 <template>
@@ -35,58 +79,58 @@ const changeClass = (value?: string) => ({
       </colgroup>
       <thead>
         <tr>
-          <th>机场名称</th>
-          <th>官网</th>
-          <th>通用订阅</th>
-          <th>最便宜订阅</th>
-          <th>不限时</th>
-          <th>群组</th>
-          <th>详情</th>
-          <th>变化</th>
+          <th>{{ labels.name }}</th>
+          <th>{{ labels.official }}</th>
+          <th>{{ labels.universal }}</th>
+          <th>{{ labels.minimum }}</th>
+          <th>{{ labels.nonExpiring }}</th>
+          <th>{{ labels.group }}</th>
+          <th>{{ labels.details }}</th>
+          <th>{{ labels.change }}</th>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="item in airportRanking" :key="item.id">
-          <td class="airport-ranking-name" data-label="机场名称">
+        <tr v-for="item in airports" :key="item.id">
+          <td class="airport-ranking-name" :data-label="labels.name">
             <span class="airport-ranking-rank">{{ item.rank }}</span>
             <a :href="`#${item.id}`">{{ item.name }}</a>
           </td>
-          <td class="airport-ranking-link" data-label="官网">
+          <td class="airport-ranking-link" :data-label="labels.official">
             <a
               :href="item.officialHref"
               target="_blank"
               rel="sponsored nofollow noopener"
-            >官网</a>
+            >{{ labels.official }}</a>
           </td>
-          <td class="airport-ranking-center" data-label="通用订阅">
+          <td class="airport-ranking-center" :data-label="labels.universal">
             <span class="airport-ranking-bool" :class="boolClass(item.universalSubscription)">
               {{ boolText(item.universalSubscription) }}
             </span>
           </td>
-          <td class="airport-ranking-plan" data-label="最便宜订阅">
+          <td class="airport-ranking-plan" :data-label="labels.minimum">
             {{ item.minPlanText }}
           </td>
-          <td class="airport-ranking-center" data-label="不限时">
+          <td class="airport-ranking-center" :data-label="labels.nonExpiring">
             <span class="airport-ranking-bool" :class="boolClass(item.hasOneTimePackage)">
               {{ boolText(item.hasOneTimePackage) }}
             </span>
           </td>
-          <td class="airport-ranking-link" data-label="群组">
+          <td class="airport-ranking-link" :data-label="labels.group">
             <a
               v-if="item.telegramHref"
               :href="item.telegramHref"
               target="_blank"
               rel="nofollow noopener"
             >TG</a>
-            <span v-else class="airport-ranking-muted">暂无</span>
+            <span v-else class="airport-ranking-muted">{{ labels.none }}</span>
           </td>
-          <td class="airport-ranking-link" data-label="详情">
-            <a v-if="item.reviewHref" :href="item.reviewHref">前往</a>
-            <span v-else class="airport-ranking-muted">暂无</span>
+          <td class="airport-ranking-link" :data-label="labels.details">
+            <a v-if="item.reviewHref" :href="localizedHref(item.reviewHref)">{{ labels.visit }}</a>
+            <span v-else class="airport-ranking-muted">{{ labels.none }}</span>
           </td>
-          <td data-label="变化">
+          <td :data-label="labels.change">
             <span class="airport-ranking-change" :class="changeClass(item.rankChangeLabel)">
-              {{ item.rankChangeLabel || '-' }}
+              {{ changeText(item.rankChangeLabel) }}
             </span>
           </td>
         </tr>

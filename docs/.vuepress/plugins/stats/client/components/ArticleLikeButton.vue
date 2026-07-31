@@ -1,6 +1,8 @@
 <script setup>
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { useLang } from 'vuepress/client'
 import { getLikeStatus, removeLike, submitLike } from '../like-api.js'
+import { canonicalizeStatsPath } from '../stats-path.js'
 
 const props = defineProps({
   path: {
@@ -21,6 +23,10 @@ const errorText = ref('')
 const buttonRef = ref(null)
 const heartBursts = ref([])
 const celebrating = ref(false)
+const lang = useLang()
+const isEnglish = computed(() => lang.value?.startsWith('en'))
+const statsPath = computed(() => canonicalizeStatsPath(props.path))
+const t = (zh, en) => isEnglish.value ? en : zh
 
 let mounted = false
 let requestVersion = 0
@@ -31,14 +37,14 @@ const heartColors = ['#ff4f73', '#ff6b8b', '#f43f5e', '#fb7185', '#ff8fab']
 
 const formattedCount = computed(() => {
   if (count.value === null) return '—'
-  return new Intl.NumberFormat('zh-CN', { notation: 'compact', maximumFractionDigits: 1 })
+  return new Intl.NumberFormat(lang.value || 'zh-CN', { notation: 'compact', maximumFractionDigits: 1 })
     .format(Number(count.value) || 0)
 })
 
 const buttonTitle = computed(() => {
   if (errorText.value) return errorText.value
-  if (likedToday.value) return '取消点赞'
-  return '喜欢这篇文章'
+  if (likedToday.value) return t('取消点赞', 'Remove like')
+  return t('喜欢这篇文章', 'Like this article')
 })
 
 const scheduleNextDayRefresh = () => {
@@ -62,17 +68,18 @@ const applyStatus = (data) => {
 }
 
 const loadStatus = async (force = false) => {
-  if (!mounted || !props.path) return
+  if (!mounted || !statsPath.value) return
 
+  const path = statsPath.value
   const version = ++requestVersion
   loading.value = true
   errorText.value = ''
   try {
-    const data = await getLikeStatus(props.path, force)
-    if (mounted && version === requestVersion) applyStatus(data)
+    const data = await getLikeStatus(path, force)
+    if (mounted && version === requestVersion && statsPath.value === path) applyStatus(data)
   } catch {
     if (mounted && version === requestVersion) {
-      errorText.value = '点赞数据暂时无法加载'
+      errorText.value = t('点赞数据暂时无法加载', 'Like data is temporarily unavailable')
     }
   } finally {
     if (mounted && version === requestVersion) loading.value = false
@@ -128,9 +135,9 @@ const launchHeartBurst = (origin) => {
 }
 
 const mutateLike = async (removing, event) => {
-  if (submitting.value || loading.value || !props.path) return
+  if (submitting.value || loading.value || !statsPath.value) return
 
-  const path = props.path
+  const path = statsPath.value
   const animationOrigin = removing ? null : getAnimationOrigin(event)
   const previousStatus = {
     count: Number(count.value || 0),
@@ -152,11 +159,13 @@ const mutateLike = async (removing, event) => {
     const data = removing
       ? await removeLike(path)
       : await submitLike(path)
-    if (mounted && props.path === path) applyStatus(data)
+    if (mounted && statsPath.value === path) applyStatus(data)
   } catch (error) {
-    if (mounted && props.path === path) {
+    if (mounted && statsPath.value === path) {
       applyStatus(previousStatus)
-      errorText.value = error?.message || `${removing ? '取消点赞' : '点赞'}失败，请稍后重试`
+      errorText.value = error?.message || (removing
+        ? t('取消点赞失败，请稍后重试', 'Could not remove the like. Try again later.')
+        : t('点赞失败，请稍后重试', 'Could not submit the like. Try again later.'))
     }
   } finally {
     submitting.value = false
@@ -179,7 +188,7 @@ const likeFromArticleDoubleClick = (event) => {
 }
 
 const syncLike = (event) => {
-  if (event.detail?.path === props.path) applyStatus(event.detail)
+  if (canonicalizeStatsPath(event.detail?.path) === statsPath.value) applyStatus(event.detail)
 }
 
 onMounted(() => {
@@ -189,7 +198,7 @@ onMounted(() => {
   loadStatus()
 })
 
-watch(() => props.path, () => {
+watch(statsPath, () => {
   if (mounted) loadStatus()
 })
 
@@ -214,7 +223,9 @@ onBeforeUnmount(() => {
       type="button"
       class="like-button"
       :disabled="loading || submitting"
-      :aria-label="`${likedToday ? '取消点赞' : '点赞'}，当前 ${count ?? 0} 个赞`"
+      :aria-label="isEnglish
+        ? `${likedToday ? 'Remove like' : 'Like'}, ${count ?? 0} likes`
+        : `${likedToday ? '取消点赞' : '点赞'}，当前 ${count ?? 0} 个赞`"
       :aria-pressed="likedToday"
       :title="buttonTitle"
       @click.stop="toggleLike"

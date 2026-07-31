@@ -1,18 +1,38 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useLang } from 'vuepress/client'
 import { airportRisks } from '../data/airports'
+
+const lang = useLang()
+const isEnglish = computed(() => lang.value?.startsWith('en'))
+const sectionLabel = computed(() => isEnglish.value ? 'Proxy-service risk alerts' : '机场风险预警')
+const detailsLabel = computed(() => isEnglish.value ? 'View risk alert' : '查看风险预警')
+const risks = computed(() => isEnglish.value
+  ? airportRisks.map(item => ({
+      ...item,
+      name: item.name === '隐云' ? 'Yinyun' : 'Proxy service',
+      status: 'High-risk watch',
+      description: 'Yinyun shares an operator with Naiyun, CAC, and OKAC. Related services have shown multiple failures. Stop new purchases and renewals and read the full risk notice.',
+    }))
+  : airportRisks,
+)
+const localizedHref = (href: string) =>
+  isEnglish.value && href.startsWith('/') && !href.startsWith('/en/')
+    ? `/en${href}`
+    : href
 </script>
 
 <template>
-  <section class="airport-risk-grid" aria-label="机场风险预警">
-    <article v-for="item in airportRisks" :key="item.name" class="airport-risk-card">
+  <section class="airport-risk-grid" :aria-label="sectionLabel">
+    <article v-for="item in risks" :key="item.name" class="airport-risk-card">
       <div class="airport-risk-label">
         {{ item.status }}
       </div>
       <h3>
-        <a :href="item.href">{{ item.name }}</a>
+        <a :href="localizedHref(item.href)">{{ item.name }}</a>
       </h3>
       <p>{{ item.description }}</p>
-      <a class="airport-risk-link" :href="item.href">查看风险预警</a>
+      <a class="airport-risk-link" :href="localizedHref(item.href)">{{ detailsLabel }}</a>
     </article>
   </section>
 </template>

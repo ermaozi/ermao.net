@@ -7,6 +7,8 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "audit:site": "node scripts/audit_site.mjs",
+    "i18n:status": "node scripts/i18n/status.mjs --write",
+    "i18n:check": "node scripts/i18n/status.mjs --check",
     "airport:check": "tsx scripts/airports/check.ts",
     "airport:extract-plans": "tsx scripts/airports/extract-plans.ts",
     "airport:sync-plans": "tsx scripts/airports/sync-plans.ts",

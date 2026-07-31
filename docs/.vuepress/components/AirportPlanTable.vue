@@ -1,16 +1,48 @@
 <script setup lang="ts">
 import { computed } from 'vue'
+import { useLang } from 'vuepress/client'
 import { airportRecords, type AirportPlan } from '../data/airports'
+import { localizeAirportRecord } from '../data/airports-i18n'
 
 const props = defineProps<{
   airportId: string
 }>()
 
-const airport = computed(() =>
+const sourceAirport = computed(() =>
   airportRecords.find(item => item.id === props.airportId || item.name === props.airportId),
 )
 
+const lang = useLang()
+const isEnglish = computed(() => lang.value?.startsWith('en'))
+const airport = computed(() =>
+  sourceAirport.value && isEnglish.value
+    ? localizeAirportRecord(sourceAirport.value)
+    : sourceAirport.value,
+)
 const plans = computed(() => airport.value?.plans ?? [])
+const fallback = computed(() => isEnglish.value ? 'See official site' : '以官网为准')
+const labels = computed(() => isEnglish.value
+  ? {
+      plan: 'Plan',
+      price: 'Price',
+      traffic: 'Data',
+      cycle: 'Billing/type',
+      features: 'Features',
+      purchase: 'Purchase',
+      recommended: 'Recommended',
+      empty: 'Plan prices are not yet available. Verify the current checkout page before purchasing.',
+    }
+  : {
+      plan: '套餐',
+      price: '价格',
+      traffic: '流量',
+      cycle: '周期/类型',
+      features: '特点',
+      purchase: '购买',
+      recommended: '推荐',
+      empty: '套餐价格待补充，购买前请以官网结算页为准。',
+    },
+)
 
 const planPrice = (plan: AirportPlan) => {
   if (plan.priceText) return plan.priceText
@@ -18,7 +50,7 @@ const planPrice = (plan: AirportPlan) => {
     const currency = plan.currency === 'USD' ? '$' : '¥'
     return `${currency}${plan.price}${plan.period ? `/${plan.period}` : ''}`
   }
-  return '以官网为准'
+  return fallback.value
 }
 
 const cleanFeature = (value: string) =>
@@ -42,7 +74,7 @@ const planMeta = (plan: AirportPlan) => {
     .filter(item => !/以官网|取决于节点|购买|续费|手动重置/.test(item))
 
   const uniqueItems = [...new Set(items.map(trimLabel))]
-  return uniqueItems.slice(0, 2).join('；') || plan.type || '以官网为准'
+  return uniqueItems.slice(0, 2).join(isEnglish.value ? '; ' : '；') || plan.type || fallback.value
 }
 </script>
 
@@ -51,12 +83,12 @@ const planMeta = (plan: AirportPlan) => {
     <table class="airport-plan-table">
       <thead>
         <tr>
-          <th>套餐</th>
-          <th>价格</th>
-          <th>流量</th>
-          <th>周期/类型</th>
-          <th>特点</th>
-          <th>购买</th>
+          <th>{{ labels.plan }}</th>
+          <th>{{ labels.price }}</th>
+          <th>{{ labels.traffic }}</th>
+          <th>{{ labels.cycle }}</th>
+          <th>{{ labels.features }}</th>
+          <th>{{ labels.purchase }}</th>
         </tr>
       </thead>
       <tbody>
@@ -65,32 +97,32 @@ const planMeta = (plan: AirportPlan) => {
           :key="plan.name || plan.text"
           :class="{ 'is-recommended': plan.recommended }"
         >
-          <td class="plan-name" data-label="套餐">
+          <td class="plan-name" :data-label="labels.plan">
             <strong>{{ plan.name || plan.text }}</strong>
-            <span v-if="plan.recommended" class="plan-badge">推荐</span>
+            <span v-if="plan.recommended" class="plan-badge">{{ labels.recommended }}</span>
           </td>
-          <td data-label="价格">{{ planPrice(plan) }}</td>
-          <td data-label="流量">{{ plan.traffic || '以官网为准' }}</td>
-          <td data-label="周期/类型">
-            <span>{{ plan.billingCycle || '以官网为准' }}</span>
+          <td :data-label="labels.price">{{ planPrice(plan) }}</td>
+          <td :data-label="labels.traffic">{{ plan.traffic || fallback }}</td>
+          <td :data-label="labels.cycle">
+            <span>{{ plan.billingCycle || fallback }}</span>
             <small v-if="plan.type">{{ plan.type }}</small>
           </td>
-          <td class="plan-meta" data-label="特点">
+          <td class="plan-meta" :data-label="labels.features">
             {{ planMeta(plan) }}
           </td>
-          <td data-label="购买">
+          <td :data-label="labels.purchase">
             <a
               :href="plan.purchaseHref || airport.officialHref"
               target="_blank"
               rel="sponsored nofollow noopener"
-            >购买</a>
+            >{{ labels.purchase }}</a>
           </td>
         </tr>
       </tbody>
     </table>
   </div>
   <p v-else class="airport-plan-empty">
-    套餐价格待补充，购买前请以官网结算页为准。
+    {{ labels.empty }}
   </p>
 </template>
 

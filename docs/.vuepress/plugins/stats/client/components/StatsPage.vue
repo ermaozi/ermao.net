@@ -1,9 +1,9 @@
 <template>
-  <section class="stats-dashboard" aria-label="网站公开访问数据">
+  <section class="stats-dashboard" :aria-label="pick('网站公开访问数据', 'Public site traffic data')">
     <div class="overview-card">
       <section class="total-panel" aria-labelledby="stats-total-title">
         <span class="eyebrow">PUBLIC INSIGHTS</span>
-        <h2 id="stats-total-title">当前访问量</h2>
+        <h2 id="stats-total-title">{{ pick('当前访问量', 'Current visits') }}</h2>
 
         <div class="total-orbit" :class="{ 'is-loading': loading }" aria-live="polite">
           <svg viewBox="0 0 200 200" aria-hidden="true">
@@ -13,7 +13,7 @@
           </svg>
           <div class="total-value">
             <strong>{{ formattedTotal }}</strong>
-            <span>次访问</span>
+            <span>{{ pick('次访问', 'visits') }}</span>
           </div>
         </div>
 
@@ -26,7 +26,7 @@
           <span aria-hidden="true">{{ comparisonSummary.icon }}</span>
           <div>
             <strong>{{ comparisonSummary.label }}</strong>
-            <small>上周期 {{ formattedPreviousTotal }} 次访问</small>
+            <small>{{ pick('上周期', 'Previous period') }} {{ formattedPreviousTotal }} {{ pick('次访问', 'visits') }}</small>
           </div>
         </div>
 
@@ -34,21 +34,21 @@
           <i aria-hidden="true" />
           {{ currentRangeLabel }}
         </span>
-        <p>公开展示站内访问趋势，不收集或呈现可识别个人身份的信息。</p>
+        <p>{{ pick('公开展示站内访问趋势，不收集或呈现可识别个人身份的信息。', 'Public traffic trends are shown without collecting or displaying personally identifiable information.') }}</p>
       </section>
 
       <section class="insights-panel" aria-labelledby="stats-insights-title">
         <div class="panel-heading">
           <div>
             <span class="eyebrow">DATA PULSE</span>
-            <h2 id="stats-insights-title">数据概览</h2>
+            <h2 id="stats-insights-title">{{ pick('数据概览', 'Overview') }}</h2>
           </div>
           <button
             type="button"
             class="icon-button"
             :disabled="loading"
-            aria-label="刷新统计数据"
-            title="刷新统计数据"
+            :aria-label="pick('刷新统计数据', 'Refresh statistics')"
+            :title="pick('刷新统计数据', 'Refresh statistics')"
             @click="refreshCurrent"
           >
             <span :class="{ spinning: loading }" aria-hidden="true">↻</span>
@@ -72,9 +72,9 @@
             {{ serviceState.label }}
           </span>
           <time v-if="lastUpdated" :datetime="lastUpdated.toISOString()">
-            更新于 {{ lastUpdatedLabel }}
+            {{ pick('更新于', 'Updated at') }} {{ lastUpdatedLabel }}
           </time>
-          <span v-else>等待首次同步</span>
+          <span v-else>{{ pick('等待首次同步', 'Waiting for the first sync') }}</span>
         </div>
       </section>
     </div>
@@ -83,13 +83,13 @@
       <div class="filter-heading">
         <div>
           <span class="eyebrow">TIME RANGE</span>
-          <h2 id="stats-filter-title">选择统计范围</h2>
+          <h2 id="stats-filter-title">{{ pick('选择统计范围', 'Select a time range') }}</h2>
         </div>
         <span class="range-badge">{{ currentRangeLabel }}</span>
       </div>
 
       <div class="filter-controls">
-        <div class="period-switch" aria-label="快捷时间范围">
+        <div class="period-switch" :aria-label="pick('快捷时间范围', 'Quick time ranges')">
           <button
             v-for="period in periods"
             :key="period.value"
@@ -105,12 +105,12 @@
 
         <form class="date-picker-group" @submit.prevent="fetchCustom">
           <label>
-            <span>开始日期</span>
+            <span>{{ pick('开始日期', 'Start date') }}</span>
             <input v-model="startDate" type="date" :max="maxDate" />
           </label>
           <span class="date-separator" aria-hidden="true">→</span>
           <label>
-            <span>结束日期</span>
+            <span>{{ pick('结束日期', 'End date') }}</span>
             <input v-model="endDate" type="date" :max="maxDate" />
           </label>
           <button
@@ -118,7 +118,7 @@
             class="query-button"
             :disabled="loading || !startDate || !endDate"
           >
-            查询
+            {{ pick('查询', 'Apply') }}
           </button>
         </form>
       </div>
@@ -127,15 +127,15 @@
     <div v-if="error && hasLoaded" class="inline-notice" role="alert">
       <span aria-hidden="true">!</span>
       <p>{{ error }}</p>
-      <button type="button" @click="refreshCurrent">重新加载</button>
+      <button type="button" @click="refreshCurrent">{{ pick('重新加载', 'Reload') }}</button>
     </div>
 
     <section v-if="loading && !hasLoaded" class="loading-state" aria-live="polite">
       <div class="loading-heading">
         <span class="loading-mark" aria-hidden="true" />
         <div>
-          <strong>正在汇总公开数据</strong>
-          <span>连接统计服务并生成图表…</span>
+          <strong>{{ pick('正在汇总公开数据', 'Aggregating public data') }}</strong>
+          <span>{{ pick('连接统计服务并生成图表…', 'Connecting to the statistics service and generating charts…') }}</span>
         </div>
       </div>
       <div class="skeleton-grid">
@@ -150,10 +150,10 @@
       <span class="error-icon" aria-hidden="true">!</span>
       <div>
         <span class="eyebrow">CONNECTION ERROR</span>
-        <h2>统计服务暂时不可用</h2>
+        <h2>{{ pick('统计服务暂时不可用', 'Statistics service temporarily unavailable') }}</h2>
         <p>{{ error }}</p>
       </div>
-      <button type="button" class="secondary-button" @click="refreshCurrent">重新请求</button>
+      <button type="button" class="secondary-button" @click="refreshCurrent">{{ pick('重新请求', 'Try again') }}</button>
     </section>
 
     <div v-else class="stats-content" :class="{ 'is-refreshing': loading }">
@@ -161,10 +161,10 @@
         <div class="chart-heading">
           <div>
             <span class="eyebrow">TRAFFIC TREND</span>
-            <h2 id="trend-title">访问趋势</h2>
+            <h2 id="trend-title">{{ pick('访问趋势', 'Traffic trend') }}</h2>
             <p>{{ trendDescription }}</p>
           </div>
-          <span class="chart-badge">{{ trendPointCount }} 个数据点</span>
+          <span class="chart-badge">{{ trendPointCount }} {{ pick('个数据点', 'data points') }}</span>
         </div>
         <div class="chart-container line-chart-height">
           <Line :data="lineChartData" :options="lineOptions" />
@@ -176,30 +176,30 @@
           <div class="chart-heading compact">
             <div>
               <span class="eyebrow">POPULAR CONTENT</span>
-              <h2 id="pages-title">热门页面</h2>
-              <p>点击柱状条可打开对应内容。</p>
+              <h2 id="pages-title">{{ pick('热门页面', 'Popular pages') }}</h2>
+              <p>{{ pick('点击柱状条可打开对应内容。', 'Select a bar to open the corresponding page.') }}</p>
             </div>
             <span class="chart-index">01</span>
           </div>
           <div v-if="hasPages" class="chart-container bar-chart-height">
             <Bar :data="pagesChartData" :options="barOptions" />
           </div>
-          <div v-else class="empty-chart">当前范围暂无页面访问记录</div>
+          <div v-else class="empty-chart">{{ pick('当前范围暂无页面访问记录', 'No page visits in this range') }}</div>
         </section>
 
         <section class="chart-card" aria-labelledby="refs-title">
           <div class="chart-heading compact">
             <div>
               <span class="eyebrow">DISCOVERY CHANNELS</span>
-              <h2 id="refs-title">访客来源</h2>
-              <p>了解读者从搜索或其他站点进入的路径。</p>
+              <h2 id="refs-title">{{ pick('访客来源', 'Referrers') }}</h2>
+              <p>{{ pick('了解读者从搜索或其他站点进入的路径。', 'See how readers arrive from search and other sites.') }}</p>
             </div>
             <span class="chart-index">02</span>
           </div>
           <div v-if="hasRefs" class="chart-container bar-chart-height">
             <Bar :data="refsChartData" :options="refsBarOptions" />
           </div>
-          <div v-else class="empty-chart">当前范围暂无来源记录</div>
+          <div v-else class="empty-chart">{{ pick('当前范围暂无来源记录', 'No referrer records in this range') }}</div>
         </section>
       </div>
 
@@ -208,38 +208,38 @@
           <div class="chart-heading compact">
             <div>
               <span class="eyebrow">GLOBAL REACH</span>
-              <h2 id="country-title">国家与地区</h2>
-              <p>按公开的国家或地区代码汇总。</p>
+              <h2 id="country-title">{{ pick('国家与地区', 'Countries and regions') }}</h2>
+              <p>{{ pick('按公开的国家或地区代码汇总。', 'Aggregated by public country or region code.') }}</p>
             </div>
             <span class="chart-index">03</span>
           </div>
           <div v-if="hasCountries" class="chart-container pie-container">
             <Doughnut :data="countryChartData" :options="pieOptions" />
           </div>
-          <div v-else class="empty-chart">当前范围暂无地区记录</div>
+          <div v-else class="empty-chart">{{ pick('当前范围暂无地区记录', 'No region records in this range') }}</div>
         </section>
 
         <section class="chart-card" aria-labelledby="ua-title">
           <div class="chart-heading compact">
             <div>
               <span class="eyebrow">CLIENT MIX</span>
-              <h2 id="ua-title">浏览器终端</h2>
-              <p>展示聚合后的浏览器类型分布。</p>
+              <h2 id="ua-title">{{ pick('浏览器终端', 'Browser clients') }}</h2>
+              <p>{{ pick('展示聚合后的浏览器类型分布。', 'Aggregated distribution of browser types.') }}</p>
             </div>
             <span class="chart-index">04</span>
           </div>
           <div v-if="hasUserAgents" class="chart-container pie-container">
             <Doughnut :data="uaChartData" :options="pieOptions" />
           </div>
-          <div v-else class="empty-chart">当前范围暂无终端记录</div>
+          <div v-else class="empty-chart">{{ pick('当前范围暂无终端记录', 'No browser records in this range') }}</div>
         </section>
       </div>
 
       <aside class="privacy-note">
         <span class="privacy-icon" aria-hidden="true">⌁</span>
         <div>
-          <strong>关于这些数据</strong>
-          <p>页面仅展示聚合后的访问次数、内容路径、来源域名、国家或地区及浏览器类型，不在此页面公开单个访客的 IP、设备标识或访问轨迹。</p>
+          <strong>{{ pick('关于这些数据', 'About this data') }}</strong>
+          <p>{{ pick('页面仅展示聚合后的访问次数、内容路径、来源域名、国家或地区及浏览器类型，不在此页面公开单个访客的 IP、设备标识或访问轨迹。', 'This page shows only aggregated visit counts, content paths, referrer domains, countries or regions, and browser types. It does not publish an individual visitor’s IP address, device identifier, or browsing trail.') }}</p>
         </div>
       </aside>
     </div>
@@ -248,6 +248,7 @@
 
 <script setup>
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
+import { useLang } from 'vuepress/client'
 import { useRouter } from 'vue-router'
 // @ts-ignore
 import { pageMap } from '@stats/page-map'
@@ -306,17 +307,20 @@ const startDate = ref('')
 const endDate = ref('')
 const isCustomMode = ref(false)
 const router = useRouter()
+const lang = useLang()
 const routeMap = ref(new Map())
+const isEnglish = computed(() => String(lang.value || '').toLowerCase().startsWith('en'))
+const pick = (zh, en) => isEnglish.value ? en : zh
 
 let activeRequest = null
 let themeObserver = null
 
-const periods = [
-  { label: '24 小时', value: '24h' },
-  { label: '7 天', value: '7d' },
-  { label: '30 天', value: '30d' },
-  { label: '1 年', value: '1y' },
-]
+const periods = computed(() => [
+  { label: pick('24 小时', '24 hours'), value: '24h' },
+  { label: pick('7 天', '7 days'), value: '7d' },
+  { label: pick('30 天', '30 days'), value: '30d' },
+  { label: pick('1 年', '1 year'), value: '1y' },
+])
 const COMPARABLE_PERIODS = new Set(['24h', '7d', '30d'])
 
 const chartTheme = ref({
@@ -353,12 +357,19 @@ const safeCount = value => {
   return Number.isFinite(number) ? number : 0
 }
 
+const getCurrentLang = () => lang.value || 'zh-CN'
+
 const formatCount = value =>
-  new Intl.NumberFormat('zh-CN', { maximumFractionDigits: 0 }).format(safeCount(value))
+  new Intl.NumberFormat(getCurrentLang(), { maximumFractionDigits: 0 }).format(safeCount(value))
 
 const getPageTitle = path => {
-  if (!path) return '未知页面'
-  if (pageMap?.[path]) return pageMap[path]
+  if (!path) return pick('未知页面', 'Unknown page')
+  const displayTitle = (title, fallback) =>
+    isEnglish.value && /[\u3400-\u9fff]/u.test(String(title || ''))
+      ? fallback
+      : title
+
+  if (pageMap?.[path]) return displayTitle(pageMap[path], path)
 
   let decoded = path
   try {
@@ -368,22 +379,22 @@ const getPageTitle = path => {
     decoded = path
   }
 
-  if (pageMap?.[decoded]) return pageMap[decoded]
+  if (pageMap?.[decoded]) return displayTitle(pageMap[decoded], decoded)
 
   const cleanPath = decoded.replace(/(\.html|\/)$/, '')
-  if (pageMap?.[cleanPath]) return pageMap[cleanPath]
-  if (pageMap?.[`${cleanPath}.html`]) return pageMap[`${cleanPath}.html`]
-  if (pageMap?.[`${cleanPath}/`]) return pageMap[`${cleanPath}/`]
-  if (routeMap.value.has(path)) return routeMap.value.get(path)
+  if (pageMap?.[cleanPath]) return displayTitle(pageMap[cleanPath], decoded)
+  if (pageMap?.[`${cleanPath}.html`]) return displayTitle(pageMap[`${cleanPath}.html`], decoded)
+  if (pageMap?.[`${cleanPath}/`]) return displayTitle(pageMap[`${cleanPath}/`], decoded)
+  if (routeMap.value.has(path)) return displayTitle(routeMap.value.get(path), decoded)
 
   return decoded || path
 }
 
 const getCountryName = code => {
-  if (!code || code === 'Unknown' || code === 'XX') return '未知地区'
+  if (!code || code === 'Unknown' || code === 'XX') return pick('未知地区', 'Unknown region')
 
   try {
-    const regionNames = new Intl.DisplayNames(['zh-Hans'], { type: 'region' })
+    const regionNames = new Intl.DisplayNames([getCurrentLang()], { type: 'region' })
     return regionNames.of(code) || code
   }
   catch {
@@ -392,14 +403,14 @@ const getCountryName = code => {
 }
 
 const getRefLabel = value => {
-  if (!value) return '直接访问'
+  if (!value) return pick('直接访问', 'Direct')
 
   try {
     const url = new URL(value)
     return url.hostname.replace(/^www\./, '') || value
   }
   catch {
-    return value === 'Unknown' ? '未知来源' : value
+    return value === 'Unknown' ? pick('未知来源', 'Unknown referrer') : value
   }
 }
 
@@ -431,49 +442,49 @@ const comparisonSummary = computed(() => {
 
   if (previous === 0) {
     return current === 0
-      ? { icon: '→', label: '与上周期持平', tone: 'neutral' }
-      : { icon: '↗', label: '上周期暂无访问', tone: 'positive' }
+      ? { icon: '→', label: pick('与上周期持平', 'No change from previous period'), tone: 'neutral' }
+      : { icon: '↗', label: pick('上周期暂无访问', 'No visits in previous period'), tone: 'positive' }
   }
 
   const percentage = Math.abs(change * 100 / previous)
-  const formatted = new Intl.NumberFormat('zh-CN', {
+  const formatted = new Intl.NumberFormat(getCurrentLang(), {
     maximumFractionDigits: percentage >= 100 ? 0 : 1,
   }).format(percentage)
 
   if (change > 0) {
-    return { icon: '↑', label: `较上周期增长 ${formatted}%`, tone: 'positive' }
+    return { icon: '↑', label: pick(`较上周期增长 ${formatted}%`, `${formatted}% higher than previous period`), tone: 'positive' }
   }
   if (change < 0) {
-    return { icon: '↓', label: `较上周期下降 ${formatted}%`, tone: 'negative' }
+    return { icon: '↓', label: pick(`较上周期下降 ${formatted}%`, `${formatted}% lower than previous period`), tone: 'negative' }
   }
-  return { icon: '→', label: '与上周期持平', tone: 'neutral' }
+  return { icon: '→', label: pick('与上周期持平', 'No change from previous period'), tone: 'neutral' }
 })
 
 const trendDescription = computed(() =>
   hasComparison.value
-    ? '实线为本周期，虚线为紧邻的上一周期，时间点按相同位置对齐。'
-    : '观察当前时间范围内的访问波动与内容热度变化。',
+    ? pick('实线为本周期，虚线为紧邻的上一周期，时间点按相同位置对齐。', 'The solid line is the current period; the dashed line is the immediately preceding period aligned by relative time.')
+    : pick('观察当前时间范围内的访问波动与内容热度变化。', 'Observe traffic changes and content activity across the selected range.'),
 )
 
 const currentRangeLabel = computed(() => {
   if (isCustomMode.value && startDate.value && endDate.value) {
-    return `${startDate.value} 至 ${endDate.value}`
+    return `${startDate.value} ${pick('至', 'to')} ${endDate.value}`
   }
 
-  return periods.find(period => period.value === currentPeriod.value)?.label || '自定义范围'
+  return periods.value.find(period => period.value === currentPeriod.value)?.label || pick('自定义范围', 'Custom range')
 })
 
 const serviceState = computed(() => {
-  if (error.value) return { label: '服务连接异常', className: 'is-error' }
-  if (loading.value) return { label: '正在同步数据', className: 'is-loading' }
-  if (hasLoaded.value) return { label: '数据服务在线', className: 'is-ready' }
-  return { label: '等待连接服务', className: 'is-idle' }
+  if (error.value) return { label: pick('服务连接异常', 'Service connection error'), className: 'is-error' }
+  if (loading.value) return { label: pick('正在同步数据', 'Syncing data'), className: 'is-loading' }
+  if (hasLoaded.value) return { label: pick('数据服务在线', 'Data service online'), className: 'is-ready' }
+  return { label: pick('等待连接服务', 'Waiting for data service'), className: 'is-idle' }
 })
 
 const lastUpdatedLabel = computed(() => {
   if (!lastUpdated.value) return ''
 
-  return new Intl.DateTimeFormat('zh-CN', {
+  return new Intl.DateTimeFormat(getCurrentLang(), {
     hour: '2-digit',
     minute: '2-digit',
     second: '2-digit',
@@ -490,27 +501,27 @@ const summaryItems = computed(() => {
   return [
     {
       icon: '↗',
-      label: '热门内容',
-      value: topPage ? getPageTitle(topPage.path) : '暂无数据',
-      meta: topPage ? `${formatCount(topPage.count)} 次访问` : '等待访问记录',
+      label: pick('热门内容', 'Popular content'),
+      value: topPage ? getPageTitle(topPage.path) : pick('暂无数据', 'No data'),
+      meta: topPage ? `${formatCount(topPage.count)} ${pick('次访问', 'visits')}` : pick('等待访问记录', 'Waiting for visits'),
     },
     {
       icon: '◎',
-      label: '主要地区',
-      value: topCountry ? getCountryName(topCountry.country) : '暂无数据',
-      meta: topCountry ? `${formatCount(topCountry.count)} 次访问` : '等待地区记录',
+      label: pick('主要地区', 'Top region'),
+      value: topCountry ? getCountryName(topCountry.country) : pick('暂无数据', 'No data'),
+      meta: topCountry ? `${formatCount(topCountry.count)} ${pick('次访问', 'visits')}` : pick('等待地区记录', 'Waiting for region data'),
     },
     {
       icon: '⌘',
-      label: '主要终端',
-      value: topUa?.ua_group || '暂无数据',
-      meta: topUa ? `${formatCount(topUa.count)} 次访问` : '等待终端记录',
+      label: pick('主要终端', 'Top browser'),
+      value: topUa?.ua_group || pick('暂无数据', 'No data'),
+      meta: topUa ? `${formatCount(topUa.count)} ${pick('次访问', 'visits')}` : pick('等待终端记录', 'Waiting for browser data'),
     },
     {
       icon: '⌁',
-      label: '主要来源',
-      value: topRef ? getRefLabel(topRef.ref) : '暂无数据',
-      meta: topRef ? `${formatCount(topRef.count)} 次访问` : '等待来源记录',
+      label: pick('主要来源', 'Top referrer'),
+      value: topRef ? getRefLabel(topRef.ref) : pick('暂无数据', 'No data'),
+      meta: topRef ? `${formatCount(topRef.count)} ${pick('次访问', 'visits')}` : pick('等待来源记录', 'Waiting for referrer data'),
     },
   ]
 })
@@ -565,8 +576,11 @@ const getBucketLabel = (timestamp, resolution, includeWeekday = false) => {
   const dateLabel = `${date.getUTCMonth() + 1}-${date.getUTCDate()}`
   if (!includeWeekday) return dateLabel
 
-  const weekdays = ['周日', '周一', '周二', '周三', '周四', '周五', '周六']
-  return `${dateLabel} ${weekdays[date.getUTCDay()]}`
+  const weekday = new Intl.DateTimeFormat(getCurrentLang(), {
+    weekday: 'short',
+    timeZone: 'UTC',
+  }).format(date)
+  return `${dateLabel} ${weekday}`
 }
 
 const buildSeriesBuckets = (range, rawData, resolution, includeWeekday = false) => {
@@ -610,7 +624,7 @@ const lineChartData = computed(() => {
   )
   const datasets = [
     {
-      label: hasComparison.value ? '本周期' : '访问次数',
+      label: hasComparison.value ? pick('本周期', 'Current period') : pick('访问次数', 'Visits'),
       data: currentBuckets.map(bucket => bucket.value),
       borderColor: '#2f7f98',
       backgroundColor: 'rgba(47, 127, 152, 0.14)',
@@ -634,7 +648,7 @@ const lineChartData = computed(() => {
       includeWeekday,
     )
     datasets.push({
-      label: '上周期',
+      label: pick('上周期', 'Previous period'),
       data: currentBuckets.map((_bucket, index) => previousBuckets[index]?.value || 0),
       borderColor: chartTheme.value.muted,
       backgroundColor: 'transparent',
@@ -662,7 +676,7 @@ const pagesChartData = computed(() => {
     labels: pages.map(page => shorten(getPageTitle(page.path), 18)),
     datasets: [
       {
-        label: '访问次数',
+        label: pick('访问次数', 'Visits'),
         data: pages.map(page => safeCount(page.count)),
         backgroundColor: 'rgba(47, 127, 152, 0.86)',
         hoverBackgroundColor: '#2f9b87',
@@ -680,7 +694,7 @@ const refsChartData = computed(() => {
     labels: refs.map(ref => shorten(getRefLabel(ref.ref), 24)),
     datasets: [
       {
-        label: '访问次数',
+        label: pick('访问次数', 'Visits'),
         data: refs.map(ref => safeCount(ref.count)),
         backgroundColor: 'rgba(102, 118, 200, 0.82)',
         hoverBackgroundColor: '#2f9b87',
@@ -712,7 +726,7 @@ const countryChartData = computed(() => {
 const uaChartData = computed(() => {
   const userAgents = (stats.value.uas || []).slice(0, 10)
   return {
-    labels: userAgents.map(item => item.ua_group || '未知终端'),
+    labels: userAgents.map(item => item.ua_group || pick('未知终端', 'Unknown browser')),
     datasets: [
       {
         data: userAgents.map(item => safeCount(item.count)),
@@ -736,7 +750,7 @@ const tooltipOptions = () => ({
   cornerRadius: 9,
   displayColors: false,
   callbacks: {
-    label: context => ` ${formatCount(context.raw)} 次访问`,
+    label: context => ` ${formatCount(context.raw)} ${pick('次访问', 'visits')}`,
   },
 })
 
@@ -942,10 +956,10 @@ const requestStats = async url => {
 
     const contentType = response.headers.get('content-type') || ''
     if (!contentType.includes('application/json')) {
-      throw new Error('统计服务返回了无法识别的数据格式')
+      throw new Error(pick('统计服务返回了无法识别的数据格式', 'The statistics service returned an unrecognized data format'))
     }
     if (!response.ok) {
-      throw new Error(`统计服务返回 HTTP ${response.status}`)
+      throw new Error(pick(`统计服务返回 HTTP ${response.status}`, `The statistics service returned HTTP ${response.status}`))
     }
 
     const data = await response.json()
@@ -958,8 +972,8 @@ const requestStats = async url => {
     if (reason?.name === 'AbortError' && activeRequest !== controller) return
 
     error.value = reason?.name === 'AbortError'
-      ? '请求等待时间过长，请稍后重试。'
-      : reason?.message || '无法连接统计服务，请稍后重试。'
+      ? pick('请求等待时间过长，请稍后重试。', 'The request timed out. Please try again.')
+      : reason?.message || pick('无法连接统计服务，请稍后重试。', 'Could not connect to the statistics service. Please try again.')
   }
   finally {
     window.clearTimeout(timeout)
@@ -972,7 +986,7 @@ const requestStats = async url => {
 
 const fetchStats = async period => {
   if (!workerUrl) {
-    error.value = '统计服务地址尚未配置。'
+    error.value = pick('统计服务地址尚未配置。', 'The statistics service URL is not configured.')
     return
   }
 
@@ -992,11 +1006,11 @@ const fetchCustom = async () => {
   const end = exclusiveEndDate.getTime()
 
   if (!Number.isFinite(start) || !Number.isFinite(end)) {
-    error.value = '请选择有效的开始与结束日期。'
+    error.value = pick('请选择有效的开始与结束日期。', 'Select valid start and end dates.')
     return
   }
   if (start > end) {
-    error.value = '开始日期不能晚于结束日期。'
+    error.value = pick('开始日期不能晚于结束日期。', 'The start date cannot be later than the end date.')
     return
   }
 

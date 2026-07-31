@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
+import { useLang } from 'vuepress/client'
 
 type Verdict = 'pass' | 'warn' | 'fail' | 'info'
 type ScanLevel = 'low' | 'medium' | 'high'
@@ -61,6 +62,9 @@ interface UserAgentDataLike {
 
 const NETWORK_API_URL = '/api/claude-env-check'
 const SCORE_CIRCUMFERENCE = 2 * Math.PI * 52
+const lang = useLang()
+const isEnglish = computed(() => String(lang.value || '').toLowerCase().startsWith('en'))
+const pick = <T>(zh: T, en: T): T => isEnglish.value ? en : zh
 
 const simplifiedChineseFonts = [
   'Microsoft YaHei',
@@ -97,27 +101,27 @@ const vendorFonts = [
   'FZLanTingHeiS',
 ]
 
-const domesticBrowserPatterns: Array<[string, string]> = [
-  ['micromessenger', '微信内置浏览器'],
-  ['qqbrowser', 'QQ 浏览器'],
-  ['mqqbrowser', 'QQ 内置浏览器'],
-  ['quark', '夸克浏览器'],
-  ['ucbrowser', 'UC 浏览器'],
-  ['ucweb', 'UC 浏览器'],
-  ['baiduboxapp', '百度 App'],
-  ['baidubrowser', '百度浏览器'],
-  ['miuibrowser', '小米浏览器'],
-  ['mibrowser', '小米浏览器'],
-  ['huaweibrowser', '华为浏览器'],
-  ['heytapbrowser', 'OPPO 浏览器'],
-  ['oppobrowser', 'OPPO 浏览器'],
-  ['vivobrowser', 'vivo 浏览器'],
-  ['360se', '360 浏览器'],
-  ['360ee', '360 浏览器'],
-  ['qihoobrowser', '360 浏览器'],
-  ['sogoumobilebrowser', '搜狗浏览器'],
-  ['2345browser', '2345 浏览器'],
-]
+const domesticBrowserPatterns = computed<Array<[string, string]>>(() => [
+  ['micromessenger', pick('微信内置浏览器', 'WeChat in-app browser')],
+  ['qqbrowser', pick('QQ 浏览器', 'QQ Browser')],
+  ['mqqbrowser', pick('QQ 内置浏览器', 'QQ in-app browser')],
+  ['quark', pick('夸克浏览器', 'Quark Browser')],
+  ['ucbrowser', pick('UC 浏览器', 'UC Browser')],
+  ['ucweb', pick('UC 浏览器', 'UC Browser')],
+  ['baiduboxapp', pick('百度 App', 'Baidu app')],
+  ['baidubrowser', pick('百度浏览器', 'Baidu Browser')],
+  ['miuibrowser', pick('小米浏览器', 'Xiaomi Browser')],
+  ['mibrowser', pick('小米浏览器', 'Xiaomi Browser')],
+  ['huaweibrowser', pick('华为浏览器', 'Huawei Browser')],
+  ['heytapbrowser', 'OPPO Browser'],
+  ['oppobrowser', 'OPPO Browser'],
+  ['vivobrowser', 'vivo Browser'],
+  ['360se', '360 Browser'],
+  ['360ee', '360 Browser'],
+  ['qihoobrowser', '360 Browser'],
+  ['sogoumobilebrowser', pick('搜狗浏览器', 'Sogou Browser')],
+  ['2345browser', '2345 Browser'],
+])
 
 const domesticDevicePatterns: Array<[string, string]> = [
   ['harmonyos', 'HarmonyOS'],
@@ -132,112 +136,112 @@ const domesticDevicePatterns: Array<[string, string]> = [
   ['miui', 'MIUI'],
 ]
 
-const signalMeta: SignalMeta[] = [
+const signalMeta = computed<SignalMeta[]>(() => [
   {
     id: 'timezone',
     icon: '◷',
-    title: '系统时区',
-    weightLabel: '权重 26',
+    title: pick('系统时区', 'System time zone'),
+    weightLabel: pick('权重 26', 'Weight 26'),
     sameAsClaude: true,
-    description: '读取浏览器继承的系统时区，并与中国大陆、港澳台及其他亚洲时区进行比对。',
+    description: pick('读取浏览器继承的系统时区，并与中国大陆、港澳台及其他亚洲时区进行比对。', 'Reads the system time zone exposed to the browser and compares it with mainland China, Hong Kong, Macao, Taiwan, and other Asian zones.'),
   },
   {
     id: 'language',
-    icon: '文',
-    title: '浏览器语言',
-    weightLabel: '权重 20',
-    description: '检查 navigator.languages；中文位于首选语言时会产生更明显的区域特征。',
+    icon: 'Aa',
+    title: pick('浏览器语言', 'Browser languages'),
+    weightLabel: pick('权重 20', 'Weight 20'),
+    description: pick('检查 navigator.languages；中文位于首选语言时会产生更明显的区域特征。', 'Checks navigator.languages; Chinese as the preferred language creates a stronger regional signal.'),
   },
   {
     id: 'languageVariant',
-    icon: '译',
-    title: '语言文字特征',
-    weightLabel: '权重 12',
-    description: '识别 zh-CN、zh-Hans、zh-Hant、zh-HK 等中文语言变体。',
+    icon: 'A↔',
+    title: pick('语言文字特征', 'Language variant'),
+    weightLabel: pick('权重 12', 'Weight 12'),
+    description: pick('识别 zh-CN、zh-Hans、zh-Hant、zh-HK 等中文语言变体。', 'Identifies Chinese language variants such as zh-CN, zh-Hans, zh-Hant, and zh-HK.'),
   },
   {
     id: 'chineseFonts',
-    icon: '字',
-    title: '字体地区特征',
-    weightLabel: '权重 16',
-    description: '通过 Canvas 文本宽度差异探测常见简繁体中文字体。',
+    icon: 'F',
+    title: pick('字体地区特征', 'Regional font signals'),
+    weightLabel: pick('权重 16', 'Weight 16'),
+    description: pick('通过 Canvas 文本宽度差异探测常见简繁体中文字体。', 'Uses Canvas text-width differences to probe for common Simplified and Traditional Chinese fonts.'),
   },
   {
     id: 'vendorFonts',
     icon: 'Aa',
-    title: '厂商字体异常',
-    weightLabel: '权重 10',
-    description: '检测 MiSans、HarmonyOS Sans、OPPO Sans、vivo Sans 等厂商字体。',
+    title: pick('厂商字体异常', 'Vendor-font signals'),
+    weightLabel: pick('权重 10', 'Weight 10'),
+    description: pick('检测 MiSans、HarmonyOS Sans、OPPO Sans、vivo Sans 等厂商字体。', 'Checks for vendor fonts including MiSans, HarmonyOS Sans, OPPO Sans, and vivo Sans.'),
   },
   {
     id: 'domesticBrowser',
     icon: '◎',
-    title: '浏览器地区特征',
-    weightLabel: '权重 8',
-    description: '检查 UA 与 UA-CH 品牌中是否包含常见国内浏览器或内置浏览器标识。',
+    title: pick('浏览器地区特征', 'Regional browser signals'),
+    weightLabel: pick('权重 8', 'Weight 8'),
+    description: pick('检查 UA 与 UA-CH 品牌中是否包含常见国内浏览器或内置浏览器标识。', 'Checks the user agent and UA-CH brands for common mainland Chinese browsers and embedded webviews.'),
   },
   {
     id: 'domesticDevice',
     icon: '▣',
-    title: '设备地区特征',
-    weightLabel: '权重 6',
-    description: '识别 HarmonyOS、Huawei、Honor、Xiaomi、OPPO、vivo 等设备线索。',
+    title: pick('设备地区特征', 'Regional device signals'),
+    weightLabel: pick('权重 6', 'Weight 6'),
+    description: pick('识别 HarmonyOS、Huawei、Honor、Xiaomi、OPPO、vivo 等设备线索。', 'Identifies device signals such as HarmonyOS, Huawei, Honor, Xiaomi, OPPO, and vivo.'),
   },
   {
     id: 'intlLocale',
     icon: '⌘',
-    title: 'Intl 区域设置',
-    weightLabel: '权重 6',
-    description: '读取浏览器用于日期和数字格式化的 locale。',
+    title: pick('Intl 区域设置', 'Intl locale'),
+    weightLabel: pick('权重 6', 'Weight 6'),
+    description: pick('读取浏览器用于日期和数字格式化的 locale。', 'Reads the locale used by the browser for date and number formatting.'),
   },
   {
     id: 'timezoneOffset',
     icon: '±',
-    title: '时区偏移',
-    weightLabel: '权重 8',
-    description: '检查当前时间相对 UTC 的偏移，UTC+8 会增加区域一致性信号。',
+    title: pick('时区偏移', 'Time-zone offset'),
+    weightLabel: pick('权重 8', 'Weight 8'),
+    description: pick('检查当前时间相对 UTC 的偏移，UTC+8 会增加区域一致性信号。', 'Checks the current UTC offset; UTC+8 increases the regional consistency signal.'),
   },
   {
     id: 'emojiStyle',
     icon: '☺',
-    title: 'Emoji 风格推测',
-    weightLabel: '弱信号',
-    description: '根据浏览器 UA 推测操作系统的 Emoji 渲染体系，只作为低权重辅助信息。',
+    title: pick('Emoji 风格推测', 'Inferred emoji style'),
+    weightLabel: pick('弱信号', 'Weak signal'),
+    description: pick('根据浏览器 UA 推测操作系统的 Emoji 渲染体系，只作为低权重辅助信息。', 'Infers an operating-system emoji family from the user agent and uses it only as a low-weight hint.'),
   },
   {
     id: 'browser',
     icon: '⌁',
-    title: '浏览器/应用环境',
-    weightLabel: '信息项',
-    description: '展示浏览器与操作系统，不直接计入环境风险分。',
+    title: pick('浏览器/应用环境', 'Browser and app environment'),
+    weightLabel: pick('信息项', 'Information'),
+    description: pick('展示浏览器与操作系统，不直接计入环境风险分。', 'Displays the browser and operating system without adding to the environment score.'),
   },
   {
     id: 'device',
     icon: '◇',
-    title: '设备/系统线索',
-    weightLabel: '信息项',
-    description: '展示设备类型与系统线索，不直接计入环境风险分。',
+    title: pick('设备/系统线索', 'Device and system clues'),
+    weightLabel: pick('信息项', 'Information'),
+    description: pick('展示设备类型与系统线索，不直接计入环境风险分。', 'Displays device and system clues without adding to the environment score.'),
   },
-]
+])
 
-const faqItems = [
+const faqItems = computed(() => [
   {
-    question: '这个风险分是 Claude 的官方判定吗？',
-    answer: '不是。它是根据浏览器可见的时区、语言、字体和设备线索建立的启发式分数，只适合用于发现环境中明显不一致的项目。',
+    question: pick('这个风险分是 Claude 的官方判定吗？', 'Is this an official Claude risk score?'),
+    answer: pick('不是。它是根据浏览器可见的时区、语言、字体和设备线索建立的启发式分数，只适合用于发现环境中明显不一致的项目。', 'No. It is a heuristic built from time-zone, language, font, and device signals visible to the browser. It is useful only for finding obvious inconsistencies.'),
   },
   {
-    question: '为什么网页检测结果可能和 Claude Code 不一样？',
-    answer: '网页运行在浏览器沙箱内，无法读取主机名、系统级配置或 Claude 客户端内部状态。它只能检测浏览器公开的部分信号。',
+    question: pick('为什么网页检测结果可能和 Claude Code 不一样？', 'Why can the web result differ from Claude Code?'),
+    answer: pick('网页运行在浏览器沙箱内，无法读取主机名、系统级配置或 Claude 客户端内部状态。它只能检测浏览器公开的部分信号。', 'A webpage runs in a browser sandbox and cannot read the hostname, system-wide configuration, or internal Claude client state. It can inspect only a subset of browser-exposed signals.'),
   },
   {
-    question: '修改浏览器语言后为什么仍然有中文字体？',
-    answer: '字体通常由操作系统安装，修改浏览器语言不会删除系统字体。字体命中也很常见，不建议为了一个单项分数破坏日常系统环境。',
+    question: pick('修改浏览器语言后为什么仍然有中文字体？', 'Why are Chinese fonts still detected after changing the browser language?'),
+    answer: pick('字体通常由操作系统安装，修改浏览器语言不会删除系统字体。字体命中也很常见，不建议为了一个单项分数破坏日常系统环境。', 'Fonts are normally installed by the operating system, so changing a browser language does not remove them. Font matches are common; do not damage a normal system environment merely to change one score item.'),
   },
   {
-    question: '检测数据会发送到服务器吗？',
-    answer: '时区、语言、字体、浏览器与设备信号只在本地计算。网络检测会把当前出口 IP 交给本站 Cloudflare Worker；配置 IP 风险服务后，Worker 还会把该 IP 发送给风控数据提供方。',
+    question: pick('检测数据会发送到服务器吗？', 'Is scan data sent to a server?'),
+    answer: pick('时区、语言、字体、浏览器与设备信号只在本地计算。网络检测会把当前出口 IP 交给本站 Cloudflare Worker；配置 IP 风险服务后，Worker 还会把该 IP 发送给风控数据提供方。', 'Time-zone, language, font, browser, and device signals are computed locally. The network check sends the current egress IP to this site’s Cloudflare Worker. If an IP-risk service is configured, the Worker also sends that IP to the risk-data provider.'),
   },
-]
+])
 
 const scanState = ref<'idle' | 'scanning' | 'done'>('idle')
 const scanResult = ref<ScanResult | null>(null)
@@ -266,18 +270,18 @@ const scoreOffset = computed(() =>
 
 const scoreStatus = computed(() => {
   if (scanState.value === 'scanning') {
-    return { label: '正在检测', className: 'is-scanning' }
+    return { label: pick('正在检测', 'Scanning'), className: 'is-scanning' }
   }
   if (!scanResult.value) {
-    return { label: '等待检测', className: 'is-idle' }
+    return { label: pick('等待检测', 'Not scanned'), className: 'is-idle' }
   }
   if (scanResult.value.level === 'low') {
-    return { label: '低风险环境', className: 'is-safe' }
+    return { label: pick('低风险环境', 'Low-risk environment'), className: 'is-safe' }
   }
   if (scanResult.value.level === 'medium') {
-    return { label: '中等风险环境', className: 'is-warning' }
+    return { label: pick('中等风险环境', 'Medium-risk environment'), className: 'is-warning' }
   }
-  return { label: '高风险环境', className: 'is-danger' }
+  return { label: pick('高风险环境', 'High-risk environment'), className: 'is-danger' }
 })
 
 const networkLocation = computed(() => {
@@ -298,7 +302,7 @@ const networkLocalTime = computed(() => {
   if (!timezone) return '—'
 
   try {
-    return new Intl.DateTimeFormat('zh-CN', {
+    return new Intl.DateTimeFormat(lang.value || 'zh-CN', {
       timeZone: timezone,
       hour: '2-digit',
       minute: '2-digit',
@@ -315,17 +319,17 @@ const networkRisk = computed(() => {
 
   if (typeof score !== 'number') {
     if (networkInfo.value?.riskStatus === 'not-configured') {
-      return { score: null, label: '待接入风险库', className: 'is-unknown' }
+      return { score: null, label: pick('待接入风险库', 'Risk provider not configured'), className: 'is-unknown' }
     }
-    return { score: null, label: '风险数据不可用', className: 'is-unknown' }
+    return { score: null, label: pick('风险数据不可用', 'Risk data unavailable'), className: 'is-unknown' }
   }
   if (score < 40) {
-    return { score, label: '较低', className: 'is-safe' }
+    return { score, label: pick('较低', 'Lower'), className: 'is-safe' }
   }
   if (score <= 70) {
-    return { score, label: '一般', className: 'is-warning' }
+    return { score, label: pick('一般', 'Moderate'), className: 'is-warning' }
   }
-  return { score, label: '较高', className: 'is-danger' }
+  return { score, label: pick('较高', 'Higher'), className: 'is-danger' }
 })
 
 const proxyLike = computed(() => {
@@ -389,11 +393,11 @@ function detectBrowser(userAgent: string) {
   if (/Edg\//.test(userAgent)) return 'Microsoft Edge'
   if (/OPR\//.test(userAgent)) return 'Opera'
   if (/YaBrowser/i.test(userAgent)) return 'Yandex Browser'
-  if (/MicroMessenger/i.test(userAgent)) return '微信内置浏览器'
+  if (/MicroMessenger/i.test(userAgent)) return pick('微信内置浏览器', 'WeChat in-app browser')
   if (/Firefox\//.test(userAgent)) return 'Firefox'
   if (/Chrome\//.test(userAgent) && !/Chromium/.test(userAgent)) return 'Chrome'
   if (/Safari\//.test(userAgent) && !/Chrome\//.test(userAgent)) return 'Safari'
-  return '未知浏览器'
+  return pick('未知浏览器', 'Unknown browser')
 }
 
 function detectOperatingSystem(userAgent: string, platform: string) {
@@ -404,7 +408,7 @@ function detectOperatingSystem(userAgent: string, platform: string) {
   if (/mac os|macintosh|macintel/i.test(source)) return 'macOS'
   if (/windows nt|win32|win64/i.test(source)) return 'Windows'
   if (/linux/i.test(source)) return 'Linux'
-  return platform || '未知系统'
+  return platform || pick('未知系统', 'Unknown system')
 }
 
 function detectDevice(userAgent: string, platform: string) {
@@ -413,10 +417,10 @@ function detectDevice(userAgent: string, platform: string) {
 
   if (/iphone/i.test(source)) return `iPhone / ${operatingSystem}`
   if (/ipad/i.test(source)) return `iPad / ${operatingSystem}`
-  if (/android/i.test(source)) return `Android 设备 / ${operatingSystem}`
+  if (/android/i.test(source)) return `${pick('Android 设备', 'Android device')} / ${operatingSystem}`
   if (/macintosh|mac os|macintel/i.test(source)) return `Mac / ${operatingSystem}`
   if (/windows/i.test(source)) return `Windows PC / ${operatingSystem}`
-  if (/linux/i.test(source)) return `Linux 设备 / ${operatingSystem}`
+  if (/linux/i.test(source)) return `${pick('Linux 设备', 'Linux device')} / ${operatingSystem}`
   return operatingSystem
 }
 
@@ -459,10 +463,10 @@ function collectSignals(): ScanResult {
     timezoneRisk,
     26,
     timezoneRisk >= 0.7
-      ? ['检测到中国大陆或相近时区。若账号地区与此不一致，请优先检查系统时区和常用网络出口是否匹配。']
+      ? [pick('检测到中国大陆或相近时区。若账号地区与此不一致，请优先检查系统时区和常用网络出口是否匹配。', 'A mainland China or nearby time zone was detected. If it conflicts with the account region, first check whether the system time zone and usual network egress are consistent.')]
       : timezoneRisk > 0
-        ? ['检测到亚洲时区。亚洲时区本身并不等于异常，但应与账号资料和长期网络地区保持一致。']
-        : ['当前系统时区未命中中文地区特征，无需单独处理。'],
+        ? [pick('检测到亚洲时区。亚洲时区本身并不等于异常，但应与账号资料和长期网络地区保持一致。', 'An Asian time zone was detected. That is not inherently abnormal, but it should be consistent with the account profile and long-term network region.')]
+        : [pick('当前系统时区未命中中文地区特征，无需单独处理。', 'The system time zone did not match the listed Chinese-region signals; no separate action is indicated.')],
   ))
 
   const normalizedLanguages = languageList.toLowerCase()
@@ -471,30 +475,30 @@ function collectSignals(): ScanResult {
 
   results.push(makeSignal(
     'language',
-    `首选: ${primaryLanguage}｜完整: [${languageList}]`,
+    `${pick('首选', 'Preferred')}: ${primaryLanguage} | ${pick('完整', 'All')}: [${languageList}]`,
     primaryChinese ? 1 : containsChinese ? 0.5 : 0,
     20,
     primaryChinese
-      ? ['浏览器首选语言是中文。如需降低区域差异，可将账号常用语言移至首位。']
+      ? [pick('浏览器首选语言是中文。如需降低区域差异，可将账号常用语言移至首位。', 'The browser’s preferred language is Chinese. If that conflicts with normal account use, place the usual account language first.')]
       : containsChinese
-        ? ['语言列表中包含中文。只要首选语言和实际使用习惯一致，通常不需要强行删除。']
-        : ['浏览器首选语言未命中中文地区特征。'],
+        ? [pick('语言列表中包含中文。只要首选语言和实际使用习惯一致，通常不需要强行删除。', 'Chinese appears in the language list. It normally does not need to be removed when the preferred language matches actual use.')]
+        : [pick('浏览器首选语言未命中中文地区特征。', 'The preferred browser language did not match the listed Chinese-language signals.')],
   ))
 
   const languageVariant = languages.some(language => /zh-(tw|hk|mo)|zh-hant/i.test(language))
-    ? '繁体中文'
+    ? pick('繁体中文', 'Traditional Chinese')
     : languages.some(language => /zh-cn|zh-sg|zh-hans|^zh$/i.test(language))
-      ? '简体中文'
+      ? pick('简体中文', 'Simplified Chinese')
       : ''
 
   results.push(makeSignal(
     'languageVariant',
-    languageVariant || '未检测到关键中文语言变体',
+    languageVariant || pick('未检测到关键中文语言变体', 'No listed Chinese language variant detected'),
     languageVariant ? 1 : 0,
     12,
     languageVariant
-      ? [`检测到${languageVariant}语言变体。请确认它是否符合账号资料与日常使用环境。`]
-      : ['未检测到关键中文语言变体。'],
+      ? [pick(`检测到${languageVariant}语言变体。请确认它是否符合账号资料与日常使用环境。`, `${languageVariant} was detected. Confirm that it matches the account profile and normal environment.`)]
+      : [pick('未检测到关键中文语言变体。', 'No listed Chinese language variant was detected.')],
   ))
 
   const detectedSimplifiedFonts = detectFonts(simplifiedChineseFonts)
@@ -508,15 +512,15 @@ function collectSignals(): ScanResult {
   results.push(makeSignal(
     'chineseFonts',
     detectedSimplifiedFonts.length
-      ? `简体字体: ${detectedSimplifiedFonts.join(' / ')}`
+      ? `${pick('简体字体', 'Simplified Chinese fonts')}: ${detectedSimplifiedFonts.join(' / ')}`
       : detectedTraditionalFonts.length
-        ? `繁体字体: ${detectedTraditionalFonts.join(' / ')}`
-        : '未检测到关键中文字体',
+        ? `${pick('繁体字体', 'Traditional Chinese fonts')}: ${detectedTraditionalFonts.join(' / ')}`
+        : pick('未检测到关键中文字体', 'No listed Chinese fonts detected'),
     chineseFontRisk,
     16,
     chineseFontRisk > 0
-      ? ['检测到中文字体。系统自带字体很常见，这一项应与时区、语言等信号一起判断，不建议仅为降低分数删除系统字体。']
-      : ['未检测到列表中的典型中文字体。'],
+      ? [pick('检测到中文字体。系统自带字体很常见，这一项应与时区、语言等信号一起判断，不建议仅为降低分数删除系统字体。', 'Chinese fonts were detected. Bundled system fonts are common; interpret this with the time-zone and language signals, and do not remove system fonts merely to lower the score.')]
+      : [pick('未检测到列表中的典型中文字体。', 'None of the listed Chinese fonts was detected.')],
   ))
 
   const detectedVendorFonts = detectFonts(vendorFonts)
@@ -525,16 +529,16 @@ function collectSignals(): ScanResult {
   results.push(makeSignal(
     'vendorFonts',
     detectedVendorFonts.length
-      ? `厂商字体: ${detectedVendorFonts.join(' / ')}`
-      : '未检测到厂商字体',
+      ? `${pick('厂商字体', 'Vendor fonts')}: ${detectedVendorFonts.join(' / ')}`
+      : pick('未检测到厂商字体', 'No listed vendor font detected'),
     vendorFontRisk,
     10,
     detectedVendorFonts.length
-      ? ['检测到国内设备厂商字体。共享工作环境可考虑使用独立浏览器配置，但字体命中本身不是账号异常证据。']
-      : ['未检测到明显的国内厂商字体。'],
+      ? [pick('检测到国内设备厂商字体。共享工作环境可考虑使用独立浏览器配置，但字体命中本身不是账号异常证据。', 'A mainland Chinese device-vendor font was detected. A separate browser profile can isolate a shared work environment, but a font match is not evidence of an account problem.')]
+      : [pick('未检测到明显的国内厂商字体。', 'No listed mainland Chinese vendor font was detected.')],
   ))
 
-  const domesticBrowser = findPattern(browserSource, domesticBrowserPatterns)
+  const domesticBrowser = findPattern(browserSource, domesticBrowserPatterns.value)
 
   results.push(makeSignal(
     'domesticBrowser',
@@ -542,8 +546,8 @@ function collectSignals(): ScanResult {
     domesticBrowser ? 1 : 0,
     8,
     domesticBrowser
-      ? ['检测到国内浏览器或内置 WebView 特征。重要账号更适合使用长期固定、更新及时的主流浏览器配置。']
-      : ['未检测到明显的国内浏览器特征。'],
+      ? [pick('检测到国内浏览器或内置 WebView 特征。重要账号更适合使用长期固定、更新及时的主流浏览器配置。', 'A mainland Chinese browser or embedded WebView signal was detected. Important accounts are better served by a stable, regularly updated browser profile.')]
+      : [pick('未检测到明显的国内浏览器特征。', 'No listed mainland Chinese browser signal was detected.')],
   ))
 
   const domesticDevice = findPattern(deviceSource, domesticDevicePatterns)
@@ -551,12 +555,12 @@ function collectSignals(): ScanResult {
 
   results.push(makeSignal(
     'domesticDevice',
-    domesticDevice || '未检测到关键设备厂商特征',
+    domesticDevice || pick('未检测到关键设备厂商特征', 'No listed device-vendor signal detected'),
     domesticDeviceRisk,
     6,
     domesticDevice
-      ? ['检测到国内设备或系统厂商线索。请结合浏览器、语言和网络出口综合判断。']
-      : ['未检测到明显的国内设备厂商特征。'],
+      ? [pick('检测到国内设备或系统厂商线索。请结合浏览器、语言和网络出口综合判断。', 'A mainland Chinese device or operating-system vendor signal was detected. Interpret it together with browser, language, and network egress data.')]
+      : [pick('未检测到明显的国内设备厂商特征。', 'No listed mainland Chinese device-vendor signal was detected.')],
   ))
 
   const localeRisk = /zh-cn|zh-hans|^zh$/i.test(intlLocale)
@@ -571,8 +575,8 @@ function collectSignals(): ScanResult {
     localeRisk,
     6,
     localeRisk > 0
-      ? ['Intl 区域格式包含中文。只有当它与账号地区明显冲突时，才需要调整系统区域格式。']
-      : ['Intl 区域格式未命中中文特征。'],
+      ? [pick('Intl 区域格式包含中文。只有当它与账号地区明显冲突时，才需要调整系统区域格式。', 'The Intl locale contains a Chinese variant. Adjust the system locale only when it clearly conflicts with the account region.')]
+      : [pick('Intl 区域格式未命中中文特征。', 'The Intl locale did not match a listed Chinese variant.')],
   ))
 
   const offsetRisk = timezoneOffset === 8
@@ -587,19 +591,19 @@ function collectSignals(): ScanResult {
     offsetRisk,
     8,
     timezoneOffset === 8
-      ? ['当前偏移为 UTC+8。请确认系统时区、IP 时区和账号常用地区是否一致。']
+      ? [pick('当前偏移为 UTC+8。请确认系统时区、IP 时区和账号常用地区是否一致。', 'The current offset is UTC+8. Check whether the system time zone, IP time zone, and normal account region are consistent.')]
       : offsetRisk > 0
-        ? ['检测到东亚或东南亚相近时间偏移，建议结合系统时区名称判断。']
-        : ['当前时区偏移未命中 UTC+7 至 UTC+9。'],
+        ? [pick('检测到东亚或东南亚相近时间偏移，建议结合系统时区名称判断。', 'A nearby East or Southeast Asian UTC offset was detected; interpret it together with the named system time zone.')]
+        : [pick('当前时区偏移未命中 UTC+7 至 UTC+9。', 'The current offset is outside UTC+7 through UTC+9.')],
   ))
 
   const emojiStyle = /iphone|ipad|mac os|macintosh/i.test(userAgent)
-    ? 'Apple Emoji 风格'
+    ? pick('Apple Emoji 风格', 'Apple emoji style')
     : /android|harmonyos/i.test(userAgent)
-      ? 'Android / 厂商 Emoji 风格'
+      ? pick('Android / 厂商 Emoji 风格', 'Android / vendor emoji style')
       : /windows/i.test(userAgent)
-        ? 'Windows Emoji 风格'
-        : '未知 Emoji 风格'
+        ? pick('Windows Emoji 风格', 'Windows emoji style')
+        : pick('未知 Emoji 风格', 'Unknown emoji style')
   const emojiRisk = /android|harmonyos|windows/i.test(userAgent)
     ? 0.4
     : /iphone|ipad|mac os|macintosh/i.test(userAgent)
@@ -611,7 +615,7 @@ function collectSignals(): ScanResult {
     emojiStyle,
     emojiRisk,
     4,
-    ['此项只根据 UA 推测操作系统，并未读取或上传 Emoji 图像，通常无需单独处理。'],
+    [pick('此项只根据 UA 推测操作系统，并未读取或上传 Emoji 图像，通常无需单独处理。', 'This item infers the operating system only from the user agent. It does not read or upload emoji images and normally needs no separate action.')],
     emojiRisk > 0 ? 'warn' : 'pass',
   ))
 
@@ -623,7 +627,7 @@ function collectSignals(): ScanResult {
     `${browser} / ${operatingSystem}`,
     0,
     0,
-    ['该项仅展示浏览器与系统环境，不直接计入风险分。'],
+    [pick('该项仅展示浏览器与系统环境，不直接计入风险分。', 'This item displays the browser and operating system and does not contribute to the score.')],
     'info',
   ))
 
@@ -632,7 +636,7 @@ function collectSignals(): ScanResult {
     detectDevice(userAgent, platform),
     0,
     0,
-    ['该项仅展示设备线索，不直接计入风险分。'],
+    [pick('该项仅展示设备线索，不直接计入风险分。', 'This item displays device clues and does not contribute to the score.')],
     'info',
   ))
 
@@ -694,7 +698,7 @@ function countryName(countryCode: string | null) {
   if (!countryCode) return ''
 
   try {
-    return new Intl.DisplayNames(['zh-CN'], { type: 'region' }).of(countryCode) || countryCode
+    return new Intl.DisplayNames([lang.value || 'zh-CN'], { type: 'region' }).of(countryCode) || countryCode
   }
   catch {
     return countryCode
@@ -743,7 +747,10 @@ async function loadNetwork() {
   catch {
     networkInfo.value = null
     networkStatus.value = 'error'
-    networkError.value = '网络检测服务暂时不可用，请确认 Worker 已绑定到本站接口路径后重试。'
+    networkError.value = pick(
+      '网络检测服务暂时不可用，请确认 Worker 已绑定到本站接口路径后重试。',
+      'The network-check service is temporarily unavailable. Confirm that the Worker is bound to this site’s API route and try again.',
+    )
   }
   finally {
     window.clearTimeout(timeout)
@@ -755,11 +762,11 @@ function toggleSignal(id: string) {
 }
 
 function verdictLabel(verdict: Verdict | undefined) {
-  if (verdict === 'fail') return '需关注'
-  if (verdict === 'warn') return '提示项'
-  if (verdict === 'pass') return '未命中'
-  if (verdict === 'info') return '信息项'
-  return '待检测'
+  if (verdict === 'fail') return pick('需关注', 'Review')
+  if (verdict === 'warn') return pick('提示项', 'Advisory')
+  if (verdict === 'pass') return pick('未命中', 'Not detected')
+  if (verdict === 'info') return pick('信息项', 'Information')
+  return pick('待检测', 'Not scanned')
 }
 
 onMounted(() => {
@@ -774,11 +781,11 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <section class="env-check-tool" aria-label="Claude 环境自检工具">
+  <section class="env-check-tool" :aria-label="pick('Claude 环境自检工具', 'Claude environment self-check')">
     <div class="overview-card">
       <section class="score-panel" aria-labelledby="environment-score-title">
-        <span class="eyebrow">浏览器环境</span>
-        <h2 id="environment-score-title">本地环境风险</h2>
+        <span class="eyebrow">{{ pick('浏览器环境', 'Browser environment') }}</span>
+        <h2 id="environment-score-title">{{ pick('本地环境风险', 'Local environment risk') }}</h2>
 
         <div class="score-ring" :class="scoreStatus.className">
           <svg viewBox="0 0 128 128" aria-hidden="true">
@@ -802,7 +809,7 @@ onBeforeUnmount(() => {
           {{ scoreStatus.label }}
         </span>
 
-        <p>综合时区、语言、字体、区域格式和设备线索，结果只在当前浏览器中计算。</p>
+        <p>{{ pick('综合时区、语言、字体、区域格式和设备线索，结果只在当前浏览器中计算。', 'Combines time-zone, language, font, locale, and device clues. The result is computed only in this browser.') }}</p>
 
         <button
           type="button"
@@ -811,7 +818,7 @@ onBeforeUnmount(() => {
           @click="runScan"
         >
           <span aria-hidden="true">{{ scanState === 'scanning' ? '◌' : '✓' }}</span>
-          {{ scanState === 'scanning' ? '正在检测' : scanResult ? '重新检测' : '开始检测' }}
+          {{ scanState === 'scanning' ? pick('正在检测', 'Scanning') : scanResult ? pick('重新检测', 'Scan again') : pick('开始检测', 'Start scan') }}
         </button>
       </section>
 
@@ -819,14 +826,14 @@ onBeforeUnmount(() => {
         <div class="panel-heading">
           <div>
             <span class="eyebrow">Cloudflare Worker</span>
-            <h2 id="network-panel-title">当前网络出口</h2>
+            <h2 id="network-panel-title">{{ pick('当前网络出口', 'Current network egress') }}</h2>
           </div>
           <button
             type="button"
             class="icon-button"
             :disabled="networkStatus === 'loading'"
-            aria-label="重新检测网络"
-            title="重新检测网络"
+            :aria-label="pick('重新检测网络', 'Check network again')"
+            :title="pick('重新检测网络', 'Check network again')"
             @click="loadNetwork"
           >
             ↻
@@ -844,70 +851,70 @@ onBeforeUnmount(() => {
         <div v-else-if="networkStatus === 'error'" class="network-error" role="alert">
           <span aria-hidden="true">!</span>
           <p>{{ networkError }}</p>
-          <button type="button" class="secondary-button" @click="loadNetwork">重新请求</button>
+          <button type="button" class="secondary-button" @click="loadNetwork">{{ pick('重新请求', 'Try again') }}</button>
         </div>
 
         <template v-else>
           <dl class="network-details">
             <div>
-              <dt>位置</dt>
+              <dt>{{ pick('位置', 'Location') }}</dt>
               <dd>{{ networkLocation }}</dd>
             </div>
             <div>
-              <dt>IP 地址</dt>
+              <dt>{{ pick('IP 地址', 'IP address') }}</dt>
               <dd class="is-mono">{{ networkInfo?.ip || '—' }}</dd>
             </div>
             <div>
-              <dt>网络组织</dt>
+              <dt>{{ pick('网络组织', 'Network organization') }}</dt>
               <dd>{{ formatAsn(networkInfo) }}</dd>
             </div>
             <div>
-              <dt>IP 时区</dt>
+              <dt>{{ pick('IP 时区', 'IP time zone') }}</dt>
               <dd class="is-mono">{{ networkInfo?.timezone || '—' }}</dd>
             </div>
             <div>
-              <dt>当地时间</dt>
+              <dt>{{ pick('当地时间', 'Local time') }}</dt>
               <dd class="is-mono">{{ networkLocalTime }}</dd>
             </div>
             <div>
-              <dt>邮编</dt>
+              <dt>{{ pick('邮编', 'Postal code') }}</dt>
               <dd class="is-mono">{{ networkInfo?.postalCode || '—' }}</dd>
             </div>
             <div>
-              <dt>坐标</dt>
+              <dt>{{ pick('坐标', 'Coordinates') }}</dt>
               <dd class="is-mono">{{ formatCoordinates(networkInfo) }}</dd>
             </div>
           </dl>
 
           <div class="network-risk-card">
             <div class="ip-type-row">
-              <span class="risk-card-label">IP 类型</span>
+              <span class="risk-card-label">{{ pick('IP 类型', 'IP type') }}</span>
               <div class="ip-type-chips">
                 <span
                   :class="{
                     active: networkInfo?.isResidential === true,
                     unknown: networkInfo?.isResidential === null,
                   }"
-                >住宅</span>
+                >{{ pick('住宅', 'Residential') }}</span>
                 <span
                   :class="{
                     active: networkInfo?.isDatacenter === true || networkInfo?.isSuspectedDatacenter === true,
                     warning: networkInfo?.isSuspectedDatacenter === true && networkInfo?.isDatacenter !== true,
                     unknown: networkInfo?.isDatacenter === null && networkInfo?.isSuspectedDatacenter === null,
                   }"
-                >机房</span>
+                >{{ pick('机房', 'Datacenter') }}</span>
                 <span
                   :class="{
                     active: proxyLike === true,
                     danger: proxyLike === true,
                     unknown: proxyLike === null,
                   }"
-                >代理</span>
+                >{{ pick('代理', 'Proxy') }}</span>
               </div>
             </div>
 
             <div class="risk-score-row">
-              <span class="risk-card-label">IP 风险</span>
+              <span class="risk-card-label">{{ pick('IP 风险', 'IP risk') }}</span>
               <div class="risk-number" :class="networkRisk.className">
                 <strong>{{ networkRisk.score ?? '—' }}</strong>
                 <span>{{ networkRisk.score === null ? '' : '/ 100' }}</span>
@@ -919,7 +926,7 @@ onBeforeUnmount(() => {
               class="risk-meter"
               :class="networkRisk.className"
               role="meter"
-              aria-label="IP 风险分"
+              :aria-label="pick('IP 风险分', 'IP risk score')"
               aria-valuemin="0"
               aria-valuemax="100"
               :aria-valuenow="networkRisk.score ?? undefined"
@@ -930,8 +937,8 @@ onBeforeUnmount(() => {
             <p v-if="networkInfo?.riskStatus !== 'ready'" class="risk-note">
               {{
                 networkInfo?.riskStatus === 'not-configured'
-                  ? 'Worker 已返回 Cloudflare 地理信息；设置 IPQS_API_KEY 后可显示 VPN、代理和风险分。'
-                  : networkInfo?.riskMessage || '第三方风险数据暂时不可用，地理信息仍可参考。'
+                  ? pick('Worker 已返回 Cloudflare 地理信息；设置 IPQS_API_KEY 后可显示 VPN、代理和风险分。', 'The Worker returned Cloudflare geolocation. Configure IPQS_API_KEY to add VPN, proxy, and risk-score data.')
+                  : (isEnglish ? 'Third-party risk data is temporarily unavailable; the geolocation data may still be useful.' : networkInfo?.riskMessage || '第三方风险数据暂时不可用，地理信息仍可参考。')
               }}
             </p>
           </div>
@@ -942,10 +949,10 @@ onBeforeUnmount(() => {
     <section class="signals-section" aria-labelledby="signals-title">
       <div class="section-heading">
         <div>
-          <span class="eyebrow">本地检测</span>
-          <h2 id="signals-title">检测项目与建议</h2>
+          <span class="eyebrow">{{ pick('本地检测', 'Local scan') }}</span>
+          <h2 id="signals-title">{{ pick('检测项目与建议', 'Signals and guidance') }}</h2>
         </div>
-        <p>展开项目可查看本机采集值、分数贡献和对应建议。</p>
+        <p>{{ pick('展开项目可查看本机采集值、分数贡献和对应建议。', 'Expand an item to see its local value, score contribution, and guidance.') }}</p>
       </div>
 
       <div class="signal-list">
@@ -966,7 +973,7 @@ onBeforeUnmount(() => {
               <span class="signal-title-row">
                 <strong>{{ item.title }}</strong>
                 <span class="weight-chip">{{ item.weightLabel }}</span>
-                <span v-if="item.sameAsClaude" class="same-signal-chip">同类系统信号</span>
+                <span v-if="item.sameAsClaude" class="same-signal-chip">{{ pick('同类系统信号', 'Related system signal') }}</span>
                 <span
                   class="verdict-chip"
                   :class="signalResults[item.id]?.verdict ? `is-${signalResults[item.id].verdict}` : 'is-pending'"
@@ -976,7 +983,7 @@ onBeforeUnmount(() => {
               </span>
               <span class="signal-description">{{ item.description }}</span>
               <span v-if="signalResults[item.id]" class="signal-raw">
-                当前值：<b>{{ signalResults[item.id].raw }}</b>
+                {{ pick('当前值', 'Current value') }}: <b>{{ signalResults[item.id].raw }}</b>
                 <em v-if="signalResults[item.id].contribution > 0">
                   +{{ signalResults[item.id].contribution }}
                 </em>
@@ -987,12 +994,12 @@ onBeforeUnmount(() => {
 
           <div v-if="openSignalId === item.id" class="signal-advice">
             <template v-if="signalResults[item.id]">
-              <strong>{{ signalResults[item.id].verdict === 'fail' ? '优先检查' : signalResults[item.id].verdict === 'warn' ? '辅助判断' : '检测说明' }}</strong>
+              <strong>{{ signalResults[item.id].verdict === 'fail' ? pick('优先检查', 'Review first') : signalResults[item.id].verdict === 'warn' ? pick('辅助判断', 'Supporting signal') : pick('检测说明', 'Scan note') }}</strong>
               <ul>
                 <li v-for="advice in signalResults[item.id].advice" :key="advice">{{ advice }}</li>
               </ul>
             </template>
-            <p v-else>完成一次本地检测后，这里会显示当前值和对应建议。</p>
+            <p v-else>{{ pick('完成一次本地检测后，这里会显示当前值和对应建议。', 'Run the local scan to display the current value and related guidance.') }}</p>
           </div>
         </article>
       </div>
@@ -1000,22 +1007,22 @@ onBeforeUnmount(() => {
 
     <section class="principle-section" aria-labelledby="principle-title">
       <div>
-        <span class="eyebrow">检测边界</span>
-        <h2 id="principle-title">浏览器能看到什么</h2>
-        <p>网页可以读取浏览器继承的时区、语言、区域格式、UA 和部分字体特征，但无法读取 Claude Code 能访问的全部系统信息，也无法得知 Anthropic 的真实判定规则。</p>
+        <span class="eyebrow">{{ pick('检测边界', 'Detection limits') }}</span>
+        <h2 id="principle-title">{{ pick('浏览器能看到什么', 'What the browser can see') }}</h2>
+        <p>{{ pick('网页可以读取浏览器继承的时区、语言、区域格式、UA 和部分字体特征，但无法读取 Claude Code 能访问的全部系统信息，也无法得知 Anthropic 的真实判定规则。', 'A webpage can read the browser’s inherited time zone, languages, locale, user agent, and some font signals. It cannot read all system information available to Claude Code or know Anthropic’s actual decision rules.') }}</p>
       </div>
       <div>
-        <span class="eyebrow">评分方法</span>
-        <h2>为什么只能作为参考</h2>
-        <p>本页把多个弱信号组合为 0–100 分。字体和 UA 检测可能受隐私浏览器、兼容模式及系统更新影响，因此分数用于定位冲突项，不用于预测账号结果。</p>
+        <span class="eyebrow">{{ pick('评分方法', 'Scoring method') }}</span>
+        <h2>{{ pick('为什么只能作为参考', 'Why the score is only a reference') }}</h2>
+        <p>{{ pick('本页把多个弱信号组合为 0–100 分。字体和 UA 检测可能受隐私浏览器、兼容模式及系统更新影响，因此分数用于定位冲突项，不用于预测账号结果。', 'This page combines several weak signals into a 0–100 score. Font and user-agent detection can be affected by privacy browsers, compatibility modes, and system updates, so the score locates inconsistencies; it does not predict an account outcome.') }}</p>
       </div>
     </section>
 
     <section class="faq-section" aria-labelledby="faq-title">
       <div class="section-heading">
         <div>
-          <span class="eyebrow">常见问题</span>
-          <h2 id="faq-title">检测前需要知道</h2>
+          <span class="eyebrow">{{ pick('常见问题', 'FAQ') }}</span>
+          <h2 id="faq-title">{{ pick('检测前需要知道', 'What to know before scanning') }}</h2>
         </div>
       </div>
 
@@ -1035,8 +1042,8 @@ onBeforeUnmount(() => {
     </section>
 
     <aside class="privacy-note">
-      <strong>隐私说明</strong>
-      <p>本地指纹结果不会提交给本站接口。网络卡片会请求 Cloudflare Worker 获取出口 IP 和网络信息；若 Worker 配置了第三方 IP 风险服务，出口 IP 会被发送给该服务。本站前端不会获得或暴露服务端 API 密钥。</p>
+      <strong>{{ pick('隐私说明', 'Privacy') }}</strong>
+      <p>{{ pick('本地指纹结果不会提交给本站接口。网络卡片会请求 Cloudflare Worker 获取出口 IP 和网络信息；若 Worker 配置了第三方 IP 风险服务，出口 IP 会被发送给该服务。本站前端不会获得或暴露服务端 API 密钥。', 'Local fingerprint results are not submitted to this site’s API. The network card requests egress-IP and network data from a Cloudflare Worker. If the Worker is configured with a third-party IP-risk service, the egress IP is sent to that provider. The frontend neither receives nor exposes the server-side API key.') }}</p>
     </aside>
   </section>
 </template>

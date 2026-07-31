@@ -9,7 +9,9 @@ import PageViews from '../components/PageViews.vue'
 
 const route = useRoute()
 const page = usePageData()
-const isArticle = computed(() => page.value.filePathRelative?.startsWith('blog/'))
+const isArticle = computed(() =>
+  /^(?:en\/)?blog\//.test(page.value.filePathRelative || '')
+)
 </script>
 
 <template>

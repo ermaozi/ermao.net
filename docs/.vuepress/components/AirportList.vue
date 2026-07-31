@@ -1,28 +1,59 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useLang } from 'vuepress/client'
 import { airportSources } from '../data/airports'
+import { localizeAirportSource } from '../data/airports-i18n'
 
-const airports = airportSources.filter(item => item.image && item.reviewHref)
+const lang = useLang()
+const isEnglish = computed(() => lang.value?.startsWith('en'))
+const airports = computed(() =>
+  airportSources
+    .filter(item => item.image && item.reviewHref)
+    .map(item => isEnglish.value ? localizeAirportSource(item) : item),
+)
+const localizedHref = (href?: string) =>
+  href && isEnglish.value && href.startsWith('/') && !href.startsWith('/en/')
+    ? `/en${href}`
+    : href
+const labels = computed(() => isEnglish.value
+  ? {
+      section: 'Featured proxy-service reviews',
+      features: 'Provider features',
+      official: 'Official site',
+      review: 'Review',
+    }
+  : {
+      section: '热门机场推荐列表',
+      features: '机场特点',
+      official: '官网',
+      review: '评测',
+    },
+)
 </script>
 
 <template>
-  <section class="airport-card-grid" aria-label="热门机场推荐列表">
+  <section class="airport-card-grid" :aria-label="labels.section">
     <article v-for="item in airports" :key="item.name" class="airport-card">
-      <a class="airport-card-cover" :href="item.reviewHref" :aria-label="`查看 ${item.name} 评测`">
+      <a
+        class="airport-card-cover"
+        :href="localizedHref(item.reviewHref)"
+        :aria-label="isEnglish ? `View the ${item.name} review` : `查看 ${item.name} 评测`"
+      >
         <img
           :src="item.image"
-          :alt="item.imageAlt || `${item.name} 机场推荐评测截图`"
+          :alt="item.imageAlt || (isEnglish ? `${item.name} proxy-service review screenshot` : `${item.name} 机场推荐评测截图`)"
           loading="lazy"
         >
       </a>
       <div class="airport-card-body">
         <div class="airport-card-head">
           <h3>
-            <a :href="item.reviewHref">{{ item.name }}</a>
+            <a :href="localizedHref(item.reviewHref)">{{ item.name }}</a>
           </h3>
           <span class="airport-price">{{ item.minPlanText }}</span>
         </div>
         <p>{{ item.description }}</p>
-        <div class="airport-tags" aria-label="机场特点">
+        <div class="airport-tags" :aria-label="labels.features">
           <span v-for="tag in item.tags ?? []" :key="tag">{{ tag }}</span>
         </div>
         <div class="airport-actions">
@@ -31,8 +62,8 @@ const airports = airportSources.filter(item => item.image && item.reviewHref)
             :href="item.officialHref"
             target="_blank"
             rel="sponsored nofollow noopener"
-          >官网</a>
-          <a class="airport-action-secondary" :href="item.reviewHref">评测</a>
+          >{{ labels.official }}</a>
+          <a class="airport-action-secondary" :href="localizedHref(item.reviewHref)">{{ labels.review }}</a>
         </div>
       </div>
     </article>

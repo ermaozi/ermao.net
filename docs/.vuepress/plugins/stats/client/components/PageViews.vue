@@ -6,13 +6,15 @@
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from 'vue'
+import { computed, ref, onMounted, watch } from 'vue'
+import { canonicalizeStatsPath } from '../stats-path.js'
 
 const props = defineProps({
   path: String
 })
 
 const count = ref(null)
+const statsPath = computed(() => canonicalizeStatsPath(props.path))
 
 // @ts-ignore
 let workerUrl = __STATS_WORKER_URL__
@@ -23,7 +25,8 @@ if (typeof workerUrl === 'string' && workerUrl.startsWith('"') && workerUrl.ends
 
 const fetchCount = async (p) => {
     if (!workerUrl || !p) return
-    
+
+    count.value = null
     try {
         const res = await fetch(`${workerUrl}/count?path=${encodeURIComponent(p)}`)
         if (res.ok) {
@@ -34,10 +37,10 @@ const fetchCount = async (p) => {
 }
 
 onMounted(() => {
-    fetchCount(props.path)
+    fetchCount(statsPath.value)
 })
 
-watch(() => props.path, (newPath) => {
+watch(statsPath, (newPath) => {
     fetchCount(newPath)
 })
 </script>

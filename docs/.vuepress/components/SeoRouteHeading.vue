@@ -8,6 +8,9 @@ const headings: Record<string, string> = {
   '/': '2026年机场VPN评测与科学上网教程',
   '/blog/': '二毛博客文章',
   '/friends/': '友情链接',
+  '/en/': 'Proxy-Service Reviews and Access Guides for 2026',
+  '/en/blog/': 'Ermao Blog Articles',
+  '/en/friends/': 'Friends and Related Sites',
 }
 
 const heading = computed(() => headings[route.path])

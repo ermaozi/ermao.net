@@ -1,10 +1,41 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useLang } from 'vuepress/client'
 import { airportGuides } from '../data/airports'
+
+const lang = useLang()
+const isEnglish = computed(() => lang.value?.startsWith('en'))
+const sectionLabel = computed(() => isEnglish.value ? 'Proxy-service selection advice' : '机场选购建议')
+const guides = computed(() => isEnglish.value
+  ? [
+      {
+        title: 'First purchase',
+        description: 'Prefer monthly billing or a trial. Avoid annual, multi-year, or lifetime plans until the service has passed your own tests.',
+      },
+      {
+        title: 'Stability',
+        description: 'Check what IEPL, IPLC, or BGP labels actually mean, then review evening-peak tests and the provider history.',
+      },
+      {
+        title: 'Client flexibility',
+        description: 'Prefer a universal subscription compatible with the clients you already trust, and confirm router support before paying.',
+      },
+      {
+        title: 'Provider risk',
+        description: 'Search this site for closure records and confirm that the website, subscriptions, tickets, and support channels still work.',
+      },
+      {
+        title: 'Price',
+        description: 'Compare traffic, multipliers, device limits, speed caps, and reset dates instead of looking only at the headline price.',
+      },
+    ]
+  : airportGuides,
+)
 </script>
 
 <template>
-  <section class="airport-guide-grid" aria-label="机场选购建议">
-    <article v-for="item in airportGuides" :key="item.title">
+  <section class="airport-guide-grid" :aria-label="sectionLabel">
+    <article v-for="item in guides" :key="item.title">
       <h3>{{ item.title }}</h3>
       <p>{{ item.description }}</p>
     </article>

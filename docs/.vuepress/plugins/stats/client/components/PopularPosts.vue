@@ -4,7 +4,8 @@ import { useRouter } from 'vue-router'
 // @ts-ignore
 import { pageMap } from '@stats/page-map'
 // @ts-ignore
-import { usePageData } from '@vuepress/client'
+import { useLang, usePageData } from '@vuepress/client'
+import { canonicalizeStatsPath, localizeStatsPath } from '../stats-path.js'
 
 const popularPosts = ref([])
 const likedPosts = ref([])
@@ -17,10 +18,13 @@ const popularHasLoaded = ref(false)
 const likesHasLoaded = ref(false)
 const router = useRouter()
 const page = usePageData()
+const lang = useLang()
+const isEnglish = computed(() => lang.value?.startsWith('en'))
 const pageMapKeys = Object.keys(pageMap)
 
 const shouldShow = computed(() => {
-    return !page.value.path.includes('/404') && page.value.path !== '/stats/'
+    const path = canonicalizeStatsPath(page.value.path)
+    return !page.value.path.includes('/404') && path !== '/stats/'
 })
 
 let pollingTimer = null
@@ -179,9 +183,22 @@ const loading = computed(() =>
 
 const filteredPosts = computed(() => {
     const limit = activeTab.value === 'likes' ? 6 : 10
-    return activePosts.value.filter(p => {
+    const postsByPath = new Map()
+
+    for (const post of activePosts.value) {
+        const canonicalPath = canonicalizeStatsPath(post.path)
+        if (!canonicalPath) continue
+
+        const count = Number(post.count) || 0
+        const existing = postsByPath.get(canonicalPath)
+        if (!existing || count > existing.count) {
+            postsByPath.set(canonicalPath, { ...post, path: canonicalPath, count })
+        }
+    }
+
+    return Array.from(postsByPath.values()).filter(p => {
         const path = p.path.replace(/\/$/, '')
-        
+
         // Exclude root and special paths
         if (p.path === '/' || p.path === '/index.html') return false;
         if (path.includes('/404')) return false;
@@ -197,7 +214,10 @@ const filteredPosts = computed(() => {
         if (p.path.includes('/page/')) return false;
         
         return true;
-    }).slice(0, limit)
+    }).sort((a, b) => b.count - a.count).slice(0, limit).map(post => ({
+        ...post,
+        path: localizeStatsPath(post.path, isEnglish.value)
+    }))
 })
 
 const getTitle = (post) => {
@@ -222,7 +242,7 @@ const navigate = (path) => {
     <Teleport :to="targetSelector" v-if="canShow">
       <div class="popular-posts-widget" :class="{'in-doc': targetSelector === '.vp-doc-aside'}">
         <div class="widget-header">
-          <div class="widget-tabs" role="tablist" aria-label="文章排行">
+          <div class="widget-tabs" role="tablist" :aria-label="isEnglish ? 'Article rankings' : '文章排行'">
             <button
               type="button"
               class="widget-tab"
@@ -231,7 +251,7 @@ const navigate = (path) => {
               :aria-selected="activeTab === 'popular'"
               @click="selectTab('popular')"
             >
-              热门文章
+              {{ isEnglish ? 'Popular' : '热门文章' }}
             </button>
             <button
               type="button"
@@ -241,17 +261,19 @@ const navigate = (path) => {
               :aria-selected="activeTab === 'likes'"
               @click="selectTab('likes')"
             >
-              点赞排行
+              {{ isEnglish ? 'Most liked' : '点赞排行' }}
             </button>
           </div>
         </div>
         
         <div v-if="loading" style="text-align: center; padding: 20px; color: #999;">
-           加载中...
+           {{ isEnglish ? 'Loading...' : '加载中...' }}
         </div>
 
         <div v-else-if="filteredPosts.length === 0" style="text-align: center; padding: 20px; color: #999;">
-           {{ activeTab === 'likes' ? '暂无点赞数据' : '暂无热门数据' }}
+           {{ isEnglish
+             ? (activeTab === 'likes' ? 'No like data' : 'No popular-post data')
+             : (activeTab === 'likes' ? '暂无点赞数据' : '暂无热门数据') }}
         </div>
 
         <ul v-else class="post-list">
@@ -261,7 +283,9 @@ const navigate = (path) => {
             <span
               class="post-count"
               :class="{ likes: activeTab === 'likes' }"
-              :aria-label="activeTab === 'likes' ? `${post.count} 个赞` : `${post.count} 次浏览`"
+              :aria-label="isEnglish
+                ? (activeTab === 'likes' ? `${post.count} likes` : `${post.count} views`)
+                : (activeTab === 'likes' ? `${post.count} 个赞` : `${post.count} 次浏览`)"
             >
               {{ activeTab === 'likes' ? `♥ ${post.count}` : post.count }}
             </span>
