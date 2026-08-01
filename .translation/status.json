@@ -1280,7 +1280,7 @@
     {
       "source": "docs/blog/机场推荐/vpn.md",
       "target": "docs/en/blog/proxy-reviews/vpn.md",
-      "sourceHash": "46e3d018230ce177",
+      "sourceHash": "027278ac24ad3b15",
       "sourcePermalink": "/posts/vpn/",
       "expectedPermalink": "/en/posts/vpn/",
       "status": "translated",

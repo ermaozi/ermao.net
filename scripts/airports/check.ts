@@ -42,11 +42,13 @@ for (const record of airportRecords) {
   if (!record.officialHref.trim()) errors.push(`${record.name}: 缺少 officialHref`)
   if (!record.minPlanText.trim()) warnings.push(`${record.name}: 缺少 minPlanText`)
 
-  const ranked = seenRanks.get(record.rank)
-  if (ranked) {
-    errors.push(`重复 rank ${record.rank}: ${ranked.name} / ${record.name}`)
+  if (record.rank !== undefined) {
+    const ranked = seenRanks.get(record.rank)
+    if (ranked) {
+      errors.push(`重复 rank ${record.rank}: ${ranked.name} / ${record.name}`)
+    }
+    seenRanks.set(record.rank, record)
   }
-  seenRanks.set(record.rank, record)
 
   addWarningForUnknown(record, 'universalSubscription', record.universalSubscription)
   addWarningForUnknown(record, 'hasOneTimePackage', record.hasOneTimePackage)
