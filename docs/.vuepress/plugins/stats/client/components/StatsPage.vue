@@ -1,8 +1,8 @@
 <template>
-  <section class="stats-dashboard" :aria-label="pick('网站公开访问数据', 'Public site traffic data')">
+  <section class="stats-dashboard" :aria-label="pick('网站访问数据', 'Site traffic data')">
     <div class="overview-card">
       <section class="total-panel" aria-labelledby="stats-total-title">
-        <span class="eyebrow">PUBLIC INSIGHTS</span>
+        <span class="eyebrow">PRIVATE INSIGHTS</span>
         <h2 id="stats-total-title">{{ pick('当前访问量', 'Current visits') }}</h2>
 
         <div class="total-orbit" :class="{ 'is-loading': loading }" aria-live="polite">
@@ -34,7 +34,7 @@
           <i aria-hidden="true" />
           {{ currentRangeLabel }}
         </span>
-        <p>{{ pick('公开展示站内访问趋势，不收集或呈现可识别个人身份的信息。', 'Public traffic trends are shown without collecting or displaying personally identifiable information.') }}</p>
+        <p>{{ pick('仅向授权账号展示站内访问趋势，不呈现可识别个人身份的信息。', 'Traffic trends are available only to authorized accounts and do not display personally identifiable information.') }}</p>
       </section>
 
       <section class="insights-panel" aria-labelledby="stats-insights-title">
@@ -134,7 +134,7 @@
       <div class="loading-heading">
         <span class="loading-mark" aria-hidden="true" />
         <div>
-          <strong>{{ pick('正在汇总公开数据', 'Aggregating public data') }}</strong>
+          <strong>{{ pick('正在汇总访问数据', 'Aggregating traffic data') }}</strong>
           <span>{{ pick('连接统计服务并生成图表…', 'Connecting to the statistics service and generating charts…') }}</span>
         </div>
       </div>
@@ -239,7 +239,7 @@
         <span class="privacy-icon" aria-hidden="true">⌁</span>
         <div>
           <strong>{{ pick('关于这些数据', 'About this data') }}</strong>
-          <p>{{ pick('页面仅展示聚合后的访问次数、内容路径、来源域名、国家或地区及浏览器类型，不在此页面公开单个访客的 IP、设备标识或访问轨迹。', 'This page shows only aggregated visit counts, content paths, referrer domains, countries or regions, and browser types. It does not publish an individual visitor’s IP address, device identifier, or browsing trail.') }}</p>
+          <p>{{ pick('页面仅展示聚合后的访问次数、内容路径、来源域名、国家或地区及浏览器类型，不展示单个访客的 IP、设备标识或访问轨迹。', 'This page shows only aggregated visit counts, content paths, referrer domains, countries or regions, and browser types. It does not display an individual visitor’s IP address, device identifier, or browsing trail.') }}</p>
         </div>
       </aside>
     </div>
@@ -282,10 +282,7 @@ ChartJS.register(
   ChartDataLabels,
 )
 
-let workerUrl = __STATS_WORKER_URL__
-if (typeof workerUrl === 'string' && workerUrl.startsWith('"') && workerUrl.endsWith('"')) {
-  workerUrl = workerUrl.slice(1, -1)
-}
+const reportUrl = '/stats/api'
 
 const emptyStats = () => ({
   total: 0,
@@ -985,20 +982,15 @@ const requestStats = async url => {
 }
 
 const fetchStats = async period => {
-  if (!workerUrl) {
-    error.value = pick('统计服务地址尚未配置。', 'The statistics service URL is not configured.')
-    return
-  }
-
   currentPeriod.value = period
   isCustomMode.value = false
   startDate.value = ''
   endDate.value = ''
-  await requestStats(`${workerUrl}?period=${encodeURIComponent(period)}`)
+  await requestStats(`${reportUrl}?period=${encodeURIComponent(period)}`)
 }
 
 const fetchCustom = async () => {
-  if (!workerUrl || !startDate.value || !endDate.value) return
+  if (!startDate.value || !endDate.value) return
 
   const start = new Date(`${startDate.value}T00:00:00`).getTime()
   const exclusiveEndDate = new Date(`${endDate.value}T00:00:00`)
@@ -1016,7 +1008,7 @@ const fetchCustom = async () => {
 
   currentPeriod.value = ''
   isCustomMode.value = true
-  await requestStats(`${workerUrl}?start=${start}&end=${end}`)
+  await requestStats(`${reportUrl}?start=${start}&end=${end}`)
 }
 
 const refreshCurrent = () => {

@@ -13,6 +13,14 @@ zone_name = "ermao.net"
 pattern = "ermao.net/api/stats*"
 zone_name = "ermao.net"
 
+[[routes]]
+pattern = "www.ermao.net/stats/api*"
+zone_name = "ermao.net"
+
+[[routes]]
+pattern = "ermao.net/stats/api*"
+zone_name = "ermao.net"
+
 [triggers]
 crons = ["15 1 * * *"]
 

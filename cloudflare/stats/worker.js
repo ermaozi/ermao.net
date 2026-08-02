@@ -7,6 +7,7 @@ const HOUR_MS = 60 * 60 * 1000;
 const DAY_MS = 24 * HOUR_MS;
 const STATS_CACHE_VERSION = 'v5';
 const COMPARABLE_PERIODS = new Set(['24h', '7d', '30d']);
+const PRIVATE_STATS_HOSTS = new Set(['ermao.net', 'www.ermao.net']);
 
 const getCorsHeaders = (request) => {
   const origin = request.headers.get('Origin')
@@ -48,7 +49,8 @@ const isLikeApiPath = (path) =>
   || path === '/api/engagement';
 
 const resolveStatsRoutePath = (method, path) => {
-  if (path === '/api/stats') return method === 'GET' ? '/stats' : '/';
+  if (path === '/stats/api') return method === 'GET' ? '/stats' : path;
+  if (path === '/api/stats') return method === 'POST' ? '/' : path;
   if (!path.startsWith('/api/stats/')) return path;
 
   const suffix = path.slice('/api/stats'.length);
@@ -1332,6 +1334,12 @@ const buildStatsResponse = (rows, requestConfig, source) => {
 const handler = {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
+    if (
+      url.pathname === '/stats'
+      || (url.pathname === '/stats/api' && !PRIVATE_STATS_HOSTS.has(url.hostname))
+    ) {
+      return new Response('Not Found', { status: 404 });
+    }
     const routePath = resolveStatsRoutePath(request.method, url.pathname);
     const likeApiRequest = isLikeApiPath(routePath);
     const corsHeaders = likeApiRequest ? getLikeCorsHeaders(request) : getCorsHeaders(request);
@@ -1528,7 +1536,7 @@ const handler = {
                             ...corsHeaders,
                             'Content-Type': 'application/json',
                             'X-Stats-Cache': 'HIT',
-                            'Cache-Control': `public, max-age=60, s-maxage=${requestConfig.ttl}, stale-while-revalidate=600`
+                            'Cache-Control': 'private, no-store'
                         }
                     });
                 }
@@ -1553,7 +1561,7 @@ const handler = {
                 ...corsHeaders,
                 'Content-Type': 'application/json',
                 'X-Stats-Cache': 'MISS',
-                'Cache-Control': `public, max-age=60, s-maxage=${requestConfig.ttl}, stale-while-revalidate=600`
+                'Cache-Control': 'private, no-store'
               } 
             });
         } catch (e) {

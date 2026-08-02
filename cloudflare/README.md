@@ -44,9 +44,9 @@ pnpm exec wrangler secret put PROXYCHECK_API_KEY --config claude-env-check/wrang
 
 脚本先检查 Token、执行严格 dry-run，再应用幂等 D1 SQL 并部署。统计后端只有在最近 366 个已完成 UTC 日的聚合数据不完整时，才扫描原始 `views` 回填。
 
-统计接口统一使用 `/api/stats`：访问写入为 `POST /api/stats`，报表为 `GET /api/stats`，热门、互动和点赞分别位于 `/api/stats/popular`、`/api/stats/engagement`、`/api/stats/likes`。旧路径和 `views.ermao.net` 暂时保留用于回滚。
+公开统计接口继续使用 `/api/stats`：访问写入为 `POST /api/stats`，热门、互动和点赞分别位于 `/api/stats/popular`、`/api/stats/engagement`、`/api/stats/likes`。私有报表改为 `GET /stats/api`，必须与 `/stats/`、`/en/stats/` 一起由 Cloudflare Access 保护；旧公开 `GET /api/stats` 已关闭。
 
-两个 Zone Route 已写入 `stats/wrangler.toml`。当前 Token 缺少 `Zone > Workers Routes > Edit` 权限；补充权限后运行 `./deploy.sh stats` 即可应用。确认网站已发布且同源接口正常后，再从 Cloudflare 删除 `views.ermao.net` Custom Domain。
+四个 Zone Route 已写入 `stats/wrangler.toml`，运行 `./deploy.sh stats` 即可应用。确认网站已发布且同源接口正常后，再从 Cloudflare 删除 `views.ermao.net` Custom Domain。
 
 ## 文件职责
 

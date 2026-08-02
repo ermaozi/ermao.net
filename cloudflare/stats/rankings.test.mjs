@@ -48,8 +48,8 @@ test('rankings return the top 15 and popular excludes non-articles', async () =>
 
   const env = { VIEWS_DB: new D1Database(db) }
   const ctx = { waitUntil() {} }
-  const popular = await handler.fetch(new Request('https://stats.test/api/stats/popular'), env, ctx).then(response => response.json())
-  const likes = await handler.fetch(new Request('https://stats.test/api/stats/likes/top?limit=15'), env, ctx).then(response => response.json())
+  const popular = await handler.fetch(new Request('https://www.ermao.net/api/stats/popular'), env, ctx).then(response => response.json())
+  const likes = await handler.fetch(new Request('https://www.ermao.net/api/stats/likes/top?limit=15'), env, ctx).then(response => response.json())
 
   assert.equal(popular.length, 15)
   assert.equal(likes.length, 15)
@@ -73,7 +73,7 @@ test('engagement batches multiple article counters into one D1 query', async () 
   `)
 
   const d1 = new D1Database(db)
-  const response = await handler.fetch(new Request('https://stats.test/api/stats/engagement', {
+  const response = await handler.fetch(new Request('https://www.ermao.net/api/stats/engagement', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -146,13 +146,14 @@ test('historical stats keep daily buckets and fill gaps in one D1 query', async 
 
   const d1 = new D1Database(db)
   const response = await handler.fetch(
-    new Request('https://stats.test/api/stats?period=7d'),
+    new Request('https://www.ermao.net/stats/api?period=7d'),
     { VIEWS_DB: d1 },
     { waitUntil() {} }
   )
   const data = await response.json()
 
   assert.equal(response.status, 200)
+  assert.equal(response.headers.get('cache-control'), 'private, no-store')
   assert.equal(data.total, 10)
   assert.equal(data.meta.source, 'hybrid')
   assert.equal(d1.queryCount, 1)
@@ -161,4 +162,43 @@ test('historical stats keep daily buckets and fill gaps in one D1 query', async 
   assert.equal(series.get(aggregatedDay), 3)
   const plan = db.prepare(`EXPLAIN QUERY PLAN ${d1.queries[0].sql}`).all(...d1.queries[0].values)
   assert.ok(plan.some(row => String(row.detail).includes('idx_views_ts')))
+})
+
+test('private reports use the protected route without exposing legacy or alternate hosts', async () => {
+  const ctx = { waitUntil() {} }
+  const privateResponse = await handler.fetch(
+    new Request('https://www.ermao.net/stats/api?period=24h'),
+    {},
+    ctx
+  )
+  const legacyResponse = await handler.fetch(
+    new Request('https://www.ermao.net/api/stats?period=24h'),
+    {},
+    ctx
+  )
+  const alternateHostResponse = await handler.fetch(
+    new Request('https://views.ermao.net/stats/api?period=24h'),
+    {},
+    ctx
+  )
+  const legacyWorkerResponse = await handler.fetch(
+    new Request('https://views.ermao.net/stats?period=24h'),
+    {},
+    ctx
+  )
+  const writeResponse = await handler.fetch(
+    new Request('https://www.ermao.net/api/stats', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ path: '/article/example/' })
+    }),
+    {},
+    ctx
+  )
+
+  assert.equal(privateResponse.status, 500)
+  assert.equal(legacyResponse.status, 404)
+  assert.equal(alternateHostResponse.status, 404)
+  assert.equal(legacyWorkerResponse.status, 404)
+  assert.equal(writeResponse.status, 500)
 })
