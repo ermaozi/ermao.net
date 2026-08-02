@@ -1,0 +1,15 @@
+name = "ad-board"
+main = "worker.js"
+compatibility_date = "2026-07-31"
+account_id = "b0021b5742f923f992a9e15ad797de45"
+workers_dev = true
+preview_urls = false
+
+[vars]
+ALLOWED_ORIGINS = "https://www.ermao.net,https://ermao.net"
+SITE_URL = "https://www.ermao.net/ad-board/"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "ermao_net"
+database_id = "54251901-dd08-4a02-a577-a4d96215843d"

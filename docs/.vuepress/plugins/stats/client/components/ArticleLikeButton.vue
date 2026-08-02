@@ -1,7 +1,7 @@
 <script setup>
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useLang } from 'vuepress/client'
-import { getLikeStatus, removeLike, submitLike } from '../like-api.js'
+import { getEngagementStatus, removeLike, submitLike } from '../like-api.js'
 import { canonicalizeStatsPath } from '../stats-path.js'
 
 const props = defineProps({
@@ -75,7 +75,7 @@ const loadStatus = async (force = false) => {
   loading.value = true
   errorText.value = ''
   try {
-    const data = await getLikeStatus(path, force)
+    const data = await getEngagementStatus(path, force)
     if (mounted && version === requestVersion && statsPath.value === path) applyStatus(data)
   } catch {
     if (mounted && version === requestVersion) {

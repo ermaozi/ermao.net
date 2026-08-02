@@ -1,0 +1,26 @@
+name = "vuepress-stats-worker"
+main = "worker.js"
+compatibility_date = "2026-01-11"
+account_id = "b0021b5742f923f992a9e15ad797de45"
+workers_dev = true
+preview_urls = true
+
+[[routes]]
+pattern = "www.ermao.net/api/stats*"
+zone_name = "ermao.net"
+
+[[routes]]
+pattern = "ermao.net/api/stats*"
+zone_name = "ermao.net"
+
+[triggers]
+crons = ["15 1 * * *"]
+
+[[d1_databases]]
+binding = "VIEWS_DB"
+database_name = "ermao_net"
+database_id = "54251901-dd08-4a02-a577-a4d96215843d"
+
+[[kv_namespaces]]
+binding = "VIEWS_KV"
+id = "85cccaee38234c2db6cab0dec578f0f2"

@@ -1,0 +1,11 @@
+{
+  "name": "ermao-cloudflare-backends",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "./deploy.sh"
+  },
+  "devDependencies": {
+    "wrangler": "4.58.0"
+  }
+}

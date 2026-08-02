@@ -7,6 +7,7 @@
 
 <script setup>
 import { computed, ref, onMounted, watch } from 'vue'
+import { getEngagementStatus } from '../like-api.js'
 import { canonicalizeStatsPath } from '../stats-path.js'
 
 const props = defineProps({
@@ -16,23 +17,13 @@ const props = defineProps({
 const count = ref(null)
 const statsPath = computed(() => canonicalizeStatsPath(props.path))
 
-// @ts-ignore
-let workerUrl = __STATS_WORKER_URL__
-// Fix double quotes if they exist
-if (typeof workerUrl === 'string' && workerUrl.startsWith('"') && workerUrl.endsWith('"')) {
-    workerUrl = workerUrl.slice(1, -1)
-}
-
 const fetchCount = async (p) => {
-    if (!workerUrl || !p) return
+    if (!p) return
 
     count.value = null
     try {
-        const res = await fetch(`${workerUrl}/count?path=${encodeURIComponent(p)}`)
-        if (res.ok) {
-            const data = await res.json()
-            count.value = data.count
-        }
+        const data = await getEngagementStatus(p)
+        count.value = Number(data.views || 0)
     } catch (e) {}
 }
 

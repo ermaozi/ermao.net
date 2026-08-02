@@ -994,7 +994,7 @@ const fetchStats = async period => {
   isCustomMode.value = false
   startDate.value = ''
   endDate.value = ''
-  await requestStats(`${workerUrl}/stats?period=${encodeURIComponent(period)}`)
+  await requestStats(`${workerUrl}?period=${encodeURIComponent(period)}`)
 }
 
 const fetchCustom = async () => {
@@ -1016,7 +1016,7 @@ const fetchCustom = async () => {
 
   currentPeriod.value = ''
   isCustomMode.value = true
-  await requestStats(`${workerUrl}/stats?start=${start}&end=${end}`)
+  await requestStats(`${workerUrl}?start=${start}&end=${end}`)
 }
 
 const refreshCurrent = () => {

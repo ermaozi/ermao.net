@@ -1,0 +1,6 @@
+name = "claude-env-check"
+main = "worker.js"
+compatibility_date = "2026-07-30"
+account_id = "b0021b5742f923f992a9e15ad797de45"
+workers_dev = true
+preview_urls = false

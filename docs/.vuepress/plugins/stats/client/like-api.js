@@ -2,6 +2,9 @@ import { canonicalizeStatsPath } from './stats-path.js'
 
 const VISITOR_STORAGE_KEY = 'ermao_like_visitor_v1'
 const statusRequests = new Map()
+const pendingStatusRequests = new Map()
+
+let statusBatchScheduled = false
 
 let inMemoryVisitorId = ''
 
@@ -75,37 +78,75 @@ const parseResponse = async (response) => {
   return data
 }
 
-export const getLikeStatus = (path, force = false) => {
+const flushStatusBatch = async () => {
+  statusBatchScheduled = false
+  const batch = Array.from(pendingStatusRequests.entries()).slice(0, 20)
+  batch.forEach(([path]) => pendingStatusRequests.delete(path))
+  if (pendingStatusRequests.size > 0) {
+    statusBatchScheduled = true
+    queueMicrotask(flushStatusBatch)
+  }
+
+  const workerUrl = resolveWorkerUrl()
+  try {
+    const response = await fetch(`${workerUrl}/engagement`, {
+      method: 'POST',
+      headers: getHeaders(true),
+      credentials: 'include',
+      cache: 'no-store',
+      body: JSON.stringify({ paths: batch.map(([path]) => path) })
+    })
+    const data = await parseResponse(response)
+    const items = new Map((data?.items || []).map(item => [item.path, item]))
+
+    for (const [path, pending] of batch) {
+      const item = items.get(path)
+      if (item) pending.resolve(item)
+      else pending.reject(new Error('文章统计数据缺失'))
+    }
+  } catch (error) {
+    for (const [path, pending] of batch) {
+      if (statusRequests.get(path) === pending.request) statusRequests.delete(path)
+      pending.reject(error)
+    }
+  }
+}
+
+export const getEngagementStatus = (path, force = false) => {
   path = canonicalizeStatsPath(path)
   const workerUrl = resolveWorkerUrl()
   if (!workerUrl || !path) return Promise.reject(new Error('点赞服务地址未配置'))
   if (!force && statusRequests.has(path)) return statusRequests.get(path)
 
-  const request = fetch(
-    `${workerUrl}/api/likes/status?path=${encodeURIComponent(path)}`,
-    {
-      method: 'GET',
-      headers: getHeaders(),
-      credentials: 'include',
-      cache: 'no-store'
-    }
-  )
-    .then(parseResponse)
-    .catch((error) => {
-      statusRequests.delete(path)
-      throw error
-    })
+  let resolveRequest
+  let rejectRequest
+  const request = new Promise((resolve, reject) => {
+    resolveRequest = resolve
+    rejectRequest = reject
+  })
 
   statusRequests.set(path, request)
+  pendingStatusRequests.set(path, {
+    request,
+    resolve: resolveRequest,
+    reject: rejectRequest
+  })
+  if (!statusBatchScheduled) {
+    statusBatchScheduled = true
+    queueMicrotask(flushStatusBatch)
+  }
   return request
 }
+
+export const getLikeStatus = getEngagementStatus
 
 const updateLike = async (path, method) => {
   path = canonicalizeStatsPath(path)
   const workerUrl = resolveWorkerUrl()
   if (!workerUrl || !path) throw new Error('点赞服务地址未配置')
 
-  const response = await fetch(`${workerUrl}/api/likes`, {
+  const cachedRequest = statusRequests.get(path)
+  const response = await fetch(`${workerUrl}/likes`, {
     method,
     headers: getHeaders(true),
     credentials: 'include',
@@ -113,12 +154,14 @@ const updateLike = async (path, method) => {
     body: JSON.stringify({ path })
   })
   const data = await parseResponse(response)
-  statusRequests.set(path, Promise.resolve(data))
+  const cached = await cachedRequest?.catch(() => null)
+  const updated = { ...cached, ...data }
+  statusRequests.set(path, Promise.resolve(updated))
 
   if (typeof window !== 'undefined') {
-    window.dispatchEvent(new CustomEvent('ermao:like-updated', { detail: data }))
+    window.dispatchEvent(new CustomEvent('ermao:like-updated', { detail: updated }))
   }
-  return data
+  return updated
 }
 
 export const submitLike = (path) => updateLike(path, 'POST')

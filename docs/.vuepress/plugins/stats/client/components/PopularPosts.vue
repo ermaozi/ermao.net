@@ -21,6 +21,7 @@ const page = usePageData()
 const lang = useLang()
 const isEnglish = computed(() => lang.value?.startsWith('en'))
 const pageMapKeys = Object.keys(pageMap)
+const articlePathPrefixes = ['/article/', '/blog/', '/news/', '/posts/', '/scamvpn/']
 
 const shouldShow = computed(() => {
     const path = canonicalizeStatsPath(page.value.path)
@@ -68,7 +69,7 @@ const fetchLikedPosts = async (force = false) => {
 
     try {
         const cacheBuster = force ? `&refresh=${Date.now()}` : ''
-        const res = await fetch(`${workerUrl}/api/likes/top?limit=6${cacheBuster}`, {
+        const res = await fetch(`${workerUrl}/likes/top?limit=15${cacheBuster}`, {
             cache: 'no-store'
         })
         if (res.ok) {
@@ -182,7 +183,6 @@ const loading = computed(() =>
 )
 
 const filteredPosts = computed(() => {
-    const limit = activeTab.value === 'likes' ? 6 : 10
     const postsByPath = new Map()
 
     for (const post of activePosts.value) {
@@ -210,11 +210,12 @@ const filteredPosts = computed(() => {
         if (path.startsWith('/blog/categories/')) return false;
         if (path === '/friends' || path === '/friends.html') return false;
         if (path === '/blog' || path === '/blog.html') return false;
+        if (activeTab.value === 'popular' && !articlePathPrefixes.some(prefix => p.path.startsWith(prefix))) return false;
         // Exclude pagination pages
         if (p.path.includes('/page/')) return false;
         
         return true;
-    }).sort((a, b) => b.count - a.count).slice(0, limit).map(post => ({
+    }).sort((a, b) => b.count - a.count).slice(0, 15).map(post => ({
         ...post,
         path: localizeStatsPath(post.path, isEnglish.value)
     }))

@@ -8,7 +8,7 @@ import imagePerformancePlugin from './plugins/image-performance.js'
 import geoPlugin, { enhanceArticleJsonLd } from './plugins/geo.js'
 
 const hostname = 'https://www.ermao.net'
-const statsWorkerUrl = process.env.STATS_WORKER_URL || 'https://views.ermao.net'
+const statsWorkerUrl = process.env.STATS_WORKER_URL || '/api/stats'
 const defaultLocalePath = '/'
 const englishLocalePath = '/en/'
 const defaultLang = 'zh-CN'
@@ -139,7 +139,6 @@ export default defineUserConfig({
   head: [
     ['link', { rel: 'icon', href: '/img/logo.svg', type: 'image/svg+xml' }],
     ['link', { rel: 'preconnect', href: 'https://image.ermao.net' }],
-    ['link', { rel: 'dns-prefetch', href: 'https://views.ermao.net' }],
     ['link', { rel: 'dns-prefetch', href: 'https://giscus.app' }],
     ['meta', { name: 'theme-color', content: '#336f87' }],
     ['meta', { name: 'color-scheme', content: 'light dark' }],

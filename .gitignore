@@ -1,4 +1,6 @@
 .env
+cloudflare/.cloudflare.env
+cloudflare/**/.wrangler/
 **/*.log
 auto_deploy.sh
 **/images/
