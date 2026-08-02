@@ -1,5 +1,11 @@
 /* Customize global styles */
 
+:root,
+:root:where(:lang(zh)),
+:root:where(:lang(zh-CN)) {
+  --vp-font-family-base: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 html {
   text-rendering: optimizeLegibility;
 }
@@ -211,6 +217,22 @@ html {
 .posts-modal .avatar img {
   aspect-ratio: 1;
   object-fit: cover;
+}
+
+/* Posts discover their outline after hydration; reserve its desktop column in SSR. */
+@media (min-width: 1280px) {
+  .vp-doc-container.is-posts:not(.has-sidebar):not(.has-aside) > .container::after {
+    content: "";
+    flex: 0 0 256px;
+    order: 2;
+  }
+}
+
+/* Stats hydrate into this row; keep the date on its final line from first paint. */
+@media (min-width: 768px) {
+  .vp-doc-container .vp-doc-meta .create-time {
+    flex-basis: 100%;
+  }
 }
 
 @media (max-width: 719px) {

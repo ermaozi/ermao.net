@@ -2,36 +2,15 @@ import fs from 'node:fs'
 import path from 'node:path'
 import crypto from 'node:crypto'
 import type { Plugin } from 'vuepress'
-
-type Dimensions = { width: number; height: number }
+import { readImageDimensions, type ImageDimensions } from '../../../scripts/lib/imageDimensions.js'
 
 const imageRoot = path.resolve(process.cwd(), 'docs')
+const dimensionManifest = JSON.parse(
+  fs.readFileSync(path.resolve(process.cwd(), 'docs/.vuepress/data/image-dimensions.json'), 'utf8'),
+) as Record<string, [number, number]>
+const generatedWeeklySvg = /^https:\/\/image\.ermao\.net\/images\/(?:en\/)?blog\/weekly-news-[^/]+\/[^/]+\.svg(?:[?#].*)?$/i
 
-const readDimensions = (file: string): Dimensions | undefined => {
-  const buffer = fs.readFileSync(file)
-
-  if (buffer.length >= 24 && buffer.toString('ascii', 1, 4) === 'PNG') {
-    return { width: buffer.readUInt32BE(16), height: buffer.readUInt32BE(20) }
-  }
-
-  if (buffer.length >= 4 && buffer[0] === 0xff && buffer[1] === 0xd8) {
-    let offset = 2
-    while (offset + 8 < buffer.length) {
-      if (buffer[offset] !== 0xff) break
-      const marker = buffer[offset + 1]
-      const size = buffer.readUInt16BE(offset + 2)
-      if (marker >= 0xc0 && marker <= 0xc3) {
-        return { width: buffer.readUInt16BE(offset + 7), height: buffer.readUInt16BE(offset + 5) }
-      }
-      if (size < 2) break
-      offset += 2 + size
-    }
-  }
-
-  return undefined
-}
-
-const collectImages = (directory: string, result = new Map<string, Dimensions | null>()) => {
+const collectImages = (directory: string, result = new Map<string, ImageDimensions | null>()) => {
   for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
     if (entry.name.startsWith('.') || entry.name === 'node_modules') continue
     const file = path.join(directory, entry.name)
@@ -39,7 +18,7 @@ const collectImages = (directory: string, result = new Map<string, Dimensions | 
       collectImages(file, result)
     }
     else if (/\.(?:png|jpe?g)$/i.test(entry.name)) {
-      const dimensions = readDimensions(file)
+      const dimensions = readImageDimensions(fs.readFileSync(file))
       if (!dimensions) continue
       const key = entry.name.toLowerCase()
       const hash = crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex').slice(0, 6)
@@ -64,10 +43,15 @@ const imagePerformancePlugin = (): Plugin => ({
     md.renderer.rules.image = (tokens, index, options, env, self) => {
       const token = tokens[index]
       const src = token.attrGet('src') ?? ''
+      const normalizedSrc = src.split(/[?#]/)[0]
       const basename = decodeURIComponent(src.split(/[?#]/)[0].split('/').pop() ?? '').toLowerCase()
       const contentHash = basename.match(/-([a-f0-9]{6})\.[^.]+$/)?.[1]
-      const dimensions = dimensionsByBasename.get(basename)
+      const storedDimensions = dimensionManifest[normalizedSrc]
+      const dimensions = storedDimensions
+        ? { width: storedDimensions[0], height: storedDimensions[1] }
+        : dimensionsByBasename.get(basename)
         ?? (contentHash ? dimensionsByBasename.get(contentHash) : undefined)
+        ?? (generatedWeeklySvg.test(src) ? { width: 1600, height: 900 } : undefined)
 
       if (dimensions) {
         token.attrSet('width', String(dimensions.width))
