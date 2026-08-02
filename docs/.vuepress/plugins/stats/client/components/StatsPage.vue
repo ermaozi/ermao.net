@@ -947,9 +947,16 @@ const requestStats = async url => {
 
   try {
     const response = await fetch(url, {
+      credentials: 'same-origin',
       headers: { Accept: 'application/json' },
+      redirect: 'manual',
       signal: controller.signal,
     })
+
+    if (response.type === 'opaqueredirect' || (response.status >= 300 && response.status < 400)) {
+      window.location.assign(window.location.href)
+      return
+    }
 
     const contentType = response.headers.get('content-type') || ''
     if (!contentType.includes('application/json')) {
