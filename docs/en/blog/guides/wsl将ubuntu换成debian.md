@@ -48,7 +48,7 @@ Choose an explicit backup path with enough free space:
 wsl --export Ubuntu-20.04 C:\WSL-Backups\ubuntu-20.04-backup.tar
 ```
 
-![Exporting the current Ubuntu WSL distribution](https://image.ermao.net/images/article/ubm5k5vn/image.png)
+![Exporting the current Ubuntu WSL distribution =1292x260](https://image.ermao.net/images/article/ubm5k5vn/image.png)
 
 Confirm that the TAR file exists and has a plausible non-zero size. Keep it until Debian has been tested and any required data has been copied.
 
@@ -79,7 +79,7 @@ Install Debian:
 wsl --install -d Debian
 ```
 
-![Installing Debian for WSL](https://image.ermao.net/images/article/ubm5k5vn/image-2.png)
+![Installing Debian for WSL =1863x431](https://image.ermao.net/images/article/ubm5k5vn/image-2.png)
 
 Launch Debian and create the requested Linux user and password:
 
@@ -126,7 +126,7 @@ wsl --list --verbose
 
 If you use Windows Terminal, select Debian as its default profile.
 
-![Changing the default Windows Terminal profile](https://image.ermao.net/images/article/ubm5k5vn/image-3.png)
+![Changing the default Windows Terminal profile =1770x1211](https://image.ermao.net/images/article/ubm5k5vn/image-3.png)
 
 ## 6. Unregister Ubuntu only after verification
 
@@ -138,6 +138,6 @@ When Debian has been verified and the export is safely retained:
 wsl --unregister Ubuntu-20.04
 ```
 
-![Unregistering the old Ubuntu distribution](https://image.ermao.net/images/article/ubm5k5vn/image-1.png)
+![Unregistering the old Ubuntu distribution =909x163](https://image.ermao.net/images/article/ubm5k5vn/image-1.png)
 
 Do not delete the exported backup until you have completed at least one normal work cycle in Debian and confirmed that nothing important is missing.

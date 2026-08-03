@@ -70,7 +70,7 @@ Do not register or pay until those domains, the operator, and the intended invit
 
 ## Overview
 
-![SSONE website screenshot](https://image.ermao.net/images/article/ssone/image.png)
+![SSONE website screenshot =2048x2048](https://image.ermao.net/images/article/ssone/image.png)
 
 | Item | Source record |
 | --- | --- |
@@ -135,7 +135,7 @@ Transport encryption does not establish operator trustworthiness or end-to-end c
 
 ## Archived performance test
 
-![SSONE archived evening-peak speed test](https://image.ermao.net/images/article/ssone/image-1.png)
+![SSONE archived evening-peak speed test =3006x5570](https://image.ermao.net/images/article/ssone/image-1.png)
 
 The source records:
 

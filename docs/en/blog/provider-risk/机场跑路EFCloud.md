@@ -33,7 +33,7 @@ Many proxy services have recently become unreachable after data centers removed 
 
 ### Screenshot
 
-![EFCloud shutdown announcement](https://image.ermao.net/images/article/nz313xp6/image.png)
+![EFCloud shutdown announcement =840x1470](https://image.ermao.net/images/article/nz313xp6/image.png)
 
 ### English translation
 

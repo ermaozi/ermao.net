@@ -81,7 +81,7 @@ Website: [https://www.chattous.net](https://www.chattous.net/register?code=3OWtZ
 
 ## Overview {#overview}
 
-![Laotou VPN](https://image.ermao.net/images/article/laotouvpn/image.png)
+![Laotou VPN =750x750](https://image.ermao.net/images/article/laotouvpn/image.png)
 
 The provider material says Laotou VPN has operated since 2016 and has an established support team. Claims about reputation, uninterrupted operation, and service quality need evidence beyond the provider's own description.
 
@@ -168,7 +168,7 @@ The source describes responses usually within 30 minutes, continuous coverage, t
 
 ## Performance sample {#performance}
 
-![Laotou VPN performance sample](https://image.ermao.net/images/article/laotouvpn/image-1.png)
+![Laotou VPN performance sample =2614x3076](https://image.ermao.net/images/article/laotouvpn/image-1.png)
 
 Test environment recorded in the source:
 

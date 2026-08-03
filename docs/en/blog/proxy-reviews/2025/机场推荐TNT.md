@@ -38,11 +38,11 @@ The provider advertises:
 - Responsive customer support
 - No client limit
 
-![TNT pricing](https://image.ermao.net/images/article/4uxesz79/image.png)
+![TNT pricing =1280x826](https://image.ermao.net/images/article/4uxesz79/image.png)
 
 ## TNT test
 
-![TNT test](https://image.ermao.net/images/article/4uxesz79/image-1.png)
+![TNT test =777x1280](https://image.ermao.net/images/article/4uxesz79/image-1.png)
 
 ## Complete proxy-service guide
 

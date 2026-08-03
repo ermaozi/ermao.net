@@ -32,9 +32,9 @@ description: 2026年2月底起，Lray 线路持续恶化；4月进入几乎全�
 
 从2月底开始，Lray 出现频繁断连与大面积节点不可用，常见状态为“全黑”，仅偶发2-3个服务器可用。
 
-![lray机场跑路节点断连截图](https://image.ermao.net/images/scamvpn/lray/20260407_095925-c64d99.png)
+![lray机场跑路节点断连截图 =900x1700](https://image.ermao.net/images/scamvpn/lray/20260407_095925-c64d99.png)
 
-![lray机场跑路节点断连截图](https://image.ermao.net/images/scamvpn/lray/20260407_095959-658220.png)
+![lray机场跑路节点断连截图 =1179x2556](https://image.ermao.net/images/scamvpn/lray/20260407_095959-658220.png)
 
 ### 随后阶段：促销降价，但服务未见修复
 
@@ -44,7 +44,7 @@ description: 2026年2月底起，Lray 线路持续恶化；4月进入几乎全�
 
 进入4月后，问题进一步恶化为近乎全天不可用。专用 APP 无法连接可选服务器，实际已无法承担正常使用需求。
 
-![lray机场跑路客服失联截图](https://image.ermao.net/images/scamvpn/lray/20260407_100013-04941f.png)
+![lray机场跑路客服失联截图 =1920x884](https://image.ermao.net/images/scamvpn/lray/20260407_100013-04941f.png)
 
 ### 客服响应恶化：工单超48小时无人回复
 

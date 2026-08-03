@@ -34,13 +34,13 @@ XSUS is a long-running proxy service with affordable plans and a large server se
 
 It also reports prompt customer-support responses and strongly recommends the service.
 
-![XSUS pricing](https://image.ermao.net/images/article/bc6o8acd/image.png)
+![XSUS pricing =1345x1220](https://image.ermao.net/images/article/bc6o8acd/image.png)
 
 ## XSUS tests
 
-![XSUS test 1](https://image.ermao.net/images/article/bc6o8acd/image-1.png)
+![XSUS test 1 =4128x756](https://image.ermao.net/images/article/bc6o8acd/image-1.png)
 
-![XSUS test 2](https://image.ermao.net/images/article/bc6o8acd/image-2.png)
+![XSUS test 2 =4000x756](https://image.ermao.net/images/article/bc6o8acd/image-2.png)
 
 ## Complete proxy-service guide
 

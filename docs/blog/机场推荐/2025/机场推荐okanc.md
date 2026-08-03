@@ -47,11 +47,11 @@ OKANC 此前与奈云同一运营体系；奈云已确认跑路，同主体项�
 |Max版|50元/月|600GB/月|[查看风险](/scamvpn/okac/)|
 |MAX+极致版|88元/月|1024GB/月|[查看风险](/scamvpn/okac/)|
 
-![OKANC机场价格](https://image.ermao.net/images/article/giwzl7sq/image-1.png)
+![OKANC机场价格 =2524x884](https://image.ermao.net/images/article/giwzl7sq/image-1.png)
 
 ## OKANC机场测试
 
-![OKANC机场测试](https://image.ermao.net/images/article/giwzl7sq/image.png)
+![OKANC机场测试 =1861x1452](https://image.ermao.net/images/article/giwzl7sq/image.png)
 
 ## 机场汇总
 

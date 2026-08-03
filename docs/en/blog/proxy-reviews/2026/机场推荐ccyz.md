@@ -78,7 +78,7 @@ Website: [https://xxyun.at/?code=HOWnn58c](https://xxyun.at/?code=HOWnn58c)
 
 ## Overview {#overview}
 
-![CCYZ logo](https://image.ermao.net/images/blog/ccyz/image-1.png)
+![CCYZ logo =927x375](https://image.ermao.net/images/blog/ccyz/image-1.png)
 
 **[CCYZ](https://xxyun.at/?code=HOWnn58c)** promotes low-cost dedicated routes using BGP and IEPL, including evening-peak performance, streaming access, and round-the-clock support. These are provider claims except where a specific test environment is stated below.
 
@@ -114,7 +114,7 @@ The provider advertised 1GB of trial traffic and a 5% discount with coupon `ccyz
 
 ## Performance sample {#performance}
 
-![CCYZ speed-test sample](https://image.ermao.net/images/blog/ccyz/image.png)
+![CCYZ speed-test sample =6306x2145](https://image.ermao.net/images/blog/ccyz/image.png)
 
 - Test connection: China Telecom 200Mbps in Jiangsu
 - Test time: 20:00–21:00 evening peak

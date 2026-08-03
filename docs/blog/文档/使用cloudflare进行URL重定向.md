@@ -24,7 +24,7 @@ description: >-
 
 ## 1. 在 cloudflare 解析你的域名
 
-![使用cloudflare进行URL重定向 示例图片](https://image.ermao.net/images/article/jqtuqouj/image.png)
+![使用cloudflare进行URL重定向 示例图片 =2015x1187](https://image.ermao.net/images/article/jqtuqouj/image.png)
 
 我要把 [blog.ermao.net](https://blog.ermao.net) 跟 [ermao.net](https://ermao.net) 的所有请求都重定向到 [www.ermao.net](https://www.ermao.net)。
 
@@ -34,11 +34,11 @@ description: >-
 
 ## 2. 在 cloudflare 进行URL重定向
 
-![使用cloudflare进行URL重定向 示例图片](https://image.ermao.net/images/article/jqtuqouj/image-1.png)
+![使用cloudflare进行URL重定向 示例图片 =1898x991](https://image.ermao.net/images/article/jqtuqouj/image-1.png)
 
 依次点击`规则` -> `重定向规则` -> `创建规则`。
 
-![使用cloudflare进行URL重定向 示例图片](https://image.ermao.net/images/article/jqtuqouj/image-2.png)
+![使用cloudflare进行URL重定向 示例图片 =1155x1123](https://image.ermao.net/images/article/jqtuqouj/image-2.png)
 
 规则名字随便写，字段类型选`主机名`，字段值填你要重定向的域名。
 

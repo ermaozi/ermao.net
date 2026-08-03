@@ -33,7 +33,7 @@ Consider a separate OneDrive account for NAS backups. Grant it access only to th
 
 Enable SSH in FNOS only on the trusted LAN:
 
-![Enabling SSH in FNOS](https://image.ermao.net/images/article/aofygutj/image-1.png)
+![Enabling SSH in FNOS =1461x736](https://image.ermao.net/images/article/aofygutj/image-1.png)
 
 Connect from a local terminal:
 
@@ -41,11 +41,11 @@ Connect from a local terminal:
 ssh FNOS_USER@FNOS_LAN_ADDRESS
 ```
 
-![Connecting to FNOS over SSH](https://image.ermao.net/images/article/aofygutj/image-2.png)
+![Connecting to FNOS over SSH =692x133](https://image.ermao.net/images/article/aofygutj/image-2.png)
 
 The password is not echoed while typing. Verify the host-key fingerprint before accepting a new key, especially if the address was used by another device previously.
 
-![Successful FNOS SSH login](https://image.ermao.net/images/article/aofygutj/image-3.png)
+![Successful FNOS SSH login =941x136](https://image.ermao.net/images/article/aofygutj/image-3.png)
 
 The original guide switched the whole shell to root with `sudo su`. That is unnecessary for this container and increases the impact of a typo. Use the normal FNOS user and only add `sudo` to a command that actually requires it. Be aware that membership in the Docker group is effectively root-equivalent on the host.
 
@@ -59,7 +59,7 @@ FNOS data paths often resemble:
 
 but the pool number, user ID, and layout can differ. In File Manager, open the directory details and copy the original path:
 
-![Copying the original FNOS directory path](https://image.ermao.net/images/article/aofygutj/image-5.png)
+![Copying the original FNOS directory path =1786x702](https://image.ermao.net/images/article/aofygutj/image-5.png)
 
 In the shell:
 
@@ -131,17 +131,17 @@ docker run -it --name onedrive \
 
 The container prints a Microsoft authorization URL:
 
-![OneDrive authorization prompt](https://image.ermao.net/images/article/aofygutj/image-6.png)
+![OneDrive authorization prompt =1035x193](https://image.ermao.net/images/article/aofygutj/image-6.png)
 
 Open it in a browser, sign in to the intended account, review the requested permissions, and complete authorization. The browser redirects to a blank page; copy the **entire resulting URL** back into the terminal prompt:
 
-![Microsoft authorization redirect](https://image.ermao.net/images/article/aofygutj/image-7.png)
+![Microsoft authorization redirect =1361x462](https://image.ermao.net/images/article/aofygutj/image-7.png)
 
 The client stores credentials and a state database in the configuration mount:
 
-![Initial OneDrive synchronization](https://image.ermao.net/images/article/aofygutj/image-8.png)
+![Initial OneDrive synchronization =1362x235](https://image.ermao.net/images/article/aofygutj/image-8.png)
 
-![Persistent OneDrive configuration](https://image.ermao.net/images/article/aofygutj/image-9.png)
+![Persistent OneDrive configuration =505x309](https://image.ermao.net/images/article/aofygutj/image-9.png)
 
 The original article referred to a `refresh_token` file and suggested deleting it after a password change. Current reauthorization should use the client's supported `ONEDRIVE_REAUTH=1` flow or current upstream instructions, not manual token-file deletion as the first response.
 
@@ -192,9 +192,9 @@ docker logs --tail 200 onedrive
 
 The FNOS container interface should also show the service:
 
-![OneDrive container in FNOS](https://image.ermao.net/images/article/aofygutj/image-10.png)
+![OneDrive container in FNOS =910x139](https://image.ermao.net/images/article/aofygutj/image-10.png)
 
-![OneDrive container logs](https://image.ermao.net/images/article/aofygutj/image-11.png)
+![OneDrive container logs =1326x840](https://image.ermao.net/images/article/aofygutj/image-11.png)
 
 ## 7. Configure Filters Carefully
 

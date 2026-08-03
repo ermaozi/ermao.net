@@ -30,7 +30,7 @@ Consult the [proxy-service selection and review guide](/en/posts/vpn/) before re
 
 ---
 
-![HyperOrbit connected screen](https://image.ermao.net/images/blog/HyperOrbit/20260527_230232-cd78fc.png)
+![HyperOrbit connected screen =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_230232-cd78fc.png)
 
 ---
 
@@ -62,7 +62,7 @@ The app can test all imported nodes and show their TCP latency.
 
 At the source article's May 29, 2026 snapshot, HyperOrbit listed a price of **USD 1.99 per year** and a **seven-day free trial** that could be canceled before billing.
 
-![HyperOrbit free-trial screen](https://image.ermao.net/images/blog/HyperOrbit/20260527_231550-c18a35.png)
+![HyperOrbit free-trial screen =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231550-c18a35.png)
 
 The source also linked a TestFlight beta in which paid features were available without purchase:
 
@@ -118,9 +118,9 @@ This imports all nodes supplied by a provider and can be refreshed later.
 3. Paste the subscription URL.
 4. Confirm the import.
 
-![Adding a HyperOrbit subscription](https://image.ermao.net/images/blog/HyperOrbit/20260527_230305-edc2ac.png)
+![Adding a HyperOrbit subscription =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_230305-edc2ac.png)
 
-![HyperOrbit subscription form](https://image.ermao.net/images/blog/HyperOrbit/20260527_230313-2902b2.png)
+![HyperOrbit subscription form =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_230313-2902b2.png)
 
 ### Method 2: scan a QR code
 
@@ -128,7 +128,7 @@ This imports all nodes supplied by a provider and can be refreshed later.
 2. Choose **Scan QR Code**.
 3. Scan a node or subscription QR code that you trust.
 
-![Scanning a QR code in HyperOrbit](https://image.ermao.net/images/blog/HyperOrbit/20260527_230845-da0f61.png)
+![Scanning a QR code in HyperOrbit =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_230845-da0f61.png)
 
 ### Method 3: import from the clipboard
 
@@ -152,7 +152,7 @@ Select the intended node in the home-screen list, then select the connection but
 
 On the first connection, iOS asks whether the app may add a VPN configuration. Review the request, allow it, and authenticate with Face ID or the passcode.
 
-![Connecting in HyperOrbit](https://image.ermao.net/images/blog/HyperOrbit/20260527_230953-b90205.png)
+![Connecting in HyperOrbit =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_230953-b90205.png)
 
 A VPN indicator appears while the connection is active.
 
@@ -166,9 +166,9 @@ A VPN indicator appears while the connection is active.
 
 Global mode can be useful for a first connectivity test, but Rule mode is normally preferable for regular use.
 
-![Changing HyperOrbit routing mode](https://image.ermao.net/images/blog/HyperOrbit/20260527_231009-a016d7.png)
+![Changing HyperOrbit routing mode =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231009-a016d7.png)
 
-![HyperOrbit rules view](https://image.ermao.net/images/blog/HyperOrbit/20260527_231013-c163ec.png)
+![HyperOrbit rules view =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231013-c163ec.png)
 
 ## 5. Test node latency
 
@@ -176,7 +176,7 @@ Select **Test All** on the home screen. HyperOrbit sends TCP latency tests and d
 
 Low latency is one useful signal, but also test the actual application and sustained throughput before selecting a primary node.
 
-![HyperOrbit node-latency test](https://image.ermao.net/images/blog/HyperOrbit/20260527_231025-873908.png)
+![HyperOrbit node-latency test =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231025-873908.png)
 
 ## 6. iCloud sync
 
@@ -184,9 +184,9 @@ Open **Settings → iCloud Sync** and choose **Upload All to iCloud**.
 
 On another device using the same iCloud account, open the same screen and choose **Download All from iCloud** to restore subscriptions and nodes.
 
-![HyperOrbit iCloud synchronization](https://image.ermao.net/images/blog/HyperOrbit/20260527_231041-8bc167.png)
+![HyperOrbit iCloud synchronization =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231041-8bc167.png)
 
-![HyperOrbit iCloud synchronization details](https://image.ermao.net/images/blog/HyperOrbit/20260527_231053-a776aa.png)
+![HyperOrbit iCloud synchronization details =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231053-a776aa.png)
 
 ## 7. Advanced features
 
@@ -199,7 +199,7 @@ Select the active-connection count on the connection card to inspect:
 - upload and download traffic;
 - active or closed status.
 
-![HyperOrbit active-connections view](https://image.ermao.net/images/blog/HyperOrbit/20260527_231113-2a017e.png)
+![HyperOrbit active-connections view =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231113-2a017e.png)
 
 This can help determine which app is using data and whether a request followed the direct or proxied route.
 
@@ -211,7 +211,7 @@ The Statistics page aggregates connections by domain:
 - **Consistently slow domains:** Sort by connection time to identify requests that remain slow through the proxy.
 - **Direct versus proxied traffic:** Compare how the current rules divide connections.
 
-![HyperOrbit statistics view](https://image.ermao.net/images/blog/HyperOrbit/20260527_231129-7cc9cb.png)
+![HyperOrbit statistics view =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231129-7cc9cb.png)
 
 ## Frequently asked questions
 

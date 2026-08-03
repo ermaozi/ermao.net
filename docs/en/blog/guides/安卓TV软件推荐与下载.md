@@ -24,11 +24,11 @@ This page recommends several Android TV apps and provides their download links.
 
 BBLL is a third-party Bilibili client intended only for learning and discussion. It was developed as a personal-interest project and does not bypass or crack Bilibili. It wraps existing Bilibili APIs, and all content data comes from Bilibili's official APIs; the developer does not take responsibility for that content. Data collected through Firebase and App Center includes device-related information and crash logs, not personal information.
 
-![Recommended Android TV app example](https://image.ermao.net/images/article/vw1nq52m/image.png)
+![Recommended Android TV app example =1920x1080](https://image.ermao.net/images/article/vw1nq52m/image.png)
 
-![Recommended Android TV app example](https://image.ermao.net/images/article/vw1nq52m/image-1.png)
+![Recommended Android TV app example =1920x1080](https://image.ermao.net/images/article/vw1nq52m/image-1.png)
 
-![Recommended Android TV app example](https://image.ermao.net/images/article/vw1nq52m/image-2.png)
+![Recommended Android TV app example =1920x1080](https://image.ermao.net/images/article/vw1nq52m/image-2.png)
 
 ### Project
 
@@ -42,7 +42,7 @@ BBLL is a third-party Bilibili client intended only for learning and discussion.
 
 A free karaoke app that can connect to a Bluetooth microphone for singing at home.
 
-![Recommended Android TV app example](https://image.ermao.net/images/article/vw1nq52m/image-3.png)
+![Recommended Android TV app example =1082x609](https://image.ermao.net/images/article/vw1nq52m/image-3.png)
 
 ### Download
 
@@ -52,9 +52,9 @@ A free karaoke app that can connect to a Bluetooth microphone for singing at hom
 
 AList TV lets you browse or play videos from your connected cloud drives directly on a television. The TV version was reportedly removed from the official distribution channel and is now difficult to find.
 
-![Recommended Android TV app example](https://image.ermao.net/images/article/vw1nq52m/image-4.png)
+![Recommended Android TV app example =1000x562](https://image.ermao.net/images/article/vw1nq52m/image-4.png)
 
-![Recommended Android TV app example](https://image.ermao.net/images/article/vw1nq52m/image-5.png)
+![Recommended Android TV app example =1106x706](https://image.ermao.net/images/article/vw1nq52m/image-5.png)
 
 ### Download
 

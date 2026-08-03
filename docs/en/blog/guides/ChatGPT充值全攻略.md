@@ -170,17 +170,17 @@ Before buying from any seller, require the exact official plan name, duration, a
 
 The following steps translate the submitted CZGPT workflow. They show what the platform presented in July 2026; they are not proof that the same product, price, payment channel, or delivery mechanism is available now.
 
-![CZGPT ChatGPT subscription service home page](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-180b02.png)
+![CZGPT ChatGPT subscription service home page =1267x664](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-180b02.png)
 
 ### Step 1: select a product
 
 Open [CZGPT](https://www.czgptai.com/) and inspect the product catalog.
 
-![CZGPT AI product catalog](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-0f5469.png)
+![CZGPT AI product catalog =2880x1508](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-0f5469.png)
 
 The submitted screenshots show categories for ChatGPT, Claude, Gemini, Grok, Suno, and other AI products.
 
-![CZGPT ChatGPT product page](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-a10dad.png)
+![CZGPT ChatGPT product page =1267x664](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-a10dad.png)
 
 Before paying, obtain written answers to all of these questions:
 
@@ -198,13 +198,13 @@ Before paying, obtain written answers to all of these questions:
 
 The source workflow asks for contact information used to retrieve the CZGPT order and receive support.
 
-![CZGPT order details form](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-36506f.jpeg)
+![CZGPT order details form =1263x661](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-36506f.jpeg)
 
 Do not enter a ChatGPT password, email verification code, authenticator code, recovery code, API key, or session token in a contact-information field.
 
 The submitted checkout screenshot shows a QR-code payment flow.
 
-![CZGPT QR-code payment page](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-3798e7.jpeg)
+![CZGPT QR-code payment page =1267x664](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-3798e7.jpeg)
 
 CZGPT's public pages claim support for familiar local payment channels, but availability must be verified at checkout. Save:
 
@@ -220,13 +220,13 @@ Payment traceability does not prove that the upstream subscription source is aut
 
 The submitted flow displays a code or upgrade link after payment.
 
-![CZGPT order completion and code delivery](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-8ca80c.jpeg)
+![CZGPT order completion and code delivery =1267x664](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-8ca80c.jpeg)
 
-![CZGPT code-validation page](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-458594.jpeg)
+![CZGPT code-validation page =1267x664](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-458594.jpeg)
 
 The next screen asks the buyer to confirm the target account.
 
-![CZGPT target-account confirmation with sensitive data redacted](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-f9d207.png)
+![CZGPT target-account confirmation with sensitive data redacted =1732x908](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-f9d207.png)
 
 ::: danger Stop before submitting an authenticated session
 Session tokens, cookies, and similar browser data can allow someone to act as you without knowing your password. "We do not need your password" is not a sufficient security guarantee.
@@ -240,11 +240,11 @@ Never install an unknown browser extension or paste code into developer tools to
 
 The submitted result page appears after the seller workflow completes.
 
-![CZGPT delivery-result page with code and account redacted](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-076de1.png)
+![CZGPT delivery-result page with code and account redacted =1732x908](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-076de1.png)
 
 Return to `chatgpt.com` yourself and inspect the plan or billing page.
 
-![ChatGPT plan state with account email redacted](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-efcbab.png)
+![ChatGPT plan state with account email redacted =1732x908](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-efcbab.png)
 
 Confirm:
 
@@ -280,9 +280,9 @@ Those are the seller's terms, not an independent guarantee. Save a dated copy be
 
 CZGPT's public [privacy policy](https://www.czgptai.com/privacy) says it collects order, contact, IP, and browser data and uses third-party payment channels. It does not by itself establish how every product-specific credential flow works.
 
-![CZGPT page showing a refund FAQ](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-90742c.png)
+![CZGPT page showing a refund FAQ =1267x664](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-90742c.png)
 
-![CZGPT page showing a post-delivery checklist](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-1b21a7.png)
+![CZGPT page showing a post-delivery checklist =1267x664](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-1b21a7.png)
 
 ## How to assess any third-party seller
 
@@ -327,9 +327,9 @@ A polished website or a long list of testimonials is marketing evidence, not pro
 
 The screenshots below reproduce testimonials and contact information displayed on the submitted platform page. This site has not verified the identities or experiences described.
 
-![Testimonials displayed on the CZGPT website](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-fc149f.png)
+![Testimonials displayed on the CZGPT website =1267x664](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-fc149f.png)
 
-![CZGPT order lookup and support page](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-67bfd5.png)
+![CZGPT order lookup and support page =1267x664](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-67bfd5.png)
 
 ## Subscription management
 

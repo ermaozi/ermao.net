@@ -63,47 +63,47 @@ OKAC websites: Users reported that `www.okanc.com`, `https://www.okads.top/`, an
 
 On May 11, Telegram-group users reported that the A route had failed and only the B route remained usable. Management replied that day that the problem had been fixed. On May 13, however, the group again received reports of failures on the A route and on multiple routes, indicating that service had not been restored reliably.
 
-![May 11, 2026 Telegram reports of an A-route failure and management's reply that it had been fixed](https://image.ermao.net/images/scamvpn/okac/20260701_112658-d57a4f.png)
+![May 11, 2026 Telegram reports of an A-route failure and management's reply that it had been fixed =364x789](https://image.ermao.net/images/scamvpn/okac/20260701_112658-d57a4f.png)
 
-![May 13, 2026 Telegram reports of another A-route failure and broader multi-route problems](https://image.ermao.net/images/scamvpn/okac/20260701_112705-8bc65b.png)
+![May 13, 2026 Telegram reports of another A-route failure and broader multi-route problems =508x955](https://image.ermao.net/images/scamvpn/okac/20260701_112705-8bc65b.png)
 
 ### May 17, 2026: data loss, order-restoration discussions, and website problems
 
 On May 17, management issued a notice about “data loss” and said that users could contact support to have orders restored. Users reported website-access problems during the same period. For a paid proxy service, data loss combined with an inaccessible website is itself a serious operational risk.
 
-![May 17, 2026 management notice about data loss and restoring orders](https://image.ermao.net/images/scamvpn/okac/20260701_112716-19816f.png)
+![May 17, 2026 management notice about data loss and restoring orders =524x622](https://image.ermao.net/images/scamvpn/okac/20260701_112716-19816f.png)
 
-![Customer-support conversation during the May 17 order-restoration period](https://image.ermao.net/images/scamvpn/okac/20260701_112726-b90526.png)
+![Customer-support conversation during the May 17 order-restoration period =511x839](https://image.ermao.net/images/scamvpn/okac/20260701_112726-b90526.png)
 
 ### Late May to mid-June 2026: repeated node errors and unusable connections
 
 From late May through mid-June, users continued to report nodes showing errors, failed connections, increased latency, and connections that appeared successful but could not carry traffic. The disruption had already lasted longer than ordinary short-term maintenance.
 
-![Late-May user reports of repeated node errors and unusable service](https://image.ermao.net/images/scamvpn/okac/20260701_112734-a052bd.png)
+![Late-May user reports of repeated node errors and unusable service =398x580](https://image.ermao.net/images/scamvpn/okac/20260701_112734-a052bd.png)
 
-![Late-May to early-June user reports of connection failures](https://image.ermao.net/images/scamvpn/okac/20260701_112740-c0f8ac.png)
+![Late-May to early-June user reports of connection failures =458x687](https://image.ermao.net/images/scamvpn/okac/20260701_112740-c0f8ac.png)
 
-![Early-June report of a successful connection that remained unusable](https://image.ermao.net/images/scamvpn/okac/20260701_112748-0a3afa.png)
+![Early-June report of a successful connection that remained unusable =543x640](https://image.ermao.net/images/scamvpn/okac/20260701_112748-0a3afa.png)
 
-![Mid-June user reports of higher latency and unstable service](https://image.ermao.net/images/scamvpn/okac/20260701_112754-8705c3.png)
+![Mid-June user reports of higher latency and unstable service =313x867](https://image.ermao.net/images/scamvpn/okac/20260701_112754-8705c3.png)
 
 ### June 12–14, 2026: management acknowledged interruption risk, then stopped providing meaningful updates
 
 On June 12, management posted that “special circumstances” could interrupt service for three to five days and said a compensation plan would follow. No new, substantive recovery notice or explanation was seen after June 14, and communication noticeably weakened.
 
-![June 12, 2026 management notice warning that service could be interrupted for three to five days](https://image.ermao.net/images/scamvpn/okac/20260701_112801-228711.png)
+![June 12, 2026 management notice warning that service could be interrupted for three to five days =535x757](https://image.ermao.net/images/scamvpn/okac/20260701_112801-228711.png)
 
-![June 14, 2026 screenshot of the last visible management message](https://image.ermao.net/images/scamvpn/okac/20260701_112808-346966.png)
+![June 14, 2026 screenshot of the last visible management message =407x693](https://image.ermao.net/images/scamvpn/okac/20260701_112808-346966.png)
 
 ### Mid-to-late June 2026: weaker ticket responses and concentrated reports of a complete outage
 
 In mid-to-late June, users continued to report overlapping website and node failures, while ticket and communication responses weakened. By June 22, the group had concentrated reports of a complete outage and no effective response.
 
-![Mid-to-late June user reports of weaker ticket and communication responses](https://image.ermao.net/images/scamvpn/okac/20260701_112814-dc4971.png)
+![Mid-to-late June user reports of weaker ticket and communication responses =914x540](https://image.ermao.net/images/scamvpn/okac/20260701_112814-dc4971.png)
 
-![Mid-to-late June reports of simultaneous website and node failures](https://image.ermao.net/images/scamvpn/okac/20260701_112821-d5ae90.png)
+![Mid-to-late June reports of simultaneous website and node failures =1135x178](https://image.ermao.net/images/scamvpn/okac/20260701_112821-d5ae90.png)
 
-![June 22, 2026 reports of a complete outage and no effective response](https://image.ermao.net/images/scamvpn/okac/20260701_112829-2c4ce2.png)
+![June 22, 2026 reports of a complete outage and no effective response =1039x163](https://image.ermao.net/images/scamvpn/okac/20260701_112829-2c4ce2.png)
 
 ## Conclusion
 

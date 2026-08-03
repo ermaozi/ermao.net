@@ -36,11 +36,11 @@ TNT官网地址：[https://ermaozi02.tntvipaff.cc](https://ermaozi02.tntvipaff.c
 - 高效客服响应
 - 不限制客户端
 
-![TNT 机场价格](https://image.ermao.net/images/article/4uxesz79/image.png)
+![TNT 机场价格 =1280x826](https://image.ermao.net/images/article/4uxesz79/image.png)
 
 ## TNT 机场测试
 
-![TNT 机场测试](https://image.ermao.net/images/article/4uxesz79/image-1.png)
+![TNT 机场测试 =777x1280](https://image.ermao.net/images/article/4uxesz79/image-1.png)
 
 ## 机场汇总
 

@@ -27,7 +27,7 @@ This article records that announcement. It cannot confirm every refund outcome o
 
 <!-- more -->
 
-![LetsVPN mainland business-closure notice](https://image.ermao.net/images/blog/j0qbrzgj/20260429_063117-00f104.png)
+![LetsVPN mainland business-closure notice =550x1280](https://image.ermao.net/images/blog/j0qbrzgj/20260429_063117-00f104.png)
 
 ## Closure rather than maintenance
 
@@ -37,11 +37,11 @@ This does not necessarily mean the entire company or every service worldwide clo
 
 ## Refund statements
 
-![Additional LetsVPN notice screenshot](https://image.ermao.net/images/blog/j0qbrzgj/20260429_063306-b464a4.png)
+![Additional LetsVPN notice screenshot =945x2048](https://image.ermao.net/images/blog/j0qbrzgj/20260429_063306-b464a4.png)
 
 The notice promises refunds calculated from April 8 and says an automated process was under development. The source also includes a user report of waiting more than ten business days:
 
-![User report of a LetsVPN refund delay](https://image.ermao.net/images/blog/j0qbrzgj/20260429_065751-5aca7c.png)
+![User report of a LetsVPN refund delay =616x680](https://image.ermao.net/images/blog/j0qbrzgj/20260429_065751-5aca7c.png)
 
 One report does not establish the general processing time. Affected users should:
 
@@ -66,9 +66,9 @@ The source includes:
 - a screenshot said to concern a CNY 300 administrative penalty after LetsVPN use;
 - a screenshot said to concern a CNY 500 penalty in Dalian after use of a different “Kuaimiao VPN” to access Telegram.
 
-![Screenshot described as a CNY 300 LetsVPN-related penalty](https://image.ermao.net/images/blog/j0qbrzgj/20260429_065528-a22ac3.png)
+![Screenshot described as a CNY 300 LetsVPN-related penalty =513x900](https://image.ermao.net/images/blog/j0qbrzgj/20260429_065528-a22ac3.png)
 
-![Screenshot described as a CNY 500 Kuaimiao VPN-related penalty](https://image.ermao.net/images/blog/j0qbrzgj/20260429_070034-44258b.png)
+![Screenshot described as a CNY 500 Kuaimiao VPN-related penalty =932x1280](https://image.ermao.net/images/blog/j0qbrzgj/20260429_070034-44258b.png)
 
 The article provides no primary decision documents, issuing authority links, case numbers, or authentication chain. These screenshots must not be treated as verified legal precedents. Legal rules and enforcement depend on jurisdiction and facts; obtain qualified local advice.
 

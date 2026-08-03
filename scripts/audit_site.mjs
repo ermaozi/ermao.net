@@ -8,11 +8,6 @@ import { glob } from 'glob'
 const root = process.cwd()
 const docsDir = path.join(root, 'docs')
 const now = new Date()
-const imageDimensions = JSON.parse(
-  await fs.readFile(path.join(docsDir, '.vuepress/data/image-dimensions.json'), 'utf8'),
-)
-const generatedWeeklySvg = /^https:\/\/image\.ermao\.net\/images\/(?:en\/)?blog\/weekly-news-[^/]+\/[^/]+\.svg(?:[?#].*)?$/i
-
 const markdownFiles = (await glob('docs/**/*.md', {
   ignore: [
     'docs/.vuepress/dist/**',
@@ -242,9 +237,8 @@ for (const page of pages) {
     const url = cleanUrl(match[2])
 
     if (isImage && url.startsWith('https://image.ermao.net/')) {
-      const normalizedUrl = stripHashAndQuery(url)
-      if (!imageDimensions[normalizedUrl] && !generatedWeeklySvg.test(url)) {
-        addIssue(errors, 'missing-image-dimensions', page.file, normalizedUrl)
+      if (!/^!\[[^\n]*\s+=[1-9]\d*x[1-9]\d+\]\(/.test(match[0])) {
+        addIssue(errors, 'missing-inline-image-dimensions', page.file, url)
       }
     }
 

@@ -21,7 +21,7 @@ Recorded purchase route: [Firefly plans](https://ermaozi01.fireflyaff.com/#/?cod
 
 <!-- more -->
 
-![Firefly logo](https://image.ermao.net/images/blog/firefly-airport/20260723_161238-212580.png)
+![Firefly logo =60x60](https://image.ermao.net/images/blog/firefly-airport/20260723_161238-212580.png)
 
 ## Provider information
 
@@ -64,7 +64,7 @@ The provider also says devices and clients are unlimited, but no concurrency or 
 
 ## Archived test
 
-![Firefly VLESS node speed test](https://image.ermao.net/images/blog/firefly-airport/20260723_161238-e269c9.png)
+![Firefly VLESS node speed test =851x1280](https://image.ermao.net/images/blog/firefly-airport/20260723_161238-e269c9.png)
 
 The provider screenshot shows 49 VLESS nodes in Hong Kong, Taiwan, Singapore, Japan, and the United States. It is labelled July 16, 2026 at 01:14:26 CST and 49/49 successful.
 

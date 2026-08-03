@@ -11,7 +11,7 @@ tags:
   - 新手入门
 ---
 
-![OpenClaw 初阶教程封面](https://image.ermao.net/images/blog/yecv6pn6/20260303_132046-c34687.png)
+![OpenClaw 初阶教程封面 =2752x1101](https://image.ermao.net/images/blog/yecv6pn6/20260303_132046-c34687.png)
 
 如果你想把 AI 助手放进 Telegram/Discord 里用，而不是每次都开网页，这篇就是给你的。本文按「准备 → 安装 → 配置 → 排错 → 安全」顺序写，新手照着做基本都能跑通。
 

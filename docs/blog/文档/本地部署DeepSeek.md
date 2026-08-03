@@ -16,7 +16,7 @@ description: >-
 
 <!-- more -->
 
-![本地部署DeepSeek](https://image.ermao.net/images/article/c3gj5lqy/image.png)
+![本地部署DeepSeek =1350x900](https://image.ermao.net/images/article/c3gj5lqy/image.png)
 
 ## 一、为什么选择本地部署代码大模型？
 

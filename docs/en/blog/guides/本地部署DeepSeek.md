@@ -17,7 +17,7 @@ This guide runs a DeepSeek-family model locally with Ollama, verifies where it i
 
 <!-- more -->
 
-![Running DeepSeek locally](https://image.ermao.net/images/article/c3gj5lqy/image.png)
+![Running DeepSeek locally =1350x900](https://image.ermao.net/images/article/c3gj5lqy/image.png)
 
 ## 1. What Local Deployment Does—and Does Not—Provide
 

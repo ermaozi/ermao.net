@@ -12,7 +12,7 @@ lang: en-US
 translationOf: /blog/yecv6pn6/
 ---
 
-![OpenClaw beginner guide cover](https://image.ermao.net/images/blog/yecv6pn6/20260303_132046-c34687.png)
+![OpenClaw beginner guide cover =2752x1101](https://image.ermao.net/images/blog/yecv6pn6/20260303_132046-c34687.png)
 
 OpenClaw lets you use an AI assistant from Telegram and other chat applications while keeping the gateway and its configuration on a device you control. This guide takes you through installation, Telegram pairing, model setup, remote access, troubleshooting, and a secure starting policy.
 

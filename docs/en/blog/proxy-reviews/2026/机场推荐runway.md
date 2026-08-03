@@ -74,7 +74,7 @@ Website: [https://www.runwayhz.com](https://www.runwayhz.com/#/register?code=RiI
 - [Conclusion](#conclusion)
 - [Client guides](#client-usage)
 
-![Runway logo](https://image.ermao.net/images/blog/1szjh0in/20260310_102236-6690ab.png)
+![Runway logo =1635x1319](https://image.ermao.net/images/blog/1szjh0in/20260310_102236-6690ab.png)
 
 ## Overview {#overview}
 
@@ -111,7 +111,7 @@ The provider stated approximate annual savings of CNY 20.80 for Economy, CNY 38.
 
 ### Speed-test sample
 
-![Runway speed-test sample](https://image.ermao.net/images/blog/1szjh0in/20260310_102253-427115.png)
+![Runway speed-test sample =1223x1280](https://image.ermao.net/images/blog/1szjh0in/20260310_102253-427115.png)
 
 ## Advertised advantages {#advantages}
 

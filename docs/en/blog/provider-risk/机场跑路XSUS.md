@@ -31,21 +31,21 @@ Many proxy services have recently become unreachable after data centers removed 
 
 ### The operator was unreachable
 
-![XSUS shutdown risk alert](https://image.ermao.net/images/article/mwk3l9oq/image.png)
+![XSUS shutdown risk alert =813x727](https://image.ermao.net/images/article/mwk3l9oq/image.png)
 
-![XSUS shutdown risk alert](https://image.ermao.net/images/article/mwk3l9oq/image-1.png)
+![XSUS shutdown risk alert =820x845](https://image.ermao.net/images/article/mwk3l9oq/image-1.png)
 
 The operator had not replied to messages for more than 15 days.
 
 ### No announcement updates
 
-![XSUS shutdown risk alert](https://image.ermao.net/images/article/mwk3l9oq/image-2.png)
+![XSUS shutdown risk alert =738x845](https://image.ermao.net/images/article/mwk3l9oq/image-2.png)
 
 The XSUS announcement group had not been updated for more than 14 days, and members could not send messages.
 
 ### Website problems
 
-![XSUS shutdown risk alert](https://image.ermao.net/images/article/mwk3l9oq/image-3.png)
+![XSUS shutdown risk alert =1122x738](https://image.ermao.net/images/article/mwk3l9oq/image-3.png)
 
 The official website was frequently unavailable and customer support was unreachable.
 

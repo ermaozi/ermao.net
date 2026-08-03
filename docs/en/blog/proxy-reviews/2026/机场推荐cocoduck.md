@@ -64,7 +64,7 @@ The source has an unresolved operating-history conflict: it repeatedly says “t
 
 ## Overview
 
-![CocoDuck website](https://image.ermao.net/images/article/cocoduck/image.png)
+![CocoDuck website =516x516](https://image.ermao.net/images/article/cocoduck/image.png)
 
 | Item | Source record |
 | --- | --- |
@@ -136,7 +136,7 @@ The provider also claims all relay nodes work from Xinjiang. These counts, laten
 
 ## Archived performance test
 
-![CocoDuck archived performance test](https://image.ermao.net/images/article/cocoduck/image-1.png)
+![CocoDuck archived performance test =1845x2728](https://image.ermao.net/images/article/cocoduck/image-1.png)
 
 The source records:
 

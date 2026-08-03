@@ -19,7 +19,7 @@ Danke is positioned as a low-price, high-data relay service. The provider claime
 
 ## Website and key information
 
-![Danke logo](https://image.ermao.net/images/blog/danke/20260403_165913-188225.png)
+![Danke logo =640x640](https://image.ermao.net/images/blog/danke/20260403_165913-188225.png)
 
 Recorded registration route: [dankewed.com](https://www.dankewed.com/#/register?code=a0zksG3J)
 
@@ -50,7 +50,7 @@ The source also reported quarterly through three-year options and annual discoun
 
 ## Archived test
 
-![Danke archived speed test](https://image.ermao.net/images/blog/danke/20260403_165934-4ace28.png)
+![Danke archived speed test =1280x767](https://image.ermao.net/images/blog/danke/20260403_165934-4ace28.png)
 
 The screenshot can show that one route worked under one condition. It does not establish gigabit performance, stable streaming, or general AI-service access.
 

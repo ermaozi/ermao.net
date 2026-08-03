@@ -181,13 +181,13 @@ CZGPT 的产品页面也展示 Codex 相关商品，因此开发者可以在同�
 
 下面按投稿文档中的截图，把完整流程拆成四步。页面样式、价格和具体交付方式可能更新，请以你下单时看到的页面为准。
 
-![CZGPT ChatGPT Plus 充值服务首页](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-180b02.png)
+![CZGPT ChatGPT Plus 充值服务首页 =1267x664](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-180b02.png)
 
 ### 第一步：选择套餐
 
 打开 [CZGPT](https://www.czgptai.com/)，在产品列表中选择需要的服务。平台页面展示 ChatGPT、Claude、Gemini、Grok、Suno 等产品。
 
-![CZGPT AI 产品列表](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-0f5469.png)
+![CZGPT AI 产品列表 =2880x1508](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-0f5469.png)
 
 进入 ChatGPT 分类后，根据页面说明选择对应商品。下单前至少确认四件事：
 
@@ -196,7 +196,7 @@ CZGPT 的产品页面也展示 Codex 相关商品，因此开发者可以在同�
 3. 商品是单月交付还是多月代续；
 4. 充值失败、账号异常和退款分别由谁处理。
 
-![CZGPT ChatGPT 套餐页面](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-a10dad.png)
+![CZGPT ChatGPT 套餐页面 =1267x664](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-a10dad.png)
 
 如果不确定选择 Plus 还是 Pro：Plus 通常覆盖大多数日常使用场景；Pro 适合需要更高用量上限、深度使用高级功能的重度用户和专业工作者。CZGPT 把不同商品集中放在价格页，方便先比较再下单；具体官方权益仍以 [ChatGPT 官方价格页](https://chatgpt.com/pricing)为准。
 
@@ -204,23 +204,23 @@ CZGPT 的产品页面也展示 Codex 相关商品，因此开发者可以在同�
 
 选择套餐后，填写用于查询 CZGPT 订单和接收售后的手机号或邮箱。相比私聊转账，这一步的好处是每笔付款都会进入订单系统，后续可以凭联系方式和订单号查询。不要在联系方式栏填写 ChatGPT 密码、验证码或恢复码。
 
-![CZGPT 订单信息填写页面](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-36506f.jpeg)
+![CZGPT 订单信息填写页面 =1263x661](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-36506f.jpeg)
 
 使用支付宝或微信扫码付款，这是 CZGPT 对国内用户最直观的优势：不需要先购买 USDT，也不用额外申请海外卡。付款前再次核对商品名称、交付说明、实付金额和退款规则，不要只根据截图中的历史价格下单。
 
-![CZGPT 支付宝付款页面](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-3798e7.jpeg)
+![CZGPT 支付宝付款页面 =1267x664](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-3798e7.jpeg)
 
 ### 第三步：获取卡密并自助升级
 
 付款完成后，CZGPT 系统会显示卡密或升级链接。先保存订单号，再进入对应的兑换页面。自动发货减少了等待人工回复的时间，也让深夜或周末下单更方便。
 
-![CZGPT 订单完成并发放卡密](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-8ca80c.jpeg)
+![CZGPT 订单完成并发放卡密 =1267x664](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-8ca80c.jpeg)
 
-![CZGPT 自助充值卡密验证页面](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-458594.jpeg)
+![CZGPT 自助充值卡密验证页面 =1267x664](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-458594.jpeg)
 
 按照页面提示核对套餐和账号。投稿文档中的流程会进入账号确认页面；本文已遮盖邮箱与背景中的会话数据。
 
-![CZGPT 核对充值账号页面，敏感信息已遮盖](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-f9d207.png)
+![CZGPT 核对充值账号页面，敏感信息已遮盖 =1732x908](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-f9d207.png)
 
 ::: warning 操作时请停下来核对
 提交前确认当前登录的确实是需要升级的账号。多账号用户最容易在这一步选错邮箱。任何要求上传密码、验证码、恢复码，或引导关闭账号安全设置的页面，都应立即停止。
@@ -230,11 +230,11 @@ CZGPT 的产品页面也展示 Codex 相关商品，因此开发者可以在同�
 
 CZGPT 页面提示成功后，先保存订单记录，再回到 ChatGPT 刷新订阅状态。
 
-![CZGPT 充值结果页面，卡密和账号已遮盖](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-076de1.png)
+![CZGPT 充值结果页面，卡密和账号已遮盖 =1732x908](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-076de1.png)
 
 在 ChatGPT 中打开账号菜单或 `Settings → Account / Plan`，确认 Plus / Pro 标识和订阅状态是否生效。
 
-![ChatGPT Plus 账号状态，邮箱已遮盖](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-efcbab.png)
+![ChatGPT Plus 账号状态，邮箱已遮盖 =1732x908](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-efcbab.png)
 
 如果刷新后暂时没有看到会员标识，可以依次检查：
 
@@ -276,9 +276,9 @@ CZGPT 页面提示成功后，先保存订单记录，再回到 ChatGPT 刷新�
 
 CZGPT 已公开[服务条款](https://www.czgptai.com/terms)和[隐私政策](https://www.czgptai.com/privacy)，用户可以在下单前直接核对退款边界、信息收集范围和第三方服务性质。至少从信息透明度上看，这比没有条款页面的个人卖家更完整。
 
-![CZGPT 页面展示的退款常见问题](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-90742c.png)
+![CZGPT 页面展示的退款常见问题 =1267x664](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-90742c.png)
 
-![CZGPT 页面展示的交付后检查清单](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-1b21a7.png)
+![CZGPT 页面展示的交付后检查清单 =1267x664](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-1b21a7.png)
 
 ### 第五，看运营记录和公开信息
 
@@ -286,9 +286,9 @@ CZGPT 已公开[服务条款](https://www.czgptai.com/terms)和[隐私政策](ht
 
 CZGPT 页面提供价格、常见问题、售后政策、订单查询和客服联系方式，购买路径相对完整。下面两张图是投稿文档中附带的平台页面截图，其中的用户反馈和联系方式均为商家页面展示内容，不代表本站独立验证或背书。
 
-![CZGPT 平台展示的用户反馈](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-fc149f.png)
+![CZGPT 平台展示的用户反馈 =1267x664](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-fc149f.png)
 
-![CZGPT 订单查询与客服页面](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-67bfd5.png)
+![CZGPT 订单查询与客服页面 =1267x664](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-67bfd5.png)
 
 ::: tip CZGPT 更适合哪些人？
 如果你是第一次购买 ChatGPT Plus、没有海外信用卡、希望直接用支付宝或微信、又不想在闲鱼等平台反复筛选个人卖家，CZGPT 的自助下单模式会更合适。熟悉海外支付且能够直接使用官方渠道的用户，则没有必要额外绕一层第三方服务。

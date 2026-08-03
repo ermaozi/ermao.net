@@ -48,11 +48,11 @@ The source author observed the following tendencies. They are not independently 
 
 Repeat the same query in at least two indexes. Agreement does not prove authenticity, but it can reveal omissions and ranking differences.
 
-![Telegram search-bot interface](https://image.ermao.net/images/article/bsnuua0h/image.png)
+![Telegram search-bot interface =245x180](https://image.ermao.net/images/article/bsnuua0h/image.png)
 
-![Resources shown by a Telegram search bot](https://image.ermao.net/images/article/bsnuua0h/image-1.png)
+![Resources shown by a Telegram search bot =381x195](https://image.ermao.net/images/article/bsnuua0h/image-1.png)
 
-![Example Telegram search results](https://image.ermao.net/images/article/bsnuua0h/image-2.png)
+![Example Telegram search results =287x191](https://image.ermao.net/images/article/bsnuua0h/image-2.png)
 
 ## Search techniques
 
@@ -84,7 +84,7 @@ Run the same exact query through [@soso](https://t.me/soso?start=a_1453425105), 
 
 Treat clickbait titles, unexplained URL shorteners, forced bot chains, and requests to invite contacts before viewing a result as risk signals.
 
-![Filtering Telegram search results](https://image.ermao.net/images/article/bsnuua0h/image-3.png)
+![Filtering Telegram search results =505x670](https://image.ermao.net/images/article/bsnuua0h/image-3.png)
 
 ## Risk boundaries
 

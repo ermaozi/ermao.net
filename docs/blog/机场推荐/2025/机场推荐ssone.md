@@ -61,11 +61,11 @@ ssone官网地址：[hello-ssone.com](https://www.flybit6202.com/#/register?code
 
 本页包含推广链接，详细说明见[推广披露](/affiliate-disclosure/)；评测证据与更新原则见[机场评测方法](/review-methodology/)。
 
-![ssone价格](https://image.ermao.net/images/article/8jxmo76u/image-1.png)
+![ssone价格 =1683x1219](https://image.ermao.net/images/article/8jxmo76u/image-1.png)
 
 ## ssone 机场测试
 
-![ssone测试](https://image.ermao.net/images/article/8jxmo76u/image.png)
+![ssone测试 =3006x5570](https://image.ermao.net/images/article/8jxmo76u/image.png)
 
 ## 其他低价机场与套餐对比
 

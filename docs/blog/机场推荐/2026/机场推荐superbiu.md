@@ -81,7 +81,7 @@ SuperBiu机场官网地址：[https://biubiux.online](https://biubiux.online/#/r
 
 ## 🎯 SuperBiu 机场概览 {#overview}
 
-![superbiu机场logo](https://image.ermao.net/images/blog/superbiu/image-1.jpg)
+![superbiu机场logo =640x640](https://image.ermao.net/images/blog/superbiu/image-1.jpg)
 
 **SuperBiu 机场** 依托三网（电信/联通/移动）入口的 IPLC 专线，实现跨境高速互联。凭借自研流媒体解锁与多区域部署，晚高峰依旧能秒开 8K 视频，并在隐私、安全方面保持高标准。
 
@@ -134,7 +134,7 @@ SuperBiu机场官网地址：[https://biubiux.online](https://biubiux.online/#/r
 
 ## 🔬 SuperBiu 实测数据 {#section-4}
 
-![superbiu机场测速-香港](https://image.ermao.net/images/blog/superbiu/image.jpg)
+![superbiu机场测速-香港 =2492x1170](https://image.ermao.net/images/blog/superbiu/image.jpg)
 
 - 📍 测试环境：浙江移动 300M 宽带
 - 🕗 时间：晚高峰 20:00-21:00
@@ -142,7 +142,7 @@ SuperBiu机场官网地址：[https://biubiux.online](https://biubiux.online/#/r
 - 🌏 美西节点：下载 118 Mbps / 上传 67 Mbps，延迟 135ms
 - 🎮 游戏节点：亚洲专线波动小，丢包率 <0.2%
 
-![superbiu机场测速-流媒体](https://image.ermao.net/images/blog/superbiu/image.PNG)
+![superbiu机场测速-流媒体 =2109x5102](https://image.ermao.net/images/blog/superbiu/image.PNG)
 
 - 🎬 Netflix、Disney+、HBO Max 全区解锁
 - 🎧 YouTube 8K、Spotify、Apple TV+ 流畅播放

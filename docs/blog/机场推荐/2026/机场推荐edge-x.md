@@ -66,7 +66,7 @@ head:
 
 ## 一句话结论与使用边界
 
-![Edge-X 官网与品牌图](https://image.ermao.net/images/article/edge-x/20260509_083554-1403ca.png)
+![Edge-X 官网与品牌图 =640x640](https://image.ermao.net/images/article/edge-x/20260509_083554-1403ca.png)
 
 Edge-X 值得试，但更适合“先小档验证再升级”的买法。它的亮点是 IEPL + 直连混合、倍率设计细、三网优化明确；它的边界是目前给到的公开信息还不算非常完整，尤其最低套餐流量口径有分歧。
 
@@ -101,7 +101,7 @@ Edge-X 值得试，但更适合“先小档验证再升级”的买法。它的�
 
 ## 速度与稳定性证据
 
-![Edge-X 测速截图](https://image.ermao.net/images/article/edge-x/20260509_083605-ac9b00.png)
+![Edge-X 测速截图 =3980x3946](https://image.ermao.net/images/article/edge-x/20260509_083605-ac9b00.png)
 
 基于已提供测速截图和公开参数，可以得出三点可操作判断：
 

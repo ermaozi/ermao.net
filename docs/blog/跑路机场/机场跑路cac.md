@@ -51,7 +51,7 @@ CAC 已经出现官网访问异常，并与奈云、隐云、OKAC 同属一个�
 
 投稿材料显示，CAC 官网在 2026年06月底前后出现无法访问的情况。单独看，这可能是官网故障；但结合奈云已确认跑路、OKAC 同期异常，以及四者同属一个运营主体，这一信号需要按跑路预警处理。
 
-![CAC官网无法访问](https://image.ermao.net/images/scamvpn/cac/20260701_111333-13fa8c.png)
+![CAC官网无法访问 =2530x1814](https://image.ermao.net/images/scamvpn/cac/20260701_111333-13fa8c.png)
 
 ### 同主体项目同期异常
 

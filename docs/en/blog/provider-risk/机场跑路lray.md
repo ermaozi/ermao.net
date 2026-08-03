@@ -32,9 +32,9 @@ Many proxy services have recently become unreachable after data centers removed 
 
 Beginning in late February, Lray experienced frequent disconnections and widespread node failures. Users often saw all nodes offline, with only two or three servers occasionally available.
 
-![Lray node-disconnection evidence](https://image.ermao.net/images/scamvpn/lray/20260407_095925-c64d99.png)
+![Lray node-disconnection evidence =900x1700](https://image.ermao.net/images/scamvpn/lray/20260407_095925-c64d99.png)
 
-![Additional Lray node-disconnection evidence](https://image.ermao.net/images/scamvpn/lray/20260407_095959-658220.png)
+![Additional Lray node-disconnection evidence =1179x2556](https://image.ermao.net/images/scamvpn/lray/20260407_095959-658220.png)
 
 ### Later: a half-price promotion without visible service recovery
 
@@ -44,7 +44,7 @@ While node quality continued to decline, the operator launched a half-price prom
 
 By April, the service had deteriorated to near-continuous unavailability. The dedicated app could not connect to an available server and could no longer meet ordinary use needs.
 
-![Lray app and support-status evidence](https://image.ermao.net/images/scamvpn/lray/20260407_100013-04941f.png)
+![Lray app and support-status evidence =1920x884](https://image.ermao.net/images/scamvpn/lray/20260407_100013-04941f.png)
 
 ### Support deterioration: no ticket reply for more than 48 hours
 

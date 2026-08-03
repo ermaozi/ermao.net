@@ -56,7 +56,7 @@ Recorded website: [tianmiaovpn.com](https://tianmiaovpn.com/register?code=6itxcj
 
 ## Overview
 
-![Tianmiao Accelerator website](https://image.ermao.net/images/blog/tianmiao/image.png)
+![Tianmiao Accelerator website =401x401](https://image.ermao.net/images/blog/tianmiao/image.png)
 
 | Item | Provider or source claim |
 | --- | --- |

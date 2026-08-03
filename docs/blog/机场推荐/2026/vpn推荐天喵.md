@@ -64,7 +64,7 @@ head:
 
 ## 🎯 天喵加速器概览 {#overview}
 
-![天喵加速器官网界面截图](https://image.ermao.net/images/blog/tianmiao/image.png)
+![天喵加速器官网界面截图 =401x401](https://image.ermao.net/images/blog/tianmiao/image.png)
 
 **天喵免费加速器VPN** 聚焦国内用户的跨境访问需求，无论是查资料、看 Netflix、玩 Steam 外服，还是访问被限制的网站，都能提供开箱即用的体验。与传统国外 VPN 相比，它在价格、节点优化和使用门槛方面更贴合国人习惯。
 

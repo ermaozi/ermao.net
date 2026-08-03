@@ -76,11 +76,11 @@ KooDog 机场官网地址：[koodog.com](https://zero.thisgourl.xyz/#/register?c
 
 ## KooDog 机场测试
 
-![KooDog 机场测试](https://image.ermao.net/images/article/rq55p9dn/image.png)
+![KooDog 机场测试 =1280x1075](https://image.ermao.net/images/article/rq55p9dn/image.png)
 
-![KooDog 机场测试](https://image.ermao.net/images/article/rq55p9dn/image-1.png)
+![KooDog 机场测试 =1280x990](https://image.ermao.net/images/article/rq55p9dn/image-1.png)
 
-![KooDog 机场测试](https://image.ermao.net/images/article/rq55p9dn/image-2.png)
+![KooDog 机场测试 =1280x484](https://image.ermao.net/images/article/rq55p9dn/image-2.png)
 
 ## 机场汇总
 

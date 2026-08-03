@@ -43,13 +43,13 @@ description: 基于用户反馈与截图证据，Koodog出现官网异常跳转�
 
 ## 证据截图
 
-![Koodog官网跳转异常反馈](https://image.ermao.net/images/scamvpn/koodog/20260601_120129-bce773.png)
+![Koodog官网跳转异常反馈 =676x239](https://image.ermao.net/images/scamvpn/koodog/20260601_120129-bce773.png)
 
-![Koodog用户评论反馈服务异常](https://image.ermao.net/images/scamvpn/koodog/20260601_120336-b6f816.png)
+![Koodog用户评论反馈服务异常 =1058x294](https://image.ermao.net/images/scamvpn/koodog/20260601_120336-b6f816.png)
 
-![Koodog社群报障记录](https://image.ermao.net/images/scamvpn/koodog/20260601_120440-44038e.png)
+![Koodog社群报障记录 =659x457](https://image.ermao.net/images/scamvpn/koodog/20260601_120440-44038e.png)
 
-![Koodog订阅无法使用截图](https://image.ermao.net/images/scamvpn/koodog/20260601_120509-9f45d2.png)
+![Koodog订阅无法使用截图 =804x678](https://image.ermao.net/images/scamvpn/koodog/20260601_120509-9f45d2.png)
 
 ## 风险结论
 

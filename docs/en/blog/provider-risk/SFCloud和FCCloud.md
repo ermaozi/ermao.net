@@ -40,15 +40,15 @@ Related article: [EFCloud Shutdown—January 25, 2025](/en/article/nz313xp6/)
 
 ## FCCloud servers were unusable
 
-![FCCloud shutdown](https://image.ermao.net/images/article/7asq3quy/image.png)
+![FCCloud shutdown =2357x1125](https://image.ermao.net/images/article/7asq3quy/image.png)
 
-![FCCloud shutdown](https://image.ermao.net/images/article/7asq3quy/image-1.png)
+![FCCloud shutdown =1610x934](https://image.ermao.net/images/article/7asq3quy/image-1.png)
 
 ## User warnings
 
-![FCCloud user warning](https://image.ermao.net/images/article/7asq3quy/image-2.png)
+![FCCloud user warning =1388x1117](https://image.ermao.net/images/article/7asq3quy/image-2.png)
 
-![FCCloud user warning](https://image.ermao.net/images/article/7asq3quy/image-3.png)
+![FCCloud user warning =1426x1029](https://image.ermao.net/images/article/7asq3quy/image-3.png)
 
 ## Submit a provider shutdown or risk alert
 

@@ -28,19 +28,19 @@ The source lists:
 3. difficulty contacting the former developer and a change in Telegram group control;
 4. repository commits containing advertising-related material.
 
-![AList community ownership-change report](https://image.ermao.net/images/article/dsbch7va/image.png)
+![AList community ownership-change report =579x273](https://image.ermao.net/images/article/dsbch7va/image.png)
 
 ## Repository activity
 
 The Chinese article linked the AList repository and included these archived screenshots:
 
-![AList repository activity screenshot 1](https://image.ermao.net/images/article/dsbch7va/image-1.png)
+![AList repository activity screenshot 1 =942x994](https://image.ermao.net/images/article/dsbch7va/image-1.png)
 
-![AList repository activity screenshot 2](https://image.ermao.net/images/article/dsbch7va/image-2.png)
+![AList repository activity screenshot 2 =867x921](https://image.ermao.net/images/article/dsbch7va/image-2.png)
 
-![AList repository activity screenshot 3](https://image.ermao.net/images/article/dsbch7va/image-3.png)
+![AList repository activity screenshot 3 =543x134](https://image.ermao.net/images/article/dsbch7va/image-3.png)
 
-![AList repository activity screenshot 4](https://image.ermao.net/images/article/dsbch7va/image-4.png)
+![AList repository activity screenshot 4 =1920x949](https://image.ermao.net/images/article/dsbch7va/image-4.png)
 
 Repository history can show that files changed, but interpreting intent requires authenticated maintainer statements, organization-transfer records, signed releases, and code review.
 
@@ -48,15 +48,15 @@ Repository history can show that files changed, but interpreting intent requires
 
 The source also reported that an AList desktop application appeared to be packaged and sold:
 
-![AList desktop screenshot 1](https://image.ermao.net/images/article/dsbch7va/image-5.png)
+![AList desktop screenshot 1 =1080x1119](https://image.ermao.net/images/article/dsbch7va/image-5.png)
 
-![AList desktop screenshot 2](https://image.ermao.net/images/article/dsbch7va/image-6.png)
+![AList desktop screenshot 2 =1920x1080](https://image.ermao.net/images/article/dsbch7va/image-6.png)
 
-![AList desktop screenshot 3](https://image.ermao.net/images/article/dsbch7va/image-7.png)
+![AList desktop screenshot 3 =1920x1240](https://image.ermao.net/images/article/dsbch7va/image-7.png)
 
-![AList desktop screenshot 4](https://image.ermao.net/images/article/dsbch7va/image-8.png)
+![AList desktop screenshot 4 =1851x1416](https://image.ermao.net/images/article/dsbch7va/image-8.png)
 
-![AList desktop screenshot 5](https://image.ermao.net/images/article/dsbch7va/image-9.png)
+![AList desktop screenshot 5 =1920x1106](https://image.ermao.net/images/article/dsbch7va/image-9.png)
 
 Commercial distribution can be compatible with an open-source license. The relevant questions are license compliance, source and notice obligations, binary provenance, data practices, and whether branding or download changes were disclosed.
 
@@ -73,7 +73,7 @@ Those are dated community reports rather than an independent malware finding.
 
 ## New maintainer response
 
-![AList new-maintainer response screenshot](https://image.ermao.net/images/article/dsbch7va/image-10.png)
+![AList new-maintainer response screenshot =1205x433](https://image.ermao.net/images/article/dsbch7va/image-10.png)
 
 The source links the discussion:
 [“Was the project sold? The official website is 404 and the docs have changed for two weeks”](https://github.com/AlistGo/alist/issues/8649)

@@ -21,11 +21,11 @@ After my R5S router failed, I used the virtual-machine feature in FNOS to run Op
 
 My R5S had been running for two years and nine months before it failed on November 19, 2025:
 
-![Failed R5S router](https://image.ermao.net/images/blog/fnoswrt/image.png)
+![Failed R5S router =1480x876](https://image.ermao.net/images/blog/fnoswrt/image.png)
 
 Repeated hard power-offs, limited cooling, or experimental firmware may have contributed, but there is not enough evidence to assign a cause. The replacement was an OpenWrt virtual machine on a small FNOS server:
 
-![FNOS server used for the replacement](https://image.ermao.net/images/blog/fnoswrt/image-1.png)
+![FNOS server used for the replacement =1571x1032](https://image.ermao.net/images/blog/fnoswrt/image-1.png)
 
 ::: danger Plan a recovery path first
 A mistake in the VM bridge, gateway, DHCP, or firewall can disconnect the NAS or the whole LAN. Keep local console access to FNOS, record the main router's address and the NAS network settings, and make changes during a maintenance window. Do not make the OpenWrt VM the only path to the FNOS recovery interface.
@@ -35,7 +35,7 @@ A mistake in the VM bridge, gateway, DHCP, or firewall can disconnect the NAS or
 
 The original build used `openwrt.ai`, a third-party custom builder:
 
-![Third-party OpenWrt image builder](https://image.ermao.net/images/blog/fnoswrt/image-2.png)
+![Third-party OpenWrt image builder =1605x1275](https://image.ermao.net/images/blog/fnoswrt/image-2.png)
 
 For a smaller supply-chain risk, start with the official [OpenWrt Firmware Selector](https://firmware-selector.openwrt.org/) and select:
 
@@ -46,7 +46,7 @@ For a smaller supply-chain risk, start with the official [OpenWrt Firmware Selec
 
 The exact filenames change by release. OpenWrt's [x86 installation guide](https://openwrt.org/docs/guide-user/installation/openwrt_x86) explains the image variants. Ext4 is easier to resize and edit directly; squashfs offers OpenWrt's read-only base plus writable overlay and supports reset behavior.
 
-![Downloading the compiled image](https://image.ermao.net/images/blog/fnoswrt/image-3.png)
+![Downloading the compiled image =1514x705](https://image.ermao.net/images/blog/fnoswrt/image-3.png)
 
 Verify the image checksum against the official release directory. If FNOS does not accept `.img.gz`, decompress a copy:
 
@@ -60,7 +60,7 @@ Do not add packages or scripts from an unknown custom build merely for convenien
 
 Upload the image through FNOS File Manager, SMB, or another authenticated local transfer method:
 
-![Uploading the OpenWrt image to FNOS](https://image.ermao.net/images/blog/fnoswrt/image-4.png)
+![Uploading the OpenWrt image to FNOS =1418x840](https://image.ermao.net/images/blog/fnoswrt/image-4.png)
 
 Keep it in a directory accessible to the VM manager but not writable by untrusted network users.
 
@@ -68,21 +68,21 @@ Keep it in a directory accessible to the VM manager but not writable by untruste
 
 Open the FNOS **Virtual Machine** application and choose **New VM**. Install the VM application from App Center first if it is absent:
 
-![Opening the FNOS VM application](https://image.ermao.net/images/blog/fnoswrt/image-5.png)
+![Opening the FNOS VM application =1429x865](https://image.ermao.net/images/blog/fnoswrt/image-5.png)
 
-![Creating a new VM](https://image.ermao.net/images/blog/fnoswrt/image-6.png)
+![Creating a new VM =874x724](https://image.ermao.net/images/blog/fnoswrt/image-6.png)
 
 Name the VM and select Linux:
 
-![Selecting the guest OS](https://image.ermao.net/images/blog/fnoswrt/image-7.png)
+![Selecting the guest OS =877x719](https://image.ermao.net/images/blog/fnoswrt/image-7.png)
 
 Use the uploaded OpenWrt image as the system disk:
 
-![Selecting the OpenWrt disk image](https://image.ermao.net/images/blog/fnoswrt/image-8.png)
+![Selecting the OpenWrt disk image =876x729](https://image.ermao.net/images/blog/fnoswrt/image-8.png)
 
 Reasonable starting resources for basic routing are one virtual CPU, 512 MB RAM, and a small expandable virtual disk. Traffic inspection, large rule sets, VPN encryption, or extra packages may need substantially more. Measure rather than copying a fixed allocation.
 
-![Selecting virtual storage](https://image.ermao.net/images/blog/fnoswrt/image-9.png)
+![Selecting virtual storage =896x725](https://image.ermao.net/images/blog/fnoswrt/image-9.png)
 
 Enable automatic startup only after networking and clean shutdown have been tested. Otherwise a broken VM may interfere with the LAN after every NAS reboot.
 
@@ -90,7 +90,7 @@ Enable automatic startup only after networking and clean shutdown have been test
 
 Add one virtual NIC connected to the LAN bridge:
 
-![Adding the VM network interface](https://image.ermao.net/images/blog/fnoswrt/image-10.png)
+![Adding the VM network interface =880x714](https://image.ermao.net/images/blog/fnoswrt/image-10.png)
 
 The source FNOS version required OVS to make a physical interface available to VMs. If the interface is missing, check **Settings → Network Settings** for the OVS option on that port.
 
@@ -102,11 +102,11 @@ Hardware passthrough is not required for the one-NIC side-router design.
 
 Start the VM:
 
-![Starting the OpenWrt VM](https://image.ermao.net/images/blog/fnoswrt/image-11.png)
+![Starting the OpenWrt VM =1136x453](https://image.ermao.net/images/blog/fnoswrt/image-11.png)
 
 Open the VNC console:
 
-![Opening the VNC console](https://image.ermao.net/images/blog/fnoswrt/image-12.png)
+![Opening the VNC console =1139x272](https://image.ermao.net/images/blog/fnoswrt/image-12.png)
 
 Wait for the OpenWrt login prompt. If it does not boot, verify that the VM firmware mode matches the image (`efi` versus legacy), that the decompressed disk was attached as a writable system disk, and that its architecture is x86-64.
 
@@ -132,9 +132,9 @@ No response does not prove the address is free, so also inspect the main router'
 
 The original article edited `/etc/config/network` directly:
 
-![Opening the OpenWrt network configuration](https://image.ermao.net/images/blog/fnoswrt/image-13.png)
+![Opening the OpenWrt network configuration =776x345](https://image.ermao.net/images/blog/fnoswrt/image-13.png)
 
-![Editing the LAN settings](https://image.ermao.net/images/blog/fnoswrt/image-14.png)
+![Editing the LAN settings =641x502](https://image.ermao.net/images/blog/fnoswrt/image-14.png)
 
 Using UCI reduces syntax mistakes. Adjust the example addresses:
 
@@ -159,7 +159,7 @@ ip route
 ping -c 3 192.168.1.1
 ```
 
-![Verifying the assigned address](https://image.ermao.net/images/blog/fnoswrt/image-15.png)
+![Verifying the assigned address =954x468](https://image.ermao.net/images/blog/fnoswrt/image-15.png)
 
 If connectivity is lost, return through VNC and restore the previous values.
 
@@ -171,7 +171,7 @@ Open:
 http://192.168.1.32/
 ```
 
-![OpenWrt first-login screen](https://image.ermao.net/images/blog/fnoswrt/image-16.png)
+![OpenWrt first-login screen =820x702](https://image.ermao.net/images/blog/fnoswrt/image-16.png)
 
 Set a unique administrator password immediately. Prefer HTTPS for administration once configured, restrict the management interface to the trusted LAN, disable password-based SSH if key-only access is practical, and install only packages you can maintain.
 
@@ -191,7 +191,7 @@ Two uncoordinated DHCP servers can assign conflicting gateways and DNS settings.
 
 The custom firmware in the source exposed **System → Setup Wizard → Network Settings → Side-router mode**:
 
-![Side-router mode in the custom firmware](https://image.ermao.net/images/blog/fnoswrt/image-17.png)
+![Side-router mode in the custom firmware =1636x1205](https://image.ermao.net/images/blog/fnoswrt/image-17.png)
 
 That wizard is not part of every stock OpenWrt image. Its behavior depends on the custom package: it may change forwarding, firewall, DNS, masquerading, and redirect rules. Review the generated configuration before trusting it.
 
@@ -222,13 +222,13 @@ The side router does not need to assign client addresses. On one test device, re
 - DNS server: the OpenWrt address only if OpenWrt is intentionally providing DNS; otherwise use the planned resolver; and
 - subnet mask: the existing LAN mask.
 
-![Setting the side router as a client gateway](https://image.ermao.net/images/blog/fnoswrt/image-18.png)
+![Setting the side router as a client gateway =680x599](https://image.ermao.net/images/blog/fnoswrt/image-18.png)
 
 Windows example:
 
-![Opening Windows network properties](https://image.ermao.net/images/blog/fnoswrt/image-19.png)
+![Opening Windows network properties =487x498](https://image.ermao.net/images/blog/fnoswrt/image-19.png)
 
-![Editing IPv4 settings](https://image.ermao.net/images/blog/fnoswrt/image-20.png)
+![Editing IPv4 settings =1398x1039](https://image.ermao.net/images/blog/fnoswrt/image-20.png)
 
 Test:
 

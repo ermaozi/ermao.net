@@ -23,7 +23,7 @@ description: 2026最新Asspp下载安装使用教程，iPhone/Mac多Apple ID管�
 
 ## Asspp 能做什么？
 
-![Asspp界面预览](https://image.ermao.net/images/blog/asspp-download-guide/20260224_073116-3c6273.png)
+![Asspp界面预览 =3317x1660](https://image.ermao.net/images/blog/asspp-download-guide/20260224_073116-3c6273.png)
 
 在开始安装之前，先了解一下 Asspp 到底有哪些实用功能：
 

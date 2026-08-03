@@ -56,7 +56,7 @@ These are useful attributes to test, not guaranteed outcomes. Begin with the sma
 
 ## Website
 
-![Flybit provider dashboard](https://image.ermao.net/images/blog/flybit/20260302_202715-c22f02.png)
+![Flybit provider dashboard =150x150](https://image.ermao.net/images/blog/flybit/20260302_202715-c22f02.png)
 
 [Open the recorded Flybit registration page](https://goflybit.com/#/register?code=7h1NCdM7)
 
@@ -93,7 +93,7 @@ No route label alone proves a private-line contract. Third-party platforms can c
 
 ## Archived speed test
 
-![Flybit node speed test](https://image.ermao.net/images/article/q8yp9r2b/image-1.png)
+![Flybit node speed test =2723x3830](https://image.ermao.net/images/article/q8yp9r2b/image-1.png)
 
 The screenshot is inherited from the earlier Flybit review and represents one test environment. It does not prove that another user can saturate a broadband line or stream 4K without buffering.
 

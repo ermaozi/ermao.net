@@ -82,7 +82,7 @@ head:
 
 ## 🎯 uuone 机场怎么样？概览与官网 {#overview}
 
-![uuone机场官网Logo-提供BGP三网优化翻墙服务](https://image.ermao.net/images/blog/uuone/image-1.png)
+![uuone机场官网Logo-提供BGP三网优化翻墙服务 =1280x1280](https://image.ermao.net/images/blog/uuone/image-1.png)
 
 **uuone** 凭借其 **BGP三网优化** 架构和极具竞争力的价格，致力于为用户提供稳定高效的 **科学上网** 体验。无论是日常浏览网页、观看 4K 流媒体，还是外贸工作需求，uuone 都能提供全天候在线的高效服务。
 
@@ -146,7 +146,7 @@ _注：uuone 后台提供“一键导入”功能，点击对应软件的订阅�
 
 以下是 uuone 在晚高峰时段的真实测速表现，可以看到其带宽跑满，延迟表现优秀：
 
-![uuone机场晚高峰Speedtest测速-YouTube 4K流畅播放](https://image.ermao.net/images/blog/uuone/image.png)
+![uuone机场晚高峰Speedtest测速-YouTube 4K流畅播放 =1280x668](https://image.ermao.net/images/blog/uuone/image.png)
 
 ## 🙋 常见问题解答 (FAQ) {#faq}
 

@@ -19,7 +19,7 @@ Firefly 是海外团队在 2026 年新开的机场，年付版需一次支付 96
 
 <!-- more -->
 
-![Firefly 机场 Logo](https://image.ermao.net/images/blog/firefly-airport/20260723_161238-212580.png)
+![Firefly 机场 Logo =60x60](https://image.ermao.net/images/blog/firefly-airport/20260723_161238-212580.png)
 
 ## Firefly 机场简介
 
@@ -77,7 +77,7 @@ Firefly 还提供企业定制方案，并称官网及相关服务支持免翻墙
 
 ## 测速截图怎么看
 
-![Firefly VLESS 节点速度测试截图](https://image.ermao.net/images/blog/firefly-airport/20260723_161238-e269c9.png)
+![Firefly VLESS 节点速度测试截图 =851x1280](https://image.ermao.net/images/blog/firefly-airport/20260723_161238-e269c9.png)
 
 服务商提供的截图中可见香港、台湾、新加坡、日本和美国等 49 个 VLESS 节点，底部标注测试时间为 2026-07-16 01:14:26（CST），测试成功数为 49/49。
 

@@ -50,13 +50,13 @@ Only qualified legal analysis of the actual code, provenance, distribution, modi
 
 The source says strings extracted from a Stash macOS download showed a Shadow-TLS layout matching sing-box:
 
-![Alleged Stash and sing-box structural similarity](https://image.ermao.net/images/news/kne6vczb/image.png)
+![Alleged Stash and sing-box structural similarity =1200x727](https://image.ermao.net/images/news/kne6vczb/image.png)
 
-![Alleged Shadow-TLS similarity](https://image.ermao.net/images/news/kne6vczb/image-1.png)
+![Alleged Shadow-TLS similarity =551x1199](https://image.ermao.net/images/news/kne6vczb/image-1.png)
 
-![Additional alleged Shadow-TLS similarity](https://image.ermao.net/images/news/kne6vczb/image-2.png)
+![Additional alleged Shadow-TLS similarity =551x1199](https://image.ermao.net/images/news/kne6vczb/image-2.png)
 
-![Additional alleged file-layout similarity](https://image.ermao.net/images/news/kne6vczb/image-3.png)
+![Additional alleged file-layout similarity =551x1199](https://image.ermao.net/images/news/kne6vczb/image-3.png)
 
 The accuser's post also included a performance comparison on an iPhone 16 Pro:
 
@@ -64,29 +64,29 @@ The accuser's post also included a performance comparison on an iPhone 16 Pro:
 
 The source does not define the measurement unit, test method, duration, route, or reproducibility. Those numbers should not be treated as a reliable benchmark.
 
-![Performance screenshot included with the allegation](https://image.ermao.net/images/news/kne6vczb/image-4.png)
+![Performance screenshot included with the allegation =1199x953](https://image.ermao.net/images/news/kne6vczb/image-4.png)
 
 ## Other alleged components
 
 The source says the SS2022 structure and names resembled the AGPL-covered `database64128/shadowsocks-go`:
 
-![Alleged SS2022 structural similarity](https://image.ermao.net/images/news/kne6vczb/image-5.png)
+![Alleged SS2022 structural similarity =1200x591](https://image.ermao.net/images/news/kne6vczb/image-5.png)
 
 It says parts of the VLESS implementation used names matching sing-box:
 
-![Alleged VLESS naming similarity](https://image.ermao.net/images/news/kne6vczb/image-6.png)
+![Alleged VLESS naming similarity =1200x922](https://image.ermao.net/images/news/kne6vczb/image-6.png)
 
 It attributes the system TUN stack to the MIT-licensed `Kr328/tun2socket`:
 
-![Alleged tun2socket-derived structure 1](https://image.ermao.net/images/news/kne6vczb/image-7.png)
+![Alleged tun2socket-derived structure 1 =1200x447](https://image.ermao.net/images/news/kne6vczb/image-7.png)
 
-![Alleged tun2socket-derived structure 2](https://image.ermao.net/images/news/kne6vczb/image-8.png)
+![Alleged tun2socket-derived structure 2 =1200x644](https://image.ermao.net/images/news/kne6vczb/image-8.png)
 
 MIT-licensed reuse is not infringement merely because code is reused; compliance depends on preserving required notices and other facts.
 
 The source further speculates that the lwIP stack came from `netstack-lwip` and that other protocol components might incorporate code from mihomo, sing-box, or other GPL projects. It explicitly says those additional claims were not confirmed through decompilation.
 
-![Final screenshot accompanying the allegation](https://image.ermao.net/images/news/kne6vczb/image-9.png)
+![Final screenshot accompanying the allegation =1199x774](https://image.ermao.net/images/news/kne6vczb/image-9.png)
 
 ## What would establish the facts
 

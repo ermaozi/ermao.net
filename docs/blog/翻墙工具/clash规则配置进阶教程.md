@@ -62,7 +62,7 @@ description: 详解 Clash 分流规则的作用与配置方法，基于 Loyalsol
 
 ## 推荐规则库：Loyalsoldier/clash-rules
 
-![Loyalsoldier clash-rules GitHub 截图](https://image.ermao.net/images/blog/clash-rules-config/20260228_141256-b26939.png)
+![Loyalsoldier clash-rules GitHub 截图 =900x784](https://image.ermao.net/images/blog/clash-rules-config/20260228_141256-b26939.png)
 
 在 [上一期小火箭规则教程](/blog/shadowrocket-rules-config/) 中推荐了 Johnshall 规则集，而 **Clash 领域的"武林盟主"则非 [Loyalsoldier/clash-rules](https://github.com/Loyalsoldier/clash-rules) 莫属**，目前接近 30k Star。
 
@@ -96,7 +96,7 @@ description: 详解 Clash 分流规则的作用与配置方法，基于 Loyalsol
 2. 在右边找到 **「全局扩展覆写配置 (Merge)」** 卡片
 3. **右键点击** → 选择 **「编辑文件」**
 
-![全局扩展覆写配置入口截图](https://image.ermao.net/images/blog/clash-rules-config/20260228_141318-51a08a.png)
+![全局扩展覆写配置入口截图 =900x697](https://image.ermao.net/images/blog/clash-rules-config/20260228_141318-51a08a.png)
 
 ### 第 2 步：粘贴分流规则代码
 
@@ -240,7 +240,7 @@ prepend-rules:
 
 当你看到 `reject`、`google`、`apple`、`cncidr` 等规则集整齐排列，说明配置已成功注入。
 
-![验证规则配置成功截图](https://image.ermao.net/images/blog/clash-rules-config/20260228_141336-94acd7.png)
+![验证规则配置成功截图 =900x721](https://image.ermao.net/images/blog/clash-rules-config/20260228_141336-94acd7.png)
 
 ::: danger 必须检查的一点
 确保 Clash 运行在 **「规则 (Rule)」模式**，而不是全局 (Global) 或直连 (Direct)！只有在规则模式下，分流引擎才会接管你的网络。

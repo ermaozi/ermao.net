@@ -22,11 +22,11 @@ description: 安卓 TV、电视盒子和平板常用软件推荐与下载整理�
 
 一个第三方哔哩哔哩客户端，仅供学习与交流使用。该应用仅作为个人兴趣开发，应用没有任何破解行为，只是对于B站已有的API进行封装，所有数据来自于B站官方API，本人不对内容负责。应用通过firebase和appcenter收集的数据包括用户设备相关信息，以及崩溃日志，不会收集你的个人信息。
 
-![安卓TV软件推荐与下载 示例图片](https://image.ermao.net/images/article/vw1nq52m/image.png)
+![安卓TV软件推荐与下载 示例图片 =1920x1080](https://image.ermao.net/images/article/vw1nq52m/image.png)
 
-![安卓TV软件推荐与下载 示例图片](https://image.ermao.net/images/article/vw1nq52m/image-1.png)
+![安卓TV软件推荐与下载 示例图片 =1920x1080](https://image.ermao.net/images/article/vw1nq52m/image-1.png)
 
-![安卓TV软件推荐与下载 示例图片](https://image.ermao.net/images/article/vw1nq52m/image-2.png)
+![安卓TV软件推荐与下载 示例图片 =1920x1080](https://image.ermao.net/images/article/vw1nq52m/image-2.png)
 
 ### 项目地址
 
@@ -40,7 +40,7 @@ description: 安卓 TV、电视盒子和平板常用软件推荐与下载整理�
 
 免费的K歌软件，可以链接蓝牙麦克风在家K歌。
 
-![安卓TV软件推荐与下载 示例图片](https://image.ermao.net/images/article/vw1nq52m/image-3.png)
+![安卓TV软件推荐与下载 示例图片 =1082x609](https://image.ermao.net/images/article/vw1nq52m/image-3.png)
 
 ### 下载地址
 
@@ -50,9 +50,9 @@ description: 安卓 TV、电视盒子和平板常用软件推荐与下载整理�
 
 AList TV版，让你通过电视直接查看或者播放你所有网盘中的视频。据说这个TV版在官方已经下架，堪称绝版了——AList TV
 
-![安卓TV软件推荐与下载 示例图片](https://image.ermao.net/images/article/vw1nq52m/image-4.png)
+![安卓TV软件推荐与下载 示例图片 =1000x562](https://image.ermao.net/images/article/vw1nq52m/image-4.png)
 
-![安卓TV软件推荐与下载 示例图片](https://image.ermao.net/images/article/vw1nq52m/image-5.png)
+![安卓TV软件推荐与下载 示例图片 =1106x706](https://image.ermao.net/images/article/vw1nq52m/image-5.png)
 
 ### 下载地址
 

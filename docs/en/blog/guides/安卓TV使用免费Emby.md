@@ -33,11 +33,11 @@ Those files and domains have not been independently verified by this site. Versi
 
 In many home networks, an official Emby app discovers the local server automatically. When it does not, use the server administrator's authorized address.
 
-![Emby Android TV connection screen](https://image.ermao.net/images/article/d3apexwx/image.png)
+![Emby Android TV connection screen =1088x620](https://image.ermao.net/images/article/d3apexwx/image.png)
 
 Choose **Skip and enter IP address** or the equivalent manual-connection option.
 
-![Entering an Emby server manually](https://image.ermao.net/images/article/d3apexwx/image-1.png)
+![Entering an Emby server manually =1088x620](https://image.ermao.net/images/article/d3apexwx/image-1.png)
 
 Enter the hostname or IP address supplied by the Emby server administrator, along with the actual port configured for that server.
 
@@ -47,17 +47,17 @@ Enter the hostname or IP address supplied by the Emby server administrator, alon
 
 Do not assume a port solely from the protocol; use the address shown in the server dashboard or invitation. Prefer HTTPS for access over an untrusted network.
 
-![Emby server address field](https://image.ermao.net/images/article/d3apexwx/image-2.png)
+![Emby server address field =1088x620](https://image.ermao.net/images/article/d3apexwx/image-2.png)
 
-![Emby server port field](https://image.ermao.net/images/article/d3apexwx/image-3.png)
+![Emby server port field =1123x640](https://image.ermao.net/images/article/d3apexwx/image-3.png)
 
-![Confirming the Emby server connection](https://image.ermao.net/images/article/d3apexwx/image-4.png)
+![Confirming the Emby server connection =1088x620](https://image.ermao.net/images/article/d3apexwx/image-4.png)
 
 Choose the manual-user option and enter the Emby username and password issued for that server.
 
-![Choosing manual user entry in Emby](https://image.ermao.net/images/article/d3apexwx/image-5.png)
+![Choosing manual user entry in Emby =1088x620](https://image.ermao.net/images/article/d3apexwx/image-5.png)
 
-![Signing in to an Emby account](https://image.ermao.net/images/article/d3apexwx/image-6.png)
+![Signing in to an Emby account =1088x620](https://image.ermao.net/images/article/d3apexwx/image-6.png)
 
 After authentication, the libraries granted to that user should appear in the Android TV client.
 
@@ -80,6 +80,6 @@ The client application does not include a media library by itself. You need your
 
 The source article states that a [Haoya Cloud plan](/en/article/73dnyy9a/) included access to an Emby library at the time of its review.
 
-![Emby library benefit shown in the source review](https://image.ermao.net/images/article/d3apexwx/image-7.png)
+![Emby library benefit shown in the source review =1613x1047](https://image.ermao.net/images/article/d3apexwx/image-7.png)
 
 Treat that as a provider-supplied benefit recorded at the review date, not a permanent entitlement. Confirm current eligibility, library availability, account limits, licensing, and renewal terms with the provider before paying.

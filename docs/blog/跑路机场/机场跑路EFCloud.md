@@ -35,7 +35,7 @@ description: >-
 ## 官方公告
 
 ### 截图
-![EFCloud 机场跑路公告](https://image.ermao.net/images/article/nz313xp6/image.png)
+![EFCloud 机场跑路公告 =840x1470](https://image.ermao.net/images/article/nz313xp6/image.png)
 
 ### 原文
 

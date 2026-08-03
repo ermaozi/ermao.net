@@ -53,7 +53,7 @@ Stop purchasing and renewing to avoid further losses.
 
 Submitted material showed that CAC's website could not be accessed around late June 2026. In isolation, that could be a temporary website failure. In combination with Naiyun's confirmed shutdown, OKAC's concurrent problems, and the common operator, it warranted a shutdown alert.
 
-![CAC website inaccessible](https://image.ermao.net/images/scamvpn/cac/20260701_111333-13fa8c.png)
+![CAC website inaccessible =2530x1814](https://image.ermao.net/images/scamvpn/cac/20260701_111333-13fa8c.png)
 
 ### Concurrent problems among services under the same operator
 

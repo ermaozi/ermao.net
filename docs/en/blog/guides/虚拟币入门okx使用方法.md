@@ -57,7 +57,7 @@ Neither model is automatically "safe." Use the one whose failure modes you under
 
 ## 1. Create and secure an OKX account {#step1}
 
-![OKX registration screen](https://image.ermao.net/images/blog/web3okx/image.png)
+![OKX registration screen =1093x720](https://image.ermao.net/images/blog/web3okx/image.png)
 
 If OKX accepts customers in your location:
 
@@ -75,13 +75,13 @@ Never let a "support agent" screen-share into your account, read a verification 
 
 Receiving crypto is a transfer from another exchange or wallet to a deposit address assigned by OKX.
 
-![OKX crypto deposit entry](https://image.ermao.net/images/blog/web3okx/image-1.png)
+![OKX crypto deposit entry =1933x1007](https://image.ermao.net/images/blog/web3okx/image-1.png)
 
 ### Select the asset and network
 
 In OKX, open **Assets** and select **Deposit**, then choose the asset. The interface will show only the networks currently supported for that asset and account.
 
-![Select an asset for deposit](https://image.ermao.net/images/blog/web3okx/image-2.png)
+![Select an asset for deposit =793x982](https://image.ermao.net/images/blog/web3okx/image-2.png)
 
 The sending platform and OKX must use the **same asset, network, and address format**. For example, "USDT" exists on several unrelated networks. An address displayed for one network does not mean another network can deliver to it.
 
@@ -96,7 +96,7 @@ Do not choose TRC-20, ERC-20, a BNB Chain token, or any other network based sole
 
 ### Copy the deposit details carefully
 
-![Copy an OKX deposit address](https://image.ermao.net/images/blog/web3okx/image-3.png)
+![Copy an OKX deposit address =1691x775](https://image.ermao.net/images/blog/web3okx/image-3.png)
 
 1. copy the address from the OKX deposit page;
 2. compare the beginning and end after pasting it into the sender;
@@ -113,7 +113,7 @@ Deposits are not instant. The blockchain must confirm the transfer, and OKX may 
 
 Open **Assets**, select **Withdraw**, choose the asset and network, and enter the destination details shown by the receiving wallet or exchange.
 
-![OKX crypto withdrawal screen](https://image.ermao.net/images/blog/web3okx/image-4.png)
+![OKX crypto withdrawal screen =1753x849](https://image.ermao.net/images/blog/web3okx/image-4.png)
 
 Before confirming:
 
@@ -130,7 +130,7 @@ For regularly used destinations, enable an address allowlist and withdrawal lock
 
 ## 4. Convert crypto through P2P {#step4}
 
-![OKX P2P interface](https://image.ermao.net/images/blog/web3okx/image-5.png)
+![OKX P2P interface =1756x969](https://image.ermao.net/images/blog/web3okx/image-5.png)
 
 P2P trading matches two users: one transfers fiat through a listed payment method, while the platform temporarily escrows the seller's crypto. The exchange does not hold or reverse every off-platform fiat payment.
 

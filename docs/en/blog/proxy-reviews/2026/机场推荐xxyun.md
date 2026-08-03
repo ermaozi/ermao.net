@@ -68,7 +68,7 @@ The domain difference and every code should be verified before entering credenti
 
 ## Overview
 
-![XXYUN logo and account screen](https://image.ermao.net/images/blog/xxyun/image.png)
+![XXYUN logo and account screen =1580x550](https://image.ermao.net/images/blog/xxyun/image.png)
 
 | Item | Source record |
 | --- | --- |
@@ -109,7 +109,7 @@ These statements are not substitutes for current route evidence, provider status
 
 ## Archived performance observation
 
-![XXYUN speed-test screenshot](https://image.ermao.net/images/blog/xxyun/image-1.png)
+![XXYUN speed-test screenshot =1280x612](https://image.ermao.net/images/blog/xxyun/image-1.png)
 
 The source records this environment:
 

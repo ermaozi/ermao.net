@@ -19,7 +19,7 @@ This guide follows four steps: download the client, import a subscription, conne
 
 <!-- more -->
 
-![Clash Mi website and app overview](https://image.ermao.net/images/blog/clashmi/20260305_103545-57abfa.png)
+![Clash Mi website and app overview =256x256](https://image.ermao.net/images/blog/clashmi/20260305_103545-57abfa.png)
 
 Website: [https://clashmi.app/](https://clashmi.app/)
 
@@ -29,7 +29,7 @@ Website: [https://clashmi.app/](https://clashmi.app/)
 - **Simple setup:** A valid Clash subscription URL can be pasted directly into the app without extensive manual settings.
 - **Clean interface:** The main screen avoids unnecessary controls and makes the basic connection flow easier for beginners.
 
-![Clash Mi home-screen preview](https://image.ermao.net/images/blog/clashmi/20260305_103743-3935fc.png)
+![Clash Mi home-screen preview =480x651](https://image.ermao.net/images/blog/clashmi/20260305_103743-3935fc.png)
 
 ## Requirements
 
@@ -77,19 +77,19 @@ The screenshots below use iOS.
 
 Open **My Profiles** in the bottom navigation, select **+** in the upper-right corner, choose **Add Profile URL**, and paste the provider's subscription URL.
 
-![Adding a profile URL in Clash Mi](https://image.ermao.net/images/blog/clashmi/20260305_103809-b1ab1b.png)
+![Adding a profile URL in Clash Mi =706x480](https://image.ermao.net/images/blog/clashmi/20260305_103809-b1ab1b.png)
 
 ### Step 2: activate the imported profile
 
 After importing, select the new subscription card in the profile list so the app knows which profile to use.
 
-![Selecting a profile in Clash Mi](https://image.ermao.net/images/blog/clashmi/20260305_103816-7c1edf.png)
+![Selecting a profile in Clash Mi =854x422](https://image.ermao.net/images/blog/clashmi/20260305_103816-7c1edf.png)
 
 ### Step 3: connect
 
 Return to **Home** and select the round connection button. If the system asks to add a VPN configuration, review the request and allow it.
 
-![Starting the Clash Mi connection](https://image.ermao.net/images/blog/clashmi/20260305_103836-d45527.png)
+![Starting the Clash Mi connection =480x543](https://image.ermao.net/images/blog/clashmi/20260305_103836-d45527.png)
 
 ## 3. Online dashboard
 

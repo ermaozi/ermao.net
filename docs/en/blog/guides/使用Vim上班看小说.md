@@ -23,25 +23,25 @@ Follow workplace policy and do not let personal reading interfere with your duti
 
 Download Vim from the [official Windows download page](https://www.vim.org/download.php#pc). Installer names and version numbers change, so choose the current signed Windows installer rather than looking for an exact `gvimXX.exe` filename from an old screenshot.
 
-![Vim Windows download page](https://image.ermao.net/images/article/yifph1jd/image.png)
+![Vim Windows download page =999x164](https://image.ermao.net/images/article/yifph1jd/image.png)
 
 If Windows shows a reputation warning, verify the download source and publisher before proceeding. Do not bypass a warning merely because a tutorial says the file is safe.
 
-![Windows download warning](https://image.ermao.net/images/article/yifph1jd/image-1.png)
+![Windows download warning =532x495](https://image.ermao.net/images/article/yifph1jd/image-1.png)
 
-![Vim installer](https://image.ermao.net/images/article/yifph1jd/image-2.png)
+![Vim installer =527x484](https://image.ermao.net/images/article/yifph1jd/image-2.png)
 
 The installer can add Vim to `PATH`. If it does not, locate the directory containing `vim.exe`:
 
-![Opening the Vim installation directory](https://image.ermao.net/images/article/yifph1jd/image-3.png)
+![Opening the Vim installation directory =335x621](https://image.ermao.net/images/article/yifph1jd/image-3.png)
 
-![Copying the Vim directory path](https://image.ermao.net/images/article/yifph1jd/image-4.png)
+![Copying the Vim directory path =634x208](https://image.ermao.net/images/article/yifph1jd/image-4.png)
 
 Search Windows for “environment variables,” edit the user `Path`, and add that directory:
 
-![Opening Windows environment variables](https://image.ermao.net/images/article/yifph1jd/image-5.png)
+![Opening Windows environment variables =717x634](https://image.ermao.net/images/article/yifph1jd/image-5.png)
 
-![Adding Vim to Path](https://image.ermao.net/images/article/yifph1jd/image-6.png)
+![Adding Vim to Path =1024x446](https://image.ermao.net/images/article/yifph1jd/image-6.png)
 
 Open a new PowerShell window and verify the command. The option uses two ASCII hyphens:
 
@@ -49,7 +49,7 @@ Open a new PowerShell window and verify the command. The option uses two ASCII h
 vim --version
 ```
 
-![Checking the Vim version](https://image.ermao.net/images/article/yifph1jd/image-7.png)
+![Checking the Vim version =751x205](https://image.ermao.net/images/article/yifph1jd/image-7.png)
 
 ## 2. Configure Vim
 
@@ -96,7 +96,7 @@ Press `Esc`, type:
 
 and press Enter.
 
-![Saving the Vim configuration](https://image.ermao.net/images/article/yifph1jd/image-8.png)
+![Saving the Vim configuration =1024x697](https://image.ermao.net/images/article/yifph1jd/image-8.png)
 
 ## 3. Open a Book
 
@@ -106,9 +106,9 @@ From a terminal embedded in VS Code, PyCharm, or another development tool:
 vim "C:\Users\YourName\Documents\Books\book.txt"
 ```
 
-![Opening a text file from an editor terminal](https://image.ermao.net/images/article/yifph1jd/image-9.png)
+![Opening a text file from an editor terminal =918x326](https://image.ermao.net/images/article/yifph1jd/image-9.png)
 
-![Reading plain text in Vim](https://image.ermao.net/images/article/yifph1jd/image-10.png)
+![Reading plain text in Vim =1024x644](https://image.ermao.net/images/article/yifph1jd/image-10.png)
 
 In Normal mode:
 
@@ -126,7 +126,7 @@ Create the PowerShell profile if necessary:
 New-Item -ItemType File -Force -Path $PROFILE
 ```
 
-![Creating a PowerShell profile](https://image.ermao.net/images/article/yifph1jd/image-11.png)
+![Creating a PowerShell profile =890x164](https://image.ermao.net/images/article/yifph1jd/image-11.png)
 
 Open it:
 
@@ -211,10 +211,10 @@ rn -Name "Example Book"
 rn
 ```
 
-![Opening the books directory](https://image.ermao.net/images/article/yifph1jd/image-12.png)
+![Opening the books directory =767x345](https://image.ermao.net/images/article/yifph1jd/image-12.png)
 
-![Listing text files](https://image.ermao.net/images/article/yifph1jd/image-13.png)
+![Listing text files =664x363](https://image.ermao.net/images/article/yifph1jd/image-13.png)
 
-![Selecting the default book](https://image.ermao.net/images/article/yifph1jd/image-14.png)
+![Selecting the default book =756x148](https://image.ermao.net/images/article/yifph1jd/image-14.png)
 
 PowerShell's execution policy may prevent a profile from loading on a managed computer. Do not weaken an organization-wide policy; ask the administrator or run the commands manually.

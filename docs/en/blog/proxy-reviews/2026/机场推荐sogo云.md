@@ -20,13 +20,13 @@ Recorded route: [ermaozi.sogoaff.com](https://ermaozi.sogoaff.com/#/login?code=y
 
 <!-- more -->
 
-![Sogo Cloud logo](https://image.ermao.net/images/blog/sogo云/20260414_090807-edf50c.png)
+![Sogo Cloud logo =640x640](https://image.ermao.net/images/blog/sogo云/20260414_090807-edf50c.png)
 
 ## Archived tests
 
-![Sogo Cloud archived test 1](https://image.ermao.net/images/blog/sogo云/20260414_090830-ad2052.png)
+![Sogo Cloud archived test 1 =808x1280](https://image.ermao.net/images/blog/sogo云/20260414_090830-ad2052.png)
 
-![Sogo Cloud archived test 2](https://image.ermao.net/images/blog/sogo云/20260414_090849-c568e8.png)
+![Sogo Cloud archived test 2 =808x1280](https://image.ermao.net/images/blog/sogo云/20260414_090849-c568e8.png)
 
 The samples show basic connectivity under the captured conditions. The new-service status means there was not enough history to establish evening-peak or long-term performance.
 

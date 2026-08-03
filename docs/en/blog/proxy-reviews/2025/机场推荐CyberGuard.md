@@ -43,15 +43,15 @@ These statements should not be treated as verified uptime or privacy guarantees.
 | Non-expiring 700 GB | CNY 188 one-time | 700 GB total | One-time | [Check current plan](https://www.cyberguard.best/#/register?code=yoyUW3R9) |
 | Enterprise | CNY 200/month | 2 TB/month | Monthly, quarterly, half-year | [Check current plan](https://www.cyberguard.best/#/register?code=yoyUW3R9) |
 
-![CyberGuard archived pricing screen 1](https://image.ermao.net/images/article/4m7fg8r9/image-1.png)
+![CyberGuard archived pricing screen 1 =1575x1014](https://image.ermao.net/images/article/4m7fg8r9/image-1.png)
 
-![CyberGuard archived pricing screen 2](https://image.ermao.net/images/article/4m7fg8r9/image-2.png)
+![CyberGuard archived pricing screen 2 =1709x1040](https://image.ermao.net/images/article/4m7fg8r9/image-2.png)
 
 Verify the live total, data reset, traffic multiplier, device limit, renewal, refund terms, and eligible nodes. A multi-year or one-time package creates substantial provider-continuity risk.
 
 ## Archived test
 
-![CyberGuard archived test](https://image.ermao.net/images/article/4m7fg8r9/image.png)
+![CyberGuard archived test =1280x1219](https://image.ermao.net/images/article/4m7fg8r9/image.png)
 
 The screenshot is a dated observation, not proof of typical speed or uptime. Test the required route from your own ISP during busy hours.
 

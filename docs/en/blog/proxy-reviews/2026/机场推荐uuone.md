@@ -69,7 +69,7 @@ Verify the operator, current official domain, code, and final amount before paym
 
 ## Overview
 
-![UUOne logo and provider page](https://image.ermao.net/images/blog/uuone/image-1.png)
+![UUOne logo and provider page =1280x1280](https://image.ermao.net/images/blog/uuone/image-1.png)
 
 | Item | Source record |
 | --- | --- |
@@ -121,7 +121,7 @@ The provider dashboard reportedly offered one-click imports. Review the destinat
 
 ## Archived evening-peak test
 
-![UUOne evening-peak speed test](https://image.ermao.net/images/blog/uuone/image.png)
+![UUOne evening-peak speed test =1280x668](https://image.ermao.net/images/blog/uuone/image.png)
 
 The screenshot records one test state and does not prove that another subscriber can saturate a broadband line, play 4K without buffering, or reach the same service later.
 

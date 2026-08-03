@@ -46,15 +46,15 @@ Website status at the time of the report: accessible.
 
 Users reported that stable nodes were rarely available after April began. Many nodes showed errors and the service was largely unusable.
 
-![Crelay node failures](https://image.ermao.net/images/scamvpn/crelay/20260410_182706-de951c.png)
+![Crelay node failures =1283x198](https://image.ermao.net/images/scamvpn/crelay/20260410_182706-de951c.png)
 
-![Widespread Crelay node failures](https://image.ermao.net/images/scamvpn/crelay/20260410_182722-739ef8.png)
+![Widespread Crelay node failures =1920x1119](https://image.ermao.net/images/scamvpn/crelay/20260410_182722-739ef8.png)
 
 ### Support tickets received no reply
 
 Although the website could still be opened, submitted tickets received no visible reply or resolution while most nodes were failing.
 
-![Unanswered Crelay support ticket](https://image.ermao.net/images/scamvpn/crelay/20260410_182643-af4d59.png)
+![Unanswered Crelay support ticket =1920x845](https://image.ermao.net/images/scamvpn/crelay/20260410_182643-af4d59.png)
 
 ## Conclusion
 

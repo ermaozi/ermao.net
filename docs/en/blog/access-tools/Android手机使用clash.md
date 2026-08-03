@@ -39,43 +39,43 @@ Choose any of the three versions above. The source guide recommends Clash Meta f
 
 ## Add a subscription
 
-![Android Clash home screen: select Profiles](https://image.ermao.net/images/article/eh8f4n86/image.png)
+![Android Clash home screen: select Profiles =596x839](https://image.ermao.net/images/article/eh8f4n86/image.png)
 
 Select **Profiles**.
 
-![Android Clash profile screen: select the plus button](https://image.ermao.net/images/article/eh8f4n86/image-1.png)
+![Android Clash profile screen: select the plus button =595x358](https://image.ermao.net/images/article/eh8f4n86/image-1.png)
 
 Select the **+** button in the upper-right corner.
 
-![Android Clash import options: select URL](https://image.ermao.net/images/article/eh8f4n86/image-2.png)
+![Android Clash import options: select URL =597x711](https://image.ermao.net/images/article/eh8f4n86/image-2.png)
 
 Select **URL**.
 
-![Android Clash subscription form: paste the subscription URL](https://image.ermao.net/images/article/eh8f4n86/image-3.png)
+![Android Clash subscription form: paste the subscription URL =594x897](https://image.ermao.net/images/article/eh8f4n86/image-3.png)
 
 Paste the subscription URL and confirm.
 
 If you do not have a URL, consult the [proxy-service selection and review guide](/en/posts/vpn/).
 
-![Android Clash automatic-update setting](https://image.ermao.net/images/article/eh8f4n86/image-4.png)
+![Android Clash automatic-update setting =596x828](https://image.ermao.net/images/article/eh8f4n86/image-4.png)
 
 Choose an automatic-update interval, then confirm.
 
-![Android Clash save-profile button](https://image.ermao.net/images/article/eh8f4n86/image-5.png)
+![Android Clash save-profile button =595x696](https://image.ermao.net/images/article/eh8f4n86/image-5.png)
 
 Select the save button in the upper-right corner.
 
-![Android Clash saved-profile selection](https://image.ermao.net/images/article/eh8f4n86/image-6.png)
+![Android Clash saved-profile selection =599x258](https://image.ermao.net/images/article/eh8f4n86/image-6.png)
 
 Select the profile you just saved.
 
 ## Connect
 
-![Android Clash start-proxy button](https://image.ermao.net/images/article/eh8f4n86/image-7.png)
+![Android Clash start-proxy button =598x439](https://image.ermao.net/images/article/eh8f4n86/image-7.png)
 
 Select the start button.
 
-![Android Clash connected screen](https://image.ermao.net/images/article/eh8f4n86/image-8.png)
+![Android Clash connected screen =593x592](https://image.ermao.net/images/article/eh8f4n86/image-8.png)
 
 The connection is now configured.
 

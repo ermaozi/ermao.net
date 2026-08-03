@@ -38,11 +38,11 @@ The provider advertises:
 - A 500 Mbps rate with no advertised evening peak-hour cap
 - Human customer support with fast responses
 
-![XX Cloud overview](https://image.ermao.net/images/article/6e3quult/image.png)
+![XX Cloud overview =2886x855](https://image.ermao.net/images/article/6e3quult/image.png)
 
 ### XX Cloud test
 
-![XX Cloud test](https://image.ermao.net/images/article/6e3quult/image-1.png)
+![XX Cloud test =1280x612](https://image.ermao.net/images/article/6e3quult/image-1.png)
 
 ## Complete proxy-service guide
 

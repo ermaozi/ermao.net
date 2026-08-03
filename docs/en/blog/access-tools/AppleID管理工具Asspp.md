@@ -23,7 +23,7 @@ Downloading a U.S.-only app, a Japanese game, or an older version of an app norm
 
 ## What Asspp can do
 
-![Asspp interface preview](https://image.ermao.net/images/blog/asspp-download-guide/20260224_073116-3c6273.png)
+![Asspp interface preview =3317x1660](https://image.ermao.net/images/blog/asspp-download-guide/20260224_073116-3c6273.png)
 
 | Feature | What it does | Typical user |
 |---|---|---|

@@ -48,11 +48,11 @@ The source did not document traffic multipliers, device limits, refund terms, or
 
 ## Archived tests
 
-![KooDog archived test 1](https://image.ermao.net/images/article/rq55p9dn/image.png)
+![KooDog archived test 1 =1280x1075](https://image.ermao.net/images/article/rq55p9dn/image.png)
 
-![KooDog archived test 2](https://image.ermao.net/images/article/rq55p9dn/image-1.png)
+![KooDog archived test 2 =1280x990](https://image.ermao.net/images/article/rq55p9dn/image-1.png)
 
-![KooDog archived test 3](https://image.ermao.net/images/article/rq55p9dn/image-2.png)
+![KooDog archived test 3 =1280x484](https://image.ermao.net/images/article/rq55p9dn/image-2.png)
 
 Screenshots capture one historical condition. They cannot establish a general 2 Gbps rate or almost-perfect availability.
 

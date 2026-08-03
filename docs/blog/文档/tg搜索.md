@@ -43,9 +43,9 @@ description: 面向新手与进阶用户的 Telegram 搜索机器人指南，包
 
 实操建议：同一关键词至少交叉两款机器人验证，减少单一索引导致的漏检或误判。
 
-![Telegram搜索机器人界面演示](https://image.ermao.net/images/article/bsnuua0h/image.png)
-![Telegram搜索机器人资源展示](https://image.ermao.net/images/article/bsnuua0h/image-1.png)
-![Telegram搜索机器人使用效果](https://image.ermao.net/images/article/bsnuua0h/image-2.png)
+![Telegram搜索机器人界面演示 =245x180](https://image.ermao.net/images/article/bsnuua0h/image.png)
+![Telegram搜索机器人资源展示 =381x195](https://image.ermao.net/images/article/bsnuua0h/image-1.png)
+![Telegram搜索机器人使用效果 =287x191](https://image.ermao.net/images/article/bsnuua0h/image-2.png)
 
 ## 搜索技巧
 
@@ -64,7 +64,7 @@ description: 面向新手与进阶用户的 Telegram 搜索机器人指南，包
 5. **减少无效跳转**  
    对明显标题党、只留短链不留说明的结果，优先跳过。
 
-![tg搜索 示例图片](https://image.ermao.net/images/article/bsnuua0h/image-3.png)
+![tg搜索 示例图片 =505x670](https://image.ermao.net/images/article/bsnuua0h/image-3.png)
 
 ## 风险提醒
 

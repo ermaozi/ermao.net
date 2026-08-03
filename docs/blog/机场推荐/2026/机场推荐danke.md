@@ -26,7 +26,7 @@ Danke 是一款偏「高性价比 + 大流量」路线的机场，官方主打�
 
 ## Danke机场官网地址
 
-![danke机场logo](https://image.ermao.net/images/blog/danke/20260403_165913-188225.png)
+![danke机场logo =640x640](https://image.ermao.net/images/blog/danke/20260403_165913-188225.png)
 
 [https://www.dankewed.com/#/register?code=a0zksG3J](https://www.dankewed.com/#/register?code=a0zksG3J)
 
@@ -49,7 +49,7 @@ Danke 是一款偏「高性价比 + 大流量」路线的机场，官方主打�
 
 ## Danke机场测速
 
-![danke机场测速截图](https://image.ermao.net/images/blog/danke/20260403_165934-4ace28.png)
+![danke机场测速截图 =1280x767](https://image.ermao.net/images/blog/danke/20260403_165934-4ace28.png)
 
 从当前定位看，Danke 更强调「中转优化 + 大流量」。如果你主要是 YouTube/Netflix、日常网页访问和 AI 工具会话，500GB 档通常足够；如果有多设备并行或高频下载需求，1000GB 档更稳妥。
 

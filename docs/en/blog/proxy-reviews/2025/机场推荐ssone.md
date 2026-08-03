@@ -61,11 +61,11 @@ Frequent 4K video, large downloads, or several users can consume 100 GB quickly.
 
 This page contains an affiliate link. See the [affiliate disclosure](/en/affiliate-disclosure/) and [review methodology](/en/review-methodology/).
 
-![SSONE plan price](https://image.ermao.net/images/article/8jxmo76u/image-1.png)
+![SSONE plan price =1683x1219](https://image.ermao.net/images/article/8jxmo76u/image-1.png)
 
 ## Archived test
 
-![SSONE node test](https://image.ermao.net/images/article/8jxmo76u/image.png)
+![SSONE node test =3006x5570](https://image.ermao.net/images/article/8jxmo76u/image.png)
 
 The screenshot is a time-specific observation rather than a continuing speed or availability commitment.
 

@@ -36,13 +36,13 @@ The lowest equivalent monthly price in the source was CNY 11.60 for 100 GB per m
 
 These figures are an archived snapshot. Multi-month prepayment increases provider-shutdown exposure, so verify monthly alternatives and current terms.
 
-![Dengta Cloud plan prices](https://image.ermao.net/images/article/osp1vx6y/image.png)
+![Dengta Cloud plan prices =1546x731](https://image.ermao.net/images/article/osp1vx6y/image.png)
 
-![Additional Dengta Cloud prices](https://image.ermao.net/images/article/osp1vx6y/image-1.png)
+![Additional Dengta Cloud prices =1526x731](https://image.ermao.net/images/article/osp1vx6y/image-1.png)
 
 ## Archived test
 
-![Dengta Cloud service test](https://image.ermao.net/images/article/osp1vx6y/image-2.png)
+![Dengta Cloud service test =2296x1800](https://image.ermao.net/images/article/osp1vx6y/image-2.png)
 
 The screenshot shows only the tested nodes and network at that time. Recheck the required region, evening-peak performance, streaming or AI service, and subscription compatibility after a small purchase.
 

@@ -28,7 +28,7 @@ HyperOrbit 是一款基于自研 HyperCore 内核的代理工具，支持 VLESS�
 
 ---
 
-![Connected](https://image.ermao.net/images/blog/HyperOrbit/20260527_230232-cd78fc.png)
+![Connected =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_230232-cd78fc.png)
 
 ---
 
@@ -57,7 +57,7 @@ HyperOrbit 是一款基于自研 HyperCore 内核的代理工具，支持 VLESS�
 
 HyperOrbit 订阅价格为 ==$1.99 / 年==，下载后可 ==免费试用 7 天==，试用期结束前取消，**不收费**。
 
-![Free Trial](https://image.ermao.net/images/blog/HyperOrbit/20260527_231550-c18a35.png)
+![Free Trial =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231550-c18a35.png)
 
 如果你想完全免费体验完整功能，可以加入 **TestFlight 公测版**：
 
@@ -122,9 +122,9 @@ HyperOrbit 支持四种导入方式，选一种最方便的即可：
 3. 粘贴订阅 URL
 4. 确认导入
 
-![Add Sub](https://image.ermao.net/images/blog/HyperOrbit/20260527_230305-edc2ac.png)
+![Add Sub =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_230305-edc2ac.png)
 
-![Add Sub2](https://image.ermao.net/images/blog/HyperOrbit/20260527_230313-2902b2.png)
+![Add Sub2 =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_230313-2902b2.png)
 
 ### 方式二：扫描二维码
 
@@ -134,7 +134,7 @@ HyperOrbit 支持四种导入方式，选一种最方便的即可：
 2. 选择 **扫描二维码**
 3. 对准二维码扫描
 
-![Scan QRCode](https://image.ermao.net/images/blog/HyperOrbit/20260527_230845-da0f61.png)
+![Scan QRCode =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_230845-da0f61.png)
 
 ### 方式三：剪贴板导入
 
@@ -160,7 +160,7 @@ HyperOrbit 支持四种导入方式，选一种最方便的即可：
 
 首次连接时 iOS 会弹出「是否允许添加 VPN 配置」的提示，点击 ==允许==，并通过 Face ID / 密码验证即可。
 
-![Connect](https://image.ermao.net/images/blog/HyperOrbit/20260527_230953-b90205.png)
+![Connect =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_230953-b90205.png)
 
 连接成功后状态栏会出现 ==VPN== 标识。
 
@@ -178,8 +178,8 @@ HyperOrbit 提供三种路由模式，在首页顶部可以随时切换：
 
 日常使用如果不太懂可以先用 ==全局== 模式，最终建议选 ==规则== 模式。
 
-![Mode](https://image.ermao.net/images/blog/HyperOrbit/20260527_231009-a016d7.png)
-![Rules](https://image.ermao.net/images/blog/HyperOrbit/20260527_231013-c163ec.png)
+![Mode =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231009-a016d7.png)
+![Rules =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231013-c163ec.png)
 
 ---
 
@@ -189,7 +189,7 @@ HyperOrbit 提供三种路由模式，在首页顶部可以随时切换：
 
 选 ==延迟最低== 的那个连接即可。
 
-![Ping](https://image.ermao.net/images/blog/HyperOrbit/20260527_231025-873908.png)
+![Ping =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231025-873908.png)
 
 ---
 
@@ -199,9 +199,9 @@ HyperOrbit 提供三种路由模式，在首页顶部可以随时切换：
 
 在新设备上登录同一 iCloud 账号，打开 HyperOrbit，同样进入 iCloud 同步页面，选择 ==从 iCloud 全部下载==，所有订阅和节点即可恢复。
 
-![iCloud](https://image.ermao.net/images/blog/HyperOrbit/20260527_231041-8bc167.png)
+![iCloud =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231041-8bc167.png)
 
-![iCloudDetail](https://image.ermao.net/images/blog/HyperOrbit/20260527_231053-a776aa.png)
+![iCloudDetail =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231053-a776aa.png)
 
 ---
 
@@ -216,7 +216,7 @@ HyperOrbit 会记录所有经过隧道的连接，在首页点击连接卡片上
 - 上传 / 下载流量
 - 连接状态（活跃 / 已关闭）
 
-![Connection View](https://image.ermao.net/images/blog/HyperOrbit/20260527_231113-2a017e.png)
+![Connection View =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231113-2a017e.png)
 
 这对排查「哪个 App 在偷跑流量」或「某个请求走了直连还是代理」非常有用。
 
@@ -229,7 +229,7 @@ HyperOrbit 会记录所有经过隧道的连接，在首页点击连接卡片上
 - **直连 vs 代理分布**：直观看出哪些流量走了代理、哪些直连，验证规则路由是否按预期工作
 
 <!-- 截图：统计页面，域名列表带连接耗时数据 -->
-![Stats View](https://image.ermao.net/images/blog/HyperOrbit/20260527_231129-7cc9cb.png)
+![Stats View =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231129-7cc9cb.png)
 ---
 
 ## 常见问题

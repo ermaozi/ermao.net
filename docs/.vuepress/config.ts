@@ -271,7 +271,7 @@ export default defineUserConfig({
         && !isUtilityPage(page.path),
     },
     plugins: {
-      markdownImage: false,
+      markdownImage: { size: true },
       sitemap: {
         changefreq: 'weekly',
       },

@@ -69,7 +69,7 @@ Those network, capacity, service-access, and support descriptions require curren
 
 ## Overview
 
-![XSUS logo and dashboard](https://image.ermao.net/images/blog/xsus/20260129_162650-08b59d.png)
+![XSUS logo and dashboard =256x256](https://image.ermao.net/images/blog/xsus/20260129_162650-08b59d.png)
 
 | Item | Source record |
 | --- | --- |
@@ -118,7 +118,7 @@ These details materially affect value. Confirm them at checkout and in the curre
 
 ## Speed and stability evidence
 
-![XSUS speed-test screenshot](https://image.ermao.net/images/blog/xsus/20260129_162438-1da0b7.png)
+![XSUS speed-test screenshot =695x1280](https://image.ermao.net/images/blog/xsus/20260129_162438-1da0b7.png)
 
 The provider emphasizes consistent real use over isolated speed-test screenshots and advertises evening-peak optimization. The source describes smooth browsing, video, and remote work, but it does not provide raw multi-day latency, loss, or uptime logs.
 

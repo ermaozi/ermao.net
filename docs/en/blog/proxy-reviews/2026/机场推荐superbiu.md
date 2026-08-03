@@ -77,7 +77,7 @@ Website: [https://biubiux.online](https://biubiux.online/#/register?code=BasmsUL
 
 ## Overview {#overview}
 
-![SuperBiu logo](https://image.ermao.net/images/blog/superbiu/image-1.jpg)
+![SuperBiu logo =640x640](https://image.ermao.net/images/blog/superbiu/image-1.jpg)
 
 SuperBiu says it routes users of China Telecom, China Unicom, and China Mobile onto international IPLC capacity. It also advertises its own media-access system, worldwide deployment, strong evening performance, and privacy protections. No independent infrastructure or privacy audit was supplied with the source article.
 
@@ -130,7 +130,7 @@ The provider described these packages as remaining valid until their traffic is 
 
 ## Test samples {#section-4}
 
-![SuperBiu Hong Kong speed-test sample](https://image.ermao.net/images/blog/superbiu/image.jpg)
+![SuperBiu Hong Kong speed-test sample =2492x1170](https://image.ermao.net/images/blog/superbiu/image.jpg)
 
 The source recorded the following short test:
 
@@ -140,7 +140,7 @@ The source recorded the following short test:
 - United States West: 118Mbps down, 67Mbps up, 135ms latency
 - Asian game route: reported packet loss below 0.2%
 
-![SuperBiu media-test sample](https://image.ermao.net/images/blog/superbiu/image.PNG)
+![SuperBiu media-test sample =2109x5102](https://image.ermao.net/images/blog/superbiu/image.PNG)
 
 The same sample reported access to Netflix, Disney+, HBO Max, YouTube 8K, Spotify, Apple TV+, ChatGPT, Claude, Midjourney, and GitHub Copilot.
 

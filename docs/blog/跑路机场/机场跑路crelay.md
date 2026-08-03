@@ -44,15 +44,15 @@ Crelay官网：依然可访问
 
 进入四月份后，基本上没有几天是有稳定节点的。节点大面积飘红，服务处于瘫痪状态。
 
-![Crelay机场跑路节点断联](https://image.ermao.net/images/scamvpn/crelay/20260410_182706-de951c.png)
+![Crelay机场跑路节点断联 =1283x198](https://image.ermao.net/images/scamvpn/crelay/20260410_182706-de951c.png)
 
-![Crelay机场跑路节点大面积断联](https://image.ermao.net/images/scamvpn/crelay/20260410_182722-739ef8.png)
+![Crelay机场跑路节点大面积断联 =1920x1119](https://image.ermao.net/images/scamvpn/crelay/20260410_182722-739ef8.png)
 
 ### 目前 客服对工单未作任何回复
 
 虽然官网仍然可以被访问，但在面临节点全红的情况下，用户提交的工单如石沉大海，没有人进行任何回复或处理。
 
-![Crelay机场跑路工单未回复](https://image.ermao.net/images/scamvpn/crelay/20260410_182643-af4d59.png)
+![Crelay机场跑路工单未回复 =1920x845](https://image.ermao.net/images/scamvpn/crelay/20260410_182643-af4d59.png)
 
 ## Crelay机场跑路结论
 

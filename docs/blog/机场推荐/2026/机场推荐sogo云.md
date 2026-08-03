@@ -16,15 +16,15 @@ Sogo云是一个新开业的机场服务，定位是降低上手门槛，主打�
 
 <!-- more -->
 
-![Sogo云机场logo](https://image.ermao.net/images/blog/sogo云/20260414_090807-edf50c.png)
+![Sogo云机场logo =640x640](https://image.ermao.net/images/blog/sogo云/20260414_090807-edf50c.png)
 
 ## 核心测试结论
 
 以下结论基于提供的测速截图，仅作为样本观察，不代表所有地区和所有时段表现。
 
-![Sogo云机场测速截图](https://image.ermao.net/images/blog/sogo云/20260414_090830-ad2052.png)
+![Sogo云机场测速截图 =808x1280](https://image.ermao.net/images/blog/sogo云/20260414_090830-ad2052.png)
 
-![Sogo云机场测速截图](https://image.ermao.net/images/blog/sogo云/20260414_090849-c568e8.png)
+![Sogo云机场测速截图 =808x1280](https://image.ermao.net/images/blog/sogo云/20260414_090849-c568e8.png)
 
 - 截图样本显示该服务具备可用的基础连通能力，适合先做短周期验证。
 - 由于服务处于新开业阶段，历史稳定性样本不足，高峰期可用性仍需按本地网络实测判断。

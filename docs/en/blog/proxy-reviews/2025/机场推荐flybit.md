@@ -32,11 +32,11 @@ The least expensive subscription is CNY 10 per month for 100 GB.
 
 The service has recently added many servers. It advertises access to major streaming platforms and ChatGPT, with IEPL access routes priced the same as its standard routes. The source article reports that the service was stable and nearly all servers remained available throughout the day. Remember to claim the coupon shown on the homepage before placing an order.
 
-![Flybit pricing](https://image.ermao.net/images/article/q8yp9r2b/image.png)
+![Flybit pricing =1280x1109](https://image.ermao.net/images/article/q8yp9r2b/image.png)
 
 ## Flybit test
 
-![Flybit test](https://image.ermao.net/images/article/q8yp9r2b/image-1.png)
+![Flybit test =2723x3830](https://image.ermao.net/images/article/q8yp9r2b/image-1.png)
 
 ## Complete proxy-service guide
 

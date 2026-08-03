@@ -38,7 +38,7 @@ app="Ollama" && is_domain=false
 
 Treat the result as a lead, not proof. Search-engine fingerprints can be stale or wrong. Filter the results to IP ranges, hostnames, cloud accounts, or certificates that belong to your organization before doing anything further.
 
-![FOFA results for an Ollama exposure audit](https://image.ermao.net/images/article/tj38tso3/image.png)
+![FOFA results for an Ollama exposure audit =1024x653](https://image.ermao.net/images/article/tj38tso3/image.png)
 
 ## 2. Search Shodan for Your Own Assets
 
@@ -50,7 +50,7 @@ Ollama is running
 
 Limit the search to your organization's verified network ranges. Record the observation time, address, port, and Shodan “last seen” time. Do not assume a cached search result means the endpoint is still reachable.
 
-![Shodan results for an Ollama exposure audit](https://image.ermao.net/images/article/tj38tso3/image-1.png)
+![Shodan results for an Ollama exposure audit =1024x632](https://image.ermao.net/images/article/tj38tso3/image-1.png)
 
 ## 3. Validate an Authorized Endpoint
 
@@ -73,11 +73,11 @@ If remote use is intentional:
 4. Select a model that you installed and are permitted to use.
 5. Save the configuration and run a non-sensitive test.
 
-![Selecting Ollama in Chatbox](https://image.ermao.net/images/article/tj38tso3/image-2.png)
+![Selecting Ollama in Chatbox =1762x1232](https://image.ermao.net/images/article/tj38tso3/image-2.png)
 
-![Selecting an authorized local model](https://image.ermao.net/images/article/tj38tso3/image-3.png)
+![Selecting an authorized local model =1788x1192](https://image.ermao.net/images/article/tj38tso3/image-3.png)
 
-![Testing the authorized connection](https://image.ermao.net/images/article/tj38tso3/image-4.png)
+![Testing the authorized connection =2048x1490](https://image.ermao.net/images/article/tj38tso3/image-4.png)
 
 ## 5. Secure Ollama Before Remote Use
 

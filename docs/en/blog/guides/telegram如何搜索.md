@@ -35,7 +35,7 @@ The source article warned that **5ber appeared to have stopped reliably deliveri
 
 Open the [Simplified Chinese language-pack link](https://t.me/setlanguage/zhcncc) in Telegram.
 
-![Telegram language-pack screen](https://image.ermao.net/images/article/wwpg9n59/image-2.png)
+![Telegram language-pack screen =493x388](https://image.ermao.net/images/article/wwpg9n59/image-2.png)
 
 Select `Apply Language` to install it. This is a community language pack, not a requirement for using Telegram.
 
@@ -43,11 +43,11 @@ Select `Apply Language` to install it. This is a community language pack, not a 
 
 After signing in, open the [JiSou search bot](https://t.me/jisou?start=a_1453425105).
 
-![Opening JiSou in Telegram](https://image.ermao.net/images/article/wwpg9n59/image.png)
+![Opening JiSou in Telegram =540x595](https://image.ermao.net/images/article/wwpg9n59/image.png)
 
 Start the bot, enter a keyword, and choose a result to open the corresponding public resource in Telegram.
 
-![JiSou search results](https://image.ermao.net/images/article/wwpg9n59/image-1.png)
+![JiSou search results =854x917](https://image.ermao.net/images/article/wwpg9n59/image-1.png)
 
 ## Safety notice
 

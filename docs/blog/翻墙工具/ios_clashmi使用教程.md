@@ -17,7 +17,7 @@ Clash Mi 是一款内置 `mihomo`（Clash Meta）内核的代理工具，支持 
 
 <!-- more -->
 
-![Clash Mi 官网与应用概览](https://image.ermao.net/images/blog/clashmi/20260305_103545-57abfa.png)
+![Clash Mi 官网与应用概览 =256x256](https://image.ermao.net/images/blog/clashmi/20260305_103545-57abfa.png)
 
 官网地址：[https://clashmi.app/](https://clashmi.app/)
 
@@ -27,7 +27,7 @@ Clash Mi 是一款内置 `mihomo`（Clash Meta）内核的代理工具，支持 
 - **傻瓜式上手**：用起来是真的简单，不像以前一些老客户端还要折腾一堆复杂的设置。只要你有机场的订阅链接，复制粘贴进去就能直接用，门槛极低。
 - **界面清爽**：没有花里胡哨的多余按钮，主界面干干净净的。对于新手来说，一眼就能看懂该点哪里，可以说非常贴心了。
 
-![Clash Mi 主界面预览](https://image.ermao.net/images/blog/clashmi/20260305_103743-3935fc.png)
+![Clash Mi 主界面预览 =480x651](https://image.ermao.net/images/blog/clashmi/20260305_103743-3935fc.png)
 
 ## 使用前准备
 
@@ -76,19 +76,19 @@ Clash Mi 只是客户端，连接外网还需要可用的 Clash 订阅。
 
 打开应用底部菜单的 `我的配置`，稍微抬眼看下右上角，会发现有个 `+` 号。点它，然后选 `添加配置链接`，把你买好的机场订阅 URL 直接粘贴进去。
 
-![Clash Mi 添加配置](https://image.ermao.net/images/blog/clashmi/20260305_103809-b1ab1b.png)
+![Clash Mi 添加配置 =706x480](https://image.ermao.net/images/blog/clashmi/20260305_103809-b1ab1b.png)
 
 ### 第 2 步：告诉软件“我要用这个配置”
 
 导完之后还不算完，你得在配置列表里找一找，点击选中你刚刚费劲添加进去的那个订阅卡片，让软件知道你打算用它。
 
-![Clash Mi 配置列表](https://image.ermao.net/images/blog/clashmi/20260305_103816-7c1edf.png)
+![Clash Mi 配置列表 =854x422](https://image.ermao.net/images/blog/clashmi/20260305_103816-7c1edf.png)
 
 ### 第 3 步：一键起飞
 
 这下配置完了。点击底部的 `首页` 退回去，看到那个圆溜溜的连接按钮了吗？点它！这时候如果系统弹出让你允许添加 VPN 配置之类的提示框，记得点允许哦。
 
-![Clash Mi 开启连接](https://image.ermao.net/images/blog/clashmi/20260305_103836-d45527.png)
+![Clash Mi 开启连接 =480x543](https://image.ermao.net/images/blog/clashmi/20260305_103836-d45527.png)
 
 ## 三、关于在线面板的小知识
 

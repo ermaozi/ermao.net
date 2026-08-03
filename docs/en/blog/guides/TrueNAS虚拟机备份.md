@@ -26,11 +26,11 @@ TrueNAS SCALE virtualization stores virtual machines in ZVOLs. Their device path
 
 Open **Virtualization → Devices → Disk → Edit** to view the path used by a particular virtual machine.
 
-![Example of backing up a TrueNAS virtual machine](https://image.ermao.net/images/article/vgf2ez1r/image.png)
+![Example of backing up a TrueNAS virtual machine =1891x776](https://image.ermao.net/images/article/vgf2ez1r/image.png)
 
-![Example of backing up a TrueNAS virtual machine](https://image.ermao.net/images/article/vgf2ez1r/image-1.png)
+![Example of backing up a TrueNAS virtual machine =1422x397](https://image.ermao.net/images/article/vgf2ez1r/image-1.png)
 
-![Example of backing up a TrueNAS virtual machine](https://image.ermao.net/images/article/vgf2ez1r/image-2.png)
+![Example of backing up a TrueNAS virtual machine =664x509](https://image.ermao.net/images/article/vgf2ez1r/image-2.png)
 
 Use `dd` to export the virtual machine as a raw `.img` file:
 

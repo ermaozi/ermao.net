@@ -34,11 +34,11 @@ The least expensive [Laotou VPN](https://www.chattous.net/register?code=3OWtZ9Bi
 
 The article also reports fast and professional customer-support responses.
 
-![Laotou VPN overview](https://image.ermao.net/images/article/rklwp5go/image.png)
+![Laotou VPN overview =2102x1157](https://image.ermao.net/images/article/rklwp5go/image.png)
 
 ## Laotou VPN test
 
-![Laotou VPN test](https://image.ermao.net/images/article/rklwp5go/image-1.png)
+![Laotou VPN test =2614x3076](https://image.ermao.net/images/article/rklwp5go/image-1.png)
 
 ## Complete proxy-service guide
 

@@ -84,7 +84,7 @@ head:
       }
 ---
 
-![2026 proxy-service guide and reviews](https://image.ermao.net/images/posts/vpn/20260315_110648-5171d6.png)
+![2026 proxy-service guide and reviews =1814x352](https://image.ermao.net/images/posts/vpn/20260315_110648-5171d6.png)
 
 This is a **selection guide and index of full reviews**. It first explains how to evaluate prices, routes, standard subscriptions, test records, and risk signals, then links to individual provider reviews. To narrow the list quickly by specific requirements, use the [proxy-service filter](/en/airport/). If this is your first purchase, read the risk and testing sections below before choosing a plan.
 

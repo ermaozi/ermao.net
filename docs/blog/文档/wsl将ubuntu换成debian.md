@@ -36,7 +36,7 @@ wsl --export Ubuntu-20.04 ubuntu_backup.tar
 
 这会将 Ubuntu 发行版导出到当前目录，并保存为 `ubuntu_backup.tar`。
 
-![导出当前的 Ubuntu 发行版](https://image.ermao.net/images/article/ubm5k5vn/image.png)
+![导出当前的 Ubuntu 发行版 =1292x260](https://image.ermao.net/images/article/ubm5k5vn/image.png)
 
 上面命令中的 `Ubuntu-20.04` 可能会因为你的 Ubuntu 版本而有所不同。确保将其替换为你的 Ubuntu 发行版名称。
 
@@ -46,7 +46,7 @@ wsl --export Ubuntu-20.04 ubuntu_backup.tar
 ```bash
 wsl --unregister Ubuntu-20.04
 ```
-![卸载ubuntu](https://image.ermao.net/images/article/ubm5k5vn/image-1.png)
+![卸载ubuntu =909x163](https://image.ermao.net/images/article/ubm5k5vn/image-1.png)
 
 这将删除现有的 Ubuntu 发行版，但不会影响导出的备份文件。
 
@@ -56,7 +56,7 @@ wsl --unregister Ubuntu-20.04
 ```bash
 wsl --install -d Debian
 ```
-![安装 Debian 发行版](https://image.ermao.net/images/article/ubm5k5vn/image-2.png)
+![安装 Debian 发行版 =1863x431](https://image.ermao.net/images/article/ubm5k5vn/image-2.png)
 
 这会自动安装最新版本的 Debian 发行版。首次运行时，Debian 会要求你创建一个新的用户和密码。
 
@@ -80,4 +80,4 @@ wsl -d Debian
 
 如果之前用的 WindowsTerminal，记得改一下默认启动项。
 
-![修改windowsterminal默认启动项](https://image.ermao.net/images/article/ubm5k5vn/image-3.png)
+![修改windowsterminal默认启动项 =1770x1211](https://image.ermao.net/images/article/ubm5k5vn/image-3.png)

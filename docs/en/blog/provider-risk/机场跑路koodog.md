@@ -45,13 +45,13 @@ Until the platform issues an official explanation and restores service, treat it
 
 ## Screenshots
 
-![Report of an abnormal redirect from the Koodog website](https://image.ermao.net/images/scamvpn/koodog/20260601_120129-bce773.png)
+![Report of an abnormal redirect from the Koodog website =676x239](https://image.ermao.net/images/scamvpn/koodog/20260601_120129-bce773.png)
 
-![Koodog user comment reporting service problems](https://image.ermao.net/images/scamvpn/koodog/20260601_120336-b6f816.png)
+![Koodog user comment reporting service problems =1058x294](https://image.ermao.net/images/scamvpn/koodog/20260601_120336-b6f816.png)
 
-![Koodog community outage reports](https://image.ermao.net/images/scamvpn/koodog/20260601_120440-44038e.png)
+![Koodog community outage reports =659x457](https://image.ermao.net/images/scamvpn/koodog/20260601_120440-44038e.png)
 
-![Screenshot showing a Koodog subscription that could not be used](https://image.ermao.net/images/scamvpn/koodog/20260601_120509-9f45d2.png)
+![Screenshot showing a Koodog subscription that could not be used =804x678](https://image.ermao.net/images/scamvpn/koodog/20260601_120509-9f45d2.png)
 
 ## Risk conclusion
 

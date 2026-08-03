@@ -21,7 +21,7 @@ This page focuses on diagnosis. For a broader set of remedies, see [GitHub Unrea
 
 A browser may report that the page cannot be reached or that `github.com` took too long to respond:
 
-![Example GitHub timeout](https://image.ermao.net/images/article/jddtxrrw/image.png)
+![Example GitHub timeout =1325x594](https://image.ermao.net/images/article/jddtxrrw/image.png)
 
 The message alone does not identify the failing layer. Use the checks below in order.
 

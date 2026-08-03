@@ -26,25 +26,25 @@ Emby是一款功能强大的媒体服务器，可以将你的音乐、视频、�
 
 ## Emby安卓TV使用教程
 
-![Emby安卓TV使用教程](https://image.ermao.net/images/article/d3apexwx/image.png)
+![Emby安卓TV使用教程 =1088x620](https://image.ermao.net/images/article/d3apexwx/image.png)
 
 点击`跳过并输入IP地址`
 
-![Emby安卓TV使用教程](https://image.ermao.net/images/article/d3apexwx/image-1.png)
+![Emby安卓TV使用教程 =1088x620](https://image.ermao.net/images/article/d3apexwx/image-1.png)
 
 输入你获取道德Emby服务器的IP地址或域名，团口号也要填写，如果协议是`https`，Port填写`443`，如果协议是`http`，Port填写`80`，然后点击`确定`
 
-![Emby安卓TV使用教程](https://image.ermao.net/images/article/d3apexwx/image-2.png)
+![Emby安卓TV使用教程 =1088x620](https://image.ermao.net/images/article/d3apexwx/image-2.png)
 
-![Emby安卓TV使用教程](https://image.ermao.net/images/article/d3apexwx/image-3.png)
+![Emby安卓TV使用教程 =1123x640](https://image.ermao.net/images/article/d3apexwx/image-3.png)
 
-![Emby安卓TV使用教程](https://image.ermao.net/images/article/d3apexwx/image-4.png)
+![Emby安卓TV使用教程 =1088x620](https://image.ermao.net/images/article/d3apexwx/image-4.png)
 
 点击手动输入用户，输入你的账号和密码，然后点击`确定`
 
-![Emby安卓TV使用教程](https://image.ermao.net/images/article/d3apexwx/image-5.png)
+![Emby安卓TV使用教程 =1088x620](https://image.ermao.net/images/article/d3apexwx/image-5.png)
 
-![Emby安卓TV使用教程](https://image.ermao.net/images/article/d3apexwx/image-6.png)
+![Emby安卓TV使用教程 =1088x620](https://image.ermao.net/images/article/d3apexwx/image-6.png)
 
 接下来就可以在安卓TV的Emby中正常观影了。
 
@@ -54,4 +54,4 @@ Emby是一款功能强大的媒体服务器，可以将你的音乐、视频、�
 
 [✈️机场推荐【好鸭云】 - 价格实惠、送emby影视服务](/article/73dnyy9a/)
 
-![Emby安卓TV使用教程](https://image.ermao.net/images/article/d3apexwx/image-7.png)
+![Emby安卓TV使用教程 =1613x1047](https://image.ermao.net/images/article/d3apexwx/image-7.png)

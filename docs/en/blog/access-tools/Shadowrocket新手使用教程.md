@@ -26,7 +26,7 @@ This 2026 Shadowrocket guide covers iPhone and iPad, as well as supported Macs. 
 
 The official Shadowrocket App Store listing uses the icon shown below.
 
-![Official Shadowrocket App Store listing](https://image.ermao.net/images/article/z747kgjd/image.png)
+![Official Shadowrocket App Store listing =731x337](https://image.ermao.net/images/article/z747kgjd/image.png)
 
 ## 1. Download and install
 
@@ -67,7 +67,7 @@ Signing in to an untrusted shared Apple ID at the system level can expose the de
 
 1. Turn on the switch at the top of the screen. On the first connection, iOS asks for permission to add a VPN configuration and may require the passcode or Face ID.
 
-![Shadowrocket connection switch and iOS authorization](https://image.ermao.net/images/article/z747kgjd/20260112_111749-15697a.png)
+![Shadowrocket connection switch and iOS authorization =554x375](https://image.ermao.net/images/article/z747kgjd/20260112_111749-15697a.png)
 
 2. A VPN indicator appears in the status area while Shadowrocket is running.
 

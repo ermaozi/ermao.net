@@ -54,7 +54,7 @@ The order matters. A more specific rule must normally appear before a broad rule
 
 ## Rule source: Loyalsoldier/clash-rules
 
-![Loyalsoldier clash-rules repository](https://image.ermao.net/images/blog/clash-rules-config/20260228_141256-b26939.png)
+![Loyalsoldier clash-rules repository =900x784](https://image.ermao.net/images/blog/clash-rules-config/20260228_141256-b26939.png)
 
 The source article recommends [Loyalsoldier/clash-rules](https://github.com/Loyalsoldier/clash-rules). At its February 2026 snapshot, the repository had nearly 30,000 GitHub stars.
 
@@ -82,7 +82,7 @@ Do not edit the downloaded provider profile directly. A subscription refresh nor
 2. Locate **Global Extended Merge Configuration**.
 3. Right-click it and select **Edit File**.
 
-![Clash Verge Rev global Merge override](https://image.ermao.net/images/blog/clash-rules-config/20260228_141318-51a08a.png)
+![Clash Verge Rev global Merge override =900x697](https://image.ermao.net/images/blog/clash-rules-config/20260228_141318-51a08a.png)
 
 ### Step 2: add the rule-provider configuration
 
@@ -228,7 +228,7 @@ These effects depend on the accuracy of the lists and the quality of the selecte
 
 Look for providers such as `reject`, `google`, `apple`, and `cncidr`, and confirm that their rule references appear in the intended order.
 
-![Verifying the merged Clash configuration](https://image.ermao.net/images/blog/clash-rules-config/20260228_141336-94acd7.png)
+![Verifying the merged Clash configuration =900x721](https://image.ermao.net/images/blog/clash-rules-config/20260228_141336-94acd7.png)
 
 ::: danger Use Rule Mode
 The routing engine applies these decisions only in **Rule** mode. Global and Direct modes bypass the intended split-routing behavior.

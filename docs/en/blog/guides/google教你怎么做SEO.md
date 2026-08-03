@@ -78,7 +78,7 @@ https://www.example.com/2/6772756D707920636174
 
 Search results may use URL words as breadcrumb signals. Breadcrumb structured data can provide additional context.
 
-![Domain and breadcrumb elements in a search result](https://image.ermao.net/images/blog/googleseo/image.png)
+![Domain and breadcrumb elements in a search result =1135x457](https://image.ermao.net/images/blog/googleseo/image.png)
 
 ### Group related pages
 
@@ -91,7 +91,7 @@ https://www.example.com/promotions/summer-sale/
 
 On very large sites, Google may learn that sections change at different rates. For a small site, editorial clarity and consistent internal links matter more than repeatedly moving files.
 
-![Grouping related pages into directories](https://image.ermao.net/images/blog/googleseo/image-1.png)
+![Grouping related pages into directories =376x650](https://image.ermao.net/images/blog/googleseo/image-1.png)
 
 ### Consolidate duplicate URLs
 
@@ -131,7 +131,7 @@ Advertising is allowed, but intrusive interstitials and layouts that obstruct th
 
 Links help readers and crawlers discover related resources and verify claims.
 
-![A page linking to related resources](https://image.ermao.net/images/blog/googleseo/image-2.png)
+![A page linking to related resources =1038x702](https://image.ermao.net/images/blog/googleseo/image-2.png)
 
 Good anchor text describes the destination:
 
@@ -147,7 +147,7 @@ is more informative than:
 
 Link to external sources you trust. For paid links, use `rel="sponsored"`; for untrusted user-generated links, use `rel="ugc"` or `nofollow` as appropriate. These annotations are not substitutes for moderating spam.
 
-![Choosing when and how to link](https://image.ermao.net/images/blog/googleseo/image-3.png)
+![Choosing when and how to link =517x215](https://image.ermao.net/images/blog/googleseo/image-3.png)
 
 ## 7. Improve Search Appearance
 
@@ -160,9 +160,9 @@ Google can construct a title link from the HTML `<title>`, visible headings, and
 - consistent with the visible main heading; and
 - free of repeated boilerplate and keyword stuffing.
 
-![How title text appears in HTML and a page](https://image.ermao.net/images/blog/googleseo/image-4.png)
+![How title text appears in HTML and a page =1070x339](https://image.ermao.net/images/blog/googleseo/image-4.png)
 
-![Title link in search results](https://image.ermao.net/images/blog/googleseo/image-5.png)
+![Title link in search results =1121x506](https://image.ermao.net/images/blog/googleseo/image-5.png)
 
 Google may still rewrite the displayed title for a query. The goal is an accurate page label, not forcing a specific rendering.
 
@@ -170,7 +170,7 @@ Google may still rewrite the displayed title for a query. The goal is an accurat
 
 Search snippets usually come from page content and sometimes from the meta description. A useful meta description is a concise, page-specific summary, but Google may select different text when it better matches the query.
 
-![Example search snippet](https://image.ermao.net/images/blog/googleseo/image-6.png)
+![Example search snippet =1076x382](https://image.ermao.net/images/blog/googleseo/image-6.png)
 
 Do not use the same generic description across many pages.
 

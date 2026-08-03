@@ -20,11 +20,11 @@ This guide deploys aria2 in Docker and connects a browser controller over JSON-R
 
 My home connection did not include a public IP address, so I used a tunneling service to reach services on the home network. The tunnel server later showed about 90% CPU usage:
 
-![High CPU usage on the tunnel server](https://image.ermao.net/images/article/b06gglcq/image.png)
+![High CPU usage on the tunnel server =1012x90](https://image.ermao.net/images/article/b06gglcq/image.png)
 
 The browser extension [Aria2 Explorer](https://microsoftedge.microsoft.com/addons/detail/aria2-explorer/jjfgljkjddpcpfapejfkelkbjbehagbh) had been configured with HTTP RPC:
 
-![Aria2 Explorer using HTTP RPC](https://image.ermao.net/images/article/b06gglcq/image-1.png)
+![Aria2 Explorer using HTTP RPC =618x301](https://image.ermao.net/images/article/b06gglcq/image-1.png)
 
 In this setup, repeated status polling generated substantial work for the tunnel. Switching the client to `ws://` reduced the observed load because a WebSocket connection could carry ongoing RPC traffic without repeatedly establishing the same request pattern.
 
@@ -105,9 +105,9 @@ An aria2 RPC client can add downloads and influence files written by the service
 
 Install the extension from its official browser-store listing:
 
-![Installing Aria2 Explorer](https://image.ermao.net/images/article/b06gglcq/image-2.png)
+![Installing Aria2 Explorer =1251x643](https://image.ermao.net/images/article/b06gglcq/image-2.png)
 
-![Confirming the extension](https://image.ermao.net/images/article/b06gglcq/image-3.png)
+![Confirming the extension =448x209](https://image.ermao.net/images/article/b06gglcq/image-3.png)
 
 In its connection settings:
 
@@ -116,7 +116,7 @@ In its connection settings:
 - Use `ws://` only on a trusted private network.
 - Use `wss://` for a TLS-protected remote endpoint.
 
-![Aria2 Explorer connection settings](https://image.ermao.net/images/article/b06gglcq/image-4.png)
+![Aria2 Explorer connection settings =1223x962](https://image.ermao.net/images/article/b06gglcq/image-4.png)
 
 Private-network example:
 

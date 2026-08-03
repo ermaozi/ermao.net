@@ -55,33 +55,33 @@ description: 手把手教学 Windows、macOS、Linux 安装 Clash Verge 与 Clas
 
 ## 配置
 
-![Clash Verge 导入订阅界面示例](https://image.ermao.net/images/article/0gematwc/image.png)
+![Clash Verge 导入订阅界面示例 =1377x1002](https://image.ermao.net/images/article/0gematwc/image.png)
 
 点击`订阅`，把你的订阅链接粘贴到输入框中，点击`导入`。
 
 如果没有订阅链接可以参考这篇文章：[便宜好用的翻墙机场推荐评测](https://www.ermao.net/posts/vpn)
 
-![订阅列表显示示例](https://image.ermao.net/images/article/0gematwc/image-1.png)
+![订阅列表显示示例 =1374x485](https://image.ermao.net/images/article/0gematwc/image-1.png)
 
 导入成功后就会出现该订阅
 
 该订阅默认是 1440分钟（24小时）更新一次，可以根据自己的需求调整。
 
-![编辑订阅更新时间与名称](https://image.ermao.net/images/article/0gematwc/image-2.png)
+![编辑订阅更新时间与名称 =462x553](https://image.ermao.net/images/article/0gematwc/image-2.png)
 
 右键点击`编辑配置`即可调整更新时间、订阅链接、名称等信息。
 
-![开启服务模式与 Tun 模式](https://image.ermao.net/images/article/0gematwc/image-3.png)
+![开启服务模式与 Tun 模式 =1377x978](https://image.ermao.net/images/article/0gematwc/image-3.png)
 
 在`设置`中点击`服务模式`右侧的安装，安装成功后点击`启动`，然后打开`Tun 模式`开关与`系统代理`开关。
 
-![确认代理模式为规则模式](https://image.ermao.net/images/article/0gematwc/image-4.png)
+![确认代理模式为规则模式 =588x298](https://image.ermao.net/images/article/0gematwc/image-4.png)
 
 最后检查一下`代理`中的模式是否为`规则`
 
 ## 测试
 
-![测速与连通性检查示例](https://image.ermao.net/images/article/0gematwc/image-5.png)
+![测速与连通性检查示例 =1381x541](https://image.ermao.net/images/article/0gematwc/image-5.png)
 
 点击`测试`中的`测试全部`，如果没啥问题就大功告成了！
 

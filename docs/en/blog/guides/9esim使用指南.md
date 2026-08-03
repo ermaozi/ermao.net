@@ -55,7 +55,7 @@ The referral link and code below may support this site. See the [affiliate discl
 
 Confirm the price shown by checkout before paying.
 
-![9eSIM price shown in the source article](https://image.ermao.net/images/blog/9esim/image.png)
+![9eSIM price shown in the source article =1515x809](https://image.ermao.net/images/blog/9esim/image.png)
 
 ## Check compatibility before purchase
 
@@ -74,21 +74,21 @@ Use the official compatibility checker or LPA before ordering. Exact model, regi
 1. Open the [official 9eSIM website](https://www.9esim.com/?coupon=ermao) and sign in if checkout requires it.
 2. Select the V3 or another card only after comparing capacity and compatibility.
 
-![Selecting Buy now on the source checkout](https://image.ermao.net/images/blog/9esim/image-1.png)
+![Selecting Buy now on the source checkout =1338x878](https://image.ermao.net/images/blog/9esim/image-1.png)
 
 3. Add the card and, when required by the intended workflow, a compatible card reader.
 
-![Adding 9eSIM V3 to the basket](https://image.ermao.net/images/blog/9esim/image-3.png)
+![Adding 9eSIM V3 to the basket =1510x632](https://image.ermao.net/images/blog/9esim/image-3.png)
 
 4. Review the delivery address, shipping charge, taxes, return policy, and payment methods. Apply `ermao` only if the checkout still recognizes it.
 
-![Proceeding to checkout](https://image.ermao.net/images/blog/9esim/image-4.png)
+![Proceeding to checkout =1580x702](https://image.ermao.net/images/blog/9esim/image-4.png)
 
 5. Save the order confirmation and track the shipment. The source received its order after an estimated three to five days; international delivery is not guaranteed to match that result.
 
-![9eSIM payment screen in the source test](https://image.ermao.net/images/blog/9esim/image-5.png)
+![9eSIM payment screen in the source test =1571x1151](https://image.ermao.net/images/blog/9esim/image-5.png)
 
-![9eSIM order confirmation in the source test](https://image.ermao.net/images/blog/9esim/image-6.png)
+![9eSIM order confirmation in the source test =1571x955](https://image.ermao.net/images/blog/9esim/image-6.png)
 
 ## Buy a separate eSIM profile
 
@@ -97,23 +97,23 @@ The following screens show the source author's eSIM Plus purchase flow. They are
 1. Install eSIM Plus from a verified store listing or the provider's [app link](https://esimplus.onelink.me/WxwP/c7eggfvh).
 2. Create an account and review its terms, privacy policy, refund rules, supported networks, and number-retention policy.
 
-![Registering in eSIM Plus](https://image.ermao.net/images/blog/9esim/image-7.png)
+![Registering in eSIM Plus =586x855](https://image.ermao.net/images/blog/9esim/image-7.png)
 
 3. In the source flow, the author chose **Add eSIM → Mobile Data → Global → Pay as you go**.
 
-![Adding an eSIM in eSIM Plus](https://image.ermao.net/images/blog/9esim/image-8.png)
+![Adding an eSIM in eSIM Plus =498x1054](https://image.ermao.net/images/blog/9esim/image-8.png)
 
-![Choosing Mobile Data](https://image.ermao.net/images/blog/9esim/image-9.png)
+![Choosing Mobile Data =475x579](https://image.ermao.net/images/blog/9esim/image-9.png)
 
-![Choosing the Global region](https://image.ermao.net/images/blog/9esim/image-10.png)
+![Choosing the Global region =503x847](https://image.ermao.net/images/blog/9esim/image-10.png)
 
 4. The source then selected a one-time purchase and saw cryptocurrency or PayPal payment options.
 
-![Selecting the plan](https://image.ermao.net/images/blog/9esim/image-11.png)
+![Selecting the plan =508x1036](https://image.ermao.net/images/blog/9esim/image-11.png)
 
-![Selecting a one-time purchase](https://image.ermao.net/images/blog/9esim/image-12.png)
+![Selecting a one-time purchase =498x530](https://image.ermao.net/images/blog/9esim/image-12.png)
 
-![Payment options displayed in the source flow](https://image.ermao.net/images/blog/9esim/image-13.png)
+![Payment options displayed in the source flow =494x898](https://image.ermao.net/images/blog/9esim/image-13.png)
 
 Before purchase, verify explicitly:
 
@@ -133,17 +133,17 @@ Power down the phone if its manufacturer requires it, insert the 9eSIM V3 into t
 
 Use 9eSIM's current [software and tool-selection page](https://www.9esim.com/ecosystem-software-download/). Prefer a verified store build or the vendor's linked source release.
 
-![9eSIM software download page](https://image.ermao.net/images/blog/9esim/image-14.png)
+![9eSIM software download page =1448x907](https://image.ermao.net/images/blog/9esim/image-14.png)
 
 ### 3. obtain the activation data
 
 In the plan provider's app, open the purchased profile and choose its QR-code or manual-activation option.
 
-![Opening the purchased profile](https://image.ermao.net/images/blog/9esim/image-16.png)
+![Opening the purchased profile =502x735](https://image.ermao.net/images/blog/9esim/image-16.png)
 
-![Choosing the QR-code method](https://image.ermao.net/images/blog/9esim/image-17.png)
+![Choosing the QR-code method =506x897](https://image.ermao.net/images/blog/9esim/image-17.png)
 
-![eSIM activation QR screen](https://image.ermao.net/images/blog/9esim/image-18.png)
+![eSIM activation QR screen =495x955](https://image.ermao.net/images/blog/9esim/image-18.png)
 
 ::: danger The activation QR code is a credential
 Do not publish, email, or upload the QR image to an online converter. Many activation codes can be consumed only once. Store it only as long as needed and follow the profile provider's recovery procedure if loading fails.
@@ -153,9 +153,9 @@ Do not publish, email, or upload the QR image to an online converter. Many activ
 
 Open the approved LPA, select the physical slot or reader containing the 9eSIM card, add a profile, and scan or import the activation data.
 
-![Selecting the card in the 9eSIM LPA](https://image.ermao.net/images/blog/9esim/image-15.png)
+![Selecting the card in the 9eSIM LPA =489x386](https://image.ermao.net/images/blog/9esim/image-15.png)
 
-![Downloading the profile to 9eSIM](https://image.ermao.net/images/blog/9esim/image-19.png)
+![Downloading the profile to 9eSIM =497x994](https://image.ermao.net/images/blog/9esim/image-19.png)
 
 Keep the device connected and powered during the download. If it fails, do not repeatedly consume the activation code; save the exact error and contact the profile provider.
 
@@ -169,12 +169,12 @@ The source author used the loaded profile during a Google Account flow:
 
 1. Open [Google Account](https://accounts.google.com/) and start account creation.
 
-![Google Account creation screen](https://image.ermao.net/images/blog/9esim/image-20.png)
+![Google Account creation screen =1335x591](https://image.ermao.net/images/blog/9esim/image-20.png)
 
 2. If Google requests telephone verification, enter the number supplied by the profile provider.
 3. Enter the message only on Google's official page.
 
-![Verification message received in the source test](https://image.ermao.net/images/blog/9esim/image-21.png)
+![Verification message received in the source test =489x237](https://image.ermao.net/images/blog/9esim/image-21.png)
 
 That test shows only that the particular number received the particular message at that time. It does not prove future support for Google, Telegram, X, or another platform.
 

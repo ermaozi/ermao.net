@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 import R2Uploader from "./lib/r2Uploader";
 import crypto from "crypto";
 import exifr from "exifr";
-import { readImageDimensions, type ImageDimensions } from "./lib/imageDimensions";
+import { readImageDimensions } from "./lib/imageDimensions";
 
 // 加载环境变量
 dotenv.config();
@@ -14,17 +14,8 @@ dotenv.config();
 // 扫描目录
 const SCAN_DIR = "docs/blog"; 
 const ALLOWED_SCAN_DIRS = [SCAN_DIR, "docs/en/blog"];
-const IMAGE_DIMENSIONS_FILE = path.resolve("docs/.vuepress/data/image-dimensions.json");
 // ===========================================
 const uploader = R2Uploader.fromEnv();
-
-async function recordImageDimensions(url: string, dimensions: ImageDimensions) {
-  const raw = await fs.readFile(IMAGE_DIMENSIONS_FILE, "utf-8");
-  const manifest = JSON.parse(raw) as Record<string, [number, number]>;
-  manifest[url.split(/[?#]/)[0]] = [dimensions.width, dimensions.height];
-  const sorted = Object.fromEntries(Object.entries(manifest).sort(([a], [b]) => a.localeCompare(b)));
-  await fs.writeFile(IMAGE_DIMENSIONS_FILE, `${JSON.stringify(sorted, null, 2)}\n`, "utf-8");
-}
 
 async function processFile(filePath: string) {
   const content = await fs.readFile(filePath, "utf-8");
@@ -107,6 +98,10 @@ async function processFile(filePath: string) {
     const buf = await fs.readFile(localImgPath);
     const hash6 = crypto.createHash("sha256").update(buf).digest("hex").slice(0, 6);
     const dimensions = readImageDimensions(buf);
+    if (!dimensions) {
+      console.warn(`无法读取图片尺寸 (跳过): ${localImgPath}`);
+      continue;
+    }
 
     // 优先尝试读取 EXIF 日期（DateTimeOriginal），回退到文件 mtime
     let date: Date | null = null;
@@ -145,10 +140,9 @@ async function processFile(filePath: string) {
     }
 
     if (remoteUrl) {
-      if (dimensions) await recordImageDimensions(remoteUrl, dimensions);
       replacements.push({
         original: m[0], // ![alt](url)
-        newUrl: `![${alt}](${remoteUrl})`,
+        newUrl: `![${alt} =${dimensions.width}x${dimensions.height}](${remoteUrl})`,
       });
     }
   }

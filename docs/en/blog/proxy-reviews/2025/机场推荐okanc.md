@@ -45,11 +45,11 @@ Because OKAC, Naiyun, Yinyun, and CAC share an operator, their risks should be e
 | Max | CNY 50/month | 600 GB/month | [View risk](/en/scamvpn/okac/) |
 | MAX+ Ultimate | CNY 88/month | 1,024 GB/month | [View risk](/en/scamvpn/okac/) |
 
-![OKANC pricing](https://image.ermao.net/images/article/giwzl7sq/image-1.png)
+![OKANC pricing =2524x884](https://image.ermao.net/images/article/giwzl7sq/image-1.png)
 
 ## OKANC test
 
-![OKANC test](https://image.ermao.net/images/article/giwzl7sq/image.png)
+![OKANC test =1861x1452](https://image.ermao.net/images/article/giwzl7sq/image.png)
 
 ## Complete proxy-service guide
 

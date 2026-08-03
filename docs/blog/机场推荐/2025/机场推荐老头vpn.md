@@ -32,11 +32,11 @@ description: '老头VPN，15.5元 150G/月，公认老牌机场、稳定实惠�
 
 客服响应很快也足够专业。
 
-![老头VPN机场简介](https://image.ermao.net/images/article/rklwp5go/image.png)
+![老头VPN机场简介 =2102x1157](https://image.ermao.net/images/article/rklwp5go/image.png)
 
 ## 老头VPN机场测试
 
-![老头VPN机场简介](https://image.ermao.net/images/article/rklwp5go/image-1.png)
+![老头VPN机场简介 =2614x3076](https://image.ermao.net/images/article/rklwp5go/image-1.png)
 
 ## 机场汇总
 

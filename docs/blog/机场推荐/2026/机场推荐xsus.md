@@ -78,7 +78,7 @@ xsus机场官网地址：[https://xsus.cloud](https://xsus.cloud/register?code=x
 
 ## 🎯 xsus机场概览 {#overview}
 
-![xsus logo](https://image.ermao.net/images/blog/xsus/20260129_162650-08b59d.png)
+![xsus logo =256x256](https://image.ermao.net/images/blog/xsus/20260129_162650-08b59d.png)
 
 **[xsus机场](https://xsus.cloud/register?code=xJFcT1Dw)** 宣称“稳定不是吹的”，主打**BGP三网优化线路**，确保电信、联通、移动用户均能自动匹配最优路径。该机场特别强调**晚高峰不掉速**（20:00-24:00 专门优化），拒绝卡顿、丢包和连接失败。xsus通过**实测优先**的策略，提供多地区节点，不玩虚的，价格亲民且不强制年付，适合对网络稳定性有要求的用户。
 
@@ -125,7 +125,7 @@ xsus提供极具性价比的月付套餐以及灵活的**不限时流量包**。
 
 ## 🚀 速度与稳定性 {#speed}
 
-![xsus 测速截图](https://image.ermao.net/images/blog/xsus/20260129_162438-1da0b7.png)
+![xsus 测速截图 =695x1280](https://image.ermao.net/images/blog/xsus/20260129_162438-1da0b7.png)
 
 xsus机场的核心优势在于其**硬核的线路质量**和对**晚高峰的专门优化**。
 

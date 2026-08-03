@@ -64,7 +64,7 @@ The main uncertainty is the entry tier: source materials showed both 100 GB and 
 
 ## Conclusion and limits
 
-![Edge-X website and brand screen](https://image.ermao.net/images/article/edge-x/20260509_083554-1403ca.png)
+![Edge-X website and brand screen =640x640](https://image.ermao.net/images/article/edge-x/20260509_083554-1403ca.png)
 
 Edge-X is a candidate for a small monthly test, not an evidence-free long commitment. Its useful characteristics are the advertised IEPL/direct mix, off-peak multiplier, and access-carrier optimization. Its public technical and plan information remains incomplete.
 
@@ -101,7 +101,7 @@ Confirm the data allowance, renewal date, multiplier time zone, eligible nodes, 
 
 ## Speed and stability evidence
 
-![Edge-X speed-test screenshot](https://image.ermao.net/images/article/edge-x/20260509_083605-ac9b00.png)
+![Edge-X speed-test screenshot =3980x3946](https://image.ermao.net/images/article/edge-x/20260509_083605-ac9b00.png)
 
 The screenshot and published parameters support testable hypotheses, not universal conclusions:
 

@@ -21,7 +21,7 @@ This beginner's guide covers Telegram registration, privacy settings, groups, ch
 
 ## What is Telegram?
 
-![Telegram app icon and privacy features](https://image.ermao.net/images/blog/telegram/image-8.png)
+![Telegram app icon and privacy features =1200x630](https://image.ermao.net/images/blog/telegram/image-8.png)
 
 Telegram is a cloud-based messaging service founded by Pavel Durov and launched in 2013. It supports synchronized chats across phones and computers, large groups and broadcast channels, bots, voice and video calls, and file sharing.
 
@@ -36,7 +36,7 @@ See Telegram's [official FAQ](https://telegram.org/faq#q-why-not-just-make-all-c
 
 ### Step 0: prepare a number you control
 
-![Preparing a phone and number for Telegram registration](https://image.ermao.net/images/blog/telegram/image.png)
+![Preparing a phone and number for Telegram registration =593x412](https://image.ermao.net/images/blog/telegram/image.png)
 
 Telegram accounts are tied to mobile telephone numbers. Use a number that can receive the verification method offered by Telegram and that you expect to retain. Telegram does not support landlines for account registration.
 
@@ -59,21 +59,21 @@ The following screens show the flow seen by the source author. The exact order m
 
 1. Open Telegram, choose the correct country code, and enter the mobile number in international format.
 
-![Entering a telephone number in Telegram](https://image.ermao.net/images/blog/telegram/image-1.png)
+![Entering a telephone number in Telegram =503x1054](https://image.ermao.net/images/blog/telegram/image-1.png)
 
 2. Check the number carefully before continuing.
 
-![Confirming a telephone number in Telegram](https://image.ermao.net/images/blog/telegram/image-2.png)
+![Confirming a telephone number in Telegram =489x350](https://image.ermao.net/images/blog/telegram/image-2.png)
 
 3. If the app asks for an email address, enter one you control. Protect that mailbox with its own strong password and two-factor authentication.
 
-![Entering an email address during Telegram registration](https://image.ermao.net/images/blog/telegram/image-3.png)
+![Entering an email address during Telegram registration =492x1045](https://image.ermao.net/images/blog/telegram/image-3.png)
 
 4. Enter only codes requested inside the official client. Depending on the account state, Telegram may deliver a code by SMS, email, or an existing signed-in Telegram session.
 
-![Entering a Telegram verification code](https://image.ermao.net/images/blog/telegram/image-4.png)
+![Entering a Telegram verification code =487x574](https://image.ermao.net/images/blog/telegram/image-4.png)
 
-![Confirming an email verification code](https://image.ermao.net/images/blog/telegram/image-5.png)
+![Confirming an email verification code =492x403](https://image.ermao.net/images/blog/telegram/image-5.png)
 
 ::: danger Never share a login code
 Telegram support, a bot, a channel administrator, or a seller does not need your login code or two-step-verification password. A request for either is an account-takeover attempt.
@@ -81,11 +81,11 @@ Telegram support, a bot, a channel administrator, or a seller does not need your
 
 5. Set the account name and, optionally, a profile photo.
 
-![Setting a Telegram name and profile photo](https://image.ermao.net/images/blog/telegram/image-6.png)
+![Setting a Telegram name and profile photo =499x1045](https://image.ermao.net/images/blog/telegram/image-6.png)
 
 6. Readers who want a Simplified Chinese interface can open the community [Simplified Chinese language pack](https://t.me/setlanguage/zh-hans-beta) in Telegram and review it before applying.
 
-![Applying a Simplified Chinese Telegram language pack](https://image.ermao.net/images/blog/telegram/image-7.png)
+![Applying a Simplified Chinese Telegram language pack =540x437](https://image.ermao.net/images/blog/telegram/image-7.png)
 
 ### Step 3: configure privacy and security
 
@@ -97,7 +97,7 @@ Open **Settings → Privacy and Security**. Menu wording can vary by platform.
 - **Devices / Active Sessions:** review every signed-in device and terminate sessions you do not recognize.
 - **Passcode Lock:** protect the local Telegram app. This is separate from the account's two-step-verification password.
 
-![Telegram privacy and security settings](https://image.ermao.net/images/blog/telegram/image-9.png)
+![Telegram privacy and security settings =580x432](https://image.ermao.net/images/blog/telegram/image-9.png)
 
 Telegram's [account-security FAQ](https://telegram.org/faq#q-my-phone-was-stolen-what-do-i-do) recommends two-step verification and terminating an old device's session when a phone is lost.
 

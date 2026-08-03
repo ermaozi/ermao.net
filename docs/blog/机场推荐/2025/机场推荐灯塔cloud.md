@@ -36,15 +36,15 @@ description: 灯塔cloud机场评测，整理套餐价格、节点质量、客�
 | 个人套餐(六个月) | ¥155.00/六个月 | 600GB/月 | [点击购买](https://www.dengta.cloud/#/register?code=n4jB4z5R) |
 | 个人套餐(一年) | ¥279.00/一年 | 600GB/月 | [点击购买](https://www.dengta.cloud/#/register?code=n4jB4z5R) |
 
-![灯塔cloud机场价格](https://image.ermao.net/images/article/osp1vx6y/image.png)
+![灯塔cloud机场价格 =1546x731](https://image.ermao.net/images/article/osp1vx6y/image.png)
 
-![灯塔cloud机场价格](https://image.ermao.net/images/article/osp1vx6y/image-1.png)
+![灯塔cloud机场价格 =1526x731](https://image.ermao.net/images/article/osp1vx6y/image-1.png)
 
 [灯塔cloud机场](https://www.dengta.cloud/#/register?code=n4jB4z5R)客服响应速度很快，态度非常好，节点质量也很棒。[灯塔Cloud](https://www.dengta.cloud/#/register?code=n4jB4z5R)团队会定期更新节点列表，确保节点的稳定性和可用性。同时，节点会根据网络状况动态调整，提供最优的连接体验。
 
 ## 灯塔cloud机场测试
 
-![灯塔cloud机场测试](https://image.ermao.net/images/article/osp1vx6y/image-2.png)
+![灯塔cloud机场测试 =2296x1800](https://image.ermao.net/images/article/osp1vx6y/image-2.png)
 
 ## 其他便宜机场汇总
 

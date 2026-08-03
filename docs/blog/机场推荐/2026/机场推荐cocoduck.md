@@ -85,7 +85,7 @@ CocoDuck机场官网地址：[https://www.cocoduck.site](https://www.cocoduck.si
 
 ## 🎯 CocoDuck机场概览 {#overview}
 
-![CocoDuck机场](https://image.ermao.net/images/article/cocoduck/image.png)
+![CocoDuck机场 =516x516](https://image.ermao.net/images/article/cocoduck/image.png)
 
 **CocoDuck机场**是一家由**海外团队运营**的高品质翻墙服务商，以其**两年稳定运营历史**、**自有机房架构**和**全球优质节点**在机场市场中建立了良好口碑。团队成员均已移民海外，主要分布在北美地区，为用户提供更加稳定可靠的技术保障。
 
@@ -145,7 +145,7 @@ CocoDuck机场官网地址：[https://www.cocoduck.site](https://www.cocoduck.si
 
 ### 📈 速度测试结果
 
-![CocoDuck机场性能测试](https://image.ermao.net/images/article/cocoduck/image-1.png)
+![CocoDuck机场性能测试 =1845x2728](https://image.ermao.net/images/article/cocoduck/image-1.png)
 
 **测试环境**：
 - 🕐 测试时间：晚高峰 20:00-22:00

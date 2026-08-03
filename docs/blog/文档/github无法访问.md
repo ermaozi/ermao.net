@@ -28,7 +28,7 @@ GitHub 作为全球最大的开源代码托管平台，是程序员日常工作�
 这些问题通常表现为浏览器提示：
 > **“无法访问此页面”** 或 **“github.com 响应时间太长”**
 
-![GitHub无法访问报错示例](https://image.ermao.net/images/article/jddtxrrw/image.png)
+![GitHub无法访问报错示例 =1325x594](https://image.ermao.net/images/article/jddtxrrw/image.png)
 
 本文将为你提供 6 种行之有效的解决方案，从免费的 Hosts 修改到终极的 VPN 加速，总有一款适合你！
 

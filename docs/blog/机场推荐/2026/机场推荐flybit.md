@@ -57,7 +57,7 @@ flybit 是一款 15 元 128G 起步的 IEPL 专线机场，卖点集中在低门
 
 ## flybit机场官网地址
 
-![flybit机场官网后台截图](https://image.ermao.net/images/blog/flybit/20260302_202715-c22f02.png)
+![flybit机场官网后台截图 =150x150](https://image.ermao.net/images/blog/flybit/20260302_202715-c22f02.png)
 
 [点击直达flybit机场官网](https://goflybit.com/#/register?code=7h1NCdM7)
 
@@ -84,7 +84,7 @@ flybit机场提供多种套餐选择，满足不同用户的需求。最便宜�
 
 作为一款主打性价比的机场，flybit的速度表现相当不错。晚高峰时段也能轻松跑满宽带，观看4K视频无压力。
 
-![flybit机场测速](https://image.ermao.net/images/article/q8yp9r2b/image-1.png)
+![flybit机场测速 =2723x3830](https://image.ermao.net/images/article/q8yp9r2b/image-1.png)
 
 ## 客户端下载与使用教程
 
