@@ -196,6 +196,35 @@ for (const page of pages) {
   }
 }
 
+for (const file of ['docs/.vuepress/dist/index.html', 'docs/.vuepress/dist/en/index.html']) {
+  if (!await exists(file)) continue
+
+  const html = await fs.readFile(file, 'utf8')
+  const start = html.indexOf('<div class="vp-post-list"')
+  const end = html.indexOf('<div class="vp-posts-aside"', start)
+  const postList = start >= 0 && end > start ? html.slice(start, end) : ''
+  const images = postList.match(/<img\b[^>]*>/g) ?? []
+  const priorityImages = images.filter(image =>
+    image.includes('loading="eager"') && image.includes('fetchpriority="high"'),
+  )
+
+  if (!postList.includes('class="vp-post-item"')) {
+    addIssue(errors, 'homepage-posts-missing-from-ssr', file, 'Initial HTML has no post items')
+  }
+  if (/<template><div class="vp-post-item"/.test(postList)) {
+    addIssue(errors, 'homepage-posts-inert-template', file, 'SSR post items are trapped in inert template elements')
+  }
+  if (priorityImages.length !== 1) {
+    addIssue(errors, 'homepage-image-priority', file, `Expected 1 eager/high image, found ${priorityImages.length}`)
+  }
+  if (priorityImages[0] && /\.(?:jpe?g|png|webp)/i.test(priorityImages[0]) && !priorityImages[0].includes('srcset=')) {
+    addIssue(errors, 'homepage-image-srcset', file, 'Priority raster image has no responsive srcset')
+  }
+  if (!html.includes('<script data-cfasync="false" type="module" src=')) {
+    addIssue(errors, 'homepage-rocket-loader-bypass', file, 'Vue entry script is not excluded from Rocket Loader')
+  }
+}
+
 const trustRoutes = [
   '/about/',
   '/editorial-policy/',

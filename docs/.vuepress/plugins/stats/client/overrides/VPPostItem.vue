@@ -4,12 +4,21 @@ import type { PostsCoverStyle, ThemePostsItem } from 'vuepress-theme-plume/share
 import VPLink from '@theme/VPLink.vue'
 import { isMobile as _isMobile } from '@vuepress/helper/client'
 import { getReadingTimeLocale, useReadingTimeLocaleConfig } from '@vuepress/plugin-reading-time/client'
-import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { computed, defineAsyncComponent, hydrateOnIdle, onMounted, onUnmounted, ref } from 'vue'
 import { withBase } from 'vuepress/client'
 import { useData, useInternalLink, useTagColors } from 'vuepress-theme-plume/client'
 
-import ArticleLikeButton from '../components/ArticleLikeButton.vue'
-import PageViews from '../components/PageViews.vue'
+import ArticleLikeButtonComponent from '../components/ArticleLikeButton.vue'
+import PageViewsComponent from '../components/PageViews.vue'
+
+const ArticleLikeButton = defineAsyncComponent({
+  loader: async () => ArticleLikeButtonComponent,
+  hydrate: hydrateOnIdle(2000),
+})
+const PageViews = defineAsyncComponent({
+  loader: async () => PageViewsComponent,
+  hydrate: hydrateOnIdle(2000),
+})
 
 const { post, index } = defineProps<{
   post: ThemePostsItem
@@ -120,6 +129,13 @@ const coverStyles = computed(() => {
 
   return { height: 0, paddingBottom: `${ratio * 100}%` }
 })
+
+const excerpt = computed(() => {
+  if (!post.excerpt || index === 0) return post.excerpt
+  return post.excerpt
+    .replaceAll(' loading="eager"', ' loading="lazy"')
+    .replaceAll(' fetchpriority="high"', '')
+})
 </script>
 
 <template>
@@ -176,7 +192,7 @@ const coverStyles = computed(() => {
           <ArticleLikeButton :path="post.path" compact />
         </div>
       </div>
-      <div v-if="post.excerpt" class="vp-doc excerpt" v-html="post.excerpt" />
+      <div v-if="excerpt" class="vp-doc excerpt" v-html="excerpt" />
     </div>
   </div>
 </template>

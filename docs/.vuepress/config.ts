@@ -1,5 +1,6 @@
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
+import { templateRenderer } from '@vuepress/utils'
 import { plumeTheme } from 'vuepress-theme-plume'
 import { fileURLToPath } from 'node:url'
 // @ts-ignore
@@ -64,13 +65,21 @@ const appendNoindex = (head: any[]) => {
   }
 }
 
-const homepagePostLinksPlugin = () => ({
-  name: 'ermao-homepage-post-links',
+const homepagePostsSsrPlugin = () => ({
+  name: 'ermao-homepage-posts-ssr',
   alias: {
-    '@theme/Posts/VPPostsExtract.vue': fileURLToPath(
-      new URL('./overrides/VPPostsExtract.vue', import.meta.url),
+    '@theme/Posts/VPPosts.vue': fileURLToPath(
+      new URL('./overrides/VPPosts.vue', import.meta.url),
+    ),
+    '@theme/Posts/VPPostList.vue': fileURLToPath(
+      new URL('./overrides/VPPostList.vue', import.meta.url),
     ),
   },
+})
+
+const renderBuildTemplate = (template: string, context: any) => templateRenderer(template, {
+  ...context,
+  scripts: context.scripts.replace('<script type="module" src=', '<script data-cfasync="false" type="module" src='),
 })
 
 const utilityPagesPlugin = () => ({
@@ -127,8 +136,9 @@ export default defineUserConfig({
   description: siteDescription,
   locales: siteLocales,
   shouldPrefetch: false,
+  templateBuildRenderer: renderBuildTemplate,
   plugins: [
-    homepagePostLinksPlugin(),
+    homepagePostsSsrPlugin(),
     utilityPagesPlugin(),
     imagePerformancePlugin(),
     geoPlugin(),
