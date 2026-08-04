@@ -84,7 +84,7 @@ export type AirportSource = Omit<AirportRecord, 'plans'> & {
 // cyberguard: docs/blog/机场推荐/2025/机场推荐CyberGuard.md — CyberGuard机场价格
 // sogo云: docs/blog/机场推荐/2026/机场推荐sogo云.md — 周期订阅 / 一次性订阅（限量不限时）
 // 光速云: docs/blog/机场推荐/2026/机场推荐光速云.md — 💳 光速云套餐价格
-// 全球云: docs/blog/机场推荐/2026/机场推荐全球云.md — 📅 下单即用周期订阅
+// 全球云: docs/blog/机场推荐/2026/机场推荐全球云.md — 全球云周期套餐 / 一次性不限时流量包
 // 寰宇云: docs/blog/机场推荐/2026/机场推荐寰宇云.md — 套餐与价格
 // 二猫云: docs/blog/机场推荐/2026/机场推荐二猫云.md — 套餐与价格
 // 快狸: docs/blog/机场推荐/2026/机场推荐快狸.md — 套餐选择建议
@@ -3499,11 +3499,67 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
   ],
   "全球云": [
     {
+      "name": "轻量版",
+      "priceText": "¥99/年",
+      "traffic": "59GB（重置方式未说明）",
+      "type": "周期订阅",
+      "audience": "低频备用，能接受年付风险",
+      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "text": "轻量版，¥99/年，59GB（重置方式未说明）"
+    },
+    {
+      "name": "BGP 智能优化 · 入门方案",
+      "priceText": "¥20/月",
+      "traffic": "120GB/月",
+      "type": "周期订阅",
+      "audience": "首次测试、轻中度使用",
+      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "text": "BGP 智能优化 · 入门方案，¥20/月，120GB/月"
+    },
+    {
+      "name": "BGP 智能优化 · 进阶方案",
+      "priceText": "¥40/月",
+      "traffic": "300GB/月",
+      "type": "周期订阅",
+      "audience": "日常视频与 AI 工具",
+      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "text": "BGP 智能优化 · 进阶方案，¥40/月，300GB/月"
+    },
+    {
+      "name": "BGP 智能优化 · 高端方案",
+      "priceText": "¥100/月",
+      "traffic": "700GB/月",
+      "type": "周期订阅",
+      "audience": "多设备、高流量使用",
+      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "text": "BGP 智能优化 · 高端方案，¥100/月，700GB/月"
+    },
+    {
+      "name": "BGP 智能优化 · 商业方案",
+      "priceText": "¥180/月",
+      "traffic": "1500GB/月",
+      "type": "周期订阅",
+      "audience": "团队或重度使用",
+      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "text": "BGP 智能优化 · 商业方案，¥180/月，1500GB/月"
+    },
+    {
+      "name": "独享私人专线节点",
+      "priceText": "¥680/月",
+      "traffic": "500GB/月",
+      "type": "周期订阅",
+      "audience": "需要独享节点并先确认线路规格的用户",
+      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "text": "独享私人专线节点，¥680/月，500GB/月"
+    },
+    {
       "name": "BGP 智能优化 · 不限时轻量包",
       "priceText": "¥100/一次性",
       "traffic": "100GB",
-      "billingCycle": "一次性",
       "type": "不限时流量包",
+      "features": [
+        "特点：低频备用"
+      ],
       "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
       "text": "BGP 智能优化 · 不限时轻量包，¥100/一次性，100GB",
       "oneTime": true
@@ -3512,8 +3568,10 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "name": "BGP 智能优化 · 不限时标准包",
       "priceText": "¥360/一次性",
       "traffic": "400GB",
-      "billingCycle": "一次性",
       "type": "不限时流量包",
+      "features": [
+        "特点：中等流量备用"
+      ],
       "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
       "text": "BGP 智能优化 · 不限时标准包，¥360/一次性，400GB",
       "oneTime": true
@@ -3522,65 +3580,13 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "name": "BGP 智能优化 · 不限时大容量包",
       "priceText": "¥700/一次性",
       "traffic": "800GB",
-      "billingCycle": "一次性",
       "type": "不限时流量包",
+      "features": [
+        "特点：高流量备用"
+      ],
       "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
       "text": "BGP 智能优化 · 不限时大容量包，¥700/一次性，800GB",
       "oneTime": true
-    },
-    {
-      "name": "轻量版",
-      "priceText": "¥99/年",
-      "traffic": "59GB/周期",
-      "billingCycle": "多周期",
-      "type": "周期订阅",
-      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
-      "text": "轻量版，¥99/年，59GB/周期"
-    },
-    {
-      "name": "BGP 智能优化 · 入门方案",
-      "priceText": "¥20/月；¥54/季；¥102/半年；¥192/年；¥336/两年；¥432/三年",
-      "traffic": "120GB/周期",
-      "billingCycle": "多周期",
-      "type": "周期订阅",
-      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
-      "text": "BGP 智能优化 · 入门方案，¥20/月；¥54/季；¥102/半年；¥192/年；¥336/两年；¥432/三年，120GB/周期"
-    },
-    {
-      "name": "BGP 智能优化 · 进阶方案",
-      "priceText": "¥40/月；¥108/季；¥204/半年；¥384/年；¥568/两年；¥864/三年",
-      "traffic": "300GB/周期",
-      "billingCycle": "多周期",
-      "type": "周期订阅",
-      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
-      "text": "BGP 智能优化 · 进阶方案，¥40/月；¥108/季；¥204/半年；¥384/年；¥568/两年；¥864/三年，300GB/周期"
-    },
-    {
-      "name": "BGP 智能优化 · 高端方案",
-      "priceText": "¥100/月；¥270/季；¥510/半年；¥960/年；¥1920/两年；¥2160/三年",
-      "traffic": "700GB/周期",
-      "billingCycle": "多周期",
-      "type": "周期订阅",
-      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
-      "text": "BGP 智能优化 · 高端方案，¥100/月；¥270/季；¥510/半年；¥960/年；¥1920/两年；¥2160/三年，700GB/周期"
-    },
-    {
-      "name": "BGP 智能优化 · 商业方案",
-      "priceText": "¥180/月；¥486/季；¥918/半年；¥1728/年；¥3024/两年；¥3888/三年",
-      "traffic": "1500GB/周期",
-      "billingCycle": "多周期",
-      "type": "周期订阅",
-      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
-      "text": "BGP 智能优化 · 商业方案，¥180/月；¥486/季；¥918/半年；¥1728/年；¥3024/两年；¥3888/三年，1500GB/周期"
-    },
-    {
-      "name": "独享私人专线节点",
-      "priceText": "¥680/月",
-      "traffic": "500GB/周期",
-      "billingCycle": "多周期",
-      "type": "周期订阅",
-      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
-      "text": "独享私人专线节点，¥680/月，500GB/周期"
     }
   ],
   "uuone": [
@@ -4352,15 +4358,17 @@ export const airportSources: AirportSource[] = [
   {
     id: '全球云',
     name: '全球云',
-    description: '全球云 当前最低订阅为 20元 120G/月，购买前建议先看详情页、自行测试常用节点和晚高峰表现。',
+    description: '全球云周期套餐最低 20 元 120GB/月，另有 99 元年付轻量版、三档不限时包和独享节点；服务商主打 IPLC/IEPL、VLESS 与 70+ 节点。',
     rank: 49,
     officialHref: 'https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA',
-    universalSubscription: false,
-    minPlanText: '20元 120G/月',
+    universalSubscription: true,
+    minPlanText: '20元 120GB/月',
     hasOneTimePackage: true,
     telegramHref: 'https://t.me/quanqiuyun001',
     reviewHref: '/blog/quanqiuyun/',
     rankChangeLabel: '↓4',
+    image: 'https://image.ermao.net/images/blog/quanqiuyun/20260205_093332-a4e9dc.png',
+    tags: ['IPLC/IEPL', 'VLESS', '不限时流量包'],
   },
   {
     id: 'tnt',
