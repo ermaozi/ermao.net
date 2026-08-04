@@ -207,6 +207,7 @@ for (const file of ['docs/.vuepress/dist/index.html', 'docs/.vuepress/dist/en/in
   const priorityImages = images.filter(image =>
     image.includes('loading="eager"') && image.includes('fetchpriority="high"'),
   )
+  const pagination = postList.match(/<div class="page-range"[^>]*>([\s\S]*?)<\/div>/)?.[1]
 
   if (!postList.includes('class="vp-post-item"')) {
     addIssue(errors, 'homepage-posts-missing-from-ssr', file, 'Initial HTML has no post items')
@@ -219,6 +220,9 @@ for (const file of ['docs/.vuepress/dist/index.html', 'docs/.vuepress/dist/en/in
   }
   if (priorityImages[0] && /\.(?:jpe?g|png|webp)/i.test(priorityImages[0]) && !priorityImages[0].includes('srcset=')) {
     addIssue(errors, 'homepage-image-srcset', file, 'Priority raster image has no responsive srcset')
+  }
+  if (pagination && (pagination.match(/<button\b/g)?.length ?? 0) > 5) {
+    addIssue(errors, 'homepage-pagination-range', file, 'Homepage pagination is not using the stable compact range')
   }
   if (!html.includes('<script data-cfasync="false" type="module" src=')) {
     addIssue(errors, 'homepage-rocket-loader-bypass', file, 'Vue entry script is not excluded from Rocket Loader')

@@ -12,12 +12,23 @@ const {
   postList,
   page,
   totalPage,
-  pageRange,
   isLastPage,
   isFirstPage,
   isPaginationEnabled,
   changePage,
 } = usePostListControl(computed(() => !!homePosts))
+
+const pageRange = computed(() => {
+  const visible = [...new Set([1, page.value - 1, page.value, page.value + 1, totalPage.value])]
+    .filter(value => value > 0 && value <= totalPage.value)
+    .sort((a, b) => a - b)
+
+  return visible.flatMap((value, index) =>
+    index && value - visible[index - 1] > 1
+      ? [{ value: `more-${value}`, more: true as const }, { value }]
+      : [{ value }],
+  )
+})
 </script>
 
 <template>
