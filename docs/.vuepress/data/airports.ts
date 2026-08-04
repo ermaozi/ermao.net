@@ -302,54 +302,6 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "text": "迷你鸭，¥77/年，77GB/月"
     }
   ],
-  "u1s1": [
-    {
-      "name": "基础体验版",
-      "priceText": "20元 / 月",
-      "traffic": "120G",
-      "type": "周期订阅",
-      "audience": "适合日常查阅资料、看网页的轻度用户",
-      "purchaseHref": "https://ermaozi01.vipaff.cc/#/?code=FC32x5Vs",
-      "text": "基础体验版，20元 / 月，120G"
-    },
-    {
-      "name": "日常影音版",
-      "priceText": "40元 / 月",
-      "traffic": "300G",
-      "type": "周期订阅",
-      "audience": "足够支撑日常刷YouTube、看Netflix等常规需求",
-      "purchaseHref": "https://ermaozi01.vipaff.cc/#/?code=FC32x5Vs",
-      "text": "日常影音版，40元 / 月，300G"
-    },
-    {
-      "name": "重度冲浪版",
-      "priceText": "100元 / 月",
-      "traffic": "700G",
-      "type": "周期订阅",
-      "audience": "适合经常下载大文件、多人合租的场景",
-      "purchaseHref": "https://ermaozi01.vipaff.cc/#/?code=FC32x5Vs",
-      "text": "重度冲浪版，100元 / 月，700G"
-    },
-    {
-      "name": "尊享大户版",
-      "priceText": "180元 / 月",
-      "traffic": "1500G",
-      "type": "周期订阅",
-      "audience": "推荐给小微企业、搞海外直播或电商的专业人员",
-      "purchaseHref": "https://ermaozi01.vipaff.cc/#/?code=FC32x5Vs",
-      "text": "尊享大户版，180元 / 月，1500G"
-    },
-    {
-      "name": "一次性流量包",
-      "priceText": "580元",
-      "traffic": "1000G (不限时)",
-      "type": "不限时流量包",
-      "audience": "极度偶尔翻墙，不想被月付绑定的备用需求",
-      "purchaseHref": "https://ermaozi01.vipaff.cc/#/?code=FC32x5Vs",
-      "text": "一次性流量包，580元，1000G (不限时)",
-      "oneTime": true
-    }
-  ],
   "大哥云": [
     {
       "name": "单月套餐 A",
@@ -441,264 +393,6 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       ],
       "purchaseHref": "https://ermao.dgywzc.com/#/register?code=peAVAa8D",
       "text": "年付套餐（1000GB），¥699.00，1000G/月"
-    }
-  ],
-  "invisible": [
-    {
-      "name": "隐形人 · 白银纪元",
-      "priceText": "¥24/月",
-      "traffic": "144GB/月",
-      "type": "周期订阅",
-      "audience": "首次体验、日常学习与办公",
-      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
-      "text": "隐形人 · 白银纪元，¥24/月，144GB/月"
-    },
-    {
-      "name": "隐形人 · 黄金序列",
-      "priceText": "¥48/月",
-      "traffic": "360GB/月",
-      "type": "周期订阅",
-      "audience": "中高频视频、日常主力使用",
-      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
-      "text": "隐形人 · 黄金序列，¥48/月，360GB/月"
-    },
-    {
-      "name": "隐形人 · 铂金至臻",
-      "priceText": "¥105/月",
-      "traffic": "750GB/月",
-      "type": "周期订阅",
-      "audience": "大文件传输、高流量使用",
-      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
-      "text": "隐形人 · 铂金至臻，¥105/月，750GB/月"
-    },
-    {
-      "name": "隐形人 · 钻石穹顶",
-      "priceText": "¥185/月",
-      "traffic": "1600GB/月",
-      "type": "周期订阅",
-      "audience": "团队或多设备重度使用",
-      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
-      "text": "隐形人 · 钻石穹顶，¥185/月，1600GB/月"
-    },
-    {
-      "name": "隐形人 · 星耀风暴 365 天不熄",
-      "priceText": "¥109/年",
-      "traffic": "80GB/年",
-      "type": "周期订阅",
-      "audience": "低频备用、能接受年付风险",
-      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
-      "text": "隐形人 · 星耀风暴 365 天不熄，¥109/年，80GB/年"
-    },
-    {
-      "name": "隐形人 · 一次性小流量",
-      "priceText": "¥229/一次性",
-      "traffic": "160GB",
-      "type": "不限时流量包",
-      "features": [
-        "特点：不限时，资料明确限 1 台设备"
-      ],
-      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
-      "text": "隐形人 · 一次性小流量，¥229/一次性，160GB",
-      "oneTime": true
-    },
-    {
-      "name": "隐形人 · 一次性标准流量包",
-      "priceText": "¥549/一次性",
-      "traffic": "420GB",
-      "type": "不限时流量包",
-      "features": [
-        "特点：不限时，资料标注支持 2 台设备"
-      ],
-      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
-      "text": "隐形人 · 一次性标准流量包，¥549/一次性，420GB",
-      "oneTime": true
-    },
-    {
-      "name": "隐形人 · 一次性精英流量包",
-      "priceText": "¥1199/一次性",
-      "traffic": "1000GB",
-      "type": "不限时流量包",
-      "features": [
-        "特点：不限时，资料标注支持 3 台设备"
-      ],
-      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
-      "text": "隐形人 · 一次性精英流量包，¥1199/一次性，1000GB",
-      "oneTime": true
-    }
-  ],
-  "kuajiecloud": [
-    {
-      "name": "轻云 Lite（月付）",
-      "priceText": "¥20/月",
-      "traffic": "120GB（重置口径未说明）",
-      "type": "周期订阅",
-      "audience": "首次体验、轻中度使用",
-      "purchaseHref": "https://vipermaozi.kuajieaff.com/#/?code=lPz0u1LR",
-      "text": "轻云 Lite（月付），¥20/月，120GB（重置口径未说明）"
-    },
-    {
-      "name": "轻云 Lite（季付）",
-      "priceText": "¥54/季",
-      "traffic": "120GB（重置口径未说明）",
-      "type": "周期订阅",
-      "audience": "已完成月付测试、希望减少续费次数",
-      "purchaseHref": "https://vipermaozi.kuajieaff.com/#/?code=lPz0u1LR",
-      "text": "轻云 Lite（季付），¥54/季，120GB（重置口径未说明）"
-    },
-    {
-      "name": "轻云 Lite（年付）",
-      "priceText": "¥192/年",
-      "traffic": "120GB（重置口径未说明）",
-      "type": "周期订阅",
-      "audience": "用量稳定、能接受全年预付风险",
-      "purchaseHref": "https://vipermaozi.kuajieaff.com/#/?code=lPz0u1LR",
-      "text": "轻云 Lite（年付），¥192/年，120GB（重置口径未说明）"
-    },
-    {
-      "name": "跃云 Leap（月付）",
-      "priceText": "¥40/月",
-      "traffic": "300GB（重置口径未说明）",
-      "type": "周期订阅",
-      "audience": "日常中等流量使用",
-      "purchaseHref": "https://vipermaozi.kuajieaff.com/#/?code=lPz0u1LR",
-      "text": "跃云 Leap（月付），¥40/月，300GB（重置口径未说明）"
-    },
-    {
-      "name": "跃云 Leap（季付）",
-      "priceText": "¥108/季",
-      "traffic": "300GB（重置口径未说明）",
-      "type": "周期订阅",
-      "audience": "用量稳定、先用季度验证",
-      "purchaseHref": "https://vipermaozi.kuajieaff.com/#/?code=lPz0u1LR",
-      "text": "跃云 Leap（季付），¥108/季，300GB（重置口径未说明）"
-    },
-    {
-      "name": "跃云 Leap（年付）",
-      "priceText": "¥384/年",
-      "traffic": "300GB（重置口径未说明）",
-      "type": "周期订阅",
-      "audience": "持续使用且能够承担年付风险",
-      "purchaseHref": "https://vipermaozi.kuajieaff.com/#/?code=lPz0u1LR",
-      "text": "跃云 Leap（年付），¥384/年，300GB（重置口径未说明）"
-    },
-    {
-      "name": "凌云 Soar（月付）",
-      "priceText": "¥100/月",
-      "traffic": "700GB（重置口径未说明）",
-      "type": "周期订阅",
-      "audience": "多设备或较高流量需求",
-      "purchaseHref": "https://vipermaozi.kuajieaff.com/#/?code=lPz0u1LR",
-      "text": "凌云 Soar（月付），¥100/月，700GB（重置口径未说明）"
-    },
-    {
-      "name": "凌云 Soar（季付）",
-      "priceText": "¥270/季",
-      "traffic": "700GB（重置口径未说明）",
-      "type": "周期订阅",
-      "audience": "已验证线路的高流量用户",
-      "purchaseHref": "https://vipermaozi.kuajieaff.com/#/?code=lPz0u1LR",
-      "text": "凌云 Soar（季付），¥270/季，700GB（重置口径未说明）"
-    },
-    {
-      "name": "凌云 Soar（年付）",
-      "priceText": "¥960/年",
-      "traffic": "700GB（重置口径未说明）",
-      "type": "周期订阅",
-      "audience": "长期高流量、能够承担预付风险",
-      "purchaseHref": "https://vipermaozi.kuajieaff.com/#/?code=lPz0u1LR",
-      "text": "凌云 Soar（年付），¥960/年，700GB（重置口径未说明）"
-    },
-    {
-      "name": "无界 Infinity（月付）",
-      "priceText": "¥180/月",
-      "traffic": "1500GB（重置口径未说明）",
-      "type": "周期订阅",
-      "audience": "重度流量使用",
-      "purchaseHref": "https://vipermaozi.kuajieaff.com/#/?code=lPz0u1LR",
-      "text": "无界 Infinity（月付），¥180/月，1500GB（重置口径未说明）"
-    },
-    {
-      "name": "无界 Infinity（季付）",
-      "priceText": "¥486/季",
-      "traffic": "1500GB（重置口径未说明）",
-      "type": "周期订阅",
-      "audience": "已确认实际用量的重度用户",
-      "purchaseHref": "https://vipermaozi.kuajieaff.com/#/?code=lPz0u1LR",
-      "text": "无界 Infinity（季付），¥486/季，1500GB（重置口径未说明）"
-    },
-    {
-      "name": "无界 Infinity（年付）",
-      "priceText": "¥1728/年",
-      "traffic": "1500GB（重置口径未说明）",
-      "type": "周期订阅",
-      "audience": "长期重度使用、能够承担年付风险",
-      "purchaseHref": "https://vipermaozi.kuajieaff.com/#/?code=lPz0u1LR",
-      "text": "无界 Infinity（年付），¥1728/年，1500GB（重置口径未说明）"
-    }
-  ],
-  "civetnet": [
-    {
-      "name": "灵猫 · 年付小包",
-      "priceText": "¥85/年",
-      "traffic": "45GB（重置口径未说明）",
-      "type": "周期订阅",
-      "audience": "低频备用、能接受年付风险",
-      "purchaseHref": "https://ermaozi.civetaff.com/#/?code=Ammn9sdD",
-      "text": "灵猫 · 年付小包，¥85/年，45GB（重置口径未说明）"
-    },
-    {
-      "name": "灵猫 · 年付 Small",
-      "priceText": "¥195/年",
-      "traffic": "150GB（重置口径未说明）",
-      "type": "周期订阅",
-      "audience": "中低用量、已完成短周期测试",
-      "purchaseHref": "https://ermaozi.civetaff.com/#/?code=Ammn9sdD",
-      "text": "灵猫 · 年付 Small，¥195/年，150GB（重置口径未说明）"
-    },
-    {
-      "name": "灵猫 · 年付 Big",
-      "priceText": "¥295/年",
-      "traffic": "300GB（重置口径未说明）",
-      "type": "周期订阅",
-      "audience": "中等用量、能承担年付风险",
-      "purchaseHref": "https://ermaozi.civetaff.com/#/?code=Ammn9sdD",
-      "text": "灵猫 · 年付 Big，¥295/年，300GB（重置口径未说明）"
-    },
-    {
-      "name": "灵猫 · 季付 Small",
-      "priceText": "¥65/季",
-      "traffic": "150GB（重置口径未说明）",
-      "type": "周期订阅",
-      "audience": "想减少续费次数的轻中度用户",
-      "purchaseHref": "https://ermaozi.civetaff.com/#/?code=Ammn9sdD",
-      "text": "灵猫 · 季付 Small，¥65/季，150GB（重置口径未说明）"
-    },
-    {
-      "name": "灵猫 · 季付 Big",
-      "priceText": "¥125/季",
-      "traffic": "300GB（重置口径未说明）",
-      "type": "周期订阅",
-      "audience": "中等流量、先用季度验证",
-      "purchaseHref": "https://ermaozi.civetaff.com/#/?code=Ammn9sdD",
-      "text": "灵猫 · 季付 Big，¥125/季，300GB（重置口径未说明）"
-    },
-    {
-      "name": "灵猫 · 月付 Small",
-      "priceText": "¥25/月",
-      "traffic": "150GB（重置口径未说明）",
-      "type": "周期订阅",
-      "audience": "首次体验、日常轻中度使用",
-      "purchaseHref": "https://ermaozi.civetaff.com/#/?code=Ammn9sdD",
-      "text": "灵猫 · 月付 Small，¥25/月，150GB（重置口径未说明）"
-    },
-    {
-      "name": "灵猫 · 月付 Big",
-      "priceText": "¥45/月",
-      "traffic": "300GB（重置口径未说明）",
-      "type": "周期订阅",
-      "audience": "多设备或较高流量需求",
-      "purchaseHref": "https://ermaozi.civetaff.com/#/?code=Ammn9sdD",
-      "text": "灵猫 · 月付 Big，¥45/月，300GB（重置口径未说明）"
     }
   ],
   "miaomiaoyun": [
@@ -1289,124 +983,6 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "text": "标准版 Plus（年付），¥108/年，12000GB/年"
     }
   ],
-  "firefly": [
-    {
-      "name": "Firefly 年付版",
-      "priceText": "¥96/年（折合¥8/月）",
-      "traffic": "60GB/月",
-      "type": "周期订阅",
-      "audience": "轻度长期使用，需一次支付全年费用",
-      "purchaseHref": "https://ermaozi01.fireflyaff.com/#/?code=BUtf2Bj2",
-      "text": "Firefly 年付版，¥96/年（折合¥8/月），60GB/月"
-    },
-    {
-      "name": "Firefly Lite",
-      "priceText": "¥25/月",
-      "traffic": "150GB/月",
-      "type": "周期订阅",
-      "audience": "日常网页、社交与轻度视频",
-      "purchaseHref": "https://ermaozi01.fireflyaff.com/#/?code=BUtf2Bj2",
-      "text": "Firefly Lite，¥25/月，150GB/月"
-    },
-    {
-      "name": "Firefly Plus",
-      "priceText": "¥45/月",
-      "traffic": "300GB/月",
-      "type": "周期订阅",
-      "audience": "AI 工具、办公与中等频率视频",
-      "purchaseHref": "https://ermaozi01.fireflyaff.com/#/?code=BUtf2Bj2",
-      "text": "Firefly Plus，¥45/月，300GB/月"
-    },
-    {
-      "name": "Firefly Blaze",
-      "priceText": "¥85/月",
-      "traffic": "600GB/月",
-      "type": "周期订阅",
-      "audience": "高频流媒体与多设备使用",
-      "purchaseHref": "https://ermaozi01.fireflyaff.com/#/?code=BUtf2Bj2",
-      "text": "Firefly Blaze，¥85/月，600GB/月"
-    },
-    {
-      "name": "Firefly Nova",
-      "priceText": "¥150/月",
-      "traffic": "1000GB/月",
-      "type": "周期订阅",
-      "audience": "大流量与重度使用",
-      "purchaseHref": "https://ermaozi01.fireflyaff.com/#/?code=BUtf2Bj2",
-      "text": "Firefly Nova，¥150/月，1000GB/月"
-    },
-    {
-      "name": "Firefly 不限时",
-      "priceText": "¥100/一次性",
-      "traffic": "100GB",
-      "type": "不限时流量包",
-      "features": [
-        "特点：低频使用或备用线路"
-      ],
-      "purchaseHref": "https://ermaozi01.fireflyaff.com/#/?code=BUtf2Bj2",
-      "text": "Firefly 不限时，¥100/一次性，100GB",
-      "oneTime": true
-    }
-  ],
-  "无忧链接": [
-    {
-      "name": "mini链接",
-      "priceText": "¥79/年",
-      "traffic": "40GB/年",
-      "type": "周期订阅",
-      "audience": "偶尔使用、低频备用",
-      "purchaseHref": "https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb",
-      "text": "mini链接，¥79/年，40GB/年"
-    },
-    {
-      "name": "舒心链接",
-      "priceText": "¥19/月；¥51/季；¥96/半年；¥182/年",
-      "traffic": "100GB/月",
-      "type": "周期订阅",
-      "audience": "日常网页、社交与轻度视频",
-      "purchaseHref": "https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb",
-      "text": "舒心链接，¥19/月；¥51/季；¥96/半年；¥182/年，100GB/月"
-    },
-    {
-      "name": "省心链接",
-      "priceText": "¥33/月；¥89/季；¥168/半年；¥316/年",
-      "traffic": "200GB/月",
-      "type": "周期订阅",
-      "audience": "AI 工具、办公与中等频率视频",
-      "purchaseHref": "https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb",
-      "text": "省心链接，¥33/月；¥89/季；¥168/半年；¥316/年，200GB/月"
-    },
-    {
-      "name": "随心链接",
-      "priceText": "¥77/月；¥207/季；¥398/半年；¥739/年",
-      "traffic": "500GB/月",
-      "type": "周期订阅",
-      "audience": "高频流媒体与多设备使用",
-      "purchaseHref": "https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb",
-      "text": "随心链接，¥77/月；¥207/季；¥398/半年；¥739/年，500GB/月"
-    },
-    {
-      "name": "忘忧链接",
-      "priceText": "¥117/月；¥315/季；¥596/半年；¥1123/年",
-      "traffic": "1TB/月",
-      "type": "周期订阅",
-      "audience": "大流量与重度使用",
-      "purchaseHref": "https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb",
-      "text": "忘忧链接，¥117/月；¥315/季；¥596/半年；¥1123/年，1TB/月"
-    },
-    {
-      "name": "不限时 100GB 流量包",
-      "priceText": "¥16.15/一次性",
-      "traffic": "100GB",
-      "type": "不限时流量包",
-      "features": [
-        "特点：低频备用；名称及规则以结算页为准"
-      ],
-      "purchaseHref": "https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb",
-      "text": "不限时 100GB 流量包，¥16.15/一次性，100GB",
-      "oneTime": true
-    }
-  ],
   "可信云": [
     {
       "name": "轻量月付",
@@ -1552,57 +1128,6 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       ],
       "purchaseHref": "https://ermaozi01.ladderaff.com/#/?code=VZVXWbiq",
       "text": "云端买断·永不限时精英包，¥849/一次性，700GB",
-      "oneTime": true
-    }
-  ],
-  "uuone": [
-    {
-      "name": "Lite套餐",
-      "priceText": "¥10.8",
-      "traffic": "150G/月",
-      "type": "周期订阅",
-      "features": [
-        "原价：¥12/月",
-        "特性：入门首选，BGP中转"
-      ],
-      "purchaseHref": "https://uuone.at/?code=AjqYdZlJ",
-      "text": "Lite套餐，¥10.8，150G/月"
-    },
-    {
-      "name": "Pro套餐 🌟",
-      "priceText": "¥20.7",
-      "traffic": "300G/月",
-      "type": "周期订阅",
-      "features": [
-        "原价：¥23/月",
-        "特性：进阶推荐，流量充裕"
-      ],
-      "purchaseHref": "https://uuone.at/?code=AjqYdZlJ",
-      "text": "Pro套餐 🌟，¥20.7，300G/月"
-    },
-    {
-      "name": "Max套餐",
-      "priceText": "¥40.5",
-      "traffic": "800G/月",
-      "type": "周期订阅",
-      "features": [
-        "原价：¥45/月",
-        "特性：超大流量，4K无忧"
-      ],
-      "purchaseHref": "https://uuone.at/?code=AjqYdZlJ",
-      "text": "Max套餐，¥40.5，800G/月"
-    },
-    {
-      "name": "永久套餐",
-      "priceText": "¥72",
-      "traffic": "450G",
-      "type": "不限时流量包",
-      "features": [
-        "原价：¥80",
-        "特性：一次性流量，不过期"
-      ],
-      "purchaseHref": "https://uuone.at/?code=AjqYdZlJ",
-      "text": "永久套餐，¥72，450G",
       "oneTime": true
     }
   ],
@@ -1787,75 +1312,6 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "text": "星岛梦 · 定制套餐，¥680.00/月，500GB"
     }
   ],
-  "唯兔云": [
-    {
-      "name": "入门年付",
-      "priceText": "¥79.9/年",
-      "traffic": "45G/月",
-      "type": "周期订阅",
-      "features": [
-        "说明：平均仅需6.6元/月，性价比极高"
-      ],
-      "purchaseHref": "https://a01.v2cvipaff.cc/#/?code=iaD6AgSx",
-      "text": "入门年付，¥79.9/年，45G/月"
-    },
-    {
-      "name": "基础套餐",
-      "priceText": "¥14.9/月  ¥40.9/季  ¥142.9/年",
-      "traffic": "100G/月",
-      "type": "周期订阅",
-      "features": [
-        "说明：适合日常轻度使用"
-      ],
-      "purchaseHref": "https://a01.v2cvipaff.cc/#/?code=iaD6AgSx",
-      "text": "基础套餐，¥14.9/月  ¥40.9/季  ¥142.9/年，100G/月"
-    },
-    {
-      "name": "进阶套餐",
-      "priceText": "¥29.9/月  ¥80.9/季  ¥286.9/年",
-      "traffic": "200G/月",
-      "type": "周期订阅",
-      "features": [
-        "说明：适合主力使用"
-      ],
-      "purchaseHref": "https://a01.v2cvipaff.cc/#/?code=iaD6AgSx",
-      "text": "进阶套餐，¥29.9/月  ¥80.9/季  ¥286.9/年，200G/月"
-    },
-    {
-      "name": "高级套餐",
-      "priceText": "¥59.9/月  ¥161.9/季  ¥547.9/年",
-      "traffic": "500G/月",
-      "type": "周期订阅",
-      "features": [
-        "说明：适合重度视频用户"
-      ],
-      "purchaseHref": "https://a01.v2cvipaff.cc/#/?code=iaD6AgSx",
-      "text": "高级套餐，¥59.9/月  ¥161.9/季  ¥547.9/年，500G/月"
-    },
-    {
-      "name": "尊享套餐",
-      "priceText": "¥119.9/月  ¥323.9/季  ¥1150.9/年",
-      "traffic": "1000G/月",
-      "type": "周期订阅",
-      "features": [
-        "说明：团队/工作室首选"
-      ],
-      "purchaseHref": "https://a01.v2cvipaff.cc/#/?code=iaD6AgSx",
-      "text": "尊享套餐，¥119.9/月  ¥323.9/季  ¥1150.9/年，1000G/月"
-    },
-    {
-      "name": "不限时套餐",
-      "priceText": "首次¥340",
-      "traffic": "500G",
-      "type": "不限时流量包",
-      "features": [
-        "说明：后续续费9折，流量不过期"
-      ],
-      "purchaseHref": "https://a01.v2cvipaff.cc/#/?code=iaD6AgSx",
-      "text": "不限时套餐，首次¥340，500G",
-      "oneTime": true
-    }
-  ],
   "灵动云": [
     {
       "name": "灵动·拂风",
@@ -1948,109 +1404,6 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "oneTime": true
     }
   ],
-  "superbiu": [
-    {
-      "name": "Biu-as-you-go 120G",
-      "priceText": "¥40",
-      "traffic": "120GB",
-      "type": "周期订阅",
-      "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
-      "text": "Biu-as-you-go 120G，¥40，120GB"
-    },
-    {
-      "name": "Biu-as-you-go 240G",
-      "priceText": "¥79",
-      "traffic": "240GB",
-      "type": "周期订阅",
-      "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
-      "text": "Biu-as-you-go 240G，¥79，240GB"
-    },
-    {
-      "name": "Biu-as-you-go 380G",
-      "priceText": "¥128",
-      "traffic": "380GB",
-      "type": "周期订阅",
-      "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
-      "text": "Biu-as-you-go 380G，¥128，380GB"
-    },
-    {
-      "name": "Biu-as-you-go 880G",
-      "priceText": "¥238",
-      "traffic": "880GB",
-      "type": "周期订阅",
-      "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
-      "text": "Biu-as-you-go 880G，¥238，880GB"
-    }
-  ],
-  "极连云": [
-    {
-      "name": "轻量体验(年付)",
-      "priceText": "¥96/年",
-      "traffic": "60GB/月",
-      "type": "周期订阅",
-      "features": [
-        "特性：适合轻度用户，性价比极高"
-      ],
-      "purchaseHref": "https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m",
-      "text": "轻量体验(年付)，¥96/年，60GB/月"
-    },
-    {
-      "name": "基础套餐",
-      "priceText": "¥15.50/月",
-      "traffic": "100GB/月",
-      "type": "周期订阅",
-      "features": [
-        "特性：全IPLC专线，原生IP解锁"
-      ],
-      "purchaseHref": "https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m",
-      "text": "基础套餐，¥15.50/月，100GB/月"
-    },
-    {
-      "name": "进阶套餐",
-      "priceText": "¥30.50/月",
-      "traffic": "200GB/月",
-      "type": "周期订阅",
-      "features": [
-        "特性：优化带宽调度，AI服务首选"
-      ],
-      "purchaseHref": "https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m",
-      "text": "进阶套餐，¥30.50/月，200GB/月"
-    },
-    {
-      "name": "旗舰套餐",
-      "priceText": "¥65.50/月",
-      "traffic": "500GB/月",
-      "type": "周期订阅",
-      "features": [
-        "特性：高速专线，极致低延迟"
-      ],
-      "purchaseHref": "https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m",
-      "text": "旗舰套餐，¥65.50/月，500GB/月"
-    },
-    {
-      "name": "尊享套餐",
-      "priceText": "¥120.50/月",
-      "traffic": "1000GB/月",
-      "type": "周期订阅",
-      "features": [
-        "特性：顶级旗舰，最高2.5Gbps带宽"
-      ],
-      "purchaseHref": "https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m",
-      "text": "尊享套餐，¥120.50/月，1000GB/月"
-    },
-    {
-      "name": "不限时套餐",
-      "priceText": "¥399.00",
-      "traffic": "1000GB",
-      "type": "不限时流量包",
-      "features": [
-        "特性：一次性流量，永久有效不重置"
-      ],
-      "purchaseHref": "https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m",
-      "text": "不限时套餐，¥399.00，1000GB",
-      "oneTime": true
-    }
-  ],
   "runway": [
     {
       "name": "经济舱 (Economy)",
@@ -2101,118 +1454,6 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       ],
       "purchaseHref": "https://www.runwayhz.com/#/register?code=RiIDywqb",
       "text": "空中流量包 (Air traffic data package)，¥45.00/次，150G"
-    }
-  ],
-  "光年梯": [
-    {
-      "name": "入门版",
-      "priceText": "¥18.00/月",
-      "traffic": "110GB/月",
-      "type": "周期订阅",
-      "audience": "轻度/入门",
-      "features": [
-        "特性：全IPLC专线，SS协议，不限速，不限客户端"
-      ],
-      "purchaseHref": "https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr",
-      "text": "入门版，¥18.00/月，110GB/月"
-    },
-    {
-      "name": "晋级版",
-      "priceText": "¥34.00/月",
-      "traffic": "220GB/月",
-      "type": "周期订阅",
-      "audience": "进阶使用",
-      "features": [
-        "特性：全节点 x1 · 高峰满速"
-      ],
-      "purchaseHref": "https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr",
-      "text": "晋级版，¥34.00/月，220GB/月"
-    },
-    {
-      "name": "专业版",
-      "priceText": "¥68.00/月",
-      "traffic": "450GB/月",
-      "type": "周期订阅",
-      "audience": "主力使用",
-      "features": [
-        "特性：全节点 x1 · 高峰满速"
-      ],
-      "purchaseHref": "https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr",
-      "text": "专业版，¥68.00/月，450GB/月"
-    },
-    {
-      "name": "至尊版",
-      "priceText": "¥130.00/月",
-      "traffic": "900GB/月",
-      "type": "周期订阅",
-      "audience": "重度用户",
-      "features": [
-        "特性：全节点 x1 · 高峰满速"
-      ],
-      "purchaseHref": "https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr",
-      "text": "至尊版，¥130.00/月，900GB/月"
-    },
-    {
-      "name": "独享私人专线",
-      "priceText": "¥680.00/月",
-      "traffic": "500GB/月",
-      "type": "周期订阅",
-      "audience": "企业/极致",
-      "features": [
-        "特性：独立带宽，独立公网IP，全程独享"
-      ],
-      "purchaseHref": "https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr",
-      "text": "独享私人专线，¥680.00/月，500GB/月"
-    }
-  ],
-  "梦想云": [
-    {
-      "name": "轻度-进阶套餐",
-      "priceText": "¥8.80/月",
-      "traffic": "300GB/月",
-      "type": "周期订阅",
-      "audience": "日常刷视频、AI 工具轻中度用户",
-      "features": [
-        "设备数：5 台"
-      ],
-      "purchaseHref": "https://gx.dreamcl.sbs/#/register?code=GFUAEweX",
-      "text": "轻度-进阶套餐，¥8.80/月，300GB/月"
-    },
-    {
-      "name": "豪华-进阶套餐",
-      "priceText": "¥11.90/月",
-      "traffic": "500GB/月",
-      "type": "周期订阅",
-      "audience": "多设备并行、流媒体重度用户",
-      "features": [
-        "设备数：5 台"
-      ],
-      "purchaseHref": "https://gx.dreamcl.sbs/#/register?code=GFUAEweX",
-      "text": "豪华-进阶套餐，¥11.90/月，500GB/月"
-    },
-    {
-      "name": "TK专线（联系客服）贵宾V2",
-      "priceText": "¥250.00/月",
-      "traffic": "无限流量",
-      "type": "周期订阅",
-      "audience": "对稳定性要求很高的业务型用户",
-      "features": [
-        "设备数：多设备"
-      ],
-      "purchaseHref": "https://gx.dreamcl.sbs/#/register?code=GFUAEweX",
-      "text": "TK专线（联系客服）贵宾V2，¥250.00/月，无限流量"
-    },
-    {
-      "name": "TK专线（联系客服）贵宾V3",
-      "priceText": "¥300.00/月",
-      "traffic": "500GB/月",
-      "type": "周期订阅",
-      "audience": "需要专线质量与定制支持的用户",
-      "features": [
-        "设备数：多设备"
-      ],
-      "purchaseHref": "https://gx.dreamcl.sbs/#/register?code=GFUAEweX",
-      "text": "TK专线（联系客服）贵宾V3，¥300.00/月，500GB/月"
     }
   ],
   "灯塔cloud": [
@@ -2415,117 +1656,6 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       ],
       "purchaseHref": "https://ermaozi.sogoaff.com/#/login?code=yxneZJKR",
       "text": "至尊，800元，1000GB"
-    }
-  ],
-  "光速云": [
-    {
-      "name": "轻量版(年付)",
-      "priceText": "¥99/年",
-      "traffic": "59GB/月",
-      "type": "周期订阅",
-      "features": [
-        "特性：超长续订首选，折合¥8.25/月"
-      ],
-      "purchaseHref": "https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku",
-      "text": "轻量版(年付)，¥99/年，59GB/月"
-    },
-    {
-      "name": "极速版",
-      "priceText": "¥17/月",
-      "traffic": "110GB/月",
-      "type": "周期订阅",
-      "features": [
-        "特性：入门体验，性价比高"
-      ],
-      "purchaseHref": "https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku",
-      "text": "极速版，¥17/月，110GB/月"
-    },
-    {
-      "name": "流光版",
-      "priceText": "¥34/月",
-      "traffic": "220GB/月",
-      "type": "周期订阅",
-      "features": [
-        "特性：主流推荐，适合日常使用"
-      ],
-      "purchaseHref": "https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku",
-      "text": "流光版，¥34/月，220GB/月"
-    },
-    {
-      "name": "量子版",
-      "priceText": "¥68/月",
-      "traffic": "450GB/月",
-      "type": "周期订阅",
-      "features": [
-        "特性：中重度用户，大流量"
-      ],
-      "purchaseHref": "https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku",
-      "text": "量子版，¥68/月，450GB/月"
-    },
-    {
-      "name": "无界版",
-      "priceText": "¥130/月",
-      "traffic": "900GB/月",
-      "type": "周期订阅",
-      "features": [
-        "特性：自由使用，极致体验"
-      ],
-      "purchaseHref": "https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku",
-      "text": "无界版，¥130/月，900GB/月"
-    },
-    {
-      "name": "不限时流量包",
-      "priceText": "¥680",
-      "traffic": "1000GB",
-      "type": "不限时流量包",
-      "features": [
-        "特性：一次性购买，永不过期"
-      ],
-      "purchaseHref": "https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku",
-      "text": "不限时流量包，¥680，1000GB",
-      "oneTime": true
-    }
-  ],
-  "全球云": [
-    {
-      "name": "BGP 智能优化 · 入门方案",
-      "priceText": "20元/月",
-      "traffic": "120GBBGP多线路智能调度，Trojan协议，不限设备，解锁流媒体/AI",
-      "type": "周期订阅",
-      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/order?planId=1",
-      "text": "BGP 智能优化 · 入门方案，20元/月，120GBBGP多线路智能调度，Trojan协议，不限设备，解锁流媒体/AI"
-    },
-    {
-      "name": "BGP 智能优化 · 进阶方案",
-      "priceText": "40元/月",
-      "traffic": "300GBBGP三网智能优化，稳定优先，4K秒开，解锁流媒体/AI",
-      "type": "周期订阅",
-      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/order?planId=2",
-      "text": "BGP 智能优化 · 进阶方案，40元/月，300GBBGP三网智能优化，稳定优先，4K秒开，解锁流媒体/AI"
-    },
-    {
-      "name": "BGP 智能优化 · 高端方案",
-      "priceText": "100元/月",
-      "traffic": "700GBBGP多线融合调度，带宽充足，8K超清，解锁流媒体/AI",
-      "type": "周期订阅",
-      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/order?planId=3",
-      "text": "BGP 智能优化 · 高端方案，100元/月，700GBBGP多线融合调度，带宽充足，8K超清，解锁流媒体/AI"
-    },
-    {
-      "name": "BGP 智能优化 · 商业方案",
-      "priceText": "180元/月",
-      "traffic": "1.5TB企业级BGP智能路由，商用级 ChatGPT/Claude 支持，高并发",
-      "type": "周期订阅",
-      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/order?planId=4",
-      "text": "BGP 智能优化 · 商业方案，180元/月，1.5TB企业级BGP智能路由，商用级 ChatGPT/Claude 支持，高并发"
-    },
-    {
-      "name": "独享私人专线节点",
-      "priceText": "600元/月",
-      "traffic": "500GB独立带宽资源，独立公网 IP，适合 TikTok 直播/独立站",
-      "type": "周期订阅",
-      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/order?planId=5",
-      "text": "独享私人专线节点，600元/月，500GB独立带宽资源，独立公网 IP，适合 TikTok 直播/独立站"
     }
   ],
   "寰宇云": [
@@ -3110,6 +2240,1446 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       ],
       "text": "凌霄，¥68.00，600G/月，月重置"
     }
+  ],
+  "invisible": [
+    {
+      "name": "隐形人 白银纪元👑",
+      "priceText": "¥24/月；¥68.4/季；¥129.6/半年；¥244.8/年；¥460.8/两年；¥648/三年",
+      "traffic": "144GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
+      "text": "隐形人 白银纪元👑，¥24/月；¥68.4/季；¥129.6/半年；¥244.8/年；¥460.8/两年；¥648/三年，144GB/周期"
+    },
+    {
+      "name": "隐形人 黄金序列💥",
+      "priceText": "¥48/月；¥136.8/季；¥259.2/半年；¥489.6/年；¥921.6/两年；¥1293/三年",
+      "traffic": "360GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
+      "text": "隐形人 黄金序列💥，¥48/月；¥136.8/季；¥259.2/半年；¥489.6/年；¥921.6/两年；¥1293/三年，360GB/周期"
+    },
+    {
+      "name": "隐形人 铂金至臻🔱",
+      "priceText": "¥105/月；¥299.25/季；¥567/半年；¥1071/年；¥2016/两年；¥2835/三年",
+      "traffic": "750GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
+      "text": "隐形人 铂金至臻🔱，¥105/月；¥299.25/季；¥567/半年；¥1071/年；¥2016/两年；¥2835/三年，750GB/周期"
+    },
+    {
+      "name": "隐形人 钻石穹顶💎",
+      "priceText": "¥185/月；¥527.25/季；¥999/半年；¥1887/年；¥3552/两年；¥4995/三年",
+      "traffic": "1600GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
+      "text": "隐形人 钻石穹顶💎，¥185/月；¥527.25/季；¥999/半年；¥1887/年；¥3552/两年；¥4995/三年，1600GB/周期"
+    },
+    {
+      "name": "星耀风暴 365天不熄⚡",
+      "priceText": "¥109/年",
+      "traffic": "80GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
+      "text": "星耀风暴 365天不熄⚡，¥109/年，80GB/周期"
+    },
+    {
+      "name": "一次性小流量🌌",
+      "priceText": "¥229/一次性",
+      "traffic": "160GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
+      "text": "一次性小流量🌌，¥229/一次性，160GB",
+      "oneTime": true
+    },
+    {
+      "name": "一次性标准流量包🌀",
+      "priceText": "¥549/一次性",
+      "traffic": "420GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
+      "text": "一次性标准流量包🌀，¥549/一次性，420GB",
+      "oneTime": true
+    },
+    {
+      "name": "一次性精英流量包🌊",
+      "priceText": "¥1199/一次性",
+      "traffic": "1000GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
+      "text": "一次性精英流量包🌊，¥1199/一次性，1000GB",
+      "oneTime": true
+    },
+    {
+      "name": "王者定制版✈",
+      "priceText": "¥600/一次性",
+      "traffic": "500GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
+      "text": "王者定制版✈，¥600/一次性，500GB",
+      "oneTime": true
+    }
+  ],
+  "ssone": [
+    {
+      "name": "👑 每月-128G",
+      "priceText": "¥15/月；¥42/季；¥75/半年；¥148/年",
+      "traffic": "128GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://www.flybit6202.com/#/register?code=MmE2PsQJ",
+      "text": "👑 每月-128G，¥15/月；¥42/季；¥75/半年；¥148/年，128GB/周期"
+    },
+    {
+      "name": "👑 每月-192G",
+      "priceText": "¥22/月；¥62/季；¥110/半年；¥216/年",
+      "traffic": "192GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://www.flybit6202.com/#/register?code=MmE2PsQJ",
+      "text": "👑 每月-192G，¥22/月；¥62/季；¥110/半年；¥216/年，192GB/周期"
+    },
+    {
+      "name": "👑 每月-256G",
+      "priceText": "¥28/月；¥80/季；¥140/半年；¥268/年",
+      "traffic": "256GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://www.flybit6202.com/#/register?code=MmE2PsQJ",
+      "text": "👑 每月-256G，¥28/月；¥80/季；¥140/半年；¥268/年，256GB/周期"
+    },
+    {
+      "name": "👑 每月-512G",
+      "priceText": "¥52/月；¥148/季；¥260/半年；¥498/年",
+      "traffic": "512GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://www.flybit6202.com/#/register?code=MmE2PsQJ",
+      "text": "👑 每月-512G，¥52/月；¥148/季；¥260/半年；¥498/年，512GB/周期"
+    },
+    {
+      "name": "👑 不限时-128G",
+      "priceText": "¥36/一次性",
+      "traffic": "128GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://www.flybit6202.com/#/register?code=MmE2PsQJ",
+      "text": "👑 不限时-128G，¥36/一次性，128GB",
+      "oneTime": true
+    },
+    {
+      "name": "👑 不限时-256G",
+      "priceText": "¥68/一次性",
+      "traffic": "256GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://www.flybit6202.com/#/register?code=MmE2PsQJ",
+      "text": "👑 不限时-256G，¥68/一次性，256GB",
+      "oneTime": true
+    },
+    {
+      "name": "👑 不限时-512G",
+      "priceText": "¥128/一次性",
+      "traffic": "512GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://www.flybit6202.com/#/register?code=MmE2PsQJ",
+      "text": "👑 不限时-512G，¥128/一次性，512GB",
+      "oneTime": true
+    },
+    {
+      "name": "👑 不限时-1024G",
+      "priceText": "¥238/一次性",
+      "traffic": "1024GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://www.flybit6202.com/#/register?code=MmE2PsQJ",
+      "text": "👑 不限时-1024G，¥238/一次性，1024GB",
+      "oneTime": true
+    }
+  ],
+  "龙猫云": [
+    {
+      "name": "VIP1套餐",
+      "priceText": "¥15/月；¥41/季；¥77/半年；¥144/年；¥252/两年；¥324/三年",
+      "traffic": "100GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.lmvipaff.com/register?aff=aOkm2wPW",
+      "text": "VIP1套餐，¥15/月；¥41/季；¥77/半年；¥144/年；¥252/两年；¥324/三年，100GB/周期"
+    },
+    {
+      "name": "VIP2套餐",
+      "priceText": "¥30/月；¥81/季；¥153/半年；¥288/年；¥504/两年；¥648/三年",
+      "traffic": "200GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.lmvipaff.com/register?aff=aOkm2wPW",
+      "text": "VIP2套餐，¥30/月；¥81/季；¥153/半年；¥288/年；¥504/两年；¥648/三年，200GB/周期"
+    },
+    {
+      "name": "VIP3套餐",
+      "priceText": "¥60/月；¥162/季；¥306/半年；¥576/年；¥1008/两年；¥1296/三年",
+      "traffic": "400GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.lmvipaff.com/register?aff=aOkm2wPW",
+      "text": "VIP3套餐，¥60/月；¥162/季；¥306/半年；¥576/年；¥1008/两年；¥1296/三年，400GB/周期"
+    },
+    {
+      "name": "DIY定制套餐",
+      "priceText": "¥680/月",
+      "traffic": "0GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.lmvipaff.com/register?aff=aOkm2wPW",
+      "text": "DIY定制套餐，¥680/月，0GB/周期"
+    },
+    {
+      "name": "VIP4套餐",
+      "priceText": "¥120/月；¥324/季；¥697/半年；¥1152/年；¥2016/两年；¥2592/三年",
+      "traffic": "1000GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.lmvipaff.com/register?aff=aOkm2wPW",
+      "text": "VIP4套餐，¥120/月；¥324/季；¥697/半年；¥1152/年；¥2016/两年；¥2592/三年，1000GB/周期"
+    }
+  ],
+  "superbiu": [
+    {
+      "name": "Small Biu 50G",
+      "priceText": "¥14/月；¥41/季；¥80/半年；¥158/年；¥313/两年；¥470/三年",
+      "traffic": "50GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
+      "text": "Small Biu 50G，¥14/月；¥41/季；¥80/半年；¥158/年；¥313/两年；¥470/三年，50GB/周期"
+    },
+    {
+      "name": "Mini Biu 100G",
+      "priceText": "¥19/月；¥56/季；¥110/半年；¥218/年；¥435/两年；¥650/三年",
+      "traffic": "100GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
+      "text": "Mini Biu 100G，¥19/月；¥56/季；¥110/半年；¥218/年；¥435/两年；¥650/三年，100GB/周期"
+    },
+    {
+      "name": "Mini Biu 200G",
+      "priceText": "¥32/月；¥96/季；¥190/半年；¥378/年；¥752/两年；¥1128/三年",
+      "traffic": "200GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
+      "text": "Mini Biu 200G，¥32/月；¥96/季；¥190/半年；¥378/年；¥752/两年；¥1128/三年，200GB/周期"
+    },
+    {
+      "name": "Medium Biu 300G",
+      "priceText": "¥47/月；¥139/季；¥276/半年；¥550/年；¥1095/两年；¥1640/三年",
+      "traffic": "300GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
+      "text": "Medium Biu 300G，¥47/月；¥139/季；¥276/半年；¥550/年；¥1095/两年；¥1640/三年，300GB/周期"
+    },
+    {
+      "name": "Medium Biu 500G",
+      "priceText": "¥77/月；¥229/季；¥456/半年；¥910/年；¥1815/两年；¥2720/三年",
+      "traffic": "500GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
+      "text": "Medium Biu 500G，¥77/月；¥229/季；¥456/半年；¥910/年；¥1815/两年；¥2720/三年，500GB/周期"
+    },
+    {
+      "name": "Medium Biu 1T",
+      "priceText": "¥150/月；¥448/季；¥894/半年；¥1786/年；¥3565/两年；¥5345/三年",
+      "traffic": "1000GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
+      "text": "Medium Biu 1T，¥150/月；¥448/季；¥894/半年；¥1786/年；¥3565/两年；¥5345/三年，1000GB/周期"
+    },
+    {
+      "name": "super Pack 2T",
+      "priceText": "¥293/月；¥879/季；¥1755/半年；¥3505/年；¥7010/两年",
+      "traffic": "2000GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
+      "text": "super Pack 2T，¥293/月；¥879/季；¥1755/半年；¥3505/年；¥7010/两年，2000GB/周期"
+    },
+    {
+      "name": "super Pack 4T",
+      "priceText": "¥560/月；¥1675/季；¥3340/半年；¥6670/年",
+      "traffic": "4000GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
+      "text": "super Pack 4T，¥560/月；¥1675/季；¥3340/半年；¥6670/年，4000GB/周期"
+    },
+    {
+      "name": "Biu One-Year Data 120G",
+      "priceText": "¥40/年",
+      "traffic": "120GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
+      "text": "Biu One-Year Data 120G，¥40/年，120GB/周期"
+    },
+    {
+      "name": "Biu One-Year Data 240G",
+      "priceText": "¥79/年",
+      "traffic": "240GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
+      "text": "Biu One-Year Data 240G，¥79/年，240GB/周期"
+    },
+    {
+      "name": "Biu One-Year Data 380G",
+      "priceText": "¥128/年",
+      "traffic": "380GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
+      "text": "Biu One-Year Data 380G，¥128/年，380GB/周期"
+    },
+    {
+      "name": "Biu One-Year Data 880G",
+      "priceText": "¥238/年",
+      "traffic": "880GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
+      "text": "Biu One-Year Data 880G，¥238/年，880GB/周期"
+    },
+    {
+      "name": "Biu One-Year Data 1380G",
+      "priceText": "¥355/年",
+      "traffic": "1380GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
+      "text": "Biu One-Year Data 1380G，¥355/年，1380GB/周期"
+    },
+    {
+      "name": "Biu One-Year Data 1880G",
+      "priceText": "¥470/年",
+      "traffic": "1880GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
+      "text": "Biu One-Year Data 1880G，¥470/年，1880GB/周期"
+    },
+    {
+      "name": "独享节点定制",
+      "priceText": "¥99/月",
+      "traffic": "1GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
+      "text": "独享节点定制，¥99/月，1GB/周期"
+    },
+    {
+      "name": "企业/工作室/跨境IEPL专线定制",
+      "priceText": "¥2000/月",
+      "traffic": "100GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
+      "text": "企业/工作室/跨境IEPL专线定制，¥2000/月，100GB/周期"
+    },
+    {
+      "name": "企业/工作室/跨境IPLC专线定制",
+      "priceText": "¥5000/月",
+      "traffic": "0GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
+      "text": "企业/工作室/跨境IPLC专线定制，¥5000/月，0GB/周期"
+    }
+  ],
+  "闪狐云": [
+    {
+      "name": "Standard Plan",
+      "priceText": "¥40/月；¥108/季；¥204/半年；¥384/年；¥672/两年；¥864/三年",
+      "traffic": "240GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv",
+      "text": "Standard Plan，¥40/月；¥108/季；¥204/半年；¥384/年；¥672/两年；¥864/三年，240GB/周期"
+    },
+    {
+      "name": "Advanced Plan",
+      "priceText": "¥72/月；¥194/季；¥367/半年；¥691/年；¥1209/两年；¥1555/三年",
+      "traffic": "500GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv",
+      "text": "Advanced Plan，¥72/月；¥194/季；¥367/半年；¥691/年；¥1209/两年；¥1555/三年，500GB/周期"
+    },
+    {
+      "name": "Premium Plan",
+      "priceText": "¥125/月；¥337/季；¥637/半年；¥1200/年；¥2100/两年；¥2700/三年",
+      "traffic": "1000GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv",
+      "text": "Premium Plan，¥125/月；¥337/季；¥637/半年；¥1200/年；¥2100/两年；¥2700/三年，1000GB/周期"
+    },
+    {
+      "name": "Basic Plan",
+      "priceText": "¥20/月；¥54/季；¥102/半年；¥192/年；¥336/两年；¥432/三年",
+      "traffic": "120GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv",
+      "text": "Basic Plan，¥20/月；¥54/季；¥102/半年；¥192/年；¥336/两年；¥432/三年，120GB/周期"
+    }
+  ],
+  "梦想云": [
+    {
+      "name": "轻度-入门套餐",
+      "priceText": "¥8.8/月；¥25.87/季；¥50.16/半年；¥96/年",
+      "traffic": "100GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://gx.dreamcl.sbs/#/register?code=GFUAEweX",
+      "text": "轻度-入门套餐，¥8.8/月；¥25.87/季；¥50.16/半年；¥96/年，100GB/周期"
+    },
+    {
+      "name": "豪华-进阶套餐",
+      "priceText": "¥13/月；¥38.22/季；¥74.1/半年；¥140.4/年",
+      "traffic": "300GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://gx.dreamcl.sbs/#/register?code=GFUAEweX",
+      "text": "豪华-进阶套餐，¥13/月；¥38.22/季；¥74.1/半年；¥140.4/年，300GB/周期"
+    },
+    {
+      "name": "重度-进阶套餐",
+      "priceText": "¥30/月；¥88.2/季；¥171/半年；¥324/年",
+      "traffic": "400GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://gx.dreamcl.sbs/#/register?code=GFUAEweX",
+      "text": "重度-进阶套餐，¥30/月；¥88.2/季；¥171/半年；¥324/年，400GB/周期"
+    },
+    {
+      "name": "TK专线(联系客服)贵宾V2",
+      "priceText": "¥250/月",
+      "traffic": "100000GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://gx.dreamcl.sbs/#/register?code=GFUAEweX",
+      "text": "TK专线(联系客服)贵宾V2，¥250/月，100000GB/周期"
+    },
+    {
+      "name": "TK专线(联系客服)贵宾V3",
+      "priceText": "¥300/月",
+      "traffic": "10000GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://gx.dreamcl.sbs/#/register?code=GFUAEweX",
+      "text": "TK专线(联系客服)贵宾V3，¥300/月，10000GB/周期"
+    }
+  ],
+  "tnt": [
+    {
+      "name": "TNT:VIP1",
+      "priceText": "¥20/月；¥54/季；¥102/半年；¥192/年；¥336/两年；¥432/三年",
+      "traffic": "110GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi02.tntvipaff.cc/#/register?code=f1EyPwf3",
+      "text": "TNT:VIP1，¥20/月；¥54/季；¥102/半年；¥192/年；¥336/两年；¥432/三年，110GB/周期"
+    },
+    {
+      "name": "TNT:VIP2",
+      "priceText": "¥40/月；¥108/季；¥204/半年；¥336/年；¥672/两年；¥864/三年",
+      "traffic": "220GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi02.tntvipaff.cc/#/register?code=f1EyPwf3",
+      "text": "TNT:VIP2，¥40/月；¥108/季；¥204/半年；¥336/年；¥672/两年；¥864/三年，220GB/周期"
+    },
+    {
+      "name": "TNT:VIP3",
+      "priceText": "¥80/月；¥216/季；¥408/半年；¥768/年；¥1344/两年；¥1728/三年",
+      "traffic": "460GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi02.tntvipaff.cc/#/register?code=f1EyPwf3",
+      "text": "TNT:VIP3，¥80/月；¥216/季；¥408/半年；¥768/年；¥1344/两年；¥1728/三年，460GB/周期"
+    },
+    {
+      "name": "DIY定制套餐",
+      "priceText": "¥680/月",
+      "traffic": "0GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi02.tntvipaff.cc/#/register?code=f1EyPwf3",
+      "text": "DIY定制套餐，¥680/月，0GB/周期"
+    },
+    {
+      "name": "TNT:VIP4",
+      "priceText": "¥160/月；¥432/季；¥816/半年；¥1536/年；¥2688/两年；¥3456/三年",
+      "traffic": "1100GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi02.tntvipaff.cc/#/register?code=f1EyPwf3",
+      "text": "TNT:VIP4，¥160/月；¥432/季；¥816/半年；¥1536/年；¥2688/两年；¥3456/三年，1100GB/周期"
+    },
+    {
+      "name": "TNT：季付限量包",
+      "priceText": "¥30/季",
+      "traffic": "60GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi02.tntvipaff.cc/#/register?code=f1EyPwf3",
+      "text": "TNT：季付限量包，¥30/季，60GB/周期"
+    },
+    {
+      "name": "TNT：年付限量包",
+      "priceText": "¥98/年",
+      "traffic": "60GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi02.tntvipaff.cc/#/register?code=f1EyPwf3",
+      "text": "TNT：年付限量包，¥98/年，60GB/周期"
+    }
+  ],
+  "_99bar": [
+    {
+      "name": "🔥九九@全年特惠套餐",
+      "priceText": "¥99.99/年",
+      "traffic": "66GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://99vpn.bar/#/register?code=qzpkbzHF",
+      "text": "🔥九九@全年特惠套餐，¥99.99/年，66GB/周期"
+    },
+    {
+      "name": "💥九九@特惠月套餐",
+      "priceText": "¥9.9/月；¥29.9/季",
+      "traffic": "70GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://99vpn.bar/#/register?code=qzpkbzHF",
+      "text": "💥九九@特惠月套餐，¥9.9/月；¥29.9/季，70GB/周期"
+    },
+    {
+      "name": "🏆九九@星耀VIP",
+      "priceText": "¥12.99/月；¥36.99/季；¥72.99/半年；¥139.99/年",
+      "traffic": "99GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://99vpn.bar/#/register?code=qzpkbzHF",
+      "text": "🏆九九@星耀VIP，¥12.99/月；¥36.99/季；¥72.99/半年；¥139.99/年，99GB/周期"
+    },
+    {
+      "name": "🥇九九@铂金VIP",
+      "priceText": "¥24.99/月；¥72.99/季；¥139.99/半年；¥274.99/年",
+      "traffic": "199GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://99vpn.bar/#/register?code=qzpkbzHF",
+      "text": "🥇九九@铂金VIP，¥24.99/月；¥72.99/季；¥139.99/半年；¥274.99/年，199GB/周期"
+    },
+    {
+      "name": "💎九九@钻石VIP",
+      "priceText": "¥36.99/月；¥108.99/季；¥212.99/半年；¥419.99/年",
+      "traffic": "299GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://99vpn.bar/#/register?code=qzpkbzHF",
+      "text": "💎九九@钻石VIP，¥36.99/月；¥108.99/季；¥212.99/半年；¥419.99/年，299GB/周期"
+    },
+    {
+      "name": "🌟 九九@星钻SVIP",
+      "priceText": "¥35.9/一次性",
+      "traffic": "111GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://99vpn.bar/#/register?code=qzpkbzHF",
+      "text": "🌟 九九@星钻SVIP，¥35.9/一次性，111GB",
+      "oneTime": true
+    },
+    {
+      "name": "🔱 九九@至尊SVIP",
+      "priceText": "¥69.9/一次性",
+      "traffic": "222GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://99vpn.bar/#/register?code=qzpkbzHF",
+      "text": "🔱 九九@至尊SVIP，¥69.9/一次性，222GB",
+      "oneTime": true
+    },
+    {
+      "name": "👑九九@皇冠SVIP",
+      "priceText": "¥139.99/一次性",
+      "traffic": "555GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://99vpn.bar/#/register?code=qzpkbzHF",
+      "text": "👑九九@皇冠SVIP，¥139.99/一次性，555GB",
+      "oneTime": true
+    },
+    {
+      "name": "⚜️九九@尊耀SVIP",
+      "priceText": "¥259.99/一次性",
+      "traffic": "1111GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://99vpn.bar/#/register?code=qzpkbzHF",
+      "text": "⚜️九九@尊耀SVIP，¥259.99/一次性，1111GB",
+      "oneTime": true
+    }
+  ],
+  "掌中世界": [
+    {
+      "name": "Basic",
+      "priceText": "¥27/月；¥81/季；¥162/半年；¥324/年",
+      "traffic": "150GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://qq.zjs2025.com/user/register?code=S74QiRGN",
+      "text": "Basic，¥27/月；¥81/季；¥162/半年；¥324/年，150GB/周期"
+    },
+    {
+      "name": "Pro",
+      "priceText": "¥30/月；¥90/季；¥180/半年；¥360/年",
+      "traffic": "420GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://qq.zjs2025.com/user/register?code=S74QiRGN",
+      "text": "Pro，¥30/月；¥90/季；¥180/半年；¥360/年，420GB/周期"
+    },
+    {
+      "name": "Air",
+      "priceText": "¥168/年",
+      "traffic": "60GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://qq.zjs2025.com/user/register?code=S74QiRGN",
+      "text": "Air，¥168/年，60GB/周期"
+    },
+    {
+      "name": "Ultra",
+      "priceText": "¥589/一次性",
+      "traffic": "5550GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://qq.zjs2025.com/user/register?code=S74QiRGN",
+      "text": "Ultra，¥589/一次性，5550GB",
+      "oneTime": true
+    }
+  ],
+  "firefly": [
+    {
+      "name": "Firefly年付版",
+      "priceText": "¥96/年",
+      "traffic": "60GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.fireflyaff.com/#/?code=BUtf2Bj2",
+      "text": "Firefly年付版，¥96/年，60GB/周期"
+    },
+    {
+      "name": "Firefly Lite",
+      "priceText": "¥25/月；¥67/季；¥127/半年；¥240/年；¥420/两年；¥540/三年",
+      "traffic": "150GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.fireflyaff.com/#/?code=BUtf2Bj2",
+      "text": "Firefly Lite，¥25/月；¥67/季；¥127/半年；¥240/年；¥420/两年；¥540/三年，150GB/周期"
+    },
+    {
+      "name": "Firefly Plus",
+      "priceText": "¥45/月；¥121/季；¥229/半年；¥432/年；¥756/两年；¥972/三年",
+      "traffic": "300GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.fireflyaff.com/#/?code=BUtf2Bj2",
+      "text": "Firefly Plus，¥45/月；¥121/季；¥229/半年；¥432/年；¥756/两年；¥972/三年，300GB/周期"
+    },
+    {
+      "name": "Firefly Blaze",
+      "priceText": "¥85/月；¥229/季；¥433/半年；¥816/年；¥1428/两年；¥1836/三年",
+      "traffic": "600GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.fireflyaff.com/#/?code=BUtf2Bj2",
+      "text": "Firefly Blaze，¥85/月；¥229/季；¥433/半年；¥816/年；¥1428/两年；¥1836/三年，600GB/周期"
+    },
+    {
+      "name": "Firefly Nova",
+      "priceText": "¥150/月；¥400/季；¥750/半年；¥1360/年；¥2399/两年；¥3119/三年",
+      "traffic": "1000GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.fireflyaff.com/#/?code=BUtf2Bj2",
+      "text": "Firefly Nova，¥150/月；¥400/季；¥750/半年；¥1360/年；¥2399/两年；¥3119/三年，1000GB/周期"
+    },
+    {
+      "name": "Firefly不限时",
+      "priceText": "¥100/一次性",
+      "traffic": "100GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://ermaozi01.fireflyaff.com/#/?code=BUtf2Bj2",
+      "text": "Firefly不限时，¥100/一次性，100GB",
+      "oneTime": true
+    }
+  ],
+  "无忧链接": [
+    {
+      "name": "MINI链接",
+      "priceText": "¥79/年",
+      "traffic": "40GB/月",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb",
+      "text": "MINI链接，¥79/年，40GB/月"
+    },
+    {
+      "name": "舒心链接",
+      "priceText": "¥12.92/月；¥34.68/季；¥65.28/半年；¥123.76/年",
+      "traffic": "100GB/月",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb",
+      "text": "舒心链接，¥12.92/月；¥34.68/季；¥65.28/半年；¥123.76/年，100GB/月"
+    },
+    {
+      "name": "省心链接",
+      "priceText": "¥22.44/月；¥60.52/季；¥114.24/半年；¥214.88/年",
+      "traffic": "200GB/月",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb",
+      "text": "省心链接，¥22.44/月；¥60.52/季；¥114.24/半年；¥214.88/年，200GB/月"
+    },
+    {
+      "name": "随心链接",
+      "priceText": "¥52.36/月；¥140.76/季；¥266.56/半年；¥502.52/年",
+      "traffic": "500GB/月",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb",
+      "text": "随心链接，¥52.36/月；¥140.76/季；¥266.56/半年；¥502.52/年，500GB/月"
+    },
+    {
+      "name": "忘忧链接",
+      "priceText": "¥117/月；¥315/季；¥596/半年；¥1123/年；¥1965/两年；¥2527/三年",
+      "traffic": "1000GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb",
+      "text": "忘忧链接，¥117/月；¥315/季；¥596/半年；¥1123/年；¥1965/两年；¥2527/三年，1000GB/周期"
+    },
+    {
+      "name": "100G永久不限时 无忧链接（参与优惠券，限时6.8折）",
+      "priceText": "¥108/一次性",
+      "traffic": "100GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb",
+      "text": "100G永久不限时 无忧链接（参与优惠券，限时6.8折），¥108/一次性，100GB",
+      "oneTime": true
+    },
+    {
+      "name": "300G永久不限时 无忧链接（参与优惠券，限时6.8折）",
+      "priceText": "¥298/一次性",
+      "traffic": "300GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb",
+      "text": "300G永久不限时 无忧链接（参与优惠券，限时6.8折），¥298/一次性，300GB",
+      "oneTime": true
+    }
+  ],
+  "u1s1": [
+    {
+      "name": "u1s1 · 就是好用包",
+      "priceText": "¥96/年；¥180/两年；¥270/三年",
+      "traffic": "60GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.vipaff.cc/#/?code=FC32x5Vs",
+      "text": "u1s1 · 就是好用包，¥96/年；¥180/两年；¥270/三年，60GB/周期"
+    },
+    {
+      "name": "u1s1 · 普通人真够了包",
+      "priceText": "¥20/月；¥54/季；¥102/半年；¥192/年；¥336/两年；¥432/三年",
+      "traffic": "120GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.vipaff.cc/#/?code=FC32x5Vs",
+      "text": "u1s1 · 普通人真够了包，¥20/月；¥54/季；¥102/半年；¥192/年；¥336/两年；¥432/三年，120GB/周期"
+    },
+    {
+      "name": "u1s1 · 你以为用不到包",
+      "priceText": "¥40/月；¥108/季；¥204/半年；¥384/年；¥568/两年；¥864/三年",
+      "traffic": "300GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.vipaff.cc/#/?code=FC32x5Vs",
+      "text": "u1s1 · 你以为用不到包，¥40/月；¥108/季；¥204/半年；¥384/年；¥568/两年；¥864/三年，300GB/周期"
+    },
+    {
+      "name": "u1s1 · 瘾大就拉满包",
+      "priceText": "¥100/月；¥270/季；¥510/半年；¥960/年；¥1920/两年；¥2160/三年",
+      "traffic": "700GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.vipaff.cc/#/?code=FC32x5Vs",
+      "text": "u1s1 · 瘾大就拉满包，¥100/月；¥270/季；¥510/半年；¥960/年；¥1920/两年；¥2160/三年，700GB/周期"
+    },
+    {
+      "name": "u1s1 · 我全都要包",
+      "priceText": "¥180/月；¥486/季；¥918/半年；¥1728/年；¥3024/两年；¥3888/三年",
+      "traffic": "1500GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.vipaff.cc/#/?code=FC32x5Vs",
+      "text": "u1s1 · 我全都要包，¥180/月；¥486/季；¥918/半年；¥1728/年；¥3024/两年；¥3888/三年，1500GB/周期"
+    },
+    {
+      "name": "u1s1 · 定制包",
+      "priceText": "¥600/月",
+      "traffic": "0GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.vipaff.cc/#/?code=FC32x5Vs",
+      "text": "u1s1 · 定制包，¥600/月，0GB/周期"
+    }
+  ],
+  "kuajiecloud": [
+    {
+      "name": "跨界年付版（¥96/年 · 60GB）",
+      "priceText": "¥96/年",
+      "traffic": "60GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://vipermaozi.kuajieaff.com/#/?code=lPz0u1LR",
+      "text": "跨界年付版（¥96/年 · 60GB），¥96/年，60GB/周期"
+    },
+    {
+      "name": "轻云 Lite（¥20/月 · 120GB）",
+      "priceText": "¥20/月；¥54/季；¥102/半年；¥192/年；¥336/两年；¥432/三年",
+      "traffic": "120GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://vipermaozi.kuajieaff.com/#/?code=lPz0u1LR",
+      "text": "轻云 Lite（¥20/月 · 120GB），¥20/月；¥54/季；¥102/半年；¥192/年；¥336/两年；¥432/三年，120GB/周期"
+    },
+    {
+      "name": "跃云 Leap（¥40/月 · 330GB",
+      "priceText": "¥40/月；¥108/季；¥204/半年；¥384/年；¥672/两年；¥864/三年",
+      "traffic": "330GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://vipermaozi.kuajieaff.com/#/?code=lPz0u1LR",
+      "text": "跃云 Leap（¥40/月 · 330GB，¥40/月；¥108/季；¥204/半年；¥384/年；¥672/两年；¥864/三年，330GB/周期"
+    },
+    {
+      "name": "凌云 Soar（¥90/月 · 830GB）",
+      "priceText": "¥90/月；¥243/季；¥459/半年；¥864/年；¥1512/两年；¥1944/三年",
+      "traffic": "830GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://vipermaozi.kuajieaff.com/#/?code=lPz0u1LR",
+      "text": "凌云 Soar（¥90/月 · 830GB），¥90/月；¥243/季；¥459/半年；¥864/年；¥1512/两年；¥1944/三年，830GB/周期"
+    },
+    {
+      "name": "无界 Infinity（¥130/月 · 1800GB）",
+      "priceText": "¥130/月；¥351/季；¥663/半年；¥1248/年；¥2184/两年；¥2808/三年",
+      "traffic": "1800GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://vipermaozi.kuajieaff.com/#/?code=lPz0u1LR",
+      "text": "无界 Infinity（¥130/月 · 1800GB），¥130/月；¥351/季；¥663/半年；¥1248/年；¥2184/两年；¥2808/三年，1800GB/周期"
+    }
+  ],
+  "civetnet": [
+    {
+      "name": "灵猫·年付小包",
+      "priceText": "¥85/年",
+      "traffic": "45GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi.civetaff.com/#/?code=Ammn9sdD",
+      "text": "灵猫·年付小包，¥85/年，45GB/周期"
+    },
+    {
+      "name": "灵猫·年付Small",
+      "priceText": "¥195/年",
+      "traffic": "150GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi.civetaff.com/#/?code=Ammn9sdD",
+      "text": "灵猫·年付Small，¥195/年，150GB/周期"
+    },
+    {
+      "name": "灵猫·年付Big",
+      "priceText": "¥295/年",
+      "traffic": "300GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi.civetaff.com/#/?code=Ammn9sdD",
+      "text": "灵猫·年付Big，¥295/年，300GB/周期"
+    },
+    {
+      "name": "灵猫·季付Small",
+      "priceText": "¥65/季",
+      "traffic": "150GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi.civetaff.com/#/?code=Ammn9sdD",
+      "text": "灵猫·季付Small，¥65/季，150GB/周期"
+    },
+    {
+      "name": "灵猫·季付Big",
+      "priceText": "¥125/季",
+      "traffic": "300GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi.civetaff.com/#/?code=Ammn9sdD",
+      "text": "灵猫·季付Big，¥125/季，300GB/周期"
+    },
+    {
+      "name": "灵猫·月付Small",
+      "priceText": "¥25/月",
+      "traffic": "150GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi.civetaff.com/#/?code=Ammn9sdD",
+      "text": "灵猫·月付Small，¥25/月，150GB/周期"
+    },
+    {
+      "name": "灵猫·月付Big",
+      "priceText": "¥45/月",
+      "traffic": "300GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi.civetaff.com/#/?code=Ammn9sdD",
+      "text": "灵猫·月付Big，¥45/月，300GB/周期"
+    }
+  ],
+  "edge-x": [
+    {
+      "name": "标准版 - 循环 - 200GB",
+      "priceText": "¥22.8/月；¥64.8/季；¥128.8/半年；¥248.8/年",
+      "traffic": "200GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://edge-invite.com/#/register?code=LCH9laOs",
+      "text": "标准版 - 循环 - 200GB，¥22.8/月；¥64.8/季；¥128.8/半年；¥248.8/年，200GB/周期"
+    },
+    {
+      "name": "标准版 - 循环 - 300GB",
+      "priceText": "¥34.8/月；¥98.8/季；¥198.8/半年；¥388.8/年",
+      "traffic": "300GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://edge-invite.com/#/register?code=LCH9laOs",
+      "text": "标准版 - 循环 - 300GB，¥34.8/月；¥98.8/季；¥198.8/半年；¥388.8/年，300GB/周期"
+    },
+    {
+      "name": "团队版 - 循环 - 600GB",
+      "priceText": "¥64.8/月；¥192.8/季；¥368.8/半年；¥728.8/年",
+      "traffic": "600GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://edge-invite.com/#/register?code=LCH9laOs",
+      "text": "团队版 - 循环 - 600GB，¥64.8/月；¥192.8/季；¥368.8/半年；¥728.8/年，600GB/周期"
+    },
+    {
+      "name": "轻量版 - 全年 - 800GB",
+      "priceText": "¥168/年",
+      "traffic": "800GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://edge-invite.com/#/register?code=LCH9laOs",
+      "text": "轻量版 - 全年 - 800GB，¥168/年，800GB/周期"
+    },
+    {
+      "name": "标准版 - 全年 - 1600GB",
+      "priceText": "¥268/年",
+      "traffic": "1600GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://edge-invite.com/#/register?code=LCH9laOs",
+      "text": "标准版 - 全年 - 1600GB，¥268/年，1600GB/周期"
+    },
+    {
+      "name": "标准版 - 全年 - 3600GB",
+      "priceText": "¥468/年",
+      "traffic": "3600GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://edge-invite.com/#/register?code=LCH9laOs",
+      "text": "标准版 - 全年 - 3600GB，¥468/年，3600GB/周期"
+    }
+  ],
+  "唯兔云": [
+    {
+      "name": "唯兔云 · 年付加强专线",
+      "priceText": "¥120/年",
+      "traffic": "75GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://a01.v2cvipaff.cc/#/?code=iaD6AgSx",
+      "text": "唯兔云 · 年付加强专线，¥120/年，75GB/周期"
+    },
+    {
+      "name": "唯兔云 · 年付版限量款",
+      "priceText": "¥79.9/年",
+      "traffic": "45GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://a01.v2cvipaff.cc/#/?code=iaD6AgSx",
+      "text": "唯兔云 · 年付版限量款，¥79.9/年，45GB/周期"
+    },
+    {
+      "name": "唯兔云 · 普通版",
+      "priceText": "¥19.9/月；¥59.9/季；¥119.9/半年；¥238.9/年；¥477.9/两年；¥716.9/三年",
+      "traffic": "150GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://a01.v2cvipaff.cc/#/?code=iaD6AgSx",
+      "text": "唯兔云 · 普通版，¥19.9/月；¥59.9/季；¥119.9/半年；¥238.9/年；¥477.9/两年；¥716.9/三年，150GB/周期"
+    },
+    {
+      "name": "唯兔云 · 进阶版",
+      "priceText": "¥29.9/月；¥80.9/季；¥152.9/半年；¥286.9/年；¥502.9/两年；¥645.9/三年",
+      "traffic": "200GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://a01.v2cvipaff.cc/#/?code=iaD6AgSx",
+      "text": "唯兔云 · 进阶版，¥29.9/月；¥80.9/季；¥152.9/半年；¥286.9/年；¥502.9/两年；¥645.9/三年，200GB/周期"
+    },
+    {
+      "name": "唯兔云 · 专业版",
+      "priceText": "¥59.9/月；¥161.9/季；¥305.9/半年；¥547.9/年；¥1006.9/两年；¥1294.9/三年",
+      "traffic": "500GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://a01.v2cvipaff.cc/#/?code=iaD6AgSx",
+      "text": "唯兔云 · 专业版，¥59.9/月；¥161.9/季；¥305.9/半年；¥547.9/年；¥1006.9/两年；¥1294.9/三年，500GB/周期"
+    },
+    {
+      "name": "唯兔云 · 至尊版",
+      "priceText": "¥119.9/月；¥323.9/季；¥611.9/半年；¥1150.9/年；¥2013.9/两年；¥2590.9/三年",
+      "traffic": "1000GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://a01.v2cvipaff.cc/#/?code=iaD6AgSx",
+      "text": "唯兔云 · 至尊版，¥119.9/月；¥323.9/季；¥611.9/半年；¥1150.9/年；¥2013.9/两年；¥2590.9/三年，1000GB/周期"
+    },
+    {
+      "name": "唯兔云 · 永久不限时",
+      "priceText": "¥100/一次性",
+      "traffic": "100GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://a01.v2cvipaff.cc/#/?code=iaD6AgSx",
+      "text": "唯兔云 · 永久不限时，¥100/一次性，100GB",
+      "oneTime": true
+    },
+    {
+      "name": "唯兔云 · 永久不限时",
+      "priceText": "¥160/一次性",
+      "traffic": "200GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://a01.v2cvipaff.cc/#/?code=iaD6AgSx",
+      "text": "唯兔云 · 永久不限时，¥160/一次性，200GB",
+      "oneTime": true
+    },
+    {
+      "name": "唯兔云 · 永久不限时",
+      "priceText": "¥340/一次性",
+      "traffic": "500GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://a01.v2cvipaff.cc/#/?code=iaD6AgSx",
+      "text": "唯兔云 · 永久不限时，¥340/一次性，500GB",
+      "oneTime": true
+    }
+  ],
+  "极连云": [
+    {
+      "name": "限时年付套餐体验",
+      "priceText": "¥96/年",
+      "traffic": "60GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m",
+      "text": "限时年付套餐体验，¥96/年，60GB/周期"
+    },
+    {
+      "name": "极连云 · 基础套餐",
+      "priceText": "¥18/月；¥51.3/季；¥97.2/半年；¥183.6/年；¥345.6/两年；¥486/三年",
+      "traffic": "100GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m",
+      "text": "极连云 · 基础套餐，¥18/月；¥51.3/季；¥97.2/半年；¥183.6/年；¥345.6/两年；¥486/三年，100GB/周期"
+    },
+    {
+      "name": "极连云 · 进阶套餐",
+      "priceText": "¥32/月；¥102/季；¥194/半年；¥367/年；¥691/两年；¥972/三年",
+      "traffic": "200GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m",
+      "text": "极连云 · 进阶套餐，¥32/月；¥102/季；¥194/半年；¥367/年；¥691/两年；¥972/三年，200GB/周期"
+    },
+    {
+      "name": "极连云 · 旗舰套餐",
+      "priceText": "¥61/月；¥205/季；¥388.8/半年；¥734.4/年；¥1382/两年；¥1944/三年",
+      "traffic": "500GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m",
+      "text": "极连云 · 旗舰套餐，¥61/月；¥205/季；¥388.8/半年；¥734.4/年；¥1382/两年；¥1944/三年，500GB/周期"
+    },
+    {
+      "name": "极连云 · 尊享套餐",
+      "priceText": "¥122/月；¥410.4/季；¥777.6/半年；¥1468.8/年；¥2764.8/两年；¥3888/三年",
+      "traffic": "1000GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m",
+      "text": "极连云 · 尊享套餐，¥122/月；¥410.4/季；¥777.6/半年；¥1468.8/年；¥2764.8/两年；¥3888/三年，1000GB/周期"
+    },
+    {
+      "name": "极连云 · 不限时套餐",
+      "priceText": "¥399/一次性",
+      "traffic": "600GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m",
+      "text": "极连云 · 不限时套餐，¥399/一次性，600GB",
+      "oneTime": true
+    }
+  ],
+  "光年梯": [
+    {
+      "name": "年付限时套餐",
+      "priceText": "¥89/年",
+      "traffic": "50GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr",
+      "text": "年付限时套餐，¥89/年，50GB/周期"
+    },
+    {
+      "name": "光年梯 入门版",
+      "priceText": "¥18/月；¥50/季；¥90/半年；¥160/年；¥300/两年；¥420/三年",
+      "traffic": "110GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr",
+      "text": "光年梯 入门版，¥18/月；¥50/季；¥90/半年；¥160/年；¥300/两年；¥420/三年，110GB/周期"
+    },
+    {
+      "name": "光年梯 晋级版",
+      "priceText": "¥34/月；¥100/季；¥180/半年；¥320/年；¥610/两年；¥850/三年",
+      "traffic": "220GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr",
+      "text": "光年梯 晋级版，¥34/月；¥100/季；¥180/半年；¥320/年；¥610/两年；¥850/三年，220GB/周期"
+    },
+    {
+      "name": "光年梯 专业版",
+      "priceText": "¥68/月；¥200/季；¥375/半年；¥667/年；¥1251/两年；¥1752/三年",
+      "traffic": "450GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr",
+      "text": "光年梯 专业版，¥68/月；¥200/季；¥375/半年；¥667/年；¥1251/两年；¥1752/三年，450GB/周期"
+    },
+    {
+      "name": "光年梯 至尊版",
+      "priceText": "¥130/月；¥390/季；¥702/半年；¥1248/年；¥2340/两年；¥3276/三年",
+      "traffic": "900GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr",
+      "text": "光年梯 至尊版，¥130/月；¥390/季；¥702/半年；¥1248/年；¥2340/两年；¥3276/三年，900GB/周期"
+    },
+    {
+      "name": "独享私人专线节点",
+      "priceText": "¥680/月",
+      "traffic": "500GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr",
+      "text": "独享私人专线节点，¥680/月，500GB/周期"
+    }
+  ],
+  "光速云": [
+    {
+      "name": "光速云 · 轻量版",
+      "priceText": "¥99/年",
+      "traffic": "59GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku",
+      "text": "光速云 · 轻量版，¥99/年，59GB/周期"
+    },
+    {
+      "name": "光速云 · 极速版",
+      "priceText": "¥17/月；¥50/季；¥90/半年；¥160/年；¥300/两年；¥420/三年",
+      "traffic": "110GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku",
+      "text": "光速云 · 极速版，¥17/月；¥50/季；¥90/半年；¥160/年；¥300/两年；¥420/三年，110GB/周期"
+    },
+    {
+      "name": "光速云 · 流光版",
+      "priceText": "¥34/月；¥100/季；¥180/半年；¥320/年；¥610/两年；¥850/三年",
+      "traffic": "220GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku",
+      "text": "光速云 · 流光版，¥34/月；¥100/季；¥180/半年；¥320/年；¥610/两年；¥850/三年，220GB/周期"
+    },
+    {
+      "name": "光速云 · 量子版",
+      "priceText": "¥68/月；¥200/季；¥375/半年；¥667/年；¥1251/两年；¥1752/三年",
+      "traffic": "450GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku",
+      "text": "光速云 · 量子版，¥68/月；¥200/季；¥375/半年；¥667/年；¥1251/两年；¥1752/三年，450GB/周期"
+    },
+    {
+      "name": "光速云 · 无界版",
+      "priceText": "¥130/月；¥390/季；¥702/半年；¥1248/年；¥2340/两年；¥3276/三年",
+      "traffic": "900GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku",
+      "text": "光速云 · 无界版，¥130/月；¥390/季；¥702/半年；¥1248/年；¥2340/两年；¥3276/三年，900GB/周期"
+    },
+    {
+      "name": "光速云 · 不限时套餐",
+      "priceText": "¥680/一次性",
+      "traffic": "1000GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku",
+      "text": "光速云 · 不限时套餐，¥680/一次性，1000GB",
+      "oneTime": true
+    },
+    {
+      "name": "光速云 · 定制套餐",
+      "priceText": "¥680/月",
+      "traffic": "500GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku",
+      "text": "光速云 · 定制套餐，¥680/月，500GB/周期"
+    }
+  ],
+  "全球云": [
+    {
+      "name": "BGP 智能优化 · 不限时轻量包",
+      "priceText": "¥100/一次性",
+      "traffic": "100GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "text": "BGP 智能优化 · 不限时轻量包，¥100/一次性，100GB",
+      "oneTime": true
+    },
+    {
+      "name": "BGP 智能优化 · 不限时标准包",
+      "priceText": "¥360/一次性",
+      "traffic": "400GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "text": "BGP 智能优化 · 不限时标准包，¥360/一次性，400GB",
+      "oneTime": true
+    },
+    {
+      "name": "BGP 智能优化 · 不限时大容量包",
+      "priceText": "¥700/一次性",
+      "traffic": "800GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "text": "BGP 智能优化 · 不限时大容量包，¥700/一次性，800GB",
+      "oneTime": true
+    },
+    {
+      "name": "轻量版",
+      "priceText": "¥99/年",
+      "traffic": "59GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "text": "轻量版，¥99/年，59GB/周期"
+    },
+    {
+      "name": "BGP 智能优化 · 入门方案",
+      "priceText": "¥20/月；¥54/季；¥102/半年；¥192/年；¥336/两年；¥432/三年",
+      "traffic": "120GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "text": "BGP 智能优化 · 入门方案，¥20/月；¥54/季；¥102/半年；¥192/年；¥336/两年；¥432/三年，120GB/周期"
+    },
+    {
+      "name": "BGP 智能优化 · 进阶方案",
+      "priceText": "¥40/月；¥108/季；¥204/半年；¥384/年；¥568/两年；¥864/三年",
+      "traffic": "300GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "text": "BGP 智能优化 · 进阶方案，¥40/月；¥108/季；¥204/半年；¥384/年；¥568/两年；¥864/三年，300GB/周期"
+    },
+    {
+      "name": "BGP 智能优化 · 高端方案",
+      "priceText": "¥100/月；¥270/季；¥510/半年；¥960/年；¥1920/两年；¥2160/三年",
+      "traffic": "700GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "text": "BGP 智能优化 · 高端方案，¥100/月；¥270/季；¥510/半年；¥960/年；¥1920/两年；¥2160/三年，700GB/周期"
+    },
+    {
+      "name": "BGP 智能优化 · 商业方案",
+      "priceText": "¥180/月；¥486/季；¥918/半年；¥1728/年；¥3024/两年；¥3888/三年",
+      "traffic": "1500GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "text": "BGP 智能优化 · 商业方案，¥180/月；¥486/季；¥918/半年；¥1728/年；¥3024/两年；¥3888/三年，1500GB/周期"
+    },
+    {
+      "name": "独享私人专线节点",
+      "priceText": "¥680/月",
+      "traffic": "500GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "text": "独享私人专线节点，¥680/月，500GB/周期"
+    }
+  ],
+  "uuone": [
+    {
+      "name": "Lite—月付150G",
+      "priceText": "¥19/月；¥36.9/季；¥59.9/半年；¥106/年",
+      "traffic": "150GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://uuone.at/?code=AjqYdZlJ",
+      "text": "Lite—月付150G，¥19/月；¥36.9/季；¥59.9/半年；¥106/年，150GB/周期"
+    },
+    {
+      "name": "Pro—月付300G",
+      "priceText": "¥29/月；¥69/季；¥129/半年；¥235/年",
+      "traffic": "300GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://uuone.at/?code=AjqYdZlJ",
+      "text": "Pro—月付300G，¥29/月；¥69/季；¥129/半年；¥235/年，300GB/周期"
+    },
+    {
+      "name": "Max—月付800G",
+      "priceText": "¥49/月；¥135/季；¥259/半年；¥459/年",
+      "traffic": "800GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://uuone.at/?code=AjqYdZlJ",
+      "text": "Max—月付800G，¥49/月；¥135/季；¥259/半年；¥459/年，800GB/周期"
+    },
+    {
+      "name": "永久450G",
+      "priceText": "¥99/一次性",
+      "traffic": "450GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://uuone.at/?code=AjqYdZlJ",
+      "text": "永久450G，¥99/一次性，450GB",
+      "oneTime": true
+    }
+  ],
+  "影子云": [
+    {
+      "name": "基础套餐-月付",
+      "priceText": "¥18.8/月；¥54.8/季；¥208.8/年；¥408.8/两年；¥608.8/三年",
+      "traffic": "150GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://www.yingzi01.com/register?code=TYHpo13G",
+      "text": "基础套餐-月付，¥18.8/月；¥54.8/季；¥208.8/年；¥408.8/两年；¥608.8/三年，150GB/周期"
+    },
+    {
+      "name": "标准套餐-月付",
+      "priceText": "¥38.8/月；¥108.8/季；¥408.8/年；¥808.8/两年；¥1208.8/三年",
+      "traffic": "350GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://www.yingzi01.com/register?code=TYHpo13G",
+      "text": "标准套餐-月付，¥38.8/月；¥108.8/季；¥408.8/年；¥808.8/两年；¥1208.8/三年，350GB/周期"
+    },
+    {
+      "name": "高级套餐-月付",
+      "priceText": "¥84.8/月；¥248.8/季；¥958.8/年；¥1908.8/两年；¥2788.8/三年",
+      "traffic": "850GB/周期",
+      "billingCycle": "多周期",
+      "type": "周期订阅",
+      "purchaseHref": "https://www.yingzi01.com/register?code=TYHpo13G",
+      "text": "高级套餐-月付，¥84.8/月；¥248.8/季；¥958.8/年；¥1908.8/两年；¥2788.8/三年，850GB/周期"
+    },
+    {
+      "name": "不限时188G",
+      "priceText": "¥118/一次性",
+      "traffic": "188GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://www.yingzi01.com/register?code=TYHpo13G",
+      "text": "不限时188G，¥118/一次性，188GB",
+      "oneTime": true
+    },
+    {
+      "name": "不限时388G",
+      "priceText": "¥218/一次性",
+      "traffic": "388GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://www.yingzi01.com/register?code=TYHpo13G",
+      "text": "不限时388G，¥218/一次性，388GB",
+      "oneTime": true
+    },
+    {
+      "name": "不限时888G",
+      "priceText": "¥488/一次性",
+      "traffic": "888GB",
+      "billingCycle": "一次性",
+      "type": "不限时流量包",
+      "purchaseHref": "https://www.yingzi01.com/register?code=TYHpo13G",
+      "text": "不限时888G，¥488/一次性，888GB",
+      "oneTime": true
+    }
   ]
 }
 // airport:sync-plans:end
@@ -3124,14 +3694,6 @@ const curatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
     { name: '不限时-256G', priceText: '68元/一次性', traffic: '256G', billingCycle: '一次性', type: '不限时流量包', features: ['无期限', '不限设备'], text: '不限时-256G，68元/一次性，256G', oneTime: true },
     { name: '不限时-512G', priceText: '128元/一次性', traffic: '512G', billingCycle: '一次性', type: '不限时流量包', features: ['无期限', '不限设备'], text: '不限时-512G，128元/一次性，512G', oneTime: true },
     { name: '不限时-1024G', priceText: '238元/一次性', traffic: '1024G', billingCycle: '一次性', type: '不限时流量包', features: ['无期限', '不限设备'], text: '不限时-1024G，238元/一次性，1024G', oneTime: true },
-  ],
-  ssone: [
-    { name: '[Lite]微型够用', priceText: '¥10/月', traffic: '60GB/月', billingCycle: '月付', type: '周期订阅', audience: '轻度用户', features: ['30+ IEPL 专线'], purchaseHref: 'https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF', text: '[Lite]微型够用，¥10/月，60GB/月' },
-    { name: '[Pro]实用主义', priceText: '¥39/月', traffic: '500GB/月', billingCycle: '月付', type: '周期订阅', audience: '日常使用', features: ['100+ IEPL 专线'], purchaseHref: 'https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF', text: '[Pro]实用主义，¥39/月，500GB/月' },
-    { name: '[Pro]充盈之选', priceText: '¥60/月', traffic: '1200GB/月', billingCycle: '月付', type: '周期订阅', audience: '重度用户', features: ['100+ IEPL 专线'], purchaseHref: 'https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF', text: '[Pro]充盈之选，¥60/月，1200GB/月' },
-    { name: '[Pro]团队计划', priceText: '¥150/月', traffic: '3600GB/月', billingCycle: '月付', type: '团队套餐', audience: '企业/团队', features: ['100+ IEPL 专线'], purchaseHref: 'https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF', text: '[Pro]团队计划，¥150/月，3600GB/月' },
-    { name: '[Pro]超值无忧', priceText: '¥200/年', traffic: '5000GB/年', billingCycle: '年付', type: '周期订阅', audience: '个人/企业', features: ['100+ IEPL 专线'], purchaseHref: 'https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF', text: '[Pro]超值无忧，¥200/年，5000GB/年' },
-    { name: '[Pro]优惠计划', priceText: '¥80/季', traffic: '300GB/月', billingCycle: '季付', type: '周期订阅', audience: '日常使用', features: ['100+ IEPL 专线'], purchaseHref: 'https://hello-ssone.com/cart?plan=lite&aff=aBHsE1pF', text: '[Pro]优惠计划，¥80/季，300GB/月' },
   ],
   '迅达': [
     { name: '基础套', priceText: '¥15/月', traffic: '120GB/月', billingCycle: '月付', type: '周期订阅', audience: '轻度用户', features: ['小众节点支持', '5 台设备', '手动重置 ¥15/次'], text: '基础套，¥15/月，120GB/月' },
@@ -3253,12 +3815,12 @@ export const airportSources: AirportSource[] = [
   {
     id: 'u1s1',
     name: 'u1s1',
-    description: 'u1s1 机场是一家主打 IPLC 专线并且不限制设备连接数的翻墙机场。他们拥有最高 2000Mbps 的带宽，并承诺晚高峰不降速。解锁 Netflix、TikTok 等流媒体以及 ChatGPT，最低起步价 20元/120G 每月，也有 580元 1000G 的无限制流量包，适合多设备重度流媒体及AI玩家。',
+    description: 'u1s1 机场是一家主打 IPLC 专线并且不限制设备连接数的翻墙机场。他们拥有最高 2000Mbps 的带宽，并承诺晚高峰不降速。解锁 Netflix、TikTok 等流媒体以及 ChatGPT，当前有 96 元年付 60GB 与 20 元 120GB 月付等周期套餐。',
     rank: 7,
     officialHref: 'https://ermaozi01.vipaff.cc/#/?code=FC32x5Vs',
     universalSubscription: true,
     minPlanText: '20元 120G/月',
-    hasOneTimePackage: true,
+    hasOneTimePackage: false,
     telegramHref: '',
     reviewHref: '/article/u1s1/',
     rankChangeLabel: '-',
@@ -3316,7 +3878,7 @@ export const airportSources: AirportSource[] = [
     officialHref: 'https://vipermaozi.kuajieaff.com/#/?code=lPz0u1LR',
     universalSubscription: true,
     minPlanText: '20元 120GB/月',
-    hasOneTimePackage: true,
+    hasOneTimePackage: false,
     telegramHref: 'https://t.me/kuajie11',
     reviewHref: '/blog/kuajiecloud-airport/',
     rankChangeLabel: '新上',
@@ -3331,7 +3893,7 @@ export const airportSources: AirportSource[] = [
     officialHref: 'https://ermaozi.civetaff.com/#/?code=Ammn9sdD',
     universalSubscription: true,
     minPlanText: '85元 45GB/年',
-    hasOneTimePackage: 'unknown',
+    hasOneTimePackage: false,
     telegramHref: '',
     reviewHref: '/blog/civetnet-airport/',
     rankChangeLabel: '新上',
@@ -3416,11 +3978,11 @@ export const airportSources: AirportSource[] = [
   {
     id: '无忧链接',
     name: '无忧链接',
-    description: '无忧链接支持通用订阅与主流客户端，周期套餐最低 19 元 100GB/月，另有年付小包和一次性不限时流量包，适合先从月付小档验证本地线路与目标平台。',
+    description: '无忧链接支持通用订阅与主流客户端，截图显示周期套餐现价最低 12.92 元 100GB/月，另有 79 元年付每月 40GB 套餐和一次性不限时流量包。',
     rank: 24,
     officialHref: 'https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb',
     universalSubscription: true,
-    minPlanText: '19元 100GB/月',
+    minPlanText: '12.92元 100GB/月',
     hasOneTimePackage: true,
     telegramHref: 'https://t.me/axxxing',
     reviewHref: '/blog/wuyoulink/',
@@ -3465,7 +4027,7 @@ export const airportSources: AirportSource[] = [
     rank: 10,
     officialHref: 'https://uuone.at/?code=AjqYdZlJ',
     universalSubscription: false,
-    minPlanText: '12元 150G/月',
+    minPlanText: '19元 150GB/月',
     hasOneTimePackage: true,
     telegramHref: '',
     reviewHref: '/blog/uuone/',
@@ -3525,8 +4087,8 @@ export const airportSources: AirportSource[] = [
     rank: 50,
     officialHref: 'https://www.flybit6202.com/#/register?code=MmE2PsQJ',
     universalSubscription: false,
-    minPlanText: '15元 60G/月',
-    hasOneTimePackage: false,
+    minPlanText: '15元 128GB/月',
+    hasOneTimePackage: true,
     telegramHref: 'https://t.me/+rYzRmCbJfIw3ZTM1',
     reviewHref: '/article/ssone/',
     rankChangeLabel: '↓25',
@@ -3592,11 +4154,11 @@ export const airportSources: AirportSource[] = [
   {
     id: '唯兔云',
     name: '唯兔云',
-    description: '唯兔云IPLC专线，Trojan协议，解锁各大流媒体，解锁ChatGPT、Gemini等AI，解锁Tiktok，支持电商、直播运营。套餐无倍率、不限速、不限制设备数量，支持支付宝微信usdt，除了港、台、日、美、新常规的五国节点以外，我们还有东南亚五国，韩国以及一些欧美国家。价格惠民，最低6元一个月，专线中的性价比战斗机。售后服务绝对有保障，多人客服团队轮流坐班，海外技术团队稳定可靠。可提供小火箭下载账号，可提供TG代注册服务等等',
+    description: '唯兔云IPLC专线，Trojan协议，解锁各大流媒体，解锁ChatGPT、Gemini等AI，解锁Tiktok，支持电商、直播运营。套餐无倍率、不限速、不限制设备数量，支持支付宝微信usdt，除了港、台、日、美、新常规的五国节点以外，我们还有东南亚五国，韩国以及一些欧美国家。当前年付版79.9元45GB，普通版19.9元150GB/月。售后服务绝对有保障，多人客服团队轮流坐班，海外技术团队稳定可靠。可提供小火箭下载账号，可提供TG代注册服务等等',
     rank: 29,
     officialHref: 'https://a01.v2cvipaff.cc/#/?code=iaD6AgSx',
     universalSubscription: false,
-    minPlanText: '6元 45G/月',
+    minPlanText: '79.9元 45GB/年',
     hasOneTimePackage: true,
     telegramHref: 'https://t.me/v2yun_v2',
     reviewHref: '/article/weituyun/',
@@ -3620,12 +4182,12 @@ export const airportSources: AirportSource[] = [
   {
     id: 'superbiu',
     name: 'superbiu',
-    description: 'SuperBiu 机场 依托三网（电信/联通/移动）入口的 IPLC 专线，实现跨境高速互联。凭借自研流媒体解锁与多区域部署，晚高峰依旧能秒开 8K 视频，并在隐私、安全方面保持高标准。一次性套餐适合临时出差、备用机场或多设备共享，流量用完前不会过期。',
+    description: 'SuperBiu 机场依托三网（电信/联通/移动）入口的 IPLC 专线，实现跨境高速互联。当前套餐包括 14 元 50GB 月付及多档按月、按年流量方案。',
     rank: 46,
     officialHref: 'https://biubiux.online/#/register?code=BasmsULb',
     universalSubscription: false,
-    minPlanText: '11元 50G/月',
-    hasOneTimePackage: true,
+    minPlanText: '14元 50GB/月',
+    hasOneTimePackage: false,
     telegramHref: 'https://t.me/superbiu888',
     reviewHref: '/blog/superbiu/',
     rankChangeLabel: '↓13',
@@ -3639,7 +4201,7 @@ export const airportSources: AirportSource[] = [
     rank: 14,
     officialHref: 'https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m',
     universalSubscription: false,
-    minPlanText: '8元 60G/月',
+    minPlanText: '96元 60GB/年',
     hasOneTimePackage: true,
     telegramHref: 'https://t.me/JLYCloud',
     reviewHref: '/blog/jilianyun/',
@@ -3683,7 +4245,7 @@ export const airportSources: AirportSource[] = [
     officialHref: 'https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr',
     universalSubscription: false,
     minPlanText: '18元 110G/月',
-    hasOneTimePackage: true,
+    hasOneTimePackage: false,
     telegramHref: 'https://t.me/guangnianti',
     reviewHref: '/blog/guangnianti/',
     rankChangeLabel: '↓5',
@@ -3697,7 +4259,7 @@ export const airportSources: AirportSource[] = [
     rank: 47,
     officialHref: 'https://gx.dreamcl.sbs/#/register?code=GFUAEweX',
     universalSubscription: false,
-    minPlanText: '8.8元 300GB/月',
+    minPlanText: '8.8元 100GB/月',
     hasOneTimePackage: false,
     telegramHref: '',
     reviewHref: '/blog/mengxiangyun/',
@@ -3775,11 +4337,11 @@ export const airportSources: AirportSource[] = [
   {
     id: '光速云',
     name: '光速云',
-    description: '光速云IEPL专线机场，提供高品质线路，支持 Trojan/SS 等协议，专注于稳定流媒体与跨境业务。全线解锁 Netflix、Disney+、YouTube、ChatGPT、Gemini 等平台与 AI 服务，并支持 TikTok 跨区，适合跨境电商、直播运营、远程办公等高要求用户。套餐无限速、无倍率、不限制设备数（合理使用），支持支付宝、USDT 付款。节点覆盖港台、日美新、东南亚、韩国及多国欧美地区，价格亲民，月付最低8.25元起，另提供1T大流量永久套餐。拥有多客服团队与海外技术支持，可提供小火箭下载、TG代注册等增值服务。',
+    description: '光速云IEPL专线机场，提供高品质线路，支持 Trojan/SS 等协议，专注于稳定流媒体与跨境业务。全线解锁 Netflix、Disney+、YouTube、ChatGPT、Gemini 等平台与 AI 服务，并支持 TikTok 跨区，适合跨境电商、直播运营、远程办公等高要求用户。套餐无限速、无倍率、不限制设备数（合理使用），支持支付宝、USDT 付款。节点覆盖港台、日美新、东南亚、韩国及多国欧美地区，当前轻量版99元/年、极速版17元110GB/月，另提供1T大流量永久套餐。拥有多客服团队与海外技术支持，可提供小火箭下载、TG代注册等增值服务。',
     rank: 39,
     officialHref: 'https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku',
     universalSubscription: false,
-    minPlanText: '8.25元 59G/月',
+    minPlanText: '99元 59GB/年',
     hasOneTimePackage: true,
     telegramHref: 'https://t.me/LightspeedCloud',
     reviewHref: '/blog/guangsuyun/',
@@ -3807,7 +4369,7 @@ export const airportSources: AirportSource[] = [
     rank: 51,
     officialHref: 'https://ermaozi02.tntvipaff.cc/#/register?code=f1EyPwf3',
     universalSubscription: false,
-    minPlanText: '10元60g/月(季付)',
+    minPlanText: '30元 60GB/季',
     hasOneTimePackage: false,
     telegramHref: 'https://t.me/TNTCloud2',
     reviewHref: '/article/4uxesz79/',
@@ -3846,7 +4408,7 @@ export const airportSources: AirportSource[] = [
     rank: 45,
     officialHref: 'https://99vpn.bar/#/register?code=qzpkbzHF',
     universalSubscription: false,
-    minPlanText: '12.9元 99G/月',
+    minPlanText: '9.9元 70GB/月',
     hasOneTimePackage: true,
     telegramHref: 'https://t.me/jiujiuchat',
     reviewHref: '',
@@ -3902,8 +4464,8 @@ export const airportSources: AirportSource[] = [
     rank: 40,
     officialHref: 'https://qq.zjs2025.com/user/register?code=S74QiRGN',
     universalSubscription: false,
-    minPlanText: '18元 100G/月',
-    hasOneTimePackage: false,
+    minPlanText: '27元 150GB/月',
+    hasOneTimePackage: true,
     telegramHref: '',
     reviewHref: '/article/7eogfldo/',
     rankChangeLabel: '↑13',
