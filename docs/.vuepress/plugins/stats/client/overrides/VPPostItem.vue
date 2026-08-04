@@ -4,21 +4,12 @@ import type { PostsCoverStyle, ThemePostsItem } from 'vuepress-theme-plume/share
 import VPLink from '@theme/VPLink.vue'
 import { isMobile as _isMobile } from '@vuepress/helper/client'
 import { getReadingTimeLocale, useReadingTimeLocaleConfig } from '@vuepress/plugin-reading-time/client'
-import { computed, defineAsyncComponent, hydrateOnIdle, onMounted, onUnmounted, ref } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { withBase } from 'vuepress/client'
 import { useData, useInternalLink, useTagColors } from 'vuepress-theme-plume/client'
 
-import ArticleLikeButtonComponent from '../components/ArticleLikeButton.vue'
-import PageViewsComponent from '../components/PageViews.vue'
-
-const ArticleLikeButton = defineAsyncComponent({
-  loader: async () => ArticleLikeButtonComponent,
-  hydrate: hydrateOnIdle(2000),
-})
-const PageViews = defineAsyncComponent({
-  loader: async () => PageViewsComponent,
-  hydrate: hydrateOnIdle(2000),
-})
+import ArticleLikeButton from '../components/ArticleLikeButton.vue'
+import PageViews from '../components/PageViews.vue'
 
 const { post, index } = defineProps<{
   post: ThemePostsItem
