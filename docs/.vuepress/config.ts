@@ -77,9 +77,14 @@ const homepagePostsSsrPlugin = () => ({
   },
 })
 
+const versionVueEntry = (html: string) =>
+  html.replace(/(\/assets\/app-[^"]+\.js)"/g, '$1?v=1"')
+
 const renderBuildTemplate = (template: string, context: any) => templateRenderer(template, {
   ...context,
-  scripts: context.scripts.replace('<script type="module" src=', '<script data-cfasync="false" type="module" src='),
+  preload: versionVueEntry(context.preload),
+  scripts: versionVueEntry(context.scripts)
+    .replace('<script type="module" src=', '<script data-cfasync="false" type="module" src='),
 })
 
 const utilityPagesPlugin = () => ({

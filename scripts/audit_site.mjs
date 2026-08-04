@@ -223,6 +223,10 @@ for (const file of ['docs/.vuepress/dist/index.html', 'docs/.vuepress/dist/en/in
   if (!html.includes('<script data-cfasync="false" type="module" src=')) {
     addIssue(errors, 'homepage-rocket-loader-bypass', file, 'Vue entry script is not excluded from Rocket Loader')
   }
+  if (!/modulepreload" href="\/assets\/app-[^"]+\.js\?v=1"/.test(html)
+    || !/<script data-cfasync="false" type="module" src="\/assets\/app-[^"]+\.js\?v=1"/.test(html)) {
+    addIssue(errors, 'homepage-entry-cache-version', file, 'Vue entry preload and script do not share the cache version')
+  }
 }
 
 const trustRoutes = [
