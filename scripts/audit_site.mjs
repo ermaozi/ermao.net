@@ -227,9 +227,24 @@ for (const file of ['docs/.vuepress/dist/index.html', 'docs/.vuepress/dist/en/in
   if (!html.includes('<script data-cfasync="false" type="module" src=')) {
     addIssue(errors, 'homepage-rocket-loader-bypass', file, 'Vue entry script is not excluded from Rocket Loader')
   }
+  const appPath = html.match(/<script data-cfasync="false" type="module" src="([^"]+)"/)?.[1]
+  if (appPath) {
+    const app = await fs.readFile(path.join(docsDir, '.vuepress/dist', appPath), 'utf8')
+    if (/import\(["']\.\/[^"']+\.js["']\)/.test(app)
+      || /["']assets\/[^"']+\.js["']/.test(app)) {
+      addIssue(errors, 'homepage-lazy-asset-version', file, 'Lazy JavaScript assets are missing the cache version')
+    }
+  }
   if (!/rel="preload" href="\/assets\/style-[^"]+\.css\?v=1" as="style"/.test(html)
     || !/rel="stylesheet" href="\/assets\/style-[^"]+\.css\?v=1"/.test(html)) {
     addIssue(errors, 'homepage-style-cache-version', file, 'Critical CSS preload and stylesheet do not share the cache version')
+  }
+}
+
+for (const file of await glob('docs/.vuepress/dist/assets/*.js')) {
+  const code = await fs.readFile(file, 'utf8')
+  if (/(?:from|import)["']\.\/(?!app-)[^"']+\.js["']/.test(code)) {
+    addIssue(errors, 'lazy-asset-static-import-version', file, 'Lazy chunk dependency is missing the cache version')
   }
 }
 

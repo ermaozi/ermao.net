@@ -77,6 +77,19 @@ const homepagePostsSsrPlugin = () => ({
   },
 })
 
+const versionLazyAssetsPlugin = () => ({
+  name: 'ermao-version-lazy-assets',
+  generateBundle(_: unknown, bundle: Record<string, any>) {
+    for (const output of Object.values(bundle)) {
+      if (output.type !== 'chunk') continue
+      output.code = output.code
+        .replace(/(import\(["']\.\/[^"']+\.js)(["']\))/g, '$1?v=1$2')
+        .replace(/(["']assets\/[^"']+\.js)(["'])/g, '$1?v=1$2')
+        .replace(/((?:from|import)["']\.\/)(?!app-)([^"']+\.js)(["'])/g, '$1$2?v=1$3')
+    }
+  },
+})
+
 const versionCriticalStyle = (html: string) =>
   html.replace(/(\/assets\/style-[^"]+\.css)"/g, '$1?v=1"')
 
@@ -326,6 +339,7 @@ export default defineUserConfig({
   }),
   bundler: viteBundler({
     viteOptions: {
+      plugins: [versionLazyAssetsPlugin()],
       optimizeDeps: {
         include: ['vue-chartjs', 'chart.js'],
         exclude: [
