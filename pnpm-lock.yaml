@@ -48,6 +48,9 @@ importers:
       '@vuepress/plugin-reading-time':
         specifier: 2.0.0-rc.121
         version: 2.0.0-rc.121(typescript@5.9.3)(vuepress@2.0.0-rc.26(@vuepress/bundler-vite@2.0.0-rc.26(@types/node@25.0.8)(stylus@0.64.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))(typescript@5.9.3)(vue@3.5.29(typescript@5.9.3)))
+      '@vuepress/utils':
+        specifier: 2.0.0-rc.26
+        version: 2.0.0-rc.26
       dotenv:
         specifier: ^17.2.3
         version: 17.2.3

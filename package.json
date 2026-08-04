@@ -29,6 +29,7 @@
     "@vuepress/client": "2.0.0-rc.26",
     "@vuepress/helper": "2.0.0-rc.121",
     "@vuepress/plugin-reading-time": "2.0.0-rc.121",
+    "@vuepress/utils": "2.0.0-rc.26",
     "dotenv": "^17.2.3",
     "exifr": "^7.0.0",
     "glob": "^13.0.1",
