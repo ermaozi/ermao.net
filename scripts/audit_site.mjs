@@ -227,6 +227,10 @@ for (const file of ['docs/.vuepress/dist/index.html', 'docs/.vuepress/dist/en/in
     || !/<script data-cfasync="false" type="module" src="\/assets\/app-[^"]+\.js\?v=1"/.test(html)) {
     addIssue(errors, 'homepage-entry-cache-version', file, 'Vue entry preload and script do not share the cache version')
   }
+  if (!/rel="preload" href="\/assets\/style-[^"]+\.css\?v=1" as="style"/.test(html)
+    || !/rel="stylesheet" href="\/assets\/style-[^"]+\.css\?v=1"/.test(html)) {
+    addIssue(errors, 'homepage-style-cache-version', file, 'Critical CSS preload and stylesheet do not share the cache version')
+  }
 }
 
 const trustRoutes = [

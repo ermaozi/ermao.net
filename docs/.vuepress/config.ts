@@ -77,14 +77,15 @@ const homepagePostsSsrPlugin = () => ({
   },
 })
 
-const versionVueEntry = (html: string) =>
-  html.replace(/(\/assets\/app-[^"]+\.js)"/g, '$1?v=1"')
+const versionCriticalAsset = (html: string) =>
+  html.replace(/(\/assets\/(?:app-[^"]+\.js|style-[^"]+\.css))"/g, '$1?v=1"')
 
 const renderBuildTemplate = (template: string, context: any) => templateRenderer(template, {
   ...context,
-  preload: versionVueEntry(context.preload),
-  scripts: versionVueEntry(context.scripts)
+  preload: versionCriticalAsset(context.preload),
+  scripts: versionCriticalAsset(context.scripts)
     .replace('<script type="module" src=', '<script data-cfasync="false" type="module" src='),
+  styles: versionCriticalAsset(context.styles),
 })
 
 const utilityPagesPlugin = () => ({
