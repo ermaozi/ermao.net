@@ -5,6 +5,10 @@ account_id = "b0021b5742f923f992a9e15ad797de45"
 workers_dev = true
 preview_urls = false
 
+[observability]
+enabled = true
+head_sampling_rate = 0.05
+
 [vars]
 ALLOWED_ORIGINS = "https://www.ermao.net,https://ermao.net"
 SITE_URL = "https://www.ermao.net/ad-board/"
