@@ -18,8 +18,12 @@ description: 手把手教你把 DeepSeek V4 接进 VS Code：接入有什么好�
 
 <!-- more -->
 
-::: warning 先说清边界
-本文讲的 **DeepSeek V4 系列**（旗舰版与 Flash 轻量版）是当前 DeepSeek 主推的 API 模型，通过 OpenAI 兼容接口对外提供。它**不是**站内对话的 Chat 网页，而是给你自己的工具（VS Code、脚本、应用）调用的接口。接入前后的一些细节（如具体模型名、费率）以 [DeepSeek 官方文档](https://api-docs.deepseek.com/) 为准。
+::: warning 非常糟糕
+本篇文章写完不久，deepseek 宣布涨价且幅度较大！评级从梁圣下调为梁子，是否继续下调得看具体涨价幅度和Pro正式版的成色。
+
+![deepseek涨价 =1024x342](https://image.ermao.net/images/blog/vscode-deepseek-v4/20260806_164022-1d8f14.png)
+
+本文中的单价计算已失去参考价值，请以 [DeepSeek 官方定价页面](https://api-docs.deepseek.com/quick_start/pricing) 为准。
 :::
 
 ## 接入 DeepSeek V4 有什么好处

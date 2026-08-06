@@ -20,8 +20,12 @@ The first time I pasted in an API key and watched the editor suggest a line of c
 
 <!-- more -->
 
-::: warning A few boundaries first
-This article covers the **DeepSeek V4 family** (the flagship model and the lighter Flash edition), which DeepSeek currently exposes through an OpenAI-compatible API. It is **not** the chat web app on the website; it is an interface you call from your own tools (VS Code, scripts, applications). Details like exact model names and pricing follow the [official DeepSeek documentation](https://api-docs.deepseek.com/).
+::: warning Very bad news
+Shortly after this article was published, **DeepSeek announced a significant price hike**. Rating downgraded from "sage" to "scoundrel"—further downgrades depend on the magnitude and the quality of the Pro official version.
+
+![DeepSeek price hike announcement =1024x342](https://image.ermao.net/images/blog/vscode-deepseek-v4/20260806_164022-1d8f14.png)
+
+The per-unit pricing calculations in this article are no longer a useful reference. Please check the [official DeepSeek pricing page](https://api-docs.deepseek.com/quick_start/pricing) for current rates.
 :::
 
 ## What's in it for you
