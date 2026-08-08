@@ -16,6 +16,7 @@ const englishNames: Record<string, string> = {
   暮光加速: 'Twilight',
   智联网络: 'Zhilian Network',
   无忧链接: 'Wuyou Link',
+  云图高速: 'Yuntu Airport',
   可信云: 'Kexin Cloud',
   梯子云: 'LadderCloud',
   影子云: 'Yingzi Cloud',
