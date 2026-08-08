@@ -55,7 +55,6 @@ const fetchPopularPosts = async (force = false) => {
             popularHasLoaded.value = true
         }
     } catch (e) {
-        popularPosts.value = []
     } finally {
         popularLoading.value = false
     }
@@ -78,12 +77,10 @@ const fetchLikedPosts = async (force = false) => {
             likesHasLoaded.value = true
         }
     } catch (e) {
-        likedPosts.value = []
     } finally {
         likesLoading.value = false
         if (likesRefreshPending) {
             likesRefreshPending = false
-            likesHasLoaded.value = false
             fetchLikedPosts(true)
         }
     }
@@ -94,9 +91,14 @@ const fetchActivePosts = () => {
     return fetchPopularPosts()
 }
 
-const selectTab = (tab) => {
-    activeTab.value = tab
-    fetchActivePosts()
+const selectTab = async (tab) => {
+    if (tab === activeTab.value) return
+
+    if (tab === 'likes') await fetchLikedPosts()
+    else await fetchPopularPosts()
+
+    const hasLoaded = tab === 'likes' ? likesHasLoaded.value : popularHasLoaded.value
+    if (hasLoaded) activeTab.value = tab
 }
 
 const checkDomAndShow = async () => {
@@ -152,8 +154,10 @@ const checkDomAndShow = async () => {
 watch(() => page.value.path, checkDomAndShow, { immediate: true })
 
 const refreshAfterLike = () => {
-    likesHasLoaded.value = false
-    if (activeTab.value !== 'likes') return
+    if (activeTab.value !== 'likes') {
+        likesHasLoaded.value = false
+        return
+    }
     if (likesLoading.value) {
         likesRefreshPending = true
         return
@@ -176,10 +180,6 @@ onUnmounted(() => {
 // Filter out 404, home, stats page itself if they appear
 const activePosts = computed(() =>
     activeTab.value === 'likes' ? likedPosts.value : popularPosts.value
-)
-
-const loading = computed(() =>
-    activeTab.value === 'likes' ? likesLoading.value : popularLoading.value
 )
 
 const filteredPosts = computed(() => {
@@ -240,7 +240,7 @@ const navigate = (path) => {
 
 <template>
   <ClientOnly>
-    <Teleport :to="targetSelector" v-if="canShow">
+    <Teleport :to="targetSelector" v-if="canShow && popularHasLoaded">
       <div class="popular-posts-widget" :class="{'in-doc': targetSelector === '.vp-doc-aside'}">
         <div class="widget-header">
           <div class="widget-tabs" role="tablist" :aria-label="isEnglish ? 'Article rankings' : '文章排行'">
@@ -267,11 +267,7 @@ const navigate = (path) => {
           </div>
         </div>
         
-        <div v-if="loading" style="text-align: center; padding: 20px; color: #999;">
-           {{ isEnglish ? 'Loading...' : '加载中...' }}
-        </div>
-
-        <div v-else-if="filteredPosts.length === 0" style="text-align: center; padding: 20px; color: #999;">
+        <div v-if="filteredPosts.length === 0" style="text-align: center; padding: 20px; color: #999;">
            {{ isEnglish
              ? (activeTab === 'likes' ? 'No like data' : 'No popular-post data')
              : (activeTab === 'likes' ? '暂无点赞数据' : '暂无热门数据') }}

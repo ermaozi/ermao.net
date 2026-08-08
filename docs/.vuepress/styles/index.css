@@ -228,6 +228,19 @@ html {
   }
 }
 
+/* Posts also discover their local outline row after hydration below the wide desktop layout. */
+@media screen and (max-width: 959px) {
+  .theme-plume:not(:has(> .vp-local-nav)) > #VPContent:has(.vp-doc-container.is-posts) {
+    margin-top: 49px;
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1119px) {
+  .theme-plume:not(:has(> .vp-local-nav)) > #VPContent:has(.vp-doc-container.is-posts) {
+    margin-top: 48px;
+  }
+}
+
 /* Stats hydrate into this row; keep the date on its final line from first paint. */
 @media (min-width: 768px) {
   .vp-doc-container .vp-doc-meta .create-time {

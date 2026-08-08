@@ -1,5 +1,5 @@
 ---
-title: Clash for Android Download and Installation Guide (2026)
+title: "Clash for Android: Download, Install, and Import a Subscription (2026)"
 createTime: 2024/09/17 17:26:51
 permalink: /en/article/eh8f4n86/
 lang: en-US
@@ -10,10 +10,10 @@ tags:
   - Clash
   - Android
   - Clash Meta
-description: A beginner guide to installing Clash Meta or Clash for Android, importing a proxy-subscription URL, setting automatic updates, and connecting.
+description: Download Clash Meta for Android from the official MetaCubeX GitHub release, install the APK, import a subscription URL, and connect on Android.
 ---
 
-This 2026 guide explains how to download and install Clash for Android and is intended for beginners.
+For Clash on Android, download the actively maintained Clash Meta for Android from MetaCubeX's GitHub Releases. This guide covers the APK download, subscription-URL import, and connection steps.
 
 <!-- more -->
 
@@ -21,21 +21,21 @@ This 2026 guide explains how to download and install Clash for Android and is in
 
 ::: tabs
 
-@tab Clash Meta for Android (recommended)
+@tab Official GitHub (recommended)
+
+[MetaCubeX / ClashMetaForAndroid Releases](https://github.com/MetaCubeX/ClashMetaForAndroid/releases/latest)
+
+@tab Clash Meta APK mirror
 
 [https://down.shudongapi.monster/client-download/cmfa.apk](https://down.shudongapi.monster/client-download/cmfa.apk)
 
-@tab Clash for Android
+@tab Clash for Android APK mirror
 
 [https://down.shudongapi.monster/client-download/clash.apk](https://down.shudongapi.monster/client-download/clash.apk)
 
-@tab GitHub
-
-[https://github.com/cfwtf/clash_for_android/releases](https://github.com/cfwtf/clash_for_android/releases)
-
 :::
 
-Choose any of the three versions above. The source guide recommends Clash Meta for Android.
+Prefer the official GitHub release. The two direct APK links are third-party mirrors; do not use them if you need to verify the publisher.
 
 ## Add a subscription
 

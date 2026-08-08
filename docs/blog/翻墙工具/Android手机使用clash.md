@@ -1,5 +1,5 @@
 ---
-title: 2026年 Clash for Android 下载与安装
+title: 2026 Clash for Android：下载、安装与订阅导入
 createTime: 2024/09/17 17:26:51
 permalink: /article/eh8f4n86/
 tags:
@@ -9,11 +9,11 @@ tags:
   - android
   - 翻墙
   - Clash Meta
-description: 2026年Android手机Clash下载安装教程，简单易用适合新手。学习科学上网、VPN翻墙配置，包含Clash Meta For Android和Clash For Android安装、订阅URL导入和使用指南。
+description: Clash for Android 安卓教程：从 MetaCubeX 官方 GitHub 下载 Clash Meta for Android，完成 APK 安装、订阅 URL 导入和连接。
 
 ---
 
-2026 年实测 Clash for Android 下载与安装，简单易用，适合新手。
+要在 Android 上使用 Clash，建议从 MetaCubeX 的 GitHub Releases 下载当前仍在维护的 Clash Meta for Android。本教程依次说明 APK 下载、订阅 URL 导入和启动连接。
 
 <!-- more -->
 
@@ -21,21 +21,21 @@ description: 2026年Android手机Clash下载安装教程，简单易用适合新
 
 ::: tabs
 
-@tab Clash Meta For Android (推荐)
+@tab 官方 GitHub（推荐）
+
+[MetaCubeX / ClashMetaForAndroid Releases](https://github.com/MetaCubeX/ClashMetaForAndroid/releases/latest)
+
+@tab Clash Meta APK 镜像
 
 [https://down.shudongapi.monster/client-download/cmfa.apk](https://down.shudongapi.monster/client-download/cmfa.apk)
 
-@tab Clash For Android
+@tab Clash for Android APK 镜像
 
 [https://down.shudongapi.monster/client-download/clash.apk](https://down.shudongapi.monster/client-download/clash.apk)
 
-@tab github下载
-
-[https://github.com/cfwtf/clash_for_android/releases](https://github.com/cfwtf/clash_for_android/releases)
-
 :::
 
-上面 3 个版本任选其一，推荐下载 Clash Meta For Android。
+优先使用官方 GitHub Release；两个 APK 直链由第三方镜像提供，如需核对发布来源，不要使用镜像。
 
 ## 配置
 

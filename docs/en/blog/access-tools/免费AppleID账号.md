@@ -49,33 +49,51 @@ The pool may include U.S., Japanese, South Korean, Hong Kong, and Taiwan account
   </button>
 </div>
 
-<div v-if="loading && accounts.length === 0" style="text-align: center; padding: 20px;">
-  Loading the latest account information...
-</div>
+<div class="account-pool" :aria-busy="loading">
+  <div v-if="loading && accounts.length === 0" class="account-loading" role="status">
+    <div class="account-grid account-grid-skeleton" aria-hidden="true">
+      <div v-for="slot in 6" :key="slot" class="account-skeleton-card"></div>
+    </div>
+    <p class="account-loading-label">Loading the latest account information...</p>
+  </div>
 
-<div v-else-if="error" style="color: red; text-align: center; padding: 20px;">
-  {{ error }}
-</div>
+  <p v-else-if="error" class="account-error" role="alert">{{ error }}</p>
 
-<div v-else class="account-grid">
-  <Card v-for="(acc, index) in accounts" :key="index">
-    <Badge :type="getBadgeType(acc.region)" :text="getRegionLabel(acc.region)" />
-    <span class="account_warring">App Store only. Signing in under Settings can lock the device.</span>
-    <br><br>
-    Account <code>{{ acc.email }}</code>
-    <br><br>
-    Password <Plot trigger="click" effect="blur"><code>{{ acc.password }}</code></Plot>
-    <br><br>
-    <button class="copy-btn" @click="copy(acc.email, acc, 'email')">
-        {{ acc.copiedEmail ? 'Copied' : 'Copy account' }}
-    </button>
-    <button class="copy-btn" @click="copy(acc.password, acc, 'password')">
-        {{ acc.copiedPassword ? 'Copied' : 'Copy password' }}
-    </button>
-  </Card>
+  <div v-else class="account-grid">
+    <Card v-for="(acc, index) in accounts" :key="index">
+      <Badge :type="getBadgeType(acc.region)" :text="getRegionLabel(acc.region)" />
+      <span class="account_warring">App Store only. Signing in under Settings can lock the device.</span>
+      <br><br>
+      Account <code>{{ acc.email }}</code>
+      <br><br>
+      Password <Plot trigger="click" effect="blur"><code>{{ acc.password }}</code></Plot>
+      <br><br>
+      <button class="copy-btn" @click="copy(acc.email, acc, 'email')">
+          {{ acc.copiedEmail ? 'Copied' : 'Copy account' }}
+      </button>
+      <button class="copy-btn" @click="copy(acc.password, acc, 'password')">
+          {{ acc.copiedPassword ? 'Copied' : 'Copy password' }}
+      </button>
+    </Card>
+  </div>
 </div>
 
 <style>
+.account-pool {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+.account-loading-label,
+.account-error {
+  text-align: center;
+  padding: 20px;
+}
+.account-loading-label {
+  color: var(--vp-c-text-2);
+}
+.account-error {
+  color: red;
+}
 .account_warring {
   color: #ff4d4f;
   font-size: 13px;
@@ -89,6 +107,12 @@ The pool may include U.S., Japanese, South Korean, Hong Kong, and Taiwan account
 
 .account-grid > * {
   margin: 0 !important;
+}
+.account-skeleton-card {
+  min-height: 180px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: linear-gradient(110deg, var(--vp-c-bg-soft) 8%, var(--vp-c-bg-alt) 18%, var(--vp-c-bg-soft) 33%);
 }
 
 .copy-btn {

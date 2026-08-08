@@ -50,33 +50,51 @@ description: 2026年最新免费共享美区Apple ID账号，每日更新可用�
   </button>
 </div>
 
-<div v-if="loading && accounts.length === 0" style="text-align: center; padding: 20px;">
-  正在获取最新账号信息...
-</div>
+<div class="account-pool" :aria-busy="loading">
+  <div v-if="loading && accounts.length === 0" class="account-loading" role="status">
+    <div class="account-grid account-grid-skeleton" aria-hidden="true">
+      <div v-for="slot in 6" :key="slot" class="account-skeleton-card"></div>
+    </div>
+    <p class="account-loading-label">正在获取最新账号信息...</p>
+  </div>
 
-<div v-else-if="error" style="color: red; text-align: center; padding: 20px;">
-  {{ error }}
-</div>
+  <p v-else-if="error" class="account-error" role="alert">{{ error }}</p>
 
-<div v-else class="account-grid">
-  <Card v-for="(acc, index) in accounts" :key="index">
-    <Badge :type="getBadgeType(acc.region)" :text="acc.region" />
-    <span class="account_warring">只能登录 App Store，登录设置会导致锁机！</span>
-    <br><br>
-    账号 <code>{{ acc.email }}</code>
-    <br><br>
-    密码 <Plot trigger="click" effect="blur"><code>{{ acc.password }}</code></Plot>
-    <br><br>
-    <button class="copy-btn" @click="copy(acc.email, acc, 'email')">
-        {{ acc.copiedEmail ? '已复制' : '复制账号' }}
-    </button> 
-    <button class="copy-btn" @click="copy(acc.password, acc, 'password')">
-        {{ acc.copiedPassword ? '已复制' : '复制密码' }}
-    </button>
-  </Card>
+  <div v-else class="account-grid">
+    <Card v-for="(acc, index) in accounts" :key="index">
+      <Badge :type="getBadgeType(acc.region)" :text="acc.region" />
+      <span class="account_warring">只能登录 App Store，登录设置会导致锁机！</span>
+      <br><br>
+      账号 <code>{{ acc.email }}</code>
+      <br><br>
+      密码 <Plot trigger="click" effect="blur"><code>{{ acc.password }}</code></Plot>
+      <br><br>
+      <button class="copy-btn" @click="copy(acc.email, acc, 'email')">
+          {{ acc.copiedEmail ? '已复制' : '复制账号' }}
+      </button>
+      <button class="copy-btn" @click="copy(acc.password, acc, 'password')">
+          {{ acc.copiedPassword ? '已复制' : '复制密码' }}
+      </button>
+    </Card>
+  </div>
 </div>
 
 <style>
+.account-pool {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+.account-loading-label,
+.account-error {
+  text-align: center;
+  padding: 20px;
+}
+.account-loading-label {
+  color: var(--vp-c-text-2);
+}
+.account-error {
+  color: red;
+}
 .account_warring {
   color: #ff4d4f;
   font-size: 13px;
@@ -91,6 +109,12 @@ description: 2026年最新免费共享美区Apple ID账号，每日更新可用�
 /* 强制清除 Card 组件可能自带的外边距 */
 .account-grid > * {
   margin: 0 !important;
+}
+.account-skeleton-card {
+  min-height: 180px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: linear-gradient(110deg, var(--vp-c-bg-soft) 8%, var(--vp-c-bg-alt) 18%, var(--vp-c-bg-soft) 33%);
 }
 
 .copy-btn {

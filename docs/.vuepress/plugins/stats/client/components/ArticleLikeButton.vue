@@ -443,8 +443,15 @@ onBeforeUnmount(() => {
 }
 
 .like-error {
-  color: var(--vp-c-danger-1, #c23a4f);
-  font-size: 12px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(50%);
 }
 
 @media (prefers-reduced-motion: reduce) {
