@@ -1,0 +1,54 @@
+---
+url: /en/article/jd2i293q/index.md
+description: >-
+  A dated Baibian Xiaoying record covering its CNY 15 entry tier, historical
+  discount codes, tunnel and dedicated-route claims, payment methods, and tests.
+---
+Baibian Xiaoying was described as a smaller service operating since 2020, with a tunnel and dedicated-route mix, streaming access, and bundled streaming accounts. The least expensive source-recorded subscription was CNY 15 for 100 GB over 30 days.
+
+Recorded website: [bbxy88.xyz](https://www.bbxy88.xyz/v2/register?code=WuuD)
+
+## Historical discount codes
+
+The source listed:
+
+* six-month billing at 5% off: `happy10-1-6month`;
+* one-year billing at 12% off: `happy10-1-1year`; and
+* three-year billing at 22% off: `happy10-1-3years`.
+
+These codes and discounts are dated. Verify them at checkout. A larger long-term discount also increases the amount exposed to provider closure or policy changes.
+
+## Provider-stated features
+
+The source says the provider:
+
+* uses a tunnel and dedicated-route combination;
+* offers two unspecified usage modes;
+* provides a simplified custom panel;
+* moved its team overseas;
+* supports broad streaming access;
+* bundles streaming accounts;
+* works with SSR-family subscription clients such as Shadowrocket and Clash; and
+* accepts Alipay, WeChat Pay, and USDT.
+
+Team location, low price, and an operating-history claim do not prove continuity. Bundled or shared streaming accounts may expose credentials, be withdrawn, or conflict with platform terms. USDT payments are generally irreversible and provide weaker dispute options than ordinary consumer payments.
+
+![Baibian Xiaoying archived pricing 1 =2915x857](https://image.ermao.net/images/article/jd2i293q/image.png)
+
+![Baibian Xiaoying archived pricing 2 =2902x845](https://image.ermao.net/images/article/jd2i293q/image-1.png)
+
+## Archived test
+
+![Baibian Xiaoying archived test =1280x1013](https://image.ermao.net/images/article/jd2i293q/image-2.png)
+
+## Purchase boundary
+
+The CNY 15 monthly option is the appropriate evidence-gathering tier if still available. Confirm plan data, multiplier, node classes, device and sharing limits, reset, refund, and current operator contact before considering six-month or longer billing.
+
+See the [proxy-service review index](/en/posts/vpn/) for comparisons.
+
+## Client guides
+
+* [Android Clash guide](/en/article/eh8f4n86/)
+* [Windows Clash guide](/en/article/0gematwc/)
+* [iOS Shadowrocket guide](/en/article/z747kgjd/)

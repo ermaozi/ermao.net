@@ -1,0 +1,143 @@
+---
+url: /en/blog/cross-border-network-ai-weekly-2026-07-23/index.md
+description: >-
+  Verified July 17–23 developments in v2rayN and sing-box, GitHub Actions
+  certificates, OpenAI and Claude incidents, Delhi and AJK disruptions, and
+  Google Play regulation.
+---
+This issue covers July 17–23, 2026. v2rayN shipped a downloader security fix and sing-box 1.14 entered beta. A GitHub Actions certificate failure affected some AI workflows, while OpenAI and Claude recorded several availability incidents. Reports about a New Delhi shutdown, restoration in Mirpur, and Google Play regulation still had important evidence boundaries.
+
+## Weekly overview
+
+| Track | Event | Verified fact | Reader impact | Evidence status |
+| --- | --- | --- | --- | --- |
+| Supply-chain security | v2rayN 7.24.1 | Maintainer says it fixes a legacy downloader risk that could permit MITM and malicious downloads | Older users should update only through the official release | Project source; release marked pre-release; no CVE, lower affected version, or observed-exploitation evidence |
+| Proxy tools | sing-box 1.14.0-beta.1 | Corrected rule-set matching semantics and added search-domain rules and concurrent DNS-response evaluation | Complex rules and DNS setups need regression testing | Project source; pre-release; no independent compatibility matrix |
+| Infrastructure | GitHub Actions certificate incident | Expired internal certificates prevented self-hosted and larger-hosted runners from connecting and increased load elsewhere | CI, releases, and GitHub-dependent AI workflows could fail or be delayed | Complete GitHub report and corroborating OpenAI incident |
+| AI services | Several OpenAI incidents | Official incidents affected conversations, images, uploads, login, and other components at different times | Check the affected component before blaming a proxy or account | Official status; root cause and affected percentage often unpublished |
+| AI services | Several Claude incidents | Different models and claude.ai, API, Code, Cowork, and Office add-in surfaces were affected | Model and product behavior could differ in the same period | Official status; root cause and geographic distribution unpublished |
+| Shutdowns | Jantar Mantar, New Delhi | Two outlets reported a 1.5 km mobile-Internet suspension extended through midnight July 23 | An operator-level local shutdown differs from a website or DNS failure | Multiple media reports; no public order text or measurement |
+| Restoration | Mirpur, AJK | Media reported service beginning to return in Mirpur and nearby areas after 45 days | Mirpur cannot be generalized to all of AJK | Three outlets; no regulator or operator notice or measurement |
+| Digital regulation | Google Play DMA anti-steering decision | European Commission found Play steering restrictions noncompliant and imposed a EUR 430 million fine for that part | Could affect how developers link to external purchase options | Commission source and independent report; product changes not yet verified |
+
+## Client updates
+
+### v2rayN 7.24.1: security update with an incomplete impact boundary
+
+On July 17, the project published [v2rayN 7.24.1](https://github.com/2dust/v2rayN/releases/tag/7.24.1). The maintainer described it as an urgent security update: the older built-in downloader could be vulnerable to a man-in-the-middle attack and download malicious files. The release also lists Avalonia 12, Happy Eyeballs, and changes to proxy-resolution strategy. GitHub still marked it as a pre-release at the review cutoff.
+
+The useful response is to update from the official project release, back up configuration, and retain verification information—not to search file-sharing sites for an “already patched” build. Users who avoid pre-releases should watch for a later stable build.
+
+No CVE, lower affected-version boundary, detailed exploitation condition, or in-the-wild exploitation evidence had been published. The bounded conclusion is that the maintainer issued a security fix and upgrade recommendation, not that a mass attack was observed.
+
+See the [proxy-client directory](/en/article/fanqiang-tools/) for the roles of v2rayN, Clash Verge Rev, and sing-box.
+
+### sing-box 1.14 entered beta
+
+[sing-box v1.14.0-beta.1](https://github.com/SagerNet/sing-box/releases/tag/v1.14.0-beta.1), released July 23, moved 1.14 from alpha to its first beta. The project corrected previously undefined and counterintuitive rule-set matching, added search-domain DNS rule items, and allowed multiple response evaluations to race in parallel.
+
+The project did not label the rule-set correction a breaking change, but acknowledged that configurations relying on the old undefined behavior could change. Users of custom rule sets, `evaluate`/`race`, or complex DNS routing should compare matches and latency in a copy. An ordinary provider subscriber does not need to treat a beta as a mandatory stable update.
+
+The week's alpha builds also added OpenVPN and OpenConnect endpoints and interoperability work, but no independent compatibility matrix was available.
+
+## GitHub certificate expiry and AI workflow impact
+
+GitHub's [full incident report](https://www.githubstatus.com/incidents/8vfyvq16hzh9) says that from about 07:05 to 11:55 Shanghai time on July 20, self-hosted and larger-hosted Actions runners could not connect because certificate-lifecycle management failed and certificates for internal services expired. Reconnection traffic then raised API load and degraded Issues, Pages, and API Requests. Standard and Mac hosted runners were not listed in the report's affected scope.
+
+An independent [OpenAI status incident](https://status.openai.com/incidents/01KXYF4BTCV9DTZ5NDSFN716FH) said GitHub-dependent ChatGPT and Codex workflows could also fail or be delayed, mainly Codex web and pull-request code review.
+
+The two official systems support a dependency-propagation conclusion. They do not support blaming a user's proxy because GitHub and Codex failed at the same time. Separate webpage, Git, API, Actions, and connector behavior during diagnosis.
+
+## AI service incidents
+
+### OpenAI: several components at different times
+
+The official timeline included at least:
+
+* [ChatGPT conversations, Voice, and Work Mode](https://status.openai.com/incidents/01KXXDNEAKEPRGFM661SBJJAM6) errors beginning the evening of July 19 and recovering early the next day;
+* [ChatGPT image generation](https://status.openai.com/incidents/01KY23YCPJ9M5BFFT6ZHKQE9MP) unavailable across July 21–22;
+* separate July 22 incidents for [login and signup](https://status.openai.com/incidents/01KY2ZF047ZNVDX0Z6F3QFXB1K), [API image generation](https://status.openai.com/incidents/01KY32PEQHPV5F2W4HCNFJ60RD), and [file uploads and image generation](https://status.openai.com/incidents/01KY4BT971GFN59WBT0CKSGCPJ);
+* a new [Elevated Error Rates incident](https://status.openai.com/incidents/01KY7SX5MYJ2BP51X5MXAPYX71) beginning at 23:36 Shanghai time on July 23 and listing several API, ChatGPT, and Codex components.
+
+At the July 24 09:06 review cutoff, the last incident was monitoring. The full root cause, geography, and request-failure percentage had not been published.
+
+An official incident window can help classify an error, but cannot prove that an individual account did not also encounter regional, IP, or entitlement controls.
+
+### Claude: several models and product surfaces
+
+The [Claude incidents API](https://status.claude.com/api/v2/incidents.json) recorded Opus, Haiku, Sonnet, and Fable errors between July 20 and 23, affecting different combinations of claude.ai, API, Console, Claude Code, Cowork, and the Microsoft 365 add-in.
+
+A critical multi-model and multi-service event occurred late July 21 into early July 22. July 23 brought additional Sonnet 5, Claude-service, Haiku 4.5, and Office add-in issues.
+
+At the review cutoff, the Office add-in incident remained identified. Whether the incidents shared one cause, and their percentage, geography, and plan distribution, were not public. “Officially recorded, consecutive incidents with different boundaries” is more accurate than saying Claude was down all week.
+
+## Shutdown and restoration reports
+
+### Jantar Mantar suspension through midnight July 23
+
+[The Week](https://www.theweek.in/news/india/2026/07/23/mha-s-fifth-internet-cut-around-cjp-protests-at-jantar-mantar-since-july-17-what-we-know-so-far.html) reported that a mobile-Internet suspension within 1.5 km of Jantar Mantar was extended through local midnight and called it the fifth since July 17. A [LiveMint timeline](https://www.livemint.com/news/india/cjp-protest-news-live-updates-salman-khan-support-delhi-police-opposition-dharmendra-pradhan-narendra-modi-jantar-mantar-11784765327647.html) also recorded a 16:00–24:00 extension and the same area.
+
+The reports agree on radius and end time. The review did not locate the full public government order, operator list, cross-operator measurement, or post-midnight restoration evidence. Agency, legal basis, and “fifth” therefore remain attributed to media descriptions of the order.
+
+### Only Mirpur restoration was supported
+
+On July 23, [Geo News](https://www.geo.tv/latest/674428-mobile-internet-services-begin-restoring-in-ajks-mirpur-after-45-day-suspension) reported that mobile and Internet service had begun returning in Mirpur and nearby areas after a 45-day interruption. [Dawn](https://www.dawn.com/news/2017643/ppp-asks-ajk-cec-to-seek-internet-restoration-ahead-of-polls) and [The News](https://www.thenews.pk/print/1427620-ch-yasin-urges-cec-to-restore-internet-service-in-ajk) reported letters and political requests for restoration before elections.
+
+This supports a report of restoration beginning in Mirpur, not restoration throughout AJK. Operator, fixed-versus-mobile scope, coverage, and performance remained unverified.
+
+## Google Play DMA decision
+
+The European Commission's [July 23 announcement](https://digital-strategy.ec.europa.eu/en/news/commission-fines-google-eu890-million-breaches-digital-markets-act) found Google noncompliant in Search self-preferencing and Google Play anti-steering, imposing EUR 460 million and EUR 430 million respectively. For Play, the issue was whether developers could tell users about external offers and direct them to a website or third-party app store. [AP](https://apnews.com/article/199c77e09d3829ebfc3d9e51281a369a) independently reported the combined fine and two decisions.
+
+At the cutoff, there was no evidence that a particular VPN or proxy application had returned to a regional store, that Google Play had removed region restrictions, or that product-level external-purchase rules had already changed. Google's security-response language was the company's position.
+
+## Tool and service table
+
+| Item | Verified change | Boundary | Action |
+| --- | --- | --- | --- |
+| v2rayN | 7.24.1 contains the maintainer-described downloader MITM fix | No CVE, lower affected version, or exploitation evidence | Update from the official release and retain hashes and old config |
+| sing-box | 1.14.0-beta.1 changes rule-set semantics and DNS racing | Beta, no independent regression matrix | Test complex configs in a copy |
+| Mihomo | v1.19.29 released in the window and was adopted by Clash Verge Rev v2.5.2 | Covered in the previous digest | Watch AnyTLS, OpenVPN, DNS, and rule regressions |
+| Clash Verge Rev | v2.5.2 fixed subscription import, TUN, DNS, and rule editing | No uniform-environment regression report | Back up and download only from the official release |
+| OpenAI | Several functional and component incidents | Last incident still monitoring at cutoff | Check by component and keep a backup workflow |
+| Claude | Several model and product-surface incidents | Office add-in still identified at cutoff | Check the specific model and product |
+
+## Practical actions
+
+1. **Treat update provenance as a security boundary.** During a security fix, avoid unknown mirrors, chat files, and modified builds.
+2. **Split service incidents by component.** Web, API, model, upload, login, CLI, and connectors can have independent status.
+3. **Check dependencies.** GitHub, cloud, CDN, or identity failures can propagate into AI workflows; switching an exit node will not repair an upstream incident.
+4. **Preserve shutdown scope.** “1.5 km,” “Mirpur and nearby areas,” and “all AJK” are different claims.
+5. **Do not equate regulation with immediate product behavior.** The Play anti-steering decision may affect future linking, not prove current store or payment availability.
+
+## Next checks
+
+* final resolution and root-cause information for the July 23 OpenAI incident and Claude Office add-in event;
+* CVE, affected-version, or technical details for the v2rayN downloader issue;
+* sing-box beta regressions, adoption, and stable migration notes;
+* the New Delhi order, operator scope, and post-midnight measurements;
+* restoration outside Mirpur;
+* Google's implementation and appeal details.
+
+No local image met the issue's reuse-rights and evidence-approval requirements, so no decorative or media image was used.
+
+## Sources
+
+1. [v2rayN 7.24.1](https://github.com/2dust/v2rayN/releases/tag/7.24.1)
+2. [sing-box v1.14.0-beta.1](https://github.com/SagerNet/sing-box/releases/tag/v1.14.0-beta.1)
+3. [GitHub Actions incident](https://www.githubstatus.com/incidents/8vfyvq16hzh9)
+4. [GitHub-dependent OpenAI workflow incident](https://status.openai.com/incidents/01KXYF4BTCV9DTZ5NDSFN716FH)
+5. [OpenAI status history](https://status.openai.com/history)
+6. [OpenAI Elevated Error Rates](https://status.openai.com/incidents/01KY7SX5MYJ2BP51X5MXAPYX71)
+7. [Claude incidents API](https://status.claude.com/api/v2/incidents.json)
+8. [The Week on Jantar Mantar](https://www.theweek.in/news/india/2026/07/23/mha-s-fifth-internet-cut-around-cjp-protests-at-jantar-mantar-since-july-17-what-we-know-so-far.html)
+9. [LiveMint timeline](https://www.livemint.com/news/india/cjp-protest-news-live-updates-salman-khan-support-delhi-police-opposition-dharmendra-pradhan-narendra-modi-jantar-mantar-11784765327647.html)
+10. [Geo News on Mirpur](https://www.geo.tv/latest/674428-mobile-internet-services-begin-restoring-in-ajks-mirpur-after-45-day-suspension)
+11. [Dawn on AJK restoration requests](https://www.dawn.com/news/2017643/ppp-asks-ajk-cec-to-seek-internet-restoration-ahead-of-polls)
+12. [The News on AJK restoration requests](https://www.thenews.pk/print/1427620-ch-yasin-urges-cec-to-restore-internet-service-in-ajk)
+13. [European Commission Google DMA decision](https://digital-strategy.ec.europa.eu/en/news/commission-fines-google-eu890-million-breaches-digital-markets-act)
+14. [AP report](https://apnews.com/article/199c77e09d3829ebfc3d9e51281a369a)
+15. [Mihomo v1.19.29](https://github.com/MetaCubeX/mihomo/releases/tag/v1.19.29)
+16. [Clash Verge Rev v2.5.2](https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v2.5.2)
+
+> This is an information digest, not legal, investment, or product advice and not a service-availability guarantee. Submit corrections through the [corrections page](/en/corrections/).

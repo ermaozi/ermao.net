@@ -1,0 +1,95 @@
+---
+url: /en/blog/lingdongyun/index.md
+description: >-
+  Lingdong Cloud's monthly, annual, and three one-time plans, Trojan and
+  subscription claims, payment methods, and archived access test.
+---
+Lingdong Cloud reportedly began operating in 2025. Its recorded recurring plans began at CNY 20 for 100 GB per month, with a CNY 99 annual low-use tier and three one-time, non-expiring data packages.
+
+Recorded purchase route: [Lingdong Cloud plans](https://ermaozi01.lingdongaff.com/#/?code=aJUlcAOo)
+
+![Lingdong Cloud logo =1022x552](https://image.ermao.net/images/blog/lingdongyun/20260723_121505-a742b5.png)
+
+## Provider information
+
+The provider described dedicated Trojan routes, standard subscriptions, Alipay and USDT payments, evening-peak YouTube 4K, streaming and ChatGPT access, and availability during sensitive network periods.
+
+These are provider claims. The screenshot later on this page displays VLESS nodes rather than Trojan, so the actual protocol should be confirmed in the live dashboard.
+
+| Item | Source record |
+| --- | --- |
+| Operating history | Since 2025, provider claim |
+| Payments | Alipay and USDT |
+| Universal subscription | Supported |
+| Telegram | [Recorded group](https://t.me/+6UadfRoVSC04Zjll) |
+
+USDT payments are generally irreversible. Prefer a payment method with an appropriate dispute process where available.
+
+## Recurring plans
+
+| Plan | Monthly data | Recorded prices |
+| --- | ---: | --- |
+| Breeze | 100 GB | CNY 20/month; 57/quarter; 108/half-year; 204/year; 384/two years; 540/three years |
+| Wave | 300 GB | CNY 50/month; 142.50/quarter; 270/half-year; 510/year; 960/two years; 1,350/three years |
+| Dawn | 700 GB | CNY 100/month; 285/quarter; 540/half-year; 1,020/year; 1,920/two years; 2,700/three years |
+| Sky | 1.5 TB | CNY 180/month; 513/quarter; 972/half-year; 1,836/year; 3,456/two years; 4,860/three years |
+| Through the Clouds | 70 GB/year | CNY 99/year |
+| Supreme private route | 500 GB/month | CNY 620/month |
+
+Purchase: [check current checkout](https://ermaozi01.lingdongaff.com/#/?code=aJUlcAOo).
+
+The source recorded data-reset purchases of CNY 20, 50, 100, and 180 for the first four plans, CNY 99 for the annual plan, and CNY 618 for the private route. Verify exactly how much data is restored, when it becomes effective, and whether the plan term changes.
+
+The annual 70 GB plan provides 70 GB across the entire year, not each month.
+
+## One-time data packages
+
+| Plan | Price | Total data | Source role |
+| --- | ---: | ---: | --- |
+| Leisure Cloud | CNY 199 one-time | 150 GB | Low-frequency backup |
+| Startled Cloud | CNY 499 one-time | 400 GB | Occasional data addition |
+| Flying Cloud | CNY 899 one-time | 800 GB | Larger long-term reserve |
+
+Verify account expiry, inactivity rules, and what happens if the service closes. "No expiry" does not make the operator permanent.
+
+## Archived test
+
+The provider supplied a screenshot dated July 21, 2026 at 19:12:14 CST. It shows VLESS nodes in Japan, Singapore, the United States, Hong Kong, and Taiwan, plus checks for YouTube, Netflix, Disney+, TikTok, DAZN, Bahamut, and OpenAI. Some entries show failure, `N/A`, or request failure.
+
+![Lingdong Cloud node and service-access test =967x1079](https://image.ermao.net/images/blog/lingdongyun/20260723_121505-7a1e0a.png)
+
+The test location, ISP, baseline bandwidth, device, and repetition count were not supplied. This is one sample, not evidence of universal access or long-term stability.
+
+## Purchase guidance
+
+* Begin with Breeze for one month.
+* Compare the annual 70 GB plan with a one-time package only if use is genuinely rare.
+* Obtain node, IP, bandwidth, device, support, and delivery details before buying the private route.
+* Test the evening peak and every required platform.
+* Keep a separate route for work, livestreams, stores, and account operations.
+
+## FAQ
+
+### What is the lowest recurring price?
+
+CNY 20 for 100 GB per month. A separate CNY 99 plan supplies 70 GB for the year.
+
+### Is a universal subscription supported?
+
+The submitted information says yes, but did not list exact formats. Confirm compatibility with the actual dashboard output.
+
+### Do the one-time packages expire?
+
+The provider described them as non-expiring. Confirm account and service-continuity rules before payment.
+
+### Does it support streaming and ChatGPT?
+
+The provider claims it does. The supplied test has mixed results, so validate the exact node and service locally.
+
+## Client guides
+
+* [Android Clash guide](/en/article/eh8f4n86/)
+* [iOS Shadowrocket guide](/en/article/z747kgjd/)
+* [Windows Clash Verge Rev guide](/en/article/0gematwc/)
+
+See the [proxy-service review index](/en/posts/vpn/), [provider-selection guide](/en/article/choose-good-airport/), and [subscription guide](/en/article/jichang-subscription-guide/).

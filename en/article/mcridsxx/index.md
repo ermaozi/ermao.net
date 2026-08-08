@@ -1,0 +1,45 @@
+---
+url: /en/article/mcridsxx/index.md
+description: >-
+  Qingyunti's annual plan averages CNY 8 for 60GB monthly. Review its history,
+  IPLC, access, device, support, and payment claims.
+---
+## Qingyunti official website
+
+[ermaozi02.qytvipaff.cc](https://ermaozi02.qytvipaff.cc/register?aff=W5ICDu2y)
+
+## Qingyunti overview
+
+The least expensive annual subscription is equivalent to CNY 8 per month for 60 GB.
+
+The provider advertises five years of stable operation, IPLC routes, access to ChatGPT, TikTok, and major streaming platforms, no limit on concurrently connected clients, responsive customer support, and Alipay payments.
+
+![Qingyunti pricing =2128x1086](https://image.ermao.net/images/article/mcridsxx/image.png)
+
+## Qingyunti tests
+
+### Qingyunti ingress test
+
+![Qingyunti ingress test =1930x4642](https://image.ermao.net/images/article/mcridsxx/image-1.png)
+
+### China Telecom test
+
+![Qingyunti China Telecom test =3911x4468](https://image.ermao.net/images/article/mcridsxx/image-2.png)
+
+### China Mobile test
+
+![Qingyunti China Mobile test =4444x4584](https://image.ermao.net/images/article/mcridsxx/image-3.png)
+
+### China Unicom test
+
+![Qingyunti China Unicom test =4296x4584](https://image.ermao.net/images/article/mcridsxx/image-4.png)
+
+## Complete proxy-service guide
+
+<https://www.ermao.net/en/posts/vpn>
+
+## Client guides
+
+* 📱 [Clash for Android](https://www.ermao.net/en/article/eh8f4n86/)
+* 🖥 [Clash for Windows](https://www.ermao.net/en/article/0gematwc/)
+* 🍎 [Clash for iOS](https://www.ermao.net/en/article/z747kgjd/)

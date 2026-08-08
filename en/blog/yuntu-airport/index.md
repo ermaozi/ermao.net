@@ -1,0 +1,129 @@
+---
+url: /en/blog/yuntu-airport/index.md
+description: >-
+  Yuntu Airport plans from CNY 25 for 150 GB, one-time packages, universal
+  subscriptions, five devices, 1x traffic, and provider-supplied August 2026
+  tests.
+---
+Yuntu Airport is a very new provider with about one week of operation according to the submitted information. Its monthly plans begin at CNY 25 for 150 GB. The provider lists universal subscriptions, five simultaneous devices, a 1x multiplier on all nodes, and one-time traffic packages from CNY 78.
+
+Recorded purchase route: [Register and view Yuntu Airport plans](https://vip.ytjcok.org/#/register?code=8YGrHaR5)
+
+![Yuntu Airport logo =969x478](https://image.ermao.net/images/blog/yuntu-airport/20260808_073657-89dffd.png)
+
+## Provider information
+
+| Item | Source record |
+| --- | --- |
+| Operating history | About one week, provider-supplied |
+| Lowest monthly tier | CNY 25 for 150 GB/month |
+| Universal subscription | Supported in the submission |
+| Simultaneous devices | Five, as labelled on the plan page |
+| Node multiplier | 1x on all nodes, provider claim |
+| Payments | Alipay and WeChat Pay |
+| Telegram | [Yuntu dedicated-route group](https://t.me/yuntuvpn) |
+
+The provider markets financial-grade dedicated routes, three-carrier optimization, peak-period performance, access to ChatGPT, Netflix, and TikTok, and some residential-style IP nodes. These are provider claims, not independent findings. Results can vary by ISP, node IP, time, and platform policy.
+
+## Recurring plans
+
+| Plan | Price | Data | Suggested use | Purchase |
+| --- | ---: | ---: | --- | --- |
+| Lantu | CNY 25/month | 150 GB/month | First test and light-to-moderate use | [View](https://vip.ytjcok.org/#/register?code=8YGrHaR5) |
+| Mengtu | CNY 49/month | 300 GB/month | Regular video, AI tools, and multiple devices | [View](https://vip.ytjcok.org/#/register?code=8YGrHaR5) |
+| Xingtu | CNY 99/month | 600 GB/month | Frequent video or high traffic | [View](https://vip.ytjcok.org/#/register?code=8YGrHaR5) |
+
+The submitted plan page shows monthly prices for these three tiers. It also lists quarter, six-month, annual, two-year, and three-year period options without displaying their checkout totals in the supplied material, so this review does not invent those prices. Begin with the CNY 25 monthly tier and test it on your own network before extending the term.
+
+## One-time traffic packages
+
+| Plan | One-time price | Total data | Notes | Purchase |
+| --- | ---: | ---: | --- | --- |
+| Limited 50 GB package | CNY 78 | 50 GB | Low-frequency backup; five devices | [View](https://vip.ytjcok.org/#/register?code=8YGrHaR5) |
+| Limited 100 GB package | CNY 119 | 100 GB | Larger backup allowance; five devices | [View](https://vip.ytjcok.org/#/register?code=8YGrHaR5) |
+
+The plan page labels these packages as having no time limit. That does not guarantee permanent provider operation. Because Yuntu Airport is reported to have only about one week of history, confirm account expiry, inactivity, refund, and closure terms before making a one-time prepayment.
+
+## Provider-stated features
+
+### Universal subscriptions and five devices
+
+The submission says universal subscriptions are supported, and the plan page labels every tier for five simultaneous devices. The test screenshots label their nodes as AnyTLS, but that only describes those test entries. Confirm the actual subscription format and client compatibility before purchase.
+
+### 1x traffic and usage restrictions
+
+The provider advertises a 1x multiplier for all nodes. The plan page prohibits publishing or sharing subscription links and prohibits P2P or BitTorrent traffic; it also says virtual products are non-refundable after sale. Confirm these rules if the service will be shared or used for large downloads.
+
+### Streaming, AI, and support claims
+
+The provider advertises access to ChatGPT, Netflix, TikTok, and some less-common residential-style IP regions. It also promises ticket replies within 24 hours. Access and support response times were not independently verified. Test the exact region and platform on a monthly tier, and consider submitting a pre-purchase ticket.
+
+## Interpreting the provider-supplied tests
+
+![Yuntu Airport streaming-access test =1280x798](https://image.ermao.net/images/blog/yuntu-airport/20260808_074750-5d11b2.jpg)
+
+The service-access screenshot lists 30 AnyTLS nodes across the United States, Japan, Taiwan, Singapore, and Hong Kong. It is labelled August 6, 2026 at 19:32:33 CST. Its summary shows Netflix and YouTube at 100%, Disney+ at 96%, TikTok at 53%, OpenAI at 80%, Bilibili at 40%, and Dazn and Hobomax at 100%; the Spotify column says registration is prohibited. These percentages apply only to that screenshot's sample.
+
+![Yuntu Airport node speed test =1600x1553](https://image.ermao.net/images/blog/yuntu-airport/20260808_074750-ac97a0.jpg)
+
+The speed screenshot also lists 30 nodes and is labelled August 6, 2026 at 19:35:23 CST. It identifies the backend as “Henan Unicom 1 Gbps (4.7.3),” 32 threads, 17.3 GB consumed, and 267 seconds elapsed. Displayed average speeds range from 46.48 MB to 127.61 MB, and most UDP results are Full Cone.
+
+These are single provider-supplied runs, not tests conducted by this site. Although the screenshots identify a route, baseline bandwidth, and time, they do not identify the test device or client or provide repeated full runs across time periods. They cannot establish typical throughput or long-term platform access for every user.
+
+## Who may consider it
+
+* New users who want to test a CNY 25 monthly tier.
+* Individuals who need a universal subscription and up to five simultaneous devices.
+* Buyers who value a 1x multiplier and will test required streaming or AI services themselves.
+* Users who accept the risk of a very new provider and treat it as a candidate or backup.
+
+Do not make a provider with about one week of reported history the only route for important work. A larger or one-time first purchase creates unnecessary prepayment exposure; keep a separately operated backup.
+
+## Purchase steps
+
+1. Open the [recorded Yuntu Airport registration route](https://vip.ytjcok.org/#/register?code=8YGrHaR5) and create an account.
+2. Prefer the CNY 25 monthly tier for the first test.
+3. Confirm the live price, allowance cycle, device limit, subscription format, and refund terms at checkout.
+4. Pay with Alipay or WeChat Pay and import the subscription into a compatible client.
+5. Test evening-peak periods, required regions, ChatGPT, and target streaming services before renewing or upgrading.
+
+## FAQ
+
+### What is the lowest Yuntu Airport plan?
+
+The lowest recurring tier in the supplied plan page is Lantu at CNY 25 for 150 GB per month. The lowest one-time package is CNY 78 for 50 GB. Verify current stock, pricing, and terms at checkout.
+
+### Are universal subscriptions supported?
+
+The submission says yes. Because the test screenshots show AnyTLS nodes, confirm that the generated subscription link supports your exact client and operating system.
+
+### Does it work with Netflix and ChatGPT?
+
+The provider advertises both and supplied one service-access snapshot. Node IPs and platform policies change, so this is not a long-term guarantee.
+
+### Should I buy a one-time package?
+
+It may suit low-frequency backup after the route has been tested. With only about one week of reported operation, a small monthly first purchase is the lower-risk choice.
+
+## Conclusion
+
+Yuntu Airport lists three monthly plans—CNY 25 for 150 GB, CNY 49 for 300 GB, and CNY 99 for 600 GB—and two one-time packages at CNY 78 for 50 GB and CNY 119 for 100 GB. Its main propositions are universal subscriptions, five devices, a 1x multiplier, and provider claims about dedicated routes and access to streaming and AI services.
+
+Given its short operating history, the lower-risk path is to [start with the CNY 25 monthly tier](https://vip.ytjcok.org/#/register?code=8YGrHaR5), repeat tests on your normal ISP and devices, and keep an independent backup.
+
+## Client guides
+
+* [Android Clash guide](/en/article/eh8f4n86/)
+* [iOS Shadowrocket guide](/en/article/z747kgjd/)
+* [Windows Clash guide](/en/article/0gematwc/)
+* [macOS Clash Verge Rev guide](/en/article/6vxkmmuh/)
+
+Related:
+
+* [2026 proxy-service reviews](/en/posts/vpn/)
+* [Budget provider list](/en/airport/)
+* [How to choose a provider](/en/article/choose-good-airport/)
+
+::: info Disclaimer
+This article organizes submitted information, the provider's plan page, and provider-supplied screenshots for technical reference. Plans, routes, nodes, and platform access can change. Verify the live checkout and follow applicable law.
+:::

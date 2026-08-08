@@ -1,0 +1,31 @@
+---
+url: /en/article/kewe92tu/index.md
+description: >-
+  Jiasu.la starts at CNY 10 for 80GB. Review its in-house panel, overseas-team
+  and dedicated-route claims, plus privacy limits.
+---
+## Jiasu.la official website
+
+[https://jiasu.la](https://jiasu.la/?r=39116)
+
+## Jiasu.la overview
+
+The least expensive subscription is CNY 10 per month for 80 GB.
+
+The provider states that it uses an in-house panel, is operated by an overseas team, and offers dedicated routes at a 1× traffic multiplier. Its logging and privacy practices have not been independently audited. Server quality, support response, and evening peak-hour performance should be assessed through actual use.
+
+![Jiasu.la pricing =917x777](https://image.ermao.net/images/article/kewe92tu/image.png)
+
+## Jiasu.la test
+
+![Jiasu.la test =2741x2438](https://image.ermao.net/images/article/kewe92tu/image-1.png)
+
+## Complete proxy-service guide
+
+<https://www.ermao.net/en/posts/vpn>
+
+## Client guides
+
+* 📱 [Clash for Android](https://www.ermao.net/en/article/eh8f4n86/)
+* 🖥 [Clash for Windows](https://www.ermao.net/en/article/0gematwc/)
+* 🍎 [Clash for iOS](https://www.ermao.net/en/article/z747kgjd/)
