@@ -26,6 +26,8 @@ This page lists shared Apple IDs for the United States, Japan, South Korea, Hong
 3. **Frequent account failure:** Cross-region and multi-device sign-ins can trigger Apple's security systems. A locked account or two-factor-authentication request is a common failure mode for public accounts. Do not attempt to change security settings; use another listed account.
 :::
 
+<LinkCard title="Proxy-Service Selection and Long-Term Review Guide" href="/en/posts/vpn/" description="Plan comparisons, testing criteria, detailed reviews, and shutdown-risk records for China-focused proxy services." />
+
 <LinkCard title="Clash Mi for iOS: Free Client Setup Guide" href="/en/blog/clashmi/" description="Install Clash Mi on iPhone or iPad, import a compatible node subscription, connect through TUN, and resolve common errors." />
 
 ## Who should and should not use a shared account?
@@ -174,8 +176,6 @@ If an update cannot be installed, the source guide suggests removing the old app
 ## Related tools
 
 <LinkCard title="Asspp Review: Managing Multiple Apple IDs and Regions" href="/en/blog/asspp-download-guide/" description="A review of a third-party manager for switching App Store accounts, downloading older app versions, and extracting IPA packages. Evaluate account and package security before use." />
-
-<LinkCard title="Proxy-Service Selection and Long-Term Review Guide" href="/en/posts/vpn/" description="Plan comparisons, testing criteria, detailed reviews, and shutdown-risk records for China-focused proxy services." />
 
 <script setup>
 import { ref, onMounted } from 'vue'
