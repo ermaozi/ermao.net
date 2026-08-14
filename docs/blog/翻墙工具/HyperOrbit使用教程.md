@@ -1,22 +1,25 @@
 ---
-title: HyperOrbit 使用教程：iPhone / iPad / Mac 科学上网配置指南（2026）
-createTime: 2026/05/29 12:12:52
+title: HyperOrbit 使用教程：Android、iPhone、iPad、Mac 与 Apple TV 配置指南（2026）
+createTime: 2026/08/15 07:27:12
+updateTime: 2026/08/15 07:27:12
 permalink: /blog/HyperOrbit/
 tags:
   - HyperOrbit
+  - Android翻墙
   - iOS翻墙
   - iPhone科学上网
   - iPad翻墙
   - Mac科学上网
+  - Apple TV
   - 代理工具
   - VLESS
   - Trojan
   - 翻墙教程
-description: 2026年 HyperOrbit 完整使用教程，涵盖 iPhone、iPad、Mac 下载安装、订阅导入、路由模式配置及常见问题排查，自研 HyperCore 内核，支持 VLESS Reality、Trojan、TUIC 等主流协议，$1.99/年或 TestFlight 免费体验。
+description: 2026年 HyperOrbit 使用教程，覆盖 Android、iPhone、iPad、Apple TV 和 Apple Silicon Mac 安装、订阅导入、路由、测速及常见问题。
 ---
-# HyperOrbit 使用指南
+# HyperOrbit 使用指南（Android / iPhone / iPad / Mac / Apple TV）
 
-HyperOrbit 是一款基于自研 HyperCore 内核的代理工具，支持 VLESS、VMess、Shadowsocks、Trojan、AnyTLS、TUIC 等主流协议，适用于 iPhone、iPad 和 Mac，界面简洁，开箱即用。
+HyperOrbit 是一款基于自研 HyperCore 内核的代理客户端，支持 VLESS、VMess、Shadowsocks、Trojan、AnyTLS、Hysteria2、TUIC 等协议。官方当前提供 Android、iPhone、iPad、Apple TV 和 Apple Silicon Mac 版本。
 
 > HyperOrbit 是代理工具，本身不提供节点服务，需要你自备订阅或节点。
 
@@ -30,40 +33,40 @@ HyperOrbit 是一款基于自研 HyperCore 内核的代理工具，支持 VLESS�
 
 ![Connected =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_230232-cd78fc.png)
 
+> 本文现有截图来自 iPhone 版；Android 和 Apple TV 的布局、按钮名称可能随版本不同。
+
 ---
 
 ## 为什么选择 HyperOrbit
 
 **自研 HyperCore 内核，协议支持更全面**
-完全通过 C++ 构建，在速度、内存占用方面业界领先，完整兼容 Xray 的配置，原生支持 VLESS + Reality、VMess、Shadowsocks、Trojan。Reality 是目前抗检测能力最强的协议之一，HyperOrbit 对其支持完整。
+开发者称 HyperCore 使用 C++ 构建，兼容 Xray 配置，并已加入 Clash 节点导入，支持 VLESS + Reality、VMess、Shadowsocks、Trojan 等。Reality 的实际隐蔽性仍取决于节点配置和当前网络。
 
-在性能上，HyperCore 同样表现出色：VPN 启动后内存占用仅约 ==5 MB==，高负载下也不超过 ==15 MB==，远低于 iOS 对 VPN 扩展 50 MB 的内存上限，从根本上杜绝了因内存超限导致的 VPN 意外断连。吞吐量方面，本地实测（Mac 与 iPhone 直连，iperf3）轻松突破 ==6.5 Gbps==，日常使用完全无瓶颈。
+原始 iOS 资料记录的开发者测试数据为：VPN 启动后约 ==5 MB==，高负载下低于 ==15 MB==；Mac 与 iPhone 直连的 `iperf3` 本地测试超过 ==6.5 Gbps==。这些不是本站独立测试，也不代表实际互联网速度。
 
 **多种导入方式，上手零门槛**
-支持订阅链接、扫描二维码、粘贴剪贴板、分享文件四种导入方式，拿到节点后几秒钟即可开始使用。
+手机版支持订阅 URL、二维码、剪贴板和手动节点导入；Apple TV 版支持二维码或文本输入。
 
 **规则路由，国内外流量自动分流**
 内置"规则"模式，国内网站直连、海外流量走代理，无需手动配置，日常使用体验更流畅。
 
 **iCloud 同步，多设备无缝切换**
-订阅、节点、自定义配置均可备份到 iCloud，换设备后一键恢复，无需重新配置。
+苹果设备上的订阅、节点和设置可通过 iCloud 同步；Android 版不适用这一步。
 
-**节点测速，一键找最快线路**
-支持对所有节点批量测速，延迟一目了然，选最快的那个连接即可。
+**节点测速，辅助筛选线路**
+支持批量测试节点的 TCP 延迟。低延迟只是一项参考，还要结合实际应用和持续吞吐量选择。
 
 ---
 
 ## 价格
 
-HyperOrbit 订阅价格为 ==$1.99 / 年==，下载后可 ==免费试用 7 天==，试用期结束前取消，**不收费**。
+截至 2026 年 8 月 15 日，[Apple 美国区 App Store](https://apps.apple.com/us/app/hyperorbit/id6761375312) 列出 ==$0.99 / 月==、==$1.99 / 年== 和 ==$9.99 买断==，新用户有 ==7 天免费试用==。[Google Play](https://play.google.com/store/apps/details?id=net.hyperorbit.app.fast) 当前也标注“应用内购买”和 7 天试用，具体价格以 Android 应用内结算页为准。
+
+7 月 21 日提供的 Android 资料曾写“免费体验”，但它不再能作为当前免费承诺。价格、试用和上架地区都可能变化，请在订阅前检查自己账号的商店页面。
 
 ![Free Trial =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231550-c18a35.png)
 
-如果你想完全免费体验完整功能，可以加入 **TestFlight 公测版**：
-
-👉 **[加入 TestFlight 公测](https://testflight.apple.com/join/TmUdbPCt)**
-
-> TestFlight 版本中所有付费功能均免费开放，无需任何购买。
+> 原文提供的 [TestFlight 公测](https://testflight.apple.com/join/TmUdbPCt) 链接当前显示“测试名额已满”，不建议把它当作稳定的免费获取方式。
 
 ---
 
@@ -71,47 +74,61 @@ HyperOrbit 订阅价格为 ==$1.99 / 年==，下载后可 ==免费试用 7 天==
 
 | 项目 | 要求 |
 |------|------|
+| Android | >= 8.0（附件资料标注） |
 | iOS | >= 16.0 |
 | iPadOS | >= 16.0 |
 | macOS (Designed for iPad) | >= 13.0 |
+| tvOS | >= 17.0 |
 
 另外你需要准备好：
 
 - **一个可用的代理订阅链接或节点 URI**（HyperOrbit 不提供节点服务）
-- **非大陆区 Apple ID**（国区 App Store 无法搜索到）
+- 苹果设备需要 **HyperOrbit 已上架地区的 Apple ID**
+- Android 设备需要能访问 Google Play
 
 ---
 
 ## 一、下载安装
 
-由于众所周知的原因，HyperOrbit 无法在中国区 App Store 下载，需要切换到美区、港区、台湾区等海外账号。
+优先从官方商店下载，不要从不明网盘安装修改版。
 
-👉 **[前往 App Store 下载](https://apps.apple.com/us/app/hyperorbit/id6761375312)**
-👉 **[官网](https://app.hyperorbit.net/)**
-👉 **[TG交流群](https://t.me/HyperOrbitNet)**
+- **[App Store](https://apps.apple.com/us/app/hyperorbit/id6761375312)**
+- **[Google Play](https://play.google.com/store/apps/details?id=net.hyperorbit.app.fast)**
+- **[HyperOrbit 官网](https://app.hyperorbit.net/)**
+- **[TG 交流群](https://t.me/HyperOrbitNet)**
 
 ### iPhone / iPad
 
-在 App Store 搜索 **HyperOrbit** 或点击上方链接直接下载，安装后即可使用。
+如果当前区域可用，在 App Store 搜索 **HyperOrbit** 或打开上方官方页面安装。中国大陆区商店可能无法搜索，以当前商店实际显示为准。
+
+### Android
+
+在 Google Play 搜索 **HyperOrbit - Fast VPN & Proxy** 或打开上方链接安装。附件资料标注 Android 8.0 及以上；如果商店显示不兼容，以 Google Play 对当前设备的判断为准。官方网站目前的 Android 下载按钮同样指向 Google Play。
+
+### Apple TV
+
+App Store 当前列出 Apple TV 支持，最低需要 tvOS 17.0。在 Apple TV 的 App Store 搜索 **HyperOrbit** 安装；官方 tvOS 介绍列出二维码或文本输入订阅，也可使用 iCloud 同步苹果设备上的配置。
 
 ### Mac
 
 HyperOrbit 支持以「Designed for iPad」的方式在 Apple Silicon Mac（M1 及以上）上运行，**无需单独下载 Mac 版**。
 
-在 Mac 上打开 App Store，切换到海外账号后搜索 **HyperOrbit**，即可安装 iOS 版并在 Mac 上运行。
+在 Mac 上打开 App Store，使用已上架地区的账号搜索 **HyperOrbit**，即可安装 iPad 版并在 Mac 上运行。
 
 Mac 版额外支持：
 - **TUN 模式**：将所有系统流量通过隧道转发，可在**设置 → Mac 设置**中开关
 - **SOCKS5 本地代理**：可配置自定义端口，供其他应用单独使用
 - 完整的键鼠交互和窗口缩放
 
-> **注意**：Mac 版基于 iOS App 运行，部分 Apple Silicon 机型首次启动需要在「系统设置 → 隐私与安全性」中允许来自 App Store 的应用。Intel Mac 不支持。
+> **注意**：Mac 版基于 iPad App 运行。如果 macOS 请求权限，请在「系统设置 → 隐私与安全性」中核对后允许。Intel Mac 不支持。
 
 ---
 
 ## 二、导入节点 / 订阅
 
 HyperOrbit 支持四种导入方式，选一种最方便的即可：
+
+> 下面以手机版为主。Android 的中文按钮名来自附件资料，会随版本变化；Apple TV 请使用二维码、文本输入或 iCloud 同步。
 
 ### 方式一：订阅链接（推荐）
 
@@ -158,7 +175,10 @@ HyperOrbit 支持四种导入方式，选一种最方便的即可：
 
 导入节点后，在首页的节点列表中**点击选中**目标节点，然后点击连接按钮。
 
-首次连接时 iOS 会弹出「是否允许添加 VPN 配置」的提示，点击 ==允许==，并通过 Face ID / 密码验证即可。
+首次连接时：
+
+- iPhone / iPad 会请求添加 VPN 配置，确认后通过 Face ID 或密码验证。
+- Android 会请求允许创建 VPN 连接，核对应用后点击确定。如果另一个 VPN 正在运行，需要先断开它。
 
 ![Connect =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_230953-b90205.png)
 
@@ -168,7 +188,7 @@ HyperOrbit 支持四种导入方式，选一种最方便的即可：
 
 ## 四、路由模式
 
-HyperOrbit 提供三种路由模式，在首页顶部可以随时切换：
+附件教程中的版本提供下列三种路由结果。2026 年 8 月的 iOS 1.4.x 版本已将原来分开的“模式”和“规则”合并到首页的“路由”选择器；Android 或其他版本的位置可能不同。
 
 | 模式 | 说明 | 适合场景 |
 |------|------|----------|
@@ -176,7 +196,7 @@ HyperOrbit 提供三种路由模式，在首页顶部可以随时切换：
 | **全局** | 所有流量都走代理 | 测试节点连通性，或需要全程走代理 |
 | **直连** | 所有流量直连，不经过代理 | 临时关闭代理但保持 VPN 开启 |
 
-日常使用如果不太懂可以先用 ==全局== 模式，最终建议选 ==规则== 模式。
+排查连通性时可以短暂使用 ==全局==，日常使用通常选 ==规则==。如果当前版本没有单独的模式按钮，请在“路由”选择器中找对应选项。
 
 ![Mode =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231009-a016d7.png)
 ![Rules =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231013-c163ec.png)
@@ -185,15 +205,15 @@ HyperOrbit 提供三种路由模式，在首页顶部可以随时切换：
 
 ## 五、节点测速
 
-不确定哪个节点最快？在首页点击 ==全部测速==，HyperOrbit 会对所有节点发起 TCP 延迟测试，测速结果会显示在每个节点右侧。
+在首页点击 ==全部测速==，HyperOrbit 会对所有节点发起 TCP 延迟测试，结果会显示在每个节点右侧。
 
-选 ==延迟最低== 的那个连接即可。
+可以先试用 ==延迟较低== 的节点，再用实际网页、视频或下载测试稳定性与持续速度。
 
 ![Ping =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231025-873908.png)
 
 ---
 
-## 六、iCloud 同步
+## 六、iCloud 同步（仅苹果设备）
 
 换新手机或在 iPad 上也想用同一套配置？进入 **设置 → iCloud 同步**，选择 ==全部上传到 iCloud==。
 
@@ -206,6 +226,8 @@ HyperOrbit 提供三种路由模式，在首页顶部可以随时切换：
 ---
 
 ## 七、高级功能
+
+以下功能主要来自手机和 Mac 版资料；Apple TV 是否显示相同入口，以当前 tvOS 版本为准。
 
 ### 活跃连接实时查看
 
@@ -235,7 +257,7 @@ HyperOrbit 会记录所有经过隧道的连接，在首页点击连接卡片上
 ## 常见问题
 
 :::details Q：连接后网络没变化 / 还是上不了某些网站？
-检查路由模式是否设置为 ==规则== 或 ==全局==。另外确认节点本身是可用的——用 ==全局== 模式测试，如果全局也不行，说明节点有问题，更换节点或联系服务商。
+检查路由模式是否设置为 ==规则== 或 ==全局==。可以用 ==全局== 模式短暂测试；如果全局也失败，节点、订阅配置或当前网络都可能有问题，可更换节点或联系服务商。
 :::
 
 :::details Q：订阅导入失败？
@@ -245,21 +267,35 @@ HyperOrbit 会记录所有经过隧道的连接，在首页点击连接卡片上
 :::
 
 :::details Q：iOS 点击连接后立刻断开？
-通常是内存不足导致的，VPN 扩展在 iOS 上有约 ==50 MB== 的内存限制。建议：
+iOS 可能在 VPN 扩展超过内存限制时终止连接，该限制常被记录为约 ==50 MB==。可以尝试：
 - 减少同时启用的自定义配置数量（内置规则没问题）
 - 在设置中将日志级别调低（调为 `Warning` 或 `Error`，默认为 `None`）
 :::
 
+:::details Q：Android 点击连接后无反应或立即断开？
+- 确认已授予 Android VPN 权限
+- 断开其他正在运行的 VPN 应用
+- 将日志级别调为 `Warning` 或 `Error` 后重试
+:::
+
 :::details Q：Mac 上可以用吗？
-可以。HyperOrbit 支持在 ==Apple Silicon Mac（M1 及以上）== 上以 iOS App 方式运行，在 App Store 搜索安装即可。Mac 版额外提供 TUN 模式和 SOCKS5 本地代理，可在 **设置 → Mac 设置** 中配置。==Intel Mac 不支持==。
+可以。HyperOrbit 支持在 ==Apple Silicon Mac（M1 及以上）== 上以 iPad App 方式运行，在 App Store 搜索安装即可。Mac 版额外提供 TUN 模式和 SOCKS5 本地代理，可在 **设置 → Mac 设置** 中配置。==Intel Mac 不支持==。
+:::
+
+:::details Q：Apple TV 上可以用吗？
+可以。App Store 当前列出 tvOS 17.0 及以上支持，tvOS 版可通过二维码、文本输入或 iCloud 同步导入配置。
 :::
 
 :::details Q：HyperOrbit 国区 App Store 能下载吗？
-不能。HyperOrbit 未在中国区 App Store 上架，需要使用美区、港区、台湾区等海外账号下载。如果没有海外账号，可以参考 [2026 最新免费美区 Apple ID 共享账号](/blog/freeappleid/) 获取。
+截至 2026 年 8 月 15 日，中国大陆区的 App Store 页面不可用，需要使用已上架地区的账号下载。如果没有海外账号，可以先阅读 [2026 最新免费美区 Apple ID 共享账号](/blog/freeappleid/) 中的安全限制。
+:::
+
+:::details Q：Android 必须通过 Google Play 下载吗？
+当前官方网站的 Android 下载按钮指向 Google Play，附件资料也未提供官方 APK。在官方发布可验证的直下载前，不建议使用第三方 APK。
 :::
 
 :::details Q：HyperOrbit 会收集我的数据吗？
-不会。HyperOrbit 不会收集任何用户流量数据或个人信息。
+官方网站称不记录流量；Google Play 的开发者申报称不收集或共享数据；Apple App Store 的隐私标签则写明，应用可能收集不与身份关联的使用数据和诊断数据。这些都是开发者申报，本站未独立审计应用流量；如果隐私很重要，请同时检查当前商店隐私标签、[隐私政策](https://app.hyperorbit.net/privacy) 和系统权限。
 :::
 
 ---

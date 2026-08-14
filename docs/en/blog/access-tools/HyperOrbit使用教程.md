@@ -1,24 +1,27 @@
 ---
-title: HyperOrbit Setup Guide for iPhone, iPad, and Mac (2026)
-createTime: 2026/05/29 12:12:52
+title: HyperOrbit Setup Guide for Android, iPhone, iPad, Mac, and Apple TV (2026)
+createTime: 2026/08/15 07:27:12
+updateTime: 2026/08/15 07:27:12
 permalink: /en/blog/HyperOrbit/
 lang: en-US
 translationOf: /blog/HyperOrbit/
 tags:
   - HyperOrbit
+  - Android proxy
   - iOS proxy
   - iPhone
   - iPad
   - Mac
+  - Apple TV
   - proxy client
   - VLESS
   - Trojan
-description: Install HyperOrbit on iPhone, iPad, or Apple Silicon Mac, import subscriptions or nodes, choose a routing mode, test latency, sync with iCloud, and troubleshoot.
+description: Install HyperOrbit on Android, iPhone, iPad, Apple TV, or Apple Silicon Mac; import a subscription, choose routes, test latency, and troubleshoot.
 ---
 
-# HyperOrbit setup guide
+# HyperOrbit setup guide for Android and Apple devices
 
-HyperOrbit is a proxy client built around its developer's HyperCore engine. It supports VLESS, VMess, Shadowsocks, Trojan, AnyTLS, Hysteria2, and TUIC and is available for iPhone, iPad, and supported Macs.
+HyperOrbit is a proxy client built around its developer's HyperCore engine. It supports VLESS, VMess, Shadowsocks, Trojan, AnyTLS, Hysteria2, and TUIC. The official stores currently offer versions for Android, iPhone, iPad, Apple TV, and supported Apple Silicon Macs.
 
 > HyperOrbit is a client. It does not supply proxy nodes; bring a compatible subscription or individual node.
 
@@ -32,19 +35,21 @@ Consult the [proxy-service selection and review guide](/en/posts/vpn/) before re
 
 ![HyperOrbit connected screen =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_230232-cd78fc.png)
 
+> The existing screenshots in this guide are from the iPhone app. Android and Apple TV layouts and labels can differ by version.
+
 ---
 
 ## Features highlighted by the source
 
 **HyperCore and protocol support**
 
-The developer describes HyperCore as a C++ engine compatible with Xray configurations and supporting VLESS with Reality, VMess, Shadowsocks, and Trojan. The source article calls Reality one of the more identification-resistant options. Actual resistance depends on configuration and network conditions.
+The developer describes HyperCore as a C++ engine compatible with Xray configurations and recent Clash node imports. It supports VLESS with Reality, VMess, Shadowsocks, and Trojan. Actual resistance to identification depends on the node configuration and network conditions.
 
-The source also reports approximately **5 MB** of VPN-extension memory use at startup, under **15 MB** under load, and more than **6.5 Gbps** in a local `iperf3` test between a directly connected Mac and iPhone. These are developer/source test figures, not a guarantee of internet throughput or performance on every device.
+The original iOS material reports approximately **5 MB** of VPN-extension memory use at startup, under **15 MB** under load, and more than **6.5 Gbps** in a local `iperf3` test between a directly connected Mac and iPhone. These are developer figures, not independent tests or a guarantee of internet throughput.
 
 **Several import methods**
 
-The app can import a subscription URL, scan a QR code, read a node URI from the clipboard, or accept a shared file.
+The mobile app can import a subscription URL, scan a QR code, read a node URI from the clipboard, or add a node manually. The Apple TV listing specifies QR-code and text input.
 
 **Rule-based routing**
 
@@ -52,48 +57,58 @@ Its built-in Rule mode is intended to send local traffic directly and selected e
 
 **iCloud synchronization**
 
-Subscriptions, nodes, and custom profiles can be backed up to iCloud and restored on another device using the same iCloud account.
+On Apple devices, subscriptions, nodes, and settings can be synchronized through iCloud. This step does not apply to Android.
 
 **Node latency tests**
 
 The app can test all imported nodes and show their TCP latency.
 
-## Price recorded by the source
+## Current store pricing
 
-At the source article's May 29, 2026 snapshot, HyperOrbit listed a price of **USD 1.99 per year** and a **seven-day free trial** that could be canceled before billing.
+As of August 15, 2026, the [U.S. App Store](https://apps.apple.com/us/app/hyperorbit/id6761375312) lists **USD 0.99 monthly**, **USD 1.99 yearly**, and a **USD 9.99 lifetime** purchase, with a **seven-day free trial** for new users. [Google Play](https://play.google.com/store/apps/details?id=net.hyperorbit.app.fast) also labels the Android app as offering in-app purchases and a seven-day trial; check the Android checkout screen for the current local price.
+
+The Android material supplied on July 21 called that version a free preview. It should not be treated as a current promise of free access. Prices, trials, and regional availability can change, so verify the store shown for your account before subscribing.
 
 ![HyperOrbit free-trial screen =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231550-c18a35.png)
 
-The source also linked a TestFlight beta in which paid features were available without purchase:
-
-👉 [Join the TestFlight beta](https://testflight.apple.com/join/TmUdbPCt)
-
-Prices, trials, and TestFlight availability can change. Verify the current App Store purchase screen before subscribing.
+> The original [TestFlight beta](https://testflight.apple.com/join/TmUdbPCt) link currently says that the beta is full. Do not rely on it as a stable free-download route.
 
 ## Requirements listed by the source
 
 | Platform | Minimum version |
 |---|---|
+| Android | 8.0 or later, as listed in the supplied Android guide |
 | iOS | 16.0 |
 | iPadOS | 16.0 |
 | macOS, Designed for iPad | 13.0 |
+| tvOS | 17.0 |
 
 You also need:
 
 - a compatible proxy subscription URL or node URI;
-- an Apple ID for an App Store region where the app is available.
+- for Apple devices, an Apple ID for a region where the app is available;
+- for Android, access to Google Play.
 
 ## 1. Install
 
-The app was not listed in mainland China's App Store at the source snapshot. Another supported App Store region, such as the United States, Hong Kong, or Taiwan, may be required.
+Use an official store rather than an unknown repackaged download.
 
-- [App Store listing](https://apps.apple.com/us/app/hyperorbit/id6761375312)
+- [App Store](https://apps.apple.com/us/app/hyperorbit/id6761375312)
+- [Google Play](https://play.google.com/store/apps/details?id=net.hyperorbit.app.fast)
 - [HyperOrbit website](https://app.hyperorbit.net/)
 - [Telegram group](https://t.me/HyperOrbitNet)
 
 ### iPhone and iPad
 
-Search for **HyperOrbit** in the appropriate App Store region or use the listing above, verify the app, and install it.
+Search for **HyperOrbit** in a region where it is listed or use the official page above. It may not appear in mainland China's store; rely on the current store result for your account.
+
+### Android
+
+Search Google Play for **HyperOrbit - Fast VPN & Proxy** or use the official listing above. The supplied guide specifies Android 8.0 or later; if Google Play marks the current device incompatible, follow the store's current compatibility result. The website's Android button currently leads to Google Play.
+
+### Apple TV
+
+The App Store currently lists Apple TV compatibility with tvOS 17.0 or later. Search for **HyperOrbit** in the Apple TV App Store. The official tvOS listing specifies subscription import by QR code or text input and also lists iCloud synchronization with Apple devices.
 
 ### Mac
 
@@ -108,6 +123,8 @@ Open the App Store on the Mac, use a supported store account, and install the iP
 The source states that Intel Macs are not supported. If macOS requests permission for the App Store app, review it under **System Settings → Privacy & Security**.
 
 ## 2. Import nodes or a subscription
+
+The steps below primarily describe the mobile apps. Android labels are translations of the supplied Chinese guide and can change by version. On Apple TV, use a QR code, text input, or iCloud synchronization.
 
 ### Method 1: subscription URL
 
@@ -150,7 +167,10 @@ If you have the server address, port, UUID, and protocol details:
 
 Select the intended node in the home-screen list, then select the connection button.
 
-On the first connection, iOS asks whether the app may add a VPN configuration. Review the request, allow it, and authenticate with Face ID or the passcode.
+On the first connection:
+
+- iPhone and iPad ask permission to add a VPN configuration; review it, allow it, and authenticate with Face ID or the passcode.
+- Android asks permission to create a VPN connection. Review the app name and approve it. Disconnect another active VPN first if necessary.
 
 ![Connecting in HyperOrbit =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_230953-b90205.png)
 
@@ -158,13 +178,15 @@ A VPN indicator appears while the connection is active.
 
 ## 4. Routing modes
 
+The version in the supplied guide describes the three routing outcomes below. In the August 2026 iOS 1.4.x release, the former Mode and Rule controls were merged into a single Route selector on the home screen. Android and other releases can place them differently.
+
 | Mode | Behavior | Typical use |
 |---|---|---|
 | **Rule** | Selected external traffic uses the proxy; local traffic is direct | Regular use |
 | **Global** | All supported traffic uses the proxy | Connectivity testing or a temporary all-proxy requirement |
 | **Direct** | All traffic is direct | Temporarily bypass the proxy while keeping the VPN profile active |
 
-Global mode can be useful for a first connectivity test, but Rule mode is normally preferable for regular use.
+Global can be useful for a brief connectivity test, while Rule is normally preferable for regular use. If the current app has no separate mode button, select the corresponding route in the Route selector.
 
 ![Changing HyperOrbit routing mode =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231009-a016d7.png)
 
@@ -178,7 +200,7 @@ Low latency is one useful signal, but also test the actual application and susta
 
 ![HyperOrbit node-latency test =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231025-873908.png)
 
-## 6. iCloud sync
+## 6. iCloud sync on Apple devices
 
 Open **Settings → iCloud Sync** and choose **Upload All to iCloud**.
 
@@ -189,6 +211,8 @@ On another device using the same iCloud account, open the same screen and choose
 ![HyperOrbit iCloud synchronization details =1170x2532](https://image.ermao.net/images/blog/HyperOrbit/20260527_231053-a776aa.png)
 
 ## 7. Advanced features
+
+The features below come primarily from the mobile and Mac materials. Check the current tvOS build for the features actually exposed on Apple TV.
 
 ### Active connections
 
@@ -232,16 +256,30 @@ iOS can terminate a VPN extension that exceeds its memory limit, commonly report
 - Lower logging to `Warning` or `Error`; the source reports `None` as the default.
 :::
 
+::: details The Android connection does not start or closes immediately
+- Confirm that Android VPN permission is granted.
+- Disconnect any other active VPN app.
+- Lower logging to `Warning` or `Error`, then try again.
+:::
+
 ::: details Does it work on a Mac?
 The source lists support on an **Apple Silicon Mac with M1 or later** through the iPad app. The Mac interface adds TUN and local SOCKS5 settings. Intel Macs are listed as unsupported.
 :::
 
+::: details Does it work on Apple TV?
+Yes. The current App Store listing supports tvOS 17.0 or later. The tvOS listing specifies configuration import by QR code, text input, or iCloud synchronization.
+:::
+
 ::: details Is it available in mainland China's App Store?
-It was not available there at the source snapshot. Use an Apple ID for a region where the app is listed. If necessary, read the safety restrictions on the [shared U.S. Apple ID page](/en/blog/freeappleid/).
+As of August 15, 2026, the mainland China App Store page is unavailable. Use an Apple ID for a region where the app is listed. If necessary, first read the safety restrictions on the [shared U.S. Apple ID page](/en/blog/freeappleid/).
+:::
+
+::: details Must Android users download it from Google Play?
+The official website currently directs its Android download button to Google Play, and the supplied material does not provide an official APK. Avoid third-party APKs unless the developer publishes a directly verifiable download.
 :::
 
 ::: details Does HyperOrbit collect user data?
-The source article states that HyperOrbit does not collect traffic or personal information. This translation has not independently audited the app or its network behavior. Review its current privacy disclosures and permissions if that claim is important to your threat model.
+The website says the app does not log traffic. The Google Play developer disclosure says it does not collect or share data. Apple's App Store privacy label says usage and diagnostic data may be collected but not linked to identity. These are developer disclosures, not an independent audit. Review the current store labels, [privacy policy](https://app.hyperorbit.net/privacy), and system permissions if this matters to your threat model.
 :::
 
 ## Supported protocols
