@@ -22,7 +22,7 @@
 |[xxyun](#xxyun)|[xxyun.de](https://xxyun.at/?code=HOWnn58c)| 无 |9.99元 100G/月|✔|[TG](https://t.me/+eYsE6P_xvjk2NGY5)|[前往](./v2/机场推荐xxyun.md)|
 |[ccyz](#ccyz)|[ccyz.org](https://xxyun.at/?code=HOWnn58c)| 1G |15元 150G/月|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|
 [星岛梦](#星岛梦)|[ermaov1.xdmvipaff.cc](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY)| 无 |16元 100G/月|✔|[TG](https://t.me/XDM6666666)|[前往](./v2/机场推荐星岛梦.md)|
-|[光年梯](#光年梯)|[ermaozi01.gntvipaff.cc](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr)| 无 |18元 110G/月|✔|[TG](https://t.me/guangnianti)|[前往](./v2/机场推荐光年梯.md)|
+|[光年梯](#光年梯)|[ermaozi02.gntvipaff.cc](https://ermaozi02.gntvipaff.cc/#/?code=FSEQIfPr)| 无 |18元 110G/月|✔|[TG](https://t.me/guangnianti)|[前往](./v2/机场推荐光年梯.md)|
 |[uuone](#uuone)|[uuone.de](https://uuone.at/?code=AjqYdZlJ)| 无 |12元 150G/月|✔|暂无|[前往](./v2/机场推荐uuone.md)|
 |[极连云](#极连云)|[ermaozi01.jlcvipaff.cc](https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m)| 无 |8元 60G/月|✔|[TG](https://t.me/JLYCloud)|[前往](./v2/机场推荐极连云.md)|
 |[cocoduck](#cocoduck)|[www.cocoduck.site](https://www.cocoduck.site/auth/register?code=25c8b515df)| 1天2G |15元 150G/月|❌|[TG](https://t.me/cocoduck_pub)|[前往](./v2/机场推荐cocoduck.md)|
@@ -102,7 +102,7 @@ flybit官网地址：[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM
 
 ### 光年梯
 
-光年梯官网地址：[ermaozi01.gntvipaff.cc](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr)
+光年梯官网地址：[ermaozi02.gntvipaff.cc](https://ermaozi02.gntvipaff.cc/#/?code=FSEQIfPr)
 
 最便宜的订阅有18元 110G/月。
 
@@ -110,11 +110,11 @@ flybit官网地址：[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM
 
 | 套餐名称 | 月费 | 流量 | 特性 | 适用人群 | 购买链接 |
 |----------|------|------|------|----------|----------|
-| **入门版** | ¥18.00/月 | 110GB/月 | 全IPLC专线，SS协议，不限速，不限客户端 | 轻度/入门 | [购买链接](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) |
-| **晋级版** | ¥34.00/月 | 220GB/月 | 全节点 x1 · 高峰满速 | 进阶使用 | [购买链接](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) |
-| **专业版** | ¥68.00/月 | 450GB/月 | 全节点 x1 · 高峰满速 | 主力使用 | [购买链接](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) |
-| **至尊版** | ¥130.00/月 | 900GB/月 | 全节点 x1 · 高峰满速 | 重度用户 | [购买链接](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) |
-| **独享私人专线** | ¥680.00/月 | 500GB/月 | 独立带宽，独立公网IP，全程独享 | 企业/极致 | [购买链接](https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr) |
+| **入门版** | ¥18.00/月 | 110GB/月 | 全IPLC专线，SS协议，不限速，不限客户端 | 轻度/入门 | [购买链接](https://ermaozi02.gntvipaff.cc/#/?code=FSEQIfPr) |
+| **晋级版** | ¥34.00/月 | 220GB/月 | 全节点 x1 · 高峰满速 | 进阶使用 | [购买链接](https://ermaozi02.gntvipaff.cc/#/?code=FSEQIfPr) |
+| **专业版** | ¥68.00/月 | 450GB/月 | 全节点 x1 · 高峰满速 | 主力使用 | [购买链接](https://ermaozi02.gntvipaff.cc/#/?code=FSEQIfPr) |
+| **至尊版** | ¥130.00/月 | 900GB/月 | 全节点 x1 · 高峰满速 | 重度用户 | [购买链接](https://ermaozi02.gntvipaff.cc/#/?code=FSEQIfPr) |
+| **独享私人专线** | ¥680.00/月 | 500GB/月 | 独立带宽，独立公网IP，全程独享 | 企业/极致 | [购买链接](https://ermaozi02.gntvipaff.cc/#/?code=FSEQIfPr) |
 
 ---
 

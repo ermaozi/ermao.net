@@ -3436,7 +3436,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "50GB/周期",
       "billingCycle": "多周期",
       "type": "周期订阅",
-      "purchaseHref": "https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr",
+      "purchaseHref": "https://ermaozi02.gntvipaff.cc/#/?code=FSEQIfPr",
       "text": "年付限时套餐，¥89/年，50GB/周期"
     },
     {
@@ -3445,7 +3445,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "110GB/周期",
       "billingCycle": "多周期",
       "type": "周期订阅",
-      "purchaseHref": "https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr",
+      "purchaseHref": "https://ermaozi02.gntvipaff.cc/#/?code=FSEQIfPr",
       "text": "光年梯 入门版，¥18/月；¥50/季；¥90/半年；¥160/年；¥300/两年；¥420/三年，110GB/周期"
     },
     {
@@ -3454,7 +3454,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "220GB/周期",
       "billingCycle": "多周期",
       "type": "周期订阅",
-      "purchaseHref": "https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr",
+      "purchaseHref": "https://ermaozi02.gntvipaff.cc/#/?code=FSEQIfPr",
       "text": "光年梯 晋级版，¥34/月；¥100/季；¥180/半年；¥320/年；¥610/两年；¥850/三年，220GB/周期"
     },
     {
@@ -3463,7 +3463,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "450GB/周期",
       "billingCycle": "多周期",
       "type": "周期订阅",
-      "purchaseHref": "https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr",
+      "purchaseHref": "https://ermaozi02.gntvipaff.cc/#/?code=FSEQIfPr",
       "text": "光年梯 专业版，¥68/月；¥200/季；¥375/半年；¥667/年；¥1251/两年；¥1752/三年，450GB/周期"
     },
     {
@@ -3472,7 +3472,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "900GB/周期",
       "billingCycle": "多周期",
       "type": "周期订阅",
-      "purchaseHref": "https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr",
+      "purchaseHref": "https://ermaozi02.gntvipaff.cc/#/?code=FSEQIfPr",
       "text": "光年梯 至尊版，¥130/月；¥390/季；¥702/半年；¥1248/年；¥2340/两年；¥3276/三年，900GB/周期"
     },
     {
@@ -3481,7 +3481,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "500GB/周期",
       "billingCycle": "多周期",
       "type": "周期订阅",
-      "purchaseHref": "https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr",
+      "purchaseHref": "https://ermaozi02.gntvipaff.cc/#/?code=FSEQIfPr",
       "text": "独享私人专线节点，¥680/月，500GB/周期"
     }
   ],
@@ -3558,7 +3558,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "59GB（重置方式未说明）",
       "type": "周期订阅",
       "audience": "低频备用，能接受年付风险",
-      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "purchaseHref": "https://hueue09.gcvipaff.com/#/?code=PGcNh6bA",
       "text": "轻量版，¥99/年，59GB（重置方式未说明）"
     },
     {
@@ -3567,7 +3567,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "120GB/月",
       "type": "周期订阅",
       "audience": "首次测试、轻中度使用",
-      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "purchaseHref": "https://hueue09.gcvipaff.com/#/?code=PGcNh6bA",
       "text": "BGP 智能优化 · 入门方案，¥20/月，120GB/月"
     },
     {
@@ -3576,7 +3576,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "300GB/月",
       "type": "周期订阅",
       "audience": "日常视频与 AI 工具",
-      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "purchaseHref": "https://hueue09.gcvipaff.com/#/?code=PGcNh6bA",
       "text": "BGP 智能优化 · 进阶方案，¥40/月，300GB/月"
     },
     {
@@ -3585,7 +3585,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "700GB/月",
       "type": "周期订阅",
       "audience": "多设备、高流量使用",
-      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "purchaseHref": "https://hueue09.gcvipaff.com/#/?code=PGcNh6bA",
       "text": "BGP 智能优化 · 高端方案，¥100/月，700GB/月"
     },
     {
@@ -3594,7 +3594,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "1500GB/月",
       "type": "周期订阅",
       "audience": "团队或重度使用",
-      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "purchaseHref": "https://hueue09.gcvipaff.com/#/?code=PGcNh6bA",
       "text": "BGP 智能优化 · 商业方案，¥180/月，1500GB/月"
     },
     {
@@ -3603,7 +3603,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "500GB/月",
       "type": "周期订阅",
       "audience": "需要独享节点并先确认线路规格的用户",
-      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "purchaseHref": "https://hueue09.gcvipaff.com/#/?code=PGcNh6bA",
       "text": "独享私人专线节点，¥680/月，500GB/月"
     },
     {
@@ -3614,7 +3614,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特点：低频备用"
       ],
-      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "purchaseHref": "https://hueue09.gcvipaff.com/#/?code=PGcNh6bA",
       "text": "BGP 智能优化 · 不限时轻量包，¥100/一次性，100GB",
       "oneTime": true
     },
@@ -3626,7 +3626,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特点：中等流量备用"
       ],
-      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "purchaseHref": "https://hueue09.gcvipaff.com/#/?code=PGcNh6bA",
       "text": "BGP 智能优化 · 不限时标准包，¥360/一次性，400GB",
       "oneTime": true
     },
@@ -3638,7 +3638,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特点：高流量备用"
       ],
-      "purchaseHref": "https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA",
+      "purchaseHref": "https://hueue09.gcvipaff.com/#/?code=PGcNh6bA",
       "text": "BGP 智能优化 · 不限时大容量包，¥700/一次性，800GB",
       "oneTime": true
     }
@@ -4317,7 +4317,7 @@ export const airportSources: AirportSource[] = [
     name: '光年梯',
     description: '光年梯是由资深团队运营的高品质翻墙机场，拥有多年的稳定运营历史和丰富的技术经验。其自有机房和全球节点网络确保了用户能够享受到快速、稳定的网络连接。',
     rank: 43,
-    officialHref: 'https://ermaozi01.gntvipaff.cc/#/?code=FSEQIfPr',
+    officialHref: 'https://ermaozi02.gntvipaff.cc/#/?code=FSEQIfPr',
     universalSubscription: false,
     minPlanText: '18元 110G/月',
     hasOneTimePackage: false,
@@ -4429,7 +4429,7 @@ export const airportSources: AirportSource[] = [
     name: '全球云',
     description: '全球云周期套餐最低 20 元 120GB/月，另有 99 元年付轻量版、三档不限时包和独享节点；服务商主打 IPLC/IEPL、VLESS 与 70+ 节点。',
     rank: 50,
-    officialHref: 'https://ermaozi01.gcvipaff.cc/#/?code=PGcNh6bA',
+    officialHref: 'https://hueue09.gcvipaff.com/#/?code=PGcNh6bA',
     universalSubscription: true,
     minPlanText: '20元 120GB/月',
     hasOneTimePackage: true,
