@@ -1,0 +1,125 @@
+---
+url: /en/blog/twilight-airport/index.md
+description: >-
+  Twilight's recurring, annual, one-time, and custom plans, VLESS and
+  subscription claims, payment and refund terms, and test.
+---
+Twilight reportedly began operation in 2025 and uses VLESS. Its recurring plans began at CNY 20 for 120 GB per month, with a separate CNY 109 annual 70 GB tier and three one-time data packages.
+
+Recorded purchase route: [Twilight plans](https://ermaozi01.twilightaff.com/#/?code=4lhDLNFL)
+
+![Twilight logo =256x256](https://image.ermao.net/images/blog/twilight-airport/20260723_175315-d2350d.png)
+
+## Provider information
+
+The provider described an overseas Singapore team, large-datacenter dedicated routes, 24-hour support, resolution of route problems within one hour, and refunds.
+
+No route specification, service-level agreement, response measurement, refund window, usage deduction, or return method was supplied. These are conditional provider promises, not unconditional guarantees.
+
+| Item | Source record |
+| --- | --- |
+| Operating history | About one year, provider claim |
+| Protocol | VLESS |
+| Regions | Hong Kong, Taiwan, Japan, Singapore, United States |
+| Payments | Alipay; WeChat Pay and USDT through support |
+| Universal subscription | Supported |
+| Telegram | None supplied |
+
+## Recurring plans
+
+| Plan | Data | Monthly | Quarterly | Half-year | Annual | Two years | Three years |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Basic | 120 GB | CNY 20 | 57 | 103 | 204 | 384 | 540 |
+| Standard | 300 GB | CNY 40 | 114 | 216 | 408 | 768 | 1,080 |
+| Flagship | 700 GB | CNY 100 | 285 | 540 | 1,020 | 1,920 | 2,700 |
+| Supreme | 1.5 TB | CNY 180 | 513 | 972 | 1,836 | 3,456 | 4,860 |
+
+Another statement says Basic could be CNY 16 after a 20% discount, but no code, period, or eligibility was provided. CNY 20 is the clear ordinary price.
+
+The source does not say whether data resets monthly on longer billing. Resolve this before quarterly or longer payment.
+
+## Annual light plan
+
+| Plan | Price | Data |
+| --- | ---: | ---: |
+| Annual Light | CNY 109/year | 70 GB/year |
+
+This is 70 GB for the whole year, not each month.
+
+## One-time packages
+
+| Plan | Price | Total data |
+| --- | ---: | ---: |
+| Light | CNY 219 one-time | 150 GB |
+| Standard | CNY 529 one-time | 400 GB |
+| Large | CNY 959 one-time | 800 GB |
+
+Confirm account expiry, inactivity, and closure rules.
+
+## Reset purchases and custom route
+
+| Related tier | Reset price |
+| --- | ---: |
+| Basic | CNY 20 |
+| Standard | CNY 40 |
+| Flagship | CNY 100 |
+| Supreme | CNY 180 |
+| Annual Light | CNY 109 |
+
+The source does not say whether reset purchases extend expiry, stack data, or have limits.
+
+The custom private node is listed at CNY 600/month with custom data. Bandwidth, entry, egress, IP type, country, devices, and maintenance scope were not supplied and must be obtained in writing.
+
+## Node and service claims
+
+The provider says there are 20 Hong Kong nodes and 10 each in Taiwan, Japan, Singapore, and the United States. It also claims streaming and ChatGPT access, YouTube 4K at the evening peak, and full plan bandwidth.
+
+The screenshot is a speed test only and cannot verify those access claims.
+
+## Archived test
+
+![Twilight VLESS node test =708x1280](https://image.ermao.net/images/blog/twilight-airport/20260723_175315-398ccb.png)
+
+The image is labelled July 20, 2026 at 20:54:55 CST, 60 VLESS nodes, 60/60 successful. Displayed averages are about 9.85–83.33 MB and peaks about 36.58–125.17 MB; `US 01` displays zero for both.
+
+Test region, ISP, baseline bandwidth, device, client, and repetitions are missing. One evening screenshot cannot establish every user's peak or long-term performance.
+
+## Purchase guidance
+
+* Begin with Basic for one month.
+* Treat the CNY 16 promotion as unconfirmed.
+* Resolve longer-cycle data resets and refund rules.
+* Verify the universal-subscription format and device/concurrency limits.
+* Treat USDT as irreversible.
+* Obtain a full specification for the custom route.
+
+## FAQ
+
+### What is the lowest clear monthly price?
+
+CNY 20 for 120 GB. The source's CNY 16 discount lacks conditions.
+
+### Is a universal subscription supported?
+
+The source says yes, without exact formats or device rules.
+
+### Are one-time packages available?
+
+The source lists CNY 219/150 GB, CNY 529/400 GB, and CNY 959/800 GB.
+
+### Which payment methods are supported?
+
+Alipay directly; the provider says WeChat Pay and USDT can be arranged through support.
+
+### Does the test prove streaming access?
+
+No. It is a speed screenshot and does not test streaming or ChatGPT.
+
+## Client guides
+
+* [Android Clash guide](/en/article/eh8f4n86/)
+* [iOS Shadowrocket guide](/en/article/z747kgjd/)
+* [Windows Clash guide](/en/article/0gematwc/)
+* [macOS Clash Verge Rev guide](/en/article/6vxkmmuh/)
+
+See the [proxy-service review index](/en/posts/vpn/), [budget list](/en/airport/), and [provider-selection guide](/en/article/choose-good-airport/).

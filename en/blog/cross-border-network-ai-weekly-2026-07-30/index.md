@@ -1,0 +1,154 @@
+---
+url: /en/blog/cross-border-network-ai-weekly-2026-07-30/index.md
+description: >-
+  Verified July 24–30 developments in a US legacy VPN-gateway proposal, sing-box
+  schema, GitHub and Cloudflare incidents, Claude errors, Delhi litigation, and
+  UK age assurance.
+---
+This issue covers July 24–30, 2026. A US senator proposed retiring legacy public-facing federal VPN gateways, and sing-box beta.2 added JSON Schema. A GitHub shared-path failure, congestion between Cloudflare's Singapore and Tokyo locations, and several Claude model errors show why incidents should be separated by component, region, and time. The Delhi shutdown case ended only in a procedural withdrawal, and Ofcom had not imposed a VPN restriction.
+
+![Cross-Border Network and AI Weekly cover for July 24–30, 2026 =1600x900](https://image.ermao.net/images/blog/cross-border-network-ai-weekly-2026-07-30/20260731_112817-cdbcb1.svg)
+
+*Cover by ermao.net. It is an original editorial illustration, not event evidence.*
+
+::: warning Draft pending human review
+Publisher: ermao.net. This draft was assembled from public sources and local daily evidence files with automated aggregation and checks. The site owner still needs to review the title, source boundaries, terminology, and publication time. Do not treat it as a final publication before that review.
+:::
+
+All seven daily archives were marked `complete`. July 24 and 25 were backfilled on July 31; July 26 and 27 received follow-up checks for official status and releases after the nightly cutoff; July 28–30 use their completed nightly collections. Backfill can verify published records but a search index cannot prove exhaustive coverage.
+
+## Weekly overview
+
+| Track | Event | Verified fact | Reader impact | Evidence status |
+| --- | --- | --- | --- | --- |
+| Security | US federal legacy VPN-gateway proposal | Senator Wyden asked CISA and other agencies for a two-year retirement and zero-trust migration plan | Focus on enterprise edge devices, patching, and identity; do not misread it as a consumer VPN ban | Senator letter and CRS memo plus independent reporting; not effective policy |
+| Proxy tools | sing-box 1.14.0-beta.2 | Added JSON Schema, top-level `$schema`, and `sing-box schema` | Complex configurations can catch structural errors earlier, but a pre-release still needs regression tests | Project release; no site test or independent matrix |
+| Infrastructure | Six GitHub services degraded | A network path in one availability zone failed, saturating remaining paths and causing loss | Switching a proxy node may not help when Git, Actions, and Copilot fail together | Complete GitHub report with component percentages; facility location undisclosed |
+| Infrastructure | Singapore–Tokyo congestion | Cloudflare recorded a regional event lasting about 3 hours 16 minutes | For Asia-Pacific cross-region variation, check the upstream path and time first | Official Cloudflare status; no loss rate, carrier, or user scale |
+| AI services | Claude model errors | A multi-model incident was followed by a separate Opus 4.8 degradation; Copilot recorded an upstream Fable 5 event | Switching product entry points may not bypass one upstream model failure | Two Anthropic incidents and GitHub corroboration; root cause unpublished |
+| Shutdown litigation | Jantar Mantar case withdrawn | Two outlets reported that the Delhi High Court allowed withdrawal of the public-interest challenge | Service restoration does not mean a court decided the shutdown's legality | Two independent reports; no primary order or complete docket |
+| Digital regulation | Ofcom age-assurance assessment | Report proposed layered protections at app-store, OS, and device levels | Could affect future account, device, and distribution rules; no VPN removal requirement | Ofcom report; statutory app-store report expected by January 2027 |
+
+## Security and tools
+
+### Wyden proposed a two-year retirement of legacy federal remote access
+
+In a [July 27 letter and CRS memorandum](https://www.wyden.senate.gov/imo/media/doc/wyden-vpn-letter-omb-cisa-nist-with-crs-memopdf.pdf) to OMB, CISA, NIST, and other bodies, Senator Ron Wyden asked CISA to issue a Binding Operational Directive giving civilian agencies two years to retire legacy public-facing remote-access systems and move toward zero-trust architecture. The letter also asked NIST for implementation standards and OMB for funding and procurement changes. [CyberScoop](https://cyberscoop.com/wyden-calls-for-federal-legacy-vpn-purge-zero-trust/) linked the primary document.
+
+The evidence boundary matters: this was **one senator's federal-agency security proposal**, not a directive already issued by CISA and not a US plan to prohibit personal VPN use. It concerns enterprise and government edge appliances, public listener ports, patching, and access controls. Adoption, deadlines, and procurement standards were undecided.
+
+### sing-box beta.2 added JSON Schema
+
+[sing-box v1.14.0-beta.2](https://github.com/SagerNet/sing-box/releases/tag/v1.14.0-beta.2), released July 25, provides JSON Schema. A configuration can use a top-level `$schema` pointing to the documented schema, or `sing-box schema` can generate one matching the current binary and build tags. JSON editing and completion also changed in graphical clients for macOS, Android, Windows, and Linux.
+
+Schema can catch misspelled fields and structural errors while editing. It cannot prove that routing logic, DNS results, or node quality are correct. The version remained pre-release and was not tested cross-platform by this site. Back up and validate complex rules and custom build-tag configurations in a copy.
+
+The preceding beta.1 rule-set and DNS changes are covered in the [previous weekly](/en/blog/cross-border-network-ai-weekly-2026-07-23/).
+
+## Infrastructure incidents
+
+### GitHub path loss degraded six service groups
+
+GitHub's [incident report](https://www.githubstatus.com/incidents/yjysg0xrl67m) says that from 16:04 to 17:36 UTC on July 24—00:04 to 01:36 Shanghai time on July 25—one of three physical datacenter availability zones lost network-path connectivity. Remaining paths saturated and dropped packets.
+
+GitHub quantified:
+
+* about 10% of Actions jobs failed and 5% were delayed;
+* about 27% of Issues interactions slowed or timed out;
+* about 4% of Copilot requests and 4% of `git push` requests were affected;
+* authentication error rate remained below 1%;
+* about 25% of available network-interconnect capacity was affected.
+
+These are GitHub-wide incident metrics, not every user's failure rate. The location of the affected datacenter was not published. The report supports a shared-infrastructure explanation for simultaneous API, Issues, Pull Requests, Actions, Pages, and Copilot errors.
+
+### Cloudflare reported Singapore–Tokyo congestion
+
+Cloudflare's [July 29 status incident](https://stspg.io/dn29zmnfrz4w) reported possible congestion between Singapore and Tokyo at 08:29 UTC, confirmed the issue at 10:29, entered monitoring at 11:44, and marked recovery at 11:45. That corresponds to 16:29–19:45 Shanghai time.
+
+Cloudflare did not publish the root cause, carrier, packet-loss rate, affected products, or user count. The bounded conclusion is a regional path event during that window—not that every Singapore or Japan node, every Cloudflare product, or one retail provider failed.
+
+Record ingress, egress, destination, and time before changing a provider. See the [provider and route review index](/en/posts/vpn/).
+
+## AI services by model and entry point
+
+Anthropic recorded two adjacent but separate events on July 30:
+
+* [multi-model elevated errors](https://status.anthropic.com/incidents/fsh2zzzl2c4l), 13:57–18:48 Shanghai time;
+* [Opus 4.8 degraded performance](https://status.anthropic.com/incidents/kqjy03gs895j), 21:43–22:24.
+
+Updates in the first event showed different models improving and worsening at different times. Anthropic did not say whether the two events shared a cause.
+
+The same day, a [GitHub Copilot incident for Claude Fable 5](https://www.githubstatus.com/incidents/9tpgqq1h4bs7) attributed degradation to an upstream model provider. The cross-record supports the conclusion that direct and third-party entry points can fail together because of an upstream model event. It does not show that every Claude model, region, or plan was unavailable or that an account or proxy caused the error.
+
+During diagnosis, record the model, product entry point, exact error time, and official status window.
+
+## Shutdown and regulatory boundaries
+
+### Withdrawal was not a ruling on legality
+
+The prior issue covered mobile-Internet suspensions near Jantar Mantar. The new fact is that [LiveLaw](https://www.livelaw.in/high-court/delhi-high-court/delhi-high-court-allows-withdrawal-of-pil-challenging-internet-shutdown-around-jantar-mantar-542977) and [Amar Ujala](https://www.amarujala.com/amp/delhi-ncr/public-interest-litigation-against-the-order-to-shut-down-the-internet-around-jantar-mantar-withdrawn-delhi-ncr-news-c-340-1-del1011-147749-2026-07-27) reported on July 27 that the Delhi High Court allowed Software Freedom Law Center, India to withdraw its public-interest challenge to several shutdown orders.
+
+The reports establish a procedural withdrawal. The primary court order, government filings, reason for withdrawal, and future publication of shutdown orders were not available in the evidence set. It would be inaccurate to say the court held the shutdown lawful or unlawful.
+
+### Ofcom's layered age assurance did not impose VPN limits
+
+Ofcom's updated [Use of Age Assurance Report 2026](https://www.ofcom.org.uk/online-safety/protecting-children/use-of-age-assurance-report-2026) said no single age-assurance method eliminates circumvention and discussed layered safeguards at app-store, operating-system, and device levels. Ofcom said a statutory report on app-store protections would be published by January 2027.
+
+This is an implementation assessment and future direction. It is not a current requirement to remove VPN applications, age-verify VPN users, or restrict ordinary VPN use. Legislation, technical standards, privacy rules, appeal mechanisms, and store enforcement remained undecided.
+
+The [week 30 censorship digest](/en/blog/censorship-weekly-2026-30/) explains the boundary around the UK government's separate social-media proposal.
+
+## Update table
+
+| Item | Verified change | Boundary | Action |
+| --- | --- | --- | --- |
+| sing-box | 1.14.0-beta.2 adds schema and editor completion | Pre-release; no site test or independent matrix | Back up and test rules and DNS in a copy |
+| GitHub | One-zone network path event affected six service groups | Official percentages are not every user's failure rate | Check component status before retrying or changing workflow |
+| Cloudflare | Singapore–Tokyo congestion window of about 3h16m | No root cause, loss rate, or product scope | Preserve path, time, and destination evidence |
+| Claude | Multi-model errors followed by separate Opus 4.8 degradation | Whether the events shared a cause is unknown | Check model and entry point, not only the exit node |
+| US federal access | Wyden proposed a two-year legacy-gateway retirement | Request, not effective CISA or OMB policy | Distinguish enterprise appliance security from consumer VPNs |
+| UK age assurance | Ofcom discussed app-store, OS, and device layers | App-store report due by January 2027 | Watch final rules; do not claim a VPN ban |
+
+## Practical actions
+
+1. **Identify the failure layer.** Local client, exit IP, regional path, platform component, and upstream model are separate.
+2. **Validate pre-releases before upgrading.** Schema does not replace routing, DNS, TUN, and subscription regression tests.
+3. **Keep reproducible incident data.** Record Shanghai time, entry point or model, destination, node region, and error text.
+4. **Separate enterprise access from consumer VPN policy.** A federal edge-appliance proposal is not a personal-use rule.
+5. **Keep legal reporting within its evidence.** Withdrawal is not a merits judgment, and an assessment is not an app-removal requirement.
+
+## Next checks and content gap
+
+* whether CISA, OMB, NIST, or NSA responds with a formal directive, standard, or procurement document;
+* sing-box 1.14 migration notes, stable plans, and reproducible compatibility issues;
+* whether GitHub identifies the network region or Cloudflare publishes a cause or impact metric;
+* whether Anthropic explains the relationship, geography, or request impact of the July 30 events;
+* a primary Delhi court order or docket;
+* verified VPN-app effects from Ofcom's app-store assessment.
+
+An evergreen content gap is a five-layer troubleshooting checklist: local client, exit IP, regional path, platform component, and upstream dependency.
+
+Only the site-owned cover is used. No official or media image simultaneously met explanatory value, reusable-rights, and approval requirements.
+
+## Sources
+
+1. [Wyden letter and CRS memorandum](https://www.wyden.senate.gov/imo/media/doc/wyden-vpn-letter-omb-cisa-nist-with-crs-memopdf.pdf)
+2. [CyberScoop report](https://cyberscoop.com/wyden-calls-for-federal-legacy-vpn-purge-zero-trust/)
+3. [sing-box v1.14.0-beta.2](https://github.com/SagerNet/sing-box/releases/tag/v1.14.0-beta.2)
+4. [GitHub service disruption](https://www.githubstatus.com/incidents/yjysg0xrl67m)
+5. [Cloudflare Singapore–Tokyo congestion](https://stspg.io/dn29zmnfrz4w)
+6. [Anthropic multi-model incident](https://status.anthropic.com/incidents/fsh2zzzl2c4l)
+7. [Anthropic Opus 4.8 incident](https://status.anthropic.com/incidents/kqjy03gs895j)
+8. [GitHub Copilot Claude Fable 5 incident](https://www.githubstatus.com/incidents/9tpgqq1h4bs7)
+9. [LiveLaw on withdrawal](https://www.livelaw.in/high-court/delhi-high-court/delhi-high-court-allows-withdrawal-of-pil-challenging-internet-shutdown-around-jantar-mantar-542977)
+10. [Amar Ujala report](https://www.amarujala.com/amp/delhi-ncr/public-interest-litigation-against-the-order-to-shut-down-the-internet-around-jantar-mantar-withdrawn-delhi-ncr-news-c-340-1-del1011-147749-2026-07-27)
+11. [Ofcom Use of Age Assurance Report 2026](https://www.ofcom.org.uk/online-safety/protecting-children/use-of-age-assurance-report-2026)
+
+## Related reading
+
+* [Previous cross-border network and AI weekly](/en/blog/cross-border-network-ai-weekly-2026-07-23/)
+* [Week 30 censorship digest](/en/blog/censorship-weekly-2026-30/)
+* [Proxy-client directory](/en/article/fanqiang-tools/)
+* [Proxies, Clash, and VPNs](/en/article/fanqiang2/)
+
+> This information digest is not legal, investment, or product advice and does not guarantee service availability. Submit corrections through the [corrections page](/en/corrections/).

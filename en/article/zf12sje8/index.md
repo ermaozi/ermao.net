@@ -1,0 +1,35 @@
+---
+url: /en/article/zf12sje8/index.md
+description: >-
+  Adaxi's CNY 3 monthly option is recorded with its website, prices, test
+  sample, and source claims about speed and latency.
+---
+Adaxi is a newer, low-cost proxy service. The source article reports responsive servers, high speed, and low latency suitable for a range of network uses.
+
+Adaxi official website: [https://adaxi.net](https://adaxi.net/?r=68917)
+
+## Adaxi official website
+
+[https://adaxi.net](https://adaxi.net/?r=68917)
+
+## Adaxi overview
+
+[Adaxi](https://adaxi.net/?r=68917) is a newer proxy service with low-cost plans. The source article reports responsive, fast, low-latency servers suitable for different network needs.
+
+![Adaxi overview =1280x533](https://image.ermao.net/images/article/zf12sje8/image.png)
+
+The CNY 3 monthly option is intended for lightweight use and should be sufficient for occasional video viewing or consulting study materials.
+
+## Adaxi test
+
+![Adaxi test =1280x1244](https://image.ermao.net/images/article/zf12sje8/image-1.png)
+
+## Complete proxy-service guide
+
+<https://www.ermao.net/en/posts/vpn>
+
+## Client guides
+
+* 📱 [Clash for Android](https://www.ermao.net/en/article/eh8f4n86/)
+* 🖥 [Clash for Windows](https://www.ermao.net/en/article/0gematwc/)
+* 🍎 [Clash for iOS](https://www.ermao.net/en/article/z747kgjd/)
