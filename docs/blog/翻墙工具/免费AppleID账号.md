@@ -31,6 +31,12 @@ description: 2026年最新免费共享美区Apple ID账号，每日更新可用�
 
 <LinkCard title="🚀 iOS Clash Mi 使用教程：免费且好用的节点订阅与配置指南" href="/blog/clashmi/" description="最新 iOS Clash Mi 新手使用教程。详细介绍如何在 iPhone/iPad 上下载免费的 Clash Mi，以及如何配置节点订阅链接进行科学上网。" />
 
+## 广告位招租
+
+由于太多用户不看提示导致锁机，请**转转**、**爱回收**等二手回收平台商务尽快联系我，我将在这里提供广告位，帮助您推广二手回收业务。
+
+联系邮箱：[admin@ermao.net](mailto:admin@ermao.net)
+
 ## 适用场景与受众人群分析
 
 基于长期的测试评估，**免费共享Apple ID**提供了便捷的临时跨区体验，但也伴随着稳定性的牺牲：

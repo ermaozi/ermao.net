@@ -1,6 +1,7 @@
 ---
 title: "Clash for Android: Download, Install, and Import a Subscription (2026)"
 createTime: 2024/09/17 17:26:51
+updateTime: 2026/08/08 18:14:03
 permalink: /en/article/eh8f4n86/
 lang: en-US
 translationOf: /article/eh8f4n86/
