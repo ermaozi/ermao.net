@@ -1,15 +1,17 @@
 {
-  "generatedAt": "2026-07-31T08:35:01.809Z",
+  "generatedAt": "2026-08-26T01:31:33.371Z",
   "summary": {
-    "total": 169,
-    "translated": 169,
+    "total": 178,
+    "translated": 175,
     "needs-review": 0,
-    "missing": 0
+    "missing": 3
   },
   "categoryDirectories": {
     "python攻略": "python-guides",
+    "广告推广": "promotions",
     "文档": "guides",
     "新闻": "news",
+    "新闻周报": "weekly-news",
     "机场推荐": "proxy-reviews",
     "杂事": "misc",
     "翻墙工具": "access-tools",
@@ -26,6 +28,15 @@
       "status": "translated",
       "issues": [],
       "hanCharacters": 0
+    },
+    {
+      "source": "docs/ad-board.md",
+      "target": "docs/en/ad-board.md",
+      "sourceHash": "23aecd2c0205865c",
+      "sourcePermalink": "/ad-board/",
+      "expectedPermalink": "/en/ad-board/",
+      "status": "missing",
+      "issues": []
     },
     {
       "source": "docs/affiliate-disclosure.md",
@@ -78,9 +89,18 @@
       "hanCharacters": 0
     },
     {
+      "source": "docs/blog/广告推广/直播礼物感谢助手.md",
+      "target": "docs/en/blog/promotions/直播礼物感谢助手.md",
+      "sourceHash": "74a46b4182c7f1db",
+      "sourcePermalink": "/blog/douyin-live-gift-thanks-assistant/",
+      "expectedPermalink": "/en/blog/douyin-live-gift-thanks-assistant/",
+      "status": "missing",
+      "issues": []
+    },
+    {
       "source": "docs/blog/文档/9esim使用指南.md",
       "target": "docs/en/blog/guides/9esim使用指南.md",
-      "sourceHash": "3e4c3de9a7a83f49",
+      "sourceHash": "096acc3d005575d5",
       "sourcePermalink": "/blog/9esim/",
       "expectedPermalink": "/en/blog/9esim/",
       "status": "translated",
@@ -90,9 +110,19 @@
     {
       "source": "docs/blog/文档/ChatGPT充值全攻略.md",
       "target": "docs/en/blog/guides/ChatGPT充值全攻略.md",
-      "sourceHash": "c265940731421ba2",
+      "sourceHash": "31b633749eac9834",
       "sourcePermalink": "/blog/chatgpt-chongzhi-2026-guide/",
       "expectedPermalink": "/en/blog/chatgpt-chongzhi-2026-guide/",
+      "status": "translated",
+      "issues": [],
+      "hanCharacters": 0
+    },
+    {
+      "source": "docs/blog/文档/CloudflareWallet是什么.md",
+      "target": "docs/en/blog/guides/CloudflareWallet是什么.md",
+      "sourceHash": "99ad81276ef2091c",
+      "sourcePermalink": "/blog/cloudflare-wallet/",
+      "expectedPermalink": "/en/blog/cloudflare-wallet/",
       "status": "translated",
       "issues": [],
       "hanCharacters": 0
@@ -110,12 +140,21 @@
     {
       "source": "docs/blog/文档/TrueNAS虚拟机备份.md",
       "target": "docs/en/blog/guides/TrueNAS虚拟机备份.md",
-      "sourceHash": "08c2ca5666884a59",
+      "sourceHash": "3030834acf2354ca",
       "sourcePermalink": "/article/vgf2ez1r/",
       "expectedPermalink": "/en/article/vgf2ez1r/",
       "status": "translated",
       "issues": [],
       "hanCharacters": 0
+    },
+    {
+      "source": "docs/blog/文档/VSCode接入DeepSeekV4.md",
+      "target": "docs/en/blog/guides/VSCode接入DeepSeekV4.md",
+      "sourceHash": "38864f8ac1399ab8",
+      "sourcePermalink": "/blog/vscode-deepseek-v4/",
+      "expectedPermalink": "/en/blog/vscode-deepseek-v4/",
+      "status": "missing",
+      "issues": []
     },
     {
       "source": "docs/blog/文档/Zsh安装与配置.md",
@@ -140,7 +179,7 @@
     {
       "source": "docs/blog/文档/docker部署aria2.md",
       "target": "docs/en/blog/guides/docker部署aria2.md",
-      "sourceHash": "73f24c89400b12ec",
+      "sourceHash": "1f25aa19032cb110",
       "sourcePermalink": "/article/b06gglcq/",
       "expectedPermalink": "/en/article/b06gglcq/",
       "status": "translated",
@@ -150,7 +189,7 @@
     {
       "source": "docs/blog/文档/github无法访问.md",
       "target": "docs/en/blog/guides/github无法访问.md",
-      "sourceHash": "7e85328d29ce9c6f",
+      "sourceHash": "634fae4dec25e507",
       "sourcePermalink": "/article/github/",
       "expectedPermalink": "/en/article/github/",
       "status": "translated",
@@ -160,7 +199,7 @@
     {
       "source": "docs/blog/文档/google教你怎么做SEO.md",
       "target": "docs/en/blog/guides/google教你怎么做SEO.md",
-      "sourceHash": "96bfe66be4770aaf",
+      "sourceHash": "e8689b5d3e2f462b",
       "sourcePermalink": "/blog/googleseo/",
       "expectedPermalink": "/en/blog/googleseo/",
       "status": "translated",
@@ -170,7 +209,7 @@
     {
       "source": "docs/blog/文档/openclaw初阶教程.md",
       "target": "docs/en/blog/guides/openclaw初阶教程.md",
-      "sourceHash": "3b0d4263e506612e",
+      "sourceHash": "af74aaf0bf1a5f28",
       "sourcePermalink": "/blog/yecv6pn6/",
       "expectedPermalink": "/en/blog/yecv6pn6/",
       "status": "translated",
@@ -180,7 +219,7 @@
     {
       "source": "docs/blog/文档/telegram如何搜索.md",
       "target": "docs/en/blog/guides/telegram如何搜索.md",
-      "sourceHash": "ffed4060eed3c981",
+      "sourceHash": "c936d9cfb0da87c9",
       "sourcePermalink": "/article/wwpg9n59/",
       "expectedPermalink": "/en/article/wwpg9n59/",
       "status": "translated",
@@ -190,7 +229,7 @@
     {
       "source": "docs/blog/文档/telegram注册使用教程.md",
       "target": "docs/en/blog/guides/telegram注册使用教程.md",
-      "sourceHash": "20dc8fcafb50bf8c",
+      "sourceHash": "c6959ad6a6f97497",
       "sourcePermalink": "/blog/telegram/",
       "expectedPermalink": "/en/blog/telegram/",
       "status": "translated",
@@ -200,7 +239,7 @@
     {
       "source": "docs/blog/文档/tg搜索.md",
       "target": "docs/en/blog/guides/tg搜索.md",
-      "sourceHash": "cc5f1b2185f959e1",
+      "sourceHash": "4c9487d0dd8e456c",
       "sourcePermalink": "/article/bsnuua0h/",
       "expectedPermalink": "/en/article/bsnuua0h/",
       "status": "translated",
@@ -220,7 +259,7 @@
     {
       "source": "docs/blog/文档/wsl将ubuntu换成debian.md",
       "target": "docs/en/blog/guides/wsl将ubuntu换成debian.md",
-      "sourceHash": "a2ce037816cb2e44",
+      "sourceHash": "e2ab50b2467caec4",
       "sourcePermalink": "/article/ubm5k5vn/",
       "expectedPermalink": "/en/article/ubm5k5vn/",
       "status": "translated",
@@ -230,7 +269,7 @@
     {
       "source": "docs/blog/文档/什么是翻墙.md",
       "target": "docs/en/blog/guides/什么是翻墙.md",
-      "sourceHash": "fcc7d048d6800968",
+      "sourceHash": "3c80feeb33bb2610",
       "sourcePermalink": "/article/fanqiang2/",
       "expectedPermalink": "/en/article/fanqiang2/",
       "status": "translated",
@@ -240,7 +279,7 @@
     {
       "source": "docs/blog/文档/使用Vim上班看小说.md",
       "target": "docs/en/blog/guides/使用Vim上班看小说.md",
-      "sourceHash": "832673ce09b9fa49",
+      "sourceHash": "3fcc035a17d67200",
       "sourcePermalink": "/article/yifph1jd/",
       "expectedPermalink": "/en/article/yifph1jd/",
       "status": "translated",
@@ -250,7 +289,7 @@
     {
       "source": "docs/blog/文档/使用cloudflare进行URL重定向.md",
       "target": "docs/en/blog/guides/使用cloudflare进行URL重定向.md",
-      "sourceHash": "b42eaa632f01298d",
+      "sourceHash": "02c3a9eb677e8acd",
       "sourcePermalink": "/article/jqtuqouj/",
       "expectedPermalink": "/en/article/jqtuqouj/",
       "status": "translated",
@@ -260,7 +299,7 @@
     {
       "source": "docs/blog/文档/免费deepseek.md",
       "target": "docs/en/blog/guides/免费deepseek.md",
-      "sourceHash": "1e06518a7036acd4",
+      "sourceHash": "6a2ca83c8879299b",
       "sourcePermalink": "/article/tj38tso3/",
       "expectedPermalink": "/en/article/tj38tso3/",
       "status": "translated",
@@ -270,7 +309,7 @@
     {
       "source": "docs/blog/文档/免费机场.md",
       "target": "docs/en/blog/guides/免费机场.md",
-      "sourceHash": "6815ae3ca13ab393",
+      "sourceHash": "107e5fb8f5a2417c",
       "sourcePermalink": "/article/oh8wwokl/",
       "expectedPermalink": "/en/article/oh8wwokl/",
       "status": "translated",
@@ -290,7 +329,7 @@
     {
       "source": "docs/blog/文档/国内购买vpn违法吗.md",
       "target": "docs/en/blog/guides/国内购买vpn违法吗.md",
-      "sourceHash": "e81bf04f4aee3953",
+      "sourceHash": "a4fba656b7b0cbe7",
       "sourcePermalink": "/blog/vpnhefa/",
       "expectedPermalink": "/en/blog/vpnhefa/",
       "status": "translated",
@@ -300,7 +339,7 @@
     {
       "source": "docs/blog/文档/如何判断一个机场使用的线路类型.md",
       "target": "docs/en/blog/guides/如何判断一个机场使用的线路类型.md",
-      "sourceHash": "1ac118879e6d8689",
+      "sourceHash": "3697a3af325f7a22",
       "sourcePermalink": "/article/r50bpg9j/",
       "expectedPermalink": "/en/article/r50bpg9j/",
       "status": "translated",
@@ -310,7 +349,7 @@
     {
       "source": "docs/blog/文档/如何解决github无法访问.md",
       "target": "docs/en/blog/guides/如何解决github无法访问.md",
-      "sourceHash": "06cb89cafa6fb142",
+      "sourceHash": "e1e752af9071e4f6",
       "sourcePermalink": "/article/jddtxrrw/",
       "expectedPermalink": "/en/article/jddtxrrw/",
       "status": "translated",
@@ -320,7 +359,7 @@
     {
       "source": "docs/blog/文档/如何选择机场.md",
       "target": "docs/en/blog/guides/如何选择机场.md",
-      "sourceHash": "ebba43ac8133092f",
+      "sourceHash": "51a1c76f2f178a97",
       "sourcePermalink": "/article/choose-good-airport/",
       "expectedPermalink": "/en/article/choose-good-airport/",
       "status": "translated",
@@ -330,7 +369,7 @@
     {
       "source": "docs/blog/文档/安卓TV使用免费Emby.md",
       "target": "docs/en/blog/guides/安卓TV使用免费Emby.md",
-      "sourceHash": "e62e9e3db2b31538",
+      "sourceHash": "88d7da8f681cfd18",
       "sourcePermalink": "/article/d3apexwx/",
       "expectedPermalink": "/en/article/d3apexwx/",
       "status": "translated",
@@ -340,7 +379,7 @@
     {
       "source": "docs/blog/文档/安卓TV软件推荐与下载.md",
       "target": "docs/en/blog/guides/安卓TV软件推荐与下载.md",
-      "sourceHash": "21e24bf3feae0493",
+      "sourceHash": "b67511b1002910c3",
       "sourcePermalink": "/article/vw1nq52m/",
       "expectedPermalink": "/en/article/vw1nq52m/",
       "status": "translated",
@@ -350,7 +389,7 @@
     {
       "source": "docs/blog/文档/本地部署DeepSeek.md",
       "target": "docs/en/blog/guides/本地部署DeepSeek.md",
-      "sourceHash": "7c8591b364fb6de6",
+      "sourceHash": "da9d1cbd19156b0d",
       "sourcePermalink": "/article/c3gj5lqy/",
       "expectedPermalink": "/en/article/c3gj5lqy/",
       "status": "translated",
@@ -360,7 +399,7 @@
     {
       "source": "docs/blog/文档/翻墙之后可以做什么.md",
       "target": "docs/en/blog/guides/翻墙之后可以做什么.md",
-      "sourceHash": "8a647b4fe11669aa",
+      "sourceHash": "e357d73155cb6e5c",
       "sourcePermalink": "/blog/gfwwebstie/",
       "expectedPermalink": "/en/blog/gfwwebstie/",
       "status": "translated",
@@ -370,7 +409,7 @@
     {
       "source": "docs/blog/文档/翻墙之后如何利用信息差赚点外快.md",
       "target": "docs/en/blog/guides/翻墙之后如何利用信息差赚点外快.md",
-      "sourceHash": "0b52b7931335e0f2",
+      "sourceHash": "ee21c44c7453fb3e",
       "sourcePermalink": "/article/rsvptr5x/",
       "expectedPermalink": "/en/article/rsvptr5x/",
       "status": "translated",
@@ -380,7 +419,7 @@
     {
       "source": "docs/blog/文档/翻墙机场订阅新手指南.md",
       "target": "docs/en/blog/guides/翻墙机场订阅新手指南.md",
-      "sourceHash": "b178592321e64388",
+      "sourceHash": "4b31f2ed0064b403",
       "sourcePermalink": "/article/jichang-subscription-guide/",
       "expectedPermalink": "/en/article/jichang-subscription-guide/",
       "status": "translated",
@@ -390,7 +429,7 @@
     {
       "source": "docs/blog/文档/虚拟币入门okx使用方法.md",
       "target": "docs/en/blog/guides/虚拟币入门okx使用方法.md",
-      "sourceHash": "8f13afd898ad59a5",
+      "sourceHash": "9f3b7eb70e0fc491",
       "sourcePermalink": "/blog/web3okx/",
       "expectedPermalink": "/en/blog/web3okx/",
       "status": "translated",
@@ -400,7 +439,7 @@
     {
       "source": "docs/blog/文档/路由器翻墙详细教程.md",
       "target": "docs/en/blog/guides/路由器翻墙详细教程.md",
-      "sourceHash": "0c55bedbef098c5f",
+      "sourceHash": "036c36665d501df6",
       "sourcePermalink": "/article/fanqiang/",
       "expectedPermalink": "/en/article/fanqiang/",
       "status": "translated",
@@ -410,7 +449,7 @@
     {
       "source": "docs/blog/文档/软路由全屋翻墙指南.md",
       "target": "docs/en/blog/guides/软路由全屋翻墙指南.md",
-      "sourceHash": "42cd17975496f4c6",
+      "sourceHash": "9263f931e9f23121",
       "sourcePermalink": "/blog/softrouter/",
       "expectedPermalink": "/en/blog/softrouter/",
       "status": "translated",
@@ -430,7 +469,7 @@
     {
       "source": "docs/blog/文档/软路由搭建指南.md",
       "target": "docs/en/blog/guides/软路由搭建指南.md",
-      "sourceHash": "0dfa7558b824a149",
+      "sourceHash": "652aa59969861af5",
       "sourcePermalink": "/blog/router-setup-guide/",
       "expectedPermalink": "/en/blog/router-setup-guide/",
       "status": "translated",
@@ -440,7 +479,7 @@
     {
       "source": "docs/blog/文档/飞牛OS虚拟机安装openwrt作为旁路由.md",
       "target": "docs/en/blog/guides/飞牛OS虚拟机安装openwrt作为旁路由.md",
-      "sourceHash": "55d71546a049b66a",
+      "sourceHash": "2d325327728bea5d",
       "sourcePermalink": "/blog/fnoswrt/",
       "expectedPermalink": "/en/blog/fnoswrt/",
       "status": "translated",
@@ -450,7 +489,7 @@
     {
       "source": "docs/blog/文档/飞牛OS通过OneDrive备份文件.md",
       "target": "docs/en/blog/guides/飞牛OS通过OneDrive备份文件.md",
-      "sourceHash": "6ac1fe7156472ad3",
+      "sourceHash": "c9aa35b2b3e18211",
       "sourcePermalink": "/article/aofygutj/",
       "expectedPermalink": "/en/article/aofygutj/",
       "status": "translated",
@@ -460,7 +499,7 @@
     {
       "source": "docs/blog/新闻/2026年四月份各大机场断线详解.md",
       "target": "docs/en/blog/news/2026年四月份各大机场断线详解.md",
-      "sourceHash": "67de5189a6e1490e",
+      "sourceHash": "1b5f7758540ebca0",
       "sourcePermalink": "/blog/april-airport-outage-2026/",
       "expectedPermalink": "/en/blog/april-airport-outage-2026/",
       "status": "translated",
@@ -470,7 +509,7 @@
     {
       "source": "docs/blog/新闻/2026年极客湾视频被下架.md",
       "target": "docs/en/blog/news/2026年极客湾视频被下架.md",
-      "sourceHash": "6997ec68e2c0fabf",
+      "sourceHash": "dfd10a6487690718",
       "sourcePermalink": "/blog/geekwan-video-removed/",
       "expectedPermalink": "/en/blog/geekwan-video-removed/",
       "status": "translated",
@@ -480,7 +519,7 @@
     {
       "source": "docs/blog/新闻/Stash疑似大面积缝合开源代码.md",
       "target": "docs/en/blog/news/Stash疑似大面积缝合开源代码.md",
-      "sourceHash": "67b66d825ccb1bd7",
+      "sourceHash": "4f88844d6d254648",
       "sourcePermalink": "/news/kne6vczb/",
       "expectedPermalink": "/en/news/kne6vczb/",
       "status": "translated",
@@ -490,7 +529,7 @@
     {
       "source": "docs/blog/新闻/快连vpn退出中国市场.md",
       "target": "docs/en/blog/news/快连vpn退出中国市场.md",
-      "sourceHash": "df02793ab1d49bcc",
+      "sourceHash": "b23ac95d3b354d1a",
       "sourcePermalink": "/blog/j0qbrzgj/",
       "expectedPermalink": "/en/blog/j0qbrzgj/",
       "status": "translated",
@@ -500,7 +539,7 @@
     {
       "source": "docs/blog/新闻/海南新增2条出海光缆.md",
       "target": "docs/en/blog/news/海南新增2条出海光缆.md",
-      "sourceHash": "f925bfa34e001cd4",
+      "sourceHash": "b923ee0afa5e09c0",
       "sourcePermalink": "/blog/hainanguanlan/",
       "expectedPermalink": "/en/blog/hainanguanlan/",
       "status": "translated",
@@ -510,7 +549,7 @@
     {
       "source": "docs/blog/新闻/网盘管理工具alist疑似被出售.md",
       "target": "docs/en/blog/news/网盘管理工具alist疑似被出售.md",
-      "sourceHash": "c56bbb271825aa4d",
+      "sourceHash": "2d68dcc251316e71",
       "sourcePermalink": "/article/dsbch7va/",
       "expectedPermalink": "/en/article/dsbch7va/",
       "status": "translated",
@@ -518,9 +557,39 @@
       "hanCharacters": 0
     },
     {
+      "source": "docs/blog/新闻周报/2026/2026-07-31至2026-08-06国内热点与科技周报.md",
+      "target": "docs/en/blog/weekly-news/2026/2026-07-31至2026-08-06国内热点与科技周报.md",
+      "sourceHash": "1415ab721f314fb0",
+      "sourcePermalink": "/blog/weekly-news-2026-08-06/",
+      "expectedPermalink": "/en/blog/weekly-news-2026-08-06/",
+      "status": "translated",
+      "issues": [],
+      "hanCharacters": 0
+    },
+    {
+      "source": "docs/blog/新闻周报/2026/2026-08-07至2026-08-13国内热点与科技周报.md",
+      "target": "docs/en/blog/weekly-news/2026/2026-08-07至2026-08-13国内热点与科技周报.md",
+      "sourceHash": "c1651f223b3f5be9",
+      "sourcePermalink": "/blog/weekly-news-2026-08-13/",
+      "expectedPermalink": "/en/blog/weekly-news-2026-08-13/",
+      "status": "translated",
+      "issues": [],
+      "hanCharacters": 0
+    },
+    {
+      "source": "docs/blog/新闻周报/2026/2026-08-14至2026-08-20国内热点与科技周报.md",
+      "target": "docs/en/blog/weekly-news/2026/2026-08-14至2026-08-20国内热点与科技周报.md",
+      "sourceHash": "9b0bcad3bf58ada6",
+      "sourcePermalink": "/blog/weekly-news-2026-08-20/",
+      "expectedPermalink": "/en/blog/weekly-news-2026-08-20/",
+      "status": "translated",
+      "issues": [],
+      "hanCharacters": 0
+    },
+    {
       "source": "docs/blog/机场推荐/2024/机场推荐加速啦.md",
       "target": "docs/en/blog/proxy-reviews/2024/机场推荐加速啦.md",
-      "sourceHash": "df364f8b94ee043b",
+      "sourceHash": "f643f3d883abd033",
       "sourcePermalink": "/article/kewe92tu/",
       "expectedPermalink": "/en/article/kewe92tu/",
       "status": "translated",
@@ -530,7 +599,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐CyberGuard.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐CyberGuard.md",
-      "sourceHash": "1acde60394696ee2",
+      "sourceHash": "1d9ab67fd199117e",
       "sourcePermalink": "/article/4m7fg8r9/",
       "expectedPermalink": "/en/article/4m7fg8r9/",
       "status": "translated",
@@ -540,7 +609,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐TNT.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐TNT.md",
-      "sourceHash": "0f652c0fe3e9ed40",
+      "sourceHash": "58724884e67ad5d4",
       "sourcePermalink": "/article/4uxesz79/",
       "expectedPermalink": "/en/article/4uxesz79/",
       "status": "translated",
@@ -550,7 +619,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐XSUS.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐XSUS.md",
-      "sourceHash": "4cb0762bba3ac16e",
+      "sourceHash": "9b02e195f870a5dc",
       "sourcePermalink": "/article/bc6o8acd/",
       "expectedPermalink": "/en/article/bc6o8acd/",
       "status": "translated",
@@ -560,7 +629,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐flybit.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐flybit.md",
-      "sourceHash": "0890106c4ffff7bc",
+      "sourceHash": "e682197a810d3d45",
       "sourcePermalink": "/article/q8yp9r2b/",
       "expectedPermalink": "/en/article/q8yp9r2b/",
       "status": "translated",
@@ -570,7 +639,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐koodog.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐koodog.md",
-      "sourceHash": "fb39d3d4fee7e7aa",
+      "sourceHash": "e6a21e41ca0b5ae6",
       "sourcePermalink": "/article/rq55p9dn/",
       "expectedPermalink": "/en/article/rq55p9dn/",
       "status": "translated",
@@ -580,7 +649,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐okanc.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐okanc.md",
-      "sourceHash": "5891fd82337fd59a",
+      "sourceHash": "d184e32411a5ffb3",
       "sourcePermalink": "/article/giwzl7sq/",
       "expectedPermalink": "/en/article/giwzl7sq/",
       "status": "translated",
@@ -590,7 +659,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐ssone.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐ssone.md",
-      "sourceHash": "925e41a5c08f251e",
+      "sourceHash": "6b120803cbf4425a",
       "sourcePermalink": "/article/8jxmo76u/",
       "expectedPermalink": "/en/article/8jxmo76u/",
       "status": "translated",
@@ -600,7 +669,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐xx云.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐xx云.md",
-      "sourceHash": "4ebe0e3b39c54346",
+      "sourceHash": "9cdd512aa963ffe3",
       "sourcePermalink": "/article/6e3quult/",
       "expectedPermalink": "/en/article/6e3quult/",
       "status": "translated",
@@ -610,7 +679,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐九霄云.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐九霄云.md",
-      "sourceHash": "bd0e1246d3135b6b",
+      "sourceHash": "f300c0fe99e04820",
       "sourcePermalink": "/article/gqs2dway/",
       "expectedPermalink": "/en/article/gqs2dway/",
       "status": "translated",
@@ -620,7 +689,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐冲上云霄.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐冲上云霄.md",
-      "sourceHash": "8ceb9727cfffb528",
+      "sourceHash": "39b61cfd6e81712f",
       "sourcePermalink": "/article/dycrz2ch/",
       "expectedPermalink": "/en/article/dycrz2ch/",
       "status": "translated",
@@ -630,7 +699,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐大哥云.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐大哥云.md",
-      "sourceHash": "a7c4d783d4e71ba1",
+      "sourceHash": "1d910628c593457a",
       "sourcePermalink": "/article/994p0u8j/",
       "expectedPermalink": "/en/article/994p0u8j/",
       "status": "translated",
@@ -640,7 +709,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐奈云.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐奈云.md",
-      "sourceHash": "dded4e9af272c869",
+      "sourceHash": "4dbe4ec23fb460ed",
       "sourcePermalink": "/article/ds0jr525/",
       "expectedPermalink": "/en/article/ds0jr525/",
       "status": "translated",
@@ -650,7 +719,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐好鸭云.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐好鸭云.md",
-      "sourceHash": "2b57d27099b111dd",
+      "sourceHash": "1cba90ab36d88811",
       "sourcePermalink": "/article/73dnyy9a/",
       "expectedPermalink": "/en/article/73dnyy9a/",
       "status": "translated",
@@ -660,7 +729,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐小牛云.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐小牛云.md",
-      "sourceHash": "d5d286d3d11c0244",
+      "sourceHash": "0bc7898f2bef5b9d",
       "sourcePermalink": "/article/fhvr729f/",
       "expectedPermalink": "/en/article/fhvr729f/",
       "status": "translated",
@@ -670,7 +739,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐掌中世界.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐掌中世界.md",
-      "sourceHash": "bade6034787019b6",
+      "sourceHash": "017c564c23e2c499",
       "sourcePermalink": "/article/7eogfldo/",
       "expectedPermalink": "/en/article/7eogfldo/",
       "status": "translated",
@@ -680,7 +749,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐灯塔cloud.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐灯塔cloud.md",
-      "sourceHash": "cd98e8a21ce6f99e",
+      "sourceHash": "3d542c8361054dd6",
       "sourcePermalink": "/article/osp1vx6y/",
       "expectedPermalink": "/en/article/osp1vx6y/",
       "status": "translated",
@@ -690,7 +759,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐白羊星.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐白羊星.md",
-      "sourceHash": "950b066b0c80e408",
+      "sourceHash": "81c40b95c4e66551",
       "sourcePermalink": "/article/zuuzyvvh/",
       "expectedPermalink": "/en/article/zuuzyvvh/",
       "status": "translated",
@@ -700,7 +769,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐百变小樱.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐百变小樱.md",
-      "sourceHash": "a32c650fe535f0cf",
+      "sourceHash": "90b6def6ac1fc59e",
       "sourcePermalink": "/article/jd2i293q/",
       "expectedPermalink": "/en/article/jd2i293q/",
       "status": "translated",
@@ -710,7 +779,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐纵云梯.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐纵云梯.md",
-      "sourceHash": "a73b0498849131af",
+      "sourceHash": "4c173d1f81da5a31",
       "sourcePermalink": "/article/e5lzcgzg/",
       "expectedPermalink": "/en/article/e5lzcgzg/",
       "status": "translated",
@@ -720,7 +789,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐老头vpn.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐老头vpn.md",
-      "sourceHash": "70302ede7e06da64",
+      "sourceHash": "d9675bc9253941c9",
       "sourcePermalink": "/article/rklwp5go/",
       "expectedPermalink": "/en/article/rklwp5go/",
       "status": "translated",
@@ -730,7 +799,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐闪狐云.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐闪狐云.md",
-      "sourceHash": "d4b809f71795c14a",
+      "sourceHash": "fea99a00c68a16ce",
       "sourcePermalink": "/article/bls8yo25/",
       "expectedPermalink": "/en/article/bls8yo25/",
       "status": "translated",
@@ -740,7 +809,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐阿达西.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐阿达西.md",
-      "sourceHash": "4abc3f38ab4dadaa",
+      "sourceHash": "bcd9ccca1dee3fdc",
       "sourcePermalink": "/article/zf12sje8/",
       "expectedPermalink": "/en/article/zf12sje8/",
       "status": "translated",
@@ -750,7 +819,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐青云梯.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐青云梯.md",
-      "sourceHash": "7c4ea1578c68ad1f",
+      "sourceHash": "bd3058b4773573ad",
       "sourcePermalink": "/article/mcridsxx/",
       "expectedPermalink": "/en/article/mcridsxx/",
       "status": "translated",
@@ -760,7 +829,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐龙猫云.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐龙猫云.md",
-      "sourceHash": "340b486973c89799",
+      "sourceHash": "0a843bb7c6862107",
       "sourcePermalink": "/article/b6t9mwuv/",
       "expectedPermalink": "/en/article/b6t9mwuv/",
       "status": "translated",
@@ -770,7 +839,7 @@
     {
       "source": "docs/blog/机场推荐/2026/vpn推荐天喵.md",
       "target": "docs/en/blog/proxy-reviews/2026/vpn推荐天喵.md",
-      "sourceHash": "1958fef36a1b1a80",
+      "sourceHash": "f63a69419c34967b",
       "sourcePermalink": "/blog/tianmiao/",
       "expectedPermalink": "/en/blog/tianmiao/",
       "status": "translated",
@@ -780,7 +849,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐Firefly.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐Firefly.md",
-      "sourceHash": "be4b40da35d02171",
+      "sourceHash": "a2d357a9e69bf0f1",
       "sourcePermalink": "/blog/firefly-airport/",
       "expectedPermalink": "/en/blog/firefly-airport/",
       "status": "translated",
@@ -788,9 +857,19 @@
       "hanCharacters": 0
     },
     {
+      "source": "docs/blog/机场推荐/2026/机场推荐GW云洞.md",
+      "target": "docs/en/blog/proxy-reviews/2026/机场推荐GW云洞.md",
+      "sourceHash": "4bb00151b3425f5d",
+      "sourcePermalink": "/blog/gw-cloud-tunnel/",
+      "expectedPermalink": "/en/blog/gw-cloud-tunnel/",
+      "status": "translated",
+      "issues": [],
+      "hanCharacters": 0
+    },
+    {
       "source": "docs/blog/机场推荐/2026/机场推荐ccyz.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐ccyz.md",
-      "sourceHash": "2d7c47109048b665",
+      "sourceHash": "3a5ca2045d9951fc",
       "sourcePermalink": "/blog/ccyz/",
       "expectedPermalink": "/en/blog/ccyz/",
       "status": "translated",
@@ -800,7 +879,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐cocoduck.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐cocoduck.md",
-      "sourceHash": "f75367d160a4e5bc",
+      "sourceHash": "44db8dd7a9031098",
       "sourcePermalink": "/article/cocoduck/",
       "expectedPermalink": "/en/article/cocoduck/",
       "status": "translated",
@@ -810,7 +889,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐danke.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐danke.md",
-      "sourceHash": "1206982452d78cf3",
+      "sourceHash": "d983dc70dc5ab174",
       "sourcePermalink": "/blog/danke/",
       "expectedPermalink": "/en/blog/danke/",
       "status": "translated",
@@ -820,7 +899,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐edge-x.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐edge-x.md",
-      "sourceHash": "f4a1c9f0b5619606",
+      "sourceHash": "79fc72c220b3d0c1",
       "sourcePermalink": "/article/edge-x/",
       "expectedPermalink": "/en/article/edge-x/",
       "status": "translated",
@@ -830,7 +909,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐flybit.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐flybit.md",
-      "sourceHash": "6be0f8f8a05e1826",
+      "sourceHash": "77c2f76f13fde379",
       "sourcePermalink": "/blog/flybit/",
       "expectedPermalink": "/en/blog/flybit/",
       "status": "translated",
@@ -840,7 +919,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐runway.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐runway.md",
-      "sourceHash": "82dc8e466f71dcf2",
+      "sourceHash": "db5f0b67b53badd6",
       "sourcePermalink": "/blog/runway/",
       "expectedPermalink": "/en/blog/runway/",
       "status": "translated",
@@ -850,7 +929,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐sogo云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐sogo云.md",
-      "sourceHash": "e6eebe3ae12c68b4",
+      "sourceHash": "d90d45cc0b747aea",
       "sourcePermalink": "/blog/sogoyun/",
       "expectedPermalink": "/en/blog/sogoyun/",
       "status": "translated",
@@ -860,7 +939,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐ssone.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐ssone.md",
-      "sourceHash": "43c0dffae9d9900f",
+      "sourceHash": "6c5761fea1573646",
       "sourcePermalink": "/article/ssone/",
       "expectedPermalink": "/en/article/ssone/",
       "status": "translated",
@@ -870,7 +949,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐superbiu.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐superbiu.md",
-      "sourceHash": "8fef43970de7e466",
+      "sourceHash": "77b665d29a703a9b",
       "sourcePermalink": "/blog/superbiu/",
       "expectedPermalink": "/en/blog/superbiu/",
       "status": "translated",
@@ -880,7 +959,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐u1s1.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐u1s1.md",
-      "sourceHash": "fe3abed2897ab6c0",
+      "sourceHash": "a1fd11cdc104da84",
       "sourcePermalink": "/article/u1s1/",
       "expectedPermalink": "/en/article/u1s1/",
       "status": "translated",
@@ -890,7 +969,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐uuone.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐uuone.md",
-      "sourceHash": "2a29d9dd043c0d4d",
+      "sourceHash": "d91fcd855f528be3",
       "sourcePermalink": "/blog/uuone/",
       "expectedPermalink": "/en/blog/uuone/",
       "status": "translated",
@@ -900,7 +979,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐xsus.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐xsus.md",
-      "sourceHash": "84a120f5b209cef5",
+      "sourceHash": "8b60e213fb3d61d7",
       "sourcePermalink": "/blog/xsus/",
       "expectedPermalink": "/en/blog/xsus/",
       "status": "translated",
@@ -910,7 +989,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐xxyun.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐xxyun.md",
-      "sourceHash": "25f04771eaa32e36",
+      "sourceHash": "518f81de98fd41d3",
       "sourcePermalink": "/blog/xxyun/",
       "expectedPermalink": "/en/blog/xxyun/",
       "status": "translated",
@@ -920,7 +999,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐一翻云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐一翻云.md",
-      "sourceHash": "2b4cf298cb5d2337",
+      "sourceHash": "1e7e9c46a41702b7",
       "sourcePermalink": "/article/yifanyun/",
       "expectedPermalink": "/en/article/yifanyun/",
       "status": "translated",
@@ -930,7 +1009,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐二猫云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐二猫云.md",
-      "sourceHash": "ea4a051edca1a73b",
+      "sourceHash": "0932a72aacdd7ec7",
       "sourcePermalink": "/blog/ermaoyun/",
       "expectedPermalink": "/en/blog/ermaoyun/",
       "status": "translated",
@@ -938,9 +1017,19 @@
       "hanCharacters": 0
     },
     {
+      "source": "docs/blog/机场推荐/2026/机场推荐云图高速.md",
+      "target": "docs/en/blog/proxy-reviews/2026/机场推荐云图高速.md",
+      "sourceHash": "d10d929ecf29acdf",
+      "sourcePermalink": "/blog/yuntu-airport/",
+      "expectedPermalink": "/en/blog/yuntu-airport/",
+      "status": "translated",
+      "issues": [],
+      "hanCharacters": 0
+    },
+    {
       "source": "docs/blog/机场推荐/2026/机场推荐传送门.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐传送门.md",
-      "sourceHash": "225a2be4cecf7962",
+      "sourceHash": "bb0cacdc32e00a98",
       "sourcePermalink": "/blog/8svdlqds/",
       "expectedPermalink": "/en/blog/8svdlqds/",
       "status": "translated",
@@ -950,7 +1039,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐光年梯.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐光年梯.md",
-      "sourceHash": "5bb56d29037538e2",
+      "sourceHash": "87ff4db4eae7672a",
       "sourcePermalink": "/blog/guangnianti/",
       "expectedPermalink": "/en/blog/guangnianti/",
       "status": "translated",
@@ -960,7 +1049,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐光速云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐光速云.md",
-      "sourceHash": "8159e301145d02ae",
+      "sourceHash": "6ff094d48338a7c7",
       "sourcePermalink": "/blog/guangsuyun/",
       "expectedPermalink": "/en/blog/guangsuyun/",
       "status": "translated",
@@ -970,7 +1059,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐全球云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐全球云.md",
-      "sourceHash": "60375a3b7830d326",
+      "sourceHash": "2bcf6c717f8a39d1",
       "sourcePermalink": "/blog/quanqiuyun/",
       "expectedPermalink": "/en/blog/quanqiuyun/",
       "status": "translated",
@@ -980,7 +1069,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐可信云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐可信云.md",
-      "sourceHash": "fd050a936577a07f",
+      "sourceHash": "141f4189e3d44235",
       "sourcePermalink": "/blog/kexinyun/",
       "expectedPermalink": "/en/blog/kexinyun/",
       "status": "translated",
@@ -990,7 +1079,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐唯兔云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐唯兔云.md",
-      "sourceHash": "a249ea1c754a80d3",
+      "sourceHash": "45edf6e8a821b35c",
       "sourcePermalink": "/article/weituyun/",
       "expectedPermalink": "/en/article/weituyun/",
       "status": "translated",
@@ -1000,7 +1089,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐大哥云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐大哥云.md",
-      "sourceHash": "df48609d80f66e89",
+      "sourceHash": "26d87968e41e9a46",
       "sourcePermalink": "/blog/dageyun/",
       "expectedPermalink": "/en/blog/dageyun/",
       "status": "translated",
@@ -1010,7 +1099,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐寰宇云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐寰宇云.md",
-      "sourceHash": "4f5c8ba785aebc94",
+      "sourceHash": "cd7480f74db0b6a5",
       "sourcePermalink": "/blog/huanyuyun/",
       "expectedPermalink": "/en/blog/huanyuyun/",
       "status": "translated",
@@ -1020,7 +1109,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐小牛云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐小牛云.md",
-      "sourceHash": "422fd666858d2c7a",
+      "sourceHash": "3ab38f7a8aee6f57",
       "sourcePermalink": "/blog/xiaoniu/",
       "expectedPermalink": "/en/blog/xiaoniu/",
       "status": "translated",
@@ -1030,7 +1119,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐山水云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐山水云.md",
-      "sourceHash": "60cb39d7320fc0ea",
+      "sourceHash": "6b04b018760d76bd",
       "sourcePermalink": "/blog/2k7jn2n8/",
       "expectedPermalink": "/en/blog/2k7jn2n8/",
       "status": "translated",
@@ -1040,7 +1129,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐影子云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐影子云.md",
-      "sourceHash": "fcc85b1803634509",
+      "sourceHash": "e44d7aa23cd9d021",
       "sourcePermalink": "/blog/yingziyun/",
       "expectedPermalink": "/en/blog/yingziyun/",
       "status": "translated",
@@ -1050,7 +1139,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐快狸.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐快狸.md",
-      "sourceHash": "20da5e2573db4325",
+      "sourceHash": "ea9ea1788648431d",
       "sourcePermalink": "/article/kuaili/",
       "expectedPermalink": "/en/article/kuaili/",
       "status": "translated",
@@ -1060,7 +1149,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐无忧链接.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐无忧链接.md",
-      "sourceHash": "9431bba06c4d0fc9",
+      "sourceHash": "5af6fffd7b05933a",
       "sourcePermalink": "/blog/wuyoulink/",
       "expectedPermalink": "/en/blog/wuyoulink/",
       "status": "translated",
@@ -1070,7 +1159,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐星岛梦.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐星岛梦.md",
-      "sourceHash": "a717dcec12ba2f87",
+      "sourceHash": "af45e1d46261988e",
       "sourcePermalink": "/article/xingdaomeng/",
       "expectedPermalink": "/en/article/xingdaomeng/",
       "status": "translated",
@@ -1080,7 +1169,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐智联网络.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐智联网络.md",
-      "sourceHash": "9379835a6bb19509",
+      "sourceHash": "32fe3442a6ee5231",
       "sourcePermalink": "/blog/zlwl-airport/",
       "expectedPermalink": "/en/blog/zlwl-airport/",
       "status": "translated",
@@ -1090,7 +1179,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐暮光加速.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐暮光加速.md",
-      "sourceHash": "f733628dc650b3ad",
+      "sourceHash": "90b5b50344f8e1a0",
       "sourcePermalink": "/blog/twilight-airport/",
       "expectedPermalink": "/en/blog/twilight-airport/",
       "status": "translated",
@@ -1100,7 +1189,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐极连云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐极连云.md",
-      "sourceHash": "3e3a79d25985b9fb",
+      "sourceHash": "4ab8e91ac6493f5d",
       "sourcePermalink": "/blog/jilianyun/",
       "expectedPermalink": "/en/blog/jilianyun/",
       "status": "translated",
@@ -1110,7 +1199,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐梦想云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐梦想云.md",
-      "sourceHash": "96cdfe41759491b0",
+      "sourceHash": "1526b4e0b0506c8d",
       "sourcePermalink": "/blog/mengxiangyun/",
       "expectedPermalink": "/en/blog/mengxiangyun/",
       "status": "translated",
@@ -1120,7 +1209,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐梯子云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐梯子云.md",
-      "sourceHash": "ae0bb88bfc5b01d0",
+      "sourceHash": "93290ecc8525a83b",
       "sourcePermalink": "/blog/laddercloud/",
       "expectedPermalink": "/en/blog/laddercloud/",
       "status": "translated",
@@ -1130,7 +1219,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐浪网.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐浪网.md",
-      "sourceHash": "bfea74aa4c786052",
+      "sourceHash": "1f9b3079b730b054",
       "sourcePermalink": "/blog/wangwang-airport/",
       "expectedPermalink": "/en/blog/wangwang-airport/",
       "status": "translated",
@@ -1140,7 +1229,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐灵动云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐灵动云.md",
-      "sourceHash": "24433b2a0ee0e3df",
+      "sourceHash": "e69c132cf23e9e6a",
       "sourcePermalink": "/blog/lingdongyun/",
       "expectedPermalink": "/en/blog/lingdongyun/",
       "status": "translated",
@@ -1150,7 +1239,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐灵猫网络.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐灵猫网络.md",
-      "sourceHash": "abf45e0ba745e754",
+      "sourceHash": "2e7a08bc2e9a2de5",
       "sourcePermalink": "/blog/civetnet-airport/",
       "expectedPermalink": "/en/blog/civetnet-airport/",
       "status": "translated",
@@ -1160,7 +1249,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐瞬云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐瞬云.md",
-      "sourceHash": "de06c9481921ef8b",
+      "sourceHash": "3fbcd51fa5e59a6f",
       "sourcePermalink": "/blog/shunyun/",
       "expectedPermalink": "/en/blog/shunyun/",
       "status": "translated",
@@ -1170,7 +1259,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐秒秒云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐秒秒云.md",
-      "sourceHash": "10c462283516a8d4",
+      "sourceHash": "3c303499b0af6ec3",
       "sourcePermalink": "/blog/miaomiaoyun-airport/",
       "expectedPermalink": "/en/blog/miaomiaoyun-airport/",
       "status": "translated",
@@ -1180,7 +1269,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐网际快车.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐网际快车.md",
-      "sourceHash": "2de5830be07068e4",
+      "sourceHash": "78da92d2a58844a4",
       "sourcePermalink": "/blog/wangjikuaiche-review-price/",
       "expectedPermalink": "/en/blog/wangjikuaiche-review-price/",
       "status": "translated",
@@ -1190,7 +1279,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐老头vpn.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐老头vpn.md",
-      "sourceHash": "2eb2518cf330b656",
+      "sourceHash": "031fc585ff645f05",
       "sourcePermalink": "/article/laotouvpn/",
       "expectedPermalink": "/en/article/laotouvpn/",
       "status": "translated",
@@ -1200,7 +1289,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐跨界云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐跨界云.md",
-      "sourceHash": "c2f1a68bb599fef9",
+      "sourceHash": "9492a16d96a7fce2",
       "sourcePermalink": "/blog/kuajiecloud-airport/",
       "expectedPermalink": "/en/blog/kuajiecloud-airport/",
       "status": "translated",
@@ -1210,7 +1299,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐边缘节点.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐边缘节点.md",
-      "sourceHash": "fe47f3b21ac974ab",
+      "sourceHash": "657be4294822a905",
       "sourcePermalink": "/article/bianyuanjiedian/",
       "expectedPermalink": "/en/article/bianyuanjiedian/",
       "status": "translated",
@@ -1220,7 +1309,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐迅达.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐迅达.md",
-      "sourceHash": "c86d83278884f3e9",
+      "sourceHash": "a8a501daaf54f85c",
       "sourcePermalink": "/blog/xunda/",
       "expectedPermalink": "/en/blog/xunda/",
       "status": "translated",
@@ -1230,7 +1319,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐速界.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐速界.md",
-      "sourceHash": "1ba6ef6079a7a573",
+      "sourceHash": "309048a4d5bc250e",
       "sourcePermalink": "/article/sujie/",
       "expectedPermalink": "/en/article/sujie/",
       "status": "translated",
@@ -1240,7 +1329,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐锦云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐锦云.md",
-      "sourceHash": "9103406c599358ac",
+      "sourceHash": "1773c3d82367e2ad",
       "sourcePermalink": "/blog/jinyun-airport/",
       "expectedPermalink": "/en/blog/jinyun-airport/",
       "status": "translated",
@@ -1250,7 +1339,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐随便云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐随便云.md",
-      "sourceHash": "8692e139241a4f61",
+      "sourceHash": "7c93bf3e93d66dcf",
       "sourcePermalink": "/blog/suibian/",
       "expectedPermalink": "/en/blog/suibian/",
       "status": "translated",
@@ -1260,7 +1349,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐隐云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐隐云.md",
-      "sourceHash": "be91aced1e34f682",
+      "sourceHash": "4d680447375e9d94",
       "sourcePermalink": "/blog/yinyun/",
       "expectedPermalink": "/en/blog/yinyun/",
       "status": "translated",
@@ -1270,7 +1359,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐隐形人.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐隐形人.md",
-      "sourceHash": "df833b09501f2dfa",
+      "sourceHash": "dd255652f73a8904",
       "sourcePermalink": "/blog/invisible-airport/",
       "expectedPermalink": "/en/blog/invisible-airport/",
       "status": "translated",
@@ -1280,7 +1369,7 @@
     {
       "source": "docs/blog/机场推荐/vpn.md",
       "target": "docs/en/blog/proxy-reviews/vpn.md",
-      "sourceHash": "027278ac24ad3b15",
+      "sourceHash": "b08086cfeb1b6ea4",
       "sourcePermalink": "/posts/vpn/",
       "expectedPermalink": "/en/posts/vpn/",
       "status": "translated",
@@ -1300,7 +1389,7 @@
     {
       "source": "docs/blog/翻墙工具/Android手机使用clash.md",
       "target": "docs/en/blog/access-tools/Android手机使用clash.md",
-      "sourceHash": "34aae6c5f6c37e0c",
+      "sourceHash": "244748a40fb3afc0",
       "sourcePermalink": "/article/eh8f4n86/",
       "expectedPermalink": "/en/article/eh8f4n86/",
       "status": "translated",
@@ -1310,7 +1399,7 @@
     {
       "source": "docs/blog/翻墙工具/AppleID管理工具Asspp.md",
       "target": "docs/en/blog/access-tools/AppleID管理工具Asspp.md",
-      "sourceHash": "245c979f16d364ca",
+      "sourceHash": "def68560c4fb8d1c",
       "sourcePermalink": "/blog/asspp-download-guide/",
       "expectedPermalink": "/en/blog/asspp-download-guide/",
       "status": "translated",
@@ -1330,7 +1419,7 @@
     {
       "source": "docs/blog/翻墙工具/HyperOrbit使用教程.md",
       "target": "docs/en/blog/access-tools/HyperOrbit使用教程.md",
-      "sourceHash": "8360f17c33533f4e",
+      "sourceHash": "bd8d70035a3b1fee",
       "sourcePermalink": "/blog/HyperOrbit/",
       "expectedPermalink": "/en/blog/HyperOrbit/",
       "status": "translated",
@@ -1340,7 +1429,7 @@
     {
       "source": "docs/blog/翻墙工具/Shadowrocket新手使用教程.md",
       "target": "docs/en/blog/access-tools/Shadowrocket新手使用教程.md",
-      "sourceHash": "67a987637deb22ca",
+      "sourceHash": "4e5a8ad4620e8c17",
       "sourcePermalink": "/article/z747kgjd/",
       "expectedPermalink": "/en/article/z747kgjd/",
       "status": "translated",
@@ -1350,7 +1439,7 @@
     {
       "source": "docs/blog/翻墙工具/clash规则配置进阶教程.md",
       "target": "docs/en/blog/access-tools/clash规则配置进阶教程.md",
-      "sourceHash": "38030e9cac95a123",
+      "sourceHash": "274370cf30731ffc",
       "sourcePermalink": "/blog/clash-rules-config/",
       "expectedPermalink": "/en/blog/clash-rules-config/",
       "status": "translated",
@@ -1360,7 +1449,7 @@
     {
       "source": "docs/blog/翻墙工具/ios_clashmi使用教程.md",
       "target": "docs/en/blog/access-tools/ios_clashmi使用教程.md",
-      "sourceHash": "ffdaf430f51d329d",
+      "sourceHash": "4215bbdcf6accc28",
       "sourcePermalink": "/blog/clashmi/",
       "expectedPermalink": "/en/blog/clashmi/",
       "status": "translated",
@@ -1370,7 +1459,7 @@
     {
       "source": "docs/blog/翻墙工具/windows下载安装clash.md",
       "target": "docs/en/blog/access-tools/windows下载安装clash.md",
-      "sourceHash": "6bdac35b8f4de219",
+      "sourceHash": "12237e9e2e69b49e",
       "sourcePermalink": "/article/0gematwc/",
       "expectedPermalink": "/en/article/0gematwc/",
       "status": "translated",
@@ -1380,7 +1469,7 @@
     {
       "source": "docs/blog/翻墙工具/免费AppleID账号.md",
       "target": "docs/en/blog/access-tools/免费AppleID账号.md",
-      "sourceHash": "17b0cb8d873f8232",
+      "sourceHash": "212a2a2f1640650d",
       "sourcePermalink": "/blog/freeappleid/",
       "expectedPermalink": "/en/blog/freeappleid/",
       "status": "translated",
@@ -1400,7 +1489,7 @@
     {
       "source": "docs/blog/翻墙工具/教你如何配置小火箭规则.md",
       "target": "docs/en/blog/access-tools/教你如何配置小火箭规则.md",
-      "sourceHash": "66e871a0cbce0b33",
+      "sourceHash": "62339a3bb47db6b3",
       "sourcePermalink": "/blog/shadowrocket-rules-config/",
       "expectedPermalink": "/en/blog/shadowrocket-rules-config/",
       "status": "translated",
@@ -1420,7 +1509,7 @@
     {
       "source": "docs/blog/翻墙工具/翻墙工具汇总推荐.md",
       "target": "docs/en/blog/access-tools/翻墙工具汇总推荐.md",
-      "sourceHash": "9491be6ded1819a8",
+      "sourceHash": "e85804e19d4bad7a",
       "sourcePermalink": "/article/fanqiang-tools/",
       "expectedPermalink": "/en/article/fanqiang-tools/",
       "status": "translated",
@@ -1440,7 +1529,7 @@
     {
       "source": "docs/blog/翻墙新闻/2026/2026-07-24至2026-07-30跨境网络与AI服务周报.md",
       "target": "docs/en/blog/censorship-news/2026/2026-07-24至2026-07-30跨境网络与AI服务周报.md",
-      "sourceHash": "271069303f0316d5",
+      "sourceHash": "efffb97733e55a8a",
       "sourcePermalink": "/blog/cross-border-network-ai-weekly-2026-07-30/",
       "expectedPermalink": "/en/blog/cross-border-network-ai-weekly-2026-07-30/",
       "status": "translated",
@@ -1470,7 +1559,7 @@
     {
       "source": "docs/blog/跑路机场/SFCloud和FCCloud.md",
       "target": "docs/en/blog/provider-risk/SFCloud和FCCloud.md",
-      "sourceHash": "fbf722110bfa2675",
+      "sourceHash": "ad9daa13ab2b3fde",
       "sourcePermalink": "/article/7asq3quy/",
       "expectedPermalink": "/en/article/7asq3quy/",
       "status": "translated",
@@ -1480,7 +1569,7 @@
     {
       "source": "docs/blog/跑路机场/机场跑路EFCloud.md",
       "target": "docs/en/blog/provider-risk/机场跑路EFCloud.md",
-      "sourceHash": "b21d2df5de1df7fa",
+      "sourceHash": "1046a6f4bb94c076",
       "sourcePermalink": "/article/nz313xp6/",
       "expectedPermalink": "/en/article/nz313xp6/",
       "status": "translated",
@@ -1490,7 +1579,7 @@
     {
       "source": "docs/blog/跑路机场/机场跑路XSUS.md",
       "target": "docs/en/blog/provider-risk/机场跑路XSUS.md",
-      "sourceHash": "223443a767e5d3f1",
+      "sourceHash": "bcc67c8fb403359a",
       "sourcePermalink": "/article/mwk3l9oq/",
       "expectedPermalink": "/en/article/mwk3l9oq/",
       "status": "translated",
@@ -1500,7 +1589,7 @@
     {
       "source": "docs/blog/跑路机场/机场跑路cac.md",
       "target": "docs/en/blog/provider-risk/机场跑路cac.md",
-      "sourceHash": "ecc62e1802f5983c",
+      "sourceHash": "185cd801a2f9eeda",
       "sourcePermalink": "/scamvpn/cac/",
       "expectedPermalink": "/en/scamvpn/cac/",
       "status": "translated",
@@ -1510,7 +1599,7 @@
     {
       "source": "docs/blog/跑路机场/机场跑路crelay.md",
       "target": "docs/en/blog/provider-risk/机场跑路crelay.md",
-      "sourceHash": "730578ec8f3e4e2f",
+      "sourceHash": "ae2e99b8d6a5c476",
       "sourcePermalink": "/scamvpn/crelay/",
       "expectedPermalink": "/en/scamvpn/crelay/",
       "status": "translated",
@@ -1520,7 +1609,7 @@
     {
       "source": "docs/blog/跑路机场/机场跑路koodog.md",
       "target": "docs/en/blog/provider-risk/机场跑路koodog.md",
-      "sourceHash": "53f7f250b01f2d81",
+      "sourceHash": "cc31984af857fc71",
       "sourcePermalink": "/scamvpn/koodog/",
       "expectedPermalink": "/en/scamvpn/koodog/",
       "status": "translated",
@@ -1530,7 +1619,7 @@
     {
       "source": "docs/blog/跑路机场/机场跑路lray.md",
       "target": "docs/en/blog/provider-risk/机场跑路lray.md",
-      "sourceHash": "4412b23c1eacaa8e",
+      "sourceHash": "fac68c4cedb5001b",
       "sourcePermalink": "/scamvpn/lray/",
       "expectedPermalink": "/en/scamvpn/lray/",
       "status": "translated",
@@ -1540,7 +1629,7 @@
     {
       "source": "docs/blog/跑路机场/机场跑路okac.md",
       "target": "docs/en/blog/provider-risk/机场跑路okac.md",
-      "sourceHash": "60210abe5fee7dc4",
+      "sourceHash": "2826088e18241990",
       "sourcePermalink": "/scamvpn/okac/",
       "expectedPermalink": "/en/scamvpn/okac/",
       "status": "translated",
@@ -1550,7 +1639,7 @@
     {
       "source": "docs/blog/跑路机场/机场跑路奈云.md",
       "target": "docs/en/blog/provider-risk/机场跑路奈云.md",
-      "sourceHash": "ed10627b7e5e6bf5",
+      "sourceHash": "13ec4910a0ab35c5",
       "sourcePermalink": "/scamvpn/naiyun/",
       "expectedPermalink": "/en/scamvpn/naiyun/",
       "status": "translated",
@@ -1560,7 +1649,7 @@
     {
       "source": "docs/blog/跑路机场/机场跑路小火箭.md",
       "target": "docs/en/blog/provider-risk/机场跑路小火箭.md",
-      "sourceHash": "df73f881d99ee251",
+      "sourceHash": "6b7104d32ddd005c",
       "sourcePermalink": "/scamvpn/xiaohuojian/",
       "expectedPermalink": "/en/scamvpn/xiaohuojian/",
       "status": "translated",
@@ -1570,7 +1659,7 @@
     {
       "source": "docs/blog/跑路机场/机场跑路小牛云.md",
       "target": "docs/en/blog/provider-risk/机场跑路小牛云.md",
-      "sourceHash": "e32523c190dda43f",
+      "sourceHash": "f86b1c074896589c",
       "sourcePermalink": "/scamvpn/xiaoniu/",
       "expectedPermalink": "/en/scamvpn/xiaoniu/",
       "status": "translated",
@@ -1580,7 +1669,7 @@
     {
       "source": "docs/blog/跑路机场/机场跑路忍者云.md",
       "target": "docs/en/blog/provider-risk/机场跑路忍者云.md",
-      "sourceHash": "ec6da05dcd9fc364",
+      "sourceHash": "18cd381704c8c9c3",
       "sourcePermalink": "/scamvpn/renzhe/",
       "expectedPermalink": "/en/scamvpn/renzhe/",
       "status": "translated",
@@ -1600,7 +1689,7 @@
     {
       "source": "docs/blog/跑路机场/机场跑路洞墙.md",
       "target": "docs/en/blog/provider-risk/机场跑路洞墙.md",
-      "sourceHash": "e82b7a1503193232",
+      "sourceHash": "890a7ad33febbdf9",
       "sourcePermalink": "/scamvpn/dlercloud/",
       "expectedPermalink": "/en/scamvpn/dlercloud/",
       "status": "translated",
@@ -1610,7 +1699,7 @@
     {
       "source": "docs/blog/跑路机场/机场跑路蜜糖云.md",
       "target": "docs/en/blog/provider-risk/机场跑路蜜糖云.md",
-      "sourceHash": "b54ec96a9afb2cfd",
+      "sourceHash": "3937f64d56ae4b67",
       "sourcePermalink": "/scamvpn/sugarhoney/",
       "expectedPermalink": "/en/scamvpn/sugarhoney/",
       "status": "translated",
@@ -1620,7 +1709,7 @@
     {
       "source": "docs/blog/跑路机场/机场跑路阿童木.md",
       "target": "docs/en/blog/provider-risk/机场跑路阿童木.md",
-      "sourceHash": "315a85084a1422fd",
+      "sourceHash": "4ffad629b4d702a5",
       "sourcePermalink": "/article/cge8887u/",
       "expectedPermalink": "/en/article/cge8887u/",
       "status": "translated",
@@ -1630,7 +1719,7 @@
     {
       "source": "docs/blog/跑路机场/机场跑路隐云.md",
       "target": "docs/en/blog/provider-risk/机场跑路隐云.md",
-      "sourceHash": "0c518ba3cdef85f6",
+      "sourceHash": "537b6f3544d45141",
       "sourcePermalink": "/scamvpn/yinyun/",
       "expectedPermalink": "/en/scamvpn/yinyun/",
       "status": "translated",

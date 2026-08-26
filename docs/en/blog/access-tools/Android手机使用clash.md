@@ -1,7 +1,7 @@
 ---
 title: "Clash for Android: Download, Install, and Import a Subscription (2026)"
 createTime: 2024/09/17 17:26:51
-updateTime: 2026/08/08 18:14:03
+updateTime: 2026/08/23 09:34:57
 permalink: /en/article/eh8f4n86/
 lang: en-US
 translationOf: /article/eh8f4n86/
@@ -37,6 +37,8 @@ For Clash on Android, download the actively maintained Clash Meta for Android fr
 :::
 
 Prefer the official GitHub release. The two direct APK links are third-party mirrors; do not use them if you need to verify the publisher.
+
+After the APK downloads, open it and follow Android's installer prompts. If Android blocks the install, temporarily allow the browser or file manager you used to open the APK on the **Install unknown apps** screen. Disable that source permission after installation, then open Clash Meta. Menu wording varies by device; see [Android's official guidance](https://developer.android.com/distribute/marketing-tools/alternative-distribution).
 
 ## Add a subscription
 

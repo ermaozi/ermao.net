@@ -1,7 +1,7 @@
 ---
 title: 2026 Clash for Android：下载、安装与订阅导入
 createTime: 2024/09/17 17:26:51
-updateTime: 2026/08/08 18:14:03
+updateTime: 2026/08/23 09:34:57
 permalink: /article/eh8f4n86/
 tags:
   - 科学上网
@@ -37,6 +37,8 @@ description: Clash for Android 安卓教程：从 MetaCubeX 官方 GitHub 下载
 :::
 
 优先使用官方 GitHub Release；两个 APK 直链由第三方镜像提供，如需核对发布来源，不要使用镜像。
+
+下载完成后打开 APK，按 Android 的安装提示继续。如果系统拦截，请只为当前用于打开 APK 的浏览器或文件管理器临时允许“安装未知应用”；安装完成后可关闭这项权限，再打开 Clash Meta。不同品牌的设置名称可能略有差异，具体机制可参考 [Android 官方说明](https://developer.android.com/distribute/marketing-tools/alternative-distribution?hl=zh-cn)。
 
 ## 配置
 

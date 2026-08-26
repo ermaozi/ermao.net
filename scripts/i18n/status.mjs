@@ -12,8 +12,10 @@ const strict = process.argv.includes('--check')
 
 const categoryDirectories = {
   'python攻略': 'python-guides',
+  '广告推广': 'promotions',
   '文档': 'guides',
   '新闻': 'news',
+  '新闻周报': 'weekly-news',
   '机场推荐': 'proxy-reviews',
   '杂事': 'misc',
   '翻墙工具': 'access-tools',
