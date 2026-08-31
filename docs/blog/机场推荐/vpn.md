@@ -18,7 +18,7 @@ tags:
   - 翻墙VPN
   - 梯子
 title: 2026年翻墙机场推荐：便宜好用的VPN机场评测与科学上网指南(长期更新)
-updateTime: 2026/08/15 07:19:58
+updateTime: 2026/09/01 07:38:37
 permalink: /posts/vpn/
 description: 2026年翻墙机场选购与评测指南，说明套餐、线路、通用订阅、晚高峰测试、Netflix与ChatGPT验证方法，并汇总风险记录和详细评测。
 head:
