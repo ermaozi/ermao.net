@@ -1,0 +1,110 @@
+---
+url: /blog/vpn-weekly-2026-w27/index.md
+description: >-
+  2026年第27周翻墙相关新闻周报，整理公开媒体与研究机构发布的VPN、科学上网、网络审查和全球互联网管制动态，包括中国大陆VPN可用性、LetsVPN快连动态、俄罗斯VPN与Telegram管制、App
+  Store下架数据、全球互联网断网趋势，并逐条标明新闻出处。
+---
+# 2026年第27周翻墙相关新闻周报：VPN封锁、快连动态与全球网络管制
+
+这是本站“翻墙相关新闻周报”的第一期。本期按 **2026年第27周** 发布，回补整理近期公开媒体和研究机构中与 VPN、翻墙、网络审查有关的重要新闻，作为后续每周更新的基准。
+
+本文更新于 **2026年6月29日**。周报只引用网络公开新闻、官方公告和研究报告，不引用本站旧文，也不把社群传闻当新闻。每条新闻都在正文中标明出处，方便读者自行核对原文。
+
+::: warning 阅读提醒
+本文是新闻整理，不提供绕过网络封锁的具体操作教程。不同国家和地区对 VPN、代理、跨境联网有不同规定，使用任何网络工具前，请自行了解并遵守当地法律法规。
+:::
+
+::: tip 快速抓重点
+本周报主要看三条线：一是中国大陆 VPN 可用性与 LetsVPN / 快连事件，二是俄罗斯对 Telegram、VPN、App Store 和网站访问的组合管制，三是全球范围内互联网 shutdown 与商业化审查系统外溢。
+:::
+
+## 本周重点新闻一览
+
+**中国相关**
+
+* **2026年6月4日**：ABC 报道中国 VPN 使用者遭遇更频繁不稳定，采访对象称稳定 VPN 越来越难找。出处：[ABC News](https://www.abc.net.au/news/2026-06-04/as-beijing-cracks-down-on-vpns-internet-users-in-china-adapt/106754254)。
+* **2026年5月27日**：GPPi / ChinaFile 基于泄露数据分析中国 VPN 使用规模与封锁状况。出处：[GPPi](https://gppi.net/2026/05/27/chinas-vpn-crackdown)、[ChinaFile](https://www.chinafile.com/reporting-opinion/features/leaked-documents-show-success-of-chinas-vpn-crackdown)。
+* **2026年4月28日、5月8日**：LetsVPN / 快连宣布终止面向中国大陆地区业务，后续又称恢复全球标准运营但无法保证中国大陆可用性。出处：[LetsVPN 4月28日公告](https://letsvpn.world/blog/c130bd)、[LetsVPN 5月8日公告](https://letsvpn.world/blog/f20bkd)、[中央社](https://www.cna.com.tw/news/acn/202604280316.aspx)。
+
+**俄罗斯相关**
+
+* **2026年4月**：俄罗斯加强 Telegram 与 VPN 管制，部分网站开始限制 VPN 用户访问。出处：[OSW](https://www.osw.waw.pl/en/publikacje/analyses/2026-04-17/russia-blocks-telegram-and-cracks-down-vpns)、[Mediazona](https://en.zona.media/article/2026/04/07/russian_internet_censorship_2026)。
+* **2026年3月12日**：Human Rights Watch 称俄罗斯监管方确认已封锁 469 个用于绕过审查的 VPN 服务。出处：[Human Rights Watch](https://www.hrw.org/news/2026/03/12/russia-digital-iron-curtain-falls-on-internet-freedom-protection-day)。
+
+**全球与平台相关**
+
+* **2026年发布的 2025 年度报告**：Apple 披露 2025 年因政府下架要求移除 2045 个 App，其中俄罗斯 1213 个、中国大陆 196 个。出处：[Apple 2025 App Store Transparency Report](https://www.apple.com/legal/app-store/transparency/2025/)。
+* **2026年3月31日**：Access Now 与 #KeepItOn 报告称 2025 年全球至少发生 313 起互联网 shutdown，涉及 52 个国家。出处：[Access Now](https://www.accessnow.org/campaign/keepiton/)。
+* **2025年9月，2026年仍被多篇报道引用**：InterSecLab / WIRED 报道 Geedge Networks 相关泄露资料，称商业化审查系统被输出到多国。出处：[InterSecLab](https://interseclab.org/research/the-internet-coup/)、[WIRED](https://www.wired.com/story/geedge-networks-mass-censorship-leak/)。
+
+## 1. ABC：进入6月，中国用户反映稳定 VPN 越来越难找
+
+**关键词：** 稳定 VPN、运营商排查、未授权 VPN。
+
+ABC News 在 2026年6月4日发布报道，采访了在中国大陆使用 VPN 的用户和研究者。报道提到，有用户表示过去可用的 VPN 现在变得不稳定，另有经常往返中国大陆的受访者称自己曾使用 LetsVPN，但在 2026年4月之后需要切换到其他服务。报道还援引美国审查研究者 Eric Liu 的说法，称 2026年4月出现了新一轮 VPN 打击，一些地区的电信运营商被要求排查并封锁 VPN 服务。来源：[ABC News](https://www.abc.net.au/news/2026-06-04/as-beijing-cracks-down-on-vpns-internet-users-in-china-adapt/106754254)。
+
+ABC 同一篇报道还采访了 Deakin University 学者 Ihsan Yilmaz。他认为，中国的审查已经从单纯封锁境外网站，扩展到限制人们绕过防火墙的方法，包括限制未授权 VPN、干扰 VPN 连接、从应用商店移除 VPN App，以及惩罚部分服务提供者和用户。来源：[ABC News](https://www.abc.net.au/news/2026-06-04/as-beijing-cracks-down-on-vpns-internet-users-in-china-adapt/106754254)。
+
+## 2. GPPi / ChinaFile：泄露数据让外界重新估算中国 VPN 使用规模
+
+**关键词：** VPN 使用规模、泄露数据、官方批准的 VPN。
+
+德国全球公共政策研究所 GPPi 在 2026年5月27日发布文章，并由 ChinaFile 共同刊发。文章基于 Geedge Networks 泄露资料中的部分数据分析认为，中国 VPN 使用比例可能更接近个位数百分点，而不是外界有时假设的 20% 到 30%。文章同时指出，官方批准的 VPN 仍被允许用于部分商业和必要连接，但这类 VPN 更容易被监管方观察。来源：[GPPi](https://gppi.net/2026/05/27/chinas-vpn-crackdown)、[ChinaFile](https://www.chinafile.com/reporting-opinion/features/leaked-documents-show-success-of-chinas-vpn-crackdown)。
+
+GPPi / ChinaFile 文章还提到，泄露资料显示 Geedge 曾在新疆地区进行相关测试，监测来自中国联通、中国移动、中国电信网络的互联网流量，并记录用户访问国内外 App 的情况。作者认为，这类资料让外界更清楚地看到 VPN 封锁、流量识别和商业化审查系统之间的关系。来源：[GPPi](https://gppi.net/2026/05/27/chinas-vpn-crackdown)、[ChinaFile](https://www.chinafile.com/reporting-opinion/features/leaked-documents-show-success-of-chinas-vpn-crackdown)。
+
+## 3. 快连 / LetsVPN：4月宣布终止中国大陆业务，5月称恢复标准运营但不保证大陆可用
+
+**关键词：** 终止中国大陆业务、退款起点、无法保证可用性。
+
+LetsVPN / 快连在 2026年4月28日发布公告，称“不得不终止面向中国大陆地区的业务运营”，原因是持续网络封锁影响，并表示过去 20 天团队几乎每小时都在尝试调整，但确认无法有效解决连接问题。公告还提到，退款申请以 4月8日作为计算起点，并称大陆支付渠道已经关闭但不影响退款流程。来源：[LetsVPN 4月28日公告](https://letsvpn.world/blog/c130bd)。
+
+中央社在 2026年4月28日同步报道了快连 VPN 停止中国大陆营运一事，报道提到快连称受网络封锁持续影响，经过多番努力仍无法确认有效解决连接问题；中央社还提到，4月中旬起在中国大陆使用快连 VPN 的用户已经面临无法连接境外信息的情况。来源：[中央社](https://www.cna.com.tw/news/acn/202604280316.aspx)。
+
+LetsVPN 在 2026年5月8日又发布“恢复标准运营”的公告，但特别说明恢复全球标准运营并不等于所有地区连接体验都完全恢复，并明确写到当时仍无法保证中国大陆服务可用性，建议用户根据实际使用情况自行决定。来源：[LetsVPN 5月8日公告](https://letsvpn.world/blog/f20bkd)。
+
+## 4. 俄罗斯：Telegram 与 VPN 管制在4月继续升级
+
+**关键词：** Telegram 阻断、VPN 用户限制、白名单服务。
+
+波兰东方研究中心 OSW 在 2026年4月17日发布分析称，俄罗斯政府在 4 月上半月加强数字审查，几乎完全阻断俄罗斯用户对 Telegram 的访问，并打击通过 VPN 绕过限制的做法。OSW 还引用 Mediascope 数据称，俄罗斯 Telegram 用户规模仍超过 9400 万，但 4 月前十天，在不使用 VPN 的情况下，Telegram 可用性降至 5% 的低点。来源：[OSW](https://www.osw.waw.pl/en/publikacje/analyses/2026-04-17/russia-blocks-telegram-and-cracks-down-vpns)。
+
+OSW 同篇分析还称，俄罗斯 VPN 使用者比例估计不低于 40%，而 4 月中旬起，20 多个俄罗斯网站和电商平台开始限制依赖 VPN 的用户访问，涉及 Gosuslugi、Ozon、Wildberries、Yandex、Sberbank、VK 等服务。来源：[OSW](https://www.osw.waw.pl/en/publikacje/analyses/2026-04-17/russia-blocks-telegram-and-cracks-down-vpns)。
+
+Mediazona 在 2026年4月7日的长文中梳理俄罗斯网络审查现状，提到俄罗斯从 2025 年起引入白名单式服务清单，在特定网络限制状态下仅允许国家认可的重要服务运行；文章还梳理了 Telegram、WhatsApp、Max 等通讯工具在俄罗斯面临的限制和替代关系。来源：[Mediazona](https://en.zona.media/article/2026/04/07/russian_internet_censorship_2026)。
+
+## 5. Human Rights Watch：俄罗斯确认封锁469个 VPN 服务
+
+**关键词：** 469 个 VPN 服务、VPN 协议封锁、宣传 VPN 处罚。
+
+Human Rights Watch 在 2026年3月12日发布文章称，俄罗斯监管机构 Roskomnadzor 在 2026年2月确认已封锁 469 个用于绕过互联网审查的 VPN 服务。该文还提到，自 2025年12月起，俄罗斯当局开始封锁三种最常见的 VPN 协议，并从 2025 年起对宣传 VPN 的行为进行处罚。来源：[Human Rights Watch](https://www.hrw.org/news/2026/03/12/russia-digital-iron-curtain-falls-on-internet-freedom-protection-day)。
+
+Human Rights Watch 同文还提到，2025年9月以后，俄罗斯用户如果“故意”搜索被定为“极端主义”的内容，即使通过 VPN 访问，也可能面临罚款。这里的重点不是“使用 VPN 本身是否被罚”，而是 VPN 已经被纳入更广泛的信息管制和执法框架。来源：[Human Rights Watch](https://www.hrw.org/news/2026/03/12/russia-digital-iron-curtain-falls-on-internet-freedom-protection-day)。
+
+## 6. Apple：2025年因政府要求下架 App，俄罗斯数量全球最高
+
+**关键词：** 政府下架要求、1213 个俄罗斯 App、地区商店移除。
+
+Apple 发布的 2025 App Store Transparency Report 显示，2025 年 Apple 因政府下架要求移除 2045 个 App，其中俄罗斯 1213 个、中国大陆 196 个、越南 335 个、韩国 108 个、印度 54 个。报告说明，受到政府下架要求时，App 只会从提出要求的国家或地区商店移除，在其他地区仍可用。来源：[Apple 2025 App Store Transparency Report](https://www.apple.com/legal/app-store/transparency/2025/)。
+
+独立俄媒 Meduza 在 2026年5月25日根据 Apple 透明度报告报道，俄罗斯 2025 年要求 Apple 下架 1213 个 App，远高于 2024 年的 171 个、2023 年的 12 个和 2022 年的 7 个。Meduza 报道称，俄罗斯在政府下架要求数量上明显领先其他国家和地区。来源：[Meduza](https://meduza.io/en/news/2026/05/25/apple-removed-1-213-apps-at-russia-s-internet-regulator-s-request-in-2025)、[Apple 2025 App Store Transparency Report](https://www.apple.com/legal/app-store/transparency/2025/)。
+
+## 7. Access Now：2025年全球至少313起互联网 shutdown
+
+**关键词：** 313 起 shutdown、52 个国家、平台封锁。
+
+Access Now 与 #KeepItOn 联盟在 2026年3月31日发布 2025 年度互联网 shutdown 报告。报告称，2025 年全球至少发生 313 起互联网 shutdown，涉及 52 个国家，是自 2016 年开始记录以来的最高数量。Access Now 对 shutdown 的定义包括完全断网、网速限制、平台封锁等多种形式。来源：[Access Now #KeepItOn](https://www.accessnow.org/campaign/keepiton/)、[年度报告 PDF](https://www.accessnow.org/wp-content/uploads/2026/03/KeepItOn-Internet-Shutdowns-2025-Annual-Report.pdf)。
+
+Access Now 页面还特别说明，互联网 shutdown 会影响工作、教育、医疗、银行、新闻报道、表达自由和人权记录等日常生活环节。对于翻墙和 VPN 用户来说，这类报告的意义在于：全球网络管制不再只是“某个网站打不开”，还可能表现为平台封锁、区域断网、限速、应用商店限制和替代连接方式被压制。来源：[Access Now #KeepItOn](https://www.accessnow.org/campaign/keepiton/)。
+
+## 8. InterSecLab / WIRED：商业化“防火墙”技术正在外溢
+
+**关键词：** 商业化审查系统、DPI、流量控制。
+
+InterSecLab 在 2025年9月发布《The Internet Coup》报告，称其基于超过 10 万份 Geedge Networks 泄露文件进行技术分析，发现该公司向哈萨克斯坦、埃塞俄比亚、巴基斯坦、缅甸等国家提供类似中国防火墙的审查和监控系统。报告称相关系统包含深度包检测、移动用户实时监控、精细化流量控制和可按地区定制的审查规则。来源：[InterSecLab](https://interseclab.org/research/the-internet-coup/)。
+
+WIRED 在 2025年9月8日的报道中称，研究人员发现 Geedge 系统可监控网络信息、封锁网站和 VPN 工具，并对特定个人进行监视；报道还提到，泄露文件显示该系统可通过深度包检测和机器学习从加密流量中提取元数据，判断流量是否可能来自 VPN 等审查规避工具。来源：[WIRED](https://www.wired.com/story/geedge-networks-mass-censorship-leak/)。
+
+## 总结
+
+综合以上公开报道，本期周报有三条明显主线：第一，中国大陆 VPN 可用性和稳定性继续受到关注，LetsVPN 事件成为标志性案例；第二，俄罗斯正在把 Telegram、VPN、App Store 下架、网站访问限制组合起来使用；第三，Access Now、InterSecLab、GPPi 等机构的报告显示，网络审查正在从单点封锁扩展为平台、应用商店、运营商、流量识别和商业化审查系统共同参与的链条。来源：[ABC News](https://www.abc.net.au/news/2026-06-04/as-beijing-cracks-down-on-vpns-internet-users-in-china-adapt/106754254)、[GPPi](https://gppi.net/2026/05/27/chinas-vpn-crackdown)、[OSW](https://www.osw.waw.pl/en/publikacje/analyses/2026-04-17/russia-blocks-telegram-and-cracks-down-vpns)、[Access Now](https://www.accessnow.org/campaign/keepiton/)、[InterSecLab](https://interseclab.org/research/the-internet-coup/)。

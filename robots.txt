@@ -1,0 +1,19 @@
+# Crawlers used by search and answer engines are explicitly allowed.
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# GPTBot is controlled separately because model training and search discovery
+# are different purposes. Change this rule if the editorial policy changes.
+User-agent: GPTBot
+Disallow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.ermao.net/sitemap.xml

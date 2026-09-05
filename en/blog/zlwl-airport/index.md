@@ -1,0 +1,105 @@
+---
+url: /en/blog/zlwl-airport/index.md
+description: >-
+  A dated Zhilian Network review covering its free-trial and check-in claims,
+  CNY 5 and CNY 9.90 tiers, universal subscriptions, reset ambiguity, and three
+  archived tests.
+---
+Zhilian Network had reportedly operated for about six months. Its unusually low recorded prices were CNY 5 for 500 GB and CNY 9.90 for 1,000 GB per month. The provider also advertised a registration trial, daily check-ins worth at least 1 GB, and universal subscriptions.
+
+Recorded registration route: [a.zlwl.org](https://a.zlwl.org/auth/register?code=dre2B4)
+
+![Zhilian Network logo =640x640](https://image.ermao.net/images/blog/zlwl-airport/20260723_170239-92f71d.png)
+
+## Source information
+
+| Item | Source record |
+| --- | --- |
+| Operating history | About six months, provider claim |
+| Payments | WeChat Pay and Alipay |
+| Universal subscription | Supported |
+| Trial | Available after registration, amount and duration not supplied |
+| Daily check-in | At least 1 GB claimed; expiry and conditions not supplied |
+| Telegram | [zlwl\_org](https://t.me/zlwl_org) |
+
+Large data allowances at a very low price do not establish route capacity, privacy, continuity, or service access.
+
+## Standard plans
+
+| Billing | Price | Source-recorded allowance |
+| --- | ---: | ---: |
+| Monthly | CNY 5 | 500 GB/month |
+| Quarterly | CNY 15 | 1,500 GB/quarter |
+| Half-year | CNY 30 | 3,000 GB/half-year |
+| Annual | CNY 54 | 6,000 GB/year |
+
+## Standard Plus plans
+
+| Billing | Price | Source-recorded allowance |
+| --- | ---: | ---: |
+| Monthly | CNY 9.90 | 1,000 GB/month |
+| Quarterly | CNY 27 | 3,000 GB/quarter |
+| Half-year | CNY 54 | 6,000 GB/half-year |
+| Annual | CNY 108 | 12,000 GB/year |
+
+The source does not clarify whether the multi-month allowances are full-cycle pools or monthly-reset totals written cumulatively. Confirm reset, expiry, device, sharing, protocol, and refund rules at [checkout](https://a.zlwl.org/auth/register?code=dre2B4).
+
+The provider also said only "level 0" user data had no time limit, without explaining the amount, price, or acquisition rule. This is not sufficient evidence of a purchasable one-time package.
+
+## Archived tests
+
+### July 22 single-thread test
+
+![Zhilian Network July 22 single-thread test =1280x577](https://image.ermao.net/images/blog/zlwl-airport/20260723_170239-e0c28a.png)
+
+The screenshot is labelled July 22, 2026 at 15:34:15 CST, with a Zhuhai Unicom 5 Gbps backend and single-thread method. Eleven VMess nodes are visible. Most show average results around 8.42–28.11 MB/s, while one United States and one Hong Kong node show KB-level results.
+
+### July 4 multi-thread test
+
+![Zhilian Network Shaanxi Unicom multi-thread test =1280x529](https://image.ermao.net/images/blog/zlwl-airport/20260723_170239-def539.png)
+
+This screenshot is labelled July 4 at 07:17:42 CST, North China–Shaanxi Unicom 1 Gbps, eight threads. Ten VMess nodes show average results around 17.69–105.48 MB/s and peaks around 42.61–118.89 MB/s.
+
+### July 4 single-thread test
+
+![Zhilian Network Zhejiang Telecom single-thread test =1280x505](https://image.ermao.net/images/blog/zlwl-airport/20260723_170239-47dfef.png)
+
+This screenshot is labelled July 4 at 07:12:51 CST, East China–Zhejiang Telecom 1 Gbps, single thread. Ten nodes show average results around 18.37–45.32 MB/s and peaks around 19.86–67.10 MB/s.
+
+The dates, regions, ISPs, and thread counts differ, so the images are not a controlled comparison. Two were recorded in the morning and none covers the evening peak. No repeated loss or interruption measurements are supplied.
+
+## Purchase guidance
+
+1. Use the free trial if it requires no unnecessary payment authorization.
+2. Confirm the trial data, expiry, nodes, and check-in rules.
+3. If needed, buy only the CNY 5 monthly tier.
+4. Test from your own ISP during the evening peak.
+5. Resolve the multi-month reset ambiguity before any prepayment.
+6. Keep a backup for important traffic.
+
+## FAQ
+
+### What is the lowest paid tier?
+
+CNY 5 for a source-recorded 500 GB per month. A free trial was also claimed without detailed limits.
+
+### Is a universal subscription supported?
+
+The source says yes, but protocol, client format, and device rules were not supplied.
+
+### Is there a non-expiring package?
+
+Not enough information supports that conclusion. The "level 0" statement lacks a price, amount, and acquisition process.
+
+### Do the speed tests prove long-term performance?
+
+No. They are three provider-supplied snapshots under different conditions and do not cover repeated evening-peak testing.
+
+## Client guides
+
+* [Android Clash guide](/en/article/eh8f4n86/)
+* [iOS Shadowrocket guide](/en/article/z747kgjd/)
+* [Windows Clash Verge Rev guide](/en/article/0gematwc/)
+* [macOS Clash Verge Rev guide](/en/article/6vxkmmuh/)
+
+See the [proxy-service review index](/en/posts/vpn/), [budget list](/en/airport/), and [provider-selection guide](/en/article/choose-good-airport/).

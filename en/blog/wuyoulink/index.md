@@ -1,0 +1,93 @@
+---
+url: /en/blog/wuyoulink/index.md
+description: >-
+  A dated Wuyou Link review covering recurring and one-time plans, universal
+  subscriptions, mainstream client support, streaming and AI claims, and
+  archived service tests.
+---
+Wuyou Link reportedly had about one year of operation. A plan screenshot supplied on August 4, 2026 shows recurring plans from CNY 12.92 for 100 GB per month, with a separate CNY 79 annual plan providing 40 GB each month. The provider advertises universal subscriptions and broad client compatibility.
+
+Recorded purchase route: [Wuyou Link plans](https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb)
+
+![Wuyou Link logo =1024x1024](https://image.ermao.net/images/blog/wuyoulink/20260723_155542-f42aee.png)
+
+## Provider information
+
+| Item | Source record |
+| --- | --- |
+| Operating history | About one year, provider claim |
+| Payments | WeChat Pay and Alipay |
+| Universal subscription | Supported |
+| Client policy | Provider says mainstream clients, including Shadowrocket, are allowed |
+| Telegram | [axxxing](https://t.me/axxxing) |
+
+The provider claims access to Netflix, Disney+, HBO, Hulu, ChatGPT, and Gemini. IP classifications and platform policies change, so every required region and service must be tested.
+
+## Recurring plans
+
+| Plan | Data | Recorded prices |
+| --- | ---: | --- |
+| Mini Link | 40 GB/month | CNY 79/year |
+| Comfortable Link | 100 GB/month | CNY 12.92/month; 34.68/quarter; 65.28/half-year; 123.76/year |
+| Easy Link | 200 GB/month | CNY 22.44/month; 60.52/quarter; 114.24/half-year; 214.88/year |
+| Free Link | 500 GB/month | CNY 52.36/month; 140.76/quarter; 266.56/half-year; 502.52/year |
+| Carefree Link | 1 TB/month | CNY 117/month; 315/quarter; 596/half-year; 1,123/year |
+
+Mini Link is billed annually and the new screenshot labels its allowance as 40 GB each month. For Comfortable, Easy, and Free Link, the table uses the red current prices shown beside crossed-out original monthly prices. Carefree Link was not visible in this screenshot, so its earlier recorded price remains. New users should test Comfortable Link for one month before any longer commitment.
+
+## Partially documented one-time package
+
+| Plan | Price | Total data | Evidence limit |
+| --- | ---: | ---: | --- |
+| Non-expiring 100 GB | CNY 16.15 one-time | 100 GB | Formal name and full conditions not supplied |
+
+The submitted information calls this a non-expiring package, but account expiry and closure rules were not provided. Verify the live checkout before relying on the unusually low price.
+
+## Archived service-access test
+
+![Wuyou Link streaming-access test =789x1280](https://image.ermao.net/images/blog/wuyoulink/20260723_155542-c186d6.png)
+
+The provider-supplied screenshot shows 50 VLESS nodes in the United States, Singapore, Taiwan, Japan, and Hong Kong. It is labelled July 18, 2026 at 21:47:23 CST. Most YouTube, Netflix, and Disney+ checks are shown as available, while one Hong Kong node's YouTube result points to mainland China.
+
+## Archived speed test
+
+![Wuyou Link node speed test =870x1280](https://image.ermao.net/images/blog/wuyoulink/20260723_155542-2bed0d.png)
+
+This 50-node screenshot is labelled July 18 at 21:40:48 CST. Several displayed Hong Kong averages are around 500 MB in the screenshot, with some Singapore, Japan, and Taiwan entries also high and United States entries lower. Most UDP results show Full Cone.
+
+The source does not identify test region, ISP, baseline bandwidth, device, client, or repeat count. Units and environment must be known before interpreting a 500 MB value. These are single samples, not proof of typical throughput or long-term access.
+
+## Purchase guidance
+
+* Use Comfortable Link for the first month.
+* Confirm the universal-subscription format and simultaneous-device rule.
+* Verify the one-time package's actual name, data, account expiry, and refund terms.
+* Test target streaming and AI services on the required region.
+* Keep a backup for work or account operations.
+
+## FAQ
+
+### What is the lowest recurring monthly tier?
+
+CNY 12.92 for 100 GB per month in the supplied screenshot. The CNY 79 Mini Link is billed annually and provides 40 GB each month.
+
+### Is Shadowrocket supported?
+
+The provider says universal subscriptions and mainstream clients are supported. Confirm the actual subscription format and device rules.
+
+### Is the one-time package really non-expiring?
+
+That is the provider description. The submitted material did not include account-validity or closure terms.
+
+### Are streaming and AI services guaranteed?
+
+No. The provider claims broad access and supplied one test snapshot; future access can vary by node, account, region, and time.
+
+## Client guides
+
+* [Android Clash guide](/en/article/eh8f4n86/)
+* [iOS Shadowrocket guide](/en/article/z747kgjd/)
+* [Windows Clash guide](/en/article/0gematwc/)
+* [macOS Clash Verge Rev guide](/en/article/6vxkmmuh/)
+
+See the [proxy-service review index](/en/posts/vpn/), [budget list](/en/airport/), and [provider-selection guide](/en/article/choose-good-airport/).

@@ -1,0 +1,63 @@
+---
+url: /en/scamvpn/sugarhoney/index.md
+description: >-
+  SugarHoney's servers went offline and support stopped responding from April 3,
+  2026, despite its website remaining available. Stop purchases.
+---
+Beginning April 3, 2026, every SugarHoney server was offline and support tickets went unanswered, while the website still allowed users to visit and sign in.
+
+**High-risk alert:** stop purchasing and renewing the service immediately.
+
+::: tip Risk-monitoring board
+Many proxy services have recently become unreachable after data centers removed their servers. Consult the [2025–2026 Proxy-Service Shutdown and Risk List](/en/scamvpn/jichang-paolu-huizong/) for additional records.
+:::
+
+***
+
+## SugarHoney service failures
+
+::: caution
+
+As of April 3, 2026, SugarHoney showed two high-risk signals at the same time: every server was offline and support tickets received no response.
+
+Existing users should stop renewing or purchasing immediately to avoid further losses.
+
+:::
+
+SugarHoney website: <https://sugarhoney.net/#/dashboard>
+
+## Evidence 1: support was unreachable
+
+User reports and direct checks indicated that SugarHoney's ticket channel remained unresponsive during the incident, with no effective handling for more than 72 hours.
+
+![SugarHoney support unreachable for more than 72 hours =1895x890](https://image.ermao.net/images/scamvpn/sugarhoney/20260404_192556-41b155.png)
+
+## Evidence 2: every server was offline
+
+During the same period, all servers in the SugarHoney subscription were offline and the paid service was unusable.
+
+![Every SugarHoney server was offline =689x1223](https://image.ermao.net/images/scamvpn/sugarhoney/20260404_192633-bebe49.png)
+
+## Conclusion
+
+The available evidence showed:
+
+* Every server was offline.
+* Support tickets had gone unanswered for an extended period.
+* The website remained accessible.
+
+Together, these matched the site's documented signs of a provider shutdown. SugarHoney is therefore classified as a confirmed shutdown.
+
+Users should disable automatic renewal and move to a backup service rather than adding more credit.
+
+## Submit a provider shutdown or risk alert
+
+[Submit a report](/en/scamvpn/jichang-paolu-huizong/)
+
+## Other proxy-service options
+
+::: warning
+Every proxy service carries a shutdown risk. Keep several pay-as-you-go backups and use monthly billing for your primary service to limit potential losses.
+:::
+
+<https://www.ermao.net/en/posts/vpn>
