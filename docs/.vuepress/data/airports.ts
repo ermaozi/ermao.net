@@ -88,7 +88,7 @@ export type AirportSource = Omit<AirportRecord, 'plans'> & {
 // 光速云: docs/blog/机场推荐/2026/机场推荐光速云.md — 💳 光速云套餐价格
 // shandianshu: docs/blog/机场推荐/2026/机场推荐闪电鼠.md — 套餐价格与优惠
 // 全球云: docs/blog/机场推荐/2026/机场推荐全球云.md — 全球云周期套餐 / 一次性不限时流量包
-// 寰宇云: docs/blog/机场推荐/2026/机场推荐寰宇云.md — 套餐与价格
+// 寰宇云: docs/blog/机场推荐/2026/机场推荐寰宇云.md — 周期套餐：日常使用怎么选 / 不限时流量包：备用需求怎么选
 // 二猫云: docs/blog/机场推荐/2026/机场推荐二猫云.md — 套餐与价格
 // 快狸: docs/blog/机场推荐/2026/机场推荐快狸.md — 套餐选择建议
 // 边缘节点: docs/blog/机场推荐/2026/机场推荐边缘节点.md — 套餐选择建议
@@ -2733,38 +2733,20 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
   ],
   "寰宇云": [
     {
-      "name": "限定年付小包",
-      "priceText": "89元/年",
-      "traffic": "60GB/月",
-      "type": "周期订阅",
-      "audience": "轻度用户、备用线用户",
-      "features": [
-        "速率或限制：中转 + 直连，适合低频使用"
-      ],
-      "purchaseHref": "https://vip4.huanyuyunbest.com/#/register?code=W82s7u2a",
-      "text": "限定年付小包，89元/年，60GB/月"
-    },
-    {
       "name": "卫星",
-      "priceText": "18元/月（活动后约14元）",
+      "priceText": "18元/月",
       "traffic": "150GB/月",
       "type": "周期订阅",
-      "audience": "轻度到中度日常用户",
-      "features": [
-        "速率或限制：季付及以上每 30 天重置流量"
-      ],
+      "audience": "首次购买、日常浏览与轻度影音",
       "purchaseHref": "https://vip4.huanyuyunbest.com/#/register?code=W82s7u2a",
-      "text": "卫星，18元/月（活动后约14元），150GB/月"
+      "text": "卫星，18元/月，150GB/月"
     },
     {
       "name": "行星",
       "priceText": "34元/月",
       "traffic": "300GB/月",
       "type": "周期订阅",
-      "audience": "日常视频与 AI 工具用户",
-      "features": [
-        "速率或限制：1 年付 8 折，2 年付 7 折，3 年付 6 折"
-      ],
+      "audience": "经常使用、希望比入门档多一倍流量",
       "purchaseHref": "https://vip4.huanyuyunbest.com/#/register?code=W82s7u2a",
       "text": "行星，34元/月，300GB/月"
     },
@@ -2773,37 +2755,37 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "priceText": "60元/月",
       "traffic": "600GB/月",
       "type": "周期订阅",
-      "audience": "高频多设备用户",
-      "features": [
-        "速率或限制：1 年付 8 折，2 年付 7 折，3 年付 6 折"
-      ],
+      "audience": "每月流量消耗较大的用户",
       "purchaseHref": "https://vip4.huanyuyunbest.com/#/register?code=W82s7u2a",
       "text": "恒星，60元/月，600GB/月"
     },
     {
+      "name": "限定年付小包",
+      "priceText": "89元/年",
+      "traffic": "60GB/月",
+      "type": "周期订阅",
+      "audience": "已确认线路可用、月用量较少的用户",
+      "purchaseHref": "https://vip4.huanyuyunbest.com/#/register?code=W82s7u2a",
+      "text": "限定年付小包，89元/年，60GB/月"
+    },
+    {
       "name": "巨量不限时",
       "priceText": "168元/一次性",
-      "traffic": "1000GB 总量",
+      "traffic": "1000GB",
       "type": "不限时流量包",
-      "audience": "低频长期备用用户",
-      "features": [
-        "速率或限制：不限时流量包，不按月清零"
-      ],
+      "audience": "偶尔使用、希望保留备用流量的用户",
       "purchaseHref": "https://vip4.huanyuyunbest.com/#/register?code=W82s7u2a",
-      "text": "巨量不限时，168元/一次性，1000GB 总量",
+      "text": "巨量不限时，168元/一次性，1000GB",
       "oneTime": true
     },
     {
       "name": "海量不限时",
       "priceText": "398元/一次性",
-      "traffic": "3000GB 总量",
+      "traffic": "3000GB",
       "type": "不限时流量包",
-      "audience": "中长期非连续高流量用户",
-      "features": [
-        "速率或限制：不限时流量包，不按月清零"
-      ],
+      "audience": "已验证线路、预计需要更多总流量的用户",
       "purchaseHref": "https://vip4.huanyuyunbest.com/#/register?code=W82s7u2a",
-      "text": "海量不限时，398元/一次性，3000GB 总量",
+      "text": "海量不限时，398元/一次性，3000GB",
       "oneTime": true
     }
   ],
@@ -4125,17 +4107,17 @@ export const airportSources: AirportSource[] = [
   {
     id: '寰宇云',
     name: '寰宇云',
-    description: '寰宇云是新开业的 IPLC 中转定位机场，月付、年付小包和不限时流量包并行，适合先低成本验证本地可用性，再决定是否升级长期使用。',
+    description: '寰宇云现有套餐记录为18元150GB月付起，另有轻量年付和1000GB起不限时流量包。日常使用按月选额度，备用需求按总流量选择；实时价格以结算页为准。',
     rank: 31,
     officialHref: 'https://vip4.huanyuyunbest.com/#/register?code=W82s7u2a',
-    universalSubscription: false,
+    universalSubscription: true,
     minPlanText: '18元 150GB/月',
     hasOneTimePackage: true,
     telegramHref: 'https://t.me/+zXIUmCa1aLBmOGQx',
     reviewHref: '/blog/huanyuyun/',
     rankChangeLabel: '↑25',
     image: 'https://image.ermao.net/images/blog/huanyuyun/20260417_082505-079a0c.png',
-    tags: ['IPLC', '不限时', '新站'],
+    tags: ['IPLC', '不限时', '月付'],
   },
   {
     id: '掌中世界',
