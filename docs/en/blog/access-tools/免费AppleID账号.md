@@ -1,6 +1,7 @@
 ---
 title: Shared U.S. Apple IDs for App Store Downloads (2026)
 createTime: 2026/3/22 09:22:04
+updateTime: 2026/10/01 17:30:00
 permalink: /en/blog/freeappleid/
 lang: en-US
 translationOf: /blog/freeappleid/
@@ -14,7 +15,7 @@ tags:
 description: Shared Apple IDs for downloading region-limited App Store apps, with live account data and prominent device-lock, privacy, update, and availability warnings.
 ---
 
-This page lists shared Apple IDs for the United States, Japan, South Korea, Hong Kong, Taiwan, and other App Store regions. They are intended only for downloading region-limited apps such as Shadowrocket, TikTok, ChatGPT, and Clash Mi. Availability can change at any time because the accounts are shared publicly and subject to Apple's security controls.
+See the [shared account list and data timestamp](#shared-apple-id-pool) for the regions currently available. **Use shared accounts only inside the App Store, never in the device's Settings or iCloud.** A data update does not guarantee that an account will still work when you sign in.
 
 > 💡 If you frequently switch among store regions, the source article also reviews [Asspp, an Apple ID account manager](/en/blog/asspp-download-guide/). Review its security model before giving any third-party app access to accounts or installation files.
 
@@ -39,7 +40,7 @@ Public Apple IDs offer temporary access to another App Store region but sacrific
 
 ## Shared Apple ID pool
 
-The pool may include U.S., Japanese, South Korean, Hong Kong, and Taiwan accounts. The source page states that an automated interface tests and rotates the data. This does not guarantee that an account will remain available between the test and your sign-in. Do not enable two-factor authentication or change a password.
+The interface below loads account data and its update timestamp, not a live sign-in test for each account. Regions, purchase histories, and availability can differ; an account may not own paid apps such as Shadowrocket. Do not change passwords, attach a payment method, or alter two-factor-authentication settings.
 
 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; padding: 10px 16px; background-color: var(--vp-c-bg-alt); border-radius: 8px;">
   <div style="color: var(--vp-c-text-2); font-size: 14px;">
@@ -171,7 +172,7 @@ Many devices sign in to the public account from different regions within a short
 
 The App Store may require the Apple ID that originally obtained the app before installing an update. If Clash Mi or another region-limited app was downloaded with one of these accounts, the same account may be required later. Because accounts in this pool rotate frequently, it may no longer be available.
 
-If an update cannot be installed, the source guide suggests removing the old app and reinstalling the current release with an available account. **Back up any local app configuration first**, because deleting an app can also delete its on-device data.
+Do not immediately delete the old app to obtain an update. **Export subscriptions, settings, and other local data first, and confirm that the replacement account can download the app.** A paid app may require another purchase. For continued use, follow [Apple's account-creation guide](https://support.apple.com/en-us/108647) and manage your own purchase history and account security.
 
 ## Related tools
 

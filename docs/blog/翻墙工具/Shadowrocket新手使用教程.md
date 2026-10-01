@@ -1,7 +1,7 @@
 ---
 title: Shadowrocket（小火箭）下载安装与节点订阅教程（2026）
 createTime: 2025/01/03 18:18:11
-updateTime: 2026/08/03 08:12:22
+updateTime: 2026/10/01 17:30:00
 permalink: /article/z747kgjd/
 tags:
   - Shadowrocket
@@ -17,7 +17,7 @@ description: 2026年Shadowrocket（小火箭）新手教程，核对官方版本
 
 Shadowrocket（小火箭）是一个规则代理客户端，本身**不提供节点或代理服务**。安装后还需要准备兼容的订阅链接，才能导入服务器并连接。
 
-截至 2026 年 8 月 3 日，[Apple 美国区 App Store](https://apps.apple.com/us/app/shadowrocket/id932747118)显示版本为 **2.2.90**、价格为 **2.99 美元**、最低需要 iOS 13；香港区显示 **HK$22**。价格和上架地区可能变化，请以自己账号所在商店的结算页为准。
+**官方下载：[Shadowrocket 美国区 App Store](https://apps.apple.com/us/app/shadowrocket/id932747118)。** 截至 2026 年 10 月 1 日，Apple 页面与公开查询接口显示版本为 **2.2.92**、价格为 **2.99 美元**，最低需要 iOS 13，开发者为 **Shadow Launch Technology Limited**。价格和上架地区可能变化，请以自己账号所在商店的结算页为准。
 
 :::tip 先判断自己是否需要购买
 只想使用免费客户端，可以先看 [iOS Clash Mi 使用教程](/blog/clashmi/)。如果已经购买 Shadowrocket，下面从下载、订阅导入到排错逐步操作。
@@ -35,9 +35,11 @@ Shadowrocket（小火箭）是一个规则代理客户端，本身**不提供节
 
 ## 1. 下载与安装
 
-1. 使用已经购买过 Shadowrocket 的外区 Apple ID 打开 [Shadowrocket 官方 App Store 页面](https://apps.apple.com/us/app/shadowrocket/id932747118)。
-2. 核对开发者、应用名称和火箭图标，避免下载名称相近的应用。
-3. 完成购买或重新下载后打开应用，首次启用时允许系统添加 VPN 配置。
+1. 使用自己持有的 Apple 账户打开 [Shadowrocket 官方 App Store 页面](https://apps.apple.com/us/app/shadowrocket/id932747118)；商店地区需要提供该应用。
+2. 核对开发者 **Shadow Launch Technology Limited**、应用名称和火箭图标。尚未购买时按商店价格购买，已经购买时可使用原账户重新下载。
+3. 安装并打开应用；首次启用连接时允许系统添加 VPN 配置。
+
+网上标为“小火箭 APK”的 Android 安装包不是本文所指的 Apple App Store 版 Shadowrocket。Android 用户可查看 [Clash Meta for Android 下载与安装教程](/article/eh8f4n86/)。
 
 中国大陆区 App Store 当前无法通过 Apple 的公开查询接口检索到该应用。如果临时使用共享账号，只能在 **App Store 头像页**登录，不能把共享账号登录到系统“设置”或 iCloud。
 
@@ -103,5 +105,5 @@ Shadowrocket（小火箭）是一个规则代理客户端，本身**不提供节
 - [2026 年机场推荐与风险说明](/posts/vpn/)
 
 :::info 资料边界
-版本、价格和官方界面核对自 Apple App Store，核对日期为 2026 年 8 月 3 日。App、商店地区和界面均可能变化，请以 Apple 当前页面为准，并遵守所在地法律法规。
+版本、价格和开发者信息核对自 Apple App Store，核对日期为 2026 年 10 月 1 日；现有官方界面截图保留自 2026 年 8 月 3 日的资料整理。本文不是本站的设备实测记录，界面与商店信息请以 Apple 当前页面为准。
 :::

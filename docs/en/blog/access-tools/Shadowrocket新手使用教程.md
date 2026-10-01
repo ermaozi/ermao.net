@@ -1,6 +1,7 @@
 ---
 title: Shadowrocket Download, Installation, and Subscription Guide (2026)
 createTime: 2025/01/03 18:18:11
+updateTime: 2026/10/01 17:30:00
 permalink: /en/article/z747kgjd/
 lang: en-US
 translationOf: /article/z747kgjd/
@@ -11,87 +12,89 @@ tags:
   - Mac
   - proxy subscription
   - tutorial
-description: A 2026 beginner guide to installing Shadowrocket on iPhone, iPad, or Mac, importing a subscription, connecting, testing, and troubleshooting.
+description: Find the official Shadowrocket App Store listing, verify its price and developer, install it on iPhone or iPad, import a subscription, and troubleshoot.
 ---
 
-::: tip Free alternative
-Shadowrocket is a paid App Store app. If you do not own it and prefer a free client, see the [Clash Mi for iOS guide](/en/blog/clashmi/).
-:::
+Shadowrocket is a rule-based proxy client. **It does not supply servers or a proxy service.** You need a compatible subscription or server configuration to connect.
 
-This 2026 Shadowrocket guide covers iPhone and iPad, as well as supported Macs. It explains installation, subscription import, node selection, connection testing, and common problems. The linked Apple ID page also documents shared non-mainland App Store accounts, with important account-safety warnings.
+**Official download: [Shadowrocket on the U.S. App Store](https://apps.apple.com/us/app/shadowrocket/id932747118).** Apple's listing and public lookup interface, checked on October 1, 2026, show version **2.2.92**, a price of **US$2.99**, iOS 13 or later, and developer **Shadow Launch Technology Limited**. Store availability and prices can change; use your account's current checkout information.
+
+::: tip Before purchasing
+If you prefer a free client, see the [Clash Mi for iOS guide](/en/blog/clashmi/). If you already own Shadowrocket, follow the installation, subscription, and troubleshooting steps below.
+:::
 
 <!-- more -->
 
-## 0. Identify the official app
+## Identify the official interface
 
-The official Shadowrocket App Store listing uses the icon shown below.
+These images were taken from Apple's official listing during the August 3, 2026 documentation review. The layout may change in later versions; adding a server and selecting the Subscribe type are the relevant steps.
 
-![Official Shadowrocket App Store listing =731x337](https://image.ermao.net/images/article/z747kgjd/image.png)
+![Shadowrocket main interface published on Apple's App Store =392x696](https://image.ermao.net/images/article/z747kgjd/20260803_081222-218337.png)
+
+![Shadowrocket Subscribe type published on Apple's App Store =392x696](https://image.ermao.net/images/article/z747kgjd/20260803_081222-3556fe.png)
 
 ## 1. Download and install
 
-Shadowrocket is not available in mainland China's App Store. The source guide uses a non-mainland Apple ID to access the app.
+1. Open the [official App Store listing](https://apps.apple.com/us/app/shadowrocket/id932747118) with an Apple Account you own. Its store region must offer the app.
+2. Check the name, rocket icon, and developer **Shadow Launch Technology Limited**. Purchase the app if needed, or download it again with the account that already owns it.
+3. Install and open the app. Allow iOS to add a VPN configuration when enabling your first connection.
 
-<LinkCard title="Shared U.S. Apple IDs for App Store Downloads" href="/en/blog/freeappleid/" description="Shared non-mainland Apple IDs intended only for signing in to the App Store and downloading region-limited apps. Read the lockout and account-safety warnings before use." />
+An Android APK advertised as “Shadowrocket” is not the Apple App Store app described here. Android users can use the [Clash Meta for Android setup guide](/en/article/eh8f4n86/).
 
-::: caution Account-lock warning
-When using a shared account, sign in **only inside the App Store by following the documented steps**. Never sign in to the shared account under the device's main **Settings** or iCloud account section.
-
-Signing in to an untrusted shared Apple ID at the system level can expose the device to account lockout or remote-control risk.
-:::
-
-1. Open the **App Store**, select the profile icon, scroll down, and sign out of your own store account. Sign in with the shared store account. If an Apple ID security page appears, choose **Other Options**, then decline the upgrade.
-2. The App Store should switch to that account's region. The interface may remain in Chinese. Restart the App Store or the phone if the store does not change.
-3. Search for **Shadowrocket** and compare the icon with the screenshot above to avoid similarly named apps. You can also open the [U.S. App Store listing](https://apps.apple.com/us/app/shadowrocket/id932747118).
-4. Install and open Shadowrocket.
-5. Sign out of the shared App Store account immediately after the download, then return to your own account.
-6. If Apple asks to verify a phone number for the shared account, use a different listed account rather than attempting to change its security information.
-7. A request to answer account-security questions usually indicates that the shared-account procedure was not followed correctly.
+Apple's public lookup currently does not return this app for the mainland China store. If you temporarily use a shared account, sign in **only from the App Store profile screen, never under the device's Settings or iCloud**. The [shared Apple ID page](/en/blog/freeappleid/) explains availability and lockout risks. Your own account is preferable for continued use and updates.
 
 ## 2. Import a subscription
 
-1. If you do not have a subscription URL, consult the provider guide below.
+1. Open Shadowrocket and select **+** at the upper-right.
+2. Set **Type** to **Subscribe**.
+3. Paste the complete subscription address into **URL** and give it a recognizable name.
+4. Select **Done** to save it.
+5. Update the subscription from the main screen to retrieve its servers.
 
-<LinkCard title="Proxy-Service Selection and Review Guide" href="/en/posts/vpn/" description="Selection criteria, plan comparisons, full reviews, testing methods, and shutdown-risk records for China-focused proxy services." />
+A subscription URL is an account credential. Do not post it publicly or submit it to an unknown online converter. If you do not yet have a subscription, consult the [provider review and selection guide](/en/posts/vpn/). Try a short plan before committing to a long purchase.
 
-2. Open Shadowrocket.
-3. Select the **+** button in the upper-right corner, choose **Subscribe** as the type, and paste the subscription URL.
-4. Select **Save**. The app downloads and updates the subscription.
+## 3. Select a server and connect
 
-## 3. Select a server
+1. Choose a server that responds normally.
+2. Turn on the switch at the top of the main screen.
+3. Approve the first VPN configuration using Face ID, Touch ID, or your device passcode when requested.
+4. Open the service you intend to use and test it directly.
 
-1. Return to Shadowrocket's main screen after the subscription is imported.
-2. Open the server list below the subscription and select a suitable server.
+A latency or connectivity result does not establish that every website, video service, or AI service will work.
 
-## 4. Connect
+## 4. Choose a routing mode
 
-1. Turn on the switch at the top of the screen. On the first connection, iOS asks for permission to add a VPN configuration and may require the passcode or Face ID.
+- **Config:** Use rules to select which traffic is proxied; suitable for ordinary use.
+- **Proxy:** Proxy most traffic; useful for briefly checking whether routing rules cause a failure.
+- **Direct:** Bypass the proxy to compare with the local network.
 
-![Shadowrocket connection switch and iOS authorization =554x375](https://image.ermao.net/images/article/z747kgjd/20260112_111749-15697a.png)
+If a site fails in Config mode, temporarily compare it with Proxy mode before changing your rules.
 
-2. A VPN indicator appears in the status area while Shadowrocket is running.
+## 5. Troubleshoot common problems
 
-## 5. Test the connection
+| Problem | First checks |
+| --- | --- |
+| Subscription update fails | Copy the current URL again; check for spaces, truncation, or expiry |
+| No servers after import | Confirm the Subscribe type and the provider's Shadowrocket-compatible format |
+| Server selected but no connection | Try other locations and compare Config with Proxy mode |
+| Repeated timeouts | Restart the VPN, compare Wi-Fi with mobile data, and update the subscription |
+| Only some websites fail | Compare routing modes, then inspect DNS and rules |
+| App update requests another account | Use the account that originally obtained the app; export configurations before considering a reinstall |
 
-1. Open a browser and visit a site that is unavailable on the original network, such as `google.com`.
-2. If the site opens and the required services work, the basic configuration is complete.
+## 6. Protect account information
 
-## 6. Optional settings
+- Keep shared Apple IDs out of device Settings and iCloud.
+- Keep subscription URLs and QR codes out of public screenshots and chat messages.
+- Crop account names, balances, and personal information from screenshots before asking for help.
+- Avoid relying on unknown public servers for sensitive work or payments.
 
-1. **Routing:** Keep **Global Routing** set to **Config** for rule-based routing. If a specific site is not proxied, temporarily choose **Proxy** to determine whether the rule set is the cause.
-2. **Connectivity test:** Use the connectivity test on the home screen and choose a node that responds.
+## 7. Further reading
 
-## 7. Common problems
-
-1. **Cannot connect:** Check that the subscription URL is valid, the selected server is online, and the underlying network works.
-2. **Slow connection:** Test another server or use the connectivity test to compare nodes.
-
-## 8. Update a subscription
-
-Select the circular update button next to the subscription on the home screen.
-
-## 9. Further reading
-
-- [Shadowrocket Rules, Split Routing, and Ad Blocking](/en/blog/shadowrocket-rules-config/)
+- [Shadowrocket Rules and Split Routing](/en/blog/shadowrocket-rules-config/)
 - [Clash Mi for iOS](/en/blog/clashmi/)
 - [Mobile Access Guide for Android and iOS](/en/blog/how-to-vpn-on-mobile/)
+- [Proxy-Service Reviews and Risk Records](/en/posts/vpn/)
+
+::: info Evidence scope
+Version, price, and developer details were checked against Apple's listing on October 1, 2026. The retained interface images come from the August 3 documentation review. This article documents official sources rather than a device test conducted by this site.
+:::
