@@ -27,7 +27,7 @@ See the [shared account list and data timestamp](#shared-apple-id-pool) for the 
 3. **Frequent account failure:** Cross-region and multi-device sign-ins can trigger Apple's security systems. A locked account or two-factor-authentication request is a common failure mode for public accounts. Do not attempt to change security settings; use another listed account.
 :::
 
-<LinkCard title="Proxy-Service Selection and Long-Term Review Guide" href="/en/posts/vpn/" description="Plan comparisons, testing criteria, detailed reviews, and shutdown-risk records for China-focused proxy services." />
+<LinkCard title="Installed Shadowrocket but have no servers? Choose a compatible subscription" href="/en/posts/vpn/#ios-subscription" description="An Apple ID only downloads the app. Shadowrocket and Clash Mi still need compatible server subscriptions. Compare prices, formats, and risk records; start with a short plan." />
 
 <LinkCard title="Clash Mi for iOS: Free Client Setup Guide" href="/en/blog/clashmi/" description="Install Clash Mi on iPhone or iPad, import a compatible node subscription, connect through TUN, and resolve common errors." />
 
@@ -51,6 +51,10 @@ The interface below loads account data and its update timestamp, not a live sign
     <span v-else>Refresh</span>
   </button>
 </div>
+
+::: tip After downloading the app
+**A shared Apple ID does not provide servers, and installing a client does not supply a network service.** If you came here to install Shadowrocket or Clash Mi, read the [iPhone subscription selection notes](/en/posts/vpn/#ios-subscription), then follow the [Shadowrocket](/en/article/z747kgjd/) or [Clash Mi](/en/blog/clashmi/) import guide. Keep using an existing compatible subscription; there is no need to buy another.
+:::
 
 <div class="account-pool" :aria-busy="loading">
   <div v-if="loading && accounts.length === 0" class="account-loading" role="status">
@@ -80,6 +84,7 @@ The interface below loads account data and its update timestamp, not a live sign
     </Card>
   </div>
 </div>
+
 
 <style>
 .account-pool {

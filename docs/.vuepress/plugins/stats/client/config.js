@@ -34,7 +34,7 @@ export default defineClientConfig({
     const router = useRouter()
     let lastTrackedPath = ''
 
-    const sendView = (path) => {
+    const sendView = (path, referrer = document.referrer) => {
       try {
         const workerUrl = resolveWorkerUrl()
         if (!workerUrl) return
@@ -45,7 +45,7 @@ export default defineClientConfig({
 
         const payload = {
           path: normalizedPath,
-          referrer: document.referrer || null,
+          referrer: referrer || null,
           ua: navigator.userAgent || null,
           // New fields
           lang: navigator.language || null,
@@ -90,7 +90,10 @@ export default defineClientConfig({
             // 忽略仅 hash 变化的路由跳转
             if (toPath === fromPath) return
 
-            sendView(toPath)
+            const referrer = from?.matched?.length
+              ? new URL(from.path, window.location.origin).href
+              : document.referrer
+            sendView(toPath, referrer)
         })
     }
   }

@@ -19,6 +19,10 @@ This guide follows four steps: download the client, import a subscription, conne
 
 <!-- more -->
 
+::: tip Installed Clash Mi but have no servers?
+A free client does not include a server service. Confirm that the provider offers a Clash / Mihomo subscription and read the [plan and iPhone subscription selection notes](/en/posts/vpn/#ios-subscription). With an existing subscription, continue to the import steps below without buying another.
+:::
+
 ![Clash Mi website and app overview =256x256](https://image.ermao.net/images/blog/clashmi/20260305_103545-57abfa.png)
 
 Website: [https://clashmi.app/](https://clashmi.app/)

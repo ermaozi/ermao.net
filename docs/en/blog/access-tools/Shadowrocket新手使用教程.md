@@ -21,6 +21,8 @@ Shadowrocket is a rule-based proxy client. **It does not supply servers or a pro
 
 ::: tip Before purchasing
 If you prefer a free client, see the [Clash Mi for iOS guide](/en/blog/clashmi/). If you already own Shadowrocket, follow the installation, subscription, and troubleshooting steps below.
+
+**Already installed the app but have no servers?** Read the [Shadowrocket subscription selection notes](/en/posts/vpn/#ios-subscription) to compare formats, payment periods, and risk records. With an existing subscription, jump to the [import steps](#_2-import-a-subscription).
 :::
 
 <!-- more -->
@@ -51,7 +53,7 @@ Apple's public lookup currently does not return this app for the mainland China 
 4. Select **Done** to save it.
 5. Update the subscription from the main screen to retrieve its servers.
 
-A subscription URL is an account credential. Do not post it publicly or submit it to an unknown online converter. If you do not yet have a subscription, consult the [provider review and selection guide](/en/posts/vpn/). Try a short plan before committing to a long purchase.
+A subscription URL is an account credential. Do not post it publicly or submit it to an unknown online converter. If you do not yet have a subscription, consult the [Shadowrocket-compatible subscription and plan comparison](/en/posts/vpn/#ios-subscription). Try a short plan before committing to a long purchase.
 
 ## 3. Select a server and connect
 

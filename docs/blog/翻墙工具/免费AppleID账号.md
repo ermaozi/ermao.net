@@ -28,7 +28,7 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
 3. **账号失效常态：** 频繁跨地区/跨设备登录极易触发苹果风控机制。使用过程中出现“账号被锁定”或“需要双重认证”属于这些账号的**正常测试边界与消耗常态**。遇到此问题请直接尝试列表中的其他账号。
 :::
 
-<LinkCard title="✈️ 机场推荐与评测方法" href="/posts/vpn/" description="比较套餐、线路宣传、订阅兼容性与风险记录；缺少独立测试的内容会注明证据边界。" />
+<LinkCard title="小火箭已下载，但没有节点？先看机场订阅怎么选" href="/posts/vpn/#ios-subscription" description="Apple ID 只用于下载应用，小火箭和 Clash Mi 还需要兼容的节点订阅。对比套餐价格、订阅格式和风险记录，第一次购买先选短周期。" />
 
 <LinkCard title="🚀 iOS Clash Mi 使用教程：免费且好用的节点订阅与配置指南" href="/blog/clashmi/" description="最新 iOS Clash Mi 新手使用教程。详细介绍如何在 iPhone/iPad 上下载免费的 Clash Mi，以及如何配置节点订阅链接进行科学上网。" />
 
@@ -59,6 +59,10 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
   </button>
 </div>
 
+::: tip 下载完成后的下一步
+**共享 Apple ID 不提供节点，下载客户端也不等于已有网络服务。** 如果你是为了使用小火箭或 Clash Mi 来这里找账号，装好后可以查看[适合 iPhone 的机场订阅选择说明](/posts/vpn/#ios-subscription)，再按[小火箭教程](/article/z747kgjd/)或 [Clash Mi 教程](/blog/clashmi/)导入。已有可用订阅就继续使用，不必重复购买。
+:::
+
 <div class="account-pool" :aria-busy="loading">
   <div v-if="loading && accounts.length === 0" class="account-loading" role="status">
     <div class="account-grid account-grid-skeleton" aria-hidden="true">
@@ -87,6 +91,7 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
     </Card>
   </div>
 </div>
+
 
 <style>
 .account-pool {

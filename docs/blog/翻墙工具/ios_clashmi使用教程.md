@@ -17,6 +17,10 @@ Clash Mi 是一款内置 `mihomo`（Clash Meta）内核的代理工具，支持 
 
 <!-- more -->
 
+::: tip 装好 Clash Mi，但还没有节点？
+客户端免费不代表节点服务免费。先确认机场提供 Clash / Mihomo 订阅，再看[机场套餐与 iPhone 订阅选择说明](/posts/vpn/#ios-subscription)；已有订阅可以直接按下文导入，无需重新购买。
+:::
+
 ![Clash Mi 官网与应用概览 =256x256](https://image.ermao.net/images/blog/clashmi/20260305_103545-57abfa.png)
 
 官网地址：[https://clashmi.app/](https://clashmi.app/)
