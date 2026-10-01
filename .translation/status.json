@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-26T01:31:33.371Z",
+  "generatedAt": "2026-10-01T06:04:56.749Z",
   "summary": {
-    "total": 178,
-    "translated": 175,
+    "total": 181,
+    "translated": 178,
     "needs-review": 0,
     "missing": 3
   },
@@ -582,6 +582,26 @@
       "sourceHash": "9b0bcad3bf58ada6",
       "sourcePermalink": "/blog/weekly-news-2026-08-20/",
       "expectedPermalink": "/en/blog/weekly-news-2026-08-20/",
+      "status": "translated",
+      "issues": [],
+      "hanCharacters": 0
+    },
+    {
+      "source": "docs/blog/新闻周报/2026/2026-08-21至2026-08-27国内热点与科技周报.md",
+      "target": "docs/en/blog/weekly-news/2026/2026-08-21至2026-08-27国内热点与科技周报.md",
+      "sourceHash": "7bd637ca463ad652",
+      "sourcePermalink": "/blog/weekly-news-2026-08-27/",
+      "expectedPermalink": "/en/blog/weekly-news-2026-08-27/",
+      "status": "translated",
+      "issues": [],
+      "hanCharacters": 0
+    },
+    {
+      "source": "docs/blog/新闻周报/2026/2026-08-28至2026-09-03国内热点与科技周报.md",
+      "target": "docs/en/blog/weekly-news/2026/2026-08-28至2026-09-03国内热点与科技周报.md",
+      "sourceHash": "90a88c3fe351372b",
+      "sourcePermalink": "/blog/weekly-news-2026-09-03/",
+      "expectedPermalink": "/en/blog/weekly-news-2026-09-03/",
       "status": "translated",
       "issues": [],
       "hanCharacters": 0
@@ -1337,6 +1357,16 @@
       "hanCharacters": 0
     },
     {
+      "source": "docs/blog/机场推荐/2026/机场推荐闪电鼠.md",
+      "target": "docs/en/blog/proxy-reviews/2026/机场推荐闪电鼠.md",
+      "sourceHash": "5db195ab61bc3cfd",
+      "sourcePermalink": "/blog/shandianshu/",
+      "expectedPermalink": "/en/blog/shandianshu/",
+      "status": "translated",
+      "issues": [],
+      "hanCharacters": 0
+    },
+    {
       "source": "docs/blog/机场推荐/2026/机场推荐随便云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐随便云.md",
       "sourceHash": "7c93bf3e93d66dcf",
@@ -1369,7 +1399,7 @@
     {
       "source": "docs/blog/机场推荐/vpn.md",
       "target": "docs/en/blog/proxy-reviews/vpn.md",
-      "sourceHash": "b08086cfeb1b6ea4",
+      "sourceHash": "cd4f4e57a328a652",
       "sourcePermalink": "/posts/vpn/",
       "expectedPermalink": "/en/posts/vpn/",
       "status": "translated",

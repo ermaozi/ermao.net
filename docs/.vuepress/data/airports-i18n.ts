@@ -36,6 +36,7 @@ const englishNames: Record<string, string> = {
   sogo云: 'Sogo Cloud',
   光速云: 'Guangsu Cloud',
   全球云: 'Global Cloud',
+  闪电鼠: 'Shandianshu',
   GW云洞: 'GW Cloud Tunnel',
   纵云梯: 'Zongyun Ti',
   加速啦: 'Jiasu.la',
