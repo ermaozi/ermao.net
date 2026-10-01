@@ -1,7 +1,7 @@
 ---
 title: GKD 下载与使用：自动跳过开屏广告，4 步上手
 createTime: 2026/10/01 17:30:00
-updateTime: 2026/10/01 19:53:12
+updateTime: 2026/10/01 20:49:00
 permalink: /blog/gkd-guide/
 tags:
   - GKD
@@ -12,6 +12,7 @@ tags:
   - 开屏广告
   - 李跳跳
 description: 点这里下载 GKD 安卓安装包，跟着 4 步完成安装、无障碍授权、添加规则和验证自动跳过开屏广告。附李跳跳对比与常见问题。
+excerpt: GKD 可以自动跳过开屏广告、减少重复点击。这里提供官方安卓下载入口，按安装、授权、添加规则、验证效果 4 步带你上手。
 sources:
   - https://gkd.li/guide/what-is-gkd
   - https://gkd.li/guide/

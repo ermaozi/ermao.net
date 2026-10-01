@@ -1,7 +1,7 @@
 ---
 title: "GKD Download and Setup: Skip Android Startup Ads in 4 Steps"
 createTime: 2026/10/01 17:30:00
-updateTime: 2026/10/01 19:53:12
+updateTime: 2026/10/01 20:49:00
 permalink: /en/blog/gkd-guide/
 lang: en-US
 translationOf: /blog/gkd-guide/
@@ -13,6 +13,7 @@ tags:
   - startup ads
   - Li Tiaotiao
 description: "Download the official GKD Android APK and follow four setup steps: install, authorize, add rules, and test ad skipping. Includes Li Tiaotiao comparison."
+excerpt: Skip startup ads and repetitive taps with GKD. Get the official Android APK and follow four steps to install, authorize, add rules, and verify it works.
 sources:
   - https://gkd.li/guide/what-is-gkd
   - https://gkd.li/guide/
