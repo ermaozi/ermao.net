@@ -220,7 +220,6 @@ The ranking below is based primarily on **monthly sales, including new purchases
 | Provider | Former or reported website | Status | Details |
 |---|---|---|---|
 | [Naiyun](/en/scamvpn/naiyun/) | ~~www.nyaff.cc~~ | ❌ **Confirmed shutdown** | [Shutdown details](/en/scamvpn/naiyun/) |
-| [Yinyun](/en/scamvpn/yinyun/) | ~~wkacc.xyz~~ | ⚠️ **Shutdown alert** | [Risk details](/en/scamvpn/yinyun/) |
 | [CAC](/en/scamvpn/cac/) | ~~www.cac.mom~~ | ⚠️ **Shutdown alert** | [Risk details](/en/scamvpn/cac/) |
 | [OKANC / OKAC](/en/scamvpn/okac/) | ~~www.okanc.com~~ | ⚠️ **Shutdown alert** | [Risk details](/en/scamvpn/okac/) |
 | [Xiaoniu Cloud](/en/scamvpn/xiaoniu/) | [Reported website](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT) | ⚠️ **Shutdown alert** | [Details](/en/scamvpn/xiaoniu/) |

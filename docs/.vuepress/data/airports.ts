@@ -4347,14 +4347,7 @@ export const airportRanking = [...airportRecords]
 
 // 官网链接可能包含推广参数，组件会统一输出 rel="sponsored nofollow noopener"。
 
-export const airportRisks: AirportRiskItem[] = [
-  {
-    name: '隐云',
-    status: '高风险观察',
-    description: '与奈云、CAC、OKAC 存在同主体联动风险，相关主体近期异常较多。当前建议暂停续费和新购，先看完整风险说明。',
-    href: '/blog/yinyun/',
-  },
-]
+export const airportRisks: AirportRiskItem[] = []
 
 export const airportGuides: AirportGuideItem[] = [
   {

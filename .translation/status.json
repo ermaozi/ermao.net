@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-01T06:04:56.749Z",
+  "generatedAt": "2026-10-01T06:20:27.884Z",
   "summary": {
-    "total": 181,
-    "translated": 178,
+    "total": 180,
+    "translated": 177,
     "needs-review": 0,
     "missing": 3
   },
@@ -1379,7 +1379,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐隐云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐隐云.md",
-      "sourceHash": "4d680447375e9d94",
+      "sourceHash": "2ecd3838ed96223f",
       "sourcePermalink": "/blog/yinyun/",
       "expectedPermalink": "/en/blog/yinyun/",
       "status": "translated",
@@ -1399,7 +1399,7 @@
     {
       "source": "docs/blog/机场推荐/vpn.md",
       "target": "docs/en/blog/proxy-reviews/vpn.md",
-      "sourceHash": "cd4f4e57a328a652",
+      "sourceHash": "88408ddcaee0b962",
       "sourcePermalink": "/posts/vpn/",
       "expectedPermalink": "/en/posts/vpn/",
       "status": "translated",
@@ -1709,7 +1709,7 @@
     {
       "source": "docs/blog/跑路机场/机场跑路汇总.md",
       "target": "docs/en/blog/provider-risk/机场跑路汇总.md",
-      "sourceHash": "9d092f6a15327559",
+      "sourceHash": "ea9dd9f7cc257a6c",
       "sourcePermalink": "/scamvpn/jichang-paolu-huizong/",
       "expectedPermalink": "/en/scamvpn/jichang-paolu-huizong/",
       "status": "translated",
@@ -1742,16 +1742,6 @@
       "sourceHash": "4ffad629b4d702a5",
       "sourcePermalink": "/article/cge8887u/",
       "expectedPermalink": "/en/article/cge8887u/",
-      "status": "translated",
-      "issues": [],
-      "hanCharacters": 0
-    },
-    {
-      "source": "docs/blog/跑路机场/机场跑路隐云.md",
-      "target": "docs/en/blog/provider-risk/机场跑路隐云.md",
-      "sourceHash": "537b6f3544d45141",
-      "sourcePermalink": "/scamvpn/yinyun/",
-      "expectedPermalink": "/en/scamvpn/yinyun/",
       "status": "translated",
       "issues": [],
       "hanCharacters": 0

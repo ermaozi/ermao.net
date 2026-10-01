@@ -215,7 +215,6 @@ head:
 |名称|官网地址|状态|详情|
 |---|---|---|---|
 |[奈云](/scamvpn/naiyun/)|~~www.nyaff.cc~~|❌ **已确认跑路**|[跑路详情](/scamvpn/naiyun/)|
-|[隐云](/scamvpn/yinyun/)|~~wkacc.xyz~~|⚠️ **跑路预警**|[跑路详情](/scamvpn/yinyun/)|
 |[CAC](/scamvpn/cac/)|~~www.cac.mom~~|⚠️ **跑路预警**|[跑路详情](/scamvpn/cac/)|
 |[okanc / OKAC](/scamvpn/okac/)|~~www.okanc.com~~|⚠️ **跑路预警**|[跑路详情](/scamvpn/okac/)|
 |[小牛云](/blog/xiaoniu/)|[官网地址](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|⚠️ **跑路预警**|[前往](/blog/xiaoniu/)|
