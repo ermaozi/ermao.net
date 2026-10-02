@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-02T07:04:22.728Z",
+  "generatedAt": "2026-10-02T07:28:30.269Z",
   "summary": {
-    "total": 181,
-    "translated": 178,
+    "total": 183,
+    "translated": 180,
     "needs-review": 0,
     "missing": 3
   },
@@ -1277,11 +1277,31 @@
       "hanCharacters": 0
     },
     {
+      "source": "docs/blog/机场推荐/2026/机场推荐环球梯.md",
+      "target": "docs/en/blog/proxy-reviews/2026/机场推荐环球梯.md",
+      "sourceHash": "0ede09289e7c368e",
+      "sourcePermalink": "/blog/huanqiuti/",
+      "expectedPermalink": "/en/blog/huanqiuti/",
+      "status": "translated",
+      "issues": [],
+      "hanCharacters": 0
+    },
+    {
       "source": "docs/blog/机场推荐/2026/机场推荐瞬云.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐瞬云.md",
       "sourceHash": "3fbcd51fa5e59a6f",
       "sourcePermalink": "/blog/shunyun/",
       "expectedPermalink": "/en/blog/shunyun/",
+      "status": "translated",
+      "issues": [],
+      "hanCharacters": 0
+    },
+    {
+      "source": "docs/blog/机场推荐/2026/机场推荐神行加速.md",
+      "target": "docs/en/blog/proxy-reviews/2026/机场推荐神行加速.md",
+      "sourceHash": "42990e1d6422eba4",
+      "sourcePermalink": "/blog/shenxing/",
+      "expectedPermalink": "/en/blog/shenxing/",
       "status": "translated",
       "issues": [],
       "hanCharacters": 0
