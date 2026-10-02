@@ -4137,7 +4137,7 @@ export const airportSources: AirportSource[] = [
     name: '瞬云',
     description: '瞬云主打 30+ 多地区节点与 ANYCAST 高速线路，官方标示支持 Netflix、Disney+、TikTok、ChatGPT 等场景，支持支付宝、微信、USDT 支付，并提供工单和在线客服。',
     rank: 41,
-    officialHref: 'https://aaa.jichang.best/#/register?code=QEiJcAPp',
+    officialHref: 'https://ddd.jichang.best/#/register?code=QEiJcAPp',
     universalSubscription: true,
     minPlanText: '8.25元 59G/月',
     hasOneTimePackage: false,
