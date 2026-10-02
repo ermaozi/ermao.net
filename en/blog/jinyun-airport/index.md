@@ -1,0 +1,115 @@
+---
+url: /en/blog/jinyun-airport/index.md
+description: >-
+  A dated Jinyun review covering low-data recurring plans, ambiguous resets, two
+  non-expiring packages, universal subscriptions, reset purchases, and an
+  archived AnyTLS test.
+---
+Jinyun was positioned as a low-data provider with about two months of operation. Its entry monthly tier was CNY 6 and labelled 50 GB, with CNY 9 and CNY 18 tiers labelled 100 GB and 200 GB. The material also lists two one-time data packages.
+
+Recorded purchase route: [Jinyun plans](https://jybdw1.wanhlj.com:8888/#/register?code=7pcmThto)
+
+![Jinyun logo =1044x1044](https://image.ermao.net/images/blog/jinyun-airport/20260728_101501-807523.png)
+
+## Evidence limits
+
+The submitted information contains payment methods, universal-subscription support, Telegram, and plans, but no protocol specification, node list, device count, concurrency, or refund rule.
+
+| Item | Source record |
+| --- | --- |
+| Operating history | About two months, provider claim |
+| Positioning | Low-data plans |
+| Payments | WeChat Pay and Alipay |
+| Universal subscription | Supported |
+| Telegram | [jyun555](https://t.me/jyun555) |
+
+Two months is not enough history to establish service continuity or support quality.
+
+## Recurring and promotional plans
+
+| Plan | Price | Labelled data; reset unclear |
+| --- | ---: | ---: |
+| 128 GB annual promotion | CNY 99/year | 128 GB |
+| 64 GB quarterly promotion | CNY 18/quarter | 64 GB |
+| 64 GB half-year promotion | CNY 36/half-year | 64 GB |
+| 64 GB annual promotion | CNY 72/year | 64 GB |
+| 50 GB Trial monthly | CNY 6/month | 50 GB |
+| 50 GB Trial quarterly | CNY 18/quarter | 50 GB |
+| 50 GB Trial half-year | CNY 36/half-year | 50 GB |
+| 50 GB Trial annual | CNY 72/year | 50 GB |
+| 100 GB Daily monthly | CNY 9/month | 100 GB |
+| 100 GB Daily quarterly | CNY 27/quarter | 100 GB |
+| 100 GB Daily half-year | CNY 54/half-year | 100 GB |
+| 100 GB Daily annual | CNY 108/year | 100 GB |
+| 200 GB Office monthly | CNY 18/month | 200 GB |
+| 200 GB Office quarterly | CNY 54/quarter | 200 GB |
+| 200 GB Office half-year | CNY 108/half-year | 200 GB |
+| 200 GB Office annual | CNY 216/year | 200 GB |
+
+The source does not state whether the labelled data resets monthly, is shared across each billing period, or follows another calculation. The translation does not multiply the numbers. Verify the current rule at [checkout](https://jybdw1.wanhlj.com:8888/#/register?code=7pcmThto).
+
+## One-time packages
+
+| Plan | Price | Total data |
+| --- | ---: | ---: |
+| Non-expiring 100 GB | CNY 100 one-time | 100 GB |
+| Non-expiring 500 GB | CNY 199 one-time | 500 GB |
+
+Confirm account expiry, inactivity, coexistence with recurring plans, and service-closure terms.
+
+## Reset purchases
+
+| Related tier | Recorded reset price |
+| --- | ---: |
+| 128 GB annual promotion | CNY 9 |
+| 64 GB promotion | CNY 6 |
+| 50 GB Trial | CNY 5 |
+| 100 GB Daily | CNY 8 |
+| 200 GB Office | CNY 18 |
+
+The source does not state whether a reset extends the plan, adds data, restores the full allowance, or has a purchase limit.
+
+## Archived test
+
+![Jinyun AnyTLS node test =1254x1280](https://image.ermao.net/images/blog/jinyun-airport/20260728_101501-cb4560.png)
+
+The koipy/Yunspeedtest screenshot is labelled June 29, 2026 at 22:56:42 CST, Sichuan Unicom 300 Mbps, four download threads, and three pings. Nodes are labelled AnyTLS and include Hong Kong, United States, Japan, Singapore, Vietnam, Thailand, United Kingdom, India, and others.
+
+Rows with results show averages about 5.36–27.46 MB/s and peaks about 6.09–35.55 MB/s. Several Taiwan, France, Germany, and Canada rows show `Unknown` or 0 B. The screen also contains account metadata rows that must not be counted as nodes.
+
+One provider screenshot cannot establish streaming, AI access, or long-term stability.
+
+## Purchase guidance
+
+* Use the CNY 6 monthly tier first.
+* Resolve the data-reset ambiguity before longer billing.
+* Confirm the standard-subscription format, devices, concurrency, and refund rule.
+* Treat one-time packages as provider exposure.
+* Test your own network and peak hours.
+
+## FAQ
+
+### What is the lowest monthly tier?
+
+CNY 6 with a 50 GB label. The reset schedule is not documented.
+
+### Is a universal subscription supported?
+
+The source says yes, without exact client formats or device rules.
+
+### Are one-time packages available?
+
+The source lists 100 GB for CNY 100 and 500 GB for CNY 199.
+
+### What does the test prove?
+
+Only that certain AnyTLS-labelled rows produced results under one Sichuan Unicom test. Some rows failed or were unknown.
+
+## Client guides
+
+* [Android Clash guide](/en/article/eh8f4n86/)
+* [iOS Shadowrocket guide](/en/article/z747kgjd/)
+* [Windows Clash guide](/en/article/0gematwc/)
+* [macOS Clash Verge Rev guide](/en/article/6vxkmmuh/)
+
+Compare it in the [proxy-service review index](/en/posts/vpn/) and [budget list](/en/airport/).

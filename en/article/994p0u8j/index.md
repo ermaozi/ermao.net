@@ -1,0 +1,31 @@
+---
+url: /en/article/994p0u8j/index.md
+description: >-
+  Dage Cloud starts at CNY 19.90 for 100GB. Review its trial, IPLC and streaming
+  claims, plan prices, and speed-test screenshots.
+---
+## Dageyun official website
+
+[https://ermao.dgywzc.com](https://ermao.dgywzc.com/#/register?code=peAVAa8D)
+
+## Dageyun overview
+
+The least expensive subscription is CNY 19.90 per month for 100 GB.
+
+Dageyun is a five-year-old service that offers a free trial. It supports access to Netflix and other streaming platforms, advertises smooth YouTube playback at up to 8K, and offers IPLC routes.
+
+![Dageyun pricing =1367x1242](https://image.ermao.net/images/article/994p0u8j/image-1.png)
+
+## Dageyun test
+
+![Dageyun speed test =839x1280](https://image.ermao.net/images/article/994p0u8j/image.png)
+
+## Complete proxy-service guide
+
+<https://www.ermao.net/en/posts/vpn>
+
+## Client guides
+
+* 📱 [Clash for Android](https://www.ermao.net/en/article/eh8f4n86/)
+* 🖥 [Clash for Windows](https://www.ermao.net/en/article/0gematwc/)
+* 🍎 [Clash for iOS](https://www.ermao.net/en/article/z747kgjd/)

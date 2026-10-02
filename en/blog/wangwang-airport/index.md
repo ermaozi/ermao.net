@@ -1,0 +1,155 @@
+---
+url: /en/blog/wangwang-airport/index.md
+description: >-
+  WaveNet's VLESS and BGP claims, custom-client approach, monthly and one-time
+  plans, lack of a standard universal subscription, and setup risks.
+---
+WaveNet promotes VLESS, BGP multi-route scheduling, dedicated exits, and its own custom client. Its plans cover basic browsing, video, remote work, business use, and dedicated IP addresses.
+
+The custom client may help beginners who do not want to configure Clash, Shadowrocket, or sing-box manually. Experienced users are told that third-party client workflows are available, but the provider **does not offer a standard universal subscription**. Confirm the exact import process for your device before buying.
+
+The lowest monthly tier is CNY 30 for 150GB. An annual tier and several one-time traffic packages are also listed.
+
+**Registration link: [Open WaveNet](https://ermaozi01.wavenetaff.com/#/?code=hghwewpc)**
+
+## Overview
+
+![WaveNet logo =1254x1254](https://image.ermao.net/images/blog/wangwang-airport/20260723_112231-1e1ac2.png)
+
+WaveNet reported about one year of operation and promotes VLESS, BGP scheduling, and dedicated exits. All nodes are advertised with 1x traffic accounting.
+
+It may interest:
+
+* Beginners who prefer a provider-supplied client.
+* Users of ChatGPT, Claude, video, and overseas work tools.
+* Heavy users needing 400GB, 800GB, or 2TB per month.
+* Irregular users considering one-time traffic.
+* Users who need a dedicated IP, livestreaming route, or custom business line.
+
+Payments are listed as Alipay and USDT. Support links:
+
+* [WaveNet website](https://ermaozi01.wavenetaff.com/#/?code=hghwewpc)
+* [WaveNet Telegram group](https://t.me/+vR-Qm3CQ7IQ2ZDg1)
+
+## Monthly and annual plans
+
+| Plan | Price | Traffic | Suggested use | Link |
+| --- | --- | --- | --- | --- |
+| Entry | CNY 30/month | 150GB/month | Browsing, social apps, short video, and light streaming | [View plan](https://ermaozi01.wavenetaff.com/#/?code=hghwewpc) |
+| Advanced | CNY 70/month | 400GB/month | Regular work, AI tools, and moderate video | [View plan](https://ermaozi01.wavenetaff.com/#/?code=hghwewpc) |
+| High-end | CNY 120/month | 800GB/month | Frequent video, downloads, and remote work | [View plan](https://ermaozi01.wavenetaff.com/#/?code=hghwewpc) |
+| Business | CNY 200/month | 2TB/month | Teams, high traffic, and concurrent use | [View plan](https://ermaozi01.wavenetaff.com/#/?code=hghwewpc) |
+| Annual Standard | CNY 119/year | 80GB/month | Light, long-term use | [View plan](https://ermaozi01.wavenetaff.com/#/?code=hghwewpc) |
+| Custom line | CNY 640/month | 500GB/month | Dedicated IP, livestreaming, and cross-border business | [Contact provider](https://ermaozi01.wavenetaff.com/#/?code=hghwewpc) |
+
+First-time users should start with the CNY 30 tier. The 400GB and 800GB tiers may fit heavier video or remote work after testing. Teams or users needing an IP with specific properties should confirm concurrency, bandwidth, location, and IP type with support.
+
+## One-time traffic packages
+
+These packages do not reset monthly and are intended for irregular use or backup access.
+
+| Package | One-time price | Total traffic | Listed conditions | Link |
+| --- | ---: | ---: | --- | --- |
+| Small | CNY 239 | 180GB | Dedicated IP and one-device limit | [View plan](https://ermaozi01.wavenetaff.com/#/?code=hghwewpc) |
+| Standard | CNY 569 | 450GB | Advertised for travel and two devices | [View plan](https://ermaozi01.wavenetaff.com/#/?code=hghwewpc) |
+| Elite | CNY 1,099 | 900GB | Positioned for heavy productivity or business use | [View plan](https://ermaozi01.wavenetaff.com/#/?code=hghwewpc) |
+
+“One-time” or “no monthly reset” does not guarantee permanent provider operation. Confirm any expiry, device, IP, and replacement conditions.
+
+## Main features
+
+### VLESS and dedicated exits
+
+WaveNet promotes VLESS, BGP multi-route scheduling, and dedicated exits as a balance between speed and stability. Those architecture labels should be verified against actual use.
+
+### Custom client for beginners
+
+The custom client can reduce manual node entry and subscription conversion. Third-party workflows for Clash, Shadowrocket, Trojan, and sing-box are also mentioned, but a standard universal subscription is not provided. Router users in particular should confirm compatibility first.
+
+### Large traffic tiers
+
+Monthly quotas range from 150GB to 2TB, with advertised 1x accounting. Verify fair-use and concurrency policies on larger plans.
+
+### Streaming and AI services
+
+WaveNet says its nodes support Netflix, Hulu, HBO, Disney+, DAZN, ChatGPT, and Claude. These platforms change region and IP rules, so ask about a specific service or region in the [Telegram group](https://t.me/+vR-Qm3CQ7IQ2ZDg1) and verify it yourself.
+
+### Dedicated IP and custom lines
+
+The provider lists dedicated IP and private-line options for TikTok, livestreaming, uploads, and cross-border work. It states that custom routes generally require two to three business days and include technical maintenance. Confirm the location, bandwidth, IP classification, replacement policy, and account-platform rules.
+
+## Speed-test sample
+
+![WaveNet speed-test sample =708x1280](https://image.ermao.net/images/blog/wangwang-airport/20260723_112514-b61322.png)
+
+The provider-supplied screenshot includes roughly 60 VLESS nodes across Japan, Singapore, the United States, Hong Kong, and Taiwan. Most completed a test, and some displayed more than 100MB/s.
+
+This is provider-supplied evidence, not a controlled independent benchmark. Test the entry plan on your own ISP and device during peak hours.
+
+## Who may consider WaveNet?
+
+* Beginners who want a custom client.
+* Users of AI and overseas work tools.
+* Streaming users.
+* Heavy users needing 400GB to 2TB per month.
+* Users wanting one-time traffic as a backup.
+* Users needing a dedicated IP or custom business route.
+
+If a standard universal subscription or direct router import is mandatory, obtain a clear compatibility answer before paying.
+
+## Purchase guide
+
+1. Register on the [WaveNet website](https://ermaozi01.wavenetaff.com/#/?code=hghwewpc).
+2. Select monthly, annual, or one-time traffic based on actual usage.
+3. Pay using a listed method. USDT transfers are generally irreversible.
+4. Download the provider's client or follow its device-specific third-party instructions.
+5. Test low-latency nodes and the services you need.
+
+Start with the CNY 30 entry tier. Upgrade only after the client and common nodes work as expected.
+
+## Frequently asked questions {#faq}
+
+### What is the lowest price?
+
+CNY 30 per month for 150GB. A CNY 119 annual plan provides 80GB per month.
+
+### Is it suitable for beginners?
+
+The custom client may simplify setup. Device availability, trust, updates, and import steps should still be checked.
+
+### Does it support Clash and Shadowrocket?
+
+The provider documents third-party workflows for Clash, Shadowrocket, Trojan, and sing-box, but does not offer a standard universal subscription. Import steps may differ by device.
+
+### Are one-time packages available?
+
+Yes: 180GB, 450GB, and 900GB. They end when traffic is depleted and do not reset monthly.
+
+### Which payment methods are available?
+
+Alipay and USDT were listed.
+
+## Conclusion
+
+WaveNet's distinguishing points are VLESS, a custom client, high-traffic tiers, and one-time packages. The CNY 30 entry tier is the appropriate first test. The absence of a standard universal subscription is a material compatibility constraint, especially for routers and users who depend on a specific third-party workflow.
+
+[Register and view plans](https://ermaozi01.wavenetaff.com/#/?code=hghwewpc)
+
+## Client guides
+
+| Platform | Guide |
+| --- | --- |
+| Android | [Clash for Android](/en/article/eh8f4n86/) |
+| iOS | [Shadowrocket](/en/article/z747kgjd/) |
+| Windows | [Clash for Windows](/en/article/0gematwc/) |
+| macOS | [Clash Verge Rev](/en/article/6vxkmmuh/) |
+
+## More proxy reviews
+
+* [2026 recommendations](/en/posts/vpn/)
+* [Popular services overview](/en/airport/)
+* [How to choose a service](/en/article/choose-good-airport/)
+
+::: info Disclaimer
+This article organizes technical information. Follow the laws and rules that apply where you live. Plans, nodes, and supported platforms may change; verify the provider's current page before buying.
+:::

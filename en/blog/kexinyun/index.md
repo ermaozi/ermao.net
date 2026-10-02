@@ -1,0 +1,87 @@
+---
+url: /en/blog/kexinyun/index.md
+description: >-
+  A dated Kexin Cloud review covering six recurring plans, IPLC and
+  one-times-traffic claims, unlimited-device policy, unsupported universal
+  subscriptions, and an archived node test.
+---
+Kexin Cloud reportedly began operation in February 2026. Recurring plans began at CNY 9 for 45 GB per month, with a separate CNY 96 annual plan providing 60 GB for the whole year.
+
+Recorded purchase route: [Kexin Cloud plans](https://ermaozi01.kosingaff.com/#/register?code=aG3TCu1y)
+
+![Kexin Cloud logo =256x256](https://image.ermao.net/images/blog/kexinyun/20260723_124327-62e599.png)
+
+## Provider information
+
+The provider advertises IPLC routes, 1x data deduction, no speed cap, no device limit, automatic switching after node failure, 24-hour support, and access to ChatGPT, Gemini, Netflix, and Disney services.
+
+These claims have not been independently tested. The most important compatibility limit is that universal subscriptions were **not supported** at the source date.
+
+| Item | Source record |
+| --- | --- |
+| Operating history | Since February 2026, provider claim |
+| Payments | Alipay, WeChat Pay, USDT |
+| Universal subscription | Not supported |
+| Telegram | None recorded |
+
+Before paying, confirm that the designated client supports every intended phone, computer, or router.
+
+## Recorded recurring plans
+
+| Plan | Price | Data | Possible use |
+| --- | ---: | ---: | --- |
+| Light monthly | CNY 9/month | 45 GB/month | Web, social, low-frequency backup |
+| Basic | CNY 25/month | 150 GB/month | Browsing, AI, light video |
+| Standard | CNY 50/month | 300 GB/month | Video and remote work |
+| Professional | CNY 100/month | 600 GB/month | Higher-volume, multi-device use |
+| Flagship | CNY 200/month | 1,200 GB/month | Heavy use, subject to sharing rules |
+| Annual | CNY 96/year | 60 GB/year | Very low-frequency use |
+
+The submitted information also mentioned a CNY 10 data reset for the CNY 9 tier but did not state the restored amount, effective time, or expiry. Verify all details at [live checkout](https://ermaozi01.kosingaff.com/#/register?code=aG3TCu1y).
+
+## Unspecified one-time package
+
+The provider said a limited non-expiring plan existed but supplied no price, data, or account-validity terms. It cannot be compared as a real product until those fields are visible at checkout.
+
+## Archived node test
+
+![Kexin Cloud archived node test =615x1280](https://image.ermao.net/images/blog/kexinyun/20260723_124327-9eac1e.png)
+
+The screenshot shows Japan, Singapore, United States, Hong Kong, and Taiwan nodes with VLESS and AnyTLS labels. Some rows contain latency and speed results, while others show zero or incomplete tests.
+
+No test location, ISP, baseline bandwidth, device, client, time, or repeat count is given. The screenshot also does not test the advertised streaming or AI services.
+
+## Purchase guidance
+
+* Start with the CNY 9 or CNY 25 monthly plan.
+* Confirm client source, publisher, signature, permissions, and update mechanism.
+* Verify whether an unsupported standard subscription blocks your router or preferred client.
+* Test evening-peak nodes and the exact AI or streaming service.
+* Do not interpret unlimited devices as permission to share an account with unrelated users.
+
+## FAQ
+
+### What is the lowest price?
+
+CNY 9 for 45 GB per month. The CNY 96 annual plan provides 60 GB across the year.
+
+### Is a universal subscription supported?
+
+No, according to the source. The provider's actual client and import method must support your device.
+
+### Does it have a one-time package?
+
+The provider said a limited package exists, but no comparable price or data information was supplied.
+
+### Does it unlock AI and streaming services?
+
+That is a provider claim. The supplied screenshot does not demonstrate those services.
+
+The client guides below explain common clients only; they do not prove Kexin subscriptions can be imported:
+
+* [Android Clash guide](/en/article/eh8f4n86/)
+* [iOS Shadowrocket guide](/en/article/z747kgjd/)
+* [Windows Clash guide](/en/article/0gematwc/)
+* [macOS Clash Verge Rev guide](/en/article/6vxkmmuh/)
+
+Compare current services in the [proxy-service review index](/en/posts/vpn/) and [budget list](/en/airport/).

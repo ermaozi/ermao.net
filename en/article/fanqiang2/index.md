@@ -1,0 +1,284 @@
+---
+url: /en/article/fanqiang2/index.md
+description: >-
+  A practical guide to proxies, Clash-family clients, VPNs, split routing,
+  privacy limits, free-versus-paid services, mainland China constraints, and
+  provider selection.
+---
+This guide explains proxy clients such as Clash-family applications, how they differ from VPNs and Tor, where encryption begins and ends, and how to evaluate a provider without treating marketing claims as security evidence.
+
+Internet access can be limited by geography, copyright licensing, employer policy, local law, network filtering, or a platform's own account controls. Public Wi-Fi and untrusted networks also create security concerns, although modern HTTPS already encrypts most website content in transit.
+
+A proxy or VPN can change the path traffic takes and the public IP address seen by a destination. It does **not** automatically provide anonymity, make an account safe, legalize prohibited activity, or encrypt every application in every configuration.
+
+## 1. What a proxy client does
+
+### 1.1 Proxy clients and Clash
+
+![Clash-family client interface =640x640](https://image.ermao.net/images/article/fanqiang2/image.png)
+
+A proxy client accepts traffic from applications or a virtual network interface and forwards selected connections through a remote server. The destination normally sees the server's public IP rather than the user's access-network IP.
+
+Encryption depends on the protocol and path:
+
+* a Shadowsocks, Trojan, VMess, or other encrypted proxy protects traffic between the client and proxy server according to its implementation;
+* HTTPS separately protects application data between the application and destination;
+* traffic from the proxy server to a non-HTTPS destination may be readable on that onward path;
+* applications not covered by system-proxy, TUN, or routing rules may connect directly.
+
+Clash became a widely used rule-based proxy-client family. The original projects and several forks have changed or ceased maintenance, so “Clash” now often refers to compatible maintained clients and cores rather than one official application. Compatibility, provenance, and update status matter.
+
+### 1.2 Common uses
+
+![International application icons =1920x960](https://image.ermao.net/images/article/fanqiang2/image-2.png)
+
+**Regional access**
+
+A server in another location can sometimes reach services unavailable on the local network or catalog. Platforms may still enforce account region, payment-country, GPS, DNS, or anti-abuse controls.
+
+**Transport protection**
+
+An encrypted proxy or VPN can prevent the local access network from directly reading plaintext tunnel contents. It does not replace HTTPS, endpoint security, certificate validation, strong authentication, or software updates.
+
+**Reducing direct IP exposure**
+
+A destination usually sees the exit server's IP. It can still identify a user through login, cookies, browser fingerprinting, device identifiers, payment data, or behavior. This is pseudonymity at best, not guaranteed anonymity.
+
+**Remote work**
+
+Organizations commonly use authenticated VPNs or zero-trust access to reach internal applications. A consumer proxy-service subscription is not a substitute for an employer-approved enterprise security system.
+
+**P2P and BitTorrent**
+
+A tunnel may change which IP peers and an ISP observe, but providers may prohibit P2P, retain metadata, or receive abuse notices. It cannot guarantee higher speed or prevent legal notices. Follow copyright law and the service terms.
+
+### 1.3 Proxy, Tor, and Clash-family clients
+
+* **Traditional HTTP or SOCKS proxy:** forwards application traffic and may provide no encryption on its own.
+* **Tor:** routes supported traffic through multiple relays for a different anonymity model. It is usually slower and is not intended for high-bandwidth streaming or ordinary BitTorrent.
+* **Clash-family client:** manages several proxy protocols, nodes, and rule-based routing. Its security is determined by the specific build, configuration, protocol, server, and threat model.
+
+## 2. Free and paid services
+
+### 2.1 Free services
+
+Potential advantages:
+
+* no direct subscription fee;
+* useful for a low-risk, short test when the operator and application are trustworthy.
+
+Risks and limitations:
+
+* strict speed, data, region, or time limits;
+* congestion and frequent disconnection;
+* advertising or aggressive analytics;
+* unknown operator identity and funding model;
+* malicious applications, certificate installation, traffic logging, or credential theft;
+* little support or continuity.
+
+“Free” does not mean simple or safe. Review the application's developer identity, signatures, permissions, privacy policy, and independent analysis.
+
+### 2.2 Paid services
+
+Potential advantages:
+
+* more capacity, regions, and support;
+* clearer plan limits and subscription updates;
+* a refund or trial policy in some cases;
+* more active maintenance.
+
+Limitations:
+
+* payment does not prove honesty, no logging, good security, or continued operation;
+* “military-grade encryption” is marketing unless precise protocols and configurations are documented;
+* streaming access and route quality change;
+* device, traffic, sharing, and fair-use rules can be restrictive;
+* long billing terms create counterparty risk.
+
+The Chinese source quoted broad price ranges of USD 2–12 per month for paid tools and CNY 10–50 for many proxy subscriptions. These are dated generalizations, not a current market price.
+
+### 2.3 Which is appropriate?
+
+* For a short, non-sensitive test, a reputable free trial may be enough.
+* For regular work, streaming, or travel, a carefully evaluated paid service can be more practical.
+* For sensitive organizational data, use an approved enterprise system and security policy.
+
+## 3. Use from mainland China
+
+![Conceptual filtering topology =600x400](https://image.ermao.net/images/article/fanqiang2/image-1.png)
+
+Many foreign sites and applications are inaccessible or unreliable from mainland networks. Network controls, provider blocking, server availability, and local rules change over time.
+
+### 3.1 Legal and policy considerations
+
+Applicable law and organizational policy depend on the location, user, service, and purpose. This page is not legal advice. Verify current requirements and use network tools only where authorized.
+
+### 3.2 Reliability changes
+
+Websites, subscription endpoints, protocols, and servers may be blocked or degraded. A paid service can still fail. Client configurations and node lists therefore require updates, but blindly accepting an updated configuration also carries supply-chain risk.
+
+### 3.3 Preparation
+
+Before travel or a period when access matters:
+
+* obtain trusted client software from its official release channel;
+* verify signatures or hashes where published;
+* store required documentation securely;
+* keep two independently operated connection methods;
+* maintain offline access to support and recovery information;
+* test nearby and distant regions rather than assuming Hong Kong, Japan, Singapore, or South Korea will always be fastest.
+
+Client guides:
+
+* [Clash Meta setup for Android](/en/article/eh8f4n86/)
+* [Clash Verge setup for Windows, Linux, and macOS](/en/article/0gematwc/)
+* [Shadowrocket setup for iOS](/en/article/z747kgjd/)
+
+## 4. Clash-family proxy clients versus VPNs
+
+![Proxy-routing illustration =1200x628](https://image.ermao.net/images/article/fanqiang2/image-3.png)
+
+### 4.1 Architecture
+
+**VPN**
+
+* creates an authenticated tunnel between the device or gateway and VPN endpoint;
+* often routes through a virtual network interface;
+* can cover most system traffic, subject to exclusions and leak handling;
+* commonly uses WireGuard, OpenVPN, or IKEv2/IPsec.
+
+**Clash-family proxy client**
+
+* consumes one or more proxy protocols and endpoints;
+* can operate as an HTTP/SOCKS proxy or through TUN;
+* applies domain, IP, application, or rule-set routing;
+* can mix direct, rejected, and proxied policies.
+
+“VPN covers everything” and “Clash is application-only” are oversimplifications. Split tunneling exists in VPNs, and TUN mode can give a proxy client broad system coverage.
+
+### 4.2 Feature comparison
+
+| Property | VPN client | Clash-family proxy client |
+| --- | --- | --- |
+| Initial setup | Often simpler | Often requires subscription and policy rules |
+| Split routing | Product-dependent | A core design feature |
+| Protocols | VPN protocols | Several proxy protocols |
+| Network integration | Usually virtual interface | System proxy, TUN, or mixed |
+| Resource use | Implementation-dependent | Implementation-dependent |
+| Blocking resistance | Depends on protocol and network | Depends on protocol, transport, server, and network |
+| Leak risk | DNS, IPv6, split-tunnel, kill-switch issues | DNS, TUN, rule, application-bypass issues |
+
+No client category is inherently “undetectable,” faster, lighter, or safer.
+
+### 4.3 Typical fit
+
+A conventional VPN can be easier for:
+
+* a user wanting one connection control;
+* full-device remote access;
+* an approved enterprise network;
+* temporary use without complex rule management.
+
+A Clash-family client can be useful for:
+
+* detailed domestic-versus-proxied routing;
+* managing several nodes or protocols;
+* per-destination policy;
+* a user willing to audit rules and DNS behavior.
+
+Neither tool is a game accelerator by default. Low game latency requires a good route to the exact server and low jitter and loss.
+
+### 4.4 Mainland network behavior
+
+Traditional VPN and proxy protocols can both be detected, blocked, rate-limited, or disrupted. Newer transport or obfuscation does not guarantee resistance. Retail providers may rotate servers more quickly than a large global product, but they can also have less transparency and continuity.
+
+### 4.5 Cost and devices
+
+The source compared well-known VPNs at USD 5–15 per month and proxy subscriptions at CNY 10–50. It also suggested VPNs commonly allow 3–10 devices and proxy plans are often more permissive.
+
+These are provider-specific, dated ranges. Compare the current total cost, device and simultaneous-IP rules, data allowance, renewal, refund policy, and billing term.
+
+### 4.6 Security
+
+For a VPN, evaluate:
+
+* protocol and cryptographic configuration;
+* client provenance and update process;
+* independent security audits;
+* legal operator and jurisdiction;
+* data collection and retention;
+* account and payment security.
+
+For a Clash-family setup, evaluate all of the above for the client, core, configuration source, protocol, subscription provider, and exit operator. Open source makes inspection possible but does not prove the binary is safe, that anyone audited it, or that the server follows its policy.
+
+### 4.7 Choosing
+
+Use the product that fits the actual threat model and routing need:
+
+* simple commercial VPN for an easier, supported full-device workflow;
+* a maintained Clash-family client for advanced policy routing and multi-node management;
+* employer-provided access for corporate systems;
+* Tor Browser for an appropriate anonymity use case.
+
+### 4.8 Keeping a backup
+
+Independent backups can reduce outage risk. Avoid assuming that two brands are independent; they may share an operator, ingress, cloud host, payment processor, or upstream route.
+
+## 5. Evaluating a proxy provider
+
+![Proxy-provider selection illustration =1200x800](https://image.ermao.net/images/article/fanqiang2/image-4.png)
+
+### 5.1 Evaluation criteria
+
+* **Performance:** repeat tests on the intended ISP and during the evening peak.
+* **Reliability:** observe interruptions and recovery over time, not one speed test.
+* **Security and privacy:** require a precise policy and evidence; do not infer no logging.
+* **Service access:** test the exact catalog, account, and feature.
+* **Support:** submit a pre-purchase question through a verified channel.
+* **Business risk:** identify the operator, billing entity, history, and refund path.
+* **Client safety:** use maintained software from a trusted release source.
+
+### 5.2 Providers named in the Chinese source
+
+The source listed SSONE, xxyun, Laotou VPN, and CocoDuck as examples. This is not a current endorsement or evidence that one is safer or faster.
+
+* [SSONE dated review](/en/article/ssone/)—note the domain-identity mismatch documented there.
+* [xxyun dated review](/en/blog/xxyun/)
+* Laotou VPN—source display domain `chattous.net`; verify current identity and terms independently.
+* [CocoDuck dated review](/en/article/cocoduck/)
+* [All current proxy-service reviews](/en/posts/vpn/)
+
+The SSONE source displays `hello-ssone.com` but links registration to `flybit6202.com`. The xxyun source similarly displays `.de` while linking `.at`. Resolve such mismatches before entering credentials or paying.
+
+### 5.3 Configuration
+
+* Keep subscription URLs private; they are credentials.
+* Use explicit direct, proxy, and reject rules.
+* Audit rule providers and automatic updates.
+* Check DNS, IPv6, TUN, and application-bypass behavior.
+* Prefer protocol choice based on compatibility and threat model, not marketing.
+* Use latency and loss tests as one signal; application performance matters too.
+
+### 5.4 Node selection
+
+* A geographically close node often—but not always—has lower latency.
+* Keep several regions and independent routes available.
+* Measure congestion during the hours that matter.
+* Test destination routing: an exit close to the user can still take a poor onward path.
+
+### 5.5 Safety checklist
+
+* Do not provide unnecessary real-world identity data to an unknown operator.
+* Rotate a leaked subscription URL immediately; routine rotation without a leak does not solve operator risk.
+* Follow applicable law and platform terms.
+* Download clients from official, maintained sources and verify releases.
+* Use HTTPS, multifactor authentication, and endpoint security even inside a tunnel.
+* Avoid large prepaid balances until service and operator continuity are established.
+
+## Conclusion
+
+A proxy or VPN is a routing and transport tool, not an all-purpose privacy guarantee. Choose it by protocol, client provenance, operator trust, current performance, policy control, and the exact applications required. Test with a short billing period, keep credentials private, and maintain an independent fallback.
+
+::: info
+This page provides technical background, not legal advice or a promise that any service will be accessible. Follow the laws, network rules, and platform terms that apply to you.
+:::

@@ -1,0 +1,37 @@
+---
+url: /en/article/b6t9mwuv/index.md
+description: >-
+  Longmao Cloud starts at CNY 15 for 100GB. Review its IPLC, device, streaming,
+  AI-service, TikTok, and livestreaming claims.
+---
+## Longmao Cloud official website
+
+[https://ermaozi01.lmvipaff.com/](https://ermaozi01.lmvipaff.com/register?aff=aOkm2wPW)
+
+## Longmao Cloud overview
+
+The least expensive subscription is CNY 15 per month for 100 GB.
+
+The source article records the following features:
+
+* Competitive pricing, high-quality servers, real-time support, no advertised evening peak-hour speed cap, and no device limit
+* IPLC routes from Shenzhen to Hong Kong and from Shanghai to the United States and Japan
+* Access during testing to streaming services including Netflix, Disney+, and HBO
+* Access during testing to ChatGPT, Gemini, and Copilot
+* Support for operating local TikTok accounts and live streams
+
+![Longmao Cloud pricing =2115x1147](https://image.ermao.net/images/article/b6t9mwuv/image.png)
+
+## Longmao Cloud test
+
+![Longmao Cloud test =2194x2560](https://image.ermao.net/images/article/b6t9mwuv/image-1.png)
+
+## Complete proxy-service guide
+
+<https://www.ermao.net/en/posts/vpn>
+
+## Client guides
+
+* 📱 [Clash for Android](https://www.ermao.net/en/article/eh8f4n86/)
+* 🖥 [Clash for Windows](https://www.ermao.net/en/article/0gematwc/)
+* 🍎 [Clash for iOS](https://www.ermao.net/en/article/z747kgjd/)

@@ -1,0 +1,97 @@
+---
+url: /en/blog/yinyun/index.md
+description: >-
+  Yinyun offers custom-app and universal-subscription modes. This review records
+  its public plans, client support, reachable website status, and points to
+  verify before purchase.
+---
+Yinyun offers a custom app and universal subscriptions. On October 1, 2026, its original website entry was reachable and selected among several alternative access routes. This site has removed Yinyun from its shutdown and risk-warning lists. The change means it is no longer classified as a shutdown warning; it does not guarantee future availability, route quality, or long-term operation.
+
+Official entry: [View current Yinyun plans](https://wkacc.xyz/?code=db949e40)
+
+## Provider information
+
+| Item | Recorded information |
+| --- | --- |
+| Website status | Reachable during the October 1, 2026 review |
+| Usage modes | Custom app and universal subscription |
+| Routing claims | Provider advertises IPLC, IEPL, and BGP-optimized routes |
+| Client claims | Provider lists Clash, Shadowrocket, V2Ray, Sing-box, and others |
+| Lowest historical price | CNY 25/month for a 150 GB universal subscription |
+| Billing periods | Existing material records monthly, quarterly, and annual billing |
+
+Route types, node counts, platform access, and performance descriptions come from provider material. This article did not conduct an independent speed test. Test the service on your own ISP, devices, and evening-peak connection before committing for longer.
+
+## Recorded plans
+
+These plans are an earlier snapshot and do not establish current stock or checkout prices.
+
+### Lite
+
+| Mode | Price | Traffic | Device rule | Purchase |
+| --- | ---: | ---: | --- | --- |
+| Custom app | CNY 29/month | Advertised unlimited | 2 simultaneous devices | [Check current plan](https://wkacc.xyz/?code=db949e40) |
+| Universal subscription | CNY 25/month | 150 GB/month | No device-count limit advertised | [Check current plan](https://wkacc.xyz/?code=db949e40) |
+
+### Standard
+
+| Mode | Price | Traffic | Device rule | Purchase |
+| --- | ---: | ---: | --- | --- |
+| Custom app | CNY 49/month | Advertised unlimited | 5 simultaneous devices | [Check current plan](https://wkacc.xyz/?code=db949e40) |
+| Universal subscription | CNY 49/month | 400 GB/month | No device-count limit advertised | [Check current plan](https://wkacc.xyz/?code=db949e40) |
+
+### Premium
+
+| Mode | Price | Traffic | Device rule | Purchase |
+| --- | ---: | ---: | --- | --- |
+| Custom app | CNY 99/month | Advertised unlimited | 10 simultaneous devices | [Check current plan](https://wkacc.xyz/?code=db949e40) |
+| Universal subscription | CNY 99/month | 1,024 GB/month | No device-count limit advertised | [Check current plan](https://wkacc.xyz/?code=db949e40) |
+
+Existing material also records a 5% quarterly discount and a 20% annual discount, but this review has not independently confirmed that either remains available. Before payment, verify the price, reset period, refund terms, and device limits on the [Yinyun checkout](https://wkacc.xyz/?code=db949e40).
+
+## Choosing a usage mode
+
+### Custom app
+
+The provider lists Windows, macOS, Linux, iOS, and Android support. This mode may suit users who want a one-click connection, but confirm operating-system requirements, the download source, and update handling first.
+
+### Universal subscription
+
+The provider's public page lists Clash, Shadowrocket, V2Ray, Sing-box, Surge, Hiddify, and other clients. A universal subscription is easier to import into an existing client, but confirm the actual format, simultaneous-connection rules, and traffic multipliers.
+
+## Provider-stated route features
+
+The provider advertises IPLC, IEPL, and BGP-optimized routes plus server-side “magic node” routing for Netflix, Disney+, YouTube, ChatGPT, and other services. Platform access changes with node IP, region, account, and platform policy, so these claims do not replace testing.
+
+Start with a monthly or low-cost plan and test your normal nodes, evening-peak period, and target platforms before extending the billing period.
+
+## FAQ {#faq}
+
+### Why was Yinyun removed from the shutdown list?
+
+On October 1, 2026, its website entry was reachable and provided several alternative access routes. This site therefore no longer lists Yinyun as a shutdown or risk warning. Removal does not guarantee that future outages or operational changes will not occur.
+
+### Does Yinyun support universal subscriptions?
+
+The provider's public material says yes and lists several third-party clients. Confirm that your chosen plan and exact client are compatible before payment.
+
+### Do plans still start at CNY 25?
+
+CNY 25 for 150 GB per month is the lowest tier in this site's existing material. Verify live pricing and discounts at checkout.
+
+## Conclusion
+
+Yinyun's main distinction is its custom-app and universal-subscription modes. Its website entry is currently reachable, and this site has removed it from the shutdown and risk-warning lists. Start with a low-cost monthly tier and confirm client compatibility, usual nodes, and target platforms before considering a longer term.
+
+[View current Yinyun plans](https://wkacc.xyz/?code=db949e40)
+
+## Client guides and related reviews
+
+* [Android Clash guide](/en/article/eh8f4n86/)
+* [iOS Shadowrocket guide](/en/article/z747kgjd/)
+* [Windows Clash setup](/en/article/0gematwc/)
+* [2026 proxy-service reviews](/en/posts/vpn/)
+
+::: info Source note
+This article organizes the provider's public pages and this site's historical material. Plans, offers, routes, and client support can change. Verify the official page and follow applicable law.
+:::

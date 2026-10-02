@@ -1,0 +1,86 @@
+---
+url: /en/article/bianyuanjiedian/index.md
+description: >-
+  Edge Node's IPLC positioning, five tiers, reset purchase, missing universal
+  subscription and Telegram, one-time claims, and speed sample.
+---
+Edge Node advertised a low entry price and IPLC backbone positioning. Its headline tier was CNY 108 per year with a 45 GB label, equivalent to CNY 9 per month only after full-year prepayment.
+
+The important limits are explicit: the source said universal subscriptions were not supported and no Telegram group or channel was available.
+
+## Overview
+
+![Edge Node website =1024x1280](https://image.ermao.net/images/article/edge-x/20260619_163356-bc37f3.png)
+
+| Item | Source record |
+| --- | --- |
+| Website | [ermaozi.edgenovaaff.cc](https://ermaozi.edgenovaaff.cc/#/register?code=oErRsBNy) |
+| Route claim | IPLC dedicated-backbone positioning |
+| Universal subscription | Not supported |
+| Telegram | None |
+| One-time plan | Claimed to exist; details missing |
+| Lowest entry | CNY 108/year with a 45 GB label |
+| Data reset | CNY 10; restored amount and effect missing |
+
+## Recorded plans
+
+| Plan | Price | Labelled data | Possible use |
+| --- | ---: | ---: | --- |
+| Annual entry | CNY 108/year | 45 GB; reset unclear | Low-volume annual prepayment |
+| Standard | CNY 25/month | 120 GB | Initial monthly test |
+| Advanced | CNY 50/month | 250 GB | Regular video and tools |
+| High | CNY 100/month | 500 GB | Higher-volume use |
+| Extreme | CNY 200/month | 1,000 GB | Heavy use |
+
+The annual tier is not necessarily lower-risk: it requires CNY 108 up front, while Standard requires only CNY 25 for a month of direct testing. The source does not clarify whether its 45 GB resets.
+
+## Archived test
+
+![Edge Node archived speed test =581x920](https://image.ermao.net/images/blog/l2oqiuhi/20260601_171919-9df522.png)
+
+The available evidence consists mainly of plan information and one speed screenshot. It lacks controlled multi-time testing, loss, interruption recovery, and an independently verified platform-access matrix.
+
+## Compatibility boundary
+
+No universal subscription means reliance on the provider's client or designated import method. Before payment, confirm:
+
+* supported operating systems and versions;
+* app publisher, signature, permissions, and update channel;
+* router or third-party-client support;
+* export and migration options; and
+* support route without Telegram.
+
+The existence of a one-time plan should not be treated as a purchase option until price, data, account expiry, and closure rules are known.
+
+## Purchase path
+
+1. Verify the current domain and official client.
+2. Prefer Standard for one month over the annual headline plan.
+3. Test required services and the evening peak for 7–14 days.
+4. Use the CNY 10 reset only after confirming what it restores.
+5. Upgrade only when measured consumption justifies it.
+
+## FAQ
+
+### Can a beginner use Edge Node?
+
+Possibly, if the provider client supports the user's device. The lack of a universal subscription and Telegram support should be accepted before payment.
+
+### Which plan minimizes initial exposure?
+
+Standard at CNY 25 for one month costs less up front than the CNY 108 annual tier.
+
+### What must be confirmed?
+
+Client delivery, support, data resets, the annual 45 GB schedule, and the undocumented one-time plan.
+
+## Client guides
+
+These explain common clients but do not prove Edge Node subscriptions can be imported:
+
+* [Android Clash guide](/en/article/eh8f4n86/)
+* [iOS Shadowrocket guide](/en/article/z747kgjd/)
+* [Windows Clash guide](/en/article/0gematwc/)
+* [macOS Clash Verge Rev guide](/en/article/6vxkmmuh/)
+
+See the [proxy-service review index](/en/posts/vpn/) and [budget list](/en/airport/).

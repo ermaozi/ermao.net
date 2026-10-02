@@ -1,0 +1,156 @@
+---
+url: /en/blog/dageyun/index.md
+description: >-
+  A dated Dageyun review covering its CNY 19.90 monthly tier, Trojan plans, BGP
+  and IPLC labels, archived evening test, service-access claims, and risks.
+---
+[Dageyun](https://ermao.dgywzc.com/#/register?code=peAVAa8D) is described by the source as a multi-year proxy-service operator. Its February 2026 plan snapshot begins at CNY 19.90 per month for 100 GB and uses BGP relay, IPLC, and enterprise-line labels.
+
+* Website used by the source: [ermao.dgywzc.com](https://ermao.dgywzc.com/#/register?code=peAVAa8D)
+* Lowest recorded monthly plan: CNY 19.90 for 100 GB
+* Main protocol: Trojan
+* Listed regions: Hong Kong, Japan, the United States, Singapore, Taiwan, and South Korea
+* Service-access claims: Netflix, Disney+, YouTube Premium, and ChatGPT
+
+This is a dated record, not a current availability guarantee. Confirm the operator, domain, plans, and routes before payment.
+
+## Overview
+
+![Dageyun website and branding =2624x2624](https://image.ermao.net/images/blog/dageyun/image.jpg)
+
+| Item | Source record |
+| --- | --- |
+| Intended users | Individuals and small teams seeking lower-cost plans |
+| Entry plan | CNY 19.90/month for 100 GB |
+| Route labels | BGP relay, IPLC, and enterprise dedicated line |
+| Regions | Hong Kong, Japan, the United States, Singapore, Taiwan, and South Korea |
+| Protocol | Primarily Trojan |
+| Privacy statement | Provider says it does not log browsing; no independent audit was supplied |
+
+Trojan encrypts the proxy transport but does not by itself prove a no-logging policy, eliminate account risk, or defeat every form of blocking and traffic management.
+
+## Recorded plans
+
+| Plan | Price | Data | Term | Labelled peak bandwidth | Protocol |
+| --- | ---: | ---: | --- | ---: | --- |
+| Monthly A | CNY 19.90 | 100 GB/month | Calendar month | 500 Mbps | Trojan |
+| Monthly B | CNY 29.90 | 150 GB/month | Calendar month | 500 Mbps | Trojan |
+| Quarterly A | CNY 69 | 200 GB/month | 90 days | 1,000 Mbps | Trojan |
+| VIP1 low-data annual | CNY 88 | 15 GB/month | 365 days | 500 Mbps | Trojan |
+| Annual A | CNY 199 | 300 GB/month | 365 days | 1,000 Mbps | Trojan |
+| Annual B | CNY 299 | 500 GB/month | 365 days | 1,000 Mbps | Trojan |
+| Annual 1,000 GB | CNY 699 | 1,000 GB/month | 365 days | 1,000 Mbps | Trojan |
+
+The bandwidth figures are plan labels, not evidence that an individual subscriber can sustain that throughput. For an initial evaluation, Monthly A limits financial exposure better than an annual plan.
+
+## Provider-stated advantages
+
+### Plan range
+
+The source highlights a low-entry monthly option, larger annual allowances, and plans intended for video, downloads, livestreaming, or several devices. Estimate real usage and review sharing rules before choosing a large tier.
+
+### Routes and performance
+
+Provider materials describe IPLC or dedicated-line service, favorable latency from nearby Asian regions, automatic speed testing, and smart scheduling. No carrier contracts or route records accompany those claims. Test the current path and evening peak from the intended access ISP.
+
+### Streaming and AI services
+
+The source lists Netflix, Disney+, HBO, YouTube Premium, ChatGPT, Midjourney, and the product formerly called Google Bard. Service availability can differ by node and change without notice; a platform homepage loading is not proof that every catalog or feature works.
+
+### Privacy
+
+The provider says it keeps no usage logs, but the source notes that no independent audit was available. Do not infer complete anonymity from this statement or from Trojan encryption.
+
+## Archived evening-peak test
+
+![Dageyun archived speed-test screenshot =839x1280](https://image.ermao.net/images/blog/dageyun/image.png)
+
+The source records this environment:
+
+* weekday evening from 20:00 to 21:00;
+* 200 Mbps China Telecom broadband in Jiangsu;
+* MacBook Air with ClashX;
+* Hong Kong IPLC-labelled, United States CN2 GIA-labelled, and Japan SoftBank-labelled nodes.
+
+| Destination | Download | Upload | Latency |
+| --- | ---: | ---: | ---: |
+| Hong Kong | 65.3 Mbps | 48.6 Mbps | 26 ms |
+| United States | 52.7 Mbps | 37.2 Mbps | 135 ms |
+| Japan | 58.1 Mbps | 44.9 Mbps | 72 ms |
+
+The source also reports under 0.2% disconnection during the test and quick switching. It does not define the sample interval, number of probes, failure criterion, or raw logs, so the percentage should not be treated as a general uptime estimate.
+
+## Use-case notes
+
+| Use case | Source suggestion | What to verify |
+| --- | --- | --- |
+| Streaming | Hong Kong, Taiwan, or Japan | Exact catalog, sustained bitrate, and peak-hour buffering |
+| AI services | United States or Singapore | Login, required features, and account risk controls |
+| Development | United States or Singapore | GitHub and registry throughput, loss, and reliability |
+| Social and business tools | Hong Kong or Taiwan | Account consistency and the exact application |
+| Cloud gaming | Japan or South Korea | Game-server latency, jitter, and packet loss |
+
+These are starting points, not universally optimal routing advice.
+
+## Setup
+
+1. Verify the current Dageyun registration domain.
+2. Choose a plan based on budget and actual data requirements.
+3. Complete payment after checking the reset, multiplier, device, and refund rules.
+4. Copy the Trojan or Clash subscription from the authenticated dashboard.
+5. Import it into a trusted compatible client.
+6. Test several nodes and times of day.
+
+The source names Clash, Shadowrocket, Quantumult X, v2rayN, v2rayNG, ClashX, OpenWrt, Passwall, and MosDNS. Some older Clash distributions are no longer maintained; prefer an actively maintained client and its official download source.
+
+## About the source's user-feedback section
+
+The Chinese source includes three anonymous favorable quotations and scores from 4.6 to 4.9 out of 5 for stability, speed, value, and support. It provides no survey method, sample size, dates, or verifiable review links. They are therefore preserved here as an unsupported source claim rather than presented as customer evidence.
+
+## Usage reminders
+
+* Follow the laws and service terms that apply to you.
+* Do not share an account unless the current plan explicitly allows it.
+* Watch provider notices for maintenance or plan changes.
+* Keep a second independently operated service for important use.
+* Retest nodes and remove stale client entries periodically.
+
+## Frequently asked questions
+
+### Can a beginner start with Dageyun?
+
+The CNY 19.90 monthly tier offers a relatively small trial. Test it on the actual ISP and required services before considering a longer term.
+
+### Which plan is appropriate?
+
+A light user can begin with 100 GB. Video, AI tools, or several devices may need more data, but traffic multipliers and device rules affect the calculation. Do not infer reliability from operator age alone.
+
+### What matters most before purchase?
+
+Confirm the current checkout plan, node regions, refund terms, and verified support route. Then test peak-hour performance locally.
+
+### Does it support every device?
+
+The source lists Trojan-compatible clients across Windows, macOS, Android, iOS, Linux, and routers. Compatibility depends on the current subscription format and client; verify it before payment.
+
+## Before purchasing
+
+* Confirm plan, data, reset, multiplier, device, sharing, and refund rules.
+* Treat BGP, IPLC, CN2 GIA, and enterprise-line labels as claims requiring evidence.
+* Treat service-access and no-log statements as changeable or unaudited.
+* Start monthly, even if an annual tier has a lower effective price.
+* Keep a backup for work, streaming, account operations, or live production.
+
+## Client guides
+
+| Platform | Guide |
+| --- | --- |
+| Android | [Clash Meta setup](/en/article/eh8f4n86/) |
+| iOS | [Shadowrocket setup](/en/article/z747kgjd/) |
+| Windows and macOS | [Clash Verge setup](/en/article/0gematwc/) |
+
+Compare it in the [2026 proxy-service review list](/en/posts/vpn/) and see [How to Identify a Route Type](/en/article/r50bpg9j/).
+
+::: info
+This page is a dated technical and purchasing record. Follow the laws and service terms that apply to you.
+:::

@@ -1,0 +1,90 @@
+---
+url: /en/article/rsvptr5x/index.md
+description: >-
+  A dated walkthrough of Jisou's Telegram referral interface, historical reward
+  figures, withdrawal steps, and the verification and financial risks to check
+  first.
+---
+This article records how the [Jisou bot](https://t.me/jisou?start=a_1453425105) referral interface and reward schedule appeared in June 2025. The link contains the author's referral identifier.
+
+::: warning Historical and promotional information
+The original article advertised earnings of US$200 per month, but that outcome is not verified or guaranteed. Bot ownership, reward rates, withdrawal thresholds, fees, token symbols, and legal availability can change without notice. Check the current in-bot terms, identity, and withdrawal route before participating. Never pay money or reveal a seed phrase to unlock a withdrawal.
+:::
+
+For details on how this site handles referral links, see the [affiliate disclosure](/en/affiliate-disclosure/).
+
+## Open the Jisou Bot
+
+After signing in to Telegram, open the [Jisou bot](https://t.me/jisou?start=a_1453425105). Confirm that the username exactly matches the intended bot before interacting with it; lookalike accounts are common on messaging platforms.
+
+![Jisou Telegram bot =837x778](https://image.ermao.net/images/article/rsvptr5x/image.png)
+
+## Obtain a Referral Link
+
+In the interface documented in 2025:
+
+1. Send `/pc` to open the referral-data menu.
+2. Select the invitation or earnings option.
+3. Copy the personal sharing link.
+
+![Opening the Jisou referral menu =850x506](https://image.ermao.net/images/article/rsvptr5x/image-1.png)
+
+![Copying the personal referral link =663x1093](https://image.ermao.net/images/article/rsvptr5x/image-2.png)
+
+Disclose that the link is a referral link whenever you share it. Do not spam groups, automate unsolicited messages, or add a bot to a group without the administrators' approval.
+
+## Reward Schedule Shown in the 2025 Interface
+
+![Historical Jisou reward screen =672x1041](https://image.ermao.net/images/article/rsvptr5x/image-3.png)
+
+The original screenshots and text described the following rates. These are a **historical snapshot**, not a statement of current terms:
+
+### New-user rewards
+
+* A direct referral through a personal link was shown as paying **US$0.08**.
+* A new user attributed through a group or channel integration was shown as paying **US$0.16**.
+
+The group workflow involved adding the bot to a group or channel, enabling its promotional posts, and attributing users who entered through the button below those posts. Only do this with the community owner's informed permission.
+
+### Multi-level referral rewards
+
+The interface described a **US$0.02** reward when a directly referred user subsequently referred another user.
+
+### Search-related rewards
+
+The documented schedule showed:
+
+* **US$0.0036** for a search by a directly referred user;
+* **US$0.0009** for a search by a second-level referred user; and
+* **US$0.0036** for a search performed in a search group created by the referrer.
+
+It also mentioned advertising revenue for qualifying active groups with permission to pin messages. Current eligibility and accounting would need to be verified inside the bot.
+
+## Withdrawal Flow Shown in 2025
+
+The original walkthrough showed a minimum balance of **US$50**:
+
+1. Send `/pc` and open the earnings-withdrawal menu.
+2. Select the immediate-withdrawal option.
+3. Choose the UT Wallet option.
+4. Enter the requested withdrawal amount.
+
+![Opening withdrawal options =851x501](https://image.ermao.net/images/article/rsvptr5x/image-4.png)
+
+![Selecting withdrawal =869x359](https://image.ermao.net/images/article/rsvptr5x/image-5.png)
+
+![Selecting UT Wallet =326x313](https://image.ermao.net/images/article/rsvptr5x/image-6.png)
+
+![Entering a withdrawal amount =344x201](https://image.ermao.net/images/article/rsvptr5x/image-7.png)
+
+The article reported a review time of about 24 hours and linked to [UT Wallet](https://t.me/UTBOT). It also reported a withdrawal fee of **2 USDT**. The Chinese source sometimes spells the token “USTD”; the commonly used ticker is **USDT**, but the actual asset and network must be verified in the current wallet interface before transferring anything.
+
+![Historical UT Wallet screen =853x654](https://image.ermao.net/images/article/rsvptr5x/image-8.png)
+
+::: danger Wallet safety
+Verify the token contract or supported network, destination address, fees, and minimums with current first-party information. A transfer over the wrong network can be irreversible. No legitimate wallet support agent needs your private key or seed phrase.
+:::
+
+## Conclusion
+
+Referral programs can pay rewards, but income depends on current terms, valid attribution, user activity, withdrawal eligibility, fees, and the operator continuing to honor balances. Treat the figures above as a dated record of the June 2025 interface—not as a promise of easy or recurring income.

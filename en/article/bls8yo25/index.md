@@ -1,0 +1,46 @@
+---
+url: /en/article/bls8yo25/index.md
+description: >-
+  An evidence-bounded translation of the Shanhu Cloud listing, separating
+  archived BGP, IPLC, bandwidth, encryption, and support claims from verified
+  results.
+---
+## Website
+
+[erozi01.ffvipaff.cc](https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv)
+
+The source page is primarily a provider description rather than an independent performance review. Its network, security, bandwidth, and support statements are therefore recorded below as **marketing claims**, not verified findings.
+
+## Claims shown in the source
+
+![Shanhu Cloud plan screen =1843x760](https://image.ermao.net/images/article/bls8yo25/image.png)
+
+The listing claimed:
+
+* dynamic optimization across five BGP access networks and an IPLC segment;
+* several international egress locations;
+* TLS-based transport encryption;
+* no device or IP limit;
+* bandwidth advertised at up to 1,000 Mbps without evening-peak rate limiting;
+* customized enterprise or personal service;
+* human customer support.
+
+None of those statements proves the route used by a particular node or the performance available to one subscriber. `IPLC`, `BGP`, and `1,000 Mbps` should be checked with route evidence and repeat tests. TLS can protect a transport segment, but it does not make the provider unable to observe connection metadata or guarantee that every application is secure.
+
+## Purchase checklist
+
+1. Confirm that the domain and operator are still active.
+2. Buy only a small monthly plan.
+3. Verify the actual node list and client formats before relying on the service.
+4. Test evening-peak loss, latency, and throughput from the intended ISP.
+5. Test the exact streaming, game, work, or AI service required.
+6. Ask how “no device limit” interacts with simultaneous-connection and fair-use rules.
+7. Keep a backup from another operator.
+
+This page contains an affiliate link; see the [affiliate disclosure](/en/affiliate-disclosure/) and [review methodology](/en/review-methodology/).
+
+Compare current providers in the [2026 proxy-service review list](/en/posts/vpn/). Client setup:
+
+* [Clash Meta for Android](/en/article/eh8f4n86/)
+* [Clash Verge for Windows, Linux, and macOS](/en/article/0gematwc/)
+* [Shadowrocket for iPhone and iPad](/en/article/z747kgjd/)

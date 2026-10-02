@@ -1,0 +1,139 @@
+---
+url: /en/blog/shandianshu/index.md
+description: >-
+  Shandianshu's CNY 96 annual plan, CNY 22 monthly tier, sd88 discount,
+  subscription limits, and provider-supplied speed and streaming tests
+  explained.
+---
+Shandianshu advertises VLESS and dedicated-line routing. Its entry plan costs **CNY 96 per year with 60 GB every 30 days**, equivalent to CNY 8 per month before discounts. The lowest plan actually billed monthly is **CNY 22 for 120 GB**. The provider supplies the new-user code **`sd88`** for 30% off. If it applies to the annual entry plan, the payment becomes CNY 67.20 per year, equivalent to CNY 5.60 per month; it is not a plan you can buy for one month at CNY 5.60.
+
+Purchase link: [View Shandianshu plans and the sd88 offer](https://ermaozi01.shandianshuaff.com/#/?code=QtJroVdY)
+
+![Shandianshu logo =640x640](https://image.ermao.net/images/blog/shandianshu/20261001_135041-4c2552.png)
+
+## Provider overview
+
+| Item | Supplied information |
+| --- | --- |
+| Operating since | March 8, 2024, according to the provider; not independently verified |
+| Team and routing | Provider claims a Singapore-based team, VLESS and dedicated-line routing |
+| Annual entry plan | CNY 96/year, 60 GB every 30 days; CNY 8 monthly equivalent before discounts |
+| Lowest monthly plan | CNY 22 for 120 GB/month |
+| New-user offer | Code `sd88` for 30% off according to the provider; eligibility and expiry depend on checkout |
+| Universal subscription | Not supported according to the submission |
+| No-expiry traffic packages | Not supported |
+| Payments | Alipay and WeChat Pay |
+| Telegram | [Shandianshu group or channel](https://t.me/shandianshuvpn) |
+
+The provider advertises more than 60 nodes across Hong Kong, Taiwan, Japan, Singapore and the United States. The supplied tests list 60 nodes, which does not establish the number currently online. The operating history, team location and routing architecture are also provider statements.
+
+## Plans and discount
+
+| Plan | Price | Data | Suggested use | Purchase |
+| --- | --- | --- | --- | --- |
+| Limited-time small package | CNY 96/year | 60 GB/30 days | Light users who have tested the routes and accept annual payment | [View plan](https://ermaozi01.shandianshuaff.com/#/?code=QtJroVdY) |
+| Light | CNY 22/month | 120 GB/30 days | First trial, browsing and light video | [View plan](https://ermaozi01.shandianshuaff.com/#/?code=QtJroVdY) |
+| Fast | CNY 40/month | 250 GB/30 days | Regular video, AI tools and multiple devices | [View plan](https://ermaozi01.shandianshuaff.com/#/?code=QtJroVdY) |
+| Thunder | CNY 70/month | 500 GB/30 days | Heavier video use or multiple devices | [View plan](https://ermaozi01.shandianshuaff.com/#/?code=QtJroVdY) |
+
+![Original Shandianshu annual and monthly plan screenshot =2068x1110](https://image.ermao.net/images/blog/shandianshu/20261001_135111-efec8f.png)
+
+The table preserves the undiscounted screenshot prices. The cards say allowances reset every 30 days from purchase. The annual entry plan's 60 GB is a recurring allowance, not the total for the whole year. Other tiers show quarterly, six-month, annual and longer billing selectors, but their prices are not visible, so they are not listed here.
+
+**CNY 5.60 per month is a discounted annual equivalent.** Applying the submitted 30% discount gives 96 × 0.7 = CNY 67.20 per year, then dividing by 12 gives CNY 5.60. Check whether `sd88` covers your selected plan, whether it is limited to a first order, when it expires and whether it applies to renewals. Do not treat a new-user promotion as a permanent renewal price.
+
+For a first purchase, consider the CNY 22 monthly tier and verify your client and usual services before paying annually. Upgrade when your usage approaches 120 GB or 250 GB, and [check the actual payable total](https://ermaozi01.shandianshuaff.com/#/?code=QtJroVdY). The submission explicitly says no no-expiry traffic package is offered; the annual small package has a fixed term too.
+
+## Routing and usage
+
+### VLESS nodes and dedicated-line claims
+
+The test images label every node type as Vless and list Hong Kong, Taiwan, Japan, Singapore and US nodes. The annual small-package card uses IPLC wording, while other cards use IEPL. This review preserves that distinction rather than treating them as one verified routing architecture.
+
+The cards also advertise 1x traffic accounting, no simultaneous-device limit and no evening speed cap. Some tiers claim peak per-node bandwidth of 2.5 Gbps. These are plan statements, not speeds guaranteed to each subscriber. The screenshots do not verify the provider's evening 4K/8K or blocking-resilience claims.
+
+### Subscription and client compatibility
+
+The submission explicitly says **universal subscriptions are not supported**, while also supplying a node-list screenshot from Clash Party. That image shows nodes in the displayed setup; it does not establish direct import compatibility with every client. Ask support to confirm your exact app, subscription format and import method before paying.
+
+![Shandianshu node list and latency in Clash Party =1280x694](https://image.ermao.net/images/blog/shandianshu/20261001_135026-417f88.png)
+
+### Support and refunds
+
+The provider advertises 24-hour support, refunds for dissatisfaction and line-fault repairs within one hour. The material does not specify refund deadlines, used-data restrictions or outage compensation, and response times were not independently tested. Confirm those terms with support before [choosing a plan](https://ermaozi01.shandianshuaff.com/#/?code=QtJroVdY).
+
+## Reading the supplied tests
+
+### Download-speed screenshot
+
+![Original September 23, 2026 Shandianshu speed test covering 60 VLESS nodes =710x1280](https://image.ermao.net/images/blog/shandianshu/20261001_135033-66e883.png)
+
+The provider-supplied screenshot is marked **2026-09-23 15:13:41 (CST)**, names MiaoKo as the test tool and includes 9 Gbps and 32 threads in the footer. It lists 20 Hong Kong nodes and 10 each in Taiwan, Singapore, Japan and the United States.
+
+Nonzero entries in the average-speed column range from roughly **9.46MB to 24.58MB**, and the highest entry in the maximum-speed column is **45.07MB**, preserving the screenshot's unit labels. Japan 05, 06 and 09 show 0.00B, and some entries lack valid latency results. The image does not show successful speed measurements for every node.
+
+The testing location, access ISP, complete network environment and repeated runs across time windows are not provided. The marked time is also outside the usual evening peak. This is a single provider-supplied result, not a test conducted by this site; it cannot establish home-broadband experience, evening performance or long-term stability.
+
+### Streaming and AI-service screenshot
+
+![Original September 23, 2026 Shandianshu streaming and AI-service test =1068x1280](https://image.ermao.net/images/blog/shandianshu/20261001_135037-b7a735.png)
+
+The second test is marked **2026-09-23 16:17:30 (CST)**. Taiwan, Singapore and US nodes show successful Netflix and OpenAI entries, but results vary by node and service. Many Hong Kong OpenAI entries are “app only (GB)” or N/A; Disney+ and TikTok columns contain failures, and some Japan nodes show N/A.
+
+Some nodes named Hong Kong show DE in the Netflix column and GB in the OpenAI column. A node's label therefore does not establish the region recognized by a platform. Check the specific node if you need a regional catalogue or browser-based AI access; the image does not support a claim that every node fully unlocks every service.
+
+## Who may consider it
+
+* Users willing to confirm their client import method before trying VLESS nodes.
+* Users needing 120 GB, 250 GB or 500 GB per month who can select a monthly tier by actual usage.
+* Light users staying within 60 GB per month who have already tested the routes and accept annual payment.
+
+If universal subscriptions, no-expiry backup data or uninterrupted access to a specific region are essential, the supplied information does not establish those requirements.
+
+## Purchase steps
+
+1. Register or sign in through the [Shandianshu purchase link](https://ermaozi01.shandianshuaff.com/#/?code=QtJroVdY), and first confirm client compatibility.
+2. Choose the allowance and billing period, distinguishing the CNY 96 annual tier from monthly plans starting at CNY 22.
+3. As a new user, enter `sd88` and check the applied discount, total payment and refund terms.
+4. Pay with Alipay or WeChat Pay, then obtain and import the subscription using the method confirmed by support.
+5. Test your usual regions, services and evening usage on your own connection before renewing or upgrading.
+
+## FAQ {#faq}
+
+### Can I buy one month for CNY 5.60?
+
+Not according to the supplied material. CNY 5.60 is the monthly equivalent of a CNY 67.20 annual payment if the 30% discount applies to the CNY 96 tier. The lowest screenshot price for monthly billing is CNY 22 before discounts.
+
+### Is 60 GB the allowance for the entire year?
+
+No. The screenshot says 60 GB per month, refreshed every 30 days from purchase. Annual refers to payment, while data resets periodically.
+
+### Are universal subscriptions or no-expiry plans supported?
+
+The submission says neither is supported. A Clash Party screenshot is not a universal-subscription commitment, and annual billing is not a no-expiry package.
+
+### Are Netflix, Disney+ and ChatGPT guaranteed on every node?
+
+No. The provider advertises those services, but the supplied image includes successful, failed, N/A and app-only states. Test your required node, region and access method.
+
+## Conclusion
+
+The key choice is the billing period. Light users who have tested the routes may consider the CNY 96 annual plan; an eligible new-user discount would make it CNY 5.60 per month in annual-payment terms. Monthly trials start at CNY 22 for 120 GB. The VLESS node lists and regional tests provide reference material, while subscription limits, differing platform results and annual terms still need attention before purchase.
+
+[View current Shandianshu plans and check the sd88 offer](https://ermaozi01.shandianshuaff.com/#/?code=QtJroVdY)
+
+## Client guides and related reviews
+
+These are general setup references, not confirmation that Shandianshu supports each client:
+
+* [Android Clash guide](/en/article/eh8f4n86/)
+* [iOS Shadowrocket guide](/en/article/z747kgjd/)
+* [Windows Clash setup](/en/article/0gematwc/)
+* [macOS Clash Verge Rev guide](/en/article/6vxkmmuh/)
+* [2026 proxy-service reviews](/en/posts/vpn/)
+* [Provider list](/en/airport/)
+* [How to choose a provider](/en/article/choose-good-airport/)
+
+::: info Source note
+Compiled on October 1, 2026 from submitted information and original provider-supplied screenshots. Live checkout and independent route testing were not completed. Plans, offers, nodes and terms may change; verify the actual checkout and follow applicable law.
+:::
