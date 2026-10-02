@@ -37,6 +37,7 @@ const englishNames: Record<string, string> = {
   光速云: 'Guangsu Cloud',
   全球云: 'Global Cloud',
   闪电鼠: 'Shandianshu',
+  榴莲云: 'Liulian Cloud',
   GW云洞: 'GW Cloud Tunnel',
   纵云梯: 'Zongyun Ti',
   加速啦: 'Jiasu.la',
@@ -108,6 +109,17 @@ const englishTags: Record<string, string> = {
 }
 
 const phraseReplacements: Array<[string, string]> = [
+  ['榴莲包·年付特惠版', 'Durian annual special'],
+  ['轻享包', 'Light'],
+  ['畅享包', 'Enjoy'],
+  ['尊享包', 'Premium'],
+  ['榴莲王', 'Durian King'],
+  ['已确认线路适配、用量较少且接受年付的用户', 'Light users who have checked the routes and accept annual billing'],
+  ['首次尝试、浏览资讯与轻度影音', 'First purchase, browsing and light video'],
+  ['月用量接近或超过140GB的用户', 'Monthly usage approaching or exceeding 140 GB'],
+  ['较频繁的视频观看与日常联网', 'More frequent video viewing and regular internet use'],
+  ['已验证线路、有较大月度流量需求的用户', 'Higher monthly consumption after checking the routes'],
+  ['/月', '/month'],
   ['Netflix/Disney保证', 'Netflix and Disney access advertised'],
   ['Netflix、Disney保证', 'Netflix and Disney access advertised'],
   ['Netflix、Disney+', 'Netflix and Disney+'],

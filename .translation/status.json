@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-01T06:20:27.884Z",
+  "generatedAt": "2026-10-02T07:04:22.728Z",
   "summary": {
-    "total": 180,
-    "translated": 177,
+    "total": 181,
+    "translated": 178,
     "needs-review": 0,
     "missing": 3
   },
@@ -1232,6 +1232,16 @@
       "sourceHash": "93290ecc8525a83b",
       "sourcePermalink": "/blog/laddercloud/",
       "expectedPermalink": "/en/blog/laddercloud/",
+      "status": "translated",
+      "issues": [],
+      "hanCharacters": 0
+    },
+    {
+      "source": "docs/blog/机场推荐/2026/机场推荐榴莲云.md",
+      "target": "docs/en/blog/proxy-reviews/2026/机场推荐榴莲云.md",
+      "sourceHash": "b0174b7f990ccdd6",
+      "sourcePermalink": "/blog/liulianyun/",
+      "expectedPermalink": "/en/blog/liulianyun/",
       "status": "translated",
       "issues": [],
       "hanCharacters": 0
