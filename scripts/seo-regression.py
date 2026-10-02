@@ -59,7 +59,7 @@ def validate(read):
         home, second = Document(read(prefix)), Document(read(prefix + 'page/2/'))
         for route, doc in ((prefix, home), (prefix+'page/2/', second)):
             assert doc.select('link', 'rel', 'canonical') == [{'rel': 'canonical', 'href': HOST+route}], route
-            assert len(doc.select('div', 'class', 'vp-post-item')) == 15, route
+            assert sum(tag == 'div' and 'vp-post-item' in attrs.get('class', '').split() for tag, attrs in doc.tags) == 15, route
             assert doc.select('a', 'rel', 'next')[0]['href'] == prefix + ('page/2/' if route == prefix else 'page/3/'), route
         assert home.text != second.text
         for anchor in ('airport-comparison', 'ios-subscription'):
@@ -89,11 +89,40 @@ def validate(read):
     assert HOST+'/page/2/' in sitemap
     print('PASS robots, sitemap and 404 noindex', flush=True)
 
+
+def audit_http():
+    from concurrent.futures import ThreadPoolExecutor
+    urls = [HOST + route for route in (
+        '/', '/page/2/', '/page/2/index.html', '/page/2/?seo_revision=20261002',
+        '/en/page/2/', '/blog/flybit/', '/robots.txt', '/sitemap.xml',
+        '/404.html', '/seo-missing-check-20261002/', '/sub/reachable/clash/ermao.net',
+    )] + ['https://api.ermao.net/posts/vpn/', 'https://ermaozi.github.io/ermao.net/page/2/']
+    def audit(url):
+        try:
+            status, headers, body = fetch(url, follow=False)
+            doc = Document(body) if 'text/html' in headers.get('content-type','') else None
+            details = {key: headers.get(key) for key in ('content-type', 'server', 'cf-cache-status', 'age', 'cache-control', 'location', 'x-robots-tag')}
+            details.update(status=status, url=url)
+            if doc:
+                details['canonical'] = doc.select('link', 'rel', 'canonical')
+                details['robots'] = doc.select('meta', 'name', 'robots')
+                details['title'] = re.findall(r'<title>(.*?)</title>', body, re.S)
+                details['static_pagination_link'] = 'href="/page/2/"' in body
+                details['flybit_evidence_note'] = '缺少完整的测试时间' in body
+            print('HTTP AUDIT ' + json.dumps(details, ensure_ascii=False), flush=True)
+        except Exception as error:
+            print('HTTP AUDIT UNAVAILABLE', url, type(error).__name__, str(error), flush=True)
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        list(pool.map(audit, urls))
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--live', action='store_true')
+    parser.add_argument('--http-audit', action='store_true')
     args = parser.parse_args()
-    if not args.live:
+    if args.http_audit:
+        audit_http()
+    elif not args.live:
         validate(local)
     else:
         def live(route):
@@ -101,7 +130,7 @@ if __name__ == '__main__':
             expected = (200, 404) if route == '/404.html' else (200,)
             assert status in expected, f'{route}: HTTP {status}'
             return text
-        deadline = time.monotonic() + 600
+        deadline = time.monotonic() + 180
         while True:
             try:
                 validate(live)
@@ -111,10 +140,3 @@ if __name__ == '__main__':
                     raise
                 print('Waiting for production:', str(error), flush=True)
                 time.sleep(20)
-        for url in (HOST+'/404.html', HOST+'/seo-missing-check-20261002/', HOST+'/sub/reachable/clash/ermao.net', 'https://api.ermao.net/posts/vpn/'):
-            try:
-                status, headers, body = fetch(url, follow=False)
-                canonicals = Document(body).select('link','rel','canonical') if 'text/html' in headers.get('content-type','') else []
-                print('HTTP AUDIT', url, status, 'type='+headers.get('content-type',''), 'location='+headers.get('location',''), 'x-robots-tag='+headers.get('x-robots-tag',''), 'canonical='+str(canonicals), flush=True)
-            except Exception as error:
-                print('HTTP AUDIT UNAVAILABLE', url, type(error).__name__, flush=True)
