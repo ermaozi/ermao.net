@@ -4083,11 +4083,11 @@ export const airportSources: AirportSource[] = [
   {
     id: '唯兔云',
     name: '唯兔云',
-    description: '唯兔云IPLC专线，Trojan协议，解锁各大流媒体，解锁ChatGPT、Gemini等AI，解锁Tiktok，支持电商、直播运营。套餐无倍率、不限速、不限制设备数量，支持支付宝微信usdt，除了港、台、日、美、新常规的五国节点以外，我们还有东南亚五国，韩国以及一些欧美国家。当前年付版79.9元45GB，普通版19.9元150GB/月。售后服务绝对有保障，多人客服团队轮流坐班，海外技术团队稳定可靠。可提供小火箭下载账号，可提供TG代注册服务等等',
+    description: '唯兔云历史资料宣传 IPLC 专线、Trojan 协议、不限设备及流媒体和 AI 服务访问；这些能力需在自己的网络验证。历史文章记录入门年付79.9元、每月45GB；2026-10-02官网入口仅显示线路检测页，当前价格、重置周期和服务条款尚未核实。',
     rank: 25,
     officialHref: 'https://a01.v2cvipaff.cc/#/?code=iaD6AgSx',
     universalSubscription: false,
-    minPlanText: '79.9元 45GB/年',
+    minPlanText: '历史79.9元/年，45GB/月；现价待核实',
     hasOneTimePackage: true,
     telegramHref: 'https://t.me/v2yun_v2',
     reviewHref: '/article/weituyun/',

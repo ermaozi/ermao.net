@@ -13,7 +13,7 @@ const headings: Record<string, string> = {
   '/en/friends/': 'Friends and Related Sites',
 }
 
-const heading = computed(() => headings[route.path])
+const heading = computed(() => headings[route.path] || (route.path.match(/\/page\/(\d+)\/$/) ? (route.path.startsWith('/en/') ? 'Blog articles — Page ' : '博客文章 — 第 ') + route.path.match(/\/page\/(\d+)\/$/)![1] : ''))
 </script>
 
 <template>

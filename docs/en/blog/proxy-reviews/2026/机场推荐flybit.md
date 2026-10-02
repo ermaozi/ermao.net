@@ -1,7 +1,7 @@
 ---
 title: Flybit Review—CNY 15 for 128 GB and Non-Expiring Packages
 createTime: 2026/03/02 10:00:00
-updateTime: 2026/03/02 10:00:00
+updateTime: 2026/10/03 03:00:00
 permalink: /en/blog/flybit/
 lang: en-US
 translationOf: /blog/flybit/
@@ -12,40 +12,8 @@ tags:
   - IEPL
   - non-expiring data
 description: A dated Flybit review covering its CNY 15 monthly 128 GB tier, non-expiring data packages, provider IEPL and service-access claims, and test limits.
-head:
-  - - script
-    - type: application/ld+json
-    - |
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What was Flybit's lowest recorded monthly plan?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The source catalog recorded CNY 15 per month for 128 GB. Verify current traffic, route labels, and checkout terms because plans can change."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does Flybit offer refunds?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The source warns that a used virtual service is normally not refundable. Read the current refund terms before payment and begin with a small monthly plan."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can Flybit be used on unlimited devices?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The source plan catalog says unlimited devices, while the article did not independently verify the current fair-use or simultaneous-connection rules. Confirm them with the provider."
-            }
-          }
-        ]
-      }
+faqFromContent: Frequently asked questions
+
 ---
 
 Flybit's entry plan was recorded at CNY 15 per month for 128 GB. Its source catalog also lists larger monthly tiers and one-time packages whose data does not expire. The provider advertises IEPL routes, no device limit, streaming access, and ChatGPT access.
@@ -58,7 +26,7 @@ These are useful attributes to test, not guaranteed outcomes. Begin with the sma
 
 ![Flybit provider dashboard =150x150](https://image.ermao.net/images/blog/flybit/20260302_202715-c22f02.png)
 
-[Open the recorded Flybit registration page](https://goflybit.com/#/register?code=7h1NCdM7)
+<AffiliateLink href="https://goflybit.com/#/register?code=7h1NCdM7">Open the recorded Flybit registration page</AffiliateLink>
 
 The page contains an affiliate link. See the [affiliate disclosure](/en/affiliate-disclosure/) and [review methodology](/en/review-methodology/).
 
@@ -95,13 +63,13 @@ No route label alone proves a private-line contract. Third-party platforms can c
 
 ![Flybit node speed test =2723x3830](https://image.ermao.net/images/article/q8yp9r2b/image-1.png)
 
-The screenshot is inherited from the earlier Flybit review and represents one test environment. It does not prove that another user can saturate a broadband line or stream 4K without buffering.
+The screenshot is inherited from the earlier Flybit review; its complete test date, ISP, configuration, and raw results are not available here. It does not prove that another user can saturate a broadband line or stream 4K without buffering.
 
 ## Frequently asked questions
 
 ### Has Flybit shut down?
 
-The source reported normal operation and recently added nodes on March 2, 2026. That is a dated observation, not a current uptime guarantee. Check the provider's independently verified announcement channel, domain, and support response before payment.
+The archived article described normal operation and added nodes, but it does not provide a complete timestamped uptime record. This is not a current uptime guarantee. Check the provider's independently verified announcement channel, domain, and support response before payment.
 
 ### Is it a good value?
 

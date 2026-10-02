@@ -122,8 +122,9 @@ const coverStyles = computed(() => {
 })
 
 const excerpt = computed(() => {
-  if (!post.excerpt || index === 0) return post.excerpt
-  return post.excerpt
+  const html = post.excerpt?.replace(/href="#([^"]*)"/g, `href="${post.path}#$1"`)
+  if (!html || index === 0) return html
+  return html
     .replaceAll(' loading="eager"', ' loading="lazy"')
     .replaceAll(' fetchpriority="high"', '')
 })

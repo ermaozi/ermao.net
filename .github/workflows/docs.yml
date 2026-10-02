@@ -38,7 +38,9 @@ jobs:
         run: pnpm build
 
       - name: Audit site content and generated homepage
-        run: pnpm run audit:site
+        run: |
+          pnpm run audit:site
+          python3 scripts/seo-regression.py
 
       # 查看 workflow 的文档来获取更多信息
       # @see https://github.com/crazy-max/ghaction-github-pages
@@ -52,3 +54,6 @@ jobs:
           fqdn: www.ermao.net
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+
+      - name: Verify production SEO and HTTP responses
+        run: python3 scripts/seo-regression.py --live

@@ -303,6 +303,7 @@ export const localizeAirportName = (value: string) =>
   englishNames[value] ?? genericEnglish(value, 'Proxy service')
 
 export const localizeAirportPrice = (value: string) => {
+  if (value === '历史79.9元/年，45GB/月；现价待核实') return 'Historical: CNY 79.90/year, 45 GB/month; current terms unverified'
   const translated = replacePhrases(value)
     .replace(/(\d+(?:\.\d+)?)\s*元/g, 'CNY $1')
     .replace(/\/\s*月/g, '/month')

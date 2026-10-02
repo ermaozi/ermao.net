@@ -1,6 +1,7 @@
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { templateRenderer } from '@vuepress/utils'
+import paginationPlugin, { POSTS_PER_PAGE } from './plugins/pagination.js'
 import { plumeTheme } from 'vuepress-theme-plume'
 import { fileURLToPath } from 'node:url'
 // @ts-ignore
@@ -35,7 +36,7 @@ const utilityPagePrefixes = [
   '/en/blog/categories/',
   '/en/blog/archives/',
 ]
-const utilityPagePaths = ['/ad-board/', '/stats/', '/en/stats/']
+const utilityPagePaths = ['/404.html', '/en/404.html', '/ad-board/', '/stats/', '/en/stats/']
 const generatedPageDescriptions: Record<string, string> = {
   '/ad-board/': '在二毛广告板发表百字以内的匿名便签；便签优先落在空隙处，点赞后立即置顶，外部链接跳转前显示风险提示。',
   '/blog/': '浏览二毛博客的全部文章，涵盖机场评测与风险记录、Clash 和 Shadowrocket 客户端、软路由配置及网络故障排查。',
@@ -98,7 +99,18 @@ const renderBuildTemplate = (template: string, context: any) => templateRenderer
   scripts: context.scripts
     .replace('<script type="module" src=', '<script data-cfasync="false" type="module" src='),
   styles: versionCriticalStyle(context.styles),
-})
+}).replace('<head>', `<head><script data-cfasync="false">
+// Resolve legacy query pagination before Vue hydrates static homepage metadata.
+(function () {
+  var url = new URL(window.location.href);
+  if (!['/', '/en/', '/blog/', '/en/blog/'].includes(url.pathname) || !url.searchParams.has('p')) return;
+  var page = Number(url.searchParams.get('p'));
+  var base = url.pathname.startsWith('/en/') ? '/en/' : '/';
+  url.pathname = Number.isSafeInteger(page) && page > 1 ? base + 'page/' + page + '/' : base;
+  url.searchParams.delete('p');
+  window.location.replace(url.pathname + url.search + url.hash);
+})();
+</script>`)
 
 const utilityPagesPlugin = () => ({
   name: 'ermao-utility-pages',
@@ -157,6 +169,7 @@ export default defineUserConfig({
   templateBuildRenderer: renderBuildTemplate,
   plugins: [
     homepagePostsSsrPlugin(),
+    paginationPlugin(),
     utilityPagesPlugin(),
     imagePerformancePlugin(),
     geoPlugin(),
@@ -183,6 +196,7 @@ export default defineUserConfig({
         collections: [
           {
             type: 'post',
+            pagination: POSTS_PER_PAGE,
             dir: 'blog',
             title: '博客',
             archivesLink: '/blog/archives/',
@@ -238,6 +252,7 @@ export default defineUserConfig({
         collections: [
           {
             type: 'post',
+            pagination: POSTS_PER_PAGE,
             dir: 'blog',
             title: 'Blog',
             archivesLink: '/blog/archives/',

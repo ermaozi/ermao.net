@@ -119,7 +119,10 @@ export const enhanceArticleJsonLd = (jsonLd: Record<string, any>, page: any) => 
   const locale = localeData[pageLang]
   const authorId = getAuthorId(page)
   const published = toIsoDate(frontmatter.createTime)
-  const modified = toIsoDate(frontmatter.updateTime) || published || jsonLd.dateModified
+  // Use the same version-controlled timestamp as Open Graph.
+  const modified = page.data?.git?.updatedTime
+    ? new Date(page.data.git.updatedTime).toISOString()
+    : jsonLd.dateModified || toIsoDate(frontmatter.updateTime) || published
   const tags = Array.isArray(frontmatter.tags) ? frontmatter.tags.map(String) : []
   const citations = Array.isArray(frontmatter.sources)
     ? frontmatter.sources.map(String).filter((source: string) => /^https?:\/\//.test(source))
@@ -172,6 +175,25 @@ export default () => ({
     const isGeneratedCollectionPage = /^\/(?:en\/)?blog\/(?:|archives\/|categories\/|tags\/)$/.test(page.path)
     if ((!page.filePathRelative && !isGeneratedCollectionPage) || page.frontmatter.noindex) return
     page.frontmatter.head ??= []
+    // The visible FAQ is the single source of truth for structured answers.
+    if (typeof page.frontmatter.faqFromContent === 'string') {
+      const marker = `## ${page.frontmatter.faqFromContent}`
+      const section = page.content.split(marker + '\n')[1]?.split(/\n## /)[0]
+      if (!section) throw new Error(`Missing visible FAQ: ${page.path}`)
+      const questions = [...section.matchAll(/### ([^\n]+)\n([\s\S]*?)(?=\n### |$)/g)]
+      const mainEntity = questions.map(([, name, answer]) => ({
+        '@type': 'Question', name: name.trim(),
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: answer.trim().replace(/\n\d+\. /g, ' ').replace(/^\d+\. /, '').replace(/\s+/g, ' '),
+        },
+      }))
+      if (!mainEntity.length) throw new Error(`Empty visible FAQ: ${page.path}`)
+      page.frontmatter.head.push(['script', { type: 'application/ld+json' }, JSON.stringify({
+        '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity,
+      })])
+    }
+
     const pageLang = getPageLang(page)
     const defaultRoute = pageLang === 'en-US'
       ? page.path.replace(/^\/en(?=\/|$)/, '') || '/'

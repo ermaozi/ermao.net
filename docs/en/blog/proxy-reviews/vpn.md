@@ -15,7 +15,7 @@ tags:
   - reviews
   - low-cost proxy services
 title: '2026 Proxy-Service and VPN Reviews: Prices, Subscriptions, and Risks'
-updateTime: 2026/10/01 21:00:00
+updateTime: 2026/10/03 03:00:00
 permalink: /en/posts/vpn/
 description: Compare 2026 proxy-service prices, monthly and non-expiring plans, Clash and Shadowrocket compatibility, full reviews, and shutdown risks. Start with a short plan.
 head:
@@ -92,7 +92,7 @@ Jump to the [plan comparison](#airport-comparison), [Shadowrocket / Clash Mi sub
 
 If proxy subscriptions, Clash nodes, Shadowrocket, and standard subscription formats are new to you, begin with [2026 Proxy-Subscription Guide: Buying and Importing Clash Nodes](/en/article/jichang-subscription-guide/). Understanding the relationship among a provider, VPN, client, and node will make plan selection easier.
 
-The latest substantive verification date appears at the top of this page. Reviews aim to record peak-hour stability, plan prices, node availability, support responses, and subscription compatibility. When a complete test environment is unavailable, the article labels the information as a document-based review or preliminary experience instead of presenting provider marketing as an independent test. See the [review methodology](/en/review-methodology/) for evidence standards and the [affiliate disclosure](/en/affiliate-disclosure/) for commercial relationships.
+The editorial update date appears at the top of this page; it does not mean every plan and service was verified on that day. Reviews aim to record peak-hour stability, plan prices, node availability, support responses, and subscription compatibility. When a complete test environment is unavailable, the article labels the information as a document-based review or preliminary experience instead of presenting provider marketing as an independent test. See the [review methodology](/en/review-methodology/) for evidence standards and the [affiliate disclosure](/en/affiliate-disclosure/) for commercial relationships.
 
 <!-- more -->
 
@@ -130,7 +130,7 @@ If you arrived from the shared Apple ID page, **the account downloads the app; a
 
   Value for money matters in these reviews. Low-cost plans, packages below CNY 10, and non-expiring data packages have a low entry cost and can work for trials or backup access.
 
-  The screening criteria used here include:
+  The following are purchase checks, not guarantees that every listed provider has passed:
 
   - ✅ clearly stated prices and no undisclosed fees;
   - ✅ nodes that do not disconnect repeatedly;
@@ -184,9 +184,9 @@ If you arrived from the shared Apple ID page, **the account downloads the app; a
 
 ## How providers are selected for review
 
-Readers frequently ask for reviews of specific providers. The following is a concise version of the selection criteria; see [How to Choose a Proxy Service in 2026: Risk and Shutdown Warnings](/en/article/choose-good-airport/) for the detailed guide.
+Readers frequently ask for reviews of specific providers. These are selection preferences, not verified properties of every listing; see [How to Choose a Proxy Service in 2026: Risk and Shutdown Warnings](/en/article/choose-good-airport/) for the detailed guide.
 
-- At least two years of operating history.
+- Prefer verifiable operating history. Two years is a selection preference, not an inclusion requirement or a safety guarantee; new providers and providers with unknown history are also listed for comparison.
 - A website that intended users can access and payment methods they can use.
 - A functioning support-ticket channel.
 - A price that is not excessive for the stated plan.
@@ -194,7 +194,7 @@ Readers frequently ask for reviews of specific providers. The following is a con
 - No large body of unresolved public disputes or serious negative reports.
 - Readers may suggest providers that meet these conditions in comments or private messages.
 
-To keep this guide from becoming a simple link list, each provider is assessed across the following dimensions:
+The following dimensions guide further verification. Inclusion and sales rank do not establish completed speed tests, stability, trial availability, or refund rights:
 
 | Review dimension | What is examined | Why it matters |
 | --- | --- | --- |
@@ -399,7 +399,7 @@ Avoid buying a long plan immediately; prefer monthly or pay-as-you-go packages. 
 - [Adaxi](./2025/机场推荐阿达西.md) — CNY 3 for 20 GB/month;
 - [Chongshangyunxiao](./2025/机场推荐冲上云霄.md) — CNY 5 for 80 GB/30 days;
 - [Wangji Kuaiche](./2026/机场推荐网际快车.md) — CNY 6.80 for 20 GB with no fixed expiration;
-- [Weitu Cloud](./2026/机场推荐唯兔云.md) — CNY 6 for 45 GB/month.
+- [Weitu Cloud](./2026/机场推荐唯兔云.md) — historical record: CNY 79.90 paid annually, 45 GB/month; current price and reset cycle not verified.
 
 **Usage advice:**
 
