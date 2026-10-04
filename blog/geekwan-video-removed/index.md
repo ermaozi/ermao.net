@@ -16,7 +16,7 @@ description: 2026年极客湾揭露手机厂商测评作弊的视频被B站下�
 
 随后网友通过网盘转存的视频也相继被和谐：
 
-* 百度网盘: https://pan.baidu.com/s/1ETOiDQAnXhw_4JAGLPtu6Q?pwd=2026
+* 百度网盘: https://pan.baidu.com/s/1ETOiDQAnXhw\_4JAGLPtu6Q?pwd=2026
 * 夸克网盘: https://pan.quark.cn/s/8d35e445caaf2026
 
 > 以上链接均已于 2026年2月23日失效。

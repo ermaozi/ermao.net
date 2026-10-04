@@ -3,15 +3,15 @@ url: /posts/vpn/index.md
 description: >-
   对比2026年机场套餐价格、月付与不限时流量包、Clash和Shadowrocket订阅兼容性，查看单篇评测与跑路风险记录；首次购买先用短周期验证自己的网络。
 ---
-![翻墙机场推荐评测 =1814x352](https://image.ermao.net/images/posts/vpn/20260315_110648-5171d6.png)
-
 选机场先看三件事：**实际付款金额、客户端能否导入、自己的网络能否稳定使用**。本文汇总套餐、订阅兼容性、详细评测与风险记录；榜单按销量排序，排名不代表实测速度或稳定性。
 
-直接前往：[机场套餐对比表](#airport-comparison) · [小火箭 / Clash Mi 节点订阅](#ios-subscription) · [按预算和不限时套餐筛选](/airport/)。已有可用订阅，先核对格式和有效期，不必重新购买。
+直接前往：[按设备、预算和流量选择](#connection-selector) · [机场套餐对比表](#airport-comparison) · [小火箭 / Clash Mi 节点订阅](#ios-subscription) · [按预算和不限时套餐筛选](/airport/)。已有可用订阅，先核对格式和有效期，不必重新购买。
 
 如果你是第一次接触机场订阅、Clash 节点、Shadowrocket 或通用订阅，建议先看[《2026翻墙机场订阅指南：Clash节点购买、导入与机场推荐》](/article/jichang-subscription-guide/)，理解“机场、VPN、客户端、节点”之间的关系后，再回来挑选套餐会更省心。
 
 本文编辑更新日期见页首，不代表所有套餐和服务已在同一天完成核验。评测会尽量记录晚高峰稳定性、套餐价格、节点可用率、客服响应和订阅兼容；缺少完整测试环境时，会明确标成资料整理或初步体验，不把服务商宣传当作本站实测。详细证据标准见[机场评测方法](/review-methodology/)，商业关系见[推广披露](/affiliate-disclosure/)。
+
+![翻墙机场推荐评测 =1814x352](https://image.ermao.net/images/posts/vpn/20260315_110648-5171d6.png)
 
 ## 小火箭和 Clash Mi 的节点订阅怎么选？ {#ios-subscription}
 

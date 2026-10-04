@@ -4474,7 +4474,7 @@ Edge-X is a candidate for a small monthly test, not an evidence-free long commit
 | Node speed cap | Provider says none |
 | Standard subscription | Advertised as supported |
 | Overseas-user subscription | Advertised as supported |
-| Telegram channel | [EdgeX_Notice](https://t.me/EdgeX_Notice) |
+| Telegram channel | [EdgeX\_Notice](https://t.me/EdgeX_Notice) |
 | One-time package | None listed |
 
 The route, optimization, service access, and cap entries are provider information. Verify them from the intended access network.
@@ -7386,7 +7386,7 @@ Many proxy services have recently become unreachable after data centers removed 
 >
 > This was not an easy decision. I understand what EFCloud means to many users: it is not only a service, but also a set of memories and a source of companionship. I therefore hope that migrating to XSUS can keep your experience from being interrupted as much as possible. If EFCloud can return in the future, you will still be welcome to come back and continue that journey.
 >
-> For account-migration arrangements, contact ~~@xsus_support_bot~~.
+> For account-migration arrangements, contact ~~@xsus\_support\_bot~~.
 >
 > If you have any questions or concerns, please let me know and I will do my best to resolve them. Group: ~~@xsusvpn~~
 >
@@ -22048,7 +22048,7 @@ Recorded registration route: [a.zlwl.org](https://a.zlwl.org/auth/register?code=
 | Universal subscription | Supported |
 | Trial | Available after registration, amount and duration not supplied |
 | Daily check-in | At least 1 GB claimed; expiry and conditions not supplied |
-| Telegram | [zlwl_org](https://t.me/zlwl_org) |
+| Telegram | [zlwl\_org](https://t.me/zlwl_org) |
 
 Large data allowances at a very low price do not establish route capacity, privacy, continuity, or service access.
 

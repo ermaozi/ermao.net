@@ -471,9 +471,9 @@ sudo systemctl enable certbot.timer
 | type | 协议类型 | anytls |
 | tag | 标签名称 | anytls-in |
 | listen | 监听地址 | ::（IPv6）或 0.0.0.0 |
-| listen_port | 监听端口 | 443 |
+| listen\_port | 监听端口 | 443 |
 | users | 用户列表 | 用户名密码数组 |
-| padding_scheme | 填充方案 | 数组形式 |
+| padding\_scheme | 填充方案 | 数组形式 |
 | tls | TLS配置 | 证书和密钥路径 |
 
 #### 3.5.2 用户配置
@@ -481,16 +481,16 @@ sudo systemctl enable certbot.timer
 | 参数 | 说明 | 示例值 |
 |------|------|------|
 | name | 用户名 | user1 |
-| password | 密码 | your_password |
+| password | 密码 | your\_password |
 
 #### 3.5.3 TLS配置
 
 | 参数 | 说明 | 示例值 |
 |------|------|------|
 | enabled | 是否启用TLS | true |
-| server_name | 服务器名称 | your-domain.com |
-| key_path | 私钥路径 | /etc/sing-box/privkey.pem |
-| certificate_path | 证书路径 | /etc/sing-box/fullchain.pem |
+| server\_name | 服务器名称 | your-domain.com |
+| key\_path | 私钥路径 | /etc/sing-box/privkey.pem |
+| certificate\_path | 证书路径 | /etc/sing-box/fullchain.pem |
 
 ### 3.6 配置防火墙
 
@@ -644,11 +644,11 @@ docker-compose down
 | type | 协议类型 | anytls |
 | tag | 标签名称 | anytls-out |
 | server | 服务器地址 | your-domain.com |
-| server_port | 服务器端口 | 443 |
-| password | 密码 | your_password |
-| idle_session_check_interval | 空闲会话检查间隔 | 30s |
-| idle_session_timeout | 空闲会话超时时间 | 30s |
-| min_idle_session | 最小空闲会话数 | 5 |
+| server\_port | 服务器端口 | 443 |
+| password | 密码 | your\_password |
+| idle\_session\_check\_interval | 空闲会话检查间隔 | 30s |
+| idle\_session\_timeout | 空闲会话超时时间 | 30s |
+| min\_idle\_session | 最小空闲会话数 | 5 |
 
 ### 4.3 Windows客户端配置
 
@@ -1143,9 +1143,9 @@ AnyTLS 现在还没有统一的订阅链接规范，实际使用中大多还是�
 
 | 参数 | 建议值 | 说明 |
 |------|--------|------|
-| idle_session_check_interval | 30s-60s | 检查间隔不宜过短 |
-| idle_session_timeout | 60s-120s | 超时时间根据网络调整 |
-| min_idle_session | 3-10 | 保持适量的空闲会话 |
+| idle\_session\_check\_interval | 30s-60s | 检查间隔不宜过短 |
+| idle\_session\_timeout | 60s-120s | 超时时间根据网络调整 |
+| min\_idle\_session | 3-10 | 保持适量的空闲会话 |
 
 ### 5.4 与其他协议混用
 
@@ -1353,7 +1353,7 @@ sing-box check -c /etc/sing-box/config.json
 | 服务未启动 | 启动sing-box服务 |
 | 证书无效 | 检查证书路径和有效期 |
 | 密码错误 | 核对用户名密码 |
-| TLS配置错误 | 检查server_name和证书 |
+| TLS配置错误 | 检查server\_name和证书 |
 
 ### 7.2 连接建立但无法通信
 
@@ -1424,7 +1424,7 @@ sudo journalctl -u sing-box -f
 |------|----------|
 | 服务器负载高 | 升级服务器配置 |
 | 网络质量差 | 更换服务器或线路 |
-| 会话参数不当 | 调整idle_session参数 |
+| 会话参数不当 | 调整idle\_session参数 |
 | 填充方案复杂 | 简化填充方案 |
 
 ### 7.4 证书问题

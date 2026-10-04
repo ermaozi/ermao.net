@@ -20,7 +20,7 @@ Recorded registration route: [a.zlwl.org](https://a.zlwl.org/auth/register?code=
 | Universal subscription | Supported |
 | Trial | Available after registration, amount and duration not supplied |
 | Daily check-in | At least 1 GB claimed; expiry and conditions not supplied |
-| Telegram | [zlwl_org](https://t.me/zlwl_org) |
+| Telegram | [zlwl\_org](https://t.me/zlwl_org) |
 
 Large data allowances at a very low price do not establish route capacity, privacy, continuity, or service access.
 

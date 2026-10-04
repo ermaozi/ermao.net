@@ -29,7 +29,7 @@ Edge-X is a candidate for a small monthly test, not an evidence-free long commit
 | Node speed cap | Provider says none |
 | Standard subscription | Advertised as supported |
 | Overseas-user subscription | Advertised as supported |
-| Telegram channel | [EdgeX_Notice](https://t.me/EdgeX_Notice) |
+| Telegram channel | [EdgeX\_Notice](https://t.me/EdgeX_Notice) |
 | One-time package | None listed |
 
 The route, optimization, service access, and cap entries are provider information. Verify them from the intended access network.

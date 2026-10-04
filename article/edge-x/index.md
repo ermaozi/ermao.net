@@ -29,7 +29,7 @@ Edge-X 值得试，但更适合“先小档验证再升级”的买法。它的�
 | 限速策略 | 无节点限速 |
 | 通用订阅 | 支持 |
 | 海外订阅 | 支持海外专用订阅 |
-| TG 频道 | [EdgeX_Notice](https://t.me/EdgeX_Notice) |
+| TG 频道 | [EdgeX\_Notice](https://t.me/EdgeX_Notice) |
 | 一次性订阅 | 无 |
 
 ## 套餐选择建议

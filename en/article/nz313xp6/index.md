@@ -40,7 +40,7 @@ Many proxy services have recently become unreachable after data centers removed 
 >
 > This was not an easy decision. I understand what EFCloud means to many users: it is not only a service, but also a set of memories and a source of companionship. I therefore hope that migrating to XSUS can keep your experience from being interrupted as much as possible. If EFCloud can return in the future, you will still be welcome to come back and continue that journey.
 >
-> For account-migration arrangements, contact ~~@xsus_support_bot~~.
+> For account-migration arrangements, contact ~~@xsus\_support\_bot~~.
 >
 > If you have any questions or concerns, please let me know and I will do my best to resolve them. Group: ~~@xsusvpn~~
 >

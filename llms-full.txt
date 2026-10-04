@@ -130,6 +130,8 @@ description: 2026年翻墙机场快速筛选页，按价格、流量、线路、
 机场服务稳定性会变化，购买前务必先读详情页和[跑路预警汇总](/scamvpn/jichang-paolu-huizong/)。
 :::
 
+先按设备选教程，再按明确月付预算与流量比较：[打开选择器](/posts/vpn/#connection-selector)。已有订阅但连不上？使用 [Clash / Shadowrocket 分步排错](/connection-help/)，无需提供订阅链接或账号。
+
 ## 热门机场推荐
 
 ## 风险预警
@@ -1969,9 +1971,9 @@ sudo systemctl enable certbot.timer
 | type | 协议类型 | anytls |
 | tag | 标签名称 | anytls-in |
 | listen | 监听地址 | ::（IPv6）或 0.0.0.0 |
-| listen_port | 监听端口 | 443 |
+| listen\_port | 监听端口 | 443 |
 | users | 用户列表 | 用户名密码数组 |
-| padding_scheme | 填充方案 | 数组形式 |
+| padding\_scheme | 填充方案 | 数组形式 |
 | tls | TLS配置 | 证书和密钥路径 |
 
 #### 3.5.2 用户配置
@@ -1979,16 +1981,16 @@ sudo systemctl enable certbot.timer
 | 参数 | 说明 | 示例值 |
 |------|------|------|
 | name | 用户名 | user1 |
-| password | 密码 | your_password |
+| password | 密码 | your\_password |
 
 #### 3.5.3 TLS配置
 
 | 参数 | 说明 | 示例值 |
 |------|------|------|
 | enabled | 是否启用TLS | true |
-| server_name | 服务器名称 | your-domain.com |
-| key_path | 私钥路径 | /etc/sing-box/privkey.pem |
-| certificate_path | 证书路径 | /etc/sing-box/fullchain.pem |
+| server\_name | 服务器名称 | your-domain.com |
+| key\_path | 私钥路径 | /etc/sing-box/privkey.pem |
+| certificate\_path | 证书路径 | /etc/sing-box/fullchain.pem |
 
 ### 3.6 配置防火墙
 
@@ -2142,11 +2144,11 @@ docker-compose down
 | type | 协议类型 | anytls |
 | tag | 标签名称 | anytls-out |
 | server | 服务器地址 | your-domain.com |
-| server_port | 服务器端口 | 443 |
-| password | 密码 | your_password |
-| idle_session_check_interval | 空闲会话检查间隔 | 30s |
-| idle_session_timeout | 空闲会话超时时间 | 30s |
-| min_idle_session | 最小空闲会话数 | 5 |
+| server\_port | 服务器端口 | 443 |
+| password | 密码 | your\_password |
+| idle\_session\_check\_interval | 空闲会话检查间隔 | 30s |
+| idle\_session\_timeout | 空闲会话超时时间 | 30s |
+| min\_idle\_session | 最小空闲会话数 | 5 |
 
 ### 4.3 Windows客户端配置
 
@@ -2641,9 +2643,9 @@ AnyTLS 现在还没有统一的订阅链接规范，实际使用中大多还是�
 
 | 参数 | 建议值 | 说明 |
 |------|--------|------|
-| idle_session_check_interval | 30s-60s | 检查间隔不宜过短 |
-| idle_session_timeout | 60s-120s | 超时时间根据网络调整 |
-| min_idle_session | 3-10 | 保持适量的空闲会话 |
+| idle\_session\_check\_interval | 30s-60s | 检查间隔不宜过短 |
+| idle\_session\_timeout | 60s-120s | 超时时间根据网络调整 |
+| min\_idle\_session | 3-10 | 保持适量的空闲会话 |
 
 ### 5.4 与其他协议混用
 
@@ -2851,7 +2853,7 @@ sing-box check -c /etc/sing-box/config.json
 | 服务未启动 | 启动sing-box服务 |
 | 证书无效 | 检查证书路径和有效期 |
 | 密码错误 | 核对用户名密码 |
-| TLS配置错误 | 检查server_name和证书 |
+| TLS配置错误 | 检查server\_name和证书 |
 
 ### 7.2 连接建立但无法通信
 
@@ -2922,7 +2924,7 @@ sudo journalctl -u sing-box -f
 |------|----------|
 | 服务器负载高 | 升级服务器配置 |
 | 网络质量差 | 更换服务器或线路 |
-| 会话参数不当 | 调整idle_session参数 |
+| 会话参数不当 | 调整idle\_session参数 |
 | 填充方案复杂 | 简化填充方案 |
 
 ### 7.4 证书问题
@@ -5123,7 +5125,7 @@ Edge-X 值得试，但更适合“先小档验证再升级”的买法。它的�
 | 限速策略 | 无节点限速 |
 | 通用订阅 | 支持 |
 | 海外订阅 | 支持海外专用订阅 |
-| TG 频道 | [EdgeX_Notice](https://t.me/EdgeX_Notice) |
+| TG 频道 | [EdgeX\_Notice](https://t.me/EdgeX_Notice) |
 | 一次性订阅 | 无 |
 
 ## 套餐选择建议
@@ -8424,7 +8426,7 @@ description: >-
 
 这个决定来得并不轻松，因为我深知EFCLOUD在许多用户心中的意义。它不仅是一项服务，更是一段回忆、一份陪伴。正因如此，我希望通过迁移到XSUS的方式，尽最大努力保障大家的体验不中断。如果未来EFCLOUD能够恢复，我依然欢迎您回归，重新续写那段珍贵的旅程。
 
-迁移账号的具体事宜，您可以联系 ~~@xsus_support_bot~~ 处理。
+迁移账号的具体事宜，您可以联系 ~~@xsus\_support\_bot~~ 处理。
 
 如有任何问题或疑虑，也请随时向我反馈，我会尽全力为您解决。群组 ~~@xsusvpn~~
 在迁移过程中可能会带来一些不便，我对此深感抱歉。也恳请大家理解，这是为尽可能避免更大损失所做的艰难选择。
@@ -9631,7 +9633,7 @@ Fofa 是一个强大的互联网设备和服务搜索引擎，可以帮助用户
    ```
 
    * **app="Ollama"**：用于筛选与 Ollama 相关的在线服务。
-   * **is_domain=false**：排除域名服务，仅显示直接暴露的 API 端点，减少干扰信息。
+   * **is\_domain=false**：排除域名服务，仅显示直接暴露的 API 端点，减少干扰信息。
 
 2. 点击搜索后，您将看到所有公开的 Ollama API 服务列表，并可以根据需要进行进一步筛选和分析。
 
@@ -14640,7 +14642,7 @@ description: 2026年极客湾揭露手机厂商测评作弊的视频被B站下�
 
 随后网友通过网盘转存的视频也相继被和谐：
 
-* 百度网盘: https://pan.baidu.com/s/1ETOiDQAnXhw_4JAGLPtu6Q?pwd=2026
+* 百度网盘: https://pan.baidu.com/s/1ETOiDQAnXhw\_4JAGLPtu6Q?pwd=2026
 * 夸克网盘: https://pan.quark.cn/s/8d35e445caaf2026
 
 > 以上链接均已于 2026年2月23日失效。
@@ -23022,7 +23024,7 @@ xsus机场官网地址：[https://xsus.cloud](https://xsus.cloud/register?code=x
 | 🌍 **节点覆盖** | 环球多地接入点，多地区节点 |
 | 📱 **设备限制** | 多数套餐不限制设备数量 |
 | 🗝️ **解锁能力** | Netflix、Disney+、HBO、TikTok、YouTube等 |
-| 📞 **客服支持** | 在线客服，工单处理，TG: @Misaka_Yuki |
+| 📞 **客服支持** | 在线客服，工单处理，TG: @Misaka\_Yuki |
 
 ## 💳 xsus机场套餐价格 {#price}
 
@@ -23103,7 +23105,7 @@ A: 适合讨厌晚高峰炸线、追求稳定追剧/刷TikTok体验，以及被�
 A: 月付套餐请等待重置日，或购买重置包；也可以直接升级套餐。
 
 **Q: 遇到问题怎么联系客服？**
-A: 官网提供在线客服，工单有人回复，不甩锅。也可以联系 TG: @Misaka_Yuki。
+A: 官网提供在线客服，工单有人回复，不甩锅。也可以联系 TG: @Misaka\_Yuki。
 
 **Q: 是否强制年付？**
 A: 不强制，xsus提供灵活的月付选项，价格亲民，一杯奶茶钱即可入手。
@@ -24202,6 +24204,28 @@ description: 在浏览器本地检测系统时区、语言、区域格式、中�
 ---
 
 ---
+url: /connection-help/index.md
+description: >-
+  按客户端与故障现象逐步检查 Clash Verge、Clash Meta Android 和 Shadowrocket
+  的订阅、连接与规则问题，每组步骤附站内原文与资料日期，无需提交订阅凭据。
+---
+# Clash / Shadowrocket 连接排错
+
+选中你使用的客户端与问题，按步骤在自己的设备上检查。这个工具不会读取订阅、扫描网络或更改设备配置，也不保证某个节点或网站可用。
+
+## 完整教程与资料边界
+
+* [Clash Verge 桌面端教程](/article/0gematwc/)：原文发布于 2024-10-23，未声明更新日期；本工具仅摘录订阅、服务模式与规则检查，不重复旧版下载地址。
+* [Clash Meta Android 教程](/article/eh8f4n86/)：原文更新于 2026-10-01，涵盖安装兼容性、导入与网络切换检查。
+* [Shadowrocket 新手教程](/article/z747kgjd/)：原文更新于 2026-10-01，涵盖订阅类型、VPN 授权、路由模式与超时检查。
+
+以上内容于 2026-10-03 从站内现有教程整理，未新增设备实测。找不到对应现象时请先读原文，不要反复尝试来源不明的配置、证书或命令。联系客服时只描述现象，不公开订阅 URL、节点二维码、令牌或账号截图。
+
+还在选择客户端或服务？可返回[机场与套餐对比](/posts/vpn/)。
+
+---
+
+---
 url: /corrections/index.md
 description: 向二毛博客报告事实错误、失效链接、套餐价格变化、软件版本过期和争议内容的方法，以及本站核查、修改与保留更正记录的原则。
 ---
@@ -24415,15 +24439,15 @@ description: >-
   对比2026年机场套餐价格、月付与不限时流量包、Clash和Shadowrocket订阅兼容性，查看单篇评测与跑路风险记录；首次购买先用短周期验证自己的网络。
 ---
 # 2026机场推荐与VPN评测：套餐价格、节点订阅与风险对比
-![翻墙机场推荐评测 =1814x352](https://image.ermao.net/images/posts/vpn/20260315_110648-5171d6.png)
-
 选机场先看三件事：**实际付款金额、客户端能否导入、自己的网络能否稳定使用**。本文汇总套餐、订阅兼容性、详细评测与风险记录；榜单按销量排序，排名不代表实测速度或稳定性。
 
-直接前往：[机场套餐对比表](#airport-comparison) · [小火箭 / Clash Mi 节点订阅](#ios-subscription) · [按预算和不限时套餐筛选](/airport/)。已有可用订阅，先核对格式和有效期，不必重新购买。
+直接前往：[按设备、预算和流量选择](#connection-selector) · [机场套餐对比表](#airport-comparison) · [小火箭 / Clash Mi 节点订阅](#ios-subscription) · [按预算和不限时套餐筛选](/airport/)。已有可用订阅，先核对格式和有效期，不必重新购买。
 
 如果你是第一次接触机场订阅、Clash 节点、Shadowrocket 或通用订阅，建议先看[《2026翻墙机场订阅指南：Clash节点购买、导入与机场推荐》](/article/jichang-subscription-guide/)，理解“机场、VPN、客户端、节点”之间的关系后，再回来挑选套餐会更省心。
 
 本文编辑更新日期见页首，不代表所有套餐和服务已在同一天完成核验。评测会尽量记录晚高峰稳定性、套餐价格、节点可用率、客服响应和订阅兼容；缺少完整测试环境时，会明确标成资料整理或初步体验，不把服务商宣传当作本站实测。详细证据标准见[机场评测方法](/review-methodology/)，商业关系见[推广披露](/affiliate-disclosure/)。
+
+![翻墙机场推荐评测 =1814x352](https://image.ermao.net/images/posts/vpn/20260315_110648-5171d6.png)
 
 ## 小火箭和 Clash Mi 的节点订阅怎么选？ {#ios-subscription}
 

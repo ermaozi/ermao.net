@@ -181,6 +181,7 @@ This file contains links to all documentation sections.
 - [商业合作与推广链接披露](/affiliate-disclosure/index.md): 二毛博客关于机场和软件推广链接、佣金、优惠码、测试账号、赞助内容及其是否影响评测结论与推荐排名的公开说明。
 - [2026年热门翻墙机场推荐](/airport/index.md): 2026年翻墙机场快速筛选页，按价格、流量、线路、通用订阅、适用人群和风险状态对比；结论以详情页最近核验日期和证据等级为准。
 - [Claude 环境自检](/claude-env-check/index.md): 在浏览器本地检测系统时区、语言、区域格式、中文字体和设备线索，并结合出口 IP 的位置、ASN 与可选风险数据评估 Claude 使用环境。
+- [Clash / Shadowrocket 连接排错：订阅、超时与规则问题](/connection-help/index.md): 按客户端与故障现象逐步检查 Clash Verge、Clash Meta Android 和 Shadowrocket 的订阅、连接与规则问题，每组步骤附站内原文与资料日期，无需提交订阅凭据。
 - [更正与反馈政策](/corrections/index.md): 向二毛博客报告事实错误、失效链接、套餐价格变化、软件版本过期和争议内容的方法，以及本站核查、修改与保留更正记录的原则。
 - [编辑政策](/editorial-policy/index.md): 二毛博客关于文章选题、资料来源、事实核验、内容更新、自动化工具、人工编辑和利益冲突处理的公开规则。
 - [友链](/friends/index.md): 二毛博客友链页面，收录科学上网、技术博客、资源分享等相关站点；欢迎内容稳定、长期维护的网站按格式发送信息申请互换友链。
