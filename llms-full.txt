@@ -24439,15 +24439,38 @@ description: >-
   对比2026年机场套餐价格、月付与不限时流量包、Clash和Shadowrocket订阅兼容性，查看单篇评测与跑路风险记录；首次购买先用短周期验证自己的网络。
 ---
 # 2026机场推荐与VPN评测：套餐价格、节点订阅与风险对比
-选机场先看三件事：**实际付款金额、客户端能否导入、自己的网络能否稳定使用**。本文汇总套餐、订阅兼容性、详细评测与风险记录；榜单按销量排序，排名不代表实测速度或稳定性。
+先看机场汇总表，再按需筛选套餐或排查连接。**首次购买优先试用或短周期，并核对实际付款金额和客户端格式。**
 
-直接前往：[按设备、预算和流量选择](#connection-selector) · [机场套餐对比表](#airport-comparison) · [小火箭 / Clash Mi 节点订阅](#ios-subscription) · [按预算和不限时套餐筛选](/airport/)。已有可用订阅，先核对格式和有效期，不必重新购买。
+[机场汇总表](#airport-comparison) · [iOS 订阅说明](#ios-subscription) · [评测方法](/review-methodology/) · [推广披露](/affiliate-disclosure/) · [跑路预警](/scamvpn/jichang-paolu-huizong/)
 
-如果你是第一次接触机场订阅、Clash 节点、Shadowrocket 或通用订阅，建议先看[《2026翻墙机场订阅指南：Clash节点购买、导入与机场推荐》](/article/jichang-subscription-guide/)，理解“机场、VPN、客户端、节点”之间的关系后，再回来挑选套餐会更省心。
+## 2026年翻墙机场推荐一览表 {#airport-comparison}
 
-本文编辑更新日期见页首，不代表所有套餐和服务已在同一天完成核验。评测会尽量记录晚高峰稳定性、套餐价格、节点可用率、客服响应和订阅兼容；缺少完整测试环境时，会明确标成资料整理或初步体验，不把服务商宣传当作本站实测。详细证据标准见[机场评测方法](/review-methodology/)，商业关系见[推广披露](/affiliate-disclosure/)。
+按每月销量（新购与续费）排序，**不代表速度、稳定性或安全保证**。价格与支持情况以原文和购买前确认结果为准。
 
-![翻墙机场推荐评测 =1814x352](https://image.ermao.net/images/posts/vpn/20260315_110648-5171d6.png)
+\*\[机场名称]: 点击可跳转至下方简介，有更详细的介绍与价格表。
+
+\*\[不限时]: 指的是购买后流量不受时间限制，直到流量用完为止。
+
+\*\[通用订阅]: 是否支持通用订阅链接以供第三方客户端（如clash、v2ray、小火箭等）使用，而非仅能使用自有客户端。
+
+\*\[群组]: 是否有活跃的群组，通常为Telegram群或频道。购买订阅前优先考虑可以自由发言且客服响应较快的群组，能在遇到问题时第一时间获得帮助。
+
+**⚠️ 以下机场存在风险，仅供参考：**
+
+|名称|官网地址|状态|详情|
+|---|---|---|---|
+|[奈云](/scamvpn/naiyun/)|~~www.nyaff.cc~~|❌ **已确认跑路**|[跑路详情](/scamvpn/naiyun/)|
+|[CAC](/scamvpn/cac/)|~~www.cac.mom~~|⚠️ **跑路预警**|[跑路详情](/scamvpn/cac/)|
+|[okanc / OKAC](/scamvpn/okac/)|~~www.okanc.com~~|⚠️ **跑路预警**|[跑路详情](/scamvpn/okac/)|
+|[小牛云](/blog/xiaoniu/)|[官网地址](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|⚠️ **跑路预警**|[前往](/blog/xiaoniu/)|
+|[EF](/article/nz313xp6/)|~~www.efcloud1.com~~|❌ **已跑路**|[跑路详情](/article/nz313xp6/)|
+|[koodog](/scamvpn/koodog/)|[官网地址](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)|❌ **已跑路**|[跑路详情](/scamvpn/koodog/)|
+
+## 客户端兼容与资料说明
+
+请在导入前核对客户端版本和订阅协议：[Android](/article/eh8f4n86/) · [iOS](/blog/clashmi/) · [Windows](/article/0gematwc/) · [AnyTLS 协议说明](/article/anytls-guide/)。协议支持不等于服务质量保证。
+
+本文编辑日期不代表所有套餐与服务在同一天完成核验；资料整理不等同于本站实测。首次使用可先读[机场订阅指南](/article/jichang-subscription-guide/)，不限时与其他套餐见[完整目录](/airport/)。
 
 ## 小火箭和 Clash Mi 的节点订阅怎么选？ {#ios-subscription}
 
@@ -24558,37 +24581,6 @@ description: >-
 | 线路质量 | IEPL/IPLC、BGP中转、直连、倍率规则 | 影响延迟、抗拥塞和晚高峰表现 |
 | 客户端兼容 | 是否支持 Clash、Shadowrocket、V2RayNG、通用订阅 | 影响 Windows、macOS、Android、iOS 多端使用 |
 | 风险信号 | 工单响应、群组状态、官网可访问性、历史口碑 | 降低机场跑路和长期失联风险 |
-
-## 2026年翻墙机场推荐一览表 {#airport-comparison}
-
-::: warning
-请务必更换最新客户端！[Android](/article/eh8f4n86/)/[iOS](/blog/clashmi/)/[Windows](/article/0gematwc/)
-
-很多用户因为客户端版本低或压根不支持[anytls](/article/anytls-guide/)， 导致导入订阅失败
-
-后面各种稀奇古怪的新协议应该是趋势，目前防识别最好的就是 [anytls](/article/anytls-guide/) 与 vless + 流控，建议优先选择支持这两种协议的机场
-:::
-
-以下排序以==每月销量（包含新购与续费）==为主，销量越高的机场排在越前面。
-
-\*\[机场名称]: 点击可跳转至下方简介，有更详细的介绍与价格表。
-
-\*\[不限时]: 指的是购买后流量不受时间限制，直到流量用完为止。
-
-\*\[通用订阅]: 是否支持通用订阅链接以供第三方客户端（如clash、v2ray、小火箭等）使用，而非仅能使用自有客户端。
-
-\*\[群组]: 是否有活跃的群组，通常为Telegram群或频道。购买订阅前优先考虑可以自由发言且客服响应较快的群组，能在遇到问题时第一时间获得帮助。
-
-**⚠️ 以下机场存在风险，仅供参考：**
-
-|名称|官网地址|状态|详情|
-|---|---|---|---|
-|[奈云](/scamvpn/naiyun/)|~~www.nyaff.cc~~|❌ **已确认跑路**|[跑路详情](/scamvpn/naiyun/)|
-|[CAC](/scamvpn/cac/)|~~www.cac.mom~~|⚠️ **跑路预警**|[跑路详情](/scamvpn/cac/)|
-|[okanc / OKAC](/scamvpn/okac/)|~~www.okanc.com~~|⚠️ **跑路预警**|[跑路详情](/scamvpn/okac/)|
-|[小牛云](/blog/xiaoniu/)|[官网地址](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)|⚠️ **跑路预警**|[前往](/blog/xiaoniu/)|
-|[EF](/article/nz313xp6/)|~~www.efcloud1.com~~|❌ **已跑路**|[跑路详情](/article/nz313xp6/)|
-|[koodog](/scamvpn/koodog/)|[官网地址](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)|❌ **已跑路**|[跑路详情](/scamvpn/koodog/)|
 
 ## 好用的VPN机场详细评测与套餐价格
 
