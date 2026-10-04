@@ -215,8 +215,13 @@ for (const file of ['docs/.vuepress/dist/index.html', 'docs/.vuepress/dist/en/in
   if (/<template><div class="vp-post-item"/.test(postList)) {
     addIssue(errors, 'homepage-posts-inert-template', file, 'SSR post items are trapped in inert template elements')
   }
-  if (priorityImages.length !== 1) {
-    addIssue(errors, 'homepage-image-priority', file, `Expected 1 eager/high image, found ${priorityImages.length}`)
+  // A text-only first post has no LCP image; do not require an artificial banner.
+  const firstPostStart = postList.indexOf('class="vp-post-item"')
+  const nextPostStart = postList.indexOf('class="vp-post-item"', firstPostStart + 1)
+  const firstPost = postList.slice(firstPostStart, nextPostStart < 0 ? undefined : nextPostStart)
+  const expectedPriorityImages = /<img\b/.test(firstPost) ? 1 : 0
+  if (priorityImages.length !== expectedPriorityImages) {
+    addIssue(errors, 'homepage-image-priority', file, `Expected ${expectedPriorityImages} eager/high image, found ${priorityImages.length}`)
   }
   if (priorityImages[0] && /\.(?:jpe?g|png|webp)/i.test(priorityImages[0]) && !priorityImages[0].includes('srcset=')) {
     addIssue(errors, 'homepage-image-srcset', file, 'Priority raster image has no responsive srcset')

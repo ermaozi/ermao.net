@@ -14,6 +14,7 @@ export default defineClientConfig({
   },
   enhance({ app, router }) {
     app.component('AffiliateLink', AffiliateLink)
+    app.component('ConnectionTools', defineAsyncComponent(() => import('./components/ConnectionTools.vue')))
     app.component('ConnectionSelector', defineAsyncComponent(() => import('./components/ConnectionSelector.vue')))
     app.component('ConnectionTroubleshooter', defineAsyncComponent(() => import('./components/ConnectionTroubleshooter.vue')))
     // GitHub Pages cannot redirect query strings at the HTTP layer. Normalize

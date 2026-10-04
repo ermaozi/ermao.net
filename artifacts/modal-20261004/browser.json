@@ -1,0 +1,44 @@
+[
+  {
+    "viewport": "narrow",
+    "width": 390,
+    "height": 844,
+    "tableHeadingY": 822,
+    "passed": true,
+    "checks": [
+      "article not occupied by tools",
+      "empty/reset/comparison",
+      "keyboard focus trap and restore",
+      "Esc/backdrop/close",
+      "scroll restore",
+      "double open/close",
+      "switch/cancel/restart",
+      "Back/Forward",
+      "old deep links",
+      "ranking anchor",
+      "no overflow",
+      "no page errors"
+    ]
+  },
+  {
+    "viewport": "wide",
+    "width": 1440,
+    "height": 1000,
+    "tableHeadingY": 534,
+    "passed": true,
+    "checks": [
+      "article not occupied by tools",
+      "empty/reset/comparison",
+      "keyboard focus trap and restore",
+      "Esc/backdrop/close",
+      "scroll restore",
+      "double open/close",
+      "switch/cancel/restart",
+      "Back/Forward",
+      "old deep links",
+      "ranking anchor",
+      "no overflow",
+      "no page errors"
+    ]
+  }
+]
