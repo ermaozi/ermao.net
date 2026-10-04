@@ -1,0 +1,3 @@
+PASS HTML, pagination, anchors, FAQ, dates, affiliate links: /
+PASS HTML, pagination, anchors, FAQ, dates, affiliate links: /en/
+PASS robots, sitemap and 404 noindex

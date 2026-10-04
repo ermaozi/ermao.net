@@ -1,0 +1,1 @@
+PASS compiled analytics: keyboard, new tabs, privacy, failure navigation; all requests intercepted

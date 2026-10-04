@@ -1,0 +1,129 @@
+{
+  "checkedAt": "2026-10-03T19:02:43.071Z",
+  "baseURL": "http://127.0.0.1:4173",
+  "records": [
+    {
+      "viewport": 1440,
+      "client": "desktop",
+      "issue": "subscription",
+      "passed": true
+    },
+    {
+      "viewport": 1440,
+      "client": "desktop",
+      "issue": "tun",
+      "passed": true
+    },
+    {
+      "viewport": 1440,
+      "client": "desktop",
+      "issue": "rules",
+      "passed": true
+    },
+    {
+      "viewport": 1440,
+      "client": "android",
+      "issue": "install",
+      "passed": true
+    },
+    {
+      "viewport": 1440,
+      "client": "android",
+      "issue": "subscription",
+      "passed": true
+    },
+    {
+      "viewport": 1440,
+      "client": "android",
+      "issue": "connection",
+      "passed": true
+    },
+    {
+      "viewport": 1440,
+      "client": "shadowrocket",
+      "issue": "subscription",
+      "passed": true
+    },
+    {
+      "viewport": 1440,
+      "client": "shadowrocket",
+      "issue": "timeout",
+      "passed": true
+    },
+    {
+      "viewport": 1440,
+      "client": "shadowrocket",
+      "issue": "partial",
+      "passed": true
+    },
+    {
+      "viewport": 1440,
+      "keyboard": true,
+      "resetOnClientChange": true,
+      "noOverflow": true,
+      "noCredentialFields": true
+    },
+    {
+      "viewport": 390,
+      "client": "desktop",
+      "issue": "subscription",
+      "passed": true
+    },
+    {
+      "viewport": 390,
+      "client": "desktop",
+      "issue": "tun",
+      "passed": true
+    },
+    {
+      "viewport": 390,
+      "client": "desktop",
+      "issue": "rules",
+      "passed": true
+    },
+    {
+      "viewport": 390,
+      "client": "android",
+      "issue": "install",
+      "passed": true
+    },
+    {
+      "viewport": 390,
+      "client": "android",
+      "issue": "subscription",
+      "passed": true
+    },
+    {
+      "viewport": 390,
+      "client": "android",
+      "issue": "connection",
+      "passed": true
+    },
+    {
+      "viewport": 390,
+      "client": "shadowrocket",
+      "issue": "subscription",
+      "passed": true
+    },
+    {
+      "viewport": 390,
+      "client": "shadowrocket",
+      "issue": "timeout",
+      "passed": true
+    },
+    {
+      "viewport": 390,
+      "client": "shadowrocket",
+      "issue": "partial",
+      "passed": true
+    },
+    {
+      "viewport": 390,
+      "keyboard": true,
+      "resetOnClientChange": true,
+      "noOverflow": true,
+      "noCredentialFields": true
+    }
+  ],
+  "errors": []
+}

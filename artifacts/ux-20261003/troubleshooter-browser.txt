@@ -1,0 +1,1 @@
+PASS: 20 checks groups; 18 issue flows across 1440px and 390px; screenshots in /workspace/ermao.net/artifacts/ux-20261003

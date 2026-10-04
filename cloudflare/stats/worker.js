@@ -1,3 +1,5 @@
+import { handleToolEvent } from './tool-events.js';
+
 /*
   Module-format Cloudflare Worker for vuepress-plugin-stats.
   Uses `env.VIEWS_DB` (D1) or `env.VIEWS_KV` as fallback.
@@ -1340,6 +1342,7 @@ const handler = {
     ) {
       return new Response('Not Found', { status: 404 });
     }
+    if (url.pathname === '/api/stats/events') return handleToolEvent(request, env);
     const routePath = resolveStatsRoutePath(request.method, url.pathname);
     const likeApiRequest = isLikeApiPath(routePath);
     const corsHeaders = likeApiRequest ? getLikeCorsHeaders(request) : getCorsHeaders(request);

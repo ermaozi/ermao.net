@@ -1,0 +1,11 @@
+Proxy environment variables detected. We'll use your proxy for fetch requests.
+
+ ⛅️ wrangler 4.58.0
+───────────────────
+Total Upload: 61.39 KiB / gzip: 12.98 KiB
+Your Worker has access to the following bindings:
+Binding                                              Resource
+env.VIEWS_KV (85cccaee38234c2db6cab0dec578f0f2)      KV Namespace
+env.VIEWS_DB (ermao_net)                             D1 Database
+
+--dry-run: exiting now.

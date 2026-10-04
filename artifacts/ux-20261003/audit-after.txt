@@ -1,0 +1,5 @@
+Audited 367 markdown files.
+Errors: 0
+Warnings: 1
+- [long-description] docs/en/blog/guides/VS Code接入DeepSeekV4.md: 211 chars
+GEO review queue: 0

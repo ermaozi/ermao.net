@@ -1,0 +1,5 @@
+airport:check warnings:
+- 传送门: universalSubscription 仍为 unknown
+- 传送门: hasOneTimePackage 仍为 unknown
+- 传送门: 布尔字段未完全确认 (unknown / unknown)
+airport:check passed (71 records, 3 warnings)

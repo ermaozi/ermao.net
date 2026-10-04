@@ -1,4 +1,5 @@
-import { defineAsyncComponent } from 'vue'
+import { defineAsyncComponent, onMounted, onUnmounted } from 'vue'
+import { installToolAnalytics } from './utils/tool-analytics.js'
 import { defineClientConfig } from 'vuepress/client'
 import AffiliateLink from './components/AffiliateLink.vue'
 import SeoRouteHeading from './components/SeoRouteHeading.vue'
@@ -6,8 +7,15 @@ import './styles/index.css'
 
 export default defineClientConfig({
   rootComponents: [SeoRouteHeading],
+  setup() {
+    let stop: (() => void) | undefined
+    onMounted(() => { stop = installToolAnalytics() })
+    onUnmounted(() => stop?.())
+  },
   enhance({ app, router }) {
     app.component('AffiliateLink', AffiliateLink)
+    app.component('ConnectionSelector', defineAsyncComponent(() => import('./components/ConnectionSelector.vue')))
+    app.component('ConnectionTroubleshooter', defineAsyncComponent(() => import('./components/ConnectionTroubleshooter.vue')))
     // GitHub Pages cannot redirect query strings at the HTTP layer. Normalize
     // legacy links during SPA navigation; initial loads redirect in the template.
     router.beforeEach(to => {

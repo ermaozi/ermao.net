@@ -1,0 +1,16 @@
+- Initializing and preparing data
+✔ Initializing and preparing data - done in 3.50s
+- Compiling with vite
+✔ Compiling with vite - done in 27.01s
+- Rendering 398 pages
+✔ Rendering 398 pages - done in 4.66s
+@vuepress/plugin-llms:  ✔ Generated llms.txt (~22.9K tokens, 59.8 kB) with 184 documentation links
+@vuepress/plugin-llms:  ✔ Generated llms-full.txt (~484.5K tokens, 1.4 MB) with 184 documentation links
+@vuepress/plugin-llms:  ✔ Generated LLM-friendly docs for 184 documentation links
+@vuepress/plugin-llms:  ✔ Generated en/llms.txt (~11.9K tokens, 45.1 kB) with 181 documentation links
+@vuepress/plugin-llms:  ✔ Generated en/llms-full.txt (~336.2K tokens, 1.3 MB) with 181 documentation links
+@vuepress/plugin-llms:  ✔ Generated LLM-friendly docs for 181 documentation links
+@vuepress/plugin-sitemap:  ✔ Generating sitemap to sitemap.xml
+@vuepress/plugin-sitemap:  ✔ Appending sitemap path to robots.txt
+@vuepress/plugin-seo:  ✔ Generating robots.txt
+success VuePress build completed in 40.49s!

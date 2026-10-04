@@ -24,6 +24,8 @@ tags:
 机场服务稳定性会变化，购买前务必先读详情页和[跑路预警汇总](/scamvpn/jichang-paolu-huizong/)。
 :::
 
+先按设备选教程，再按明确月付预算与流量比较：[打开选择器](/posts/vpn/#connection-selector)。已有订阅但连不上？使用 [Clash / Shadowrocket 分步排错](/connection-help/)，无需提供订阅链接或账号。
+
 ## 热门机场推荐
 
 <AirportList />

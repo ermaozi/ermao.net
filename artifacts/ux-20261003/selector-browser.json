@@ -1,0 +1,44 @@
+[
+  {
+    "viewport": "narrow",
+    "width": 390,
+    "height": 844,
+    "passed": true,
+    "checks": [
+      "no overflow",
+      "device guides",
+      "empty/reset",
+      "keyboard",
+      "toggle",
+      "double comparison",
+      "escape/back/cancel",
+      "filter clears selection",
+      "expand/collapse preserves hidden selection",
+      "source routes",
+      "history",
+      "no browser errors",
+      "no analytics transmission"
+    ]
+  },
+  {
+    "viewport": "wide",
+    "width": 1440,
+    "height": 1000,
+    "passed": true,
+    "checks": [
+      "no overflow",
+      "device guides",
+      "empty/reset",
+      "keyboard",
+      "toggle",
+      "double comparison",
+      "escape/back/cancel",
+      "filter clears selection",
+      "expand/collapse preserves hidden selection",
+      "source routes",
+      "history",
+      "no browser errors",
+      "no analytics transmission"
+    ]
+  }
+]

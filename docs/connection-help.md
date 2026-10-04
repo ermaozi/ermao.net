@@ -1,0 +1,24 @@
+---
+title: Clash / Shadowrocket 连接排错：订阅、超时与规则问题
+createTime: 2026/10/03 12:00:00
+updateTime: 2026/10/03 12:00:00
+permalink: /connection-help/
+description: 按客户端与故障现象逐步检查 Clash Verge、Clash Meta Android 和 Shadowrocket 的订阅、连接与规则问题，每组步骤附站内原文与资料日期，无需提交订阅凭据。
+article: false
+---
+
+# Clash / Shadowrocket 连接排错
+
+选中你使用的客户端与问题，按步骤在自己的设备上检查。这个工具不会读取订阅、扫描网络或更改设备配置，也不保证某个节点或网站可用。
+
+<ConnectionTroubleshooter />
+
+## 完整教程与资料边界
+
+- [Clash Verge 桌面端教程](/article/0gematwc/)：原文发布于 2024-10-23，未声明更新日期；本工具仅摘录订阅、服务模式与规则检查，不重复旧版下载地址。
+- [Clash Meta Android 教程](/article/eh8f4n86/)：原文更新于 2026-10-01，涵盖安装兼容性、导入与网络切换检查。
+- [Shadowrocket 新手教程](/article/z747kgjd/)：原文更新于 2026-10-01，涵盖订阅类型、VPN 授权、路由模式与超时检查。
+
+以上内容于 2026-10-03 从站内现有教程整理，未新增设备实测。找不到对应现象时请先读原文，不要反复尝试来源不明的配置、证书或命令。联系客服时只描述现象，不公开订阅 URL、节点二维码、令牌或账号截图。
+
+还在选择客户端或服务？可返回[机场与套餐对比](/posts/vpn/)。

@@ -1,0 +1,33 @@
+(node:5070) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///workspace/ermao.net/data/tool-events.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /workspace/ermao.net/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ rankings return the top 15 and popular excludes non-articles (81.498838ms)
+✔ engagement batches multiple article counters into one D1 query (45.84387ms)
+✔ historical stats keep daily buckets and fill gaps in one D1 query (62.663474ms)
+✔ private reports use the protected route without exposing legacy or alternate hosts (2.50535ms)
+✔ async account pools reserve their loading space (19.030547ms)
+✔ popular rankings mount only after data is ready (2.298422ms)
+✔ engagement errors remain announced without changing layout (1.735249ms)
+✔ post pages reserve the client-discovered local navigation row (3.332875ms)
+(node:5072) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///workspace/ermao.net/docs/.vuepress/plugins/stats/client/stats-path.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /workspace/ermao.net/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+统计来源检查通过：外部首访、站内导流、锚点去重和双语路径。
+✔ scripts/stats-attribution.test.mjs (74.260552ms)
+(node:5099) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///workspace/ermao.net/data/tool-events.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /workspace/ermao.net/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ event route persists only UTC daily fixed counters, including repeated requests (76.043149ms)
+✔ rejects arbitrary fields, event names, origins, large bodies and unavailable storage (7.342541ms)
+✔ browser delegation omits identifiers, dedupes clicks, supports change and cleanup, suppresses previews (7.685476ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 304.177625

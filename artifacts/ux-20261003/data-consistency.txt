@@ -1,0 +1,1 @@
+Selector: 26 providers checked against source prices, traffic and dates; ambiguity exclusions passed.

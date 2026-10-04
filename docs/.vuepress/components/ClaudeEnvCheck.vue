@@ -252,7 +252,7 @@ const networkStatus = ref<NetworkStatus>('loading')
 const networkInfo = ref<NetworkInfo | null>(null)
 const networkError = ref('')
 
-let scanTicker: ReturnType<typeof setInterval> | undefined
+let scanTicker: number | undefined
 let scoreAnimationFrame: number | undefined
 let networkController: AbortController | undefined
 

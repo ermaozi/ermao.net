@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checks": [
+    "compiled endpoint normalization",
+    "keyboard activation",
+    "ctrl and middle new tab exactly once",
+    "503 does not block navigation",
+    "no Referer or Cookie",
+    "strict two-field payload",
+    "all network intercepted; zero production writes"
+  ],
+  "events": [
+    {
+      "surface": "vpn",
+      "event": "selector_click"
+    },
+    {
+      "surface": "selector",
+      "event": "tutorial_click"
+    },
+    {
+      "surface": "selector",
+      "event": "tutorial_click"
+    },
+    {
+      "surface": "vpn",
+      "event": "troubleshooter_click"
+    }
+  ]
+}
