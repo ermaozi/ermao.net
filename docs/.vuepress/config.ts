@@ -2,6 +2,7 @@ import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { templateRenderer } from '@vuepress/utils'
 import paginationPlugin, { POSTS_PER_PAGE } from './plugins/pagination.js'
+import buildRevisionPlugin from './plugins/build-revision.js'
 import { plumeTheme } from 'vuepress-theme-plume'
 import { fileURLToPath } from 'node:url'
 // @ts-ignore
@@ -168,6 +169,7 @@ export default defineUserConfig({
   shouldPrefetch: false,
   templateBuildRenderer: renderBuildTemplate,
   plugins: [
+    buildRevisionPlugin(),
     homepagePostsSsrPlugin(),
     paginationPlugin(),
     utilityPagesPlugin(),

@@ -53,7 +53,7 @@
 |[掌中世界](#掌中世界)|[qq.zjs2025.com](https://qq.zjs2025.com/user/register?code=S74QiRGN)| 无 | 18元 100G/月|❌|暂无|[前往](./v1/机场推荐掌中世界.md)|
 |[白羊星](#白羊星)|[baiyangxi.com](https://baiyangxi.com/#/register?code=gelkjfjz)| 7天 10G | 12元 100G/月|✔|暂无|[前往](./v1/机场推荐白羊星.md)|
 |[CyberGuard](#cyberguard)|[cyberguard.best](https://www.cyberguard.best/#/register?code=yoyUW3R9)| 无 |18元 100G/月|✔|[TG](https://t.me/CyberGuardChat)|[前往](./v1/机场推荐CyberGuard.md)|
-|[XSUS](#xsus)|[xsus.cloud](https://xsus.cloud/register?code=xJFcT1Dw)| 无 |8元 168G/30天|✔|[TG](https://t.me/xsusvpn)|[前往](./v1/机场推荐XSUS.md)|
+|[XSUS](#xsus)|[xsus.cloud](https://xsus.cloud/register?code=xJFcT1Dw)| 无 |2026详情记录10元 168GB/月；现价待核实|✔|[TG](https://t.me/xsusvpn)|[前往](./docs/blog/机场推荐/2026/机场推荐xsus.md)|
 |[Aladdin](#aladdin)|[www.avatargpt.xyz/](https://short.thisgourl.xyz/#/register?code=tvLw0oMj)|无|30元 390G/半年|❌|暂无|暂无|
 |[小牛云](#小牛云)|[xiaoniuyun.cc](https://www.xiaoniuyun.cc/register/cn?code=n31onhiT)| 无 |预警|✔|[TG](https://t.me/aoxcloud)|[前往](./v2/机场推荐小牛云.md)|
 |[EF](#ef)|~~www.efcloud1.com~~|无|跑路|❌|跑路|跑路|
@@ -96,7 +96,7 @@ flybit官网地址：[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM
 
 最便宜的订阅有12元 100G/月。
 
-解锁主流流媒体和ChatGPT，IEPL接口线路和普通线路一样的价格，机场稳定，几乎全部节点全天候可用。购买之前记得领一下首页的优惠券再下单。
+资料列有月付套餐和不限时流量包；IEPL线路及流媒体、ChatGPT访问属于服务商宣传。旧测速图缺少完整时间与环境记录，不能保证当前可用性或晚高峰表现，购买前请核对条款并小档测试。
 
 ---
 
@@ -772,7 +772,7 @@ XSUS官网地址：[xsus.cloud](https://xsus.cloud/register?code=xJFcT1Dw)
 
 试用：无
 
-最便宜的订阅有8元 168G/30天。稳定运行2年+，节点质量高，支持按流量购买，支持支付宝、微信、USDT支付。
+旧版资料记录最低8元168G/30天；2026-02-24的详情资料记录10元168GB/月，变价时间与优惠条件未确认，现价待核实。资料列有按流量购买及支付宝、微信、USDT支付，当前支持情况请在购买前确认。
 
 ---
 

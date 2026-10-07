@@ -81,7 +81,7 @@ If a site fails in Config mode, temporarily compare it with Proxy mode before ch
 | Server selected but no connection | Try other locations and compare Config with Proxy mode |
 | Repeated timeouts | Restart the VPN, compare Wi-Fi with mobile data, and update the subscription |
 | Only some websites fail | Compare routing modes, then inspect DNS and rules |
-| App update requests another account | Use the account that originally obtained the app; export configurations before considering a reinstall |
+| App update requests another account | Use the account that originally obtained the app. Before considering a reinstall, export subscriptions and configurations and confirm that an account you own can download it; a paid app may require another purchase |
 
 ## 6. Protect account information
 

@@ -44,14 +44,14 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
 *   **适用人群**：仅需单次或偶尔下载境外特有应用（如 **Shadowrocket、Clash Mi、TikTok、ChatGPT、Potatso Lite**），不打算在 App 内进行购汇或长期订阅的用户。通过共享账号，可实现“即下即走”的零成本需求。
 *   **不适宜人群**：重度依赖海外 iOS 软件生态、需要频繁更新已下载的 App，或有应用内购买（In-App Purchase）需求的使用者。客观结论上，由于共享账号随时面临风控封堵，我们更建议此类受众直接注册属于自己的专属外区 Apple ID，以获取数据隔离的安全保障与应用的长久使用权。
 
-## 最新免费外区 Apple ID 账号池 (实时更新)
+## 共享 Apple ID 列表与数据更新时间 {#最新免费外区-apple-id-账号池-实时更新}
 
 列表由接口加载，下方显示的是数据更新时间，不是每个账号的实时登录检测结果。商店地区、应用购买记录和账号状态可能不同，不能保证每个账号都能下载 Shadowrocket 等付费应用。请勿修改密码、添加付款方式或更改双重认证设置。
 
 
 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; padding: 10px 16px; background-color: var(--vp-c-bg-alt); border-radius: 8px;">
   <div style="color: var(--vp-c-text-2); font-size: 14px;">
-    更新时间：{{ updateTime || '加载中...' }}
+    更新时间：{{ updateTime || (loading ? '加载中...' : '暂无更新时间') }}
   </div>
   <button class="refresh-btn" @click="fetchData" :disabled="loading">
     <span v-if="loading">刷新中...</span>
@@ -72,6 +72,8 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
   </div>
 
   <p v-else-if="error" class="account-error" role="alert">{{ error }}</p>
+
+  <p v-else-if="accounts.length === 0" class="account-loading-label" role="status">当前列表为空，请稍后刷新；这不代表已检查任何账号的可用性。</p>
 
   <div v-else class="account-grid">
     <Card v-for="(acc, index) in accounts" :key="index">
@@ -178,7 +180,7 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
 ## 常见问题与排错指南 (FAQ)
 
 ### 1. 为什么免费的苹果美区账号会提示“Apple ID 已锁定”？
-这是由于账号在短时间内被过多不同设备在异地（跨区）登录，触发了 Apple 官方的安全防护策略。对于公开免费分享的账号，**封停和锁定是无法彻底避免的客观结论**。遇到此情况，不必尝试解锁（往往需要绑定手机或验证安全问题），请直接刷新页面，使用另一个绿色可用状态的账号。
+这是由于账号在短时间内被过多不同设备在异地（跨区）登录，触发了 Apple 官方的安全防护策略。对于公开免费分享的账号，**封停和锁定是无法彻底避免的客观结论**。遇到此情况，不必尝试解锁（往往需要绑定手机或验证安全问题），本页的标签颜色只区分地区，不代表账号通过了登录检测；刷新列表也不能保证账号可用。不要尝试修改他人的密码或安全设置，长期使用请创建并管理自己的 Apple 账户。
 
 ### 2. 使用共享 Apple ID 下载的应用，后续如何更新？
 App Store 更新时可能要求使用最初取得该应用的 Apple 账户。共享账号会轮换，后续未必能再次取得原账户，因此不适合依赖长期更新的重要应用。
@@ -191,12 +193,14 @@ App Store 更新时可能要求使用最初取得该应用的 Apple 账户。共
 <LinkCard title="🛠️ Asspp测评：打破 Apple ID 频切痛点，多账号多区域管理利器" href="/blog/asspp-download-guide/" description="打破繁琐的 App Store 登录壁垒。通过 Asspp 一键切换全球多个 Apple ID，轻松下载非本区应用及 App 历史版本，彻底解决账号验证繁琐及跨区频繁掉线的痛点使用边界。" />
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const accounts = ref([])
 const updateTime = ref('')
 const loading = ref(true)
 const error = ref('')
+let activeController = null
+let disposed = false
 
 const getBadgeType = (region) => {
   if (region.includes('美')) return 'tip';
@@ -207,12 +211,20 @@ const getBadgeType = (region) => {
 }
 
 const fetchData = async () => {
+  if (activeController || disposed) return
+  const controller = new AbortController()
+  activeController = controller
   loading.value = true;
   error.value = '';
+  const timeout = setTimeout(() => controller.abort(), 15000)
   try {
-    const res = await fetch('https://api.ermao.net/get_apple_id')
+    const res = await fetch('https://api.ermao.net/get_apple_id', { signal: controller.signal })
     if (!res.ok) throw new Error('网络请求失败')
     const data = await res.json()
+    if (!Array.isArray(data?.accounts) || !data.accounts.every(acc =>
+      acc && typeof acc === 'object' && !Array.isArray(acc) && ['region', 'email', 'password'].every(key => typeof acc[key] === 'string')
+    ) || (data.updated_at != null && typeof data.updated_at !== 'string')) throw new Error('Invalid account list response')
+    if (disposed || activeController !== controller) return
     // 为每个账号添加复制状态标记
     accounts.value = (data.accounts || []).map(acc => ({
         ...acc,
@@ -221,15 +233,26 @@ const fetchData = async () => {
     }))
     updateTime.value = data.updated_at || ''
   } catch (e) {
+    if (disposed || activeController !== controller) return
     console.error(e)
-    error.value = '获取账号失败，请稍后刷新重试'
+    error.value = e?.name === 'AbortError' ? '请求超时，请检查网络后刷新重试' : '获取账号失败，请稍后刷新重试'
   } finally {
-    loading.value = false
+    clearTimeout(timeout)
+    if (activeController === controller) {
+      activeController = null
+      if (!disposed) loading.value = false
+    }
   }
 }
 
 onMounted(() => {
   fetchData()
+})
+
+onBeforeUnmount(() => {
+  disposed = true
+  activeController?.abort()
+  activeController = null
 })
 
 const copy = (text, acc, type) => {
