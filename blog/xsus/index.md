@@ -7,6 +7,8 @@ description: >-
 
 xsus机场官网地址：[https://xsus.cloud](https://xsus.cloud/register?code=xJFcT1Dw)
 
+价格说明：本文套餐资料记录为10元/月168GB；[旧版文章](/article/bc6o8acd/)记录为8元168G/月。现有资料未说明变价时间或8元优惠条件，不能把两者视为已核实的当前价格。本文保留原有资料日期，购买前请以结算页核对。
+
 ## 目录
 
 * [🎯 xsus机场概览](#overview)

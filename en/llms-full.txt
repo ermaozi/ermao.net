@@ -2941,11 +2941,12 @@ The source article records the following features:
 ---
 url: /en/article/bc6o8acd/index.md
 description: >-
-  XSUS starts at CNY 8 for 168GB. Review its plans, server selection, speed,
-  Netflix and ChatGPT access, support, and test screenshots.
+  An archived XSUS record listing CNY 8 for 168 GB, while the 2026 review
+  records CNY 10. The change date, discount conditions, current price, and
+  service status remain unverified.
 ---
 # ✈️ XSUS Review—An Established, High-Value Proxy Service
-XSUS starts at CNY 8 per month for 168 GB. The source article describes it as an established, reliable service with strong value.
+This page preserves an older XSUS record of CNY 8 per month for 168 GB. The [2026 review](/en/blog/xsus/) records CNY 10 for 168 GB/month. The available sources do not establish when the price changed or any conditions for a CNY 8 offer. Verify the current price before purchase.
 
 XSUS official website: [https://xsus.cloud](https://xsus.cloud/register?code=xJFcT1Dw)
 
@@ -2955,7 +2956,7 @@ XSUS official website: [https://xsus.cloud](https://xsus.cloud/register?code=xJF
 
 ## XSUS overview
 
-The least expensive subscription is CNY 8 per month for 168 GB.
+The older source recorded a minimum subscription of CNY 8 per month for 168 GB; this is not a current-price claim.
 
 XSUS is a long-running proxy service with affordable plans and a large server selection. The source article reports high server quality and speed, with access to Netflix and ChatGPT during its observations.
 
@@ -9726,7 +9727,7 @@ If a site fails in Config mode, temporarily compare it with Proxy mode before ch
 | Server selected but no connection | Try other locations and compare Config with Proxy mode |
 | Repeated timeouts | Restart the VPN, compare Wi-Fi with mobile data, and update the subscription |
 | Only some websites fail | Compare routing modes, then inspect DNS and rules |
-| App update requests another account | Use the account that originally obtained the app; export configurations before considering a reinstall |
+| App update requests another account | Use the account that originally obtained the app. Before considering a reinstall, export subscriptions and configurations and confirm that an account you own can download it; a paid app may require another purchase |
 
 ## 6. Protect account information
 
@@ -13118,7 +13119,7 @@ The interface below loads account data and its update timestamp, not a live sign
 
 ### Why does a free U.S. Apple ID say it is locked?
 
-Many devices sign in to the public account from different regions within a short time, triggering Apple's security protections. Lockouts cannot be eliminated for a publicly shared account. Do not attempt account recovery, which usually requires the owner's phone number or security answers. Refresh the page and try another account currently reported as available.
+Many devices sign in to the public account from different regions within a short time, triggering Apple's security protections. Lockouts cannot be eliminated for a publicly shared account. Do not attempt account recovery, which usually requires the owner's phone number or security answers. Label colors identify regions, not a successful sign-in test. Refreshing the list does not verify account availability. Do not change another person's password or security settings; use an Apple Account you own for continued use.
 
 ### How do I update an app downloaded with a shared Apple ID?
 
@@ -20966,7 +20967,7 @@ Those network, capacity, service-access, and support descriptions require curren
 | Device claim | Most plans advertised without a device-count limit |
 | Service access | Netflix, Disney+, HBO, TikTok, and YouTube |
 
-The site's ranking dataset may be updated independently from this February 2026 article, so confirm the current entry price in the live checkout.
+The [older article](/en/article/bc6o8acd/) records CNY 8 for 168 GB/month, while this review records CNY 10. The sources do not establish the change date or any discount conditions for CNY 8. The original source date is retained; neither record verifies the current checkout price.
 
 ## Recorded plans
 
@@ -22712,7 +22713,7 @@ Avoid buying a long plan immediately; prefer monthly or pay-as-you-go packages. 
 
 **Examples in this guide:**
 
-* [XSUS](./2026/机场推荐xsus.md) — CNY 8 for 168 GB/30 days;
+* [XSUS](./2026/机场推荐xsus.md) — the 2026 review records CNY 10 for 168 GB/month; current price unverified;
 * [xxyun](./2026/机场推荐xxyun.md) — CNY 9.99 for 100 GB/month;
 * [Flybit](./2026/机场推荐flybit.md) — CNY 15 for 128 GB/month.
 

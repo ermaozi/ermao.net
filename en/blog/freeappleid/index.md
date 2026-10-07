@@ -35,7 +35,7 @@ The interface below loads account data and its update timestamp, not a live sign
 
 ### Why does a free U.S. Apple ID say it is locked?
 
-Many devices sign in to the public account from different regions within a short time, triggering Apple's security protections. Lockouts cannot be eliminated for a publicly shared account. Do not attempt account recovery, which usually requires the owner's phone number or security answers. Refresh the page and try another account currently reported as available.
+Many devices sign in to the public account from different regions within a short time, triggering Apple's security protections. Lockouts cannot be eliminated for a publicly shared account. Do not attempt account recovery, which usually requires the owner's phone number or security answers. Label colors identify regions, not a successful sign-in test. Refreshing the list does not verify account availability. Do not change another person's password or security settings; use an Apple Account you own for continued use.
 
 ### How do I update an app downloaded with a shared Apple ID?
 

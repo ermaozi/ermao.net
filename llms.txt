@@ -32,7 +32,7 @@ This file contains links to all documentation sections.
 - [飞牛OS通过docker安装OneDrive备份文件(超多废话版)](/article/aofygutj/index.md): 飞牛 OS 通过 Docker 安装 OneDrive 并备份文件的教程，记录账号准备、容器部署、同步配置和备份注意事项，适合 NAS 用户参考。
 - [docker 部署 aria2](/article/b06gglcq/index.md): Docker 部署 Aria2 下载器教程，包含 Aria2 服务配置、Aria2 Explorer 浏览器插件连接、WebSocket 访问和内网穿透场景下的性能排查。
 - [✈️机场推荐【龙猫云】 - 全IPLC专线、老牌机场](/article/b6t9mwuv/index.md): https://ermaozi01.lmvipaff.com/ 最便宜的订阅有 15元 100G/月。 **特性如下** - 超高性价比，节点质量高，客服实时在线，晚高峰不限速，不限制设备。 - IPLC深港、沪美、沪日专线， - 流媒体测试时可访问（包括Netflix , Disney+, HBO等） - 完美解...
-- [✈️机场推荐【XSUS】 - 高性价比、老牌机场](/article/bc6o8acd/index.md): xsus机场，最低 8元 168G/月。老牌机场、稳定可靠、高性价比。 xsus官网地址：https://xsus.cloud
+- [✈️机场推荐【XSUS】 - 高性价比、老牌机场](/article/bc6o8acd/index.md): XSUS旧版资料记录8元168G/月；2026详情记录10元168GB/月，变价时间与优惠条件未确认。此页保留历史资料，当前价格和服务状态待核实。
 - [2026 边缘节点机场评测：9元/月起，IPLC低门槛方案适合谁](/article/bianyuanjiedian/index.md): 边缘节点主打 IPLC 定位与低门槛年付。本文基于已知资料整理套餐选择建议、证据边界、风险提示和上手路径，帮你快速判断值不值得买。
 - [✈️机场推荐【闪狐云】 - 高性价比、新机场、优质节点](/article/bls8yo25/index.md): https://erozi01.ffvipaff.cc 闪狐云跨境专线，畅享全球网络无缝连接。 ⚡ 高速稳定，全球畅游 通过五大运营商BGP+IPLC动态优化和国际多个出口节点，闪狐云的网络连接稳定无忧，确保您随时随地享受如本地般的极速上网体验。无论是高清流媒体观看、在线游戏，还是重要的工作会议，网络质量始终如一...
 - [Telegram 搜索机器人实用指南：推荐、技巧与风险边界](/article/bsnuua0h/index.md): 面向新手与进阶用户的 Telegram 搜索机器人指南，包含使用准备、机器人对比、检索技巧、风险合规提醒与常见问题，帮助你更稳妥地查找频道、群组与文件资源。
