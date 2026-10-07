@@ -3626,7 +3626,7 @@ export const airportSources: AirportSource[] = [
   {
     id: 'flybit',
     name: 'flybit',
-    description: '解锁主流流媒体和ChatGPT，IEPL接口线路和普通线路一样的价格，机场稳定，几乎全部节点全天候可用。购买之前记得领一下首页的优惠券再下单。',
+    description: '资料记录月付15元128G起，另有不限时流量包；IEPL线路及流媒体、ChatGPT访问属于服务商宣传。旧测速图缺少完整时间与环境记录，不能保证当前可用性或晚高峰表现，购买前请核对条款并小档测试。',
     rank: 1,
     officialHref: 'https://goflybit.com/#/register?code=7h1NCdM7',
     universalSubscription: true,
@@ -3641,11 +3641,11 @@ export const airportSources: AirportSource[] = [
   {
     id: 'xsus',
     name: 'XSUS',
-    description: 'XSUS 当前最低订阅为 8元 168G/30天，购买前建议先看详情页、自行测试常用节点和晚高峰表现。',
+    description: 'XSUS 2026详情资料记录入门月付10元168GB，旧版文章记录为8元；尚无证据说明两者的变价时间或优惠条件，当前价格请在购买前核实，并自行测试常用节点和晚高峰表现。',
     rank: 2,
     officialHref: 'https://xsus.cloud/register?code=xJFcT1Dw',
     universalSubscription: true,
-    minPlanText: '8元 168G/30天',
+    minPlanText: '资料记录10元 168GB/月；现价待核实',
     hasOneTimePackage: true,
     telegramHref: 'https://t.me/xsusvpn',
     reviewHref: '/blog/xsus/',

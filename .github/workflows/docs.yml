@@ -1,82 +1,119 @@
 name: docs
 
 on:
-  # 每当 push 到 main 分支时触发部署
   push:
     branches: [main]
-  # 手动触发部署
+  pull_request:
+    branches: [main]
   workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   docs:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
         with:
-          # “最近更新时间” 等 git 日志相关信息，需要拉取全部提交记录
           fetch-depth: 0
-
+          persist-credentials: false
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
-          # 选择要使用的 pnpm 版本
           version: 10.32.1
-          # 使用 pnpm 安装依赖
           run_install: false
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          # 选择要使用的 node 版本
           node-version: 24
-          # 缓存 pnpm 依赖
           cache: pnpm
-
       - name: Install locked dependencies
         run: pnpm install --frozen-lockfile
-
-      - name: Check connection tools
+      - name: Check connection tools and regression contracts
         run: |
           pnpm typecheck
           pnpm lint
           pnpm test
           pnpm test:data
-
-      # 运行构建脚本
+          python3 scripts/seo-regression.test.py
       - name: Build VuePress site
         run: pnpm build
-
       - name: Audit site content and generated homepage
         run: |
           pnpm run audit:site
           python3 scripts/seo-regression.py
+      - name: Preserve verified build for deployment
+        if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-${{ github.sha }}
+          path: docs/.vuepress/dist
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 3
 
-      # 查看 workflow 的文档来获取更多信息
-      # @see https://github.com/crazy-max/ghaction-github-pages
+  deploy:
+    concurrency:
+      group: ermao-net-production
+      cancel-in-progress: false
+    needs: docs
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Retrieve this commit's verified build
+        uses: actions/download-artifact@v4
+        with:
+          name: site-${{ github.sha }}
+          path: docs/.vuepress/dist
+      - name: Reject an outdated release before deployment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const branch = await github.rest.repos.getBranch({
+              owner: context.repo.owner, repo: context.repo.repo, branch: 'main'
+            });
+            if (branch.data.commit.sha !== context.sha) {
+              core.setFailed('main has advanced; refusing to publish an outdated build');
+            }
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4
         with:
-          # 部署到 gh-pages 分支
           target_branch: gh-pages
           keep_history: true
           jekyll: false
-          # 部署目录为 VuePress 的默认输出目录
           build_dir: docs/.vuepress/dist
           fqdn: www.ermao.net
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-
-      - name: Verify production SEO and HTTP responses
+      - name: Verify new release files through fresh CDN query keys
         run: python3 scripts/seo-regression.py --live
-
+      - name: Check unparameterized public URL cache propagation
+        shell: bash
+        run: |
+          set +e
+          python3 scripts/seo-regression.py --canonical-status | tee /tmp/canonical-status.log
+          status=${PIPESTATUS[0]}
+          set -e
+          cat /tmp/canonical-status.log >> "$GITHUB_STEP_SUMMARY"
+          if [ "$status" -eq 2 ]; then
+            echo "::warning::Release files verified; public URL cache propagation remains pending. Follow the per-route status in the job summary."
+          elif [ "$status" -ne 0 ]; then
+            exit "$status"
+          fi
       - name: Record production HTTP diagnostics
         if: always()
         run: python3 scripts/seo-regression.py --http-audit
 
   production-http-audit:
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - name: Inspect production routing and cache responses
         run: python3 scripts/seo-regression.py --http-audit

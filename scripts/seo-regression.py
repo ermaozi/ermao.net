@@ -8,6 +8,8 @@ import re
 import time
 import urllib.error
 import urllib.request
+from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
+from urllib.robotparser import RobotFileParser
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1] / 'docs/.vuepress/dist'
@@ -54,7 +56,133 @@ def fetch(url, follow=True):
         response = error
     return response.status, response.headers, response.read().decode('utf-8', errors='replace')
 
+def revision(doc):
+    values = doc.select('meta', 'name', 'ermao:build-revision')
+    assert len(values) == 1 and values[0].get('content'), 'Missing or duplicate build revision'
+    return values[0]['content']
+
+
+def validate_indexable(route, doc, expected_revision):
+    assert revision(doc) == expected_revision, f'{route}: stale or mixed deployment revision'
+    assert doc.select('link', 'rel', 'canonical') == [{'rel': 'canonical', 'href': HOST + route}], route
+    descriptions = doc.select('meta', 'name', 'description')
+    assert len(descriptions) == 1 and descriptions[0].get('content', '').strip(), f'{route}: missing/duplicate description'
+    for name in ('robots', 'googlebot', 'bingbot'):
+        for meta in doc.select('meta', 'name', name):
+            tokens = re.split(r'[\s,;]+', meta.get('content', '').lower())
+            assert not {'noindex', 'none'} & set(tokens), f'{route}: indexing is blocked'
+    urls = doc.select('meta', 'property', 'og:url')
+    assert len(urls) == 1 and urls[0].get('content') == HOST + route, f'{route}: wrong Open Graph URL'
+
+
+def validate_discovery(robots, sitemap):
+    parser = RobotFileParser()
+    parser.parse(robots.splitlines())
+    for crawler in ('Googlebot', 'Bingbot', 'YandexBot'):
+        for route in ('/', '/posts/vpn/', '/airport/', '/blog/freeappleid/', '/article/z747kgjd/'):
+            assert parser.can_fetch(crawler, HOST + route), f'{crawler} blocked from {route}'
+    assert 'Sitemap: ' + HOST + '/sitemap.xml' in robots
+    root = ET.fromstring(sitemap)
+    namespace = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
+    locations = [node.text for node in root.findall('s:url/s:loc', namespace)]
+    assert len(locations) == len(set(locations)), 'Duplicate sitemap URLs'
+    for url in locations:
+        parsed = urlsplit(url)
+        assert parsed.scheme == 'https' and parsed.netloc == 'www.ermao.net', f'Noncanonical sitemap host: {url}'
+        assert not parsed.query and not parsed.fragment, f'Parameterized sitemap URL: {url}'
+        assert parsed.path not in ('/404', '/404.html', '/en/404.html', '/stats/', '/en/stats/'), url
+        assert not parsed.path.startswith('/sub/'), url
+    for route in ('/', '/en/', '/posts/vpn/', '/en/posts/vpn/', '/airport/', '/page/2/', '/blog/freeappleid/', '/en/blog/freeappleid/', '/article/z747kgjd/', '/en/article/z747kgjd/'):
+        assert HOST + route in locations, f'Missing sitemap URL: {route}'
+
+
+def critical_assets(doc):
+    paths = set()
+    for tag, attrs in doc.tags:
+        url = attrs.get('src') if tag == 'script' and attrs.get('type') == 'module' else None
+        if tag == 'link' and attrs.get('rel') in ('stylesheet', 'modulepreload'):
+            url = attrs.get('href')
+        if url and url.startswith('/assets/'):
+            paths.add(url)
+    return paths
+
+
+def validate_asset(url, status, content_type, body):
+    assert status == 200, f'{url}: HTTP {status}'
+    mime = content_type.partition(';')[0].strip().lower()
+    suffix = Path(urlsplit(url).path).suffix
+    allowed = {'text/css'} if suffix == '.css' else {'text/javascript', 'application/javascript', 'application/x-javascript'}
+    assert mime in allowed, f'{url}: unexpected Content-Type {content_type}'
+    assert body.strip() and not body.lstrip().lower().startswith(('<!doctype html', '<html')), f'{url}: empty or HTML asset response'
+
+
+
+CORE_ROUTES = tuple(
+    prefix + suffix
+    for prefix in ('/', '/en/')
+    for suffix in ('', 'page/2/', 'posts/vpn/', 'airport/', 'blog/freeappleid/', 'article/z747kgjd/', 'blog/flybit/')
+)
+
+
+def probe_url(url, expected_revision, nonce):
+    parts = urlsplit(url)
+    query = parse_qsl(parts.query, keep_blank_values=True)
+    query.extend((('ermao_release', expected_revision), ('ermao_probe', str(nonce))))
+    return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), parts.fragment))
+
+
+def validate_http_indexability(route, headers):
+    mime = headers.get('content-type', '').partition(';')[0].lower().strip()
+    assert mime == 'text/html', f'{route}: unexpected HTML Content-Type {mime}'
+    robots = headers.get('x-robots-tag', '').lower()
+    assert not re.search(r'\b(?:noindex|none)\b', robots), f'{route}: blocked by X-Robots-Tag'
+
+
+def canonical_status(expected_revision, assets, fetcher=fetch):
+    results = []
+    public_assets = set()
+    pending = False
+    try:
+        for route in CORE_ROUTES:
+            status, headers, body = fetcher(HOST + route)
+            assert status == 200, f'{route}: HTTP {status}'
+            validate_http_indexability(route, headers)
+            doc = Document(body)
+            public_assets.update(critical_assets(doc))
+            markers = doc.select('meta', 'name', 'ermao:build-revision')
+            actual = markers[0].get('content') if len(markers) == 1 else None
+            current = actual == expected_revision
+            if current:
+                validate_indexable(route, doc, expected_revision)
+            else:
+                pending = True
+            results.append({'route': route, 'revision': actual, 'current': current,
+                            'age': headers.get('age'), 'cache_control': headers.get('cache-control'),
+                            'cf_cache_status': headers.get('cf-cache-status')})
+        # Stale HTML is only a healthy propagation delay if the assets it
+        # currently asks browsers to load are still available.
+        if not pending:
+            public_assets.update(assets)
+        for asset in sorted(public_assets):
+            status, headers, body = fetcher(HOST + asset)
+            validate_asset(asset, status, headers.get('content-type', ''), body)
+    except (AssertionError, urllib.error.URLError, TimeoutError, ValueError) as error:
+        print('CANONICAL_STATUS ' + json.dumps({'status': 'error', 'expected_revision': expected_revision,
+              'error': str(error), 'routes': results}, ensure_ascii=False), flush=True)
+        return 1
+    state = 'pending' if pending else 'current'
+    print('CANONICAL_STATUS ' + json.dumps({'status': state, 'expected_revision': expected_revision,
+          'routes': results}, ensure_ascii=False), flush=True)
+    print('Public URL cache propagation is still pending; release verification does not establish propagation.'
+          if pending else 'PASS public URLs and their critical assets have reached the expected release.', flush=True)
+    return 2 if pending else 0
+
+
 def validate(read):
+    expected_revision = revision(Document(local('/')))
+    for prefix in ('/', '/en/'):
+        for route in (prefix, prefix + 'page/2/', prefix + 'posts/vpn/', prefix + 'airport/', prefix + 'blog/freeappleid/', prefix + 'article/z747kgjd/', prefix + 'blog/flybit/'):
+            validate_indexable(route, Document(read(route)), expected_revision)
     for prefix in ('/', '/en/'):
         home, second = Document(read(prefix)), Document(read(prefix + 'page/2/'))
         for route, doc in ((prefix, home), (prefix+'page/2/', second)):
@@ -82,12 +210,8 @@ def validate(read):
         assert all({'sponsored','nofollow','noopener'} <= set(a.get('rel','').split()) and a['href'].endswith('#/register?code=7h1NCdM7') for a in ctas)
         print('PASS HTML, pagination, anchors, FAQ, dates, affiliate links:', prefix, flush=True)
     assert 'noindex' in Document(read('/404.html')).select('meta', 'name', 'robots')[0]['content']
-    assert 'Sitemap: '+HOST+'/sitemap.xml' in read('/robots.txt')
-    sitemap = read('/sitemap.xml')
-    ET.fromstring(sitemap)
-    assert '/404.html' not in sitemap and '/sub/reachable/' not in sitemap
-    assert HOST+'/page/2/' in sitemap
-    print('PASS robots, sitemap and 404 noindex', flush=True)
+    validate_discovery(read('/robots.txt'), read('/sitemap.xml'))
+    print('PASS exact build revision, indexability, robots, sitemap and 404 noindex', flush=True)
 
 
 def audit_http():
@@ -117,23 +241,40 @@ def audit_http():
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--live', action='store_true')
-    parser.add_argument('--http-audit', action='store_true')
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument('--live', action='store_true', help='Verify the release through fresh CDN query keys')
+    mode.add_argument('--canonical-status', action='store_true', help='Check unparameterized public URL propagation (pending=2)')
+    mode.add_argument('--http-audit', action='store_true')
     args = parser.parse_args()
     if args.http_audit:
         audit_http()
-    elif not args.live:
+    elif not args.live and not args.canonical_status:
         validate(local)
     else:
+        expected_revision = revision(Document(local('/')))
+        assert re.fullmatch(r'[a-f0-9]{40}', expected_revision), 'Live verification requires a Git commit build revision'
+        assets = set().union(*(critical_assets(Document(local(route))) for route in CORE_ROUTES))
+        assert assets, 'No critical assets found in the local build'
+        if args.canonical_status:
+            raise SystemExit(canonical_status(expected_revision, assets))
+        nonce = None
         def live(route):
-            status, headers, text = fetch(HOST+route)
+            status, headers, text = fetch(probe_url(HOST + route, expected_revision, nonce))
             expected = (200, 404) if route == '/404.html' else (200,)
             assert status in expected, f'{route}: HTTP {status}'
+            if route in CORE_ROUTES:
+                validate_http_indexability(route, headers)
             return text
         deadline = time.monotonic() + 180
         while True:
             try:
+                nonce = time.time_ns()
                 validate(live)
+                for asset in sorted(assets):
+                    status, headers, body = fetch(probe_url(HOST + asset, expected_revision, nonce))
+                    validate_asset(asset, status, headers.get('content-type', ''), body)
+                print(f'PASS release {expected_revision} and {len(assets)} critical assets through fresh CDN query keys.', flush=True)
+                print('This does not establish unparameterized public URL propagation; run --canonical-status separately.', flush=True)
                 break
             except (AssertionError, urllib.error.URLError, TimeoutError, IndexError, StopIteration) as error:
                 if time.monotonic() >= deadline:

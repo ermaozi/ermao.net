@@ -13,10 +13,10 @@ tags:
   - reviews
   - affordable proxy services
   - XSUS
-description: XSUS starts at CNY 8 for 168GB. Review its plans, server selection, speed, Netflix and ChatGPT access, support, and test screenshots.
+description: An archived XSUS record listing CNY 8 for 168 GB, while the 2026 review records CNY 10. The change date, discount conditions, current price, and service status remain unverified.
 ---
 
-XSUS starts at CNY 8 per month for 168 GB. The source article describes it as an established, reliable service with strong value.
+This page preserves an older XSUS record of CNY 8 per month for 168 GB. The [2026 review](/en/blog/xsus/) records CNY 10 for 168 GB/month. The available sources do not establish when the price changed or any conditions for a CNY 8 offer. Verify the current price before purchase.
 
 XSUS official website: [https://xsus.cloud](https://xsus.cloud/register?code=xJFcT1Dw)
 
@@ -28,7 +28,7 @@ XSUS official website: [https://xsus.cloud](https://xsus.cloud/register?code=xJF
 
 ## XSUS overview
 
-The least expensive subscription is CNY 8 per month for 168 GB.
+The older source recorded a minimum subscription of CNY 8 per month for 168 GB; this is not a current-price claim.
 
 XSUS is a long-running proxy service with affordable plans and a large server selection. The source article reports high server quality and speed, with access to Netflix and ChatGPT during its observations.
 

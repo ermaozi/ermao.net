@@ -44,7 +44,7 @@ The interface below loads account data and its update timestamp, not a live sign
 
 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; padding: 10px 16px; background-color: var(--vp-c-bg-alt); border-radius: 8px;">
   <div style="color: var(--vp-c-text-2); font-size: 14px;">
-    Updated: {{ updateTime || 'Loading...' }}
+    Updated: {{ updateTime || (loading ? 'Loading...' : 'No data timestamp available') }}
   </div>
   <button class="refresh-btn" @click="fetchData" :disabled="loading">
     <span v-if="loading">Refreshing...</span>
@@ -65,6 +65,8 @@ The interface below loads account data and its update timestamp, not a live sign
   </div>
 
   <p v-else-if="error" class="account-error" role="alert">{{ error }}</p>
+
+  <p v-else-if="accounts.length === 0" class="account-loading-label" role="status">The list is currently empty. Try refreshing later; no account availability has been verified.</p>
 
   <div v-else class="account-grid">
     <Card v-for="(acc, index) in accounts" :key="index">
@@ -171,7 +173,7 @@ The interface below loads account data and its update timestamp, not a live sign
 
 ### Why does a free U.S. Apple ID say it is locked?
 
-Many devices sign in to the public account from different regions within a short time, triggering Apple's security protections. Lockouts cannot be eliminated for a publicly shared account. Do not attempt account recovery, which usually requires the owner's phone number or security answers. Refresh the page and try another account currently reported as available.
+Many devices sign in to the public account from different regions within a short time, triggering Apple's security protections. Lockouts cannot be eliminated for a publicly shared account. Do not attempt account recovery, which usually requires the owner's phone number or security answers. Label colors identify regions, not a successful sign-in test. Refreshing the list does not verify account availability. Do not change another person's password or security settings; use an Apple Account you own for continued use.
 
 ### How do I update an app downloaded with a shared Apple ID?
 
@@ -184,12 +186,14 @@ Do not immediately delete the old app to obtain an update. **Export subscription
 <LinkCard title="Asspp Review: Managing Multiple Apple IDs and Regions" href="/en/blog/asspp-download-guide/" description="A review of a third-party manager for switching App Store accounts, downloading older app versions, and extracting IPA packages. Evaluate account and package security before use." />
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const accounts = ref([])
 const updateTime = ref('')
 const loading = ref(true)
 const error = ref('')
+let activeController = null
+let disposed = false
 
 const getBadgeType = (region) => {
   if (region.includes('美')) return 'tip';
@@ -219,12 +223,20 @@ const getRegionLabel = (region) => {
 }
 
 const fetchData = async () => {
+  if (activeController || disposed) return
+  const controller = new AbortController()
+  activeController = controller
   loading.value = true;
   error.value = '';
+  const timeout = setTimeout(() => controller.abort(), 15000)
   try {
-    const res = await fetch('https://api.ermao.net/get_apple_id')
+    const res = await fetch('https://api.ermao.net/get_apple_id', { signal: controller.signal })
     if (!res.ok) throw new Error('Network request failed')
     const data = await res.json()
+    if (!Array.isArray(data?.accounts) || !data.accounts.every(acc =>
+      acc && typeof acc === 'object' && !Array.isArray(acc) && ['region', 'email', 'password'].every(key => typeof acc[key] === 'string')
+    ) || (data.updated_at != null && typeof data.updated_at !== 'string')) throw new Error('Invalid account list response')
+    if (disposed || activeController !== controller) return
     accounts.value = (data.accounts || []).map(acc => ({
         ...acc,
         copiedEmail: false,
@@ -232,15 +244,26 @@ const fetchData = async () => {
     }))
     updateTime.value = data.updated_at || ''
   } catch (e) {
+    if (disposed || activeController !== controller) return
     console.error(e)
-    error.value = 'Could not load accounts. Refresh and try again later.'
+    error.value = e?.name === 'AbortError' ? 'The request timed out. Check your connection and refresh.' : 'Could not load accounts. Refresh and try again later.'
   } finally {
-    loading.value = false
+    clearTimeout(timeout)
+    if (activeController === controller) {
+      activeController = null
+      if (!disposed) loading.value = false
+    }
   }
 }
 
 onMounted(() => {
   fetchData()
+})
+
+onBeforeUnmount(() => {
+  disposed = true
+  activeController?.abort()
+  activeController = null
 })
 
 const copy = (text, acc, type) => {

@@ -11,10 +11,10 @@ tags:
   - 评测
   - 便宜机场
   - XSUS
-description: 'xsus机场，最低 8元 168G/月。老牌机场、稳定可靠、高性价比。 xsus官网地址：https://xsus.cloud'
+description: 'XSUS旧版资料记录8元168G/月；2026详情记录10元168GB/月，变价时间与优惠条件未确认。此页保留历史资料，当前价格和服务状态待核实。'
 ---
 
-xsus机场，最低 8元 168G/月。老牌机场、稳定可靠、高性价比。
+本页保留XSUS旧版资料，其中入门套餐记录为8元168G/月。[2026详情页](/blog/xsus/)记录的是10元168GB/月；现有资料无法确定变价时间，也没有8元优惠条件的证据，当前价格需在购买前核实。
 
 xsus官网地址：[https://xsus.cloud](https://xsus.cloud/register?code=xJFcT1Dw)
 
@@ -26,7 +26,7 @@ xsus官网地址：[https://xsus.cloud](https://xsus.cloud/register?code=xJFcT1D
 
 ## XSUS 机场简介
 
-最便宜的订阅有8元 168G/月。
+旧版资料曾记录最低订阅为8元168G/月，不代表当前售价。
 
 XSUS 机场是一家老牌机场，价格实惠，节点较多，节点质量也非常高，速度快，支持 Netflix、ChatGPT。
 

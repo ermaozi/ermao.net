@@ -80,7 +80,7 @@ Those network, capacity, service-access, and support descriptions require curren
 | Device claim | Most plans advertised without a device-count limit |
 | Service access | Netflix, Disney+, HBO, TikTok, and YouTube |
 
-The site's ranking dataset may be updated independently from this February 2026 article, so confirm the current entry price in the live checkout.
+The [older article](/en/article/bc6o8acd/) records CNY 8 for 168 GB/month, while this review records CNY 10. The sources do not establish the change date or any discount conditions for CNY 8. The original source date is retained; neither record verifies the current checkout price.
 
 ## Recorded plans
 

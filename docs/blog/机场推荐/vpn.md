@@ -394,7 +394,7 @@ Windows、macOS 和 Linux 推荐 [Clash Verge Rev](/article/0gematwc/)；Android
 ### 日常使用/追剧用户
 
 **推荐机场：**
-- [XSUS](./2026/机场推荐xsus.md)（8元 168G/30天）
+- [XSUS](./2026/机场推荐xsus.md)（2026详情资料记录：10元 168GB/月；当前价格待核实）
 - [xxyun](./2026/机场推荐xxyun.md)（9.99元 100G/月）
 - [flybit](./2026/机场推荐flybit.md)（15元 128G/月）
 

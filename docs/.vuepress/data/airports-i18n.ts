@@ -303,6 +303,7 @@ export const localizeAirportName = (value: string) =>
   englishNames[value] ?? genericEnglish(value, 'Proxy service')
 
 export const localizeAirportPrice = (value: string) => {
+  if (value === '资料记录10元 168GB/月；现价待核实') return 'Recorded: CNY 10 for 168 GB/month; current price unverified'
   if (value === '历史79.9元/年，45GB/月；现价待核实') return 'Historical: CNY 79.90/year, 45 GB/month; current terms unverified'
   const translated = replacePhrases(value)
     .replace(/(\d+(?:\.\d+)?)\s*元/g, 'CNY $1')
@@ -360,6 +361,8 @@ const localizeTags = (tags: string[] | undefined) =>
     .filter(Boolean)
 
 const englishDescription = (item: AirportSource | AirportRecord) => {
+  if (item.id === 'xsus') return 'The 2026 review records CNY 10 per month for 168 GB; the older article records CNY 8. The change date and any discount conditions are undocumented. Verify the current price and test the required nodes before purchase.'
+  if (item.id === 'flybit') return 'Recorded plans start at CNY 15 per month for 128 GB, with non-expiring packages also listed. IEPL routes and streaming or ChatGPT access are provider claims. Archived tests lack complete timestamps and setup details, so verify current terms and test a small plan on your own network.'
   const name = localizeAirportName(item.name)
   const minimum = localizeAirportPrice(item.minPlanText)
   const subscription = item.universalSubscription === true
