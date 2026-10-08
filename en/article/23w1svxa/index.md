@@ -6,6 +6,16 @@ description: >-
 ---
 This page records coupon information published by several proxy services. Codes, eligible plans, prices, and provider availability can change without notice. **Confirm the final amount and renewal terms at checkout; a listing here is not a promise that a code still works.**
 
+## Liulian Cloud
+
+[Liulian Cloud review](/en/blog/liulianyun/)
+
+* Code: `ll88`
+* Stated discount: 30% off, once per account
+* Eligible plans, billing periods and an expiry date have not been supplied; confirm the discount and final amount at checkout
+* Coupon information updated: October 8, 2026
+* Website: [View current Liulian Cloud plans](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo)
+
 ## Jilianyun
 
 [Jilianyun review](/en/blog/jilianyun/)

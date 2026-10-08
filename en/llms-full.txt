@@ -704,6 +704,16 @@ description: >-
 # Proxy-Service Coupon Code Index
 This page records coupon information published by several proxy services. Codes, eligible plans, prices, and provider availability can change without notice. **Confirm the final amount and renewal terms at checkout; a listing here is not a promise that a code still works.**
 
+## Liulian Cloud
+
+[Liulian Cloud review](/en/blog/liulianyun/)
+
+* Code: `ll88`
+* Stated discount: 30% off, once per account
+* Eligible plans, billing periods and an expiry date have not been supplied; confirm the discount and final amount at checkout
+* Coupon information updated: October 8, 2026
+* Website: [View current Liulian Cloud plans](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo)
+
 ## Jilianyun
 
 [Jilianyun review](/en/blog/jilianyun/)
@@ -16228,6 +16238,8 @@ Liulian Cloud's monthly plans start at **CNY 24 for 140 GB/month**, with 260 GB,
 
 Purchase link: [View current Liulian Cloud plans](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo)
 
+Coupon code **`ll88`** offers **30% off, once per account**. Eligible plans, billing periods and an expiry date have not been supplied; confirm the discount and final amount at checkout.
+
 ![Liulian Cloud logo =864x864](https://image.ermao.net/images/blog/liulianyun/20261002_145634-18a112.png)
 
 ## Provider overview
@@ -16255,6 +16267,8 @@ The provider targets daily work, overseas information access, video and AI tools
 | Enjoy | CNY 40/month | 260 GB/month | Monthly usage approaching or exceeding 140 GB | [View Enjoy](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo) |
 | Premium | CNY 60/month | 420 GB/month | More frequent video viewing and regular internet use | [View Premium](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo) |
 | Durian King | CNY 100/month | 750 GB/month | Higher monthly consumption after checking the routes | [View Durian King](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo) |
+
+The table keeps prices before the coupon discount. Code `ll88` offers 30% off, once per account; eligible plans and billing periods have not been confirmed, so no discounted prices are calculated here.
 
 These amounts retain the provider's submitted price list. A follow-up clarification confirms that **the annual tier includes 60 GB each month, and the other four tiers are billed monthly**. Exact reset dates, node multipliers, device limits, speed limits and refund rules depend on the purchase page and service terms. Live checkout verification has not been completed.
 
@@ -16302,7 +16316,7 @@ The supplied plans do not suit a requirement for occasional, no-expiry backup da
 ## Purchase and setup
 
 1. Open the [Liulian Cloud purchase entry](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo), then register or sign in.
-2. Choose billing and data, and confirm the amount due, reset date, multipliers, device rules and refund terms.
+2. Choose billing and data. If using code `ll88`, enter it and check that the 30% discount is applied, noting the once-per-account limit. Confirm the amount due, reset date, multipliers, device rules and refund terms.
 3. Pay with Alipay or WeChat Pay, then obtain the subscription and import it into a compatible client using the provider's instructions.
 4. Test your usual regions, websites and evening usage on your own network before renewing or changing tiers.
 
@@ -16344,7 +16358,7 @@ These are general setup references; follow Liulian Cloud's instructions for its 
 * [Provider list](/en/airport/)
 
 ::: info Sources and affiliate disclosure
-Prepared on October 2, 2026 from the submission, follow-up billing clarification and original provider screenshot. The purchase entry redirected to a sign-in page during this review. Live checkout, actual subscription import and connection performance have not been independently verified; prices and terms depend on the purchase page. Purchase links contain referral parameters; see the [affiliate disclosure](/en/affiliate-disclosure/). Follow the laws applicable to your location.
+Prepared on October 2, 2026 from the submission, follow-up billing clarification and original provider screenshot. Updated on October 8, 2026 with code `ll88` for 30% off, once per account. The purchase entry redirected to a sign-in page during this review. Live checkout, actual subscription import and connection performance have not been independently verified; prices and terms depend on the purchase page. Purchase links contain referral parameters; see the [affiliate disclosure](/en/affiliate-disclosure/). Follow the laws applicable to your location.
 :::
 
 ---
