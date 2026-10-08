@@ -1,13 +1,19 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useLang } from 'vuepress/client'
-import { airportRanking, type AirportBoolean } from '../data/airports'
+import { airportRanking, airportNewListings, type AirportBoolean } from '../data/airports'
 import { localizeAirportRecord } from '../data/airports-i18n'
+
+const props = defineProps<{ includeNewListings?: boolean }>()
+const listedAirports = computed(() => props.includeNewListings
+  ? [...airportRanking, ...airportNewListings]
+  : airportRanking,
+)
 
 const lang = useLang()
 const isEnglish = computed(() => lang.value?.startsWith('en'))
 const airports = computed(() =>
-  airportRanking.map(item => isEnglish.value ? localizeAirportRecord(item) : item),
+  listedAirports.value.map(item => isEnglish.value ? localizeAirportRecord(item) : item),
 )
 
 const boolText = (value: AirportBoolean) => {
@@ -92,7 +98,7 @@ const labels = computed(() => isEnglish.value
       <tbody>
         <tr v-for="item in airports" :key="item.id">
           <td class="airport-ranking-name" :data-label="labels.name">
-            <span class="airport-ranking-rank">{{ item.rank }}</span>
+            <span v-if="item.rank !== undefined" class="airport-ranking-rank">{{ item.rank }}</span>
             <a :href="`#${item.id}`">{{ item.name }}</a>
           </td>
           <td class="airport-ranking-link" :data-label="labels.official">

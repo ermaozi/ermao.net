@@ -1,14 +1,20 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useLang } from 'vuepress/client'
-import { airportRanking, type AirportBoolean } from '../data/airports'
+import { airportRanking, airportNewListings, type AirportBoolean } from '../data/airports'
 import { localizeAirportRecord } from '../data/airports-i18n'
 import AirportPlanTable from './AirportPlanTable.vue'
+
+const props = defineProps<{ includeNewListings?: boolean }>()
+const listedAirports = computed(() => props.includeNewListings
+  ? [...airportRanking, ...airportNewListings]
+  : airportRanking,
+)
 
 const lang = useLang()
 const isEnglish = computed(() => lang.value?.startsWith('en'))
 const airports = computed(() =>
-  airportRanking.map(item => isEnglish.value ? localizeAirportRecord(item) : item),
+  listedAirports.value.map(item => isEnglish.value ? localizeAirportRecord(item) : item),
 )
 
 const boolText = (value: AirportBoolean) => {
@@ -50,7 +56,7 @@ const labels = computed(() => isEnglish.value
   <section class="airport-detail-list" :aria-label="labels.section">
     <article v-for="item in airports" :key="item.id" class="airport-detail-item">
       <h3 :id="item.id">
-        <span class="airport-detail-rank">{{ item.rank }}</span>
+        <span v-if="item.rank !== undefined" class="airport-detail-rank">{{ item.rank }}</span>
         {{ item.name }}
       </h3>
 
