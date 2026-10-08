@@ -30,6 +30,7 @@ export interface AirportRecord {
   plans: AirportPlan[]
   reviewHref?: string
   rankChangeLabel?: string
+  newListing?: boolean
 }
 
 export interface AirportRiskItem {
@@ -54,6 +55,7 @@ export type AirportSource = Omit<AirportRecord, 'plans'> & {
 // airport:sync-plans:start
 // 此区块由 pnpm airport:sync-plans 生成，请勿手工编辑。
 // 事实源优先级：2026 详情页 > 2025 详情页 > 主站总表。
+// yunjiexian: docs/blog/机场推荐/2026/机场推荐云界线.md — 月付与年付套餐 / 一次性不限时流量包
 // xsus: docs/blog/机场推荐/2026/机场推荐xsus.md — 月付套餐 / 不限时流量包（流量不过期）
 // 网际快车: docs/blog/机场推荐/2026/机场推荐网际快车.md — 🧾 核心套餐表
 // cocoduck: docs/blog/机场推荐/2026/机场推荐cocoduck.md — 💳 CocoDuck机场套餐价格
@@ -100,6 +102,58 @@ export type AirportSource = Omit<AirportRecord, 'plans'> & {
 // 浪网: docs/blog/机场推荐/2026/机场推荐浪网.md — 月付与年付套餐 / 浪网不限时流量包
 // 传送门: docs/blog/机场推荐/2026/机场推荐传送门.md — A. 主套餐（含无限流量 / 一次性流量包 / 定制专线） / B. ANYCAST 套餐（主流国家高速节点）
 const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
+  "yunjiexian": [
+    {
+      "name": "轻云·基础版",
+      "priceText": "¥22/月",
+      "traffic": "150GB/月",
+      "billingCycle": "月付",
+      "type": "周期订阅",
+      "text": "轻云·基础版，¥22/月，150GB/月"
+    },
+    {
+      "name": "凌云·进阶版",
+      "priceText": "¥40/月",
+      "traffic": "300GB/月",
+      "billingCycle": "月付",
+      "type": "周期订阅",
+      "text": "凌云·进阶版，¥40/月，300GB/月"
+    },
+    {
+      "name": "御云·高级版",
+      "priceText": "¥66/月",
+      "traffic": "600GB/月",
+      "billingCycle": "月付",
+      "type": "周期订阅",
+      "text": "御云·高级版，¥66/月，600GB/月"
+    },
+    {
+      "name": "云界年付小包",
+      "priceText": "¥96/年",
+      "traffic": "60GB/月",
+      "billingCycle": "年付，一次支付96元",
+      "type": "周期订阅",
+      "text": "云界年付小包，¥96/年，60GB/月"
+    },
+    {
+      "name": "闲云·随心包",
+      "priceText": "¥99/次",
+      "traffic": "80GB",
+      "billingCycle": "一次性，不限时",
+      "type": "不限时流量包",
+      "text": "闲云·随心包，¥99/次，80GB",
+      "oneTime": true
+    },
+    {
+      "name": "悠云·长享包",
+      "priceText": "¥199/次",
+      "traffic": "200GB",
+      "billingCycle": "一次性，不限时",
+      "type": "不限时流量包",
+      "text": "悠云·长享包，¥199/次，200GB",
+      "oneTime": true
+    }
+  ],
   "xsus": [
     {
       "name": "P-Small 基础套餐",
@@ -3624,6 +3678,19 @@ export const airportPlanCatalog: Record<string, AirportPlan[]> = {
 // 公开展示字段。佣金、合作、返佣等运营信息只放 private，组件和文章不会读取。
 export const airportSources: AirportSource[] = [
   {
+    id: 'yunjiexian',
+    name: '云界线',
+    description: '新收录，暂无销量排名。提供方资料记录月付22元150GB起，另有年付96元每月60GB及一次性不限时流量包；新客首单自动七折，无需优惠码，适用套餐与实付金额请在结算时确认。通用订阅、支付宝与微信支付及运营约7个月均为提供方说明，尚无本站独立实测。',
+    officialHref: 'https://ermaozi.yunjiexianaff.com/#/?code=hygdqyjF',
+    universalSubscription: true,
+    minPlanText: '22元/月 150GB；96元/年 60GB/月',
+    hasOneTimePackage: true,
+    telegramHref: '',
+    reviewHref: '/blog/yunjiexian/',
+    rankChangeLabel: '新上',
+    newListing: true,
+  },
+  {
     id: 'flybit',
     name: 'flybit',
     description: '资料记录月付15元128G起，另有不限时流量包；IEPL线路及流媒体、ChatGPT访问属于服务商宣传。旧测速图缺少完整时间与环境记录，不能保证当前可用性或晚高峰表现，购买前请核对条款并小档测试。',
@@ -4655,6 +4722,9 @@ export const airportRecords: AirportRecord[] = airportSources.map(seed => ({
 export const airportRanking = [...airportRecords]
   .filter(item => typeof item.rank === 'number')
   .sort((a, b) => a.rank! - b.rank!)
+
+// 新收录单独维护展示身份，不赋予或影响既有销量排名。
+export const airportNewListings = airportRecords.filter(item => item.newListing && item.rank === undefined)
 
 // 官网链接可能包含推广参数，组件会统一输出 rel="sponsored nofollow noopener"。
 
