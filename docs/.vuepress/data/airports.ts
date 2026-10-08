@@ -4378,7 +4378,7 @@ export const airportSources: AirportSource[] = [
   {
     id: 'liulianyun',
     name: '榴莲云',
-    description: '24 元 140GB 月付起，另有 96 元年付、每月 60GB 小包；服务商注明支持通用订阅，提供五个地区的 VLESS 节点测速记录。',
+    description: '24 元 140GB 月付起，另有 96 元年付、每月 60GB 小包；服务商注明支持通用订阅，提供五个地区的 VLESS 节点测速记录。优惠码 ll88 七折，每个账号限用一次；适用套餐、计费周期及截止时间请在结算页确认。',
     rank: 18,
     officialHref: 'https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo',
     universalSubscription: true,

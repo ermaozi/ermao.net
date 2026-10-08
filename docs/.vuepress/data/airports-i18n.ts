@@ -361,6 +361,7 @@ const localizeTags = (tags: string[] | undefined) =>
     .filter(Boolean)
 
 const englishDescription = (item: AirportSource | AirportRecord) => {
+  if (item.id === 'liulianyun') return 'Monthly plans start at CNY 24 for 140 GB, with a CNY 96 annual plan offering 60 GB each month. The provider lists universal subscriptions and VLESS speed records from five regions. Code ll88 offers 30% off, once per account; confirm eligible plans, billing periods and expiry at checkout.'
   if (item.id === 'xsus') return 'The 2026 review records CNY 10 per month for 168 GB; the older article records CNY 8. The change date and any discount conditions are undocumented. Verify the current price and test the required nodes before purchase.'
   if (item.id === 'flybit') return 'Recorded plans start at CNY 15 per month for 128 GB, with non-expiring packages also listed. IEPL routes and streaming or ChatGPT access are provider claims. Archived tests lack complete timestamps and setup details, so verify current terms and test a small plan on your own network.'
   const name = localizeAirportName(item.name)
