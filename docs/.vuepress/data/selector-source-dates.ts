@@ -63,7 +63,7 @@ export const selectorSourceDates: Record<string, string> = {
   "/blog/jilianyun/": "2026-02-24",
   "/blog/mengxiangyun/": "2026-07-22",
   "/blog/laddercloud/": "2026-07-23",
-  "/blog/liulianyun/": "2026-10-02",
+  "/blog/liulianyun/": "2026-10-08",
   "/blog/wangwang-airport/": "2026-07-23",
   "/blog/lingdongyun/": "2026-07-23",
   "/blog/civetnet-airport/": "2026-07-28",
