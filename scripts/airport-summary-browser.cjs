@@ -82,7 +82,15 @@ async function main() {
           if (result.documentOverflow || result.errors.length) {
             await page.screenshot({ path: resolve(output, `${language}-${kind}-${width}-failure.png`) })
           }
+          assert.equal(await page.locator('a[href="https://t.me/ermaov1"]').count(), 0, 'Unverified Telegram link must not render')
           if (kind === 'comparison') {
+            const superbiu = page.locator('.airport-detail-item').filter({ has: page.locator('#superbiu') })
+            assert.match(await superbiu.locator('.airport-detail-meta').innerText(), language === 'en' ? /Price unverified/ : /现价待核实/)
+            assert.match(await superbiu.locator('.airport-plan-history').innerText(), /2026-02-24/)
+            assert.match(await superbiu.locator('.airport-plan-history').innerText(), language === 'en' ? /Current prices and availability are unverified/ : /现价与是否仍在售待核实/)
+            assert.equal(await superbiu.locator('.airport-plan-table thead th').nth(1).innerText(), language === 'en' ? 'Historical price' : '历史价')
+            assert.equal(await superbiu.locator('.airport-plan-table tbody tr').count(), 4)
+            if (width === 390 || width === 1440) await superbiu.screenshot({ path: resolve(output, `${language}-superbiu-history-${width}.png`) })
             const expected = Array.from({ length: language === 'zh' ? 69 : 68 }, (_, i) => i + 1)
             assert.deepEqual(result.numbers, expected, `${language}/${width}: missing list number`)
             assert.deepEqual(result.detailNumbers, expected, `${language}/${width}: detail numbers disagree`)

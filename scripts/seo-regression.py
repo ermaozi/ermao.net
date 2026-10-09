@@ -120,7 +120,7 @@ def validate_asset(url, status, content_type, body):
 CORE_ROUTES = tuple(
     prefix + suffix
     for prefix in ('/', '/en/')
-    for suffix in ('', 'page/2/', 'posts/vpn/', 'airport/', 'blog/freeappleid/', 'article/z747kgjd/', 'blog/flybit/', 'blog/guangsuyun/', 'blog/asspp-download-guide/')
+    for suffix in ('', 'page/2/', 'posts/vpn/', 'airport/', 'blog/freeappleid/', 'article/z747kgjd/', 'blog/flybit/', 'blog/guangsuyun/', 'blog/asspp-download-guide/', 'blog/superbiu/')
 )
 
 
@@ -181,7 +181,10 @@ def canonical_status(expected_revision, assets, fetcher=fetch):
 def validate_content_freshness(route, doc):
     visible = re.sub(r'\s+', '', ' '.join(doc.text))
     required = {
-        '/posts/vpn/': ('96元/年60GB/月', '99元/年59GB/月'),
+        '/posts/vpn/': ('96元/年60GB/月', '99元/年59GB/月', '2026-02-24版文章的历史价目'),
+        '/en/posts/vpn/': ('Historical prices from the 2026-02-24 article version',),
+        '/blog/superbiu/': ('本次更新仅复核服务商公开公告，未重新购买或测速', '一次性套餐当前是否在售及有效期未确认', '2026-02-24'),
+        '/en/blog/superbiu/': ('2026-02-24', 'Current one-time package availability and expiry terms remain unverified', 'AnyTLS'),
         '/blog/guangsuyun/': ('历史优惠记录', '尚未核实商家是否延期或另有活动'),
         '/en/blog/guangsuyun/': ('An extension or replacement offer has not been verified',),
         '/blog/freeappleid/': ('不能保证免验证', '以上恢复操作仅适用于你自己的账户'),
@@ -191,6 +194,18 @@ def validate_content_freshness(route, doc):
     }
     for text in required.get(route, ()):
         assert re.sub(r'\s+', '', text) in visible, f'{route}: missing corrected content: {text}'
+    if route in ('/posts/vpn/', '/en/posts/vpn/', '/airport/', '/en/airport/'):
+        assert not any(tag == 'a' and attrs.get('href') == 'https://t.me/ermaov1' for tag, attrs in doc.tags), 'Unverified Telegram link remains'
+    if route in ('/blog/superbiu/', '/en/blog/superbiu/'):
+        description = doc.select('meta', 'name', 'description')[0]['content']
+        assert '2026-02-24' in description and not re.search(r'(?:11|14)\s*元|CNY\s*(?:11|14)', description), 'SuperBiu metadata must identify archived material'
+        faq = next(s for s in doc.schemas if s.get('@type') == 'FAQPage')
+        assert len(faq['mainEntity']) == 4
+        for question in faq['mainEntity']:
+            for text in (question['name'], question['acceptedAnswer']['text']):
+                assert re.sub(r'\s+', '', text) in visible, 'SuperBiu FAQ differs from visible content'
+        for message in ('469', '473', '482'):
+            assert any(tag == 'a' and attrs.get('href') == 'https://t.me/biubiugroup/' + message for tag, attrs in doc.tags), 'Missing provider source'
     if route == '/blog/guangsuyun/':
         description = doc.select('meta', 'name', 'description')[0]['content']
         assert '当前优惠待商家确认' in description, 'Guangsu coupon metadata is stale'
