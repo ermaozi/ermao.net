@@ -12,7 +12,19 @@ const cleanCell = (value: string) => value.replace(/\*\*/g, '').trim()
 const splitRow = (line: string) => line.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map(cleanCell)
 const isDivider = (line: string) => /^\s*\|?\s*:?-{2,}:?\s*(\|\s*:?-{2,}:?\s*)+\|?\s*$/.test(line)
 const isPlanTable = (headers: string[]) => /套餐/.test(headers.join(' ')) && /(价格|月费|原价|券后价)/.test(headers.join(' ')) && /流量/.test(headers.join(' '))
-const stripMarkdown = (value: string) => value.replace(/!?(?:\[([^\]]*)\])\([^)]*\)/g, '$1').replace(/<[^>]+>/g, '').trim()
+// Convert source-table HTML to text without leaving tag delimiters behind,
+// even for nested/malformed input. Rendering still uses Vue text interpolation.
+const stripHtmlTags = (value: string) => {
+  let insideTag = false
+  let text = ''
+  for (const char of value) {
+    if (char === '<') insideTag = true
+    else if (char === '>') insideTag = false
+    else if (!insideTag) text += char
+  }
+  return text
+}
+const stripMarkdown = (value: string) => stripHtmlTags(value.replace(/!?(?:\[([^\]]*)\])\([^)]*\)/g, '$1')).trim()
 const getLink = (value: string) => value.match(/\[[^\]]*\]\((https?:\/\/[^)]+)\)/)?.[1]
 
 export const extractPlanTables = (markdown: string, file = ''): MarkdownTable[] => {

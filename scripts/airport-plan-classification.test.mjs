@@ -69,3 +69,10 @@ test('The whole generated catalog is reproducible from the complete article set'
   evaluate(read('scripts/airports/sync-plans.ts'), ['catalog'], { fs: { ...fs, writeFileSync: (file, value) => { output = value } }, path, process, console: { log() {} }, airportSources, ...helpers })
   assert.equal(output, read('docs/.vuepress/data/airports.ts'))
 })
+
+test('Source markup is converted to text without surviving HTML delimiters', () => {
+  for (const name of ['<b>套餐</b>', '<scr<script>ipt>套餐', '<img src=x onerror=alert(1)>套餐', '<unfinished']) {
+    const plan = parse(`## 套餐\n${table(name)}`)[0]
+    assert.doesNotMatch(plan.name, /[<>]/)
+  }
+})
