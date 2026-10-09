@@ -16,6 +16,13 @@ ROBOTS = f'User-agent: *\nAllow: /\nSitemap: {seo.HOST}/sitemap.xml\n'
 ROUTES = ['/', '/en/', '/posts/vpn/', '/en/posts/vpn/', '/airport/', '/page/2/', '/blog/freeappleid/', '/en/blog/freeappleid/', '/article/z747kgjd/', '/en/article/z747kgjd/']
 def sitemap(routes=ROUTES):
     return '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{seo.HOST}{p}</loc></url>' for p in routes) + '</urlset>'
+TUTORIAL_FIXTURES = {
+    '/blog/telegram/': 'Two-Step Verification 额外的账号登录密码 本机密码锁 不一定同时发送到邮箱和手机号 不能替代账号两步验证',
+    '/en/blog/telegram/': 'Two-Step Verification Passcode Lock separate from the account',
+    '/blog/9esim/': '实体可编程卡 卡片出厂不含号码 365 天 按流量、分钟和短信计费 不含号码、语音或短信 第三方验证码均不保证成功 预计约两周 该时效未重新核实',
+    '/en/blog/9esim/': 'physical, SIM-shaped programmable eUICC card obtain profiles separately does not prove future support permanent number or lifetime service',
+}
+
 class SeoContracts(unittest.TestCase):
     def test_current_indexable_document(self):
         seo.validate_indexable(ROUTE, seo.Document(HEAD), SHA)
@@ -73,7 +80,7 @@ class SeoContracts(unittest.TestCase):
             route = urlsplit(url).path
             if route.startswith('/assets/'):
                 return 200, {'content-type': 'text/html' if asset_error else 'text/javascript'}, 'export default 1'
-            html = HEAD.replace(ROUTE, route)
+            html = HEAD.replace(ROUTE, route) + '<p>' + TUTORIAL_FIXTURES.get(route, '') + '</p>'
             if stale:
                 html = html.replace(SHA, '0' * 40)
             return 503 if error else 200, {'content-type': 'text/html', 'age': '45', 'cache-control': 'max-age=7200'}, html
@@ -114,6 +121,29 @@ class SeoContracts(unittest.TestCase):
                 bad = good + ('<p>规避 90% 的风险</p>' if route == '/article/choose-good-airport/' else '<a href="/posts/vpn">旧链接</a>')
                 with self.assertRaises(AssertionError):
                     seo.validate_content_freshness(route, seo.Document(bad))
+
+    def test_tutorial_facts_join_local_release_and_propagation_checks(self):
+        samples = TUTORIAL_FIXTURES
+        for route, good in samples.items():
+            with self.subTest(route=route):
+                self.assertIn(route, seo.CORE_ROUTES)
+                seo.validate_content_freshness(route, seo.Document('<p>' + good + '</p>'))
+                with self.assertRaisesRegex(AssertionError, 'missing corrected content'):
+                    seo.validate_content_freshness(route, seo.Document('<p>Old tutorial</p>'))
+        for route, old in [('/blog/telegram/', '独立的密码（App Passcode）'),
+                           ('/blog/9esim/', '无需实体 SIM 卡')]:
+            with self.subTest(route=route), self.assertRaisesRegex(AssertionError, 'unsupported tutorial claim'):
+                seo.validate_content_freshness(route, seo.Document(samples[route] + '<p>' + old + '</p>'))
+
+    def test_current_public_tutorial_cannot_pass_with_wrong_body(self):
+        def response(url):
+            route = urlsplit(url).path
+            if route.startswith('/assets/'):
+                return 200, {'content-type': 'text/javascript'}, 'export default 1'
+            return 200, {'content-type': 'text/html'}, HEAD.replace(ROUTE, route)
+        with redirect_stdout(StringIO()) as output:
+            self.assertEqual(seo.canonical_status(SHA, set(), response), 1)
+        self.assertIn('missing corrected content', output.getvalue())
 
     def test_stale_html_with_missing_referenced_asset_is_a_real_error(self):
         requested = []

@@ -120,7 +120,7 @@ def validate_asset(url, status, content_type, body):
 CORE_ROUTES = tuple(
     prefix + suffix
     for prefix in ('/', '/en/')
-    for suffix in ('', 'page/2/', 'posts/vpn/', 'airport/', 'blog/freeappleid/', 'article/z747kgjd/', 'blog/flybit/', 'blog/guangsuyun/', 'blog/asspp-download-guide/', 'blog/superbiu/')
+    for suffix in ('', 'page/2/', 'posts/vpn/', 'airport/', 'blog/freeappleid/', 'article/z747kgjd/', 'blog/flybit/', 'blog/guangsuyun/', 'blog/asspp-download-guide/', 'blog/superbiu/', 'blog/telegram/', 'blog/9esim/')
 ) + ('/article/choose-good-airport/', '/article/0gematwc/', '/article/eh8f4n86/')
 
 
@@ -152,11 +152,15 @@ def canonical_status(expected_revision, assets, fetcher=fetch):
             markers = doc.select('meta', 'name', 'ermao:build-revision')
             actual = markers[0].get('content') if len(markers) == 1 else None
             current = actual == expected_revision
+            tutorial = route in ('/blog/telegram/', '/en/blog/telegram/', '/blog/9esim/', '/en/blog/9esim/')
             if current:
                 validate_indexable(route, doc, expected_revision)
+                if tutorial:
+                    validate_content_freshness(route, doc)
             else:
                 pending = True
             results.append({'route': route, 'revision': actual, 'current': current,
+                            'tutorial_content_verified': current if tutorial else None,
                             'age': headers.get('age'), 'cache_control': headers.get('cache-control'),
                             'cf_cache_status': headers.get('cf-cache-status')})
         # Stale HTML is only a healthy propagation delay if the assets it
@@ -181,6 +185,10 @@ def canonical_status(expected_revision, assets, fetcher=fetch):
 def validate_content_freshness(route, doc):
     visible = re.sub(r'\s+', '', ' '.join(doc.text))
     required = {
+        '/blog/telegram/': ('Two-Step Verification', '额外的账号登录密码', '本机密码锁', '不一定同时发送到邮箱和手机号', '不能替代账号两步验证'),
+        '/en/blog/telegram/': ('Two-Step Verification', 'Passcode Lock', 'separate from the account'),
+        '/blog/9esim/': ('实体可编程卡', '卡片出厂不含号码', '365 天', '按流量、分钟和短信计费', '不含号码、语音或短信', '第三方验证码均不保证成功', '预计约两周', '该时效未重新核实'),
+        '/en/blog/9esim/': ('physical, SIM-shaped programmable eUICC card', 'obtain profiles separately', 'does not prove future support', 'permanent number or lifetime service'),
         '/posts/vpn/': ('96元/年60GB/月', '99元/年59GB/月', '2026-02-24版文章的历史价目'),
         '/en/posts/vpn/': ('Historical prices from the 2026-02-24 article version',),
         '/blog/superbiu/': ('本次更新仅复核服务商公开公告，未重新购买或测速', '一次性套餐当前是否在售及有效期未确认', '2026-02-24'),
@@ -194,6 +202,12 @@ def validate_content_freshness(route, doc):
     }
     for text in required.get(route, ()):
         assert re.sub(r'\s+', '', text) in visible, f'{route}: missing corrected content: {text}'
+    forbidden = {
+        '/blog/telegram/': ('独立的密码（AppPasscode）', '会向你的邮箱和手机号发送验证码'),
+        '/blog/9esim/': ('无需实体SIM卡', '完美支持Google', '有效期内可无限使用', '2026年实测'),
+    }
+    for text in forbidden.get(route, ()):
+        assert text not in visible, f'{route}: unsupported tutorial claim: {text}'
     if route in ('/article/choose-good-airport/', '/article/0gematwc/', '/article/eh8f4n86/'):
         assert doc.select('a', 'href', '/posts/vpn/#airport-comparison'), f'{route}: missing direct comparison link'
         if route == '/article/choose-good-airport/':
@@ -231,6 +245,11 @@ def validate(read):
         doc = Document(read(route))
         validate_indexable(route, doc, expected_revision)
         validate_content_freshness(route, doc)
+        if route in ('/blog/telegram/', '/blog/9esim/'):
+            article = next(s for s in doc.schemas if s.get('@type') == 'BlogPosting')
+            modified = doc.select('meta', 'property', 'article:modified_time')[0]['content']
+            assert article['dateModified'] == modified, f'{route}: article dates disagree'
+            assert modified.startswith('2026-10-09'), f'{route}: missing correction date'
     for prefix in ('/', '/en/'):
         home, second = Document(read(prefix)), Document(read(prefix + 'page/2/'))
         for route, doc in ((prefix, home), (prefix+'page/2/', second)):
