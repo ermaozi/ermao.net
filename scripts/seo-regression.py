@@ -121,7 +121,7 @@ CORE_ROUTES = tuple(
     prefix + suffix
     for prefix in ('/', '/en/')
     for suffix in ('', 'page/2/', 'posts/vpn/', 'airport/', 'blog/freeappleid/', 'article/z747kgjd/', 'blog/flybit/', 'blog/guangsuyun/', 'blog/asspp-download-guide/', 'blog/superbiu/')
-)
+) + ('/article/choose-good-airport/', '/article/0gematwc/', '/article/eh8f4n86/')
 
 
 def probe_url(url, expected_revision, nonce):
@@ -194,6 +194,17 @@ def validate_content_freshness(route, doc):
     }
     for text in required.get(route, ()):
         assert re.sub(r'\s+', '', text) in visible, f'{route}: missing corrected content: {text}'
+    if route in ('/article/choose-good-airport/', '/article/0gematwc/', '/article/eh8f4n86/'):
+        assert doc.select('a', 'href', '/posts/vpn/#airport-comparison'), f'{route}: missing direct comparison link'
+        if route == '/article/choose-good-airport/':
+            assert doc.select('a', 'href', '/review-methodology/'), 'Selection guide lacks evidence standard'
+            assert '不代表每家都经过一周实测' in visible and '三天自测只能反映这段时间的体验' in visible, 'Selection guide lacks evidence boundaries'
+            for unsupported in ('至少7天实测', '至少由我试用一周', '规避90%的风险', '时间是检验稳定性的唯一标准'):
+                assert unsupported not in visible, f'Selection guide retains unsupported claim: {unsupported}'
+        else:
+            assert '订阅兼容性' in visible, f'{route}: missing compatibility context'
+            for legacy in ('/posts/vpn', HOST + '/posts/vpn'):
+                assert not doc.select('a', 'href', legacy), f'{route}: legacy redirecting comparison link remains'
     if route in ('/posts/vpn/', '/en/posts/vpn/', '/airport/', '/en/airport/'):
         assert not any(tag == 'a' and attrs.get('href') == 'https://t.me/ermaov1' for tag, attrs in doc.tags), 'Unverified Telegram link remains'
     if route in ('/blog/superbiu/', '/en/blog/superbiu/'):

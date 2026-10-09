@@ -100,6 +100,21 @@ class SeoContracts(unittest.TestCase):
                 with self.assertRaisesRegex(AssertionError, 'missing corrected content'):
                     seo.validate_content_freshness(route, seo.Document('<p>Old article</p>'))
 
+    def test_selection_guide_and_client_links_have_release_coverage(self):
+        target = '<a href="/posts/vpn/#airport-comparison">套餐与风险对比</a>'
+        for route in ('/article/choose-good-airport/', '/article/0gematwc/', '/article/eh8f4n86/'):
+            with self.subTest(route=route):
+                self.assertIn(route, seo.CORE_ROUTES)
+                good = target + '<p>订阅兼容性</p>'
+                if route == '/article/choose-good-airport/':
+                    good += '<a href="/review-methodology/">证据标准</a><p>不代表每家都经过一周实测；三天自测只能反映这段时间的体验</p>'
+                seo.validate_content_freshness(route, seo.Document(good))
+                with self.assertRaisesRegex(AssertionError, 'missing direct comparison link'):
+                    seo.validate_content_freshness(route, seo.Document(good.replace('/posts/vpn/#airport-comparison', '/posts/vpn')))
+                bad = good + ('<p>规避 90% 的风险</p>' if route == '/article/choose-good-airport/' else '<a href="/posts/vpn">旧链接</a>')
+                with self.assertRaises(AssertionError):
+                    seo.validate_content_freshness(route, seo.Document(bad))
+
     def test_stale_html_with_missing_referenced_asset_is_a_real_error(self):
         requested = []
         def response(url):
