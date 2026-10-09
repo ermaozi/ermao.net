@@ -147,7 +147,7 @@ This file contains links to all documentation sections.
 - [2026年软路由全屋翻墙指南：OpenWrt安装配置与旁路由教程](/blog/softrouter/index.md): 想要实现全屋设备（手机、电视、PS5/Switch）自动翻墙？最强方案是使用软路由。本文从零开始，详细介绍软路由硬件选择、OpenWrt系统刷机、旁路由模式配置及OpenClash/PassWall插件使用教程，助你打造极致的家庭科学上网环境。
 - [2026 Sogo云机场评测：20元120GB起，自研客户端与通用订阅怎么选](/blog/sogoyun/index.md): Sogo云机场怎么样？本文整理20元120GB活动档、周期订阅、一次性流量包、自研客户端、通用订阅、TG频道和购买建议，适合想先短周期验证的新手参考。
 - [2026 随便云机场评测：10元68G多线BGP回源机场推荐｜IEPL专线/Netflix解锁](/blog/suibian/index.md): 随便云机场怎么样？本文实测随便云(SuiBian)速度、稳定性与流媒体解锁能力，月付仅10元享68G流量、多线BGP回源+IEPL专线，晚高峰不跳延迟，支持Netflix/Disney+解锁，附不限时流量包与客户端配置教程。
-- [2026 SuperBiu机场评测：三网IPLC专线全球流媒体秒开｜11元50G便宜机场推荐](/blog/superbiu/index.md): SuperBiu机场怎么样？本文实测SuperBiu机场速度、稳定性与流媒体解锁能力。三网入口IPLC国际专线，数据全程不走公网，月付仅11元享50G流量，支持Netflix/Disney+/ChatGPT/GPT-4解锁，附购买教程与按量套餐指南。
+- [2026 SuperBiu机场评测：套餐变价、CN2入口与历史测速参考](/blog/superbiu/index.md): SuperBiu机场评测资料更新：核对官方价格调整、CN2入口与AnyTLS协议公告，保留2026-02-24版套餐价格及历史测速记录，附购买前核对事项和客户端使用提醒；现价与一次性套餐状态以官网为准。
 - [2026年最新 telegram（电报、飞机）注册使用教程](/blog/telegram/index.md): Telegram注册使用教程：学习Telegram隐私保护、跨平台同步、群组频道创建和机器人使用。适合新手，包含完整注册流程、核心功能和安全建议。
 - [2026天喵加速器评测：永久免费VPN推荐｜游戏视频加速、多国节点](/blog/tianmiao/index.md): 天喵加速器怎么样？本文实测天喵VPN速度与稳定性，永久免费线路+VIP专线，支持Netflix/YouTube/Steam游戏加速，附注册教程与TOKEN激励机制详解。
 - [2026 暮光加速机场推荐：VLESS 专线，20元120GB起](/blog/twilight-airport/index.md): 暮光加速机场怎么样？本文整理20元120GB起的周期套餐、109元年付轻量版、三档一次性不限时流量包，以及VLESS、通用订阅、节点地区、付款方式和测速截图。
