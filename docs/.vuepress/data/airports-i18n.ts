@@ -361,6 +361,7 @@ const localizeTags = (tags: string[] | undefined) =>
     .filter(Boolean)
 
 const englishDescription = (item: AirportSource | AirportRecord) => {
+  if (item.id === 'superbiu') return 'SuperBiu has announced higher prices, lower traffic multipliers, CN2 entrances and AnyTLS. These are provider statements, not new independent tests. The 2026-02-24 article recorded CNY 11 for 50 GB monthly and one-time plans; the tables retain historical prices. Current prices and availability remain unverified.'
   if (item.id === '唯兔云') return 'Historical records list CNY 79.90 per year with 45 GB each month. The entry page showed only a route check on 2026-10-02; current prices, reset periods and service terms remain unverified. Test the provider’s route and access claims on your own network.'
   if (item.id === 'liulianyun') return 'Monthly plans start at CNY 24 for 140 GB, with a CNY 96 annual plan offering 60 GB each month. The provider lists universal subscriptions and VLESS speed records from five regions. Code ll88 offers 30% off, once per account; confirm eligible plans, billing periods and expiry at checkout.'
   if (item.id === 'xsus') return 'The 2026 review records CNY 10 per month for 168 GB; the older article records CNY 8. The change date and any discount conditions are undocumented. Verify the current price and test the required nodes before purchase.'

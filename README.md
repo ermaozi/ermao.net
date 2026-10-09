@@ -29,7 +29,7 @@
 |[随便云](#随便云)|[wcnm.one](https://wcnm.one/register?code=YZxHwCws)| 无 |10元 68G/月|✔|[TG](https://t.me/suibianvip)|[前往](./v2/机场推荐随便云.md)|
 |[唯兔云](#唯兔云)|[vip01.onlyrabbit.cc](https://a01.v2cvipaff.cc/#/?code=iaD6AgSx)| 无 |6元 45G/月|✔|[TG](https://t.me/v2yun_v2)|[前往](./v2/机场推荐唯兔云.md)|
 |[光速云](#光速云)|[ermaozi01.gsyvipaff.com](https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku)| 无 |8.25元 59G/月|✔|[TG](https://t.me/LightspeedCloud)|[前往](./v2/机场推荐光速云.md)|
-|[superbiu](#superbiu)|[biubiux.online](https://biubiux.online/#/register?code=BasmsULb)| 无 |11元 50G/月|✔|[TG](https://t.me/superbiu888)|[前往](./v2/机场推荐superbiu.md)|
+|[superbiu](#superbiu)|[biubiux.online](https://biubiux.online/#/register?code=BasmsULb)| 待核实 |已公告涨价，现价待核实|待核实|[TG](https://t.me/superbiu888)|[前往](https://www.ermao.net/blog/superbiu/)|
 |[koodog](#koodog)|[koodog.com](https://zero.thisgourl.xyz/#/register?code=BSkBAzZz)| 无 |5元 35G/月|❌|[TG](https://t.me/KooDogGroup)|[前往](./v1/机场推荐koodog.md)|
 |[99吧](#_99bar)|[99vpn.bar](https://99vpn.bar/#/register?code=qzpkbzHF)| 1天 1G |9.9元 99G/月|✔|[TG](https://t.me/jiujiuchat)|暂无|
 |[TNT](#tnt)|[ermaozi01.tntvipaff.cc](https://ermaozi02.tntvipaff.cc/#/register?code=f1EyPwf3)|无|10元60g/月(季付)|❌|[TG](https://t.me/TNTCloud2)|[前往](./v1/机场推荐TNT.md)|
@@ -318,11 +318,11 @@ ccyz官网地址：[ccyz.org](https://xxyun.at/?code=HOWnn58c)
 
 superbiu官网地址：[biubiux.online](https://biubiux.online/#/register?code=BasmsULb)
 
-最便宜的订阅有11元 50G/月。
+2026-10-09复核：服务商已[公告上调套餐价格、下调节点倍率](https://t.me/biubiugroup/482)，具体新价格尚未确认。下方价目表来自评测文章2026-02-24版本，仅为历史记录，不是当前报价。
 
-**SuperBiu 机场** 依托三网（电信/联通/移动）入口的 IPLC 专线，实现跨境高速互联。凭借自研流媒体解锁与多区域部署，晚高峰依旧能秒开 8K 视频，并在隐私、安全方面保持高标准。
+**SuperBiu 机场** 已公告[移除OPT节点并改为三网CN2入口](https://t.me/biubiugroup/473)，以及[将VLESS更换为AnyTLS](https://t.me/biubiugroup/469)。这些是服务商公告，本次未重新测速或独立审计，不能据此保证全程IPLC、8K秒开或匿名访问。购买前请核对当前套餐、周期、倍率和客户端支持情况。
 
-#### 定期订阅套餐
+#### 定期订阅套餐（2026-02-24版历史记录）
 
 | 套餐名称 | 月付 | 季付 | 半年 | 年付 | 流量/月 | 购买地址 |
 |----------|-----:|-----:|-----:|-----:|--------:|-----|
@@ -333,7 +333,7 @@ superbiu官网地址：[biubiux.online](https://biubiux.online/#/register?code=B
 | Medium Biu 500G | ¥45 | ¥132 | ¥260 | ¥495 | 500GB | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
 
 
-#### 按量一次性流量包（有效期内不限时）
+#### 按量一次性流量包（2026-02-24版不限时套餐记录）
 
 | 套餐 | 流量 | 一次性价格 | 购买地址 |
 |------|------:|-----------:|-----|
@@ -342,7 +342,7 @@ superbiu官网地址：[biubiux.online](https://biubiux.online/#/register?code=B
 | Biu-as-you-go 380G | 380GB | ¥128 | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
 | Biu-as-you-go 880G | 880GB | ¥238 | [点击购买](https://biubiux.online/#/register?code=BasmsULb) |
 
-> 一次性套餐适合临时出差、备用机场或多设备共享，流量用完前不会过期。
+> 旧版资料将以上一次性套餐标为不限时；当前是否仍在售、价格及有效期未确认。请以官网套餐页与订单条款为准，不要按旧表金额预期付款。
 
 ---
 

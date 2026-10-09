@@ -24,7 +24,7 @@ const fallback = computed(() => isEnglish.value ? 'See official site' : '以官�
 const labels = computed(() => isEnglish.value
   ? {
       plan: 'Plan',
-      price: 'Price',
+      price: airport.value?.historicalPlansAsOf ? 'Historical price' : 'Price',
       traffic: 'Data',
       cycle: 'Billing/type',
       features: 'Features',
@@ -34,7 +34,7 @@ const labels = computed(() => isEnglish.value
     }
   : {
       plan: '套餐',
-      price: '价格',
+      price: airport.value?.historicalPlansAsOf ? '历史价' : '价格',
       traffic: '流量',
       cycle: '周期/类型',
       features: '特点',
@@ -80,6 +80,11 @@ const planMeta = (plan: AirportPlan) => {
 
 <template>
   <div v-if="airport && plans.length > 0" class="airport-plan-wrap">
+    <p v-if="airport.historicalPlansAsOf" class="airport-plan-history">
+      {{ isEnglish
+        ? `Historical prices from the ${airport.historicalPlansAsOf} article version. Current prices and availability are unverified; purchase links open the provider’s current site.`
+        : `${airport.historicalPlansAsOf}版文章的历史价目；现价与是否仍在售待核实，购买链接用于查看商家当前套餐。` }}
+    </p>
     <table class="airport-plan-table">
       <thead>
         <tr>
@@ -140,6 +145,16 @@ const planMeta = (plan: AirportPlan) => {
   margin: 1rem 0 1.6rem;
   border: 1px solid var(--vp-c-border);
   border-radius: 8px;
+}
+
+.airport-plan-history {
+  margin: 0;
+  padding: 10px 12px;
+  color: var(--vp-c-text-2);
+  background: var(--vp-c-bg-soft);
+  font-size: 13px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 
 .airport-plan-table {

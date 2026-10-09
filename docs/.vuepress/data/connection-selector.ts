@@ -17,7 +17,7 @@ export function trafficGb(plan: AirportPlan): number | undefined {
 }
 
 export const selectorAirports = airportRecords.flatMap(airport => {
-  if (!airport.reviewHref) return []
+  if (!airport.reviewHref || airport.historicalPlansAsOf) return []
   // 2026-10-03 source comparison: these fallback catalog prices/traffic cannot
   // be matched verbatim to their linked review. Keep them out until reconciled.
   if (airport.id === 'danke' || airport.id === '迅达') return []

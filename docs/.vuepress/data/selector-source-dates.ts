@@ -36,7 +36,7 @@ export const selectorSourceDates: Record<string, string> = {
   "/blog/runway/": "2026-03-10",
   "/blog/sogoyun/": "2026-07-22",
   "/article/ssone/": "2026-03-02",
-  "/blog/superbiu/": "2026-02-24",
+  "/blog/superbiu/": "2026-10-09",
   "/article/u1s1/": "2026-05-05",
   "/blog/uuone/": "2026-02-24",
   "/blog/xsus/": "2026-02-24",

@@ -27,6 +27,8 @@ export interface AirportRecord {
   telegramHref?: string
   hasOneTimePackage: AirportBoolean
   minPlanText: string
+  /** Date of the archived article version; these plans are not current offers. */
+  historicalPlansAsOf?: string
   plans: AirportPlan[]
   reviewHref?: string
   rankChangeLabel?: string
@@ -79,7 +81,7 @@ export type AirportSource = Omit<AirportRecord, 'plans'> & {
 // 星岛梦: docs/blog/机场推荐/2026/机场推荐星岛梦.md — 💳 星岛梦机场套餐价格
 // 唯兔云: docs/blog/机场推荐/2026/机场推荐唯兔云.md — 💳 唯兔云套餐价格表
 // 灵动云: docs/blog/机场推荐/2026/机场推荐灵动云.md — 周期套餐 / 一次性不限时流量包
-// superbiu: docs/blog/机场推荐/2026/机场推荐superbiu.md — 📦 按量一次性流量包（有效期内不限时）
+// superbiu: docs/blog/机场推荐/2026/机场推荐superbiu.md — 📦 按量一次性流量包（2026-02-24版不限时套餐记录）
 // 极连云: docs/blog/机场推荐/2026/机场推荐极连云.md — 💳 极连云套餐价格与优惠码
 // runway: docs/blog/机场推荐/2026/机场推荐runway.md — 🔁 定期套餐 / 📦 一次性流量包
 // 光年梯: docs/blog/机场推荐/2026/机场推荐光年梯.md — 💳 光年梯机场套餐价格
@@ -4194,17 +4196,18 @@ export const airportSources: AirportSource[] = [
   {
     id: 'superbiu',
     name: 'superbiu',
-    description: 'SuperBiu 机场依托三网（电信/联通/移动）入口的 IPLC 专线，实现跨境高速互联。当前套餐包括 14 元 50GB 月付及多档按月、按年流量方案。',
+    description: 'SuperBiu 已公告涨价、下调节点倍率，并将入口改为三网CN2、协议改为AnyTLS；以上为商家说明，本次未实测。2026-02-24版资料记载11元50GB月付及一次性套餐，以下保留历史价目，现价与在售状态待核实。',
     rank: 30,
     officialHref: 'https://biubiux.online/#/register?code=BasmsULb',
     universalSubscription: false,
-    minPlanText: '14元 50GB/月',
-    hasOneTimePackage: false,
+    minPlanText: '现价待核实',
+    historicalPlansAsOf: '2026-02-24',
+    hasOneTimePackage: 'unknown',
     telegramHref: 'https://t.me/superbiu888',
     reviewHref: '/blog/superbiu/',
     rankChangeLabel: '↑22',
     image: 'https://image.ermao.net/images/blog/superbiu/image-1.jpg',
-    tags: ['IPLC', '三网', '低价'],
+    tags: ['CN2', 'AnyTLS', '三网'],
   },
   {
     id: '极连云',
@@ -4568,7 +4571,7 @@ export const airportSources: AirportSource[] = [
     universalSubscription: false,
     minPlanText: '16元 100G/月',
     hasOneTimePackage: true,
-    telegramHref: 'https://t.me/ermaov1',
+    telegramHref: '',
     reviewHref: '/blog/ermaoyun/',
     rankChangeLabel: '↑5',
     image: 'https://image.ermao.net/images/blog/ermaoyun/20260414_104113-5bbd8b.png',
