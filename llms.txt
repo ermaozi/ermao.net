@@ -93,7 +93,7 @@ This file contains links to all documentation sections.
 - [✈️机场推荐【白羊星】 - 节点稳定、全流媒体解锁](/article/zuuzyvvh/index.md): 白羊星机场，12元 100G/月，轻量级机场、价格超低。 白羊星官网地址：baiyangxi.com
 - [2026 山水云机场评测：14.99元/月起，通用订阅与一次性套餐可选](/blog/2k7jn2n8/index.md): 山水云机场怎么样？本文整理14.99元/月起步套餐、通用订阅、一次性流量包、TG群、节点类型、解锁能力、购买方式和适用人群，适合想先低成本试用的用户。
 - [2026 传送门机场评测：自研App免折腾，99元/年起套餐怎么选](/blog/8svdlqds/index.md): 传送门机场怎么样？本文基于公开套餐与服务信息，整理其自研 App、订阅自动恢复、节点异常切换与套餐价格。当前最低门槛为 99 元/年，含按月、按年与一次性流量档位。
-- [9esim使用指南 - 获取国外手机号，注册Google、Telegram等账号](/blog/9esim/index.md): 2026年实测 9esim使用指南完整教程：购买9esim v3卡和esim plus应用，获取国外手机号，注册Google账号、Telegram等海外服务的详细步骤。可长期持有，区别与接码平台。适合需要虚拟手机号的用户。
+- [9esim使用指南 - 获取国外手机号，注册Google、Telegram等账号](/blog/9esim/index.md): 9esim使用指南：了解实体可编程卡与另购eSIM套餐的区别、设备兼容性、写卡流程及号码有效期。保留历史Google验证体验，说明短信与第三方平台注册不保证成功。
 - [2026年四月机场断线潮详解：通报、拔线与涨价预期下，普通用户该怎么应对](/blog/april-airport-outage-2026/index.md): 2026年4月，多地机场服务出现断线、拔线、降配与停服。本文基于公开通告与从业反馈，梳理本轮波动的核心原因、潜在趋势与用户可执行的应对方案。
 - [Asspp下载使用教程：iPhone多账号切换App Store、跨区下载应用神器](/blog/asspp-download-guide/index.md): 2026最新Asspp下载安装使用教程，iPhone/Mac多Apple ID管理、一键切换美区日区港区App Store、跨区下载应用、提取IPA安装包、回退App旧版本，附详细图文步骤。
 - [2026 CCYZ机场评测：15元100G高性价比IEPL专线机场推荐｜Netflix/ChatGPT解锁](/blog/ccyz/index.md): CCYZ机场怎么样？本文实测CCYZ机场速度、稳定性与流媒体解锁能力，月付仅15元享100G流量、IEPL专线+BGP中转节点，支持Netflix/Disney+/ChatGPT，附95折优惠券与套餐解析。
