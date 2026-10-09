@@ -17,6 +17,8 @@ ROUTES = ['/', '/en/', '/posts/vpn/', '/en/posts/vpn/', '/airport/', '/page/2/',
 def sitemap(routes=ROUTES):
     return '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{seo.HOST}{p}</loc></url>' for p in routes) + '</urlset>'
 TUTORIAL_FIXTURES = {
+    '/blog/shadowrocket-rules-config/': 'FINAL,PROXY 全部 34 个启用的远程规则集 未启用广告拦截规则 订阅对应的是服务器节点更新 不等于流量泄漏 远程文件更新可能覆盖本地自定义修改',
+    '/en/blog/shadowrocket-rules-config/': 'FINAL,PROXY 34 enabled remote rule sets does not enable advertising-blocking rules Subscription updates for server nodes not an iPhone performance updating a remote configuration can overwrite them',
     '/blog/telegram/': 'Two-Step Verification 额外的账号登录密码 本机密码锁 不一定同时发送到邮箱和手机号 不能替代账号两步验证',
     '/en/blog/telegram/': 'Two-Step Verification Passcode Lock separate from the account',
     '/blog/9esim/': '实体可编程卡 卡片出厂不含号码 365 天 按流量、分钟和短信计费 不含号码、语音或短信 第三方验证码均不保证成功 预计约两周 该时效未重新核实',
@@ -131,7 +133,9 @@ class SeoContracts(unittest.TestCase):
                 with self.assertRaisesRegex(AssertionError, 'missing corrected content'):
                     seo.validate_content_freshness(route, seo.Document('<p>Old tutorial</p>'))
         for route, old in [('/blog/telegram/', '独立的密码（App Passcode）'),
-                           ('/blog/9esim/', '无需实体 SIM 卡')]:
+                           ('/blog/9esim/', '无需实体 SIM 卡'),
+                           ('/blog/shadowrocket-rules-config/', '黑名单分流 + 广告过滤'),
+                           ('/en/blog/shadowrocket-rules-config/', 'Split routing plus advertising lists')]:
             with self.subTest(route=route), self.assertRaisesRegex(AssertionError, 'unsupported tutorial claim'):
                 seo.validate_content_freshness(route, seo.Document(samples[route] + '<p>' + old + '</p>'))
 

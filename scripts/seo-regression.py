@@ -120,7 +120,7 @@ def validate_asset(url, status, content_type, body):
 CORE_ROUTES = tuple(
     prefix + suffix
     for prefix in ('/', '/en/')
-    for suffix in ('', 'page/2/', 'posts/vpn/', 'airport/', 'blog/freeappleid/', 'article/z747kgjd/', 'blog/flybit/', 'blog/guangsuyun/', 'blog/asspp-download-guide/', 'blog/superbiu/', 'blog/telegram/', 'blog/9esim/')
+    for suffix in ('', 'page/2/', 'posts/vpn/', 'airport/', 'blog/freeappleid/', 'article/z747kgjd/', 'blog/flybit/', 'blog/guangsuyun/', 'blog/asspp-download-guide/', 'blog/superbiu/', 'blog/telegram/', 'blog/9esim/', 'blog/shadowrocket-rules-config/')
 ) + ('/article/choose-good-airport/', '/article/0gematwc/', '/article/eh8f4n86/')
 
 
@@ -152,7 +152,7 @@ def canonical_status(expected_revision, assets, fetcher=fetch):
             markers = doc.select('meta', 'name', 'ermao:build-revision')
             actual = markers[0].get('content') if len(markers) == 1 else None
             current = actual == expected_revision
-            tutorial = route in ('/blog/telegram/', '/en/blog/telegram/', '/blog/9esim/', '/en/blog/9esim/')
+            tutorial = route in ('/blog/telegram/', '/en/blog/telegram/', '/blog/9esim/', '/en/blog/9esim/', '/blog/shadowrocket-rules-config/', '/en/blog/shadowrocket-rules-config/')
             if current:
                 validate_indexable(route, doc, expected_revision)
                 if tutorial:
@@ -185,6 +185,8 @@ def canonical_status(expected_revision, assets, fetcher=fetch):
 def validate_content_freshness(route, doc):
     visible = re.sub(r'\s+', '', ' '.join(doc.text))
     required = {
+        '/blog/shadowrocket-rules-config/': ('FINAL,PROXY', '全部 34 个启用的远程规则集', '未启用广告拦截规则', '订阅对应的是服务器节点更新', '不等于流量泄漏', '远程文件更新可能覆盖本地自定义修改'),
+        '/en/blog/shadowrocket-rules-config/': ('FINAL,PROXY', '34 enabled remote rule sets', 'does not enable advertising-blocking rules', 'Subscription updates for server nodes', 'not an iPhone performance', 'updating a remote configuration can overwrite them'),
         '/blog/telegram/': ('Two-Step Verification', '额外的账号登录密码', '本机密码锁', '不一定同时发送到邮箱和手机号', '不能替代账号两步验证'),
         '/en/blog/telegram/': ('Two-Step Verification', 'Passcode Lock', 'separate from the account'),
         '/blog/9esim/': ('实体可编程卡', '卡片出厂不含号码', '365 天', '按流量、分钟和短信计费', '不含号码、语音或短信', '第三方验证码均不保证成功', '预计约两周', '该时效未重新核实'),
@@ -203,6 +205,8 @@ def validate_content_freshness(route, doc):
     for text in required.get(route, ()):
         assert re.sub(r'\s+', '', text) in visible, f'{route}: missing corrected content: {text}'
     forbidden = {
+        '/blog/shadowrocket-rules-config/': ('黑名单分流+广告过滤', '所有流量都在裸奔', '封号风险大幅降低', '规则永远保持最新'),
+        '/en/blog/shadowrocket-rules-config/': ('Splitroutingplusadvertisinglists', 'blocksdomainsinitsadvertisingandtrackinglists'),
         '/blog/telegram/': ('独立的密码（AppPasscode）', '会向你的邮箱和手机号发送验证码'),
         '/blog/9esim/': ('无需实体SIM卡', '完美支持Google', '有效期内可无限使用', '2026年实测'),
     }
@@ -245,7 +249,7 @@ def validate(read):
         doc = Document(read(route))
         validate_indexable(route, doc, expected_revision)
         validate_content_freshness(route, doc)
-        if route in ('/blog/telegram/', '/blog/9esim/'):
+        if route in ('/blog/telegram/', '/blog/9esim/', '/blog/shadowrocket-rules-config/', '/en/blog/shadowrocket-rules-config/'):
             article = next(s for s in doc.schemas if s.get('@type') == 'BlogPosting')
             modified = doc.select('meta', 'property', 'article:modified_time')[0]['content']
             assert article['dateModified'] == modified, f'{route}: article dates disagree'
