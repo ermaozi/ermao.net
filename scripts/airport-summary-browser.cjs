@@ -134,9 +134,45 @@ async function main() {
         await page.close()
       }
     }
+    // Existing guides should take readers straight to the comparison table.
+    for (const width of [390, 1440]) {
+      for (const [slug, label] of [['choose-good-airport', 'selection'], ['0gematwc', 'desktop'], ['eh8f4n86', 'android']]) {
+        const page = await browser.newPage({ viewport: { width, height: 900 } })
+        await page.route('**/*', route => route.request().url().startsWith(`${base}/`) ? route.continue() : route.abort())
+        await page.goto(`${base}/article/${slug}/`, { waitUntil: 'networkidle' })
+        const link = page.locator('a[href="/posts/vpn/#airport-comparison"]').first()
+        await link.scrollIntoViewIfNeeded()
+        assert.match(await link.innerText(), /套餐.*风险/)
+        if (label === 'selection') {
+          const text = await page.locator('.vp-doc').innerText()
+          assert.match(text, /不代表每家都经过一周实测/)
+          assert.match(text, /三天自测只能反映这段时间的体验/)
+          assert.doesNotMatch(text, /至少7天实测|至少由我试用一周|规避\s*90%\s*的风险|时间是检验稳定性的唯一标准/)
+        } else {
+          assert.match(await link.innerText(), /订阅兼容性/)
+        }
+        const sourceOverflow = await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 2)
+        assert.equal(sourceOverflow, false, `${label}/${width}: source page overflows`)
+        await page.screenshot({ path: resolve(output, `guide-${label}-${width}.png`) })
+        await link.click()
+        await page.waitForURL(`${base}/posts/vpn/#airport-comparison`)
+        await page.locator('#airport-comparison').waitFor()
+        await page.locator('.airport-ranking-table').waitFor()
+        await page.waitForFunction(() => {
+          const top = document.getElementById('airport-comparison').getBoundingClientRect().top
+          return top >= 0 && top < innerHeight / 2
+        })
+        const documentOverflow = await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 2)
+        results.push({ language: 'zh', width, kind: `guide-${label}`, errors: [], documentOverflow })
+        await page.goBack({ waitUntil: 'networkidle' })
+        await page.waitForURL(`${base}/article/${slug}/`)
+        assert.equal(await page.locator('a[href="/posts/vpn/#airport-comparison"]').count(), 1)
+        await page.close()
+      }
+    }
     const failed = results.filter(result => result.documentOverflow || result.errors.length)
     assert.deepEqual(failed.map(({ numbers, detailNumbers, ...result }) => result), [], 'Comparison components must not overflow at any tested width')
-    console.log(`Airport UI: ${results.length} built-page cases passed (320–1440px, Chinese/English); numbered list/detail anchors verified.`)
+    console.log(`Airport UI: ${results.length} built-page cases passed (320–1440px, Chinese/English); numbered list/detail anchors and guide navigation verified.`)
   } finally {
     writeFileSync(resolve(output, 'results.json'), JSON.stringify(results, null, 2))
     await browser?.close()
