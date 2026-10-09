@@ -50,7 +50,7 @@ description: >-
 
 点击`订阅`，把你的订阅链接粘贴到输入框中，点击`导入`。
 
-如果没有订阅链接可以参考这篇文章：[便宜好用的翻墙机场推荐评测](https://www.ermao.net/posts/vpn)
+如果没有订阅链接，可先[对比机场套餐与风险，并核对 Clash 订阅兼容性](/posts/vpn/#airport-comparison)，再向服务商取得适用的订阅链接。
 
 ![订阅列表显示示例 =1374x485](https://image.ermao.net/images/article/0gematwc/image-1.png)
 

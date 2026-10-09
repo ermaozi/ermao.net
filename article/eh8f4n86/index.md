@@ -50,7 +50,7 @@ description: >-
 
 将获取到的 URL 粘贴到这里，点击确定
 
-如果你没有 URL，可以在这里获取：[便宜好用的翻墙机场推荐评测](/posts/vpn)
+如果没有订阅 URL，可先[对比机场套餐与风险，并核对 Clash Meta 订阅兼容性](/posts/vpn/#airport-comparison)，再向服务商取得适用的订阅 URL。
 
 ![Android Clash设置自动更新时间 =596x828](https://image.ermao.net/images/article/eh8f4n86/image-4.png)
 
