@@ -87,6 +87,19 @@ class SeoContracts(unittest.TestCase):
         self.assertIn('/article/z747kgjd/', seo.CORE_ROUTES)
         self.assertIn('/en/article/z747kgjd/', seo.CORE_ROUTES)
 
+    def test_changed_content_routes_join_release_and_propagation_checks(self):
+        for route in ('/blog/guangsuyun/', '/en/blog/guangsuyun/', '/blog/asspp-download-guide/', '/en/blog/asspp-download-guide/'):
+            self.assertIn(route, seo.CORE_ROUTES)
+
+    def test_content_corrections_cannot_pass_with_stale_copy(self):
+        for route, good in [('/posts/vpn/', '96元/年 60GB/月 99元/年 59GB/月'),
+                            ('/blog/asspp-download-guide/', '停止安装，不要绕过告警；无法确认来源或完整性时停止安装'),
+                            ('/en/blog/freeappleid/', 'Recovery applies only to an account you own')]:
+            with self.subTest(route=route):
+                seo.validate_content_freshness(route, seo.Document('<p>' + good + '</p>'))
+                with self.assertRaisesRegex(AssertionError, 'missing corrected content'):
+                    seo.validate_content_freshness(route, seo.Document('<p>Old article</p>'))
+
     def test_stale_html_with_missing_referenced_asset_is_a_real_error(self):
         requested = []
         def response(url):

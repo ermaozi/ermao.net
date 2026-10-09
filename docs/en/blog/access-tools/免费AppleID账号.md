@@ -17,14 +17,14 @@ description: Shared Apple IDs for downloading region-limited App Store apps, wit
 
 See the [shared account list and data timestamp](#shared-apple-id-pool) for the regions currently available. **Use shared accounts only inside the App Store, never in the device's Settings or iCloud.** A data update does not guarantee that an account will still work when you sign in.
 
-> 💡 If you frequently switch among store regions, the source article also reviews [Asspp, an Apple ID account manager](/en/blog/asspp-download-guide/). Review its security model before giving any third-party app access to accounts or installation files.
+> 💡 To manage accounts for several App Store regions, see [Asspp, a third-party Apple ID manager](/en/blog/asspp-download-guide/). It cannot guarantee verification-free access, stable connections, or continued account availability. Read the [project's security notice](https://github.com/Lakr233/Asspp#-special-notice) and use only a secondary account you control; its unofficial communication method may stop working without a fix.
 
 <!-- more -->
 
 ::: danger Critical safety boundaries
 1. **Device-lock risk:** **Never sign in to a shared account under Settings or iCloud.** Sign in only from the App Store profile screen. A malicious or compromised system-level account can expose an iPhone or iPad to remote lockout.
 2. **Privacy risk:** Many people use each shared account. Never store photos, contacts, backups, or other personal data in it, and never attach a payment method or add funds.
-3. **Frequent account failure:** Cross-region and multi-device sign-ins can trigger Apple's security systems. A locked account or two-factor-authentication request is a common failure mode for public accounts. Do not attempt to change security settings; use another listed account.
+3. **Availability is not guaranteed:** A shared account may be locked, disabled, or require two-factor authentication. These prompts alone do not establish a cross-region sign-in as the cause. Stop trying an inaccessible account and do not change another person's password or security settings; see the FAQ for the different alerts.
 :::
 
 <LinkCard title="Installed Shadowrocket but have no servers? Choose a compatible subscription" href="/en/posts/vpn/#ios-subscription" description="An Apple ID only downloads the app. Shadowrocket and Clash Mi still need compatible server subscriptions. Compare prices, formats, and risk records; start with a short plan." />
@@ -173,7 +173,13 @@ The interface below loads account data and its update timestamp, not a live sign
 
 ### Why does a free U.S. Apple ID say it is locked?
 
-Many devices sign in to the public account from different regions within a short time, triggering Apple's security protections. Lockouts cannot be eliminated for a publicly shared account. Do not attempt account recovery, which usually requires the owner's phone number or security answers. Label colors identify regions, not a successful sign-in test. Refreshing the list does not verify account availability. Do not change another person's password or security settings; use an Apple Account you own for continued use.
+A lockout alert alone does not establish cross-region sign-ins as the cause. [Apple distinguishes several alerts](https://support.apple.com/en-us/102640):
+
+- **Locked or disabled for security reasons:** Repeated incorrect passwords or account details can cause this; the owner needs to reset the password
+- **Locked or inactive account:** The owner can try requesting access, with no guaranteed outcome
+- **Disabled Media & Purchases account:** The owner can request reactivation as directed by the alert
+
+Recovery applies only to an account you own. Stop trying an inaccessible shared account; do not reset another person's password or change security settings. Label colors identify regions, not a successful sign-in test. Refreshing the list does not verify account availability. Use an Apple Account you own for continued use.
 
 ### How do I update an app downloaded with a shared Apple ID?
 
@@ -183,7 +189,7 @@ Do not immediately delete the old app to obtain an update. **Export subscription
 
 ## Related tools
 
-<LinkCard title="Asspp Review: Managing Multiple Apple IDs and Regions" href="/en/blog/asspp-download-guide/" description="A review of a third-party manager for switching App Store accounts, downloading older app versions, and extracting IPA packages. Evaluate account and package security before use." />
+<LinkCard title="Asspp: Multiple Accounts, Regions, and Limitations" href="/en/blog/asspp-download-guide/" description="Explore third-party account management, IPA downloads, and older app versions. Use a secondary account you control; verification-free access, stable connections, and account availability are not guaranteed, and the communication method may stop working." />
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'

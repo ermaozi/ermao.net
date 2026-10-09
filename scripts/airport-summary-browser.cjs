@@ -81,10 +81,22 @@ async function main() {
               await row.locator('a[href="#yunjiexian"]').click()
               await page.locator('#yunjiexian').waitFor()
               assert.match(await page.locator('#yunjiexian').innerText(), /69\s*云界线/)
+              const planCounts = await page.evaluate(() => Object.fromEntries(
+                ['xsus', '网际快车', 'superbiu', 'runway', 'sogo云'].map(id => {
+                  const section = document.getElementById(id).closest('article')
+                  const rows = [...section.querySelectorAll('.airport-plan-table tbody tr')]
+                  return [id, rows.filter(row => row.cells[3].textContent.includes('不限时流量包')).length]
+                }),
+              ))
+              assert.deepEqual(planCounts, { xsus: 4, 网际快车: 3, superbiu: 4, runway: 1, sogo云: 4 })
+              for (const [id, text] of [['极连云', '96元/年 60GB/月'], ['光速云', '99元/年 59GB/月']]) {
+                const annual = page.locator('.airport-ranking-table tbody tr').filter({ has: page.locator(`a[href="#${id}"]`) })
+                assert.equal(await annual.locator('.airport-ranking-plan').innerText(), text)
+              }
               if (width === 1440) await row.screenshot({ path: resolve(output, 'yunjiexian-number.png') })
               if (width === 390) await row.screenshot({ path: resolve(output, 'yunjiexian-mobile.png') })
               if (width === 1440) {
-                for (const id of ['xsus', 'shenxing', 'liulianyun']) {
+                for (const id of ['xsus', 'shenxing', 'liulianyun', '极连云', '光速云']) {
                   await page.locator('.airport-ranking-table tbody tr').filter({ has: page.locator(`a[href="#${id}"]`) }).screenshot({ path: resolve(output, `${id}-compact-plan.png`) })
                 }
               }
