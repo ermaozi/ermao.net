@@ -31,6 +31,7 @@ const localizedHref = (href?: string) =>
 const labels = computed(() => isEnglish.value
   ? {
       section: 'Provider summaries and plan prices',
+      number: 'List number',
       meta: 'Provider details',
       official: 'Official site',
       minimum: 'Lowest listed plan',
@@ -41,6 +42,7 @@ const labels = computed(() => isEnglish.value
     }
   : {
       section: '机场详细简介与套餐价格',
+      number: '列表序号',
       meta: '机场基础信息',
       official: '官网地址',
       minimum: '最低订阅',
@@ -54,9 +56,9 @@ const labels = computed(() => isEnglish.value
 
 <template>
   <section class="airport-detail-list" :aria-label="labels.section">
-    <article v-for="item in airports" :key="item.id" class="airport-detail-item">
+    <article v-for="(item, index) in airports" :key="item.id" class="airport-detail-item">
       <h3 :id="item.id">
-        <span v-if="item.rank !== undefined" class="airport-detail-rank">{{ item.rank }}</span>
+        <span class="airport-detail-rank" :aria-label="`${labels.number} ${index + 1}`">{{ index + 1 }}</span>
         {{ item.name }}
       </h3>
 
@@ -189,3 +191,4 @@ const labels = computed(() => isEnglish.value
   }
 }
 </style>
+

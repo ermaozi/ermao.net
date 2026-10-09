@@ -39,6 +39,18 @@ jobs:
           python3 scripts/seo-regression.test.py
       - name: Build VuePress site
         run: pnpm build
+      - name: Install Chromium for comparison-page checks
+        run: pnpm exec playwright install --with-deps chromium
+      - name: Check airport summaries at desktop and phone widths
+        run: node scripts/airport-summary-browser.cjs
+      - name: Preserve comparison-page browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: airport-summary-${{ github.sha }}
+          path: artifacts/airport-summary
+          if-no-files-found: warn
+          retention-days: 3
       - name: Audit site content and generated homepage
         run: |
           pnpm run audit:site
@@ -117,3 +129,4 @@ jobs:
           persist-credentials: false
       - name: Inspect production routing and cache responses
         run: python3 scripts/seo-regression.py --http-audit
+

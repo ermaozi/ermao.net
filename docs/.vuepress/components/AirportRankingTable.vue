@@ -44,7 +44,8 @@ const localizedHref = (href?: string) =>
 
 const labels = computed(() => isEnglish.value
   ? {
-      name: 'Provider',
+      name: 'No. / Provider',
+      number: 'List number',
       official: 'Website',
       universal: 'Standard subscription',
       minimum: 'Lowest listed plan',
@@ -56,7 +57,8 @@ const labels = computed(() => isEnglish.value
       visit: 'View',
     }
   : {
-      name: '机场名称',
+      name: '序号 / 机场',
+      number: '列表序号',
       official: '官网',
       universal: '通用订阅',
       minimum: '最便宜订阅',
@@ -96,10 +98,12 @@ const labels = computed(() => isEnglish.value
         </tr>
       </thead>
       <tbody>
-        <tr v-for="item in airports" :key="item.id">
+        <tr v-for="(item, index) in airports" :key="item.id">
           <td class="airport-ranking-name" :data-label="labels.name">
-            <span v-if="item.rank !== undefined" class="airport-ranking-rank">{{ item.rank }}</span>
-            <a :href="`#${item.id}`">{{ item.name }}</a>
+            <span class="airport-ranking-provider">
+              <span class="airport-ranking-rank" :aria-label="`${labels.number} ${index + 1}`">{{ index + 1 }}</span>
+              <a :href="`#${item.id}`">{{ item.name }}</a>
+            </span>
           </td>
           <td class="airport-ranking-link" :data-label="labels.official">
             <a
@@ -198,9 +202,9 @@ const labels = computed(() => isEnglish.value
   border: 0;
   border-bottom: 1px solid var(--vp-c-border);
   vertical-align: middle;
-  white-space: nowrap;
-  overflow-wrap: normal;
-  word-break: keep-all;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
 
 .airport-ranking-table thead th {
@@ -211,15 +215,23 @@ const labels = computed(() => isEnglish.value
   background: var(--vp-c-bg-soft);
   font-weight: 700;
   text-align: left;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .airport-ranking-table tbody tr:last-child td {
   border-bottom: 0;
 }
 
-.airport-ranking-name {
-  white-space: nowrap;
+.airport-ranking-provider {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 8px;
+}
+
+.airport-ranking-provider a {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .airport-ranking-rank {
@@ -228,7 +240,7 @@ const labels = computed(() => isEnglish.value
   height: 26px;
   align-items: center;
   justify-content: center;
-  margin-right: 8px;
+  flex: none;
   border-radius: 999px;
   color: var(--vp-c-brand-1);
   background: var(--vp-c-brand-soft);
@@ -246,7 +258,7 @@ const labels = computed(() => isEnglish.value
 }
 
 .airport-ranking-plan {
-  white-space: nowrap;
+  line-height: 1.5;
 }
 
 .airport-ranking-bool {
@@ -281,7 +293,7 @@ const labels = computed(() => isEnglish.value
 }
 
 .airport-ranking-change.is-new {
-  color: #fff;
+  color: var(--vp-c-text-1);
 }
 
 @media (max-width: 719px) {
@@ -334,3 +346,4 @@ const labels = computed(() => isEnglish.value
   }
 }
 </style>
+

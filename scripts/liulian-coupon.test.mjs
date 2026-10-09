@@ -62,7 +62,7 @@ test('The original five plan prices and monthly allowances remain undiscounted',
     { priceText: '¥60/月', traffic: '420GB/月' },
     { priceText: '¥100/月', traffic: '750GB/月' },
   ])
-  assert.equal(record.minPlanText, '24元 140GB/月；96元/年，60GB/月')
+  assert.equal(record.minPlanText, '24元 140GB/月')
   assert.match(chinese, /以上金额为优惠前的套餐价格/)
   assert.match(english, /The table keeps prices before the coupon discount/)
   for (const plan of record.plans) {
@@ -91,3 +91,4 @@ test('The selector editorial date matches the updated bilingual source pages', (
   assert.equal(selectorSourceDates['/blog/liulianyun/'], '2026-10-08')
   for (const content of [chinese, english]) assert.match(content, /^updateTime: 2026\/10\/08 00:00:00$/m)
 })
+

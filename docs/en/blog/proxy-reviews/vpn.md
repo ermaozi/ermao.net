@@ -215,7 +215,7 @@ Some users cannot import subscriptions because their client is outdated or does 
 New protocols will likely continue to appear. The source article currently highlights [AnyTLS](/en/article/anytls-guide/) and VLESS with flow control as options designed to resist protocol identification; actual effectiveness depends on implementation and network conditions.
 :::
 
-The ranking below is based primarily on **monthly sales, including new purchases and renewals**. Providers with higher reported sales appear earlier.
+The ranking below is based primarily on **monthly sales, including new purchases and renewals**. Providers with higher reported sales appear earlier. Numbered badges identify list positions.
 
 *[Provider name]: Select a name to jump to its summary, which includes more detail and a plan table.
 
@@ -524,3 +524,4 @@ There is no perfect VPN or proxy service—only a service that fits a particular
 **You are welcome to share your experience or suggest another provider in the comments.**
 
 ---
+
