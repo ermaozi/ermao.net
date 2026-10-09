@@ -1,0 +1,274 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/iab0x00/ProxyRules/main/Rule/AI.txt",
+    "policy": "AI",
+    "lines": 52,
+    "sha256": "9e35a2548a810ed7e8d5e7bee8a916ec0992e54248ab1b27e4d8cf6a5fa3069e",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/YouTube/YouTube.list",
+    "policy": "YOUTUBE",
+    "lines": 190,
+    "sha256": "f764cd91a779982225b3553ece8033c86a6545f4990f5fefd356805de962aee9",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Netflix/Netflix.list",
+    "policy": "NETFLIX",
+    "lines": 1157,
+    "sha256": "ec37f90727e7db062d754487c4bed68ae8bba28f349aef0995f10c06f5e8b231",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Disney/Disney.list",
+    "policy": "DISNEY+",
+    "lines": 173,
+    "sha256": "65ededc7b608e440f3d918f6e95b19ca52460c8fe368dbd9e840b4bc8669f753",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/HBO/HBO.list",
+    "policy": "MAX",
+    "lines": 49,
+    "sha256": "f89c50e9a1f433dc1acb8a75aa2cab27d4e2fd82f4fed6ba2820ce9b923680e2",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Spotify/Spotify.list",
+    "policy": "SPOTIFY",
+    "lines": 30,
+    "sha256": "577afc9442a38c578e0aa8769b192d2f935e808114c60cbd5afd2294c79b74d0",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Telegram/Telegram.list",
+    "policy": "TELEGRAM",
+    "lines": 40,
+    "sha256": "09f093cce5b3e2994147a2640e03040aac75e1db7bf2103fd1c9a2509b0176ab",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/PayPal/PayPal.list",
+    "policy": "PAYPAL",
+    "lines": 248,
+    "sha256": "4ffb6f94d2f1eff835c24b533c3d1d6e0c5a4cfbc32740fa9c32315ae218fd18",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Twitter/Twitter.list",
+    "policy": "TWITTER",
+    "lines": 33,
+    "sha256": "64c836f2431ca0d4728cc545bb74280ee50c886e346040012e6cdd2f3eee3f97",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Facebook/Facebook.list",
+    "policy": "FACEBOOK",
+    "lines": 570,
+    "sha256": "747563c96825bbd5f868be955543b0ca1979064e7b094f8aab08aafbce577c36",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Amazon/Amazon.list",
+    "policy": "AMAZON",
+    "lines": 205,
+    "sha256": "83e604479e651e17734e965425969d475732463e3d3c942f22afa159532f27d4",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Sony/Sony.list",
+    "policy": "\u6e38\u620f\u5e73\u53f0",
+    "lines": 116,
+    "sha256": "c3c96668d832b2b4e94ab185c14e2931d6af99d5a106bb658b0d83160fc9a19f",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Nintendo/Nintendo.list",
+    "policy": "\u6e38\u620f\u5e73\u53f0",
+    "lines": 126,
+    "sha256": "ca3cf3ea5051ed220c255fbccbdd93e477f1c558e26ada6bf3dbcc2ba0487da2",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Epic/Epic.list",
+    "policy": "\u6e38\u620f\u5e73\u53f0",
+    "lines": 15,
+    "sha256": "8f5fcadadd967023aa81273803de80beb2ceadd9af4e9352b565b3b00ccf464d",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/SteamCN/SteamCN.list",
+    "policy": "\u6e38\u620f\u5e73\u53f0",
+    "lines": 17,
+    "sha256": "82c144434e9199c524d95caa8e3659c9f6f1de9fd23b223a58b5d3c821923936",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Steam/Steam.list",
+    "policy": "\u6e38\u620f\u5e73\u53f0",
+    "lines": 54,
+    "sha256": "35826051b8797c7636210389fafadea23a16af51378feee20ededbb652b43332",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Game/Game.list",
+    "policy": "\u6e38\u620f\u5e73\u53f0",
+    "lines": 597,
+    "sha256": "57cf368850a979ff214a82ac78c859af2d0ab3d04f1dadfb5ed69cd1ced920fa",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/GitHub/GitHub.list",
+    "policy": "PROXY",
+    "lines": 31,
+    "sha256": "ced8ab0ecda5775d04ec8ee6a57b282181108565331a6a1d85e9a26fee25d79b",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Microsoft/Microsoft.list",
+    "policy": "\u5fae\u8f6f\u670d\u52a1",
+    "lines": 671,
+    "sha256": "22df1a1017ad5d41755bf020ca8eb9afeedc7bdc2c649ed2074b255227a7ed8e",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Google/Google.list",
+    "policy": "\u8c37\u6b4c\u670d\u52a1",
+    "lines": 698,
+    "sha256": "c6efe08ab4c0a12ddba20f5e75abfba2dd63a42b810f8cb5c303433a38e93b73",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list",
+    "policy": "\u82f9\u679c\u670d\u52a1",
+    "lines": 1881,
+    "sha256": "2a6c92c08d48a05322d672eb07ace2b813b1c22dee08412ab3d27b85bd8e497b",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/BiliBili/BiliBili.list",
+    "policy": "\u54d4\u54e9\u54d4\u54e9",
+    "lines": 127,
+    "sha256": "9b22a7bdf97792346bf480771841b6cd1097ec7ad034b34528c14f3798107854",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/NetEaseMusic/NetEaseMusic.list",
+    "policy": "DIRECT",
+    "lines": 30,
+    "sha256": "da8638a8414224a63dd29d7b45446956ed98c67f88d3b530c80b6c978191fc09",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Baidu/Baidu.list",
+    "policy": "DIRECT",
+    "lines": 251,
+    "sha256": "ac49361bba37ccd12f46dff78885ef07218d9dc9deb254d71d1c0431a7eb921a",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/DouBan/DouBan.list",
+    "policy": "DIRECT",
+    "lines": 3,
+    "sha256": "49b368896f4e38f4a31ac911b8e13fee923575884afe0d27a3cb1a0735551742",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/WeChat/WeChat.list",
+    "policy": "DIRECT",
+    "lines": 43,
+    "sha256": "f2b1097292162858845d3b4f99058f047e0715bef4a0e6202b40a10af5c38e2c",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Sina/Sina.list",
+    "policy": "DIRECT",
+    "lines": 108,
+    "sha256": "223182b8b06af7838174f94839e1e799b39a9e283b66b0e1a71108539d7c2829",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Zhihu/Zhihu.list",
+    "policy": "DIRECT",
+    "lines": 7,
+    "sha256": "450c53b3762b1aa2f63631f8d07c7237338c8c691aeb475ed07583cfea9d5e33",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/XiaoHongShu/XiaoHongShu.list",
+    "policy": "DIRECT",
+    "lines": 4,
+    "sha256": "9fb20e80dc0962cfdf410ffbd72d6bf2a6a0ac0d930951880f98164ff229e8ff",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/DouYin/DouYin.list",
+    "policy": "DIRECT",
+    "lines": 13,
+    "sha256": "020e742fe4a7084268af6aa52c4153bf5bfd54c4d7a17466f42cd3461609e32a",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/TikTok/TikTok.list",
+    "policy": "TIKTOK",
+    "lines": 32,
+    "sha256": "403dccb2d51606d73db9e669e82cc1d9030c7e697756ae13d9f8f5fea53c151a",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list",
+    "policy": "DIRECT",
+    "lines": 3753,
+    "sha256": "d1db36ac45b3615ee989cc2294e49559cf7d2c7e9826b00d716bc2cb436c09e1",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Lan/Lan.list",
+    "policy": "DIRECT",
+    "lines": 140,
+    "sha256": "e524edec216ed7f2fa2f3eb3fe09fe70121acf88408c2394d19b3e2331c54de7",
+    "nested": [],
+    "reject": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list",
+    "policy": "PROXY",
+    "lines": 35822,
+    "sha256": "41a2ac1e869048e804a01d39a63dca592873d2c540e22e052796c0524f77b689",
+    "nested": [],
+    "reject": []
+  }
+]
