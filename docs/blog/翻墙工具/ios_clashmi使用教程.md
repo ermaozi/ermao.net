@@ -1,6 +1,7 @@
 ---
 title: iOS Clash Mi 使用教程（2026最新版）：下载安装、订阅导入与常见问题
 createTime: 2026/03/05 10:34:23
+updateTime: 2026/10/09 23:27:00
 permalink: /blog/clashmi/
 description: 2026年最新 Clash Mi 使用教程，覆盖 iPhone/iPad 安装、订阅链接导入、连接设置、TUN 覆写和常见报错解决。新手可按步骤快速上手。
 tags:
@@ -52,9 +53,9 @@ Clash Mi 只是客户端，连接外网还需要可用的 Clash 订阅。
 
 想要用上这个神器，第一步当然是把它装到手机或电脑里。
 
-### iOS / iPadOS / macOS
+### iOS / iPadOS
 
-苹果全家桶用户可以直接在应用商店下载：
+iPhone 和 iPad 用户可以选择以下下载渠道：
 - **求稳就选它（App Store 正式版）**：[点击前往 App Store 下载](https://apps.apple.com/us/app/clash-mi/id6744321968)
 - **喜欢尝鲜（TestFlight Beta 版）**：[点击加入 TestFlight 测试](https://testflight.apple.com/join/bjHXktB3)
 
@@ -65,6 +66,10 @@ Clash Mi 只是客户端，连接外网还需要可用的 Clash 订阅。
 <LinkCard title="🍎 最新免费美区Apple ID共享账号 | 纯免费每日更新" href="/blog/freeappleid/" description="2026年最新免费共享美区Apple ID账号，每日更新可用。提供美国、日本、韩国、香港、台湾等地区iOS账号，支持免翻墙直接下载 Clash Mi 等海外应用。" />
 
 - 对了，App Store 的正式版和 TestFlight 的测试版只能“二选一”，同时装的话，其中一个会把另一个给覆盖掉。
+
+### macOS
+
+Mac 版通过官方 **DMG 安装包**安装和更新，要求 **macOS 12（Monterey）或更高版本**。前往[官方下载页面的 macOS 栏目](https://clashmi.app/download#macos)，选择稳定版或测试版；打开下载的 DMG，将 Clash Mi 拖入“应用程序”文件夹。详细步骤见[官方 macOS 安装指南](https://clashmi.app/guide/macos)。
 
 ### Android / Harmony / Windows / Linux 用户
 
@@ -145,10 +150,17 @@ Clash Mi 只是客户端，连接外网还需要可用的 Clash 订阅。
 
 以管理员身份启动 Clash Mi，然后重新连接。
 
-### 6 iOS/macOS 无法下载或更新 Clash Mi
+### 6 无法下载或更新 Clash Mi
+
+#### iOS / iPadOS
 
 - 改用可下载 Clash Mi 的 Apple ID（如美区）
 - 如果之前装过 TestFlight 版，先卸载再用有效账号重新安装
+
+#### macOS
+
+- 确认系统为 macOS 12 或更高版本
+- 从[官方下载页面的 macOS 栏目](https://clashmi.app/download#macos)获取 DMG 安装包，按[官方 macOS 指南](https://clashmi.app/guide/macos)安装或更新
 
 ### 7 Clash Mi 会泄露数据吗
 

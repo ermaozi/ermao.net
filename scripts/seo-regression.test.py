@@ -17,6 +17,8 @@ ROUTES = ['/', '/en/', '/posts/vpn/', '/en/posts/vpn/', '/airport/', '/page/2/',
 def sitemap(routes=ROUTES):
     return '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{seo.HOST}{p}</loc></url>' for p in routes) + '</urlset>'
 TUTORIAL_FIXTURES = {
+    '/blog/clashmi/': 'iPhone 和 iPad 用户 Mac 版通过官方 DMG 安装包安装和更新 macOS 12（Monterey）或更高版本 <a href="https://clashmi.app/download#macos">下载</a><a href="https://clashmi.app/guide/macos">指南</a>',
+    '/en/blog/clashmi/': 'iPhone and iPad users The Mac version is installed and updated using an official DMG package macOS 12 (Monterey) or later <a href="https://clashmi.app/download#macos">Download</a><a href="https://clashmi.app/guide/macos">Guide</a>',
     '/blog/telegram/': 'Two-Step Verification 额外的账号登录密码 本机密码锁 不一定同时发送到邮箱和手机号 不能替代账号两步验证',
     '/en/blog/telegram/': 'Two-Step Verification Passcode Lock separate from the account',
     '/blog/9esim/': '实体可编程卡 卡片出厂不含号码 365 天 按流量、分钟和短信计费 不含号码、语音或短信 第三方验证码均不保证成功 预计约两周 该时效未重新核实',
@@ -131,9 +133,24 @@ class SeoContracts(unittest.TestCase):
                 with self.assertRaisesRegex(AssertionError, 'missing corrected content'):
                     seo.validate_content_freshness(route, seo.Document('<p>Old tutorial</p>'))
         for route, old in [('/blog/telegram/', '独立的密码（App Passcode）'),
-                           ('/blog/9esim/', '无需实体 SIM 卡')]:
+                           ('/blog/9esim/', '无需实体 SIM 卡'),
+                           ('/blog/clashmi/', 'iOS / iPadOS / macOS'),
+                           ('/en/blog/clashmi/', 'iOS, iPadOS, and macOS')]:
             with self.subTest(route=route), self.assertRaisesRegex(AssertionError, 'unsupported tutorial claim'):
                 seo.validate_content_freshness(route, seo.Document(samples[route] + '<p>' + old + '</p>'))
+
+    def test_clashmi_sources_and_public_body_are_verified(self):
+        for target in ('/blog/clashmi/', '/en/blog/clashmi/'):
+            for url in ('https://clashmi.app/download#macos', 'https://clashmi.app/guide/macos'):
+                with self.subTest(target=target, url=url), self.assertRaisesRegex(AssertionError, 'missing official macOS source'):
+                    seo.validate_content_freshness(target, seo.Document(TUTORIAL_FIXTURES[target].replace(url, 'https://example.com/')))
+            def response(url):
+                route = urlsplit(url).path
+                html = HEAD.replace(ROUTE, route) + ('<p>Old tutorial</p>' if route == target else TUTORIAL_FIXTURES.get(route, ''))
+                return 200, {'content-type': 'text/html'}, html
+            with self.subTest(target=target), redirect_stdout(StringIO()) as output:
+                self.assertEqual(seo.canonical_status(SHA, set(), response), 1)
+            self.assertIn('missing corrected content', output.getvalue())
 
     def test_current_public_tutorial_cannot_pass_with_wrong_body(self):
         def response(url):

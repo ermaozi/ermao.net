@@ -120,7 +120,7 @@ def validate_asset(url, status, content_type, body):
 CORE_ROUTES = tuple(
     prefix + suffix
     for prefix in ('/', '/en/')
-    for suffix in ('', 'page/2/', 'posts/vpn/', 'airport/', 'blog/freeappleid/', 'article/z747kgjd/', 'blog/flybit/', 'blog/guangsuyun/', 'blog/asspp-download-guide/', 'blog/superbiu/', 'blog/telegram/', 'blog/9esim/')
+    for suffix in ('', 'page/2/', 'posts/vpn/', 'airport/', 'blog/freeappleid/', 'article/z747kgjd/', 'blog/flybit/', 'blog/guangsuyun/', 'blog/asspp-download-guide/', 'blog/superbiu/', 'blog/telegram/', 'blog/9esim/', 'blog/clashmi/')
 ) + ('/article/choose-good-airport/', '/article/0gematwc/', '/article/eh8f4n86/')
 
 
@@ -152,7 +152,7 @@ def canonical_status(expected_revision, assets, fetcher=fetch):
             markers = doc.select('meta', 'name', 'ermao:build-revision')
             actual = markers[0].get('content') if len(markers) == 1 else None
             current = actual == expected_revision
-            tutorial = route in ('/blog/telegram/', '/en/blog/telegram/', '/blog/9esim/', '/en/blog/9esim/')
+            tutorial = route in ('/blog/telegram/', '/en/blog/telegram/', '/blog/9esim/', '/en/blog/9esim/', '/blog/clashmi/', '/en/blog/clashmi/')
             if current:
                 validate_indexable(route, doc, expected_revision)
                 if tutorial:
@@ -185,6 +185,8 @@ def canonical_status(expected_revision, assets, fetcher=fetch):
 def validate_content_freshness(route, doc):
     visible = re.sub(r'\s+', '', ' '.join(doc.text))
     required = {
+        '/blog/clashmi/': ('iPhone 和 iPad 用户', 'Mac 版通过官方 DMG 安装包安装和更新', 'macOS 12（Monterey）或更高版本'),
+        '/en/blog/clashmi/': ('iPhone and iPad users', 'The Mac version is installed and updated using an official DMG package', 'macOS 12 (Monterey) or later'),
         '/blog/telegram/': ('Two-Step Verification', '额外的账号登录密码', '本机密码锁', '不一定同时发送到邮箱和手机号', '不能替代账号两步验证'),
         '/en/blog/telegram/': ('Two-Step Verification', 'Passcode Lock', 'separate from the account'),
         '/blog/9esim/': ('实体可编程卡', '卡片出厂不含号码', '365 天', '按流量、分钟和短信计费', '不含号码、语音或短信', '第三方验证码均不保证成功', '预计约两周', '该时效未重新核实'),
@@ -203,11 +205,16 @@ def validate_content_freshness(route, doc):
     for text in required.get(route, ()):
         assert re.sub(r'\s+', '', text) in visible, f'{route}: missing corrected content: {text}'
     forbidden = {
+        '/blog/clashmi/': ('iOS/iPadOS/macOS', '苹果全家桶用户可以直接在应用商店下载', 'iOS/macOS无法下载或更新ClashMi'),
+        '/en/blog/clashmi/': ('iOS,iPadOS,andmacOS', 'Apple-platformuserscanobtaintheappthrougheitherchannel', 'downloadedorupdatedoniOSormacOS'),
         '/blog/telegram/': ('独立的密码（AppPasscode）', '会向你的邮箱和手机号发送验证码'),
         '/blog/9esim/': ('无需实体SIM卡', '完美支持Google', '有效期内可无限使用', '2026年实测'),
     }
     for text in forbidden.get(route, ()):
         assert text not in visible, f'{route}: unsupported tutorial claim: {text}'
+    if route in ('/blog/clashmi/', '/en/blog/clashmi/'):
+        for url in ('https://clashmi.app/download#macos', 'https://clashmi.app/guide/macos'):
+            assert doc.select('a', 'href', url), f'{route}: missing official macOS source: {url}'
     if route in ('/article/choose-good-airport/', '/article/0gematwc/', '/article/eh8f4n86/'):
         assert doc.select('a', 'href', '/posts/vpn/#airport-comparison'), f'{route}: missing direct comparison link'
         if route == '/article/choose-good-airport/':
@@ -245,7 +252,7 @@ def validate(read):
         doc = Document(read(route))
         validate_indexable(route, doc, expected_revision)
         validate_content_freshness(route, doc)
-        if route in ('/blog/telegram/', '/blog/9esim/'):
+        if route in ('/blog/telegram/', '/blog/9esim/', '/blog/clashmi/', '/en/blog/clashmi/'):
             article = next(s for s in doc.schemas if s.get('@type') == 'BlogPosting')
             modified = doc.select('meta', 'property', 'article:modified_time')[0]['content']
             assert article['dateModified'] == modified, f'{route}: article dates disagree'
