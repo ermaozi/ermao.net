@@ -85,10 +85,12 @@ async function main() {
             }
           }
           if (width === 390 || width === 1440) {
-            await page.locator(kind === 'comparison' ? '.airport-ranking-wrap' : '.airport-card-grid').evaluate(element => { element.scrollIntoView({ block: 'start' }); window.scrollBy(0, -80) })
+            await page.locator(kind === 'comparison' ? '.airport-ranking-wrap' : '.airport-card-grid').evaluate(element => window.scrollTo({ top: element.getBoundingClientRect().top + window.scrollY - 80, behavior: 'instant' }))
             await page.evaluate(() => { document.documentElement.classList.remove('dark'); document.documentElement.setAttribute('data-theme', 'light') })
+            await page.waitForTimeout(600)
             await page.screenshot({ path: resolve(output, `${language}-${kind}-${width}-light.png`) })
             await page.evaluate(() => { document.documentElement.classList.add('dark'); document.documentElement.setAttribute('data-theme', 'dark') })
+            await page.waitForTimeout(600)
             await page.screenshot({ path: resolve(output, `${language}-${kind}-${width}-dark.png`) })
           }
         }

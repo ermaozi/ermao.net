@@ -16,6 +16,18 @@ html {
   overflow-wrap: break-word;
 }
 
+/* Metadata tags must wrap as a group on narrow article and directory pages. */
+.vp-doc-container .vp-doc-meta > p {
+  min-width: 0;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.vp-doc-container .vp-doc-meta .tag {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
 .vp-doc p,
 .vp-doc ul,
 .vp-doc ol {
@@ -307,3 +319,4 @@ html {
   margin-right: 0 !important;
   margin-bottom: 4px;
 }
+
