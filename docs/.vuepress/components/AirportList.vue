@@ -127,12 +127,15 @@ const labels = computed(() => isEnglish.value
 
 .airport-card-head {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
   gap: 10px;
 }
 
 .airport-card h3 {
+  min-width: 0;
+  overflow-wrap: anywhere;
   margin: 0;
   font-size: 18px;
   line-height: 1.35;
@@ -151,7 +154,10 @@ const labels = computed(() => isEnglish.value
 }
 
 .airport-price {
-  flex: none;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+  flex: 0 1 auto;
   padding: 3px 8px;
   border: 1px solid var(--vp-c-brand-soft);
   border-radius: 999px;
@@ -160,7 +166,7 @@ const labels = computed(() => isEnglish.value
   font-size: 12px;
   font-weight: 700;
   line-height: 1.5;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .airport-tags {
@@ -240,3 +246,4 @@ const labels = computed(() => isEnglish.value
   }
 }
 </style>
+

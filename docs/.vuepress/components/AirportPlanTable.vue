@@ -98,14 +98,18 @@ const planMeta = (plan: AirportPlan) => {
           :class="{ 'is-recommended': plan.recommended }"
         >
           <td class="plan-name" :data-label="labels.plan">
-            <strong>{{ plan.name || plan.text }}</strong>
-            <span v-if="plan.recommended" class="plan-badge">{{ labels.recommended }}</span>
+            <span class="plan-name-content">
+              <strong>{{ plan.name || plan.text }}</strong>
+              <span v-if="plan.recommended" class="plan-badge">{{ labels.recommended }}</span>
+            </span>
           </td>
           <td :data-label="labels.price">{{ planPrice(plan) }}</td>
           <td :data-label="labels.traffic">{{ plan.traffic || fallback }}</td>
           <td :data-label="labels.cycle">
-            <span>{{ plan.billingCycle || fallback }}</span>
-            <small v-if="plan.type">{{ plan.type }}</small>
+            <span>
+              {{ plan.billingCycle || fallback }}
+              <small v-if="plan.type">{{ plan.type }}</small>
+            </span>
           </td>
           <td class="plan-meta" :data-label="labels.features">
             {{ planMeta(plan) }}
@@ -257,3 +261,4 @@ const planMeta = (plan: AirportPlan) => {
   }
 }
 </style>
+

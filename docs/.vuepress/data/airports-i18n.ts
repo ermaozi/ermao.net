@@ -303,16 +303,16 @@ export const localizeAirportName = (value: string) =>
   englishNames[value] ?? genericEnglish(value, 'Proxy service')
 
 export const localizeAirportPrice = (value: string) => {
-  if (value === '资料记录10元 168GB/月；现价待核实') return 'Recorded: CNY 10 for 168 GB/month; current price unverified'
-  if (value === '历史79.9元/年，45GB/月；现价待核实') return 'Historical: CNY 79.90/year, 45 GB/month; current terms unverified'
+  if (value === '现价待核实') return 'Price unverified'
   const translated = replacePhrases(value)
+    .replace(/(\d+(?:\.\d+)?)\s*元(?=\d)/g, 'CNY $1 ')
     .replace(/(\d+(?:\.\d+)?)\s*元/g, 'CNY $1')
     .replace(/\/\s*月/g, '/month')
     .replace(/\/\s*年/g, '/year')
     .replace(/\/\s*季/g, '/quarter')
     .replace(/\/\s*30\s*天/g, '/30 days')
     .replace(/(\d+)\s*天/g, '$1 days')
-    .replace(/\bG\b/gi, 'GB')
+    .replace(/(\d)\s*G\b/gi, '$1GB')
 
   return cleanLocalizedText(translated) || 'See current checkout page'
 }
@@ -361,6 +361,7 @@ const localizeTags = (tags: string[] | undefined) =>
     .filter(Boolean)
 
 const englishDescription = (item: AirportSource | AirportRecord) => {
+  if (item.id === '唯兔云') return 'Historical records list CNY 79.90 per year with 45 GB each month. The entry page showed only a route check on 2026-10-02; current prices, reset periods and service terms remain unverified. Test the provider’s route and access claims on your own network.'
   if (item.id === 'liulianyun') return 'Monthly plans start at CNY 24 for 140 GB, with a CNY 96 annual plan offering 60 GB each month. The provider lists universal subscriptions and VLESS speed records from five regions. Code ll88 offers 30% off, once per account; confirm eligible plans, billing periods and expiry at checkout.'
   if (item.id === 'xsus') return 'The 2026 review records CNY 10 per month for 168 GB; the older article records CNY 8. The change date and any discount conditions are undocumented. Verify the current price and test the required nodes before purchase.'
   if (item.id === 'flybit') return 'Recorded plans start at CNY 15 per month for 128 GB, with non-expiring packages also listed. IEPL routes and streaming or ChatGPT access are provider claims. Archived tests lack complete timestamps and setup details, so verify current terms and test a small plan on your own network.'
@@ -398,3 +399,4 @@ export const localizeAirportRecord = (item: AirportRecord): AirportRecord => ({
   rankChangeLabel: item.rankChangeLabel === '新上' ? 'New' : item.rankChangeLabel,
   plans: item.plans.map(localizeAirportPlan),
 })
+
