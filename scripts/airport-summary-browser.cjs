@@ -1,6 +1,7 @@
 // Verify the built site's shared comparison components without contacting third parties.
 const assert = require('node:assert/strict')
 const { spawn } = require('node:child_process')
+const { request } = require('node:http')
 const { mkdirSync, writeFileSync } = require('node:fs')
 const { resolve } = require('node:path')
 const { chromium } = require('playwright')
@@ -9,6 +10,16 @@ const port = 4174
 const base = `http://127.0.0.1:${port}`
 const output = resolve('artifacts/airport-summary')
 const delay = ms => new Promise(done => setTimeout(done, ms))
+// A HEAD probe avoids leaving a large HTML response unread in Node's fetch parser.
+const ready = () => new Promise((resolve, reject) => {
+  const req = request(base, { method: 'HEAD' }, res => {
+    res.resume()
+    res.statusCode === 200 ? resolve() : reject(new Error(`Preview HTTP ${res.statusCode}`))
+  })
+  req.on('error', reject)
+  req.setTimeout(2000, () => req.destroy(new Error('Preview readiness timeout')))
+  req.end()
+})
 
 async function main() {
   mkdirSync(output, { recursive: true })
@@ -17,7 +28,7 @@ async function main() {
   const results = []
   try {
     for (let i = 0; ; i++) {
-      try { assert.equal((await fetch(base)).status, 200); break }
+      try { await ready(); break }
       catch (error) { if (i === 30) throw error; await delay(200) }
     }
     browser = await chromium.launch({ headless: true })
