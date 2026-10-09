@@ -10566,16 +10566,15 @@ Users with the required Apple developer signing assets can fork the project and 
 
 ### Method 3: install on macOS
 
-1. Download the latest intended `.zip` from [Asspp Releases](https://github.com/Lakr233/Asspp/releases).
+1. Obtain the intended `.zip` only from the project's official [Asspp Releases](https://github.com/Lakr233/Asspp/releases). Check release details and any supplied signature or checksum; stop and contact the developer if the source or integrity is uncertain.
 2. Extract it and move `Asspp.app` to **Applications**.
-3. On first launch, macOS may show a Gatekeeper warning:
+3. Distinguish the actual warning before proceeding:
 
-If the app will not open:
+**Unverified developer or Apple cannot check for malware:** This does not establish safety. Only after confirming a trustworthy source and an unmodified file, consult [Apple's guidance](https://support.apple.com/en-us/102445) about **Open Anyway** under **System Settings → Privacy & Security**. Stop if uncertain.
 
-* In Finder, right-click `Asspp.app`, choose **Open**, then confirm **Open** after verifying the source.
-* If that option is unavailable, open **System Settings → Privacy & Security**, locate the blocked app, and choose **Open Anyway** after reviewing the package.
+**Malware, will damage your computer, or damaged app:** Stop. Do not bypass the warning; contact the developer and follow the system's instructions for the file.
 
-Gatekeeper commonly prompts for apps downloaded outside the App Store. The prompt does not by itself prove that an app is safe; verify the release and signature before bypassing it.
+Apps outside the App Store do not all produce the same warning. Signatures, notarization, file condition, and system settings affect checks; this guide cannot guarantee package safety.
 
 ## Requirements listed by the source
 
@@ -10588,7 +10587,7 @@ Gatekeeper commonly prompts for apps downloaded outside the App Store. The promp
 ::: warning Use a secondary Apple ID
 **Do not use your primary Apple ID with Asspp.**
 
-Asspp uses an unofficial workflow similar to `ipatool`, rather than a public Apple-supported API intended for this use. The source article had not identified a confirmed account ban caused by Asspp, but Apple can change or restrict the underlying service. Losing a primary Apple ID can affect purchases, iCloud data, and Activation Lock.
+Asspp uses an unofficial workflow similar to `ipatool`, rather than a public Apple-supported API intended for this use. The [project's security notice](https://github.com/Lakr233/Asspp#-special-notice) warns that an account ban could result in an Activation Lock that cannot be removed. Its statement that there are no confirmed cases refers to that Activation Lock outcome, not to an absence of account bans or a guarantee against future incidents. Use only a secondary account you control.
 
 Treat the device GUID as a secret and never share it.
 :::
@@ -13101,13 +13100,13 @@ description: >-
 # Shared U.S. Apple IDs for App Store Downloads (2026)
 See the [shared account list and data timestamp](#shared-apple-id-pool) for the regions currently available. **Use shared accounts only inside the App Store, never in the device's Settings or iCloud.** A data update does not guarantee that an account will still work when you sign in.
 
-> 💡 If you frequently switch among store regions, the source article also reviews [Asspp, an Apple ID account manager](/en/blog/asspp-download-guide/). Review its security model before giving any third-party app access to accounts or installation files.
+> 💡 To manage accounts for several App Store regions, see [Asspp, a third-party Apple ID manager](/en/blog/asspp-download-guide/). It cannot guarantee verification-free access, stable connections, or continued account availability. Read the [project's security notice](https://github.com/Lakr233/Asspp#-special-notice) and use only a secondary account you control; its unofficial communication method may stop working without a fix.
 
 ::: danger Critical safety boundaries
 
 1. **Device-lock risk:** **Never sign in to a shared account under Settings or iCloud.** Sign in only from the App Store profile screen. A malicious or compromised system-level account can expose an iPhone or iPad to remote lockout.
 2. **Privacy risk:** Many people use each shared account. Never store photos, contacts, backups, or other personal data in it, and never attach a payment method or add funds.
-3. **Frequent account failure:** Cross-region and multi-device sign-ins can trigger Apple's security systems. A locked account or two-factor-authentication request is a common failure mode for public accounts. Do not attempt to change security settings; use another listed account.
+3. **Availability is not guaranteed:** A shared account may be locked, disabled, or require two-factor authentication. These prompts alone do not establish a cross-region sign-in as the cause. Stop trying an inaccessible account and do not change another person's password or security settings; see the FAQ for the different alerts.
    :::
 
 ## Who should and should not use a shared account?
@@ -13129,7 +13128,13 @@ The interface below loads account data and its update timestamp, not a live sign
 
 ### Why does a free U.S. Apple ID say it is locked?
 
-Many devices sign in to the public account from different regions within a short time, triggering Apple's security protections. Lockouts cannot be eliminated for a publicly shared account. Do not attempt account recovery, which usually requires the owner's phone number or security answers. Label colors identify regions, not a successful sign-in test. Refreshing the list does not verify account availability. Do not change another person's password or security settings; use an Apple Account you own for continued use.
+A lockout alert alone does not establish cross-region sign-ins as the cause. [Apple distinguishes several alerts](https://support.apple.com/en-us/102640):
+
+* **Locked or disabled for security reasons:** Repeated incorrect passwords or account details can cause this; the owner needs to reset the password
+* **Locked or inactive account:** The owner can try requesting access, with no guaranteed outcome
+* **Disabled Media & Purchases account:** The owner can request reactivation as directed by the alert
+
+Recovery applies only to an account you own. Stop trying an inaccessible shared account; do not reset another person's password or change security settings. Label colors identify regions, not a successful sign-in test. Refreshing the list does not verify account availability. Use an Apple Account you own for continued use.
 
 ### How do I update an app downloaded with a shared Apple ID?
 
@@ -14208,7 +14213,7 @@ Estimate actual monthly data first, then test the CNY 17 monthly tier on the req
 
 ### Is the old 20% coupon still valid?
 
-The recorded campaign ended on January 31, 2026. Treat `ok88` as expired unless the current checkout explicitly accepts it and shows the reduced final amount.
+The recorded campaign was scheduled to end on January 31, 2026, and that date has passed. An extension or replacement offer has not been verified. Check the provider’s current announcement, eligible plans and final checkout amount before relying on `ok88`.
 
 ### What matters most before payment?
 

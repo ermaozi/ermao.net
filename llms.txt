@@ -118,7 +118,7 @@ This file contains links to all documentation sections.
 - [GKD 下载与使用：自动跳过开屏广告，4 步上手](/blog/gkd-guide/index.md): 点这里下载 GKD 安卓安装包，跟着 4 步完成安装、无障碍授权、添加规则和验证自动跳过开屏广告。附李跳跳对比与常见问题。
 - [Google官方SEO入门指南完整版：从零开始优化网站排名](/blog/googleseo/index.md): Google官方教你如何做好SEO（搜索引擎优化），提升网站在搜索结果中的排名和流量。本文详细解读Google的SEO入门指南，帮助你优化网站内容和结构。
 - [2026 光年梯机场评测：18元110G IEPL Trojan专线机场推荐｜Netflix/ChatGPT全解锁](/blog/guangnianti/index.md): 光年梯机场怎么样？本文实测光年梯机场速度、稳定性与流媒体解锁能力，月付仅18元享110G流量、IEPL Trojan专线，新加坡海外团队运营，支持Netflix/Disney+/YouTube 4K/ChatGPT解锁，晚高峰不限速。
-- [2026 光速云机场评测：年付99元高速专线机场推荐｜Netflix/ChatGPT解锁](/blog/guangsuyun/index.md): 光速云机场怎么样？本文实测光速云(Lightspeed Cloud)速度、稳定性与流媒体解锁能力，最低年付99元（约8.25元/月），高速专线2Gbps+带宽冗余，支持Netflix/Disney+/ChatGPT解锁，附8折优惠码与购买教程。
+- [2026 光速云机场评测：年付99元高速专线机场推荐｜Netflix/ChatGPT解锁](/blog/guangsuyun/index.md): 光速云机场怎么样？本文实测光速云(Lightspeed Cloud)速度、稳定性与流媒体解锁能力，最低年付99元（约8.25元/月），高速专线2Gbps+带宽冗余，支持Netflix/Disney+/ChatGPT解锁，附历史优惠记录与购买教程；ok88八折活动已到原定截止日期，当前优惠待商家确认。
 - [2026 GW云洞机场推荐：15元100GB起，通用订阅与不限时流量包](/blog/gw-cloud-tunnel/index.md): GW云洞机场怎么样？本文整理其15元100GB起的四档月付、100元1300GB年付、260元1500GB不限时套餐、通用订阅，以及服务商提供的节点延迟与解锁截图。
 - [【新闻】海南新增SEA-H2X与ALC海缆：海口出入口局助力跃居全国第二，解析中国流量出海新枢纽](/blog/hainanguanlan/index.md): 海南新增 SEA-H2X 与 ALC 两条国际海缆，总设定容量约 498Tb；海口三网出入口局叠加自贸港与中国—东盟政策红利，或使海南超越上海、仅次于香港。文内附海缆容量排名、数据口径说明与产业影响解读。
 - [电脑如何翻墙？2026年Windows与Mac科学上网新手指南](/blog/how-to-vpn-on-computer/index.md): 2026年最新电脑翻墙指南，专为Windows和Mac小白用户设计。详解Clash Verge Rev安装、节点订阅导入及常见问题解决，助你快速实现PC端科学上网。
