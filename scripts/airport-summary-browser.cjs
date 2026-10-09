@@ -58,11 +58,19 @@ async function main() {
             return {
               errors,
               documentOverflow: document.documentElement.scrollWidth > innerWidth + 2,
+              pageOverflowElements: [...document.querySelectorAll('body *')].filter(element => {
+                const rect = element.getBoundingClientRect()
+                const style = getComputedStyle(element)
+                return rect.width && style.display !== 'none' && style.visibility !== 'hidden' && (rect.right > innerWidth + 2 || rect.left < -2)
+              }).slice(-30).map(element => ({ tag: element.tagName, class: element.className, text: element.textContent.trim().slice(0, 80), rect: { left: element.getBoundingClientRect().left, right: element.getBoundingClientRect().right } })),
               numbers: [...document.querySelectorAll('.airport-ranking-rank')].map(element => Number(element.textContent)),
               detailNumbers: [...document.querySelectorAll('.airport-detail-rank')].map(element => Number(element.textContent)),
             }
           })
           results.push({ language, width, kind, ...result })
+          if (result.documentOverflow || result.errors.length) {
+            await page.screenshot({ path: resolve(output, `${language}-${kind}-${width}-failure.png`) })
+          }
           if (kind === 'comparison') {
             const expected = Array.from({ length: language === 'zh' ? 69 : 68 }, (_, i) => i + 1)
             assert.deepEqual(result.numbers, expected, `${language}/${width}: missing list number`)
@@ -77,10 +85,10 @@ async function main() {
             }
           }
           if (width === 390 || width === 1440) {
-            await page.locator(kind === 'comparison' ? '.airport-ranking-wrap' : '.airport-card-grid').scrollIntoViewIfNeeded()
-            await page.evaluate(() => document.documentElement.classList.remove('dark'))
+            await page.locator(kind === 'comparison' ? '.airport-ranking-wrap' : '.airport-card-grid').evaluate(element => { element.scrollIntoView({ block: 'start' }); window.scrollBy(0, -80) })
+            await page.evaluate(() => { document.documentElement.classList.remove('dark'); document.documentElement.setAttribute('data-theme', 'light') })
             await page.screenshot({ path: resolve(output, `${language}-${kind}-${width}-light.png`) })
-            await page.evaluate(() => document.documentElement.classList.add('dark'))
+            await page.evaluate(() => { document.documentElement.classList.add('dark'); document.documentElement.setAttribute('data-theme', 'dark') })
             await page.screenshot({ path: resolve(output, `${language}-${kind}-${width}-dark.png`) })
           }
         }
@@ -88,7 +96,7 @@ async function main() {
       }
     }
     const failed = results.filter(result => result.documentOverflow || result.errors.length)
-    assert.deepEqual(failed, [], 'Comparison components must not overflow at any tested width')
+    assert.deepEqual(failed.map(({ numbers, detailNumbers, ...result }) => result), [], 'Comparison components must not overflow at any tested width')
     console.log(`Airport UI: ${results.length} built-page cases passed (320–1440px, Chinese/English); numbered list/detail anchors verified.`)
   } finally {
     writeFileSync(resolve(output, 'results.json'), JSON.stringify(results, null, 2))
