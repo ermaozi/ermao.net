@@ -207,45 +207,49 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "name": "188G 流量包",
       "priceText": "¥65.00",
       "traffic": "188GB",
-      "type": "周期订阅",
+      "type": "不限时流量包",
       "features": [
         "特点：不限时间，用完为止"
       ],
       "purchaseHref": "https://xsus.cloud/register?code=xJFcT1Dw",
-      "text": "188G 流量包，¥65.00，188GB"
+      "text": "188G 流量包，¥65.00，188GB",
+      "oneTime": true
     },
     {
       "name": "240G 流量包",
       "priceText": "¥82.00",
       "traffic": "240GB",
-      "type": "周期订阅",
+      "type": "不限时流量包",
       "features": [
         "特点：不限时间，用完为止"
       ],
       "purchaseHref": "https://xsus.cloud/register?code=xJFcT1Dw",
-      "text": "240G 流量包，¥82.00，240GB"
+      "text": "240G 流量包，¥82.00，240GB",
+      "oneTime": true
     },
     {
       "name": "400G 流量包",
       "priceText": "¥122.00",
       "traffic": "400GB",
-      "type": "周期订阅",
+      "type": "不限时流量包",
       "features": [
         "特点：不限时间，用完为止"
       ],
       "purchaseHref": "https://xsus.cloud/register?code=xJFcT1Dw",
-      "text": "400G 流量包，¥122.00，400GB"
+      "text": "400G 流量包，¥122.00，400GB",
+      "oneTime": true
     },
     {
       "name": "1024G 流量包",
       "priceText": "¥260.00",
       "traffic": "1024GB",
-      "type": "周期订阅",
+      "type": "不限时流量包",
       "features": [
         "特点：不限时间，用完为止"
       ],
       "purchaseHref": "https://xsus.cloud/register?code=xJFcT1Dw",
-      "text": "1024G 流量包，¥260.00，1024GB"
+      "text": "1024G 流量包，¥260.00，1024GB",
+      "oneTime": true
     }
   ],
   "网际快车": [
@@ -253,28 +257,31 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "name": "入门流量包",
       "priceText": "¥6.8",
       "traffic": "20GB，不限时不过期",
-      "type": "周期订阅",
+      "type": "不限时流量包",
       "audience": "节点本地测试、极轻度备用",
       "purchaseHref": "https://ermao.快车.com?c=USNCXQ",
-      "text": "入门流量包，¥6.8，20GB，不限时不过期"
+      "text": "入门流量包，¥6.8，20GB，不限时不过期",
+      "oneTime": true
     },
     {
       "name": "优选套餐",
       "priceText": "¥29",
       "traffic": "200GB，不限时不过期",
-      "type": "周期订阅",
+      "type": "不限时流量包",
       "audience": "长期备用、主力轻度使用",
       "purchaseHref": "https://ermao.快车.com?c=USNCXQ",
-      "text": "优选套餐，¥29，200GB，不限时不过期"
+      "text": "优选套餐，¥29，200GB，不限时不过期",
+      "oneTime": true
     },
     {
       "name": "至尊套餐",
       "priceText": "¥198",
       "traffic": "1980GB，不限时不过期",
-      "type": "周期订阅",
+      "type": "不限时流量包",
       "audience": "多设备家庭、大流量囤货",
       "purchaseHref": "https://ermao.快车.com?c=USNCXQ",
-      "text": "至尊套餐，¥198，1980GB，不限时不过期"
+      "text": "至尊套餐，¥198，1980GB，不限时不过期",
+      "oneTime": true
     },
     {
       "name": "包月套餐",
@@ -2125,33 +2132,37 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "name": "Biu-as-you-go 120G",
       "priceText": "¥40",
       "traffic": "120GB",
-      "type": "周期订阅",
+      "type": "不限时流量包",
       "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
-      "text": "Biu-as-you-go 120G，¥40，120GB"
+      "text": "Biu-as-you-go 120G，¥40，120GB",
+      "oneTime": true
     },
     {
       "name": "Biu-as-you-go 240G",
       "priceText": "¥79",
       "traffic": "240GB",
-      "type": "周期订阅",
+      "type": "不限时流量包",
       "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
-      "text": "Biu-as-you-go 240G，¥79，240GB"
+      "text": "Biu-as-you-go 240G，¥79，240GB",
+      "oneTime": true
     },
     {
       "name": "Biu-as-you-go 380G",
       "priceText": "¥128",
       "traffic": "380GB",
-      "type": "周期订阅",
+      "type": "不限时流量包",
       "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
-      "text": "Biu-as-you-go 380G，¥128，380GB"
+      "text": "Biu-as-you-go 380G，¥128，380GB",
+      "oneTime": true
     },
     {
       "name": "Biu-as-you-go 880G",
       "priceText": "¥238",
       "traffic": "880GB",
-      "type": "周期订阅",
+      "type": "不限时流量包",
       "purchaseHref": "https://biubiux.online/#/register?code=BasmsULb",
-      "text": "Biu-as-you-go 880G，¥238，880GB"
+      "text": "Biu-as-you-go 880G，¥238，880GB",
+      "oneTime": true
     }
   ],
   "极连云": [
@@ -2267,12 +2278,13 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "name": "空中流量包 (Air traffic data package)",
       "priceText": "¥45.00/次",
       "traffic": "150G",
-      "type": "周期订阅",
+      "type": "不限时流量包",
       "features": [
         "说明：不限时流量包；也可手动重置流量（45 CNY/次）"
       ],
       "purchaseHref": "https://www.runwayhz.com/#/register?code=RiIDywqb",
-      "text": "空中流量包 (Air traffic data package)，¥45.00/次，150G"
+      "text": "空中流量包 (Air traffic data package)，¥45.00/次，150G",
+      "oneTime": true
     }
   ],
   "光年梯": [
@@ -2544,49 +2556,53 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "name": "基础",
       "priceText": "100元",
       "traffic": "100GB",
-      "type": "周期订阅",
+      "type": "不限时流量包",
       "audience": "临时备用用户",
       "features": [
         "速率限制：未标注"
       ],
       "purchaseHref": "https://ermaozi.sogoaff.com/#/login?code=yxneZJKR",
-      "text": "基础，100元，100GB"
+      "text": "基础，100元，100GB",
+      "oneTime": true
     },
     {
       "name": "优选",
       "priceText": "200元",
       "traffic": "250GB",
-      "type": "周期订阅",
+      "type": "不限时流量包",
       "audience": "偶发出海需求",
       "features": [
         "速率限制：未标注"
       ],
       "purchaseHref": "https://ermaozi.sogoaff.com/#/login?code=yxneZJKR",
-      "text": "优选，200元，250GB"
+      "text": "优选，200元，250GB",
+      "oneTime": true
     },
     {
       "name": "强化",
       "priceText": "400元",
       "traffic": "500GB",
-      "type": "周期订阅",
+      "type": "不限时流量包",
       "audience": "阶段性中流量需求",
       "features": [
         "速率限制：未标注"
       ],
       "purchaseHref": "https://ermaozi.sogoaff.com/#/login?code=yxneZJKR",
-      "text": "强化，400元，500GB"
+      "text": "强化，400元，500GB",
+      "oneTime": true
     },
     {
       "name": "至尊",
       "priceText": "800元",
       "traffic": "1000GB",
-      "type": "周期订阅",
+      "type": "不限时流量包",
       "audience": "长周期备用需求",
       "features": [
         "速率限制：未标注"
       ],
       "purchaseHref": "https://ermaozi.sogoaff.com/#/login?code=yxneZJKR",
-      "text": "至尊，800元，1000GB"
+      "text": "至尊，800元，1000GB",
+      "oneTime": true
     }
   ],
   "光速云": [
@@ -4193,11 +4209,11 @@ export const airportSources: AirportSource[] = [
   {
     id: '极连云',
     name: '极连云',
-    description: '极连云提供高性价比的IEPL专线VPN服务，支持Trojan和Shadowsocks协议，解锁Netflix、YouTube等主流流媒体平台。套餐不限速、不限设备数，适合轻度到中度用户。支持支付宝和USDT支付，拥有多节点覆盖全球，确保稳定高速连接。',
+    description: '资料记录年付96元、每月60GB，需一次支付全年费用；当前价格与重置规则请在结算前核对。极连云提供高性价比的IEPL专线VPN服务，支持Trojan和Shadowsocks协议，解锁Netflix、YouTube等主流流媒体平台。套餐不限速、不限设备数，适合轻度到中度用户。支持支付宝和USDT支付，拥有多节点覆盖全球，确保稳定高速连接。',
     rank: 24,
     officialHref: 'https://ermaozi01.jlcvipaff.cc/#/register?code=GHDiZb1m',
     universalSubscription: false,
-    minPlanText: '96元 60GB/年',
+    minPlanText: '96元/年 60GB/月',
     hasOneTimePackage: true,
     telegramHref: 'https://t.me/JLYCloud',
     reviewHref: '/blog/jilianyun/',
@@ -4333,11 +4349,11 @@ export const airportSources: AirportSource[] = [
   {
     id: '光速云',
     name: '光速云',
-    description: '光速云IEPL专线机场，提供高品质线路，支持 Trojan/SS 等协议，专注于稳定流媒体与跨境业务。全线解锁 Netflix、Disney+、YouTube、ChatGPT、Gemini 等平台与 AI 服务，并支持 TikTok 跨区，适合跨境电商、直播运营、远程办公等高要求用户。套餐无限速、无倍率、不限制设备数（合理使用），支持支付宝、USDT 付款。节点覆盖港台、日美新、东南亚、韩国及多国欧美地区，当前轻量版99元/年、极速版17元110GB/月，另提供1T大流量永久套餐。拥有多客服团队与海外技术支持，可提供小火箭下载、TG代注册等增值服务。',
+    description: '光速云IEPL专线机场，提供高品质线路，支持 Trojan/SS 等协议，专注于稳定流媒体与跨境业务。全线解锁 Netflix、Disney+、YouTube、ChatGPT、Gemini 等平台与 AI 服务，并支持 TikTok 跨区，适合跨境电商、直播运营、远程办公等高要求用户。套餐无限速、无倍率、不限制设备数（合理使用），支持支付宝、USDT 付款。节点覆盖港台、日美新、东南亚、韩国及多国欧美地区，资料记录轻量版99元/年、每月59GB，需一次支付全年费用；极速版17元110GB/月，当前价格与重置规则请在结算前核对，另提供1T大流量永久套餐。拥有多客服团队与海外技术支持，可提供小火箭下载、TG代注册等增值服务。',
     rank: 40,
     officialHref: 'https://ermaozi01.gsyvipaff.com/#/?code=d1eMb3ku',
     universalSubscription: false,
-    minPlanText: '99元 59GB/年',
+    minPlanText: '99元/年 59GB/月',
     hasOneTimePackage: true,
     telegramHref: 'https://t.me/LightspeedCloud',
     reviewHref: '/blog/guangsuyun/',

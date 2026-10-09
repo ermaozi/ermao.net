@@ -149,16 +149,15 @@ Users with the required Apple developer signing assets can fork the project and 
 
 ### Method 3: install on macOS
 
-1. Download the latest intended `.zip` from [Asspp Releases](https://github.com/Lakr233/Asspp/releases).
+1. Obtain the intended `.zip` only from the project's official [Asspp Releases](https://github.com/Lakr233/Asspp/releases). Check release details and any supplied signature or checksum; stop and contact the developer if the source or integrity is uncertain.
 2. Extract it and move `Asspp.app` to **Applications**.
-3. On first launch, macOS may show a Gatekeeper warning:
+3. Distinguish the actual warning before proceeding:
 
-If the app will not open:
+**Unverified developer or Apple cannot check for malware:** This does not establish safety. Only after confirming a trustworthy source and an unmodified file, consult [Apple's guidance](https://support.apple.com/en-us/102445) about **Open Anyway** under **System Settings → Privacy & Security**. Stop if uncertain.
 
-- In Finder, right-click `Asspp.app`, choose **Open**, then confirm **Open** after verifying the source.
-- If that option is unavailable, open **System Settings → Privacy & Security**, locate the blocked app, and choose **Open Anyway** after reviewing the package.
+**Malware, will damage your computer, or damaged app:** Stop. Do not bypass the warning; contact the developer and follow the system's instructions for the file.
 
-Gatekeeper commonly prompts for apps downloaded outside the App Store. The prompt does not by itself prove that an app is safe; verify the release and signature before bypassing it.
+Apps outside the App Store do not all produce the same warning. Signatures, notarization, file condition, and system settings affect checks; this guide cannot guarantee package safety.
 
 ## Requirements listed by the source
 
@@ -171,7 +170,7 @@ Gatekeeper commonly prompts for apps downloaded outside the App Store. The promp
 ::: warning Use a secondary Apple ID
 **Do not use your primary Apple ID with Asspp.**
 
-Asspp uses an unofficial workflow similar to `ipatool`, rather than a public Apple-supported API intended for this use. The source article had not identified a confirmed account ban caused by Asspp, but Apple can change or restrict the underlying service. Losing a primary Apple ID can affect purchases, iCloud data, and Activation Lock.
+Asspp uses an unofficial workflow similar to `ipatool`, rather than a public Apple-supported API intended for this use. The [project's security notice](https://github.com/Lakr233/Asspp#-special-notice) warns that an account ban could result in an Activation Lock that cannot be removed. Its statement that there are no confirmed cases refers to that Activation Lock outcome, not to an absence of account bans or a guarantee against future incidents. Use only a secondary account you control.
 
 Treat the device GUID as a secret and never share it.
 :::

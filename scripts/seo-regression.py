@@ -120,7 +120,7 @@ def validate_asset(url, status, content_type, body):
 CORE_ROUTES = tuple(
     prefix + suffix
     for prefix in ('/', '/en/')
-    for suffix in ('', 'page/2/', 'posts/vpn/', 'airport/', 'blog/freeappleid/', 'article/z747kgjd/', 'blog/flybit/')
+    for suffix in ('', 'page/2/', 'posts/vpn/', 'airport/', 'blog/freeappleid/', 'article/z747kgjd/', 'blog/flybit/', 'blog/guangsuyun/', 'blog/asspp-download-guide/')
 )
 
 
@@ -178,11 +178,33 @@ def canonical_status(expected_revision, assets, fetcher=fetch):
     return 2 if pending else 0
 
 
+def validate_content_freshness(route, doc):
+    visible = re.sub(r'\s+', '', ' '.join(doc.text))
+    required = {
+        '/posts/vpn/': ('96元/年60GB/月', '99元/年59GB/月'),
+        '/blog/guangsuyun/': ('历史优惠记录', '尚未核实商家是否延期或另有活动'),
+        '/en/blog/guangsuyun/': ('An extension or replacement offer has not been verified',),
+        '/blog/freeappleid/': ('不能保证免验证', '以上恢复操作仅适用于你自己的账户'),
+        '/en/blog/freeappleid/': ('Recovery applies only to an account you own',),
+        '/blog/asspp-download-guide/': ('停止安装，不要绕过告警', '无法确认来源或完整性时停止安装'),
+        '/en/blog/asspp-download-guide/': ('Do not bypass the warning', 'stop and contact the developer if the source or integrity is uncertain'),
+    }
+    for text in required.get(route, ()):
+        assert re.sub(r'\s+', '', text) in visible, f'{route}: missing corrected content: {text}'
+    if route == '/blog/guangsuyun/':
+        description = doc.select('meta', 'name', 'description')[0]['content']
+        assert '当前优惠待商家确认' in description, 'Guangsu coupon metadata is stale'
+        faq = next(s for s in doc.schemas if s.get('@type') == 'FAQPage')
+        answer = faq['mainEntity'][0]['acceptedAnswer']['text']
+        assert '该日期已过' in answer and '需向商家核实' in answer, 'Guangsu coupon FAQ is stale'
+
+
 def validate(read):
     expected_revision = revision(Document(local('/')))
-    for prefix in ('/', '/en/'):
-        for route in (prefix, prefix + 'page/2/', prefix + 'posts/vpn/', prefix + 'airport/', prefix + 'blog/freeappleid/', prefix + 'article/z747kgjd/', prefix + 'blog/flybit/'):
-            validate_indexable(route, Document(read(route)), expected_revision)
+    for route in CORE_ROUTES:
+        doc = Document(read(route))
+        validate_indexable(route, doc, expected_revision)
+        validate_content_freshness(route, doc)
     for prefix in ('/', '/en/'):
         home, second = Document(read(prefix)), Document(read(prefix + 'page/2/'))
         for route, doc in ((prefix, home), (prefix+'page/2/', second)):
