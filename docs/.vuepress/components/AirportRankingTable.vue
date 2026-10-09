@@ -46,12 +46,13 @@ const labels = computed(() => isEnglish.value
   ? {
       name: 'No. / Provider',
       number: 'List number',
-      official: 'Website',
+      official: 'Site',
       universal: 'Standard subscription',
+      universalShort: 'Sub.',
       minimum: 'Lowest listed plan',
-      nonExpiring: 'Non-expiring',
-      group: 'Group',
-      details: 'Details',
+      nonExpiring: 'No expiry',
+      group: 'TG',
+      details: 'View',
       change: 'Change',
       none: 'None',
       visit: 'View',
@@ -61,6 +62,7 @@ const labels = computed(() => isEnglish.value
       number: '列表序号',
       official: '官网',
       universal: '通用订阅',
+      universalShort: '通用订阅',
       minimum: '最便宜订阅',
       nonExpiring: '不限时',
       group: '群组',
@@ -89,7 +91,7 @@ const labels = computed(() => isEnglish.value
         <tr>
           <th>{{ labels.name }}</th>
           <th>{{ labels.official }}</th>
-          <th>{{ labels.universal }}</th>
+          <th :title="labels.universal">{{ labels.universalShort }}</th>
           <th>{{ labels.minimum }}</th>
           <th>{{ labels.nonExpiring }}</th>
           <th>{{ labels.group }}</th>

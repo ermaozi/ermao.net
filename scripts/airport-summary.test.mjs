@@ -59,6 +59,8 @@ test('Table columns keep their original widths and text can wrap without truncat
   }
   assert.doesNotMatch(source, /text-overflow:\s*ellipsis|line-clamp|word-break:\s*keep-all/)
   assert.match(source, /class="airport-ranking-provider"/)
+  assert.match(source, /universalShort: 'Sub\.'/)
+  assert.match(source, /<th :title="labels.universal">\{\{ labels.universalShort \}\}<\/th>/)
   assert.match(read('docs/.vuepress/components/AirportPlanTable.vue'), /class="plan-name-content"/)
   assert.match(read('docs/.vuepress/components/AirportList.vue'), /\.airport-card-head \{[^}]*flex-wrap: wrap;/s)
   assert.match(read('docs/.vuepress/styles/index.css'), /\.vp-doc-container \.vp-doc-meta > p \{[^}]*flex-wrap: wrap;/s)

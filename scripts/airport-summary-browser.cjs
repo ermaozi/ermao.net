@@ -82,6 +82,12 @@ async function main() {
               await page.locator('#yunjiexian').waitFor()
               assert.match(await page.locator('#yunjiexian').innerText(), /69\s*云界线/)
               if (width === 1440) await row.screenshot({ path: resolve(output, 'yunjiexian-number.png') })
+              if (width === 390) await row.screenshot({ path: resolve(output, 'yunjiexian-mobile.png') })
+              if (width === 1440) {
+                for (const id of ['xsus', 'shenxing', 'liulianyun']) {
+                  await page.locator('.airport-ranking-table tbody tr').filter({ has: page.locator(`a[href="#${id}"]`) }).screenshot({ path: resolve(output, `${id}-compact-plan.png`) })
+                }
+              }
             }
           }
           if (width === 390 || width === 1440) {
