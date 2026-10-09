@@ -166,6 +166,7 @@ async function main() {
         results.push({ language: 'zh', width, kind: `guide-${label}`, errors: [], documentOverflow })
         await page.goBack({ waitUntil: 'networkidle' })
         await page.waitForURL(`${base}/article/${slug}/`)
+        await page.locator('a[href="/posts/vpn/#airport-comparison"]').waitFor()
         assert.equal(await page.locator('a[href="/posts/vpn/#airport-comparison"]').count(), 1)
         await page.close()
       }
