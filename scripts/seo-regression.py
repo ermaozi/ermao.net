@@ -122,7 +122,7 @@ def validate_asset(url, status, content_type, body):
 CORE_ROUTES = tuple(
     prefix + suffix
     for prefix in ('/', '/en/')
-    for suffix in ('', 'page/2/', 'posts/vpn/', 'airport/', 'blog/freeappleid/', 'article/z747kgjd/', 'blog/flybit/', 'blog/guangsuyun/', 'blog/asspp-download-guide/', 'blog/superbiu/', 'blog/telegram/', 'blog/9esim/', 'blog/clashmi/')
+    for suffix in ('', 'page/2/', 'posts/vpn/', 'airport/', 'blog/freeappleid/', 'article/z747kgjd/', 'blog/flybit/', 'blog/guangsuyun/', 'blog/asspp-download-guide/', 'blog/superbiu/', 'blog/telegram/', 'blog/9esim/', 'blog/clashmi/', 'article/anytls-guide/')
 ) + ('/article/choose-good-airport/', '/article/0gematwc/', '/article/eh8f4n86/')
 
 
@@ -154,7 +154,7 @@ def canonical_status(expected_revision, assets, fetcher=fetch):
             markers = doc.select('meta', 'name', 'ermao:build-revision')
             actual = markers[0].get('content') if len(markers) == 1 else None
             current = actual == expected_revision
-            tutorial = route in ('/blog/telegram/', '/en/blog/telegram/', '/blog/9esim/', '/en/blog/9esim/', '/blog/clashmi/', '/en/blog/clashmi/')
+            tutorial = route in ('/blog/telegram/', '/en/blog/telegram/', '/blog/9esim/', '/en/blog/9esim/', '/blog/clashmi/', '/en/blog/clashmi/', '/article/anytls-guide/', '/en/article/anytls-guide/')
             if current:
                 validate_indexable(route, doc, expected_revision)
                 if tutorial:
@@ -187,6 +187,8 @@ def canonical_status(expected_revision, assets, fetcher=fetch):
 def validate_content_freshness(route, doc):
     visible = re.sub(r'\s+', '', ' '.join(doc.text))
     required = {
+        '/article/anytls-guide/': ('sha256(password)', 'stop=8 只处理序号 0–7', 'ghcr.io/sagernet/sing-box:latest', '软件包安装', '沿用安装包自带服务', 'address', 'name 是用于区分用户配置的标签'),
+        '/en/article/anytls-guide/': ('sha256(password)', 'reference implementation', 'name identifies the entry', 'address'),
         '/blog/clashmi/': ('iPhone 和 iPad 用户', 'Mac 版通过官方 DMG 安装包安装和更新', 'macOS 12（Monterey）或更高版本'),
         '/en/blog/clashmi/': ('iPhone and iPad users', 'The Mac version is installed and updated using an official DMG package', 'macOS 12 (Monterey) or later'),
         '/blog/telegram/': ('Two-Step Verification', '额外的账号登录密码', '本机密码锁', '不一定同时发送到邮箱和手机号', '不能替代账号两步验证'),
@@ -207,6 +209,7 @@ def validate_content_freshness(route, doc):
     for text in required.get(route, ()):
         assert re.sub(r'\s+', '', text) in visible, f'{route}: missing corrected content: {text}'
     forbidden = {
+        '/article/anytls-guide/': ('由sing-box团队维护', '用户名+密码的认证方式', '停止填充的连接数', '继续填充标记', 'singbox/sing-box:latest', 'deb-install.sh', '"inet4_address"'),
         '/blog/clashmi/': ('iOS/iPadOS/macOS', '苹果全家桶用户可以直接在应用商店下载', 'iOS/macOS无法下载或更新ClashMi'),
         '/en/blog/clashmi/': ('iOS,iPadOS,andmacOS', 'Apple-platformuserscanobtaintheappthrougheitherchannel', 'downloadedorupdatedoniOSormacOS'),
         '/blog/telegram/': ('独立的密码（AppPasscode）', '会向你的邮箱和手机号发送验证码'),
@@ -253,6 +256,7 @@ def validate_content_freshness(route, doc):
 # merge timestamp. Match the installed VuePress git plugin: follow file history,
 # then choose its greatest author timestamp (rather than the build or PR date).
 TUTORIAL_SOURCES = {
+    '/article/anytls-guide/': 'docs/blog/文档/anytls协议完全指南.md',
     '/blog/telegram/': 'docs/blog/文档/telegram注册使用教程.md',
     '/blog/9esim/': 'docs/blog/文档/9esim使用指南.md',
     '/blog/clashmi/': 'docs/blog/翻墙工具/ios_clashmi使用教程.md',
