@@ -21,7 +21,7 @@ This file contains links to all documentation sections.
 - [✈️机场推荐【CyberGuard】 - 质量高、稳定运营两年](/article/4m7fg8r9/index.md): CyberGuard 是一家提供高速稳定 VPN 服务的机场，支持多种设备和平台，适合需要翻墙的用户。 CyberGuard机场官网地址：cyberguard.best
 - [✈️机场推荐【TNT】 - 新机场、IPLC专线](/article/4uxesz79/index.md): TNT机场，近期新上季付轻量包，专门为用量小的用户设计，10元/月。新机场、IPLC专线。 TNT官网地址：https://ermaozi02.tntvipaff.cc
 - [✈️机场推荐【xx云加速】 - 新机场、价格实惠](/article/6e3quult/index.md): xx云加速超高性价比，节点质量高，客服实时在线，晚高峰不限速，不限制设备，对 Netflix、Disney+ 流媒体解锁服务也还不错，8k视频秒开。 xxyun加速95折优惠码，只能使用一次：`xxyun.xyz` xx云加速官网地址：https://xxyun.de
-- [macOS ClashVergeRev 安装与使用指南](/article/6vxkmmuh/index.md): Clash Verge Rev 是一款高效的代理工具，专为 macOS 用户打造，兼容 M 芯片和 Intel 芯片。本文将为您详细介绍如何在 macOS 上安装和配置 Clash Verge Rev，帮助您顺利开始使用。
+- [macOS ClashVergeRev 安装与使用指南](/article/6vxkmmuh/index.md): Clash Verge Rev 是一款高效的代理工具，支持 macOS，兼容 M 芯片和 Intel 芯片。本文将为您详细介绍如何在 macOS 上安装和配置 Clash Verge Rev，帮助您顺利开始使用。
 - [✈️机场推荐【好鸭云】 - 价格实惠、送emby影视服务](/article/73dnyy9a/index.md): vuser.niceduck.io 购买记得用77折好鸭云优惠码 `duck-77` 又名`niceduck`，MisakaF、aca替代方案。 最便宜的订阅有12元 100G/月。使用77折好鸭云优惠码`duck-77`后，最低价格为9.24元 好鸭云节点非常稳定，老板态度好，客服也很热情，支持支付宝。 购买订阅后，...
 - [⚠️【机场跑路】2025年2月11日SFCloud与FCCloud机场跑路](/article/7asq3quy/index.md): 2025年2月11日，SFCloud与FCCloud官方确认已跑路。官网无法访问，节点全挂，工单不回复。 **立即停止续费，避免更大损失！** 目前，~~XSUS~~ 表示可以接手SFCloud和FCCloud用户（按原订阅30%接收），详情请在~~XSUS 官网~~ 注册后提交工单咨询。 在选择机场时，推荐选择...
 - [✈️机场推荐【掌中世界】 - 7天免费试用](/article/7eogfldo/index.md): 掌中世界机场有7天免费试用、24小时客服在线、一键加速、YouTube、三网5G加持、iOS专享福利、Netflix热门剧集解锁、全家设备通用 掌中世界官网地址：https://qq.zjs2025.com

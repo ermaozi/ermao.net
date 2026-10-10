@@ -208,7 +208,7 @@ Choose according to your needs. If you are unsure, read the [proxy-service risk 
 **Proxy modes:**
 
 * **Rule mode:** Routes selected traffic through the proxy and sends other traffic directly. This usually saves data and is the default recommendation.
-* **Global mode:** Sends all supported traffic through the proxy. Use it when a site or app is not matched by existing rules.
+* **Global mode:** In Clash-based clients, captured traffic uses the selected global outbound. This does not automatically capture every app or guarantee encryption of all device traffic. Coverage depends on System Proxy or TUN settings; see the [proxy-mode explanation](/en/article/6vxkmmuh/#_3-proxy-modes).
 * **Direct mode:** Does not use the proxy.
 
 ### Step 4: test the connection
