@@ -41,9 +41,9 @@ If you do not have one, consult the [proxy-service selection and review guide](/
 
 ## 1. Download and install Clash Mi
 
-### iOS, iPadOS, and macOS
+### iOS and iPadOS
 
-Apple-platform users can obtain the app through either channel:
+iPhone and iPad users can obtain the app through either channel:
 
 * **Stable App Store release:** [Open Clash Mi in the App Store](https://apps.apple.com/us/app/clash-mi/id6744321968)
 * **TestFlight beta:** [Join the TestFlight beta](https://testflight.apple.com/join/bjHXktB3)
@@ -53,6 +53,10 @@ Important details:
 * Clash Mi may not appear under a mainland China Apple ID. A supported App Store region such as the United States or Hong Kong may be required. The following page lists shared accounts and their safety restrictions:
 
 - The App Store and TestFlight versions cannot normally be installed side by side. Installing one may replace the other.
+
+### macOS
+
+The Mac version is installed and updated using an official **DMG package** and requires **macOS 12 (Monterey) or later**. Open the [macOS section of the official download page](https://clashmi.app/download#macos), choose the stable or beta release, open the downloaded DMG, and drag Clash Mi into Applications. See the [official macOS installation guide](https://clashmi.app/guide/macos) for details.
 
 ### Android, HarmonyOS, Windows, and Linux
 
@@ -128,10 +132,17 @@ A common cause is iOS terminating the VPN extension when its memory use exceeds 
 
 Run Clash Mi as administrator, then reconnect.
 
-### 6) Clash Mi cannot be downloaded or updated on iOS or macOS
+### 6) Clash Mi cannot be downloaded or updated
+
+#### iOS and iPadOS
 
 * Use an Apple ID for a region where Clash Mi is available.
 * If a TestFlight build was previously installed, remove it before installing the App Store release with the appropriate account.
+
+#### macOS
+
+* Confirm that the system runs macOS 12 or later.
+* Get the DMG package from the [macOS section of the official download page](https://clashmi.app/download#macos), then follow the [official macOS guide](https://clashmi.app/guide/macos) to install or update it.
 
 ### 7) Does Clash Mi collect data?
 
