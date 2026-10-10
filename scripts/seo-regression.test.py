@@ -19,6 +19,8 @@ ROUTES = ['/', '/en/', '/posts/vpn/', '/en/posts/vpn/', '/airport/', '/page/2/',
 def sitemap(routes=ROUTES):
     return '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{seo.HOST}{p}</loc></url>' for p in routes) + '</urlset>'
 TUTORIAL_FIXTURES = {
+    '/article/anytls-guide/': 'sha256(password) stop=8 只处理序号 0–7 ghcr.io/sagernet/sing-box:latest 软件包安装 沿用安装包自带服务 address name 是用于区分用户配置的标签',
+    '/en/article/anytls-guide/': 'sha256(password) reference implementation name identifies the entry address',
     '/blog/clashmi/': 'iPhone 和 iPad 用户 Mac 版通过官方 DMG 安装包安装和更新 macOS 12（Monterey）或更高版本 <a href="https://clashmi.app/download#macos">下载</a><a href="https://clashmi.app/guide/macos">指南</a>',
     '/en/blog/clashmi/': 'iPhone and iPad users The Mac version is installed and updated using an official DMG package macOS 12 (Monterey) or later <a href="https://clashmi.app/download#macos">Download</a><a href="https://clashmi.app/guide/macos">Guide</a>',
     '/blog/telegram/': 'Two-Step Verification 额外的账号登录密码 本机密码锁 不一定同时发送到邮箱和手机号 不能替代账号两步验证',
@@ -134,7 +136,9 @@ class SeoContracts(unittest.TestCase):
                 seo.validate_content_freshness(route, seo.Document('<p>' + good + '</p>'))
                 with self.assertRaisesRegex(AssertionError, 'missing corrected content'):
                     seo.validate_content_freshness(route, seo.Document('<p>Old tutorial</p>'))
-        for route, old in [('/blog/telegram/', '独立的密码（App Passcode）'),
+        for route, old in [('/article/anytls-guide/', 'singbox/sing-box:latest'),
+                           ('/article/anytls-guide/', '停止填充的连接数'),
+                           ('/blog/telegram/', '独立的密码（App Passcode）'),
                            ('/blog/9esim/', '无需实体 SIM 卡'),
                            ('/blog/clashmi/', 'iOS / iPadOS / macOS'),
                            ('/en/blog/clashmi/', 'iOS, iPadOS, and macOS')]:
@@ -153,6 +157,21 @@ class SeoContracts(unittest.TestCase):
             with self.subTest(target=target), redirect_stdout(StringIO()) as output:
                 self.assertEqual(seo.canonical_status(SHA, set(), response), 1)
             self.assertIn('missing corrected content', output.getvalue())
+
+    def test_anytls_current_public_body_and_reintroduced_errors_fail(self):
+        target = '/article/anytls-guide/'
+        for obsolete in ('由 sing-box 团队维护', '用户名+密码的认证方式', '停止填充的连接数',
+                         '继续填充标记', 'singbox/sing-box:latest', 'deb-install.sh', '"inet4_address"'):
+            with self.subTest(obsolete=obsolete), self.assertRaisesRegex(AssertionError, 'unsupported tutorial claim'):
+                seo.validate_content_freshness(target, seo.Document(TUTORIAL_FIXTURES[target] + '<p>' + obsolete + '</p>'))
+        def response(url):
+            route = urlsplit(url).path
+            html = HEAD.replace(ROUTE, route) + ('<p>Old tutorial</p>' if route == target else TUTORIAL_FIXTURES.get(route, ''))
+            return 200, {'content-type': 'text/html'}, html
+        with redirect_stdout(StringIO()) as output:
+            self.assertEqual(seo.canonical_status(SHA, set(), response), 1)
+        self.assertIn(target, output.getvalue())
+        self.assertIn('missing corrected content', output.getvalue())
 
     def test_git_modification_dates_follow_cross_utc_day_squash_and_future_edits(self):
         def document(meta, schema=None):
