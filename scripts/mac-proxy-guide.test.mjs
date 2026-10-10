@@ -10,7 +10,7 @@ const paths = {
   vpnEn: 'docs/en/blog/proxy-reviews/vpn.md',
 }
 const pages = Object.fromEntries(Object.entries(paths).map(([key, path]) => [key, readFileSync(new URL(`../${path}`, import.meta.url), 'utf8')]))
-const urls = text => [...text.matchAll(/\[[^\]]*\]\(([^)\s]+)\)/g)].map(match => match[1])
+const urls = text => new Set([...text.matchAll(/\[[^\]]*\]\(([^)\s]+)\)/g)].map(match => match[1]))
 const officialSources = [
   'https://www.clashverge.dev/install.html',
   'https://www.clashverge.dev/guide/term.html',
@@ -20,6 +20,13 @@ const officialSources = [
   'https://support.apple.com/zh-cn/102445',
   'https://wiki.metacubex.one/config/inbound/tun/',
 ]
+
+test('expected links use exact URL membership rather than substring matches', () => {
+  const expected = 'https://www.ermao.net/posts/vpn'
+  const lookalikes = urls('[wrong](https://evil.example/https://www.ermao.net/posts/vpn) [suffix](https://www.ermao.net/posts/vpn.evil.example)')
+  assert.equal(lookalikes.has(expected), false)
+  assert.equal(urls(`[correct](${expected})`).has(expected), true)
+})
 
 test('macOS guide identities, original dates, mirror URLs, and comparison navigation are preserved', () => {
   const zh = matter(pages.zh).data
@@ -32,14 +39,14 @@ test('macOS guide identities, original dates, mirror URLs, and comparison naviga
   assert.equal(en.lang, 'en-US')
   for (const data of [zh, en]) assert.equal(data.createTime, '2025/01/22 22:50:41')
   for (const source of [pages.zh, pages.en]) {
-    for (const url of ['https://github.com/Clash-Verge-rev/clash-verge-rev/releases', 'https://file.ermao.net/files/clash-verge-rev/Clash.Verge.Mac.x64.dmg', 'https://file.ermao.net/files/clash-verge-rev/Clash.Verge.Mac.aarch64.dmg']) assert.ok(urls(source).includes(url), url)
+    for (const url of ['https://github.com/Clash-Verge-rev/clash-verge-rev/releases', 'https://file.ermao.net/files/clash-verge-rev/Clash.Verge.Mac.x64.dmg', 'https://file.ermao.net/files/clash-verge-rev/Clash.Verge.Mac.aarch64.dmg']) assert.ok(urls(source).has(url), url)
   }
-  assert.ok(urls(pages.zh).includes('https://www.ermao.net/posts/vpn'))
-  assert.ok(urls(pages.en).includes('/en/posts/vpn/'))
+  assert.ok(urls(pages.zh).has('https://www.ermao.net/posts/vpn'))
+  assert.ok(urls(pages.en).has('/en/posts/vpn/'))
 })
 
 test('both guides link the official evidence and distinguish mirrors from official releases', () => {
-  for (const source of [pages.zh, pages.en]) for (const url of officialSources) assert.ok(urls(source).includes(url), url)
+  for (const source of [pages.zh, pages.en]) for (const url of officialSources) assert.ok(urls(source).has(url), url)
   assert.match(pages.zh, /macOS 12 及以上系统/)
   assert.match(pages.en, /macOS 12 or later/)
   assert.match(pages.zh, /镜像，不是上游官方发布渠道/)
@@ -92,6 +99,6 @@ test('VPN guide global-mode claims have the same capture and encryption limitati
   assert.match(pages.vpnEn, /captured traffic uses the selected global outbound.*does not automatically capture every app or guarantee encryption of all device traffic/)
   assert.doesNotMatch(pages.vpnZh, /所有流量走代理，适合需要全程加密的场景/)
   assert.doesNotMatch(pages.vpnEn, /Sends all supported traffic through the proxy/)
-  assert.ok(urls(pages.vpnZh).includes('/article/6vxkmmuh/#_3-代理模式说明'))
-  assert.ok(urls(pages.vpnEn).includes('/en/article/6vxkmmuh/#_3-proxy-modes'))
+  assert.ok(urls(pages.vpnZh).has('/article/6vxkmmuh/#_3-代理模式说明'))
+  assert.ok(urls(pages.vpnEn).has('/en/article/6vxkmmuh/#_3-proxy-modes'))
 })
