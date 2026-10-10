@@ -10,7 +10,7 @@ description: >-
 
 ### 1.1 什么是AnyTLS协议
 
-AnyTLS 是一个比较新的 TLS 代理协议，由 sing-box 团队维护。它的目标很直接：在保证安全性的前提下，把配置和使用门槛尽量压低，同时给进阶用户留下可调空间。
+AnyTLS 是基于 TLS 的代理协议，参考实现和协议文档位于 [anytls/anytls-go](https://github.com/anytls/anytls-go)。sing-box 是支持 AnyTLS 的实现之一，从 1.12.0 起提供 AnyTLS 入站和出站支持。本文以 sing-box 配置为例，不将它与协议项目本身混为一谈。
 
 AnyTLS 的核心思路是把标准 TLS 当作传输外壳，再配合可自定义的填充策略（Padding Scheme）来提升流量隐蔽性，同时尽量维持性能和兼容性。
 
@@ -36,16 +36,11 @@ graph LR
     TLSTransport --> CertValidation["证书验证"]
 ```
 
-### 1.2 AnyTLS协议的发展历程
+### 1.2 协议与实现版本
 
-| 时间 | 事件 | 说明 |
-|------|------|------|
-| 2024 | 协议设计 | sing-box团队开始设计AnyTLS协议 |
-| 2024 | 首个版本 | 在sing-box dev-next分支中发布 |
-| 2025 | 功能完善 | 新增更多填充方案和会话管理功能 |
-| 2026+ | 持续演进 | 多平台客户端支持，功能不断完善 |
+[参考协议文档](https://github.com/anytls/anytls-go/blob/main/docs/protocol.md)记录了协议 v2 在 2025 年 4 月引入流打开响应、心跳和服务端设置协商。sing-box 的支持版本以其 [AnyTLS 入站](https://sing-box.sagernet.org/configuration/inbound/anytls/)和[出站文档](https://sing-box.sagernet.org/configuration/outbound/anytls/)为准。协议版本与 sing-box 软件版本是不同概念，部署前需确认两端实现兼容。
 
-主要版本特点：
+主要能力：
 
 ```mermaid
 graph LR
@@ -73,7 +68,7 @@ graph LR
     Session --> KeepAlive["最小会话保持"]
 
     %% 多用户支持子项
-    MultiUser --> Auth["用户名密码认证"]
+    MultiUser --> Auth["密码哈希认证"]
     MultiUser --> UserMgmt["多用户管理"]
     MultiUser --> AccessControl["访问控制"]
 ```
@@ -97,7 +92,7 @@ AnyTLS的设计遵循以下原则：
 | 基于TLS | 使用标准TLS协议传输，兼容性好 |
 | 填充方案 | 支持自定义填充，增强隐蔽性 |
 | 会话管理 | 空闲会话检测、超时机制 |
-| 密码认证 | 简单的用户名密码认证 |
+| 密码认证 | TLS 内校验密码哈希 |
 | 多用户支持 | 支持多用户管理 |
 | TCP/UDP支持 | 同时支持TCP和UDP转发 |
 
@@ -214,9 +209,12 @@ AnyTLS 支持自定义填充方案，下面是常见默认配置：
 
 | 参数 | 说明 | 示例 |
 |------|------|------|
-| stop | 停止填充的连接数 | stop=8 |
-| 数字范围 | 填充数据长度范围 | 100-400 |
-| c | 继续填充标记 | 500-1000,c,500-1000 |
+| stop | 停止处理填充的序号；stop=8 只处理序号 0–7，并非连接数量 | stop=8 |
+| 数字键 | 按 Write TLS 次数计数的序号；0 是认证阶段的特殊项 | 0、1、2 |
+| 数字范围 | 0 项指定认证填充长度；1 起指定分包的 TLS 明文目标尺寸，不含 TLS 加密开销 | 100-400 |
+| c | 检查标记：上一个分包后若用户数据已发完，结束本次 Write TLS，跳过后续填充包 | 500-1000,c,500-1000 |
+
+序号 0 的 `padding0` 随认证请求发送，不支持分包。从序号 1 起，可按策略分包或用 `cmdWaste` 填充；`stop` 之前未定义策略的序号直接发送。具体含义以[协议中的填充说明](https://github.com/anytls/anytls-go/blob/main/docs/protocol.md#paddingscheme-具体含义与实现)为准，填充不能保证流量不可识别。
 
 ### 2.4 会话管理机制
 
@@ -239,18 +237,14 @@ AnyTLS 也提供了比较完整的会话管理能力：
 
 ### 2.5 认证机制
 
-AnyTLS 采用用户名+密码的认证方式：
+AnyTLS 在 TLS 握手完成后发送密码哈希认证请求：`sha256(password)`（32 字节）、`padding0` 长度（大端 uint16）和填充内容。认证通过后才进入会话循环，不会发送用户名与密码的组合。
 
-```text
-认证流程：
-┌────────────────────────────────────────────────────────────────┐
-│ 1. 客户端发起TLS连接                                            │
-│ 2. 完成TLS握手                                                 │
-│ 3. 客户端发送用户名和密码                                       │
-│ 4. 服务端验证用户身份                                           │
-│ 5. 验证通过后建立代理通道                                        │
-└────────────────────────────────────────────────────────────────┘
-```
+sing-box 的 `users[].name` 是用于区分用户配置的标签，不是客户端必须发送的第二项凭证。客户端 `password` 应与服务端对应用户的密码一致，配置中仍填写原始密码，由实现计算认证哈希；不要手动把哈希填入 `password`。
+
+1. 客户端建立 TLS 连接并验证服务端证书
+2. TLS 握手完成后，在加密连接内发送认证请求
+3. 服务端校验密码哈希并完整读取认证填充
+4. 认证成功后处理会话和代理流；失败则按实现关闭连接或进入已配置的回落处理
 
 ## 三、服务端部署教程
 
@@ -275,22 +269,41 @@ AnyTLS 采用用户名+密码的认证方式：
 
 ### 3.2 安装sing-box
 
-目前 AnyTLS 的主流实现就是 sing-box，所以服务端部署基本都围绕 sing-box 来做。
+本文使用 sing-box 1.12.0 或更高版本的 AnyTLS 支持。以下安装方式任选一种，不要在同一台机器上混用包管理安装和手动二进制安装。
 
-#### 3.2.1 使用官方脚本安装
+#### 3.2.1 使用官方软件包安装
+
+当前[官方安装文档](https://sing-box.sagernet.org/installation/package-manager/)提供的软件包安装脚本是 `https://sing-box.app/install.sh`。生产服务器应先下载并检查脚本、核对来源，再决定是否执行，不要直接运行不明来源的安装命令：
 
 ```bash
-# 下载安装脚本
-curl -fsSL https://sing-box.app/deb-install.sh | sh
-
-# 或者使用apt安装（Debian/Ubuntu）
-curl -fsSL https://deb.sagernet.org/pubkey.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/sagernet.gpg
-echo "deb [signed-by=/etc/apt/keyrings/sagernet.gpg] https://deb.sagernet.org/ * *" | sudo tee /etc/apt/sources.list.d/sagernet.list
-sudo apt update
-sudo apt install sing-box
+curl -fsSL https://sing-box.app/install.sh -o sing-box-install.sh
+# 阅读并核对脚本后再执行
+sudo sh sing-box-install.sh
 ```
 
+也可以按官方步骤配置 APT 软件源（Debian/Ubuntu），与上面的安装脚本二选一：
+
+```bash
+sudo mkdir -p /etc/apt/keyrings
+sudo curl -fsSL https://sing-box.app/gpg.key -o /etc/apt/keyrings/sagernet.asc
+sudo chmod a+r /etc/apt/keyrings/sagernet.asc
+cat <<'EOF' | sudo tee /etc/apt/sources.list.d/sagernet.sources
+Types: deb
+URIs: https://deb.sagernet.org/
+Suites: *
+Components: *
+Enabled: yes
+Signed-By: /etc/apt/keyrings/sagernet.asc
+EOF
+sudo apt-get update
+sudo apt-get install sing-box
+```
+
+软件包通常已经带有 systemd 服务。安装后用 `command -v sing-box` 和 `systemctl cat sing-box` 确认实际二进制和配置路径；官方 Linux [systemd 服务模板](https://github.com/SagerNet/sing-box/blob/stable/release/config/sing-box.service)使用 `/usr/bin/sing-box`，不要另建指向 `/usr/local/bin/sing-box` 的同名服务覆盖它。
+
 #### 3.2.2 手动安装二进制
+
+下面只适用于 Linux amd64；其他架构应在[官方 Releases](https://github.com/SagerNet/sing-box/releases)选择对应文件。先核对版本与发布校验信息，再安装。压缩包内包含版本目录，不能直接移动当前目录下并不存在的 `sing-box`。
 
 ```bash
 # 下载最新版本
@@ -298,9 +311,8 @@ SING_BOX_VERSION=$(curl -s https://api.github.com/repos/SagerNet/sing-box/releas
 wget https://github.com/SagerNet/sing-box/releases/download/v${SING_BOX_VERSION}/sing-box-${SING_BOX_VERSION}-linux-amd64.tar.gz
 
 # 解压安装
-tar -xzf sing-box-*-linux-amd64.tar.gz
-sudo mv sing-box /usr/local/bin/
-sudo chmod +x /usr/local/bin/sing-box
+tar -xzf "sing-box-${SING_BOX_VERSION}-linux-amd64.tar.gz"
+sudo install -m 755 "sing-box-${SING_BOX_VERSION}-linux-amd64/sing-box" /usr/local/bin/sing-box
 
 # 验证安装
 sing-box version
@@ -308,9 +320,11 @@ sing-box version
 
 #### 3.2.3 Docker安装
 
+镜像名称以[官方 Docker 文档](https://sing-box.sagernet.org/installation/docker/)为准。下面的 `latest` 便于演示，生产环境应改用已验证的版本标签或摘要，保留旧版本以便回滚。
+
 ```bash
 # 拉取镜像
-docker pull singbox/sing-box:latest
+docker pull ghcr.io/sagernet/sing-box:latest
 
 # 创建配置目录
 sudo mkdir -p /etc/sing-box
@@ -321,7 +335,7 @@ docker run -d \
   --restart=always \
   -v /etc/sing-box:/etc/sing-box \
   -p 443:443 \
-  singbox/sing-box:latest \
+  ghcr.io/sagernet/sing-box:latest \
   run -c /etc/sing-box/config.json
 ```
 
@@ -408,11 +422,12 @@ sudo systemctl enable certbot.timer
 
 #### 3.4.2 完整配置示例
 
+示例不指定 `log.output`，由 systemd journal 或容器日志收集输出，避免软件包服务用户没有 `/var/log/sing-box` 写权限导致启动失败。若自行启用文件日志，先为实际服务用户配置可写目录。
+
 ```json
 {
   "log": {
     "level": "info",
-    "output": "/var/log/sing-box/access.log",
     "timestamp": true
   },
   "inbounds": [
@@ -472,7 +487,7 @@ sudo systemctl enable certbot.timer
 | tag | 标签名称 | anytls-in |
 | listen | 监听地址 | ::（IPv6）或 0.0.0.0 |
 | listen\_port | 监听端口 | 443 |
-| users | 用户列表 | 用户名密码数组 |
+| users | 用户配置列表 | 包含标签和密码的数组 |
 | padding\_scheme | 填充方案 | 数组形式 |
 | tls | TLS配置 | 证书和密钥路径 |
 
@@ -480,7 +495,7 @@ sudo systemctl enable certbot.timer
 
 | 参数 | 说明 | 示例值 |
 |------|------|------|
-| name | 用户名 | user1 |
+| name | 用户配置标签，不参与协议认证 | user1 |
 | password | 密码 | your\_password |
 
 #### 3.5.3 TLS配置
@@ -532,9 +547,11 @@ sudo iptables-save > /etc/iptables/rules.v4
 
 ### 3.7 启动sing-box服务
 
-#### 3.7.1 创建systemd服务
+#### 3.7.1 按安装方式选择systemd服务
 
-创建文件 `/etc/systemd/system/sing-box.service`：
+**软件包安装**：先运行 `systemctl cat sing-box`，沿用安装包自带服务和它指定的配置路径，不要创建同名服务覆盖它。
+
+**手动二进制安装**：仅当按 3.2.2 节安装到 `/usr/local/bin/sing-box`，且系统没有已有的 `sing-box.service` 时，才创建 `/etc/systemd/system/sing-box.service`。若路径不同，先用 `command -v sing-box` 核实并修改 `ExecStart`：
 
 ```ini
 [Unit]
@@ -563,6 +580,9 @@ sudo chmod 600 /etc/sing-box/config.json
 # 重载systemd
 sudo systemctl daemon-reload
 
+# 验证配置（必须通过后再启动）
+sudo sing-box check -c /etc/sing-box/config.json
+
 # 启动服务
 sudo systemctl start sing-box
 
@@ -589,21 +609,22 @@ sudo journalctl -u sing-box -f
 
 #### 3.8.1 Docker Compose配置
 
-创建 `docker-compose.yml` 文件：
+创建 `docker-compose.yml` 文件。将 3.4.1 节的基础配置保存为同目录的 `config.json`，把证书和私钥放入 `certs/fullchain.pem`、`certs/privkey.pem`。下面分别挂载到 JSON 中相同的绝对路径。示例使用容器日志，不要求额外挂载日志目录：
 
 ```yaml
 version: "3.8"
 
 services:
   sing-box:
-    image: singbox/sing-box:latest
+    image: ghcr.io/sagernet/sing-box:latest
     container_name: sing-box
     restart: always
     ports:
       - "443:443"
     volumes:
       - ./config.json:/etc/sing-box/config.json:ro
-      - ./certs:/etc/sing-box/certs:ro
+      - ./certs/fullchain.pem:/etc/sing-box/fullchain.pem:ro
+      - ./certs/privkey.pem:/etc/sing-box/privkey.pem:ro
     command: run -c /etc/sing-box/config.json
 ```
 
@@ -611,13 +632,15 @@ services:
 
 ```bash
 # 启动服务
-docker-compose up -d
+docker compose config
+docker compose run --rm sing-box check -c /etc/sing-box/config.json
+docker compose up -d
 
 # 查看日志
-docker-compose logs -f
+docker compose logs -f
 
 # 停止服务
-docker-compose down
+docker compose down
 ```
 
 ## 四、客户端配置指南
@@ -846,10 +869,7 @@ sudo apt install sing-box
 # Arch Linux
 sudo pacman -S sing-box
 
-# 或下载二进制
-wget https://github.com/SagerNet/sing-box/releases/latest/download/sing-box-linux-amd64.tar.gz
-tar -xzf sing-box-linux-amd64.tar.gz
-sudo mv sing-box /usr/local/bin/
+# 或按 3.2.2 节下载对应版本和架构的二进制，安装到 /usr/local/bin/sing-box
 ```
 
 4.5.2 创建配置文件
@@ -900,32 +920,14 @@ sudo mv sing-box /usr/local/bin/
 
 #### 4.5.3 配置systemd服务
 
-创建文件 `/etc/systemd/system/sing-box.service`：
+软件包安装沿用已有的 `sing-box.service`，用 `systemctl cat sing-box` 查看它的二进制和配置路径。手动二进制安装才参考 3.7.1 节创建服务，确保 `ExecStart` 与实际安装路径一致；不要混用 `/usr/bin/sing-box` 和 `/usr/local/bin/sing-box`。
 
-```ini
-[Unit]
-Description=sing-box Client
-After=network.target
-
-[Service]
-Type=simple
-ExecStart=/usr/bin/sing-box run -c /etc/sing-box/config.json
-Restart=on-failure
-
-[Install]
-WantedBy=multi-user.target
-```
-
-启动服务：
+仅在客户端机器执行以下检查和启动命令；如果这台机器已运行服务端，不要用客户端配置覆盖服务端配置：
 
 ```bash
-# 启动服务
+sudo sing-box check -c /etc/sing-box/config.json
 sudo systemctl start sing-box
-
-# 开机自启
 sudo systemctl enable sing-box
-
-# 查看状态
 sudo systemctl status sing-box
 ```
 
@@ -933,7 +935,7 @@ sudo systemctl status sing-box
 
 #### 4.6.1 sing-box配置
 
-安装sing-box（从GitHub或Play Store）
+安装支持 AnyTLS 的 sing-box 客户端。按[官方迁移说明](https://sing-box.sagernet.org/migration/#tun-address-fields-are-merged)，当前 TUN 配置使用 `address` 数组；旧 `inet4_address` / `inet6_address` 字段已在 1.12.0 移除。以下 Android 和 iOS 示例均使用新字段。
 
 创建配置文件：
 
@@ -946,7 +948,7 @@ sudo systemctl status sing-box
     {
       "type": "tun",
       "tag": "tun-in",
-      "inet4_address": "172.19.0.1/30",
+      "address": ["172.19.0.1/30"],
       "auto_route": true,
       "strict_route": true,
       "stack": "system"
@@ -991,7 +993,7 @@ v2rayNG 对 AnyTLS 的支持目前还比较有限，如果追求稳定，优先�
     {
       "type": "tun",
       "tag": "tun-in",
-      "inet4_address": "172.19.0.1/30",
+      "address": ["172.19.0.1/30"],
       "auto_route": true,
       "strict_route": true
     }
@@ -1090,9 +1092,9 @@ AnyTLS 现在还没有统一的订阅链接规范，实际使用中大多还是�
 ```hsp
 填充方案格式说明：
 ┌────────────────────────────────────────────────────────────────┐
-│ stop=N              # 在N个连接后停止填充                       │
-│ 数字=范围            # 指定连接类型的填充范围                    │
-│ c                   # 继续填充标记                              │
+│ stop=N              # 只处理序号 0 到 N-1                       │
+│ 数字=范围            # 数字是 Write TLS 序号，不是连接类型       │
+│ c                   # 检查剩余数据；已发完则结束本次 Write      │
 └────────────────────────────────────────────────────────────────┘
 ```
 
@@ -1276,15 +1278,14 @@ sudo iptables -A INPUT -p tcp --dport 443 -j DROP
 {
   "log": {
     "level": "warn",
-    "output": "/var/log/sing-box/access.log",
     "timestamp": true
   }
 }
 ```
 
-#### 6.4.2 日志轮转
+#### 6.4.2 日志轮转（仅文件日志）
 
-创建 `/etc/logrotate.d/sing-box`：
+默认的 journal / 容器日志不使用下面的配置。仅当自行启用了文件日志，才创建 `/etc/logrotate.d/sing-box`；示例的 `root root` 只对应本文手动服务，使用软件包时应改为实际服务用户和组，并核实该服务支持 `reload`：
 
 ```fsharp
 /var/log/sing-box/*.log {
@@ -1339,7 +1340,6 @@ sudo ls -la /etc/sing-box/*.pem
 
 # 6. 查看日志
 sudo journalctl -u sing-box -n 50
-tail -f /var/log/sing-box/access.log
 
 # 7. 验证配置
 sing-box check -c /etc/sing-box/config.json
@@ -1352,7 +1352,7 @@ sing-box check -c /etc/sing-box/config.json
 | 防火墙阻止 | 开放TCP端口 |
 | 服务未启动 | 启动sing-box服务 |
 | 证书无效 | 检查证书路径和有效期 |
-| 密码错误 | 核对用户名密码 |
+| 密码错误 | 核对客户端与服务端对应用户的密码 |
 | TLS配置错误 | 检查server\_name和证书 |
 
 ### 7.2 连接建立但无法通信
@@ -1377,8 +1377,9 @@ nslookup google.com
 
 解决方案：
 
+下面是可解析的配置片段，合并到现有客户端配置时保留自己的入站设置：
+
 ```json
-// 确保基础路由配置正确
 {
   "route": {
     "final": "proxy"
@@ -1387,7 +1388,13 @@ nslookup google.com
     {
       "type": "anytls",
       "tag": "proxy",
-      ...
+      "server": "your-domain.com",
+      "server_port": 443,
+      "password": "your_password",
+      "tls": {
+        "enabled": true,
+        "server_name": "your-domain.com"
+      }
     },
     {
       "type": "direct",
@@ -1463,10 +1470,10 @@ sudo certbot renew --force-renewal
 |----------------|----------------|----------------|
 | certificate verify failed | 证书无效或过期 | 更新证书 |
 | connection refused | 服务未启动或端口被占 | 检查服务状态 |
-| authentication failed | 密码错误 | 核对用户名密码 |
+| authentication failed | 密码错误 | 核对客户端与服务端对应用户的密码 |
 | timeout | 网络问题或防火墙 | 检查网络和防火墙 |
 | TLS handshake failed | TLS配置错误 | 检查TLS配置 |
-| user not found | 用户名不存在 | 检查用户配置 |
+| 认证或用户匹配失败（日志因实现而异） | 密码未匹配服务端用户配置 | 检查 `users[].password`，无需在客户端填写 `name` |
 
 ## 八、总结
 
