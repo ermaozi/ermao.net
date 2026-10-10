@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """Validate generated SEO contracts; --live checks the exact deployed article revision."""
 import argparse
+from datetime import datetime, timezone
 import json
 from html.parser import HTMLParser
 from pathlib import Path
 import re
+import subprocess
 import time
 import urllib.error
 import urllib.request
@@ -246,17 +248,57 @@ def validate_content_freshness(route, doc):
         assert '该日期已过' in answer and '需向商家核实' in answer, 'Guangsu coupon FAQ is stale'
 
 
-def validate(read):
+# These pages' visible last-updated labels, Open Graph and JSON-LD use Git author
+# timestamps. Frontmatter updateTime records editorial work, not the later squash
+# merge timestamp. Match the installed VuePress git plugin: follow file history,
+# then choose its greatest author timestamp (rather than the build or PR date).
+TUTORIAL_SOURCES = {
+    '/blog/telegram/': 'docs/blog/文档/telegram注册使用教程.md',
+    '/blog/9esim/': 'docs/blog/文档/9esim使用指南.md',
+    '/blog/clashmi/': 'docs/blog/翻墙工具/ios_clashmi使用教程.md',
+    '/en/blog/clashmi/': 'docs/en/blog/access-tools/ios_clashmi使用教程.md',
+}
+
+
+def git_modified_time(source_path, read_log=subprocess.check_output):
+    output = read_log(
+        ['git', 'log', '--format=%at', '--follow', '--', source_path],
+        cwd=Path(__file__).resolve().parents[1], text=True,
+    )
+    stamps = output.splitlines()
+    assert stamps and all(re.fullmatch(r'[0-9]+', stamp) for stamp in stamps), f'{source_path}: missing or invalid Git author dates'
+    return datetime.fromtimestamp(max(map(int, stamps)), timezone.utc).isoformat(timespec='milliseconds').replace('+00:00', 'Z')
+
+
+def article_modified_time(route, doc):
+    articles = [schema for schema in doc.schemas if schema.get('@type') == 'BlogPosting']
+    metadata = doc.select('meta', 'property', 'article:modified_time')
+    assert len(articles) == 1 and len(metadata) == 1, f'{route}: missing or duplicate article dates'
+    modified = metadata[0].get('content')
+    assert articles[0].get('dateModified') == modified, f'{route}: article dates disagree'
+    return modified
+
+
+def validate_article_dates(route, doc, expected_modified):
+    assert article_modified_time(route, doc) == expected_modified, f'{route}: article modification date differs from verified source'
+
+
+def expected_article_date(route, verify_git_dates, read_build=local, read_git=git_modified_time):
+    # The full-history docs job checks Git; deployment has a shallow checkout but
+    # downloads that exact verified build. Live checks must match its timestamps.
+    if verify_git_dates:
+        return read_git(TUTORIAL_SOURCES[route])
+    return article_modified_time(route, Document(read_build(route)))
+
+
+def validate(read, *, verify_git_dates=False):
     expected_revision = revision(Document(local('/')))
     for route in CORE_ROUTES:
         doc = Document(read(route))
         validate_indexable(route, doc, expected_revision)
         validate_content_freshness(route, doc)
-        if route in ('/blog/telegram/', '/blog/9esim/', '/blog/clashmi/', '/en/blog/clashmi/'):
-            article = next(s for s in doc.schemas if s.get('@type') == 'BlogPosting')
-            modified = doc.select('meta', 'property', 'article:modified_time')[0]['content']
-            assert article['dateModified'] == modified, f'{route}: article dates disagree'
-            assert modified.startswith('2026-10-09'), f'{route}: missing correction date'
+        if route in TUTORIAL_SOURCES:
+            validate_article_dates(route, doc, expected_article_date(route, verify_git_dates))
     for prefix in ('/', '/en/'):
         home, second = Document(read(prefix)), Document(read(prefix + 'page/2/'))
         for route, doc in ((prefix, home), (prefix+'page/2/', second)):
@@ -323,7 +365,7 @@ if __name__ == '__main__':
     if args.http_audit:
         audit_http()
     elif not args.live and not args.canonical_status:
-        validate(local)
+        validate(local, verify_git_dates=True)
     else:
         expected_revision = revision(Document(local('/')))
         assert re.fullmatch(r'[a-f0-9]{40}', expected_revision), 'Live verification requires a Git commit build revision'

@@ -3,6 +3,8 @@
 import importlib.util
 from pathlib import Path
 import unittest
+import json
+from datetime import datetime
 from contextlib import redirect_stdout
 from io import StringIO
 from urllib.parse import urlsplit, parse_qs
@@ -151,6 +153,60 @@ class SeoContracts(unittest.TestCase):
             with self.subTest(target=target), redirect_stdout(StringIO()) as output:
                 self.assertEqual(seo.canonical_status(SHA, set(), response), 1)
             self.assertIn('missing corrected content', output.getvalue())
+
+    def test_git_modification_dates_follow_cross_utc_day_squash_and_future_edits(self):
+        def document(meta, schema=None):
+            schema = meta if schema is None else schema
+            return seo.Document('<meta property="article:modified_time" content="' + meta + '">'
+                                + '<script type="application/ld+json">'
+                                + json.dumps({'@type': 'BlogPosting', 'dateModified': schema}) + '</script>')
+        def unix(iso):
+            return str(int(datetime.fromisoformat(iso.replace('Z', '+00:00')).timestamp()))
+        source = seo.TUTORIAL_SOURCES['/blog/clashmi/']
+        branch_date = '2026-10-09T23:31:42.000Z'
+        merge_date = '2026-10-10T01:32:47.000Z'
+        later_date = '2026-10-12T02:15:00.000Z'
+        for expected in (branch_date, merge_date, later_date):
+            calls = []
+            def read_log(args, **kwargs):
+                calls.append((args, kwargs))
+                return unix(branch_date) + '\n' + unix(expected) + '\n'
+            actual = seo.git_modified_time(source, read_log)
+            self.assertEqual(actual, expected)
+            self.assertEqual(calls[0][0], ['git', 'log', '--format=%at', '--follow', '--', source])
+            for route in seo.TUTORIAL_SOURCES:
+                with self.subTest(expected=expected, route=route):
+                    seo.validate_article_dates(route, document(expected), actual)
+                    for wrong in ('2026-10-08T23:59:59.000Z', '2026-11-01T00:00:00.000Z', 'not-a-date'):
+                        with self.assertRaisesRegex(AssertionError, 'differs from verified source'):
+                            seo.validate_article_dates(route, document(wrong), actual)
+                    with self.assertRaisesRegex(AssertionError, 'dates disagree'):
+                        seo.validate_article_dates(route, document(expected, '2026-10-08T23:59:59.000Z'), actual)
+        with self.assertRaisesRegex(AssertionError, 'differs from verified source'):
+            seo.validate_article_dates('/blog/clashmi/', document(branch_date), merge_date)
+        for output in ('', 'not-a-date\n', '1791595967\ninvalid\n'):
+            with self.subTest(output=output), self.assertRaisesRegex(AssertionError, 'missing or invalid Git author dates'):
+                seo.git_modified_time(source, lambda *args, **kwargs: output)
+        for html in ('', '<script type="application/ld+json">{"@type":"BlogPosting"}</script>',
+                     '<meta property="article:modified_time" content="' + merge_date + '">' * 2):
+            with self.subTest(html=html), self.assertRaisesRegex(AssertionError, 'missing or duplicate article dates'):
+                seo.validate_article_dates('/blog/clashmi/', seo.Document(html), merge_date)
+
+    def test_live_dates_use_verified_build_not_shallow_deployment_git_history(self):
+        date = '2026-10-10T01:32:48.000Z'
+        html = '<meta property="article:modified_time" content="' + date + '">' + '<script type="application/ld+json">' + json.dumps({'@type': 'BlogPosting', 'dateModified': date}) + '</script>'
+        def no_git(_):
+            self.fail('Live validation must not use shallow deployment Git history')
+        def no_build(_):
+            self.fail('Local validation must independently verify Git dates')
+        for route, path in seo.TUTORIAL_SOURCES.items():
+            with self.subTest(route=route):
+                self.assertEqual(seo.expected_article_date(route, False, lambda _: html, no_git), date)
+                self.assertEqual(seo.expected_article_date(route, True, no_build, lambda source: date if source == path else None), date)
+                expected = seo.expected_article_date(route, False, lambda _: html, no_git)
+                seo.validate_article_dates(route, seo.Document(html), expected)
+                with self.assertRaisesRegex(AssertionError, 'differs from verified source'):
+                    seo.validate_article_dates(route, seo.Document(html.replace(date, '2026-10-11T01:32:48.000Z')), expected)
 
     def test_current_public_tutorial_cannot_pass_with_wrong_body(self):
         def response(url):
