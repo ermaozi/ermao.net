@@ -122,7 +122,7 @@ def validate_asset(url, status, content_type, body):
 CORE_ROUTES = tuple(
     prefix + suffix
     for prefix in ('/', '/en/')
-    for suffix in ('', 'page/2/', 'posts/vpn/', 'airport/', 'blog/freeappleid/', 'article/z747kgjd/', 'blog/flybit/', 'blog/guangsuyun/', 'blog/asspp-download-guide/', 'blog/superbiu/', 'blog/telegram/', 'blog/9esim/', 'blog/clashmi/', 'article/anytls-guide/')
+    for suffix in ('', 'page/2/', 'posts/vpn/', 'airport/', 'blog/freeappleid/', 'article/z747kgjd/', 'blog/flybit/', 'blog/guangsuyun/', 'blog/asspp-download-guide/', 'blog/superbiu/', 'blog/telegram/', 'blog/9esim/', 'blog/clashmi/', 'article/anytls-guide/', 'article/6vxkmmuh/')
 ) + ('/article/choose-good-airport/', '/article/0gematwc/', '/article/eh8f4n86/')
 
 
@@ -154,7 +154,7 @@ def canonical_status(expected_revision, assets, fetcher=fetch):
             markers = doc.select('meta', 'name', 'ermao:build-revision')
             actual = markers[0].get('content') if len(markers) == 1 else None
             current = actual == expected_revision
-            tutorial = route in ('/blog/telegram/', '/en/blog/telegram/', '/blog/9esim/', '/en/blog/9esim/', '/blog/clashmi/', '/en/blog/clashmi/', '/article/anytls-guide/', '/en/article/anytls-guide/')
+            tutorial = route in ('/blog/telegram/', '/en/blog/telegram/', '/blog/9esim/', '/en/blog/9esim/', '/blog/clashmi/', '/en/blog/clashmi/', '/article/anytls-guide/', '/en/article/anytls-guide/', '/article/6vxkmmuh/', '/en/article/6vxkmmuh/', '/posts/vpn/', '/en/posts/vpn/')
             if current:
                 validate_indexable(route, doc, expected_revision)
                 if tutorial:
@@ -187,6 +187,8 @@ def canonical_status(expected_revision, assets, fetcher=fetch):
 def validate_content_freshness(route, doc):
     visible = re.sub(r'\s+', '', ' '.join(doc.text))
     required = {
+        '/article/6vxkmmuh/': ('macOS 12 及以上系统', '仅影响遵循 macOS 系统代理设置的应用', '实际范围受路由和排除项等配置影响', '已进入客户端的流量统一使用全局策略组中选定的出口', '独立开关', '仅把应用移到废纸篓不等于卸载服务', '先备份', 'uninstall-service', '不要强行打开', '这一修复不代表所有断网或 DNS 故障都有同一原因'),
+        '/en/article/6vxkmmuh/': ('macOS 12 or later', 'affects only apps that honor the macOS system proxy settings', 'Coverage depends on routes and exclusions', 'Sends captured traffic through the selected global outbound', 'independent switches', 'moving the app to Trash alone does not uninstall it', 'Back up subscriptions', 'uninstall-service', 'do not force it open', 'This does not establish the cause of every connectivity or DNS failure'),
         '/article/anytls-guide/': ('sha256(password)', 'stop=8 只处理序号 0–7', 'ghcr.io/sagernet/sing-box:latest', '软件包安装', '沿用安装包自带服务', 'address', 'name 是用于区分用户配置的标签'),
         '/en/article/anytls-guide/': ('sha256(password)', 'reference implementation', 'name identifies the entry', 'address'),
         '/blog/clashmi/': ('iPhone 和 iPad 用户', 'Mac 版通过官方 DMG 安装包安装和更新', 'macOS 12（Monterey）或更高版本'),
@@ -195,8 +197,8 @@ def validate_content_freshness(route, doc):
         '/en/blog/telegram/': ('Two-Step Verification', 'Passcode Lock', 'separate from the account'),
         '/blog/9esim/': ('实体可编程卡', '卡片出厂不含号码', '365 天', '按流量、分钟和短信计费', '不含号码、语音或短信', '第三方验证码均不保证成功', '预计约两周', '该时效未重新核实'),
         '/en/blog/9esim/': ('physical, SIM-shaped programmable eUICC card', 'obtain profiles separately', 'does not prove future support', 'permanent number or lifetime service'),
-        '/posts/vpn/': ('96元/年60GB/月', '99元/年59GB/月', '2026-02-24版文章的历史价目'),
-        '/en/posts/vpn/': ('Historical prices from the 2026-02-24 article version',),
+        '/posts/vpn/': ('96元/年60GB/月', '99元/年59GB/月', '2026-02-24版文章的历史价目', '已被客户端接管的流量', '不会自动接管所有应用', '不保证全设备流量均已加密'),
+        '/en/posts/vpn/': ('Historical prices from the 2026-02-24 article version', 'captured traffic uses the selected global outbound', 'does not automatically capture every app or guarantee encryption of all device traffic'),
         '/blog/superbiu/': ('本次更新仅复核服务商公开公告，未重新购买或测速', '一次性套餐当前是否在售及有效期未确认', '2026-02-24'),
         '/en/blog/superbiu/': ('2026-02-24', 'Current one-time package availability and expiry terms remain unverified', 'AnyTLS'),
         '/blog/guangsuyun/': ('历史优惠记录', '尚未核实商家是否延期或另有活动'),
@@ -209,6 +211,10 @@ def validate_content_freshness(route, doc):
     for text in required.get(route, ()):
         assert re.sub(r'\s+', '', text) in visible, f'{route}: missing corrected content: {text}'
     forbidden = {
+        '/article/6vxkmmuh/': ('所有流量都通过代理', '所有网络流量将通过ClashVergeRev', 'TUN模式和系统代理模式不能同时启用', '清空废纸篓，完成卸载'),
+        '/en/article/6vxkmmuh/': ('Sendsallsupportedtrafficthroughtheproxy', 'ThesourceguideadviseschoosingeitherTUNmodeorsystem-proxymode', 'EmptytheTrash'),
+        '/posts/vpn/': ('所有流量走代理，适合需要全程加密的场景',),
+        '/en/posts/vpn/': ('Sendsallsupportedtrafficthroughtheproxy',),
         '/article/anytls-guide/': ('由sing-box团队维护', '用户名+密码的认证方式', '停止填充的连接数', '继续填充标记', 'singbox/sing-box:latest', 'deb-install.sh', '"inet4_address"'),
         '/blog/clashmi/': ('iOS/iPadOS/macOS', '苹果全家桶用户可以直接在应用商店下载', 'iOS/macOS无法下载或更新ClashMi'),
         '/en/blog/clashmi/': ('iOS,iPadOS,andmacOS', 'Apple-platformuserscanobtaintheappthrougheitherchannel', 'downloadedorupdatedoniOSormacOS'),
@@ -217,6 +223,9 @@ def validate_content_freshness(route, doc):
     }
     for text in forbidden.get(route, ()):
         assert text not in visible, f'{route}: unsupported tutorial claim: {text}'
+    if route in ('/article/6vxkmmuh/', '/en/article/6vxkmmuh/'):
+        for url in ('https://www.clashverge.dev/install.html', 'https://www.clashverge.dev/guide/term.html', 'https://www.clashverge.dev/uninstall.html', 'https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v2.5.8'):
+            assert doc.select('a', 'href', url), f'{route}: missing official proxy source: {url}'
     if route in ('/blog/clashmi/', '/en/blog/clashmi/'):
         for url in ('https://clashmi.app/download#macos', 'https://clashmi.app/guide/macos'):
             assert doc.select('a', 'href', url), f'{route}: missing official macOS source: {url}'

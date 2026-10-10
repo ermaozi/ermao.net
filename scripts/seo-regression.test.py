@@ -27,7 +27,16 @@ TUTORIAL_FIXTURES = {
     '/en/blog/telegram/': 'Two-Step Verification Passcode Lock separate from the account',
     '/blog/9esim/': '实体可编程卡 卡片出厂不含号码 365 天 按流量、分钟和短信计费 不含号码、语音或短信 第三方验证码均不保证成功 预计约两周 该时效未重新核实',
     '/en/blog/9esim/': 'physical, SIM-shaped programmable eUICC card obtain profiles separately does not prove future support permanent number or lifetime service',
+    '/article/6vxkmmuh/': 'macOS 12 及以上系统 仅影响遵循 macOS 系统代理设置的应用 实际范围受路由和排除项等配置影响 已进入客户端的流量统一使用全局策略组中选定的出口 独立开关 仅把应用移到废纸篓不等于卸载服务 先备份 uninstall-service 不要强行打开 这一修复不代表所有断网或 DNS 故障都有同一原因',
+    '/en/article/6vxkmmuh/': 'macOS 12 or later affects only apps that honor the macOS system proxy settings Coverage depends on routes and exclusions Sends captured traffic through the selected global outbound independent switches moving the app to Trash alone does not uninstall it Back up subscriptions uninstall-service do not force it open This does not establish the cause of every connectivity or DNS failure',
+    '/posts/vpn/': '96元/年 60GB/月 99元/年 59GB/月 2026-02-24版文章的历史价目 已被客户端接管的流量 不会自动接管所有应用 不保证全设备流量均已加密',
+    '/en/posts/vpn/': 'Historical prices from the 2026-02-24 article version captured traffic uses the selected global outbound does not automatically capture every app or guarantee encryption of all device traffic',
 }
+for route in ('/article/6vxkmmuh/', '/en/article/6vxkmmuh/'):
+    TUTORIAL_FIXTURES[route] += ''.join('<a href="' + url + '">Source</a>' for url in (
+        'https://www.clashverge.dev/install.html', 'https://www.clashverge.dev/guide/term.html',
+        'https://www.clashverge.dev/uninstall.html', 'https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v2.5.8'))
+
 
 class SeoContracts(unittest.TestCase):
     def test_current_indexable_document(self):
@@ -105,7 +114,7 @@ class SeoContracts(unittest.TestCase):
             self.assertIn(route, seo.CORE_ROUTES)
 
     def test_content_corrections_cannot_pass_with_stale_copy(self):
-        for route, good in [('/posts/vpn/', '96元/年 60GB/月 99元/年 59GB/月 2026-02-24版文章的历史价目'),
+        for route, good in [('/posts/vpn/', TUTORIAL_FIXTURES['/posts/vpn/']),
                             ('/blog/asspp-download-guide/', '停止安装，不要绕过告警；无法确认来源或完整性时停止安装'),
                             ('/en/blog/freeappleid/', 'Recovery applies only to an account you own')]:
             with self.subTest(route=route):
@@ -172,6 +181,33 @@ class SeoContracts(unittest.TestCase):
             self.assertEqual(seo.canonical_status(SHA, set(), response), 1)
         self.assertIn(target, output.getvalue())
         self.assertIn('missing corrected content', output.getvalue())
+
+    def test_proxy_guidance_rejects_old_claims_and_missing_evidence(self):
+        claims = {
+            '/article/6vxkmmuh/': ('所有流量都通过代理', '所有网络流量将通过 Clash Verge Rev', 'TUN 模式和系统代理模式不能同时启用', '清空废纸篓，完成卸载'),
+            '/en/article/6vxkmmuh/': ('Sends all supported traffic through the proxy', 'The source guide advises choosing either TUN mode or system-proxy mode', 'Empty the Trash'),
+            '/posts/vpn/': ('所有流量走代理，适合需要全程加密的场景',),
+            '/en/posts/vpn/': ('Sends all supported traffic through the proxy',),
+        }
+        for route, values in claims.items():
+            for old in values:
+                with self.subTest(route=route, old=old), self.assertRaisesRegex(AssertionError, 'unsupported tutorial claim'):
+                    seo.validate_content_freshness(route, seo.Document(TUTORIAL_FIXTURES[route] + '<p>' + old + '</p>'))
+        for route in ('/article/6vxkmmuh/', '/en/article/6vxkmmuh/'):
+            for url in ('https://www.clashverge.dev/install.html', 'https://www.clashverge.dev/guide/term.html', 'https://www.clashverge.dev/uninstall.html', 'https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v2.5.8'):
+                with self.subTest(route=route, url=url), self.assertRaisesRegex(AssertionError, 'missing official proxy source'):
+                    seo.validate_content_freshness(route, seo.Document(TUTORIAL_FIXTURES[route].replace(url, 'https://example.com/')))
+
+    def test_proxy_current_public_pages_cannot_pass_with_stale_body(self):
+        for target in ('/article/6vxkmmuh/', '/en/article/6vxkmmuh/', '/posts/vpn/', '/en/posts/vpn/'):
+            def response(url):
+                route = urlsplit(url).path
+                html = HEAD.replace(ROUTE, route) + ('<p>Old tutorial</p>' if route == target else TUTORIAL_FIXTURES.get(route, ''))
+                return 200, {'content-type': 'text/html'}, html
+            with self.subTest(target=target), redirect_stdout(StringIO()) as output:
+                self.assertEqual(seo.canonical_status(SHA, set(), response), 1)
+            self.assertIn(target, output.getvalue())
+            self.assertIn('missing corrected content', output.getvalue())
 
     def test_git_modification_dates_follow_cross_utc_day_squash_and_future_edits(self):
         def document(meta, schema=None):

@@ -20,7 +20,7 @@ Clash Verge Rev is a proxy client for macOS with builds for both Apple Silicon a
 
 ### Choose the correct build
 
-Download the version that matches the Mac's processor:
+The [official installation guide](https://www.clashverge.dev/install.html) currently requires **macOS 12 or later**. Check the OS version and processor, then choose the matching package from the official GitHub releases. The ermao.net download links below are mirrors, not upstream release channels.
 
 - **GitHub:** [Clash Verge Rev releases](https://github.com/Clash-Verge-rev/clash-verge-rev/releases)
 - [Clash Verge macOS x64 for Intel](https://file.ermao.net/files/clash-verge-rev/Clash.Verge.Mac.x64.dmg)
@@ -28,15 +28,9 @@ Download the version that matches the Mac's processor:
 
 ### Installation
 
-1. Open the downloaded `.dmg` file. macOS may ask for permission to open an app from an unidentified developer.
-2. If macOS reports that Apple cannot check the app for malicious software, open **System Settings** or **System Preferences**, go to **Privacy & Security**, and use **Open Anyway** only after confirming that the package came from the intended release source.
-
-   Apple documentation: [Open a Mac app from an unidentified developer](https://support.apple.com/zh-cn/guide/mac-help/mh40616/15.0/mac/15.0)
-
-### Finish
-
-1. Drag **Clash Verge Rev** into the **Applications** folder.
-2. Launch it from Applications.
+1. Verify the package source and processor architecture, open the `.dmg`, drag **Clash Verge Rev** into **Applications**, and launch it from there.
+2. If the developer cannot be verified or Apple cannot check the app for malicious software, stop and verify the source, version, and file integrity. Review [Apple's safety guidance](https://support.apple.com/zh-cn/102445) before proceeding. On recent macOS versions, the relevant settings are under **System Settings > Privacy & Security**; labels can differ on older versions.
+3. If macOS reports malware, says the app will damage the computer, or reports a damaged file, do not force it open. Stop installation and contact the developer if the source or integrity is uncertain. Do not disable Gatekeeper or remove quarantine attributes to bypass warnings.
 
 ---
 
@@ -64,34 +58,37 @@ In most cases, no other setting must be changed before testing the selected node
 
 ## 3. Proxy modes
 
-- **Rule mode:** Sends traffic through the proxy according to the profile's routing rules.
-- **Global mode:** Sends all supported traffic through the proxy. This can slow access to local services and should be used only when necessary.
-- **Direct mode:** Sends traffic directly without the proxy.
+System Proxy and TUN determine how traffic enters Clash Verge Rev. Rule, Global, and Direct modes determine the outbound path for **traffic already captured by the client**. See the [official terminology guide](https://www.clashverge.dev/guide/term.html).
+
+- **Rule mode:** Applies the profile's rules to captured traffic, selecting a proxy node, a direct connection, or another policy. The actual rules determine how each site is handled.
+- **Global mode:** Sends captured traffic through the selected global outbound. A proxy-node selection uses that node; a direct selection remains direct. This does not capture additional apps or guarantee encryption of all device traffic.
+- **Direct mode:** Sends captured traffic through the local network without a remote proxy node.
 
 ---
 
-## 4. System proxy and TUN
+## 4. System Proxy and TUN
 
-To route traffic from macOS applications through Clash Verge Rev, enable the appropriate system integration:
+- **System Proxy:** Enabling this option in Settings affects only apps that honor the macOS system proxy settings. Other apps may still connect directly. A successful browser test does not prove that every app is proxied.
+- **TUN:** Uses a virtual network interface and system routes to capture traffic, including traffic from apps that ignore system proxy settings. Coverage depends on routes and exclusions in the configuration. Captured traffic still follows the outbound mode described above; TUN does not unconditionally guarantee capture of every connection. See the [Mihomo TUN configuration](https://wiki.metacubex.one/config/inbound/tun/).
 
-1. Open **Settings** in Clash Verge Rev and enable **TUN Mode** after installing any required service component and granting the requested system permissions.
-2. If TUN cannot be enabled, use **System Proxy** for applications that honor the macOS proxy settings.
-
-The source guide advises choosing either TUN mode or system-proxy mode rather than enabling both. Exact behavior varies by Clash Verge Rev version, so follow the current app labels and documentation.
+Start by testing the target app with System Proxy. If TUN is needed, review the official service-component and permission requirements before enabling it. System Proxy and TUN are independent switches, not inherently mutually exclusive; the [v2.5.8 source](https://github.com/clash-verge-rev/clash-verge-rev/blob/v2.5.8/src/components/shared/proxy-control-switches.tsx) handles them separately. During troubleshooting, test one capture method at a time and check the target app's connections and logs before choosing a configuration.
 
 ---
 
 ## 5. Troubleshooting
 
 - **Subscription import fails:** Confirm that the URL is complete and valid and that the underlying network works.
-- **Clash Verge Rev does not proxy traffic:** Restart the app, select a working node, and recheck the TUN or system-proxy setting.
+- **A target app is not proxied:** Verify the subscription, selected node, and running core. Then check whether the app honors System Proxy, whether TUN routes capture it, and whether the rule or global outbound is correct. Global mode is not a switch that captures every app.
+- **DNS resolution fails after disabling TUN or quitting:** The [v2.5.8 release notes](https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v2.5.8) document a fix for macOS system DNS remaining at `114.114.114.114`. If the symptoms match, back up the configuration and check the official version. This does not establish the cause of every connectivity or DNS failure. Record the app version, error, and current network settings before continuing with the official troubleshooting guidance.
 
 ---
 
 ## 6. Uninstall
 
-1. Open the **Applications** folder.
-2. Right-click **Clash Verge Rev** and select **Move to Trash**.
-3. Empty the Trash if you want to remove the app immediately.
+Removing the app and uninstalling its background service are separate steps. The official documentation notes that the service can keep running after the app exits; moving the app to Trash alone does not uninstall it.
+
+1. Back up subscriptions and configuration you want to keep, disable System Proxy and TUN, and confirm that ordinary network access works.
+2. If a service component was installed, follow the [official macOS service-removal instructions](https://www.clashverge.dev/uninstall.html) to use the bundled `uninstall-service` before deleting the app. Check the actual app path and version; do not delete configuration directories as a shortcut.
+3. Quit the app, then move **Clash Verge Rev** from **Applications** to **Trash**. Keep the backup and Trash contents until network access is confirmed and recovery is no longer needed, then decide how to handle them.
 
 These steps cover the basic macOS installation and configuration. Consult the current upstream release notes if the interface or permission prompts differ from the screenshots or labels described here.
