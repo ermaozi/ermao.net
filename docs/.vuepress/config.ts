@@ -169,6 +169,12 @@ export default defineUserConfig({
   shouldPrefetch: false,
   templateBuildRenderer: renderBuildTemplate,
   plugins: [
+    {
+      name: 'ermao-comment-migration',
+      alias: {
+        '@vuepress/plugin-comment/service': fileURLToPath(new URL('./components/MigratingComments.vue', import.meta.url)),
+      },
+    },
     buildRevisionPlugin(),
     homepagePostsSsrPlugin(),
     paginationPlugin(),
@@ -343,6 +349,8 @@ export default defineUserConfig({
         repoId: 'R_kgDOL4rZSQ',
         category: 'Announcements',
         categoryId: 'DIC_kwDOL4rZSc4CiGyu',
+        mapping: 'pathname',
+        strict: true,
         lazyLoading: true,
       },
     },
