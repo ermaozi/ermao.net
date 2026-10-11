@@ -194,9 +194,9 @@ def validate_content_freshness(route, doc):
         for text in contract['forbidden']:
             assert re.sub(r'\s+', '', text) not in visible, f'{route}: unsupported tutorial claim: {text}'
         targets = {attrs.get('href') for tag, attrs in doc.tags if tag == 'a'}
+        targets.update(attrs.get('src') for tag, attrs in doc.tags if tag == 'img')
         for url in contract['sources'] + contract['preservedLinks']:
-            if not url.startswith('https://image.ermao.net'):
-                assert url in targets, f'{route}: missing source or navigation link: {url}'
+            assert url in targets, f'{route}: missing source, image or navigation link: {url}'
     required = {
         '/blog/shadowrocket-rules-config/': ('FINAL,PROXY', '全部 34 个启用的远程规则集', '未启用广告拦截规则', '订阅对应的是服务器节点更新', '不等于流量泄漏', '远程文件更新可能覆盖本地自定义修改'),
         '/en/blog/shadowrocket-rules-config/': ('FINAL,PROXY', '34 enabled remote rule sets', 'does not enable advertising-blocking rules', 'Subscription updates for server nodes', 'not an iPhone performance', 'updating a remote configuration can overwrite them'),

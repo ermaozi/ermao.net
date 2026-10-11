@@ -54,7 +54,7 @@ class SeoContracts(unittest.TestCase):
             for old in contract['forbidden']:
                 with self.subTest(route=route, old=old), self.assertRaisesRegex(AssertionError, 'unsupported tutorial claim'):
                     seo.validate_content_freshness(route, seo.Document(good + '<p>' + old + '</p>'))
-            for required in contract['required'] + contract['sources']:
+            for required in contract['required'] + contract['sources'] + contract['preservedLinks']:
                 with self.subTest(route=route, missing=required), self.assertRaises(AssertionError):
                     seo.validate_content_freshness(route, seo.Document(good.replace(required, 'missing')))
             def response(url):
