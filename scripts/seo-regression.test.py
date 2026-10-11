@@ -19,6 +19,8 @@ ROUTES = ['/', '/en/', '/posts/vpn/', '/en/posts/vpn/', '/airport/', '/page/2/',
 def sitemap(routes=ROUTES):
     return '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{seo.HOST}{p}</loc></url>' for p in routes) + '</urlset>'
 TUTORIAL_FIXTURES = {
+    '/blog/shadowrocket-rules-config/': 'FINAL,PROXY 全部 34 个启用的远程规则集 未启用广告拦截规则 订阅对应的是服务器节点更新 不等于流量泄漏 远程文件更新可能覆盖本地自定义修改',
+    '/en/blog/shadowrocket-rules-config/': 'FINAL,PROXY 34 enabled remote rule sets does not enable advertising-blocking rules Subscription updates for server nodes not an iPhone performance updating a remote configuration can overwrite them',
     '/article/anytls-guide/': 'sha256(password) stop=8 只处理序号 0–7 ghcr.io/sagernet/sing-box:latest 软件包安装 沿用安装包自带服务 address name 是用于区分用户配置的标签',
     '/en/article/anytls-guide/': 'sha256(password) reference implementation name identifies the entry address',
     '/blog/clashmi/': 'iPhone 和 iPad 用户 Mac 版通过官方 DMG 安装包安装和更新 macOS 12（Monterey）或更高版本 <a href="https://clashmi.app/download#macos">下载</a><a href="https://clashmi.app/guide/macos">指南</a>',
@@ -37,8 +39,31 @@ for route in ('/article/6vxkmmuh/', '/en/article/6vxkmmuh/'):
         'https://www.clashverge.dev/install.html', 'https://www.clashverge.dev/guide/term.html',
         'https://www.clashverge.dev/uninstall.html', 'https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v2.5.8'))
 
+for route, contract in seo.ACCESS_TUTORIALS.items():
+    TUTORIAL_FIXTURES[route] = ' '.join(contract['required']) + ''.join(
+        '<a href="' + url + '">Source</a>' for url in contract['sources'] + contract['preservedLinks'])
+
 
 class SeoContracts(unittest.TestCase):
+    def test_router_and_github_reject_old_body_and_preserve_links(self):
+        for route, contract in seo.ACCESS_TUTORIALS.items():
+            self.assertIn(route, seo.CORE_ROUTES)
+            self.assertEqual(seo.TUTORIAL_SOURCES[route], contract['source'])
+            good = TUTORIAL_FIXTURES[route]
+            seo.validate_content_freshness(route, seo.Document(good))
+            for old in contract['forbidden']:
+                with self.subTest(route=route, old=old), self.assertRaisesRegex(AssertionError, 'unsupported tutorial claim'):
+                    seo.validate_content_freshness(route, seo.Document(good + '<p>' + old + '</p>'))
+            for required in contract['required'] + contract['sources'] + contract['preservedLinks']:
+                with self.subTest(route=route, missing=required), self.assertRaises(AssertionError):
+                    seo.validate_content_freshness(route, seo.Document(good.replace(required, 'missing')))
+            def response(url):
+                path = urlsplit(url).path
+                return 200, {'content-type': 'text/html'}, HEAD.replace(ROUTE, path) + ('Old body' if path == route else TUTORIAL_FIXTURES.get(path, ''))
+            with redirect_stdout(StringIO()) as output:
+                self.assertEqual(seo.canonical_status(SHA, set(), response), 1)
+            self.assertIn(route + ': missing corrected content', output.getvalue())
+
     def test_current_indexable_document(self):
         seo.validate_indexable(ROUTE, seo.Document(HEAD), SHA)
     def test_stale_release_cannot_pass_on_unchanged_article_dates(self):
@@ -145,7 +170,9 @@ class SeoContracts(unittest.TestCase):
                 seo.validate_content_freshness(route, seo.Document('<p>' + good + '</p>'))
                 with self.assertRaisesRegex(AssertionError, 'missing corrected content'):
                     seo.validate_content_freshness(route, seo.Document('<p>Old tutorial</p>'))
-        for route, old in [('/article/anytls-guide/', 'singbox/sing-box:latest'),
+        for route, old in [('/blog/shadowrocket-rules-config/', '黑名单分流 + 广告过滤'),
+                           ('/en/blog/shadowrocket-rules-config/', 'Split routing plus advertising lists'),
+                           ('/article/anytls-guide/', 'singbox/sing-box:latest'),
                            ('/article/anytls-guide/', '停止填充的连接数'),
                            ('/blog/telegram/', '独立的密码（App Passcode）'),
                            ('/blog/9esim/', '无需实体 SIM 卡'),

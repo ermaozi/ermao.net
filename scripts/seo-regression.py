@@ -16,6 +16,7 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1] / 'docs/.vuepress/dist'
 HOST = 'https://www.ermao.net'
+ACCESS_TUTORIALS = json.loads(Path(__file__).with_name('tutorial-access-fixtures.json').read_text())
 
 class Document(HTMLParser):
     def __init__(self, html):
@@ -122,7 +123,7 @@ def validate_asset(url, status, content_type, body):
 CORE_ROUTES = tuple(
     prefix + suffix
     for prefix in ('/', '/en/')
-    for suffix in ('', 'page/2/', 'posts/vpn/', 'airport/', 'blog/freeappleid/', 'article/z747kgjd/', 'blog/flybit/', 'blog/guangsuyun/', 'blog/asspp-download-guide/', 'blog/superbiu/', 'blog/telegram/', 'blog/9esim/', 'blog/clashmi/', 'article/anytls-guide/', 'article/6vxkmmuh/')
+    for suffix in ('', 'page/2/', 'posts/vpn/', 'airport/', 'blog/freeappleid/', 'article/z747kgjd/', 'blog/flybit/', 'blog/guangsuyun/', 'blog/asspp-download-guide/', 'blog/superbiu/', 'blog/telegram/', 'blog/9esim/', 'blog/shadowrocket-rules-config/', 'blog/clashmi/', 'article/anytls-guide/', 'article/6vxkmmuh/', 'article/fanqiang/', 'article/github/')
 ) + ('/article/choose-good-airport/', '/article/0gematwc/', '/article/eh8f4n86/')
 
 
@@ -154,7 +155,7 @@ def canonical_status(expected_revision, assets, fetcher=fetch):
             markers = doc.select('meta', 'name', 'ermao:build-revision')
             actual = markers[0].get('content') if len(markers) == 1 else None
             current = actual == expected_revision
-            tutorial = route in ('/blog/telegram/', '/en/blog/telegram/', '/blog/9esim/', '/en/blog/9esim/', '/blog/clashmi/', '/en/blog/clashmi/', '/article/anytls-guide/', '/en/article/anytls-guide/', '/article/6vxkmmuh/', '/en/article/6vxkmmuh/', '/posts/vpn/', '/en/posts/vpn/')
+            tutorial = route in ACCESS_TUTORIALS or route in ('/blog/telegram/', '/en/blog/telegram/', '/blog/9esim/', '/en/blog/9esim/', '/blog/shadowrocket-rules-config/', '/en/blog/shadowrocket-rules-config/', '/blog/clashmi/', '/en/blog/clashmi/', '/article/anytls-guide/', '/en/article/anytls-guide/', '/article/6vxkmmuh/', '/en/article/6vxkmmuh/', '/posts/vpn/', '/en/posts/vpn/')
             if current:
                 validate_indexable(route, doc, expected_revision)
                 if tutorial:
@@ -186,7 +187,19 @@ def canonical_status(expected_revision, assets, fetcher=fetch):
 
 def validate_content_freshness(route, doc):
     visible = re.sub(r'\s+', '', ' '.join(doc.text))
+    if route in ACCESS_TUTORIALS:
+        contract = ACCESS_TUTORIALS[route]
+        for text in contract['required']:
+            assert re.sub(r'\s+', '', text) in visible, f'{route}: missing corrected content: {text}'
+        for text in contract['forbidden']:
+            assert re.sub(r'\s+', '', text) not in visible, f'{route}: unsupported tutorial claim: {text}'
+        targets = {attrs.get('href') for tag, attrs in doc.tags if tag == 'a'}
+        targets.update(attrs.get('src') for tag, attrs in doc.tags if tag == 'img')
+        for url in contract['sources'] + contract['preservedLinks']:
+            assert url in targets, f'{route}: missing source, image or navigation link: {url}'
     required = {
+        '/blog/shadowrocket-rules-config/': ('FINAL,PROXY', '全部 34 个启用的远程规则集', '未启用广告拦截规则', '订阅对应的是服务器节点更新', '不等于流量泄漏', '远程文件更新可能覆盖本地自定义修改'),
+        '/en/blog/shadowrocket-rules-config/': ('FINAL,PROXY', '34 enabled remote rule sets', 'does not enable advertising-blocking rules', 'Subscription updates for server nodes', 'not an iPhone performance', 'updating a remote configuration can overwrite them'),
         '/article/6vxkmmuh/': ('macOS 12 及以上系统', '仅影响遵循 macOS 系统代理设置的应用', '实际范围受路由和排除项等配置影响', '已进入客户端的流量统一使用全局策略组中选定的出口', '独立开关', '仅把应用移到废纸篓不等于卸载服务', '先备份', 'uninstall-service', '不要强行打开', '这一修复不代表所有断网或 DNS 故障都有同一原因'),
         '/en/article/6vxkmmuh/': ('macOS 12 or later', 'affects only apps that honor the macOS system proxy settings', 'Coverage depends on routes and exclusions', 'Sends captured traffic through the selected global outbound', 'independent switches', 'moving the app to Trash alone does not uninstall it', 'Back up subscriptions', 'uninstall-service', 'do not force it open', 'This does not establish the cause of every connectivity or DNS failure'),
         '/article/anytls-guide/': ('sha256(password)', 'stop=8 只处理序号 0–7', 'ghcr.io/sagernet/sing-box:latest', '软件包安装', '沿用安装包自带服务', 'address', 'name 是用于区分用户配置的标签'),
@@ -211,6 +224,8 @@ def validate_content_freshness(route, doc):
     for text in required.get(route, ()):
         assert re.sub(r'\s+', '', text) in visible, f'{route}: missing corrected content: {text}'
     forbidden = {
+        '/blog/shadowrocket-rules-config/': ('黑名单分流+广告过滤', '所有流量都在裸奔', '封号风险大幅降低', '规则永远保持最新'),
+        '/en/blog/shadowrocket-rules-config/': ('Splitroutingplusadvertisinglists', 'blocksdomainsinitsadvertisingandtrackinglists'),
         '/article/6vxkmmuh/': ('所有流量都通过代理', '所有网络流量将通过ClashVergeRev', 'TUN模式和系统代理模式不能同时启用', '清空废纸篓，完成卸载'),
         '/en/article/6vxkmmuh/': ('Sendsallsupportedtrafficthroughtheproxy', 'ThesourceguideadviseschoosingeitherTUNmodeorsystem-proxymode', 'EmptytheTrash'),
         '/posts/vpn/': ('所有流量走代理，适合需要全程加密的场景',),
@@ -265,6 +280,9 @@ def validate_content_freshness(route, doc):
 # merge timestamp. Match the installed VuePress git plugin: follow file history,
 # then choose its greatest author timestamp (rather than the build or PR date).
 TUTORIAL_SOURCES = {
+    **{route: item['source'] for route, item in ACCESS_TUTORIALS.items()},
+    '/blog/shadowrocket-rules-config/': 'docs/blog/翻墙工具/教你如何配置小火箭规则.md',
+    '/en/blog/shadowrocket-rules-config/': 'docs/en/blog/access-tools/教你如何配置小火箭规则.md',
     '/article/anytls-guide/': 'docs/blog/文档/anytls协议完全指南.md',
     '/blog/telegram/': 'docs/blog/文档/telegram注册使用教程.md',
     '/blog/9esim/': 'docs/blog/文档/9esim使用指南.md',
