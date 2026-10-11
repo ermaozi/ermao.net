@@ -1,7 +1,7 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
-import { selectComment, pathnameTerm, SOURCE, TARGET } from '../docs/.vuepress/utils/comment-migration.mjs'
+import { selectComment, readRegistry, pathnameTerm, SOURCE, TARGET } from '../docs/.vuepress/utils/comment-migration.mjs'
 const routes = JSON.parse(readFileSync(new URL('../docs/.vuepress/data/comment-routes.json', import.meta.url)))
 test('all baseline paths retain their measured primary, including both duplicate paths', () => {
   assert.equal(Object.keys(routes).length, 70)
@@ -40,7 +40,17 @@ test('new articles use the dedicated public repository and original pathname map
   assert.equal(result.repo, TARGET.repo)
   assert.equal(result.mapping, 'pathname')
 })
-test('site code never fetches the same-origin-only Giscus API directly', () => {
-  const module = readFileSync(new URL('../docs/.vuepress/utils/comment-migration.mjs', import.meta.url), 'utf8')
-  assert.ok(!module.includes('https://giscus.app/api/'))
+test('registry fetch uses the public raw-file origin and tolerates its failure', async () => {
+  const previous = globalThis.fetch
+  try {
+    globalThis.fetch = async url => {
+      const parsed = new URL(url)
+      assert.equal(parsed.origin, 'https://raw.githubusercontent.com')
+      assert.equal(parsed.pathname, '/ermaozi/ermao-comments/main/comment-migration.json')
+      return new Response(JSON.stringify({ version: 1, targets: { 21: 80 } }))
+    }
+    assert.deepEqual(await readRegistry(), { 21: 80 })
+    globalThis.fetch = async () => new Response('Unavailable', { status: 503 })
+    assert.deepEqual(await readRegistry(), {})
+  } finally { globalThis.fetch = previous }
 })

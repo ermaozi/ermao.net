@@ -23,7 +23,7 @@ async function main() {
         if (url.origin === base) return route.continue()
         if (url.hostname === 'raw.githubusercontent.com') return mode === 'registry-unavailable' ? route.fulfill({status:503, body:'Unavailable'}) : route.fulfill({ json: { version: 1, targets: (mode === 'transferred' || transferred) ? { 21: 80 } : { 3: 2 } } })
         if (url.hostname === 'giscus.app' && url.pathname === '/api/discussions') throw new Error('Host page must not call the Giscus API across origins')
-        if (url.hostname === 'giscus.app') return route.fulfill({ contentType: 'text/html', body: '<!doctype html><html><body>Test comment iframe' + (mode === 'retry-after-transfer' && !transferred ? '<script>parent.postMessage({giscus:{error:"Discussion not found"}},"*")</script>' : '') + '</body></html>' })
+        if (url.hostname === 'giscus.app') return route.fulfill({ contentType: 'text/html', body: '<!doctype html><html><body>Test comment iframe' + (mode === 'retry-after-transfer' && !transferred ? '<script>parent.postMessage({giscus:{error:"Discussion not found"}},"http://127.0.0.1:4178")</script>' : '') + '</body></html>' })
         return route.abort()
       })
       await page.goto(base + '/posts/vpn/')
