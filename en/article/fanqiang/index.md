@@ -302,15 +302,7 @@ This is not a verified compatibility list. Region, board, flash, secure-boot sta
 
 ### About the source's flash command
 
-The Chinese article tells users to enable SSH at `192.168.31.1` and run:
-
-```bash
-mtd write firmware.bin OS1
-```
-
-That is dangerously incomplete and must **not** be treated as a universal Xiaomi command. Partition names and required image types differ. A wrong target can destroy the boot path.
-
-Use the exact installation command from the authoritative page for the exact revision—or do not flash.
+There is no universal Xiaomi SSH-unlock or partition-write procedure. Match the exact model, region, hardware revision and installed firmware in the [official OpenWrt Table of Hardware](https://openwrt.org/toh/start), then read that device's installation and recovery instructions. Prepare backups and a usable recovery path before any write. If the device or recovery procedure cannot be verified, do not flash.
 
 ### Installing an OpenVPN client on a compatible OpenWrt build
 
@@ -376,7 +368,7 @@ For an exact device that OpenWrt supports:
 4. prepare the documented TFTP, serial, or recovery path;
 5. follow the exact installation steps.
 
-The source's generic instruction—hold Reset while powering on for 10 seconds and upload by TFTP—does not apply to every TP-Link model.
+Reset timing, recovery addresses, image filenames and TFTP support are device-specific. Follow the exact hardware revision's official device page; recovery and first installation are not interchangeable.
 
 DD-WRT may offer a graphical VPN interface on supported models. Confirm active maintenance, exact build support, security updates, and installation order.
 

@@ -52,7 +52,7 @@ This file contains links to all documentation sections.
 - [路由器翻墙详细教程：2026年最佳路由器VPN配置指南](/article/fanqiang/index.md): 路由器翻墙是实现全家设备科学上网的最佳解决方案。通过在路由器上配置VPN，智能电视、游戏机、手机、电脑等所有设备都能自动获得翻墙能力，无需单独安装VPN软件。 本教程包含华为、小米、TP-Link路由器的VPN配置方法，推荐2026年最佳路由器VPN（SSONE机场、CocoDuck机场），提供路由器选择指南和性...
 - [什么是翻墙？2026年最新Clash代理工具完整指南](/article/fanqiang2/index.md): 2026年最新翻墙指南，详细介绍Clash、V2Ray等代理工具的使用方法，科学上网、网络安全、跨区解锁一次搞懂！
 - [✈️【机场推荐】小牛云 - 老牌机场、稳定可靠](/article/fhvr729f/index.md): ~~小牛云于2024年正式上线，依托母公司小牛VPN近5年的行业经验，拥有深厚的技术积淀和良好的品牌信誉，用户无需担心跑路风险~~。 小牛云官网地址：xiaoniuyun.cc
-- [GitHub无法访问？2026年最新6种解决方法（含DNS修改与加速工具）](/article/github/index.md): 国内访问GitHub经常遇到连接超时、无法打开或速度极慢的问题，通常是由于DNS污染或网络阻断导致的。本文整理了2026年最新6种解决GitHub无法访问的方法，包括修改Hosts文件、使用GitHub加速器、配置加密DNS以及终极VPN方案，助你秒开GitHub！
+- [GitHub无法访问？2026年最新6种解决方法（含DNS修改与加速工具）](/article/github/index.md): GitHub 连接超时、无法打开或下载缓慢，可能来自服务故障、DNS、路由、防火墙、代理或本地配置。本文按故障层次说明 Hosts、代理、镜像与加密 DNS 的适用边界，先定位原因再选择处理方法。
 - [⚠️【风险预警】OKAC/OKANC机场跑路预警，停止续费购买](/article/giwzl7sq/index.md): OKAC/OKANC近期出现线路持续异常、官网不可访问、客服与管理响应中断等问题；OKAC与奈云、隐云、CAC同属一个运营主体，且奈云已确认跑路，当前按跑路预警处理。
 - [ubuntu2204中mongodb数据导入导出](/article/gokrv7a1/index.md): Ubuntu 22.04 中 MongoDB 数据导入导出笔记，整理 mongoexport、mongoimport 等工具安装与常用命令，适合开发环境迁移测试数据时参考。
 - [✈️机场推荐【九霄云】 - 服务好，回购率高](/article/gqs2dway/index.md): 九霄云机场，16.8元 80G/月，轻量级机场、价格超低。 九霄云官网地址：https://shop.starpro.one
@@ -140,7 +140,7 @@ This file contains links to all documentation sections.
 - [2026 全球云机场推荐：20元120GB起，VLESS 与 IPLC/IEPL 宣传](/blog/quanqiuyun/index.md): 全球云机场怎么样？本文整理其20元120GB月付、99元59GB年付、三档不限时流量包、VLESS 客户端兼容性，以及服务商宣传的 IPLC/IEPL、70+ 节点和流媒体支持。
 - [2026年软路由搭建教程：ImmortalWRT 刷机 + OpenClash 全屋科学上网](/blog/router-setup-guide/index.md): 2026年软路由搭建保姆级教程，从零刷入 ImmortalWRT，配置 OpenClash 实现全屋设备无感科学上网。含磊科 N60Pro 实战刷机步骤、U-Boot 防砖写入、SSH 备份原厂固件及 OpenClash 订阅配置全流程，约 30 分钟完成。
 - [2026 Runway机场评测：9.9元100G起的Shadowsocks机场推荐｜4K流媒体解锁](/blog/runway/index.md): Runway机场怎么样？本文整理Runway最新套餐价格与核心特点：9.9元100G起，Shadowsocks协议，支持Netflix/YouTube解锁，含商务舱、头等舱与一次性流量包购买建议。
-- [小火箭规则怎么配？2026 Shadowrocket 分流规则设置与去广告教程](/blog/shadowrocket-rules-config/index.md): 手把手教你配置 Shadowrocket（小火箭）分流规则，3 步导入懒人规则库，实现国内直连、国外走代理、自动拦截广告，避免因流量裸奔导致账号被封。附规则自动更新设置和黑白名单选择指南。
+- [小火箭规则怎么配？2026 Shadowrocket 分流规则设置与去广告教程](/blog/shadowrocket-rules-config/index.md): 3 步导入 Shadowrocket（小火箭）懒人分流配置，说明 FINAL 默认代理、策略组与去广告版本的区别，并教你检查配置更新、验证命中规则和保留回滚文件。
 - [2026 闪电鼠机场推荐：96元年付60GB/月，VLESS专线与sd88优惠](/blog/shandianshu/index.md): 闪电鼠机场套餐怎么选？本文整理96元年付60GB/月、22元起月付、新用户sd88七折优惠，以及服务商提供的VLESS节点测速和解锁截图，说明5.6元月均价的年付条件与订阅兼容限制。
 - [2026 神行加速机场推荐：96元年付60GB/月，sx0077七折与VLESS节点](/blog/shenxing/index.md): 神行加速套餐怎么选？本文整理96元年付小包、23元起月付及季付至三年付报价，说明sx0077新用户七折、客服获取订阅的限制，并解读服务商提供的VLESS测速与流媒体、AI检测原图。
 - [2026 瞬云机场评测：年付99元起，30+节点与全平台流媒体解锁](/blog/shunyun/index.md): 瞬云机场怎么样？本文基于公开套餐与服务信息，整理其节点布局、解锁能力、客服保障和购买建议。最低年付99元，主打ANYCAST高速节点，支持Netflix、Disney+、TikTok、ChatGPT等场景。

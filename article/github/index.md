@@ -1,9 +1,10 @@
 ---
 url: /article/github/index.md
 description: >-
-  国内访问GitHub经常遇到连接超时、无法打开或速度极慢的问题，通常是由于DNS污染或网络阻断导致的。本文整理了2026年最新6种解决GitHub无法访问的方法，包括修改Hosts文件、使用GitHub加速器、配置加密DNS以及终极VPN方案，助你秒开GitHub！
+  GitHub 连接超时、无法打开或下载缓慢，可能来自服务故障、DNS、路由、防火墙、代理或本地配置。本文按故障层次说明 Hosts、代理、镜像与加密 DNS
+  的适用边界，先定位原因再选择处理方法。
 ---
-国内访问GitHub经常遇到连接超时、无法打开或速度极慢的问题，通常是由于DNS污染或网络阻断导致的。本文整理了2026年最新6种解决GitHub无法访问的方法，包括修改Hosts文件、使用GitHub加速器、配置加密DNS以及终极VPN方案，助你秒开GitHub！
+GitHub 连接超时、无法打开或下载缓慢，可能来自服务故障、DNS、路由、防火墙、代理或本地配置。本文按故障层次说明 Hosts、代理、镜像与加密 DNS 的适用边界，先定位原因再选择处理方法。
 
 GitHub 作为全球最大的开源代码托管平台，是程序员日常工作和学习的必备工具。但由于众所周知的网络原因，国内用户经常会遇到 **GitHub 打不开**、**GitHub 连接超时**、**图片加载失败** 或 **下载速度极慢** 的问题。
 
@@ -13,54 +14,26 @@ GitHub 作为全球最大的开源代码托管平台，是程序员日常工作�
 
 ![GitHub无法访问报错示例 =1325x594](https://image.ermao.net/images/article/jddtxrrw/image.png)
 
-本文将为你提供 6 种行之有效的解决方案，从免费的 Hosts 修改到终极的 VPN 加速，总有一款适合你！
+先检查 [GitHub Status](https://www.githubstatus.com/) 与 [GitHub 官方连接排查指南](https://docs.github.com/en/get-started/using-github/troubleshooting-connectivity-problems)，分别确认网页 HTTPS、Git HTTPS、SSH 和 DNS 哪一层失败。以下方法不保证适用于每种故障。
 
 ***
 
 ## 方法一：修改 Hosts 文件（最常用免费方案）
 
-这是目前最常用的免费解决方法。原理是绕过本地 DNS 解析，直接告诉电脑 GitHub 服务器的真实 IP 地址，从而避开 DNS 污染。
+Hosts 会绕过正常 DNS 解析，但固定 IP 可能过期或指向不合适的节点，不宜直接复制旧教程中的映射。[GitHub 官方说明](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-githubs-ip-addresses)指出 IP 地址会变化，Meta API 列表也不完整。
 
 ### ✅ 操作步骤：
 
-1. **获取 GitHub 最新 IP 地址**
-   访问 [IPAddress.com](https://www.ipaddress.com/) 或 [Whatismyipaddress](https://whatismyipaddress.com/)，分别查询以下域名的最新 IP：
-   * `github.com`
-   * `assets-cdn.github.com`
-   * `github.global.ssl.fastly.net`
-   * `raw.githubusercontent.com`
-
-2. **编辑 Hosts 文件**
-   * **Windows 用户**：
-     1. 进入路径：`C:\Windows\System32\drivers\etc`
-     2. 找到 `hosts` 文件，右键选择“以管理员身份运行”的记事本打开。
-   * **Mac / Linux 用户**：
-     1. 打开终端（Terminal）。
-     2. 输入命令：`sudo vi /etc/hosts` 或 `sudo nano /etc/hosts`。
-
-3. **添加映射规则**
-   在文件末尾添加以下内容（**注意：IP 地址可能会变，请以上一步查询到的为准**）：
-
-   ```text
-   # GitHub Hosts Start
-   140.82.113.4    github.com
-   185.199.108.153 assets-cdn.github.com
-   199.232.69.194  github.global.ssl.fastly.net
-   199.232.68.133  raw.githubusercontent.com
-   # GitHub Hosts End
-   ```
-
-4. **刷新 DNS 缓存（重要！）**
-   修改完成后，必须刷新缓存才能生效：
-   * **Windows**：打开 CMD (Win+R 输入 cmd)，运行 `ipconfig /flushdns`
-   * **Mac**：在终端运行 `sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`
-   * **Linux**：运行 `sudo systemd-resolve --flush-caches`
+1. 若以前手动添加过 GitHub 映射，先备份 Hosts，再暂时注释这些旧条目以比较正常 DNS 结果，不粘贴未经验证的 IP。
+2. Windows 文件位置为 `C:\Windows\System32\drivers\etc\hosts`，macOS / Linux 为 `/etc/hosts`。受管理的设备先联系管理员。
+3. 分别检查 DNS 与 HTTPS；`ping` 的 ICMP 结果不能单独判断网页是否可用。
+4. 需要清缓存时使用当前系统实际支持的方式；不要为修复证书错误关闭 TLS 验证。
 
 ***
 
 ## 方法二：使用代理或 VPN（终极稳定方案）
 
-如果你觉得修改 Hosts 太麻烦，或者 Hosts 经常失效，那么使用代理工具（梯子）是**最简单、最稳定**的方法。这也是彻底解决 GitHub 访问慢、Clone 速度慢的终极方案。
+在网络政策允许时，已获授权的代理可用于排查直连路径问题，但不能保证解决服务故障、账号问题或所有 Clone 错误。
 
 **推荐工具：**
 
@@ -68,17 +41,17 @@ GitHub 作为全球最大的开源代码托管平台，是程序员日常工作�
 * **Shadowsocks / V2Ray**：轻量级代理工具。
 
 **💡 怎么用？**
-开启代理软件的**全局模式**或**规则模式**（确保规则中包含 GitHub），即可秒开网页。如果你需要加速 Git 命令行（git clone/push），还需要在终端单独设置代理：
+开启代理软件的**全局模式**或**规则模式**（确保规则中包含 GitHub），再验证网页是否恢复。如果你需要加速 Git 命令行（git clone/push），还需要在终端单独设置代理：
 
 ```bash
 # 设置 Git 代理（假设你的本地代理端口是 7890）
 git config --global http.proxy http://127.0.0.1:7890
-git config --global https.proxy http://127.0.0.1:7890
 
 # 取消 Git 代理
 # git config --global --unset http.proxy
-# git config --global --unset https.proxy
 ```
+
+[Git 官方 `http.proxy` 文档](https://git-scm.com/docs/git-config#Documentation/git-config.txt-httpproxy)说明该设置用于 libcurl 处理的 HTTP/HTTPS 远程连接；`https.proxy` 不是对应的独立 Git 配置项，不要与 `https_proxy` 环境变量混淆。先确认本地端口和既有配置，不要把密码或 Token 写入命令；SSH 远程不由此项设置代理。
 
 🔗 **相关教程推荐：**
 
@@ -90,26 +63,19 @@ git config --global https.proxy http://127.0.0.1:7890
 
 ## 方法三：使用 GitHub 镜像站（临时应急）
 
-如果你只是想浏览项目代码或下载 Release 文件，不想折腾网络设置，可以使用国内的 GitHub 镜像站点。这些站点是 GitHub 的缓存或反向代理，速度飞快。
+第三方镜像可能缓存或转发公开仓库，但可用性、内容完整性与更新速度均不能保证。[FastGit 官方告别公告](https://fastgit.org/)已宣布关闭大部分服务并停止维护，本文不再推荐旧 FastGit 地址，也不把未经核实的其他镜像当成可用服务。
 
-**常用镜像地址：**
+若临时通过第三方获取公开文件：
 
-> ⚠️ 注意：镜像站不仅用于浏览，登录账号时请谨慎，建议仅用于下载和查看。
-
-* **FastGit** (hub.fastgit.xyz)
-* **CNPMJS** (github.com.cnpmjs.org) - *主要用于加速 git clone*
-* **GitClone** (gitclone.com)
-
-**使用方法**：
-将原链接中的 `github.com` 替换为镜像域名。例如：
-原链接：`https://github.com/torvalds/linux`
-镜像链：`https://hub.fastgit.xyz/torvalds/linux`
+* 不向第三方镜像提交 GitHub 密码、Token 或私有仓库地址，不在镜像站登录 GitHub 账号。
+* 从独立的官方渠道核验发布签名或校验值；镜像可能提供过期或修改过的内容。
+* 推送代码前核对远程地址属于官方 `github.com`；不要把凭据交给下载代理。
 
 ***
 
 ## 方法四：配置加密 DNS (DoH/DoT)
 
-很多时候 GitHub 无法访问是因为运营商的 DNS 投毒。使用加密 DNS 可以防止 DNS 劫持，获取正确的 IP 地址。
+只有故障位于 DNS 层时，加密 DNS 才可能有帮助。DoH/DoT 可以保护客户端到解析器之间的查询传输，但不能修复 IP 阻断、路由故障或防火墙策略；仅填写普通 DNS 服务器 IP 不等于启用加密 DNS。
 
 **推荐 DNS 服务：**
 
@@ -141,19 +107,19 @@ git config --global https.proxy http://127.0.0.1:7890
 
 如果以上方法都无效，可能是你的本地网络配置出了问题，可以尝试以下“急救”措施：
 
-1. **验证是否存在 DNS 污染**
+1. **比较 DNS 解析结果**
    打开终端（CMD），输入：
    ```bash
    nslookup github.com 8.8.8.8
    ```
-   如果返回的 IP 与直接 `ping github.com` 的 IP 不一致，说明本地默认 DNS 有问题。
+   不同解析器返回不同 IP 不等于 DNS 污染。[GitHub 的 IP 会变化](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-githubs-ip-addresses)，[Google Public DNS 的 CDN 说明](https://developers.google.com/speed/public-dns/faq)也解释了解析器位置及地理调度会影响返回地址。结合时间、网络、HTTPS 连接与证书结果排查；不能把 `ping` 和一次 `nslookup` 的差异当作污染结论。
 
 2. **清除 DNS 缓存**
    * Windows: `ipconfig /flushdns`
    * Mac: `sudo killall -HUP mDNSResponder`
 
 3. **重置 Winsock (Windows)**
-   以管理员身份运行 CMD，输入：
+   仅在证据指向本地套接字配置损坏时考虑此项。先记录自定义网络设置，受管理设备联系管理员；该重置可能影响自定义配置。以管理员身份运行 CMD，输入：
    ```cmd
    netsh winsock reset
    ```
@@ -165,7 +131,7 @@ git config --global https.proxy http://127.0.0.1:7890
 
 对于大多数用户，推荐的优先级如下：
 
-1. 🥇 **最推荐**：**方法二 (VPN/代理)** —— 一劳永逸，速度最快，功能最全。
+1. 🥇 **最推荐**：**方法二 (VPN/代理)** —— 仅在直连路径有问题且网络政策允许时考虑。
 2. 🥈 **小白推荐**：**方法五 (Watt Toolkit)** —— 图形化界面，免费且简单。
 3. 🥉 **极客推荐**：**方法一 (改 Hosts)** —— 无需第三方软件，但需要定期维护 IP。
 

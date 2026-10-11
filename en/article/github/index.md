@@ -47,7 +47,7 @@ nslookup github.com
 nslookup github.com 1.1.1.1
 ```
 
-Different answers are not automatically evidence of tampering: GitHub and its content-delivery infrastructure can return different addresses by location and time. A failure, obviously unrelated address, or repeatable mismatch accompanied by connection errors deserves further investigation.
+Different answers are not automatically evidence of tampering: GitHub and its content-delivery infrastructure can return different addresses by location and time. See [Google Public DNS on CDN geolocation](https://developers.google.com/speed/public-dns/faq). A failure, obviously unrelated address, or repeatable mismatch accompanied by connection errors deserves further investigation.
 
 Encrypted DNS can protect DNS queries from alteration in transit. Cloudflare documents its DNS-over-HTTPS endpoint as:
 
@@ -78,7 +78,7 @@ sudo resolvectl flush-caches
 
 ## 3. Avoid Hard-Coded GitHub Hosts Entries
 
-The original Chinese article supplied fixed IP addresses for `github.com` and related hosts. That advice is fragile in 2026. GitHub states that its IP addresses change over time, does not recommend allowlisting by IP, and says the Meta API list is not exhaustive.
+Fixed IP addresses for `github.com` and related hosts are fragile. GitHub states that its IP addresses change over time, does not recommend allowlisting by IP, and says the Meta API list is not exhaustive.
 
 If an administrator must maintain an allowlist, monitor the [GitHub Meta API](https://api.github.com/meta) and follow [GitHub's IP-address guidance](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-githubs-ip-addresses). Do not copy old addresses from a blog or IP-lookup site.
 
@@ -131,7 +131,7 @@ git config --global --get http.proxy
 git config --global --unset http.proxy
 ```
 
-The Git option is named `http.proxy` and applies to HTTP and HTTPS remotes handled by libcurl; a separate `https.proxy` key is usually unnecessary. Do not embed a reusable password in a command or configuration file. On managed networks, ask the administrator for the approved proxy and certificate configuration.
+The Git option is named `http.proxy` and applies to HTTP and HTTPS remotes handled by libcurl; `https.proxy` is not the corresponding Git configuration option and must not be confused with the `https_proxy` environment variable. See the [Git http.proxy documentation](https://git-scm.com/docs/git-config#Documentation/git-config.txt-httpproxy). Do not embed a reusable password in a command or configuration file. On managed networks, ask the administrator for the approved proxy and certificate configuration.
 
 For client setup, see:
 
@@ -141,7 +141,7 @@ For client setup, see:
 
 ## 6. Treat Mirrors and “Accelerators” as Third Parties
 
-The FastGit and CNPMJS examples in the original article are stale, and third-party mirror availability changes frequently. More importantly, a mirror or download proxy can observe requested repository paths and may serve modified or outdated content.
+[FastGit announced the shutdown of most services and the end of maintenance](https://fastgit.org/). Old FastGit endpoints are no longer recommended, and third-party mirror availability changes frequently. More importantly, a mirror or download proxy can observe requested repository paths and may serve modified or outdated content.
 
 If you use a third-party mirror for a public archive:
 
