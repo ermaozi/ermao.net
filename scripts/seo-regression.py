@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """Validate generated SEO contracts; --live checks the exact deployed article revision."""
 import argparse
+from datetime import datetime, timezone
 import json
 from html.parser import HTMLParser
 from pathlib import Path
 import re
+import subprocess
 import time
 import urllib.error
 import urllib.request
@@ -120,7 +122,7 @@ def validate_asset(url, status, content_type, body):
 CORE_ROUTES = tuple(
     prefix + suffix
     for prefix in ('/', '/en/')
-    for suffix in ('', 'page/2/', 'posts/vpn/', 'airport/', 'blog/freeappleid/', 'article/z747kgjd/', 'blog/flybit/', 'blog/guangsuyun/', 'blog/asspp-download-guide/', 'blog/superbiu/', 'blog/telegram/', 'blog/9esim/', 'blog/shadowrocket-rules-config/')
+    for suffix in ('', 'page/2/', 'posts/vpn/', 'airport/', 'blog/freeappleid/', 'article/z747kgjd/', 'blog/flybit/', 'blog/guangsuyun/', 'blog/asspp-download-guide/', 'blog/superbiu/', 'blog/telegram/', 'blog/9esim/', 'blog/shadowrocket-rules-config/', 'blog/clashmi/', 'article/anytls-guide/', 'article/6vxkmmuh/')
 ) + ('/article/choose-good-airport/', '/article/0gematwc/', '/article/eh8f4n86/')
 
 
@@ -152,7 +154,7 @@ def canonical_status(expected_revision, assets, fetcher=fetch):
             markers = doc.select('meta', 'name', 'ermao:build-revision')
             actual = markers[0].get('content') if len(markers) == 1 else None
             current = actual == expected_revision
-            tutorial = route in ('/blog/telegram/', '/en/blog/telegram/', '/blog/9esim/', '/en/blog/9esim/', '/blog/shadowrocket-rules-config/', '/en/blog/shadowrocket-rules-config/')
+            tutorial = route in ('/blog/telegram/', '/en/blog/telegram/', '/blog/9esim/', '/en/blog/9esim/', '/blog/shadowrocket-rules-config/', '/en/blog/shadowrocket-rules-config/', '/blog/clashmi/', '/en/blog/clashmi/', '/article/anytls-guide/', '/en/article/anytls-guide/', '/article/6vxkmmuh/', '/en/article/6vxkmmuh/', '/posts/vpn/', '/en/posts/vpn/')
             if current:
                 validate_indexable(route, doc, expected_revision)
                 if tutorial:
@@ -187,12 +189,18 @@ def validate_content_freshness(route, doc):
     required = {
         '/blog/shadowrocket-rules-config/': ('FINAL,PROXY', '全部 34 个启用的远程规则集', '未启用广告拦截规则', '订阅对应的是服务器节点更新', '不等于流量泄漏', '远程文件更新可能覆盖本地自定义修改'),
         '/en/blog/shadowrocket-rules-config/': ('FINAL,PROXY', '34 enabled remote rule sets', 'does not enable advertising-blocking rules', 'Subscription updates for server nodes', 'not an iPhone performance', 'updating a remote configuration can overwrite them'),
+        '/article/6vxkmmuh/': ('macOS 12 及以上系统', '仅影响遵循 macOS 系统代理设置的应用', '实际范围受路由和排除项等配置影响', '已进入客户端的流量统一使用全局策略组中选定的出口', '独立开关', '仅把应用移到废纸篓不等于卸载服务', '先备份', 'uninstall-service', '不要强行打开', '这一修复不代表所有断网或 DNS 故障都有同一原因'),
+        '/en/article/6vxkmmuh/': ('macOS 12 or later', 'affects only apps that honor the macOS system proxy settings', 'Coverage depends on routes and exclusions', 'Sends captured traffic through the selected global outbound', 'independent switches', 'moving the app to Trash alone does not uninstall it', 'Back up subscriptions', 'uninstall-service', 'do not force it open', 'This does not establish the cause of every connectivity or DNS failure'),
+        '/article/anytls-guide/': ('sha256(password)', 'stop=8 只处理序号 0–7', 'ghcr.io/sagernet/sing-box:latest', '软件包安装', '沿用安装包自带服务', 'address', 'name 是用于区分用户配置的标签'),
+        '/en/article/anytls-guide/': ('sha256(password)', 'reference implementation', 'name identifies the entry', 'address'),
+        '/blog/clashmi/': ('iPhone 和 iPad 用户', 'Mac 版通过官方 DMG 安装包安装和更新', 'macOS 12（Monterey）或更高版本'),
+        '/en/blog/clashmi/': ('iPhone and iPad users', 'The Mac version is installed and updated using an official DMG package', 'macOS 12 (Monterey) or later'),
         '/blog/telegram/': ('Two-Step Verification', '额外的账号登录密码', '本机密码锁', '不一定同时发送到邮箱和手机号', '不能替代账号两步验证'),
         '/en/blog/telegram/': ('Two-Step Verification', 'Passcode Lock', 'separate from the account'),
         '/blog/9esim/': ('实体可编程卡', '卡片出厂不含号码', '365 天', '按流量、分钟和短信计费', '不含号码、语音或短信', '第三方验证码均不保证成功', '预计约两周', '该时效未重新核实'),
         '/en/blog/9esim/': ('physical, SIM-shaped programmable eUICC card', 'obtain profiles separately', 'does not prove future support', 'permanent number or lifetime service'),
-        '/posts/vpn/': ('96元/年60GB/月', '99元/年59GB/月', '2026-02-24版文章的历史价目'),
-        '/en/posts/vpn/': ('Historical prices from the 2026-02-24 article version',),
+        '/posts/vpn/': ('96元/年60GB/月', '99元/年59GB/月', '2026-02-24版文章的历史价目', '已被客户端接管的流量', '不会自动接管所有应用', '不保证全设备流量均已加密'),
+        '/en/posts/vpn/': ('Historical prices from the 2026-02-24 article version', 'captured traffic uses the selected global outbound', 'does not automatically capture every app or guarantee encryption of all device traffic'),
         '/blog/superbiu/': ('本次更新仅复核服务商公开公告，未重新购买或测速', '一次性套餐当前是否在售及有效期未确认', '2026-02-24'),
         '/en/blog/superbiu/': ('2026-02-24', 'Current one-time package availability and expiry terms remain unverified', 'AnyTLS'),
         '/blog/guangsuyun/': ('历史优惠记录', '尚未核实商家是否延期或另有活动'),
@@ -207,11 +215,24 @@ def validate_content_freshness(route, doc):
     forbidden = {
         '/blog/shadowrocket-rules-config/': ('黑名单分流+广告过滤', '所有流量都在裸奔', '封号风险大幅降低', '规则永远保持最新'),
         '/en/blog/shadowrocket-rules-config/': ('Splitroutingplusadvertisinglists', 'blocksdomainsinitsadvertisingandtrackinglists'),
+        '/article/6vxkmmuh/': ('所有流量都通过代理', '所有网络流量将通过ClashVergeRev', 'TUN模式和系统代理模式不能同时启用', '清空废纸篓，完成卸载'),
+        '/en/article/6vxkmmuh/': ('Sendsallsupportedtrafficthroughtheproxy', 'ThesourceguideadviseschoosingeitherTUNmodeorsystem-proxymode', 'EmptytheTrash'),
+        '/posts/vpn/': ('所有流量走代理，适合需要全程加密的场景',),
+        '/en/posts/vpn/': ('Sendsallsupportedtrafficthroughtheproxy',),
+        '/article/anytls-guide/': ('由sing-box团队维护', '用户名+密码的认证方式', '停止填充的连接数', '继续填充标记', 'singbox/sing-box:latest', 'deb-install.sh', '"inet4_address"'),
+        '/blog/clashmi/': ('iOS/iPadOS/macOS', '苹果全家桶用户可以直接在应用商店下载', 'iOS/macOS无法下载或更新ClashMi'),
+        '/en/blog/clashmi/': ('iOS,iPadOS,andmacOS', 'Apple-platformuserscanobtaintheappthrougheitherchannel', 'downloadedorupdatedoniOSormacOS'),
         '/blog/telegram/': ('独立的密码（AppPasscode）', '会向你的邮箱和手机号发送验证码'),
         '/blog/9esim/': ('无需实体SIM卡', '完美支持Google', '有效期内可无限使用', '2026年实测'),
     }
     for text in forbidden.get(route, ()):
         assert text not in visible, f'{route}: unsupported tutorial claim: {text}'
+    if route in ('/article/6vxkmmuh/', '/en/article/6vxkmmuh/'):
+        for url in ('https://www.clashverge.dev/install.html', 'https://www.clashverge.dev/guide/term.html', 'https://www.clashverge.dev/uninstall.html', 'https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v2.5.8'):
+            assert doc.select('a', 'href', url), f'{route}: missing official proxy source: {url}'
+    if route in ('/blog/clashmi/', '/en/blog/clashmi/'):
+        for url in ('https://clashmi.app/download#macos', 'https://clashmi.app/guide/macos'):
+            assert doc.select('a', 'href', url), f'{route}: missing official macOS source: {url}'
     if route in ('/article/choose-good-airport/', '/article/0gematwc/', '/article/eh8f4n86/'):
         assert doc.select('a', 'href', '/posts/vpn/#airport-comparison'), f'{route}: missing direct comparison link'
         if route == '/article/choose-good-airport/':
@@ -243,17 +264,60 @@ def validate_content_freshness(route, doc):
         assert '该日期已过' in answer and '需向商家核实' in answer, 'Guangsu coupon FAQ is stale'
 
 
-def validate(read):
+# These pages' visible last-updated labels, Open Graph and JSON-LD use Git author
+# timestamps. Frontmatter updateTime records editorial work, not the later squash
+# merge timestamp. Match the installed VuePress git plugin: follow file history,
+# then choose its greatest author timestamp (rather than the build or PR date).
+TUTORIAL_SOURCES = {
+    '/blog/shadowrocket-rules-config/': 'docs/blog/翻墙工具/教你如何配置小火箭规则.md',
+    '/en/blog/shadowrocket-rules-config/': 'docs/en/blog/access-tools/教你如何配置小火箭规则.md',
+    '/article/anytls-guide/': 'docs/blog/文档/anytls协议完全指南.md',
+    '/blog/telegram/': 'docs/blog/文档/telegram注册使用教程.md',
+    '/blog/9esim/': 'docs/blog/文档/9esim使用指南.md',
+    '/blog/clashmi/': 'docs/blog/翻墙工具/ios_clashmi使用教程.md',
+    '/en/blog/clashmi/': 'docs/en/blog/access-tools/ios_clashmi使用教程.md',
+}
+
+
+def git_modified_time(source_path, read_log=subprocess.check_output):
+    output = read_log(
+        ['git', 'log', '--format=%at', '--follow', '--', source_path],
+        cwd=Path(__file__).resolve().parents[1], text=True,
+    )
+    stamps = output.splitlines()
+    assert stamps and all(re.fullmatch(r'[0-9]+', stamp) for stamp in stamps), f'{source_path}: missing or invalid Git author dates'
+    return datetime.fromtimestamp(max(map(int, stamps)), timezone.utc).isoformat(timespec='milliseconds').replace('+00:00', 'Z')
+
+
+def article_modified_time(route, doc):
+    articles = [schema for schema in doc.schemas if schema.get('@type') == 'BlogPosting']
+    metadata = doc.select('meta', 'property', 'article:modified_time')
+    assert len(articles) == 1 and len(metadata) == 1, f'{route}: missing or duplicate article dates'
+    modified = metadata[0].get('content')
+    assert articles[0].get('dateModified') == modified, f'{route}: article dates disagree'
+    return modified
+
+
+def validate_article_dates(route, doc, expected_modified):
+    assert article_modified_time(route, doc) == expected_modified, f'{route}: article modification date differs from verified source'
+
+
+def expected_article_date(route, verify_git_dates, read_build=local, read_git=git_modified_time):
+    # The full-history docs job checks Git; deployment has a shallow checkout but
+    # downloads that exact verified build. Live checks must match its timestamps.
+    if verify_git_dates:
+        return read_git(TUTORIAL_SOURCES[route])
+    return article_modified_time(route, Document(read_build(route)))
+
+
+def validate(read, *, verify_git_dates=False):
     expected_revision = revision(Document(local('/')))
     for route in CORE_ROUTES:
         doc = Document(read(route))
         validate_indexable(route, doc, expected_revision)
         validate_content_freshness(route, doc)
-        if route in ('/blog/telegram/', '/blog/9esim/', '/blog/shadowrocket-rules-config/', '/en/blog/shadowrocket-rules-config/'):
-            article = next(s for s in doc.schemas if s.get('@type') == 'BlogPosting')
-            modified = doc.select('meta', 'property', 'article:modified_time')[0]['content']
-            assert article['dateModified'] == modified, f'{route}: article dates disagree'
-            assert modified.startswith('2026-10-09'), f'{route}: missing correction date'
+        if route in TUTORIAL_SOURCES:
+            validate_article_dates(route, doc, expected_article_date(route, verify_git_dates))
     for prefix in ('/', '/en/'):
         home, second = Document(read(prefix)), Document(read(prefix + 'page/2/'))
         for route, doc in ((prefix, home), (prefix+'page/2/', second)):
@@ -320,7 +384,7 @@ if __name__ == '__main__':
     if args.http_audit:
         audit_http()
     elif not args.live and not args.canonical_status:
-        validate(local)
+        validate(local, verify_git_dates=True)
     else:
         expected_revision = revision(Document(local('/')))
         assert re.fullmatch(r'[a-f0-9]{40}', expected_revision), 'Live verification requires a Git commit build revision'
