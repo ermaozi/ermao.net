@@ -2,7 +2,7 @@
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useLang } from 'vuepress/client'
 import routes from '../data/comment-routes.json'
-import { pathnameTerm, readRegistry, resolveComment, SOURCE } from '../utils/comment-migration.mjs'
+import { pathnameTerm, readRegistry, selectComment, SOURCE } from '../utils/comment-migration.mjs'
 
 const props = defineProps<{ identifier: string; darkmode?: boolean }>()
 const lang = useLang()
@@ -12,6 +12,7 @@ const selected = ref<{ repo: string; repoId: string; categoryId: string; mapping
 const busy = ref(false)
 const failed = ref(false)
 const loaded = ref(false)
+const refreshKey = ref(0)
 let active = false
 let observer: IntersectionObserver | undefined
 let controller: AbortController | undefined
@@ -21,7 +22,7 @@ const fallback = computed(() => {
   const entry = (routes as Record<string, { source: number }>)[term.value]
   return entry ? `https://github.com/${SOURCE.repo}/discussions/${entry.source}` : 'https://github.com/ermaozi/ermao-comments/discussions'
 })
-async function load() {
+async function load(retry = false) {
   if (!active) return
   const version = ++revision
   controller?.abort()
@@ -35,11 +36,11 @@ async function load() {
     const signal = request.signal
     const targets = await readRegistry(signal)
     const entry = (routes as Record<string, { source: number; anchor: number | null }>)[term.value]
-    const result = await resolveComment(term.value, entry, targets, undefined, signal)
+    const result = selectComment(term.value, entry, targets)
     if (version !== revision) return
-    if (!result) throw new Error('Discussion is being transferred')
     await import('giscus')
     if (version !== revision) return
+    if (retry) refreshKey.value++
     selected.value = result
     loaded.value = true
   } catch {
@@ -85,10 +86,10 @@ onUnmounted(() => {
     <p v-if="busy" role="status">{{ english ? 'Loading comments…' : '正在加载评论…' }}</p>
     <p v-if="failed" role="status">
       {{ english ? 'Comments are temporarily unavailable.' : '评论暂时未能加载。' }}
-      <button type="button" :disabled="busy" @click="load">{{ english ? 'Reload comments' : '重新加载评论' }}</button>
+      <button type="button" :disabled="busy" @click="load(true)">{{ english ? 'Reload comments' : '重新加载评论' }}</button>
       · <a :href="fallback" target="_blank" rel="noopener noreferrer">{{ english ? 'View on GitHub' : '前往 GitHub 查看' }}</a>
     </p>
-    <giscus-widget v-if="loaded && selected"
+    <giscus-widget v-if="loaded && selected" :key="refreshKey"
       :repo="selected.repo" :repoId="selected.repoId"
       category="Announcements" :categoryId="selected.categoryId"
       :mapping="selected.mapping" :term="selected.term" strict="1"
