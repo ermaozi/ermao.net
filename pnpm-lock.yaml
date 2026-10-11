@@ -63,6 +63,9 @@ importers:
       exifr:
         specifier: ^7.0.0
         version: 7.1.3
+      giscus:
+        specifier: 1.6.0
+        version: 1.6.0
       glob:
         specifier: ^13.0.1
         version: 13.0.6

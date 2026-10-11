@@ -21,6 +21,7 @@
   },
   "include": [
     "docs/.vuepress/components/Connection*.vue",
+    "docs/.vuepress/components/MigratingComments.vue",
     "docs/.vuepress/data/connection*.ts",
     "docs/.vuepress/client.ts",
     "scripts/tests/connection-selector.test.ts"
