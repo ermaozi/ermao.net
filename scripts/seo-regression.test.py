@@ -39,8 +39,31 @@ for route in ('/article/6vxkmmuh/', '/en/article/6vxkmmuh/'):
         'https://www.clashverge.dev/install.html', 'https://www.clashverge.dev/guide/term.html',
         'https://www.clashverge.dev/uninstall.html', 'https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v2.5.8'))
 
+for route, contract in seo.ACCESS_TUTORIALS.items():
+    TUTORIAL_FIXTURES[route] = ' '.join(contract['required']) + ''.join(
+        '<a href="' + url + '">Source</a>' for url in contract['sources'] + contract['preservedLinks'])
+
 
 class SeoContracts(unittest.TestCase):
+    def test_router_and_github_reject_old_body_and_preserve_links(self):
+        for route, contract in seo.ACCESS_TUTORIALS.items():
+            self.assertIn(route, seo.CORE_ROUTES)
+            self.assertEqual(seo.TUTORIAL_SOURCES[route], contract['source'])
+            good = TUTORIAL_FIXTURES[route]
+            seo.validate_content_freshness(route, seo.Document(good))
+            for old in contract['forbidden']:
+                with self.subTest(route=route, old=old), self.assertRaisesRegex(AssertionError, 'unsupported tutorial claim'):
+                    seo.validate_content_freshness(route, seo.Document(good + '<p>' + old + '</p>'))
+            for required in contract['required'] + contract['sources']:
+                with self.subTest(route=route, missing=required), self.assertRaises(AssertionError):
+                    seo.validate_content_freshness(route, seo.Document(good.replace(required, 'missing')))
+            def response(url):
+                path = urlsplit(url).path
+                return 200, {'content-type': 'text/html'}, HEAD.replace(ROUTE, path) + ('Old body' if path == route else TUTORIAL_FIXTURES.get(path, ''))
+            with redirect_stdout(StringIO()) as output:
+                self.assertEqual(seo.canonical_status(SHA, set(), response), 1)
+            self.assertIn(route + ': missing corrected content', output.getvalue())
+
     def test_current_indexable_document(self):
         seo.validate_indexable(ROUTE, seo.Document(HEAD), SHA)
     def test_stale_release_cannot_pass_on_unchanged_article_dates(self):

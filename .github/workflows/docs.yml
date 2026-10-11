@@ -42,7 +42,9 @@ jobs:
       - name: Install Chromium for comparison-page checks
         run: pnpm exec playwright install --with-deps chromium
       - name: Check airport summaries at desktop and phone widths
-        run: node scripts/airport-summary-browser.cjs
+        run: |
+          node scripts/airport-summary-browser.cjs
+          node scripts/tutorial-access-browser.cjs
       - name: Preserve comparison-page browser evidence
         if: always()
         uses: actions/upload-artifact@v4
