@@ -67,6 +67,8 @@ iPhone 和 iPad 用户可以选择以下下载渠道：
 
 - 对了，App Store 的正式版和 TestFlight 的测试版只能“二选一”，同时装的话，其中一个会把另一个给覆盖掉。
 
+切换版本前，先按当前版本支持的方式备份订阅、自定义配置和设置，并确认目标版本仍可下载、自己使用的账号可获取它，以及备份的恢复或重新导入方法。备份可能包含订阅凭证，不要公开分享。[Apple 的 TestFlight 条款](https://www.apple.com/legal/internet-services/itunes/testflight/)提醒，版本切换或删除测试版可能造成数据丢失；备份也不保证跨版本完整恢复。不要把卸载作为切换版本的默认第一步。
+
 ### macOS
 
 Mac 版通过官方 **DMG 安装包**安装和更新，要求 **macOS 12（Monterey）或更高版本**。前往[官方下载页面的 macOS 栏目](https://clashmi.app/download#macos)，选择稳定版或测试版；打开下载的 DMG，将 Clash Mi 拖入“应用程序”文件夹。详细步骤见[官方 macOS 安装指南](https://clashmi.app/guide/macos)。
@@ -155,7 +157,7 @@ Mac 版通过官方 **DMG 安装包**安装和更新，要求 **macOS 12（Monte
 #### iOS / iPadOS
 
 - 改用可下载 Clash Mi 的 Apple ID（如美区）
-- 如果之前装过 TestFlight 版，先卸载再用有效账号重新安装
+- 如果之前装过 TestFlight 版，[Clash Mi 官方 FAQ](https://clashmi.app/guide/faq)将卸载后重装列为下载或更新失败时的排错方法。先按当前版本支持的方式备份订阅、自定义配置和设置，确认目标版本仍可重新下载、账号可获取它及恢复或重新导入方法，再考虑必要的卸载重装；备份可能含凭证，不要公开。官方同时提醒，某些系统卸载会清除 X-HWID，重装后会生成新值；如订阅服务依赖它，应先确认服务商的重新绑定流程。备份不保证跨版本恢复或保留 X-HWID。
 
 #### macOS
 
