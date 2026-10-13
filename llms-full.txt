@@ -1872,13 +1872,36 @@ sudo apt install certbot
 # 获取证书
 sudo certbot certonly --standalone -d your-domain.com
 
-# 复制证书到sing-box目录
+# 仅当采用下文的副本模式时，首次复制证书到 sing-box 目录
 sudo cp /etc/letsencrypt/live/your-domain.com/fullchain.pem /etc/sing-box/
 sudo cp /etc/letsencrypt/live/your-domain.com/privkey.pem /etc/sing-box/
 
-# 设置自动续签
+# 仅适用于已安装 certbot.timer 的 systemd 部署；还需确认定时器正在运行
 sudo systemctl enable certbot.timer
 ```
+
+续签成功不等于 sing-box 已使用新证书。上面的 `cp` 只做首次复制，定时器不会自动更新副本。按部署方式选择：
+
+* **直接读取 live 路径**：若服务账号能安全读取证书和私钥，可将下文配置中的 `certificate_path`、`key_path` 指向 Certbot 管理的实际 `live/<证书名称>/` 路径。证书名称用 `sudo certbot certificates` 核实，不一定等于域名；容器还须能解析符号链接及其目标。不要为方便读取而开放私钥给所有用户。
+* **保留 `/etc/sing-box/` 副本**：必须配置成功续签后执行的 `--deploy-hook`，或在 `/etc/letsencrypt/renewal-hooks/deploy/` 放置相应可执行脚本。脚本应筛选目标证书，从 `$RENEWED_LINEAGE` 读取新文件，安全暂存并校验证书域名、有效期、证书与私钥匹配及服务账号可读性，再成对更新目标文件；失败时保留可用旧文件并报告错误。不能只靠 `renew` 返回 0 判断是否更新了证书。
+
+两种方式都要确认运行中的服务已加载新证书。副本模式先完成分发与配置校验，再按实际 sing-box 版本和部署方式加载：若实现支持自动重读，核验其实际结果；需要 reload/restart 时，使用经验证的服务单元或容器操作，不把同一个 `systemctl` 命令套用于所有部署。保留旧证书和配置作为回滚点。
+
+先验证续签，再验证分发与服务加载。演练前检查已有 pre/post hooks，它们默认仍会执行，可能影响服务：
+
+```bash
+# 替换为实际证书名称；standalone 验证仍需满足端口与域名可达条件
+sudo certbot renew --cert-name your-domain.com --dry-run
+
+# 查看实际 TLS 入口呈现的证书，而不只检查磁盘副本
+# 域名与端口须对应自己的 AnyTLS 服务；若前面有 TLS 终止层，还要单独核对后端
+openssl s_client -connect your-domain.com:443 -servername your-domain.com </dev/null \
+  | openssl x509 -noout -dates -serial -fingerprint -sha256
+```
+
+`--dry-run` 默认不执行 deploy-hook，不能据此认定分发链路通过；需要联测时，先确认 hook 的实际操作与回滚，再使用 `--dry-run --run-deploy-hooks`。它会运行 hook 并使用当前有效证书，可能加载服务，并非纯只读检查。正式续签后再次核对入口证书的到期时间和指纹是否与部署证书一致，同时检查 hook、服务日志及续签任务状态。
+
+依据：[Certbot 续签与 deploy-hook](https://eff-certbot.readthedocs.io/en/stable/using.html#renewing-certificates)、[证书实际路径](https://eff-certbot.readthedocs.io/en/stable/using.html#where-are-my-certificates)。
 
 ### 3.4 配置AnyTLS服务端
 
@@ -2958,12 +2981,14 @@ openssl s_client -connect your-domain.com:443 -servername your-domain.com
 解决方案：
 
 ```bash
-# 重新获取证书
-sudo certbot renew --force-renewal
+# 确有必要时才强制续签，限定实际证书名称，避免反复签发
+sudo certbot renew --cert-name your-domain.com --force-renewal
 
 # 或使用acme.sh
 ~/.acme.sh/acme.sh --renew -d your-domain.com --force
 ```
+
+强制续签也不会替你更新手工复制的证书。Certbot 用户须按第 3.3.2 节完成成功续签后的分发、校验与服务加载，并核对实际 TLS 入口的证书；acme.sh 用户也要检查安装路径与加载命令是否适合自己的部署。不要把“签发成功”当作故障已解决。
 
 ### 7.5 常见错误信息
 
