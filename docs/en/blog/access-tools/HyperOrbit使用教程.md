@@ -163,6 +163,12 @@ If you have the server address, port, UUID, and protocol details:
 2. choose **Add Node**;
 3. enter the parameters for the selected protocol.
 
+### WireGuard configuration import
+
+The [App Store 1.5.0 release notes](https://apps.apple.com/us/app/hyperorbit-fast-vpn-proxy/id6761375312) list manual WireGuard setup, `.conf` file import, and `wireguard://` link import, including batch import/export. On iPhone/iPad, choose the method matching your configuration; the exact entry point depends on the installed version. These notes do not establish a verified button-by-button walkthrough.
+
+The [official Google Play description](https://play.google.com/store/apps/details?id=net.hyperorbit.app.fast) also lists WireGuard support, but does not establish the same file/link import controls on Android. Check Android and Apple TV interfaces separately rather than assuming they match the iPhone/iPad app. This is a review of official documentation, not hands-on app testing.
+
 ## 3. Connect
 
 Select the intended node in the home-screen list, then select the connection button.
@@ -293,5 +299,6 @@ The website says the app does not log traffic. The Google Play developer disclos
 | **AnyTLS** | Supported |
 | **Hysteria2** | Supported |
 | **TUIC** | Supported |
+| **WireGuard** | Listed by both App Store and Google Play; import methods depend on platform and version |
 
 For project-specific support, use the official [Telegram group](https://t.me/HyperOrbitNet).
