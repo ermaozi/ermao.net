@@ -52,6 +52,11 @@ async function load(retry = false) {
 }
 function onMessage(event: MessageEvent) {
   if (event.origin !== 'https://giscus.app' || !event.data?.giscus?.error) return
+  const frame = host.value?.querySelector('giscus-widget')?.shadowRoot?.querySelector('iframe')
+  if (!selected.value || !frame || event.source !== frame.contentWindow) return
+  // Pathname discussions are created on the first contribution. Missing numbered
+  // discussions must still expose a failure so migration problems stay visible.
+  if (selected.value.mapping === 'pathname' && event.data.giscus.error === 'Discussion not found') return
   // Keep any existing iframe/draft in place; let the visitor explicitly retry.
   failed.value = true
 }
