@@ -112,7 +112,7 @@ Mac 版额外支持：
 
 ## 二、导入节点 / 订阅
 
-HyperOrbit 支持四种导入方式，选一种最方便的即可：
+HyperOrbit 支持多种导入方式，按平台、版本和配置格式选择：
 
 > 下面以手机版为主。Android 的中文按钮名来自附件资料，会随版本变化；Apple TV 请使用二维码、文本输入或 iCloud 同步。
 
@@ -154,6 +154,12 @@ HyperOrbit 支持四种导入方式，选一种最方便的即可：
 1. 首页点击右上角 **+**
 2. 选择 **添加节点**
 3. 按协议填写参数
+
+### 补充：WireGuard 配置导入
+
+[App Store 的 1.5.0 发布说明](https://apps.apple.com/us/app/hyperorbit-fast-vpn-proxy/id6761375312)列出 WireGuard 手动添加、`.conf` 文件与 `wireguard://` 链接导入，并支持批量导入/导出。iPhone/iPad 用户可按已有配置格式选择对应方式，具体入口以安装版本为准；这里不补写未经核实的按钮步骤。
+
+[Google Play 官方介绍](https://play.google.com/store/apps/details?id=net.hyperorbit.app.fast)也列出 WireGuard 协议支持，但未说明相同的文件/链接导入入口，因此不要直接照搬 Apple 版操作到 Android；Apple TV 的入口也应单独核实。以上为官方说明核对，并非应用内实测。
 
 ***
 
@@ -300,6 +306,7 @@ HyperOrbit 基于自研 HyperCore，支持以下协议：
 | **AnyTLS** | — |
 | **Hysteria2** | — |
 | **TUIC** | — |
+| **WireGuard** | App Store 与 Google Play 均列出支持；导入方式按平台与版本确认 |
 
 ***
 
