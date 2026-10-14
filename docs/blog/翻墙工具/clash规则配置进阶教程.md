@@ -1,5 +1,5 @@
 ---
-title: Clash 规则配置进阶教程：2026 最新分流规则一键导入，防封号+去广告+国内直连
+title: Clash 规则配置进阶教程：订阅前置规则、规则集与扩展脚本
 createTime: 2026/02/28 14:11:48
 permalink: /blog/clash-rules-config/
 tags:
@@ -8,18 +8,14 @@ tags:
   - 翻墙教程
   - 规则配置
   - Clash Verge Rev
-description: 详解 Clash 分流规则的作用与配置方法，基于 Loyalsoldier 开源规则库，3 步实现国内直连、海外代理、广告拦截。适用于 Clash Verge Rev / Clash for Windows 等全客户端，附懒人一键配置代码。
+description: 按 Clash Verge Rev 当前扩展机制配置 Loyalsoldier 规则集，通过订阅前置规则或保留原配置的脚本分流，检查代理组、最终配置与命中日志。
 ---
 
-你的 Clash 还在"裸奔"吗？不配规则 = 国内网站绕路海外、TikTok 黑屏、Netflix 检测代理、账号随时被封。本文手把手教你用 Loyalsoldier 开源规则库，只需 3 步就能实现国内直连、海外代理、广告拦截，一次配置永久生效。
+Clash 的分流取决于订阅规则、规则顺序与运行模式。本文使用 Loyalsoldier 规则集，说明如何在保留现有订阅规则的基础上添加直连、代理和拦截策略，并验证结果。
 
 <!-- more -->
 
-绝大多数用 Clash 翻墙的人，其实都在"裸奔"——买了机场、导入订阅、选个节点就完事，根本不知道还有「分流规则」要配置。
-
-结果呢？TikTok 黑屏、Netflix 提示代理、国内网站卡得转圈圈，甚至账号莫名被封。
-
-这篇教程就带你**一次性搞定 Clash 规则配置**：搞懂原理、导入规则、永久生效。只需 3 步，有手就行。
+规则不会改变节点 IP 的信誉，也不保证解锁流媒体或避免账号风控。已有订阅通常包含规则，先检查是否需要调整，再做增量修改。
 
 > 还没安装 Clash？先看前置教程：
 > - Windows / Mac / Linux 用户 → [Clash Verge Rev 安装与配置教程](/article/0gematwc/)
@@ -28,25 +24,17 @@ description: 详解 Clash 分流规则的作用与配置方法，基于 Loyalsol
 
 ## 什么是 Clash 规则？为什么一定要配？
 
-很多人以为连上代理后，Clash 会自动判断哪些网站该翻墙、哪些该直连。
-
-**其实不是。**
-
-如果你不配精细的分流规则，Clash 根本不知道该怎么处理流量。结果就是：
-
-- 访问淘宝、微信、B 站等国内网站，流量也绕到海外节点去 → **又慢又浪费流量**
-- 上一秒用家里宽带登微信，下一秒突然从日本 IP 刷抖音 → **平台风控直接标记异常**
-- TikTok、Netflix、推特检测到 IP 频繁跳国家或识别到机房 IP → **账号被拉黑**
+订阅通常已经包含基础规则，但未必适合你的网络或应用。路由不合适时，可能出现国内流量绕远、服务出口与预期不一致，或请求被拦截。
 
 **规则，就是解决这个问题的"交通指挥员"。** 它告诉 Clash：
 
 | 流量类型 | 处理方式 | 效果 |
 |---------|---------|------|
-| 🟢 国内网站及 IP | **直连**（DIRECT） | 走家里宽带，速度拉满 |
+| 🟢 国内网站及 IP | **直连**（DIRECT） | 使用本地网络出口 |
 | 🔴 被墙的海外网站 | **代理**（PROXY） | 走节点翻墙访问 |
-| 🛑 广告和追踪器 | **拦截**（REJECT） | 从底层干掉弹窗广告 |
+| 🛑 广告和追踪器 | **拦截**（REJECT） | 拒绝命中列表的域名请求 |
 
-配好规则后，你的网络活动看起来完全就像一个正常的"当地人"，流量井然有序。
+规则控制请求的去向，不能让机房 IP 变成住宅 IP。
 
 ## Clash 规则的工作原理（大白话版）
 
@@ -56,7 +44,7 @@ description: 详解 Clash 分流规则的作用与配置方法，基于 Loyalsol
 
 1. 查到 `youtube.com` → 规则写着 `PROXY` → 走代理节点
 2. 查到 `taobao.com` → 规则写着 `DIRECT` → 走家里宽带
-3. 查不到匹配项 → 按最底下的**兜底策略**处理（通常默认走代理，保证冷门海外网站不卡壳）
+3. 查不到匹配项 → 按最底下的**兜底策略**处理（以订阅实际兜底规则为准）
 
 **规则越全面 = 字典越厚 = Clash 越聪明。** 成熟的开源规则库早已把苹果、谷歌、Telegram 等各大服务，甚至国内精确到 IP 段的流量都覆盖了。
 
@@ -76,128 +64,134 @@ description: 详解 Clash 分流规则的作用与配置方法，基于 Loyalsol
 
 每天早上 6:30 由 GitHub Actions 自动抓取全网最新数据并重新构建。网站天天变，但你的规则永远是最新的。
 
-### 3. 全客户端兼容
+### 3. 按内核确认兼容性
 
-不管你用的是 Clash Premium 内核、[Clash Verge Rev](/article/0gematwc/)、Clash for Windows，还是 [Clash for Android](/article/eh8f4n86/)，全都完美兼容。
+规则集格式与客户端入口是两回事。使用支持相应 `RULE-SET` 行为的内核，并按客户端版本确认添加方式；不要将本教程的 Verge 扩展操作直接套到其他客户端。
 
 > GitHub 原地址：[https://github.com/Loyalsoldier/clash-rules](https://github.com/Loyalsoldier/clash-rules)
 
-## 3 步配置 Clash 分流规则（Clash Verge Rev 实操）
+## 3 步配置 Clash 分流规则（Clash Verge Rev）
 
-以目前最主流的 **Clash Verge Rev** 为例演示（其他客户端同理，只要支持 Merge 覆写即可）。
+本文按 Clash Verge Rev v2.5.8 的扩展行为核对。其他客户端需单独确认语法与入口。
 
-::: warning 重要提醒
-**千万别直接修改机场的原始配置文件！** 一旦更新订阅，你的所有修改都会被覆盖清空。正确做法是使用下面的 **"全局扩展覆写（Merge）"** 功能。
+::: warning 先备份，再添加
+先导出或备份现有订阅扩展配置、扩展脚本和自定义规则，记录当前代理组名称。不要清空现有扩展，也不要直接改会随订阅刷新被替换的原始文件。以下只对选定订阅操作。
 :::
 
-### 第 1 步：打开全局扩展配置
+[官方扩展说明](https://www.clashverge.dev/guide/extend.html)指出，v1.7.x 已将 prepend/append 移至订阅的可视化编辑器。[v2.5.8 Merge 源码](https://github.com/clash-verge-rev/clash-verge-rev/blob/v2.5.8/src-tauri/src/enhance/merge.rs)不把 `prepend-rule-providers`、`prepend-rules` 当作注入指令；在扩展 YAML 写 `rules` 会替换整张规则表，不能用它追加几条规则。
 
-1. 打开 Clash Verge Rev → 点击左侧 **「订阅」**
-2. 在右边找到 **「全局扩展覆写配置 (Merge)」** 卡片
-3. **右键点击** → 选择 **「编辑文件」**
+### 第 1 步：为当前订阅添加规则集
 
-![全局扩展覆写配置入口截图 =900x697](https://image.ermao.net/images/blog/clash-rules-config/20260228_141318-51a08a.png)
+在“订阅”中右键当前使用的配置，进入其扩展配置编辑器。将下面的 `rule-providers` 合并到现有配置；已有这个键时，只添加它下面的条目，不要重复顶层键。先确认 `local-ls-` 名称和缓存路径未被占用；如有冲突，换前缀并同步修改后面的引用。
 
-### 第 2 步：粘贴分流规则代码
+![历史版本的扩展配置入口参考 =900x697](https://image.ermao.net/images/blog/clash-rules-config/20260228_141318-51a08a.png)
 
-在弹出的编辑器中，**全选并清空**原有内容，然后粘贴以下配置：
-
-> 以下规则会以 `prepend`（前置）方式注入，优先级最高，不会被机场订阅覆盖。
+> 旧截图展示的是全局入口，仅作历史界面参考；本方案使用当前订阅的扩展配置。
 
 ```yaml
-prepend-rule-providers:
-  reject:
+rule-providers:
+  local-ls-reject:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
-    path: ./ruleset/reject.yaml
+    path: ./ruleset/local-ls-reject.yaml
     interval: 86400
 
-  icloud:
+  local-ls-icloud:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
-    path: ./ruleset/icloud.yaml
+    path: ./ruleset/local-ls-icloud.yaml
     interval: 86400
 
-  apple:
+  local-ls-apple:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
-    path: ./ruleset/apple.yaml
+    path: ./ruleset/local-ls-apple.yaml
     interval: 86400
 
-  google:
+  local-ls-google:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
-    path: ./ruleset/google.yaml
+    path: ./ruleset/local-ls-google.yaml
     interval: 86400
 
-  proxy:
+  local-ls-proxy:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
-    path: ./ruleset/proxy.yaml
+    path: ./ruleset/local-ls-proxy.yaml
     interval: 86400
 
-  direct:
+  local-ls-direct:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
-    path: ./ruleset/direct.yaml
+    path: ./ruleset/local-ls-direct.yaml
     interval: 86400
 
-  private:
+  local-ls-private:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt"
-    path: ./ruleset/private.yaml
+    path: ./ruleset/local-ls-private.yaml
     interval: 86400
 
-  telegramcidr:
+  local-ls-telegramcidr:
     type: http
     behavior: ipcidr
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
-    path: ./ruleset/telegramcidr.yaml
+    path: ./ruleset/local-ls-telegramcidr.yaml
     interval: 86400
 
-  cncidr:
+  local-ls-cncidr:
     type: http
     behavior: ipcidr
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
-    path: ./ruleset/cncidr.yaml
+    path: ./ruleset/local-ls-cncidr.yaml
     interval: 86400
 
-  lancidr:
+  local-ls-lancidr:
     type: http
     behavior: ipcidr
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
-    path: ./ruleset/lancidr.yaml
+    path: ./ruleset/local-ls-lancidr.yaml
     interval: 86400
 
-  applications:
+  local-ls-applications:
     type: http
     behavior: classical
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
-    path: ./ruleset/applications.yaml
+    path: ./ruleset/local-ls-applications.yaml
     interval: 86400
 
-prepend-rules:
-  - RULE-SET,applications,DIRECT
-  - RULE-SET,private,DIRECT
-  - RULE-SET,reject,REJECT
-  - RULE-SET,icloud,DIRECT
-  - RULE-SET,apple,DIRECT
-  - RULE-SET,google,PROXY
-  - RULE-SET,proxy,PROXY
-  - RULE-SET,direct,DIRECT
-  - RULE-SET,lancidr,DIRECT
-  - RULE-SET,cncidr,DIRECT
-  - RULE-SET,telegramcidr,PROXY
-  - GEOIP,LAN,DIRECT
-  - GEOIP,CN,DIRECT
 ```
+
+### 第 2 步：在“编辑规则”中前置引用
+
+按[官方自定义规则说明](https://www.clashverge.dev/guide/rules.html)，右键同一个订阅，选择“编辑规则”，在前置区域按下列顺序添加。若界面要求分字段填写，分别填写类型、规则集名与策略；下面是最终规则字符串示意，不是要粘贴到扩展 YAML 的 `rules` 表。
+
+把所有 `YOUR_EXISTING_GROUP` 换成该订阅中真实存在的代理组名称，字符须完全一致；`PROXY` 不是每个订阅都自带的组名。`DIRECT`、`REJECT` 是内置策略。前置规则可能改变订阅原有分流，请先审查顺序，保留原规则及末尾 `MATCH`。
+
+```text
+RULE-SET,local-ls-applications,DIRECT
+RULE-SET,local-ls-private,DIRECT
+RULE-SET,local-ls-reject,REJECT
+RULE-SET,local-ls-icloud,DIRECT
+RULE-SET,local-ls-apple,DIRECT
+RULE-SET,local-ls-google,YOUR_EXISTING_GROUP
+RULE-SET,local-ls-proxy,YOUR_EXISTING_GROUP
+RULE-SET,local-ls-direct,DIRECT
+RULE-SET,local-ls-lancidr,DIRECT
+RULE-SET,local-ls-cncidr,DIRECT
+RULE-SET,local-ls-telegramcidr,YOUR_EXISTING_GROUP
+GEOIP,LAN,DIRECT
+GEOIP,CN,DIRECT
+```
+
+下表使用规则集原名；实际配置与引用统一带 `local-ls-` 前缀。表中的 `PROXY` 表示你选定的真实代理组，不是可直接照抄的名称。
 
 **各规则说明一览：**
 
@@ -213,22 +207,71 @@ prepend-rules:
 | `cncidr` / `lancidr` | CN IP 段 | DIRECT | 国内 IP 和局域网 IP 直连 |
 | `telegramcidr` | Telegram IP | PROXY | Telegram 专用 IP 段走代理 |
 
-### 第 3 步：保存即刻生效
+### 第 3 步：应用并验证
 
-点击**保存**（右下角按钮或 `Ctrl + S`）。
+保存后按当前版本界面重新应用该订阅，检查配置校验、核心加载和规则集下载是否成功；保存文件本身不等于已生效。切换订阅或刷新后也要复查最终配置。失败时恢复备份，避免继续叠加修改。
 
-在 Clash Verge Rev 中，全局扩展覆写配置**没有单独的"启用"按钮**——保存后即自动注入到所有订阅节点的底层，立即生效。
+### 可选：跨订阅使用扩展脚本
 
-**以后无论机场订阅怎么更新，这套分流规则都会始终生效。** 一劳永逸，大功告成。
+若要对多个指定订阅应用同一规则，使用[官方 Script 机制](https://www.clashverge.dev/guide/script.html)。下面是上面两步的**替代方案，不要叠加使用**。先备份已有全局脚本；有现成 `main` 时将逻辑整合进去，不要清空或再定义一个 `main`。把 `policies` 的键改为实际配置名称，值改为各自存在的代理组；未列出的订阅原样返回。
+
+脚本保留原 `rule-providers`、规则顺序和兜底规则，只把新条目前置；遇同名 provider 或无效代理组就报错，不静默覆盖。若已用其他扩展添加了同名前缀，先选择一种方案或更换独立前缀。
+
+```javascript
+function main(config, profileName) {
+  const policies = {
+    "YOUR_PROFILE_A": "YOUR_EXISTING_GROUP_A",
+    "YOUR_PROFILE_B": "YOUR_EXISTING_GROUP_B"
+  };
+  if (!Object.prototype.hasOwnProperty.call(policies, profileName)) return config;
+  const policy = policies[profileName];
+  if (!Array.isArray(config.rules) || !Array.isArray(config["proxy-groups"]) ||
+      !config["proxy-groups"].some(group => group.name === policy)) {
+    throw new Error("Check existing rules and the selected proxy group");
+  }
+  const existing = config["rule-providers"] || {};
+  if (typeof existing !== "object" || Array.isArray(existing)) {
+    throw new Error("Invalid rule-providers object");
+  }
+  const specs = [
+    ["applications", "classical", "DIRECT"],
+    ["private", "domain", "DIRECT"],
+    ["reject", "domain", "REJECT"],
+    ["icloud", "domain", "DIRECT"],
+    ["apple", "domain", "DIRECT"],
+    ["google", "domain", policy],
+    ["proxy", "domain", policy],
+    ["direct", "domain", "DIRECT"],
+    ["lancidr", "ipcidr", "DIRECT"],
+    ["cncidr", "ipcidr", "DIRECT"],
+    ["telegramcidr", "ipcidr", policy]
+  ];
+  const additions = {};
+  const rules = [];
+  for (const [name, behavior, target] of specs) {
+    const key = "local-ls-" + name;
+    if (Object.prototype.hasOwnProperty.call(existing, key)) {
+      throw new Error("Provider name already exists: " + key);
+    }
+    additions[key] = {
+      type: "http", behavior,
+      url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/" + name + ".txt",
+      path: "./ruleset/" + key + ".yaml", interval: 86400
+    };
+    rules.push("RULE-SET," + key + "," + target);
+  }
+  rules.push("GEOIP,LAN,DIRECT", "GEOIP,CN,DIRECT");
+  config["rule-providers"] = Object.assign({}, existing, additions);
+  config.rules = rules.concat(config.rules);
+  return config;
+}
+```
+
+后续订阅扩展仍可能改写全局脚本的结果，必须检查最终配置。以上示例仅做静态与逻辑验证，不代表在你的客户端或网络中实测通过。
 
 ## 配置成功后体验变化
 
-按照以上 3 步做完，你会明显感受到：
-
-- **国内网站秒开** — B 站、淘宝等国内流量走直连，不再绕到海外节点，加载速度拉满。
-- **流媒体完美解锁** — Netflix 不再提示"检测到代理"；TikTok 不再黑屏无网络。可搭配干净的落地节点使用效果更佳。
-- **Telegram 收发极速** — 规则单独将 Telegram IP 段分配给代理，消息收发无延迟。
-- **广告大幅减少** — `reject` 规则在底层拦截追踪器和弹窗广告域名，体验清爽。
+规则匹配正确时，列出的国内流量走直连、海外流量走所选代理组，命中拒绝列表的请求被拦截。实际结果取决于列表、节点和网络；规则不保证流媒体解锁、防封号或完全去广告。
 
 ## 如何确认规则是否配置成功？
 
@@ -238,7 +281,12 @@ prepend-rules:
 2. 向下滚动找到 **「Verge 高级设置」** → 点击 **「当前配置」**
 3. 会弹出一个文本编辑器，显示最终合并后的完整配置文件
 
-当你看到 `reject`、`google`、`apple`、`cncidr` 等规则集整齐排列，说明配置已成功注入。
+入口名称随版本变化，以查看当前实际运行配置的功能为准。逐项确认：
+
+- `rule-providers` 同时保留原条目和新增 `local-ls-*`；下载状态正常，不能只看名字出现。
+- `rules` 中引用位于预期顺序，原订阅规则和末尾 `MATCH` 仍在；每个 `RULE-SET` 名称都能找到定义。
+- 所有自定义策略名都对应真实代理组，核心校验/加载日志没有错误。
+- 发起一个无敏感信息的测试请求，在“连接”或命中日志中核对实际规则、策略与出口；已有连接可能沿用旧路由，应检查新连接。
 
 ![验证规则配置成功截图 =900x721](https://image.ermao.net/images/blog/clash-rules-config/20260228_141336-94acd7.png)
 
@@ -254,13 +302,13 @@ prepend-rules:
 
 ### 手机端 Clash 也能配规则吗？
 
-可以。[Clash for Android](/article/eh8f4n86/) 同样支持自定义规则，配置方式类似，只是界面入口不同。
+兼容的 Android Clash 客户端可使用自定义规则，但不能直接套用 Verge 的扩展入口与语法。参见 [Clash for Android](/article/eh8f4n86/)，并核对实际内核与版本。
 
 iOS 用户建议使用 [Shadowrocket（小火箭）](/article/z747kgjd/)，规则配置方法参考 → [小火箭规则配置教程](/blog/shadowrocket-rules-config/)。
 
 ### 规则会自动更新吗？
 
-会。配置中 `interval: 86400` 表示每 24 小时自动从 GitHub 拉取最新规则文件。Loyalsoldier 也会在每天凌晨同步更新数据源。
+`interval: 86400` 请求每 24 小时刷新规则集，成功与否取决于客户端能否访问配置中的 URL。检查下载状态与更新时间，不把定时设置当作已成功更新的证明。
 
 ## 延伸阅读
 
