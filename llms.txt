@@ -73,7 +73,7 @@ This file contains links to all documentation sections.
 - [如何判断一个机场使用的线路类型（如IPLC/IEPL专线、CN2、BGP中转等）](/article/r50bpg9j/index.md): 通过 Traceroute、ASN、延迟、丢包率和晚高峰测试判断机场使用的是 IPLC、IEPL、CN2、BGP 中转还是普通公网线路，并说明常见宣传误区。
 - [python迭代器详解](/article/r6u6yjj9/index.md): 在 Python 中，**迭代器（Iterator）** 是用于访问集合中元素的一种对象。迭代器不仅能够遍历集合，还能在遍历过程中保持状态，允许你按需逐步访问元素，而无需一次性将所有元素加载到内存中。掌握迭代器的使用，可以帮助你编写更加高效且节省内存的代码。 本文将详细介绍 Python 中迭代器的概念、如何定义...
 - [✈️【机场推荐】老头VPN - 公认老牌机场、稳定实惠](/article/rklwp5go/index.md): 老头VPN，15.5元 150G/月，公认老牌机场、稳定实惠。 老头VPN官网地址：https://www.chattous.net
-- [✈️机场推荐【koodog】- 新机场，便宜实惠，体验流畅](/article/rq55p9dn/index.md): KooDog 使用 Trojan 协议，相对安全稳定。网络入口提供了三网专线支持，实测 单线程峰值可跑到 2Gbps，无论是刷流媒体还是下载大文件，表现都非常流畅。 KooDog 机场官网地址：koodog.com
+- [✈️机场推荐【koodog】- 新机场，便宜实惠，体验流畅](/article/rq55p9dn/index.md): KooDog 历史资料整理：保留 Trojan、三网专线与 2Gbps 宣传、套餐表和原测试截图，区分未独立验证的在线率及已过期的七夕优惠。
 - [翻墙之后如何利用信息差赚点外快](/article/rsvptr5x/index.md): 先教大家一个最简单最靠谱的方法——通过推广Telegram的极搜机器人，每月赚200刀（约1400人民币）。
 - [2026 SSONE机场评测：月付10元60G便宜机场推荐｜Netflix/ChatGPT解锁](/article/ssone/index.md): SSONE机场怎么样？本文实测SSONE机场速度、稳定性与流媒体解锁能力，月付仅10元享60G流量、IEPL专线节点，支持Netflix/ChatGPT/YouTube，附购买教程和配置指南。
 - [2026 速界机场评测：90元/年起，IEPL专线与长周期套餐怎么选](/article/sujie/index.md): 速界机场怎么样？本文整理90元/年起步、开业优惠8折、IEPL专线、多档长周期套餐、通用订阅限制、风险边界和购买配置路径，帮你判断是否适合入手。
