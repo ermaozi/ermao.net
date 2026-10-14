@@ -1,11 +1,10 @@
 ---
 url: /en/blog/clash-rules-config/index.md
 description: >-
-  Configure Loyalsoldier rule providers in Clash Verge Rev through a Merge
-  override, route local and external traffic, block listed domains, and verify
-  the result.
+  Add Loyalsoldier providers with Clash Verge Rev subscription rules or scripts,
+  preserve existing routing, and verify groups and matched connections.
 ---
-A Clash profile without suitable routing rules may send local websites through a distant proxy, waste subscription data, or use an unexpected route for a particular service. This guide uses the open-source Loyalsoldier rules and Clash Verge Rev's Merge override to route local traffic directly, proxy selected external traffic, and reject listed advertising or tracking domains.
+A Clash profile without suitable routing rules may send local websites through a distant proxy, waste subscription data, or use an unexpected route for a particular service. This guide uses the open-source Loyalsoldier rules and Clash Verge Rev's subscription extensions to route local traffic directly, proxy selected external traffic, and reject listed advertising or tracking domains.
 
 Routing rules can reduce unnecessary route changes and improve consistency. They **cannot guarantee that an account will never be restricted**, make a data-center IP look residential, or ensure that every streaming service accepts the selected exit IP.
 
@@ -55,126 +54,132 @@ The project:
 2. uses GitHub Actions to rebuild published data regularly—the source article reports a daily 6:30 a.m. schedule;
 3. publishes formats usable by compatible Clash cores and clients.
 
-Compatibility depends on the exact Clash core and Merge syntax. Test the generated configuration in the client version you actually use.
+Compatibility depends on the exact Clash core and extension mechanism. Test the generated configuration in the client version you actually use.
 
 Repository: <https://github.com/Loyalsoldier/clash-rules>
 
 ## Configure the rules in three steps
 
-The screenshots use Clash Verge Rev. Another client may place Merge overrides elsewhere or not support this syntax.
+This workflow is checked against Clash Verge Rev v2.5.8. Other clients need their own syntax and interface checks.
 
-::: warning Preserve the provider profile
-Do not edit the downloaded provider profile directly. A subscription refresh normally replaces that file. Put custom rules in the client's Merge or override feature.
+::: warning Back up before adding rules
+Back up subscription extensions, scripts, and custom rules, and record the existing proxy-group names. Preserve existing overrides and avoid editing the downloaded profile that subscription refreshes replace. The steps below target one selected subscription.
 :::
 
-### Step 1: open the global Merge override
+The [official extension guide](https://www.clashverge.dev/guide/extend.html) moved prepend/append operations into the subscription editor in v1.7.x. The [v2.5.8 Merge implementation](https://github.com/clash-verge-rev/clash-verge-rev/blob/v2.5.8/src-tauri/src/enhance/merge.rs) does not interpret `prepend-rule-providers` or `prepend-rules` as insertion commands. A `rules` list in extension YAML replaces the whole list; it is not an append operation.
 
-1. Open Clash Verge Rev and select **Profiles** or **Subscriptions**.
-2. Locate **Global Extended Merge Configuration**.
-3. Right-click it and select **Edit File**.
+### Step 1: add providers to the selected subscription
 
-![Clash Verge Rev global Merge override =900x697](https://image.ermao.net/images/blog/clash-rules-config/20260228_141318-51a08a.png)
+Right-click the active subscription and open its extension configuration. Merge the following `rule-providers` entries with existing content. If the top-level key already exists, add children beneath it instead of repeating the key. Check that the `local-ls-` names and cache paths are unused; if they conflict, change the prefix in both definitions and references.
 
-### Step 2: add the rule-provider configuration
+![Historical global extension entry point =900x697](https://image.ermao.net/images/blog/clash-rules-config/20260228_141318-51a08a.png)
 
-Back up any existing override before replacing it. Paste the following configuration:
-
-> `prepend` places these providers and rules before rules from the subscription, giving them higher priority.
+> This older screenshot shows a global entry point. The workflow here uses the selected subscription's extension configuration.
 
 ```yaml
-prepend-rule-providers:
-  reject:
+rule-providers:
+  local-ls-reject:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
-    path: ./ruleset/reject.yaml
+    path: ./ruleset/local-ls-reject.yaml
     interval: 86400
 
-  icloud:
+  local-ls-icloud:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
-    path: ./ruleset/icloud.yaml
+    path: ./ruleset/local-ls-icloud.yaml
     interval: 86400
 
-  apple:
+  local-ls-apple:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
-    path: ./ruleset/apple.yaml
+    path: ./ruleset/local-ls-apple.yaml
     interval: 86400
 
-  google:
+  local-ls-google:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
-    path: ./ruleset/google.yaml
+    path: ./ruleset/local-ls-google.yaml
     interval: 86400
 
-  proxy:
+  local-ls-proxy:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
-    path: ./ruleset/proxy.yaml
+    path: ./ruleset/local-ls-proxy.yaml
     interval: 86400
 
-  direct:
+  local-ls-direct:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
-    path: ./ruleset/direct.yaml
+    path: ./ruleset/local-ls-direct.yaml
     interval: 86400
 
-  private:
+  local-ls-private:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt"
-    path: ./ruleset/private.yaml
+    path: ./ruleset/local-ls-private.yaml
     interval: 86400
 
-  telegramcidr:
+  local-ls-telegramcidr:
     type: http
     behavior: ipcidr
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
-    path: ./ruleset/telegramcidr.yaml
+    path: ./ruleset/local-ls-telegramcidr.yaml
     interval: 86400
 
-  cncidr:
+  local-ls-cncidr:
     type: http
     behavior: ipcidr
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
-    path: ./ruleset/cncidr.yaml
+    path: ./ruleset/local-ls-cncidr.yaml
     interval: 86400
 
-  lancidr:
+  local-ls-lancidr:
     type: http
     behavior: ipcidr
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
-    path: ./ruleset/lancidr.yaml
+    path: ./ruleset/local-ls-lancidr.yaml
     interval: 86400
 
-  applications:
+  local-ls-applications:
     type: http
     behavior: classical
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
-    path: ./ruleset/applications.yaml
+    path: ./ruleset/local-ls-applications.yaml
     interval: 86400
 
-prepend-rules:
-  - RULE-SET,applications,DIRECT
-  - RULE-SET,private,DIRECT
-  - RULE-SET,reject,REJECT
-  - RULE-SET,icloud,DIRECT
-  - RULE-SET,apple,DIRECT
-  - RULE-SET,google,PROXY
-  - RULE-SET,proxy,PROXY
-  - RULE-SET,direct,DIRECT
-  - RULE-SET,lancidr,DIRECT
-  - RULE-SET,cncidr,DIRECT
-  - RULE-SET,telegramcidr,PROXY
-  - GEOIP,LAN,DIRECT
-  - GEOIP,CN,DIRECT
 ```
+
+### Step 2: prepend references in Edit Rules
+
+Following the [official rules guide](https://www.clashverge.dev/guide/rules.html), right-click the same subscription, open **Edit Rules**, and add the following in the prepend area, preserving their order. Where the editor uses separate fields, enter the type, provider name, and policy separately. These are resulting rule strings, not a `rules` list to paste into extension YAML.
+
+Replace every `YOUR_EXISTING_GROUP` with an exact proxy-group name from this subscription. `PROXY` is not a built-in group present in every profile; `DIRECT` and `REJECT` are built-in policies. Review the effect of prepending on existing routing and retain the original rules and final `MATCH`.
+
+```text
+RULE-SET,local-ls-applications,DIRECT
+RULE-SET,local-ls-private,DIRECT
+RULE-SET,local-ls-reject,REJECT
+RULE-SET,local-ls-icloud,DIRECT
+RULE-SET,local-ls-apple,DIRECT
+RULE-SET,local-ls-google,YOUR_EXISTING_GROUP
+RULE-SET,local-ls-proxy,YOUR_EXISTING_GROUP
+RULE-SET,local-ls-direct,DIRECT
+RULE-SET,local-ls-lancidr,DIRECT
+RULE-SET,local-ls-cncidr,DIRECT
+RULE-SET,local-ls-telegramcidr,YOUR_EXISTING_GROUP
+GEOIP,LAN,DIRECT
+GEOIP,CN,DIRECT
+```
+
+The summary uses upstream names; actual definitions and references use the `local-ls-` prefix. `PROXY` in the table means your verified existing group.
 
 Rule summary:
 
@@ -192,13 +197,67 @@ Rule summary:
 
 Review the lists before using them in a high-sensitivity environment. A third-party list can contain errors, change over time, or block a domain required by another app.
 
-### Step 3: save and reload
+### Step 3: apply and verify
 
-Save with the interface button or `Ctrl + S`.
+Save and reapply the selected subscription using the installed version's controls. Check configuration validation, core loading, and provider downloads; saving a file alone does not prove it is active. Recheck after subscription refresh or switching profiles. Restore the backup if loading fails.
 
-In the Clash Verge Rev version used by the source article, the global Merge override did not have a separate enable switch; saving caused it to be merged into subscription profiles. If your version differs, consult its current override controls.
+### Optional: a script for selected subscriptions
 
-Because the rules are in a separate override, refreshing the provider subscription should not erase them.
+The [official Script mechanism](https://www.clashverge.dev/guide/script.html) can apply the same additions to several named subscriptions. This is an **alternative to the two steps above, not another layer to add on top**. Back up any existing global script and integrate the logic into its existing `main` instead of clearing it or defining a second entry point. Replace the `policies` keys with actual profile names and the values with existing group names in each profile. Unlisted profiles are returned unchanged.
+
+This example preserves existing providers, rule order, and fallback rules, prepending only new entries. A provider-name conflict or missing group produces an error rather than overwriting existing data. Choose one method or a separate prefix if another extension already uses these names.
+
+```javascript
+function main(config, profileName) {
+  const policies = {
+    "YOUR_PROFILE_A": "YOUR_EXISTING_GROUP_A",
+    "YOUR_PROFILE_B": "YOUR_EXISTING_GROUP_B"
+  };
+  if (!Object.prototype.hasOwnProperty.call(policies, profileName)) return config;
+  const policy = policies[profileName];
+  if (!Array.isArray(config.rules) || !Array.isArray(config["proxy-groups"]) ||
+      !config["proxy-groups"].some(group => group.name === policy)) {
+    throw new Error("Check existing rules and the selected proxy group");
+  }
+  const existing = config["rule-providers"] || {};
+  if (typeof existing !== "object" || Array.isArray(existing)) {
+    throw new Error("Invalid rule-providers object");
+  }
+  const specs = [
+    ["applications", "classical", "DIRECT"],
+    ["private", "domain", "DIRECT"],
+    ["reject", "domain", "REJECT"],
+    ["icloud", "domain", "DIRECT"],
+    ["apple", "domain", "DIRECT"],
+    ["google", "domain", policy],
+    ["proxy", "domain", policy],
+    ["direct", "domain", "DIRECT"],
+    ["lancidr", "ipcidr", "DIRECT"],
+    ["cncidr", "ipcidr", "DIRECT"],
+    ["telegramcidr", "ipcidr", policy]
+  ];
+  const additions = {};
+  const rules = [];
+  for (const [name, behavior, target] of specs) {
+    const key = "local-ls-" + name;
+    if (Object.prototype.hasOwnProperty.call(existing, key)) {
+      throw new Error("Provider name already exists: " + key);
+    }
+    additions[key] = {
+      type: "http", behavior,
+      url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/" + name + ".txt",
+      path: "./ruleset/" + key + ".yaml", interval: 86400
+    };
+    rules.push("RULE-SET," + key + "," + target);
+  }
+  rules.push("GEOIP,LAN,DIRECT", "GEOIP,CN,DIRECT");
+  config["rule-providers"] = Object.assign({}, existing, additions);
+  config.rules = rules.concat(config.rules);
+  return config;
+}
+```
+
+Later subscription extensions can still change the global script's output, so inspect the final configuration. The example is checked statically and with logic tests, not claimed to have been tested inside your client or network.
 
 ## Expected effects
 
@@ -217,7 +276,12 @@ These effects depend on the accuracy of the lists and the quality of the selecte
 2. Find **Verge Advanced Settings**, then open **Current Configuration**.
 3. Inspect the final merged YAML.
 
-Look for providers such as `reject`, `google`, `apple`, and `cncidr`, and confirm that their rule references appear in the intended order.
+Labels vary by version; use the view of the actual running configuration. Confirm:
+
+* Original providers remain alongside `local-ls-*`, and downloads succeed; names alone do not prove success.
+* New rule references are in the intended order, original rules and the final `MATCH` remain, and every `RULE-SET` has a provider definition.
+* Custom policies reference real proxy groups and core validation/loading logs have no errors.
+* A non-sensitive test request shows the expected matched rule, policy, and exit in Connections or logs. Inspect a new connection because existing connections may retain their previous route.
 
 ![Verifying the merged Clash configuration =900x721](https://image.ermao.net/images/blog/clash-rules-config/20260228_141336-94acd7.png)
 

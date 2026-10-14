@@ -100,7 +100,7 @@ This file contains links to all documentation sections.
 - [2026 年第 30 周翻墙新闻周报：英国 VPN 政策、1VPNS 制裁与俄罗斯访问异常](/blog/censorship-weekly-2026-30/index.md): 2026 年第 30 周翻墙新闻周报，核验英国未直接限制 VPN、美国制裁 1VPNS 及 Telegram 短链连带异常、俄罗斯 Apple 与 Google 服务访问异常三项重要进展，并说明普通用户应关注的实际影响。
 - [2026年 ChatGPT 充值全攻略：支付宝/微信开通 Plus、Pro 与 Codex（CZGPT 教程）](/blog/chatgpt-chongzhi-2026-guide/index.md): 2026年国内用户 ChatGPT 充值指南：以 czgptai.com 为例，梳理支付宝、微信开通 ChatGPT Plus、Pro 与 Codex 的流程，并对比信用卡、App Store 礼品卡、共享账号和第三方自助充值。
 - [2026 灵猫网络机场推荐：25 元月付 150GB，年付 85 元 45GB](/blog/civetnet-airport/index.md): 灵猫网络机场怎么样？本文整理 25 元月付 150GB、85 元年付 45GB、IPLC 专线、通用订阅、流媒体与 AI 解锁宣传，以及服务商提供的测速截图。
-- [Clash 规则配置进阶教程：2026 最新分流规则一键导入，防封号+去广告+国内直连](/blog/clash-rules-config/index.md): 详解 Clash 分流规则的作用与配置方法，基于 Loyalsoldier 开源规则库，3 步实现国内直连、海外代理、广告拦截。适用于 Clash Verge Rev / Clash for Windows 等全客户端，附懒人一键配置代码。
+- [Clash 规则配置进阶教程：订阅前置规则、规则集与扩展脚本](/blog/clash-rules-config/index.md): 按 Clash Verge Rev 当前扩展机制配置 Loyalsoldier 规则集，通过订阅前置规则或保留原配置的脚本分流，检查代理组、最终配置与命中日志。
 - [iOS Clash Mi 使用教程（2026最新版）：下载安装、订阅导入与常见问题](/blog/clashmi/index.md): 2026年最新 Clash Mi 使用教程，覆盖 iPhone/iPad 安装、订阅链接导入、连接设置、TUN 覆写和常见报错解决。新手可按步骤快速上手。
 - [AI 都能帮你花钱了，替你开公司的日子还远吗？Cloudflare Wallet 是什么、怎么申请](/blog/cloudflare-wallet/index.md): Cloudflare Wallet 是给 AI Agent 使用的可编程钱包与身份系统。本文说清它与 x402、稳定币和 AI 自动支付的关系，并附当前可实操的名称预留步骤、功能边界及未来影响。
 - [跨境网络与 AI 服务周报（2026-07-17 至 2026-07-23）：客户端安全更新、AI 故障与局部停网](/blog/cross-border-network-ai-weekly-2026-07-23/index.md): 本期核验 v2rayN 下载器安全修复、sing-box 1.14 beta、GitHub Actions 证书故障、OpenAI 与 Claude 连续可用性事件，并追踪新德里与 AJK 停复网报道及 Google Play DMA 处罚，区分已确认事实、媒体转述和仍待核实的影响边界。
