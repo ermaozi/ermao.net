@@ -63,7 +63,7 @@ iPhone 和 iPad 用户可以选择以下下载渠道：
 
 - 大家都懂的，国区 Apple ID 肯定是搜不到也下不了的，你得换成美区或者港区等海外账号。如果自己没有海外 Apple ID，大家可以使用我每日更新维护的免费共享账号来下载：
 
-<LinkCard title="🍎 最新免费美区Apple ID共享账号 | 纯免费每日更新" href="/blog/freeappleid/" description="2026年最新免费共享美区Apple ID账号，每日更新可用。提供美国、日本、韩国、香港、台湾等地区iOS账号，支持免翻墙直接下载 Clash Mi 等海外应用。" />
+<LinkCard title="🍎 共享 Apple ID 资料与可用性说明" href="/blog/freeappleid/" description="查看共享 Apple ID 资料及数据更新时间；更新时间不代表实时登录检测结果。账号状态、地区和应用获取条件可能变化，不能保证登录、下载或免翻墙访问。使用前请阅读设备锁定与隐私风险提示。" />
 
 - 对了，App Store 的正式版和 TestFlight 的测试版只能“二选一”，同时装的话，其中一个会把另一个给覆盖掉。
 
