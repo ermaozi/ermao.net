@@ -401,9 +401,13 @@ description: >-
 
 @tab Linux
 
-* 推荐：Deb 包（多数发行版）
+* Debian / Ubuntu / Deepin：选择与系统架构匹配的 `.deb` 包。
   * [Linux x64 deb](https://file.ermao.net/files/clash-verge-rev/Clash.Verge.Linux.x64.deb)
   * [Linux arm64 deb](https://file.ermao.net/files/clash-verge-rev/Clash.Verge.Linux.arm64.deb)
+
+* CentOS / Fedora / SUSE：在 [GitHub Releases](https://github.com/clash-verge-rev/clash-verge-rev/releases) 中选择与系统架构匹配的 `.rpm` 包。
+
+* Arch Linux / Manjaro / SteamOS：参考[官方安装文档](https://www.clashverge.dev/install.html)中的 AUR 路径；AUR 是社区打包渠道，不是项目官方直接发布的二进制安装包。
 
 @tab GitHub 官方
 
@@ -418,7 +422,7 @@ description: >-
 
 * Windows：安装后启用「服务模式」和「Tun 模式」，并开启系统代理。
 * macOS：拖到应用程序后，首次运行授予网络权限，开启系统代理与 Tun。
-* Linux：优先使用 deb 包，安装后按提示启动服务或参考发行版文档开启 TUN。
+* Linux：按发行版与系统架构选包：Debian / Ubuntu / Deepin 用 `.deb`，CentOS / Fedora / SUSE 用 `.rpm`，Arch 系列参考 AUR 路径；安装后按提示启动服务或参考发行版文档开启 TUN。
 * 订阅准备：提前准备好机场订阅链接，方便导入。
 
 ## 配置

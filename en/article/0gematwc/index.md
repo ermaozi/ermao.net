@@ -24,9 +24,13 @@ This guide provides direct and GitHub downloads for Clash Verge, installation no
 
 @tab Linux
 
-* Debian packages for many distributions:
+* Debian / Ubuntu / Deepin: choose a `.deb` package matching your system architecture:
   * [Linux x64 `.deb`](https://file.ermao.net/files/clash-verge-rev/Clash.Verge.Linux.x64.deb)
   * [Linux ARM64 `.deb`](https://file.ermao.net/files/clash-verge-rev/Clash.Verge.Linux.arm64.deb)
+
+* CentOS / Fedora / SUSE: choose a matching `.rpm` package from [GitHub Releases](https://github.com/clash-verge-rev/clash-verge-rev/releases).
+
+* Arch Linux / Manjaro / SteamOS: follow the AUR route in the [official installation guide](https://www.clashverge.dev/install.html). AUR is a community packaging channel, not a binary installer published directly by the project.
 
 @tab GitHub
 
@@ -41,7 +45,7 @@ Install the package appropriate for your platform. This guide recommends Clash V
 
 * **Windows:** Enable service mode and TUN mode after installation, then enable the system proxy.
 * **macOS:** Move the app to Applications, grant network permissions on first launch, and enable either the required proxy or TUN settings.
-* **Linux:** Use the appropriate `.deb` package where supported, then start the service and configure TUN according to the distribution's requirements.
+* **Linux:** Match the package to your distribution and architecture: `.deb` for Debian / Ubuntu / Deepin, `.rpm` for CentOS / Fedora / SUSE, and the AUR route for Arch-based systems. Then start the service and configure TUN according to the distribution's requirements.
 * **Subscription:** Have a valid proxy-service subscription URL ready to import.
 
 ## Import and configure a subscription
