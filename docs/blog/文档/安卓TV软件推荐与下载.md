@@ -34,7 +34,9 @@ description: 安卓 TV、电视盒子和平板常用软件推荐与下载整理�
 
 ### 下载地址
 
-[BBLL1.5.1.apk](https://github.com/xiaye13579/BBLL/releases/download/v1.5.1/BBLL1.5.1.apk)
+[原作者正式 Release：BBLL v1.5.2](https://github.com/xiaye13579/BBLL/releases/tag/v1.5.2)
+
+原作者于 2025-02-28 发布 v1.5.2，发布说明为修复视频无法播放的问题。请在该 Release 页的 Assets 中核对版本与文件，再选择下载；后续版本以[原作者 Releases](https://github.com/xiaye13579/BBLL/releases)为准。这是上游修复说明，不是本站实测结论；本次核查未下载安装该 APK，不保证所有设备或当前服务环境下均能正常播放。
 
 ## 想唱K歌
 
