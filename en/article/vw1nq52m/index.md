@@ -22,7 +22,9 @@ BBLL is a third-party Bilibili client intended only for learning and discussion.
 
 ### Download
 
-[BBLL1.5.1.apk](https://github.com/xiaye13579/BBLL/releases/download/v1.5.1/BBLL1.5.1.apk)
+[Original developer's official release: BBLL v1.5.2](https://github.com/xiaye13579/BBLL/releases/tag/v1.5.2)
+
+The developer published v1.5.2 on February 28, 2025, with release notes describing a fix for videos failing to play. Check the version and file under Assets on that release page before downloading; consult the [original developer's Releases](https://github.com/xiaye13579/BBLL/releases) for subsequent versions. This is an upstream release claim, not a hands-on result from this site. We did not download or install this APK during this review and do not guarantee playback on every device or under current service conditions.
 
 ## Xiangchang Karaoke
 
