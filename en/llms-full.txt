@@ -22511,7 +22511,7 @@ If you arrived from the shared Apple ID page, **the account downloads the app; a
 
 * VPNs and proxy services: differences and selection advice
 
-  A **VPN, or virtual private network**, is an encrypted network connection that can protect data in transit. A China-focused **proxy service**, colloquially called an “airport” in Chinese, usually provides access through protocols such as Shadowsocks, V2Ray, or Trojan.
+  A **VPN, or virtual private network**, creates an encrypted tunnel between your device and the VPN server for traffic routed through it; coverage depends on client and routing settings. It can reduce the local network's visibility into that traffic, but requires trust in the provider, does not replace HTTPS, and does not guarantee anonymity or comprehensive security (see [EFF's guide](https://ssd.eff.org/module/choosing-vpn-thats-right-you)). Price or service category alone does not establish better privacy. A China-focused **proxy service**, colloquially called an “airport” in Chinese, usually provides access through protocols such as Shadowsocks, V2Ray, or Trojan.
 
   **Main differences:**
 
