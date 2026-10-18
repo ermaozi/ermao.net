@@ -82,6 +82,8 @@ The account in the connection string must have permission to read every selected
 
 ## Import or restore data
 
+First restore into an isolated, empty test environment after confirming the target URI and dump contents. Even without `--drop`, these commands write data and may encounter duplicate keys. Take an independent backup before any intended replacement.
+
 ### Import one JSON collection
 
 ```bash
@@ -96,7 +98,6 @@ mongoimport \
 ```bash
 mongorestore \
   --uri="mongodb://localhost:27017" \
-  --drop \
   --nsInclude='mydatabase.*' \
   output
 ```
@@ -106,12 +107,11 @@ mongorestore \
 ```bash
 mongorestore \
   --uri="mongodb://localhost:27017" \
-  --drop \
   output
 ```
 
 ::: danger `--drop` deletes destination collections
-Before restoring each collection, `mongorestore --drop` removes the corresponding destination collection and its data. Point the URI at the intended environment, verify the dump, and take a separate backup before using it.
+The examples above omit `--drop`. If deliberately enabled, it deletes the destination collections represented in the dump, not collections absent from the backup or the entire database. Restoring `admin` with `--drop` also replaces existing user credentials with users from the dump. Confirm the target and take an independent backup before considering this option. See the [official mongorestore reference](https://www.mongodb.com/docs/database-tools/mongorestore/).
 :::
 
 ## Common problems
