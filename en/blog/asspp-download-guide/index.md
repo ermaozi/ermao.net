@@ -189,7 +189,9 @@ Confirm that the connection can reach Apple's servers. If the direct route canno
 
 ### How is Asspp different from changing the App Store region?
 
-Changing the device account or region through system settings can affect iCloud and store behavior. Asspp runs separately and is intended not to replace the device's main iCloud account. It still receives credentials for any account entered into it, so use a secondary account and review the source and releases.
+Changing an existing Apple Account's country or region is not the same as signing out of iCloud. [Apple's official process](https://support.apple.com/en-us/118283) uses Settings → your name → Media & Purchases → Country/Region. You must first address the account balance, subscriptions that block the change, and other requirements; some content may be unavailable in the new region.
+
+Asspp manages multiple accounts and browses regional stores within the app without replacing the device's main iCloud account. It still handles the credentials you enter, so this is not a guarantee of zero impact on settings or data. Use only a secondary account you control and read the [project's security warnings](https://github.com/Lakr233/Asspp) first.
 
 ### What is an IPA file used for?
 
