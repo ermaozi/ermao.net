@@ -101,10 +101,15 @@ for num in gen:
 生成器本质上是一个迭代器。Python 的迭代器协议要求对象实现 `__iter__()` 和 `__next__()` 方法。生成器通过 `yield` 实现了这两个方法，因此它们天然是迭代器。
 
 ```python
+from collections.abc import Iterator
+from types import GeneratorType
+
 gen = (x * 2 for x in range(3))
-print(isinstance(gen, iter))  # 输出: True
-print(isinstance(gen, generator))  # 输出: True
+print(isinstance(gen, Iterator))  # 输出: True
+print(isinstance(gen, GeneratorType))  # 输出: True
 ```
+
+`isinstance()` 的第二个参数需要是类型：`iter` 是函数，`generator` 也不是内置类型名。这里用 `Iterator` 判断迭代器协议，用 `GeneratorType` 判断生成器对象。
 
 #### 7. 生成器的常见应用
 
@@ -149,9 +154,10 @@ def safe_generator():
 gen = safe_generator()
 print(next(gen))  # 输出: 1
 print(next(gen))  # 输出: 2
-gen.throw(ValueError)  # 捕获异常
-print(next(gen))  # 输出: 3
+print(gen.throw(ValueError))  # 依次输出: Caught ValueError 和 3
 ```
+
+`throw()` 会在暂停的 `yield` 处抛出异常并恢复生成器执行。本例中，生成器捕获 `ValueError` 后继续执行到 `yield 3`，因此 `throw()` 本身就返回 `3`。再次调用 `next(gen)` 会从 `yield 3` 之后继续执行；此时生成器结束，抛出 `StopIteration`。
 
 #### 总结
 
