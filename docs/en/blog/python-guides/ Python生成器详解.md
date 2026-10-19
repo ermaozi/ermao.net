@@ -104,10 +104,15 @@ A generator expression produces each value on demand rather than constructing an
 A generator is fundamentally an iterator. Python's iterator protocol requires an object to implement `__iter__()` and `__next__()`. A generator created with `yield` implements this protocol automatically.
 
 ```python
+from collections.abc import Iterator
+from types import GeneratorType
+
 gen = (x * 2 for x in range(3))
-print(isinstance(gen, iter))  # Output: True
-print(isinstance(gen, generator))  # Output: True
+print(isinstance(gen, Iterator))  # Output: True
+print(isinstance(gen, GeneratorType))  # Output: True
 ```
+
+`isinstance()` requires a type as its second argument: `iter` is a function, and `generator` is not a built-in type name. Use `Iterator` to check the iterator protocol and `GeneratorType` to check for a generator object.
 
 #### 7. Common generator use cases
 
@@ -152,9 +157,10 @@ def safe_generator():
 gen = safe_generator()
 print(next(gen))  # Output: 1
 print(next(gen))  # Output: 2
-gen.throw(ValueError)  # Inject the exception into the generator
-print(next(gen))  # Output: 3
+print(gen.throw(ValueError))  # Output: Caught ValueError, then 3
 ```
+
+`throw()` raises the exception at the suspended `yield` and resumes the generator. Here, the generator catches `ValueError` and reaches `yield 3`, so `throw()` itself returns `3`. Calling `next(gen)` again resumes execution after `yield 3`; the generator then ends and raises `StopIteration`.
 
 #### Summary
 
