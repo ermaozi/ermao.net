@@ -390,12 +390,13 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument('--live', action='store_true', help='Verify the release through fresh CDN query keys')
+    mode.add_argument('--live-origin', action='store_true', help='Wait for the real Cloudflare Pages production origin')
     mode.add_argument('--canonical-status', action='store_true', help='Check unparameterized public URL propagation (pending=2)')
     mode.add_argument('--http-audit', action='store_true')
     args = parser.parse_args()
     if args.http_audit:
         audit_http()
-    elif not args.live and not args.canonical_status:
+    elif not args.live and not args.live_origin and not args.canonical_status:
         validate(local, verify_git_dates=True)
     else:
         expected_revision = revision(Document(local('/')))
@@ -404,23 +405,24 @@ if __name__ == '__main__':
         assert assets, 'No critical assets found in the local build'
         if args.canonical_status:
             raise SystemExit(canonical_status(expected_revision, assets))
+        origin = "https://ermao-net.pages.dev" if args.live_origin else HOST
         nonce = None
         def live(route):
-            status, headers, text = fetch(probe_url(HOST + route, expected_revision, nonce))
+            status, headers, text = fetch(probe_url(origin + route, expected_revision, nonce))
             expected = (200, 404) if route == '/404.html' else (200,)
             assert status in expected, f'{route}: HTTP {status}'
             if route in CORE_ROUTES:
                 validate_http_indexability(route, headers)
             return text
-        deadline = time.monotonic() + 180
+        deadline = time.monotonic() + (600 if args.live_origin else 180)
         while True:
             try:
                 nonce = time.time_ns()
                 validate(live)
                 for asset in sorted(assets):
-                    status, headers, body = fetch(probe_url(HOST + asset, expected_revision, nonce))
+                    status, headers, body = fetch(probe_url(origin + asset, expected_revision, nonce))
                     validate_asset(asset, status, headers.get('content-type', ''), body)
-                print(f'PASS release {expected_revision} and {len(assets)} critical assets through fresh CDN query keys.', flush=True)
+                print(f'PASS release {expected_revision} at {origin} and {len(assets)} critical assets through fresh CDN query keys.', flush=True)
                 print('This does not establish unparameterized public URL propagation; run --canonical-status separately.', flush=True)
                 break
             except (AssertionError, urllib.error.URLError, TimeoutError, IndexError, StopIteration) as error:
