@@ -787,13 +787,19 @@ brew install sing-box
 
 ```
 
-或手动下载
+下文按 [Homebrew sing-box Formula](https://formulae.brew.sh/formula/sing-box)的安装与服务路径编写。也可手动下载，但手动二进制不适用下面的 `brew services` 步骤：
 
 <https://github.com/SagerNet/sing-box/releases>
 
 #### 4.4.2 创建配置文件
 
-创建 `/usr/local/etc/sing-box/config.json`：
+[Homebrew 安装说明](https://docs.brew.sh/Installation)指出，Apple Silicon 的默认前缀为 `/opt/homebrew`；实际安装位置应使用 `brew --prefix` 查询，不要把路径写死为 `/usr/local`。Formula 使用 Homebrew 前缀下的 `etc/sing-box/config.json` 和 `var/lib/sing-box`：
+
+```bash
+mkdir -p "$(brew --prefix)/etc/sing-box" "$(brew --prefix)/var/lib/sing-box"
+```
+
+将下面的客户端配置保存到 `$(brew --prefix)/etc/sing-box/config.json`（这里的 `$(brew --prefix)` 表示命令输出的实际路径）。已有配置请先备份，不要用客户端配置覆盖其他正在使用的配置；填入自己的服务器和密码：
 
 ```json
 {
@@ -839,47 +845,29 @@ brew install sing-box
 
 ### 4.4.3 运行sing-box
 
+先检查配置，通过后可前台运行；二进制路径也由 Homebrew 查询：
+
 ```bash
-# 前台运行（测试）
-sing-box run -c /usr/local/etc/sing-box/config.json
+"$(brew --prefix sing-box)/bin/sing-box" check --config "$(brew --prefix)/etc/sing-box/config.json"
 
-# 后台运行
-nohup sing-box run -c /usr/local/etc/sing-box/config.json &
-
-# 使用LaunchAgent服务（推荐）
+# 前台运行（测试）；结束时按 Ctrl+C
+"$(brew --prefix sing-box)/bin/sing-box" run --config "$(brew --prefix)/etc/sing-box/config.json" --directory "$(brew --prefix)/var/lib/sing-box"
 ```
 
 #### 4.4.4 配置LaunchAgent
 
-创建文件 `~/Library/LaunchAgents/com.sagernet.sing-box.plist`：
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>Label</key>
-    <string>com.sagernet.sing-box</string>
-    <key>ProgramArguments</key>
-    <array>
-        <string>/usr/local/bin/sing-box</string>
-        <string>run</string>
-        <string>-c</string>
-        <string>/usr/local/etc/sing-box/config.json</string>
-    </array>
-    <key>RunAtLoad</key>
-    <true/>
-    <key>KeepAlive</key>
-    <true/>
-</dict>
-</plist>
-```
-
-加载服务：
+Homebrew Formula 已提供服务定义，使用 `brew services` 管理即可，无需再手写固定路径的 plist。先结束前台测试；如果已有手工 LaunchAgent 或其他 sing-box 实例，先核对并停止旧实例，避免重复监听端口。
 
 ```bash
-launchctl load ~/Library/LaunchAgents/com.sagernet.sing-box.plist
+# 仅在配置检查成功后启动，并注册为当前用户登录时启动
+"$(brew --prefix sing-box)/bin/sing-box" check --config "$(brew --prefix)/etc/sing-box/config.json" && brew services start sing-box
+brew services info sing-box
+
+# 不再需要时停止，并取消登录时启动
+brew services stop sing-box
 ```
+
+根据 [Homebrew services 文档](https://docs.brew.sh/Manpage#services-subcommand)，不加 `sudo` 时管理当前用户的 LaunchAgent，随用户登录启动，不是系统启动时的服务。上述 SOCKS/HTTP 客户端示例不需要为此改用 root 服务，也不要同时运行前台进程、`nohup` 和 Homebrew 服务。
 
 ### 4.5 Linux客户端配置
 
