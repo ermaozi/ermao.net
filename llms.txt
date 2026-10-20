@@ -96,7 +96,7 @@ This file contains links to all documentation sections.
 - [9esim使用指南 - 获取国外手机号，注册Google、Telegram等账号](/blog/9esim/index.md): 9esim使用指南：了解实体可编程卡与另购eSIM套餐的区别、设备兼容性、写卡流程及号码有效期。保留历史Google验证体验，说明短信与第三方平台注册不保证成功。
 - [2026年四月机场断线潮详解：通报、拔线与涨价预期下，普通用户该怎么应对](/blog/april-airport-outage-2026/index.md): 2026年4月，多地机场服务出现断线、拔线、降配与停服。本文基于公开通告与从业反馈，梳理本轮波动的核心原因、潜在趋势与用户可执行的应对方案。
 - [Asspp下载使用教程：iPhone多账号切换App Store、跨区下载应用神器](/blog/asspp-download-guide/index.md): 2026最新Asspp下载安装使用教程，iPhone/Mac多Apple ID管理、一键切换美区日区港区App Store、跨区下载应用、提取IPA安装包、回退App旧版本，附详细图文步骤。
-- [2026 CCYZ机场评测：15元100G高性价比IEPL专线机场推荐｜Netflix/ChatGPT解锁](/blog/ccyz/index.md): CCYZ机场怎么样？本文实测CCYZ机场速度、稳定性与流媒体解锁能力，月付仅15元享100G流量、IEPL专线+BGP中转节点，支持Netflix/Disney+/ChatGPT，附95折优惠券与套餐解析。
+- [2026 CCYZ机场评测：套餐流量争议与IEPL专线资料｜Netflix/ChatGPT解锁](/blog/ccyz/index.md): CCYZ机场怎么样？本文实测CCYZ机场速度、稳定性与流媒体解锁能力，历史资料记载月付15元，但入门流量存在100G与150G冲突，购买前以官方支付页实际额度为准；IEPL专线+BGP中转节点，支持Netflix/Disney+/ChatGPT，附95折优惠券与套餐解析。
 - [2026 年第 30 周翻墙新闻周报：英国 VPN 政策、1VPNS 制裁与俄罗斯访问异常](/blog/censorship-weekly-2026-30/index.md): 2026 年第 30 周翻墙新闻周报，核验英国未直接限制 VPN、美国制裁 1VPNS 及 Telegram 短链连带异常、俄罗斯 Apple 与 Google 服务访问异常三项重要进展，并说明普通用户应关注的实际影响。
 - [2026年 ChatGPT 充值全攻略：支付宝/微信开通 Plus、Pro 与 Codex（CZGPT 教程）](/blog/chatgpt-chongzhi-2026-guide/index.md): 2026年国内用户 ChatGPT 充值指南：以 czgptai.com 为例，梳理支付宝、微信开通 ChatGPT Plus、Pro 与 Codex 的流程，并对比信用卡、App Store 礼品卡、共享账号和第三方自助充值。
 - [2026 灵猫网络机场推荐：25 元月付 150GB，年付 85 元 45GB](/blog/civetnet-airport/index.md): 灵猫网络机场怎么样？本文整理 25 元月付 150GB、85 元年付 45GB、IPLC 专线、通用订阅、流媒体与 AI 解锁宣传，以及服务商提供的测速截图。

@@ -4,9 +4,9 @@ description: >-
   CCYZ plan prices, its BGP and IEPL claims, a documented traffic inconsistency,
   sample tests, setup steps, and checks before buying.
 ---
-[CCYZ](https://xxyun.at/?code=HOWnn58c) advertises BGP transit plus IEPL routes, access to services such as Netflix, Disney+, and ChatGPT, 1GB of trial traffic, and a 5% coupon. Its lowest listed price is CNY 15 per month.
+[CCYZ](https://xxyun.at/?code=HOWnn58c) advertises BGP transit plus IEPL routes, access to services such as Netflix, Disney+, and ChatGPT, 1GB of trial traffic, and a 5% coupon. Its historical lowest listed price was CNY 15 per month.
 
-There is an important source inconsistency: the headline and introduction say the entry plan contains 100GB, but the plan table and structured FAQ say 150GB. This English version does not guess which is current; check the live checkout page.
+There is an unresolved historical source inconsistency: the old headline and introduction said the entry plan contains 100GB, but the plan table and old structured FAQ said 150GB. Available public information does not establish the current quota. Neither figure is confirmed; use the actual allowance on the official checkout page before buying.
 
 Website: <https://xxyun.at/?code=HOWnn58c>
 
@@ -32,7 +32,7 @@ Website: <https://xxyun.at/?code=HOWnn58c>
 | Item | Details |
 | --- | --- |
 | Website | [xxyun.at](https://xxyun.at/?code=HOWnn58c) |
-| Cheapest subscription | CNY 15/month; quota conflicts between 100GB and 150GB in the source |
+| Cheapest subscription | Historical CNY 15/month; 100GB/150GB conflict, current quota unverified |
 | Trial | 1GB advertised on registration |
 | Coupon | `ccyz`, advertised as 5% off |
 | Routes | BGP transit plus IEPL |
@@ -42,9 +42,11 @@ Website: <https://xxyun.at/?code=HOWnn58c>
 
 ## Plans and prices {#price}
 
+These are historical plan records, not verified current offers. Confirm the actual quota, price, and reset cycle on the official checkout page.
+
 | Plan | Price | Monthly traffic | Peak bandwidth | Route | Suggested use | Link |
 | --- | ---: | ---: | ---: | --- | --- | --- |
-| Lite 150G | CNY 15/month | 150GB in the table | Depends on node | IEPL claim | Light use and a first test | [View plan](https://xxyun.at/?code=HOWnn58c) |
+| Lite (historical) | CNY 15/month | 100GB/150GB conflict | Depends on node | IEPL claim | Light use and a first test | [View plan](https://xxyun.at/?code=HOWnn58c) |
 | Pro 280G | CNY 25/month | 280GB | Depends on node | IEPL claim | Regular or multi-device use | [View plan](https://xxyun.at/?code=HOWnn58c) |
 
 The provider advertised 1GB of trial traffic and a 5% discount with coupon `ccyz`. Confirm that the trial, quota, and coupon are still shown on the final order screen.
@@ -97,6 +99,10 @@ These are starting points, not guaranteed best routes.
 
 ## Frequently asked questions {#faq}
 
+### What is CCYZ's cheapest plan?
+
+Historical records listed CNY 15 per month for Lite, but the old headline and introduction said 100GB while the plan table and old structured FAQ said 150GB. The current quota is unverified. Use the actual allowance and price on the official checkout page; confirm whether coupon ccyz still gives 5% off.
+
 ### Does CCYZ support refunds?
 
 The source describes used virtual-service plans as generally non-refundable. Read the current terms and use the trial or smallest plan first.
@@ -118,7 +124,7 @@ Try another node or protocol. If the issue continues, contact the provider's sup
 
 ## Conclusion {#conclusion}
 
-CCYZ has a low CNY 15 entry price, advertised trial traffic, a listed 5% coupon, and BGP/IEPL marketing. The unresolved entry-quota conflict means buyers should not rely on the headline alone. It is best treated as a low-cost test candidate.
+CCYZ historically listed a CNY 15 entry price, advertised trial traffic, a listed 5% coupon, and BGP/IEPL marketing. The unresolved entry-quota conflict means buyers must verify the actual allowance on the official checkout page. It is best treated as a low-cost test candidate.
 
 [Open the CCYZ website](https://xxyun.at/?code=HOWnn58c)
 
