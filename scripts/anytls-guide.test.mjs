@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import test from 'node:test'
+import { spawnSync } from 'node:child_process'
 import matter from 'gray-matter'
 
 const source = readFileSync(new URL('../docs/blog/文档/anytls协议完全指南.md', import.meta.url), 'utf8')
@@ -104,4 +105,31 @@ test('Article identity and all existing navigation targets stay intact', () => {
   assert.equal(data.createTime, '2026/05/08 08:33:10')
   const urls = [...source.matchAll(/\[[^\]]*\]\(([^)\s]+)\)/g)].map(match => match[1])
   for (const url of ['https://github.com/SagerNet/sing-box/releases', '../翻墙工具/Android手机使用clash.md', '../翻墙工具/windows下载安装clash.md', '../翻墙工具/ClashVergeRev安装与使用指南.md', '../翻墙工具/Shadowrocket新手使用教程.md', './什么是翻墙.md', './如何判断一个机场使用的线路类型.md', './路由器翻墙详细教程.md', '/posts/vpn/', './如何选择机场.md', '../跑路机场/机场跑路汇总.md']) assert.ok(urls.includes(url), url)
+})
+
+
+test('macOS Homebrew examples query prefixes and use the packaged user service', () => {
+  const macSections = [
+    section('### 4.4 macOS客户端配置', '### 4.5 Linux客户端配置'),
+    english.split('### 4.5 macOS')[1]?.split('### 4.6 Linux')[0],
+  ]
+  for (const text of macSections) {
+    assert.ok(text)
+    assert.match(text, /https:\/\/docs\.brew\.sh\/Installation/)
+    assert.match(text, /https:\/\/formulae\.brew\.sh\/formula\/sing-box/)
+    assert.match(text, /brew services info sing-box/)
+    assert.match(text, /brew services stop sing-box/)
+    assert.doesNotMatch(text, /\/usr\/local\/(?:bin|etc)|launchctl load|<plist/)
+    const shellBlocks = [...text.matchAll(/^```\s*bash\s*\n([\s\S]*?)^```\s*$/gm)]
+    for (const [, shell] of shellBlocks) {
+      // Parse only: bash -n never runs brew, sing-box, mkdir, or service commands.
+      const result = spawnSync('bash', ['-n'], { input: shell, encoding: 'utf8' })
+      assert.equal(result.status, 0, result.stderr)
+      assert.doesNotMatch(shell, /sudo|\/opt\/homebrew|\/usr\/local|nohup|launchctl/)
+    }
+    const commands = shellBlocks.map(([, shell]) => shell).join('\n')
+    assert.ok(commands.includes('"$(brew --prefix sing-box)/bin/sing-box"'))
+    assert.ok(commands.includes('--directory "$(brew --prefix)/var/lib/sing-box"'))
+    assert.ok(commands.includes('check --config "$(brew --prefix)/etc/sing-box/config.json" && brew services start sing-box'))
+  }
 })

@@ -578,7 +578,7 @@ That only starts a process; it does not create a robust service, secure the conf
 
 ### 4.5 macOS
 
-The official documentation lists Homebrew:
+The [Homebrew sing-box Formula](https://formulae.brew.sh/formula/sing-box) provides installation and service management:
 
 ```bash
 brew install sing-box
@@ -586,14 +586,32 @@ brew install sing-box
 
 It also warns that some third-party package builds can modify build tags. If a required feature is missing, compare with the official release and report packaging issues to the package maintainer.
 
-For manual command-line testing:
+[Homebrew’s installation guide](https://docs.brew.sh/Installation) gives `/opt/homebrew` as the Apple Silicon default. Query the active installation with `brew --prefix` rather than hard-coding `/usr/local`. The Formula reads `etc/sing-box/config.json` and uses `var/lib/sing-box`, both under that prefix:
 
 ```bash
-sing-box check -c "$PWD/client.json"
-sing-box run -c "$PWD/client.json"
+mkdir -p "$(brew --prefix)/etc/sing-box" "$(brew --prefix)/var/lib/sing-box"
 ```
 
-The Chinese source included a hand-written LaunchAgent with `KeepAlive`. A permanent agent should instead use the actual installed binary path, restricted configuration permissions, controlled logging, and backoff to avoid rapid crash loops. The official graphical application is usually safer for a desktop user.
+Save your completed client configuration to `$(brew --prefix)/etc/sing-box/config.json`, substituting the command’s actual output for the prefix. Back up any existing configuration and do not overwrite another active setup. These paths and service commands apply to the Homebrew installation, not a manually downloaded binary.
+
+Check the configuration before a foreground test:
+
+```bash
+"$(brew --prefix sing-box)/bin/sing-box" check --config "$(brew --prefix)/etc/sing-box/config.json"
+"$(brew --prefix sing-box)/bin/sing-box" run --config "$(brew --prefix)/etc/sing-box/config.json" --directory "$(brew --prefix)/var/lib/sing-box"
+```
+
+End the foreground test with Ctrl+C before starting the Formula’s service. If a custom LaunchAgent or another instance already exists, identify and stop that instance first to avoid duplicate listeners. No handwritten plist is needed:
+
+```bash
+"$(brew --prefix sing-box)/bin/sing-box" check --config "$(brew --prefix)/etc/sing-box/config.json" && brew services start sing-box
+brew services info sing-box
+
+# Stop the service and unregister login startup when no longer needed.
+brew services stop sing-box
+```
+
+Without `sudo`, [brew services](https://docs.brew.sh/Manpage#services-subcommand) manages the current user’s LaunchAgent and starts it at login, not at system boot. The SOCKS/HTTP client example does not require a root service. Do not run the foreground process, `nohup`, and Homebrew service simultaneously.
 
 ### 4.6 Linux
 
