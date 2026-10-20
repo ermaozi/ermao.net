@@ -37,8 +37,24 @@ jobs:
           pnpm test
           pnpm test:data
           python3 scripts/seo-regression.test.py
+          python3 scripts/prepare-pages-release.test.py
       - name: Build VuePress site
         run: pnpm build
+      - name: Read publication history for retention validation
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: .pages-previous
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Validate retained dependencies and Pages file budget
+        run: python3 scripts/prepare-pages-release.py --build docs/.vuepress/dist --previous .pages-previous --report artifacts/pages-retention.json
+      - name: Preserve retention review
+        uses: actions/upload-artifact@v4
+        with:
+          name: pages-retention-${{ github.sha }}
+          path: artifacts/pages-retention.json
+          retention-days: 7
       - name: Install Chromium for comparison-page checks
         run: pnpm exec playwright install --with-deps chromium
       - name: Check airport summaries at desktop and phone widths
@@ -94,16 +110,36 @@ jobs:
             if (branch.data.commit.sha !== context.sha) {
               core.setFailed('main has advanced; refusing to publish an outdated build');
             }
-      - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v4
+      - name: Check out the existing publication branch
+        uses: actions/checkout@v4
         with:
-          target_branch: gh-pages
-          keep_history: true
-          jekyll: false
-          build_dir: docs/.vuepress/dist
-          fqdn: www.ermao.net
+          ref: gh-pages
+          path: .pages-release
+          fetch-depth: 0
+          token: ${{ secrets.GH_PAT }}
+      - name: Prepare bounded publication without rewriting history
+        run: python3 scripts/prepare-pages-release.py --build docs/.vuepress/dist --previous .pages-release --report artifacts/pages-publication.json --apply
+      - name: Preserve exact rollback and removal manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: pages-publication-${{ github.sha }}
+          path: artifacts/pages-publication.json
+          retention-days: 30
+      - name: Publish to the existing Cloudflare Pages source branch
+        working-directory: .pages-release
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          SOURCE_REVISION: ${{ github.sha }}
+        run: |
+          test "$(cat CNAME)" = "www.ermao.net"
+          test -f .nojekyll
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add --all
+          git commit -m "Publish verified site ${SOURCE_REVISION} with bounded assets"
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$SOURCE_REVISION"
+          git push origin HEAD:gh-pages
+      - name: Verify actual Cloudflare Pages production origin
+        run: python3 scripts/seo-regression.py --live-origin
       - name: Verify new release files through fresh CDN query keys
         run: python3 scripts/seo-regression.py --live
       - name: Check unparameterized public URL cache propagation
