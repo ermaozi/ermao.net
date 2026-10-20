@@ -68,7 +68,7 @@ wsl --import Ubuntu-Restore "C:\WSL\Ubuntu-Restore" ubuntu_backup.tar --version 
 wsl -d Ubuntu-Restore
 ```
 
-这仍然是 Ubuntu，名称及 `--version 2` 不会改变发行版内容；后者只指定使用 WSL 2。检查恢复实例中的文件是否完整、关键应用能否运行，再继续迁移。导入的实例可能默认以 root 启动，原用户名与 Debian 新建用户也不一定相同，复制后需核对文件归属和权限。
+这仍然是 Ubuntu，名称及 `--version 2` 不会改变发行版内容；后者只指定使用 WSL 2。检查恢复实例中的文件是否完整、关键应用能否运行，再继续迁移。完成检查后用 `exit` 退出恢复实例，回到 Windows PowerShell 执行后续 WSL 命令。导入的实例可能默认以 root 启动，原用户名与 Debian 新建用户也不一定相同，复制后需核对文件归属和权限。
 
 ## 步骤 5: 进入 Debian
 通过以下命令进入新的 Debian 环境：
@@ -77,7 +77,7 @@ wsl -d Ubuntu-Restore
 wsl -d Debian
 ```
 
-验证 Debian 中的项目、数据和应用都正常，且 Ubuntu 备份已成功恢复验证后，可以设置默认发行版：
+验证 Debian 中的项目、数据和应用都正常，且 Ubuntu 备份已成功恢复验证后，用 `exit` 返回 Windows PowerShell，再设置默认发行版：
 
 ```powershell
 wsl --set-default Debian
