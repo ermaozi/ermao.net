@@ -22,7 +22,7 @@ That result is specific to this deployment. High CPU can also come from encrypti
 
 ## 1. Install Docker from Official Instructions
 
-Use Docker's current [Debian installation guide](https://docs.docker.com/engine/install/debian/) or the matching page for your operating system. The original one-line `get.docker.com` command is convenient, but an administrator should review the script and package source before running it on a server.
+Use Docker's current [Debian installation guide](https://docs.docker.com/engine/install/debian/) or the matching page for your operating system. Docker does not recommend its [convenience script for production](https://docs.docker.com/engine/install/debian/#install-using-the-convenience-script). Prefer the official package repository instructions; inspect downloaded scripts and package sources before execution instead of piping a download straight into a shell.
 
 Confirm the installation:
 
@@ -38,7 +38,7 @@ Create persistent directories owned by the user who will manage downloads:
 mkdir -p "$HOME/aria2/config" "$HOME/aria2/downloads"
 ```
 
-Generate a long random RPC secret and store it in a file readable only by your account:
+Generate a separate random RPC secret for each instance and store it in a file readable only by your account. Do not overwrite an existing instance’s secret:
 
 ```bash
 umask 077
@@ -73,8 +73,8 @@ docker run -d \
 The variables mean:
 
 * `PUID` and `PGID` map downloaded-file ownership to the current account.
-* `RPC_SECRET` authenticates JSON-RPC calls.
-* `127.0.0.1:6800:6800` prevents direct remote access to RPC.
+* `RPC_SECRET` authenticates JSON-RPC calls through [aria2’s rpc-secret option](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-rpc-secret); it does not encrypt transport. Do not share the secret file or container inspection output containing it.
+* `127.0.0.1:6800:6800` binds the host RPC port to loopback. [Docker publishes to all interfaces when the host IP is omitted](https://docs.docker.com/engine/network/port-publishing/). Releases older than 28.0.0 have a same-L2-network exception for loopback publishing; use a supported updated release and verify isolation.
 * TCP and UDP port `6888` are used for BitTorrent and DHT listening.
 * `/config` and `/downloads` persist configuration and downloaded files.
 
@@ -108,10 +108,10 @@ In its connection settings:
 
 ![Aria2 Explorer connection settings =1223x962](https://image.ermao.net/images/article/b06gglcq/image-4.png)
 
-Private-network example:
+Local example (browser on the Docker host, or a local SSH forward to its loopback RPC port):
 
 ```text
-ws://192.168.1.20:6800/jsonrpc
+ws://127.0.0.1:6800/jsonrpc
 ```
 
 Remote TLS example:
@@ -120,7 +120,7 @@ Remote TLS example:
 wss://aria2.example.com/jsonrpc
 ```
 
-The loopback binding in the Docker command means a LAN client cannot use the first example unless you deliberately change the binding and firewall rules. Keeping RPC private is the safer default.
+Loopback means the browser’s own device; another LAN client cannot directly reach the Docker host’s loopback port. Use a private tunnel or VPN path terminating on the host, or an access-restricted TLS proxy. Public `wss` encrypts transport but does not restrict who can connect. Domain names work with WebSocket: a proxy must forward the `Upgrade` and `Connection` headers, as described in the [Nginx WebSocket documentation](https://nginx.org/en/docs/http/websocket.html).
 
 ## 5. Reverse Proxy WebSocket RPC with Nginx
 
@@ -145,17 +145,18 @@ server {
 
 server {
     listen 443 ssl;
-    http2 on;
     server_name aria2.example.com;
 
     ssl_certificate     /etc/letsencrypt/live/aria2.example.com/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/aria2.example.com/privkey.pem;
     ssl_protocols TLSv1.2 TLSv1.3;
 
-    # Add an authentication layer appropriate for your environment.
-    # Restrict source addresses here as well when possible.
 
     location = /jsonrpc {
+        # Replace with trusted client sources; keep deny all.
+        allow 127.0.0.1;
+        allow ::1;
+        deny all;
         proxy_pass http://aria2_rpc;
         proxy_http_version 1.1;
         proxy_set_header Host $host;
@@ -171,13 +172,14 @@ server {
 }
 ```
 
-Replace the hostname and certificate paths. If a tunnel exposes aria2 on a different loopback port, use that port in the `upstream` block.
+Place these blocks in the `http` context. Replace the hostname and certificate paths. The example allows only local proxy clients by default; configure trusted source addresses or a client-compatible authenticated gateway before remote use, keeping access restricted. If a tunnel uses port `26800`, bind the tunnel listener to relay loopback or a restricted private interface and use that port in `upstream`. Pointing Nginx to loopback does not secure an otherwise public tunnel listener; never expose `26800` openly.
+
+Use [TLS 1.2/1.3](https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_protocols), with an OpenSSL build supporting TLS 1.3. HTTP/2 is optional for this WebSocket proxy. The optional [`http2 on;` directive](https://nginx.org/en/docs/http/ngx_http_v2_module.html#http2) requires Nginx 1.25.1 or later with the HTTP/2 module; omit it on unsupported versions.
 
 Validate before reload:
 
 ```bash
-sudo nginx -t
-sudo systemctl reload nginx
+sudo nginx -t && sudo systemctl reload nginx
 ```
 
 Use a private tunnel or VPN when possible. If the service must be internet-facing, add an authenticated gateway; the aria2 RPC secret travels within JSON-RPC calls and should not be the only boundary.
