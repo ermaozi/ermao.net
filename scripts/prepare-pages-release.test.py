@@ -27,13 +27,14 @@ class ReleaseTests(unittest.TestCase):
                 'assets/manual.js': '"./custom-keep0001.js"',
                 'assets/custom-keep0001.js': '',
                 'assets/photo-dead0001.png': 'image',
+                'assets/manual-12345678.js': 'uploaded',
                 'historic/index.html': 'keep route',
                 'CNAME': 'www.ermao.net',
                 'user-data.txt': 'keep data',
             }.items(): write(old, name, text)
-            current, removed, report = r.plan(build, old, ['<script src="/assets/app-old00001.js"></script>'])
+            current, removed, report = r.plan(build, old, ['<script src="/assets/app-old00001.js"></script>'], ['assets/manual-12345678.js'])
             self.assertEqual(removed, ['assets/unused-dead0001.js', 'assets/unused-dead0002.js'])
-            self.assertEqual(report['after'], 13)
+            self.assertEqual(report['after'], 14)
 
     def test_missing_dependency_and_limit_fail_closed_without_deleting(self):
         with tempfile.TemporaryDirectory() as tmp:

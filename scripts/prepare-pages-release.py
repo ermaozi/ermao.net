@@ -33,11 +33,12 @@ def references(data):
     return {token for token in TOKEN.findall(unquote(data)) if len(token) < 256 and HASHED.fullmatch(token)}
 
 
-def plan(build, previous, historical_html=()):
+def plan(build, previous, historical_html=(), manual_assets=()):
     current, old = inventory(build), inventory(previous)
     assert 'index.html' in current and '404.html' in current, 'Incomplete build'
     combined = {**old, **current}
     candidates = {p for p in old if p.startswith('assets/') and HASHED.fullmatch(p[7:]) and p not in current}
+    candidates.difference_update(manual_assets)
     names = {Path(p).name: p for p in combined if p.startswith('assets/')}
     assert len(names) == sum(p.startswith('assets/') for p in combined), 'Ambiguous asset names'
     edges = {}
@@ -68,6 +69,19 @@ def plan(build, previous, historical_html=()):
                               'retained_historical_assets': len(candidates & keep), 'removed': removed}
 
 
+def manually_touched_assets(repo):
+    # A hash-shaped name alone does not authorize deleting an uploaded/manual file.
+    rows = subprocess.check_output(['git', '-C', str(repo), 'log',
+        '--format=AUTHOR:%ae', '--name-only', '--diff-filter=AM', '--', 'assets'], text=True).splitlines()
+    manual, protected = True, set()
+    for row in rows:
+        if row.startswith('AUTHOR:'):
+            manual = row != 'AUTHOR:41898282+github-actions[bot]@users.noreply.github.com'
+        elif manual and row.startswith('assets/'):
+            protected.add(row)
+    return protected
+
+
 def history(repo, hours=48):
     # Keep the latest tree even after an idle period, all recent trees, and the
     # predecessor at the window boundary. Do not age out assets on a quiet site.
@@ -96,7 +110,7 @@ def main():
     args = parser.parse_args()
     assert args.build.resolve() != args.previous.resolve()
     revisions, documents = history(args.previous)
-    current, removed, report = plan(args.build, args.previous, documents)
+    current, removed, report = plan(args.build, args.previous, documents, manually_touched_assets(args.previous))
     report['rollback_commit'] = revisions[0]
     report['protected_revisions'] = revisions
     args.report.parent.mkdir(parents=True, exist_ok=True)
