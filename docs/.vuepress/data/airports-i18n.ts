@@ -302,7 +302,9 @@ const genericEnglish = (value: string | undefined, fallback: string) => {
 export const localizeAirportName = (value: string) =>
   englishNames[value] ?? genericEnglish(value, 'Proxy service')
 
-export const localizeAirportPrice = (value: string) => {
+export const localizeAirportPrice = (value: string): string => {
+  if (value === '额度待核实') return 'Quota unverified'
+  if (value.startsWith('历史 ')) return `Historical ${localizeAirportPrice(value.slice(3))}`
   if (value === '现价待核实') return 'Price unverified'
   const translated = replacePhrases(value)
     .replace(/(\d+(?:\.\d+)?)\s*元(?=\d)/g, 'CNY $1 ')
@@ -319,6 +321,8 @@ export const localizeAirportPrice = (value: string) => {
 
 const localizeTraffic = (value: string | undefined) => {
   if (!value) return undefined
+  if (value === '100G/150G记录冲突') return '100GB/150GB conflict; verify checkout'
+  if (value === '历史280G/月') return 'Historical 280GB/month'
   return genericEnglish(
     value
       .replace(/\bG\b/gi, 'GB')
@@ -328,7 +332,7 @@ const localizeTraffic = (value: string | undefined) => {
 }
 
 const localizePlanName = (value: string | undefined, index: number) =>
-  genericEnglish(value, `Plan ${index + 1}`)
+  value === 'Lite 套餐（历史记录）' ? 'Lite (historical)' : genericEnglish(value, `Plan ${index + 1}`)
 
 const localizePlanDetail = (value: string | undefined) =>
   value ? genericEnglish(value, 'See the current plan terms') : undefined
@@ -361,6 +365,7 @@ const localizeTags = (tags: string[] | undefined) =>
     .filter(Boolean)
 
 const englishDescription = (item: AirportSource | AirportRecord) => {
+  if (item.id === 'ccyz') return 'Historical records list CNY 15/month, but the entry quota conflicts between 100GB and 150GB. The current allowance is unverified; use the actual quota and price on the official checkout page before buying.'
   if (item.id === 'superbiu') return 'SuperBiu has announced higher prices, lower traffic multipliers, CN2 entrances and AnyTLS. These are provider statements, not new independent tests. The 2026-02-24 article recorded CNY 11 for 50 GB monthly and one-time plans; the tables retain historical prices. Current prices and availability remain unverified.'
   if (item.id === '唯兔云') return 'Historical records list CNY 79.90 per year with 45 GB each month. The entry page showed only a route check on 2026-10-02; current prices, reset periods and service terms remain unverified. Test the provider’s route and access claims on your own network.'
   if (item.id === 'liulianyun') return 'Monthly plans start at CNY 24 for 140 GB, with a CNY 96 annual plan offering 60 GB each month. The provider lists universal subscriptions and VLESS speed records from five regions. Code ll88 offers 30% off, once per account; confirm eligible plans, billing periods and expiry at checkout.'

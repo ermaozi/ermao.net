@@ -3387,9 +3387,9 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
   ],
   "ccyz": [
     {
-      "name": "Lite 套餐 · 150G",
-      "priceText": "¥15 / 月",
-      "traffic": "150G/月",
+      "name": "Lite 套餐（历史记录）",
+      "priceText": "历史 ¥15 / 月",
+      "traffic": "100G/150G记录冲突",
       "type": "周期订阅",
       "audience": "轻度使用、影音追剧",
       "features": [
@@ -3397,12 +3397,12 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
         "线路：IEPL 专线"
       ],
       "purchaseHref": "https://xxyun.at/?code=HOWnn58c",
-      "text": "Lite 套餐 · 150G，¥15 / 月，150G/月"
+      "text": "Lite 套餐（历史记录），历史 ¥15 / 月，100G/150G记录冲突"
     },
     {
       "name": "Pro 套餐 · 280G",
-      "priceText": "¥25 / 月",
-      "traffic": "280G/月",
+      "priceText": "历史 ¥25 / 月",
+      "traffic": "历史280G/月",
       "type": "周期订阅",
       "audience": "日常/多设备用户",
       "features": [
@@ -3410,7 +3410,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
         "线路：IEPL 专线"
       ],
       "purchaseHref": "https://xxyun.at/?code=HOWnn58c",
-      "text": "Pro 套餐 · 280G，¥25 / 月，280G/月"
+      "text": "Pro 套餐 · 280G，历史 ¥25 / 月，历史280G/月"
     }
   ],
   "浪网": [
@@ -4681,10 +4681,10 @@ export const airportSources: AirportSource[] = [
   {
     id: 'ccyz',
     name: 'ccyz',
-    description: '主打高性价比与专线稳定，采用 BGP+IEPL 双重优化，晚高峰依旧保持高速。支持 Netflix、Disney+、HBO 等主流流媒体解锁，并提供全天候客服响应，适合长期使用或需要稳定带宽的用户。',
+    description: '历史入门流量存在100G与150G冲突，当前额度未核实，购买前以官方支付页实际额度为准。主打高性价比与专线稳定，采用 BGP+IEPL 双重优化，晚高峰依旧保持高速。支持 Netflix、Disney+、HBO 等主流流媒体解锁，并提供全天候客服响应，适合长期使用或需要稳定带宽的用户。',
     officialHref: 'https://xxyun.at/?code=HOWnn58c',
     universalSubscription: false,
-    minPlanText: '15元 150G/月',
+    minPlanText: '额度待核实',
     hasOneTimePackage: false,
     telegramHref: 'https://t.me/+jiosLuqA9Mk0Yjkx',
     reviewHref: '/blog/ccyz/',
