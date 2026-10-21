@@ -166,7 +166,7 @@ Mac 版通过官方 **DMG 安装包**安装和更新，要求 **macOS 12（Monte
 
 ### 7 Clash Mi 会泄露数据吗
 
-- Clash Mi 本身不会主动收集用户信息
+- [App Store 的「App 隐私」信息](https://apps.apple.com/us/app/clash-mi/id6744321968)由开发者 Supernova Nebula LLC 申报为“不收集数据”，Apple 明确注明尚未验证该信息。这是开发者声明，不是本站的独立隐私审计，也不能据此保证订阅服务商或所访问网站不收集数据。
 - 面板默认启用 `secret`，即使开启非本机访问也需要有效 secret 才能访问
 
 ### 8 如何通过外部链接控制连接
