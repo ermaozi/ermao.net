@@ -11896,7 +11896,7 @@ Run Clash Mi as administrator, then reconnect.
 
 ### 7) Does Clash Mi collect data?
 
-The project is described by the source as not actively collecting user information. The dashboard enables a `secret` by default, so a valid secret is required even when access beyond the local device is enabled. Review the current source code, release documentation, and network behavior if this assurance is important to your threat model.
+The [App Store privacy label](https://apps.apple.com/us/app/clash-mi/id6744321968) reports “Data Not Collected” as a declaration from developer Supernova Nebula LLC; Apple explicitly says it has not verified this information. This is a developer declaration, not an independent privacy audit by this site, and does not establish the data practices of subscription providers or websites you visit. The dashboard enables a `secret` by default, so a valid secret is required even when access beyond the local device is enabled. Review the current source code, release documentation, and network behavior if this assurance is important to your threat model.
 
 ### 8) Control the connection through external URLs
 
