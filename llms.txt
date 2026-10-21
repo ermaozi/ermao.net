@@ -70,7 +70,7 @@ This file contains links to all documentation sections.
 - [免费机场订阅链接：Clash/V2Ray节点，每12小时更新（2026）](/article/oh8wwokl/index.md): 2026年免费机场订阅链接，支持 Clash 与 V2Ray，每12小时更新。本文提供订阅地址、导入教程、可用性检查方法，并说明共享节点的速度、隐私和账号风控风险。
 - [✈️机场推荐【灯塔cloud】- 稳定、老牌机场](/article/osp1vx6y/index.md): 灯塔cloud机场评测，整理套餐价格、节点质量、客服响应、官网入口和 XF777 优惠码信息，适合想了解老牌稳定机场的用户参考。
 - [✈️机场推荐【flybit】- 便宜实惠、高性价比](/article/q8yp9r2b/index.md): flybit机场，10元 100G/月，高性价比、IEPL接口线路。 flybit官网地址：goflybit.com
-- [如何判断一个机场使用的线路类型（如IPLC/IEPL专线、CN2、BGP中转等）](/article/r50bpg9j/index.md): 通过 Traceroute、ASN、延迟、丢包率和晚高峰测试判断机场使用的是 IPLC、IEPL、CN2、BGP 中转还是普通公网线路，并说明常见宣传误区。
+- [如何判断一个机场使用的线路类型（如IPLC/IEPL专线、CN2、BGP中转等）](/article/r50bpg9j/index.md): 结合 Traceroute、IP/ASN 与晚高峰测试评估线路表现，说明隐藏跳点、归属查询和 AI 解读的证据边界，不以固定阈值认证专线。
 - [python迭代器详解](/article/r6u6yjj9/index.md): 在 Python 中，**迭代器（Iterator）** 是用于访问集合中元素的一种对象。迭代器不仅能够遍历集合，还能在遍历过程中保持状态，允许你按需逐步访问元素，而无需一次性将所有元素加载到内存中。掌握迭代器的使用，可以帮助你编写更加高效且节省内存的代码。 本文将详细介绍 Python 中迭代器的概念、如何定义...
 - [✈️【机场推荐】老头VPN - 公认老牌机场、稳定实惠](/article/rklwp5go/index.md): 老头VPN，15.5元 150G/月，公认老牌机场、稳定实惠。 老头VPN官网地址：https://www.chattous.net
 - [✈️机场推荐【koodog】- 新机场，便宜实惠，体验流畅](/article/rq55p9dn/index.md): KooDog 历史资料整理：保留 Trojan、三网专线与 2Gbps 宣传、套餐表和原测试截图，区分未独立验证的在线率及已过期的七夕优惠。
