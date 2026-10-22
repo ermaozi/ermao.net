@@ -176,7 +176,7 @@ description: >-
 
 **iOS系统推荐：**
 
-* [Shadowrocket 小火箭](/article/z747kgjd/)（需美区账号购买，可使用[免费AppleID](/blog/freeappleid/)）
+* [Shadowrocket 小火箭](/article/z747kgjd/)（需使用已上架该应用地区的 Apple 账户购买；价格与可用性以账户所在商店为准）
 * Surge（功能最全，价格较高）
 * Quantumult X（圈X，功能强大）
 
