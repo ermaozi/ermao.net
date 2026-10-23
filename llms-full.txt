@@ -12785,7 +12785,7 @@ Clash 的分流取决于订阅规则、规则顺序与运行模式。本文使�
 
 ### 2. 每日自动更新
 
-每天早上 6:30 由 GitHub Actions 自动抓取全网最新数据并重新构建。网站天天变，但你的规则永远是最新的。
+项目通过 [GitHub Actions](https://github.com/Loyalsoldier/clash-rules/blob/master/.github/workflows/run.yml)定期拉取上游数据并构建规则集；上游构建成功不等于本地客户端已更新。客户端仍需按配置的间隔成功下载并加载规则集，使用时应检查下载状态、更新时间和实际命中。
 
 ### 3. 按内核确认兼容性
 
@@ -13014,7 +13014,7 @@ function main(config, profileName) {
 ![验证规则配置成功截图 =900x721](https://image.ermao.net/images/blog/clash-rules-config/20260228_141336-94acd7.png)
 
 ::: danger 必须检查的一点
-确保 Clash 运行在 **「规则 (Rule)」模式**，而不是全局 (Global) 或直连 (Direct)！只有在规则模式下，分流引擎才会接管你的网络。
+要按本文的规则列表分流，请使用 **「规则 (Rule)」模式**。规则、全局和直连决定进入客户端的流量如何转发；流量是否进入客户端则取决于系统代理、TUN 或应用自身的代理设置。切换为规则模式不会自动接管所有应用，需结合连接日志确认，参见[官方模式说明](https://www.clashverge.dev/guide/term.html)。
 :::
 
 ## 常见问题
