@@ -131,7 +131,7 @@ Power down the phone if its manufacturer requires it, insert the 9eSIM V3 into t
 
 ### 2. Install a compatible LPA
 
-Use 9eSIM's current [software and tool-selection page](https://www.9esim.com/ecosystem-software-download/). Prefer a verified store build or the vendor's linked source release.
+Use 9eSIM's current [official software page](https://www.9esim.com/en/software). The current Android app requires **Android 10 or later**; use its linked store or direct APK entry. Meeting the OS requirement does not guarantee device compatibility, so also check the [official device guidance](https://www.9esim.com/en/devices). The separately listed **9eSIM Legacy (NekokoLPA 1)** is the previous build; the historical screenshot below may show a different name or interface. For the V3 card used in this guide, writing profiles for iOS still requires an external reader or a compatible Android device; installing the iOS app alone is insufficient.
 
 ![9eSIM software download page =1448x907](https://image.ermao.net/images/blog/9esim/image-14.png)
 

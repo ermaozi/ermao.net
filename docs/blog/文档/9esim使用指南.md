@@ -109,7 +109,7 @@ description: 9esim使用指南：了解实体可编程卡与另购eSIM套餐的�
 
 1. **安装物理卡**：收到 9esim v3 卡后，放入兼容手机的实体 SIM 卡槽。仅支持内置 eSIM、没有卡槽的手机无法插入该卡；iPhone 使用 V3 写入配置还需外部读卡器等兼容方式，购买前核对[官方设备说明](https://www.9esim.com/en/devices)。
 
-2. **下载写卡应用**：访问 [9esim 应用下载页](https://www.9esim.com/ecosystem-software-download/)，下载对应系统的应用（如安卓的 9eSIM-nLPA）。
+2. **下载写卡应用**：访问 [9eSIM 官方软件下载页](https://www.9esim.com/en/software)，按设备选择当前应用。官方当前 Android 应用要求 **Android 10 或更新版本**，可使用页面提供的应用商店或直接 APK 入口；满足系统版本不代表所有机型都兼容，仍需核对[官方设备说明](https://www.9esim.com/en/devices)。页面另列的 **9eSIM Legacy（NekokoLPA 1）** 是旧版，不要把下方历史截图中的名称或界面当成当前版本。本文使用的 V3 卡在 iOS 写入配置仍需外部读卡器或兼容 Android 设备，不能仅安装 iOS 应用后直接写卡。
 
 ![9esim 应用下载 =1448x907](https://image.ermao.net/images/blog/9esim/image-14.png)
 
