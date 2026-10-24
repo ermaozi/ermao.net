@@ -38,7 +38,7 @@ HTTP 状态码是服务器响应请求时返回的状态码，用于表示服务
 - **302 Found**：临时移动。资源只是暂时被移动。
 - **303 See Other**：查看其他。请求的资源存在另一个URI，应使用GET方法获取资源。
 - **304 Not Modified**：未修改。资源未修改，客户端可以使用缓存的版本。
-- **305 Use Proxy**：使用代理。请求的资源必须通过代理访问。
+- **305 Use Proxy**：已弃用。它曾用于指示通过代理访问资源，不应再作为当前客户端的代理配置指引。
 - **307 Temporary Redirect**：临时重定向。请求的资源临时从不同的URI响应请求。
 - **308 Permanent Redirect**：永久重定向。请求的资源已永久移动到新URI。
 
@@ -68,7 +68,7 @@ HTTP 状态码是服务器响应请求时返回的状态码，用于表示服务
 - **423 Locked**：资源被锁定。
 - **424 Failed Dependency**：由于之前的请求失败，当前请求失败。
 - **425 Too Early**：服务器不愿意冒险处理可能重播的请求。
-- **426 Upgrade Required**：客户端应切换到TLS/1.0。
+- **426 Upgrade Required**：服务器拒绝使用当前协议处理请求，但可能接受切换协议后的请求。服务器必须在响应的 `Upgrade` 字段中指明所需协议；它并不特指切换到 TLS 1.0。
 - **428 Precondition Required**：请求需要先决条件。
 - **429 Too Many Requests**：客户端发送的请求次数过多。
 - **431 Request Header Fields Too Large**：请求头字段过大。
@@ -121,3 +121,9 @@ HTTP 状态码告诉客户端（如浏览器）请求的结果。例如：
 ### 6. 优化用户体验
 
 通过状态码，服务器可以更好地管理用户请求，提供更流畅的用户体验。例如，**429 Too Many Requests** 可以告知客户端请求过于频繁，需要稍后再试。
+
+## 官方参考
+
+- [RFC 9110：305 Use Proxy（已弃用）](https://www.rfc-editor.org/rfc/rfc9110.html#section-15.4.6)
+- [RFC 9110：426 Upgrade Required](https://www.rfc-editor.org/rfc/rfc9110.html#section-15.5.22)
+- [IANA HTTP 状态码注册表](https://www.iana.org/assignments/http-status-codes/)
