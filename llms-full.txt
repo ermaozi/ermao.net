@@ -5405,6 +5405,8 @@ description: >-
 
 如果你不想看太多概念，直接按这张表选择就行：
 
+小屏幕可左右滑动表格；键盘用户可聚焦表格后用左右方向键滚动。
+
 | 设备 | 首选工具 | 备选工具 | 适合人群 | 本站教程 |
 | --- | --- | --- | --- | --- |
 | Windows | Clash Verge Rev | v2rayN、Hiddify | 新手、办公、ChatGPT、YouTube | [Windows/Linux/Mac 安装 Clash Verge](/article/0gematwc/) |

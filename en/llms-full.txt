@@ -4711,6 +4711,8 @@ This guide covers ordinary activities such as research, remote work, cross-borde
 
 ## Quick recommendation by device
 
+On small screens, scroll the table sideways. Keyboard users can focus the table and use the left and right arrow keys.
+
 | Device | First choice | Alternatives | Typical use | Guide |
 | --- | --- | --- | --- | --- |
 | Windows | Clash Verge Rev | v2rayN, Hiddify | Beginners, work, ChatGPT, YouTube | [Install Clash Verge](/en/article/0gematwc/) |
