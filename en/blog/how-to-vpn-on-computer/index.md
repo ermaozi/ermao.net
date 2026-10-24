@@ -29,13 +29,13 @@ The source guide recommends the open-source Clash Verge Rev instead of the disco
 
 ### Basic steps
 
-1. **Install the client:** Download the `.exe` installer for the correct architecture and install it.
+1. **Install the client:** Check the [official installation guide](https://www.clashverge.dev/install.html) and use its GitHub Releases for the correct architecture. Current versions do not support Windows 7; check the selected release requirements on Windows 10/11 too.
 2. **Obtain a subscription:** Copy the provider's Clash-compatible subscription URL.
 3. **Import the profile:** Open Clash Verge Rev, select **Profiles** or **Subscriptions**, paste the URL, and choose **Import**.
 4. **Enable the proxy:**
    * Open **Proxies** and select **Rule** for rule-based routing, or use **Global** temporarily when testing.
    * Open **Settings** and enable **System Proxy**.
-   * Confirm that the system-proxy control is enabled before testing browser access.
+   * Select an available node in the proxy group, then open the intended website in a browser and inspect the connection records. An enabled switch only indicates that the system proxy is configured; it does not prove successful access.
 
 ***
 
@@ -45,20 +45,20 @@ Installing an app on macOS may trigger an unidentified-developer warning. Confir
 
 ### Download a client
 
-Clash Verge Rev supports both Intel and Apple Silicon Macs. The source guide also mentions ClashX Pro as an alternative.
+Clash Verge Rev currently supports macOS 12 or later, with separate Intel and Apple Silicon packages. The source guide also mentions ClashX Pro as an alternative.
 
 * **Detailed guide and downloads:** [Install and Use Clash Verge Rev on macOS](/en/article/6vxkmmuh/)
 
 ### Basic steps
 
-1. **Install the app:** Open the `.dmg` and drag the app into Applications. If macOS cannot verify the developer, review the source first, then use **Open Anyway** under **System Settings → Privacy & Security** if you choose to proceed.
+1. **Install the app:** Open the `.dmg` and drag the app into Applications. Check the [official package source](https://www.clashverge.dev/install.html) and the exact warning first. A damaged-app or malware warning is not an ordinary unidentified-developer prompt: stop and verify the file or contact the developer. Only after confirming a trusted, untampered app and understanding the risk should you consult [Apple’s warning-specific instructions](https://support.apple.com/en-us/102445) about an individual app exception under **System Settings → Privacy & Security**. Do not disable overall security protection.
 2. **Import the subscription:**
    * Copy the provider's subscription URL.
    * Open the client, find **Profiles** or **Subscriptions**, paste the URL, and download the profile.
 3. **Connect:**
    * Open the client from the menu bar or app window.
-   * Enable **Set as System Proxy**, or configure TUN according to the current client version.
-   * The source guide also refers to **Enhanced Mode** in clients that provide that option.
+   * Enable **System Proxy**, select an available node, and test browser access.
+   * The [official quick start](https://www.clashverge.dev/guide/quickstart.html) distinguishes system proxy from TUN. Read the relevant instructions before using TUN for applications that ignore the system proxy; it is not a default requirement for ordinary browsing.
 
 ***
 
@@ -67,8 +67,8 @@ Clash Verge Rev supports both Intel and Apple Silicon Macs. The source guide als
 ### The client is open, but websites still do not load
 
 * **Check the system proxy:** Confirm that **System Proxy** is enabled.
-* **Check the mode:** Use **Rule** normally. Temporarily switch to **Global** to determine whether the rule set is the cause.
-* **Check the nodes:** Run the latency or connectivity test. If every node times out, the subscription may have expired or the provider may be experiencing an outage.
+* **Check the mode:** Use **Rule** normally. Temporarily switch to **Global** to investigate routing rules. This changes routing only for traffic reaching the proxy core; it does not capture every application automatically.
+* **Check the nodes:** Run the latency or connectivity test. A timeout only means that test failed; it does not establish an expired subscription or a vanished provider. Check local connectivity, the active profile, selected node, test address, logs, and provider status. Verify expiry and quota in your account, and do not publish subscription URLs or credentials from logs.
 
 ### The computer cannot access the internet after the client closes
 
@@ -82,7 +82,7 @@ On Windows, you can also open **Settings → Network & Internet → Proxy** and 
 
 ### Can the same subscription be used on a phone and computer?
 
-Usually, but the provider determines the device and concurrent-connection limits. The source guide notes that many plans allow roughly three to five devices; verify the actual plan terms before use.
+Check the plan’s device and concurrent-connection limits and each client’s supported subscription format. Import compatible profiles on both devices only when the plan permits it.
 
 See the [Mobile Access Guide for Android and iOS](/en/blog/how-to-vpn-on-mobile/).
 
