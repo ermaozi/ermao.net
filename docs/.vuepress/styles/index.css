@@ -320,3 +320,28 @@ html {
   margin-bottom: 4px;
 }
 
+
+/* Keep the device comparison readable without widening the article on phones. */
+.vp-doc .client-device-table {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+.vp-doc .client-device-table:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+}
+
+.vp-doc .client-device-table table {
+  display: table;
+  width: 100%;
+  min-width: 720px;
+  margin: 0;
+}
+
+.vp-doc .client-device-table th,
+.vp-doc .client-device-table td {
+  word-break: normal;
+  overflow-wrap: normal;
+}
