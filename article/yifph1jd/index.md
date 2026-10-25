@@ -27,15 +27,15 @@ description: >-
 
 ![使用Vim上班看小说 示例图片 =999x164](https://image.ermao.net/images/article/yifph1jd/image.png)
 
-点这个gvimxx.exe进行下载
+从 [Vim 官方下载页](https://www.vim.org/download.php#pc)选择适合自己 Windows 架构的当前签名安装包；官网提供 x64、x86 和 ARM64 选项。截图中的文件名来自旧版本，不必寻找完全相同的 `gvimxx.exe`。
 
-下载完成后直接打开，有的时候电脑比较敏感，会提示有风险。其实没啥风险。点击更多信息里面的仍要安装就可以了。
+下载后先核对来源和发布者。[微软说明](https://learn.microsoft.com/en-us/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/)指出，SmartScreen 警告可能与已知恶意文件或文件信誉不足有关，不能一概视为误报。遇到警告时先核实具体提示，不要仅凭本教程就选择“仍要运行”或关闭保护。
 
 ![使用Vim上班看小说 示例图片 =532x495](https://image.ermao.net/images/article/yifph1jd/image-1.png)
 
 ![使用Vim上班看小说 示例图片 =527x484](https://image.ermao.net/images/article/yifph1jd/image-2.png)
 
-然后无脑下一步就可以了。
+确认来源后，按安装向导检查安装目录和选项，再完成安装。
 
 安装成功后设置环境变量
 
@@ -57,7 +57,11 @@ description: >-
 
 按 win 键，输入“powershell” 并按回车进入 powershell。
 
-在 powershell 中执行“vim –version”检查一下是否安装成功了吧！
+重新打开 PowerShell，执行以下命令检查是否安装成功。注意 [`--version`](https://vimhelp.org/starting.txt.html#--version) 使用两个半角短横线，不是排版用的长横线：
+
+```powershell
+vim --version
+```
 
 ![使用Vim上班看小说 示例图片 =751x205](https://image.ermao.net/images/article/yifph1jd/image-7.png)
 
