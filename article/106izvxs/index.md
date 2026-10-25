@@ -150,17 +150,20 @@ x file.tar.gz
 
 ### 3.2 启用插件
 
-启用插件，只需修改 `.zshrc` 中的插件列表：
+启用插件，在 `~/.zshrc` 中修改现有的 `plugins` 列表，并保留在 `source $ZSH/oh-my-zsh.sh` 之前。[zsh-syntax-highlighting 官方安装说明](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)要求它最后加载，以便处理其他插件创建的 ZLE 组件：
 
 ```bash
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting z extract web-search)
+plugins=(
+  git
+  zsh-autosuggestions
+  z
+  extract
+  web-search
+  zsh-syntax-highlighting
+)
 ```
 
-保存并使配置生效：
-
-```bash
-source ~/.zshrc
-```
+保存后重新打开一个 Zsh 终端，使插件按新的顺序加载。若当前终端仍使用 Bash，先启动 `zsh`，不要在 Bash 中执行 `source ~/.zshrc`。
 
 ## 4. 小贴士
 
@@ -170,7 +173,14 @@ source ~/.zshrc
 
 ```bash
 ZSH_THEME="ys"
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting z extract web-search)
+plugins=(
+  git
+  zsh-autosuggestions
+  z
+  extract
+  web-search
+  zsh-syntax-highlighting
+)
 ```
 
 ### 4.2 配置本地代理
@@ -201,8 +211,8 @@ uninstall_oh_my_zsh
 
 ### 4.4 手动更新 Oh My Zsh
 
-如果自动更新提示被误触关闭，可以通过以下命令手动更新：
+如需手动更新，在已加载 Oh My Zsh 的 Zsh 终端中使用[官方当前文档中的命令](https://github.com/ohmyzsh/ohmyzsh#manual-updates)：
 
 ```bash
-upgrade_oh_my_zsh
+omz update
 ```
