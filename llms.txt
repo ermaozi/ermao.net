@@ -57,7 +57,7 @@ This file contains links to all documentation sections.
 - [ubuntu2204中mongodb数据导入导出](/article/gokrv7a1/index.md): Ubuntu 22.04 中 MongoDB 数据导入导出笔记，整理 mongoexport、mongoimport 等工具安装与常用命令，适合开发环境迁移测试数据时参考。
 - [✈️机场推荐【九霄云】 - 服务好，回购率高](/article/gqs2dway/index.md): 九霄云机场，16.8元 80G/月，轻量级机场、价格超低。 九霄云官网地址：https://shop.starpro.one
 - [✈️机场推荐【百变小樱】 - 五年老机场、免费流媒体账号](/article/jd2i293q/index.md): 百变小樱是一家自2020年起运营的低调小众机场，线路稳定可靠。团队已迁至海外运营，确保无按流量风险，主打产品特点为稳定性、全流媒体解锁、超低价格以及附赠流媒体账号。 百变小樱优惠码： 半年95折`happy10-1-6month`、一年88折`happy10-1-1year`、三年78折`happy10-1-3y...
-- [全网最全！6种方法解决 GitHub 国内由于 DNS 污染导致无法访问的问题](/article/jddtxrrw/index.md): GitHub 是一个面向开源及私有软件项目的托管平台，不管是行业大佬还是编程小白都可以在 GitHub 上交流学习，但是国内的 GitHub 访问被污染，导致无法正常访问。 本文通过 6 种方法解决 GitHub 访问被污染的问题。如果全部方法试用后仍然无法访问（概率极低），欢迎在下方评论，手把手帮你处理！
+- [全网最全！6种方法解决 GitHub 国内由于 DNS 污染导致无法访问的问题](/article/jddtxrrw/index.md): 排查 GitHub 无法访问时的 DNS、Hosts、代理与网络问题，区分公共 DNS 与加密 DNS，避免仅凭超时或解析结果不同误判 DNS 污染。
 - [2026翻墙机场订阅指南：Clash节点购买、导入与机场推荐](/article/jichang-subscription-guide/index.md): 2026年翻墙机场订阅完整指南，讲清机场是什么、机场和VPN区别、Clash节点怎么买、订阅链接如何导入Clash/Shadowrocket、便宜机场怎么选，以及新手避坑、防跑路和常见故障排查。
 - [使用cloudflare进行URL重定向](/article/jqtuqouj/index.md): 使用 Cloudflare 重定向规则将旧域名 301 跳转到新域名，配置代理 DNS、保留路径与查询参数，并核验跳转结果。
 - [二月份的琐事](/article/k8gjtpf8/index.md): 近期的事情还挺多。 当然了，以往的事情也并不少，只是记不得去写。今天闲来无事，翻了翻陌生人的博客，感觉琐事挺有意思的。 也好久没写过关于自己的流水账了。

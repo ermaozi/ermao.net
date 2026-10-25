@@ -7199,17 +7199,14 @@ description: >-
 
 ---
 url: /article/jddtxrrw/index.md
-description: >-
-  GitHub 是一个面向开源及私有软件项目的托管平台，不管是行业大佬还是编程小白都可以在 GitHub 上交流学习，但是国内的 GitHub
-  访问被污染，导致无法正常访问。 本文通过 6 种方法解决 GitHub
-  访问被污染的问题。如果全部方法试用后仍然无法访问（概率极低），欢迎在下方评论，手把手帮你处理！
+description: 排查 GitHub 无法访问时的 DNS、Hosts、代理与网络问题，区分公共 DNS 与加密 DNS，避免仅凭超时或解析结果不同误判 DNS 污染。
 ---
 # 全网最全！6种方法解决 GitHub 国内由于 DNS 污染导致无法访问的问题
-GitHub 是一个面向开源及私有软件项目的托管平台，不管是行业大佬还是编程小白都可以在 GitHub 上交流学习，但是国内的 GitHub 访问被污染，导致无法正常访问。
+GitHub 是一个面向开源及私有软件项目的托管平台。无法访问时，DNS 异常只是可能原因之一；[GitHub 官方排障说明](https://docs.github.com/en/get-started/using-github/troubleshooting-connectivity-problems)也列出了防火墙、代理和网络配置等因素。
 
-本文通过 6 种方法解决 GitHub 访问被污染的问题。如果全部方法试用后仍然无法访问（概率极低），欢迎在下方评论，手把手帮你处理！
+本文整理 6 类检查与处理方法，应根据故障原因选择，不保证每种网络都适用。若仍有问题，欢迎在下方评论补充报错现象。
 
-GitHub 的 DNS 污染问题通常表现为域名解析被劫持到错误的 IP 地址，导致无法正常访问。
+DNS 污染可能使域名解析到错误地址，但浏览器超时或“无法访问”本身不能确定故障发生在 DNS 层。
 
 浏览器报错如下：
 
@@ -7225,7 +7222,7 @@ GitHub 的 DNS 污染问题通常表现为域名解析被劫持到错误的 IP �
 
 ## **1. 手动修改 Hosts 文件**
 
-通过直接绑定 GitHub 域名的正确 IP 地址，绕过 DNS 解析污染。\
+Hosts 会覆盖正常域名解析，旧映射也可能导致访问失败。先检查是否已有过期条目；只有确认当前地址适用于目标域名时，才考虑临时测试，并保留恢复原配置的方法。[GitHub 官方说明](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-githubs-ip-addresses)指出 IP 会变化，Meta API 也不是全部服务地址的完整列表。
 **步骤**：
 
 1. **获取最新的 GitHub 域名 IP**：
@@ -7243,7 +7240,7 @@ GitHub 的 DNS 污染问题通常表现为域名解析被劫持到错误的 IP �
 2. **修改 Hosts 文件**：
    * **Windows**：
      * 文件路径：`C:\Windows\System32\drivers\etc\hosts`
-     * 右键用管理员权限编辑，添加以下内容：
+     * 右键用管理员权限编辑。下方是原文的历史映射示例，**不能直接复制为当前配置**；如已有这些旧条目，应先核实或移除后重新测试：
        ```
        # GitHub
        140.82.113.3    github.com
@@ -7252,7 +7249,7 @@ GitHub 的 DNS 污染问题通常表现为域名解析被劫持到错误的 IP �
        ```
    * **macOS/Linux**：
      * 文件路径：`/etc/hosts`
-     * 终端输入 `sudo nano /etc/hosts`，添加上述内容。
+     * 检查 `/etc/hosts` 中是否有旧 GitHub 映射；如需编辑，可用 `sudo nano /etc/hosts`，不要直接添加上面的历史地址。
 
 3. **刷新 DNS 缓存**：
    * Windows：`ipconfig /flushdns`
@@ -7262,11 +7259,11 @@ GitHub 的 DNS 污染问题通常表现为域名解析被劫持到错误的 IP �
 
 ## **2. 使用加密 DNS 服务**
 
-通过加密 DNS（如 DNS-over-HTTPS 或 DNS-over-TLS）避免解析被劫持。\
+DNS-over-HTTPS（DoH）或 DNS-over-TLS（DoT）加密客户端与解析器之间的查询。**只把 DNS 地址改为 `1.1.1.1` 或 `8.8.8.8`，不等于启用了加密 DNS**：普通 UDP/TCP 查询仍不加密，可对照 [Google 安全传输说明](https://developers.google.com/speed/public-dns/docs/secure-transports)。
 **推荐方案**：
 
 * **Cloudflare DNS**（`1.1.1.1`）或 **Google DNS**（`8.8.8.8`）：
-  * 手动设置设备的 DNS 地址。
+  * 如需加密，在支持的系统或浏览器中明确启用 DoH/DoT，并按服务商文档配置；参考 [Cloudflare 加密 DNS 说明](https://developers.cloudflare.com/1.1.1.1/encryption/)。
 * **DNSCrypt 或 DoH/DoT 工具**：
   * 使用 [AdGuard DNS](https://adguard-dns.io/)、[NextDNS](https://nextdns.io/) 等支持加密的 DNS 服务。
 
@@ -7274,7 +7271,7 @@ GitHub 的 DNS 污染问题通常表现为域名解析被劫持到错误的 IP �
 
 ## **3. 使用代理或 VPN(终极大杀器)**
 
-通过代理或 VPN 完全绕过本地 DNS 污染。\
+代理或 VPN 可能改变连接路径，但 DNS 是否也经过代理取决于客户端配置，不能保证解决所有解析或网络问题。
 **推荐工具**：
 
 * **Clash**（支持规则分流，开源免费）
@@ -7305,10 +7302,11 @@ GitHub 的 DNS 污染问题通常表现为域名解析被劫持到错误的 IP �
 
 1. 使用 `nslookup` 或 `dig` 查询域名：
    ```bash
-   nslookup github.com 8.8.8.8  # 使用干净的 DNS 查询
+   nslookup github.com 8.8.8.8  # 使用另一公共解析器作对照（普通 DNS，非加密查询）
    nslookup github.com          # 使用本地默认 DNS 查询
    ```
-   * 若结果不一致，说明存在 DNS 污染。
+   * 结果不同只是线索，不能单凭这一点认定 DNS 污染；GitHub 使用多个 IP 地址范围，缓存、解析位置或记录变化都可能影响结果。结合是否解析超时、返回地址是否异常以及 HTTPS 连接结果继续排查。
+   * 若返回相同地址但仍无法连接，也要检查网络路径、代理或防火墙；加密 DNS 不能修复这些非 DNS 故障。
 
 ***
 
@@ -7337,7 +7335,7 @@ GitHub 的 DNS 污染问题通常表现为域名解析被劫持到错误的 IP �
 
 ***
 
-通过以上方法，可有效绕过 DNS 污染问题。若问题持续，可能是网络环境限制（如防火墙），需结合代理或 VPN 彻底解决。
+若问题持续，请按具体报错区分解析、连接和 TLS 问题，并参考上方 GitHub 官方排障说明；企业网络限制应联系管理员确认，不要将代理或 VPN 当作保证有效的解决方案。
 
 ---
 
