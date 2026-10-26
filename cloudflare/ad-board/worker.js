@@ -352,11 +352,14 @@ async function cleanupBoard(env) {
   const idsToDelete = [...new Set([...coveredIds, ...overflowIds])]
 
   if (idsToDelete.length > 0) {
-    const placeholders = idsToDelete.map((_, index) => `?${index + 1}`).join(', ')
-    await env.DB.prepare(`
-      DELETE FROM ad_board_notes
-      WHERE id IN (${placeholders})
-    `).bind(...idsToDelete).run()
+    const safeIds = idsToDelete.map(id => parseInt(id, 10)).filter(id => Number.isInteger(id) && id > 0)
+    if (safeIds.length > 0) {
+      const placeholders = safeIds.map((_, index) => `?${index + 1}`).join(', ')
+      await env.DB.prepare(`
+        DELETE FROM ad_board_notes
+        WHERE id IN (${placeholders})
+      `).bind(...safeIds).run()
+    }
   }
 
   return {
