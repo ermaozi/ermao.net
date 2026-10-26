@@ -62,7 +62,7 @@ for num in my_iter:
 
 #### 3. Python 中的迭代器对象
 
-Python 中许多内置对象（如列表、元组、字典等）都实现了迭代器协议，因此可以直接用于迭代。例如：
+Python 中许多内置对象（如列表、元组、字典等）是可迭代对象，但不是迭代器。先用 `iter()` 获取迭代器，再用 `next()` 逐项读取。例如：
 
 ```python
 lst = [1, 2, 3]
@@ -76,10 +76,12 @@ print(next(it))  # 输出: 3
 
 #### 4. 迭代器与可迭代对象
 
-* **可迭代对象（Iterable）**：任何实现了 `__iter__()` 或 `__getitem__()` 方法的对象都是可迭代的。常见的可迭代对象包括列表、元组、字典、集合、字符串等。
+* **可迭代对象（Iterable）**：可以通过 `iter()` 获取迭代器的对象。通常实现返回迭代器的 `__iter__()`；也可通过从索引 0 开始、以 `IndexError` 结束的 `__getitem__()` 序列协议支持迭代。常见的可迭代对象包括列表、元组、字典、集合、字符串等。
 * **迭代器（Iterator）**：所有迭代器都是可迭代的，但反过来可迭代对象不一定是迭代器。可以通过 `iter()` 函数将可迭代对象转换为迭代器。
 
 ```python
+from collections.abc import Iterable, Iterator
+
 # 可迭代对象
 lst = [1, 2, 3]
 print(isinstance(lst, Iterable))  # 输出: True
@@ -88,6 +90,8 @@ print(isinstance(lst, Iterable))  # 输出: True
 it = iter(lst)
 print(isinstance(it, Iterator))  # 输出: True
 ```
+
+`Iterable` 和 `Iterator` 需要从 `collections.abc` 导入。仅实现上述 `__getitem__()` 序列协议的对象可能可迭代，却不被 `isinstance(obj, Iterable)` 识别；判断能否迭代时应尝试 `iter(obj)`。参见 [Python 官方接口说明](https://docs.python.org/3/library/collections.abc.html)。
 
 #### 5. 迭代器的应用场景
 
@@ -131,6 +135,8 @@ for _ in range(10):
 ```
 
 #### 6. 迭代器的性能
+
+下面的内存优势适用于按需产生或读取数据的实现。给已经完整加载的列表调用 `iter()` 不会释放列表原有数据；是否节省内存取决于底层数据来源和实现。
 
 * **内存效率**：因为迭代器是惰性求值的，它们仅在需要时才生成元素，因此内存占用更小。
 * **流式处理**：通过迭代器，你可以实现流式数据处理，不需要等待整个数据集加载完成就可以开始处理。

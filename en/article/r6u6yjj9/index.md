@@ -75,10 +75,12 @@ Here, `iter()` obtains an iterator for the list and `next()` retrieves the next 
 
 #### 4. Iterators and iterables
 
-* **Iterable:** Any object that implements `__iter__()` or `__getitem__()` is iterable. Common examples include lists, tuples, dictionaries, sets, and strings.
+* **Iterable:** An object for which `iter()` can obtain an iterator. This usually means a valid `__iter__()` method, or a `__getitem__()` sequence protocol starting at index 0 and ending with `IndexError`. Common examples include lists, tuples, dictionaries, sets, and strings.
 * **Iterator:** Every iterator is iterable, but not every iterable is itself an iterator. Call `iter()` to obtain an iterator from an iterable.
 
 ```python
+from collections.abc import Iterable, Iterator
+
 # Iterable object
 lst = [1, 2, 3]
 print(isinstance(lst, Iterable))  # Output: True
@@ -87,6 +89,8 @@ print(isinstance(lst, Iterable))  # Output: True
 it = iter(lst)
 print(isinstance(it, Iterator))  # Output: True
 ```
+
+Import `Iterable` and `Iterator` from `collections.abc`. An object supporting only the `__getitem__()` sequence protocol can be iterable without being recognized by `isinstance(obj, Iterable)`; try `iter(obj)` to check whether iteration is supported. See the [official Python interface documentation](https://docs.python.org/3/library/collections.abc.html).
 
 #### 5. Iterator use cases
 
@@ -130,6 +134,8 @@ Output:
 ```
 
 #### 6. Iterator performance
+
+The memory benefits below apply to implementations that produce or read data on demand. Calling `iter()` on an already populated list does not release its existing data; memory savings depend on the underlying data source and implementation.
 
 * **Memory efficiency:** Because iterators are evaluated lazily, they produce an element only when it is needed and therefore consume less memory.
 * **Streaming:** An iterator lets processing begin before a complete data set has been loaded.
