@@ -26,6 +26,7 @@ const stripHtmlTags = (value: string) => {
 }
 const stripMarkdown = (value: string) => stripHtmlTags(value.replace(/!?(?:\[([^\]]*)\])\([^)]*\)/g, '$1')).trim()
 const getLink = (value: string) => value.match(/\[[^\]]*\]\((https?:\/\/[^)]+)\)/)?.[1]
+  ?? value.match(/<AffiliateLink\s+href=["'](https?:\/\/[^"']+)["']/)?.[1]
 
 export const extractPlanTables = (markdown: string, file = ''): MarkdownTable[] => {
   const lines = markdown.split(/\r?\n/)

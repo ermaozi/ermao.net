@@ -41,6 +41,7 @@ const labels = computed(() => isEnglish.value
       >
         <img
           :src="item.image"
+          :style="{ objectFit: item.imageFit || 'cover' }"
           :alt="item.imageAlt || (isEnglish ? `${item.name} proxy-service review screenshot` : `${item.name} 机场推荐评测截图`)"
           loading="lazy"
         >
