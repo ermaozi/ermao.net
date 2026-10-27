@@ -1,6 +1,8 @@
 ---
 title: Telegram Registration, Privacy, and Beginner's Guide for 2026
 createTime: 2025/10/15 01:31:07
+updateTime: 2026/10/27 14:18:34
+sticky: 98
 permalink: /en/blog/telegram/
 lang: en-US
 translationOf: /blog/telegram/
@@ -44,6 +46,12 @@ Delivery to some `+86` numbers may be unreliable. A separate overseas mobile num
 
 - For the source site's eSIM example, see the [9eSIM guide](/en/blog/9esim/).
 - If Telegram is unreachable on your network, see the [proxy-service guide](/en/posts/vpn/).
+
+### Another account option (sponsored)
+
+If you prefer not to complete registration yourself, you can review <AffiliateLink href="https://tghaogm.com/?ref=ermao">Telegram账号购买</AffiliateLink> (Telegram account purchase), compare the available options and delivery instructions with your needs, and then decide whether to buy. Before paying, confirm the login method, ongoing control of the linked phone number, other active sessions, and how two-step verification and the recovery email are handed over. Buying an account does not guarantee lasting access or freedom from restrictions; do not pay if control cannot be established.
+
+[Telegram's FAQ](https://telegram.org/faq#q-i-have-a-new-phone-number-what-do-i-do) advises retaining access to the linked number. This is a sponsored entry point; this site has not purchased or tested the seller's account delivery, and the link does not imply Telegram endorsement.
 
 ### Step 1: install an official client
 

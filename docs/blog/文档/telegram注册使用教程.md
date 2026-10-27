@@ -1,7 +1,8 @@
 ---
 title: 2026年最新 telegram（电报、飞机）注册使用教程
 createTime: 2025/10/15 01:31:07
-updateTime: 2026/10/09 19:21:00
+updateTime: 2026/10/27 14:18:34
+sticky: 98
 permalink: /blog/telegram/
 description: Telegram注册使用教程：学习Telegram隐私保护、跨平台同步、群组频道创建和机器人使用。适合新手，包含完整注册流程、核心功能和安全建议。
 tags:
@@ -42,6 +43,12 @@ Telegram以**Telegram隐私保护**、跨平台同步和高可用性著称。支
 
 - 不清楚如何获取虚拟号码？参考：[9esim使用指南 - 获取国外手机号，注册Google、Telegram等账号](./9esim使用指南.md)
 - 不了解如何访问Telegram？参考：[便宜好用的翻墙机场推荐评测](/posts/vpn/)
+
+### 其他账号选择（推广）
+
+如果不想自己完成注册，也可以了解一下 <AffiliateLink href="https://tghaogm.com/?ref=ermao">Telegram账号购买</AffiliateLink>，先按自己的使用需求查看账号选项与交付说明，再决定是否购买。付款前确认登录方式、关联号码能否由你持续控制、是否存在他人登录会话，以及两步验证和恢复邮箱的交接方式。购买账号不保证长期访问或免受限制；无法核清控制权时，不建议付款。
+
+[Telegram 官方 FAQ](https://telegram.org/faq#q-i-have-a-new-phone-number-what-do-i-do)提醒用户保持对关联号码的访问权。以上是推广入口，本站未购买或验证该平台的账号交付，不代表 Telegram 官方认证。
 
 ### 步骤1：下载与安装Telegram
 

@@ -46,7 +46,7 @@ test('Article identity, historical screenshots and existing English factual boun
   for (const [source, route, created, images] of [[telegram, 'telegram', '2025/10/15 01:31:07', 10], [esim, '9esim', '2025/10/14 11:14:12', 21]]) {
     assert.ok(source.includes(`permalink: /blog/${route}/`))
     assert.ok(source.includes(`createTime: ${created}`))
-    assert.match(source, /updateTime: 2026\/10\/09 /)
+    assert.ok(source.includes(`updateTime: ${route === 'telegram' ? '2026/10/27' : '2026/10/09'} `))
     assert.equal((source.match(/!\[/g) || []).length, images)
   }
   assert.match(telegram, /title: 2026年最新 telegram（电报、飞机）注册使用教程/)
