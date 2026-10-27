@@ -18,7 +18,7 @@ tags:
   - 翻墙VPN
   - 梯子
 title: 2026机场推荐与VPN评测：套餐价格、节点订阅与风险对比
-updateTime: 2026/10/08 00:00:00
+updateTime: 2026/10/27 13:58:45
 permalink: /posts/vpn/
 description: 对比2026年机场套餐价格、月付与不限时流量包、Clash和Shadowrocket订阅兼容性，查看单篇评测与跑路风险记录；首次购买先用短周期验证自己的网络。
 head:
