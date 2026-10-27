@@ -19,7 +19,7 @@
 |---|---|---|--|---|---|---|
 |[ssone](#ssone)|[hello-ssone.com](https://www.flybit6202.com/#/register?code=MmE2PsQJ)| 1天 1G |10元 60G/月|❌|[TG](https://t.me/+rYzRmCbJfIw3ZTM1)|[前往](./v2/机场推荐ssone.md)|
 |[flybit](#flybit)|[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM7)| 1天2G |12元 100G/月|✔|[TG](https://t.me/flybitvip)|[前往](./v1/机场推荐flybit.md)|
-|[xxyun](#xxyun)|[xxyun.de](https://xxyun.at/?code=HOWnn58c)| 无 |9.99元 100G/月|✔|[TG](https://t.me/+eYsE6P_xvjk2NGY5)|[前往](./v2/机场推荐xxyun.md)|
+|[xxyun](#xxyun)|[www.xxyun.ai](https://www.xxyun.ai/?code=HOWnn58c)| 无 |9.99元 100G/月|✔|[TG](https://t.me/+eYsE6P_xvjk2NGY5)|[前往](./v2/机场推荐xxyun.md)|
 |[ccyz](#ccyz)|[ccyz.org](https://xxyun.at/?code=HOWnn58c)| 1G |历史15元/月；100G/150G冲突，支付页核实|❌|[TG](https://t.me/+jiosLuqA9Mk0Yjkx)|[前往](./v2/机场推荐ccyz.md)|
 [星岛梦](#星岛梦)|[ermaov1.xdmvipaff.cc](https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY)| 无 |16元 100G/月|✔|[TG](https://t.me/XDM6666666)|[前往](./v2/机场推荐星岛梦.md)|
 |[光年梯](#光年梯)|[ermaozi02.gntvipaff.cc](https://ermaozi02.gntvipaff.cc/#/?code=FSEQIfPr)| 无 |18元 110G/月|✔|[TG](https://t.me/guangnianti)|[前往](./v2/机场推荐光年梯.md)|
@@ -394,7 +394,7 @@ CAC官网地址：[www.cac.mom](https://www.cac.mom/#/register?code=kYL5chvN)
 
 ### xxyun
 
-xxyun官网地址：[https://xxyun.de](https://xxyun.at/?code=HOWnn58c)
+xxyun官网地址：[www.xxyun.ai](https://www.xxyun.ai/?code=HOWnn58c)
 
 最便宜订阅：9.99元 100G/月。
 
@@ -412,11 +412,11 @@ xxyun加速特性如下：
 
 | 套餐 | 价格 | 流量 | 购买地址 |
 | --- | --- | --- | --- |
-| 初级套餐 | 9.99元/每月 | 100G/月 | [点击购买](https://xxyun.at/?code=HOWnn58c) |
-| 中级套餐 | 19.9元/每月 | 300G/月 | [点击购买](https://xxyun.at/?code=HOWnn58c) |
-| 高级套餐 | 39.9元/每月 | 1000G/月 | [点击购买](https://xxyun.at/?code=HOWnn58c) |
-| 500G[不限时] | 66.66元/一次性 | 500G/不限时 | [点击购买](https://xxyun.at/?code=HOWnn58c) |
-| 2888G[不限时] | 199元/一次性 | 2888G/不限时 | [点击购买](https://xxyun.at/?code=HOWnn58c) |
+| 初级套餐 | 9.99元/每月 | 100G/月 | [点击购买](https://www.xxyun.ai/?code=HOWnn58c) |
+| 中级套餐 | 19.9元/每月 | 300G/月 | [点击购买](https://www.xxyun.ai/?code=HOWnn58c) |
+| 高级套餐 | 39.9元/每月 | 1000G/月 | [点击购买](https://www.xxyun.ai/?code=HOWnn58c) |
+| 500G[不限时] | 66.66元/一次性 | 500G/不限时 | [点击购买](https://www.xxyun.ai/?code=HOWnn58c) |
+| 2888G[不限时] | 199元/一次性 | 2888G/不限时 | [点击购买](https://www.xxyun.ai/?code=HOWnn58c) |
 
 ---
 

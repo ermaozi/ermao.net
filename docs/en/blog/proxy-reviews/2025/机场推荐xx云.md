@@ -20,7 +20,7 @@ The source article describes XX Cloud as a high-value service with high-quality 
 
 The one-use 5% discount code is `xxyun.xyz`.
 
-Official website: [https://xxyun.de](https://xxyun.at/?code=HOWnn58c)
+Official website: [www.xxyun.ai](https://www.xxyun.ai/?code=HOWnn58c)
 
 <!-- more -->
 
@@ -28,7 +28,7 @@ Official website: [https://xxyun.de](https://xxyun.at/?code=HOWnn58c)
 
 The least expensive subscription is CNY 8.89 per month for 100 GB.
 
-Use the one-time 5% discount code `xxyun.xyz` when purchasing from [XX Cloud](https://xxyun.at/?code=HOWnn58c).
+Use the one-time 5% discount code `xxyun.xyz` when purchasing from [XX Cloud](https://www.xxyun.ai/?code=HOWnn58c).
 
 The provider advertises:
 
