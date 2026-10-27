@@ -54,13 +54,29 @@ scp firmware-file root@your-router-ip:/tmp/
 
 ### Write the firmware
 
-Use `dd` to write the firmware. `/dev/sda` in the command below is the small computer's system disk. If your device uses another disk, identify it with `lsblk`.
+::: danger Confirm the destination disk before writing
+Writing an image overwrites the selected disk's partition table and data. Back up anything you need to retain to another device and verify that it can be restored. `/dev/sda` is not a fixed name for the internal disk: it may be the USB boot drive or another disk. Do not infer the destination from the device name alone.
+:::
+
+From the USB-booted system, identify the intended **whole disk** by its capacity, model, serial number, and mount points; distinguish it from the boot USB and any data disks. `lsblk` can help if installed; otherwise use the available disk-management tools. Do not write to a mounted destination or a partition such as `/dev/sda1`. If the disk identity or image compatibility is uncertain, stop here.
+
+The following is a template for a gzip-compressed image. Replace the image path and set `TARGET_DISK` to the verified whole-disk path. The empty default deliberately prevents writing; the block-device check does not prove that you selected the correct disk.
 
 ```bash
 ssh root@your-router-ip
 cd /tmp
-gzip -dc firmware-file | dd of=/dev/sda
+IMAGE='replace-with-image.img.gz'
+TARGET_DISK='' # Set only after identifying the intended whole disk
+
+if [ -n "$TARGET_DISK" ] && [ -b "$TARGET_DISK" ] && gzip -t "$IMAGE"; then
+    gzip -dc "$IMAGE" | dd of="$TARGET_DISK"
+    sync
+else
+    echo 'Stopped: verify the image and destination disk.'
+fi
 ```
+
+`gzip -t` checks compressed-file integrity, not authenticity or hardware compatibility. Compare the download against the official checksum separately. Check both decompression and write output for errors; do not reboot after an error. `sync` flushes pending writes but does not verify the installed system. See the [GNU dd manual](https://www.gnu.org/software/coreutils/manual/html_node/dd-invocation.html) for the meaning of `of=`; the tools included in OpenWrt may be BusyBox versions with different optional flags.
 
 ### Reboot
 
