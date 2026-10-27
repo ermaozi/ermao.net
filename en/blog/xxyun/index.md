@@ -1,124 +1,109 @@
 ---
 url: /en/blog/xxyun/index.md
 description: >-
-  A dated XXYUN review covering its CNY 9.99 monthly 100 GB tier, non-expiring
-  packages, BGP and service-access claims, coupon snapshot, and test limits.
+  Compare recorded XXYUN monthly and one-time plans, the current new-user 10%
+  offer, setup steps and limits of the archived test image.
 ---
-XXYUN's recorded entry tier costs CNY 9.99 per month for 100 GB. Provider materials describe all-BGP relay, optimization for China Telecom, China Unicom, and China Mobile access networks, no evening-peak throttling, and access to major streaming and AI services.
+XXYUN is worth comparing if you prefer to test a small monthly plan before committing more money. The existing catalog records **CNY 9.99/month for 100G/month**, larger monthly tiers and one-time data packages. These are recorded prices, not newly verified checkout offers. The provider’s current public material advertises **10% off for new users with `xxyun`**; eligible plans and the deadline still need confirmation.
 
-* Recorded website: [www.xxyun.ai](https://www.xxyun.ai/?code=HOWnn58c)
-* Another domain named in the source: `xxyun.de`
-* Recorded codes: `xxyun` for 5% off; `xxyun85` for a one-time 15% new-customer discount
+View the current XXYUN entry and offer
 
-The domain difference and every code should be verified before entering credentials or paying.
+## Overview {#overview}
 
-## Overview
+![XXYUN logo =1580x550](https://image.ermao.net/images/blog/xxyun/image.png)
 
-![XXYUN logo and account screen =1580x550](https://image.ermao.net/images/blog/xxyun/image.png)
-
-| Item | Source record |
+| Question | What to know before choosing |
 | --- | --- |
-| Lowest plan | CNY 9.99 for 100 GB/month |
-| Coupons | `xxyun` for 5% off; `xxyun85` for 15% off once for a new customer |
-| Route description | All-BGP relay and optimization for three mainland access carriers |
-| Service-access claims | Netflix, Disney+, HBO, and ChatGPT |
-| Protocol claims | Shadowsocks, V2Ray-compatible, and Trojan |
-| Support claim | 24/7 online response |
-| Operating-history claim | Approximately two years at the review date |
+| Entry budget | Recorded CNY 9.99/month for 100G/month; live checkout price unverified |
+| Promotion | Public notice: new-user code `xxyun` for 10% off; check the final amount |
+| Plan types | Monthly and one-time packages are recorded below |
+| Routes and applications | BGP relay, carrier optimization, streaming and AI access are provider claims to test on your own connection |
+| Clients | Confirm the subscription format and current client version; universal subscriptions do not imply compatibility with every old app |
 
-“BGP relay” describes routing architecture, not automatically a dedicated line. “No throttling” also does not prevent congestion or upstream capacity limits.
+## Choosing a plan {#price}
 
-## Recorded plans
+The table preserves existing prices and the original G unit. **No account was used to verify the current catalog.** Compare the allowance period before the headline price:
 
-The catalog includes:
+* **First purchase:** if the entry monthly tier remains available, use it to check required regions, applications and evening performance before prepaying more.
+* **Regular monthly use:** compare the recorded 100G, 300G and 1000G tiers against actual usage, rather than buying unused data for a lower unit price.
+* **Occasional backup:** the recorded 500G and 2888G one-time packages may suit intermittent use once their current terms are confirmed. “Non-expiring” describes the package rule, not a promise that the provider will operate forever.
 
-* CNY 9.99/month for 100 GB;
-* CNY 19.90/month for 300 GB;
-* CNY 39.90/month for 1,000 GB;
-* CNY 66.66 once for a 500 GB non-expiring allowance;
-* CNY 199 once for a 2,888 GB non-expiring allowance.
+The provider’s public material warns that changing plans overwrites the current plan without a refund. Existing subscribers should confirm how remaining data is treated instead of assuming plans stack.
 
-“Non-expiring” applies to the recorded data-reset rule, not the lifetime of the service. Test a monthly tier before placing a large prepaid balance with one operator.
+Check XXYUN plans and the final price
 
-## Provider-stated strengths
+### Using the new-user promotion
 
-* approximately two years of operation at the source date;
-* BGP relay and access-carrier optimization;
-* streaming and AI-service access;
-* no evening-peak node speed cap;
-* no device-count limit;
-* continuous support.
+The public provider configuration read on 27 October 2026 advertises code **`xxyun` for 10% off for new users**. Enter it at checkout and confirm eligibility and the final amount. Eligible billing periods, expiry, stacking and use-count restrictions were not fully available.
 
-These statements are not substitutes for current route evidence, provider status, or local testing. Absence of negative reports in a limited search is not proof of future solvency or service quality.
+The previous review listed `xxyun85` for 15% off, and an earlier article listed `xxyun.xyz` for 5% off. Neither code’s current validity was confirmed; that does not prove they have expired. Follow the account’s current offer terms and checkout result.
 
-## Archived performance observation
+## Who should consider it? {#section-6}
 
-![XXYUN speed-test screenshot =1280x612](https://image.ermao.net/images/blog/xxyun/image-1.png)
+**Potential fit:** individuals who want to limit the first payment, compare regions using a small monthly tier, or consider occasional backup data after confirming package validity.
 
-The source records this environment:
+**Pause before buying:** users who require an uptime SLA, guaranteed ongoing platform access, unconfirmed multi-user sharing, or a large long-term commitment based only on an old screenshot. A provider’s “no speed cap” statement does not mean every route can saturate your broadband connection.
 
-* Guangdong China Telecom 300 Mbps broadband;
-* evening peak around 20:00–21:00;
-* download results of roughly 70–110 Mbps depending on node;
-* approximately 25 ms to Hong Kong, 50–60 ms to Japan, and above 70 ms to Singapore;
-* successful tests of Netflix, Disney+, YouTube 4K, and ChatGPT;
-* a 24-hour run with no observed disconnect and a reported 99.7% online figure.
+## How to assess the route claims {#section-3}
 
-No raw logs or calculation method accompany the 99.7% figure, so it should not be interpreted as a service-level measurement. All results are specific to the source network and test window.
+Existing provider materials describe BGP relay, optimization for mainland access carriers, streaming and AI-service support. Treat these as things to test, not proof of a dedicated-line contract or guaranteed application access.
 
-## Setup path
+Check your normal websites, video playback and seeking, calls, and the target platform’s country and account requirements at the times you normally use them. Current operating history, support response times and device rules were not fully verified, so this revision does not use “two years of operation” or immediate round-the-clock support as purchase guarantees.
 
-1. Verify the current operator and official domain.
-2. Register and choose the smallest monthly tier.
-3. Test a coupon at checkout and confirm the final amount.
-4. Copy the subscription URL from the authenticated dashboard.
-5. Import it into a trusted client.
-6. Test the required nodes during and outside the evening peak.
+## Original screenshot and its limits {#performance}
 
-Do not post the subscription URL publicly; it functions as an account credential.
+![Archived XXYUN test screenshot dated 2025-02-14 =1280x612](https://image.ermao.net/images/blog/xxyun/image-1.png)
 
-## Use-case guidance
+The unchanged image is retained for reference. It is timestamped **2025-02-14 04:05:49 CST** and shows differing speeds, latency and application results, including failed or unavailable results. This revision checked the image, not a new connection or service-access test.
 
-| Use case | Candidate region | What to verify |
+The previous review did not provide reproducible continuous-test logs. This revision does not derive uptime figures or speed guarantees from it, and the screenshot does not establish current availability.
+
+## From the entry page to a first connection {#client}
+
+1. Open the specified XXYUN entry. It currently opens a navigation page; choose an XXYUN entry and check the destination branding. A routing domain’s name alone does not identify a different provider.
+2. If you decide to buy, register as instructed and confirm allowance, reset rules, multipliers, devices, simultaneous sessions, refunds and plan-change terms.
+3. New users can try `xxyun` at checkout. Confirm the final amount; do not assume a missing discount will be refunded later.
+4. Obtain the matching subscription or configuration from the account and import it using a guide below. Subscription URLs are credentials; do not share them publicly or send them to unknown conversion services.
+5. Check one working node, required applications and data deductions. If something fails, refresh the subscription, check local connectivity and try another node before contacting support with redacted error details.
+
+### Choose a client guide {#client-usage}
+
+| Device | Site guide | Check before importing |
 | --- | --- | --- |
-| Video | Hong Kong, Taiwan, or Japan | Exact catalog region, bitrate, seeking, and evening peak |
-| AI services | United States or Singapore | Supported-country rules, login risk, and exact feature |
-| Remote work | Hong Kong or Singapore | Calls, source-code downloads, and packet loss |
-| Gaming | Japan or South Korea | UDP support, game route, NAT, and jitter |
-| Social media | Region matching the account's legitimate use | IP stability and platform terms |
+| Android | [Clash Meta for Android](/en/article/eh8f4n86/) | Official release source, architecture and subscription format |
+| Windows / macOS / Linux | [Clash Verge Rev](/en/article/0gematwc/) | System requirements, current version and subscription support |
+| iPhone / iPad | [Shadowrocket](/en/article/z747kgjd/) | Store availability, purchase eligibility and configuration format |
 
-A region recommendation is only a starting point; physical distance and the local ISP determine the actual route.
+The provider publishes platform download entries; we have not reviewed or run those installers. Prefer official client sources and instructions, and do not treat shared Apple accounts as a default purchase method.
 
-## Frequently asked questions
+## Frequently asked questions {#faq}
 
-### Are refunds available?
+### What is the entry price and promotion?
 
-The source warns that used virtual services are normally non-refundable. Read the live refund policy before purchase and do not assume a screenshot overrides the current terms.
+The recorded entry plan is CNY 9.99/month for 100G/month. The current public provider notice advertises new-user code `xxyun` for 10% off. Confirm the live price, eligible plans and deadline at checkout.
 
-### Can several people share an account?
+### Can plans be refunded or stacked?
 
-The provider description says the device count is unlimited. That may cover one user's devices and does not necessarily authorize sharing or resale. Confirm simultaneous-connection and fair-use rules.
+The full refund policy was not available. Public configuration warns that changing plans overwrites the existing plan without a refund. Confirm remaining data, expiry and replacement rules before paying.
 
-### What if speed is poor?
+### Are streaming, AI access or account sharing guaranteed?
 
-Refresh the subscription, check the local connection, test a different node, verify system time, and compare the provider's status notice. Changing protocol is useful only when the subscription and client actually support the alternative.
+No. Access depends on nodes, regions, accounts and platform policies. Confirm current device and sharing terms with the provider.
 
-## Before purchasing
+### Which plan should a first-time user choose?
 
-* Confirm the live plan, traffic, multiplier, expiry, device, and refund terms.
-* Verify the official domain because the source names both `.at` and `.de`.
-* Test a monthly tier for several days.
-* Retest streaming and AI services rather than relying on the archived screenshot.
-* Keep an independently operated backup.
+Check whether a small monthly tier is available, test your own connection, then size any upgrade around actual usage. Occasional users should also confirm one-time-package terms rather than equating a large allowance with better value.
 
-## Client guides
+## Next step {#conclusion}
 
-* [Clash Meta for Android](/en/article/eh8f4n86/)
-* [Clash Verge for Windows, Linux, and macOS](/en/article/0gematwc/)
-* [Shadowrocket for iPhone and iPad](/en/article/z747kgjd/)
+If limiting the first payment and testing before committing suits you, check the current small monthly options at XXYUN. Confirm the plan and discount, then test your own connection instead of relying only on sales claims or an old image.
 
-Compare current entries in the [2026 proxy-service review list](/en/posts/vpn/) and [provider-selection guide](/en/article/choose-good-airport/).
+## More comparisons {#section-9}
 
-::: info
-This page is a dated technical and purchasing record. Follow the laws and service terms that apply to you.
+* [Provider and plan comparison](/en/posts/vpn/)
+* [Provider cards](/en/airport/)
+* [Earlier XXYUN introduction and historical material](/en/article/6e3quult/)
+
+::: info Sources and affiliate disclosure
+This revision checked the public navigation page, public registration-page material and existing image on 27 October 2026. No registration, login, payment or independent route test was performed. Plan prices are existing records; purchase links include a referral parameter. See the [affiliate disclosure](/en/affiliate-disclosure/) and follow applicable laws and platform terms.
 :::
