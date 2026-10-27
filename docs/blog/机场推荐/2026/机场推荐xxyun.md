@@ -59,9 +59,9 @@ head:
       }
 ---
 
-[XXYUN机场](https://xxyun.at/?code=HOWnn58c)详细评测：9.99元100G/月起的高性价比 BGP 专线机场，晚高峰不限速、全流媒体解锁，附 85 折/9 折优惠券，是 2026 年值得关注的老牌稳定选择。
+[XXYUN机场](https://www.xxyun.ai/?code=HOWnn58c)详细评测：9.99元100G/月起的高性价比 BGP 专线机场，晚高峰不限速、全流媒体解锁，附 85 折/9 折优惠券，是 2026 年值得关注的老牌稳定选择。
 
-XXYUN机场官网地址：[https://xxyun.de](https://xxyun.at/?code=HOWnn58c)
+XXYUN机场官网地址：[www.xxyun.ai](https://www.xxyun.ai/?code=HOWnn58c)
 
 <!-- more -->
 
@@ -82,13 +82,13 @@ XXYUN机场官网地址：[https://xxyun.de](https://xxyun.at/?code=HOWnn58c)
 
 ![xx云加速logo =1580x550](https://image.ermao.net/images/blog/xxyun/image.png)
 
-**[XXYUN 机场](https://xxyun.at/?code=HOWnn58c)** 稳定运营两年，凭借超高性价比、全 BGP 中转与国内三网优化，在同档位机场中表现突出。官方承诺晚高峰不限速、节点持续维护，适合预算有限但追求稳定体验的用户。
+**[XXYUN 机场](https://www.xxyun.ai/?code=HOWnn58c)** 稳定运营两年，凭借超高性价比、全 BGP 中转与国内三网优化，在同档位机场中表现突出。官方承诺晚高峰不限速、节点持续维护，适合预算有限但追求稳定体验的用户。
 
 ### 📊 基本信息速览
 
 | 项目 | 详情 |
 |------|------|
-| 🌐 **官网地址** | [https://xxyun.at/?code=HOWnn58c](https://xxyun.at/?code=HOWnn58c) |
+| 🌐 **官网地址** | [https://www.xxyun.ai/?code=HOWnn58c](https://www.xxyun.ai/?code=HOWnn58c) |
 | 💰 **最便宜套餐** | 9.99 元 / 100G / 月 |
 | 🎟️ **优惠券** | 9 折券码：`xxyun` <br> 85 折券码：`xxyun85`（限新客一次） |
 | 🌍 **线路架构** | 全 BGP 中转 + 国内三网优化 |
@@ -126,7 +126,7 @@ XXYUN机场官网地址：[https://xxyun.de](https://xxyun.at/?code=HOWnn58c)
 
 ## 📱 客户端配置指南 {#client}
 
-1. **注册账号**：访问[官网](https://xxyun.at/?code=HOWnn58c)填写邮箱注册并验证。  
+1. **注册账号**：访问[官网](https://www.xxyun.ai/?code=HOWnn58c)填写邮箱注册并验证。  
 2. **购买套餐**：挑选合适流量包，结算时使用券码 `xxyun85` 享 85 折或 `xxyun` 享 9 折。  
 3. **复制订阅**：在用户中心获取 Clash / Shadowrocket / V2Ray 等订阅链接。  
 4. **导入客户端**：按设备选择客户端粘贴订阅，一键同步节点。  
@@ -180,7 +180,7 @@ A：换节点、切换协议或重新导入订阅；仍有问题可联系在线�
 - 🛡️ **服务稳**：老牌运营两年，客服在线响应快。
 
 如果你正在寻找一款预算友好且稳定的专线机场，**XXYUN** 无疑值得列入 2026 年必试清单。  
-👉 **立即体验**：[前往 XXYUN 官网下单](https://xxyun.at/?code=HOWnn58c)，记得使用优惠码 `xxyun85` 享受 85 折或 `xxyun` 享受 9 折！
+👉 **立即体验**：[前往 XXYUN 官网下单](https://www.xxyun.ai/?code=HOWnn58c)，记得使用优惠码 `xxyun85` 享受 85 折或 `xxyun` 享受 9 折！
 
 ## 🏆 更多机场推荐 {#section-9}
 - 🌟 [2026年最新机场推荐汇总](https://www.ermao.net/posts/vpn/)
