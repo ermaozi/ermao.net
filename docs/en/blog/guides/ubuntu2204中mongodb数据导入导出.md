@@ -27,8 +27,10 @@ MongoDB separates logical data interchange from full-fidelity database backups:
 
 | Task | Export | Import or restore | Format |
 | --- | --- | --- | --- |
-| One collection for interchange | `mongoexport` | `mongoimport` | JSON, CSV, or TSV |
+| One collection for interchange | `mongoexport` | `mongoimport` | JSON or CSV |
 | Database or multiple collections | `mongodump` | `mongorestore` | BSON plus metadata |
+
+[`mongoexport`](https://www.mongodb.com/docs/database-tools/mongoexport/) writes JSON or CSV. [`mongoimport`](https://www.mongodb.com/docs/database-tools/mongoimport/) can also read TSV produced by another tool; TSV is not a `mongoexport --type` option.
 
 Use `mongodump` and `mongorestore` when indexes, BSON types, and collection metadata matter. JSON produced by `mongoexport` is not a replacement for a complete backup.
 
@@ -135,16 +137,18 @@ Use `mongoexport --query` only to select documents for a JSON/CSV export. It doe
 
 ### `Authentication failed`
 
-The user may have been created in `admin` while the application database appears in the path. Specify the authentication source in the URI:
+The user may have been created in `admin` while the application database is `mydatabase`. If that is the actual account configuration, specify the authentication database and let `mongoimport` prompt for the password:
 
 ```bash
 mongoimport \
-  --uri="mongodb://USERNAME:PASSWORD@localhost:27017/mydatabase?authSource=admin" \
+  --uri="mongodb://localhost:27017/mydatabase" \
+  --username=USERNAME \
+  --authenticationDatabase=admin \
   --collection=mycollection \
   --file=output.json
 ```
 
-Avoid putting a real password in shell history or process listings. Prefer an approved secret mechanism or an interactive password option supported by the current tool. Also verify the username, roles, authentication mechanism, TLS requirements, and target host; an authentication error is not explained solely by the MongoDB server being newer than version 4.0.
+Replace `USERNAME` with the actual user and change `admin` if the user was created in another authentication database. The [official password option reference](https://www.mongodb.com/docs/database-tools/mongoimport/#std-option-mongoimport.--password) confirms that supplying `--username` without `--password` prompts interactively. Do not put the real password in the command or URI, where it may appear in shell history or process listings. Also verify the username, roles, authentication mechanism, TLS requirements, and target host; an authentication error is not explained solely by the MongoDB server being newer than version 4.0.
 
 ## Verification
 
