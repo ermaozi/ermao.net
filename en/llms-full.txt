@@ -758,7 +758,7 @@ The original heading and body reported different discount percentages. Check the
 * Code: `xxyun85`
 * Stated discount: 15% off all plans, usable once
 * Stated validity when recorded: no published end date
-* Website: [xxyun.xyz](https://xxyun.at/?code=HOWnn58c)
+* Website: [www.xxyun.ai](https://www.xxyun.ai/?code=HOWnn58c)
 
 ## Chongshang Yunxiao
 
@@ -793,7 +793,7 @@ The original heading and body reported different discount percentages. Check the
 * Code: `xxyun`
 * Stated discount: 5% off all plans
 * Stated validity when recorded: no published end date
-* Website: [xxyun.xyz](https://xxyun.at/?code=HOWnn58c)
+* Website: [www.xxyun.ai](https://www.xxyun.ai/?code=HOWnn58c)
 
 ## Dageyun: expired National Day campaign
 
@@ -953,13 +953,13 @@ The source article describes XX Cloud as a high-value service with high-quality 
 
 The one-use 5% discount code is `xxyun.xyz`.
 
-Official website: [https://xxyun.de](https://xxyun.at/?code=HOWnn58c)
+Official website: [www.xxyun.ai](https://www.xxyun.ai/?code=HOWnn58c)
 
 ### XX Cloud overview
 
 The least expensive subscription is CNY 8.89 per month for 100 GB.
 
-Use the one-time 5% discount code `xxyun.xyz` when purchasing from [XX Cloud](https://xxyun.at/?code=HOWnn58c).
+Use the one-time 5% discount code `xxyun.xyz` when purchasing from [XX Cloud](https://www.xxyun.ai/?code=HOWnn58c).
 
 The provider advertises:
 
@@ -17807,7 +17807,7 @@ description: >-
 # Shunyun Review—CNY 99 Annual Plan and Anycast Service Claims
 Shunyun is positioned as a moderately priced multi-node service for streaming and daily work. Recorded plans range from a CNY 99 annual small tier to a CNY 68 monthly 600 GB tier.
 
-Recorded website: [ddd.jichang.best](https://ddd.jichang.best/#/register?code=QEiJcAPp)
+Recorded website: [ddd.jichang.best](https://ddd.jichang.best)
 
 ![Shunyun logo =938x540](https://image.ermao.net/images/blog/shunyun/20260407_101246-ab75d9.png)
 
@@ -17846,7 +17846,7 @@ The provider claims every node supports Netflix, Disney+, TikTok, ChatGPT, and o
 
 ## Purchase process
 
-1. Open the [recorded registration route](https://ddd.jichang.best/#/register?code=QEiJcAPp).
+1. Open the [provider website](https://ddd.jichang.best).
 2. Prefer Traveler for one month over the annual headline plan.
 3. Confirm subscription format, devices, reset, multiplier, and personal-use limits.
 4. Import the URL into a trusted compatible client.
@@ -21315,7 +21315,7 @@ description: >-
 # XXYUN Review—CNY 9.99 for 100 GB and BGP Relay Claims
 XXYUN's recorded entry tier costs CNY 9.99 per month for 100 GB. Provider materials describe all-BGP relay, optimization for China Telecom, China Unicom, and China Mobile access networks, no evening-peak throttling, and access to major streaming and AI services.
 
-* Recorded website: [xxyun.at](https://xxyun.at/?code=HOWnn58c)
+* Recorded website: [www.xxyun.ai](https://www.xxyun.ai/?code=HOWnn58c)
 * Another domain named in the source: `xxyun.de`
 * Recorded codes: `xxyun` for 5% off; `xxyun85` for a one-time 15% new-customer discount
 
@@ -23357,7 +23357,7 @@ No proxy service is risk-free. The key is to limit exposure:
 
 If you purchased a service that appears to have shut down, you are welcome to submit evidence.
 
-Leave a comment below or email the relevant materials. If the report can be verified, this page will be updated promptly to help other readers avoid the same problem. Accepted submissions will also receive **one year of proxy-service access**, provided for this round by [xxyun](https://xxyun.at/?code=HOWnn58c), as thanks.
+Leave a comment below or email the relevant materials. If the report can be verified, this page will be updated promptly to help other readers avoid the same problem. Accepted submissions will also receive **one year of proxy-service access**, provided for this round by [xxyun](https://www.xxyun.ai/?code=HOWnn58c), as thanks.
 
 ### Submission format
 

@@ -6,7 +6,7 @@ description: >-
 ---
 XXYUN's recorded entry tier costs CNY 9.99 per month for 100 GB. Provider materials describe all-BGP relay, optimization for China Telecom, China Unicom, and China Mobile access networks, no evening-peak throttling, and access to major streaming and AI services.
 
-* Recorded website: [xxyun.at](https://xxyun.at/?code=HOWnn58c)
+* Recorded website: [www.xxyun.ai](https://www.xxyun.ai/?code=HOWnn58c)
 * Another domain named in the source: `xxyun.de`
 * Recorded codes: `xxyun` for 5% off; `xxyun85` for a one-time 15% new-customer discount
 

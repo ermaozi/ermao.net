@@ -56,7 +56,7 @@ The original heading and body reported different discount percentages. Check the
 * Code: `xxyun85`
 * Stated discount: 15% off all plans, usable once
 * Stated validity when recorded: no published end date
-* Website: [xxyun.xyz](https://xxyun.at/?code=HOWnn58c)
+* Website: [www.xxyun.ai](https://www.xxyun.ai/?code=HOWnn58c)
 
 ## Chongshang Yunxiao
 
@@ -91,7 +91,7 @@ The original heading and body reported different discount percentages. Check the
 * Code: `xxyun`
 * Stated discount: 5% off all plans
 * Stated validity when recorded: no published end date
-* Website: [xxyun.xyz](https://xxyun.at/?code=HOWnn58c)
+* Website: [www.xxyun.ai](https://www.xxyun.ai/?code=HOWnn58c)
 
 ## Dageyun: expired National Day campaign
 

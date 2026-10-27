@@ -7,7 +7,7 @@ description: >-
 ---
 Shunyun is positioned as a moderately priced multi-node service for streaming and daily work. Recorded plans range from a CNY 99 annual small tier to a CNY 68 monthly 600 GB tier.
 
-Recorded website: [ddd.jichang.best](https://ddd.jichang.best/#/register?code=QEiJcAPp)
+Recorded website: [ddd.jichang.best](https://ddd.jichang.best)
 
 ![Shunyun logo =938x540](https://image.ermao.net/images/blog/shunyun/20260407_101246-ab75d9.png)
 
@@ -46,7 +46,7 @@ The provider claims every node supports Netflix, Disney+, TikTok, ChatGPT, and o
 
 ## Purchase process
 
-1. Open the [recorded registration route](https://ddd.jichang.best/#/register?code=QEiJcAPp).
+1. Open the [provider website](https://ddd.jichang.best).
 2. Prefer Traveler for one month over the annual headline plan.
 3. Confirm subscription format, devices, reset, multiplier, and personal-use limits.
 4. Import the URL into a trusted compatible client.

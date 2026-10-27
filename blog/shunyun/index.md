@@ -5,7 +5,7 @@ description: >-
 ---
 瞬云定位为中低门槛的多节点机场服务，主打“流媒体解锁 + 日常办公”双场景。当前公开套餐从年付小流量到月付大流量都有覆盖，适合从轻度到中重度用户按需选择。
 
-官网地址：[https://ddd.jichang.best](https://ddd.jichang.best/#/register?code=QEiJcAPp)
+官网地址：<https://ddd.jichang.best>
 
 ![瞬云机场logo =938x540](https://image.ermao.net/images/blog/shunyun/20260407_101246-ab75d9.png)
 
@@ -13,7 +13,7 @@ description: >-
 
 | 项目 | 信息 |
 |------|------|
-| 官网 | [ddd.jichang.best](https://ddd.jichang.best/#/register?code=QEiJcAPp) |
+| 官网 | [ddd.jichang.best](https://ddd.jichang.best) |
 | 最低门槛 | ¥99/年（限时年付小包） |
 | 节点规模 | 近 30+ 节点，多国家落地 |
 | 热门地区 | 香港、日本、新加坡等 |
@@ -87,7 +87,7 @@ description: >-
 
 ## 购买与使用流程 {#buy}
 
-1. 访问注册页：[瞬云官网](https://ddd.jichang.best/#/register?code=QEiJcAPp)
+1. 访问官网：[瞬云官网](https://ddd.jichang.best)
 2. 注册并登录后台。
 3. 选择套餐并完成支付（支付宝/微信/USDT）。
 4. 在面板获取订阅链接并导入客户端。

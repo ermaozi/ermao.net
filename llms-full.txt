@@ -750,7 +750,7 @@ description: 各大翻墙机场优惠券汇总，整理常见机场折扣码、�
 
 活动时间：永久有效
 
-xxyun加速机场官网：[xxyun.xyz](https://xxyun.at/?code=HOWnn58c)
+xxyun加速机场官网：[www.xxyun.ai](https://www.xxyun.ai/?code=HOWnn58c)
 
 ## 冲上云霄机场优惠券
 
@@ -788,7 +788,7 @@ flyit机场官网：[goflybit.com](https://goflybit.com/#/register?code=7h1NCdM7
 
 活动时间：永久有效
 
-xxyun加速机场官网：[xxyun.xyz](https://xxyun.at/?code=HOWnn58c)
+xxyun加速机场官网：[www.xxyun.ai](https://www.xxyun.ai/?code=HOWnn58c)
 
 ## 大哥云机场优惠券
 
@@ -943,26 +943,26 @@ TNT官网地址：[https://ermaozi02.tntvipaff.cc](https://ermaozi02.tntvipaff.c
 url: /article/6e3quult/index.md
 description: >-
   xx云加速超高性价比，节点质量高，客服实时在线，晚高峰不限速，不限制设备，对 Netflix、Disney+ 流媒体解锁服务也还不错，8k视频秒开。
-  xxyun加速95折优惠码，只能使用一次：`xxyun.xyz` xx云加速官网地址：https://xxyun.de
+  xxyun加速95折优惠码，只能使用一次：`xxyun.xyz` xx云加速官网地址：https://www.xxyun.ai/?code=HOWnn58c
 ---
 # ✈️机场推荐【xx云加速】 - 新机场、价格实惠
 xx云加速超高性价比，节点质量高，客服实时在线，晚高峰不限速，不限制设备，对 Netflix、Disney+ 流媒体解锁服务也还不错，8k视频秒开。
 
 xxyun加速95折优惠码，只能使用一次：`xxyun.xyz`
 
-xx云加速官网地址：[https://xxyun.de](https://xxyun.at/?code=HOWnn58c)
+xx云加速官网地址：[www.xxyun.ai](https://www.xxyun.ai/?code=HOWnn58c)
 
 ### xx云 机场简介
 
 最便宜的订阅有8.89元 100G/月。
 
-[xx云加速](https://xxyun.at/?code=HOWnn58c)95折优惠码，只能使用一次：`xxyun.xyz`
+[xx云加速](https://www.xxyun.ai/?code=HOWnn58c)95折优惠码，只能使用一次：`xxyun.xyz`
 
 最便宜的订阅有8.89元 100G/月。
 
 超高性价比，节点质量高，客服实时在线，晚高峰不限速，不限制设备，对 Netflix、Disney+ 流媒体解锁服务也还不错，8k视频秒开。
 
-[xxyun加速](https://xxyun.at/?code=HOWnn58c)特性如下：
+[xxyun加速](https://www.xxyun.ai/?code=HOWnn58c)特性如下：
 
 * SS协议中转机场，多隧道入口机场
 * 解锁全球流媒体、AI工具。
@@ -6677,7 +6677,7 @@ Clash是目前最受欢迎的代理客户端之一，支持多种协议包括Sha
   详细介绍：[✈️【机场推荐】SSONE - 便宜实惠、高性价比、稳定可靠](/article/ssone/)
 
 * **xx云**
-  官网地址：[https://xxyun.de](https://xxyun.at/?code=HOWnn58c)
+  官网地址：[www.xxyun.ai](https://www.xxyun.ai/?code=HOWnn58c)
 
   详细介绍：[✈️【机场推荐】xx云 - 高速稳定、节点丰富、支持多种协议](/blog/xxyun/)
 
@@ -19640,7 +19640,7 @@ description: >-
 # 2026 瞬云机场评测：年付99元起，30+节点与全平台流媒体解锁
 瞬云定位为中低门槛的多节点机场服务，主打“流媒体解锁 + 日常办公”双场景。当前公开套餐从年付小流量到月付大流量都有覆盖，适合从轻度到中重度用户按需选择。
 
-官网地址：[https://ddd.jichang.best](https://ddd.jichang.best/#/register?code=QEiJcAPp)
+官网地址：<https://ddd.jichang.best>
 
 ![瞬云机场logo =938x540](https://image.ermao.net/images/blog/shunyun/20260407_101246-ab75d9.png)
 
@@ -19648,7 +19648,7 @@ description: >-
 
 | 项目 | 信息 |
 |------|------|
-| 官网 | [ddd.jichang.best](https://ddd.jichang.best/#/register?code=QEiJcAPp) |
+| 官网 | [ddd.jichang.best](https://ddd.jichang.best) |
 | 最低门槛 | ¥99/年（限时年付小包） |
 | 节点规模 | 近 30+ 节点，多国家落地 |
 | 热门地区 | 香港、日本、新加坡等 |
@@ -19722,7 +19722,7 @@ description: >-
 
 ## 购买与使用流程 {#buy}
 
-1. 访问注册页：[瞬云官网](https://ddd.jichang.best/#/register?code=QEiJcAPp)
+1. 访问官网：[瞬云官网](https://ddd.jichang.best)
 2. 注册并登录后台。
 3. 选择套餐并完成支付（支付宝/微信/USDT）。
 4. 在面板获取订阅链接并导入客户端。
@@ -23367,9 +23367,9 @@ description: >-
   XXYUN机场怎么样？本文实测XXYUN机场速度、稳定性与流媒体解锁能力，月付仅9.99元享100G流量、全BGP中转+三网优化，老牌运营两年稳定，支持Netflix/Disney+/ChatGPT，附85折/9折优惠券。
 ---
 # 2026 XXYUN机场评测：9.99元100G老牌BGP专线机场推荐｜Netflix/ChatGPT解锁
-[XXYUN机场](https://xxyun.at/?code=HOWnn58c)详细评测：9.99元100G/月起的高性价比 BGP 专线机场，晚高峰不限速、全流媒体解锁，附 85 折/9 折优惠券，是 2026 年值得关注的老牌稳定选择。
+[XXYUN机场](https://www.xxyun.ai/?code=HOWnn58c)详细评测：9.99元100G/月起的高性价比 BGP 专线机场，晚高峰不限速、全流媒体解锁，附 85 折/9 折优惠券，是 2026 年值得关注的老牌稳定选择。
 
-XXYUN机场官网地址：[https://xxyun.de](https://xxyun.at/?code=HOWnn58c)
+XXYUN机场官网地址：[www.xxyun.ai](https://www.xxyun.ai/?code=HOWnn58c)
 
 ## 目录
 
@@ -23389,13 +23389,13 @@ XXYUN机场官网地址：[https://xxyun.de](https://xxyun.at/?code=HOWnn58c)
 
 ![xx云加速logo =1580x550](https://image.ermao.net/images/blog/xxyun/image.png)
 
-**[XXYUN 机场](https://xxyun.at/?code=HOWnn58c)** 稳定运营两年，凭借超高性价比、全 BGP 中转与国内三网优化，在同档位机场中表现突出。官方承诺晚高峰不限速、节点持续维护，适合预算有限但追求稳定体验的用户。
+**[XXYUN 机场](https://www.xxyun.ai/?code=HOWnn58c)** 稳定运营两年，凭借超高性价比、全 BGP 中转与国内三网优化，在同档位机场中表现突出。官方承诺晚高峰不限速、节点持续维护，适合预算有限但追求稳定体验的用户。
 
 ### 📊 基本信息速览
 
 | 项目 | 详情 |
 |------|------|
-| 🌐 **官网地址** | <https://xxyun.at/?code=HOWnn58c> |
+| 🌐 **官网地址** | <https://www.xxyun.ai/?code=HOWnn58c> |
 | 💰 **最便宜套餐** | 9.99 元 / 100G / 月 |
 | 🎟️ **优惠券** | 9 折券码：`xxyun`  85 折券码：`xxyun85`（限新客一次） |
 | 🌍 **线路架构** | 全 BGP 中转 + 国内三网优化 |
@@ -23431,7 +23431,7 @@ XXYUN机场官网地址：[https://xxyun.de](https://xxyun.at/?code=HOWnn58c)
 
 ## 📱 客户端配置指南 {#client}
 
-1. **注册账号**：访问[官网](https://xxyun.at/?code=HOWnn58c)填写邮箱注册并验证。
+1. **注册账号**：访问[官网](https://www.xxyun.ai/?code=HOWnn58c)填写邮箱注册并验证。
 2. **购买套餐**：挑选合适流量包，结算时使用券码 `xxyun85` 享 85 折或 `xxyun` 享 9 折。
 3. **复制订阅**：在用户中心获取 Clash / Shadowrocket / V2Ray 等订阅链接。
 4. **导入客户端**：按设备选择客户端粘贴订阅，一键同步节点。
@@ -23485,7 +23485,7 @@ A：换节点、切换协议或重新导入订阅；仍有问题可联系在线�
 * 🛡️ **服务稳**：老牌运营两年，客服在线响应快。
 
 如果你正在寻找一款预算友好且稳定的专线机场，**XXYUN** 无疑值得列入 2026 年必试清单。\
-👉 **立即体验**：[前往 XXYUN 官网下单](https://xxyun.at/?code=HOWnn58c)，记得使用优惠码 `xxyun85` 享受 85 折或 `xxyun` 享受 9 折！
+👉 **立即体验**：[前往 XXYUN 官网下单](https://www.xxyun.ai/?code=HOWnn58c)，记得使用优惠码 `xxyun85` 享受 85 折或 `xxyun` 享受 9 折！
 
 ## 🏆 更多机场推荐 {#section-9}
 
@@ -25443,7 +25443,7 @@ description: 帮大家排雷，这里汇总了2025-2026年跑路和高危预警�
 
 如果你也买到了跑路机场，欢迎提供线索。
 
-在下方评论区留言或通过邮箱提供相关材料，如果核实属实，我们会第一时间更新到这篇文章里，帮助更多人避雷。同时我们会赠送 ==**一年稳定机场订阅服务**== （本期赠送订阅由[xxyun加速](https://xxyun.at/?code=HOWnn58c)提供）作为感谢。
+在下方评论区留言或通过邮箱提供相关材料，如果核实属实，我们会第一时间更新到这篇文章里，帮助更多人避雷。同时我们会赠送 ==**一年稳定机场订阅服务**== （本期赠送订阅由[xxyun加速](https://www.xxyun.ai/?code=HOWnn58c)提供）作为感谢。
 
 ### 投稿格式
 
