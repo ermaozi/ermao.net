@@ -37,7 +37,7 @@ This file contains links to all documentation sections.
 - [✈️机场推荐【闪狐云】 - 高性价比、新机场、优质节点](/article/bls8yo25/index.md): https://erozi01.ffvipaff.cc 闪狐云跨境专线，畅享全球网络无缝连接。 ⚡ 高速稳定，全球畅游 通过五大运营商BGP+IPLC动态优化和国际多个出口节点，闪狐云的网络连接稳定无忧，确保您随时随地享受如本地般的极速上网体验。无论是高清流媒体观看、在线游戏，还是重要的工作会议，网络质量始终如一...
 - [Telegram 搜索机器人实用指南：推荐、技巧与风险边界](/article/bsnuua0h/index.md): 面向新手与进阶用户的 Telegram 搜索机器人指南，包含使用准备、机器人对比、检索技巧、风险合规提醒与常见问题，帮助你更稳妥地查找频道、群组与文件资源。
 - [Python生成器详解](/article/btszw3im/index.md): 生成器是 Python 中非常重要的特性之一，它能够让你以一种优雅且高效的方式处理大量数据。生成器可以在需要时动态生成数据，而不是一次性地把所有数据加载到内存中，这在处理大规模数据集时非常有用。本文将详细讲解生成器的概念、如何定义生成器、以及它的常见用途和最佳实践。 生成器是一种特殊的迭代器，它是通过 `yiel...
-- [通过Ollama本地部署DeepSeek代码大模型：从硬件配置到VSCode实战指南](/article/c3gj5lqy/index.md): 本文手把手教你通过Ollama在本地部署DeepSeek代码大模型，详解从FP32到INT4不同量化精度的硬件配置方案，并实战演示如何在VSCode中实现智能代码补全、实时错误检测和上下文感知开发。掌握零延迟的本地AI编程助手部署技巧，兼顾数据隐私与开发效率！
+- [通过Ollama本地部署DeepSeek代码大模型：从硬件配置到VSCode实战指南](/article/c3gj5lqy/index.md): Ollama 本地部署 DeepSeek Coder 教程：区分各系统安装方式，检查模型与内存，通过 Continue config.yaml 连接 VS Code，并验证本地接口和 GPU 占用。
 - [⚠️【机场跑路】2025年2月27日阿童木机场跑路](/article/cge8887u/index.md): 2025年2月23日起，阿童木机场大量节点断连、客服失联、官网可以正常访问与购买。 **高度预警！** 立即停止购买与续费！
 - [2026年怎么选VPN机场？科学上网翻墙机场避坑与防跑路指南](/article/choose-good-airport/index.md): 2026年选择VPN机场的实用检查清单：区分本站实测与商家资料，核对套餐周期、订阅兼容性与风险，再通过三天自测记录延迟、晚高峰速度和流媒体体验。
 - [2026 CocoDuck机场评测：海外团队自有机房｜两年稳定运营老牌机场推荐](/article/cocoduck/index.md): CocoDuck机场怎么样？本文实测CocoDuck机场速度、稳定性与流媒体解锁能力。海外团队运营、自有四个机房、40+全球节点、两年稳定运营历史，支持Netflix/ChatGPT解锁，附购买教程与免费试用指南。

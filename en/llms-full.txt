@@ -3451,7 +3451,7 @@ description: >-
   client.
 ---
 # Run DeepSeek Locally with Ollama: Hardware, Models, and VS Code
-This guide runs a DeepSeek-family model locally with Ollama, verifies where it is loaded, and connects it to VS Code through Continue. It corrects several outdated items in the Chinese source, including unsupported registry-mirror configuration, model tags, fixed hardware estimates, and Continue's deprecated JSON format.
+This guide runs a DeepSeek-family model locally with Ollama, verifies where it is loaded, and connects it to VS Code through Continue. Installation, model selection, and editor configuration are separate steps; the examples do not guarantee zero latency or automatic inline completion.
 
 ![Running DeepSeek locally =1350x900](https://image.ermao.net/images/article/c3gj5lqy/image.png)
 
@@ -3528,15 +3528,15 @@ curl http://127.0.0.1:11434/api/version
 
 Ollama binds to loopback by default. Do not change `OLLAMA_HOST` to `0.0.0.0` merely to make an editor work on the same machine.
 
-## 3. Do Not Use the Unverified “Mirror” Configuration from the Source
+## 3. Use Verified Model Sources
 
-The Chinese source listed several registry URLs and a `~/.ollama/config.json` `registry.mirrors` structure. Those entries are not documented by current Ollama configuration references, and some hostnames should not be treated as official DeepSeek or university mirrors without verification.
+An earlier draft listed several registry URLs and a `~/.ollama/config.json` `registry.mirrors` structure. Those entries are not documented by current Ollama configuration references, and some hostnames should not be treated as official DeepSeek or university mirrors without verification.
 
 Use the official Ollama library and supported proxy variables documented in the [Ollama FAQ](https://docs.ollama.com/faq). If a network requires an outbound proxy, configure the service with `HTTPS_PROXY` according to the platform documentation. Do not replace model sources with an untrusted registry: model files can execute through a complex native runtime and should be treated as a software-supply-chain input.
 
 ## 4. Choose a Model That Exists and Fits
 
-The original article used tags such as `deepseek-coder:6.7b-instruct-q4_K_M` and `deepseek-coder:33b-instruct-fp16`. Current Ollama library pages expose simpler supported tags:
+The explicit [`deepseek-coder:6.7b-instruct-q4_K_M` tag](https://ollama.com/library/deepseek-coder:6.7b-instruct-q4_K_M) is available (6.74B parameters, Q4\_K\_M, approximately 4.1 GB on disk). It is not an invalid tag. The shorter aliases below are alternatives, not proof that explicit quantization tags are unsupported:
 
 | Model | Ollama command | Published model size | Library context limit |
 | --- | --- | ---: | ---: |
@@ -3611,11 +3611,15 @@ Larger context consumes more memory. Increase it only when the task requires it,
 ollama ps
 ```
 
-## 6. Connect Continue in VS Code
+## 6. VS Code Integration and Existing Continue Configurations
 
-Install Continue from the official VS Code Marketplace listing and review the extension's permissions and telemetry settings. Current Continue documentation uses YAML; the `settings.json` structure in the Chinese source is obsolete.
+The [Continue repository](https://github.com/continuedev/continue#readme) states that the project is no longer actively maintained. The YAML example below is for reviewing an existing Continue setup, not a promise of continued support.
 
-Create or edit the Continue configuration:
+For a new setup, consult the [official Ollama VS Code integration](https://docs.ollama.com/integrations/vscode): it currently requires VS Code 1.127 or newer and links to the Ollama Marketplace extension. Open VS Code Chat and choose an already downloaded local model from the Ollama section of the model picker. The default endpoint is `http://127.0.0.1:11434`; local models do not require sign-in. If missing, check `ollama list`, then use the extension's Refresh Models or Diagnose Models commands. Chat availability does not establish autocomplete or tool-calling support.
+
+For existing Continue installations, review the installed version and preserve its settings. Continue's documented format is its own YAML configuration, rather than a `continue.models` entry in VS Code's `settings.json`.
+
+Open the local configuration through the Continue sidebar configuration selector and gear icon. The [documented paths](https://docs.continue.dev/customize/deep-dives/configuration) are `~/.continue/config.yaml` on macOS/Linux and `%USERPROFILE%\.continue\config.yaml` on Windows. Preserve existing configuration and merge the model entry rather than replacing unrelated settings:
 
 ```yaml
 name: Local DeepSeek
@@ -3627,11 +3631,13 @@ models:
     provider: ollama
     model: deepseek-coder:6.7b
     apiBase: http://127.0.0.1:11434
+    roles:
+      - chat
     defaultCompletionOptions:
       contextLength: 8192
 ```
 
-Use the exact model tag shown by `ollama list`. Continue notes that it may request a larger context than other clients; if you see “model requires more system memory,” reduce `contextLength` or choose a smaller model. See [Continue's Ollama configuration guide](https://docs.continue.dev/customize/model-providers/top-level/ollama).
+Use the exact model tag shown by `ollama list`. Save, select the configured model, and test a short non-sensitive chat request. This example enables chat only; inline completion needs its own suitable model role. Continue notes that it may request a larger context than other clients; if you see “model requires more system memory,” reduce `contextLength` or choose a smaller model. See [Continue's Ollama configuration guide](https://docs.continue.dev/customize/model-providers/top-level/ollama).
 
 Autocomplete, chat, edit, and agent roles can have different model requirements. Do not assume one chat-oriented reasoning model will provide low-latency inline completion.
 
