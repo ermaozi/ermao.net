@@ -76,3 +76,16 @@ test('Source markup is converted to text without surviving HTML delimiters', () 
     assert.doesNotMatch(plan.name, /[<>]/)
   }
 })
+
+
+test('Plan extraction retains an AffiliateLink referral without changing the annual allowance', () => {
+  const plans = parse(`## 年付套餐
+| 套餐 | 价格 | 流量 | 购买 |
+| --- | --- | --- | --- |
+| Lite | ¥119/年 | 365 GiB/年 | <AffiliateLink href="https://s1.lumo-invite.com/sign-up/?code=Duy8hdoL">查看套餐</AffiliateLink> |
+`)
+  assert.equal(plans.length, 1)
+  assert.equal(plans[0].purchaseHref, 'https://s1.lumo-invite.com/sign-up/?code=Duy8hdoL')
+  assert.equal(plans[0].traffic, '365 GiB/年')
+  assert.notEqual(plans[0].oneTime, true)
+})

@@ -4,6 +4,7 @@ const HAN_RE = /[\u3400-\u9fff]/u
 const HAN_GLOBAL_RE = /[\u3400-\u9fff]/gu
 
 const englishNames: Record<string, string> = {
+  Lumo: 'Lumo',
   网际快车: 'Wangji Express',
   阿达西: 'Adaxi',
   大哥云: 'Dage Cloud',
@@ -141,6 +142,10 @@ const phraseReplacements: Array<[string, string]> = [
   ['月用量接近或超过140GB的用户', 'Monthly usage approaching or exceeding 140 GB'],
   ['较频繁的视频观看与日常联网', 'More frequent video viewing and regular internet use'],
   ['已验证线路、有较大月度流量需求的用户', 'Higher monthly consumption after checking the routes'],
+  ['已完成体验核验、能接受年付且全年用量较低的用户', 'Lower annual use after testing'],
+  ['希望先按月观察、自行验证常用节点的用户', 'Monthly testing'],
+  ['实际扣费流量超过 Plus 额度的用户', 'Usage above Plus'],
+  ['已核清倍率和自身用量、需要较高额度的用户', 'Higher usage after checking multipliers'],
   ['/月', '/month'],
   ['Netflix/Disney保证', 'Netflix and Disney access advertised'],
   ['Netflix、Disney保证', 'Netflix and Disney access advertised'],
@@ -322,6 +327,7 @@ export const localizeAirportPrice = (value: string): string => {
 const localizeTraffic = (value: string | undefined) => {
   if (!value) return undefined
   if (value === '100G/150G记录冲突') return '100GB/150GB conflict; verify checkout'
+  if (value === '365 GiB/年') return '365 GiB/year'
   if (value === '历史280G/月') return 'Historical 280GB/month'
   return genericEnglish(
     value
@@ -365,6 +371,7 @@ const localizeTags = (tags: string[] | undefined) =>
     .filter(Boolean)
 
 const englishDescription = (item: AirportSource | AirportRecord) => {
+  if (item.id === 'lumo') return 'Submitted plans list Lite at CNY 119/year for 365 GiB/year and Plus from CNY 29/month for 150 GiB/month. Both route groups are included according to the provider. Basic is labelled 0.6×/1× with the policy timezone unconfirmed; supplied images label Premium 2.8×. Checkout and promotion terms remain unverified; the screenshots are not our independent tests.'
   if (item.id === 'ccyz') return 'Historical records list CNY 15/month, but the entry quota conflicts between 100GB and 150GB. The current allowance is unverified; use the actual quota and price on the official checkout page before buying.'
   if (item.id === 'superbiu') return 'SuperBiu has announced higher prices, lower traffic multipliers, CN2 entrances and AnyTLS. These are provider statements, not new independent tests. The 2026-02-24 article recorded CNY 11 for 50 GB monthly and one-time plans; the tables retain historical prices. Current prices and availability remain unverified.'
   if (item.id === '唯兔云') return 'Historical records list CNY 79.90 per year with 45 GB each month. The entry page showed only a route check on 2026-10-02; current prices, reset periods and service terms remain unverified. Test the provider’s route and access claims on your own network.'
@@ -393,7 +400,7 @@ export const localizeAirportSource = (item: AirportSource): AirportSource => ({
   description: englishDescription(item),
   minPlanText: localizeAirportPrice(item.minPlanText),
   rankChangeLabel: item.rankChangeLabel === '新上' ? 'New' : item.rankChangeLabel,
-  imageAlt: `${localizeAirportName(item.name)} review screenshot`,
+  imageAlt: item.id === 'lumo' ? 'Lumo logo' : `${localizeAirportName(item.name)} review screenshot`,
   tags: localizeTags(item.tags),
 })
 

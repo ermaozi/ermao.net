@@ -10,8 +10,8 @@ const evaluate = (source, names) => runInNewContext(`${stripTypeScriptTypes(sour
 const { airportSources, airportRanking, airportNewListings } = evaluate(read('docs/.vuepress/data/airports.ts'), [
   'airportSources', 'airportRanking', 'airportNewListings',
 ])
-const { localizeAirportPrice, localizeAirportSource } = evaluate(read('docs/.vuepress/data/airports-i18n.ts'), [
-  'localizeAirportPrice', 'localizeAirportSource',
+const { localizeAirportPrice, localizeAirportSource, localizeAirportRecord } = evaluate(read('docs/.vuepress/data/airports-i18n.ts'), [
+  'localizeAirportPrice', 'localizeAirportSource', 'localizeAirportRecord',
 ])
 
 test('Every summary stays concise without hiding price uncertainty or annual commitments', () => {
@@ -39,10 +39,10 @@ test('English compact prices retain a separator between price and traffic', () =
 })
 
 test('Display positions include new entries while source sales ranks remain unchanged', () => {
-  assert.deepEqual(Array.from(airportRanking, item => item.rank), Array.from({ length: 68 }, (_, i) => i + 1))
+  assert.deepEqual(Array.from(airportRanking, item => item.rank), Array.from({ length: 69 }, (_, i) => i + 1))
   const listing = airportNewListings.find(item => item.id === 'yunjiexian')
   assert.equal(listing.rank, undefined)
-  assert.equal([...airportRanking, ...airportNewListings].findIndex(item => item.id === 'yunjiexian') + 1, 69)
+  assert.equal([...airportRanking, ...airportNewListings].findIndex(item => item.id === 'yunjiexian') + 1, 70)
   for (const name of ['AirportRankingTable', 'AirportDetailList']) {
     const source = read(`docs/.vuepress/components/${name}.vue`)
     assert.match(source, /v-for="\(item, index\) in airports"/)
@@ -64,4 +64,31 @@ test('Table columns keep their original widths and text can wrap without truncat
   assert.match(read('docs/.vuepress/components/AirportPlanTable.vue'), /class="plan-name-content"/)
   assert.match(read('docs/.vuepress/components/AirportList.vue'), /\.airport-card-head \{[^}]*flex-wrap: wrap;/s)
   assert.match(read('docs/.vuepress/styles/index.css'), /\.vp-doc-container \.vp-doc-meta > p \{[^}]*flex-wrap: wrap;/s)
+})
+
+
+test('Lumo preserves annual quota, unknown terms and exact referral links in both locales', () => {
+  const lumo = airportRanking.find(item => item.id === 'lumo')
+  assert.equal(lumo.rank, 16)
+  assert.equal(lumo.rankChangeLabel, '新上')
+  assert.equal(airportRanking.find(item => item.id === 'huanqiuti').rank, 17)
+  assert.equal(lumo.universalSubscription, 'unknown')
+  assert.equal(lumo.hasOneTimePackage, 'unknown')
+  assert.equal(lumo.plans.length, 4)
+  const english = localizeAirportRecord(lumo)
+  assert.equal(english.name, 'Lumo')
+  assert.equal(english.plans[0].traffic, '365 GiB/year')
+  assert.equal(english.plans[0].priceText, '¥119/year')
+  assert.equal(english.plans[1].traffic, '150 GiB/month')
+  assert.match(english.description, /unverified/)
+  assert.deepEqual(Array.from(lumo.plans, p => p.priceText), ['¥119/年', '¥29/月', '¥45/月', '¥79/月'])
+  for (const p of lumo.plans) {
+    assert.equal(p.type, '周期订阅')
+    assert.notEqual(p.oneTime, true)
+    assert.equal(p.purchaseHref, 'https://s1.lumo-invite.com/sign-up/?code=Duy8hdoL')
+  }
+  assert.equal(lumo.officialHref, 'https://s1.lumo-invite.com/sign-up/?code=Duy8hdoL')
+  const logo = airportSources.find(item => item.id === 'lumo')
+  assert.equal(logo.imageFit, 'contain')
+  assert.equal(localizeAirportSource(logo).imageAlt, 'Lumo logo')
 })

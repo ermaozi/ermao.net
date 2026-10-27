@@ -91,15 +91,15 @@ async function main() {
             assert.equal(await superbiu.locator('.airport-plan-table thead th').nth(1).innerText(), language === 'en' ? 'Historical price' : '历史价')
             assert.equal(await superbiu.locator('.airport-plan-table tbody tr').count(), 4)
             if (width === 390 || width === 1440) await superbiu.screenshot({ path: resolve(output, `${language}-superbiu-history-${width}.png`) })
-            const expected = Array.from({ length: language === 'zh' ? 69 : 68 }, (_, i) => i + 1)
+            const expected = Array.from({ length: language === 'zh' ? 70 : 69 }, (_, i) => i + 1)
             assert.deepEqual(result.numbers, expected, `${language}/${width}: missing list number`)
             assert.deepEqual(result.detailNumbers, expected, `${language}/${width}: detail numbers disagree`)
             if (language === 'zh') {
               const row = page.locator('.airport-ranking-table tbody tr').filter({ has: page.locator('a[href="#yunjiexian"]') })
-              assert.equal(await row.locator('.airport-ranking-rank').innerText(), '69')
+              assert.equal(await row.locator('.airport-ranking-rank').innerText(), '70')
               await row.locator('a[href="#yunjiexian"]').click()
               await page.locator('#yunjiexian').waitFor()
-              assert.match(await page.locator('#yunjiexian').innerText(), /69\s*云界线/)
+              assert.match(await page.locator('#yunjiexian').innerText(), /70\s*云界线/)
               const planCounts = await page.evaluate(() => Object.fromEntries(
                 ['xsus', '网际快车', 'superbiu', 'runway', 'sogo云'].map(id => {
                   const section = document.getElementById(id).closest('article')

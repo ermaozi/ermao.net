@@ -74,7 +74,7 @@ test('The original five plan prices and monthly allowances remain undiscounted',
 test('Existing article routes, purchase links and original image references are preserved', () => {
   assert.equal(record.reviewHref, '/blog/liulianyun/')
   assert.equal(record.officialHref, referral)
-  assert.equal(record.rank, 18)
+  assert.equal(record.rank, 19)
   assert.match(chinese, /^title: 2026 榴莲云机场推荐：24元140GB月付，96元年付小包与通用订阅$/m)
   assert.match(english, /^title: "2026 Liulian Cloud Review: CNY 24 for 140 GB Monthly and a CNY 96 Annual Plan"$/m)
   for (const content of [chinese, english, chineseIndex, englishIndex]) assert.ok(content.includes(referral))
