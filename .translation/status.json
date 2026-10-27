@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T12:03:25.035Z",
+  "generatedAt": "2026-10-27T13:09:23.883Z",
   "summary": {
     "total": 187,
     "translated": 181,
@@ -701,7 +701,7 @@
     {
       "source": "docs/blog/机场推荐/2025/机场推荐xx云.md",
       "target": "docs/en/blog/proxy-reviews/2025/机场推荐xx云.md",
-      "sourceHash": "a77a46854f121a3e",
+      "sourceHash": "79adf0072d57e35a",
       "sourcePermalink": "/article/6e3quult/",
       "expectedPermalink": "/en/article/6e3quult/",
       "status": "translated",
@@ -1031,7 +1031,7 @@
     {
       "source": "docs/blog/机场推荐/2026/机场推荐xxyun.md",
       "target": "docs/en/blog/proxy-reviews/2026/机场推荐xxyun.md",
-      "sourceHash": "92eb87485b2a615b",
+      "sourceHash": "0785c1fe80b2d289",
       "sourcePermalink": "/blog/xxyun/",
       "expectedPermalink": "/en/blog/xxyun/",
       "status": "translated",

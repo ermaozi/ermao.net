@@ -92,3 +92,21 @@ test('Lumo preserves annual quota, unknown terms and exact referral links in bot
   assert.equal(logo.imageFit, 'contain')
   assert.equal(localizeAirportSource(logo).imageAlt, 'Lumo logo')
 })
+
+
+test('XXYUN keeps distinct English tiers, historical prices and the exact referral', () => {
+  const item = airportRanking.find(item => item.id === 'xxyun')
+  assert.equal(item.rank, 3)
+  assert.equal(item.officialHref, 'https://www.xxyun.ai/?code=HOWnn58c')
+  assert.equal(item.universalSubscription, 'unknown')
+  assert.equal(item.plans.length, 5)
+  const english = localizeAirportRecord(item)
+  assert.equal(english.name, 'XXYUN')
+  assert.match(english.minPlanText, /^Historical /)
+  assert.deepEqual(Array.from(english.plans, p => p.name),
+    ['Entry plan', 'Standard plan', 'Premium plan', '500G one-time', '2888G one-time'])
+  assert.deepEqual(Array.from(item.plans, p => p.priceText),
+    ['¥9.99/月', '¥19.9/月', '¥39.9/月', '¥66.66/次', '¥199/次'])
+  assert.deepEqual(Array.from(item.plans, p => Boolean(p.oneTime)), [false, false, false, true, true])
+  assert.match(english.description, /new users 10% off/)
+})
