@@ -5,6 +5,7 @@ const HAN_GLOBAL_RE = /[\u3400-\u9fff]/gu
 
 const englishNames: Record<string, string> = {
   Lumo: 'Lumo',
+  xxyun: 'XXYUN',
   网际快车: 'Wangji Express',
   阿达西: 'Adaxi',
   大哥云: 'Dage Cloud',
@@ -371,6 +372,7 @@ const localizeTags = (tags: string[] | undefined) =>
     .filter(Boolean)
 
 const englishDescription = (item: AirportSource | AirportRecord) => {
+  if (item.id === 'xxyun') return 'Existing records start at CNY 9.99/month for 100G/month, with one-time packages also listed. The current public notice offers new users 10% off with xxyun; confirm eligible plans and expiry at checkout. Start small and size later purchases around actual usage. BGP and application support are provider claims, and the archived image is not a current test.'
   if (item.id === 'lumo') return 'Submitted plans list Lite at CNY 119/year for 365 GiB/year and Plus from CNY 29/month for 150 GiB/month. Both route groups are included according to the provider. Basic is labelled 0.6×/1× with the policy timezone unconfirmed; supplied images label Premium 2.8×. Checkout and promotion terms remain unverified; the screenshots are not our independent tests.'
   if (item.id === 'ccyz') return 'Historical records list CNY 15/month, but the entry quota conflicts between 100GB and 150GB. The current allowance is unverified; use the actual quota and price on the official checkout page before buying.'
   if (item.id === 'superbiu') return 'SuperBiu has announced higher prices, lower traffic multipliers, CN2 entrances and AnyTLS. These are provider statements, not new independent tests. The 2026-02-24 article recorded CNY 11 for 50 GB monthly and one-time plans; the tables retain historical prices. Current prices and availability remain unverified.'
@@ -410,6 +412,14 @@ export const localizeAirportRecord = (item: AirportRecord): AirportRecord => ({
   description: englishDescription(item),
   minPlanText: localizeAirportPrice(item.minPlanText),
   rankChangeLabel: item.rankChangeLabel === '新上' ? 'New' : item.rankChangeLabel,
-  plans: item.plans.map(localizeAirportPlan),
+  plans: item.plans.map((plan, index) => {
+    if (item.id !== 'xxyun') return localizeAirportPlan(plan, index)
+    const names: Record<string, string> = {
+      初级套餐: 'Entry plan', 中级套餐: 'Standard plan', 高级套餐: 'Premium plan',
+      '500G 不限时': '500G one-time', '2888G 不限时': '2888G one-time',
+    }
+    return localizeAirportPlan({ ...plan, name: names[plan.name ?? ''] ?? plan.name,
+      audience: plan.audience === '备用流量' ? 'Backup data' : plan.audience }, index)
+  }),
 })
 
