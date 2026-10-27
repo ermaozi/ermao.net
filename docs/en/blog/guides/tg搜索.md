@@ -1,6 +1,7 @@
 ---
 title: Telegram Search Bots—Practical Techniques and Safety Limits
 createTime: 2026/4/22 13:28:46
+updateTime: 2026/10/27 14:18:34
 permalink: /en/article/bsnuua0h/
 lang: en-US
 translationOf: /article/bsnuua0h/
@@ -32,6 +33,12 @@ These bots are not operated or endorsed by Telegram or this site. Availability, 
    - **File:** a document or historical archive whose origin can be verified;
    - **Current event:** time-sensitive material that requires corroboration outside Telegram.
 4. Begin with public descriptions and message history. Do not immediately run an unfamiliar executable, script, macro-enabled document, or archive.
+
+### Another account option (sponsored)
+
+If you do not yet have an account and prefer not to complete registration yourself, you can review <AffiliateLink href="https://tghaogm.com/?ref=ermao">Telegram账号购买</AffiliateLink> (Telegram account purchase), compare the available options and delivery instructions with your needs, and then decide whether to buy. Before paying, confirm the login method, ongoing control of the linked phone number, other active sessions, and how two-step verification and the recovery email are handed over. Buying an account does not guarantee lasting access or freedom from restrictions; do not pay if control cannot be established.
+
+[Telegram's FAQ](https://telegram.org/faq#q-i-have-a-new-phone-number-what-do-i-do) advises retaining access to the linked number. This is a sponsored entry point; this site has not purchased or tested the seller's account delivery, and the link does not imply Telegram endorsement.
 
 ## Comparing the example bots
 

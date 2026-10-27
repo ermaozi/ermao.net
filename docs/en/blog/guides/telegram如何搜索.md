@@ -1,6 +1,7 @@
 ---
 title: How to Search Telegram with JiSou
 createTime: '2025/04/12 23:34:36'
+updateTime: 2026/10/27 14:18:34
 permalink: /en/article/wwpg9n59/
 lang: en-US
 translationOf: /article/wwpg9n59/
@@ -30,6 +31,12 @@ You can also download an official client from the [Telegram website](https://tel
 At the article's April 2025 publication date, Telegram was accepting some `+86` numbers. If a number cannot receive a code or complete registration, an overseas mobile number obtained through an eSIM may be an alternative.
 
 The source article warned that **5ber appeared to have stopped reliably delivering downloadable eSIMs after purchase** and mentioned 9eSIM as an alternative. Verify the current status, device compatibility, refund terms, and the long-term availability of any number before paying. Losing access to the registration number can make account recovery difficult.
+
+### Another account option (sponsored)
+
+If you prefer not to complete registration yourself, you can review <AffiliateLink href="https://tghaogm.com/?ref=ermao">Telegram账号购买</AffiliateLink> (Telegram account purchase), compare the available options and delivery instructions with your needs, and then decide whether to buy. Before paying, confirm the login method, ongoing control of the linked phone number, other active sessions, and how two-step verification and the recovery email are handed over. Buying an account does not guarantee lasting access or freedom from restrictions; do not pay if control cannot be established.
+
+[Telegram's FAQ](https://telegram.org/faq#q-i-have-a-new-phone-number-what-do-i-do) advises retaining access to the linked number. This is a sponsored entry point; this site has not purchased or tested the seller's account delivery, and the link does not imply Telegram endorsement.
 
 ## Optional Simplified Chinese language pack
 
