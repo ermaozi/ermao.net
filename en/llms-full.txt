@@ -12516,6 +12516,10 @@ Trojan encrypts the proxy transport but does not by itself prove a no-logging po
 
 ## Recorded plans
 
+::: warning Check renewal versus plan replacement
+The provider’s [public announcement](https://t.me/s/dageyun) says that buying a different plan replaces the current plan, resets its data allowance, and applies the last purchased plan’s parameters; it recommends renewing or buying the same plan. Before paying, confirm the treatment of remaining time and data instead of assuming that plans stack. The prices below remain a historical snapshot; this review did not log in to verify current checkout prices.
+:::
+
 | Plan | Price | Data | Term | Labelled peak bandwidth | Protocol |
 | --- | ---: | ---: | --- | ---: | --- |
 | Monthly A | CNY 19.90 | 100 GB/month | Calendar month | 500 Mbps | Trojan |
