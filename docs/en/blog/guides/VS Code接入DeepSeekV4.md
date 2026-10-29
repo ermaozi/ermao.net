@@ -20,6 +20,11 @@ The first time I pasted in an API key and watched the editor suggest a line of c
 
 <!-- more -->
 
+::: info Current API model identifiers
+Use `deepseek-v4-pro` for Pro and `deepseek-flash` for Flash, as listed in the [official API guide](https://api-docs.deepseek.com/). The legacy `deepseek-v4-flash` identifier remains accepted, but requests are served by the current Flash model; it does not select the original V4 Flash model. Historical screenshots show the interface at the time; use the model IDs in the text below when configuring a client.
+:::
+
+
 ::: warning Very bad news
 Shortly after this article was published, **DeepSeek announced a significant price hike**. Rating downgraded from "sage" to "scoundrel"—further downgrades depend on the magnitude and the quality of the Pro official version.
 
@@ -76,14 +81,14 @@ There is more than one way. I have mapped them to three types of users:
     {
       "title": "DeepSeek V4",
       "provider": "openai",
-      "model": "deepseek-v4",
+      "model": "deepseek-v4-pro",
       "apiBase": "https://api.deepseek.com/v1",
       "apiKey": "sk-paste-your-key-here"
     },
     {
       "title": "DeepSeek V4 Flash",
       "provider": "openai",
-      "model": "deepseek-v4-flash",
+      "model": "deepseek-flash",
       "apiBase": "https://api.deepseek.com/v1",
       "apiKey": "sk-paste-your-key-here"
     }
@@ -109,7 +114,7 @@ DeepSeek provides an official way to use DeepSeek models directly inside GitHub 
 4. Add a new model provider, choose **OpenAI Compatible**, and fill in three things:
    - **Base URL**: `https://api.deepseek.com/v1`
    - **API Key**: your DeepSeek key
-   - **Model name**: `deepseek-v4` or `deepseek-v4-flash`
+   - **Model name**: `deepseek-v4-pro` or `deepseek-flash`
 5. After saving, DeepSeek V4 appears in the model dropdown in Copilot Chat—usable for both autocomplete and chat.
 
 ::: tip Why pick this route
@@ -124,7 +129,7 @@ If you want AI to do more than chat—reading and writing files, running command
 
 1. Search for **Cline** in the extensions marketplace and install it.
 2. Open Cline settings and choose **DeepSeek** as the provider; if it is not in the list, select **OpenAI Compatible**.
-3. Set Base URL to `https://api.deepseek.com/v1`, model name to `deepseek-v4` or `deepseek-v4-flash`, and API key to your key.
+3. Set Base URL to `https://api.deepseek.com/v1`, model name to `deepseek-v4-pro` or `deepseek-flash`, and API key to your key.
 4. Grant Cline access to your workspace, then ask it to "write a test" or "refactor this function"—it will do the work itself.
 
 ::: warning Bigger permissions, bigger risk
