@@ -21336,6 +21336,10 @@ description: >-
 
 我第一次填好 API Key、看着编辑器里弹出第一行补全时，脑子里只有一个念头：**以后真没必要再交上百块一个月的 AI 订阅费了。** 这篇文章不绕弯子，直接说清楚四件事——接它图啥、怎么接、花多少钱、什么人适合。
 
+::: info 当前 API 模型名称
+按[官方 API 文档](https://api-docs.deepseek.com/zh-cn/)，Pro 使用 `deepseek-v4-pro`，Flash 使用 `deepseek-flash`。旧名称 `deepseek-v4-flash` 仍可调用，但请求由当前 Flash 模型提供服务，不代表仍在使用原 V4 Flash。历史截图保留当时界面，实际配置请使用下文的模型 ID。
+:::
+
 ::: warning 非常糟糕
 本篇文章写完不久，deepseek 宣布涨价且幅度较大！评级从梁圣下调为梁子，是否继续下调得看具体涨价幅度和Pro正式版的成色。
 
@@ -21392,14 +21396,14 @@ API Key 就是钱包的钥匙，用多少扣多少。**不要**提交进 Git 仓
     {
       "title": "DeepSeek V4",
       "provider": "openai",
-      "model": "deepseek-v4",
+      "model": "deepseek-v4-pro",
       "apiBase": "https://api.deepseek.com/v1",
       "apiKey": "sk-这里填你的密钥"
     },
     {
       "title": "DeepSeek V4 Flash",
       "provider": "openai",
-      "model": "deepseek-v4-flash",
+      "model": "deepseek-flash",
       "apiBase": "https://api.deepseek.com/v1",
       "apiKey": "sk-这里填你的密钥"
     }
@@ -21425,7 +21429,7 @@ DeepSeek 官方提供了一条在 GitHub Copilot 里直接用 DeepSeek 模型的
 4. 添加一个新的模型提供商，类型选 **OpenAI Compatible**，然后填三样东西：
    * **Base URL**：`https://api.deepseek.com/v1`
    * **API Key**：你的 DeepSeek 密钥
-   * **模型名**：`deepseek-v4` 或 `deepseek-v4-flash`
+   * **模型名**：`deepseek-v4-pro` 或 `deepseek-flash`
 5. 保存后，在 Copilot Chat 的模型下拉框里就能看到并选到 DeepSeek V4，补全和聊天都能用。
 
 ::: tip 为什么推荐这条路
@@ -21440,7 +21444,7 @@ DeepSeek 官方提供了一条在 GitHub Copilot 里直接用 DeepSeek 模型的
 
 1. 扩展市场搜 **Cline** 安装。
 2. 打开 Cline 设置，Provider 一栏选 **DeepSeek**；如果列表里没有，就选 **OpenAI Compatible**。
-3. Base URL 填 `https://api.deepseek.com/v1`，模型名填 `deepseek-v4` 或 `deepseek-v4-flash`，API Key 填你的密钥。
+3. Base URL 填 `https://api.deepseek.com/v1`，模型名填 `deepseek-v4-pro` 或 `deepseek-flash`，API Key 填你的密钥。
 4. 授权 Cline 访问工作区，然后就可以让它「帮我写个测试」「帮我重构这个函数」——它会自己动手。
 
 ::: warning 权限大，风险也大
