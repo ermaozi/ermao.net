@@ -9675,12 +9675,15 @@ Shodan 会提供关于公开服务的详细信息，如 IP 地址、端口号和
 
 ### 3.1 使用 Chatbox 连接到远程 Ollama 服务
 
+先确认服务属于你，或管理员已明确授权使用；搜索结果可见、无需登录或返回成功，都不代表免费使用许可。以下步骤不用于连接未经许可的第三方端点。
+
 1. 下载并安装 [Chatbox AI](https://chatboxai.app/)。
 2. 打开 Chatbox 设置，在模型提供方中选择 "Ollama"。
    ![Ollama 本地部署的 DeepSeek =1762x1232](https://image.ermao.net/images/article/tj38tso3/image-2.png)
-3. 在模型下拉框中选择您运行的本地模型。
+3. 在 **API Host（API 地址）** 中填写已获授权的 Ollama 服务地址并保存。本机运行 Ollama 时通常为 `http://localhost:11434`；这里的 `localhost` 指运行 Chatbox 的设备，不是远程服务器。远程使用应填写管理员提供的受保护网关或私有通道地址，按其要求配置认证；不要将未受保护的 `11434` 端口直接暴露到公网。
+4. 在模型下拉框中选择该服务器已安装、且授权你使用的模型。
    ![Ollama 本地部署的 DeepSeek =1788x1192](https://image.ermao.net/images/article/tj38tso3/image-3.png)
-4. 点击保存后，您便可以通过 Chatbox 与远程 Ollama 服务进行交互。
+5. 保存后先用不含敏感信息的提示词测试。无法连接时先核对 API Host、访问权限和模型名称，不要把未受保护的公网服务作为替代。步骤依据 [Chatbox 官方 Ollama 指南](https://chatboxai.app/en/guide/byok/ollama)。
    ![Ollama 本地部署的 DeepSeek =2048x1490](https://image.ermao.net/images/article/tj38tso3/image-4.png)
 
 ## 四、安全性和合规性

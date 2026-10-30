@@ -57,7 +57,7 @@ If remote use is intentional:
 
 1. Install [Chatbox AI](https://chatboxai.app/).
 2. Open its settings and select Ollama as the model provider.
-3. Enter the URL of **your authorized Ollama gateway**, not an address copied from a public search result.
+3. Set **API Host** to **your authorized Ollama gateway**, not an address copied from a public search result. For Ollama on the same device, this is usually `http://localhost:11434`; `localhost` refers to the device running Chatbox, not a remote server. For remote access, use the protected gateway or private-channel address supplied by your administrator and follow its authentication requirements. Do not expose an unprotected port `11434` to the public internet. See the [official Chatbox Ollama guide](https://chatboxai.app/en/guide/byok/ollama).
 4. Select a model that you installed and are permitted to use.
 5. Save the configuration and run a non-sensitive test.
 
