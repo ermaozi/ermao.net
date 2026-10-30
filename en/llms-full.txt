@@ -16399,11 +16399,11 @@ See the [proxy-service review index](/en/posts/vpn/), [provider-selection guide]
 url: /en/blog/liulianyun/index.md
 description: >-
   Compare Liulian Cloud's four monthly tiers and CNY 96 annual plan with 60 GB
-  per month, universal subscriptions, payments and provider-supplied VLESS speed
-  results.
+  per month, no-expiry plan availability, universal subscriptions, payments and
+  provider-supplied VLESS speed results.
 ---
 # 2026 Liulian Cloud Review: CNY 24 for 140 GB Monthly and a CNY 96 Annual Plan
-Liulian Cloud's monthly plans start at **CNY 24 for 140 GB/month**, with 260 GB, 420 GB and 750 GB tiers above it. A smaller plan costs **CNY 96 per year with 60 GB each month**, equivalent to CNY 8/month but requiring the annual payment upfront. The provider lists universal subscriptions, Alipay and WeChat Pay, with no one-time, no-expiry data packages.
+Liulian Cloud's monthly plans start at **CNY 24 for 140 GB/month**, with 260 GB, 420 GB and 750 GB tiers above it. A smaller plan costs **CNY 96 per year with 60 GB each month**, equivalent to CNY 8/month but requiring the annual payment upfront. The provider lists universal subscriptions, Alipay and WeChat Pay, and supports no-expiry plans. No expiry does not mean unlimited data; check the current allowance and usage conditions.
 
 Purchase link: [View current Liulian Cloud plans](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo)
 
@@ -16420,7 +16420,7 @@ Coupon code **`ll88`** offers **30% off, once per account**. Eligible plans, bil
 | Lowest monthly plan | CNY 24/month, 140 GB/month |
 | Small annual plan | CNY 96/year, 60 GB/month; CNY 8 monthly equivalent |
 | Universal subscription | Supported according to the provider; actual import has not been tested |
-| One-time, no-expiry data | Not offered |
+| No-expiry plans | Supported; check current prices, data allowances and usage conditions |
 | Payments | Alipay and WeChat Pay according to the submission |
 | Protocol and regions in the screenshot | VLESS; Hong Kong, Taiwan, Singapore, the United States and Japan |
 | Telegram | [Liulian Cloud group](https://t.me/+-_boXR6kHwAzMDZl) |
@@ -16428,6 +16428,8 @@ Coupon code **`ll88`** offers **30% off, once per account**. Eligible plans, bil
 The provider targets daily work, overseas information access, video and AI tools. Whether it fits your network and required services needs an actual usage check. The supplied material includes a download-speed screenshot, but no Netflix, Disney+ or ChatGPT access test.
 
 ## Plans and selection advice
+
+No-expiry plans are also supported. The table below covers only periodic plans with previously supplied prices, not the full plan range. No-expiry prices, allowances and reset conditions have not been verified and are not estimated here.
 
 | Plan | Price | Data | Suggested use | Purchase |
 | --- | --- | --- | --- | --- |
@@ -16445,9 +16447,9 @@ For a first purchase, compare the **CNY 24 Light tier**, check it on your own ne
 
 At the submitted prices, moving from Light to Enjoy adds 120 GB/month for another CNY 16. Start with less data if your usage is uncertain. [Compare current Liulian Cloud prices and allowances](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo).
 
-### Is there a one-time, no-expiry package?
+### Are no-expiry plans available?
 
-The submission explicitly says no. The annual plan still has a fixed service term and monthly allowances, so it should not be treated as no-expiry backup data.
+Yes, Liulian Cloud supports no-expiry plans. This does not mean unlimited data. Prices, allowances, reset rules and other conditions for these plans have not been verified; check the current official plan terms. The table above covers periodic plans with previously supplied prices. The annual tier still has a fixed service term and monthly allowances and is not a no-expiry plan.
 
 ## Subscription and node features
 
@@ -16480,7 +16482,7 @@ The screenshot does not provide the complete test equipment and access condition
 * Users needing 140 GB to 750 GB monthly and choosing tiers from actual consumption.
 * Light users within 60 GB/month who have checked the routes and accept paying for a year upfront.
 
-The supplied plans do not suit a requirement for occasional, no-expiry backup data. If a particular streaming library or AI platform is essential, first verify the exact node and access method.
+For occasional backup use, compare Liulian Cloud’s no-expiry plans after checking their allowances, usage conditions and final prices. If a particular streaming library or AI platform is essential, first verify the exact node and access method.
 
 ## Purchase and setup
 
@@ -16503,7 +16505,7 @@ No. The follow-up clarification confirms 60 GB each month. CNY 96/year is equiva
 
 ### Are universal subscriptions and no-expiry packages supported?
 
-The provider lists universal subscriptions and says no one-time, no-expiry package is available. Confirm the specific client version and import method in the official instructions.
+Universal subscriptions and no-expiry plans are supported. No expiry does not mean unlimited data; check the plan allowance and conditions. Confirm the specific client version and import method in the official instructions.
 
 ### Are Netflix, Disney+ or ChatGPT guaranteed to work?
 
@@ -16511,7 +16513,7 @@ The material contains no relevant access test, and download-speed results do not
 
 ## Conclusion
 
-Liulian Cloud's main selection points are **monthly billing from CNY 24, five data tiers and universal subscriptions**. For a first purchase, compare the 140 GB monthly option. Consider the CNY 96 annual tier only after checking the routes and your lower monthly consumption. The provider's screenshot helps explain node groups and that run's results; your network and usual usage window still determine the experience.
+Liulian Cloud's main selection points are **monthly billing from CNY 24, periodic and no-expiry plan options, and universal subscriptions**. For a first purchase, compare the 140 GB monthly option. Consider the CNY 96 annual tier only after checking the routes and your lower monthly consumption. The provider's screenshot helps explain node groups and that run's results; your network and usual usage window still determine the experience.
 
 [View current Liulian Cloud plans and subscription instructions](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo)
 
