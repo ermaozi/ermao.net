@@ -13086,7 +13086,7 @@ Add one virtual NIC connected to the LAN bridge:
 
 ![Adding the VM network interface =880x714](https://image.ermao.net/images/blog/fnoswrt/image-10.png)
 
-The source FNOS version required OVS to make a physical interface available to VMs. If the interface is missing, check **Settings → Network Settings** for the OVS option on that port.
+If an interface is missing, check its type as well as its OVS status. The [official FNOS virtual-machine guide](https://help.fnnas.com/articles/v1/virtual-machine/install) currently supports OVS on wired and aggregated interfaces, not wireless interfaces. A missing wireless interface is therefore not simply an OVS setting that has been left disabled. For a supported interface, check its additional options under **System Settings → Network Management**; older versions may label this **Settings → Network Settings**.
 
 Enabling OVS changes the host's network topology and may briefly interrupt FNOS connectivity. Confirm current FNOS documentation for your installed version, preserve the host IP configuration, and make the change with local console access. UI labels can differ after updates.
 
