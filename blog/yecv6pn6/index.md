@@ -117,7 +117,7 @@ openclaw onboard --install-daemon
 1. `/start`
 2. `/newbot`
 3. 设置 Bot 名称
-4. 设置用户名（必须以 `_bot` 结尾）
+4. 设置用户名（必须以 `bot` 结尾，如 `my_helper_bot` 或 `MyHelperBot`，不强制带下划线；见 [Telegram 官方说明](https://core.telegram.org/bots/features#botfather)）
 
 随后会得到 Token（例如 `123456:xxxx`），粘贴回 OpenClaw 向导即可。
 
@@ -223,9 +223,11 @@ openclaw restart
 
 ```bash
 openclaw status
-openclaw logs --tail 50
+openclaw logs --limit 50
 openclaw agent --message "测试" --thinking high
 ```
+
+日志条数使用 `--limit`；持续查看可用 `openclaw logs --follow`，见 [官方日志命令](https://docs.openclaw.ai/cli/logs)。
 
 * `ECONNREFUSED` / `timeout`：通常是网络或代理问题
 * `401 Unauthorized`：API Key 错误或失效
@@ -241,12 +243,19 @@ openclaw restart
 
 ### 3）Telegram 配对失败
 
+先用自己的 Telegram 账号给 Bot 发送一条私信，再查看待处理的配对请求：
+
 ```bash
-openclaw pairing list
-openclaw pairing approve telegram YOUR_TELEGRAM_USER_ID
+openclaw pairing list telegram
 ```
 
-`User ID` 可通过 Telegram 的 `@userinfobot` 获取。
+确认请求来自自己后，将下方占位符替换为该请求的**配对码**：
+
+```bash
+openclaw pairing approve telegram <PAIRING_CODE>
+```
+
+这里需要的是配对码，不是 Telegram 用户 ID，也不是 Bot Token；不要批准来源不明的请求。若配置了多个 Bot，可按 [官方配对命令](https://docs.openclaw.ai/cli/pairing) 使用 `--account` 指定账号。
 
 ## 安全加固（强烈建议）
 
