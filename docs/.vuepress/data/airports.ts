@@ -3785,7 +3785,7 @@ export const airportSources: AirportSource[] = [
   {
     id: 'xxyun',
     name: 'xxyun',
-    description: '既有套餐记录为9.99元100G/月起，另有一次性流量包；当前公开说明新用户代码xxyun享9折，适用套餐与期限以结算为准。适合先小额月付验证再按用量选择，BGP中转与应用支持为商家描述，旧测速图不代表当前表现。',
+    description: '小额月付起步、多档流量与一次性包可选，便于按预算和使用频率比较。既有套餐记录为9.99元100G/月起；10月27日公开资料列新用户xxyun码9折，当前价格和适用条件以结算为准。BGP中转及流媒体、AI支持为商家描述，非本站实测。',
     rank: 3,
     officialHref: 'https://www.xxyun.ai/?code=HOWnn58c',
     universalSubscription: 'unknown',
