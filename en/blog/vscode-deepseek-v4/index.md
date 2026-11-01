@@ -103,10 +103,10 @@ DeepSeek provides an official way to use DeepSeek models directly inside GitHub 
    * **Base URL**: `https://api.deepseek.com/v1`
    * **API Key**: your DeepSeek key
    * **Model name**: `deepseek-v4-pro` or `deepseek-flash`
-5. After saving, DeepSeek V4 appears in the model dropdown in Copilot Chat—usable for both autocomplete and chat.
+5. After saving, select the added DeepSeek model in Copilot Chat for chat and editing tasks supported by that model. BYOK does not switch editor inline suggestions (the gray code completions shown while typing) to DeepSeek; those use separate Copilot models and plan entitlements. See the [official VS Code BYOK considerations](https://code.visualstudio.com/docs/agents/concepts/language-models#considerations).
 
 ::: tip Why pick this route
-If your company or school already bought Copilot, or you are used to Copilot's interaction, this is the smallest change: **no new extension, just a different model**. Copilot's autocomplete itself is free (with a login); you only pay the API fee for DeepSeek calls in Chat.
+If your company or school already bought Copilot, or you are used to Copilot's interaction, this is the smallest change: **no new extension, just a different model**. DeepSeek calls are billed by API usage. Copilot inline-completion availability and quotas depend on your Copilot plan; adding a DeepSeek API key does not grant unlimited free completions.
 :::
 
 ### Option 3: Cline extension (best if you want AI to act on its own)
