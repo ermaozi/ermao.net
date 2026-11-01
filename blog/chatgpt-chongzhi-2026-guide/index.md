@@ -198,6 +198,8 @@ CZGPT 的产品页面也展示 Codex 相关商品，因此开发者可以在同�
 
 付款完成后，CZGPT 系统会显示卡密或升级链接。先保存订单号，再进入对应的兑换页面。自动发货减少了等待人工回复的时间，也让深夜或周末下单更方便。
 
+按 CZGPT 当前[服务条款](https://www.czgptai.com/terms)，请在**购买后 24 小时内激活或核验商品**，逾期可能影响售后处理。若首次使用前发现卡密或账号无效，应保留订单和错误信息，及时联系商家核实；这项时限不代表使用后无条件退款。
+
 ![CZGPT 订单完成并发放卡密 =1267x664](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-8ca80c.jpeg)
 
 ![CZGPT 自助充值卡密验证页面 =1267x664](https://image.ermao.net/images/blog/chatgpt-chongzhi-2026-guide/20260727_172540-458594.jpeg)
