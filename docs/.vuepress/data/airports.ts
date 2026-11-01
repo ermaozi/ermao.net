@@ -1910,7 +1910,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特点：全IPLC专线，晚高峰不降速"
       ],
-      "purchaseHref": "https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY",
+      "purchaseHref": "https://vip06.xdmaffvip.com/#/?code=O9Q9H6VY",
       "text": "星岛梦 · 极速版，¥16.00/月，100GB/月"
     },
     {
@@ -1921,7 +1921,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特点：全IPLC专线，晚高峰不降速"
       ],
-      "purchaseHref": "https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY",
+      "purchaseHref": "https://vip06.xdmaffvip.com/#/?code=O9Q9H6VY",
       "text": "星岛梦 · 进阶版，¥32.00/月，200GB/月"
     },
     {
@@ -1932,7 +1932,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特点：全IPLC专线，晚高峰不降速"
       ],
-      "purchaseHref": "https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY",
+      "purchaseHref": "https://vip06.xdmaffvip.com/#/?code=O9Q9H6VY",
       "text": "星岛梦 · 闪光版，¥80.00/月，500GB/月"
     },
     {
@@ -1943,7 +1943,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特点：全IPLC专线，晚高峰不降速"
       ],
-      "purchaseHref": "https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY",
+      "purchaseHref": "https://vip06.xdmaffvip.com/#/?code=O9Q9H6VY",
       "text": "星岛梦 · 旗舰版，¥160.00/月，1.0TB/月"
     },
     {
@@ -1954,7 +1954,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特点：无限时长，用完为止"
       ],
-      "purchaseHref": "https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY",
+      "purchaseHref": "https://vip06.xdmaffvip.com/#/?code=O9Q9H6VY",
       "text": "星岛梦 · 永久不限时，¥680.00/一次性，1.0TB",
       "oneTime": true
     },
@@ -1966,7 +1966,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特点：专属定制节点，独享原生IP"
       ],
-      "purchaseHref": "https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY",
+      "purchaseHref": "https://vip06.xdmaffvip.com/#/?code=O9Q9H6VY",
       "text": "星岛梦 · 定制套餐，¥680.00/月，500GB"
     }
   ],
@@ -4199,7 +4199,7 @@ export const airportSources: AirportSource[] = [
     name: '星岛梦',
     description: '星岛梦IEPL专线机场，提供高品质线路，支持 Trojan/SS 等协议，专注于稳定流媒体与跨境业务。全线解锁 Netflix、Disney+、YouTube、ChatGPT、Gemini 等平台与 AI 服务，并支持 TikTok 跨区，适合跨境电商、直播运营、远程办公等高要求用户。套餐无限速、无倍率、不限制设备数（合理使用），支持支付宝、USDT 付款。节点覆盖港台、日美新、东南亚、韩国及多国欧美地区，价格亲民，月付最低16元起，另提供1T大流量永久套餐。拥有多客服团队与海外技术支持，可提供小火箭下载、TG代注册等增值服务。',
     rank: 12,
-    officialHref: 'https://ermaov1.xdmvipaff.cc/#/?code=O9Q9H6VY',
+    officialHref: 'https://vip06.xdmaffvip.com/#/?code=O9Q9H6VY',
     universalSubscription: false,
     minPlanText: '16元 100G/月',
     hasOneTimePackage: true,
