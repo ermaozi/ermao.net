@@ -113,10 +113,10 @@ DeepSeek 官方提供了一条在 GitHub Copilot 里直接用 DeepSeek 模型的
    - **Base URL**：`https://api.deepseek.com/v1`
    - **API Key**：你的 DeepSeek 密钥
    - **模型名**：`deepseek-v4-pro` 或 `deepseek-flash`
-5. 保存后，在 Copilot Chat 的模型下拉框里就能看到并选到 DeepSeek V4，补全和聊天都能用。
+5. 保存后，在 Copilot Chat 的模型下拉框里选择已添加的 DeepSeek 模型，用于聊天及模型支持的编辑任务。这里的 BYOK 不会把编辑器的行内代码补全（输入时出现的灰色建议）切换到 DeepSeek；行内补全使用独立的 Copilot 模型与计划。详见 [VS Code 官方 BYOK 能力说明](https://code.visualstudio.com/docs/agents/concepts/language-models#considerations)。
 
 ::: tip 为什么推荐这条路
-如果你公司/学校已经统一买了 Copilot，或者早就用惯了 Copilot 的交互，这条路改动最小：**不用换插件，只换模型**。Copilot 的代码补全本身免费（需登录），你只需要为 Chat 部分调用的 DeepSeek 付 API 费。
+如果你公司/学校已经统一买了 Copilot，或者早就用惯了 Copilot 的交互，这条路改动最小：**不用换插件，只换模型**。DeepSeek 的调用按其 API 用量计费；Copilot 行内补全的可用性与额度取决于你的 Copilot 计划，不能把填入 DeepSeek API Key 理解为获得不限量免费补全。
 :::
 
 ### 方案三：Cline 扩展（推荐给想要 AI 自己动手的人）
