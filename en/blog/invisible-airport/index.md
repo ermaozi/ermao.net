@@ -6,7 +6,7 @@ description: >-
 ---
 Invisible reportedly had about two years of operation. Its lowest ordinary monthly plan was CNY 24 for 144 GB, with a separate CNY 109 annual tier providing 80 GB for the entire year and three one-time data packages.
 
-Recorded purchase route: [Invisible plans](https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V)
+Recorded purchase route: [Invisible plans](https://varnexa.invisibleaff.com/#/?code=8q7IHM5V)
 
 ![Invisible logo =1024x559](https://image.ermao.net/images/blog/invisible-airport/20260728_145938-6f3344.png)
 
