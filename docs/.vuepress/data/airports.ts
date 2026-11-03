@@ -521,7 +521,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "144GB/月",
       "type": "周期订阅",
       "audience": "首次体验、日常学习与办公",
-      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
+      "purchaseHref": "https://varnexa.invisibleaff.com/#/?code=8q7IHM5V",
       "text": "隐形人 · 白银纪元，¥24/月，144GB/月"
     },
     {
@@ -530,7 +530,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "360GB/月",
       "type": "周期订阅",
       "audience": "中高频视频、日常主力使用",
-      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
+      "purchaseHref": "https://varnexa.invisibleaff.com/#/?code=8q7IHM5V",
       "text": "隐形人 · 黄金序列，¥48/月，360GB/月"
     },
     {
@@ -539,7 +539,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "750GB/月",
       "type": "周期订阅",
       "audience": "大文件传输、高流量使用",
-      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
+      "purchaseHref": "https://varnexa.invisibleaff.com/#/?code=8q7IHM5V",
       "text": "隐形人 · 铂金至臻，¥105/月，750GB/月"
     },
     {
@@ -548,7 +548,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "1600GB/月",
       "type": "周期订阅",
       "audience": "团队或多设备重度使用",
-      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
+      "purchaseHref": "https://varnexa.invisibleaff.com/#/?code=8q7IHM5V",
       "text": "隐形人 · 钻石穹顶，¥185/月，1600GB/月"
     },
     {
@@ -557,7 +557,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "80GB/年",
       "type": "周期订阅",
       "audience": "低频备用、能接受年付风险",
-      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
+      "purchaseHref": "https://varnexa.invisibleaff.com/#/?code=8q7IHM5V",
       "text": "隐形人 · 星耀风暴 365 天不熄，¥109/年，80GB/年"
     },
     {
@@ -568,7 +568,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特点：不限时，资料明确限 1 台设备"
       ],
-      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
+      "purchaseHref": "https://varnexa.invisibleaff.com/#/?code=8q7IHM5V",
       "text": "隐形人 · 一次性小流量，¥229/一次性，160GB",
       "oneTime": true
     },
@@ -580,7 +580,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特点：不限时，资料标注支持 2 台设备"
       ],
-      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
+      "purchaseHref": "https://varnexa.invisibleaff.com/#/?code=8q7IHM5V",
       "text": "隐形人 · 一次性标准流量包，¥549/一次性，420GB",
       "oneTime": true
     },
@@ -592,7 +592,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特点：不限时，资料标注支持 3 台设备"
       ],
-      "purchaseHref": "https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V",
+      "purchaseHref": "https://varnexa.invisibleaff.com/#/?code=8q7IHM5V",
       "text": "隐形人 · 一次性精英流量包，¥1199/一次性，1000GB",
       "oneTime": true
     }
@@ -3888,7 +3888,7 @@ export const airportSources: AirportSource[] = [
     name: '隐形人',
     description: '服务商称隐形人已运营约 2 年，主打企业级 IEPL 纯专线、1 倍流量与不限设备；最低月付为 24 元 144GB，支持通用订阅并提供不限时流量包。',
     rank: 67,
-    officialHref: 'https://asfawsf.invisibleattt.sbs/#/?code=8q7IHM5V',
+    officialHref: 'https://varnexa.invisibleaff.com/#/?code=8q7IHM5V',
     universalSubscription: true,
     minPlanText: '24元 144GB/月',
     hasOneTimePackage: true,
