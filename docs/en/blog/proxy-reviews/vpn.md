@@ -215,7 +215,7 @@ Some users cannot import subscriptions because their client is outdated or does 
 New protocols will likely continue to appear. The source article currently highlights [AnyTLS](/en/article/anytls-guide/) and VLESS with flow control as options designed to resist protocol identification; actual effectiveness depends on implementation and network conditions.
 :::
 
-The ranking below is based primarily on **monthly sales, including new purchases and renewals**. Providers with higher reported sales appear earlier. Numbered badges identify list positions.
+The ranked entries below are based primarily on **monthly sales, including new purchases and renewals**. Providers with higher reported sales appear earlier. New listings follow the ranked entries and have no sales rank. Numbered badges identify list positions.
 
 *[Provider name]: Select a name to jump to its summary, which includes more detail and a plan table.
 
@@ -225,7 +225,7 @@ The ranking below is based primarily on **monthly sales, including new purchases
 
 *[Group]: An active community group, usually on Telegram. Before purchasing, prefer a group where users can speak and support replies reasonably quickly.
 
-<AirportRankingTable />
+<AirportRankingTable :new-listing-ids="['dalaoyun']" />
 
 **⚠️ The following services have identified risks and are listed for reference only:**
 
@@ -240,7 +240,7 @@ The ranking below is based primarily on **monthly sales, including new purchases
 
 ## Detailed provider reviews and plan prices
 
-<AirportDetailList />
+<AirportDetailList :new-listing-ids="['dalaoyun']" />
 
 ## Beginner guide: choosing and using a proxy service
 

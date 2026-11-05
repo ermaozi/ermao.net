@@ -59,6 +59,7 @@ export type AirportSource = Omit<AirportRecord, 'plans'> & {
 // 此区块由 pnpm airport:sync-plans 生成，请勿手工编辑。
 // 事实源优先级：2026 详情页 > 2025 详情页 > 主站总表。
 // yunjiexian: docs/blog/机场推荐/2026/机场推荐云界线.md — 月付与年付套餐 / 一次性不限时流量包
+// dalaoyun: docs/blog/机场推荐/2026/机场推荐大佬云.md — 月付与年付套餐 / 一次性不限时流量包
 // xsus: docs/blog/机场推荐/2026/机场推荐xsus.md — 月付套餐 / 不限时流量包（流量不过期）
 // 网际快车: docs/blog/机场推荐/2026/机场推荐网际快车.md — 🧾 核心套餐表
 // cocoduck: docs/blog/机场推荐/2026/机场推荐cocoduck.md — 💳 CocoDuck机场套餐价格
@@ -155,6 +156,98 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "billingCycle": "一次性，不限时",
       "type": "不限时流量包",
       "text": "悠云·长享包，¥199/次，200GB",
+      "oneTime": true
+    }
+  ],
+  "dalaoyun": [
+    {
+      "name": "年付活动包",
+      "priceText": "¥96/年",
+      "traffic": "60GB/月",
+      "billingCycle": "年付，一次支付96元",
+      "type": "周期订阅",
+      "features": [
+        "规则：购买日起每30天刷新流量，折合8元/月"
+      ],
+      "text": "年付活动包，¥96/年，60GB/月"
+    },
+    {
+      "name": "福云·限时版",
+      "priceText": "¥15/月",
+      "traffic": "50GB/月",
+      "billingCycle": "月付",
+      "type": "周期订阅",
+      "features": [
+        "规则：限时版不可用优惠券；具体重置日待确认"
+      ],
+      "text": "福云·限时版，¥15/月，50GB/月"
+    },
+    {
+      "name": "财云·福利版",
+      "priceText": "¥19.99/月",
+      "traffic": "100GB/月",
+      "billingCycle": "月付",
+      "type": "周期订阅",
+      "features": [
+        "规则：截图标注每月100GB，具体重置日待确认"
+      ],
+      "text": "财云·福利版，¥19.99/月，100GB/月"
+    },
+    {
+      "name": "初云·进阶版",
+      "priceText": "¥25/月",
+      "traffic": "150GB/月",
+      "billingCycle": "月付",
+      "type": "周期订阅",
+      "features": [
+        "规则：每30天重置流量"
+      ],
+      "text": "初云·进阶版，¥25/月，150GB/月"
+    },
+    {
+      "name": "凌云·基础版",
+      "priceText": "¥43/月",
+      "traffic": "300GB/月",
+      "billingCycle": "月付",
+      "type": "周期订阅",
+      "features": [
+        "规则：每30天重置流量"
+      ],
+      "text": "凌云·基础版，¥43/月，300GB/月"
+    },
+    {
+      "name": "御云·高级版",
+      "priceText": "¥73/月",
+      "traffic": "600GB/月",
+      "billingCycle": "月付",
+      "type": "周期订阅",
+      "features": [
+        "规则：每30天重置流量"
+      ],
+      "text": "御云·高级版，¥73/月，600GB/月"
+    },
+    {
+      "name": "闲云·随心包",
+      "priceText": "¥268/次",
+      "traffic": "200GB",
+      "billingCycle": "一次性，不限时",
+      "type": "不限时流量包",
+      "features": [
+        "规则：总量200GB，不按月重置，剩余保留，用完即止"
+      ],
+      "text": "闲云·随心包，¥268/次，200GB",
+      "oneTime": true
+    },
+    {
+      "name": "悠云·长享包",
+      "priceText": "¥498/次",
+      "traffic": "500GB",
+      "billingCycle": "一次性，不限时",
+      "type": "不限时流量包",
+      "features": [
+        "规则：总量500GB，不按月重置，剩余保留，用完即止"
+      ],
+      "text": "悠云·长享包，¥498/次，500GB",
       "oneTime": true
     }
   ],
@@ -3751,6 +3844,23 @@ export const airportSources: AirportSource[] = [
     reviewHref: '/blog/yunjiexian/',
     rankChangeLabel: '新上',
     newListing: true,
+  },
+  {
+    id: 'dalaoyun',
+    name: '大佬云',
+    description: '新收录，暂无销量排名。2026年11月5日投稿截图列月付15元50GB起；96元年付60GB/月，折合8元但需一次付96元，另有268元200GB和498元500GB不限时包。投稿称不支持通用订阅。专线、VLESS、解锁与售后均为商家说法，历史图含零速和解锁失败，无本站独立实测；当前订单条款待核。',
+    officialHref: 'https://ermaozi.dalaoyunaff.com/#/?code=sEyr5n3v',
+    universalSubscription: false,
+    minPlanText: '15元 50GB/月',
+    hasOneTimePackage: true,
+    telegramHref: 'https://t.me/shandianjiaoliu',
+    reviewHref: '/blog/dalaoyun/',
+    rankChangeLabel: '新上',
+    newListing: true,
+    image: '/images/dalaoyun/logo.png',
+    imageAlt: '投稿人提供的大佬云标识',
+    imageFit: 'contain',
+    tags: ['VLESS', '多档套餐', '不限时流量包'],
   },
   {
     id: 'flybit',

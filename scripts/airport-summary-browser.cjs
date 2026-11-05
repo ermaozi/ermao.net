@@ -91,9 +91,19 @@ async function main() {
             assert.equal(await superbiu.locator('.airport-plan-table thead th').nth(1).innerText(), language === 'en' ? 'Historical price' : '历史价')
             assert.equal(await superbiu.locator('.airport-plan-table tbody tr').count(), 4)
             if (width === 390 || width === 1440) await superbiu.screenshot({ path: resolve(output, `${language}-superbiu-history-${width}.png`) })
-            const expected = Array.from({ length: language === 'zh' ? 70 : 69 }, (_, i) => i + 1)
+            const expected = Array.from({ length: language === 'zh' ? 71 : 70 }, (_, i) => i + 1)
             assert.deepEqual(result.numbers, expected, `${language}/${width}: missing list number`)
             assert.deepEqual(result.detailNumbers, expected, `${language}/${width}: detail numbers disagree`)
+            const dalaoyun = page.locator('.airport-detail-item').filter({ has: page.locator('#dalaoyun') })
+            assert.equal(await dalaoyun.locator('.airport-plan-table tbody tr').count(), 8)
+            assert.match(await dalaoyun.innerText(), language === 'en' ? /No independent tests/ : /无本站独立实测/)
+            const dalaoyunRow = page.locator('.airport-ranking-table tbody tr').filter({ has: page.locator('a[href="#dalaoyun"]') })
+            assert.match(await dalaoyunRow.innerText(), language === 'en' ? /CNY 15 50GB\/month/ : /15元 50GB\/月/)
+            await dalaoyunRow.locator('a[href="#dalaoyun"]').click()
+            await page.locator('#dalaoyun').waitFor()
+            const referral = dalaoyun.locator('a[href="https://ermaozi.dalaoyunaff.com/#/?code=sEyr5n3v"]').first()
+            assert.equal(await referral.getAttribute('rel'), 'sponsored nofollow noopener')
+            if (width === 390 || width === 1440) await dalaoyun.screenshot({ path: resolve(output, `${language}-dalaoyun-plans-${width}.png`) })
             if (language === 'zh') {
               const row = page.locator('.airport-ranking-table tbody tr').filter({ has: page.locator('a[href="#yunjiexian"]') })
               assert.equal(await row.locator('.airport-ranking-rank').innerText(), '70')
@@ -131,6 +141,45 @@ async function main() {
             await page.screenshot({ path: resolve(output, `${language}-${kind}-${width}-dark.png`) })
           }
         }
+        await page.close()
+      }
+    }
+    // Verify both article routes, local evidence images and discovery from cards.
+    for (const language of ['zh', 'en']) {
+      for (const width of [320, 390, 1440]) {
+        const page = await browser.newPage({ viewport: { width, height: 900 } })
+        await page.route('**/*', route => route.request().url().startsWith(`${base}/`) ? route.continue() : route.abort())
+        const prefix = language === 'en' ? '/en' : ''
+        await page.goto(`${base}${prefix}/airport/`, { waitUntil: 'networkidle' })
+        const card = page.locator('.airport-card').filter({ has: page.locator(`a[href="${prefix}/blog/dalaoyun/"]`) })
+        assert.equal(await card.count(), 1)
+        if (width !== 320) await card.screenshot({ path: resolve(output, `${language}-dalaoyun-card-${width}.png`) })
+        await card.locator('.airport-action-secondary').click()
+        await page.waitForURL(`${base}${prefix}/blog/dalaoyun/`)
+        const article = page.locator('.vp-doc').first()
+        assert.match(await article.innerText(), /2026-09-23 15:13:41/)
+        assert.match(await article.innerText(), /2026-09-23 16:17:30/)
+        const tables = article.locator('.client-device-table[role="region"][tabindex="0"]')
+        assert.equal(await tables.count(), 2)
+        if (width < 720) {
+          await tables.first().focus()
+          await page.keyboard.press('ArrowRight')
+          await page.waitForFunction(element => element.scrollLeft > 0, await tables.first().elementHandle())
+          await tables.first().evaluate(element => { element.scrollLeft = 0 })
+        }
+        const images = article.locator('img[src^="/images/dalaoyun/"]')
+        assert.equal(await images.count(), 5)
+        for (const img of await images.all()) {
+          await img.scrollIntoViewIfNeeded()
+          await page.waitForFunction(element => element.complete && element.naturalWidth > 0, await img.elementHandle())
+          await img.evaluate(element => element.decode())
+          assert.ok(await img.evaluate(element => element.naturalWidth > 0))
+        }
+        const href = 'https://ermaozi.dalaoyunaff.com/#/?code=sEyr5n3v'
+        assert.equal(await article.locator(`a[href="${href}"]`).getAttribute('rel'), 'sponsored nofollow noopener')
+        const documentOverflow = await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 2)
+        results.push({ language, width, kind: 'dalaoyun-article', errors: [], documentOverflow })
+        if (width !== 320) await article.screenshot({ path: resolve(output, `${language}-dalaoyun-article-${width}.png`) })
         await page.close()
       }
     }

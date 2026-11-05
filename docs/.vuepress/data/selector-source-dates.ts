@@ -1,5 +1,6 @@
 // Source frontmatter updateTime snapshot, 2026-10-03. Editorial dates, not live verification.
 export const selectorSourceDates: Record<string, string> = {
+  "/blog/dalaoyun/": "2026-11-05",
   "/article/kewe92tu/": "2026-07-22",
   "/article/4m7fg8r9/": "2026-07-22",
   "/article/q8yp9r2b/": "2026-07-22",

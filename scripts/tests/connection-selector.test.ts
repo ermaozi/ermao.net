@@ -18,6 +18,15 @@ const express = airportRecords.find(item => item.id === '网际快车')!
 assert.equal(trafficGb(express.plans.find(plan => plan.traffic?.startsWith('20GB'))!), undefined)
 assert.ok(!selectorAirports.some(item => item.id === '网际快车'))
 
+const dalaoyun = selectorAirports.find(item => item.id === 'dalaoyun')!
+assert.ok(dalaoyun)
+assert.equal(dalaoyun.sourceDate, '2026-11-05')
+assert.deepEqual(dalaoyun.comparablePlans.map(({ price, traffic }) => [price, traffic]), [
+  [15, 50], [19.99, 100], [25, 150], [43, 300], [73, 600],
+])
+assert.equal(monthlyCny(dalaoyun.plans[0]), undefined, 'Annual average must not enter monthly filters')
+assert.equal(monthlyCny(dalaoyun.plans[6]), undefined, 'One-time data must not enter monthly filters')
+
 const sources = new Map<string, { content: string; date?: string }>()
 for (const path of globSync('docs/blog/机场推荐/**/*.md').sort()) {
   const { data, content } = matter(readFileSync(path, 'utf8'))

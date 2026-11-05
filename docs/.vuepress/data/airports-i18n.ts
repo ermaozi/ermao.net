@@ -4,6 +4,7 @@ const HAN_RE = /[\u3400-\u9fff]/u
 const HAN_GLOBAL_RE = /[\u3400-\u9fff]/gu
 
 const englishNames: Record<string, string> = {
+  大佬云: 'Dalaoyun',
   Lumo: 'Lumo',
   xxyun: 'XXYUN',
   网际快车: 'Wangji Express',
@@ -372,6 +373,7 @@ const localizeTags = (tags: string[] | undefined) =>
     .filter(Boolean)
 
 const englishDescription = (item: AirportSource | AirportRecord) => {
+  if (item.id === 'dalaoyun') return 'New listing without a sales rank. User-supplied images received on 5 November 2026 list CNY 15/month for 50 GB, CNY 96/year for 60 GB/month paid upfront, and CNY 268/200 GB or CNY 498/500 GB one-time packages. Universal subscriptions are reportedly unsupported. Routes, VLESS, service access and support are provider claims; archived images include zero speed and access failures. No independent tests or checkout verification.'
   if (item.id === 'xxyun') return 'A small monthly starting plan, multiple data tiers and one-time packages offer choices for different budgets and usage patterns. Existing records start at CNY 9.99/month for 100G/month. Public material checked on 27 October offered new users 10% off with xxyun; confirm current prices and eligibility at checkout. BGP, streaming and AI support are provider claims, not our test findings.'
   if (item.id === 'lumo') return 'Submitted plans list Lite at CNY 119/year for 365 GiB/year and Plus from CNY 29/month for 150 GiB/month. Both route groups are included according to the provider. Basic is labelled 0.6×/1× with the policy timezone unconfirmed; supplied images label Premium 2.8×. Checkout and promotion terms remain unverified; the screenshots are not our independent tests.'
   if (item.id === 'ccyz') return 'Historical records list CNY 15/month, but the entry quota conflicts between 100GB and 150GB. The current allowance is unverified; use the actual quota and price on the official checkout page before buying.'
@@ -402,7 +404,7 @@ export const localizeAirportSource = (item: AirportSource): AirportSource => ({
   description: englishDescription(item),
   minPlanText: localizeAirportPrice(item.minPlanText),
   rankChangeLabel: item.rankChangeLabel === '新上' ? 'New' : item.rankChangeLabel,
-  imageAlt: item.id === 'lumo' ? 'Lumo logo' : `${localizeAirportName(item.name)} review screenshot`,
+  imageAlt: item.id === 'dalaoyun' ? 'Dalaoyun logo supplied by the submitter' : item.id === 'lumo' ? 'Lumo logo' : `${localizeAirportName(item.name)} review screenshot`,
   tags: localizeTags(item.tags),
 })
 
@@ -413,6 +415,23 @@ export const localizeAirportRecord = (item: AirportRecord): AirportRecord => ({
   minPlanText: localizeAirportPrice(item.minPlanText),
   rankChangeLabel: item.rankChangeLabel === '新上' ? 'New' : item.rankChangeLabel,
   plans: item.plans.map((plan, index) => {
+    if (item.id === 'dalaoyun') {
+      const names = ['Annual promotion', 'Fuyun Limited', 'Caiyun Benefits', 'Chuyun Advanced', 'Lingyun Basic', 'Yuyun Higher Tier', 'Xianyun Flexible', 'Youyun Long Use']
+      const rules = [
+        'CNY 96 upfront; refresh every 30 days from purchase',
+        'Coupons excluded; exact reset date unconfirmed',
+        'Exact reset date unconfirmed',
+        'Reset every 30 days',
+        'Reset every 30 days',
+        'Reset every 30 days',
+        'Total quota; no monthly reset; unused data retained until consumed',
+        'Total quota; no monthly reset; unused data retained until consumed',
+      ]
+      return localizeAirportPlan({ ...plan, name: names[index],
+        billingCycle: index === 0 ? 'Annual; CNY 96 upfront' : index < 6 ? 'Monthly' : 'One-time; no advertised expiry',
+        features: [rules[index]],
+      }, index)
+    }
     if (item.id !== 'xxyun') return localizeAirportPlan(plan, index)
     const names: Record<string, string> = {
       初级套餐: 'Entry plan', 中级套餐: 'Standard plan', 高级套餐: 'Premium plan',
