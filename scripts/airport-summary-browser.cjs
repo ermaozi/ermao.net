@@ -163,6 +163,7 @@ async function main() {
         assert.equal(await images.count(), 5)
         for (const img of await images.all()) {
           await img.scrollIntoViewIfNeeded()
+          await page.waitForFunction(element => element.complete && element.naturalWidth > 0, await img.elementHandle())
           await img.evaluate(element => element.decode())
           assert.ok(await img.evaluate(element => element.naturalWidth > 0))
         }
