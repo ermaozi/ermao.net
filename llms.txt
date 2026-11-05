@@ -106,6 +106,7 @@ This file contains links to all documentation sections.
 - [跨境网络与 AI 服务周报（2026-07-17 至 2026-07-23）：客户端安全更新、AI 故障与局部停网](/blog/cross-border-network-ai-weekly-2026-07-23/index.md): 本期核验 v2rayN 下载器安全修复、sing-box 1.14 beta、GitHub Actions 证书故障、OpenAI 与 Claude 连续可用性事件，并追踪新德里与 AJK 停复网报道及 Google Play DMA 处罚，区分已确认事实、媒体转述和仍待核实的影响边界。
 - [跨境网络与 AI 服务周报（2026-07-24 至 2026-07-30）：旧式 VPN 网关、GitHub 故障与区域链路拥塞](/blog/cross-border-network-ai-weekly-2026-07-30/index.md): 本期核验美国联邦旧式 VPN 网关淘汰提案、sing-box 配置校验更新、GitHub 多组件故障、Cloudflare 区域链路拥塞与 Claude 模型错误，并追踪德里停网诉讼和英国年龄验证政策边界，重点区分已确认事实、官方提案与仍待核实的影响范围。
 - [2026 大哥云机场评测：19.9元100G老牌高性价比机场推荐｜Netflix/ChatGPT解锁](/blog/dageyun/index.md): 大哥云机场怎么样？本文实测大哥云机场速度、稳定性与流媒体解锁能力，月付仅19.9元享100G流量、BGP中转+IPLC专线，多年稳定运营老牌机场，支持Netflix/Disney+/ChatGPT解锁，附套餐价格与购买教程。
+- [大佬云套餐整理：15元月付50GB、96元年付与不限时流量包](/blog/dalaoyun/index.md): 根据2026年11月5日投稿套餐截图整理大佬云八档价格，区分15元月付、96元年付折合8元和一次性流量包，并说明历史测速、解锁失败及核验边界。
 - [2026 Danke机场评测：稳定三年，低至3元/月｜500GB与不限时套餐](/blog/danke/index.md): Danke机场主打稳定三年与低门槛套餐，体验套餐3元/月，主力套餐9.9元起，提供500GB-1000GB月流量与不限时流量包，支持AnyTLS协议与Telegram频道公告。
 - [2026年抖音直播礼物感谢助手：自动感谢插件安装与使用教程](/blog/douyin-live-gift-thanks-assistant/index.md): 抖音直播礼物感谢助手安装与使用教程：介绍礼物监听、自动感谢、话术规则和统计功能，并说明 Chrome、Edge 侧载安装、授权激活及账号安全注意事项。
 - [2026 二猫云机场评测：20元100GB起，IPLC/IEPL新站怎么选](/blog/ermaoyun/index.md): 二猫云机场怎么样？本文整理20元100GB起步套餐、IPLC/IEPL线路、自研客户端、测速样本、通用订阅限制和选购风险，适合想低成本观察新开机场的用户。
