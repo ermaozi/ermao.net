@@ -159,6 +159,14 @@ async function main() {
         const article = page.locator('.vp-doc').first()
         assert.match(await article.innerText(), /2026-09-23 15:13:41/)
         assert.match(await article.innerText(), /2026-09-23 16:17:30/)
+        const tables = article.locator('.client-device-table[role="region"][tabindex="0"]')
+        assert.equal(await tables.count(), 2)
+        if (width < 720) {
+          await tables.first().focus()
+          await page.keyboard.press('ArrowRight')
+          await page.waitForFunction(element => element.scrollLeft > 0, await tables.first().elementHandle())
+          await tables.first().evaluate(element => { element.scrollLeft = 0 })
+        }
         const images = article.locator('img[src^="/images/dalaoyun/"]')
         assert.equal(await images.count(), 5)
         for (const img of await images.all()) {
