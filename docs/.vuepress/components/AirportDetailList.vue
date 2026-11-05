@@ -5,11 +5,11 @@ import { airportRanking, airportNewListings, type AirportBoolean } from '../data
 import { localizeAirportRecord } from '../data/airports-i18n'
 import AirportPlanTable from './AirportPlanTable.vue'
 
-const props = defineProps<{ includeNewListings?: boolean }>()
-const listedAirports = computed(() => props.includeNewListings
-  ? [...airportRanking, ...airportNewListings]
-  : airportRanking,
-)
+const props = defineProps<{ includeNewListings?: boolean; newListingIds?: string[] }>()
+const listedAirports = computed(() => [
+  ...airportRanking,
+  ...airportNewListings.filter(item => props.includeNewListings || props.newListingIds?.includes(item.id)),
+])
 
 const lang = useLang()
 const isEnglish = computed(() => lang.value?.startsWith('en'))

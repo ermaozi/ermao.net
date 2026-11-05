@@ -41,8 +41,8 @@ test('SuperBiu retains historical plans but makes current pricing and availabili
 
 test('Historical monthly prices cannot enter the selector and current results stay unchanged', () => {
   const results = selector(airportRecords)
-  assert.equal(results.length, 27)
-  assert.equal(results.reduce((total, item) => total + item.comparablePlans.length, 0), 94)
+  assert.equal(results.length, 28)
+  assert.equal(results.reduce((total, item) => total + item.comparablePlans.length, 0), 99)
   assert.ok(!results.some(item => item.id === 'superbiu'))
   const monthly = { id: 'example', name: 'Example', reviewHref: '/blog/example/', plans: [{ name: 'Small', text: 'Small', priceText: '¥11/月', traffic: '50GB' }] }
   assert.equal(selector([monthly]).length, 1)

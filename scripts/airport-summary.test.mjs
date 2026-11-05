@@ -110,3 +110,42 @@ test('XXYUN keeps distinct English tiers, historical prices and the exact referr
   assert.deepEqual(Array.from(item.plans, p => Boolean(p.oneTime)), [false, false, false, true, true])
   assert.match(english.description, /new users 10% off/)
 })
+
+test('Dalaoyun keeps annual billing separate from monthly prices and preserves the newer one-time packages', () => {
+  const item = airportNewListings.find(item => item.id === 'dalaoyun')
+  assert.ok(item)
+  assert.equal(item.rank, undefined)
+  assert.equal(airportRanking.length, 69)
+  assert.equal(item.minPlanText, '15元 50GB/月')
+  assert.equal(item.universalSubscription, false)
+  assert.equal(item.hasOneTimePackage, true)
+  assert.equal(item.officialHref, 'https://ermaozi.dalaoyunaff.com/#/?code=sEyr5n3v')
+  assert.deepEqual(Array.from(item.plans, plan => [plan.priceText, plan.traffic, Boolean(plan.oneTime)]), [
+    ['¥96/年', '60GB/月', false],
+    ['¥15/月', '50GB/月', false],
+    ['¥19.99/月', '100GB/月', false],
+    ['¥25/月', '150GB/月', false],
+    ['¥43/月', '300GB/月', false],
+    ['¥73/月', '600GB/月', false],
+    ['¥268/次', '200GB', true],
+    ['¥498/次', '500GB', true],
+  ])
+  assert.match(item.plans[0].billingCycle, /一次支付96元/)
+  assert.match(item.plans[1].features.join(' '), /不可用优惠券/)
+  const english = localizeAirportRecord(item)
+  assert.equal(english.name, 'Dalaoyun')
+  assert.match(english.description, /No independent tests or checkout verification/)
+  assert.equal(english.plans[0].billingCycle, 'Annual; CNY 96 upfront')
+  assert.match(english.plans[6].features[0], /no monthly reset/)
+  assert.doesNotMatch(JSON.stringify({ name: english.name, description: english.description,
+    minPlanText: english.minPlanText, plans: english.plans,
+    card: localizeAirportSource(airportSources.find(item => item.id === 'dalaoyun')),
+  }), /[\u3400-\u9fff]/u)
+  for (const file of ['docs/blog/机场推荐/2026/机场推荐大佬云.md', 'docs/en/blog/proxy-reviews/2026/机场推荐大佬云.md']) {
+    const article = read(file)
+    assert.match(article, /2026-09-23 15:13:41/)
+    assert.match(article, /2026-09-23 16:17:30/)
+    assert.match(article, /AffiliateLink href="https:\/\/ermaozi\.dalaoyunaff\.com\/#\/\?code=sEyr5n3v"/)
+    assert.doesNotMatch(article, /commissionRate|commission.*50|50%.*commission|50%循环|50%.*佣金/)
+  }
+})
