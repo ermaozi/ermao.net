@@ -67,7 +67,7 @@ In the shell:
 id
 ```
 
-Record the numeric UID and GID. Do not assume both are `1000`.
+Record the numeric UID and GID. Do not assume both are `1000`. Use a normal user with a nonzero UID. The configuration directory must be writable by that UID/GID, and the data directory must be readable; two-way sync also requires data-directory write access. Stop and resolve any access mismatch before proceeding.
 
 Set task-specific variables for the current shell, replacing the example paths:
 
@@ -105,14 +105,26 @@ This provides better isolation but still is not immutable backup: an in-place fi
 
 The upstream Docker guide currently uses the `driveone/onedrive` image and recommends the `edge` tag for alignment with its current documentation and fixes. For a production deployment, test the chosen tag and pin a version or image digest so upgrades are deliberate.
 
+Before either first-run command, confirm that independent backups or snapshots of the affected local and cloud data exist and can be restored. Verify the Microsoft account, both host paths, intended cloud scope, filters, and sync direction before authorizing access.
+
+Start with disposable sample data in a separate test account containing no valuable cloud files, a separate local data directory, and a fresh configuration directory used only for that test. Changing only the local directory does not isolate an existing OneDrive account. Do not reuse production sync state with a different test directory. After the small real test and restore check described in sections 6 and 9, repeat this dry-run for the intended production scope using its own configuration and data paths.
+
+The examples start the container explicitly as that non-root UID/GID. The current entrypoint then skips root-only user management and ownership changes, which also avoids attempting to change ownership on the read-only source mount. Verify directory access first rather than removing the read-only protection.
+
+Choose **one** of the following commands. Both request a verbose, single-pass dry-run rather than starting the default monitor. Never run two containers against the same configuration directory at the same time.
+
 ### Two-way sync first run
 
 ```bash
 docker run -it --name onedrive \
+  --user "$ONEDRIVE_UID:$ONEDRIVE_GID" \
   -v "$ONEDRIVE_CONF_DIR:/onedrive/conf" \
   -v "$ONEDRIVE_DATA_DIR:/onedrive/data" \
   -e "ONEDRIVE_UID=$ONEDRIVE_UID" \
   -e "ONEDRIVE_GID=$ONEDRIVE_GID" \
+  -e ONEDRIVE_DRYRUN=1 \
+  -e ONEDRIVE_SYNC_ONCE=1 \
+  -e ONEDRIVE_VERBOSE=1 \
   driveone/onedrive:edge
 ```
 
@@ -120,14 +132,20 @@ docker run -it --name onedrive \
 
 ```bash
 docker run -it --name onedrive \
+  --user "$ONEDRIVE_UID:$ONEDRIVE_GID" \
   -v "$ONEDRIVE_CONF_DIR:/onedrive/conf" \
   -v "$ONEDRIVE_DATA_DIR:/onedrive/data:ro" \
   -e "ONEDRIVE_UID=$ONEDRIVE_UID" \
   -e "ONEDRIVE_GID=$ONEDRIVE_GID" \
+  -e ONEDRIVE_DRYRUN=1 \
+  -e ONEDRIVE_SYNC_ONCE=1 \
+  -e ONEDRIVE_VERBOSE=1 \
   -e ONEDRIVE_UPLOADONLY=1 \
   -e ONEDRIVE_NOREMOTEDELETE=1 \
   driveone/onedrive:edge
 ```
+
+Dry-run previews data-file uploads, downloads, and deletions without performing those actions. It is not a zero-write container: authorization and preview can still write credentials, configuration, or state in the configuration mount.
 
 The container prints a Microsoft authorization URL:
 
@@ -145,11 +163,17 @@ The client stores credentials and a state database in the configuration mount:
 
 The original article referred to a `refresh_token` file and suggested deleting it after a password change. Current reauthorization should use the client's supported `ONEDRIVE_REAUTH=1` flow or current upstream instructions, not manual token-file deletion as the first response.
 
-Detach without stopping the interactive container by pressing `Ctrl+P`, then `Ctrl+Q`. Alternatively, stop it after authorization and recreate it with the background options below.
+Stay attached until the single-pass preview finishes. Check the logs for the explicit dry-run indicator (such as `DRY-RUN Configured`) and review **all** planned local and remote actions against the intended scope. The screenshots above only identify the interface; they do not prove that your current run is a dry-run. If the preview fails, the indicator is missing, or any planned action is unclear, stop and resolve it without removing the dry-run option.
 
 ## 6. Run in the Background
 
-Remove only the disposable container object; the bind-mounted configuration and data remain:
+The background commands below start **real synchronization immediately**. Do not use them as the first test after authorization.
+
+First complete a real single-pass test using only the isolated disposable setup from section 5. After reviewing its dry-run, recreate the container with the same chosen first-run command, removing only `ONEDRIVE_DRYRUN=1`; retain `ONEDRIVE_SYNC_ONCE=1`, `ONEDRIVE_VERBOSE=1`, and every direction and mount protection. Wait for completion and verify restoration as described in section 9 before considering continuous operation.
+
+Keep the account, local and configuration paths, cloud scope, filters, direction, and mount policy identical between a preview and its corresponding real run. A successful disposable test does not approve the production scope: preview that scope separately before starting its monitor. If any of these settings changes, stop and preview again; never repoint existing production state at a test directory or carry test state into production.
+
+Before each recreation, ensure the previous container has stopped, then remove only its disposable container object. Preserve the bind-mounted configuration and data directories; do not delete or clear them:
 
 ```bash
 docker rm -f onedrive
@@ -159,6 +183,7 @@ docker rm -f onedrive
 
 ```bash
 docker run -d --name onedrive \
+  --user "$ONEDRIVE_UID:$ONEDRIVE_GID" \
   --restart unless-stopped \
   -v "$ONEDRIVE_CONF_DIR:/onedrive/conf" \
   -v "$ONEDRIVE_DATA_DIR:/onedrive/data" \
@@ -171,6 +196,7 @@ docker run -d --name onedrive \
 
 ```bash
 docker run -d --name onedrive \
+  --user "$ONEDRIVE_UID:$ONEDRIVE_GID" \
   --restart unless-stopped \
   -v "$ONEDRIVE_CONF_DIR:/onedrive/conf" \
   -v "$ONEDRIVE_DATA_DIR:/onedrive/data:ro" \
@@ -233,6 +259,7 @@ If the token is revoked, the account changes, or the logs request reauthorizatio
 docker rm -f onedrive
 
 docker run -it --name onedrive \
+  --user "$ONEDRIVE_UID:$ONEDRIVE_GID" \
   -v "$ONEDRIVE_CONF_DIR:/onedrive/conf" \
   -v "$ONEDRIVE_DATA_DIR:/onedrive/data:ro" \
   -e "ONEDRIVE_UID=$ONEDRIVE_UID" \
@@ -249,8 +276,8 @@ Use the same mode and mount policy as the regular container. Review the current 
 
 Uploading without a tested restore is not a completed backup.
 
-1. Create a small test file locally.
-2. Confirm it appears in the expected OneDrive folder.
+1. Before the dry-run and real single-pass sync in sections 5–6, create a small disposable test file in the isolated local test directory.
+2. After the corresponding real single-pass sync finishes, confirm that its cloud copy appears in the expected folder of the isolated test account.
 3. Record its hash:
 
    ```bash
@@ -259,7 +286,7 @@ Uploading without a tested restore is not a completed backup.
 
 4. Restore the file to a separate directory or device.
 5. Compare its hash and metadata.
-6. Test an older version and a deleted file using the retention features you expect to rely on.
+6. Test an older version and a deleted file using only disposable test files. With `ONEDRIVE_NOREMOTEDELETE=1`, deleting a local file does not create a cloud recycle-bin entry; perform any needed cloud-deletion restore test separately within the isolated test account. Verify the retention features you expect to rely on without deleting production data.
 7. Alert when the container stops, authentication fails, uploads are skipped, storage is full, or no successful sync has occurred within the expected window.
 
 ## 10. Maintain the Deployment
