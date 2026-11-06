@@ -276,8 +276,8 @@ Use the same mode and mount policy as the regular container. Review the current 
 
 Uploading without a tested restore is not a completed backup.
 
-1. Create a small test file locally.
-2. Confirm it appears in the expected OneDrive folder.
+1. Before the dry-run and real single-pass sync in sections 5–6, create a small disposable test file in the isolated local test directory.
+2. After the corresponding real single-pass sync finishes, confirm that its cloud copy appears in the expected folder of the isolated test account.
 3. Record its hash:
 
    ```bash
