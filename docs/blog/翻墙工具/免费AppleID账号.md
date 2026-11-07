@@ -136,13 +136,20 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
 .copy-btn {
   cursor: pointer;
   margin-right: 8px;
-  padding: 4px 12px;
+  min-height: 44px;
+  padding: 8px 12px;
   font-size: 13px;
   border: 1px solid var(--vp-c-gutter);
   background-color: transparent;
   color: var(--vp-c-text-2);
   border-radius: 4px;
   transition: all 0.3s ease;
+}
+
+.copy-btn:focus-visible,
+.refresh-btn:focus-visible {
+  outline: 2px solid var(--vp-c-brand);
+  outline-offset: 3px;
 }
 
 .copy-btn:hover {
@@ -153,7 +160,8 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
 
 .refresh-btn {
   cursor: pointer;
-  padding: 4px 12px;
+  min-height: 44px;
+  padding: 8px 12px;
   font-size: 13px;
   background-color: var(--vp-c-bg);
   border: 1px solid var(--vp-c-divider);
@@ -289,7 +297,7 @@ const fallbackCopy = (text, onSuccess) => {
   document.body.appendChild(textarea);
   textarea.select();
   try {
-      document.execCommand('copy');
+      if (!document.execCommand('copy')) throw new Error('Clipboard copy declined');
       onSuccess();
   } catch (err) {
       console.error('复制失败: ', err);
