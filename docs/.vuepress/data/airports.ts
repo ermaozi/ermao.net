@@ -3895,7 +3895,7 @@ export const airportSources: AirportSource[] = [
   {
     id: 'xxyun',
     name: 'xxyun',
-    description: '支持通用订阅，9.99元100G/月入门档与多档月付、一次性包便于按预算选择。按客户端导入后验证常用应用；当前价格和条款以购买页为准。10月27日资料列新用户xxyun码9折，是否仍适用以结算为准。BGP及流媒体、AI支持为商家描述。',
+    description: '支持通用订阅，已收录9.99元100G/月入门档与多档月付、一次性包，便于按预算比较；当前是否可购买、实付金额和条款以订单页面为准。按客户端导入后验证常用应用。10月27日资料列新用户xxyun码9折，是否仍适用以结算为准。BGP及流媒体、AI支持为商家描述。',
     rank: 3,
     officialHref: 'https://www.xxyun.ai/?code=HOWnn58c',
     universalSubscription: true,
