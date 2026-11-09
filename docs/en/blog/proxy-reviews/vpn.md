@@ -496,6 +496,8 @@ Watch for these conditions and limit losses. Examples include [Atom](/en/article
 
 ---
 
+<span id="discounts-and-trials"></span>
+
 ## Discounts and trials {#offers}
 
 These are recorded offer leads to check at checkout, not a claim that every offer was redeemed or purchased today. Except for the public entry-page statement noted below, verify current eligibility, stacking, selected plans, and new-purchase or renewal conditions before paying:

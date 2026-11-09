@@ -474,6 +474,8 @@ Windows、macOS 和 Linux 推荐 [Clash Verge Rev](/article/0gematwc/)；Android
 
 ---
 
+<span id="_2026年vpn机场优惠活动与试用信息"></span>
+
 ## 2026年VPN机场优惠活动与试用信息 {#offers}
 
 以下保留已有优惠线索，方便在订单页核对。除特别注明的公开入口说明外，不表示今天已逐项领取或下单验证；折扣能否叠加、适用套餐以及新购或续费条件均以下单页为准：
