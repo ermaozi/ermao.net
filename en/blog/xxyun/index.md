@@ -5,7 +5,7 @@ description: >-
   tier, data allowances and one-time packages, then import and verify a
   subscription in your client.
 ---
-XXYUN supports **universal subscriptions**, with a **CNY 9.99 monthly entry plan offering 100G/month**, larger monthly allowances and one-time packages. Start with the billing period and data you need, then import the account subscription into a compatible client.
+XXYUN supports **universal subscriptions**, with a listed **CNY 9.99 monthly entry plan offering 100G/month**, larger monthly allowances and one-time packages to compare. **Current availability, the final amount and plan terms must be checked on the order page.** Start with the billing period and data you need, then import the account subscription into a compatible client.
 
 View XXYUN plans and subscription options
 
@@ -49,7 +49,7 @@ Universal subscriptions let compatible clients obtain and refresh the account co
 
 XXYUN offers a straightforward starting point and room to adjust as your needs change:
 
-* **An approachable first payment.** The CNY 9.99 monthly tier keeps the initial commitment small, letting you configure your usual applications before deciding on longer-term spending.
+* **An approachable first payment.** If the order page still offers the CNY 9.99 monthly tier, it keeps the initial commitment small, letting you configure your usual applications before deciding on longer-term spending.
 * **Allowances that can grow with usage.** The 100G, 300G and 1000G tiers provide options for occasional browsing or heavier video and download needs. Choose around actual consumption.
 * **Different choices for regular and backup use.** Monthly plans suit a routine; one-time packages offer an alternative for intermittent use, subject to their terms.
 * **A familiar setup workflow.** Universal subscriptions let you import the account configuration into a compatible client you already know. Device-specific guides help when switching devices; device and simultaneous-session limits still follow the plan rules.
