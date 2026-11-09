@@ -115,11 +115,11 @@ Clash是目前最受欢迎的代理客户端之一，支持多种协议包括Sha
 * 建议连接香港、日本、新加坡或韩国等邻近地区
 * 速度更快，稳定性更好
 
-**各个平台的clash客户端：**
+**各平台代理客户端教程：**
 
-* 📱 [clash for Android](https://www.ermao.net/article/eh8f4n86/)
-* 🖥 [clash for Windows](https://www.ermao.net/article/0gematwc/)
-* 🍎 [clash for iOS](https://www.ermao.net/article/z747kgjd/)
+* 📱 [Clash Meta for Android 下载与配置教程](https://www.ermao.net/article/eh8f4n86/)
+* 🖥 [Clash Verge Rev Windows 下载与配置教程](https://www.ermao.net/article/0gematwc/)
+* 🍎 [Shadowrocket（小火箭）iOS 下载与配置教程](https://www.ermao.net/article/z747kgjd/)
 
 ## 第四章：Clash与VPN的区别：选择适合你的科学上网工具
 

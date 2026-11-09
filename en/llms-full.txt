@@ -5775,7 +5775,7 @@ The source listed SSONE, xxyun, Laotou VPN, and CocoDuck as examples. This is no
 * [CocoDuck dated review](/en/article/cocoduck/)
 * [All current proxy-service reviews](/en/posts/vpn/)
 
-The SSONE source displays `hello-ssone.com` but links registration to `flybit6202.com`. The xxyun source similarly displays `.de` while linking `.at`. Resolve such mismatches before entering credentials or paying.
+The SSONE source displays `hello-ssone.com` but links registration to `flybit6202.com`. Resolve such mismatches before entering credentials or paying.
 
 ### 5.3 Configuration
 
