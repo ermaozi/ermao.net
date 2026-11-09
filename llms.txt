@@ -151,7 +151,7 @@ This file contains links to all documentation sections.
 - [2026 随便云机场评测：10元68G多线BGP回源机场推荐｜IEPL专线/Netflix解锁](/blog/suibian/index.md): 随便云机场怎么样？本文实测随便云(SuiBian)速度、稳定性与流媒体解锁能力，月付仅10元享68G流量、多线BGP回源+IEPL专线，晚高峰不跳延迟，支持Netflix/Disney+解锁，附不限时流量包与客户端配置教程。
 - [2026 SuperBiu机场评测：套餐变价、CN2入口与历史测速参考](/blog/superbiu/index.md): SuperBiu机场评测资料更新：核对官方价格调整、CN2入口与AnyTLS协议公告，保留2026-02-24版套餐价格及历史测速记录，附购买前核对事项和客户端使用提醒；现价与一次性套餐状态以官网为准。
 - [2026年最新 telegram（电报、飞机）注册使用教程](/blog/telegram/index.md): Telegram注册使用教程：学习Telegram隐私保护、跨平台同步、群组频道创建和机器人使用。适合新手，包含完整注册流程、核心功能和安全建议。
-- [2026天喵加速器评测：永久免费VPN推荐｜游戏视频加速、多国节点](/blog/tianmiao/index.md): 天喵加速器怎么样？本文实测天喵VPN速度与稳定性，永久免费线路+VIP专线，支持Netflix/YouTube/Steam游戏加速，附注册教程与TOKEN激励机制详解。
+- [天喵加速器介绍：免费线路、VIP套餐与使用前核对](/blog/tianmiao/index.md): 整理天喵免费线路、VIP/SVIP套餐与TOKEN相关宣传，区分商家声明与本站验证，附订阅格式、客户端选择及下单前核对事项。
 - [2026 暮光加速机场推荐：VLESS 专线，20元120GB起](/blog/twilight-airport/index.md): 暮光加速机场怎么样？本文整理20元120GB起的周期套餐、109元年付轻量版、三档一次性不限时流量包，以及VLESS、通用订阅、节点地区、付款方式和测速截图。
 - [2026 uuone机场评测：12元150G BGP三网优化机场推荐｜Netflix/ChatGPT解锁](/blog/uuone/index.md): uuone机场怎么样？本文实测uuone机场速度、稳定性与流媒体解锁能力，月付仅12元享150G流量、BGP三网优化线路，晚高峰不限速，支持Netflix/Disney+/ChatGPT，附最新9折优惠码及Clash/Shadowrocket配置教程。
 - [2026年第27周翻墙相关新闻周报：VPN封锁、快连动态与全球网络管制](/blog/vpn-weekly-2026-w27/index.md): 2026年第27周翻墙相关新闻周报，整理公开媒体与研究机构发布的VPN、科学上网、网络审查和全球互联网管制动态，包括中国大陆VPN可用性、LetsVPN快连动态、俄罗斯VPN与Telegram管制、App Store下架数据、全球互联网断网趋势，并逐条标明新闻出处。
