@@ -94,15 +94,17 @@ test('Lumo preserves annual quota, unknown terms and exact referral links in bot
 })
 
 
-test('XXYUN keeps distinct English tiers, historical prices and the exact referral', () => {
+test('XXYUN supports universal subscriptions and preserves tiers and the exact referral', () => {
   const item = airportRanking.find(item => item.id === 'xxyun')
   assert.equal(item.rank, 3)
   assert.equal(item.officialHref, 'https://www.xxyun.ai/?code=HOWnn58c')
-  assert.equal(item.universalSubscription, 'unknown')
+  assert.equal(item.universalSubscription, true)
   assert.equal(item.plans.length, 5)
   const english = localizeAirportRecord(item)
   assert.equal(english.name, 'XXYUN')
-  assert.match(english.minPlanText, /^Historical /)
+  assert.equal(item.minPlanText, '9.99元100G/月')
+  assert.doesNotMatch(english.minPlanText, /Historical/)
+  assert.equal(english.universalSubscription, true)
   assert.deepEqual(Array.from(english.plans, p => p.name),
     ['Entry plan', 'Standard plan', 'Premium plan', '500G one-time', '2888G one-time'])
   assert.deepEqual(Array.from(item.plans, p => p.priceText),
@@ -147,5 +149,17 @@ test('Dalaoyun keeps annual billing separate from monthly prices and preserves t
     assert.match(article, /2026-09-23 16:17:30/)
     assert.match(article, /AffiliateLink href="https:\/\/ermaozi\.dalaoyunaff\.com\/#\/\?code=sEyr5n3v"/)
     assert.doesNotMatch(article, /commissionRate|commission.*50|50%.*commission|50%循环|50%.*佣金/)
+  }
+})
+
+
+test('XXYUN bilingual metadata follows the requested date without relabeling the test image', () => {
+  for (const path of ['docs/blog/机场推荐/2026/机场推荐xxyun.md', 'docs/en/blog/proxy-reviews/2026/机场推荐xxyun.md']) {
+    const article = read(path)
+    assert.match(article, /createTime: 2026\/11\/09 00:00:00/)
+    assert.match(article, /updateTime: 2026\/11\/09 00:00:00/)
+    assert.match(article, /2025-02-14 04:05:49 CST/)
+    assert.match(article, /https:\/\/www\.xxyun\.ai\/\?code=HOWnn58c/)
+    assert.doesNotMatch(article, /本次重写：|Rewritten on/)
   }
 })
