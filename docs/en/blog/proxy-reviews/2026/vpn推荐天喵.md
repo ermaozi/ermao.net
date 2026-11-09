@@ -71,10 +71,16 @@ No privacy-policy text, audit, retention schedule, infrastructure ownership, or 
 
 ## Recorded paid plans
 
+<div role="region" aria-label="Recorded Tianmiao plans; scroll horizontally" tabindex="0" style="max-width: 100%; overflow-x: auto;">
+<div style="min-width: 960px;">
+
 | Plan | Monthly | Quarterly | Half-year | Annual | Source distinction |
 | --- | ---: | ---: | ---: | ---: | --- |
 | VIP | CNY 25 | CNY 65 | CNY 125 | CNY 220 | No dedicated route; no speed or data cap claimed |
 | SVIP | CNY 30 | CNY 75 | CNY 145 | CNY 260 | Dedicated route claimed; no speed or data cap claimed |
+
+</div>
+</div>
 
 Use the free tier first only if registration and the client do not request unnecessary permissions or payment authorization. Confirm current limits and privacy terms before using it for sensitive traffic.
 
