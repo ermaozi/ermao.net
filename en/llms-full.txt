@@ -22854,7 +22854,7 @@ description: >-
 
 Start with three checks: **the actual payment, client compatibility, and performance on your own network**. This page collects plans, subscription compatibility, full reviews, and risk records. The list is ordered by sales, which does not establish tested speed or reliability.
 
-Jump to the [plan comparison](#airport-comparison), [Shadowrocket / Clash Mi subscriptions](#ios-subscription), or [budget and non-expiring plan filter](/en/airport/). If you already have a working subscription, check its format and expiry before buying another.
+Jump to the [plan comparison](#airport-comparison), [pre-payment checks](#before-payment), [offers and trials](#offers), [Shadowrocket / Clash Mi subscriptions](#ios-subscription), or [budget and non-expiring plan filter](/en/airport/). If you already have a working subscription, check its format and expiry before buying another.
 
 If proxy subscriptions, Clash nodes, Shadowrocket, and standard subscription formats are new to you, begin with [2026 Proxy-Subscription Guide: Buying and Importing Clash Nodes](/en/article/jichang-subscription-guide/). Understanding the relationship among a provider, VPN, client, and node will make plan selection easier.
 
@@ -22939,12 +22939,12 @@ If you arrived from the shared Apple ID page, **the account downloads the app; a
   * [routers](/en/blog/router-setup-guide/), including the [beginner OpenWrt router guide](/en/blog/router-setup-guide/);
   * Apple TV, game consoles, and other devices when configured through a compatible client or router.
 
-* Access-tool trends in 2026
+* Check protocols, routes and application access separately
 
-  1. **New protocols:** Hysteria and TUIC aim to improve performance and resistance to disruption.
-  2. **Lower entry prices:** More inexpensive and pay-as-you-go packages have appeared.
-  3. **More private routes:** IEPL and IPLC routes are becoming more common among midrange and premium providers.
-  4. **AI-service routing:** More providers claim to optimize access to ChatGPT, Claude, and related services; verify current availability on the specific node you will use.
+  1. **Protocols:** Confirm that your client supports the plan's protocols and subscription format before buying. A protocol name does not replace a connection test.
+  2. **Plans:** Compare the total payment, quota period and node multipliers for monthly and one-time packages, rather than the lowest displayed price alone.
+  3. **Routes:** IEPL / IPLC labels describe provider-advertised route types; they do not guarantee latency or peak-hour performance. Start with a small plan on your own network.
+  4. **Applications:** Test the actual region, node and features you need for ChatGPT, Claude or streaming. A support claim does not mean every node remains available indefinitely.
      :::
 
 ## How providers are selected for review
@@ -22984,11 +22984,20 @@ The ranked entries below are based primarily on **monthly sales, including new p
 
 \*\[Provider name]: Select a name to jump to its summary, which includes more detail and a plan table.
 
-\*\[Non-expiring]: Data remains available until consumed rather than expiring after a fixed period.
+\*\[Non-expiring]: Usually a usage-based package without monthly expiry; check validity, account-retention and service-termination terms. It does not guarantee permanent service.
 
 \*\[Standard subscription]: Supports a subscription URL for third-party clients such as Clash, V2Ray, or Shadowrocket, rather than requiring only a proprietary client.
 
 \*\[Group]: An active community group, usually on Telegram. Before purchasing, prefer a group where users can speak and support replies reasonably quickly.
+
+### Four checks before paying {#before-payment}
+
+* **Actual payment:** Compare monthly billing, annual plans advertised at a monthly equivalent, and one-time data packages separately. An annual commitment is not monthly billing; 60 GB per month is not 60 GB for the entire year.
+* **Data accounting:** Check reset dates, rollover, node multipliers and expiry. Usage-based packages can suit occasional access, but account-retention and service-termination terms still matter.
+* **Client compatibility:** Standard subscriptions support third-party clients; one link does not necessarily work in every app. Choose the provider's format for Clash / Mihomo, Shadowrocket or your other client. XXYun supports standard subscriptions.
+* **Offer eligibility:** Enter the code and check the selected plan, new-purchase or renewal conditions, and final amount before paying. A trial has both a quota and an expiry; trial availability does not imply refund rights.
+
+Use the table to open a review or provider website. If an existing subscription fails, check its remaining data, expiry and update status, then use the [client setup guide](/en/article/jichang-subscription-guide/) before buying another service.
 
 **⚠️ The following services have identified risks and are listed for reference only:**
 
@@ -23173,7 +23182,7 @@ Avoid buying a long plan immediately; prefer monthly or pay-as-you-go packages. 
 **Examples in this guide:**
 
 * [XSUS](./2026/机场推荐xsus.md) — the 2026 review records CNY 10 for 168 GB/month; current price unverified;
-* [xxyun](./2026/机场推荐xxyun.md) — CNY 9.99 for 100 GB/month;
+* [xxyun](./2026/机场推荐xxyun.md) — listed plan: CNY 9.99 for 100 GB/month, with standard subscription support; confirm current availability and payment at checkout;
 * [Flybit](./2026/机场推荐flybit.md) — CNY 15 for 128 GB/month.
 
 **Usage advice:**
@@ -23247,16 +23256,16 @@ Watch for these conditions and limit losses. Examples include [Atom](/en/article
 
 ***
 
-## Discounts and trials
+## Discounts and trials {#offers}
 
-Codes, trials, and promotions change over time. Verify availability on the checkout page before paying:
+These are recorded offer leads to check at checkout, not a claim that every offer was redeemed or purchased today. Except for the public entry-page statement noted below, verify current eligibility, stacking, selected plans, and new-purchase or renewal conditions before paying:
 
 1. **[xxyun](./2026/机场推荐xxyun.md):** code `xxyun` was listed for 10% off.
 2. **[SSOne](./2026/机场推荐ssone.md):** intended for readers prioritizing IEPL routes; verify current trials and promotions on its website.
-3. **[Flybit](./2026/机场推荐flybit.md):** registration was listed as including a one-day, 2 GB trial.
-4. **[Cocoduck](./2026/机场推荐cocoduck.md):** a one-day, 2 GB first-purchase trial was listed.
-5. **[Jilian Cloud](./2026/机场推荐极连云.md):** code `JLY888` was listed for 20% off.
-6. **[UUOne](./2026/机场推荐uuone.md):** code `uuone` was listed for 10% off.
+3. **[Flybit](./2026/机场推荐flybit.md):** the public entry page currently advertises a 2 GB trial on registration. It does not state the validity period; check expiry when claiming it.
+4. **[Cocoduck](./2026/机场推荐cocoduck.md):** existing material describes a one-day, 2 GB trial after registration. The provider entry could not be read in this check; confirm availability and how to claim it on the provider website.
+5. **[Jilian Cloud](./2026/机场推荐极连云.md):** code `JLY888` was listed for 20% off; do not assume an expiry date or that it stacks with annual discounts.
+6. **[UUOne](./2026/机场推荐uuone.md):** code `uuone` was listed for 10% off; confirm eligible plans and whether it applies to new purchases or renewals.
 
 > See the [proxy-service coupon index](/en/article/23w1svxa/) for additional codes. All promotions require current verification.
 
