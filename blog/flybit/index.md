@@ -37,10 +37,10 @@ flybit机场支持 Clash、Shadowrocket、V2Ray 等主流代理客户端。
 
 ### 客户端下载
 
-* **Android**: [Clash for Android 下载与配置教程](/article/eh8f4n86/)
-* **Windows**: [Clash for Windows 下载与配置教程](/article/0gematwc/)
-* **iOS**: [Clash Stash / Shadowrocket 下载教程](/article/z747kgjd/) (需外区Apple ID)
-* **Mac**: [ClashX Pro 下载与配置教程](/article/0gematwc/)
+* **Android**: [Clash Meta for Android 下载与配置教程](/article/eh8f4n86/)
+* **Windows**: [Clash Verge Rev 下载与配置教程](/article/0gematwc/)
+* **iOS**: [Shadowrocket（小火箭）下载与配置教程](/article/z747kgjd/) (需外区Apple ID)
+* **Mac**: [Clash Verge Rev 下载与配置教程](/article/0gematwc/)
 
 ## 常见问题 (FAQ)
 
