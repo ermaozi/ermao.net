@@ -1,7 +1,7 @@
 ---
 title: Flybit Review—CNY 15 for 128 GB and Non-Expiring Packages
 createTime: 2026/03/02 10:00:00
-updateTime: 2026/10/03 03:00:00
+updateTime: 2026/11/09 05:55:20
 permalink: /en/blog/flybit/
 lang: en-US
 translationOf: /blog/flybit/
@@ -93,7 +93,7 @@ The CNY 15 entry price is low relative to the recorded 128 GB allowance. Value s
 ## Client setup
 
 - [Clash Meta for Android](/en/article/eh8f4n86/)
-- [Clash Verge for Windows, Linux, and macOS](/en/article/0gematwc/)
+- [Clash Verge Rev for Windows, Linux, and macOS](/en/article/0gematwc/)
 - [Shadowrocket for iPhone and iPad](/en/article/z747kgjd/)
 
 ## Related guides

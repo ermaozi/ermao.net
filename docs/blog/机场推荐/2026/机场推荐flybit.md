@@ -1,7 +1,7 @@
 ---
 title: 2026 flybit机场评测：15元128G高性价比IEPL专线机场推荐｜解锁ChatGPT
 createTime: 2026/03/02 10:00:00
-updateTime: 2026/10/03 03:00:00
+updateTime: 2026/11/09 05:55:20
 permalink: /blog/flybit/
 tags:
   - 科学上网
@@ -56,10 +56,10 @@ flybit机场提供多种套餐选择，满足不同用户的需求。最便宜�
 flybit机场支持 Clash、Shadowrocket、V2Ray 等主流代理客户端。
 
 ### 客户端下载
-- **Android**: [Clash for Android 下载与配置教程](/article/eh8f4n86/)
-- **Windows**: [Clash for Windows 下载与配置教程](/article/0gematwc/)
-- **iOS**: [Clash Stash / Shadowrocket 下载教程](/article/z747kgjd/) (需外区Apple ID)
-- **Mac**: [ClashX Pro 下载与配置教程](/article/0gematwc/)
+- **Android**: [Clash Meta for Android 下载与配置教程](/article/eh8f4n86/)
+- **Windows**: [Clash Verge Rev 下载与配置教程](/article/0gematwc/)
+- **iOS**: [Shadowrocket（小火箭）下载与配置教程](/article/z747kgjd/) (需外区Apple ID)
+- **Mac**: [Clash Verge Rev 下载与配置教程](/article/0gematwc/)
 
 ## 常见问题 (FAQ)
 
