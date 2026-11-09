@@ -1,7 +1,7 @@
 ---
 title: Shadowrocket Download, Installation, and Subscription Guide (2026)
 createTime: 2025/01/03 18:18:11
-updateTime: 2026/10/01 17:30:00
+updateTime: 2026/11/09 05:55:20
 permalink: /en/article/z747kgjd/
 lang: en-US
 translationOf: /article/z747kgjd/
@@ -17,7 +17,9 @@ description: Find the official Shadowrocket App Store listing, verify its price 
 
 Shadowrocket is a rule-based proxy client. **It does not supply servers or a proxy service.** You need a compatible subscription or server configuration to connect.
 
-**Official download: [Shadowrocket on the U.S. App Store](https://apps.apple.com/us/app/shadowrocket/id932747118).** Apple's listing and public lookup interface, checked on October 1, 2026, show version **2.2.92**, a price of **US$2.99**, iOS 13 or later, and developer **Shadow Launch Technology Limited**. Store availability and prices can change; use your account's current checkout information.
+**Official download: [Shadowrocket on the U.S. App Store](https://apps.apple.com/us/app/shadowrocket/id932747118).** Apple's listing and public lookup interface, checked on November 9, 2026, show version **2.2.93**, a price of **US$2.99**, iOS 13 or later, and developer **Shadow Launch Technology Limited**. Store availability and prices can change; use your account's current checkout information.
+
+**Version 2.2.93 was released on October 29, 2026.** Apple's release notes cover macOS menu-bar startup, local-network exclusions with Enforce Routes, and iCloud server-sync fixes. These are developer release notes, not new device tests by this site. Before updating, retain your subscription and configuration details; afterwards, check your usual connection and any local devices or sync features you use. A client update does not renew a provider subscription.
 
 ::: tip Before purchasing
 If you prefer a free client, see the [Clash Mi for iOS guide](/en/blog/clashmi/). If you already own Shadowrocket, follow the installation, subscription, and troubleshooting steps below.
@@ -98,5 +100,5 @@ If a site fails in Config mode, temporarily compare it with Proxy mode before ch
 - [Proxy-Service Reviews and Risk Records](/en/posts/vpn/)
 
 ::: info Evidence scope
-Version, price, and developer details were checked against Apple's listing on October 1, 2026. The retained interface images come from the August 3 documentation review. This article documents official sources rather than a device test conducted by this site.
+Version, price, and developer details were checked against Apple's listing on November 9, 2026. The retained interface images come from the August 3 documentation review. This article documents official sources rather than a device test conducted by this site.
 :::
