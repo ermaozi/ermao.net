@@ -5338,7 +5338,7 @@ description: >-
 
 ![Android Clash设置自动更新时间 =596x828](https://image.ermao.net/images/article/eh8f4n86/image-4.png)
 
-自动更新随便设置，设置完成点击确定
+这里的“自动更新”更新远程订阅配置，不是升级 APK。手动填写非零更新周期时至少为 15 分钟；首次导入且本地周期为 0 时，也可能采用订阅响应提供的周期。先确认订阅能够手动更新，再按需要设置周期并保存，不要仅凭输入框留空判断永不更新。
 
 ![Android Clash保存配置按钮 =595x696](https://image.ermao.net/images/article/eh8f4n86/image-5.png)
 

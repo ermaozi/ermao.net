@@ -4695,7 +4695,7 @@ If you do not have a URL, consult the [proxy-service selection and review guide]
 
 ![Android Clash automatic-update setting =596x828](https://image.ermao.net/images/article/eh8f4n86/image-4.png)
 
-Choose an automatic-update interval, then confirm.
+Automatic updates refresh the remote profile; they do not upgrade the APK. A manually entered nonzero interval must be at least 15 minutes. On the first import, when the local interval is 0, the application may use an interval supplied by the subscription response. Check that a manual profile update works, then choose an interval and save; an empty field alone does not establish that updates are disabled.
 
 ![Android Clash save-profile button =595x696](https://image.ermao.net/images/article/eh8f4n86/image-5.png)
 
