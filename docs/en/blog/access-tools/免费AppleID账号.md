@@ -299,7 +299,7 @@ const fallbackCopy = (text, onSuccess) => {
   document.body.appendChild(textarea);
   textarea.select();
   try {
-      document.execCommand('copy');
+      if (!document.execCommand('copy')) throw new Error('Clipboard copy declined');
       onSuccess();
   } catch (err) {
       console.error('Copy failed: ', err);
