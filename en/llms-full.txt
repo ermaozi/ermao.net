@@ -2942,7 +2942,7 @@ Check each layer:
 ```bash
 docker stats aria2-pro
 docker logs --tail 200 aria2-pro
-sudo ss -lntp | grep -E ':(6800|6888)\\b'
+sudo ss -lntp | grep -E ':(6800|6888)\b'
 ```
 
 On the proxy, inspect:
