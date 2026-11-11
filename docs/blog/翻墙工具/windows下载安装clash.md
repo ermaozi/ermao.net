@@ -51,8 +51,8 @@ description: 手把手教学 Windows、macOS、Linux 安装 Clash Verge 与 Clas
 下载后直接安装即可，推荐使用 Clash Verge（界面清晰、内置 TUN）。
 
 ## 快速安装要点
-- Windows：安装后启用「服务模式」和「Tun 模式」，并开启系统代理。
-- macOS：拖到应用程序后，首次运行授予网络权限，开启系统代理与 Tun。
+- Windows：普通浏览器访问可先开启系统代理；需要接管不读取系统代理的应用时，再按官方说明配置服务模式与 TUN，不要求一开始同时开启两种入口。
+- macOS：拖到应用程序后，先按实际需求选择系统代理或 TUN；需要 TUN 时，再核对当前版本的服务与网络权限要求。
 - Linux：按发行版与系统架构选包：Debian / Ubuntu / Deepin 用 `.deb`，CentOS / Fedora / SUSE 用 `.rpm`，Arch 系列参考 AUR 路径；安装后按提示启动服务或参考发行版文档开启 TUN。
 - 订阅准备：提前准备好机场订阅链接，方便导入。
 
@@ -76,7 +76,9 @@ description: 手把手教学 Windows、macOS、Linux 安装 Clash Verge 与 Clas
 
 ![开启服务模式与 Tun 模式 =1377x978](https://image.ermao.net/images/article/0gematwc/image-3.png)
 
-在`设置`中点击`服务模式`右侧的安装，安装成功后点击`启动`，然后打开`Tun 模式`开关与`系统代理`开关。
+先按目标应用选择入口：[官方快速入门](https://www.clashverge.dev/guide/quickstart.html)将系统代理用于大部分浏览器需求，将 TUN 用于接管不支持系统代理的程序。无需把两个开关同时打开当作安装完成的条件。
+
+如果确认需要 TUN，再按当前版本与平台的说明安装、启动服务并开启 TUN。记录原设置，一次只调整一个入口，回到原目标应用验证；没有改善就恢复原值，不反复切换无关设置。
 
 ![确认代理模式为规则模式 =588x298](https://image.ermao.net/images/article/0gematwc/image-4.png)
 
