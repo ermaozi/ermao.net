@@ -3836,7 +3836,7 @@ export const airportSources: AirportSource[] = [
     id: 'yunjiexian',
     name: '云界线',
     description: '新收录，暂无销量排名。提供方资料记录月付22元150GB起，另有年付96元每月60GB及一次性不限时流量包；新客首单自动七折，无需优惠码，适用套餐与实付金额请在结算时确认。通用订阅、支付宝与微信支付及运营约7个月均为提供方说明，尚无本站独立实测。',
-    officialHref: 'https://ermaozi.yunjiexianaff.com/#/?code=hygdqyjF',
+    officialHref: 'https://ermaozi.yunjiexianaff.com/#/?code=MgYnd2LZ',
     universalSubscription: true,
     minPlanText: '22元 150GB/月',
     hasOneTimePackage: true,
@@ -4916,6 +4916,20 @@ export const airportRanking = [...airportRecords]
 
 // 新收录单独维护展示身份，不赋予或影响既有销量排名。
 export const airportNewListings = airportRecords.filter(item => item.newListing && item.rank === undefined)
+
+// 汇总的编辑展示顺序与原销量字段分离；表格和详情共用，避免编号不同步。
+export const getAirportSummaryList = (includeNewListings = false, newListingIds: string[] = []) => {
+  const items = [
+    ...airportRanking,
+    ...airportNewListings.filter(item => includeNewListings || newListingIds.includes(item.id)),
+  ]
+  const index = items.findIndex(item => item.id === 'yunjiexian')
+  if (index >= 0) {
+    const [item] = items.splice(index, 1)
+    items.splice(11, 0, item)
+  }
+  return items
+}
 
 // 官网链接可能包含推广参数，组件会统一输出 rel="sponsored nofollow noopener"。
 

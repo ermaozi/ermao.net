@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useLang } from 'vuepress/client'
-import { airportRanking, airportNewListings, type AirportBoolean } from '../data/airports'
+import { getAirportSummaryList, type AirportBoolean } from '../data/airports'
 import { localizeAirportRecord } from '../data/airports-i18n'
 
 const props = defineProps<{ includeNewListings?: boolean; newListingIds?: string[] }>()
-const listedAirports = computed(() => [
-  ...airportRanking,
-  ...airportNewListings.filter(item => props.includeNewListings || props.newListingIds?.includes(item.id)),
-])
+const listedAirports = computed(() =>
+  getAirportSummaryList(props.includeNewListings, props.newListingIds),
+)
 
 const lang = useLang()
 const isEnglish = computed(() => lang.value?.startsWith('en'))
