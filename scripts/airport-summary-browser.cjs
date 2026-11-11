@@ -106,10 +106,10 @@ async function main() {
             if (width === 390 || width === 1440) await dalaoyun.screenshot({ path: resolve(output, `${language}-dalaoyun-plans-${width}.png`) })
             if (language === 'zh') {
               const row = page.locator('.airport-ranking-table tbody tr').filter({ has: page.locator('a[href="#yunjiexian"]') })
-              assert.equal(await row.locator('.airport-ranking-rank').innerText(), '70')
+              assert.equal(await row.locator('.airport-ranking-rank').innerText(), '12')
               await row.locator('a[href="#yunjiexian"]').click()
               await page.locator('#yunjiexian').waitFor()
-              assert.match(await page.locator('#yunjiexian').innerText(), /70\s*云界线/)
+              assert.match(await page.locator('#yunjiexian').innerText(), /12\s*云界线/)
               const planCounts = await page.evaluate(() => Object.fromEntries(
                 ['xsus', '网际快车', 'superbiu', 'runway', 'sogo云'].map(id => {
                   const section = document.getElementById(id).closest('article')

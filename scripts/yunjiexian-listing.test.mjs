@@ -10,7 +10,7 @@ const evaluate = (source, names, globals = {}) => {
   return runInNewContext(`${js}\n;({ ${names.join(', ')} })`, globals)
 }
 const data = evaluate(read('docs/.vuepress/data/airports.ts'), [
-  'airportRecords', 'airportRanking', 'airportNewListings',
+  'airportRecords', 'airportRanking', 'airportNewListings', 'getAirportSummaryList',
 ])
 const { selectorSourceDates } = evaluate(read('docs/.vuepress/data/selector-source-dates.ts'), ['selectorSourceDates'])
 const selector = evaluate(read('docs/.vuepress/data/connection-selector.ts'), [
@@ -23,7 +23,7 @@ const json = value => JSON.parse(JSON.stringify(value))
 test('Yunjiexian has one factual source record and an exact referral URL', () => {
   assert.equal(data.airportRecords.filter(item => item.id === 'yunjiexian').length, 1)
   assert.equal(record.name, '云界线')
-  assert.equal(record.officialHref, 'https://ermaozi.yunjiexianaff.com/#/?code=hygdqyjF')
+  assert.equal(record.officialHref, 'https://ermaozi.yunjiexianaff.com/#/?code=MgYnd2LZ')
   assert.equal(record.reviewHref, '/blog/yunjiexian/')
   assert.equal(record.universalSubscription, true)
   assert.equal(record.hasOneTimePackage, true)
@@ -79,11 +79,12 @@ for (const component of ['AirportRankingTable', 'AirportDetailList']) {
         computed: callback => ({ get value() { return callback() } }),
         defineProps: () => ({ includeNewListings }),
         useLang: () => ({ value: 'zh-CN' }),
+        getAirportSummaryList: data.getAirportSummaryList,
         airportRanking: data.airportRanking,
         airportNewListings: data.airportNewListings,
         localizeAirportRecord: item => item,
       }).airports.value
-      assert.deepEqual(json(result.slice(0, data.airportRanking.length).map(item => item.id)), json(data.airportRanking.map(item => item.id)))
+      assert.deepEqual(json(result.filter(item => item.rank !== undefined).map(item => item.id)), json(data.airportRanking.map(item => item.id)))
       assert.equal(result.some(item => item.id === record.id), includeNewListings)
     }
   })
@@ -94,7 +95,7 @@ test('Only the Chinese comparison page opts in; existing English detail routes a
   const english = read('docs/en/blog/proxy-reviews/vpn.md')
   assert.match(chinese, /<AirportRankingTable include-new-listings \/>/)
   assert.match(chinese, /<AirportDetailList include-new-listings \/>/)
-  assert.match(chinese, /新收录条目列在表末，暂不参与销量排名/)
+  assert.match(chinese, /新收录条目可按编辑展示顺序排列，不代表销量排名/)
   assert.doesNotMatch(english, /include-new-listings/)
   // AirportList requires an image. Keep this Chinese-only intake out of its shared bilingual cards.
   assert.equal(record.image, undefined)
@@ -117,7 +118,7 @@ test('Provider evidence is bounded and its unmodified source image is lazy-loade
   assert.match(article, /provider-speed-20260923\.png[^>]*loading="lazy"/)
   const speed = readFileSync(new URL('../docs/.vuepress/public/images/yunjiexian/provider-speed-20260923.png', import.meta.url))
   assert.equal(speed.subarray(1, 4).toString('ascii'), 'PNG')
-  assert.match(article, /<AffiliateLink href="https:\/\/ermaozi\.yunjiexianaff\.com\/#\/\?code=hygdqyjF">/)
+  assert.match(article, /<AffiliateLink href="https:\/\/ermaozi\.yunjiexianaff\.com\/#\/\?code=MgYnd2LZ">/)
   assert.match(article, /\[推广披露\]\(\/affiliate-disclosure\/\)/)
 })
 

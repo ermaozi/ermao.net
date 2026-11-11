@@ -7,8 +7,8 @@ import test from 'node:test'
 const read = path => readFileSync(new URL(`../${path}`, import.meta.url), 'utf8')
 const evaluate = (source, names) => runInNewContext(`${stripTypeScriptTypes(source)
   .replace(/^import .*$/gm, '').replace(/^export /gm, '')}\n;({ ${names.join(', ')} })`)
-const { airportSources, airportRanking, airportNewListings } = evaluate(read('docs/.vuepress/data/airports.ts'), [
-  'airportSources', 'airportRanking', 'airportNewListings',
+const { airportSources, airportRanking, airportNewListings, getAirportSummaryList } = evaluate(read('docs/.vuepress/data/airports.ts'), [
+  'airportSources', 'airportRanking', 'airportNewListings', 'getAirportSummaryList',
 ])
 const { localizeAirportPrice, localizeAirportSource, localizeAirportRecord } = evaluate(read('docs/.vuepress/data/airports-i18n.ts'), [
   'localizeAirportPrice', 'localizeAirportSource', 'localizeAirportRecord',
@@ -42,9 +42,20 @@ test('Display positions include new entries while source sales ranks remain unch
   assert.deepEqual(Array.from(airportRanking, item => item.rank), Array.from({ length: 69 }, (_, i) => i + 1))
   const listing = airportNewListings.find(item => item.id === 'yunjiexian')
   assert.equal(listing.rank, undefined)
-  assert.equal([...airportRanking, ...airportNewListings].findIndex(item => item.id === 'yunjiexian') + 1, 70)
+  const before = [...airportRanking, ...airportNewListings]
+  const after = getAirportSummaryList(true)
+  assert.equal(after.findIndex(item => item.id === 'yunjiexian') + 1, 12)
+  assert.equal(after.length, before.length)
+  assert.equal(new Set(after.map(item => item.id)).size, after.length)
+  assert.deepEqual(Array.from(after.filter(item => item.id !== 'yunjiexian'), item => item.id),
+    Array.from(before.filter(item => item.id !== 'yunjiexian'), item => item.id))
+  assert.equal(getAirportSummaryList().some(item => item.id === 'yunjiexian'), false)
+  assert.equal(getAirportSummaryList(false, ['yunjiexian'])[11].id, 'yunjiexian')
+  assert.equal(after[11].officialHref, 'https://ermaozi.yunjiexianaff.com/#/?code=MgYnd2LZ')
+  assert.equal(localizeAirportRecord(after[11]).officialHref, after[11].officialHref)
   for (const name of ['AirportRankingTable', 'AirportDetailList']) {
     const source = read(`docs/.vuepress/components/${name}.vue`)
+    assert.match(source, /getAirportSummaryList\(props.includeNewListings, props.newListingIds\)/)
     assert.match(source, /v-for="\(item, index\) in airports"/)
     assert.match(source, /\{\{ index \+ 1 \}\}/)
     assert.doesNotMatch(source, /v-if="item.rank !== undefined"/)
