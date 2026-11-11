@@ -55,7 +55,7 @@ Install the package appropriate for your platform. This guide recommends Clash V
 
 ## Platform notes
 
-- **Windows:** Enable service mode and TUN mode after installation, then enable the system proxy.
+- **Windows:** Start with System Proxy for ordinary browser use. Configure service mode and TUN when an application does not use the system proxy; enabling both entry methods is not a universal installation requirement.
 - **macOS:** Move the app to Applications, grant network permissions on first launch, and enable either the required proxy or TUN settings.
 - **Linux:** Match the package to your distribution and architecture: `.deb` for Debian / Ubuntu / Deepin, `.rpm` for CentOS / Fedora / SUSE, and the AUR route for Arch-based systems. Then start the service and configure TUN according to the distribution's requirements.
 - **Subscription:** Have a valid proxy-service subscription URL ready to import.
@@ -80,7 +80,9 @@ Right-click and select **Edit Profile** to change the update interval, URL, or n
 
 ![Enabling service mode and TUN mode =1377x978](https://image.ermao.net/images/article/0gematwc/image-3.png)
 
-In **Settings**, install service mode, start it after installation, then enable **TUN Mode** and the **System Proxy** as required by your version and platform.
+Choose the entry method for the application you need to use. The [official quick-start guide](https://www.clashverge.dev/guide/quickstart.html) distinguishes System Proxy for most browser use from TUN for applications that do not support the system proxy. Both switches do not have to be enabled to consider installation complete.
+
+If TUN is needed, follow the current version and platform instructions to install and start the service, then enable TUN. Record the original settings, change one entry method at a time, and repeat the original operation in the target application. Restore the previous value if it does not help.
 
 ![Confirming Rule mode on the Proxies page =588x298](https://image.ermao.net/images/article/0gematwc/image-4.png)
 
