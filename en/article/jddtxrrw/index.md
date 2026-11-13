@@ -88,7 +88,7 @@ git ls-remote https://github.com/git/git.git HEAD
 Inspect proxy configuration:
 
 ```bash
-git config --show-origin --get-regexp '^(http\\..*proxy|remote\\..*\\.proxy)$'
+git config --show-origin --get-regexp '^(http\..*proxy|remote\..*\.proxy)$'
 ```
 
 If an obsolete global proxy is present:

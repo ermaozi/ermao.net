@@ -7285,7 +7285,7 @@ DNS-over-HTTPS（DoH）或 DNS-over-TLS（DoT）加密客户端与解析器之�
 
 * 📱 [clash for Android](https://www.ermao.net/article/eh8f4n86/)
 * 🖥 [clash for Windows](https://www.ermao.net/article/0gematwc/)
-* 🍎 [clash for iOS](https://www.ermao.net/article/z747kgjd/)
+* 🍎 [Shadowrocket（iOS）](https://www.ermao.net/article/z747kgjd/)
 
 ***
 
@@ -9897,14 +9897,14 @@ HTTP 状态码是服务器响应请求时返回的状态码，用于表示服务
 * **410 Gone**：请求的资源已被永久删除。
 * **411 Length Required**：请求未定义Content-Length头。
 * **412 Precondition Failed**：请求头中的前提条件错误。
-* **413 Payload Too Large**：请求体积过大。
+* **413 Content Too Large**（旧称 Payload Too Large）：请求内容超过服务器愿意或能够处理的大小限制。
 * **414 URI Too Long**：请求的URI过长。
 * **415 Unsupported Media Type**：不支持的媒体类型。
 * **416 Range Not Satisfiable**：请求的范围无法满足。
 * **417 Expectation Failed**：服务器无法满足Expect请求头中的要求。
 * **418 I’m a teapot**：我是一个茶壶（愚人节笑话）。
 * **421 Misdirected Request**：请求被定向到无法生成响应的服务器。
-* **422 Unprocessable Entity**：请求格式正确，但由于语义错误无法响应。
+* **422 Unprocessable Content**（旧称 Unprocessable Entity）：请求语法正确，但服务器无法处理其中的指令。
 * **423 Locked**：资源被锁定。
 * **424 Failed Dependency**：由于之前的请求失败，当前请求失败。
 * **425 Too Early**：服务器不愿意冒险处理可能重播的请求。
@@ -9925,7 +9925,7 @@ HTTP 状态码是服务器响应请求时返回的状态码，用于表示服务
 * **506 Variant Also Negotiates**：服务器内部配置错误。
 * **507 Insufficient Storage**：服务器无法存储完成请求所需的内容。
 * **508 Loop Detected**：服务器检测到无限循环。
-* **510 Not Extended**：获取资源所需的策略未满足。
+* **510 Not Extended（已废弃）**：[IANA 注册表](https://www.iana.org/assignments/http-status-codes/)已将其标为 OBSOLETED。此处仅保留历史含义：请求未满足访问资源所需的扩展策略；新实现不应采用该状态码。
 * **511 Network Authentication Required**：需要网络认证。
 
 ## HTTP 状态码的作用

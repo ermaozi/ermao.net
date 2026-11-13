@@ -6475,7 +6475,7 @@ git ls-remote https://github.com/git/git.git HEAD
 Inspect proxy configuration:
 
 ```bash
-git config --show-origin --get-regexp '^(http\\..*proxy|remote\\..*\\.proxy)$'
+git config --show-origin --get-regexp '^(http\..*proxy|remote\..*\.proxy)$'
 ```
 
 If an obsolete global proxy is present:
@@ -8846,7 +8846,7 @@ The summaries below follow the current HTTP specifications and widely used exten
 * **506 Variant Also Negotiates:** A server configuration error caused recursive content negotiation.
 * **507 Insufficient Storage:** A WebDAV server cannot store the representation needed to complete the request.
 * **508 Loop Detected:** A WebDAV server detected an infinite loop while processing the request.
-* **510 Not Extended:** The request does not satisfy the extension policy needed to access the resource.
+* **510 Not Extended (obsolete):** The [IANA registry](https://www.iana.org/assignments/http-status-codes/) marks this code as OBSOLETED. Its historical meaning was that the request did not satisfy the extension policy needed to access the resource; new implementations should not use it.
 * **511 Network Authentication Required:** The client must authenticate to gain network access, as with some captive portals.
 
 ## What Status Codes Are Used For
