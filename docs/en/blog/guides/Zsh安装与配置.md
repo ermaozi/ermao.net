@@ -49,28 +49,44 @@ Log out and back in for the login-shell change to take effect. You can also run 
 
 ## 2. Install Oh My Zsh
 
-The [official Oh My Zsh repository](https://github.com/ohmyzsh/ohmyzsh) publishes this installer:
+Use the [official installer](https://github.com/ohmyzsh/ohmyzsh/blob/master/tools/install.sh). These steps assume the default `~/.zshrc` and `~/.oh-my-zsh` paths. If you use `ZDOTDIR` or a custom `ZSH`, check your actual paths first.
+
+Back up an existing configuration **before installation** and record the printed directory. Stop if any step fails:
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+zsh_backup_dir=$(mktemp -d "$HOME/zsh-backup.XXXXXX") &&
+if [ -e "$HOME/.zshrc" ] || [ -L "$HOME/.zshrc" ]; then
+  cp -p "$HOME/.zshrc" "$zsh_backup_dir/zshrc"
+fi && printf '%s\n' "$zsh_backup_dir"
 ```
 
-Running a remote script gives that script your user permissions. For a higher-assurance environment, download it, inspect it, and then execute the reviewed local copy:
+Download and inspect the official script. It runs with your user permissions; do not use `sudo`:
 
 ```bash
-curl -fsSLo /tmp/ohmyzsh-install.sh \
-  https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
-less /tmp/ohmyzsh-install.sh
-sh /tmp/ohmyzsh-install.sh
+omz_review_dir=$(mktemp -d) &&
+curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh \
+  -o "$omz_review_dir/install.sh" &&
+less "$omz_review_dir/install.sh"
 ```
 
-The installer may offer to create or replace `~/.zshrc`. Back up an existing file first:
+Only after a successful download and review, run separately:
 
 ```bash
-cp -a ~/.zshrc ~/.zshrc.backup 2>/dev/null || true
+KEEP_ZSHRC=yes CHSH=no RUNZSH=no sh "$omz_review_dir/install.sh"
 ```
 
-Avoid unofficial installer mirrors unless you have verified their ownership and contents against the upstream repository.
+This preserves an existing `.zshrc`, leaves the login shell unchanged, and does not launch Zsh. If no `.zshrc` exists, the installer still creates a template. A preserved configuration does not automatically load the framework: compare it with `~/.oh-my-zsh/templates/zshrc.zsh-template` and merge the settings you need, keeping your aliases and variables. Do not add duplicate loading lines. A minimal default-path setup is:
+
+```zsh
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+plugins=(git)
+source "$ZSH/oh-my-zsh.sh"
+```
+
+Do not rely on an overwrite prompt with `curl ... | sh`: when standard input is not a terminal, the official script disables overwrite confirmation, login-shell changes, and automatic Zsh startup. Unless explicitly preserved, an existing configuration can be backed up and replaced without asking.
+
+Run `zsh` explicitly after preparing the configuration. `chsh` changes the login shell, not the shell already running in this terminal. If the new configuration fails, exit that Zsh session and restore `~/.zshrc` from the `zshrc` file in your recorded backup directory using the original shell. Do not restore an unrelated backup if there was no old file.
 
 ## 3. Migrate Settings from Bash
 
@@ -81,7 +97,7 @@ less ~/.bashrc
 ${EDITOR:-nano} ~/.zshrc
 ```
 
-Reload the configuration:
+Reload the configuration only after entering Zsh; do not source it from Bash:
 
 ```bash
 source ~/.zshrc
