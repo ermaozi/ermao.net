@@ -85,7 +85,7 @@ DNS-over-HTTPS（DoH）或 DNS-over-TLS（DoT）加密客户端与解析器之�
 相关内容：
 - 📱 [clash for Android](https://www.ermao.net/article/eh8f4n86/)
 - 🖥 [clash for Windows](https://www.ermao.net/article/0gematwc/)
-- 🍎 [clash for iOS](https://www.ermao.net/article/z747kgjd/)
+- 🍎 [Shadowrocket（iOS）](https://www.ermao.net/article/z747kgjd/)
 
 ---
 
