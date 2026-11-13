@@ -20,31 +20,54 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install zsh git curl -y
 ```
 
-设置 Zsh 为默认终端（记得不要加 `sudo`）：
+设置当前用户的登录 shell（记得不要加 `sudo`）：
 
 ```bash
 chsh -s /bin/zsh
 ```
 
+`chsh` 不会把当前正在运行的 Bash 变成 Zsh；登录 shell 的更改需要重新登录才会生效。
+
 ### 1.2 安装 Oh My Zsh
 
-访问官网：<http://ohmyz.sh/> 或选择下面任一命令来安装：
+使用 [Oh My Zsh 官方安装脚本](https://github.com/ohmyzsh/ohmyzsh/blob/master/tools/install.sh)。下面按默认的 `~/.zshrc` 和 `~/.oh-my-zsh` 路径操作；若设置过 `ZDOTDIR` 或自定义 `ZSH`，先确认实际路径，不直接套用。
+
+先为已有配置建立独立备份，记下输出的备份目录；任何一步失败都先停止，不继续安装：
 
 ```bash
-# 使用 curl 安装
-curl -fsSL https://install.ohmyz.sh | sh
-
-# 使用 wget 安装
-wget -O- https://install.ohmyz.sh | sh
-
-# 使用国内镜像（curl）
-curl -fsSL https://gitee.com/pocmon/ohmyzsh/raw/master/tools/install.sh | sh
-
-# 使用国内镜像（wget）
-wget -O- https://gitee.com/pocmon/ohmyzsh/raw/master/tools/install.sh | sh
+zsh_backup_dir=$(mktemp -d "$HOME/zsh-backup.XXXXXX") &&
+if [ -e "$HOME/.zshrc" ] || [ -L "$HOME/.zshrc" ]; then
+  cp -p "$HOME/.zshrc" "$zsh_backup_dir/zshrc"
+fi && printf '%s\n' "$zsh_backup_dir"
 ```
 
-在安装过程中，系统会提示是否用 Oh My Zsh 的默认配置文件覆盖现有的 `.zshrc`，请选择同意。
+下载官方脚本并阅读，确认后才执行。脚本具有当前用户的文件操作权限，不使用 `sudo`：
+
+```bash
+omz_review_dir=$(mktemp -d) &&
+curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh \
+  -o "$omz_review_dir/install.sh" &&
+less "$omz_review_dir/install.sh"
+```
+
+确认下载与检查均成功后，单独执行：
+
+```bash
+KEEP_ZSHRC=yes CHSH=no RUNZSH=no sh "$omz_review_dir/install.sh"
+```
+
+这会保留已有 `.zshrc`，不自动修改登录 shell，也不自动进入 Zsh；没有 `.zshrc` 时仍会创建模板。若已有配置被保留，安装完成不代表框架已经加载：对照 `~/.oh-my-zsh/templates/zshrc.zsh-template` 手动合并需要的设置，保留自己的变量和别名，不重复添加加载行。默认路径下，最小设置为：
+
+```zsh
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+plugins=(git)
+source "$ZSH/oh-my-zsh.sh"
+```
+
+不要依赖 `curl ... | sh` 的覆盖确认提示：官方脚本检测到标准输入不是终端时，会关闭覆盖确认、修改登录 shell 和自动启动 Zsh。已有配置若未显式要求保留，可能被备份后替换，而不是等待你同意。
+
+配置准备好后，运行 `zsh` 进入 Zsh，再进行下面的加载操作。若新配置有问题，退出这次 Zsh 会话，在原 shell 中用刚才备份的 `zshrc` 恢复 `~/.zshrc`；没有旧文件时不要误用其他备份。
 
 ### 1.3 从 `.bashrc` 迁移配置（可选）
 
@@ -57,7 +80,7 @@ cat ~/.bashrc
 # 编辑 Zsh 配置文件并粘贴自定义配置
 nano ~/.zshrc
 
-# 使配置生效
+# 仅在已经进入 Zsh 的终端中使配置生效
 source ~/.zshrc
 ```
 
