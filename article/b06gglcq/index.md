@@ -50,8 +50,8 @@ sudo docker run -d\
     --name aria2 \
     --restart unless-stopped \
     --log-opt max-size=1m \
-    -e PUID=$UID \
-    -e PGID=$GID \
+    -e PUID="$(id -u)" \
+    -e PGID="$(id -g)" \
     -e UMASK_SET=022 \
     -e RPC_SECRET="$(cat "$HOME/aria2/rpc-secret")" \
     -e RPC_PORT=6800 \
@@ -67,6 +67,8 @@ sudo docker run -d\
 
 将以上命令中中文的部分替换为你的实际情况。
 
+`PUID` 和 `PGID` 用于映射文件归属。这里用 `id -u`、`id -g` 显式读取当前执行 shell 的账户 UID 和主组 GID，避免依赖可能未初始化的 `$GID`；命令替换在调用 `sudo docker` 前完成。请在准备管理下载文件的账户下执行，不要把 root shell 取得的 `0` 当作普通账户的 ID。
+
 例子：
 
 ```bash
@@ -75,8 +77,8 @@ sudo docker run -d\
     --name aria2 \
     --restart unless-stopped \
     --log-opt max-size=1m \
-    -e PUID=$UID \
-    -e PGID=$GID \
+    -e PUID="$(id -u)" \
+    -e PGID="$(id -g)" \
     -e UMASK_SET=022 \
     -e RPC_SECRET="$(cat "$HOME/aria2/rpc-secret")" \
     -e RPC_PORT=6800 \
