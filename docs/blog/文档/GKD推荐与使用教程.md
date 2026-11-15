@@ -29,9 +29,9 @@ sources:
 
 ::: tip 下载 GKD（安卓）
 
-<VPButton size="big" text="下载 GKD 安卓安装包" href="https://github.com/gkd-kit/gkd/releases/download/v1.12.1/gkd-v1.12.1.apk" style="display: inline-flex; align-items: center; background: var(--vp-c-text-1); color: var(--vp-c-bg); text-decoration: none;" />
+<VPButton size="big" text="下载 GKD 安卓安装包" href="https://github.com/gkd-kit/gkd/releases/download/v1.13.2/gkd-v1.13.2.apk" style="display: inline-flex; align-items: center; background: var(--vp-c-text-1); color: var(--vp-c-bg); text-decoration: none;" />
 
-**官方正式版 v1.12.1 · 无需 Root · 不支持 iPhone**
+**GitHub 正式版 v1.13.2 · 无需 Root · 不支持 iPhone**
 
 按钮直接下载 APK。打不开？去 [GKD 官网选择下载方式](https://gkd.li/guide/)，或使用 [Google Play](https://play.google.com/store/apps/details?id=li.songe.gkd)。
 
@@ -45,7 +45,7 @@ sources:
 
 ## 1. 安装：打开刚下载的 APK
 
-在手机浏览器的**下载记录**中打开 `gkd-v1.12.1.apk`，按提示安装，然后打开 GKD。
+在手机浏览器的**下载记录**中打开 `gkd-v1.13.2.apk`，按提示安装，然后打开 GKD。
 
 如果手机提示“不允许安装此来源的应用”，按提示允许**当前浏览器或文件管理器**安装，返回继续即可；装好后可以关掉这项来源权限。
 
@@ -185,7 +185,7 @@ GKD 不是“所有广告一键消失”：广告可能先出现再被跳过，�
 
 [官方隐私政策](https://gkd.li/guide/privacy)说明界面数据、调试截图等在本地处理，订阅和更新可能联网；这是开发者声明。应用和规则都选择可信来源，分享排错截图前去掉私人信息。
 
-本文于 **2026 年 10 月 1 日**核对正式版下载和规则文件，按官方文档与 v1.12.1 界面整理，尚未进行 Android 实机跨机型验证。后续版本以官网为准。
+本文于 **2026 年 11 月 15 日**核对 GitHub 正式发行及 APK 资产：[v1.13.2](https://github.com/gkd-kit/gkd/releases/tag/v1.13.2)，发布于 11 月 13 日；其他下载渠道的版本不据此推定同步。规则文件仍为 **2026 年 10 月 1 日**核对，操作步骤按官方文档与 v1.12.1 界面整理，尚未进行 Android 实机跨机型验证。后续版本的界面细节可能不同。
 
 - [GKD 是什么](https://gkd.li/guide/what-is-gkd) · [官方下载](https://gkd.li/guide/) · [正式发布记录](https://github.com/gkd-kit/gkd/releases/latest)
 - [演示订阅项目与使用说明](https://github.com/aoguai/subscription) · [常见问题](https://gkd.li/guide/faq)
