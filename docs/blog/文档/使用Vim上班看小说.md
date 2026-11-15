@@ -120,7 +120,7 @@ syntax on
 colorscheme pablo
 ```
 
-完事按 ”Esc“ 键，输入”:wp!“并按回车，保存退出。前面的冒号跟叹号都是英文符号！
+完成后按 `Esc`，输入 `:wq` 并回车，写入当前文件并关闭窗口；最后一个编辑窗口关闭时退出 Vim。[官方说明](https://vimhelp.org/editing.txt.html#:wq)中的 `:wp` 是写入并切到前一个文件，不是退出。若写入失败，先检查文件路径和权限，不要默认加 `!` 强制写入。
 
 ![使用Vim上班看小说 示例图片 =1024x697](https://image.ermao.net/images/article/yifph1jd/image-8.png)
 
@@ -142,7 +142,24 @@ colorscheme pablo
 
 ## 五、powershell 下更优雅地看小说
 
-在powershell中执行命令`New-Item -Type file -Force $profile`创建profile
+先在准备使用的 PowerShell 窗口中检查 `$PROFILE`。不同宿主的路径可能不同；已有文件先备份，不存在时才创建。微软的 [New-Item 示例 9](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/new-item#example-9-use-the--force-parameter-to-overwrite-existing-files)说明，对已有文件使用 `-Force` 会覆盖内容；[profile 文档](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles#how-to-create-a-profile)也要求先判断是否存在。
+
+```powershell
+if (Test-Path -LiteralPath $PROFILE) {
+    if (-not (Test-Path -LiteralPath $PROFILE -PathType Leaf)) {
+        throw 'The profile path is not a file.'
+    }
+    $profileBackup = "$PROFILE.backup-$([guid]::NewGuid())"
+    Copy-Item -LiteralPath $PROFILE -Destination $profileBackup -ErrorAction Stop
+    Write-Output "Backup: $profileBackup"
+} else {
+    $profileDirectory = Split-Path -Parent $PROFILE
+    New-Item -ItemType Directory -Path $profileDirectory -Force -ErrorAction Stop | Out-Null
+    New-Item -ItemType File -Path $PROFILE -ErrorAction Stop | Out-Null
+}
+```
+
+确认命令成功、已有文件的备份可读后再编辑，保留原配置，只添加下面的函数。若编辑后有问题，关闭加载该配置的窗口，以 `powershell -NoProfile`（PowerShell 7 使用 `pwsh -NoProfile`）启动，再用备份恢复本次修改；不要清空整个 profile 或改执行策略。
 
 ![使用Vim上班看小说 示例图片 =890x164](https://image.ermao.net/images/article/yifph1jd/image-11.png)
 
