@@ -111,11 +111,24 @@ If Vim does not remember the position, confirm that the `viminfo` file can be wr
 
 ## 4. Add a PowerShell Launcher
 
-Create the PowerShell profile if necessary:
+Check `$PROFILE` in the PowerShell host you intend to use. Back up an existing file; create it only when absent. [Microsoft documents that `New-Item -Force` overwrites an existing file](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/new-item#example-9-use-the--force-parameter-to-overwrite-existing-files), and its [profile guide checks for existence first](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles#how-to-create-a-profile).
 
 ```powershell
-New-Item -ItemType File -Force -Path $PROFILE
+if (Test-Path -LiteralPath $PROFILE) {
+    if (-not (Test-Path -LiteralPath $PROFILE -PathType Leaf)) {
+        throw 'The profile path is not a file.'
+    }
+    $profileBackup = "$PROFILE.backup-$([guid]::NewGuid())"
+    Copy-Item -LiteralPath $PROFILE -Destination $profileBackup -ErrorAction Stop
+    Write-Output "Backup: $profileBackup"
+} else {
+    $profileDirectory = Split-Path -Parent $PROFILE
+    New-Item -ItemType Directory -Path $profileDirectory -Force -ErrorAction Stop | Out-Null
+    New-Item -ItemType File -Path $PROFILE -ErrorAction Stop | Out-Null
+}
 ```
+
+Continue only after the commands succeed and the backup of any existing profile is readable. Preserve existing settings and add the launcher below. If the edit causes problems, close the affected session, start `powershell -NoProfile` (or `pwsh -NoProfile` for PowerShell 7), and restore this edit from the backup. Do not clear the whole profile or change execution policy.
 
 ![Creating a PowerShell profile =890x164](https://image.ermao.net/images/article/yifph1jd/image-11.png)
 
