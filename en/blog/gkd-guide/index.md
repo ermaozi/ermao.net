@@ -6,7 +6,7 @@ description: >-
 ---
 ::: tip Download GKD for Android
 
-**Official stable v1.12.1 · No root needed · Android only**
+**GitHub stable v1.13.2 · No root needed · Android only**
 
 The button downloads the APK directly. If it fails, choose another method on the [official download page](https://gkd.li/guide/), or use [Google Play](https://play.google.com/store/apps/details?id=li.songe.gkd).
 
@@ -18,7 +18,7 @@ One thing matters before you start: **installation alone is not enough. Enable a
 
 ## 1. Install the downloaded APK
 
-Open `gkd-v1.12.1.apk` in your phone browser's **Downloads**, install it, and launch GKD.
+Open `gkd-v1.13.2.apk` in your phone browser's **Downloads**, install it, and launch GKD.
 
 If Android blocks installation from this source, follow its prompt to allow installation for **the browser or file manager you used**, then return to the installer. You can turn that source permission off afterward.
 
@@ -158,7 +158,7 @@ Battery use depends on rules, interface details, and usage; see the [official ex
 
 The [developer's privacy policy](https://gkd.li/guide/privacy) states that interface data and debug screenshots are processed locally; subscriptions and updates may use the network. This is the developer's statement. Choose trusted app/rule sources and remove private information from troubleshooting screenshots.
 
-Stable downloads and the rule file were checked on **October 1, 2026**. Instructions follow official documentation and the v1.12.1 interface; they have not been tested across physical Android devices. Follow the official site for later versions.
+The GitHub stable release and APK asset were checked on **November 15, 2026**: [v1.13.2](https://github.com/gkd-kit/gkd/releases/tag/v1.13.2), published on November 13. This does not establish the version available through other download channels. The rule file was checked on **October 1, 2026**. Instructions follow official documentation and the v1.12.1 interface; they have not been tested across physical Android devices. Interface details may differ in later versions.
 
 * [What GKD is](https://gkd.li/guide/what-is-gkd) · [Official downloads](https://gkd.li/guide/) · [Stable releases](https://github.com/gkd-kit/gkd/releases/latest)
 * [Demonstration subscription and usage notes](https://github.com/aoguai/subscription) · [FAQ](https://gkd.li/guide/faq)
