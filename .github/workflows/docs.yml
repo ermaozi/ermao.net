@@ -12,7 +12,8 @@ permissions:
 
 jobs:
   docs:
-    runs-on: ubuntu-latest
+    # Playwright 1.56 browser dependencies support Ubuntu 24.04.
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
         with:
