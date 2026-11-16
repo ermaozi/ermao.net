@@ -24412,7 +24412,7 @@ description: >-
 # 2026 云图高速机场推荐：25元150GB起，1倍倍率与通用订阅
 云图高速是一家服务商称运营约 1 周的新机场，月付套餐从 25 元 150GB 起。投稿资料注明支持通用订阅，套餐页显示每档支持 5 台设备同时在线、全节点 1 倍倍率，并提供 78 元起的一次性不限时流量包。
 
-官方购买入口：[注册并查看云图高速套餐](https://vip.ytjcok.org/#/register?code=8YGrHaR5)
+官方购买入口：[注册并查看云图高速套餐](https://super.yuntujc.cc/#/register?code=8YGrHaR5)
 
 ![云图高速机场 Logo =969x478](https://image.ermao.net/images/blog/yuntu-airport/20260808_073657-89dffd.png)
 
@@ -24434,9 +24434,9 @@ description: >-
 
 | 套餐 | 价格 | 流量 | 适合人群 | 购买 |
 | --- | --- | --- | --- | --- |
-| 岚图 | ¥25/月 | 150GB/月 | 首次试用、轻中度使用 | [立即购买](https://vip.ytjcok.org/#/register?code=8YGrHaR5) |
-| 梦图 | ¥49/月 | 300GB/月 | 日常视频、AI 工具与多设备使用 | [立即购买](https://vip.ytjcok.org/#/register?code=8YGrHaR5) |
-| 星图 | ¥99/月 | 600GB/月 | 高频视频或大流量使用 | [立即购买](https://vip.ytjcok.org/#/register?code=8YGrHaR5) |
+| 岚图 | ¥25/月 | 150GB/月 | 首次试用、轻中度使用 | [立即购买](https://super.yuntujc.cc/#/register?code=8YGrHaR5) |
+| 梦图 | ¥49/月 | 300GB/月 | 日常视频、AI 工具与多设备使用 | [立即购买](https://super.yuntujc.cc/#/register?code=8YGrHaR5) |
+| 星图 | ¥99/月 | 600GB/月 | 高频视频或大流量使用 | [立即购买](https://super.yuntujc.cc/#/register?code=8YGrHaR5) |
 
 三个周期档在提交的套餐页中分别显示月付价格。页面还列出季度、半年、一年等周期选项，但没有同时提供这些周期的结算金额，因此本文不补写未确认价格。第一次使用建议选择 25 元月付档，在自己的网络和晚高峰时段测试后再决定是否续费。
 
@@ -24444,8 +24444,8 @@ description: >-
 
 | 套餐 | 一次性价格 | 总流量 | 特点 | 购买 |
 | --- | --- | --- | --- | --- |
-| 限时 50GB 不限时流量 | ¥78/一次性 | 50GB | 低频备用；5 台设备 | [立即购买](https://vip.ytjcok.org/#/register?code=8YGrHaR5) |
-| 限时 100GB 不限时流量 | ¥119/一次性 | 100GB | 较大备用流量；5 台设备 | [立即购买](https://vip.ytjcok.org/#/register?code=8YGrHaR5) |
+| 限时 50GB 不限时流量 | ¥78/一次性 | 50GB | 低频备用；5 台设备 | [立即购买](https://super.yuntujc.cc/#/register?code=8YGrHaR5) |
+| 限时 100GB 不限时流量 | ¥119/一次性 | 100GB | 较大备用流量；5 台设备 | [立即购买](https://super.yuntujc.cc/#/register?code=8YGrHaR5) |
 
 “不限时”是套餐页对流量有效期的标示，不代表服务主体永久运营。云图高速目前仍是服务商称运营约 1 周的新站，一次性套餐又属于预付，因此购买前应确认账户有效期、长期不使用规则、退款政策和服务停止后的处理方式。
 
@@ -24486,7 +24486,7 @@ description: >-
 
 ## 购买步骤
 
-1. 打开[云图高速官方注册链接](https://vip.ytjcok.org/#/register?code=8YGrHaR5)并注册。
+1. 打开[云图高速官方注册链接](https://super.yuntujc.cc/#/register?code=8YGrHaR5)并注册。
 2. 首次使用优先选择 25 元 150GB 月付档。
 3. 在结算页核对价格、流量周期、设备限制、订阅格式和退款规则。
 4. 使用支付宝或微信付款，将订阅导入兼容客户端。
@@ -24514,7 +24514,7 @@ description: >-
 
 云图高速提供 25 元 150GB、49 元 300GB 和 99 元 600GB 三档月付套餐，以及 78 元 50GB、119 元 100GB 两档一次性不限时流量。它的主要卖点是通用订阅、5 台设备、1 倍倍率，以及服务商所称的专线、流媒体和 AI 服务支持。
 
-由于运营时间短，更稳妥的方式是从[云图高速 25 元月付档](https://vip.ytjcok.org/#/register?code=8YGrHaR5)开始，用自己的运营商、设备和常用时段反复验证，并保留备用线路。
+由于运营时间短，更稳妥的方式是从[云图高速 25 元月付档](https://super.yuntujc.cc/#/register?code=8YGrHaR5)开始，用自己的运营商、设备和常用时段反复验证，并保留备用线路。
 
 ## 客户端使用教程
 

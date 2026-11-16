@@ -7,7 +7,7 @@ description: >-
 ---
 Yuntu Airport is a very new provider with about one week of operation according to the submitted information. Its monthly plans begin at CNY 25 for 150 GB. The provider lists universal subscriptions, five simultaneous devices, a 1x multiplier on all nodes, and one-time traffic packages from CNY 78.
 
-Recorded purchase route: [Register and view Yuntu Airport plans](https://vip.ytjcok.org/#/register?code=8YGrHaR5)
+Recorded purchase route: [Register and view Yuntu Airport plans](https://super.yuntujc.cc/#/register?code=8YGrHaR5)
 
 ![Yuntu Airport logo =969x478](https://image.ermao.net/images/blog/yuntu-airport/20260808_073657-89dffd.png)
 
@@ -29,9 +29,9 @@ The provider markets financial-grade dedicated routes, three-carrier optimizatio
 
 | Plan | Price | Data | Suggested use | Purchase |
 | --- | ---: | ---: | --- | --- |
-| Lantu | CNY 25/month | 150 GB/month | First test and light-to-moderate use | [View](https://vip.ytjcok.org/#/register?code=8YGrHaR5) |
-| Mengtu | CNY 49/month | 300 GB/month | Regular video, AI tools, and multiple devices | [View](https://vip.ytjcok.org/#/register?code=8YGrHaR5) |
-| Xingtu | CNY 99/month | 600 GB/month | Frequent video or high traffic | [View](https://vip.ytjcok.org/#/register?code=8YGrHaR5) |
+| Lantu | CNY 25/month | 150 GB/month | First test and light-to-moderate use | [View](https://super.yuntujc.cc/#/register?code=8YGrHaR5) |
+| Mengtu | CNY 49/month | 300 GB/month | Regular video, AI tools, and multiple devices | [View](https://super.yuntujc.cc/#/register?code=8YGrHaR5) |
+| Xingtu | CNY 99/month | 600 GB/month | Frequent video or high traffic | [View](https://super.yuntujc.cc/#/register?code=8YGrHaR5) |
 
 The submitted plan page shows monthly prices for these three tiers. It also lists quarter, six-month, annual, two-year, and three-year period options without displaying their checkout totals in the supplied material, so this review does not invent those prices. Begin with the CNY 25 monthly tier and test it on your own network before extending the term.
 
@@ -39,8 +39,8 @@ The submitted plan page shows monthly prices for these three tiers. It also list
 
 | Plan | One-time price | Total data | Notes | Purchase |
 | --- | ---: | ---: | --- | --- |
-| Limited 50 GB package | CNY 78 | 50 GB | Low-frequency backup; five devices | [View](https://vip.ytjcok.org/#/register?code=8YGrHaR5) |
-| Limited 100 GB package | CNY 119 | 100 GB | Larger backup allowance; five devices | [View](https://vip.ytjcok.org/#/register?code=8YGrHaR5) |
+| Limited 50 GB package | CNY 78 | 50 GB | Low-frequency backup; five devices | [View](https://super.yuntujc.cc/#/register?code=8YGrHaR5) |
+| Limited 100 GB package | CNY 119 | 100 GB | Larger backup allowance; five devices | [View](https://super.yuntujc.cc/#/register?code=8YGrHaR5) |
 
 The plan page labels these packages as having no time limit. That does not guarantee permanent provider operation. Because Yuntu Airport is reported to have only about one week of history, confirm account expiry, inactivity, refund, and closure terms before making a one-time prepayment.
 
@@ -81,7 +81,7 @@ Do not make a provider with about one week of reported history the only route fo
 
 ## Purchase steps
 
-1. Open the [recorded Yuntu Airport registration route](https://vip.ytjcok.org/#/register?code=8YGrHaR5) and create an account.
+1. Open the [recorded Yuntu Airport registration route](https://super.yuntujc.cc/#/register?code=8YGrHaR5) and create an account.
 2. Prefer the CNY 25 monthly tier for the first test.
 3. Confirm the live price, allowance cycle, device limit, subscription format, and refund terms at checkout.
 4. Pay with Alipay or WeChat Pay and import the subscription into a compatible client.
@@ -109,7 +109,7 @@ It may suit low-frequency backup after the route has been tested. With only abou
 
 Yuntu Airport lists three monthly plans—CNY 25 for 150 GB, CNY 49 for 300 GB, and CNY 99 for 600 GB—and two one-time packages at CNY 78 for 50 GB and CNY 119 for 100 GB. Its main propositions are universal subscriptions, five devices, a 1x multiplier, and provider claims about dedicated routes and access to streaming and AI services.
 
-Given its short operating history, the lower-risk path is to [start with the CNY 25 monthly tier](https://vip.ytjcok.org/#/register?code=8YGrHaR5), repeat tests on your normal ISP and devices, and keep an independent backup.
+Given its short operating history, the lower-risk path is to [start with the CNY 25 monthly tier](https://super.yuntujc.cc/#/register?code=8YGrHaR5), repeat tests on your normal ISP and devices, and keep an independent backup.
 
 ## Client guides
 
