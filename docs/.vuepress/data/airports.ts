@@ -1637,7 +1637,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "150GB/月",
       "type": "周期订阅",
       "audience": "首次试用、轻中度使用",
-      "purchaseHref": "https://vip.ytjcok.org/#/register?code=8YGrHaR5",
+      "purchaseHref": "https://super.yuntujc.cc/#/register?code=8YGrHaR5",
       "text": "岚图，¥25/月，150GB/月"
     },
     {
@@ -1646,7 +1646,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "300GB/月",
       "type": "周期订阅",
       "audience": "日常视频、AI 工具与多设备使用",
-      "purchaseHref": "https://vip.ytjcok.org/#/register?code=8YGrHaR5",
+      "purchaseHref": "https://super.yuntujc.cc/#/register?code=8YGrHaR5",
       "text": "梦图，¥49/月，300GB/月"
     },
     {
@@ -1655,7 +1655,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "600GB/月",
       "type": "周期订阅",
       "audience": "高频视频或大流量使用",
-      "purchaseHref": "https://vip.ytjcok.org/#/register?code=8YGrHaR5",
+      "purchaseHref": "https://super.yuntujc.cc/#/register?code=8YGrHaR5",
       "text": "星图，¥99/月，600GB/月"
     },
     {
@@ -1666,7 +1666,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特点：低频备用；5 台设备"
       ],
-      "purchaseHref": "https://vip.ytjcok.org/#/register?code=8YGrHaR5",
+      "purchaseHref": "https://super.yuntujc.cc/#/register?code=8YGrHaR5",
       "text": "限时 50GB 不限时流量，¥78/一次性，50GB",
       "oneTime": true
     },
@@ -1678,7 +1678,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "features": [
         "特点：较大备用流量；5 台设备"
       ],
-      "purchaseHref": "https://vip.ytjcok.org/#/register?code=8YGrHaR5",
+      "purchaseHref": "https://super.yuntujc.cc/#/register?code=8YGrHaR5",
       "text": "限时 100GB 不限时流量，¥119/一次性，100GB",
       "oneTime": true
     }
@@ -4148,7 +4148,7 @@ export const airportSources: AirportSource[] = [
     name: '云图高速',
     description: '云图高速为服务商称运营约 1 周的新机场，支持通用订阅，月付最低 25 元 150GB；套餐页标示全节点 1 倍倍率、5 台设备，并提供一次性不限时流量包。',
     rank: 32,
-    officialHref: 'https://vip.ytjcok.org/#/register?code=8YGrHaR5',
+    officialHref: 'https://super.yuntujc.cc/#/register?code=8YGrHaR5',
     universalSubscription: true,
     minPlanText: '25元 150GB/月',
     hasOneTimePackage: true,
