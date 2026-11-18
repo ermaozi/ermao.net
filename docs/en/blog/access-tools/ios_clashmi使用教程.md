@@ -66,7 +66,7 @@ Important details:
 
 <LinkCard title="Shared U.S. Apple IDs for App Store Downloads" href="/en/blog/freeappleid/" description="Shared non-mainland Apple IDs intended only for App Store sign-in. Read the device-lock and privacy warnings before use." />
 
-**Another account channel (sponsored):** If you are comparing Apple ID products, you can also review <a href="https://hxlacc.com/" target="_blank" rel="sponsored nofollow noopener">hxlacc.com</a>. The supplied product image lists Apple IDs, but we have not verified individual offers. Before buying, confirm that the store region offers your intended app, who controls the account, and how future verification works. An Apple ID does not necessarily include paid apps or their purchase rights. Prefer an account you create and manage yourself; never sign an untrusted account into device Settings or iCloud.
+**Another account channel (sponsored):** If you are comparing Apple ID products, you can also review <a href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener">hxlacc.com</a>. The supplied product image lists Apple IDs, but we have not verified individual offers. Before buying, confirm that the store region offers your intended app, who controls the account, and how future verification works. An Apple ID does not necessarily include paid apps or their purchase rights. Prefer an account you create and manage yourself; never sign an untrusted account into device Settings or iCloud.
 
 - The App Store and TestFlight versions cannot normally be installed side by side. Installing one may replace the other.
 

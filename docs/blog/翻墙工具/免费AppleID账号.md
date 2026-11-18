@@ -44,7 +44,7 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
 *   **适用人群**：仅需单次或偶尔下载境外特有应用（如 **Shadowrocket、Clash Mi、TikTok、ChatGPT、Potatso Lite**），不打算在 App 内进行购汇或长期订阅的用户。通过共享账号，可实现“即下即走”的零成本需求。
 *   **不适宜人群**：重度依赖海外 iOS 软件生态、需要频繁更新已下载的 App，或有应用内购买（In-App Purchase）需求的使用者。客观结论上，由于共享账号随时面临风控封堵，我们更建议此类受众直接注册属于自己的专属外区 Apple ID，以获取数据隔离的安全保障与应用的长久使用权。
 
-**其他账号渠道（推广）：** 如需比较 Apple ID 类商品，也可查看 <a href="https://hxlacc.com/" target="_blank" rel="sponsored nofollow noopener">hxlacc.com</a>。所提供的商品图片列有苹果 ID 类别，但本站未核实具体商品；购买前先确认商店地区是否提供目标应用、账号控制权及后续验证方式。Apple ID 不等于包含付费应用或其购买授权。优先使用自己注册并管理的账号；不要将不受信任的账号登录到设备设置或 iCloud。
+**其他账号渠道（推广）：** 如需比较 Apple ID 类商品，也可查看 <a href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener">hxlacc.com</a>。所提供的商品图片列有苹果 ID 类别，但本站未核实具体商品；购买前先确认商店地区是否提供目标应用、账号控制权及后续验证方式。Apple ID 不等于包含付费应用或其购买授权。优先使用自己注册并管理的账号；不要将不受信任的账号登录到设备设置或 iCloud。
 
 ## 共享 Apple ID 列表与数据更新时间 {#最新免费外区-apple-id-账号池-实时更新}
 
@@ -82,6 +82,11 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
       <Badge :type="getBadgeType(acc.region)" :text="acc.region" />
       <span class="account_warring">只能登录 App Store，登录设置会导致锁机！</span>
       <br><br>
+      <template v-if="isAccountOfferStatus(acc.email)">
+        <a class="account-offer-link" href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener" :aria-label="acc.email + ' — 第三方 hxlacc.com 推广入口（新窗口打开）'">{{ acc.email }}</a>
+        <p class="account-offer-note">第三方 hxlacc.com 推广入口，并非本站 VIP。请先核对商店地区、目标应用可用性及账号控制权；不保证库存或权益。</p>
+      </template>
+      <template v-else>
       账号 <code>{{ acc.email }}</code>
       <br><br>
       密码 <Plot trigger="click" effect="blur"><code>{{ acc.password }}</code></Plot>
@@ -92,6 +97,7 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
       <button class="copy-btn" @click="copy(acc.password, acc, 'password')">
           {{ acc.copiedPassword ? '已复制' : '复制密码' }}
       </button>
+      </template>
     </Card>
   </div>
 </div>
@@ -135,6 +141,17 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
   background: linear-gradient(110deg, var(--vp-c-bg-soft) 8%, var(--vp-c-bg-alt) 18%, var(--vp-c-bg-soft) 33%);
 }
 
+.account-offer-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  text-decoration: underline;
+  overflow-wrap: anywhere;
+}
+.account-offer-note {
+  font-size: 0.875rem;
+}
+
 .copy-btn {
   cursor: pointer;
   margin-right: 8px;
@@ -148,6 +165,7 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
   transition: all 0.3s ease;
 }
 
+.account-offer-link:focus-visible,
 .copy-btn:focus-visible,
 .refresh-btn:focus-visible {
   outline: 2px solid var(--vp-c-brand);
@@ -211,6 +229,10 @@ App Store 更新时可能要求使用最初取得该应用的 Apple 账户。共
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
+// Only these two account-field placeholders are offers, never account credentials.
+const isAccountOfferStatus = (value) => typeof value === 'string' &&
+  /^(?:该地区账号不足|请购买VIP通道获取)$/.test(value.normalize('NFKC').replace(/\s+/g, '').toUpperCase())
+
 const accounts = ref([])
 const updateTime = ref('')
 const loading = ref(true)
@@ -272,6 +294,8 @@ onBeforeUnmount(() => {
 })
 
 const copy = (text, acc, type) => {
+  if (isAccountOfferStatus(acc.email)) return
+
   const onSuccess = () => {
       if (type === 'email') acc.copiedEmail = true;
       if (type === 'password') acc.copiedPassword = true;
