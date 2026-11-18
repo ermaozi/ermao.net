@@ -89,7 +89,7 @@ You also need:
 - for Apple devices, an Apple ID for a region where the app is available;
 - for Android, access to Google Play.
 
-**Another account channel (sponsored):** If you are comparing Apple ID products, you can also review <a href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener">hxlacc.com</a>. The supplied product image lists Apple IDs, but we have not verified individual offers. Before buying, confirm that the store region offers your intended app, who controls the account, and how future verification works. An Apple ID does not necessarily include paid apps or their purchase rights. Prefer an account you create and manage yourself; never sign an untrusted account into device Settings or iCloud.
+**Another account channel (sponsored):** If you are comparing Apple ID products, you can also review <a href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener" class="hxl-offer-link" style="display:inline-flex;align-items:center;min-height:44px;padding:6px 12px;border:1px solid currentColor;border-radius:6px;font-weight:600;text-decoration:underline">View Apple ID categories (sponsored)</a>. The supplied product image lists Apple IDs, but we have not verified individual offers. Before buying, confirm that the store region offers your intended app, who controls the account, and how future verification works. An Apple ID does not necessarily include paid apps or their purchase rights. Prefer an account you create and manage yourself; never sign an untrusted account into device Settings or iCloud.
 
 ## 1. Install
 

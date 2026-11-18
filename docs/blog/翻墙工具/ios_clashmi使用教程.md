@@ -65,7 +65,7 @@ iPhone 和 iPad 用户可以选择以下下载渠道：
 
 <LinkCard title="🍎 共享 Apple ID 资料与可用性说明" href="/blog/freeappleid/" description="查看共享 Apple ID 资料及数据更新时间；更新时间不代表实时登录检测结果。账号状态、地区和应用获取条件可能变化，不能保证登录、下载或免翻墙访问。使用前请阅读设备锁定与隐私风险提示。" />
 
-**其他账号渠道（推广）：** 如需比较 Apple ID 类商品，也可查看 <a href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener">hxlacc.com</a>。所提供的商品图片列有苹果 ID 类别，但本站未核实具体商品；购买前先确认商店地区是否提供目标应用、账号控制权及后续验证方式。Apple ID 不等于包含付费应用或其购买授权。优先使用自己注册并管理的账号；不要将不受信任的账号登录到设备设置或 iCloud。
+**其他账号渠道（推广）：** 如需比较 Apple ID 类商品，也可查看 <a href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener" class="hxl-offer-link" style="display:inline-flex;align-items:center;min-height:44px;padding:6px 12px;border:1px solid currentColor;border-radius:6px;font-weight:600;text-decoration:underline">查看 Apple ID 商品类别（推广）</a>。所提供的商品图片列有苹果 ID 类别，但本站未核实具体商品；购买前先确认商店地区是否提供目标应用、账号控制权及后续验证方式。Apple ID 不等于包含付费应用或其购买授权。优先使用自己注册并管理的账号；不要将不受信任的账号登录到设备设置或 iCloud。
 
 - 对了，App Store 的正式版和 TestFlight 的测试版只能“二选一”，同时装的话，其中一个会把另一个给覆盖掉。
 
