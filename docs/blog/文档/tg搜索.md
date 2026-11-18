@@ -35,7 +35,7 @@ description: 面向新手与进阶用户的 Telegram 搜索机器人指南，包
 
 [Telegram 官方 FAQ](https://telegram.org/faq#q-i-have-a-new-phone-number-what-do-i-do)提醒用户保持对关联号码的访问权。以上是推广入口，本站未购买或验证该平台的账号交付，不代表 Telegram 官方认证。
 
-**另一个可比较的渠道（推广）：** <a href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener">hxlacc.com</a> 提供的商品图片列有 Telegram 账号与会员类别，具体商品尚未经本站核实。普通账号与 Premium 会员不是同一种商品，使用搜索机器人也不要求先买 Premium。购买前先确认登录方式、绑定号码的持续控制权、其他登录会话及两步验证交接；无法确认时先不要购买。自行注册可参考文中的注册教程。
+**另一个可比较的渠道（推广）：** <a href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener" class="hxl-offer-link" style="display:inline-flex;align-items:center;min-height:44px;padding:6px 12px;border:1px solid currentColor;border-radius:6px;font-weight:600;text-decoration:underline">查看 Telegram 商品类别（推广）</a>。所提供的商品图片列有 Telegram 账号与会员类别，具体商品尚未经本站核实。普通账号与 Premium 会员不是同一种商品，使用搜索机器人也不要求先买 Premium。购买前先确认登录方式、绑定号码的持续控制权、其他登录会话及两步验证交接；无法确认时先不要购买。自行注册可参考文中的注册教程。
 
 ## 机器人对比推荐
 
