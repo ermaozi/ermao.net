@@ -10,7 +10,7 @@ fs.mkdirSync(out,{recursive:true});
 const server=spawn('python3',['-m','http.server','4191','--bind','127.0.0.1','--directory','docs/.vuepress/dist'],{stdio:'ignore'});
 let browser; const results=[];
 try{
-for(let i=0;;i++){try{assert.equal((await fetch(base)).status,200);break}catch(e){if(i>30)throw e;await new Promise(r=>setTimeout(r,200))}}
+for(let i=0;;i++){try{assert.equal((await fetch(base,{method:'HEAD'})).status,200);break}catch(e){if(i>30)throw e;await new Promise(r=>setTimeout(r,200))}}
 browser=await chromium.launch({headless:true,...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{})});
 for(const lang of ['zh','en'])for(const width of [390,1440]){
 const context=await browser.newContext({viewport:{width,height:1000}});let phase=0,requests=0;const outgoing=[];
