@@ -47,7 +47,7 @@ An Android APK advertised as “Shadowrocket” is not the Apple App Store app d
 
 Apple's public lookup currently does not return this app for the mainland China store. If you temporarily use a shared account, sign in **only from the App Store profile screen, never under the device's Settings or iCloud**. The [shared Apple ID page](/en/blog/freeappleid/) explains availability and lockout risks. Your own account is preferable for continued use and updates.
 
-**Another account channel (sponsored):** If you are comparing Apple ID products, you can also review <a href="https://hxlacc.com/" target="_blank" rel="sponsored nofollow noopener">hxlacc.com</a>. The supplied product image lists Apple IDs, but we have not verified individual offers. Before buying, confirm that the store region offers your intended app, who controls the account, and how future verification works. An Apple ID does not necessarily include paid apps or their purchase rights. Prefer an account you create and manage yourself; never sign an untrusted account into device Settings or iCloud.
+**Another account channel (sponsored):** If you are comparing Apple ID products, you can also review <a href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener">hxlacc.com</a>. The supplied product image lists Apple IDs, but we have not verified individual offers. Before buying, confirm that the store region offers your intended app, who controls the account, and how future verification works. An Apple ID does not necessarily include paid apps or their purchase rights. Prefer an account you create and manage yourself; never sign an untrusted account into device Settings or iCloud.
 
 ## 2. Import a subscription
 

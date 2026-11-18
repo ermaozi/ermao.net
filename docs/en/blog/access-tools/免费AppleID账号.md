@@ -38,7 +38,7 @@ Public Apple IDs offer temporary access to another App Store region but sacrific
 - **Possible fit:** A user who needs a one-time or occasional download of a region-specific app, such as Shadowrocket, Clash Mi, TikTok, ChatGPT, or Potatso Lite, and will not make in-app purchases or rely on the shared account for long-term ownership.
 - **Poor fit:** Anyone who depends heavily on apps from another region, needs reliable updates, or makes in-app purchases. Because a public account may be locked or rotated without notice, such users should create and secure their own Apple ID for the required region.
 
-**Another account channel (sponsored):** If you are comparing Apple ID products, you can also review <a href="https://hxlacc.com/" target="_blank" rel="sponsored nofollow noopener">hxlacc.com</a>. The supplied product image lists Apple IDs, but we have not verified individual offers. Before buying, confirm that the store region offers your intended app, who controls the account, and how future verification works. An Apple ID does not necessarily include paid apps or their purchase rights. Prefer an account you create and manage yourself; never sign an untrusted account into device Settings or iCloud.
+**Another account channel (sponsored):** If you are comparing Apple ID products, you can also review <a href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener">hxlacc.com</a>. The supplied product image lists Apple IDs, but we have not verified individual offers. Before buying, confirm that the store region offers your intended app, who controls the account, and how future verification works. An Apple ID does not necessarily include paid apps or their purchase rights. Prefer an account you create and manage yourself; never sign an untrusted account into device Settings or iCloud.
 
 ## Shared Apple ID pool
 
@@ -75,6 +75,11 @@ The interface below loads account data and its update timestamp, not a live sign
       <Badge :type="getBadgeType(acc.region)" :text="getRegionLabel(acc.region)" />
       <span class="account_warring">App Store only. Signing in under Settings can lock the device.</span>
       <br><br>
+      <template v-if="isAccountOfferStatus(acc.email)">
+        <a class="account-offer-link" href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener" :aria-label="acc.email + ' — Third-party hxlacc.com sponsored link (opens a new window)'">{{ acc.email }}</a>
+        <p class="account-offer-note">Sponsored third-party hxlacc.com link, not a VIP service of this site. Check the store region, target app availability and account control first; stock and entitlements are not guaranteed.</p>
+      </template>
+      <template v-else>
       Account <code>{{ acc.email }}</code>
       <br><br>
       Password <Plot trigger="click" effect="blur"><code>{{ acc.password }}</code></Plot>
@@ -85,6 +90,7 @@ The interface below loads account data and its update timestamp, not a live sign
       <button class="copy-btn" @click="copy(acc.password, acc, 'password')">
           {{ acc.copiedPassword ? 'Copied' : 'Copy password' }}
       </button>
+      </template>
     </Card>
   </div>
 </div>
@@ -125,6 +131,17 @@ The interface below loads account data and its update timestamp, not a live sign
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   background: linear-gradient(110deg, var(--vp-c-bg-soft) 8%, var(--vp-c-bg-alt) 18%, var(--vp-c-bg-soft) 33%);
+}
+
+.account-offer-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  text-decoration: underline;
+  overflow-wrap: anywhere;
+}
+.account-offer-note {
+  font-size: 0.875rem;
 }
 
 .copy-btn {
@@ -195,6 +212,10 @@ Do not immediately delete the old app to obtain an update. **Export subscription
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
+
+// Only these two account-field placeholders are offers, never account credentials.
+const isAccountOfferStatus = (value) => typeof value === 'string' &&
+  /^(?:该地区账号不足|请购买VIP通道获取)$/.test(value.normalize('NFKC').replace(/\s+/g, '').toUpperCase())
 
 const accounts = ref([])
 const updateTime = ref('')
@@ -275,6 +296,8 @@ onBeforeUnmount(() => {
 })
 
 const copy = (text, acc, type) => {
+  if (isAccountOfferStatus(acc.email)) return
+
   const onSuccess = () => {
       if (type === 'email') acc.copiedEmail = true;
       if (type === 'password') acc.copiedPassword = true;

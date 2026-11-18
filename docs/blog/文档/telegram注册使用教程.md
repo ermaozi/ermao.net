@@ -50,7 +50,7 @@ Telegram以**Telegram隐私保护**、跨平台同步和高可用性著称。支
 
 [Telegram 官方 FAQ](https://telegram.org/faq#q-i-have-a-new-phone-number-what-do-i-do)提醒用户保持对关联号码的访问权。以上是推广入口，本站未购买或验证该平台的账号交付，不代表 Telegram 官方认证。
 
-**另一个可比较的渠道（推广）：** <a href="https://hxlacc.com/" target="_blank" rel="sponsored nofollow noopener">hxlacc.com</a> 提供的商品图片列有 Telegram 账号与会员类别，具体商品尚未经本站核实。普通账号与 Premium 会员不是同一种商品，使用搜索机器人也不要求先买 Premium。购买前先确认登录方式、绑定号码的持续控制权、其他登录会话及两步验证交接；无法确认时先不要购买。自行注册可参考文中的注册教程。
+**另一个可比较的渠道（推广）：** <a href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener">hxlacc.com</a> 提供的商品图片列有 Telegram 账号与会员类别，具体商品尚未经本站核实。普通账号与 Premium 会员不是同一种商品，使用搜索机器人也不要求先买 Premium。购买前先确认登录方式、绑定号码的持续控制权、其他登录会话及两步验证交接；无法确认时先不要购买。自行注册可参考文中的注册教程。
 
 ### 步骤1：下载与安装Telegram
 
