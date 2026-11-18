@@ -14,7 +14,7 @@ This file contains links to all documentation sections.
 
 ### 博客
 
-- [python装饰器详解](/article/0de7lze1/index.md): Python 装饰器（Decorator）是一个非常强大且灵活的特性，它允许你在不修改函数本身的情况下，动态地改变或扩展函数的行为。装饰器通常用于以下场景：日志记录、性能计时、访问控制、缓存等。理解装饰器的原理和使用方法将使你能够编写更加优雅且高效的代码。 本文将详细讲解 Python 装饰器的概念、基本用法、如...
+- [python装饰器详解](/article/0de7lze1/index.md): 通过示例学习 Python 装饰器的工作方式，掌握参数与返回值传递、functools.wraps、带参数的装饰器，以及缓存等常见用法。
 - [Windows/Linux/Mac 安装 Clash Verge（含订阅配置教程）](/article/0gematwc/index.md): 手把手教学 Windows、macOS、Linux 安装 Clash Verge 与 Clash，附订阅导入、Tun 模式开启、系统代理与测试步骤，新手也能快速完成科学上网配置。
 - [Zsh 安装与配置 - 使用 Oh My Zsh 美化终端](/article/106izvxs/index.md): 传统的 Bash 功能相对简陋且不美观。本文将带你通过 Debian 系统(Ubuntu 也一样)，安装 Zsh 以及 Oh My Zsh，对终端进行美化。Oh My Zsh 是 Zsh 的一个扩展工具集，提供了丰富的功能和主题，让终端界面更加个性化和高效。
 - [💸各大机场优惠券汇总](/article/23w1svxa/index.md): 各大翻墙机场优惠券汇总，整理常见机场折扣码、活动说明、适用套餐和对应评测入口，帮助购买 VPN 机场订阅时少花冤枉钱。
@@ -71,7 +71,7 @@ This file contains links to all documentation sections.
 - [✈️机场推荐【灯塔cloud】- 稳定、老牌机场](/article/osp1vx6y/index.md): 灯塔cloud机场评测，整理套餐价格、节点质量、客服响应、官网入口和 XF777 优惠码信息，适合想了解老牌稳定机场的用户参考。
 - [✈️机场推荐【flybit】- 便宜实惠、高性价比](/article/q8yp9r2b/index.md): flybit机场，10元 100G/月，高性价比、IEPL接口线路。 flybit官网地址：goflybit.com
 - [如何判断一个机场使用的线路类型（如IPLC/IEPL专线、CN2、BGP中转等）](/article/r50bpg9j/index.md): 结合 Traceroute、IP/ASN 与晚高峰测试评估线路表现，说明隐藏跳点、归属查询和 AI 解读的证据边界，不以固定阈值认证专线。
-- [python迭代器详解](/article/r6u6yjj9/index.md): 在 Python 中，**迭代器（Iterator）** 是用于访问集合中元素的一种对象。迭代器不仅能够遍历集合，还能在遍历过程中保持状态，允许你按需逐步访问元素，而无需一次性将所有元素加载到内存中。掌握迭代器的使用，可以帮助你编写更加高效且节省内存的代码。 本文将详细介绍 Python 中迭代器的概念、如何定义...
+- [python迭代器详解](/article/r6u6yjj9/index.md): 通过示例理解 Python 可迭代对象与迭代器的区别，学习 iter()、next()、自定义迭代器和 StopIteration，并了解按需读取与内存使用的边界。
 - [✈️【机场推荐】老头VPN - 公认老牌机场、稳定实惠](/article/rklwp5go/index.md): 老头VPN，15.5元 150G/月，公认老牌机场、稳定实惠。 老头VPN官网地址：https://www.chattous.net
 - [✈️机场推荐【koodog】- 新机场，便宜实惠，体验流畅](/article/rq55p9dn/index.md): KooDog 历史资料整理：保留 Trojan、三网专线与 2Gbps 宣传、套餐表和原测试截图，区分未独立验证的在线率及已过期的七夕优惠。
 - [翻墙之后如何利用信息差赚点外快](/article/rsvptr5x/index.md): 先教大家一个最简单最靠谱的方法——通过推广Telegram的极搜机器人，每月赚200刀（约1400人民币）。
