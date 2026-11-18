@@ -53,6 +53,8 @@ description: >-
 只能在 **App Store** 里面登录，否则可能导致手机被锁！
 :::
 
+**其他账号渠道（推广）：** 如需比较 Apple ID 类商品，也可查看 hxlacc.com。所提供的商品图片列有苹果 ID 类别，但本站未核实具体商品；购买前先确认商店地区是否提供目标应用、账号控制权及后续验证方式。Apple ID 不等于包含付费应用或其购买授权。优先使用自己注册并管理的账号；不要将不受信任的账号登录到设备设置或 iCloud。
+
 ### 2. 下载 Shadowrocket (小火箭)
 
 在 [Shadowrocket 官方 App Store 页面](https://apps.apple.com/us/app/shadowrocket/id932747118)核对名称和开发者 **Shadow Launch Technology Limited**。这是付费应用：未购买时按自己所在商店的当前价格购买；已购买时用原购买账号检查购买记录并尝试重新下载，仍需满足当前可用性与设备兼容条件。

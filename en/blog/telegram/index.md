@@ -38,6 +38,8 @@ If you prefer not to complete registration yourself, you can review Telegramè´¦å
 
 [Telegram's FAQ](https://telegram.org/faq#q-i-have-a-new-phone-number-what-do-i-do) advises retaining access to the linked number. This is a sponsored entry point; this site has not purchased or tested the seller's account delivery, and the link does not imply Telegram endorsement.
 
+**Another channel to compare (sponsored):** The supplied product image for hxlacc.com lists Telegram accounts and memberships; we have not verified individual offers. An account and a Premium membership are different products, and search bots do not require Premium. Before buying, confirm the login method, continued control of the linked number, other active sessions, and the two-step-verification handover. Do not buy if these cannot be established. You can also follow the registration guidance linked in this article.
+
 ### Step 1: install an official client
 
 * **iPhone or Android:** use the App Store, Google Play, or the official download links for your platform.

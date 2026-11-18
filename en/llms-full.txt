@@ -3236,6 +3236,8 @@ If you do not yet have an account and prefer not to complete registration yourse
 
 [Telegram's FAQ](https://telegram.org/faq#q-i-have-a-new-phone-number-what-do-i-do) advises retaining access to the linked number. This is a sponsored entry point; this site has not purchased or tested the seller's account delivery, and the link does not imply Telegram endorsement.
 
+**Another channel to compare (sponsored):** The supplied product image for hxlacc.com lists Telegram accounts and memberships; we have not verified individual offers. An account and a Premium membership are different products, and search bots do not require Premium. Before buying, confirm the login method, continued control of the linked number, other active sessions, and the two-step-verification handover. Do not buy if these cannot be established. You can also follow the registration guidance linked in this article.
+
 ## Comparing the example bots
 
 The source author observed the following tendencies. They are not independently measured coverage guarantees:
@@ -9291,6 +9293,8 @@ If you prefer not to complete registration yourself, you can review Telegram账�
 
 [Telegram's FAQ](https://telegram.org/faq#q-i-have-a-new-phone-number-what-do-i-do) advises retaining access to the linked number. This is a sponsored entry point; this site has not purchased or tested the seller's account delivery, and the link does not imply Telegram endorsement.
 
+**Another channel to compare (sponsored):** The supplied product image for hxlacc.com lists Telegram accounts and memberships; we have not verified individual offers. An account and a Premium membership are different products, and search bots do not require Premium. Before buying, confirm the login method, continued control of the linked number, other active sessions, and the two-step-verification handover. Do not buy if these cannot be established. You can also follow the registration guidance linked in this article.
+
 ## Optional Simplified Chinese language pack
 
 Open the [Simplified Chinese language-pack link](https://t.me/setlanguage/zhcncc) in Telegram.
@@ -9833,6 +9837,8 @@ These images were taken from Apple's official listing during the August 3, 2026 
 An Android APK advertised as “Shadowrocket” is not the Apple App Store app described here. Android users can use the [Clash Meta for Android setup guide](/en/article/eh8f4n86/).
 
 Apple's public lookup currently does not return this app for the mainland China store. If you temporarily use a shared account, sign in **only from the App Store profile screen, never under the device's Settings or iCloud**. The [shared Apple ID page](/en/blog/freeappleid/) explains availability and lockout risks. Your own account is preferable for continued use and updates.
+
+**Another account channel (sponsored):** If you are comparing Apple ID products, you can also review hxlacc.com. The supplied product image lists Apple IDs, but we have not verified individual offers. Before buying, confirm that the store region offers your intended app, who controls the account, and how future verification works. An Apple ID does not necessarily include paid apps or their purchase rights. Prefer an account you create and manage yourself; never sign an untrusted account into device Settings or iCloud.
 
 ## 2. Import a subscription
 
@@ -11913,7 +11919,9 @@ Important details:
 
 * Clash Mi may not appear under a mainland China Apple ID. A supported App Store region such as the United States or Hong Kong may be required. The following page lists shared accounts and their safety restrictions:
 
-- The App Store and TestFlight versions cannot normally be installed side by side. Installing one may replace the other.
+**Another account channel (sponsored):** If you are comparing Apple ID products, you can also review hxlacc.com. The supplied product image lists Apple IDs, but we have not verified individual offers. Before buying, confirm that the store region offers your intended app, who controls the account, and how future verification works. An Apple ID does not necessarily include paid apps or their purchase rights. Prefer an account you create and manage yourself; never sign an untrusted account into device Settings or iCloud.
+
+* The App Store and TestFlight versions cannot normally be installed side by side. Installing one may replace the other.
 
 Before switching versions, back up subscriptions, custom configurations, and settings using methods supported by the installed version. Confirm that the target version is still downloadable with your account and that you understand how to restore or re-import the backup. Backups may contain subscription credentials; do not share them publicly. [Apple's TestFlight terms](https://www.apple.com/legal/internet-services/itunes/testflight/) warn that switching versions or deleting a beta can cause data loss; a backup does not guarantee complete recovery across versions. Do not make uninstalling the default first step.
 
@@ -13455,6 +13463,8 @@ Public Apple IDs offer temporary access to another App Store region but sacrific
 * **Possible fit:** A user who needs a one-time or occasional download of a region-specific app, such as Shadowrocket, Clash Mi, TikTok, ChatGPT, or Potatso Lite, and will not make in-app purchases or rely on the shared account for long-term ownership.
 * **Poor fit:** Anyone who depends heavily on apps from another region, needs reliable updates, or makes in-app purchases. Because a public account may be locked or rotated without notice, such users should create and secure their own Apple ID for the required region.
 
+**Another account channel (sponsored):** If you are comparing Apple ID products, you can also review hxlacc.com. The supplied product image lists Apple IDs, but we have not verified individual offers. Before buying, confirm that the store region offers your intended app, who controls the account, and how future verification works. An Apple ID does not necessarily include paid apps or their purchase rights. Prefer an account you create and manage yourself; never sign an untrusted account into device Settings or iCloud.
+
 ## Shared Apple ID pool
 
 The interface below loads account data and its update timestamp, not a live sign-in test for each account. Regions, purchase histories, and availability can differ; an account may not own paid apps such as Shadowrocket. Do not change passwords, attach a payment method, or alter two-factor-authentication settings.
@@ -14995,6 +15005,8 @@ Prefer your own account for purchasing and managing the app. If you already boug
 The documented shared accounts are intended only for the App Store. System-level sign-in can expose the phone to lockout or remote-control risk.
 :::
 
+**Another account channel (sponsored):** If you are comparing Apple ID products, you can also review hxlacc.com. The supplied product image lists Apple IDs, but we have not verified individual offers. Before buying, confirm that the store region offers your intended app, who controls the account, and how future verification works. An Apple ID does not necessarily include paid apps or their purchase rights. Prefer an account you create and manage yourself; never sign an untrusted account into device Settings or iCloud.
+
 ### Install Shadowrocket
 
 Check the name and developer, **Shadow Launch Technology Limited**, on the [official Shadowrocket App Store page](https://apps.apple.com/us/app/shadowrocket/id932747118). It is a paid app: buy it at the current price in your store, or check the original purchasing account for a redownload, subject to current availability and device compatibility.
@@ -15407,6 +15419,8 @@ You also need:
 * a compatible proxy subscription URL or node URI;
 * for Apple devices, an Apple ID for a region where the app is available;
 * for Android, access to Google Play.
+
+**Another account channel (sponsored):** If you are comparing Apple ID products, you can also review hxlacc.com. The supplied product image lists Apple IDs, but we have not verified individual offers. Before buying, confirm that the store region offers your intended app, who controls the account, and how future verification works. An Apple ID does not necessarily include paid apps or their purchase rights. Prefer an account you create and manage yourself; never sign an untrusted account into device Settings or iCloud.
 
 ## 1. Install
 
@@ -18882,6 +18896,8 @@ Delivery to some `+86` numbers may be unreliable. A separate overseas mobile num
 If you prefer not to complete registration yourself, you can review Telegram账号购买 (Telegram account purchase), compare the available options and delivery instructions with your needs, and then decide whether to buy. Before paying, confirm the login method, ongoing control of the linked phone number, other active sessions, and how two-step verification and the recovery email are handed over. Buying an account does not guarantee lasting access or freedom from restrictions; do not pay if control cannot be established.
 
 [Telegram's FAQ](https://telegram.org/faq#q-i-have-a-new-phone-number-what-do-i-do) advises retaining access to the linked number. This is a sponsored entry point; this site has not purchased or tested the seller's account delivery, and the link does not imply Telegram endorsement.
+
+**Another channel to compare (sponsored):** The supplied product image for hxlacc.com lists Telegram accounts and memberships; we have not verified individual offers. An account and a Premium membership are different products, and search bots do not require Premium. Before buying, confirm the login method, continued control of the linked number, other active sessions, and the two-step-verification handover. Do not buy if these cannot be established. You can also follow the registration guidance linked in this article.
 
 ### Step 1: install an official client
 
