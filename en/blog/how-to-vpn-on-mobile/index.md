@@ -55,7 +55,7 @@ Prefer your own account for purchasing and managing the app. If you already boug
 The documented shared accounts are intended only for the App Store. System-level sign-in can expose the phone to lockout or remote-control risk.
 :::
 
-**Another account channel (sponsored):** If you are comparing Apple ID products, you can also review hxlacc.com. The supplied product image lists Apple IDs, but we have not verified individual offers. Before buying, confirm that the store region offers your intended app, who controls the account, and how future verification works. An Apple ID does not necessarily include paid apps or their purchase rights. Prefer an account you create and manage yourself; never sign an untrusted account into device Settings or iCloud.
+**Another account channel (sponsored):** If you are comparing Apple ID products, you can also review View Apple ID categories (sponsored). The supplied product image lists Apple IDs, but we have not verified individual offers. Before buying, confirm that the store region offers your intended app, who controls the account, and how future verification works. An Apple ID does not necessarily include paid apps or their purchase rights. Prefer an account you create and manage yourself; never sign an untrusted account into device Settings or iCloud.
 
 ### Install Shadowrocket
 
