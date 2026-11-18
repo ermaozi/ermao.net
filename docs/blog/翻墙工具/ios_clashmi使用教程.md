@@ -65,6 +65,8 @@ iPhone 和 iPad 用户可以选择以下下载渠道：
 
 <LinkCard title="🍎 共享 Apple ID 资料与可用性说明" href="/blog/freeappleid/" description="查看共享 Apple ID 资料及数据更新时间；更新时间不代表实时登录检测结果。账号状态、地区和应用获取条件可能变化，不能保证登录、下载或免翻墙访问。使用前请阅读设备锁定与隐私风险提示。" />
 
+**其他账号渠道（推广）：** 如需比较 Apple ID 类商品，也可查看 <a href="https://hxlacc.com/" target="_blank" rel="sponsored nofollow noopener">hxlacc.com</a>。所提供的商品图片列有苹果 ID 类别，但本站未核实具体商品；购买前先确认商店地区是否提供目标应用、账号控制权及后续验证方式。Apple ID 不等于包含付费应用或其购买授权。优先使用自己注册并管理的账号；不要将不受信任的账号登录到设备设置或 iCloud。
+
 - 对了，App Store 的正式版和 TestFlight 的测试版只能“二选一”，同时装的话，其中一个会把另一个给覆盖掉。
 
 切换版本前，先按当前版本支持的方式备份订阅、自定义配置和设置，并确认目标版本仍可下载、自己使用的账号可获取它，以及备份的恢复或重新导入方法。备份可能包含订阅凭证，不要公开分享。[Apple 的 TestFlight 条款](https://www.apple.com/legal/internet-services/itunes/testflight/)提醒，版本切换或删除测试版可能造成数据丢失；备份也不保证跨版本完整恢复。不要把卸载作为切换版本的默认第一步。
