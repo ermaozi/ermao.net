@@ -145,7 +145,7 @@ description: 9esim使用指南：了解实体可编程卡与另购eSIM套餐的�
 
 4. **验证结果**：当时收到 Google 验证码，只能说明该号码在该次流程中成功；不能据此保证 Telegram、Twitter 等平台或日后仍可注册。
 
-**另一个账号选择（推广）：** 本文仍以自己持有号码并完成注册为主。如果你想另行了解账号类商品，可<a href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener" class="hxl-offer-link" style="display:inline-flex;align-items:center;min-height:44px;padding:6px 12px;border:1px solid currentColor;border-radius:6px;font-weight:600;text-decoration:underline">查看账号类商品（推广）</a>；所提供的图片列有谷歌与 Telegram 账号类别，本站未核实具体规格或交付。账号商品不能代替 eSIM 或保证接收验证码，购买前应确认账号及绑定号码的控制权、恢复方式和适用条款。
+**另一个账号选择（推广）：** 本文仍以自己持有号码并完成注册为主。如果你想另行了解账号类商品，可<a href="https://hxlacc.com/?aff=76RSGSX9" rel="sponsored nofollow noopener" class="hxl-offer-link">查看账号类商品（推广）</a>；所提供的图片列有谷歌与 Telegram 账号类别，本站未核实具体规格或交付。账号商品不能代替 eSIM 或保证接收验证码，购买前应确认账号及绑定号码的控制权、恢复方式和适用条款。
 
 ## 常见问题解答
 

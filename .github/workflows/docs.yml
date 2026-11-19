@@ -65,6 +65,7 @@ jobs:
           node scripts/audience-task-browser.cjs
           node scripts/comment-migration-browser.cjs
           node scripts/apple-pool-layout-browser.cjs
+          EVIDENCE_DIR=artifacts/airport-summary/hxl-visible node scripts/hxl-visible-browser.cjs
       - name: Preserve comparison-page browser evidence
         if: always()
         uses: actions/upload-artifact@v4
