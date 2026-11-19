@@ -17,7 +17,7 @@ async function main() {
       try { const response = await fetch(base, { method: 'HEAD' }); assert.equal(response.status, 200); break }
       catch (error) { if (i === 30) throw error; await pause(200) }
     }
-    browser = await chromium.launch({ headless: true })
+    browser = await chromium.launch({ headless: true, ...(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {}) })
     const routes = [...Object.keys(contracts), '/blog/shadowrocket-rules-config/', '/en/blog/shadowrocket-rules-config/']
     for (const route of routes) for (const width of [390, 1440]) {
       const page = await browser.newPage({ viewport: { width, height: 900 } })

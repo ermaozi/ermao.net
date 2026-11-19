@@ -56,8 +56,20 @@ jobs:
           name: pages-retention-${{ github.sha }}
           path: artifacts/pages-retention.json
           retention-days: 7
-      - name: Install Chromium for comparison-page checks
-        run: pnpm exec playwright install --with-deps chromium
+      - name: Prepare browser for unchanged comparison-page checks
+        shell: bash
+        run: |
+          # Hosted Ubuntu includes Chrome; do not reinstall its OS dependencies.
+          # Keep the official bundled Chromium path for runners without Chrome.
+          if browser_path="$(command -v google-chrome || command -v google-chrome-stable)"; then
+            export CHROMIUM_PATH="$browser_path"
+            echo "CHROMIUM_PATH=$browser_path" >> "$GITHUB_ENV"
+            echo "COMMENT_TEST_CHROMIUM=$browser_path" >> "$GITHUB_ENV"
+            "$browser_path" --version
+          else
+            pnpm exec playwright install --with-deps chromium
+          fi
+          node scripts/check-ci-browser.cjs
       - name: Check airport summaries at desktop and phone widths
         run: |
           node scripts/airport-summary-browser.cjs

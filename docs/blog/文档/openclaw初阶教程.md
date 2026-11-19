@@ -119,7 +119,7 @@ openclaw onboard --install-daemon
 
 如果你还没有 Telegram 账号，可先看 [Telegram 注册使用教程](./telegram注册使用教程.md)。
 
-**Telegram 登录账号参考（推广）：** 尚未准备账号时，除自行注册外，也可<a href="https://hxlacc.com/?aff=76RSGSX9" rel="sponsored nofollow noopener" class="hxl-offer-link">查看 Telegram 商品类别（推广）</a> 的相关品类。所提供的图片列有 Telegram 账号与会员，本站未核实具体商品；先确认号码控制权、登录会话和两步验证交接，无法确认就不要购买。普通账号不等于 Premium，使用机器人不要求 Premium；这里也不提供或推荐购买模型 API key、他人密钥或把 GPT 账号当作 API 权限。
+**Telegram 登录账号参考（推广）：** 尚未准备账号时，除自行注册外，也可<a href="https://hxlacc.com/?aff=76RSGSX9" rel="sponsored nofollow noopener" class="hxl-offer-link">查看 Telegram 商品类别（推广）</a>。所提供的图片列有 Telegram 账号与会员，本站未核实具体商品；先确认号码控制权、登录会话和两步验证交接，无法确认就不要购买。普通账号不等于 Premium，使用机器人不要求 Premium；这里也不提供或推荐购买模型 API key、他人密钥或把 GPT 账号当作 API 权限。
 
 ### 3）创建 Telegram Bot
 
