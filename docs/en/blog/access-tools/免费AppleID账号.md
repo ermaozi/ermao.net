@@ -38,7 +38,7 @@ Public Apple IDs offer temporary access to another App Store region but sacrific
 - **Possible fit:** A user who needs a one-time or occasional download of a region-specific app, such as Shadowrocket, Clash Mi, TikTok, ChatGPT, or Potatso Lite, and will not make in-app purchases or rely on the shared account for long-term ownership.
 - **Poor fit:** Anyone who depends heavily on apps from another region, needs reliable updates, or makes in-app purchases. Because a public account may be locked or rotated without notice, such users should create and secure their own Apple ID for the required region.
 
-**Another account channel (sponsored):** If you are comparing Apple ID products, you can also review <a href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener" class="hxl-offer-link" style="display:inline-flex;align-items:center;min-height:44px;padding:6px 12px;border:1px solid currentColor;border-radius:6px;font-weight:600;text-decoration:underline">View Apple ID categories (sponsored)</a>. The supplied product image lists Apple IDs, but we have not verified individual offers. Before buying, confirm that the store region offers your intended app, who controls the account, and how future verification works. An Apple ID does not necessarily include paid apps or their purchase rights. Prefer an account you create and manage yourself; never sign an untrusted account into device Settings or iCloud.
+**Another account channel:** If you are comparing Apple ID products, you can also review <a href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener" class="hxl-offer-link" style="display:inline-flex;align-items:center;min-height:44px;padding:6px 12px;border:1px solid currentColor;border-radius:6px;font-weight:600;text-decoration:underline">View Apple ID purchase options</a>. The supplied product image lists Apple IDs, but we have not verified individual offers. Before buying, confirm that the store region offers your intended app, who controls the account, and how future verification works. An Apple ID does not necessarily include paid apps or their purchase rights. Prefer an account you create and manage yourself; never sign an untrusted account into device Settings or iCloud.
 
 ## Shared Apple ID pool
 
@@ -58,6 +58,15 @@ The interface below loads account data and its update timestamp, not a live sign
 **A shared Apple ID does not provide servers, and installing a client does not supply a network service.** If you came here to install Shadowrocket or Clash Mi, read the [iPhone subscription selection notes](/en/posts/vpn/#ios-subscription), then follow the [Shadowrocket](/en/article/z747kgjd/) or [Clash Mi](/en/blog/clashmi/) import guide. Keep using an existing compatible subscription; there is no need to buy another.
 :::
 
+<section class="account-options" aria-labelledby="account-options-title">
+  <h3 id="account-options-title">Free Apple ID list and purchase options</h3>
+  <p>Refresh to retrieve the free list below. If an entry is unavailable, you can also review third-party purchase options.</p>
+  <p v-if="!loading && !error && unavailableCount > 0" class="account-unavailable" role="status">Some free account entries are temporarily unavailable.</p>
+  <a class="account-offer-link" href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener" aria-label="View Apple ID purchase options — hxlacc.com (opens a new window)">View Apple ID purchase options</a>
+  <p class="account_warring">App Store only. Do not sign in to device Settings or iCloud.</p>
+  <p class="account-offer-note">We may earn a commission on purchases through this link. Check region, app entitlement and account control; this is not our VIP service and availability is not guaranteed.</p>
+</section>
+
 <div class="account-pool" :aria-busy="loading">
   <div v-if="loading && accounts.length === 0" class="account-loading" role="status">
     <div class="account-grid account-grid-skeleton" aria-hidden="true">
@@ -70,16 +79,11 @@ The interface below loads account data and its update timestamp, not a live sign
 
   <p v-else-if="accounts.length === 0" class="account-loading-label" role="status">The list is currently empty. Try refreshing later; no account availability has been verified.</p>
 
-  <div v-else class="account-grid">
-    <Card v-for="(acc, index) in accounts" :key="index">
+  <div v-else-if="availableAccounts.length > 0" class="account-grid">
+    <Card v-for="(acc, index) in availableAccounts" :key="index">
       <Badge :type="getBadgeType(acc.region)" :text="getRegionLabel(acc.region)" />
       <span class="account_warring">App Store only. Signing in under Settings can lock the device.</span>
       <br><br>
-      <template v-if="isAccountOfferStatus(acc.email)">
-        <a class="account-offer-link" href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener" :aria-label="acc.email + ' — Third-party hxlacc.com sponsored link (opens a new window)'">{{ acc.email }}</a>
-        <p class="account-offer-note">Sponsored third-party hxlacc.com link, not a VIP service of this site. Check the store region, target app availability and account control first; stock and entitlements are not guaranteed.</p>
-      </template>
-      <template v-else>
       Account <code>{{ acc.email }}</code>
       <br><br>
       Password <Plot trigger="click" effect="blur"><code>{{ acc.password }}</code></Plot>
@@ -90,7 +94,6 @@ The interface below loads account data and its update timestamp, not a live sign
       <button class="copy-btn" @click="copy(acc.password, acc, 'password')">
           {{ acc.copiedPassword ? 'Copied' : 'Copy password' }}
       </button>
-      </template>
     </Card>
   </div>
 </div>
@@ -133,7 +136,20 @@ The interface below loads account data and its update timestamp, not a live sign
   background: linear-gradient(110deg, var(--vp-c-bg-soft) 8%, var(--vp-c-bg-alt) 18%, var(--vp-c-bg-soft) 33%);
 }
 
-.account-offer-link {
+.account-options {
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+}
+.account-options h3 { margin-top: 0; }
+.account-options .account_warring { color: #b42318; }
+[data-theme="dark"] .account-options .account_warring { color: #ff9b91; }
+.vp-doc .account-options a.account-offer-link {
+  color: #ffffff;
+  background-color: #174ea6;
   display: inline-flex;
   align-items: center;
   min-height: 44px;
@@ -143,6 +159,10 @@ The interface below loads account data and its update timestamp, not a live sign
   font-weight: 600;
   text-decoration: underline;
   overflow-wrap: anywhere;
+}
+[data-theme="dark"] .vp-doc .account-options a.account-offer-link {
+  color: #10233f;
+  background-color: #b9d7ff;
 }
 .account-offer-note {
   font-size: 0.875rem;
@@ -215,13 +235,15 @@ Do not immediately delete the old app to obtain an update. **Export subscription
 <LinkCard title="Asspp: Multiple Accounts, Regions, and Limitations" href="/en/blog/asspp-download-guide/" description="Explore third-party account management, IPA downloads, and older app versions. Use a secondary account you control; verification-free access, stable connections, and account availability are not guaranteed, and the communication method may stop working." />
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 
 // Only these two account-field placeholders are offers, never account credentials.
 const isAccountOfferStatus = (value) => typeof value === 'string' &&
   /^(?:该地区账号不足|请购买VIP通道获取)$/.test(value.normalize('NFKC').replace(/\s+/g, '').toUpperCase())
 
 const accounts = ref([])
+const availableAccounts = computed(() => accounts.value.filter(acc => !isAccountOfferStatus(acc.email)))
+const unavailableCount = computed(() => accounts.value.length - availableAccounts.value.length)
 const updateTime = ref('')
 const loading = ref(true)
 const error = ref('')
