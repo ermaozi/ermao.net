@@ -38,7 +38,7 @@ Public Apple IDs offer temporary access to another App Store region but sacrific
 - **Possible fit:** A user who needs a one-time or occasional download of a region-specific app, such as Shadowrocket, Clash Mi, TikTok, ChatGPT, or Potatso Lite, and will not make in-app purchases or rely on the shared account for long-term ownership.
 - **Poor fit:** Anyone who depends heavily on apps from another region, needs reliable updates, or makes in-app purchases. Because a public account may be locked or rotated without notice, such users should create and secure their own Apple ID for the required region.
 
-**Another account channel:** If you are comparing Apple ID products, you can also review <a href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener" class="hxl-offer-link" style="display:inline-flex;align-items:center;min-height:44px;padding:6px 12px;border:1px solid currentColor;border-radius:6px;font-weight:600;text-decoration:underline">View Apple ID purchase options</a>. The supplied product image lists Apple IDs, but we have not verified individual offers. Before buying, confirm that the store region offers your intended app, who controls the account, and how future verification works. An Apple ID does not necessarily include paid apps or their purchase rights. Prefer an account you create and manage yourself; never sign an untrusted account into device Settings or iCloud.
+**Another account channel:** If you are comparing Apple ID products, you can also review <a href="https://hxlacc.com/?aff=76RSGSX9" rel="sponsored nofollow noopener" class="hxl-offer-link" style="display:inline-flex;align-items:center;min-height:44px;padding:6px 12px;border:1px solid currentColor;border-radius:6px;font-weight:600;text-decoration:underline">View Apple ID purchase options</a>. The supplied product image lists Apple IDs, but we have not verified individual offers. Before buying, confirm that the store region offers your intended app, who controls the account, and how future verification works. An Apple ID does not necessarily include paid apps or their purchase rights. Prefer an account you create and manage yourself; never sign an untrusted account into device Settings or iCloud.
 
 ## Shared Apple ID pool
 
@@ -62,7 +62,7 @@ The interface below loads account data and its update timestamp, not a live sign
   <h3 id="account-options-title">Free Apple ID list and purchase options</h3>
   <p>Refresh to retrieve the free list below. If an entry is unavailable, you can also review third-party purchase options.</p>
   <p v-if="!loading && !error && unavailableCount > 0" class="account-unavailable" role="status">Some free account entries are temporarily unavailable.</p>
-  <a class="account-offer-link" href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener" aria-label="View Apple ID purchase options — hxlacc.com (opens a new window)">View Apple ID purchase options</a>
+  <a class="account-offer-link" href="https://hxlacc.com/?aff=76RSGSX9" rel="sponsored nofollow noopener" aria-label="View Apple ID purchase options — hxlacc.com">View Apple ID purchase options</a>
   <p class="account_warring">App Store only. Do not sign in to device Settings or iCloud.</p>
   <p class="account-offer-note">We may earn a commission on purchases through this link. Check region, app entitlement and account control; this is not our VIP service and availability is not guaranteed.</p>
 </section>
