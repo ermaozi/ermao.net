@@ -66,6 +66,11 @@ jobs:
             echo "CHROMIUM_PATH=$browser_path" >> "$GITHUB_ENV"
             echo "COMMENT_TEST_CHROMIUM=$browser_path" >> "$GITHUB_ENV"
             "$browser_path" --version
+            if [ -z "$(fc-list :lang=zh family)" ]; then
+              sudo apt-get update
+              sudo apt-get install --no-install-recommends -y fonts-noto-cjk
+              dpkg-query -W fonts-noto-cjk
+            fi
           else
             pnpm exec playwright install --with-deps chromium
           fi
