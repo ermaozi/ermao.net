@@ -11,7 +11,8 @@ for (const path of paths) {
     let timeout
     let cleared = false
     let unmount
-    const state = { ref: value => ({ value }),
+    // Layout watchers are exercised with the rendered browser fixture.
+    const state = { ref: value => ({ value }), watch: () => {}, nextTick: async () => {},
       computed: getter => ({ get value() { return getter() } }), onMounted: () => {}, onBeforeUnmount: callback => { unmount = callback }, fetch, AbortController,
       setTimeout: (callback, delay) => { assert.equal(delay, 15000); timeout = callback; return 42 },
       clearTimeout: id => { assert.equal(id, 42); cleared = true }, console: { error: () => {} },

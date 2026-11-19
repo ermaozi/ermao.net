@@ -4,7 +4,7 @@ import test from 'node:test'
 
 const root = new URL('../', import.meta.url)
 
-test('async account pools reserve their loading space', async () => {
+test('account pools use a compact initial skeleton and shrink to loaded content', async () => {
   for (const path of [
     'docs/blog/翻墙工具/免费AppleID账号.md',
     'docs/en/blog/access-tools/免费AppleID账号.md',
@@ -12,7 +12,13 @@ test('async account pools reserve their loading space', async () => {
     const source = await readFile(new URL(path, root), 'utf8')
     assert.match(source, /class="account-pool"[^>]+:aria-busy="loading"/)
     assert.match(source, /class="account-grid account-grid-skeleton"/)
-    assert.match(source, /\.account-pool\s*{[^}]*min-height: 100vh/s)
+    assert.match(source, /v-if="loading && !hasLoaded"/)
+    assert.match(source, /v-for="slot in 2"/)
+    assert.match(source, /const hasLoaded = ref\(false\)/)
+    assert.match(source, /hasLoaded.value = true/)
+    assert.match(source, /\.account-pool\s*{[^}]*min-height: 0/s)
+    assert.doesNotMatch(source, /min-height: 100(?:s?vh)/)
+    assert.match(source, /\.account-skeleton-card\s*{[^}]*min-height: 260px/s)
   }
 })
 

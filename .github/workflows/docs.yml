@@ -64,6 +64,7 @@ jobs:
           node scripts/tutorial-access-browser.cjs
           node scripts/audience-task-browser.cjs
           node scripts/comment-migration-browser.cjs
+          node scripts/apple-pool-layout-browser.cjs
       - name: Preserve comparison-page browser evidence
         if: always()
         uses: actions/upload-artifact@v4
