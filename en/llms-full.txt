@@ -11913,7 +11913,9 @@ If you do not have one, consult the [proxy-service selection and review guide](/
 iPhone and iPad users can obtain the app through either channel:
 
 * **Stable App Store release:** [Open Clash Mi in the App Store](https://apps.apple.com/us/app/clash-mi/id6744321968)
-* **TestFlight beta:** [Join the TestFlight beta](https://testflight.apple.com/join/bjHXktB3)
+* **TestFlight beta:** [Check TestFlight beta availability](https://testflight.apple.com/join/bjHXktB3)
+
+The beta may be full; check the TestFlight page for current availability. If it is full, use the App Store release linked above.
 
 Important details:
 
