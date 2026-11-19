@@ -44,7 +44,7 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
 *   **适用人群**：仅需单次或偶尔下载境外特有应用（如 **Shadowrocket、Clash Mi、TikTok、ChatGPT、Potatso Lite**），不打算在 App 内进行购汇或长期订阅的用户。通过共享账号，可实现“即下即走”的零成本需求。
 *   **不适宜人群**：重度依赖海外 iOS 软件生态、需要频繁更新已下载的 App，或有应用内购买（In-App Purchase）需求的使用者。客观结论上，由于共享账号随时面临风控封堵，我们更建议此类受众直接注册属于自己的专属外区 Apple ID，以获取数据隔离的安全保障与应用的长久使用权。
 
-**其他账号渠道（推广）：** 如需比较 Apple ID 类商品，也可查看 <a href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener" class="hxl-offer-link" style="display:inline-flex;align-items:center;min-height:44px;padding:6px 12px;border:1px solid currentColor;border-radius:6px;font-weight:600;text-decoration:underline">查看 Apple ID 商品类别（推广）</a>。所提供的商品图片列有苹果 ID 类别，但本站未核实具体商品；购买前先确认商店地区是否提供目标应用、账号控制权及后续验证方式。Apple ID 不等于包含付费应用或其购买授权。优先使用自己注册并管理的账号；不要将不受信任的账号登录到设备设置或 iCloud。
+**其他账号渠道：** 如需比较 Apple ID 类商品，可通过以下入口了解：<a href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener" class="hxl-offer-link" style="display:inline-flex;align-items:center;min-height:44px;padding:6px 12px;border:1px solid currentColor;border-radius:6px;font-weight:600;text-decoration:underline">查看 Apple ID 购买选项</a>。所提供的商品图片列有苹果 ID 类别，但本站未核实具体商品；购买前先确认商店地区是否提供目标应用、账号控制权及后续验证方式。Apple ID 不等于包含付费应用或其购买授权。优先使用自己注册并管理的账号；不要将不受信任的账号登录到设备设置或 iCloud。
 
 ## 共享 Apple ID 列表与数据更新时间 {#最新免费外区-apple-id-账号池-实时更新}
 
@@ -65,6 +65,15 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
 **共享 Apple ID 不提供节点，下载客户端也不等于已有网络服务。** 如果你是为了使用小火箭或 Clash Mi 来这里找账号，装好后可以查看[适合 iPhone 的机场订阅选择说明](/posts/vpn/#ios-subscription)，再按[小火箭教程](/article/z747kgjd/)或 [Clash Mi 教程](/blog/clashmi/)导入。已有可用订阅就继续使用，不必重复购买。
 :::
 
+<section class="account-options" aria-labelledby="account-options-title">
+  <h3 id="account-options-title">免费 Apple ID 列表与购买选项</h3>
+  <p>下方提供免费账号列表，可刷新获取；部分条目暂不可用时，也可了解第三方购买选项。</p>
+  <p v-if="!loading && !error && unavailableCount > 0" class="account-unavailable" role="status">部分免费账号暂不可用。</p>
+  <a class="account-offer-link" href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener" aria-label="查看 Apple ID 购买选项 — hxlacc.com (新窗口打开)">查看 Apple ID 购买选项</a>
+  <p class="account_warring">仅用于 App Store，请勿登录设备设置或 iCloud。</p>
+  <p class="account-offer-note">通过此入口购买，我们可能获得佣金。购买前请核对地区、应用授权及账号控制权；并非本站 VIP，不保证有货。</p>
+</section>
+
 <div class="account-pool" :aria-busy="loading">
   <div v-if="loading && accounts.length === 0" class="account-loading" role="status">
     <div class="account-grid account-grid-skeleton" aria-hidden="true">
@@ -77,16 +86,11 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
 
   <p v-else-if="accounts.length === 0" class="account-loading-label" role="status">当前列表为空，请稍后刷新；这不代表已检查任何账号的可用性。</p>
 
-  <div v-else class="account-grid">
-    <Card v-for="(acc, index) in accounts" :key="index">
+  <div v-else-if="availableAccounts.length > 0" class="account-grid">
+    <Card v-for="(acc, index) in availableAccounts" :key="index">
       <Badge :type="getBadgeType(acc.region)" :text="acc.region" />
       <span class="account_warring">只能登录 App Store，登录设置会导致锁机！</span>
       <br><br>
-      <template v-if="isAccountOfferStatus(acc.email)">
-        <a class="account-offer-link" href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener" :aria-label="acc.email + ' — 第三方 hxlacc.com 推广入口（新窗口打开）'">{{ acc.email }}</a>
-        <p class="account-offer-note">第三方 hxlacc.com 推广入口，并非本站 VIP。请先核对商店地区、目标应用可用性及账号控制权；不保证库存或权益。</p>
-      </template>
-      <template v-else>
       账号 <code>{{ acc.email }}</code>
       <br><br>
       密码 <Plot trigger="click" effect="blur"><code>{{ acc.password }}</code></Plot>
@@ -97,7 +101,6 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
       <button class="copy-btn" @click="copy(acc.password, acc, 'password')">
           {{ acc.copiedPassword ? '已复制' : '复制密码' }}
       </button>
-      </template>
     </Card>
   </div>
 </div>
@@ -141,7 +144,20 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
   background: linear-gradient(110deg, var(--vp-c-bg-soft) 8%, var(--vp-c-bg-alt) 18%, var(--vp-c-bg-soft) 33%);
 }
 
-.account-offer-link {
+.account-options {
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+}
+.account-options h3 { margin-top: 0; }
+.account-options .account_warring { color: #b42318; }
+[data-theme="dark"] .account-options .account_warring { color: #ff9b91; }
+.vp-doc .account-options a.account-offer-link {
+  color: #ffffff;
+  background-color: #174ea6;
   display: inline-flex;
   align-items: center;
   min-height: 44px;
@@ -151,6 +167,10 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
   font-weight: 600;
   text-decoration: underline;
   overflow-wrap: anywhere;
+}
+[data-theme="dark"] .vp-doc .account-options a.account-offer-link {
+  color: #10233f;
+  background-color: #b9d7ff;
 }
 .account-offer-note {
   font-size: 0.875rem;
@@ -231,13 +251,15 @@ App Store 更新时可能要求使用最初取得该应用的 Apple 账户。共
 <LinkCard title="🛠️ Asspp：多账号多区域管理与使用限制" href="/blog/asspp-download-guide/" description="了解第三方 Apple ID 管理、IPA 和历史版本下载功能及限制。仅使用自己管理的备用账号；工具不能保证免验证、连接稳定或账号持续可用，底层通信方式可能失效。" />
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 
 // Only these two account-field placeholders are offers, never account credentials.
 const isAccountOfferStatus = (value) => typeof value === 'string' &&
   /^(?:该地区账号不足|请购买VIP通道获取)$/.test(value.normalize('NFKC').replace(/\s+/g, '').toUpperCase())
 
 const accounts = ref([])
+const availableAccounts = computed(() => accounts.value.filter(acc => !isAccountOfferStatus(acc.email)))
+const unavailableCount = computed(() => accounts.value.length - availableAccounts.value.length)
 const updateTime = ref('')
 const loading = ref(true)
 const error = ref('')
