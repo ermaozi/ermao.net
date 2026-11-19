@@ -1,0 +1,27 @@
+// Synthetic data only; never send analytics or read account credentials.
+const assert=require('node:assert/strict');
+const {chromium}=require('playwright');
+const {spawn}=require('node:child_process');
+const fs=require('node:fs');
+const out=process.env.EVIDENCE_DIR||'artifacts/airport-summary/apple-pool-layout';
+const baseline=process.env.BASELINE==='1',base='http://127.0.0.1:4197';
+const two=[{region:'测试区',email:'one@example.invalid',password:'fake-one'},{region:'测试区',email:'two@example.invalid',password:'fake-two'}];
+(async()=>{fs.mkdirSync(out,{recursive:true});const server=spawn('python3',['-m','http.server','4197','--bind','127.0.0.1','--directory','docs/.vuepress/dist'],{stdio:'ignore'});let browser;const results=[];
+try{
+ for(let i=0;;i++){try{await fetch(base);break}catch(e){if(i>30)throw e;await new Promise(r=>setTimeout(r,100))}}
+ browser=await chromium.launch({headless:true,...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{})});
+ for(const lang of ['zh','en'])for(const width of [390,1440])for(const state of ['two','unavailable','empty','error']){
+ const context=await browser.newContext({viewport:{width,height:900}});let release;let gate=new Promise(r=>release=r);let requests=0;
+ await context.addInitScript(()=>{window.shifts=[];new PerformanceObserver(list=>{for(const e of list.getEntries())window.shifts.push({value:e.value,recent:e.hadRecentInput})}).observe({type:'layout-shift',buffered:true});});
+ await context.route('**/*',async r=>{const u=r.request().url();if(u==='https://api.ermao.net/get_apple_id'){requests++;await gate;return state==='error'?r.fulfill({status:503,body:'synthetic error'}):r.fulfill({status:200,contentType:'application/json',body:JSON.stringify({accounts:state==='two'?two:state==='unavailable'?[{region:'测试区',email:'请购买VIP通道获取',password:'placeholder'},{region:'测试区',email:'该地区账号不足',password:'placeholder'}]:[],updated_at:'synthetic'})});}return u.startsWith(base+'/')?r.continue():r.abort();});
+ const page=await context.newPage();await page.goto(base+(lang==='en'?'/en':'')+'/blog/freeappleid/',{waitUntil:'domcontentloaded'});await page.locator('.account-loading').waitFor();await page.waitForFunction(()=>document.fonts.status==='loaded');if(!baseline){assert.equal(await page.locator('.account-skeleton-card').count(),2);assert((await page.locator('.account-loading').boundingBox()).height<(width===390?700:400));}if(state==='two'){await page.locator('.account-loading').scrollIntoViewIfNeeded();await page.screenshot({path:`${out}/${lang}-${width}-initial.png`});}
+ const measure=()=>page.evaluate(()=>{const pool=document.querySelector('.account-pool'),faq=pool.nextElementSibling;const pr=pool.getBoundingClientRect(),fr=faq.getBoundingClientRect();const cards=[...pool.querySelectorAll('.account-grid:not(.account-grid-skeleton)>*')];return {poolHeight:pr.height,faqTop:fr.top,faqDocumentTop:fr.top+scrollY,gap:fr.top-pr.bottom,lastCardGap:cards.length?fr.top-cards.at(-1).getBoundingClientRect().bottom:null,scrollY,cls:window.shifts.filter(x=>!x.recent).reduce((a,x)=>a+x.value,0)}});
+ await page.evaluate(()=>{const p=document.querySelector('.account-pool');scrollTo(0,p.nextElementSibling.getBoundingClientRect().top+scrollY-180)});await page.waitForTimeout(700);const before=await measure();await page.evaluate(()=>window.shifts=[]);release();await page.waitForFunction(()=>document.querySelector('.account-pool').getAttribute('aria-busy')==='false');await page.waitForTimeout(700);const after=await measure();
+ assert.equal(await page.locator('.account-grid:not(.account-grid-skeleton)>*').count(),state==='two'?2:0);
+ if(!baseline){assert(Math.abs(after.faqTop-before.faqTop)<=2,`FAQ moved ${after.faqTop-before.faqTop}px`);assert(after.cls<0.02,`Isolated load CLS ${after.cls}`);assert(after.poolHeight<900);assert(after.gap<90);if(state==='two')assert(after.lastCardGap<90);if(state==='unavailable')assert(after.poolHeight<2);assert.equal(await page.locator('.account-offer-link').getAttribute('href'),'https://hxlacc.com/?aff=76RSGSX9');assert.equal(await page.locator('.account-offer-link').getAttribute('target'),null);assert((await page.locator('.account-offer-note').innerText()).length>0);}
+ let refresh=null;
+ if(state==='two'){gate=new Promise(r=>release=r);await page.locator('.refresh-btn').click();await page.waitForFunction(()=>document.querySelector('.account-pool').getAttribute('aria-busy')==='true');const during=await measure();assert.equal(await page.locator('.copy-btn').count(),4);assert.equal(await page.locator('.account-loading').count(),0);assert(Math.abs(during.poolHeight-after.poolHeight)<1);release();await page.waitForFunction(()=>document.querySelector('.account-pool').getAttribute('aria-busy')==='false');refresh={retainsTwoCards:true,heightChange:during.poolHeight-after.poolHeight,requests};}
+ await page.locator('.account-pool').scrollIntoViewIfNeeded();await page.screenshot({path:`${out}/${lang}-${width}-${state}.png`});results.push({lang,width,state,before,after,faqViewportShift:after.faqTop-before.faqTop,documentHeightChange:after.faqDocumentTop-before.faqDocumentTop,refresh});await context.close();
+ }
+ fs.writeFileSync(out+'/results.json',JSON.stringify(results,null,2));console.log(JSON.stringify(results));
+}finally{await browser?.close();server.kill();}})().catch(e=>{console.error(e);process.exitCode=1});

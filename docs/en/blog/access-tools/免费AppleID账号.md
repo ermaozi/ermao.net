@@ -67,10 +67,10 @@ The interface below loads account data and its update timestamp, not a live sign
   <p class="account-offer-note">We may earn a commission on purchases through this link. Check region, app entitlement and account control; this is not our VIP service and availability is not guaranteed.</p>
 </section>
 
-<div class="account-pool" :aria-busy="loading">
-  <div v-if="loading && accounts.length === 0" class="account-loading" role="status">
+<div ref="accountPool" class="account-pool" :aria-busy="loading">
+  <div v-if="loading && !hasLoaded" class="account-loading" role="status">
     <div class="account-grid account-grid-skeleton" aria-hidden="true">
-      <div v-for="slot in 6" :key="slot" class="account-skeleton-card"></div>
+      <div v-for="slot in 2" :key="slot" class="account-skeleton-card"></div>
     </div>
     <p class="account-loading-label">Loading the latest account information...</p>
   </div>
@@ -101,8 +101,7 @@ The interface below loads account data and its update timestamp, not a live sign
 
 <style>
 .account-pool {
-  min-height: 100vh;
-  min-height: 100svh;
+  min-height: 0;
 }
 .account-loading-label,
 .account-error {
@@ -130,7 +129,7 @@ The interface below loads account data and its update timestamp, not a live sign
   margin: 0 !important;
 }
 .account-skeleton-card {
-  min-height: 180px;
+  min-height: 260px;
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   background: linear-gradient(110deg, var(--vp-c-bg-soft) 8%, var(--vp-c-bg-alt) 18%, var(--vp-c-bg-soft) 33%);
@@ -235,7 +234,7 @@ Do not immediately delete the old app to obtain an update. **Export subscription
 <LinkCard title="Asspp: Multiple Accounts, Regions, and Limitations" href="/en/blog/asspp-download-guide/" description="Explore third-party account management, IPA downloads, and older app versions. Use a secondary account you control; verification-free access, stable connections, and account availability are not guaranteed, and the communication method may stop working." />
 
 <script setup>
-import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
+import { ref, computed, watch, nextTick, onMounted, onBeforeUnmount } from 'vue'
 
 // Only these two account-field placeholders are offers, never account credentials.
 const isAccountOfferStatus = (value) => typeof value === 'string' &&
@@ -246,6 +245,21 @@ const availableAccounts = computed(() => accounts.value.filter(acc => !isAccount
 const unavailableCount = computed(() => accounts.value.length - availableAccounts.value.length)
 const updateTime = ref('')
 const loading = ref(true)
+const hasLoaded = ref(false)
+const accountPool = ref(null)
+// Preserve the visible FAQ reading position when asynchronous content shrinks.
+// This pre-flush watcher measures the old DOM, then adjusts before the next paint.
+watch(loading, async (isLoading, wasLoading) => {
+  if (isLoading || !wasLoading || typeof window === 'undefined') return
+  const faq = accountPool.value?.nextElementSibling
+  if (!faq) return
+  const before = faq.getBoundingClientRect().top
+  if (before < 0 || before >= window.innerHeight) return
+  await nextTick()
+  if (!faq.isConnected) return
+  const delta = faq.getBoundingClientRect().top - before
+  if (Math.abs(delta) > 1) window.scrollBy({ top: delta, behavior: 'instant' })
+})
 const error = ref('')
 let activeController = null
 let disposed = false
@@ -306,7 +320,10 @@ const fetchData = async () => {
     clearTimeout(timeout)
     if (activeController === controller) {
       activeController = null
-      if (!disposed) loading.value = false
+      if (!disposed) {
+        hasLoaded.value = true
+        loading.value = false
+      }
     }
   }
 }

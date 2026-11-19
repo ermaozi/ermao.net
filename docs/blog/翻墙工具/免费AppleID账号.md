@@ -74,10 +74,10 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
   <p class="account-offer-note">通过此入口购买，我们可能获得佣金。购买前请核对地区、应用授权及账号控制权；并非本站 VIP，不保证有货。</p>
 </section>
 
-<div class="account-pool" :aria-busy="loading">
-  <div v-if="loading && accounts.length === 0" class="account-loading" role="status">
+<div ref="accountPool" class="account-pool" :aria-busy="loading">
+  <div v-if="loading && !hasLoaded" class="account-loading" role="status">
     <div class="account-grid account-grid-skeleton" aria-hidden="true">
-      <div v-for="slot in 6" :key="slot" class="account-skeleton-card"></div>
+      <div v-for="slot in 2" :key="slot" class="account-skeleton-card"></div>
     </div>
     <p class="account-loading-label">正在获取最新账号信息...</p>
   </div>
@@ -108,8 +108,7 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
 
 <style>
 .account-pool {
-  min-height: 100vh;
-  min-height: 100svh;
+  min-height: 0;
 }
 .account-loading-label,
 .account-error {
@@ -138,7 +137,7 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
   margin: 0 !important;
 }
 .account-skeleton-card {
-  min-height: 180px;
+  min-height: 260px;
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   background: linear-gradient(110deg, var(--vp-c-bg-soft) 8%, var(--vp-c-bg-alt) 18%, var(--vp-c-bg-soft) 33%);
@@ -251,7 +250,7 @@ App Store 更新时可能要求使用最初取得该应用的 Apple 账户。共
 <LinkCard title="🛠️ Asspp：多账号多区域管理与使用限制" href="/blog/asspp-download-guide/" description="了解第三方 Apple ID 管理、IPA 和历史版本下载功能及限制。仅使用自己管理的备用账号；工具不能保证免验证、连接稳定或账号持续可用，底层通信方式可能失效。" />
 
 <script setup>
-import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
+import { ref, computed, watch, nextTick, onMounted, onBeforeUnmount } from 'vue'
 
 // Only these two account-field placeholders are offers, never account credentials.
 const isAccountOfferStatus = (value) => typeof value === 'string' &&
@@ -262,6 +261,21 @@ const availableAccounts = computed(() => accounts.value.filter(acc => !isAccount
 const unavailableCount = computed(() => accounts.value.length - availableAccounts.value.length)
 const updateTime = ref('')
 const loading = ref(true)
+const hasLoaded = ref(false)
+const accountPool = ref(null)
+// Preserve the visible FAQ reading position when asynchronous content shrinks.
+// This pre-flush watcher measures the old DOM, then adjusts before the next paint.
+watch(loading, async (isLoading, wasLoading) => {
+  if (isLoading || !wasLoading || typeof window === 'undefined') return
+  const faq = accountPool.value?.nextElementSibling
+  if (!faq) return
+  const before = faq.getBoundingClientRect().top
+  if (before < 0 || before >= window.innerHeight) return
+  await nextTick()
+  if (!faq.isConnected) return
+  const delta = faq.getBoundingClientRect().top - before
+  if (Math.abs(delta) > 1) window.scrollBy({ top: delta, behavior: 'instant' })
+})
 const error = ref('')
 let activeController = null
 let disposed = false
@@ -304,7 +318,10 @@ const fetchData = async () => {
     clearTimeout(timeout)
     if (activeController === controller) {
       activeController = null
-      if (!disposed) loading.value = false
+      if (!disposed) {
+        hasLoaded.value = true
+        loading.value = false
+      }
     }
   }
 }
