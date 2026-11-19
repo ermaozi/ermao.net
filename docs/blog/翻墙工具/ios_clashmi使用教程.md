@@ -57,7 +57,9 @@ Clash Mi 只是客户端，连接外网还需要可用的 Clash 订阅。
 
 iPhone 和 iPad 用户可以选择以下下载渠道：
 - **求稳就选它（App Store 正式版）**：[点击前往 App Store 下载](https://apps.apple.com/us/app/clash-mi/id6744321968)
-- **喜欢尝鲜（TestFlight Beta 版）**：[点击加入 TestFlight 测试](https://testflight.apple.com/join/bjHXktB3)
+- **喜欢尝鲜（TestFlight Beta 版）**：[查看 TestFlight 测试名额](https://testflight.apple.com/join/bjHXktB3)
+
+测试名额可能已满，以 TestFlight 页面显示为准；满员时优先使用上方 App Store 正式版。
 
 **几点需要特别唠叨的注意事项：**
 
