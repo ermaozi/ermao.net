@@ -54,7 +54,7 @@ Important details:
 
 * Clash Mi may not appear under a mainland China Apple ID. A supported App Store region such as the United States or Hong Kong may be required. The following page lists shared accounts and their safety restrictions:
 
-**Another account channel (sponsored):** If you are comparing Apple ID products, you can also review View Apple ID categories (sponsored). The supplied product image lists Apple IDs, but we have not verified individual offers. Before buying, confirm that the store region offers your intended app, who controls the account, and how future verification works. An Apple ID does not necessarily include paid apps or their purchase rights. Prefer an account you create and manage yourself; never sign an untrusted account into device Settings or iCloud.
+**Another account channel (sponsored):** If you are comparing Apple ID products, you can also view Apple ID categories (sponsored). The supplied product image lists Apple IDs, but we have not verified individual offers. Before buying, confirm that the store region offers your intended app, who controls the account, and how future verification works. An Apple ID does not necessarily include paid apps or their purchase rights. Prefer an account you create and manage yourself; never sign an untrusted account into device Settings or iCloud.
 
 * The App Store and TestFlight versions cannot normally be installed side by side. Installing one may replace the other.
 
