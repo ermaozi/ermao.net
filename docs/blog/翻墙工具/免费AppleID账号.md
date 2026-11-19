@@ -44,7 +44,7 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
 *   **适用人群**：仅需单次或偶尔下载境外特有应用（如 **Shadowrocket、Clash Mi、TikTok、ChatGPT、Potatso Lite**），不打算在 App 内进行购汇或长期订阅的用户。通过共享账号，可实现“即下即走”的零成本需求。
 *   **不适宜人群**：重度依赖海外 iOS 软件生态、需要频繁更新已下载的 App，或有应用内购买（In-App Purchase）需求的使用者。客观结论上，由于共享账号随时面临风控封堵，我们更建议此类受众直接注册属于自己的专属外区 Apple ID，以获取数据隔离的安全保障与应用的长久使用权。
 
-**其他账号渠道：** 如需比较 Apple ID 类商品，可通过以下入口了解：<a href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener" class="hxl-offer-link" style="display:inline-flex;align-items:center;min-height:44px;padding:6px 12px;border:1px solid currentColor;border-radius:6px;font-weight:600;text-decoration:underline">查看 Apple ID 购买选项</a>。所提供的商品图片列有苹果 ID 类别，但本站未核实具体商品；购买前先确认商店地区是否提供目标应用、账号控制权及后续验证方式。Apple ID 不等于包含付费应用或其购买授权。优先使用自己注册并管理的账号；不要将不受信任的账号登录到设备设置或 iCloud。
+**其他账号渠道：** 如需比较 Apple ID 类商品，可通过以下入口了解：<a href="https://hxlacc.com/?aff=76RSGSX9" rel="sponsored nofollow noopener" class="hxl-offer-link" style="display:inline-flex;align-items:center;min-height:44px;padding:6px 12px;border:1px solid currentColor;border-radius:6px;font-weight:600;text-decoration:underline">查看 Apple ID 购买选项</a>。所提供的商品图片列有苹果 ID 类别，但本站未核实具体商品；购买前先确认商店地区是否提供目标应用、账号控制权及后续验证方式。Apple ID 不等于包含付费应用或其购买授权。优先使用自己注册并管理的账号；不要将不受信任的账号登录到设备设置或 iCloud。
 
 ## 共享 Apple ID 列表与数据更新时间 {#最新免费外区-apple-id-账号池-实时更新}
 
@@ -69,7 +69,7 @@ description: 查看免费共享美区及其他地区 Apple ID 列表和数据更
   <h3 id="account-options-title">免费 Apple ID 列表与购买选项</h3>
   <p>下方提供免费账号列表，可刷新获取；部分条目暂不可用时，也可了解第三方购买选项。</p>
   <p v-if="!loading && !error && unavailableCount > 0" class="account-unavailable" role="status">部分免费账号暂不可用。</p>
-  <a class="account-offer-link" href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener" aria-label="查看 Apple ID 购买选项 — hxlacc.com (新窗口打开)">查看 Apple ID 购买选项</a>
+  <a class="account-offer-link" href="https://hxlacc.com/?aff=76RSGSX9" rel="sponsored nofollow noopener" aria-label="查看 Apple ID 购买选项 — hxlacc.com">查看 Apple ID 购买选项</a>
   <p class="account_warring">仅用于 App Store，请勿登录设备设置或 iCloud。</p>
   <p class="account-offer-note">通过此入口购买，我们可能获得佣金。购买前请核对地区、应用授权及账号控制权；并非本站 VIP，不保证有货。</p>
 </section>
