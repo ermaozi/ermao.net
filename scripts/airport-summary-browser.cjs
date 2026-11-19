@@ -31,7 +31,7 @@ async function main() {
       try { await ready(); break }
       catch (error) { if (i === 30) throw error; await delay(200) }
     }
-    browser = await chromium.launch({ headless: true })
+    browser = await chromium.launch({ headless: true, ...(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {}) })
     for (const language of ['zh', 'en']) {
       for (const width of [320, 390, 719, 720, 960, 1440]) {
         const page = await browser.newPage({ viewport: { width, height: 900 } })

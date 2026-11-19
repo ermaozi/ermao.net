@@ -8,7 +8,7 @@ const baseline=process.env.BASELINE==='1',base='http://127.0.0.1:4197';
 const two=[{region:'测试区',email:'one@example.invalid',password:'fake-one'},{region:'测试区',email:'two@example.invalid',password:'fake-two'}];
 (async()=>{fs.mkdirSync(out,{recursive:true});const server=spawn('python3',['-m','http.server','4197','--bind','127.0.0.1','--directory','docs/.vuepress/dist'],{stdio:'ignore'});let browser;const results=[];
 try{
- for(let i=0;;i++){try{await fetch(base);break}catch(e){if(i>30)throw e;await new Promise(r=>setTimeout(r,100))}}
+ for(let i=0;;i++){try{assert.equal((await fetch(base,{method:'HEAD'})).status,200);break}catch(e){if(i>30)throw e;await new Promise(r=>setTimeout(r,100))}}
  browser=await chromium.launch({headless:true,...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{})});
  for(const lang of ['zh','en'])for(const width of [390,1440])for(const state of ['two','unavailable','empty','error']){
  const context=await browser.newContext({viewport:{width,height:900}});let release;let gate=new Promise(r=>release=r);let requests=0;

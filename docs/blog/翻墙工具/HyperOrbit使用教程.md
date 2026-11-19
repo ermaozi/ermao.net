@@ -88,7 +88,7 @@ HyperOrbit 是一款基于自研 HyperCore 内核的代理客户端，支持 VLE
 
 ---
 
-**其他账号渠道（推广）：** 如需比较 Apple ID 类商品，也可查看 <a href="https://hxlacc.com/?aff=76RSGSX9" target="_blank" rel="sponsored nofollow noopener" class="hxl-offer-link" style="display:inline-flex;align-items:center;min-height:44px;padding:6px 12px;border:1px solid currentColor;border-radius:6px;font-weight:600;text-decoration:underline">查看 Apple ID 商品类别（推广）</a>。所提供的商品图片列有苹果 ID 类别，但本站未核实具体商品；购买前先确认商店地区是否提供目标应用、账号控制权及后续验证方式。Apple ID 不等于包含付费应用或其购买授权。优先使用自己注册并管理的账号；不要将不受信任的账号登录到设备设置或 iCloud。
+**其他账号渠道（推广）：** 如需比较 Apple ID 类商品，也可<a href="https://hxlacc.com/?aff=76RSGSX9" rel="sponsored nofollow noopener" class="hxl-offer-link">查看 Apple ID 商品类别（推广）</a>。所提供的商品图片列有苹果 ID 类别，但本站未核实具体商品；购买前先确认商店地区是否提供目标应用、账号控制权及后续验证方式。Apple ID 不等于包含付费应用或其购买授权。优先使用自己注册并管理的账号；不要将不受信任的账号登录到设备设置或 iCloud。
 
 ## 一、下载安装
 

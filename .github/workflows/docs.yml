@@ -56,8 +56,25 @@ jobs:
           name: pages-retention-${{ github.sha }}
           path: artifacts/pages-retention.json
           retention-days: 7
-      - name: Install Chromium for comparison-page checks
-        run: pnpm exec playwright install --with-deps chromium
+      - name: Prepare browser for unchanged comparison-page checks
+        shell: bash
+        run: |
+          # Hosted Ubuntu includes Chrome; do not reinstall its OS dependencies.
+          # Keep the official bundled Chromium path for runners without Chrome.
+          if browser_path="$(command -v google-chrome || command -v google-chrome-stable)"; then
+            export CHROMIUM_PATH="$browser_path"
+            echo "CHROMIUM_PATH=$browser_path" >> "$GITHUB_ENV"
+            echo "COMMENT_TEST_CHROMIUM=$browser_path" >> "$GITHUB_ENV"
+            "$browser_path" --version
+            if [ -z "$(fc-list :lang=zh family)" ]; then
+              sudo apt-get update
+              sudo apt-get install --no-install-recommends -y fonts-noto-cjk
+              dpkg-query -W fonts-noto-cjk
+            fi
+          else
+            pnpm exec playwright install --with-deps chromium
+          fi
+          node scripts/check-ci-browser.cjs
       - name: Check airport summaries at desktop and phone widths
         run: |
           node scripts/airport-summary-browser.cjs
@@ -65,6 +82,7 @@ jobs:
           node scripts/audience-task-browser.cjs
           node scripts/comment-migration-browser.cjs
           node scripts/apple-pool-layout-browser.cjs
+          EVIDENCE_DIR=artifacts/airport-summary/hxl-visible node scripts/hxl-visible-browser.cjs
       - name: Preserve comparison-page browser evidence
         if: always()
         uses: actions/upload-artifact@v4
