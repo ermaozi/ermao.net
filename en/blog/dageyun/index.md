@@ -4,9 +4,9 @@ description: >-
   A dated Dageyun review covering its CNY 19.90 monthly tier, Trojan plans, BGP
   and IPLC labels, archived evening test, service-access claims, and risks.
 ---
-[Dageyun](https://ermao.dgywzc.com/#/register?code=peAVAa8D) is described by the source as a multi-year proxy-service operator. Its February 2026 plan snapshot begins at CNY 19.90 per month for 100 GB and uses BGP relay, IPLC, and enterprise-line labels.
+[Dageyun](https://ermao.666glc.com/#/register?code=peAVAa8D) is described by the source as a multi-year proxy-service operator. Its February 2026 plan snapshot begins at CNY 19.90 per month for 100 GB and uses BGP relay, IPLC, and enterprise-line labels.
 
-* Website used by the source: [ermao.dgywzc.com](https://ermao.dgywzc.com/#/register?code=peAVAa8D)
+* Website used by the source: ermao.dgywzc.com (historical reference).
 * Lowest recorded monthly plan: CNY 19.90 for 100 GB
 * Main protocol: Trojan
 * Listed regions: Hong Kong, Japan, the United States, Singapore, Taiwan, and South Korea

@@ -102,7 +102,7 @@ The source warned that switching to a different plan would replace the current p
 * Historical code: `20251001`
 * Stated discount: 20% off plans then on sale, excluding unlimited-data plans
 * Recorded campaign period: September 28, 2025 at 00:00 through the end of October 15, 2025
-* Website: [ermao.dgywzc.com](https://ermao.dgywzc.com/#/register?code=peAVAa8D)
+* Website: [ermao.666glc.com](https://ermao.666glc.com/#/register?code=peAVAa8D)
 
 This campaign has ended based on the dates published in the source.
 

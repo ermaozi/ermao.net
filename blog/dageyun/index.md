@@ -3,9 +3,9 @@ url: /blog/dageyun/index.md
 description: >-
   大哥云机场怎么样？本文实测大哥云机场速度、稳定性与流媒体解锁能力，月付仅19.9元享100G流量、BGP中转+IPLC专线，多年稳定运营老牌机场，支持Netflix/Disney+/ChatGPT解锁，附套餐价格与购买教程。
 ---
-[大哥云机场](https://ermao.dgywzc.com/#/register?code=peAVAa8D)作为运营多年的老牌翻墙服务，凭借亲民价格、稳定节点与流媒体解锁能力，成为预算有限又追求稳定体验用户的热门选择。本文将从价格、节点、速度、使用场景等方面带来全面评测，帮助你快速判断是否值得入手。
+[大哥云机场](https://ermao.666glc.com/#/register?code=peAVAa8D)作为运营多年的老牌翻墙服务，凭借亲民价格、稳定节点与流媒体解锁能力，成为预算有限又追求稳定体验用户的热门选择。本文将从价格、节点、速度、使用场景等方面带来全面评测，帮助你快速判断是否值得入手。
 
-大哥云机场官网地址：[https://ermao.dgywzc.com](https://ermao.dgywzc.com/#/register?code=peAVAa8D)
+大哥云机场官网地址：[https://ermao.666glc.com](https://ermao.666glc.com/#/register?code=peAVAa8D)
 
 ## 目录
 
@@ -37,7 +37,7 @@ description: >-
 
 | 项目 | 详情 |
 |------|------|
-| 🌐 **官网地址** | [https://ermao.dgywzc.com](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+| 🌐 **官网地址** | [https://ermao.666glc.com](https://ermao.666glc.com/#/register?code=peAVAa8D) |
 | 💡 **适用人群** | 追求性价比的个人用户、小团队长期使用 |
 | 💰 **最低套餐** | ¥19.90 / 100G / 月 |
 | 🚀 **线路类型** | BGP 中转、IPLC、企业专线 |
@@ -54,13 +54,13 @@ description: >-
 
 | 套餐名称 | 价格 | 流量 | 时长 | 峰值带宽 | 协议 | 购买 |
 |----------|------:|------:|:----:|--------:|------|------|
-| 单月套餐 A | ¥19.90 | 100G/月 | 按自然月 | 500 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
-| 单月套餐 B | ¥29.90 | 150G/月 | 按自然月 | 500 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
-| 季付套餐 A | ¥69.00 | 200G/月 | 90 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
-| VIP1 小流量（年付） | ¥88.00 | 15G/月 | 365 天 | 500 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
-| 年付套餐 A | ¥199.00 | 300G/月 | 365 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
-| 年付套餐 B | ¥299.00 | 500G/月 | 365 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
-| 年付套餐（1000GB） | ¥699.00 | 1000G/月 | 365 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+| 单月套餐 A | ¥19.90 | 100G/月 | 按自然月 | 500 Mbps | Trojan | [立即购买](https://ermao.666glc.com/#/register?code=peAVAa8D) |
+| 单月套餐 B | ¥29.90 | 150G/月 | 按自然月 | 500 Mbps | Trojan | [立即购买](https://ermao.666glc.com/#/register?code=peAVAa8D) |
+| 季付套餐 A | ¥69.00 | 200G/月 | 90 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.666glc.com/#/register?code=peAVAa8D) |
+| VIP1 小流量（年付） | ¥88.00 | 15G/月 | 365 天 | 500 Mbps | Trojan | [立即购买](https://ermao.666glc.com/#/register?code=peAVAa8D) |
+| 年付套餐 A | ¥199.00 | 300G/月 | 365 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.666glc.com/#/register?code=peAVAa8D) |
+| 年付套餐 B | ¥299.00 | 500G/月 | 365 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.666glc.com/#/register?code=peAVAa8D) |
+| 年付套餐（1000GB） | ¥699.00 | 1000G/月 | 365 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.666glc.com/#/register?code=peAVAa8D) |
 
 > ✅ **选购建议**：轻量用户首选单月套餐 A；视频/直播类重度用户可直接年付套餐 B；团队/家庭用户建议考虑 1000G 套餐按需分配流量。
 
@@ -124,7 +124,7 @@ description: >-
 
 ### 🧭 快速上手步骤
 
-1. **注册账号**：前往[官网注册](https://ermao.dgywzc.com/#/register?code=peAVAa8D)，填写邮箱与密码
+1. **注册账号**：前往[官网注册](https://ermao.666glc.com/#/register?code=peAVAa8D)，填写邮箱与密码
 2. **选择套餐**：根据流量与预算选择合适套餐完成支付
 3. **复制订阅**：在用户中心获取订阅链接（Trojan / Clash）
 4. **导入客户端**：将订阅粘贴至 Clash、Shadowrocket、V2rayN 等工具
@@ -203,7 +203,7 @@ description: >-
 * 🎬 **解锁全面**：支持 Netflix / Disney+ / YouTube / ChatGPT
 * 🛡️ **隐私提示**：日志做法为服务商自述，未经本站独立验证
 
-立即体验：[前往大哥云官网注册](https://ermao.dgywzc.com/#/register?code=peAVAa8D)，享受稳定流畅的全球网络连接。
+立即体验：[前往大哥云官网注册](https://ermao.666glc.com/#/register?code=peAVAa8D)，享受稳定流畅的全球网络连接。
 
 ***
 

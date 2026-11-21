@@ -6,7 +6,7 @@ description: >-
 ---
 ## Dageyun official website
 
-[https://ermao.dgywzc.com](https://ermao.dgywzc.com/#/register?code=peAVAa8D)
+[https://ermao.666glc.com](https://ermao.666glc.com/#/register?code=peAVAa8D)
 
 ## Dageyun overview
 
