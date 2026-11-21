@@ -1,5 +1,5 @@
 ---
-title: 全网最全！6种方法解决 GitHub 国内由于 DNS 污染导致无法访问的问题
+title: GitHub 无法访问？排查 DNS、Hosts 与连接问题
 createTime: '2025/02/27 10:07:16'
 permalink: /article/jddtxrrw/
 tags:
