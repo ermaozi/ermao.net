@@ -208,8 +208,23 @@ async function main() {
         const sourceOverflow = await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 2)
         assert.equal(sourceOverflow, false, `${label}/${width}: source page overflows`)
         await page.screenshot({ path: resolve(output, `guide-${label}-${width}.png`) })
+        // Plume's desktop outline debounces router.replace(hash) after scrolling.
+        // Preserve and validate the real source history entry, not a hashless guess.
+        await page.waitForTimeout(1800)
+        const sourceHeadings = await page.locator('.vp-doc :is(h2,h3,h4)[id]').evaluateAll(nodes =>
+          Object.fromEntries(nodes.map(node => [node.id, node.textContent.trim()])))
+        const sourceURL = new URL(page.url())
+        assert.equal(sourceURL.pathname, `/article/${slug}/`)
+        assert.equal(sourceURL.search, '')
+        if (sourceURL.hash) assert.ok(sourceHeadings[decodeURIComponent(sourceURL.hash.slice(1))], 'Source hash must identify a real article heading')
+        if (label === 'selection') {
+          const expectedHash = width === 390 ? '' : '#_2-线路质量-价格因素'
+          assert.equal(decodeURIComponent(sourceURL.hash), expectedHash, 'Exercise both hashless mobile and known desktop heading history')
+        }
         await link.click()
         await page.waitForURL(`${base}/posts/vpn/#airport-comparison`)
+        const backEntry = await page.evaluate(() => history.state.back)
+        assert.equal(decodeURI(backEntry), decodeURI(sourceURL.pathname + sourceURL.hash), 'Comparison history must preserve the exact source entry')
         await page.locator('#airport-comparison').waitFor()
         await page.locator('.airport-ranking-table').waitFor()
         await page.waitForFunction(() => {
@@ -219,8 +234,14 @@ async function main() {
         const documentOverflow = await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 2)
         results.push({ language: 'zh', width, kind: `guide-${label}`, errors: [], documentOverflow })
         await page.goBack({ waitUntil: 'networkidle' })
-        await page.waitForURL(`${base}/article/${slug}/`)
+        await page.waitForURL(url => url.origin === sourceURL.origin && url.pathname === sourceURL.pathname && url.search === '' && decodeURIComponent(url.hash) === decodeURIComponent(sourceURL.hash))
+        assert.equal(await page.evaluate(() => history.state.forward), '/posts/vpn/#airport-comparison')
+        if (sourceURL.hash) {
+          const id = decodeURIComponent(sourceURL.hash.slice(1))
+          await page.waitForFunction(({ id, text }) => document.getElementById(id)?.textContent.trim() === text, { id, text: sourceHeadings[id] })
+        }
         await page.locator('a[href="/posts/vpn/#airport-comparison"]').waitFor()
+        assert.ok(await page.locator('a[href="/posts/vpn/#airport-comparison"]').isVisible())
         assert.equal(await page.locator('a[href="/posts/vpn/#airport-comparison"]').count(), 1)
         await page.close()
       }
