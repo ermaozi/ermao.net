@@ -7225,7 +7225,7 @@ description: >-
 url: /article/jddtxrrw/index.md
 description: 排查 GitHub 无法访问时的 DNS、Hosts、代理与网络问题，区分公共 DNS 与加密 DNS，避免仅凭超时或解析结果不同误判 DNS 污染。
 ---
-# 全网最全！6种方法解决 GitHub 国内由于 DNS 污染导致无法访问的问题
+# GitHub 无法访问？排查 DNS、Hosts 与连接问题
 GitHub 是一个面向开源及私有软件项目的托管平台。无法访问时，DNS 异常只是可能原因之一；[GitHub 官方排障说明](https://docs.github.com/en/get-started/using-github/troubleshooting-connectivity-problems)也列出了防火墙、代理和网络配置等因素。
 
 本文整理 6 类检查与处理方法，应根据故障原因选择，不保证每种网络都适用。若仍有问题，欢迎在下方评论补充报错现象。
