@@ -64,7 +64,7 @@ export type AirportSource = Omit<AirportRecord, 'plans'> & {
 // 网际快车: docs/blog/机场推荐/2026/机场推荐网际快车.md — 🧾 核心套餐表
 // cocoduck: docs/blog/机场推荐/2026/机场推荐cocoduck.md — 💳 CocoDuck机场套餐价格
 // u1s1: docs/blog/机场推荐/2026/机场推荐u1s1.md — 💳 套餐选择建议
-// 大哥云: docs/blog/机场推荐/2026/机场推荐大哥云.md — 💳 大哥云套餐价格
+// 大哥云: docs/blog/机场推荐/2026/机场推荐大哥云.md — 套餐怎么选？
 // invisible: docs/blog/机场推荐/2026/机场推荐隐形人.md — 周期套餐 / 一次性不限时流量包
 // kuajiecloud: docs/blog/机场推荐/2026/机场推荐跨界云.md — 周期套餐
 // civetnet: docs/blog/机场推荐/2026/机场推荐灵猫网络.md — 周期套餐
