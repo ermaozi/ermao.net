@@ -164,12 +164,15 @@ test('Dalaoyun keeps annual billing separate from monthly prices and preserves t
 })
 
 
-test('XXYUN bilingual metadata follows the requested date without relabeling the test image', () => {
+test('XXYUN image update preserves article dates and binds the redacted screenshot to its actual timestamp', () => {
   for (const path of ['docs/blog/机场推荐/2026/机场推荐xxyun.md', 'docs/en/blog/proxy-reviews/2026/机场推荐xxyun.md']) {
     const article = read(path)
     assert.match(article, /createTime: 2026\/11\/09 00:00:00/)
     assert.match(article, /updateTime: 2026\/11\/09 00:00:00/)
-    assert.match(article, /2025-02-14 04:05:49 CST/)
+    assert.match(article, /2026-11-09 12:01:49 CST/)
+    assert.match(article, /\/images\/xxyun\/speed-20261109-redacted\.png/)
+    assert.match(article, /=1280x1174/)
+    assert.doesNotMatch(article, /2025-02-14/)
     assert.match(article, /https:\/\/www\.xxyun\.ai\/\?code=HOWnn58c/)
     assert.doesNotMatch(article, /本次重写：|Rewritten on/)
   }
