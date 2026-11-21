@@ -90,10 +90,9 @@ DNS-over-HTTPS（DoH）或 DNS-over-TLS（DoT）加密客户端与解析器之�
 ---
 
 ## **4. 使用 GitHub 镜像站点**
-访问 GitHub 的镜像服务，避开主域名污染。  
-**常用镜像**：
-- [GitHub 加速下载](https://ghproxy.com/)
-- [FastGit](https://hub.fastgit.org/)（已停用，可寻找替代）
+优先从项目官方仓库的 [Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases) 获取发布文件，按发布方提供的校验和或签名核对；支持不可变发行的项目还可参考 [GitHub 发行完整性验证](https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/verify-release-integrity)。不要把第三方镜像当作官方来源或保证能解决连接问题。
+
+第三方服务仅考虑用于公开资料，不向其提交 GitHub 账号、令牌或私有仓库 URL。
 
 ---
 
