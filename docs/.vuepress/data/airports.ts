@@ -525,7 +525,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
         "峰值带宽：500 Mbps",
         "协议：Trojan"
       ],
-      "purchaseHref": "https://ermao.dgywzc.com/#/register?code=peAVAa8D",
+      "purchaseHref": "https://ermao.666glc.com/#/register?code=peAVAa8D",
       "text": "单月套餐 A，¥19.90，100G/月"
     },
     {
@@ -538,7 +538,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
         "峰值带宽：500 Mbps",
         "协议：Trojan"
       ],
-      "purchaseHref": "https://ermao.dgywzc.com/#/register?code=peAVAa8D",
+      "purchaseHref": "https://ermao.666glc.com/#/register?code=peAVAa8D",
       "text": "单月套餐 B，¥29.90，150G/月"
     },
     {
@@ -551,7 +551,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
         "峰值带宽：1000 Mbps",
         "协议：Trojan"
       ],
-      "purchaseHref": "https://ermao.dgywzc.com/#/register?code=peAVAa8D",
+      "purchaseHref": "https://ermao.666glc.com/#/register?code=peAVAa8D",
       "text": "季付套餐 A，¥69.00，200G/月"
     },
     {
@@ -564,7 +564,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
         "峰值带宽：500 Mbps",
         "协议：Trojan"
       ],
-      "purchaseHref": "https://ermao.dgywzc.com/#/register?code=peAVAa8D",
+      "purchaseHref": "https://ermao.666glc.com/#/register?code=peAVAa8D",
       "text": "VIP1 小流量（年付），¥88.00，15G/月"
     },
     {
@@ -577,7 +577,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
         "峰值带宽：1000 Mbps",
         "协议：Trojan"
       ],
-      "purchaseHref": "https://ermao.dgywzc.com/#/register?code=peAVAa8D",
+      "purchaseHref": "https://ermao.666glc.com/#/register?code=peAVAa8D",
       "text": "年付套餐 A，¥199.00，300G/月"
     },
     {
@@ -590,7 +590,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
         "峰值带宽：1000 Mbps",
         "协议：Trojan"
       ],
-      "purchaseHref": "https://ermao.dgywzc.com/#/register?code=peAVAa8D",
+      "purchaseHref": "https://ermao.666glc.com/#/register?code=peAVAa8D",
       "text": "年付套餐 B，¥299.00，500G/月"
     },
     {
@@ -603,7 +603,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
         "峰值带宽：1000 Mbps",
         "协议：Trojan"
       ],
-      "purchaseHref": "https://ermao.dgywzc.com/#/register?code=peAVAa8D",
+      "purchaseHref": "https://ermao.666glc.com/#/register?code=peAVAa8D",
       "text": "年付套餐（1000GB），¥699.00，1000G/月"
     }
   ],
@@ -3970,7 +3970,7 @@ export const airportSources: AirportSource[] = [
     name: '大哥云',
     description: '大哥云机场5年老品牌，可以免费试用，支持奈飞等多家流媒体解锁，支持YOUTUBE 8K流畅观看支持IPLC线路。',
     rank: 9,
-    officialHref: 'https://ermao.dgywzc.com/#/register?code=peAVAa8D',
+    officialHref: 'https://ermao.666glc.com/#/register?code=peAVAa8D',
     universalSubscription: true,
     minPlanText: '19.9元 100G/月',
     hasOneTimePackage: false,
