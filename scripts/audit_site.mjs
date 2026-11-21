@@ -2,8 +2,9 @@
 
 import fs from 'node:fs/promises'
 import path from 'node:path'
-import matter from 'gray-matter'
+import { parseSiteFrontmatter } from './site-frontmatter.mjs'
 import { glob } from 'glob'
+import { validateSiteDates } from '../data/site-date.mjs'
 
 const root = process.cwd()
 const docsDir = path.join(root, 'docs')
@@ -39,20 +40,6 @@ const toText = (value) => {
   if (value == null) return ''
   if (typeof value === 'string') return value.trim()
   return String(value).trim()
-}
-
-const parseSiteDateTime = (value) => {
-  const normalized = String(value).trim()
-  const match = normalized.match(
-    /^(\d{4})[/-](\d{1,2})[/-](\d{1,2})[ T](\d{1,2}):(\d{1,2}):(\d{1,2})$/,
-  )
-
-  if (!match) return new Date(Number.NaN)
-
-  const [, year, month, day, hour, minute, second] = match
-  return new Date(
-    `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}T${hour.padStart(2, '0')}:${minute.padStart(2, '0')}:${second.padStart(2, '0')}+08:00`,
-  )
 }
 
 const addRouteVariants = (routeSet, route) => {
@@ -95,7 +82,7 @@ const shouldSkipMarkdownTarget = (content, index, url) => {
 for (const file of markdownFiles) {
   const raw = await fs.readFile(file, 'utf8')
   try {
-    const parsed = matter(raw)
+    const parsed = parseSiteFrontmatter(raw)
     pages.push({ file, raw, ...parsed })
   }
   catch (error) {
@@ -177,14 +164,8 @@ for (const page of pages) {
     addIssue(warnings, 'client-only-card-masonry', page.file, 'Card masonry content is empty in SSR HTML')
   }
 
-  if (frontmatter.createTime) {
-    const createdAt = parseSiteDateTime(frontmatter.createTime)
-    if (Number.isNaN(createdAt.getTime())) {
-      addIssue(errors, 'invalid-create-time', page.file, String(frontmatter.createTime))
-    }
-    else if (createdAt > now) {
-      addIssue(errors, 'future-create-time', page.file, String(frontmatter.createTime))
-    }
+  for (const issue of validateSiteDates(frontmatter, now)) {
+    addIssue(errors, issue.type, page.file, issue.message)
   }
 
   if (page.file.includes('/机场推荐/') && !/202[0-9]/.test(toText(frontmatter.updateTime))) {

@@ -1,6 +1,7 @@
 import type { App, Page } from 'vuepress/core'
 import fs from 'node:fs/promises'
 import path from 'node:path'
+import { toIsoDate } from '../../../data/site-date.mjs'
 
 const hostname = 'https://www.ermao.net'
 const localeData = {
@@ -32,12 +33,6 @@ const getPageLang = (page: any): SupportedLang =>
 const getLocale = (page: any) => localeData[getPageLang(page)]
 const getAuthorId = (page: any) => `${hostname}${getLocale(page).path}about/#person`
 const getWebsiteId = (page: any) => `${hostname}${getLocale(page).path}#website`
-
-const toIsoDate = (value: unknown) => {
-  if (!value) return undefined
-  const date = new Date(String(value).replace(/\//g, '-'))
-  return Number.isNaN(date.getTime()) ? undefined : date.toISOString()
-}
 
 const absoluteUrl = (route: string) => new URL(route, hostname).toString()
 
