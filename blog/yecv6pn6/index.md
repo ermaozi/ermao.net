@@ -63,14 +63,14 @@ curl -I https://api.telegram.org
 
 ## 安装 OpenClaw（按顺序执行）
 
-### Step 1：安装 Node.js（要求 >= 22）
+### Step 1：安装受支持的 Node.js
 
 ```bash
 node --version
 npm --version
 ```
 
-如果版本低于 22，请先升级 Node.js。
+当前 OpenClaw v2026.11.6 的 Node.js 范围为 `>=24.16.0 <25 || >=26.1.0`，不支持 Node 22、23 或 25。优先使用稳定 Node 26.x（26.12.1 或更新补丁），也可使用稳定 Node 24.x（24.22.1 或更新补丁）。这两个推荐补丁版本不是硬性最低版本；实际加载的 `node:sqlite` 仍须通过兼容检查。安装前核对[官方 Node.js 兼容说明](https://docs.openclaw.ai/install/node-compatibility)，不要沿用旧版 OpenClaw 的版本门槛。
 
 ### Step 2：安装 OpenClaw
 
