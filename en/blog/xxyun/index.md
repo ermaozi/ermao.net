@@ -60,9 +60,9 @@ The provider also describes BGP relay, mainland-carrier optimization, streaming 
 
 ## Historical test-image reference {#performance}
 
-![Archived XXYUN test screenshot dated 2025-02-14 =1280x612](https://image.ermao.net/images/blog/xxyun/image-1.png)
+![Archived XXYUN test screenshot dated 2026-11-09 =1280x1174](/images/xxyun/speed-20261109-redacted.png)
 
-The unchanged image is retained for reference. It is timestamped **2025-02-14 04:05:49 CST** and shows differing speeds, latency and application results, including failed or unavailable results. This revision checked the image, not a new connection or service-access test.
+The image is provided for reference with account information redacted. It is timestamped **2026-11-09 12:01:49 CST** and shows differing speeds, latency and application results, including failed or unavailable results. This revision checked the image, not a new connection or service-access test.
 
 The image helps explain the nodes and checks shown at that time. It does not establish current performance or provide enough evidence to calculate long-term uptime.
 
