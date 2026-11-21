@@ -24,7 +24,7 @@ At the time, ~~XSUS~~ stated that it could accept SFCloud and FCCloud users at 3
 XSUS itself triggered a shutdown risk alert on April 28, 2025 and is not recommended.
 :::
 
-When choosing a proxy service, a longer operating history may reduce—but cannot eliminate—shutdown risk. The source article used [Dageyun](https://ermao.dgywzc.com/#/register?code=peAVAa8D) as one example.
+When choosing a proxy service, a longer operating history may reduce—but cannot eliminate—shutdown risk. The source article used [Dageyun](https://ermao.666glc.com/#/register?code=peAVAa8D) as one example.
 
 ::: tip Risk-monitoring board
 Many proxy services have recently become unreachable after data centers removed their servers. Consult the [2025–2026 Proxy-Service Shutdown and Risk List](/en/scamvpn/jichang-paolu-huizong/) for additional records.

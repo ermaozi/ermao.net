@@ -44,7 +44,7 @@
 |[闪狐云](#闪狐云)|[flashfox.cc](https://erozi01.ffvipaff.cc/register?aff=NCO1w4Iv)| 无 |20元 120G/月|❌|[TG](https://t.me/flashfoxcloud)|[前往](./v1/机场推荐闪狐云.md)|
 |[灯塔cloud](#灯塔cloud)|[www.dengta.cloud](https://www.dengta.cloud/#/register?code=n4jB4z5R)| 无 |10元 100G/月|❌|[TG](https://t.me/+xBRgJGSBcNdlNWJl)|[前往](./v1/机场推荐灯塔cloud.md)|
 |[百变小樱](#百变小樱)|[www.bbxy88.xyz](https://www.bbxy88.xyz/v2/register?code=WuuD)| 无 | 15元 100G/30天|❌|[TG](https://t.me/+IugiUXlyYqgyNjE0)|[前往](./v1/机场推荐百变小樱.md)|
-|[大哥云](#大哥云)|[ermao.dgywzc.com](https://ermao.dgywzc.com/#/register?code=peAVAa8D)| 无 |19.9元 100G/月|❌|[TG](https://t.me/dageyun)|[前往](./v2/机场推荐大哥云.md)|
+|[大哥云](#大哥云)|[ermao.666glc.com](https://ermao.666glc.com/#/register?code=peAVAa8D)| 无 |19.9元 100G/月|❌|[TG](https://t.me/dageyun)|[前往](./v2/机场推荐大哥云.md)|
 |[好鸭云](#好鸭云)|[vuser.niceduck.io](https://vuser.niceduck.io/register?code=QS0hzI2y)| 无 |12元 100G/月|❌|[TG](https://t.me/niceduck_group)|[前往](./v1/机场推荐好鸭云.md)|
 |[xxai](#xxai)|[xxai.uk](https://xx-ai.co?invite_code=K2TpsDcg)| 无 |16.9元 100G/月|✔|[TG](https://t.me/xxai_official)|暂无|
 |[加速啦](#加速啦)|[jiasu.la/?r=39116](https://jiasu.la/?r=39116)| 1G 不限时 |10元 80G/月|✔|[TG](https://t.me/jiasu_la)|[前往](./v1/机场推荐加速啦.md)|
@@ -592,7 +592,7 @@ okanc机场是一个新机场，但是与奈云同宗同源，有奈云的技术
 
 ### 大哥云
 
-大哥云官网地址：[ermao.dgywzc.com](https://ermao.dgywzc.com/#/register?code=peAVAa8D)
+大哥云官网地址：[ermao.666glc.com](https://ermao.666glc.com/#/register?code=peAVAa8D)
 
 最便宜的订阅有19.9元 100G/月。
 
@@ -600,13 +600,13 @@ okanc机场是一个新机场，但是与奈云同宗同源，有奈云的技术
 
 | 套餐名称 | 价格 | 流量 | 时长 | 峰值带宽 | 协议 | 购买 |
 |----------|------:|------:|:----:|--------:|------|------|
-| 单月套餐 A | ¥19.90 | 100G/月 | 按自然月 | 500 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
-| 单月套餐 B | ¥29.90 | 150G/月 | 按自然月 | 500 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
-| 季付套餐 A | ¥69.00 | 200G/月 | 90 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
-| VIP1 小流量（年付） | ¥88.00 | 15G/月 | 365 天 | 500 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
-| 年付套餐 A | ¥199.00 | 300G/月 | 365 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
-| 年付套餐 B | ¥299.00 | 500G/月 | 365 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
-| 年付套餐（1000GB） | ¥699.00 | 1000G/月 | 365 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.dgywzc.com/#/register?code=peAVAa8D) |
+| 单月套餐 A | ¥19.90 | 100G/月 | 按自然月 | 500 Mbps | Trojan | [立即购买](https://ermao.666glc.com/#/register?code=peAVAa8D) |
+| 单月套餐 B | ¥29.90 | 150G/月 | 按自然月 | 500 Mbps | Trojan | [立即购买](https://ermao.666glc.com/#/register?code=peAVAa8D) |
+| 季付套餐 A | ¥69.00 | 200G/月 | 90 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.666glc.com/#/register?code=peAVAa8D) |
+| VIP1 小流量（年付） | ¥88.00 | 15G/月 | 365 天 | 500 Mbps | Trojan | [立即购买](https://ermao.666glc.com/#/register?code=peAVAa8D) |
+| 年付套餐 A | ¥199.00 | 300G/月 | 365 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.666glc.com/#/register?code=peAVAa8D) |
+| 年付套餐 B | ¥299.00 | 500G/月 | 365 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.666glc.com/#/register?code=peAVAa8D) |
+| 年付套餐（1000GB） | ¥699.00 | 1000G/月 | 365 天 | 1000 Mbps | Trojan | [立即购买](https://ermao.666glc.com/#/register?code=peAVAa8D) |
 
 ---
 
