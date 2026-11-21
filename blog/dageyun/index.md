@@ -7,6 +7,8 @@ description: >-
 
 大哥云机场官网地址：[https://ermao.666glc.com](https://ermao.666glc.com/#/register?code=peAVAa8D)
 
+**11 月底专线预告：** 大哥云商家 11 月 20 日表示，预计 11 月底新增专线，并将其描述为“抗通报”线路。具体上线时间和适用套餐以商家公告为准，本站尚未实测新线路。
+
 ## 目录
 
 * [✨ 大哥云机场亮点速览](#section-1)
