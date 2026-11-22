@@ -1,109 +1,88 @@
 ---
-title: 搜索引擎查找 Ollama 本地部署的 DeepSeek，实现免费 AI 运行
+title: Chatbox 连接本机 Ollama：本地模型配置指南
 createTime: '2025/02/12 7:25:01'
 permalink: /article/tj38tso3/
 tags:
   - Ollama
   - DeepSeek
-  - Fofa
-  - Shodan
   - Chatbox
   - AI
-  - 搜索引擎
-  - 免费
+  - 本地模型
 description: >-
-  大多数教程都集中在如何本地部署 DeepSeek 模型，但本教程将引导您探索另一种方法：通过搜索引擎（如 Fofa 和 Shodan）查找公开的
-  Ollama 模型 API 服务。 Ollama 是一个强大的支持本地部署的大型语言模型，允许用户通过 API 进行交互。借助 Fofa 和 Shodan
-  等搜索引擎，...
+  在同一台电脑上用 Chatbox 桌面端连接自己的 Ollama，配置 localhost API Host，选择已下载的本地模型，并排查连接和模型列表问题。
 ---
 
-大多数教程都集中在如何本地部署 DeepSeek 模型，但本教程将引导您探索另一种方法：通过搜索引擎（如 Fofa 和 Shodan）查找公开的 Ollama 模型 API 服务。
+已经在电脑上运行 Ollama，想用聊天界面操作本地模型，可以让 **Chatbox 桌面端和 Ollama 运行在同一台电脑上**。本篇只介绍连接自己的本机服务，或你获准管理的本机环境。
 
-Ollama 是一个强大的支持本地部署的大型语言模型，允许用户通过 API 进行交互。借助 Fofa 和 Shodan 等搜索引擎，您可以定位那些暴露在互联网上的 Ollama 服务，并将其集成到自己的项目中，以便更加便捷地实现 AI 交互。
+先按[本地部署指南](/article/c3gj5lqy/)选择适合电脑资源的模型并完成下载，再配置 Chatbox。这里不涉及云端模型或第三方服务；本地运行仍需要相应的内存、磁盘空间和计算资源。
 
 <!-- more -->
 
-## 一、通过 Fofa 搜索 Ollama API
+<span id="一、通过-fofa-搜索-ollama-api"></span>
+<span id="_1-1-fofa-搜索步骤"></span>
+<span id="_1-2-结果分析"></span>
 
-Fofa 是一个强大的互联网设备和服务搜索引擎，可以帮助用户发现公开的 API 服务。通过在 Fofa 中输入特定的关键词，您可以精准地找到暴露在互联网上的 Ollama API 服务。
+## 一、准备本机模型
 
-### 1.1 Fofa 搜索步骤
+1. 按[Ollama 本地部署指南](/article/c3gj5lqy/)完成安装，选择并下载模型。
+2. 确认 Ollama 已在当前电脑运行；记下已经下载的模型名称。
+3. 从 [Chatbox 官方网站](https://chatboxai.app/)获取桌面端，安装在同一台电脑上。本篇不是网页版、手机或另一台电脑的连接教程。
 
-1. 打开 Fofa 官网，在搜索框中输入以下查询语句：
+在本机终端执行以下只读命令，可以查看已下载的模型：
 
-   ```
-   app="Ollama" && is_domain=false
-   ```
+```bash
+ollama list
+```
 
-   - **app="Ollama"**：用于筛选与 Ollama 相关的在线服务。
-   - **is_domain=false**：排除域名服务，仅显示直接暴露的 API 端点，减少干扰信息。
+如果列表为空，先回到本地部署指南完成模型下载。不要只在 Chatbox 填入一个尚未下载的模型名称。
 
-2. 点击搜索后，您将看到所有公开的 Ollama API 服务列表，并可以根据需要进行进一步筛选和分析。
+<span id="二、shodan-搜索-ollama-api"></span>
+<span id="_2-1-shodan-搜索步骤"></span>
+<span id="_2-2-结果分析"></span>
 
-### 1.2 结果分析
+## 二、确认本机服务地址
 
-如果搜索结果显示相关的 IP 地址和端口号，您可以尝试访问这些服务，以检查是否开放了 Ollama API。
+[Ollama 官方 FAQ](https://docs.ollama.com/faq)说明，默认服务绑定在本机 `127.0.0.1` 的 `11434` 端口。按 [Chatbox 官方 Ollama 指南](https://beta.chatboxai.app/en/guide/byok/ollama)，本篇使用的 API Host 是：
 
-请注意，访问时务必遵守相关法律法规，确保您连接到合法且授权的 API，避免未经许可的操作，防止违反法律。
+```text
+http://localhost:11434
+```
 
-![Ollama 本地部署的 DeepSeek =1024x653](https://image.ermao.net/images/article/tj38tso3/image.png)
+这里的 `localhost` 指运行 Chatbox 的这台电脑。保持本机默认绑定即可，不需要开放端口或修改防火墙、跨域和监听设置。
 
-## 二、Shodan 搜索 Ollama API
+<span id="三、如何访问找到的-ollama-api"></span>
+<span id="_3-1-使用-chatbox-连接到远程-ollama-服务"></span>
 
-Shodan 是另一个强大的搜索引擎，专门用于查找互联网上的各种设备和服务。通过 Shodan，您可以发现运行中的 Ollama 服务实例。
+## 三、在 Chatbox 中配置 Ollama
 
-### 2.1 Shodan 搜索步骤
+1. 打开 Chatbox 桌面端的设置，进入模型提供方设置；具体界面名称可能随版本变化。
+2. 添加或选择 **Ollama** 提供方。
+3. 在 **API Host（API 地址）** 填入 `http://localhost:11434` 并保存。不在后面添加聊天接口路径。
+4. 从模型列表中选择刚才已下载的本地模型；若界面需要手动输入名称，使用 `ollama list` 中的完整名称。
+5. 选择这个提供方和模型，开始一个新对话，用不含敏感信息的普通问题，例如“请用一句话解释什么是回形针”，检查是否能收到回答。
 
-1. 打开 [Shodan 官网](https://shodan.io)，在搜索框中输入以下查询语句：
+收到回答后，再确认对话所选的确实是 Ollama 和该本地模型。本文配置依据官方文档整理，不代表已在你的设备上实测；首次加载和响应速度取决于模型及电脑资源。
 
-   ```
-   Ollama is running
-   ```
+<span id="四、安全性和合规性"></span>
 
-   这个查询用于查找运行中的 Ollama 服务。
+## 四、连接失败时怎么排查
 
-2. 搜索结果将返回包含 Ollama API 实例的 IP 地址和端口号。
+- **无法连接**：先确认 Ollama 正在同一台电脑运行，再检查 API Host 是否为 `http://localhost:11434`。本机配置不需要改为外部地址。
+- **模型列表为空或找不到模型**：用 `ollama list` 核对下载是否完成、模型名称是否一致，再返回 Chatbox 刷新或重新打开设置。
+- **可以连接但回答很慢或加载失败**：先核对电脑可用内存和模型资源需求；必要时按本地部署指南选择更适合的模型，不把连接成功当作性能保证。
+- **设置改错**：在 Chatbox 的 Ollama 提供方中恢复上述本机 API Host，重新选择原来已下载的模型即可。本教程不要求更改系统网络设置。
 
-### 2.2 结果分析
+只在自己或明确获准管理的本机环境进行配置。初次验证不输入账号密码、私人文档或其他敏感内容。
 
-Shodan 会提供关于公开服务的详细信息，如 IP 地址、端口号和可能的 API 路径等。同样，确保这些服务是合法的，并且您有权访问。
+<span id="五、总结"></span>
 
-![Ollama 本地部署的 DeepSeek =1024x632](https://image.ermao.net/images/article/tj38tso3/image-1.png)
+## 五、完成配置后核对
 
-## 三、如何访问找到的 Ollama API
+确认三件事：**Chatbox 与 Ollama 在同一台电脑、API Host 是本机地址、选中的是已下载的本地模型**。先用普通测试问题验证，再按实际硬件能力选择适合自己的模型。
 
-### 3.1 使用 Chatbox 连接到远程 Ollama 服务
+<span id="六、相关链接"></span>
 
-先确认服务属于你，或管理员已明确授权使用；搜索结果可见、无需登录或返回成功，都不代表免费使用许可。以下步骤不用于连接未经许可的第三方端点。
-
-1. 下载并安装 [Chatbox AI](https://chatboxai.app/)。
-2. 打开 Chatbox 设置，在模型提供方中选择 "Ollama"。
-![Ollama 本地部署的 DeepSeek =1762x1232](https://image.ermao.net/images/article/tj38tso3/image-2.png)
-3. 在 **API Host（API 地址）** 中填写已获授权的 Ollama 服务地址并保存。本机运行 Ollama 时通常为 `http://localhost:11434`；这里的 `localhost` 指运行 Chatbox 的设备，不是远程服务器。远程使用应填写管理员提供的受保护网关或私有通道地址，按其要求配置认证；不要将未受保护的 `11434` 端口直接暴露到公网。
-4. 在模型下拉框中选择该服务器已安装、且授权你使用的模型。
-![Ollama 本地部署的 DeepSeek =1788x1192](https://image.ermao.net/images/article/tj38tso3/image-3.png)
-5. 保存后先用不含敏感信息的提示词测试。无法连接时先核对 API Host、访问权限和模型名称，不要把未受保护的公网服务作为替代。步骤依据 [Chatbox 官方 Ollama 指南](https://chatboxai.app/en/guide/byok/ollama)。
-![Ollama 本地部署的 DeepSeek =2048x1490](https://image.ermao.net/images/article/tj38tso3/image-4.png)
-
-## 四、安全性和合规性
-
-在访问和使用这些 API 时，请务必考虑以下几点：
-
-1. **合法性**：确保您访问的 API 是公开且经过授权的，避免任何未经许可的访问行为。
-2. **安全性**：如果您计划公开暴露自己的 Ollama API，确保使用 HTTPS 加密，并采取身份验证措施，防止恶意访问。
-3. **防火墙配置**：确保防火墙配置正确，允许合法请求访问您的 API，同时阻止不必要的外部访问。
-
-遵循这些安全措施，您可以在使用 Ollama API 时确保合法性与安全性。
-
-## 五、总结
-
-通过 Fofa 和 Shodan 等搜索引擎，您可以轻松找到暴露在互联网上的 Ollama 本地模型 API 服务。利用这些 API，您能够将 Ollama 模型集成到自己的项目中，进行各种自然语言处理任务。
-
-但在使用这些服务时，请务必遵守相关法律法规并采取适当的安全措施，确保操作合法并且安全。
-
-希望本教程能帮助您顺利上手，并有效地利用 Ollama 本地模型 API！
-
-## 六、相关链接
+## 六、相关资料
 
 [通过Ollama本地部署DeepSeek代码大模型：从硬件配置到VSCode实战指南](/article/c3gj5lqy/)
 
