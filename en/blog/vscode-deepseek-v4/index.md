@@ -221,7 +221,7 @@ Your code is sent to DeepSeek's official endpoint using your own API key, so the
 ## Further reading
 
 * [Run DeepSeek locally with Ollama](/en/article/c3gj5lqy/): if you care about keeping data entirely local, the local-deployment route complements the API approach here.
-* [Free DeepSeek guide](/en/article/tj38tso3/): if you want to try DeepSeek for free first, start there.
+* [Check an Ollama server for unintended exposure](/en/article/tj38tso3/): an optional security check for a server you own or administer.
 
 ## Wrap-up
 
