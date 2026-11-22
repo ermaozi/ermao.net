@@ -76,3 +76,21 @@ test('Both articles match FAQ schema to visible answers and preserve source and 
     assert.doesNotMatch(meta, /11元|14元|CNY 11|CNY 14|IPLC/)
   }
 })
+
+test('Dageyun labels seven preserved plans as historical without adding selector candidates', () => {
+  const airport = airportRecords.find(item => item.id === '大哥云')
+  assert.equal(airport.rank, 9)
+  assert.equal(airport.minPlanText, '现价待核实')
+  assert.equal(airport.historicalPlansAsOf, '2026-02-24')
+  assert.match(airport.description, /历史价目.*结算页/)
+  assert.doesNotMatch(airport.description, /免费试用|8K|流畅|解锁|IPLC/)
+  assert.equal(airport.officialHref, 'https://ermao.666glc.com/#/register?code=peAVAa8D')
+  assert.equal(airport.plans.length, 7)
+  assert.deepEqual(plain(airport.plans.map(p => p.priceText)), ['¥19.90', '¥29.90', '¥69.00', '¥88.00', '¥199.00', '¥299.00', '¥699.00'])
+  assert.ok(airport.plans.every(p => p.purchaseHref === airport.officialHref))
+  assert.ok(!selector(airportRecords).some(item => item.id === '大哥云'))
+  const english = localizeAirportRecord(airport)
+  assert.equal(english.minPlanText, 'Price unverified')
+  assert.match(english.description, /historical records.*2026-02-24/)
+  assert.doesNotMatch(english.description, /lists plans from|free trial|8K|smooth/i)
+})
