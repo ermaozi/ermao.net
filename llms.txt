@@ -77,7 +77,7 @@ This file contains links to all documentation sections.
 - [翻墙之后如何利用信息差赚点外快](/article/rsvptr5x/index.md): 先教大家一个最简单最靠谱的方法——通过推广Telegram的极搜机器人，每月赚200刀（约1400人民币）。
 - [2026 SSONE机场评测：月付10元60G便宜机场推荐｜Netflix/ChatGPT解锁](/article/ssone/index.md): SSONE机场怎么样？本文实测SSONE机场速度、稳定性与流媒体解锁能力，月付仅10元享60G流量、IEPL专线节点，支持Netflix/ChatGPT/YouTube，附购买教程和配置指南。
 - [2026 速界机场评测：90元/年起，IEPL专线与长周期套餐怎么选](/article/sujie/index.md): 速界机场怎么样？本文整理90元/年起步、开业优惠8折、IEPL专线、多档长周期套餐、通用订阅限制、风险边界和购买配置路径，帮你判断是否适合入手。
-- [搜索引擎查找 Ollama 本地部署的 DeepSeek，实现免费 AI 运行](/article/tj38tso3/index.md): 大多数教程都集中在如何本地部署 DeepSeek 模型，但本教程将引导您探索另一种方法：通过搜索引擎（如 Fofa 和 Shodan）查找公开的 Ollama 模型 API 服务。 Ollama 是一个强大的支持本地部署的大型语言模型，允许用户通过 API 进行交互。借助 Fofa 和 Shodan 等搜索引擎，...
+- [Chatbox 连接本机 Ollama：本地模型配置指南](/article/tj38tso3/index.md): 在同一台电脑上用 Chatbox 桌面端连接自己的 Ollama，配置 localhost API Host，选择已下载的本地模型，并排查连接和模型列表问题。
 - [2026 U1S1机场评测：IPLC专线、不限设备、晚高峰不降速的性价比之选](/article/u1s1/index.md): U1S1机场怎么样？本文实测U1S1机场速度、稳定性与流媒体解锁能力，全线IPLC专线节点，不限设备，高达2000Mbps带宽晚高峰不降速，解锁Netflix/ChatGPT/TikTok。附购买教程和配置指南。
 - [HTTP 状态码大全](/article/u5a30qtd/index.md): HTTP 状态码是服务器响应请求时返回的状态码，用于表示服务器的响应状态。常见的状态码有 5 类，分别以不同的数字开头，每个状态码都有特定的含义。
 - [wsl将ubuntu换成debian](/article/ubm5k5vn/index.md): 因为 debian 更稳定、更轻量，所以想把 wsl2 中的 ubuntu 换成 debian。 本文记录一下过程。

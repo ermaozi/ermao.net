@@ -224,7 +224,7 @@ $$4600 \div 1{,}000{,}000 \times 16 + 2800 \div 1{,}000{,}000 \times 4 \approx 0
 ## 相关阅读
 
 * [通过 Ollama 本地部署 DeepSeek](/article/c3gj5lqy/)：如果你在意数据完全不出本地，可以走本地部署路线，和本文的 API 接入互补。
-* [免费 DeepSeek 运行指南](/article/tj38tso3/)：想一分钱不花先体验 DeepSeek，可以先看这篇。
+* [Chatbox 连接本机 Ollama](/article/tj38tso3/)：已有本地模型、想用桌面聊天界面操作时，可以参考这篇。
 
 ## 结语
 
