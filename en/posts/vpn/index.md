@@ -337,7 +337,7 @@ Avoid buying a long plan immediately; prefer monthly or pay-as-you-go packages. 
 **Examples in this guide:**
 
 * [XSUS](./2026/机场推荐xsus.md) — the 2026 review records CNY 10 for 168 GB/month; current price unverified;
-* [xxyun](./2026/机场推荐xxyun.md) — listed plan: CNY 9.99 for 100 GB/month, with standard subscription support; confirm current availability and payment at checkout;
+* [xxyun](./2026/机场推荐xxyun.md) — user-supplied plan screenshots received on 23 November: from CNY 9.99 for 100GB/month, plus CNY 66.66 for a one-time 500GB total; monthly data does not roll over. Standard subscriptions are supported; confirm current availability and payment at checkout;
 * [Flybit](./2026/机场推荐flybit.md) — CNY 15 for 128 GB/month.
 
 **Usage advice:**

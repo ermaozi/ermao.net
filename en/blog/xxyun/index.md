@@ -25,6 +25,12 @@ Plan information comes from the existing site catalog. Confirm availability, fin
 
 ## Choosing a plan {#price}
 
+The screenshot tiers are **CNY 9.99/month for 100GB/month**, **CNY 19.90/month for 300GB/month**, **CNY 39.90/month for 1000GB/month**, and one-time totals of **CNY 66.66 for 500GB** or **CNY 199.00 for 2888GB**.
+
+The five tiers were checked against plan-page screenshots supplied by the user on 23 November 2026, before any discount. Annual prices are not shown. Monthly data resets on the order day each month; unused monthly data does not roll over. One-time packages contain a total allowance, advertised with no expiry until consumed, not a monthly refill or a guarantee that the service operates forever.
+
+The screenshots list 300M, 500M and 800M bandwidth for the 100GB, 300GB and 1000GB monthly plans, and 300M and 800M for the 500GB and 2888GB total packages. BGP relay, unlimited devices, support and app access are provider descriptions, not our speed or availability tests. Multipliers, inactivity rules and full refund terms are not established by these images.
+
 * **First purchase:** compare the CNY 9.99 / 100G monthly tier, then verify your usual applications and regions before spending more.
 * **Regular use:** compare the 300G and 1000G tiers with actual monthly consumption. Video, downloads and multiple devices affect usage; a lower unit price does not help if the allowance goes unused.
 * **Occasional backup:** one-time data packages may suit intermittent use. Check validity and traffic multipliers; “non-expiring” is a package term, not a promise of permanent provider operation.
