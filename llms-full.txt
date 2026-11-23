@@ -14877,15 +14877,17 @@ description: 2026年极客湾揭露手机厂商测评作弊的视频被B站下�
 
 #### 步骤 1：获取美区 Apple ID
 
-你不需要自己注册，我们提供免费共享账号：
+使用自己管理、且所在 App Store 提供 Shadowrocket 的 Apple 账号。Shadowrocket 是付费应用，需要购买；已购买且仍可下载的，可从购买记录重新下载。
+
+另见[免费共享 Apple ID 说明](/blog/freeappleid/)；共享账号不保证有该应用的购买记录。
 
 ::: danger 重要提醒
-**只在 App Store 中登录共享账号，千万不要在手机"设置"里登录，否则会导致锁机！**
+**不要在手机“设置”或 iCloud 中登录他人的账号，以免设备被锁定。App Store 登录与设备账号设置是两回事。**
 :::
 
 #### 步骤 2：下载 Shadowrocket
 
-在 App Store 中用共享账号登录后，搜索「Shadowrocket」下载安装，下载完毕后**立即退出共享账号**。
+在 App Store 中登录上述自己管理的账号，搜索「Shadowrocket」购买并下载；已有购买记录时，从账户的已购应用中重新下载。
 
 参考详细教程👉 [Shadowrocket(小火箭)新手使用教程](/article/z747kgjd/)
 
