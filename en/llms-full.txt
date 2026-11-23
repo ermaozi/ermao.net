@@ -23682,7 +23682,7 @@ The list below is ordered by the time the problems began.
 | :--- | :--- | :--- | :--- | :--- |
 | **CAC** | From June 30, 2026 |  | Website inaccessible; shares an operator with Naiyun, Yinyun, and OKAC. Naiyun's shutdown is confirmed, creating correlated risk among the operator's projects. | [View evidence](/en/scamvpn/cac/) |
 | **Naiyun** | From June 9, 2026 |  | Yinyun's official channel confirmed Naiyun had closed; support was unreachable, nodes and subscription URLs failed, and the website was inaccessible. It shares an operator with CAC, Yinyun, and OKAC. | [View evidence](/en/scamvpn/naiyun/) |
-| **Koodog** | June 1, 2026 |  | The website redirected abnormally, subscriptions failed, and the user group received concentrated failure reports. The final support status still required verification. | [View evidence](/en/scamvpn/koodog/) |
+| **Koodog** | June 1, 2026 |  | User reports as of June 1, 2026 described abnormal website redirects, failed subscriptions, and concentrated failure reports in the user group. Support status and an operator explanation remained unconfirmed. | [View evidence](/en/scamvpn/koodog/) |
 | **OKAC** | From May 11, 2026 |  | Repeated A-route and multi-route failures, plus data loss and order restoration. It shares an operator with Naiyun, CAC, and Yinyun; Naiyun's shutdown is confirmed. | [View evidence](/en/scamvpn/okac/) |
 | **Xiaohuojian** | From early 2026 |  | Widespread route errors, severe stalling, and support tickets left unanswered. | [View evidence](/en/scamvpn/xiaohuojian/) |
 | **Crelay** | From April 2026 |  | Nearly all nodes showed errors or instability, support tickets went unanswered, but the website remained accessible. | [View evidence](/en/scamvpn/crelay/) |
