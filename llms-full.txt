@@ -5437,7 +5437,7 @@ description: >-
 | macOS | Clash Verge Rev | Clash Mi、Surge | MacBook 用户、需要规则分流 | [macOS ClashVergeRev 使用指南](/article/6vxkmmuh/) |
 | Linux | Clash Verge Rev | sing-box、Hiddify | 开发者、服务器桌面环境 | [电脑如何翻墙](/blog/how-to-vpn-on-computer/) |
 | Android | Clash Meta for Android | V2RayNG、Hiddify | 安卓手机、平板、备用机 | [Android 手机 Clash 教程](/article/eh8f4n86/) |
-| iPhone/iPad | Clash Mi | Shadowrocket、Stash、Quantumult X | 苹果手机、iPad 用户 | [iOS Clash Mi 使用教程](/blog/clashmi/) |
+| iPhone/iPad | Clash Mi（iOS/iPadOS 15+） | Shadowrocket、Stash、Quantumult X | 苹果手机、iPad 用户 | [iOS Clash Mi 使用教程](/blog/clashmi/) |
 | iOS 付费客户端 | Shadowrocket | Stash、Surge | 喜欢小火箭、已有美区账号 | [Shadowrocket 新手教程](/article/z747kgjd/) |
 | 软路由/全屋 | OpenClash | PassWall、sing-box | 全家设备、电视、游戏机 | [软路由全屋翻墙指南](/blog/softrouter/) |
 
@@ -5529,7 +5529,7 @@ Shadowrocket，也就是大家常说的“小火箭”，是 iPhone 和 iPad 上
 
 ### 5. Clash Mi：iOS 免费工具的新选择
 
-Clash Mi 内置 mihomo 内核，支持 iOS、macOS、Android 和 Windows。它的优势是界面清爽、上手简单、支持 Clash 订阅，特别适合不想购买 Shadowrocket 的 iPhone 用户。
+Clash Mi 内置 mihomo 内核，支持 iOS、macOS、Android 和 Windows。它的优势是界面清爽、上手简单、支持 Clash 订阅，特别适合不想购买 Shadowrocket 的 iPhone 用户。iPhone 和 iPad 分别需要 iOS 15 或 iPadOS 15 及以上版本。
 
 适合这些用户：
 
@@ -5582,7 +5582,7 @@ sing-box 是近几年增长很快的通用代理核心，很多新协议、新�
 
 * 电脑：优先 [Clash Verge Rev](/article/0gematwc/)。
 * Android：优先 [Clash Meta for Android](/article/eh8f4n86/)。
-* iPhone/iPad：优先 [Clash Mi](/blog/clashmi/) 或 [Shadowrocket](/article/z747kgjd/)。
+* iPhone/iPad：iOS/iPadOS 15+ 可优先选 [Clash Mi](/blog/clashmi/)，或选 [Shadowrocket](/article/z747kgjd/)。
 * 全屋设备：参考[软路由全屋翻墙指南](/blog/softrouter/)。
 
 安装客户端时尽量选择官方页面、本站教程直链或可信下载源，不要随便下载来历不明的“破解版”“高速版”“绿色版”。
@@ -5693,7 +5693,7 @@ sing-box 是近几年增长很快的通用代理核心，很多新协议、新�
 | 需求 | 推荐方案 |
 | --- | --- |
 | 完全新手 | Clash Verge Rev + 月付机场订阅 |
-| iPhone 免费方案 | Clash Mi + Clash 订阅 |
+| iPhone 免费方案 | Clash Mi（iOS 15+） + Clash 订阅 |
 | iPhone 经典方案 | Shadowrocket + 机场订阅 |
 | 安卓备用 | Clash Meta for Android + V2RayNG |
 | Windows 协议兼容 | Clash Verge Rev + v2rayN |
@@ -5720,7 +5720,7 @@ sing-box 是近几年增长很快的通用代理核心，很多新协议、新�
 
 2026年选择翻墙工具，最稳妥的思路不是追最新名词，而是按设备选一个成熟客户端，再配合可靠机场订阅。
 
-电脑优先 Clash Verge Rev，安卓优先 Clash Meta for Android，iPhone 优先 Clash Mi 或 Shadowrocket；如果订阅里有新协议，再考虑 Hiddify、sing-box 或 v2rayN。真正决定体验的，仍然是机场线路质量、晚高峰稳定性、订阅兼容和客服响应。
+电脑优先 Clash Verge Rev，安卓优先 Clash Meta for Android，iPhone 可选 Clash Mi（iOS 15+）或 Shadowrocket；如果订阅里有新协议，再考虑 Hiddify、sing-box 或 v2rayN。真正决定体验的，仍然是机场线路质量、晚高峰稳定性、订阅兼容和客服响应。
 
 下一步可以直接按你的设备看教程：
 

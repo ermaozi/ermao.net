@@ -28,7 +28,7 @@ On small screens, scroll the table sideways. Keyboard users can focus the table 
 | macOS | Clash Verge Rev | Clash Mi, Surge | Mac users and rule-based routing | [Clash Verge Rev for macOS](/en/article/6vxkmmuh/) |
 | Linux | Clash Verge Rev | sing-box, Hiddify | Developers and desktop systems | [Computer access guide](/en/blog/how-to-vpn-on-computer/) |
 | Android | Clash Meta for Android | V2RayNG, Hiddify | Phones, tablets, and backup devices | [Clash for Android](/en/article/eh8f4n86/) |
-| iPhone and iPad | Clash Mi | Shadowrocket, Stash, Quantumult X | iOS and iPadOS users | [Clash Mi for iOS](/en/blog/clashmi/) |
+| iPhone and iPad | Clash Mi (iOS/iPadOS 15+) | Shadowrocket, Stash, Quantumult X | iOS and iPadOS users | [Clash Mi for iOS](/en/blog/clashmi/) |
 | Paid iOS client | Shadowrocket | Stash, Surge | Users who already own Shadowrocket | [Shadowrocket beginner guide](/en/article/z747kgjd/) |
 | Router and whole home | OpenClash | PassWall, sing-box | TVs, consoles, and household devices | [Whole-home router guide](/en/blog/softrouter/) |
 
@@ -118,7 +118,7 @@ See the [Shadowrocket beginner guide](/en/article/z747kgjd/) for screenshots. If
 
 ### 5. Clash Mi: a free iOS option
 
-Clash Mi includes the Mihomo core and supports iOS, macOS, Android, and Windows. It has a relatively simple interface and accepts Clash-compatible subscriptions, making it an option for iPhone users who do not want to purchase Shadowrocket.
+Clash Mi includes the Mihomo core and supports iOS, macOS, Android, and Windows. It has a relatively simple interface and accepts Clash-compatible subscriptions, making it an option for iPhone users who do not want to purchase Shadowrocket. It requires iOS 15 or later on iPhone and iPadOS 15 or later on iPad.
 
 It may suit users who:
 
@@ -169,7 +169,7 @@ Use the [provider guide](/en/posts/vpn/) to compare low-cost monthly plans, and 
 
 * Desktop: [Clash Verge Rev](/en/article/0gematwc/)
 * Android: [Clash Meta for Android](/en/article/eh8f4n86/)
-* iPhone and iPad: [Clash Mi](/en/blog/clashmi/) or [Shadowrocket](/en/article/z747kgjd/)
+* iPhone and iPad: [Clash Mi](/en/blog/clashmi/) (iOS/iPadOS 15+) or [Shadowrocket](/en/article/z747kgjd/)
 * Whole home: [Router access guide](/en/blog/softrouter/)
 
 Prefer the upstream project, a verified store listing, or a trusted package source. Avoid unknown “cracked,” “high-speed,” or modified builds.
@@ -278,7 +278,7 @@ For temporary access, see the [free subscription page](/en/article/oh8wwokl/), w
 | Need | Suggested starting point |
 | --- | --- |
 | Complete beginner | Clash Verge Rev + monthly subscription |
-| Free iPhone client | Clash Mi + Clash subscription |
+| Free iPhone client | Clash Mi (iOS 15+) + Clash subscription |
 | Established iPhone client | Shadowrocket + compatible subscription |
 | Android backup | Clash Meta for Android + V2RayNG |
 | Windows protocol coverage | Clash Verge Rev + v2rayN |
@@ -305,7 +305,7 @@ Verify the project name, developer, and package before installing:
 
 A sound 2026 approach is to choose a mature client for the device and pair it with a compatible, currently operating provider rather than chasing protocol names.
 
-Clash Verge Rev is a practical desktop default, Clash Meta for Android is a common Android choice, and Clash Mi or Shadowrocket can serve iPhone users. Add Hiddify, sing-box, or v2rayN when the subscription format or protocol requires it. Route quality, peak-hour stability, subscription compatibility, and support responses remain the main determinants of the experience.
+Clash Verge Rev is a practical desktop default, Clash Meta for Android is a common Android choice, and Clash Mi (iOS 15+) or Shadowrocket can serve iPhone users. Add Hiddify, sing-box, or v2rayN when the subscription format or protocol requires it. Route quality, peak-hour stability, subscription compatibility, and support responses remain the main determinants of the experience.
 
 Continue with the relevant guide:
 
