@@ -3809,11 +3809,11 @@ const curatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
     { name: '高级套', priceText: '¥50/月', traffic: '600GB/月', billingCycle: '月付', type: '周期订阅', audience: '重度用户', features: ['流媒体无障碍', '全域企业级跨境专线', '10 台设备', '手动重置 ¥50/次'], text: '高级套，¥50/月，600GB/月' },
   ],
   xxyun: [
-    { name: '初级套餐', priceText: '¥9.99/月', traffic: '100G/月', billingCycle: '月付', type: '周期订阅', audience: '轻度用户', text: '初级套餐，¥9.99/月，100G/月' },
-    { name: '中级套餐', priceText: '¥19.9/月', traffic: '300G/月', billingCycle: '月付', type: '周期订阅', audience: '日常使用', text: '中级套餐，¥19.9/月，300G/月' },
-    { name: '高级套餐', priceText: '¥39.9/月', traffic: '1000G/月', billingCycle: '月付', type: '周期订阅', audience: '重度用户', text: '高级套餐，¥39.9/月，1000G/月' },
-    { name: '500G 不限时', priceText: '¥66.66/次', traffic: '500G', billingCycle: '一次性', type: '不限时流量包', audience: '备用流量', text: '500G 不限时，¥66.66/次，500G', oneTime: true },
-    { name: '2888G 不限时', priceText: '¥199/次', traffic: '2888G', billingCycle: '一次性', type: '不限时流量包', audience: '备用流量', text: '2888G 不限时，¥199/次，2888G', oneTime: true },
+    { name: '初级套餐', priceText: '¥9.99/月', traffic: '100GB/月', billingCycle: '月付', type: '周期订阅', audience: '轻度用户', text: '初级套餐，¥9.99/月，100GB/月' },
+    { name: '中级套餐', priceText: '¥19.90/月', traffic: '300GB/月', billingCycle: '月付', type: '周期订阅', audience: '日常使用', text: '中级套餐，¥19.90/月，300GB/月' },
+    { name: '高级套餐', priceText: '¥39.90/月', traffic: '1000GB/月', billingCycle: '月付', type: '周期订阅', audience: '重度用户', text: '高级套餐，¥39.90/月，1000GB/月' },
+    { name: '500G 不限时', priceText: '¥66.66/次', traffic: '500GB', billingCycle: '一次性', type: '不限时流量包', audience: '备用流量', text: '500GB 不限时，¥66.66/次，500GB', oneTime: true },
+    { name: '2888G 不限时', priceText: '¥199.00/次', traffic: '2888GB', billingCycle: '一次性', type: '不限时流量包', audience: '备用流量', text: '2888GB 不限时，¥199.00/次，2888GB', oneTime: true },
   ],
   danke: [
     { name: '年费6T特惠', priceText: '¥68/年', traffic: '每月 500GB（全年 6TB）', billingCycle: '年付', type: '周期订阅', audience: '长期稳定使用、预算优先', text: '年费6T特惠，¥68/年，每月 500GB（全年 6TB）' },
@@ -3895,7 +3895,7 @@ export const airportSources: AirportSource[] = [
   {
     id: 'xxyun',
     name: 'xxyun',
-    description: '支持通用订阅，已收录9.99元100G/月入门档与多档月付、一次性包，便于按预算比较；当前是否可购买、实付金额和条款以订单页面为准。按客户端导入后验证常用应用。10月27日资料列新用户xxyun码9折，是否仍适用以结算为准。BGP及流媒体、AI支持为商家描述。',
+    description: '支持通用订阅，2026年11月23日用户套餐截图列月付9.99元100GB、19.90元300GB、39.90元1000GB；一次包66.66元500GB、199元2888GB。月付订单日重置不结转，一次包总量用完为止；当前是否可购买、实付金额和条款以订单页面为准。按客户端导入后验证常用应用。10月27日资料列新用户xxyun码9折，是否仍适用以结算为准。BGP及流媒体、AI支持为商家描述。',
     rank: 3,
     officialHref: 'https://www.xxyun.ai/?code=HOWnn58c',
     universalSubscription: true,

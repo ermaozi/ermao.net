@@ -41,7 +41,7 @@ export const selectorSourceDates: Record<string, string> = {
   "/article/u1s1/": "2026-05-05",
   "/blog/uuone/": "2026-02-24",
   "/blog/xsus/": "2026-02-24",
-  "/blog/xxyun/": "2026-02-24",
+  "/blog/xxyun/": "2026-11-23",
   "/article/yifanyun/": "2026-04-24",
   "/blog/ermaoyun/": "2026-07-22",
   "/blog/yuntu-airport/": "2026-08-08",

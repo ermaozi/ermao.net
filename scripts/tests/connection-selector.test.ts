@@ -27,6 +27,11 @@ assert.deepEqual(dalaoyun.comparablePlans.map(({ price, traffic }) => [price, tr
 assert.equal(monthlyCny(dalaoyun.plans[0]), undefined, 'Annual average must not enter monthly filters')
 assert.equal(monthlyCny(dalaoyun.plans[6]), undefined, 'One-time data must not enter monthly filters')
 
+const xxyun = selectorAirports.find(item => item.id === 'xxyun')!
+assert.equal(xxyun.sourceDate, '2026-11-23')
+assert.deepEqual(xxyun.comparablePlans.map(({ price, traffic }) => [price, traffic]), [[9.99, 100], [19.9, 300], [39.9, 1000]])
+for (const plan of xxyun.plans.filter(plan => plan.oneTime)) assert.equal(monthlyCny(plan), undefined)
+
 const sources = new Map<string, { content: string; date?: string }>()
 for (const path of globSync('docs/blog/机场推荐/**/*.md').sort()) {
   const { data, content } = matter(readFileSync(path, 'utf8'))

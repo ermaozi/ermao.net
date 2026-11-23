@@ -119,7 +119,7 @@ test('XXYUN supports universal subscriptions and preserves tiers and the exact r
   assert.deepEqual(Array.from(english.plans, p => p.name),
     ['Entry plan', 'Standard plan', 'Premium plan', '500G one-time', '2888G one-time'])
   assert.deepEqual(Array.from(item.plans, p => p.priceText),
-    ['¥9.99/月', '¥19.9/月', '¥39.9/月', '¥66.66/次', '¥199/次'])
+    ['¥9.99/月', '¥19.90/月', '¥39.90/月', '¥66.66/次', '¥199.00/次'])
   assert.deepEqual(Array.from(item.plans, p => Boolean(p.oneTime)), [false, false, false, true, true])
   assert.match(english.description, /new users 10% off/)
 })
@@ -164,11 +164,11 @@ test('Dalaoyun keeps annual billing separate from monthly prices and preserves t
 })
 
 
-test('XXYUN image update preserves article dates and binds the redacted screenshot to its actual timestamp', () => {
+test('XXYUN plan refresh preserves creation date and the independent redacted speed-test timestamp', () => {
   for (const path of ['docs/blog/机场推荐/2026/机场推荐xxyun.md', 'docs/en/blog/proxy-reviews/2026/机场推荐xxyun.md']) {
     const article = read(path)
     assert.match(article, /createTime: 2026\/11\/09 00:00:00/)
-    assert.match(article, /updateTime: 2026\/11\/09 00:00:00/)
+    assert.match(article, /updateTime: 2026\/11\/23 \d{2}:\d{2}:\d{2}/)
     assert.match(article, /2026-11-09 12:01:49 CST/)
     assert.match(article, /\/images\/xxyun\/speed-20261109-redacted\.png/)
     assert.match(article, /=1280x1174/)

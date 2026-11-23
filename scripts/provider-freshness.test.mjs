@@ -39,10 +39,11 @@ test('SuperBiu retains historical plans but makes current pricing and availabili
   assert.match(english.description, /Current prices and availability remain unverified/)
 })
 
-test('Historical monthly prices cannot enter the selector and current results stay unchanged', () => {
+test('Historical monthly prices cannot enter the selector and only the screenshot-backed XXYun monthly tiers join current results', () => {
   const results = selector(airportRecords)
-  assert.equal(results.length, 28)
-  assert.equal(results.reduce((total, item) => total + item.comparablePlans.length, 0), 99)
+  assert.equal(results.length, 29)
+  assert.deepEqual(plain(results.find(item => item.id === 'xxyun').comparablePlans.map(({ price, traffic }) => [price, traffic])), [[9.99, 100], [19.9, 300], [39.9, 1000]])
+  assert.equal(results.reduce((total, item) => total + item.comparablePlans.length, 0), 102)
   assert.ok(!results.some(item => item.id === 'superbiu'))
   const monthly = { id: 'example', name: 'Example', reviewHref: '/blog/example/', plans: [{ name: 'Small', text: 'Small', priceText: '¥11/月', traffic: '50GB' }] }
   assert.equal(selector([monthly]).length, 1)
