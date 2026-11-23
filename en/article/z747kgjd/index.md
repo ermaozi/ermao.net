@@ -12,7 +12,7 @@ Shadowrocket is a rule-based proxy client. **It does not supply servers or a pro
 **Version 2.2.93 was released on October 29, 2026.** Apple's release notes cover macOS menu-bar startup, local-network exclusions with Enforce Routes, and iCloud server-sync fixes. These are developer release notes, not new device tests by this site. Before updating, retain your subscription and configuration details; afterwards, check your usual connection and any local devices or sync features you use. A client update does not renew a provider subscription.
 
 ::: tip Before purchasing
-If you prefer a free client, see the [Clash Mi for iOS guide](/en/blog/clashmi/). If you already own Shadowrocket, follow the installation, subscription, and troubleshooting steps below.
+If you prefer a free client, see the [Clash Mi for iOS guide](/en/blog/clashmi/) (requires iOS/iPadOS 15 or later). If you already own Shadowrocket, follow the installation, subscription, and troubleshooting steps below.
 
 **Already installed the app but have no servers?** Read the [Shadowrocket subscription selection notes](/en/posts/vpn/#ios-subscription) to compare formats, payment periods, and risk records. With an existing subscription, jump to the [import steps](#_2-import-a-subscription).
 :::
