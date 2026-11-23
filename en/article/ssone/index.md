@@ -48,10 +48,9 @@ The purchase section separately claims:
 * 10% off a first purchase;
 * recurring-renewal discounts;
 * referral traffic rewards;
-* holiday promotions;
-* a refund request within 24 hours.
+* holiday promotions.
 
-No coupon, campaign dates, detailed refund conditions, or policy URL are supplied. Do not treat any of these benefits as available until the live checkout and written terms confirm them.
+No coupon or campaign dates are supplied for those promotions. Do not treat them as available until the live checkout and written terms confirm them. The [official FAQ](https://m.ssone.io/faq?lang=zh-cn), checked on November 23, 2026, states that purchases are non-refundable and topped-up balances cannot be refunded or withdrawn. This is the verification date, not the policy effective date.
 
 ## Provider-stated features
 
@@ -111,8 +110,8 @@ Some named applications are legacy or unmaintained. Prefer an actively maintaine
 ## Setup
 
 1. Resolve the `hello-ssone.com` and `flybit6202.com` identity mismatch.
-2. Use the free trial if it is still available and does not require risky payment authorization.
-3. Otherwise, start with the CNY 10 monthly tier.
+2. Use the free trial first; check its allowance and duration on the account page.
+3. Decide whether to purchase a monthly tier only after checking that the trial meets your needs.
 4. Confirm plan, reset, multiplier, device, sharing, and refund rules.
 5. Copy the subscription from the authenticated dashboard.
 6. Import it into a trusted client and test the required nodes.
@@ -135,11 +134,11 @@ Those statements cannot support a reliable ranking. They are documented here so 
 
 ### Is the free trial still available?
 
-It was recorded as one day and 1 GB in March 2026. Check current signup terms and avoid supplying payment details unless necessary and understood.
+Yes. The [official FAQ](https://m.ssone.io/faq?lang=zh-cn), checked on November 23, 2026, confirms a free trial; check the account page for its allowance and duration. This is the verification date, not the policy effective date. One day and 1 GB was the March 2026 record, not a confirmed current allowance.
 
 ### Can I request a refund?
 
-The source claims requests are possible within 24 hours, but provides no policy detail. Obtain the current written refund terms before paying.
+No. The [official FAQ](https://m.ssone.io/faq?lang=zh-cn), checked on November 23, 2026, states that purchases are non-refundable and topped-up balances cannot be refunded or withdrawn. This is the verification date, not the policy effective date. Use the free trial before deciding whether to pay.
 
 ### Does it support several devices?
 
@@ -154,7 +153,7 @@ Not categorically. Shadowsocks, V2Ray-family protocols, and Trojan differ from c
 * Resolve the conflicting domains and invitation codes.
 * Confirm every promotional, trial, payment, and refund statement.
 * Treat route, no-log, uptime, and service-access entries as claims to test.
-* Begin with the trial or smallest monthly tier, not a long commitment.
+* Use the free trial first, with its allowance and duration checked on the account page; decide whether to buy only after testing.
 * Test evening-peak latency, loss, and the exact application required.
 * Keep an independent backup for important use.
 
