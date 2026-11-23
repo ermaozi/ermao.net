@@ -13492,6 +13492,10 @@ The App Store may require the Apple ID that originally obtained the app before i
 
 Do not immediately delete the old app to obtain an update. **Export subscriptions, settings, and other local data first, and confirm that the replacement account can download the app.** A paid app may require another purchase. For continued use, follow [Apple's account-creation guide](https://support.apple.com/en-us/108647) and manage your own purchase history and account security.
 
+### What if I accidentally signed into a shared account in Settings?
+
+If the device is still usable, follow [Apple's sign-out guide](https://support.apple.com/en-us/104958) and choose “Sign Out But Don't Erase” if offered; if Sign Out is unavailable due to restrictions, see [Apple's Screen Time troubleshooting](https://support.apple.com/en-us/101973). If asked for someone else's account password, stop—do not reset their account or erase the device in an attempt to fix it. Only if your own device explicitly shows Activation Lock should you use proof of purchase to [request help from Apple](https://support.apple.com/en-us/108934); removal is not guaranteed.
+
 ## Related tools
 
 ---
