@@ -165,7 +165,7 @@ This file contains links to all documentation sections.
 - [Stripe 同意收购 OpenRouter，Google 竞拍航司数据：AI 数据边界、Apple 告警与设备安全周报](/blog/weekly-news-2026-08-20/index.md): 本期覆盖 Stripe 收购 OpenRouter、Google 竞拍航司数据、OpenAI 零数据保留、Apple 间谍软件告警、Dahua 摄像头攻击、v2rayN 更新、诺基亚在华收缩与 mRNA 疫苗三期结果，区分已确认事实、实际影响和待核边界。
 - [Qwen 开放权重、WhatsApp 升级防盗号：AI 代理外传风险与地震预警错链](/blog/weekly-news-2026-08-27/index.md): 本周关注 Qwen3.8 开放权重、WhatsApp 账号安全升级、Kiro AI 代理数据外传路径、ChatGPT 印度广告、DeepSeek 周末价格，以及地震预警和食品安全调查的证据边界。
 - [GPT-6 Astra 跨过网络安全门槛：机场数据泄露、平台问责与吉隆恢复周报](/blog/weekly-news-2026-09-03/index.md): 本周关注 GPT-6 Astra 的网络安全能力与开放边界、英国机场客户数据泄露、欧盟和中国的 AI 平台治理、sing-box 迁移，以及吉隆灾害恢复和 WeatherNext 3。
-- [2026 无忧链接机场推荐：12.92元100GB起，支持通用订阅与主流客户端](/blog/wuyoulink/index.md): 无忧链接机场怎么样？本文整理其12.92元100GB起的周期套餐、79元年付每月40GB轻量方案、一次性不限时流量包、流媒体与 AI 工具支持情况，并解读服务商提供的测速截图。
+- [2026 无忧链接机场推荐：套餐记录、通用订阅与主流客户端](/blog/wuyoulink/index.md): 无忧链接机场怎么样？本文区分2026年8月套餐截图中的历史折扣、早前套餐记录与购买前待核条件，介绍通用订阅、流媒体与 AI 工具支持情况，并解读服务商提供的测速截图。
 - [2026 小牛云机场评测与风险预警：购买续费前先看稳定性与跑路信号](/blog/xiaoniu/index.md): 小牛云机场怎么样？本文保留官网、套餐、测速和客户端信息，同时补充跑路风险提示、续费建议和购买前检查项。当前建议谨慎购买，优先短周期验证。
 - [2026 xsus机场评测：10元168G BGP三网优化机场推荐｜不限时流量包/晚高峰不掉速](/blog/xsus/index.md): xsus机场怎么样？本文实测xsus机场速度、稳定性与流媒体解锁能力，月付仅10元享168G流量、BGP三网优化线路，晚高峰不炸速，支持Netflix/Disney+/TikTok解锁，另有不限时流量包可选，附购买教程。
 - [2026迅达机场推荐：月付15元120G起，87国节点专线稳定解锁Netflix/ChatGPT](/blog/xunda/index.md): 迅达机场靠谱吗？这篇2026最新评测汇总迅达套餐与实用信息：月付15元起（120G/300G/600G可选）、全球87国节点、5-10台设备同时在线，支持Netflix、YouTube 4K、TikTok与ChatGPT，适合追求稳定与高性价比的用户。

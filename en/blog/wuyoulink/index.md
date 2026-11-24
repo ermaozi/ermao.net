@@ -1,11 +1,10 @@
 ---
 url: /en/blog/wuyoulink/index.md
 description: >-
-  A dated Wuyou Link review covering recurring and one-time plans, universal
-  subscriptions, mainstream client support, streaming and AI claims, and
-  archived service tests.
+  A Wuyou Link review separating August 2026 plan discounts from earlier
+  records, with universal subscriptions, client support and purchase checks.
 ---
-Wuyou Link reportedly had about one year of operation. A plan screenshot supplied on August 4, 2026 shows recurring plans from CNY 12.92 for 100 GB per month, with a separate CNY 79 annual plan providing 40 GB each month. The provider advertises universal subscriptions and broad client compatibility.
+Wuyou Link reportedly had about one year of operation. A plan screenshot supplied on August 4, 2026 records discounted recurring plans at that time from CNY 12.92 for 100 GB per month, with a separate CNY 79 annual plan providing 40 GB each month. The provider advertises universal subscriptions and broad client compatibility.
 
 Recorded purchase route: [Wuyou Link plans](https://ermaozi01.worryfreeaff.com/#/?code=xSLORrqb)
 
@@ -25,6 +24,8 @@ The provider claims access to Netflix, Disney+, HBO, Hulu, ChatGPT, and Gemini. 
 
 ## Recurring plans
 
+These are historical prices, not current checkout quotes. Mini, Comfortable, Easy and Free Link come from the screenshot supplied on August 4, 2026. Carefree Link comes from earlier material and was not shown in that screenshot.
+
 | Plan | Data | Recorded prices |
 | --- | ---: | --- |
 | Mini Link | 40 GB/month | CNY 79/year |
@@ -33,15 +34,17 @@ The provider claims access to Netflix, Disney+, HBO, Hulu, ChatGPT, and Gemini. 
 | Free Link | 500 GB/month | CNY 52.36/month; 140.76/quarter; 266.56/half-year; 502.52/year |
 | Carefree Link | 1 TB/month | CNY 117/month; 315/quarter; 596/half-year; 1,123/year |
 
-Mini Link is billed annually and the new screenshot labels its allowance as 40 GB each month. For Comfortable, Easy, and Free Link, the table uses the red current prices shown beside crossed-out original monthly prices. Carefree Link was not visible in this screenshot, so its earlier recorded price remains. New users should test Comfortable Link for one month before any longer commitment.
+Mini Link is billed annually and the August screenshot labels its allowance as 40 GB each month. For Comfortable, Easy, and Free Link, the table uses the red discounted prices recorded at that time shown beside crossed-out original monthly prices. Carefree Link was not visible in this screenshot, so its earlier recorded price remains. New users should test Comfortable Link for one month before any longer commitment.
 
 ## Partially documented one-time package
+
+The following is an earlier record, not a confirmed current offer or price.
 
 | Plan | Price | Total data | Evidence limit |
 | --- | ---: | ---: | --- |
 | Non-expiring 100 GB | CNY 16.15 one-time | 100 GB | Formal name and full conditions not supplied |
 
-The submitted information calls this a non-expiring package, but account expiry and closure rules were not provided. Verify the live checkout before relying on the unusually low price.
+The earlier submitted information described this as a non-expiring package, but account expiry and closure rules were not provided. Verify the live checkout before relying on the unusually low price.
 
 ## Archived service-access test
 
@@ -69,7 +72,7 @@ The source does not identify test region, ISP, baseline bandwidth, device, clien
 
 ### What is the lowest recurring monthly tier?
 
-CNY 12.92 for 100 GB per month in the supplied screenshot. The CNY 79 Mini Link is billed annually and provides 40 GB each month.
+The screenshot supplied on August 4, 2026 recorded a discounted CNY 12.92 for 100 GB per month. It also recorded Mini Link at CNY 79 per year with 40 GB each month. These are historical figures; check current plans and prices at checkout.
 
 ### Is Shadowrocket supported?
 
