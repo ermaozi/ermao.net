@@ -88,13 +88,15 @@ export const plansFromTable = (table: MarkdownTable): AirportPlan[] => {
   const preferredPriceIndex = headerIndex(/券后价/)
   const priceIndex = preferredPriceIndex >= 0 ? preferredPriceIndex : headerIndex(/价格|月费|一次性价格/)
   const trafficIndex = headerIndex(/流量/)
-  const cycleIndex = headerIndex(/周期|时长/)
+  const cycleIndex = headerIndex(/周期|时长|^有效期$/)
   const audienceIndex = headerIndex(/适用|人群|建议/)
   const purchaseIndex = headerIndex(/购买/)
 
   return table.rows.map((row) => {
     const name = stripMarkdown(row[nameIndex] ?? row[0] ?? '')
-    const priceText = stripMarkdown(row[priceIndex] ?? '')
+    const priceValue = stripMarkdown(row[priceIndex] ?? '')
+    const priceText = table.headers[priceIndex] === '价格（元）' && /^\d+(?:\.\d+)?$/.test(priceValue)
+      ? `¥${priceValue}` : priceValue
     const traffic = stripMarkdown(row[trafficIndex] ?? '')
     const billingCycle = cycleIndex >= 0 ? stripMarkdown(row[cycleIndex] ?? '') : undefined
     const audience = audienceIndex >= 0 ? stripMarkdown(row[audienceIndex] ?? '') : undefined
@@ -105,13 +107,15 @@ export const plansFromTable = (table: MarkdownTable): AirportPlan[] => {
     })
     const purchaseHref = purchaseIndex >= 0 ? getLink(row[purchaseIndex] ?? '') : undefined
     const oneTime = isOneTimePlan({ name, priceText, traffic, billingCycle, features }, table.headings)
+    // An explicitly unconfirmed expiry is not an affirmative no-expiry claim.
+    const oneTimeType = billingCycle === '见套餐详情' ? '一次性流量包' : '不限时流量包'
 
     return {
       name,
       priceText,
       traffic,
       billingCycle,
-      type: oneTime ? '不限时流量包' : '周期订阅',
+      type: oneTime ? oneTimeType : '周期订阅',
       audience,
       features: features.length ? features : undefined,
       purchaseHref,

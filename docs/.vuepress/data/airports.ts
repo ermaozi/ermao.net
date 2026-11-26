@@ -93,7 +93,7 @@ export type AirportSource = Omit<AirportRecord, 'plans'> & {
 // sogo云: docs/blog/机场推荐/2026/机场推荐sogo云.md — 周期订阅 / 一次性订阅（限量不限时）
 // 光速云: docs/blog/机场推荐/2026/机场推荐光速云.md — 💳 光速云套餐价格
 // lumo: docs/blog/机场推荐/2026/机场推荐Lumo.md — 套餐价格与选择
-// huanqiuti: docs/blog/机场推荐/2026/机场推荐环球梯.md — 月付与年付套餐 / 一次性不限时流量包
+// huanqiuti: docs/blog/机场推荐/2026/机场推荐环球梯.md — 月付与年付套餐 / 一次性流量包
 // shenxing: docs/blog/机场推荐/2026/机场推荐神行加速.md — 季付、半年付与更长周期价格 / 年付小包与月付套餐
 // liulianyun: docs/blog/机场推荐/2026/机场推荐榴莲云.md — 套餐价格与选择建议
 // shandianshu: docs/blog/机场推荐/2026/机场推荐闪电鼠.md — 套餐价格与优惠
@@ -2864,22 +2864,22 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
     },
     {
       "name": "环球随行包",
-      "priceText": "¥99/一次性",
-      "traffic": "待客服确认",
-      "type": "不限时流量包",
-      "audience": "确认额度后作为备用流量",
+      "priceText": "¥99",
+      "traffic": "待确认",
+      "billingCycle": "见套餐详情",
+      "type": "一次性流量包",
       "purchaseHref": "https://ermaozi01.huanqiutiaff.com/#/?code=QIvL5wZs",
-      "text": "环球随行包，¥99/一次性，待客服确认",
+      "text": "环球随行包，¥99，待确认",
       "oneTime": true
     },
     {
       "name": "环球灵活包",
-      "priceText": "¥299/一次性",
-      "traffic": "待客服确认",
-      "type": "不限时流量包",
-      "audience": "确认额度后作为备用流量",
+      "priceText": "¥299",
+      "traffic": "待确认",
+      "billingCycle": "见套餐详情",
+      "type": "一次性流量包",
       "purchaseHref": "https://ermaozi01.huanqiutiaff.com/#/?code=QIvL5wZs",
-      "text": "环球灵活包，¥299/一次性，待客服确认",
+      "text": "环球灵活包，¥299，待确认",
       "oneTime": true
     }
   ],
@@ -4541,17 +4541,17 @@ export const airportSources: AirportSource[] = [
   {
     id: 'huanqiuti',
     name: '环球梯',
-    description: '月付 22 元 120GB、最多 3 台设备，另有 96 元年付和两档不限时包；服务商主打 VLESS 专线，通用订阅需联系客服领取，其余档位额度与优惠条件待确认。',
+    description: '月付 22 元 120GB、最多 3 台设备，另有 96 元年付和两档一次性流量包；服务商主打 VLESS 专线，通用订阅需联系客服领取，其余档位额度与优惠条件待确认。',
     rank: 17,
     officialHref: 'https://ermaozi01.huanqiutiaff.com/#/?code=QIvL5wZs',
     universalSubscription: true,
     minPlanText: '22元120GB/月',
-    hasOneTimePackage: true,
+    hasOneTimePackage: 'unknown',
     telegramHref: 'https://t.me/huanqiuti88',
     reviewHref: '/blog/huanqiuti/',
     rankChangeLabel: '新上',
     image: 'https://image.ermao.net/images/blog/huanqiuti/20261002_152157-5f8e83.png',
-    tags: ['VLESS', '通用订阅', '不限时流量包'],
+    tags: ['VLESS', '通用订阅', '一次性流量包'],
   },
   {
     id: 'shenxing',

@@ -30,6 +30,22 @@ test('Unlimited speed/devices and mixed or negated mentions are not expiry evide
   assert.equal(isOneTimePlan({ name: '年付包', priceText: '¥88 / 一年', features: ['月付 / 一次性'] }), false)
 })
 
+test('An explicitly unconfirmed validity stays one-time without claiming no expiry', () => {
+  const input = cycle => `## 一次性流量包
+| 套餐 | 一次性价格 | 总流量 | 有效期 |
+| --- | --- | --- | --- |
+| 备用包 | ¥99/一次性 | 80GB | ${cycle} |`
+  const [unknown] = parse(input('见套餐详情'))
+  assert.equal(unknown.oneTime, true)
+  assert.equal(unknown.type, '一次性流量包')
+  assert.equal(unknown.billingCycle, '见套餐详情')
+  assert.equal(parse(input('不限时'))[0].type, '不限时流量包')
+  assert.equal(parse(input('365天'))[0].oneTime, undefined)
+  const [yuan] = parse(input('见套餐详情').replace('一次性价格', '价格（元）').replace('¥99/一次性', '99'))
+  assert.equal(yuan.priceText, '¥99')
+  assert.equal(yuan.type, '一次性流量包')
+})
+
 test('Heading scope respects nesting, all heading depths and adjacent table endings', () => {
   const source = `## 不限时流量包\n##### 普通档位\n${table()}\n## 周期套餐\n###### 普通档位\n${table('普通月包', '¥10/月')}\n## 其他套餐\n${table('待确认套餐')}`
   assert.deepEqual(parse(source).map(plan => Boolean(plan.oneTime)), [true, false, false])

@@ -381,6 +381,7 @@ const englishDescription = (item: AirportSource | AirportRecord) => {
   if (item.id === 'ccyz') return 'Historical records list CNY 15/month, but the entry quota conflicts between 100GB and 150GB. The current allowance is unverified; use the actual quota and price on the official checkout page before buying.'
   if (item.id === 'superbiu') return 'SuperBiu has announced higher prices, lower traffic multipliers, CN2 entrances and AnyTLS. These are provider statements, not new independent tests. The 2026-02-24 article recorded CNY 11 for 50 GB monthly and one-time plans; the tables retain historical prices. Current prices and availability remain unverified.'
   if (item.id === '唯兔云') return 'Historical records list CNY 79.90 per year with 45 GB each month. The entry page showed only a route check on 2026-10-02; current prices, reset periods and service terms remain unverified. Test the provider’s route and access claims on your own network.'
+  if (item.id === 'huanqiuti') return 'Recorded plans include CNY 22 for 120 GB per month, CNY 96 per year and two one-time data packs. Check the plan details for the packs’ validity. Contact support for a universal subscription link.'
   if (item.id === 'liulianyun') return 'Monthly plans start at CNY 24 for 140 GB, with a CNY 96 annual plan offering 60 GB each month. No-expiry plans are also supported; check their current allowances and conditions. The provider lists universal subscriptions and VLESS speed records from five regions. Code ll88 offers 30% off, once per account; confirm eligible plans, billing periods and expiry at checkout.'
   if (item.id === 'xsus') return 'The 2026 review records CNY 10 per month for 168 GB; the older article records CNY 8. The change date and any discount conditions are undocumented. Verify the current price and test the required nodes before purchase.'
   if (item.id === 'flybit') return 'Recorded plans start at CNY 15 per month for 128 GB, with non-expiring packages also listed. IEPL routes and streaming or ChatGPT access are provider claims. Archived tests lack complete timestamps and setup details, so verify current terms and test a small plan on your own network.'
@@ -407,7 +408,9 @@ export const localizeAirportSource = (item: AirportSource): AirportSource => ({
   minPlanText: localizeAirportPrice(item.minPlanText),
   rankChangeLabel: item.rankChangeLabel === '新上' ? 'New' : item.rankChangeLabel,
   imageAlt: item.id === 'dalaoyun' ? 'Dalaoyun logo supplied by the submitter' : item.id === 'lumo' ? 'Lumo logo' : `${localizeAirportName(item.name)} review screenshot`,
-  tags: localizeTags(item.tags),
+  tags: localizeTags(item.id === 'huanqiuti'
+    ? item.tags?.map(tag => tag === '一次性流量包' ? 'One-time data' : tag)
+    : item.tags),
 })
 
 export const localizeAirportRecord = (item: AirportRecord): AirportRecord => ({
@@ -432,6 +435,14 @@ export const localizeAirportRecord = (item: AirportRecord): AirportRecord => ({
       return localizeAirportPlan({ ...plan, name: names[index],
         billingCycle: index === 0 ? 'Annual; CNY 96 upfront' : index < 6 ? 'Monthly' : 'One-time; no advertised expiry',
         features: [rules[index]],
+      }, index)
+    }
+    if (item.id === 'huanqiuti' && plan.oneTime) {
+      return localizeAirportPlan({
+        ...plan,
+        type: 'One-time data pack',
+        billingCycle: 'See plan details for validity',
+        audience: 'Backup data',
       }, index)
     }
     if (item.id !== 'xxyun') return localizeAirportPlan(plan, index)
