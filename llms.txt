@@ -124,7 +124,7 @@ This file contains links to all documentation sections.
 - [【新闻】海南新增SEA-H2X与ALC海缆：海口出入口局助力跃居全国第二，解析中国流量出海新枢纽](/blog/hainanguanlan/index.md): 海南新增 SEA-H2X 与 ALC 两条国际海缆，总设定容量约 498Tb；海口三网出入口局叠加自贸港与中国—东盟政策红利，或使海南超越上海、仅次于香港。文内附海缆容量排名、数据口径说明与产业影响解读。
 - [电脑如何翻墙？2026年Windows与Mac科学上网新手指南](/blog/how-to-vpn-on-computer/index.md): 2026年最新电脑翻墙指南，专为Windows和Mac小白用户设计。详解Clash Verge Rev安装、节点订阅导入及常见问题解决，助你快速实现PC端科学上网。
 - [手机如何翻墙？2026年最新Android与iOS科学上网保姆级教程](/blog/how-to-vpn-on-mobile/index.md): 2026年最新手机翻墙指南，手把手教你如何在Android和iPhone(iOS)手机上实现科学上网。从软件下载(Clash/Shadowrocket)到节点配置，零基础也能学会。
-- [2026 环球梯机场推荐：22元120GB月付，年付与不限时流量包](/blog/huanqiuti/index.md): 环球梯套餐怎么选？整理22元120GB月付、96元年付、99元与299元不限时包，说明客服领取通用订阅、轻享七折参考价，并解读服务商提供的测速、流媒体及客户端节点原图。
+- [2026 环球梯机场推荐：22元120GB月付，年付与一次性流量包](/blog/huanqiuti/index.md): 环球梯套餐怎么选？整理22元120GB月付、96元年付、99元与299元一次性包，说明客服领取通用订阅、轻享七折参考价，并解读服务商提供的测速、流媒体及客户端节点原图。
 - [2026 寰宇云机场推荐：18元150GB月付，1000GB不限时备用更灵活](/blog/huanyuyun/index.md): 寰宇云套餐怎么选？18元150GB月付入门，300GB与600GB按需升级，还有年付小包和1000GB起不限时流量包。本文按使用场景给出选购建议、客户端说明与购买入口。
 - [HyperOrbit 使用教程：Android、iPhone、iPad、Mac 与 Apple TV 配置指南（2026）](/blog/HyperOrbit/index.md): 2026年 HyperOrbit 使用教程，覆盖 Android、iPhone、iPad、Apple TV 和 Apple Silicon Mac 安装、订阅导入、路由、测速及常见问题。
 - [2026 隐形人机场推荐：24 元月付 144GB，IEPL 纯专线宣传](/blog/invisible-airport/index.md): 隐形人机场怎么样？本文整理 24 元 144GB 月付、109 元年付轻量版、三档不限时流量包、企业级 IEPL 纯专线宣传、通用订阅及服务商提供的测速截图。

@@ -15050,12 +15050,12 @@ For screenshots and app-specific details, use the Android or iOS guides linked a
 ---
 url: /en/blog/huanqiuti/index.md
 description: >-
-  Compare Huanqiu Ti's monthly, annual and no-expiry plans, support-obtained
+  Compare Huanqiu Ti's monthly, annual and one-time plans, support-obtained
   subscriptions and advertised discount, with original provider speed and
   platform tests.
 ---
-# 2026 Huanqiu Ti Review: CNY 22 for 120 GB Monthly and No-Expiry Packages
-Huanqiu Ti lists monthly, annual and one-time, no-expiry data packages. Its explicitly quoted lowest monthly option is **Light at CNY 22/month with 120 GB/month and up to three simultaneous devices**. The provider gives **CNY 15.40/month** as a price after a 30% discount, but supplies no code or eligibility conditions. Universal subscriptions require **contacting support to obtain the link**, so confirm your client before choosing a plan.
+# 2026 Huanqiu Ti Review: CNY 22 for 120 GB Monthly and One-Time Data Packs
+Huanqiu Ti lists monthly, annual and one-time data packages. Its explicitly quoted lowest monthly option is **Light at CNY 22/month with 120 GB/month and up to three simultaneous devices**. The provider gives **CNY 15.40/month** as a price after a 30% discount, but supplies no code or eligibility conditions. Universal subscriptions require **contacting support to obtain the link**, so confirm your client before choosing a plan.
 
 Purchase link: [View current Huanqiu Ti plans](https://ermaozi01.huanqiutiaff.com/#/?code=QIvL5wZs)
 
@@ -15069,7 +15069,7 @@ Purchase link: [View current Huanqiu Ti plans](https://ermaozi01.huanqiutiaff.co
 | Routing | VLESS and a dedicated-line architecture advertised; test tables label the protocol Vless |
 | Lowest monthly plan | Light at CNY 22/month, 120 GB/month, up to three simultaneous devices |
 | Annual plan | Student at CNY 96/year; allowance requires confirmation |
-| One-time, no-expiry data | Travel at CNY 99 and Flexible at CNY 299; total allowances not supplied |
+| One-time data | Travel at CNY 99 and Flexible at CNY 299; total allowances not supplied |
 | Universal subscription | Listed as supported, with links obtained through support; actual import not tested |
 | Payments | WeChat Pay and Alipay according to the provider |
 | Regions in the screenshots | Hong Kong, Taiwan, Singapore, Japan and the United States |
@@ -15094,20 +15094,20 @@ Student's CNY 96 annual payment is equivalent to **CNY 8/month**, paid upfront f
 
 The provider quotes Light at **22 × 0.7 = CNY 15.40/month** with 120 GB/month. No code, eligible-account rules, expiry or renewal terms were supplied, and the discount has not been confirmed for other plans. The quoted discount is not treated as a permanently available purchase price.
 
-The submission also lists reset charges: **CNY 10 per reset** for Student, **CNY 21** for Light, **CNY 36** for Explore and **CNY 63** for Premium. These reset an associated plan rather than providing independent no-expiry packages. Confirm the restored allowance, effects on the next reset date and discount eligibility in the account panel or with support.
+The submission also lists reset charges: **CNY 10 per reset** for Student, **CNY 21** for Light, **CNY 36** for Explore and **CNY 63** for Premium. These reset an associated plan rather than providing separate data packs. Confirm the restored allowance, effects on the next reset date and discount eligibility in the account panel or with support.
 
 For a first purchase, compare Light, whose allowance and device limit are explicit, and test your required nodes and platforms before considering annual billing or an upgrade. [Check Huanqiu Ti prices, discount conditions and reset rules](https://ermaozi01.huanqiutiaff.com/#/?code=QIvL5wZs).
 
-## One-time, no-expiry packages
+## One-time data packs
 
-The provider says no-expiry, limited-data packages are offered. These are original one-time prices. **Total data was not supplied** and cannot be inferred from the price.
+Both data packs are paid for once. Check the plan details for the validity period.
 
 | Plan | One-time price | Total data | Suggested use | Purchase |
 | --- | --- | --- | --- | --- |
 | Huanqiu Ti Travel | CNY 99 one-time | Confirm with support | Backup data after confirming allowance | [View plan](https://ermaozi01.huanqiutiaff.com/#/?code=QIvL5wZs) |
 | Huanqiu Ti Flexible | CNY 299 one-time | Confirm with support | Backup data after confirming allowance | [View plan](https://ermaozi01.huanqiutiaff.com/#/?code=QIvL5wZs) |
 
-Before purchasing, confirm the no-expiry terms, total allowance, device limits, node multipliers and whether a recurring plan can be held alongside the package. No-expiry describes the data package's validity; it does not guarantee that the provider or every node will remain available indefinitely.
+Before buying, check the total allowance, device limits and whether you can keep a recurring plan alongside the pack.
 
 ## Subscriptions and routing
 
@@ -15158,7 +15158,7 @@ The usage screenshot displays a Huanqiu Ti node list with Singapore 01 selected,
 
 * Users within 120 GB/month and three simultaneous devices who will test a monthly plan first.
 * Users seeking universal subscriptions who accept obtaining the link through support.
-* Users seeking no-expiry backup data who will first confirm allowance, multipliers and device limits.
+* Users looking for backup data who can check the validity period and usage limits first.
 
 Households and higher-volume users should confirm Explore and Premium's precise allowances and device counts; the advertised three-to-ten-device range does not identify a suitable tier. Users relying on a particular platform should check actual access before buying.
 
@@ -15185,9 +15185,9 @@ That is the provider's reference price after a 30% Light discount. The code, eli
 
 The material does not explicitly assign an allowance to Student. The advertised 60–600 GB range cannot establish its data. Confirm the allowance and reset cycle before paying.
 
-### Are universal subscriptions and no-expiry packages available?
+### Are universal subscriptions and one-time data packs available?
 
-The provider lists both. Subscription links require support; the CNY 99 and CNY 299 packages' total data and device limits remain unconfirmed.
+Contact support for a subscription link. The CNY 99 and CNY 299 data packs are paid for once.
 
 ### Are Netflix, Disney+ and ChatGPT guaranteed on every node?
 
@@ -15195,7 +15195,7 @@ No. The screenshot contains successes, failures, N/A and application-only result
 
 ## Conclusion
 
-Huanqiu Ti's selection points are **CNY 22 for 120 GB monthly, support-obtained universal subscriptions and two no-expiry packages**. Light's device limit is explicit, making it an option to test first. Confirm the other tiers' allowances before comparing them. Provider screenshots offer historical node and platform references; actual checks on your network are still needed.
+Huanqiu Ti's selection points are **CNY 22 for 120 GB monthly, support-obtained universal subscriptions and two one-time data packs**. Light's device limit is explicit, making it an option to test first. Confirm the other tiers' allowances before comparing them. Provider screenshots offer historical node and platform references; actual checks on your network are still needed.
 
 [View current Huanqiu Ti plans and subscription instructions](https://ermaozi01.huanqiutiaff.com/#/?code=QIvL5wZs)
 
