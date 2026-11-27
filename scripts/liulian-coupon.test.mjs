@@ -18,7 +18,7 @@ const chinese = read('docs/blog/机场推荐/2026/机场推荐榴莲云.md')
 const english = read('docs/en/blog/proxy-reviews/2026/机场推荐榴莲云.md')
 const chineseIndex = read('docs/blog/文档/各大机场优惠券汇总.md').split('## 榴莲云机场优惠券\n')[1]?.split('\n## ')[0]
 const englishIndex = read('docs/en/blog/guides/各大机场优惠券汇总.md').split('## Liulian Cloud\n')[1]?.split('\n## ')[0]
-const referral = 'https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo'
+const referral = 'https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo'
 const json = value => JSON.parse(JSON.stringify(value))
 
 test('Liulian coupon has the confirmed code, seven-tenths price and one-use limit in both articles and coupon indexes', () => {

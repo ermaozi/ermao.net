@@ -3054,7 +3054,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "60GB/月",
       "type": "周期订阅",
       "audience": "已确认线路适配、用量较少且接受年付的用户",
-      "purchaseHref": "https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo",
+      "purchaseHref": "https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo",
       "text": "榴莲包·年付特惠版，¥96/年，60GB/月"
     },
     {
@@ -3063,7 +3063,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "140GB/月",
       "type": "周期订阅",
       "audience": "首次尝试、浏览资讯与轻度影音",
-      "purchaseHref": "https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo",
+      "purchaseHref": "https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo",
       "text": "轻享包，¥24/月，140GB/月"
     },
     {
@@ -3072,7 +3072,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "260GB/月",
       "type": "周期订阅",
       "audience": "月用量接近或超过140GB的用户",
-      "purchaseHref": "https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo",
+      "purchaseHref": "https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo",
       "text": "畅享包，¥40/月，260GB/月"
     },
     {
@@ -3081,7 +3081,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "420GB/月",
       "type": "周期订阅",
       "audience": "较频繁的视频观看与日常联网",
-      "purchaseHref": "https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo",
+      "purchaseHref": "https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo",
       "text": "尊享包，¥60/月，420GB/月"
     },
     {
@@ -3090,7 +3090,7 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "750GB/月",
       "type": "周期订阅",
       "audience": "已验证线路、有较大月度流量需求的用户",
-      "purchaseHref": "https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo",
+      "purchaseHref": "https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo",
       "text": "榴莲王，¥100/月，750GB/月"
     }
   ],
@@ -4574,7 +4574,7 @@ export const airportSources: AirportSource[] = [
     name: '榴莲云',
     description: '24 元 140GB 月付起，另有 96 元年付、每月 60GB 小包；另支持不限时套餐，具体额度与条件以当前套餐说明为准；服务商注明支持通用订阅，提供五个地区的 VLESS 节点测速记录。优惠码 ll88 七折，每个账号限用一次；适用套餐、计费周期及截止时间请在结算页确认。',
     rank: 19,
-    officialHref: 'https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo',
+    officialHref: 'https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo',
     universalSubscription: true,
     minPlanText: '24元 140GB/月',
     hasOneTimePackage: true,
