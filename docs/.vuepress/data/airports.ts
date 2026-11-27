@@ -258,8 +258,8 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "168GB",
       "type": "周期订阅",
       "features": [
-        "带宽保证：500Mbps",
-        "说明：个人使用，不限设备，Netflix/Disney保证"
+        "套餐标称带宽：500Mbps",
+        "说明：个人使用，不限设备，资料列有 Netflix、Disney+"
       ],
       "purchaseHref": "https://xsus.cloud/register?code=xJFcT1Dw",
       "text": "P-Small 基础套餐，¥10.00/月，168GB"
@@ -270,8 +270,8 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "336GB",
       "type": "周期订阅",
       "features": [
-        "带宽保证：1Gbps",
-        "说明：个人使用，不限设备，Netflix/Disney保证"
+        "套餐标称带宽：1Gbps",
+        "说明：个人使用，不限设备，资料列有 Netflix、Disney+"
       ],
       "purchaseHref": "https://xsus.cloud/register?code=xJFcT1Dw",
       "text": "P-Plus 进阶套餐，¥20.00/月，336GB"
@@ -282,8 +282,8 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "420GB",
       "type": "周期订阅",
       "features": [
-        "带宽保证：1Gbps",
-        "说明：个人/小团体，不限设备，Netflix/Disney保证"
+        "套餐标称带宽：1Gbps",
+        "说明：个人/小团体，不限设备，资料列有 Netflix、Disney+"
       ],
       "purchaseHref": "https://xsus.cloud/register?code=xJFcT1Dw",
       "text": "P-Max 专业套餐，¥24.00/月，420GB"
@@ -294,8 +294,8 @@ const generatedAirportPlanCatalog: Record<string, AirportPlan[]> = {
       "traffic": "1024GB",
       "type": "周期订阅",
       "features": [
-        "带宽保证：5Gbps突发",
-        "说明：小团体使用，Netflix/Disney保证"
+        "套餐标称带宽：5Gbps突发",
+        "说明：小团体使用，资料列有 Netflix、Disney+"
       ],
       "purchaseHref": "https://xsus.cloud/register?code=xJFcT1Dw",
       "text": "P-Ultra 极限套餐，¥58.00/月，1024GB"
@@ -3885,12 +3885,13 @@ export const airportSources: AirportSource[] = [
     officialHref: 'https://xsus.cloud/register?code=xJFcT1Dw',
     universalSubscription: true,
     minPlanText: '现价待核实',
-    hasOneTimePackage: true,
+    hasOneTimePackage: 'unknown',
+    historicalPlansAsOf: '2026-02-24',
     telegramHref: 'https://t.me/xsusvpn',
     reviewHref: '/blog/xsus/',
     rankChangeLabel: '-',
     image: 'https://image.ermao.net/images/blog/xsus/20260129_162650-08b59d.png',
-    tags: ['BGP', '不限时', '大流量'],
+    tags: ['BGP', '大流量'],
   },
   {
     id: 'xxyun',

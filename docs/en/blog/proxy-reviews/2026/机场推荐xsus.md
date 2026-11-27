@@ -1,5 +1,5 @@
 ---
-title: XSUS Review—CNY 10 for 168 GB and Non-Expiring Data Packages
+title: "XSUS Review: Historical Prices, Data Packs and Evening Testing"
 createTime: 2026/01/29 14:23:34
 updateTime: 2026/02/24 10:00:00
 permalink: /en/blog/xsus/
@@ -11,7 +11,7 @@ tags:
   - BGP relay
   - non-expiring data
   - budget proxy
-description: A dated XSUS review covering its CNY 10 monthly 168 GB tier, four non-expiring packages, BGP and peak-hour claims, plan reset rules, and test limits.
+description: See previous XSUS monthly prices and data pack terms, plus how to check the current offers and test your usual nodes at peak times.
 head:
   - - script
     - type: application/ld+json
@@ -25,43 +25,43 @@ head:
             "name": "Who might consider XSUS?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Its low-cost monthly tier and non-expiring packages may suit someone testing evening-peak performance or keeping a backup. Stability and service access must be verified on the user's own network."
+              "text": "Someone looking for a short trial on their own network. Check the sites or apps you need during your usual evening hours."
             }
           },
           {
             "@type": "Question",
-            "name": "What happens when an XSUS monthly allowance is exhausted?",
+            "name": "What happens when monthly data is exhausted?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The source says to wait for the monthly reset, purchase the applicable reset option, or upgrade. Non-expiring packages are a separate product whose balance is advertised to last until used."
+              "text": "Wait for the scheduled reset. If you need data sooner, check the dashboard for a reset or upgrade option."
             }
           },
           {
             "@type": "Question",
-            "name": "Does XSUS require annual billing?",
+            "name": "Is annual payment required?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No. The source lists monthly plans beginning at CNY 10 for 168 GB, plus one-time data packages."
+              "text": "The old catalog included monthly plans. Check which billing periods the checkout offers now."
             }
           },
           {
             "@type": "Question",
-            "name": "How can an XSUS user contact support?",
+            "name": "How is support reached?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The source lists online support, a ticket system, and Telegram handle @Misaka_Yuki. Verify any handle from the authenticated provider dashboard."
+              "text": "Open the XSUS help center and use its online chat."
             }
           }
         ]
       }
 ---
 
-XSUS markets BGP ingress optimization for China Telecom, China Unicom, and China Mobile, with special attention to the 20:00–24:00 evening peak. The source records a CNY 10 monthly 168 GB entry tier and four one-time data packages advertised not to expire.
+XSUS markets BGP ingress optimization for China Telecom, China Unicom, and China Mobile, with special attention to the 20:00–24:00 evening peak. The February 24, 2026 article version recorded a CNY 10 monthly 168 GB tier and four one-time data packs described as non-expiring. Check the current price and expiry at checkout.
 
 - Website: [xsus.cloud](https://xsus.cloud/register?code=xJFcT1Dw)
 - Route claim: BGP ingress optimization and provider-controlled cabinet resources
 - Service-access claims: Netflix, Disney+, HBO, TikTok, and YouTube
-- Support recorded by the source: online chat, tickets, and `@Misaka_Yuki`
+- Support: [XSUS help center](https://help.xsus.cloud/help.html)
 
 Those network, capacity, service-access, and support descriptions require current local verification.
 
@@ -73,7 +73,7 @@ Those network, capacity, service-access, and support descriptions require curren
 
 | Item | Source record |
 | --- | --- |
-| Lowest plan | CNY 10/month for 168 GB |
+| Historical entry plan | CNY 10/month for 168 GB |
 | Route description | BGP ingress optimization for three mainland access carriers |
 | Infrastructure claim | Provider-controlled cabinet resources |
 | Package types | Monthly and non-expiring one-time allowances |
@@ -138,7 +138,7 @@ The provider describes native IP and smart-DNS techniques and claims access to N
 ## Setup
 
 1. Verify the current XSUS domain and operator.
-2. Choose the entry monthly tier or the smallest one-time allowance.
+2. Check the available plans and start with a short or small option.
 3. Copy the subscription URL from the authenticated dashboard.
 4. Import it into a trusted client.
 5. Test required nodes at several times of day.
@@ -149,19 +149,19 @@ The one-click subscription link is a credential; do not share it publicly.
 
 ### Who might consider XSUS?
 
-Someone looking for a low-cost monthly test, an occasional non-expiring backup, or an alternative route during the evening peak. The provider's stability slogan is not evidence until reproduced locally.
+Someone looking for a short trial on their own network. Check the sites or apps you need during your usual evening hours.
 
 ### What happens when monthly data is exhausted?
 
-Wait for the scheduled reset, use the current paid-reset option if available, or upgrade. Check whether renewal changes only the expiration date.
+Wait for the scheduled reset. If you need data sooner, check the dashboard for a reset or upgrade option.
 
 ### Is annual payment required?
 
-No annual requirement appears in the source; monthly tiers are listed.
+The old catalog included monthly plans. Check which billing periods the checkout offers now.
 
 ### How is support reached?
 
-The source lists online support, tickets, and Telegram handle `@Misaka_Yuki`. Verify the handle through the authenticated dashboard before sending account information.
+Open the XSUS help center and use its online chat.
 
 ## Before purchasing
 

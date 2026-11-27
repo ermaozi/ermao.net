@@ -41,13 +41,28 @@ test('SuperBiu retains historical plans but makes current pricing and availabili
 
 test('Historical monthly prices cannot enter the selector and only the screenshot-backed XXYun monthly tiers join current results', () => {
   const results = selector(airportRecords)
-  assert.equal(results.length, 29)
+  assert.equal(results.length, 28)
   assert.deepEqual(plain(results.find(item => item.id === 'xxyun').comparablePlans.map(({ price, traffic }) => [price, traffic])), [[9.99, 100], [19.9, 300], [39.9, 1000]])
-  assert.equal(results.reduce((total, item) => total + item.comparablePlans.length, 0), 102)
-  assert.ok(!results.some(item => item.id === 'superbiu'))
+  assert.equal(results.reduce((total, item) => total + item.comparablePlans.length, 0), 98)
+  assert.ok(!results.some(item => item.id === 'superbiu' || item.id === 'xsus'))
   const monthly = { id: 'example', name: 'Example', reviewHref: '/blog/example/', plans: [{ name: 'Small', text: 'Small', priceText: '¥11/月', traffic: '50GB' }] }
   assert.equal(selector([monthly]).length, 1)
   assert.equal(selector([{ ...monthly, historicalPlansAsOf: '2026-02-24' }]).length, 0)
+})
+
+test('XSUS retains its four monthly and four one-time historical entries without current availability claims', () => {
+  const airport = airportRecords.find(item => item.id === 'xsus')
+  const english = localizeAirportRecord(airport)
+  for (const entry of [airport, english]) {
+    assert.equal(entry.historicalPlansAsOf, '2026-02-24')
+    assert.equal(entry.hasOneTimePackage, 'unknown')
+    assert.equal(entry.officialHref, 'https://xsus.cloud/register?code=xJFcT1Dw')
+    assert.equal(entry.plans.length, 8)
+    assert.equal(entry.plans.filter(plan => plan.oneTime).length, 4)
+    assert.ok(entry.plans.every(plan => plan.purchaseHref === entry.officialHref))
+  }
+  assert.ok(!(airport.tags ?? []).includes('不限时'))
+  assert.doesNotMatch(airport.plans.flatMap(plan => plan.features ?? []).join(' '), /带宽保证|Netflix\/Disney保证/)
 })
 
 test('Historical prices receive visible bilingual table labels without changing column widths', () => {
