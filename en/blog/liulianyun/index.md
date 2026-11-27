@@ -7,7 +7,7 @@ description: >-
 ---
 Liulian Cloud's monthly plans start at **CNY 24 for 140 GB/month**, with 260 GB, 420 GB and 750 GB tiers above it. A smaller plan costs **CNY 96 per year with 60 GB each month**, equivalent to CNY 8/month but requiring the annual payment upfront. The provider lists universal subscriptions, Alipay and WeChat Pay, and supports no-expiry plans. No expiry does not mean unlimited data; check the current allowance and usage conditions.
 
-Purchase link: [View current Liulian Cloud plans](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo)
+Purchase link: [View current Liulian Cloud plans](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo)
 
 Coupon code **`ll88`** offers **30% off, once per account**. Eligible plans, billing periods and an expiry date have not been supplied; confirm the discount and final amount at checkout.
 
@@ -35,11 +35,11 @@ No-expiry plans are also supported. The table below covers only periodic plans w
 
 | Plan | Price | Data | Suggested use | Purchase |
 | --- | --- | --- | --- | --- |
-| Durian annual special | CNY 96/year | 60 GB/month | Light users who have checked the routes and accept annual billing | [View annual tier](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo) |
-| Light | CNY 24/month | 140 GB/month | First purchase, browsing and light video | [View Light](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo) |
-| Enjoy | CNY 40/month | 260 GB/month | Monthly usage approaching or exceeding 140 GB | [View Enjoy](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo) |
-| Premium | CNY 60/month | 420 GB/month | More frequent video viewing and regular internet use | [View Premium](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo) |
-| Durian King | CNY 100/month | 750 GB/month | Higher monthly consumption after checking the routes | [View Durian King](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo) |
+| Durian annual special | CNY 96/year | 60 GB/month | Light users who have checked the routes and accept annual billing | [View annual tier](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo) |
+| Light | CNY 24/month | 140 GB/month | First purchase, browsing and light video | [View Light](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo) |
+| Enjoy | CNY 40/month | 260 GB/month | Monthly usage approaching or exceeding 140 GB | [View Enjoy](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo) |
+| Premium | CNY 60/month | 420 GB/month | More frequent video viewing and regular internet use | [View Premium](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo) |
+| Durian King | CNY 100/month | 750 GB/month | Higher monthly consumption after checking the routes | [View Durian King](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo) |
 
 The table keeps prices before the coupon discount. Code `ll88` offers 30% off, once per account; eligible plans and billing periods have not been confirmed, so no discounted prices are calculated here.
 
@@ -47,7 +47,7 @@ These amounts retain the provider's submitted price list. A follow-up clarificat
 
 For a first purchase, compare the **CNY 24 Light tier**, check it on your own network for a month, then choose your next allowance from actual consumption. If usage stays within 60 GB/month and the routes work for you, consider the annual tier. **CNY 8/month is its annual-payment equivalent, not a one-month purchase price.**
 
-At the submitted prices, moving from Light to Enjoy adds 120 GB/month for another CNY 16. Start with less data if your usage is uncertain. [Compare current Liulian Cloud prices and allowances](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo).
+At the submitted prices, moving from Light to Enjoy adds 120 GB/month for another CNY 16. Start with less data if your usage is uncertain. [Compare current Liulian Cloud prices and allowances](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo).
 
 ### Are no-expiry plans available?
 
@@ -63,7 +63,7 @@ The provider lists universal-subscription support, which may suit users who alre
 
 The supplied speed table labels its protocol column Vless and includes nodes named for Hong Kong, Taiwan, Singapore, the United States and Japan. Names also include labels such as preferred dedicated line, high-speed dedicated line, optimization for three Chinese ISPs, premium relay and low latency. These identify groups in the table; their names alone do not verify routing architecture or performance.
 
-Test the specific nodes for your required region or service. A node's displayed location is not necessarily the egress region recognized by every website. [View current Liulian Cloud nodes and plans](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo).
+Test the specific nodes for your required region or service. A node's displayed location is not necessarily the egress region recognized by every website. [View current Liulian Cloud nodes and plans](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo).
 
 ## Original speed screenshot and interpretation
 
@@ -88,7 +88,7 @@ For occasional backup use, compare Liulian Cloud’s no-expiry plans after check
 
 ## Purchase and setup
 
-1. Open the [Liulian Cloud purchase entry](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo), then register or sign in.
+1. Open the [Liulian Cloud purchase entry](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo), then register or sign in.
 2. Choose billing and data. If using code `ll88`, enter it and check that the 30% discount is applied, noting the once-per-account limit. Confirm the amount due, reset date, multipliers, device rules and refund terms.
 3. Pay with Alipay or WeChat Pay, then obtain the subscription and import it into a compatible client using the provider's instructions.
 4. Test your usual regions, websites and evening usage on your own network before renewing or changing tiers.
@@ -117,7 +117,7 @@ The material contains no relevant access test, and download-speed results do not
 
 Liulian Cloud's main selection points are **monthly billing from CNY 24, periodic and no-expiry plan options, and universal subscriptions**. For a first purchase, compare the 140 GB monthly option. Consider the CNY 96 annual tier only after checking the routes and your lower monthly consumption. The provider's screenshot helps explain node groups and that run's results; your network and usual usage window still determine the experience.
 
-[View current Liulian Cloud plans and subscription instructions](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo)
+[View current Liulian Cloud plans and subscription instructions](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo)
 
 ## Client guides and more providers
 

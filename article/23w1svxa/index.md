@@ -12,7 +12,7 @@ description: 各大翻墙机场优惠券汇总，整理常见机场折扣码、�
 
 优惠信息更新：2026 年 10 月 8 日。
 
-榴莲云机场官网：[查看榴莲云当前套餐](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo)
+榴莲云机场官网：[查看榴莲云当前套餐](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo)
 
 ## 极连云机场优惠券
 

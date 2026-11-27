@@ -5,7 +5,7 @@ description: >-
 ---
 榴莲云的月付套餐从 **24 元 140GB/月** 起，往上有 260GB、420GB 和 750GB 三档；另有 **96 元年付、每月 60GB** 的轻量套餐，折合 8 元/月，但需要一次支付全年费用。服务商注明支持通用订阅、支付宝与微信付款，支持不限时套餐；不限时不等于无限流量，具体额度与使用条件需查看当前套餐说明。
 
-官方购买入口：[查看榴莲云当前套餐](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo)
+官方购买入口：[查看榴莲云当前套餐](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo)
 
 优惠码 **`ll88`**：**七折，每个账号限用一次**。适用套餐、计费周期和截止时间尚未提供，使用前请在结算页核对优惠与实付金额。
 
@@ -33,11 +33,11 @@ description: >-
 
 | 套餐 | 价格 | 流量 | 适合人群 | 购买 |
 | --- | --- | --- | --- | --- |
-| 榴莲包·年付特惠版 | ¥96/年 | 60GB/月 | 已确认线路适配、用量较少且接受年付的用户 | [查看年付小包](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo) |
-| 轻享包 | ¥24/月 | 140GB/月 | 首次尝试、浏览资讯与轻度影音 | [查看轻享包](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo) |
-| 畅享包 | ¥40/月 | 260GB/月 | 月用量接近或超过140GB的用户 | [查看畅享包](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo) |
-| 尊享包 | ¥60/月 | 420GB/月 | 较频繁的视频观看与日常联网 | [查看尊享包](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo) |
-| 榴莲王 | ¥100/月 | 750GB/月 | 已验证线路、有较大月度流量需求的用户 | [查看榴莲王](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo) |
+| 榴莲包·年付特惠版 | ¥96/年 | 60GB/月 | 已确认线路适配、用量较少且接受年付的用户 | [查看年付小包](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo) |
+| 轻享包 | ¥24/月 | 140GB/月 | 首次尝试、浏览资讯与轻度影音 | [查看轻享包](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo) |
+| 畅享包 | ¥40/月 | 260GB/月 | 月用量接近或超过140GB的用户 | [查看畅享包](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo) |
+| 尊享包 | ¥60/月 | 420GB/月 | 较频繁的视频观看与日常联网 | [查看尊享包](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo) |
+| 榴莲王 | ¥100/月 | 750GB/月 | 已验证线路、有较大月度流量需求的用户 | [查看榴莲王](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo) |
 
 以上金额为优惠前的套餐价格。优惠码 `ll88` 为七折、每个账号限用一次；尚未确认适用套餐与计费周期，表内不预先折算券后价。
 
@@ -45,7 +45,7 @@ description: >-
 
 首次使用可以先比较 **24 元轻享包**，用自己的网络测试一个月，再按实际用量决定是否升级。若每月用量在 60GB 内且线路已验证，可考虑 96 元年付档；**8 元/月是年付折算价，不能按 8 元购买单独一个月。**
 
-从轻享包升级到畅享包，按提交价格多付 16 元可增加 120GB/月；不确定用量时，可以先从较小档开始。[比较榴莲云当前价格与流量说明](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo)。
+从轻享包升级到畅享包，按提交价格多付 16 元可增加 120GB/月；不确定用量时，可以先从较小档开始。[比较榴莲云当前价格与流量说明](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo)。
 
 ### 是否有不限时套餐？
 
@@ -61,7 +61,7 @@ description: >-
 
 随附测速图的类型列标为 Vless，节点名称覆盖香港、台湾、新加坡、美国和日本。图中名称还使用了“优选专线”“高速专线”“三网优化”“精品中转”“低延迟”等标注，这些名称可以帮助识别节点分组，不能单凭命名确认实际线路架构或性能。
 
-如果主要使用某个地区或平台，优先测试该地区的具体节点；节点显示地区也不等于每个网站识别的出口地区。[前往榴莲云查看当前节点与套餐](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo)。
+如果主要使用某个地区或平台，优先测试该地区的具体节点；节点显示地区也不等于每个网站识别的出口地区。[前往榴莲云查看当前节点与套餐](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo)。
 
 ## 测速原图与结果解读
 
@@ -86,7 +86,7 @@ description: >-
 
 ## 购买与开始使用
 
-1. 打开[榴莲云官方购买入口](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo)，注册或登录账户。
+1. 打开[榴莲云官方购买入口](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo)，注册或登录账户。
 2. 选择付款周期与流量档位。如使用优惠码 `ll88`，输入后确认七折优惠是否生效，并注意每个账号限用一次；核对实付金额、重置日期、倍率、设备规则及退款条件。
 3. 使用支付宝或微信付款，按官网指引获取订阅并导入兼容客户端。
 4. 在自己的网络中测试常用地区、目标网站及晚高峰表现，再决定续费或更换档位。
@@ -115,7 +115,7 @@ description: >-
 
 榴莲云的选择重点是 **24 元起月付、周期套餐与不限时套餐可选，以及通用订阅**。首次尝试可先看 140GB 月付档；用量较少且已验证线路后，再考虑 96 元年付小包。服务商测速图能帮助了解节点分组与当次结果，实际体验仍要结合自己的网络和使用时段判断。
 
-[查看榴莲云当前套餐与订阅说明](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo)
+[查看榴莲云当前套餐与订阅说明](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo)
 
 ## 客户端教程与更多推荐
 

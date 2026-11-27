@@ -14,7 +14,7 @@ This page records coupon information published by several proxy services. Codes,
 * Stated discount: 30% off, once per account
 * Eligible plans, billing periods and an expiry date have not been supplied; confirm the discount and final amount at checkout
 * Coupon information updated: October 8, 2026
-* Website: [View current Liulian Cloud plans](https://a01vipaff.liulianyunaff.com/#/?code=CqEkCAgo)
+* Website: [View current Liulian Cloud plans](https://ermaozi01.liulianyunaff.com/#/?code=CqEkCAgo)
 
 ## Jilianyun
 
