@@ -16,8 +16,8 @@ Clash Mi 是一款内置 `mihomo`（Clash Meta）内核的代理工具，支持 
 
 ## 聊聊 Clash Mi 到底好在哪
 
-* **强劲的内核**：内置并持续更新 `mihomo`（也就是大家常说的 Clash Meta）内核，市面上那些主流的 Clash 机场配置它都能完美兼容，几乎不会遇到“带不动”或者不识别的情况。
-* **傻瓜式上手**：用起来是真的简单，不像以前一些老客户端还要折腾一堆复杂的设置。只要你有机场的订阅链接，复制粘贴进去就能直接用，门槛极低。
+* **订阅格式**：内置 `mihomo`（Clash Meta）内核，优先选服务商提供的 Clash / Mihomo 订阅。能否导入取决于链接返回的配置，不是把文件后缀改成 YAML 就能兼容。
+* **导入简单**：把兼容的 Clash 订阅链接粘贴到「我的配置」，保存后选中配置即可。
 * **界面清爽**：没有花里胡哨的多余按钮，主界面干干净净的。对于新手来说，一眼就能看懂该点哪里，可以说非常贴心了。
 
 ![Clash Mi 主界面预览 =480x651](https://image.ermao.net/images/blog/clashmi/20260305_103743-3935fc.png)
@@ -45,7 +45,7 @@ Clash Mi 只是客户端，连接外网还需要可用的 Clash 订阅。
 
 iPhone 和 iPad 用户可以选择以下下载渠道：
 
-* **求稳就选它（App Store 正式版）**：[点击前往 App Store 下载](https://apps.apple.com/us/app/clash-mi/id6744321968)
+* **求稳就选它（App Store 正式版）**：[点击前往 App Store 下载](https://apps.apple.com/us/app/clash-mi/id6744321968)。2026 年 11 月 27 日核对，美区正式版为 1.0.33.1905，需 iOS / iPadOS 15 或以上。
 * **喜欢尝鲜（TestFlight Beta 版）**：[查看 TestFlight 测试名额](https://testflight.apple.com/join/bjHXktB3)
 
 测试名额可能已满，以 TestFlight 页面显示为准；满员时优先使用上方 App Store 正式版。
@@ -124,7 +124,7 @@ Mac 版通过官方 **DMG 安装包**安装和更新，要求 **macOS 12（Monte
 
 排查顺序：
 
-* Clash Mi 仅支持 `.yml/.yaml`（不支持 sing-box、v2ray 订阅）
+* 订阅链接要返回 Clash 兼容的 YAML 配置；sing-box 或 V2Ray 订阅不能直接导入。
 * 先在浏览器验证订阅链接是否可打开
 * 某些机场需要指定 `User-Agent`，可在应用设置中修改
 * 若订阅域名被拦截，先临时使用其他代理打开再导入
