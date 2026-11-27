@@ -157,7 +157,9 @@ Do not choose a protocol solely because it is new. Stable routes, peak-hour perf
 
 ### Step 1: choose a provider subscription
 
-Without a subscription, the client has no provider nodes. For a first purchase:
+You need a working node, but a subscription is optional. If you already have a VPS with a public IP, follow the [self-hosted node guide (in Chinese)](/blog/3x-ui-vless-reality/) to set up a node and import its share link into a compatible client.
+
+If you are buying a provider subscription for the first time:
 
 1. Start with a trial or monthly plan rather than an annual, multi-year, or “lifetime” plan.
 2. Prefer a provider that supplies the formats required by Clash, Shadowrocket, V2RayNG, or the other intended clients.

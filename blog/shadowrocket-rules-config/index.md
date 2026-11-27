@@ -7,9 +7,7 @@ description: >-
 Shadowrocket 的分流配置决定哪些请求直连、哪些走代理。本文用 3 步导入含策略组的懒人配置，并说明黑白名单、去广告版本和配置更新的区别。先说明一个容易混淆的地方：本文的 `lazy_group.conf` 用于分流，不能把它当成自带广告拦截的配置。
 
 ::: tip 前置阅读
-还没装小火箭？先看这篇 [Shadowrocket 下载安装教程](/article/z747kgjd/)，把节点配好再来。
-
-安装 Shadowrocket 需要海外 Apple ID，这里有 [免费美区 Apple ID 账号](/blog/freeappleid/)，也可以用 [Asspp](/blog/asspp-download-guide/) 一键切换 App Store 区域。
+还没装小火箭？先在自己的 App Store 搜一下。能下载的话，按 [Shadowrocket 下载安装教程](/article/z747kgjd/) 装好并连通一个节点，再回来配规则。搜不到时，安装教程里也有对应的处理方法。
 :::
 
 ::: note 2026-10-09 核对说明
