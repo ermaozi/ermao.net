@@ -57,7 +57,7 @@ If you do not have one, consult the [proxy-service selection and review guide](/
 
 iPhone and iPad users can obtain the app through either channel:
 
-- **Stable App Store release:** [Open Clash Mi in the App Store](https://apps.apple.com/us/app/clash-mi/id6744321968)
+- **Stable App Store release:** [Open Clash Mi in the App Store](https://apps.apple.com/us/app/clash-mi/id6744321968). On November 27, 2026, the U.S. listing showed version 1.0.33.1905 for iOS and iPadOS 15 or later.
 - **TestFlight beta:** [Check TestFlight beta availability](https://testflight.apple.com/join/bjHXktB3)
 
 The beta may be full; check the TestFlight page for current availability. If it is full, use the App Store release linked above.
@@ -134,7 +134,7 @@ The **Dashboard** section in Clash Mi provides most of the controls that experie
 
 Check in this order:
 
-- Clash Mi accepts Clash `.yml` or `.yaml` profiles; it does not directly accept sing-box or raw V2Ray subscriptions.
+- The subscription URL must return a Clash-compatible YAML profile. The URL itself does not need a `.yml` or `.yaml` suffix. Clash Mi does not directly accept sing-box or raw V2Ray subscriptions.
 - Open the subscription URL in a browser to confirm that it responds.
 - Some providers require a particular `User-Agent`, which can be changed in app settings.
 - If the subscription domain is blocked on the current network, use another temporary connection before importing it.
