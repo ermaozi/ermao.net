@@ -2,7 +2,6 @@
 title: VPS 自建翻墙节点教程：Ubuntu 24.04 搭建 3x-ui、VLESS + REALITY
 createTime: 2026/11/27 22:28:09
 permalink: /blog/3x-ui-vless-reality/
-aside: false
 description: 已有 VPS 怎么自建翻墙节点？用 Ubuntu 24.04 安装 3x-ui，配置 VLESS + REALITY，导入 v2rayN、小火箭、v2rayNG 或 Mihomo，并检查连接和出口 IP。
 tags:
   - 自建节点
