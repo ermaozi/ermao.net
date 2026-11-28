@@ -8,7 +8,7 @@ description: >-
 
 Names such as Clash, Shadowrocket, V2RayNG, v2rayN, sing-box, Hiddify, subscription, and node can be confusing at first.
 
-The relationship is simple: **the access tool is the client, the provider subscription supplies the routes, and a node is an individual server or route**. Install a client appropriate for the device, import a compatible subscription URL, select a node, and enable the proxy.
+**The access tool is the client, a node is a server it connects to, and a provider subscription usually includes several nodes.** Install a client for your device, import a provider subscription or a compatible single-node link, then select a node and enable the proxy.
 
 \[\[toc]]
 
